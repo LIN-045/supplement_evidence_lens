@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=echinacea.angustifolia2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="9b632d41-3fc3-4b2b-a04e-c465285e5bfa"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>ECHINACEA- <em>ECHINACEA ANGUSTIFOLIA</em></h1>
+	<div class="icon">
+		<a href="dbImages/mono_echinacea-angustifolia_english.pdf" title="Echinacea Angustifolia"><img alt="Monograph: Echinacea Angustifolia" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/>(PDF Version - 121 KB)</a>
+	</div>
+    
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion. </li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label. </li>
+		</ul>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+			<p>March 28, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table class="subject">
+				<caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2"  scope="colgroup">Proper name(s)</th>
+						<th rowspan="2"  scope="colgroup">Common name(s)</th>
+						<th colspan="3" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Echinacea angustifolia</em></td>
+						<td rowspan="1" scope="colgroup">
+							<ul>
+								<li>Black sampson</li> 
+								<li>Black-sampson echinacea</li>
+								<li>Echinacea</li> 
+								<li>Kansas snakeroot</li>
+								<li>Narrow-leaf coneflower</li> 
+								<li>Narrow-leaf echinacea</li>
+								<li>Narrow-leaf purple-coneflower</li>
+							</ul>
+						</td>	
+						<td><em>Echinacea angustifolia</em></td>
+						<td rowspan="1" scope="colgroup">
+							<ul>
+								<li>Root</li>  
+								<li>Rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2024&semi; Common names: USDA 2024&semi; Gardner and McGuffin 2013&semi; Bradley 1992&semi; Source information: Barnes et al. 2007&semi; Grieve 1971.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">    
+        <h2 id="routeOfAdministration">Route(s) of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p><strong>Acceptable dosage forms by age group:</strong></p>
+				<p><strong>Children 2 years:</strong> The acceptable dosage forms are limited to emulsion/suspension and solution/liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).</p>
+				<p><strong>Children 3-5 years:</strong> The acceptable dosage forms are limited to chewables, emulsion/suspension, powders and solution/liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).</p>
+				<p><strong>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older:</strong> The acceptable dosage forms for oral use are indicated in the dosage drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>(Traditionally) used in Herbal Medicine to help relieve the symptoms of upper respiratory tract infections (Barnes et al. 2007&semi; Blumenthal et al. 2000&semi; Ellingwood 1983&semi; Felter and Lloyd 1983&semi; Grieve 1971).</li>
+				<li>(Traditionally) used in Herbal Medicine to help relieve sore throats (Blumenthal et al. 2000&semi; Moerman 1998).</li>
+			</ul>
+			<p><strong>Notes:</strong></p>
+				<ul>
+					<li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Traditionally used in Herbal Medicine to help relieve the symptoms of upper respiratory tract infections and sore throats).</li>
+					<li><strong>For multi-ingredient products:</strong></li>
+					<ul>
+						<li>To prevent the product from being represented as a “traditional medicine”, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Echinacea is traditionally used in Herbal Medicine to help relieve sore throats).</li>
+						<li>When ALL of the medicinal ingredients (MIs) in the product are used within the same identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+					</ul>
+				</ul>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>As specified below.</p>
+			<h3>Quantity(ies)</h3>
+				<p>Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+				<table class="subject">
+					<caption>Table 2. Dose information (grams) for Echinacea dried root and/or rhizome per day</caption>
+					<thead>
+						<tr>
+							<th rowspan="2" colspan="2" scope="colgroup">Subpopulation(s)<sup><a href="#ref2-1" style="text-decoration: none;">1</a>,<a href="#ref2-2" style="text-decoration: none;">2</a></sup></th>
+							<th colspan="2" scope="colgroup">Dried root/rhizome (g/day)</th>
+						</tr>
+						<tr>
+							<th scope="col">Minimum</th>
+							<th scope="col">Maximum</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="4">Children</td>
+							<td>2-4 years</td>
+							<td>0.17 g</td>
+							<td>0.5 g</td>
+						</tr>
+						<tr>
+							<td>5-9 years</td>
+							<td>0.25 g</td>
+							<td>0.8 g</td>
+						</tr>
+						<tr>
+							<td>10-11 years</td>
+							<td>0.5 g</td>
+							<td>1.5 g</td>
+						<tr>
+						<tr>
+							<td rowspan="2">Adolescents</td>
+							<td>12-14 years</td>
+							<td>0.5 g</td>
+							<td>1.5 g</td>
+						</tr>
+						<tr>
+							<td>15-17 years</td>
+							<td>1.0 g</td>
+							<td>3.0 g</td>
+						</tr>
+						<tr>
+							<td rowspan="1">Adults</td>
+							<td>18 years and older</td>
+							<td>1.0 g</td>
+							<td>3.0 g</td>
+						</tr>
+					</tbody>
+				</table>
+				<p><sup id="ref2-1">1</sup>Children and adolescent doses were calculated as a proportion of the adult dose (JC 2023). The use of <em>Echinacea angustifolia</em> in children is supported by the following references: McIntyre 2005&semi; Bove 2001&semi; Schilcher 1997. </p>
+				<p><sup id="ref2-2">2</sup>Adult dose supported by the following references: Barnes et al. 2007&semi; Blumenthal et al. 2000&semi; Bradley 1992.</p>
+				<p><strong>Note:</strong> Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+			<h3>Direction(s) for use</h3>
+				<p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 8 weeks (Brinker 2010).</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a progressive systemic disease such as tuberculosis, collagenosis, multiple sclerosis, or an immune system disorder (Gardner and McGuffin 2013&semi; Brinker 2010).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications to suppress the immune system (Brinker 2010&semi; Mills and Bone 2005).</li>
+				</ul>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+		<ul>
+			<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+			<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+		</ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ECHINACEA-ANGUSTIFOLIA_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References Cited</h2>
+			<p>Barnes J, Anderson LA, Philipson JD. Herbal Medicines, 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2007.</p>
+			<p>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</p>
+			<p>Bove M. An Encyclopedia of Natural Healing for Children and Infants. New Canaan (CT): Keats Publishing, Incorporated&semi; 2001.</p>
+			<p>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (GB): British Herbal Medicine Association&semi; 1992.</p>
+			<p>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</p>
+			<p>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1919 original].</p>
+			<p>EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulation of choice for the paediatric population. Adopted September 2006. EMA/CHMP/PEG/194810/2005. [Accessed 2024 April 2]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf</p>
+			<p>Felter HW, Lloyd JU. King&apos;s American Dispensatory, Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</p>
+			<p>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</p>
+			<p>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008&semi; 30(11):2097-2101.</p>
+			<p>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</p>
+			<p>JC 2023: Justice Canada. Natural Health Products Regulations. Ottawa (ON): Justice Canada. [Accessed 2024 February 21]. Available from: https://laws-lois.justice.gc.ca/eng/regulations/SOR-2003-196/index.html</p>
+			<p>McIntyre A. Herbal Treatment of Children - Western and Ayurvedic Perspectives. Toronto (ON): Elsevier Limited&semi; 2005.</p>
+			<p>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</p>
+			<p>Moerman DE. Native American Ethnobotany. Portland (OR): Timber Press&semi; 1998.</p>
+			<p>Schilcher H. Phytotherapy in Paediatrics: Handbook for Physicians and Pharmacists. Stuttgart (D): Medpharm Scientific Publishers&semi; 1997.</p>
+			<p>USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 February 21]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</p>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References reviewed</h2>
+			<p>Altamirano-Dimas M, Hudson JB, Cochrane D, Nelson C, Arnason JT. Modulation of immune response gene expression by echinacea extracts: results of a gene array analysis. Canadian Journal of Physiology and Pharmacology 2007&semi;85(11):1091-1098.</p>
+			<p>Barnes J, Anderson LA, Gibbons S, Phillipson JD. <em>Echinacea species</em> (<em>Echinacea angustifolia</em> (DC.) Hell., <em>Echinacea pallida</em> (Nutt.) Nutt., <em>Echinacea purpurea</em> (L.) Moench): a review of their chemistry, pharmacology and clinical properties. The Journal of Pharmacy and Pharmacology 2005&semi;57(8):929-954.</p>
+			<p>Barnes J, Anderson LA, Philipson JD. Herbal Medicines: A Guide for Healthcare Professionals, 2<sup>nd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2002.</p>
+			<p>Barrett B. Medicinal properties of echinacea: a critical review. Phytomedicine 2003&semi;10(1):66-86.</p>
+			<p>Barrett BP, Brown RL, Locken K, Maberry R, Bobula JA, D&apos;Alessio D. Treatment of the common cold with unrefined echinacea: a randomized, double-blind, placebo-controlled trial. Annals of Internal Medicine 2002&semi;137(12):939-946.</p>
+			<p>Barrett B, Brown R, Voland R, Maberry R, Turner R. Relations among questionnaire and laboratory measures of rhinovirus infection. The European Respiratory Journal 2006&semi;28(2):358-363.</p>
+			<p>Barrett B, Harahan B, Brown D, Zhang Z, Brown R. Sufficiently important difference for common cold: severity reduction. Annals of Family Medicine 2007&semi;5(3):216-223.</p>
+			<p>Barrett B, Vohmann M, Calabrese C. Echinacea for upper respiratory infection. The Journal of Family Practice 1999&semi;48(8):628-635.</p>
+			<p>Bauer R, Khan IA, Wagner H. TLC and HPLC analysis of Echinacea pallida and E. angustifolia roots. Planta Medica 1988&semi;54(5):426-430.</p>
+			<p>Bauer R, Remiger P, Wagner H. Alkamides from the roots of Echinacea angustifolia. Phytochemistry 1989&semi;28(2):505-508.</p>
+			<p>Bauer R, Wagner H. Echinacea species as potential immunostimulatory drugs. In: Wagner H, Farnsworth NR, editors. Economics and Medicinal Plants Research, volume 5. London (GB), Academic Press&semi; 1991.</p>
+			<p>BHP 1996: British Herbal Pharmacopoeia. Bournemouth (GB): British Herbal Medicine Association&semi; 1996.</p>
+			<p>BHP 1983: British Herbal Pharmacopoeia. Cowling (GB): British Herbal Medical Association&semi; 1983.</p>
+			<p>Binns SE, Arnason JT, Baum BR. Phytochemical variation within populations of <em>Echinacea angustifolia</em> (Asteraceae). Biochemical Systematics and Ecology 2002&semi;30:837-854.</p>
+			<p>Block KI, Mead MN. Immune system effects of echinacea, ginseng, and astragalus: a review. Integrative Cancer Therapies 2003&semi;2(3):247-267.</p>
+			<p>Blumenthal M. The ABC Clinical Guide to Herbs. New York (NY): Theime&semi; 2003.</p>
+			<p>Blumenthal M, Busse W, Goldberg A, Gruenwald J, Hall T, Riggins C, Rister R, editors. The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines. Austin (TX): American Botanical Council&semi; 1998.</p>
+			<p>Blumenthal M, Farnsworth NR, Leach M. Echinacea angustifolia in rhinovirus infections. New England Journal of Medicine 2005&semi;353(18):1971-1972.</p>
+			<p>Bone K. Echinacea: what makes it work? Alternative Medicine Review 1997&semi;2(2):87-93.</p>
+			<p>Bone K. Echinacea: When should it be used? Alternative Medicine Review 1997&semi;2(6):451-458.</p>
+			<p>Boon H, Smith MJ. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs, 2<sup>nd</sup> edition. Toronto (ON): Robert Rose Inc&semi; 1999.</p>
+			<p>Bisset NG, Wichtl M, editors. Herbal Drugs and Phytopharmaceuticals. 2<sup>nd</sup> edition. Stuttgart (Germany): medpharm GmbH Scientific Publishers&semi; 2001.</p>
+			<p>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (GB): British Herbal Medicine Association&semi; 1992.</p>
+			<p>Carr RR, Nahata MC. Complementary and alternative medicine for upper-respiratory-tract infection in children. American Journal of Health-System Pharmacists 2006&semi;63:33-39.</p>
+			<p>Caruso TJ, Gwaltney JM Jr. Reply to Barton and Hemil&#228;. Clinical Infectious Diseases 2005&semi;41:763-764.</p>
+			<p>Caruso TJ, Gwaltney JM Jr. Treatment of the common cold with Echinacea: a structured review. Clinical Infectious Diseases 2005&semi;40(6):807-810.</p>
+			<p>Chevallier A. The Encyclopedia of Medicinal Plants. New York (NY): DK Publishing Inc&semi; 1996.</p>
+			<p>Classen B, Csavas M, Borbas A, Dingermann T, Zundorf I. Monoclonal antibodies against an arabinogalactan-protein from pressed juice of Echinacea purpurea. Planta Medica 2004&semi;70(9):861865.</p>
+			<p>Cohen HA, Varsano I, Kahan E, Sarrell EM, Uziel Y. Effectiveness of an herbal preparation containing echinacea, propolis, and vitamin C in preventing respiratory tract infections in children: a randomized, double-blind, placebo-controlled, multicenter study. Archives of Pediatrics & Adolescent Medicine 2004&semi;158(3):217-221.</p>
+			<p>Ernst E. The risk-benefit profile of commonly used herbal therapies: Gingko, St John&apos;s Wort, Ginseng, Echinacea, Saw Palmetto and Kava. Annals of Internal Medicine 2002&semi;136(1):42-53.</p>
+			<p>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1922 original].</p>
+			<p>Felter HW, Lloyd JU. King&apos;s American Dispensatory, Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</p>
+			<p>Foster S. Echinacea. The Purple Coneflowers. Austin (TX): Steven Foster&semi; 1996.</p>
+			<p>Gallo M, Sarkar M, Au W, Pietrzak K, Comas B, Smith M, Jaeger TV, Einarson A, Koren G. Pregnancy outcome following gestational exposure to echinacea: a prospective controlled study. Archives of Internal Medicine 2000&semi;160(20):3141-3143.</p>
+			<p>Gertsch J, Schoop R, Kuenzle U, Suter A. Echinacea alkylamides modulate TNF-? gene expression via cannabinoid receptor CB2 and multiple signal transduction pathways. FEBS Letters 2004&semi;577(3):563-569.</p>
+			<p>Giles JT, Palat CT, Chien SH, Chien SH, Chang ZG, Kennedy DT. Evaluation of Echinacea for treatment of the common cold. Pharmacotherapy 2000&semi;20(6):690-697.</p>
+			<p>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</p>
+			<p>Gunning K. Echinacea in the treatment and prevention of upper respiratory tract infections. The Western Journal of Medicine 1999&semi;171(3):198-200.</p>
+			<p>Haddad PS, Azar GA, Groom S, Boivin M. Natural health products, modulation of immune function and prevention of chronic diseases. Evidence-Based Complementary and Alternative Medicine 2005&semi;2(4):513-520.</p>
+			<p>Hemil&#228; H. Echinacea, vitamin C, the common cold and blinding. Clinical Infectious Diseases 2005&semi;41(5):762-763.</p>
+			<p>Islam J, Carter R. Use of Echinacea in upper respiratory tract infection. Southern Medical Journal 2005&semi;98(3):311-318.</p>
+			<p>Kemp DE, Franco KN. Possible leucopenia associated with long-term use of echinacea. The Journal of the American Board of Family Practice 2002&semi;15(5):417-419.</p>
+			<p>Knight V. Echinacea treatment for the common cold. Clinical Infectious Diseases 2005&semi;40(6):811-812.</p>
+			<p>Lee AN, Werth VP. Activation of autoimmunity following use of immunostimulatory herbal supplements. Archives of Dermatology 2004&semi;140:723-727.</p>
+			<p>Li T. Echinacea: cultivation and medicinal value. HortTechnology 1998&semi;8(2):122-129.</p>
+			<p>Linde K, Barrett B, Wölkart K, Bauer B, Melchart D. Echinacea for preventing and treating the common cold. Cochrane Database of Systematic Reviews 2006&semi;1: CD000530. DOI: 10.1002/14651858.CD000530.pub2</p>
+			<p>Lindenmuth GF, Lindenmuth EB. The efficacy of echinacea compound herbal tea preparation on the severity and duration of upper respiratory and flu symptoms: a randomized, double-blind, placebo-controlled study. Journal of Alternative and Complementary Medicine 2000&semi;6(4):327-334.</p>
+			<p>Matthias A, Addison RS, Penman KG, Dickinson RG, Bone KM, Lehmann RP. Echinacea alkamide disposition and pharmacokinetics in humans after tablet ingestion. Life Sciences 2005&semi;77(16):2019-2029.</p>
+			<p>Matthias A, Banbury L, Bone KM, Leach DN, Lehmann RP. Echinacea alkylamides modulate induced immune responses in T-cells. Fitoterapia 2008&semi;79(1):53-58.</p>
+			<p>Matthias A, Blanchfield JT, Penman KG, Toth I, Lang CS, De Voss JJ, Lehmann RP. 2004. Permeability studies of alkylamides and caffeic acid conjugates from echinacea using a Caco-2 cell monolayer model. Journal of Clinical Pharmacy and Therapeutics 29(1):7-13.</p>
+			<p>McGregor RL. The taxonomy of the genus echinacea (compositae). University of Kansas Science Bulletin 1968&semi;48(4):113-142.</p>
+			<p>Melchart D, Linde K, Fischer P, Kaesmayr J. Echinacea for preventing and treating the common cold. Cochrane Database of Systematic Reviews 1999&semi;1: CD000530. DOI:10.1002/14651858.CD000530.</p>
+			<p>Melchart D, Linde K, Worku F, Bauer R, Wagner H. Immunomodulation with echinacea- a systematic review of controlled clinical trials. Phytomedicine 1994&semi;1:245-254.</p>
+			<p>Melchart D, Linde K, Worku F, Sarkady L, Holzmann M, Jurcic K, Wagner H. Results of five randomized studies on the immunomodulatory activity of preparations of Echinacea. Journal of Alternative and Complementary Medicine 1995&semi;1(2):145-160.</p>
+			<p>Melchart D, Walther E, Linde K, Brandmaier R, Lersch C. Echinacea root extracts for the prevention of upper respiratory tract infections. Archives of Family Medicine 1998&semi;7(6):541-545.</p>
+			<p>Merali S, Binns S, Paulin-Levasseur M, Ficker C, Smith M, Baum B, Brovelli E, Arnason JT. Antifungal and anti-inflammatory activity of the Genus Echinacea. Pharmaceutical Biology 2003&semi;41(6):412-420.</p>
+			<p>Meyer JE. The Herbalist. Glenwood (IL): Meyerbooks; 1993.</p>
+			<p>Miller LG. Herbal medicinals: selected clinical considerations focusing on known or potential drug-herb interactions. Archives of Internal Medicine 1998&semi;158(20):2200-2211.</p>
+			<p>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</p>
+			<p>Mossad SB. Treatment of the common cold. British Medical Journal 1998&semi;317(7150):33-36.</p>
+			<p>Mullins RJ, Heddle R. Adverse reactions associated with echinacea: the Australian experience. Annals of Allergy, Asthma & Immunology 2002&semi;88(1):42-51.</p>
+			<p>Myers SP, Wohlmuth H. Echinacea-associated anaphylaxis. Medicinal Journal of Australia 1998&semi;168(11):583-584.</p>
+			<p>Pepping J. Echinacea. American Journal of Health System Pharmacy 1999&semi;56(2):121-122.</p>
+			<p>Percival SS. Use of echinacea in Medicine. Biochemical Pharmacology 2000&semi;60(2):155-158.</p>
+			<p>Perri D, Dugoua JJ, Mills E, Koren G. Safety and efficacy of echinacea (Echinacea angustifolia, E. purpurea and E. Pallida) during pregnancy and lactation. Canadian Journal of Clinical Pharmacology 2006&semi;13(3):e262-e267.</p>
+			<p>Randolph RK, Gellenbeck K, Stonebrook K, Brovelli E, Qian Y, Bankaitis-Davis D, Cheronis J. Regulation of human immune gene expression as influenced by a commercial blended echinacea product: preliminary studies. Experimental Biology and Medicine 2003&semi;228(9):1051-1056.</p>
+			<p>Sampson W. Studying herbal remedies. New England Journal of Medicine 2005&semi;353(4):337339.</p>
+			<p>Schoop R, Klein P, Suter A, Johnston SL. Echinacea in the prevention of induced rhinovirus colds: a meta-analysis. Clinical Therapeutics 2006&semi;28(2):174-183.</p>
+			<p>Senchina DS, Flagel LE, Wendel JF, Kohut ML. Phenetic comparison of seven Echinacea species based on immunomodulatory characteristics. Economic Botany 2006&semi;60(3):205-211.</p>
+			<p>Shah SA, Sander S, White CM, Rinaldi M, Coleman CI. Evaluation of echinacea for the prevention and treatment of the common cold: a meta-analysis. The Lancet Infectious Diseases 2007&semi;7(7):473-480.</p>
+			<p>Taylor JA, Weber W, Standish L, Quinn H, Goesling J, McGann M, Calabrese C. Efficacy and safety of echinacea in treating upper respiratory tract infections in children: a randomized controlled trial. JAMA 2003&semi;290(21):2824-2830.</p>
+			<p>Thomas PR. Echinacea: a natural remedy for the common cold and flu? Nutrition Today 2001&semi;36(5):249-253.</p>
+			<p>Tragni E, Galli CL, Tubaro A, Del Negro P, Della Loggia R. Anti-inflammatory activity of Echinacea angustifolia fractions separated on the basis of molecular weight. Pharmaceutical Research Communications 1988&semi;20(5):87-90.</p>
+			<p>Tubaro A, Tragni E, Del Negro P, Galli CL, Della Loggia R. Anti-inflammatory activity of a polysaccharidic fraction of Echinacea angustifolia. Journal of Pharmacy and Pharmacology 1987&semi;39(7):567-569.</p>
+			<p>Turner RB. The treatment of rhinovirus infections: progress and potential. Antiviral Research 2001&semi;49(1):1-14.</p>
+			<p>Turner RB, Bauer R, Woelkart K, Hulsey TC, Gangemi JD. An evaluation of Echinacea angustifolia in experimental rhinovirus infections. The New England Journal of Medicine 2005&semi;353(4):341-348.</p>
+			<p>Turner RB, Riker DK, Gangemi JD. Ineffectiveness of echinacea for prevention of experimental rhinovirus colds. Antimicrobial Agent and Chemotherapy 2000&semi;44(6):1708-1709.</p>
+			<p>WHO 1999: WHO monographs on selected medicinal plants. Volume 1. Geneva (CHE): World Health Organization&semi; 1999.</p>
+			<p>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 3<sup>rd</sup> edition. Stuttgart (D): Medpharm GmbH Scientific Publishers&semi; 2004.</p>
+			<p>Woelkart K, Bauer R. The role of alkamides as an active principle of echinacea. Planta Medica 2007&semi;73(7):615-623.</p>
+			<p>Wölkart K, Gangemi JD, Turner RB, Bauer R. Enzymatic degradation of echinacoside and cynarine in Echinacea angustifolia root preparations. Pharmaceutical Biology 2004&semi;42(6):443-448.</p>
+			<p>Woelkart K, Koidl C, Grisold A, Gangemi JD, Turner RB, Marth E, Bauer R. Bioavailability and pharmacokinetics of alkamides from the roots of Echinacea angustifolia in humans. Journal of Clinical Pharmacology 2005&semi;45(6):683-689.</p>
+			<p>Wren RC. Potter&apos;s Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark&semi; 1907.</p>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

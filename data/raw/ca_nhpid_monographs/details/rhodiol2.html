@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=rhodiol2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="858d4993-5726-44a4-9167-445f021e753b"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>RHODIOLA - <em>RHODIOLA ROSEA</em></h1>
+	<div class="icon">
+		<a href="dbImages/mono_rhodiola--rhodiola-rosea_english.pdf" title="Rhodiola - Rhodiola rosea"><img alt="Monograph: Rhodiola - Rhodiola rosea" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 25 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>October 31, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonnameSourceInformation">
+		<h2 id="properNameCommonnameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source  information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th rowspan="1" colspan="3">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+						<th>Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2" scope="colgroup"><em>Rhodiola rosea</em></td>
+						<td rowspan="2" scope="colgroup">
+							<ul>
+								<li>Hong jing tian</li>
+								<li>King&apos;s-crown</li>
+								<li>Rhodiola</li>
+								<li>Roseroot</li>
+							</ul>
+						</td>
+						<td><em>Rhodiola rosea</em></p></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2025&semi; Gardner and McGuffin 2013&semi; Common names: USDA 2025&semi; Gardner and McGuffin 2013&semi; Source information: EMA 2024&semi; Winston and Maimes 2007.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>(Used in Herbal Medicine to) help(s) (to) temporarily relieve symptoms of stress (such as mental fatigue and sensation of weakness) (EMA 2024&semi; Olsson et al. 2009&semi; Winston and Maimes 2007&semi; Pizzorno and Murray 2006&semi; Hoffman 2003).</li>
+				<li>Used in Herbal Medicine as an adaptogen to help increase energy and resistance to stress over time (e.g. in case of mental and physical fatigue related to stress) (EMA 2024&semi; Olsson et al. 2009&semi; Winston and Maimes 2007&semi; Pizzorno and Murray 2006&semi; Hoffman 2003).</li>
+				<li>(Used in Herbal Medicine) (to) help(s) support cognitive function (such as mental focus and mental stamina) (Olsson et al. 2009&semi; Winston and Maimes 2007).</li>
+				<li>Source of antioxidants/Provides antioxidants (Skarpanska-Stejnborn et al. 2009&semi; Winston and Maimes 2007&semi; Kim et al. 2006).</li>
+				<li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Skarpanska-Stejnborn et al. 2009&semi; Winston and Maimes 2007&semi; Kim et al. 2006).</li>
+			</ul>
+			<p><strong>Note:</strong> The above uses can be combined on the product label if from the same system of medicine (e.g., Used in Herbal Medicine to help support cognitive function and as an adaptogen to help increase energy and resistance to stress over time).</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older (EMA 2024)</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Antioxidants</em></p>
+					<p>Methods of preparation: Standardized extracts (Dry extract)</p>
+						<p>Not to exceed 680 milligrams of extract, per day and 200 milligrams, per single dose (EMA 2024&semi; Darbinyan et al. 2007&semi; Pizzorno and Murray 2006)</p>
+						<p>and:
+							<ul>	
+								<li>0.8 - 3% salidroside (Olsson et al. 2009&semi; AU TGA 2008&semi; Winston and Maimes 2007&semi; Pizzorno and Murray 2006&semi; Brown et al. 2002)&semi;</li>
+							</ul>
+						</p>
+						<p>and/or:
+							<ul>
+								<li>1 - 6% rosavins (Olsson et al. 2009&semi; AU TGA 2008&semi; Winston and Maimes 2007&semi; Pizzorno and Murray 2006&semi; Brown et al. 2002).</li>
+							</ul>
+						</p>
+ 					<p>Methods of preparation: Non-Standardized Ethanolic Extracts (Dry extract)</p>
+						<p>Not to exceed 400 milligrams of extract and a quantity crude equivalent (QCE) of 2 grams of dried root/root and rhizome, per day&semi; Not to exceed 200 milligrams of extract and a QCE of 1 gram of dried root/root and rhizome, per single dose (EMA 2024).</p>
+					<p>Method of preparation: Tincture</p>
+						<p>Not to exceed 1.8 grams of dried root/root and rhizome, per day (Winston and Maimes 2007).</p>
+				<p><em>Symptoms of Stress, Adaptogen and Cognitive Function</em></p>
+					<p>Methods of preparation: Standardized extracts (Dry extract)</p>
+						<p>144 - 680 milligrams of extract, per day&semi; Not to exceed 200 milligrams per single dose (EMA 2024&semi; Darbinyan et al. 2007&semi; Pizzorno and Murray 2006)</p>
+						<p>and:
+							<ul>
+								<li>0.8 - 3% salidroside (Olsson et al. 2009&semi; AU TGA 2008&semi; Winston and Maimes 2007&semi; Pizzorno and Murray 2006&semi; Brown et al. 2002)&semi;</li>
+							</ul>
+						</p>
+						<p>and/or
+							<ul>
+								<li>1 - 6% rosavins (Olsson et al. 2009&semi; AU TGA 2008&semi; Winston and Maimes 2007&semi; Pizzorno and Murray 2006&semi; Brown et al. 2002).</li>
+							</ul>
+						</p>
+					<p>Method of preparation: Tincture</p>
+						<p>1.2 - 1.8 grams of dried root/root and rhizome, per day (Winston and Maimes 2007).</p>
+				<p><em> Symptoms of Stress and Adaptogen</em></p>
+					<p>Methods of preparation: Non-Standardized Ethanolic Extracts (Dry extract)</p>
+						<p>144 - 400 milligrams of extract and a QCE of 216 - 2,000 milligrams of dried root/root and rhizome, per day&semi; Not to exceed 200 milligrams of extract and a QCE of 1 gram of dried root/root and rhizome, per single dose (EMA 2024).</p>
+			<h3>Direction(s) for use</h3>
+				<p>Avoid taking before bedtime (Iovieno et al. 2011&semi; Pizzorno and Murray 2006&semi; Kelly 2001).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (EMA 2024).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking antidepressant medication, hormone replacement therapy (HRT) or birth control medication (HC 2018&semi; Iovieno et al. 2011&semi; Olsson et al. 2009&semi; Brown et al. 2002).</li>
+				</ul>
+			<h3>Contraindication(s)</h3>
+				<p>Do not use if you have bipolar disorder or bipolar spectrum disorder (Iovieno et al. 2011&semi; Winston and Maimes 2007&semi; Brown et al. 2002).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>Stop use if you experience irritability or insomnia (Pizzorno and Murray 2006&semi; Kelly 2001).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS (for NHPs):</h2>
+    		<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/RHODIOLA_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>AU TGA 2008: Australian Therapeutic Goods Administration. Explanatory Statement: Therapeutic Goods (Listing) Notice 2008 (No. 4) Rhodiola rosea. Symonston (AU): Australian Government Department of Health and Ageing, Therapeutic Goods Administration. [Accessed 2025 January 21]. Available from: http://www.comlaw.gov.au/Details/F2008L02820</li>
+				<li>Brown RP, Gerbarg PL, Ramazanov Z. Rhodiola rosea: A Phytomedicinal Overview. HerbalGram 2002&semi;56:40-52.</li>
+				<li>Darbinyan V, Aslanyan G, Amroyan E, Gabrielyan E, Malmstrom C, Panossian A. Clinical trial of Rhodiola rosea L. extract SHR-5 in the treatment of mild to moderate depression. Nordic journal of psychiatry 2007&semi;61(5):343-348.</li>
+				<li>EMA 2024: 20 March 2024 EMA/HMPC/24177/2023 Committee on Herbal Medicinal Products (HMPC) European Union herbal monograph on Rhodiola rosea L., rhizoma et radix Final - Revision 1. Amsterdam (NL): European Medicines Agency, Science Medicines Health. [Accessed 2025 January 21]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-rhodiola-rosea-l-rhizoma-et-radix-revision-1_en.pdf</li>
+				<li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Cincinnati (OH): John K. Scudder&semi; 1922. Reprinted and abridged by Southwest School of Botanical Medicine&semi; 2001. [Accessed 2025 January 21]. Available from: http://www.swsbm.com/FelterMM/Felters_Materia_Medica.pdf</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>HC 2018: Health Canada. Canada Vigilance Adverse Reaction Online Database. Ottawa (ON): Marketed Health Products Directorate, Health Canada. [Accessed 2025 January 21]. Available from: https://cvp-pcv.hc-sc.gc.ca/arq-rei/index-eng.jsp</li>
+				<li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>Iovieno, N., Dalton, ED., Fava, M., Mischoulon, D. Second-tier natural antidepressants: review and critique. Journal of Affective Disorders 2011&semi;130(3): 343-357.</li>
+				<li>Kelly GS. Rhodiola rosea: A Possible Plant Adaptogen. Alternative Medicine Review 2001&semi;6(3): 293-302.</li>
+				<li>Kim SH, Hyun SH, Choung SY. Antioxidant effects of Cinnamomi  assia and Rhodiola rosea extracts in liver of diabetic mice. Biofactors 2006&semi;26(3): 209-219.</li>
+				<li>Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine. 3<sup>rd</sup> edition, volume 1. St. Louis (MI): Churchill Livingstone Elsevier&semi; 2006.</li>
+				<li>USDA 2025: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2025 January 21]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>Winston D, Maimes S. Adaptogens: Herbs for Strength, Stamina, and Stress Relief. Rochester (VT): Healing Arts Press, 2007.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Abidov M, Grachev S, Seifulla RD, Ziegenfuss TN. Extract of Rhodiola rosea radix reduces the level of C-reactive protein and creatinine kinase in the blood. Bulletin of Experimental Biology and Medicine 2004&semi;138:63-64.</li>
+				<li>Blomkvist J, Taube A, Larhammar D. Perspective on roseroot (Rhodiola rosea) studies. Planta Medica 2009&semi;75:1187-1190.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Bystritsky A, Kerwin L, Feusner JD. A pilot study of Rhodiola rosea (Rhodax&#174;) for Generalized Anxiety Disorder (GAD). The Journal of Alternative and Complementary Medicine 2008&semi;14:175-180.</li>
+				<li>Darbinyan V, Kteyan A, Panossian A, Gabrielian E, Wikman G, Wagner H. Rhodiola rosea in stress induced fatigue - a double blind cross-over study of a standardized extract SHR-5 with a repeated low-dose regimen on the mental performance of healthy physicians during night duty. Phytomedicine 2000&semi;7:365-371.</li>
+				<li>De Bock K, Eijnde BO, Ramaekers M, Hespel P. Acute Rhodiola Rosea Intake Can Improve Endurance Exercise Performance. International Journal of Sport Nutrition and Exercise Metabolism 2004&semi;14:298-307.</li>
+				<li>Edward D, Heufelder A, Zimmermann Z. Therapeutic Effects and Safety of Rhodiola rosea Extract WS&#174; 1375 in Subjects with Life-stress Symptoms - Results of an Open-label Study. Phytotherapy Research 2012&semi;26:1220-1225.</li>
+				<li>Hung SK, Perry R, Ernst E. The effectiveness and efficacy of Rhodiola rosea L: A systematic review of randomized clinical trials. Phytomedicine 2011&semi;18:235-244.</li>
+				<li>Ishaque S, Shamseer L, Bukutu C, Vohra S. Rhodiola rosea for physical and mental fatigue: a systematic review. Complementary & Alternative Medicine 2012&semi;12:70-78.</li>
+				<li>ITIS 2025: Nicolson D, Alexander S, Hodson A, Mitchell D, Orrell, T & Perez-Gelabert D. The Integrated Taxonomic Information System (version 2024-12-16). In Bánki O, Roskov Y, Döring M, Ower G, Hernández Robles DR, Plata Corredor CA, Stjernegaard Jeppesen T, Örn A, Pape T, Hobern D, Garnett S, Little H, DeWalt RE, Ma K, Miller J & Orrell T, Catalogue of Life (Version 2025-01-17). Catalogue of Life, Amsterdam, Netherlands&semi; 2025. [Accessed 2025 February 5]. Available from: https://doi.org/10.48580/dglq4-4ky</li>
+				<li>Noreen EE, Buckley JG, Lewis SL, Brandauer J, Stuempfle KJ. The effects of an acute dose of Rhodiola rosea on endurance exercise performance. Journal of Strength and Conditioning Association 2013&semi;27(3):839-847.</li>
+				<li>Panossian A, Wilkman G, Sarris J. Rosenroot (Rhodiola rosea): Traditional use, chemical composition, pharmacology and clinical efficacy. Phytomedicine 2010&semi;17:481-493.</li>
+				<li>Parisi A, Tranchita E. Duranti G, Ciminelli E, Quaranta I, Ceci R, Cerulli C, Borrione P, Sabatini S. Effects of chronic rhodiola rosea supplementation on sport performance and antioxidant capacity in trained male: preliminary results. The Journal of Sports Medicine and Physical Fitness 2010&semi;50:57-63.</li>
+				<li>Peschel W, Prieto JM, Karkour C, Williamson EM. Effect of provenance, plant part and processing on extract profiles from cultivated European Rhodiola rosea L. for medicinal use. Phytochemistry 2013&semi;86:92-102.</li>
+				<li>Shevtsov VA, Zholus BI, Shervarly VI, Vol&apos;skij VB, Korovin YP, Khristich MP, Roslyakova NA, Wikman G. A randomized trial of two different doses of a SHR-5 Rhodiola rosea extract versus placebo and control of capacity for mental work. Phytomedicine 2003&semi;10:95-105.</li>
+				<li>Skarpanska-Stejnborn A, Pilaczynska-Szczesniak L, Basta P, Deskur-Smielecka E. The influence of supplementation with Rhodiola rosea L. extract on selected redox parameters in professional rowers. International Journal of Sport Nutrition and Exercise Metabolism 2009&semi; 19(2): 186-199.</li>
+				<li>Spasov AA, Wikman GK, Mandrikow VB, Mironova IA, Neumoin VV. A double-blind, placebo-controlled pilot study of the stimulating and adaptogenic effect of Rhodiola rosea SHR-5 extract on the fatigue of students caused by stress during an examination period with a repeated low-dose regimen. Phytomedicine 2000&semi;7:85-89.</li>
+				<li>Walker TB, Altobelli SA, Caprihan A, Robergs RA. Failure of Rhodiola rosea to alter skeletan muscle phosphate kinetics in trained men. Metabolism 2007:56(8):1111-1117.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

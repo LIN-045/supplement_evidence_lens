@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=counter2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="c661127e-2b9f-4ea3-ad3e-208954376841"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+   <h1>
+    Counterirritants
+   </h1>
+
+   <div class="icon">
+    <a href="dbImages/mono_counterirritants_english.pdf" title="Counterirritants">
+     <img alt="Monograph: Counterirritants" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+     (PDF Version - 142 KB)
+    </a>
+   </div>
+   <p>
+    This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+   </p>
+   <p>
+    <strong>
+     Definition of Counterirritant:
+    </strong>
+   </p>
+   <p>
+    A topically applied substance that causes a superficial irritation of the skin and stimulates cutaneous sensory receptors, for the purpose of relieving pain in muscles or joints adjacent to the site of application (Oxford Reference 2024; US FDA 2023; Moore et al. 2010).
+   </p>
+   <p>
+    <strong>
+     Notes
+    </strong>
+   </p>
+   <ul>
+    <li>
+     Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+    </li>
+    <li>
+     The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+   </ul>
+   <p>
+    <strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong>
+   </p>
+   <ul>
+    <li>
+        Counterirritants cannot be combined with other ingredients if the conditions of use are not compatible between monographs (e.g., hydroquinone, medicated skin care, diaper rash products). Theses products may be submitted as a Class III application along with evidence to support their safety and efficacy.
+    </li>
+   </ul>
+   <section aria-labelledby="date">
+    <h2 id="date">
+     Date
+    </h2>
+    <p>
+     April 25, 2025
+    </p>
+   </section>
+   
+   <section aria-labelledby="properNameCommonNameSourceMaterial">
+    <h2 id="properNameCommonNameSourceMaterial">
+     Proper name(s), Common name(s), Source information
+    </h2>
+    <table class="subject">
+     <caption>
+      Table 1. Medicinal ingredients: Proper name(s), Common name(s), Source information
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="3" rowspan="1" scope="colgroup">
+        Source information<sup>1</sup>
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source ingredient(s)<sup>2</sup>
+       </th>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th>
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+
+      <tr>
+        <td rowspan="4"  scope="colgroup">
+        <ul>
+         <li>
+          3-Isothiocyanato-1-propene
+         </li>
+         <li>
+          Allyl isothiocyanate
+         </li>
+         <li>
+          Isothiocyanic acid allyl ester
+         </li>
+        </ul>
+       </td>
+       <td rowspan="4"  scope="colgroup">
+        Allyl isothiocyanate
+       </td>
+       <td>
+        Allyl isothiocyanate
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+       <td rowspan="1"  scope="colgroup">
+        N/A
+       </td>
+       <td rowspan="1"  scope="colgroup">
+        <i>Armoracia rusticana</i><sup>3</sup>
+       </td>
+       <td rowspan="1"  scope="colgroup">
+        Root
+       </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         <i>Brassica nigra</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Seed
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         <i>Brassica oleracea</i> var. <i>capitata</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Leaf
+        </td>
+      </tr>
+      </tr>
+
+
+      <tr>
+       <td rowspan="1"  scope="colgroup">
+        Ammonium hydroxide
+       </td>
+       <td>
+        <ul>
+         <li>
+          Ammonia water
+         </li>
+         <li>
+          Ammonium hydroxide
+         </li>
+        </ul>
+       </td>
+       <td>
+        Ammonium hydroxide
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+      </tr>
+
+      <tr>
+        <td rowspan="2"  scope="colgroup">
+        <ul>
+         <li>
+          (1R, 4R)-1,7,7-Trimethylbicyclo[2.2.1]heptan-2-one
+         </li>
+         <li>
+          d-Camphor
+         </li>
+        </ul>
+       </td>
+       <td rowspan="2"  scope="colgroup">
+        <ul>
+         <li>
+          (+)-Camphor
+         </li>
+         <li>
+          Camphor
+         </li>
+         <li>
+          d-Camphor
+         </li>
+         <li>
+          Natural Camphor
+         </li>
+        </ul>
+       </td>
+       <td>
+        d-Camphor
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Cinnamomum camphora</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         <ul>
+            <li>Whole plant</li>
+            <li>Wood</li>
+         </ul>
+        </td>
+        </tr>
+      </tr>
+
+      <tr>
+       <td>
+        <ul>
+         <li>
+          (1RS, 4RS)-1,7,7-Trimethylbicyclo[2.2.1]heptan-2-one
+         </li>
+         <li>
+          dl-Camphor
+         </li>
+        </ul>
+       </td>
+       <td>
+        <ul>
+         <li>
+          (+-)-Camphor
+         </li>
+         <li>
+          dl-Camphor
+         </li>
+         <li>
+          Racemic camphor
+         </li>
+        </ul>
+       </td>
+       <td>
+        dl-Camphor
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+      </tr>
+
+      <tr>
+        <td rowspan="3"  scope="colgroup">
+        <ul>
+         <li>
+          (6E)-N-[(4-Hydroxy-3-methoxyphenyl) methyl]-8-methyl-6-nonenamide
+         </li>
+         <li>
+          (E)-8-Methyl-N-vanillyl-6-nonenamide
+         </li>
+        </ul>
+       </td>
+       <td rowspan="3"  scope="colgroup">
+        Capsaicin
+       </td>
+       <td>
+        Capsaicin
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Capsicum annuum</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Fruit
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Capsicum frutescens</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Fruit
+        </td>
+       </tr>
+       </tr>
+
+      <tr>
+       <td>
+        <i>
+         Eucalyptus globulus
+        </i>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Eucalyptus essential oil
+         </li>
+         <li>
+          Eucalyptus Globulus Leaf essential oil
+         </li>
+        </ul>
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        <i>
+         Eucalyptus globulus<sup>4</sup>
+        </i>
+       </td>
+       <td>
+        Leaf
+       </td>
+      </tr>
+
+      <tr>
+        <td rowspan="4"  scope="colgroup">
+        <ul>
+         <li>
+          1,3,3-Trimethyl-2-oxabicyclo(2.2.2)octane
+         </li>
+         <li>
+          1,8 Cineole
+         </li>
+         <li>
+          1,8-Epoxy-p-menthane
+         </li>
+        </ul>
+       </td>
+       <td rowspan="4"  scope="colgroup">
+        <ul>
+         <li>
+          Cineole
+         </li>
+         <li>
+          Eucalyptol
+         </li>
+        </ul>
+       </td>
+       <td>
+        Eucalyptol
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Eucalyptus globulus</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Leaf
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Eucalyptus radiata</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Leaf
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Eucalyptus smithii</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Leaf
+        </td>
+       </tr>
+      </tr>
+
+      <tr>
+       <td>
+        <ul>
+         <li>
+          1H-Imidazole-4-ethanamine, dihydrochloride
+         </li>
+         <li>
+          2-Imidazol-4-ylethylamine dihydrochloride
+         </li>
+         <li>
+          4-(2-Aminoethyl)imidazole dihydrochloride
+         </li>
+        </ul>
+       </td>
+       <td>
+        Histamine dihydrochloride
+       </td>
+       <td>
+        Histamine dihydrochloride
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <ul>
+         <li>
+          (1R,2S,5R)-rel-5-Methyl-2-(1-methylethyl)-cyclohexanol
+         </li>
+         <li>
+          (1RS,2RS,5RS)-(±)-5-Methyl-2-(1-methylethyl)cyclohexanol
+         </li>
+         <li>
+          dl-Menthol
+         </li>
+        </ul>
+       </td>
+       <td>
+        <ul>
+         <li>
+          dl-Menthol
+         </li>
+         <li>
+          Racemic Menthol
+         </li>
+        </ul>
+       </td>
+       <td>
+        dl-Menthol
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+      </tr>
+
+      <tr>
+        <td rowspan="4"  scope="colgroup">
+        <ul>
+         <li>
+          (1R,2S,5R)-5-Methyl-2-(1-methylethyl)cyclohexanol
+         </li>
+         <li>
+          (1R,2S,5R)-5-Methyl-2-(propan-2-yl)cyclohexan-1-ol
+         </li>
+         <li>
+          l-Menthol
+         </li>
+        </ul>
+       </td>
+       <td rowspan="4"  scope="colgroup">
+        <ul>
+         <li>
+          l-Menthol
+         </li>
+         <li>
+          Menthol
+         </li>
+        </ul>
+       </td>
+       <td>
+        l-Menthol
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Mentha arvensis</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         <ul>
+            <li>Herb top flowering</li>
+            <li>Herb top</li>
+            <li>Leaf</li>
+         </ul>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Mentha canadensis</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Herb top
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Mentha x piperita</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         <ul>
+            <li>Herb top flowering</li>
+            <li>Leaf</li>
+         </ul>
+        </td>
+       </tr>
+      </tr>
+
+      <tr>
+       <td>
+        3-Pyridinecarboxylic acid methyl ester
+       </td>
+       <td>
+        Methyl nicotinate
+       </td>
+       <td>
+        Methyl nicotinate
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+      </tr>
+
+      <tr>
+       <td rowspan="3"  scope="colgroup">
+        <ul>
+         <li>
+          2-(Methoxycarbonyl)phenol
+         </li>
+         <li>
+          2-Hydroxybenzoic acid methyl ester
+         </li>
+         <li>
+          Methyl 2-hydroxybenzoate
+         </li>
+        </ul>
+       </td>
+       <td rowspan="3"  scope="colgroup">
+        Methyl salicylate
+       </td>
+       <td>
+        Methyl salicylate
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Betula lenta</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Twig bark
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Gaultheria procumbens</i><sup>3</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Leaf
+        </td>
+       </tr>
+      </tr>
+
+      <tr>
+       <td>
+        Turpentine essential oil<sup>5</sup>
+       </td>
+       <td>
+          Turpentine essential oil
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        <ul>
+         <li><i>Pinus ayacahuite</i></li>
+         <li><i>Pinus caribaea</i></li>
+         <li><i>Pinus contorta</i> var. <i>latifolia</i></li>
+         <li><i>Pinus elliottii</i></li>
+         <li><i>Pinus halepensis</i></li>
+         <li><i>Pinus kesiya</i></li>
+         <li><i>Pinus latteri</i></li>
+         <li><i>Pinus merkusii</i></li>
+         <li><i>Pinus palustris</i></li>
+         <li><i>Pinus pinaster</i></li>
+         <li><i>Pinus radiata</i></li>
+         <li><i>Pinus roxburghii</i></li>
+         <li><i>Pinus tabuliformis</i></li>
+         <li><i>Pinus teocote</i></li>
+         <li><i>Pinus yunnanensis</i></li>
+        </ul>
+       </td>
+       <td>
+        Gum oleoresin
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>References: NIH 2024; ChEBI 2023; RSC 2023; USP-NF 2023; Ph.Eur. 2013; BP 2012; CTFA 2008; Bruneton 1999.<br>
+    <sup>1</sup>All ingredients, except ammonium hydroxide, must be pharmacopoeial grade.<br>
+    <sup>2</sup>Synthetic<br>
+    <sup>3</sup>Isolate<br>
+    <sup>4</sup>Extract<br>
+    <sup>5</sup>Extract from one or more of the Pinus species listed in Table 1.</p>
+
+
+    <table class="subject">
+     <caption>
+      Table 2. Complementary ingredients (safety only): Proper name(s), Common name(s), Source information
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="3" rowspan="1" scope="colgroup">
+        Source information<sup>1</sup>
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source ingredient(s)<sup>2</sup>
+       </th>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th>
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        <i>
+         Syzygium aromaticum
+        </i>
+       </td>
+       <td>
+        Clove essential oil
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        <i>Syzygium aromaticum</i><sup>3</sup>
+       </td>
+       <td>
+        <ul>
+           <li>Flower bud</li>
+           <li>Leaf</li>
+           <li>Stem</li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="5"  scope="colgroup">
+        <ul>
+         <li>
+          1-Methyl-3-hydroxy-4-isopropylbenzene
+         </li>
+         <li>
+          5-Methyl-2-(1-methylethyl)phenol
+         </li>
+         <li>
+          5-Methyl-2-(propan-2-yl)phenol
+         </li>
+         <li>
+          5-Methyl-2-isopropyl-1-phenol
+         </li>
+        </ul>
+       </td>
+       <td rowspan="5"  scope="colgroup">
+        Thymol
+       </td>
+       <td>
+        Thymol
+       </td>
+       <td>
+        N/A
+       </td>
+       <td>
+        N/A
+       </td>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Ocimum basilicum</i><sup>4</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Leaf
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Origanum vulgare</i><sup>4</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         <ul>
+            <li>Herb top flowering</li>
+            <li>Leaf</li>
+         </ul>
+        </td>
+       </tr>
+      </tr>
+      <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Thymus vulgaris</i><sup>4</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Herb top flowering
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="1"  scope="colgroup">
+         N/A
+        </td>
+        <td rowspan="1"  scope="colgroup">
+        <i>Thymus zygis</i><sup>4</sup>
+        </td>
+        <td rowspan="1"  scope="colgroup">
+         Shoot
+        </td>
+       </tr>
+     </tbody>
+    </table>
+    <p>References: NIH 2024; ChEBI 2023; RSC 2023; USP-NF 2023; Ph.Eur. 2013; BP 2012; Bruneton 1999.<br>
+    <sup>1</sup>All ingredients must be pharmacopoeial grade.<br>
+    <sup>2</sup>Synthetic<br>
+    <sup>3</sup>Extract<br>
+    <sup>4</sup>Isolate</p>
+   </section>
+
+   <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+     Route of Administration
+    </h2>
+    <p>
+     Topical
+    </p>
+   </section>
+
+   <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+     Dosage Form(s)
+    </h2>
+    <p>
+     <em>
+      All products
+     </em>
+    </p>
+    <ul>
+      <li>Cream; Emulsion; Foam; Gel; Liniment; Liquid; Oil; Ointment; Salve; Solution; Spray; Spray, suspension; Suspension; Topical liquid; Wipe</li>
+    </ul>
+    <p>
+      <em>Products containing eucalyptus oil, eucalyptol, menthol and/or methyl salicylate as the only counterirritant ingredient(s)</em>
+    </p>
+    <ul>
+      <li>Patch; Plaster</li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+     Use(s) or Purpose(s)
+    </h2>
+    <p>
+     <em>
+      Products containing an ingredient in Table 1
+     </em>
+    </p>
+    <ul>
+    <li>
+      Temporarily relieves aches and pains/soreness of muscles and joints (associated with one or more of the following: simple backache, lumbago, strains and sprains (involving muscles, tendons, and/or ligaments), and arthritis) (US FDA 2023).
+    </li>
+    </ul>
+    <p>
+      Note that the statements “penetrating pain relief”, “warming pain relief” and/or “cooling pain relief” can be added as additional recommended uses to the Product Licence Application form. However, these statements cannot be used on their own on the product label and must be accompanied by the full recommended use statement above. The terms “cooling sensation” and “warming sensation” are considered non-therapeutic and can therefore be included on the label only, provided they are not misleading.
+    </p>
+   </section>
+
+   <section aria-labelledby="dose">
+    <h2 id="dose">
+     Dose(s)
+    </h2>
+    <h3>
+     Subpopulation(s)
+    </h3>
+    <p>
+     Children 2 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older.
+    </p>
+    <h3>
+     Quantity(ies)
+    </h3>
+    <table class="subject">
+     <caption>
+      Table 3. Medicinal Ingredient Doses
+     </caption>
+     <thead>
+      <tr>
+       <th scope="col">
+        Medicinal Ingredients
+       </th>
+       <th scope="col">
+        Doses<sup>1</sup>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        Allyl isothiocyanate
+       </td>
+       <td>
+        0.5 - 5.0 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Ammonium hydroxide
+       </td>
+       <td>
+        1.0 - 2.5 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        dl-Camphor and/or d-Camphor
+       </td>
+       <td>
+        3 - 11 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Capsaicin
+       </td>
+       <td>
+        0.025 - 0.25 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Eucalyptus essential oil
+       </td>
+       <td>
+        0.5 - 25.0 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Eucalyptol
+       </td>
+       <td>
+        0.5 - 20.0 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Histamine dihydrochloride
+       </td>
+       <td>
+        0.025 - 0.1 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        dl-Menthol and/or l-Menthol
+       </td>
+       <td>
+        1.25 - 16 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Methyl nicotinate
+       </td>
+       <td>
+        0.25 - 1.0 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Methyl salicylate
+       </td>
+       <td>
+        10 - 30 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Turpentine essential oil
+       </td>
+       <td>
+        6 - 50 %
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+      <sup>1</sup>Quantities are expressed in percentage volume by volume (% v/v), percentage weight by volume (% w/v) or percentage weight by weight (% w/w). References: JC 2024; US FDA 2023; AU TGA 2007; Janjua et al. 2004; ESCOP 2003; APhA 2002; WHO 2002; Blumenthal et al. 2000; CPhA 1996; Mathias et al. 1995.
+    </p>
+    <table class="subject">
+     <caption>
+      Table 4. Complementary Ingredients Doses (Safety only)
+     </caption>
+     <thead>
+      <tr>
+       <th scope="col">
+        Complementary Ingredients
+       </th>
+       <th scope="col">
+        Doses<sup>1</sup>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        Clove essential oil
+       </td>
+       <td>
+        0.1 - 2.0 %
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Thymol
+       </td>
+       <td>
+        0.1 - 2.0 %
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+      <sup>1</sup>Quantities are expressed in percentage volume by volume (% v/v), percentage weight by volume (% w/v) or percentage weight by weight (% w/w). Reference: US FDA 1979.
+    </p>
+    <h3>
+     Permitted combinations
+    </h3>
+    <ul>
+     <li>
+      Clove essential oil and thymol must be used in combinations with other medicinal ingredients in Table 1, as they cannot support the efficacy of the product on their own (US FDA 2023).
+     </li>
+     <li>
+      Any ingredient from Table 5 can be combined with other ingredients from the table provided that the combination contains only one ingredient from each group (except for group B1) and that each ingredient is within the quantities given in Tables 3 and 4 (US FDA 2023).
+     </li>
+     <li>
+      Group B1 ingredients may be used in combination with each other, and this may be combined with any ingredients from the table provided that combination contains only one ingredient from each of the other groups.
+     </li>
+    </ul>
+    <table class="subject">
+     <caption>
+      Table 5. Permitted combinations<sup><a style="text-decoration: none;" href="#tb_5_ft_1">1</a></sup>
+     </caption>
+     <thead>
+      <tr>
+       <th scope="col">
+        Groups<sup><a style="text-decoration: none;" href="#tb_5_ft_2">2</a></sup>
+       </th>
+       <th scope="col">
+        Ingredients
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        A
+       </td>
+       <td>
+        Allyl isothiocyanate, ammonium hydroxide, methyl salicylate, turpentine essential oil
+       </td>
+      </tr>
+      <tr>
+       <td>
+        B1
+       </td>
+       <td>
+        Camphor, menthol
+       </td>
+      </tr>
+      <tr>
+       <td>
+        B2
+       </td>
+       <td>
+        Eucalyptus essential oil, eucalyptol
+       </td>
+      </tr>
+      <tr>
+       <td>
+        C
+       </td>
+       <td>
+        Histamine dihydrochloride, methyl nicotinate
+       </td>
+      </tr>
+      <tr>
+       <td>
+        D
+       </td>
+       <td>
+        Capsaicin
+       </td>
+      </tr>
+      <tr>
+       <td>
+        E
+       </td>
+       <td>
+        Thymol, clove essential oil
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup id="tb_5_ft_1">1</sup>See Appendix 1 for grouping rationale.<br/>
+     <sup id="tb_5_ft_2">2</sup>Permitted combinations for all groups are supported by US FDA 2023, except for Group E which is supported by RSC 2023, Sweetman 2017, and Leung and Foster 2003.</p>
+    <h3>
+     Direction(s) for use
+    </h3>
+    <p>
+     <em>
+      All products
+     </em>
+    </p>
+    <ul>
+     <li>
+      Do not apply to wounds or damaged skin (US FDA 2023).
+     </li>
+     <li>
+      Do not tightly bandage (US FDA 2023).
+     </li>
+     <li>
+      Do not apply with external heat, such as an electric heating pad, as this may result in excessive skin irritation or skin burn (Pray 2006; APhA 2002).
+     </li>
+     <li>
+      Supervise children when they use this product (Ragucci et al. 2007; Love et al. 2004).
+     </li>
+    </ul>
+    <p>
+     <em>
+      Products in cream, emulsion, foam, gel, liniment, liquid, oil, ointment, salve, solution, suspension, topical liquid or wipe dosage form
+     </em>
+    </p>
+    <ul>
+      <li>Apply thinly and evenly to affected area(s), up to 4 times per day. Rub and/or massage into skin until solution vanishes (US FDA 2023).</li>
+    </ul>
+    <p>
+     <em>
+      Products in plaster or patch dosage form
+     </em>
+    </p>
+    <ul>
+      <li>Apply 1 plaster/patch to affected area(s), up to 3 times per day. Do not leave on skin for more than a total of 8 hours per day (Higashi et al. 2010).</li>
+    </ul>
+    <p>
+     <em>
+      Products in spray or spray, suspension dosage form
+     </em>
+    </p>
+    <ul>
+      <li>Apply thinly and evenly to affected area(s), up to 4 times per day. Rub and/or massage into skin until solution vanishes. Avoid inhaling or exposing others to spray (US FDA 2023; APhA 2002).</li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+     Duration(s) of Use
+    </h2>
+    <p>
+     <em>
+      Products containing capsaicin as a single medicinal ingredient
+     </em>
+    </p>
+    <ul>
+     <li>
+      May take 1-2 weeks to produce beneficial effects.
+     </li>
+     <li>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 weeks (Sweetman 2017; CPS 2008; APhA 2002; CPhA 1996).
+     </li>
+    </ul>
+    <p>
+     <em>
+      All other products (including multiple ingredient products containing capsaicin)
+     </em>
+    </p>
+    <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 7 days (US FDA 2023).
+    </p>
+   </section>
+
+   <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+     Risk Information
+    </h2>
+    <h3>
+     Caution(s) and warning(s)
+    </h3>
+    <p>
+     <em>
+      All products
+     </em>
+    </p>
+    <ul>
+     <li>
+      For external use only (US FDA 2023).
+     </li>
+     <li>
+      When using this product avoid contact with the eyes and mucous membranes. If contact occurs, rinse thoroughly with water (US FDA 2023).
+     </li>
+     <li>
+      Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist, worsen, or re-occur within a few days (US FDA 2023; CPhA 1996).
+     </li>
+     <li>
+      Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away (CPS 2008; HC 2004).
+     </li>
+    </ul>
+    <p>
+     <em>
+      Products containing camphor, menthol, and/or methyl salicylate
+     </em>
+    </p>
+    <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Brinker 2010).
+    </p>
+    <p>
+     <em>
+      Products containing methyl salicylate and/or methyl nicotinate
+     </em>
+    </p>
+    <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Sweetman 2017; APhA 2002).
+    </p>
+    <p>
+     <em>
+      Products containing methyl nicotinate
+     </em>
+    </p>
+    <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications or health products that cause dilation of blood vessels (APhA 2002).
+    </p>
+    <h3>
+     Contraindication(s)
+    </h3>
+    <p>
+     <em>Products containing more than 0.5% of clove essential oil</em>
+    </p>
+    <p>Do not use if you are prone to allergic reactions, eczema or unusual skin reactions (Tisserand and Young 2014). </p>
+    <h3>
+     Known adverse reaction(s)
+    </h3>
+    <p>
+     <em>
+      All products
+     </em>
+    </p>
+    <p>
+     Stop use if hypersensitivity/allergy, rashes and/or burning discomfort occur (Sweetman 2017; Zhang et al. 2008; Hoffman 2003; APhA 2002; McCleane 2000).
+    </p>
+    <p>
+     <em>
+      Products containing capsaicin
+     </em>
+    </p>
+    <p>
+     Stop use if headache and/or redness occur (Zhang et al. 2008; APhA 2002; McCleane 2000).
+    </p>
+    <p>
+     <em>
+      Products containing menthol
+     </em>
+    </p>
+    <p>
+      Stop use and get medical help right away if you experience pain, swelling or blistering, as rare but serious burns can occur (HC 2017).
+    </p>
+   </section>
+   <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+     Non-medicinal ingredients
+    </h2>
+    <ul>
+    <li>
+      Ingredients must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in that database and in the current Cosmetic Ingredient Hotlist, when relevant.
+    </li>
+    <li>
+      As per section 1.5 of the Pathway for licensing natural health products making modern health claims guidance document, non-medicinal ingredients should not contribute to the pharmacological effect of a product. Thus, products supported by this monograph cannot include as a non-medicinal ingredient any plant extracts or essential oils containing the constituents allyl isothiocyanate, camphor, capsaicin, eucalyptol, menthol, or methyl salicylate, including (but not limited to) extracts or essential oils from <em>Armoracia rusticana</em>, <em>Betula lenta</em>, <em>Brassica nigra</em>, <em>Brassica oleracea</em> var. <em>capitata</em>, <em>Capsicum annum</em>, <em>Capsicum frutescens</em>, <em>Cinnamomum camphora</em>, <em>Eucalyptus globulus</em>, <em>Eucalyptus radiata</em>, <em>Eucalyptus smithii</em>, <em>Gaultheria procumbens Mentha arvensis</em>, <em>Mentha canadensis</em>, or <em>Mentha x piperita</em>.
+    </li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+     Storage conditions
+    </h2>
+    <p>
+     Must be established in accordance with the requirements described in the <i>Natural Health Products Regulations</i>.
+    </p>
+    <p><em>Information for industry (not for labelling)</em></p>
+    <ul>
+      <li>Store in airtight, light-resistant container at room temperature (USP-NF 2023; Ph.Eur. 2013; BP 2012).</li>
+      <li>To mitigate the potential risk to the health of children, child-resistant packaging/containers should be used (AU TGA 2017).</li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="specifications">
+    <h2 id="specifications">
+     Specifications
+    </h2>
+    <ul>
+     <li>
+      The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+     </li>
+     <li>
+      The medicinal ingredient must comply with the requirements outlined in the NHPID.
+     </li>
+     <li>
+      The medicinal ingredient must be of pharmacopoeial grade.
+     </li>
+    </ul>
+   </section>
+   
+   <h2>Example of Product Facts:</h2>
+   <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+   <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/COUNTERIRRITANTS_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+   <section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">
+     References Cited
+    </h2>
+    <ul>
+     <li>
+      APhA 2002: Berardi RR, DeSimone EM, Newton GGD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An interactive approach to self-care. 13
+      <sup>
+       th
+      </sup>
+      edition. Washington (DC): American Pharmaceutical Association; 2002.
+     </li>
+     <li>
+      AU TGA 2017: Australia Therapeutic Goods Administration. Therapeutic Goods Order No. 95 - Child-resistant packaging requirements for medicines 2017 (TGO 95) - F2017L01577. [Accessed 2024 September 5]. Available from: https://www.legislation.gov.au/F2017L01577/latest/text
+     </li>
+     <li>
+      AU TGA 2007: Australian Therapeutic Goods Administration. Substances that may be used in Listed medicines in Australia. 12 December 2007. [Accessed 2024 September 5]. Available from: https://www.tga.gov.au/sites/default/files/cm-listed-substances_0.pdf
+     </li>
+     <li>
+      Blumenthal M, Goldberg A, Brinckmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000.
+     </li>
+     <li>
+      BP 2012: British Pharmacopoeia, 2012. London (GB): The Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA).
+     </li>
+     <li>
+      Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications; 2010.
+     </li>
+     <li>
+      Bruneton J. Pharmacognosy: Phytochemistry Medicinal Plants. 2nd edition. Paris (FR): Lavoisier Publishing; 1999.
+     </li>
+     <li>
+      ChEBI 2023: Chemical entities of biological interest: (-)-menthol (CHEBI:15409). Last modified 16 November 2023. Hinxton (GB): ChEBI is a database of the European Bioinformatics Institute. [Accessed 2024 September 5]. Available from: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15409
+     </li>
+     <li>
+      CPhA 1996: Carruthers-Czyzewski P, editor. Non-Prescription Drug Reference for Health Professionals. First Edition. Ottawa (ON): Canadian Pharmaceutical Association; 1996.
+     </li>
+     <li>
+      CPS 2008: Repchinksy C, Welbanks L, Bhalla A, Fortin K, Jarvis B, Jovaisas B, Acharya S. Compendium of Pharmaceutical Specialties. Ottawa (ON): Canadian Pharmacists Association; 2008.
+     </li>
+     <li>
+      CSE 2006: Council of Science Editors, Style Manual Committee. Scientific Style and Format: The CSE Manual for Authors, Editors, and Publishers. Seventh edition. Reston (VA): The Council; 2006.
+     </li>
+     <li>
+      CTFA 2008: Gottschalck TE, Bailey JE, editors. International Cosmetic Ingredient Dictionary and Handbook. 12th edition. Washington (DC): The Cosmetic, Toiletry and Fragrance Association; 2008.
+     </li>
+     <li>
+      ESCOP 2003: European Scientific Cooperative on Phytotherapy. The Scientific Foundation for Herbal Medicinal Products. 2
+      <sup>
+       nd
+      </sup>
+      edition. Exeter (GB): ESCOP 2003.
+     </li>
+     <li>
+      HC 2017: Health Canada. Recalls and safety alerts: Health Canada safety review finds risk of serious skin burns with over-the-counter topical pain relievers containing menthol. Ottawa (ON): Health Canada; February 2017. [Accessed 2024 September 5]. Available from: http://healthycanadians.gc.ca/recall-alert-rappel-avis/hc-sc/2017/62178a-eng.php
+     </li>
+     <li>
+      HC 2004: Health Canada. It's Your Health: Safe use of Health Products Containing Camphor and/or Eucalyptus Oils. [Internet]. Ottawa (ON): Health Canada; October 2004. [Accessed 2024 September 5]. Available from: https://publications.gc.ca/collections/collection_2008/hc-sc/H50-3-190-2005E.pdf
+     </li>
+     <li>
+      Higashi Y, Kiuchi T, Furuta K. Efficacy and safety profile of a topical methyl salicylate and menthol patch in adult patients with mild to moderate muscle strain: A randomized, double- blind, parallel-group, placebo-controlled, multicenter study. Clinical Therapeutics 2010;32(1):34-43.
+     </li>
+     <li>
+      Hoffman D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press; 2003.
+     </li>
+     <li>
+      Janjua NR, Mogensen B, Andersson AM, Petersen JH, Henriksen M, Skakkebaek NE, Wulf HC. Systemic absorption of the sunscreens benzophenone-3, octyl-methoxycinnamate, and 3-(4- methyl-benzylidene) camphor after whole-body topical application and reproductive hormone levels in humans. The Journal of Investigative Dermatology 2004;123:57-61.
+     </li>
+     <li>
+      JC 2024: Justice Canada.
+      <em>
+       Food and Drug Regulations
+      </em>
+      (C.R.C., c. 870). Ottawa (ON): Justice Canada. [Accessed 2024 September 5]. Available from: http://laws- lois.justice.gc.ca/eng/regulations/C.R.C.,_c._870
+     </li>
+     <li>
+      Leung AY, Foster S. Encyclopedia of Common Natural Ingredients Used in Food, Drugs and Cosmetics. Second edition. Hoboken (NJ): John Wiley &amp; Sons, Inc; 2003.
+     </li>
+     <li>
+      Love JN, Sammon M, Smereck J. Are one or two dangerous? Camphor exposure in toddlers. The Journal of Emergency Medicine 2004;27(1):49-54.
+     </li>
+     <li>
+      Mathias BJ, Dillingham TR, Zeigler DN, Chang AS, Belandres PV. Topical capsaicin for chronic neck pain. American Journal of Physical Medicine and Rehabilitation 1995;74(1):40-44.
+     </li>
+     <li>
+      McCleane G. Topical application of doxepin hydrochloride, capsaicin and a combination of both produces analgesia in chronic human neuropathic pain: a randomized, double-blind, placebo- controlled study. British Journal of Clinical Pharmacology 2000;49:574-579.
+     </li>
+     <li>
+      Moore RA, Derry S, McQuay HJ. Topical analgesics for acute and chronic pain in adults. Cochrane Database of Systematic Reviews 2010;7:CD008609.
+     </li>
+     <li>
+      NIH 2024: National Institutes of Health. PubChem. Bethesda (MD): National Library of Medicine,  US Department of Health & Human Services. [Accessed 2024 September 5]. Available from: https://pubchem.ncbi.nlm.nih.gov/
+     </li>
+     <li>
+      Oxford Reference 2024: Oxford university Press. [Accessed 2024 September 5]. Available from: https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095642990#:~:text=n.,%E2%80%94counterirritation%20n.
+     </li>
+     <li>
+      Ph.Eur. 2013: European Pharmacopoeia 7th Edition. 2013. European Directorate for the Quality of Medicines &amp; HealthCare. Strasbourg (FR): Council of Europe.
+     </li>
+     <li>
+      Pray WS. Non-Prescription Product Therapeutics. 2nd edition. New York (NY): Lippincott Williams &amp; Wilkins; 2006.
+     </li>
+     <li>
+      Ragucci KR, Trangmar PH, Bigby JG, Detar TD. Camphor ingestion in a 10-year-old male. Southern Medical Journal 2007;100(2):204-207.
+     </li>
+     <li>
+      RSC 2023: Royal Society of Chemistry. The Merck Index Online. [Accessed December 13, 2023]. Available from https://merckindex.rsc.org/.
+     </li>
+     <li>
+      Sweetman SC, editor. Martindale: The Complete Drug Reference, 39th edition. Grayslake (IL): Pharmaceutical Press; 2017.
+     </li>
+     <li>
+      Tisserand R, Young R. Essential oil safety: A guide for health care professionals, 2nd edition. Edinburgh (GB): Churchill Livingstone; 2014.
+     </li>
+     <li>
+      US FDA 2023: United States Food and Drug Administration. Over-the-Counter Monograph M017: External Analgesics Drug Products for Over-the-Counter Human Use. Washington (DC): U.S. Food and Drug Administration, Department of Health and Human Services. [Accessed 2024 September 5]. Available from: https://dps-admin.fda.gov/omuf/sites/omuf/files/primary-documents/2023-05/Final%20Administrative%20Order%20OTC000033_M017-External%20Analgesic%20Drug%20Products%20for%20OTC%20Human%20Use.pdf
+     </li>
+     <li>
+      US FDA 1979: The USA Department of Health and Human Services: Food and Drug Administration. 21 CHR Part 348. External analgesics drug products for over-the-counter human use: establishment of a monograph and notice of proposed rulemaking, 1979. [Accessed 2017 January 30]. Available from : https://www.fda.gov/drugs/historical-status-otc-rulemakings/rulemaking-history-otc-external-analgesic-drug-products
+     </li>
+     <li>
+      USP-NF 2023:  United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.; 2023.
+     </li>
+     <li>
+      WHO 2002: WHO Monographs on Selected Medicinal Plants - Volume 2. Geneva (CH): WHO Library Cataloguing-in-Publication Data; © World Health Organization 2002. [Accessed 2024 September 5] Available from: https://iris.who.int/bitstream/handle/10665/42052/9241545372.pdf
+     </li>
+     <li>
+      Zhang W, Moskowitz, RW, Nuki G, Abramson S, Altman RD, Arden N, Bierma-Zeinstra S, Brandt KD, Croft P, Doherty M, Dougados M, Hochberg M, Hunter DJ, Kwoh K, Lohmander LS, Tugwell P. OARSI recommendations for the management of hip and knee osteoarthritis, Part II: OARSI evidence--based, expert consensus guidelines. Osteoarthritis and Cartilage 2008;16:137-162.
+     </li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="referencesReviewed">
+    <h2 id="referencesReviewed">
+     References Reviewed
+    </h2>
+    <ul>
+     <li>
+      Altman RD. Practical considerations for the pharmacologic management of osteoarthritis. The American Journal of Managed Care 2009;15(8):S236-S244.
+     </li>
+     <li>
+      American College of Rheumatology. Recommendations for the medical management of osteoarthritis of the hip and knee. Arthritis and Rheumatism 2000;43(9):1905-1915.
+     </li>
+     <li>
+      Arendt-Nielsen L, Svensson P, Sessle BJ, Cairn BE, Wang K. Interactions between glutamate and capsaicin in inducing muscle pain and sensitization in humans. European Journal of Pain 2008;12(5):661-670.
+     </li>
+     <li>
+      Benfeldt E, Serup J, Menne T. Effect of barrier perturbation on cutaneous salicylic acid penetration in human skin: in vivo pharmacokinetics using microdialysis and non-invasive quantification of barrier function. British Journal of Dermatology 1999;140:739-748.
+     </li>
+     <li>
+      Bernstein JE, Bickers DR, Dahl MV, Roshal JY. Treatment of chronic postherpetic neuralgia with topical capsaicin. Journal of the American Academy of Dermatology 1987;17:93-96.
+     </li>
+     <li>
+      Bernstein JE, Korman NJ, Bickers DR, Dahl MV, Millikan LE. Topical capsaicin treatment of chronic postherpetic neuralgia. Journal of the American Academy of Dermatology 1987;21:265- 270.
+     </li>
+     <li>
+      Cal K. Skin penetration of terpenes from essential oils and topical vehicles. Planta Medica 2006;72:311-316.
+     </li>
+     <li>
+      Cavanaugh EJ, Simkin D, Kim D. Activation of transient receptor potential A1 channels by mustard oil, tetrahydrocannabinol and Ca+2 reveals different functional channel states. Neuroscience 2008;154:1467-1476.
+     </li>
+     <li>
+      Chad DA, Aronin N, Lundstrom R, McKeon P, Ross D, Molitch M, Schipper HM, Stall G, Dyess E, Tarsy D. Does capsaicin relieve the pain of diabetic neuropathy? Pain 1990;42:387- 388.
+     </li>
+     <li>
+      Chan TYK. Life-threatening retroperitoneal bleeding due to warfarin-drug interactions. Pharmacoepidemiology and Drug Safety 2009;18:420-422.
+     </li>
+     <li>
+      Cohen M, Wolfe R, Mai T, Lewis D. A randomized, double blind, placebo controlled trial of a topical cream containing glucosamine sulfate chondroitin sulfate, and camphor for osteoarthritis of the knee. The Journal of Rheumatology 2003;30(3):523-528.
+     </li>
+     <li>
+      Committee on Drugs. Camphor: Who needs it? Pediatrics 1978;62(3):404-406.
+     </li>
+     <li>
+      Committee on Drugs. Camphor revisited: Focus on toxicity. Pediatrics 1994;94(1):127-128.
+     </li>
+     <li>
+      Cross SE, Anderson C, Roberts MS. Topical penetration of commercial salicylate esters and salts using human isolated skin and clinical microdialysis studies. British Journal of Clinical Pharmacology 1998;46:49-35.
+     </li>
+     <li>
+      Deal CL, Schnitzer TJ, Lipstein E, Seibold JR, Stevens RM, Levy MD, Albert D, Renold F. Treatment of arthritis with topical capsaicin: a double-blind trial. Clinical Therapeutics 1991;13(3):383-395.
+     </li>
+     <li>
+      Davis JE. Are one or two dangerous? Methyl salicylate exposure in toddlers. The Journal of Emergency Medicine 2007;32(1):63-69.
+     </li>
+     <li>
+      Elad S, Ackerstein A, Bitan M, Shapira MY, Resnick I, Gesundheit B, Cohen Y, Diss O, Barak D, Dray L, Or R. A prospective, double-blind phase II study evaluating the safety and efficacy of a topical histamine gel for the prophylaxis of oral mucositis in patients post hematopoietic stem cell transplantation. Bone Marrow Transplantation 2006;37:757-762.
+     </li>
+     <li>
+      Gibson DE, Moore GP, Pfaff JA. Camphor ingestion. American Journal of Emergency Medicine 1989;7(1):41-43.
+     </li>
+     <li>
+      Gonzalez N, Sumano H. Design of two liquid ibuprofen-poloxamer-limonene or Menthol preparations for dermal administration. Drug Delivery 2007;14:287-293.
+     </li>
+     <li>
+      Goldin E. Topical capsaicin-a novel and effective treatment for idiopathic intractable pruritus ani: a randomised, placebo controlled, crossover study. Gut: An International Journal of Gastroenterology and Hepatology 2003;52:1323-1326.
+     </li>
+     <li>
+      Gottrup H, Hansen PO, Arendt-Nielsen L, Jensen TS. Differentail effects of systemically administered katmine and lidocaine on dynamic and static hyperalgesia induced by intradermal capsaicin in humans. British Journal of Anaesthesia 2000;84(2):155-162.
+     </li>
+     <li>
+      Green BG. Sensory characteristics of camphor. The Journal of Investigative Dermatology 1990;94(5):662-666.
+     </li>
+     <li>
+      Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].
+     </li>
+     <li>
+      Grieve M. A Modern Herbal, Volume 2. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].
+     </li>
+     <li>
+      Guilbert J, Flamant C, Hallalel F, Doummar D, Frata A, Renolleau S. Anti-flatulence treatment and status epilepticus: a case of camphor intoxication. Emergency Medical Journal 2007;24:859- 860.
+     </li>
+     <li>
+      Guppy L, Lowes NR, Walker MJA. Effect of a proprietary rubefacient "Tiger Balm" on rabbit skin. Food and Chemical Toxicology 1982;20:89-93.
+     </li>
+     <li>
+      Guy RH, Tur E, Bjerke S, Maibach HI. Are there age and racial differences to methyl nicotinate- induced vasodilatation in human skin? Journal of American Academic Dermatology 1985;12:1001-1006.
+     </li>
+     <li>
+      Hautkappe M, Roizen MF, Toledano A, Roth S, Jeffries JA, Osterme AM. Review of the effectiveness of capsaicin for painful cutaneous disorders and neural dysfunction. The Clinical Journal of Pain 1998;14(2):97-106.
+     </li>
+     <li>
+      Hagedorn-Leweke U, Bernhard CL. Absorption of sunscreens and other compounds through human skin in vivo: Derivation of a method to predict maximum fluxes 1995;12(9):1354-1360.
+     </li>
+     <li>
+      Hatem S, Attal N, Willer JC, Bouhassira D. Psychophysical study of the effects of topical application of menthol in healthy volunteers. Pain 2006;122:190-196.
+     </li>
+     <li>
+      Ichiyama RM, Ragan BG, Bell GW, Iawmoto GA. Effects of topical analgesics on the pressor response evoked by muscle afferents. Medicine &amp; Science in Sports &amp; Exercise 2002;34(9):1440-1445.
+     </li>
+     <li>
+      Jordan KM, Arden NK, Doherty M, Bannwarth B, Bijlsma JWJ, Dieppe P, Gunther K, Hauselmann H, Herrero-Beaumont G, Kaklamanis P, Lohmander S, Leeb B, Lequesne M, Mazieres B, Martin-Mola E, Pavelka K, Pendleton A, Punzi L, Serni U, Swoboda B, Verbruggen G, Zimmerman-Gorska I, Dougados M. EULAR Recommendations 2003: an evidence based approach to the management of knee osteoarthritis: Report of a task force of the standing committee for international clinical studies including therapeutic trials (ESCISIT). Annals of the Rheumatic Diseases: The EULAR Journal 2003;62(12):1145-1155.
+     </li>
+     <li>
+      Jordt SE, Bautista DM, Chuang HH, McKenny DD, Zygmunt PM, Hogestatt ED, Meng ID, Julius D. Mustard oils and cannabinoids excite sensory nerve fibres through the TRP channel ANKTM1. Nature 2004;427:260-265.
+     </li>
+     <li>
+      Koppert W, Zeck S, Blunk JA, Schmelz M, Likar R, Sittl R. The effects of intradermal fentanyl and ketamine on capsaicin-induced secondary hyperalgesia and flare reaction. Anesthesia &amp; Analgesia 1999;89:1521-1527.
+     </li>
+     <li>
+      Lee KKC, Chan TYK, Lee CW. Improvements are needed in the existing packaging of medicated oils containing methyl salicylate. Journal of Clinical Pharmacy and Therapeutics 1997;22:279-281.
+     </li>
+     <li>
+      Liebelt EL, Shannon MW. Small doses, big problems: A selected review of highly toxic common medications. Pediatric Emergency Care 1993;9(5):292-297.
+     </li>
+     <li>
+      Lutgendorf S, Logan H, Kirchner L, Rothrock N, Svengalis S, Iverson K, Lubaroff D. Effects of relaxation and stress on the capsaicin-induced local inflammatory response. Psychosomatic Medicine 2000;62:524-534.
+     </li>
+     <li>
+      Lysy J, Sistiery-Ittah M, Israelit Y, Shmueli A, Strauss-Liviatan N, Mindrul V, Keret D, Martin
+     </li>
+     <li>
+      D. Valdez J. Borne J, Mayersohn M. Dermal absorption of camphor, menthol, and methyl salicylate in humans. The Journal of Clinical Pharmacology 2004;44:1151-1157.
+     </li>
+     <li>
+      Mascie-Taylor BH, Widdop B, Davison AM. Camphor intoxication treated by charcoal haemoperfusion. Postgraduate Medical Journal 1981;57:725-726.
+     </li>
+     <li>
+      McCarthy GM, McCarthy DJ. Effect of topical capsaicin in the therapy of painful osteoarthritis of the hands. Journal of Rheumatology 1992;19(4):604-607.
+     </li>
+     <li>
+      McCleverty D, Lyons R, Henry B. Microdialysis sampling and the clinical determination of topical dermal bioequivalence. International Journal of Pharmaceutics 2006;308:1-7.
+     </li>
+     <li>
+      Morteza- Semnani K, Saeedi M, Hamidian M. Anti-inflammatory and analgesic activity of the topical preparation of Glaucium grandiflorum. Fitoterapia 2003;75:123-129.
+     </li>
+     <li>
+      Nortier YLM, Van de Haven JA, Koks CHW, Beijnen JH. Preparation and stability testing of a hydrogel for topical analgesia. Pharmacy World and Science 1995;17(6):214-217.
+     </li>
+     <li>
+      Prashar A, Locke IC, Evans CS. Cytotoxicity of clove (Syzygium aromaticum) oil and its major components to human skin cells. Cell Proliferation 2006;39:241-248.
+     </li>
+     <li>
+      Serra J, Campero M, Ochoa J. Flare and hyperalgesia after intradermal capsaicin injection in human skin. Journal of Neurophysiology 1998;80:2801-2810.
+     </li>
+     <li>
+      Scheffler NM, Sheitel PL, Lipton MN. Treatment of painful diabetic neuropathy with capsaicin 0.075%. Journal of the American Podiatric Medical Association 1991;81(6):288-293.
+     </li>
+     <li>
+      Schenone S, Bruno O, Ranise A, Bondavalli F, Filippelli W, Falcone G, Rinaldi B. O-[2- Hydroxy-3-(dialkylamino)propyl]ethers of (_)-1,7,7-trimethyl bicyclo[2.2.1]heptan-2-one oxime (camphor oxime) with analgesic and antiarrhythmic activities. Il Farmaco 2000;55:495-498.
+     </li>
+     <li>
+      Soeborg T, Basse LH, Halling-Sorenson B. Risk assessment of topically applied products. Toxicology 2007;23:140-148.
+     </li>
+     <li>
+      Tandan R, Lewis GA, Krusinski PB, Badger GB, Fries TJ. Topical capsaicin in painful diabetic neuropathy. Diabetes Care 1992;15(1):8-14.
+     </li>
+     <li>
+      Theosadakis J, Grove ML. A randomized, double blind, placebo controlled trial of a topical cream containing Glucosamine Sulfate, Chondroitin Sulfate, and Camphor for osteoarthritis of the knee. The Journal of Rheumatology 2004;31(4):826-827.
+     </li>
+     <li>
+      United States Food and Drug Administration. New Drugs: Camphorated Oil Drug Products for Human Use. Federal Register, Volume 47, Number 183, September 21, 1982, Rules and Regulations. Rockville (MD): United States Department of Health.
+     </li>
+     <li>
+      Weiss J, Catalano P. Camphorated oil intoxication during pregnancy. Pediatrics 1973;52:713- 714.
+     </li>
+     <li>
+      Williamson EM. Potter's Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (GB): The C.W. Daniel Company Limited; 2003.
+     </li>
+     <li>
+      Wolowich WR, Hadley CM, Kelley MT, Walsom PD, Casavant MJ. Plasma salicylate from methyl salicylate cream compared to oil of wintergreen. Journal of Toxicology 2003;41(4):355- 358.
+     </li>
+     <li>
+      Zhang WY, Li Wan Po A. The effectiveness of topically applied capsaicin. European Journal of Clinical Pharmacology 1994;46:517-522.
+     </li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="appendix1">
+    <h2 id="appendix1">
+     Appendix 1
+    </h2>
+    <table class="subject">
+     <caption>
+      Table 7. Groupings based on effects/modes of action (US FDA 1983; US FDA 1979)
+     </caption>
+     <thead>
+      <tr>
+       <th scope="col">
+        Groups
+       </th>
+       <th scope="col">
+        Ingredients
+       </th>
+       <th scope="col">
+        Effects/Modes of action<sup>1</sup>
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        A
+       </td>
+       <td>
+        Allyl isothiocyanate, ammonium hydroxide, methyl salicylate, turpentine essential oil
+       </td>
+       <td>
+        Redness, irritation; relatively more potent than other commonly used counterirritants
+       </td>
+      </tr>
+      <tr>
+       <td>
+        B1
+       </td>
+       <td>
+        Camphor, menthol
+       </td>
+       <td>
+        Cooling/warmth/tingling sensation, organoleptic properties
+       </td>
+      </tr>
+      <tr>
+       <td>
+        B2
+       </td>
+       <td>
+        Eucalyptus essential oil, eucalyptol
+       </td>
+       <td>
+        Cooling/warmth/tingling sensation, organoleptic properties
+       </td>
+      </tr>
+      <tr>
+       <td>
+        C
+       </td>
+       <td>
+        Histamine dihydrochloride, methyl nicotinate
+       </td>
+       <td>
+        Vasodilation, vasoactive properties
+       </td>
+      </tr>
+      <tr>
+       <td>
+        D
+       </td>
+       <td>
+        Capsaicin
+       </td>
+       <td>
+        Irritation without rubefaction, although about equal in potency to Group A do not produce redness
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup>1</sup>These are not uses or purposes.</p>
+   </section>
+   <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

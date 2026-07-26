@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=greentea_thevert2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="d7f7be72-b4d0-4924-bc7a-c9cd404da906"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>GREEN TEA EXTRACT</h1>
+	<div class="icon">
+		<a href="dbImages/mono_green-tea-extracts_english.pdf" title="GREEN TEA EXTRACT"><img alt="Monograph: GREEN TEA EXTRACT" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" width="22" height="21">(PDF Version - 120 KB)</a>
+</div>	
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>	
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>July 25, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Camellia sinensis</em></td>
+						<td>Green tea extract</td>
+						<td><em>Camellia sinensis</em></td>
+						<td>Leaf</td> 
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2024&semi; Common names: Gardner and McGuffin 2013&semi; Westerterp-Plantenga et al. 2005&semi; Henning et al. 2004&semi; Source information: Nagao et al. 2005&semi; Chantre and Lairon 2002.</p>
+	</section>
+	
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2>
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Source of antioxidants/Provides antioxidants (Camargo et al. 2006&semi; Coimbra et al. 2006&semi; Henning et al. 2004&semi; Nakagawa et al. 1999&semi; Van het Hof et al. 1997).</li>
+				<li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Camargo et al. 2006&semi; Coimbra et al. 2006&semi; Henning et al. 2004&semi; Nakagawa et al. 1999&semi; Van het Hof et al. 1997).</li>
+				<li>To be used with a program of reduced intake of dietary calories and increased physical activity (if possible) to help in weight management (Nagao et al. 2005&semi; Westerterp-Plantenga et al. 2005&semi; Chantre and Lairon 2002&semi; Dulloo et al. 1999).</li>
+			</ul>
+			<p>Restrictions when this monograph is combined with other monographs (Class II and III applications):
+				<ul>
+					<li>If a weight management claim is made:
+						<ul>
+							<li>Weight management is a long-term process and must therefore, be associated with a long-term intervention.</li>
+							<li>Medicinal ingredient with diuretic properties may be included in weight management products, however no diuretic claim can be applied as it is associated with a short-term duration of use (occasional use only).</li>
+							<li>Stimulant laxatives cannot be present at therapeutic dose in weight management products as their short term duration of use is not compatible with the duration of use for weight management.</li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><strong>Methods of preparation:</strong> Standardized extracts (Dry extract, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+					<p><em>Antioxidant</em></p> 	 
+						<p>Not to exceed 690 milligrams total catechins* per day, including a maximum of 300 mg epigallocatechin 3-gallate (EGCG)&semi; and not to exceed 150 milligrams of caffeine, per day (HC 2023&semi; Nagao et al. 2005&semi; Henning et al. 2004&semi; Nakagawa et al. 1999).</p>
+					<p><strong>*Note:</strong> Total catechins is the sum of all catechin compounds, including epicatechins and other related compounds. For green tea extract, total catechins include, catechin (C), epicatechin (EC), epigallocatechin (EGC), epicatechin gallate (ECG), and epigallocatechin gallate (EGCG).</p>
+				<p><em>Weight management</em></p> 
+					<p>136 - 300 milligrams (-)-epigallocatechin-3-gallate (EGCG) and 75 - 150 milligrams of caffeine, with an EGCG:caffeine ratio of 1.8:1 to 4:1, per day. Not to exceed 690 milligrams of total catechins (including EGCG) per day (Nagao et al. 2005&semi; Westerterp-Plantenga et al. 2005&semi; Chantre and Lairon 2002).</p>
+			<h3>Direction(s) for use</H3> 	 
+				<p><em>All products</em></p> 
+					<p>Take with a meal/food (HC 2017).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p><em>All products</em></p> 
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Nagao et al. 2005&semi; Westerterp-Plantenga et al. 2005&semi; Chantre and Lairon 2002).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3> 
+				<p><em>All products</em>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver disorder or an iron deficiency (HC 2017&semi; HC 2007&semi; Cooper et al. 2006&semi; Nelson and Poulter 2004&semi; Zijp et al. 2000).</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking prescription medications.</li>
+						<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain (HC 2017&semi; Molinari et al. 2006&semi; Gloro et al. 2005).</li>
+					</ul>
+				</p>
+				<p><em>All products (except for weight management)</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+				<p><em>Weight management</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.</p>
+				<p><em>Products providing 40 mg or more caffeine, per day and with a catechins:caffeine ratio lower than 2:1</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have high blood pressure or glaucoma (Cornelis and El-Sohemy 2007&semi; Chandrasekaran et al. 2005&semi; Noordzij et al. 2005&semi; Avisar et al. 2002&semi; Arya et al. 2000&semi; Jee et al. 1999&semi; Creighton and Stanton 1990).</p>
+			<h3>Contraindication(s)</h3> 
+				<p><em>Weight management</em></p>
+					<p>Do not use if you are pregnant (HC 2010).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal Ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2> 	 
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">Example Of Product Facts:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/GREEN_TEA_EXTRACT_E.gif" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>	
+				<li>Arya LA, Myers DL, Jackson ND. Dietary caffeine intake and the risk for detrusor instability: a case-control study. Obstetrics and Gynecology 2000&semi;96(1):85-89.</li>
+				<li>Avisar R, Avisar E, Weinberger D. Effect of coffee consumption on intraocular pressure. The Annals of Pharmacotherapy 2002&semi;36(6):992-995.</li>
+				<li>Camargo AE, Daguer DA, Barbosa DS. Green tea exerts antioxidant action in vitro and its consumption increases total serum antioxidant potential in normal and dyslipidemic subjects. Nutrition Research 2006&semi;26:626-631.</li>
+				<li>Chandrasekaran S, Rochtchina E, Mitchell P. Effects of caffeine on intraocular pressure: the Blue Mountains Eye Study. Journal of Glaucoma 2005&semi;14(6):504-507.</li>
+				<li>Chantre P, Lairon D. Recent findings of green tea extract AR25 (Exolise) and its activity for the treatment of obesity. Phytomedicine 2002&semi;9(1):3-8.</li>
+				<li>Coimbra S, Castro E, Rocha-Pereira P, Rebelo I, Rocha S, Santos-Silva A. The effect of green tea in oxidative stress. Clinical Nutrition 2006&semi;25(5):790-796.</li>
+				<li>Cooper MJ, Cockell KA, L'Abbe MR. The iron status of Canadian adolescents and adults: current knowledge and practical implications. Canadian Journal of Dietetic Practice and Research 2006&semi;67(3):130-138.</li>
+				<li>Cornelis MC, El-Sohemy A. Coffee, caffeine, and coronary heart disease. Current Opinion in Lipidology 2007&semi;18(1):13-19.</li>
+				<li>Creighton SM, Stanton SL. Caffeine: does it affect your bladder? British Journal of Urology 1990&semi;66(6):613-614.</li>
+				<li>Dulloo AG, Duret C, Rohrer D, Girardier L, Mensi N, Fathi M, Chantre P, Vandermander J. Efficacy of a green tea extract rich in catechin polyphenols and caffeine in increasing 24-h energy expenditure and fat oxidation in humans. American Journal of Clinical Nutrition 1999&semi;70(6):1040-1045.</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>Gloro R, Hourmand-Ollivier I, Mosquet B, Mosquet L, Rousselot P, Salame E, Piquet MA, Dao T. Fulminant hepatitis during self-medication with hydroalcoholic extract of green tea. European Journal of Gastroenterology &amp; Hepatology 2005&semi;17(10):1135-1137.</li>
+				<li>HC 2023: Health Canada. Summary of Health Canada's safety assessment of green tea extract for use as a supplemental ingredient.. Ottawa (ON): Health Canada&semi; September 2023 [Accessed 2025 June 26]. Available from: https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/notice-modification-list-permitted-supplemental-ingredients-permit-use-green-tea-extract-supplemental-ingredient-foods/document.html</li>
+				<li>HC 2017: Health Canada. Summary Safety Review on Green Tea Extracts containing natural health products - Assessing the potential risk of liver injury (hepatotoxicity). Ottawa (ON): Health Canada&semi; November 2017. Update: December 2017. [Accessed 2025 june 26]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/safety-reviews/green-tea-extract-containing-natural-health-products-assessing-potential-risk-liver-injury.html</li>
+				<li>HC 2010: Health Canada: Prenatal Nutrition Guidelines for health Professionals: Gestational weight gain [Accessed 2025 June 26]. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/nutrition/prenatal/ewba-mbsa-eng.pdf</li>
+				<li>HC 2007. Health Canada. It's Your Health: Caffeine. Ottawa (ON). [Accessed 2025 June 26]. Available from: https://publications.gc.ca/collections/collection_2011/sc-hc/H13-7-2-2010-eng.pdf</li>
+				<li>Henning SM, Niu Y, Lee NH, Thames GD, Minutti RR, Wang H, Go VL, Heber D. 2004. Bioavailability and antioxidant activity of tea flavanols after consumption of green tea, black tea, or a green tea extract supplement. American Journal of Clinical Nutrition 2004&semi;80(6):1558-1564.</li>
+				<li>Jee SH, He J, Whelton PK, Suh II, Klag MJ. The effect of chronic coffee drinking on blood pressure: a meta-analysis of controlled clinical trials. Hypertension 1999&semi;33(2):647-652.</li>
+				<li>Molinari M, Watt KD, Kruszyna T, Nelson R, Walsh M, Huang WY, Nashan B, Peltekian K. Acute liver failure induced by green tea extracts: case report and review of the literature. Liver Transplantation 2006&semi;12(12):1892-1895.</li>
+				<li>Nagao T, Komine Y, Soga S, Meguro S, Hase T, Tanaka Y, Tokimitsu I. Ingestion of a tea rich in catechins leads to a reduction in body fat and malondialdehyde-modified LDL in men. American Journal of Clinical Nutrition 2005&semi;81(1):122-129.</li>
+				<li>Nakagawa K, Ninomiya M, Okubo T, Aoi N, Juneja LR, Kim M, Yamanaka K, Miyazawa T. Tea catechin supplementation increases antioxidant capacity and prevents phospholipid hydroperoxidation in plasma of humans. Journal of Agricultural and Food Chemistry 1999&semi;47(10):3967-3973.</li>
+				<li>Nelson M, Poulter J. Impact of tea drinking on iron status in the UK: a review. Journal of Human Nutrition and Dietetics 2004&semi;17(1):43-54.</li>
+				<li>Noordzij M, Uiterwaal CS, Arends LR, Kok FJ, Grobbee DE, Geleijnse JM. Blood pressure response to chronic intake of coffee and caffeine: a meta-analysis of randomized controlled trials. Journal of Hypertension 2005&semi;23(5):921-928.</li>
+				<li>USDA 2024: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 November 14]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>Van het Hof KH, de Boer HS, Wiseman SA, Lien N, Weststrate JA, Tijburg LB. Consumption of green or black tea does not increase resistance of low-density lipoprotein to oxidation in humans. The American Journal of Clinical Nutrition 1997&semi;66(5):1125-1132.</li>
+				<li>Westerterp-Plantenga MS, Lejeune MP, Kovacs EM. Body weight loss and weight maintenance in relation to habitual caffeine intake and green tea supplementation. Obesity Research 2005&semi;13(7):1195-1204.</li>
+				<li>Zijp IM, Korver O, Tijburg LB. Effect of tea and other dietary factors on iron absorption. Critical Reviews in Food Science and Nutrition 2000&semi;40(5):371-398.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul> 
+				<li>Arts IC, Hollman PC, Feskens EJ, Bueno de Mesquita HB, Kromhaut D. Catechin intake might explain the inverse relation between tea consumption and ischemic heart disease: the Zutphen Elderly Study. The American Journal of Clinical Nutrition 2001&semi;74(2):227-232.</li>
+				<li>Aviram M. Review of human studies on oxidative damage and antioxidant protection related to cardiovascular disease. Free Radical Research 2000&semi;33:S85-97.</li>
+				<li>Blumenthal M. ABC Clinical Guide to Herbs. New York (NY): Theime&semi; 2003.</li>
+				<li>Bonkovsky HL. Hepatotoxicity associated with supplements containing Chinese green tea (Camellia sinensis). Annals of Internal Medicine 2006&semi;144(1):68-71.</li>
+				<li>Booth SL, Madabushi HT, Davidson KW, Sadowski JA. Tea and coffee brews are not dietary sources of vitamin K-1 (phylloquinone). Journal of the American Dietetic Association 1995&semi;95(1):82-83.</li>
+				<li>Borchardt RT, Huber JA. Catechol O-methyltransferase. Structure-activity relationships for inhibition by flavonoids. Journal of Medicinal Chemistry 1975&semi;18(1):120-122.</li>
+				<li>Brinker F. Herb Contraindications &amp; Drug Interactions, 3<sup>rd</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2001.</li>
+				<li>Cabrera C, Artacho R, Gimenez R. Beneficial effects of green tea--a review. Journal of the American College of Nutrition 2006&semi;25(2):79-99.</li>
+				<li>Cherubini A, Beal MF, Frei B. Black tea increases the resistance of human plasma to lipid peroxidation in vitro, but not ex vivo. Free Radical Biology and Medicine 1999&semi;27(3-4):381-387.</li>
+				<li>Chiu AE, Chan JL, Kern DG, Kohler S, Rehmus WE, Kimball AB. Double-blinded, placebo controlled trial of green tea extracts in the clinical and histologic appearance of photoaging skin. Dermatologic Surgery 2005&semi;31(7 Pt 2):855-860.</li>
+				<li>Chow S, Hakim I, Vining D, Crowell J, Ranger-Moore J, Chew W, Celaya C, Rodney S, Hara Y, Alberts D. Effects of dosing condition on the oral bioavailability of green tea catechins after single-dose administration of Polyphenone E in healthy individuals. Clinical Cancer Research 2005&semi;11:4627-4633.</li>
+				<li>Christopher G, Sutherland D, Smith A. Effects of caffeine in non-withdrawn volunteers. Human Psychopharmacology 2005&semi;20(1):47-53.</li>
+				<li>Cnattingius S, Signorello LB, Anneren G, Clausson B, Ekbom A, Ljunger E, Blot WJ, McLaughlin JK, Petersson G, Rane A, Granath F. Caffeine intake and the risk of first-trimester spontaneous abortion. New England Journal of Medicine 2000&semi;343(25):1839-1845.</li>
+				<li>Dashwood WM, Orner GA, Dashwood RH. Inhibition of beta-catenin/Tcf activity by white tea, green tea, and epigallocatechin-3-gallate (EGCG): minor contribution of H(2)O(2) at physiologically relevant EGCG concentrations. Biochemical and Biophysical Research Communications 2002&semi;296(3):584-588.</li>
+				<li>Diepvens K, Kovacs EM, Nijs IM, Vogels N, Westerterp-Plantenga MS. Effect of green tea on resting energy expenditure and substrate oxidation during weight loss in overweight females. British Journal of Nutrition 2005&semi;94(6):1026-1034.</li>
+				<li>Diepvens K, Kovacs EM, Vogels N, Westerterp-Plantenga MS. Metabolic effects of green tea and of phases of weight loss. Physiology &amp; Behaviour 2006&semi;87(1):185-191.</li>
+				<li>Doherty M, Smith PM. Effects of caffeine ingestion on rating of perceived exertion during and after exercise: a meta-analysis. Scandinavian Journal of Medicine &amp; Science in Sports 2005&semi;15(2):69-78.</li>
+				<li>Duffy SJ, Keaney JF Jr, Holbrook M, Gokce N, Swerdloff PL, Frei B, Vita JA. Short- and long term black tea consumption reverses endothelial dysfunction in patients with coronary artery disease. Circulation 2001&semi;104(2):151-156.</li>
+				<li>Dulloo AG. A sympathetic defense against obesity. Science 2002&semi;297(5582):780-781.</li>
+				<li>Dulloo AG, Seydoux J, Girardier L, Chantre P, Vandermander J. Green tea and thermogenesis: interactions between catechin-polyphenols, caffeine and sympathetic activity. International Journal of Obesity and Related Metabolic Disorders 2000&semi;24(2):252-258.</li>
+				<li>Erba D, Riso P, Bordoni A, Foti P, Biagi PL, Testolin G. Effectiveness of moderate green tea consumption on antioxidative status and plasma lipid profile in humans. Journal of Nutritional Biochemistry 2005&semi;16(3):144-149.</li>
+				<li>Erba D, Riso P, Foti P, Frigerio F, Criscuoli F, Testolin G. Black tea extract supplementation decreases oxidative damage in Jurkat T cells. Archives of Biochemistry and Biophysics 2003&semi;416(2):196-201.</li>
+				<li>Felter HW, Lloyd JU. King's American Dispensatory, Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications [Reprint of 1898 original]. 1983.</li>
+				<li>Freese R, Basu S, Hietanen E, Nair J, Nakachi K, Bartsch H, Mutanen M. Green tea extract decreases plasma malondialdehyde concentration but does not affect other indicators of oxidative stress, nitric oxide production, or hemostatic factors during a high-linoleic acid diet in healthy females. European Journal of Nutrition 1999&semi;38(3):149-157.</li>
+				<li>Gardner EJ, Ruxton CH, Leeds AR. Black tea - helpful or harmful? A review of the evidence. European Journal of Clinical Nutrition. 2007&semi;61(1):3-18.</li>
+				<li>Geleijnse JM, Launer LJ, Hofman A, Pols HA, Witteman JC. Tea flavonoids may protect against atherosclerosis: the Rotterdam Study. Archives of Internal Medicine 1999&semi;159(18):2170-2174.</li>
+				<li>Gomikawa S, Ishikawa Y. Effects of catechins and ground green tea drinking on the susceptibility of plasma and LDL to oxidation in vitro and ex vivo. Journal of Clinical and Biochemical Nutrition 2002&semi;32:55-68.</li>
+				<li>Graham HN. Green tea composition, consumption, and polyphenol chemistry. Preventive Medicine 1992&semi;21(3):334-350.</li>
+				<li>Greden JF. Anxiety or caffeinism: a diagnostic dilemma. American Journal of Psychiatry 1974&semi;131(10):1089-1092.</li>
+				<li>Grieve M. A Modern Herbal, Volume 2. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].</li>
+				<li>Hakim IA, Alsaif MA, Alduwaihy M, Al-Rubeaan K, Al-Nuaim AR, Al-Attas OS. Tea consumption and the prevalence of coronary heart disease in Saudi adults: results from a Saudi national study. Preventive Medicine 2003&semi;36(1):64-70.</li>
+				<li>Hakim IA, Harris RB, Chow HH, Dean M, Brown S, Ali IU. Effect of a 4-month tea intervention on oxidative DNA damage among heavy smokers: role of glutathione S-transferase genotypes. Cancer Epidemiology, Biomarkers, &amp; Prevention 2004&semi;13(2)242-249.</li>
+				<li>Halder J, Bhaduri AN. Protective role of black tea against oxidative damage of human red blood cells. Biochemical and Biophysical Research Communications 1998&semi;244(3):903-907.</li>
+				<li>Hertog MG, Feskens EJ, Hollman PC, Katan MB, Kromhout D. Dietary antioxidant flavonoids and risk of coronary heart disease: the Zutphen Elderly Study. Lancet 1993&semi;342(8878):1007-1011.</li>
+				<li>Hertog MG, Kromhout D, Aravanis C, Blackburn H, Buzina R, Fidanza F, Giampaoli S, Jansen A, Menotti A, Nedeljkovic S. Flavonoid intake and long-term risk of coronary heart disease and cancer in the seven countries study. Archives of Internal Medicine 1995&semi;155(4):381-386.</li>
+				<li>Hindmarch I, Rigney U, Stanley N, Quinlan P, Rycroft J, Lane J. A naturalistic investigation of the effects of day-long consumption of tea, coffee and water on alertness, sleep onset and sleep quality. Psychopharmacology (Berlin) 2000&semi;149(3):203-216.</li>
+				<li>Hirano R, Momiyama Y, Takahashi R, Taniguchi H, Kondo K, Nakamura H, Ohsuzu F. Comparison of green tea intake in Japanese patients with and without angiographic coronary artery disease. The American Journal of Cardiology 2002&semi;90(10):1150-1153.</li>
+				<li>Hodgson JM, Croft KD, Mori TA, Burke V, Beilin LJ, Puddey IB. Regular ingestion of tea does not inhibit in vivo lipid peroxidation in humans. The Journal of Nutrition 2002&semi;132(1):55-58.</li>
+				<li>Hodgson JM, Puddey JB, Burke V, Beilin LJ, Jordan N. Effects on blood pressure of drinking green and black tea. Journal of Hypertension 1999&semi;17(4):457-463.</li>
+				<li>Hodgson JM, Puddey IB, Croft KD, Burke V, Mori TA, Caccetta RA, Beilin LJ. Acute effects of ingestion of black and green tea on lipoprotein oxidation. American Journal of Clinical Nutrition 2000&semi;71(5):1103-1107.</li>
+				<li>Holbrook AM, Pereira JA, Labiris R, McDonald H, Douketis JD, Crowther M, Wells PS. Systematic overview of Warfarin and its drug and food interactions. Archives of Internal Medicine 2005&semi;23:165(10):1095-1106.</li>
+				<li>Hurrell RF, Reddy M, Cook JD. Inhibition of non-haem iron absorption in man by polyphenoliccontaining beverages. British Journal of Nutrition 1999&semi;81(4):289-295.</li>
+				<li>Imai K, Nakachi K. Cross sectional study of effects of drinking green tea on cardiovascular and liver diseases. British Medical Journal 1995&semi;310(6981):693-696.</li>
+				<li>Ishikawa T, Suzukawa M, Ito T, Yoshida H, Ayaori M, Nishiwaki M, Yonemura A, Hara Y, Nakamura H. Effect of tea flavonoid supplementation on the susceptibility of low-density lipoprotein to oxidative modification. American Journal of Clinical Nutrition 1997&semi;66(2):261-266.</li>
+				<li>Javaid A, Bonkovsky HL. Hepatotoxicity due to extracts of Chinese green tea (Camellia sinensis): a growing concern. Journal of Hepatology 2006&semi;45(2):334-335.</li>
+				<li>Jimenez-Saenz M, Martinez-Sanchez MC. Acute hepatitis associated with the use of green tea infusions. Journal of Hepatology 2006&semi;44(3):616-617.</li>
+				<li>Kamimori GH, Penetar DM, Headley DB, Thorne DR, Otterstetter R, Belenky G. Effect of three caffeine doses on plasma catecholamines and alertness during prolonged wakefulness. European Journal of Clinical Pharmacology 2000&semi;56(8):537-544.</li>
+				<li>Kim W, Jeong MH, Cho SH, Yun JH, Chae HJ, Ahn YK, Lee MC, Cheng X, Kondo T, Murohara T, Kang JC. Effect of green tea consumption on endothelial function and circulating endothelial progenitor cells in chronic smokers. Circulation Journal 2006&semi;70(8):1052-1057.</li>
+				<li>Kono S, Shinchi K, Ikeda N, Yanai F, Imanshi K. Green tea consumption and serum lipid profiles: a cross-sectional study in northern Kyushu, Japan. Preventive Medicine 1992&semi;21(4):526-531.</li>
+				<li>Kovacs EM, Lejeune MP, Nijs I, Westerterp-Plantenga MS. Effects of green tea on weight maintenance after body-weight loss. British Journal of Nutrition 2004&semi;91(3):431-437.</li>
+				<li>Kuriyama S, Shimazu T, Ohmori K, Kikuchi N, Nakaya N, Nishino Y, Tsubono Y, Tsuji I. Green tea consumption and mortality due to cardiovascular disease, cancer, and all causes in Japan. The Journal of the American Medical Association 2006&semi;296(10):1255-1265.</li>
+				<li>Kyle JA, Morrice PC, McNeill G, Duthie GG. Effects of infusion time and addition of milk on content and absorption of polyphenols from black tea. Journal of Agriculture and Food Chemistry 2007&semi;55(12):4889-4894.</li>
+				<li>Langley-Evans SC. Consumption of black tea elicits an increase in plasma antioxidant potential in humans. International Journal of Food Sciences and Nutrition 2000&semi;51(5):309-315.</li>
+				<li>Lee W, Min W, Chun S, Lee Y, Park H, Lee DH, Lee YK, Son JE. Long-term effects of green tea ingestion on atherosclerotic biological markers in smokers. Clinical Biochemistry 2005&semi;38(1):84-87.</li>
+				<li>Leenen R, Roodenburg AJ, Tijburg LB, Wiseman SA. A single dose of tea with or without milk increases plasma antioxidant activity in humans. European Journal of Clinical Nutrition 2000&semi;54(1):87-92.</li>
+				<li>Leung LK, Su Y, Chen R, Zhang Z, Huang Y, Chen ZY. Theaflavins in black tea and catechins in green tea are equally effective antioxidants. Journal of Nutrition 2001&semi;131:2248-2251.</li>
+				<li>Liang H, Liang Y, Dong J, Lu J, Xu H, Wang H. Decaffeination of fresh green tea leaf (Camellia sinesis) by hot water treatment. Food Chemistry 101 2007:1451-1456.</li>
+				<li>Liu HS, Chen YH, Hung PF, Kao YH. Inhibitory effect of green tea (-)-epigallocatechin gallate on resistin gene expression in 3T3-L1 adipocytes depends on the ERK pathway. American Journal of Physiology. Endocrinology and metabolism 2006&semi;290(2):E273-281.</li>
+				<li>Łuczaj W, Skrzydlewska E. Antioxidative properties of black tea. Preventative Medicine 2005&semi;40(6):910-918.</li>
+				<li>Maity S, Ukil A, Karmakar S, Datta N, Chaudhuri T, Vedasiromoni JR, Ganguly DK, Das PK. Thearubigin, the major polyphenol of black tea, ameliorates mucosal injury in trinitrobenzene sulfonic acid-induced colitis. European Journal of Pharmacology 2003&semi;30:470(1-2):103-112.</li>
+				<li>McAnlis GT, McEneny J, Pearce J, Young IS. Black tea consumption does not protect low density lipoprotein from oxidative modification. European Journal of Clinical Nutrition 1998&semi;52(3):202-206.</li>
+				<li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. American Herbal Products Association's Botanical Safety Handbook. Boca Raton (FL): CRC Press&semi; 1997.</li>
+				<li>Mennen L, Hirvonen T, Arnault N, Bertrais S, Galan P, Hercberg S. Consumption of black, green and herbal tea and iron status in French adults. European Journal of Clinical Nutrition 2007&semi; Epub ahead of print.</li>
+				<li>Miller NJ, Castelluccio C, Tijburg L, Rice-Evans C. The antioxidant properties of theaflavins and their gallate esters - radical scavengers or metal chelators? FEBS Letters 1996&semi;392(1):40-44.</li>
+				<li>Mukamal KJ, Alert M, Maclure M, Muller JE, Mittleman MA. Tea consumption and infarctrelated ventricular arrhythmias: the determinants of myocardial infarction onset study. Journal of the American College of Nutrition 2006&semi;25(6):472-479.</li>
+				<li>Mukamal KJ, Maclure M, Muller JE, Sherwood JB, Mittleman MA. Tea consumption and mortality after acute myocardial infarction. Circulation 2002&semi;105(21):2476-2481.</li>
+				<li>Nagaya N, Yamamoto H, Uematsu M, Itoh T, Nakagawa K, Miyazawa T, Kangawa K, Miyatake K. Green tea reverses endothelial dysfunction in healthy smokers. Heart 2004&semi;90(12):1485-1486.</li>
+				<li>Nakachi K, Eguchi H, Imai K. Can teatime increase one's lifetime? Ageing Research Reviews 2003&semi;2(1):1-10.</li>
+				<li>Nakachi K, Matsuyama S, Miyake S, Suganuma M, Imai K. Preventive effects of drinking green tea on cancer and cardiovascular disease: epidemiological evidence for multiple targeting prevention. Biofactors 2000&semi;13(1-4):49-54.</li>
+				<li>Nawrot P, Jordan S, Eastwood J, Rotstein J, Hugenholtz A, Feeley M. Effects of caffeine on human health. Food Additives and Contaminants 2003&semi;20(1):1-30.</li>
+				<li>Perva-Uzunalić A, Škerget M, Knez Ž, Weinrich B, Otto F, Grüner S. Extraction of active ingredients from green tea (Camellia sinensis): Extraction efficiency of major catechins and caffeine. Food Chemistry 2006&semi;96(4):597-605.</li>
+				<li>Peters U, Poole C, Arab L. Does tea affect cardiovascular disease? A meta-analysis. American Journal of Epidemiology 2001&semi;154(6):495-503.</li>
+				<li>Philip P, Taillard J, Moore N, Delord S, Valtat C, Sagaspe P, Bioulac B. The effects of coffee and napping on night time highway driving: a randomized trial. Annals of Internal Medicine 2006&semi;144(11):785-791.</li>
+				<li>Princen HMG, van Duyvenvoorde W, Buytenhek R, Blonk C, Tijburg, LB, Languis JA, Meinders E, Pijl H. No effect of consumption of green and black tea on plasma lipid and antioxidant levels and on LDL oxidation in smokers. Arteriosclerosis, Thrombosis and Vascular Biology 1998&semi;18(5):833-841.</li>
+				<li>Quinlan PT, Lane J, Moore KL, Aspen J, Rycroft JA, O'Brien DC. The acute physiological and mood effects of tea and coffee: the role of caffeine level. Pharmacology, Biochemistry, and Behavior 2000&semi;66(1):19-28.</li>
+				<li>Ravussin E, Bogardus C. A brief overview of human energy metabolism and its relationship to essential obesity. The American Journal of Clinical Nutrition 1992&semi;55(1S):242S-245S.</li>
+				<li>Ravussin E, Lillioja S, Anderson TE, Christin L, Bogardus C. Determinants of 24-hour energy expenditure in man: methods and results using a respiratory chamber. The Journal of Clinical Investigation 1986&semi;78(6):1568-1578.</li>
+				<li>Ravussin E, Lillioja S, Knowler WC, Christin L, Freymond D, Abbott WG, Boyce V, Howard BV, Bogardus C. Reduced rate of energy expenditure as a risk factor for body-weight gain. The New England Journal of Medicine 1988&semi;318(8):467-472.</li>
+				<li>Rice-Evans CA, Miller NJ, Paganga G. Structure-antioxidant activity relationships of flavanoids and phenolic acids. Free Radical Biology &amp; Medicine 1996&semi;20(7):933-956.</li>
+				<li>Sano J, Inami S, Seimiya K, Ohba T, Sakai S, Takano T, Mizuno K. Effects of green tea intake on the development of coronary artery disease. Circulation Journal 2004&semi;68(7):665-670.</li>
+				<li>Santana-Rios G, Orner GA, Amantana A, Provost C, Wu SY, Dashwood RH. Potent antimutagenic activity of white tea in comparison with green tea in the Salmonella assay. Mutation Research 2001&semi;495(1-2):61-74.</li>
+				<li>Sasazuki S, Kodama H, Yoshimasu K, Liu Y, Washio M, Tanaka K, Tokunaga S, Kono S, Arai H, Doi Y, Kawano T, Nakagaki O, Takada K, Koyanagi S, Hiyamatu K, Nii T, Shirai K, Ideishi M, Arakawa K, Mohri M, Takeshita A. Relation between green tea consumption and the severity of coronary atherosclerosis among Japanese men and women. Annals of Epidemiology 2000&semi;10(6):401-408.</li>
+				<li>Sawynok J. Pharmacological rationale for the clinical use of caffeine. Drugs 1995&semi;49(1):37-50.</li>
+				<li>Serafini M, Ghiselli A, Luzzi AF. In vivo antioxidant effect of green and black tea in man. European Journal of Clinical Nutrition 1996&semi;50(1):28-32.</li>
+				<li>Serafini M, Laranjinha JAN, Almeida LM, Maiani G. Inhibition of human LDL lipid peroxidation by phenol-rich beverages and their impact on plasma total antioxidant capacity in humans. The Journal of Nutritional Biochemistry 2000&semi;11(11-12):585-590.</li>
+				<li>Sesso HD, Paffenbarger RS, Oguma Y, Lee IM. Lack of association between tea and cardiovascular disease in college alumni. International Journal of Epidemiology 2003&semi;32(4):527-533.</li>
+				<li>Shiraki M, Hara Y, Osawa T, Kumon H, Nakayama T, Kawakishi S. (Abstract only) Antioxidative and antimutagenic effects of theaflavins from black tea. Mutation Research 1994&semi;323(1-2):29-34.</li>
+				<li>Shixian Q, VanCrey B, Shi J, Kakuda Y, Jiang Y. Green tea extract thermogenesis-induced weight loss by epigallocatechin gallate inhibition of catechol-O-methyltransferase. Journal of Medicinal Food 2006&semi;9(4):451-458.</li>
+				<li>Smith A, Sutherland D, Christopher G. Effects of repeated doses of caffeine on mood and performance of alert and fatigued volunteers. Journal of Psychopharmacology 2005&semi;19(6):620-626.</li>
+				<li>Steptoe A, Gibson EL, Vounonvirta R, Williams ED, Hamer M, Rycroft JA, Erusalimsky JD, Wardle J. The effects of tea on psychophysiological stress responsivity and post-stress recovery: a randomised double-blind trial. Psychopharmacology (Berlin) 2007&semi;190(1):81-89.</li>
+				<li>Steptoe A, Wardle J. Mood and drinking: a naturalistic diary study of alcohol, coffee and tea. Psychopharmacology (Berlin) 1999&semi;141(3):315-321.</li>
+				<li>Stevens T, Qadri A, Zein NN. Two patients with acute liver injury associated with use of the herbal weight-loss supplement hydroxycut. Annals of Internal Medicine 2005&semi;142(6):477-478.</li>
+				<li>Sung H, Min WK, Lee W, Chun S, Park H, Lee YW, Jang S, Lee DH. The effects of green tea ingestion over four weeks on atherosclerotic markers. Annals of Clinical Biochemistry 2005&semi;42(4):292-297.</li>
+				<li>Sung H, Nah J, Chun S, Park H, Yang SE, Min WK. In vivo antioxidant effect of green tea. European Journal of Clinical Nutrition 2000&semi;54(7):527-529.</li>
+				<li>Taylor JR, Wilt VM. Probable antagonism of Warfarin by green tea. The Annals of Pharmacotherapy 1999&semi;33:426-428.</li>
+				<li>Temme EH, Van Hoydonck PG. Tea consumption and iron status. European Journal of Clinical Nutrition 2002&semi;56(5):379-386.</li>
+				<li>Thrift AG, Donnan GA. Re: "Does tea affect cardiovascular disease? A meta-analysis." (Letter). American Journal of Epidemiology 2002&semi;156(5):490.</li>
+				<li>Tokunaga S, White IR, Frost C, Tanaka K, Kono S, Tokudome S, Akamatsu T, Moriyama T, Zakouji H. Green tea consumption and serum lipids and lipoproteins in a population of healthy workers in Japan. Annals of Epidemiology 2002&semi;12(3):157-165.</li>
+				<li>Tsubono Y, Tsugane S. Green tea intake in relation to serum lipid levels in middle-aged Japanese men and women. Annals of Epidemiology 1997&semi;7(4):280-284.</li>
+				<li>Unno T, Tago M, Suzuki Y, Nozawa A, Sagesaka YM, Kakuda T, Egawa K, Kondo K. Effect of tea catechins on postprandial plasma lipid responses in human subjects. British Journal of Nutrition 2005&semi;93(4):543-547.</li>
+				<li>Van Gaal LF, Mertens IL, De Blcok CE. Mechanisms linking obesity with cardiovascular disease. Nature 2006&semi;444(7121):875-880.</li>
+				<li>Warden BA, Smith LS, Beecher GR, Balentine DA, Clevidence BA. Catechins are bioavailable in men and women drinking black tea throughout the day. Journal of Nutrition 2001&semi;131(6):1731-1737.</li>
+				<li>Westerterp-Plantenga M, Diepvens K, Joosen AM, Bérubé-Parent S, Tremblay A. Metabolic effects of spices, teas, and caffeine. Physiology &amp; Behaviour 2006&semi;89(1):85-91.</li>
+				<li>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 3<sup>rd</sup> edition. Stuttgart (D): Medpharm GmbH Scientific Publishers&semi; 2004.</li>
+				<li>Williamson EM, Evans FJ, Wren RC. Potter's New Cyclopedia of Botanical Drugs and Preparations. Essex (UK): C.W. Daniel Company Limited&semi; 1988.</li>
+				<li>Woodward M, Tunstall-Pedoe H. Coffee and tea consumption in the Scottish Heart Health Study follow-up: conflicting relations with coronary risk factors, coronary disease, and all-cause mortality. Journal of Epidemiology and Community Health 1999&semi;53(8):481-487.</li>
+				<li>Wren RC. Potter's Cyclopaedia of Botanical Drugs &amp; Preparations. London (UK): Potter and Clark&semi; 1907.</li>
+				<li>Yang Y, Lu F, Wu J, Wu C, Chang C. The protective effect of habitual tea consumption on hypertension. Archives of Internal Medicine 2004&semi;164(14):1534-1540.</li>
+				<li>Ye J, Liang Y, Jin J, Liang H, Du Y, Lu J, Ye Q, Lin C. Preparation of partially decaffeinated instant green tea. Journal of Agriculture and Food Chemistry 2007&semi;55:3498-3502.</li>
+				<li>Young JF, Dragstedt LO, Haraldsdottir J, Daneshvar B, Kal MA, Loft S, Nilsson L, Nielsen SE, Mayer B, Skibsted LH, Huynh-Ba T, Hermetter A, Sandstrom B. Green tea extract only affects markers of oxidative status post-prandially: lasting antioxidant effect of flavonoid-free diet. British Journal of Nutrition 2002&semi;87(4):343-355.</li>
+				<li>Zwyghuizen-Doorenbos A, Roehrs TA, Lipschutz L, Timms V, Roth T. Effects of caffeine on alertness. Psychopharmacology 1990&semi;100(1):36-39.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory" hidden>
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

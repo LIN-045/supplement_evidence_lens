@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=dandelion.pissenlit2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="3ef6f64e-d73e-4e27-a978-171832c523f7"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+    <h1>DANDELION - <em>TARAXACUM OFFICINALE</em> </h1>
+
+
+        <div class="icon">
+            <a href="dbImages/mono_dandelion--taraxacum-officinale_english.pdf" title="Dandelion - Taraxacum officinale">
+            <img alt="Monograph: Dandelion - Taraxacum officinale" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 83 KB)</a>
+        </div>
+        
+        <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+        
+        <p><strong>Notes</strong></p>
+            <ul>
+                <li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+                <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+            </ul>
+
+            
+    <h2>Date</h2>
+        <p>July 25, 2025</p>
+
+    <h2>Proper name(s), Common name(s), Source information</h2>
+
+        <table class="subject">
+        
+            <caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2"  scope="colgroup">Proper name(s)</th>
+                    <th rowspan="2"  scope="colgroup">Common name(s)</th>
+                    <th colspan="3"  scope="colgroup" style="text-align: center;">Source information</th>
+                </tr>
+                
+                <tr>
+                    <th scope="col">Source material(s)</th>
+                    <th scope="col">Part(s)</th>
+                    <th scope="col">Preparation(s)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        <i>Taraxacum officinale</i>
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li>Common dandelion</li> 
+                            <li>Dandelion</li>
+                            <li>Lion's-tooth</li>
+                        </ul>
+                    </td>
+
+                    <td><i>Taraxacum officinale</i></td>
+                    <td>
+                        <ul>
+                            <li>Leaf</li>
+                            <li>Root</li>
+                            <li>Whole plant</li>
+                        </ul>
+                    </td>
+                    <td>Dry</td>
+                </tr>
+                <tr>
+                    <td>Dandelion juice</td>
+                    <td><i>Taraxacum officinale</i></td>
+                    <td>
+                        <ul>
+                            <li>Leaf</li>
+                            <li>Root</li>
+                            <li>Whole plant</li>
+                        </ul>
+                    </td>
+                    <td>Fresh</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <p>References: Proper name: USDA 2024; Gardner and McGuffin 2013; Common name: USDA 2024; Gardner and McGuffin 2013; Blumenthal et al. 2000; Wiersema and Le&#243;n 1999; Bradley 1992; Source information: Blumenthal et al. 2000; Bradley 1992.</p>
+
+        
+    <h2>Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+        <p>Oral</p>
+
+
+    <h2>Dosage Form(s)</h2>
+        <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+        <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+
+    <h2>Use(s) or Purpose(s)</h2>
+
+        <p><em>LEAF</em></p>
+        <ul>
+            <li>(Traditionally) used in Herbal Medicine to increase the amount of urine to achieve flushing of the urinary tract as an adjuvant in minor urinary complaints (EMA 2009).</li>
+            <li>(Traditionally) used in Herbal Medicine as a diuretic (Mills and Bone 2005; Hoffmann 2003; BHP 1996; Bradley 1992).</li>
+            <li>(Traditionally) used in Herbal Medicine as a laxative/aperient (Mills and Bone 2005; Hoffmann 2003; BHP 1996).</li>
+            <li>(Traditionally) used in Herbal Medicine (as a choleretic) to help increase bile flow (Godfrey et al. 2010; Mills and Bone 2005; Hoffmann 2003; BHP 1996; Bradley 1992).</li>
+            <li>(Traditionally) used in Herbal Medicine to help treat/relieve digestive troubles/(such as) upset stomach/indigestion/dyspepsia (Godfrey et al. 2010; Mills and Bone 2005; Bradley 1992; Grieve 1971).</li>
+        </ul>
+
+        
+        <p><em>ROOT</em></p>
+        <ul>
+            <li>(Traditionally) used in Herbal Medicine as an alterative to help relieve dermatological conditions, such as eczema (Wichtl 2004; Blumenthal et al. 2000; Ellingwood 1919; Felter and Lloyd 1898).</li>
+            <li>(Traditionally) used in Herbal Medicine as a diuretic (Mills and Bone 2005; Hoffmann 2003; BHP 1996; Ellingwood 1983; Wren 1907).</li>
+            <li>(Traditionally) used in Herbal Medicine as a laxative/aperient (Godfrey et al. 2010; Mills and Bone 2005; Hoffmann 2003; BHP 1996; Bradley 1992).</li>
+            <li>(Traditionally) used in Herbal Medicine (as a choleretic (and cholagogue)) to help increase bile flow (Hoffmann 2003; BHP 1996; Bradley 1992; Ellingwood 1983).</li>
+            <li>(Traditionally) used in Herbal Medicine to help stimulate appetite (Godfrey et al. 2010; EMA 2009; ESCOP 2003; Bradley 1992; Grieve 1971).</li>
+            <li>(Traditionally) used in Herbal Medicine to help treat/relieve digestive troubles/(such as) upset stomach/indigestion/dyspepsia (Godfrey et al. 2010; Mills and Bone 2005; Bradley 1992; Grieve 1971).</li>
+        </ul>
+        
+
+        
+        <p><em> WHOLE PLANT </em></p>
+        <ul>
+            <li>(Traditionally) used in Herbal Medicine to increase the amount of urine to achieve flushing of the urinary tract as an adjuvant in minor urinary complaints (EMA 2009).</li>
+            <li>Used in Herbal Medicine as a diuretic (WHO 2007; Wichtl 2004; Blumenthal et al. 2000; Bradley 1992).</li>
+            <li>Used in Herbal Medicine (as a choleretic (and cholagogue)) to help increase bile flow (WHO 2007; Wichtl 2004; Blumenthal et al. 2000; Bradley 1992).</li>
+            <li>(Traditionally) used in Herbal Medicine to help stimulate appetite (EMA 2009; WHO 2007; Wichtl 2004; Blumenthal et al. 2000; Bradley 1992).</li>
+            <li>(Traditionally) used in Herbal Medicine to help treat/relieve digestive troubles/(such as) upset stomach/indigestion/dyspepsia (EMA 2009; WHO 2007; Wichtl 2004; Blumenthal et al. 2000; Bradley 1992).</li>
+        </ul>
+        
+        <p><strong>Notes</strong></p>
+        <ul>
+            <li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Traditionally used in Herbal Medicine to help increase bile flow and relieve digestive troubles).</li>
+            <li><strong>For multi-ingredient products:</strong>
+                <ul>
+                    <li>To prevent the product from being represented as a &ldquo;traditional medicine&rdquo;, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Dandelion is traditionally used in Herbal Medicine as a diuretic).</li>
+                    <li>When ALL  of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required. </li>
+                </ul>
+            </li>
+        </ul>
+
+    <h2>Dose(s)</h2>
+
+        <h3>Subpopulation(s)</h3>
+            <p>Adolescents 12 to 17 years, Adults 18 years and older </p>
+        
+        <h3>Quantity(ies)</h3>
+            <p>Methods of preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+
+            <p><em>LEAF</em></p> 
+            <p>1.2 - 30 grams of dried leaf, per day (Mills and Bone 2005; Hoffmann 2003; Blumenthal et al. 2000; BHP 1996; Bradley 1992).</p>
+
+            <p><em>ROOT</em></p>
+            <p>1.5 - 24 grams of dried root, per day (Mills and Bone 2005; Hoffmann 2003; BHP 1996; Bradley 1992).</p>
+
+            <p><em>WHOLE PLANT</em></p> 
+            <p>3 - 30 grams of dried whole plant, per day (EMA 2009; WHO 2007; Wichtl 2004; Blumenthal et al. 2000).</p>
+
+            <p>*Note: Solvents allowed for the method of preparation &ldquo;Non-standardized extracts (Dry extract)&rdquo; as part of this monograph are ethanol and/or water only.</p>
+
+            <p>Method of preparation: Juice</p>
+
+            <p><em>LEAF</em></p> 
+            <p>10 - 20 milliliters of juice of fresh leaf, per day; Not to exceed 10 milliliters per single dose (EMA 2009; Bradley 1992).</p>
+
+            <p><em>ROOT</em></p>
+            <p>12 - 24 milliliters of juice of fresh root, per day; Not to exceed 8 milliliters per single dose (BHP 1996; Bradley 1992).</p>
+
+            <p><em>WHOLE PLANT</em></p> 
+            <p>15 - 30 milliliters of juice of fresh whole plant, per day; Not to exceed 10 milliliters per single dose (EMA 2009; Blumenthal et al. 2000).</p>
+
+
+        <h3>Direction(s) for use</h3>
+            <p><em>Flushing of urinary tract</em></p>
+            <p>Maintain adequate fluid intake (EMA 2009).</p>
+
+            <p><strong>Combination rules</strong></p>
+            <ul>
+                <li>No permitted combinations between the preparations 'Dry, Powdered, Non-Standardized Extracts' and 'Juice'.</li>
+                <li>No permitted combination between plant parts (i.e. leaf, root and whole plant) as the amount of a specific part is required to support the associated claim(s) at Class I. For Class II and III applications, when there is not claim associated with dandelion or dandelion juice, and the monograph is only used to support safety of the medicinal ingredient, combination of plant parts is allowed with the following rules:</li>
+            <ul>    
+                <li>For the methods of preparation 'Dry, Powdered, Non-Standardized Extracts', the total quantity equivalent from all sources must not exceed 24 g per day when the source material part 'root' is included or 30 g per day when the source material part 'root' is not included.</li>
+                <li>For the method of preparation 'Juice', the total quantity equivalent from all sources must not exceed 20 mL per day when the source material part 'leaf' is included or 24 mL per day when the leaf juice is not included.</li>
+                <li>For combination of plant parts, the contraindication statements apply for products providing a total of 10 g or more of dried leaf and/or dried root and/or dried whole plant, per day.</li>
+            </ul>
+            </ul>
+    <h2>Duration(s) of Use</h2>
+        <p><em>Diuretic</em></p>
+        <p>For occasional use only (APhA 2002; CPhA 2002).</p> 
+    
+
+    <h2>Risk Information</h2>
+
+        <h3>Caution(s) and warning(s)</h3>
+        <p><em>All products</em></p> 
+        <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver or biliary disorder or an intestinal obstruction (Brinker 2010; Godfrey et al. 2010; ESCOP 2003; Bradley 1992).</p>
+
+        <p><em>Constipation, Flushing of the urinary tract, Indigestion, and Loss of appetite</em></p>  
+        <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+            
+        <h3>Contraindication(s)</h3>
+            <p><em>Products providing 10 g or more of dried leaf or dried root or dried whole plant, per day or 10 mL or more of juice, per day</em></p>
+            <ul>
+                <li>Do not use if you have diabetes or a blood pressure, kidney or cardiovascular disorder (Goksu et al. 2010; EMA 2009; Hunt et al. 2005; Green et al. 2002; Mujais and Katz 2000; Carlsen et al. 1990; Kuller et al. 1986; Artz et al. 1966).</li>
+                <li>Do not use if you are taking heart medications or other products containing diuretics (Goksu et al. 2010; EMA 2009; Hunt et al. 2005; Green et al. 2002; Mujais and Katz 2000; Carlsen et al. 1990; Kuller et al. 1986; Artz et al. 1966).</li>
+            </ul>
+
+        <h3>Known adverse reaction(s)</h3>
+            <p>No statement required.</p>
+            
+    <h2>Non-medicinal ingredients</h2>
+        <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+        
+        
+    <h2>Storage conditions</h2>
+        <p>Must be established in accordance with the requirements described in the <i>Natural Health Products Regulations.</i></p>
+
+        
+    <h2>Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide. </li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID. </li>
+            </ul>
+
+    <h2>EXAMPLE OF PRODUCT FACTS:</h2>
+                                
+        <p>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> Labelling of Natural Health Products</a> for more details.<p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Dandelion_E_1.gif" alt="Product Facts Table" style="width:700px" /></p>    
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Dandelion_E_2.gif" alt="Product Facts Table" style="width:700px" /></p>    
+        
+
+            
+        
+    <h2>References Cited</h2>
+        <ul>
+            <li>APhA 2002: Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care.13<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association; 2002. </li>
+            <li>Artz SA, Paes IC, Faloon WW. Hypokalemia-induced hepatic coma in cirrhosis. Occurrence despite neomycin therapy. Gastroenterology 1966;51(6):1046-1053. </li>
+            <li>BHP 1996: British Herbal Pharmacopoeia. Bournemouth (GB): The British Herbal Medicine Association; 1996. </li>
+            <li>Blumenthal M, Goldberg A, Brinckmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000. </li>
+            <li>Bradley PR, editor. 1992. British Herbal Compendium, Volume 1. Bournemouth (GB): British Herbal Medicine Association.</li>
+            <li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications; 2010.  </li>
+            <li>Carlsen JE, K&#248;ber L, Torp-Pedersen C, Johansen P. Relation between dose of bendrofluazide, antihypertensive effect, and adverse biochemical effects. British Medical Journal 1990;300(6730):975-978. </li>
+            <li>CPhA 2002: Canadian Pharmacists Association. Patient Self-Care. Helping Patients Make Therapeutic Choices. Ottawa (ON): Canadian Pharmacists Association; 2002. </li>
+            <li>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1919 original]. </li>
+            <li>EMA 2009: European Medicines Agency, Science Medicines Health. 12 November 2009. EMA/HMPC/212895/2008. Committee on Herbal Medicinal Products (HMPC) Community herbal monograph on Taraxacum officinale Weber ex Wigg., radix cum herba. Final. [Accessed 2024 March 14]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-taraxacum-officinale-weber-ex-wigg-radix-cum-herba_en.pdf</li>
+            <li>ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products. 2<sup>nd</sup> edition. Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme; 2003. </li>
+            <li>Felter HW, Lloyd JU. King's American Dispensatory, Volume 2, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1898 original]. </li>
+            <li>Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. Second Edition. Boca Raton (FL): Taylor and Francis Group; 2013.</li>
+            <li>Godfrey A, Saunders P, Barlow K, Gowan M. Principles and Practices of Naturopathic Botanical Medicine: Volume 1: Botanical Medicine Monographs, 1<sup>st</sup> edition. Toronto (ON): CCNM Press Inc.; 2010. </li>
+            <li>Goksu E, Eken C, Karadeniz O, Kucukyilmaz O, Firt report of hypoglycemia secondary to dandelion (<em>Taraxacum officinale</em>) ingestion. The American Journal of Emergency Medicine 2010;28:111.e1-111.e2 </li>
+            <li>Green DM, Ropper AH, Kronmal RA, Psaty BM, Burke GL. Serum potassium level and dietary potassium intake as risk factors for stroke. Neurology 2002;59(3):314-320. </li>
+            <li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace & Company publication]. </li>
+            <li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press; 2003. </li>
+            <li>Hunt SA, Abraham WT, Chin MH, Feldman AM, Francis GS, Ganiats TG, Jessup M, Konstam MA, Mancini DM, Michl K, Oates JA, Rahko PS, Silver MA, Stevenson LW, Yancy CW, Antman EM, Smith Jr. SC, Adams CD, Anderson JL, Faxon DP, Fuster V, Halperin JL, Hiratzka LF, Jacobs AK, Nishimura R, Ornato JP, Page RL, Riegel B. American College of Cardiology, American Heart Association Task Force on Practice Guidelines, American College of Chest Physicians, International Society for Heart and Lung Transplantation, Heart Rhythm Society. ACC/AHA 2005 Guideline Update for the Diagnosis and Management of Chronic Heart Failure in the Adult: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines (Writing Committee to Update the 2001 Guidelines for the Evaluation and Management of Heart Failure): developed in collaboration with the American College of Chest Physicians and the International Society for Heart and Lung Transplantation: endorsed by the Heart Rhythm Society. Circulation 2005;112(12):e154-235. </li>
+            <li>Kuller LH, Hulley SB, Cohen JD, Neaton J. Unexpected effects of treating hypertension in men with electrocardiographic abnormalities: a critical analysis. Circulation 1986;73(1):114-123. </li>
+            <li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005. </li>
+            <li>Mujais SK, Katz AL. Potassium deficiency. In: Seldin & Giebisch's The Kidney: Physiology and Pathophysiology. Lippincott Williams and Wilkins; 2000. p1615. </li>
+            <li>USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 March 8]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+            <li>WHO 2007: World Health Organization. WHO Monographs on Selected Medicinal Plants, Volume 3. Geneva: World Health Organization; 2007.</li>
+            <li>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis. 3<sup>rd</sup> edition. Stuttgart (DE): Medpharm Scientific Publishers; 2004. </li>
+            <li>Wiersema J, Le&#243;n B. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press LLC; 1999. </li>
+            <li>Wren RC. Potter's Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark; 1907.</li>
+        </ul>
+        
+    <h2>References Reviewed</h2>
+        <ul>
+            <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines. 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press; 2007. </li>
+            <li>Bisset NG, Wichtl M, editors. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 2<sup>nd</sup> edition. Stuttgart (D): Medpharm GmbH Scientific Publishers; 2001. </li>
+            <li>Clare BA, Conroy RS, Spelman K. The Diuretic Effect in Human Subjects of an Extract of <em>Taraxacum officinale</em> Folium over a Single Day. The Journal of Alternative and Complementary Medicine 2009;15(8):929-934. </li>
+            <li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1922 original]. </li>
+            <li>Sch&#252;tz K, Carle R, Schieber A. Taraxacum - A review on its phytochemical and pharmacological profile. Journal of Ethnopharmacology 2006;107:313-323. </li>
+            <li>Swanston-Flatt SK, Day C, Flatt PR, Gould BJ, Baily CJ. Glycaemic effects of traditional European plant treatments for diabetes. Studies in normal and streptozotocin diabetic mice. Diabetes Research 1989;10(2):69-73. </li>
+            <li>Williamson EM, Evans FJ, Wren RC. Potter's New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (GB): C.W. Daniel Company Limited; 1988.</li>
+        </ul>
+
+
+
+
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

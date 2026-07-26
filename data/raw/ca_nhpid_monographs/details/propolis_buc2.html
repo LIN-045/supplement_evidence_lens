@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=propolis_buc2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="858dcdb7-5f11-41ed-8bf3-b99dc0d64aec"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>PROPOLIS Buccal </h1>
+
+     <div class="icon">
+        <a href="dbImages/mono_propolis--buccal_english.pdf" title="Monograph: PROPOLIS-Buccal (English)"><img alt="Monograph: PROPOLIS-Buccal (English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 36 K)</a>
+    </div>
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient. </p>
+    
+    <p><strong>Notes</strong></p>
+    <ul>
+    <li>Text in parentheses is additional optional information which can be included on the label at the applicant’s discretion. </li>
+    <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+    </ul>
+        
+    <h2>Date		</h2>
+    	<p>May 29, 2026</p>
+
+
+    <h2>Proper name(s), Common name(s), Source information</h2>
+
+    <table class="subject" >
+  <thead><tr>
+    <th rowspan="2">Proper name(s)</th>
+    <th rowspan="2">Common names(s)</th>
+    <th colspan="3">Source information</th>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    
+    <th>Source material(s)</th>
+    <th>Part(s)</th>
+    <th>Preparation(s)</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Propolis</td>
+      <td>
+        <ul><li>Bee propolis</li>
+        <li>Feng jiao</li>
+        <li>Propolis</li>
+        <li>Propolis balsam</li>
+        <li>Propolis resin</li>
+        <li>Propolis wax</li></ul>
+</td>
+      <td><em>Apis mellifera</em></td>
+      <td>Secretion</td>
+      <td>Dry</td>
+    </tr>
+  </tbody>
+</table>
+    <p>References: Proper name: PPRC 2020; Lotfy 2006; Common names: RSC 2024; PPRC 2020; Lotfy 2006; Salatino et al. 2005; Marcucci 1995; Source information: Ramos et al. 2007; Burdock 1998.</p>
+
+
+    <h2>Route of administration</h2>
+
+    <p>Buccal </p>
+    
+    
+    <h2>Dosage form(s) </h2>
+        
+    <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+
+    <p>Acceptable dosage forms for buccal use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.the age category listed in this monograph and specified route of administration are indicated in the Compendium of Monographs Guidance Document. </p>
+
+
+    <h2>Use(s) or Purpose(s) </h2>
+
+    <p>(Traditionally) used in Herbal Medicine to help relieve sore throat and/or other mouth and throat infections (Castalado and Capasso 2002; Mills and Bone 2000; Tilgner 1999). </p>
+
+    <p><strong>Notes</strong></p>
+    <ul>
+    <li>For multi-ingredient products:
+    <ul>
+    <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Propolis is traditionally used in Herbal Medicine to help relieve sore throat and other mouth and throat infections).</li>
+    <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+
+</ul></li></ul>
+    
+    <h2>Dose(s) </h2>
+
+    <h3>Subpopulation(s)</h3>
+
+    <p>Adults 18 years and older</p>
+
+    <h3>Quantity(ies)</h3>
+
+    <p><strong>Methods of preparation:</strong> Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+
+    <p>0.2 – 0.6 grams dried propolis, per day (PPRC 2020).</p>
+
+    <p><strong>*Note:</strong> Solvents allowed for the method of preparation “Non-Standardized Extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+
+    <h3>Direction(s) for use</h3>
+
+    <p>No statement required. </p>
+
+
+    <h2>Duration(s) of use</h2>
+    
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks (Jasprica et al. 2007).</p>
+
+
+    <h2>Risk information </h2>
+
+    <h3>Caution(s) and warning(s) </h3>
+
+    <p><em>All products</em></p>
+<ul>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are allergic to bee products, poplar tree products, or balsam of Peru (Brinker 2010; Marcucci 1995; Valsecchi and Cainelli 1984; Melli et al. 1983; Rudzki and Gryzwa 1983). </li>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+        </ul>
+    
+    <p><em>All products, except those not swallowed (e.g., gargles, rinses)</em></p>
+
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you are pregnant or breastfeeding.</p>
+
+    <h3>Contraindication(s)  	</h3>
+
+    <p>No statement required. </p>
+    
+    <h3>Known adverse reaction(s)</h3>
+
+    <p>Stop use if hypersensitivity/allergy occurs (PPRC 2020; Scully 2006; Hsu et al. 2004; Teraki and Shiohara 2001; Machácková 1988; Hausen et al. 1987; Valsecchi and Cainelli 1984; Melli et al. 1983; Rudzki and Grzywa 1983).  </p>
+
+
+    <h2>Non-medicinal ingredients </h2>
+
+    <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database. </p>
+
+    
+    <h2>Storage conditions 	</h2>
+        
+    <p>Must be established in accordance with the requirements described in the Natural Health Products Regulations. </p>
+
+
+
+
+    <h2>Specifications  	</h2>
+<ul>
+    <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide. </li>
+    <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+
+</ul>
+<h2>EXAMPLE OF PRODUCT FACTS:</h2>
+
+<p>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</p>
+<p class="alignCenter"><img src="nhpid-bdipsn/dbImages/PROPOLIS_BUCCAL_E.gif" alt="Product Facts Table" style="width:700px"></p>
+
+
+<h2>References cited</h2>
+<ul>
+ <li>
+  Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications; 2010.
+ </li>
+ <li>
+  Burdock GA. Review of the biological properties and toxicity of bee propolis (propolis). Food and Chemical Toxicology 1998;36:347-363.
+ </li>
+ <li>
+  Castalado S, Capasso F. Propolis, an old remedy used in modern medicine. Fitotherapia 2002;73(S1):S1-S6.
+ </li>
+ <li>
+  Hausen BM, Wollenweber E, Senff H, Post B. Propolis allergy (II): the sensitizing properties of 1,1-dimethylallyl caffeic acid ester. Contact Dermatitis 1987;17:171-177.
+ </li>
+ <li>
+  Hsu CY, Chiang WC, Weng TI, Chen WJ, Yuan A. Laryngeal edema and anaphalactic shock after topical propolis use for acute pharyngitis. American Journal of Emergency Medicine 2004;22(5):432-433.
+ </li>
+ <li>
+  Jasprica I, Mornar A, Debeljak Z, Molcic-Bubalo A, Medic-Saric M, Mayer L, Romic Z, Bucan K, Balog T, Sobocanec S, Sverko V. In vivo study of propolis supplementation effects on antioxidative status and red blood cells. Journal of Ethnopharmacology 2007;110:548-554.
+ </li>
+ <li>
+  Lotfy M. Review: Biological activity of bee propolis in health and disease. Asian Pacific Journal of Cancer Prevention 2006;7:22-31.
+ </li>
+ <li>
+  Marcucci MC. Propolis: chemical composition, biological properties and therapeutic activity. Apidologie 1995;26:83-89.
+ </li>
+ <li>
+  Melli MC, Giorgini S, Sertoli A. Occupational dermatitis in a bee-keeper. Contact Dermatitis 1983;9(5):427-428.
+ </li>
+ <li>
+  Mills S and Bone K. Principles and Practice of Phytotherapy; Modern Herbal Medicine. London (GB): Churchill Livingstone; 2000.
+ </li>
+ <li>
+  PPRC 2020: Pharmacopoeia of the People’s Republic of China, Volume 1, English edition. Beijing (CN): The State Pharmacopoeia Commission of the People’s Republic of China; 2020.
+ </li>
+ <li>
+  Ramos AFN, Miranda JL. Propolis: a review of its anti-inflammatory and healing actions. J. Venom. Anim. Toxins incl. Trop. Dis. 2007;13(4):697-710.
+ </li>
+ <li>
+  RSC 2024: Royal Society of Chemistry: The Merck Index Online; 2024 [Accessed 2024 November 26]. Available from: https://merckindex.rsc.org/
+ </li>
+ <li>
+  Rudzki E, Grzywa Z. Dermatitis from propolis. Contact Dermatitis 1983;9(1):40-45.
+ </li>
+ <li>
+  Salatino A, Teixeira EW, Negri G, Message D. Review: Origin and chemical variation of Brazilian propolis. Oxford University Press eCAM 2005;2(1):33-38.
+ </li>
+ <li>
+  Scully C. Propolis: A background (Letter). British Dental Journal 2006;200(7):359-360.
+ </li>
+ <li>
+  Teraki Y, Shiohara T. Propolis-induced granulomatous contact dermatitis accompanied by marked lymphadenopathy. British Journal of Dermatology 2001;144:1277-1278.
+ </li>
+ <li>
+  Tilgner S. Herbal Medicine: From the Heart of the Earth. Creswell (OR): Wise Acres Press Inc; 1999.
+ </li>
+ <li>
+  Valsecchi R, Cainelli T. Dermatitis from propolis. Contact Dermatitis 1984;11(5):317.
+ </li>
+</ul>
+
+<h2>References reviewed</h2>
+<ul>
+ <li>
+  Bankova V. Review: Recent trends and important developments in propolis research. Oxford University Press eCAM 2005;2(1):29-32.
+ </li>
+ <li>
+  Botushanov PI, Grigorov GI, Aleksandrov GA. A clinical study of a silicate toothpaste with extract from propolis. Endodontology and Parodontology 2001;43(1-2):28-30.
+ </li>
+ <li>
+  Cairo do Amaral R, Gomes RT, Rocha WMS, Abreu SLR, Santos VR. Periodontitis treatment with Brazilian green propolis gel. Pharmacologyonline 2006;3:336-341. [Accessed 2025 January 13]. Available from: http://pharmacologyonline.silae.it/files/archives/2006/vol3/026.Santos.pdf
+ </li>
+ <li>
+  Coelho LG, Bastos EMAF, Resende CC, Paula e Silva CM, Sanches BSF, Castro FJ, Moretzsohn LD, Vieira WLS, Trinidade OR. Brazilian green propolis on Helicobacter pylori infection. A pilot clinical study. Helicobacter 2007;12:572-574.
+ </li>
+ <li>
+  Crisan I, Zaharia CN, Popovici F, Jucu V, Belu O, Dascalu C, Mutiu A, Petrescu A.  Natural propolis extract NIVCRISOL in the treatment of acute and chronic rhinopharyngitis in children. Romanian Journal of Virology 1995;46(3-4):115-133.
+ </li>
+ <li>
+  El-Khatib AS, Agha AM, Mahran LG, Khayyal MT. Prophylactic effect of aqueous propolis extract against acute experimental hepatotoxicity in vivo. Verlag der Zeitschrift fur Naturforsch 2002;57c:379-385.
+ </li>
+ <li>
+  Fuliang HU, Hepburn HR, Xuan H, Chen M, Daya S, Radloff SE. Effects of propolis on blood glucose, blood lipid and free radicals in rats with diabetes mellitus. Pharmacological Research 2005;51:147-152.
+ </li>
+ <li>
+  Gabrys J, Konecki J, Krol W, Scheller S, Shani J. Free amino acids in bee hive product (propolis) as identified and quantified by gas-liquid chromatography. Pharmacological Research Communications 1986;18(6):513-518.
+ </li>
+ <li>
+  Gambelunghe C, Rossi R, Sommavilla M, Ferranti C, Rossi R, Ciculi C, Gizzi S, Micheletti A, Rufini S. Effects of Chrysin on Urinary Testosterone Levels in Human Males. Journal of Medicinal Food; 2003;6(4):387-390.
+ </li>
+ <li>
+  Gebara ECE, Pustiglioni AN, de Lima LAPA, Mayer MPA. Propolis extract as an adjuvant to periodontal treatment. Oral Health and Preventative Dentistry 2003;1(1):29-35.
+ </li>
+ <li>
+  Ghisalberti EL. Propolis: a review. Bee World 1979;60:59-84.
+ </li>
+ <li>
+  Giusti F, Miglietta R, Pepe P, Seidenari S. Sensitization to propolis in 1255 children undergoing patch testing. Contact Dermatitis 2004;51:255-258.
+ </li>
+ <li>
+  Gregory SR, Piccolo N, Piccolo MT, Piccolo MS, Heggers JP. Comparison of Propolis Skin Cream to Silver Sulfadiazine: A Naturopathic Alternative to Antibiotics in Treatment of Minor Burns. The Journal of Alternative and Complementary Medicine 2002;8(1):77-83.
+ </li>
+ <li>
+  Imhof M, Lipovac M, Kurz Ch, Barta J, Verhoeven HC, Huber JC. Propolis solution for the treatment of chronic vaginitis. International Journal of Gynecology and Obstetrics 2005;89:127-132.
+ </li>
+ <li>
+  Khayyal MT, El-Ghazaly MA, El-Khatib AS, Hatem AM, de Vries PJF, El-Shafei S, Khattab MM. A clinical pharmacological study of the potential beneficial effects of a propolis food product as an adjuvant in asthmatic patients. Fundamental and Clinical Pharmacology 2003;17:93-102.
+ </li>
+ <li>
+  Koo H, Cury JA, Rosalen PL, Ambrosano GMB, Ikegaki M, Park YK. Effect of a mouthrinse containing selected propolis on 3-day dental plaque accumulation and polysaccharide formation. Caries Research 2002;36(6):445-448.
+ </li>
+ <li>
+  Krell R. Value-Added Products from Beekeeping [online] Agricultural Services Bulletin No. 124. Rome (IT): Food and Agriculture Organisation of the United Nations, Agriculture and Consumer Protection; 1996. [Accessed 2024 January 13]. Available from:
+http://www.fao.org/docrep/w0076E/w0076E00.htm
+ </li>
+ <li>
+  Machackova J. The incidence of allergy to propolis in 605 consecutive patients patch tested in Prague. Contact Dermatitis 1988;18:210-212.
+ </li>
+ <li>
+  Magro-Filho O, de Carvalho AC. Topical effect of propolis in the repair of sulcoplasties by the modified Kazanjian technique. Cytological and clinical evaluation. Journal of the Nihon School of Dentistry 1994;36(2):102-111.
+ </li>
+ <li>
+  Menniti-Ippolito F, Mazzanti G, Vitalone A, Firenzuoli F, Santuccio C. Surveillance of suspected adverse reactions to natural health products: the case of propolis. Drug Safety 2008;31(5) 419-423.
+ </li>
+ <li>
+  Mirzoeva OK and Calder PC. The effect of propolis and its components on eicosanoid production during the inflammatory response. Prostaglandins, Leukotrienes and Essential Fatty Acids 1996;55(6):441-449.
+ </li>
+ <li>
+  Murray MC, Worthington HV, Blinkhorn AS. A study to investigate the effect of a propolis-containing mouthrinse on the inhibition of de novo plaque formation. Journal of Clinical Periodontology 1997;24:796-798.
+ </li>
+ <li>
+  Nakajima Y, Tsuruma K, Shinazawa M, Mishima S, Hara H. Comparison of bee products based on assays of antioxidant capacities. BMC Complementary and Alternative Medicine 2009;9(1):4.
+ </li>
+ <li>
+  Santos VR, Pimenta FJGS, Aguiar MCF, do Carmo MAV, Naves MD, Mesquita RA. Short Communication: Oral Candidiasis Treatment with Brazilian Ethanol Propolis Extract. Phytotherapy Research 2005;19:652-654.
+ </li>
+ <li>
+  Sforcin JM. Propolis and the immune system: a review. Journal of Ethnopharmacology 2007;113:1-14.
+ </li>
+ <li>
+  Viuda-Martos M, Ruiz-Navajas Y, Fernández-López J, Pérez-Alvarez JA.. Functional properties of honey, propolis, and royal jelly. Journal of Food Science 2008;73(9):R117-124.
+ </li>
+ <li>
+  Vynograd N, Vynograd I, Sosnowski Z. A comparative multi-centre study on the efficacy of propolis, acyclovir and placebo in the treatment of genital herpes (HSV). Phytomedicine 2000;7(1):1-6.
+ </li>
+</ul>
+<h2>Version History</h2>
+<table class="subject" >
+  <thead><tr>
+    <th>Publication date</th>
+    <th>Update type</th>
+    <th>Summary of main updates (from May 2026)</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>2026-05-29</td>
+      <td>Minor updates</td>
+      <td>
+<ul>
+        <li>Introductory notes</li>
+        <li>Addition of the crude material preparation column in Table 1</li>
+        <li>Addition of notes in the Uses or purposes section</li>
+        <li>Addition of methods of preparation</li>
+        <li>Addition of solvent information</li>
+        <li>Duration of use statement wording</li>
+        <li>Risk statement wording </li>
+        <li>Inclusion of the standard statement for storage conditions</li>
+        <li>Inclusion of a Product Facts Table example</li>
+        <li>Reference section</li>
+        <li>Inclusion of version history information</li>
+
+</ul>    </td>
+    </tr>
+    <tr>
+      <td>2018-07-31</td>
+      <td>Validation</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2014-01-08</td>
+      <td>Minor updates</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2013-12-23</td>
+      <td>Minor updates (buccal only)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2009-07-31</td>
+      <td>Initial release (oral, buccal and topical)</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

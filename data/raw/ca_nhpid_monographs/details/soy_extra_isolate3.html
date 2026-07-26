@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=soy_extra_isolate3\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="8f2ae915-29bc-4d9b-83c4-f518ebb43b52"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>SOYBEAN EXTRACTS AND ISOLATES</h1>
+	<div class="icon">
+		<a href="dbImages/mono_soybean-extracts-and-isolates_english.pdf" title="SOYBEAN EXTRACTS AND ISOLATES"><img alt="Monograph: SOYBEAN EXTRACTS AND ISOLATES" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/> (PDF Version - 231 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	<p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+		<p>Specific combination rules apply to medicinal ingredients with estrogenic (e.g., red clover isoflavone extract, soybean extracts and isolates and dong quai - <em>Angelica sinensis</em>) or anti-estrogenic effects [e.g., indole-3-carbinol (I3C) and, diindolylmethane (DIM)]. Consult the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/monograph-combination-guide.html">Monograph combination guide</a> for more information.</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>May 29, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="3">Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>4&apos;,5,7-Trihydroxyisoflavone</li>
+								<li>5,7-Dihydroxy-3-(4-hydroxyphenyl)-4H-1-benzopyran-4-one</li>
+							</ul>
+						</td>
+						<td>Genistein</td>
+						<td>Genistein</td>
+						<td><em>Glycine max</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>7-(beta-D-glucopyranosyloxy)-3-(4- hydroxyphenyl)-4H-1-Benzopyran-4-one</td>
+						<td>
+							<ul>
+								<li>7-O-beta-D-Glucopyranoside</li>
+								<li>Genistein 7-glucoside</li>
+								<li>Genistin</li>
+							</ul>
+						</td>
+						<td>Genistin</td>
+						<td><em>Glycine max</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td><em>Glycine max</em></td>
+						<td>
+							<ul>
+								<li>Black soya bean</li>
+								<li>Da dou</li>
+								<li>Soy</li>
+								<li>Soya</li>
+								<li>Soyabean</li>
+								<li>Soybean</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Glycine max</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>Soy isoflavone extract</td>
+						<td>Soy isoflavone extract</td>
+						<td>N/A</td>
+						<td><em>Glycine max</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>Soy protein concentrate</td>
+						<td>Soy protein concentrate</td>
+						<td>N/A</td>
+						<td><em>Glycine max</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>Soy protein isolate<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></td>
+						<td>Soy protein isolate</td>
+						<td>N/A</td>
+						<td><em>Glycine max</em></td>
+						<td>Seed</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2024, USDA 2024, Evans et al. 2007, Newton et al. 2006, Roudsari et al. 2005, Arjamandi et al. 2003, Yamori et al. 2002, Alekel et al. 2000, Scambia et al. 2000, Upmalis et al. 2000 Wangen et al. 2000, Potter et al. 1998&semi; Common names: NHPID 2024, Evans et al. 2007, Newton et al. 2006, Roudsari et al. 2005, Arjamandi et al. 2003, Yamori et al. 2002, Alekel et al. 2000, Wangen et al. 2000, Potter et al. 1998&semi; Source information: NHPID 2024, USDA 2024, D&apos;Anna et al. 2007, Evans et al. 2007, Nahas et al. 2007, Newton et al. 2006, Ye et al. 2006, Roudsari et al. 2005, Crisafulli et al. 2004, Harkness et al. 2004, Kreijkamp-Kaspers et al. 2004, Arjamandi et al. 2003, Uesugi et al. 2003, Han et al. 2002, Albert et al. 2002, Faure et al. 2002, Yamori et al. 2002, Alekel et al. 2000, Wangen et al. 2000, Albertazzi et al. 1998, Potter et al. 1998.</p>
+			<p>
+				<sup id="ref1-1">1</sup>For isolate, the potency information should be equivalent to 90% or more protein on a dry weight basis.
+			</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Helps to attenuate/reduce/decrease bone (mineral density (BMD)) loss in postmenopausal women when used in conjunction with adequate amounts of calcium and vitamin D (Marini et al. 2007&semi; Newton et al. 2006&semi; Ye et al. 2006&semi; Chen et al. 2004&semi; Kreijkamp-Kaspers et al. 2004&semi; Lydeking et al. 2004&semi; Uesugi et al. 2003&semi; Alekel et al. 2000&semi; Potter et al. 1998).</li>
+				<li>May reduce severe and frequent menopausal symptoms (such as hot flashes and/or night sweats) (D&apos;Anna et al. 2007&semi; Nahas et al. 2007&semi; Williamson-Hughes et al. 2006&semi; Crisafulli et al. 2004&semi; Albert et al. 2002&semi; Han et al. 2002&semi; Scambia et al. 2000&semi; Upmalis et al. 2000&semi; Albertazzi et al. 1998).</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Perimenopausal women&semi; Postmenopausal women (D&apos;Anna et al. 2007&semi; Nahas et al. 2007&semi; Crisafulli et al. 2004&semi; Albert et al. 2002&semi; Faure et al. 2002&semi; Han et al. 2002&semi; Scambia et al. 2000&semi; Upmalis et al. 2000&semi; Albertazzi et al. 1998).</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Reduction of BMD loss</em></p>
+					<p><em>Glycine max, Soy isoflavone extract</em></p>
+					<p>Methods of preparation: Standardized extracts</p>
+						<p>75 - 125 milligrams of total Aglycone Isoflavone Equivalents (AIE), per day (Marini et al. 2007&semi; Newton et al. 2006&semi; Ye et al. 2006&semi; Chen et al. 2004&semi; Kreijkamp-Kaspers et al. 2004&semi; Lydeking et al. 2004&semi; Uesugi et al. 2003&semi; Alekel et al. 2000&semi; Potter et al. 1998).</p>
+					<p><em>Soy protein concentrate, Soy protein isolate</em></p>
+						<p>Methods of preparation: Standardized extracts</p>
+							<p>75 - 125 milligrams of total AIE, per day&semi; Not to exceed 35 grams of soy protein concentrate and/or isolate, per day (CNF 2024&semi; Marini et al. 2007&semi; Newton et al. 2006&semi; Ye et al. 2006&semi; Chen et al. 2004&semi; CPS 2004&semi; Kreijkamp-Kaspers et al. 2004&semi; Lydeking et al. 2004&semi; Uesugi et al. 2003&semi; Alekel et al. 2000&semi; Potter et al. 1998).</p>
+					<p><em>Genistein, Genistin</em></p>
+						<p>75 - 125 milligrams of total AIE, per day (Marini et al. 2007&semi; Newton et al. 2006&semi; Ye et al. 2006&semi; Chen et al. 2004&semi; Kreijkamp-Kaspers et al. 2004&semi; Lydeking et al. 2004&semi; Uesugi et al. 2003&semi; Alekel et al. 2000&semi; Potter et al. 1998).</p>
+				<p><em>Reduction of menopausal symptoms</em></p>
+					<p><em>Glycine max, Soy isoflavone extract</em></p>
+						<p>Methods of preparation: Standardized extracts</p>
+							<p>30 - 125 milligrams of total AIE with a minimum of 15 milligrams of AIE from genistein and/or genistin, per day (D&apos;Anna et al. 2007&semi; Nahas et al. 2007&semi; Williamson-Hughes et al. 2006&semi; Crisafulli et al. 2004&semi; Albert et al. 2002&semi; Han et al. 2002&semi; Scambia et al. 2000&semi; Upmalis et al. 2000&semi; Albertazzi et al. 1998).</p>
+					<p><em>Soy protein concentrate, Soy protein isolate</em></p>
+						<p>30 - 125 milligrams of total AIE with a minimum of 15 milligrams of AIE from genistein and/or genistin, per day&semi; Not to exceed 35 grams of soy protein concentrate and/or isolate, per day (CNF 2024&semi; D&apos;Anna et al. 2007&semi; Nahas et al. 2007&semi; Williamson-Hughes et al. 2006&semi; CPS 2004&semi; Crisafulli et al. 2004&semi; Albert et al. 2002&semi; Han et al. 2002&semi; Scambia et al. 2000&semi; Upmalis et al. 2000&semi; Albertazzi et al. 1998).</p>
+					<p><em>Genistein, Genistin</em></p>
+						<p>15 - 125 milligrams of total AIE, per day ( D&apos;Anna et al. 2007&semi; Nahas et al. 2007&semi; Williamson-Hughes et al. 2006&semi; Crisafulli et al. 2004&semi; Albert et al. 2002&semi; Han et al. 2002&semi; Scambia et al. 2000&semi; Upmalis et al. 2000&semi; Albertazzi et al. 1998).</p>
+			<h3>Direction(s) for use</h3>
+				<p>Take a few hours before or after taking other medications or health products (Sweetman 2007&semi; ASHP 2005).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p><em>Reduction of BMD loss</em></p>
+				<p>Use for at least 6 months to see beneficial effects (Ye et al. 2006&semi; Harkness et al. 2004&semi; Alekel et al. 2000&semi; Potter et al. 1998).</p>
+					<p><em>Reduction of menopausal symptoms</em></p>
+						<p>Use for at least 2 weeks to see beneficial effects (D&apos;Anna et al. 2007&semi; Nahas et al. 2007&semi; Crisafulli et al. 2004&semi; Han et al. 2002&semi; Scambia et al. 2000&semi; Upmalis et al. 2000&semi; Albertazzi et al. 1998).</p>
+					<p><em>All uses</em></p>
+						<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 1 year (Tomar and Shiao 2008&semi; BfR 2007&semi; Duffy et al. 2007&semi; Palacios et al. 2007&semi; Unfer et al. 2004&semi; Petrakis et al. 1996).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are not up-to-date on mammograms and gynaecological evaluations (Tomar and Shiao 2008&semi; BfR 2007&semi; Duffy et al. 2007&semi; Palacios et al. 2007&semi; Unfer et al. 2004&semi; Petrakis et al. 1996).</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen.</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners or any hormone replacement therapy (Rios et al. 2008&semi; BfR 2007&semi; Messina and Redmond 2006&semi; ASHP 2005&semi; Izzo et al. 2005&semi; Mills and Bone 2005&semi; Franco et al. 2004&semi; Mazer 2004&semi; Murray et al. 2003&semi; Cambria-Keily 2002&semi; Bell and Ovalle 2001&semi; IOM 2001&semi; Hansten et al. 1997&semi; Petrakis et al. 1996).</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver disorder or a history of hormonal or gynaecological disease (NIH 2022&semi; Cecchi et al. 2009&semi; Chandrareddy et al. 2008&semi; Gasteyger et al. 2008&semi; Tomar and Shiao 2008&semi; Jefferson et al. 2007&semi; Palacios et al. 2007&semi; Kaari et al. 2006&semi; Noel et al. 2006&semi; Maskarinec et al. 2004a&semi; Maskarinec et al. 2004b&semi; Unfer et al. 2004&semi; Borghi-Scoazec et al. 2002&semi; Wu et al. 2000&semi; Duncan et al. 1999b&semi; Hargreaves et al. 1999&semi; McMichael-Phillips et al. 1998&semi; Petrakis et al. 1996).</li>
+					</ul>
+				</p>
+			<h3>Contraindication(s)</h3>
+				<p>Do not use if you have or had breast cancer or tumours or a predisposition to breast cancer, as indicated by an abnormal mammogram or biopsy, or a family member with breast cancer (Helferich et al. 2008&semi; Tomar and Shiao 2008&semi; BfR 2007&semi; Duffy et al. 2007&semi; Kaari et al. 2006&semi; Nikander et al. 2005&semi; Hargreaves et al. 1999&semi; McMichael-Phillips et al. 1998&semi; Petrakis et al. 1996).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if new symptoms develops such as breast pain, a recurrence of menstruation, uterine spotting or liver-related symptoms (e.g. abdominal pain, jaundice, dark urine) (Chandrareddy et al. 2008&semi; Martinez and Lewi 2008&semi; Palacios et al. 2007&semi; Olawaiye et al. 2005&semi; Albert et al. 2002&semi; Han et al. 2002&semi; Hargreaves et al. 1999&semi; McMichael-Phillips et al. 1998&semi; Petrakis et al. 1996).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+				<li>For an accurate measure of specific isoflavones in AIE, follow the methods outlined in AOAC 2008.03 (Collison 2008).</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Soybean_Extra_Iso_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Albert A, Altabre C, Bar&#243; F, Buend&#237;a E, Cabero A, Cancelo MJ, Castelo-Branco C, Chantre P, Duran M, Haya J, Imbert P, Jul&#237;a D, Lanchares JL, Llaneza P, Manubens M, Mi&ntilde;ano A, Quereda F, Ribes C, V&#225;zquez F. 2002. Efficacy and safety of a phytoestrogen preparation derived from Glycine max (L.) Merr in climacteric symptomatology: a multicentric, open, prospective and non-randomized trial. Phytomedicine 9(2):85-92.</li>
+				<li>Albertazzi P, Pansini F, Bonaccorsi G, Zanotti L, Forini E, De Aloysio D. 1998. The effect of dietary soy supplementation on hot flushes. Obstetrics and Gynecology 91(1):6-11.</li>
+				<li>Alekel DL, Germain AS, Peterson CT, Hanson KB, Stewart JW, Toda T. 2000. Isoflavone-rich soy protein isolate attenuates bone loss in the lumbar spine of perimenopausal women. The American Journal of Clinical Nutrition 72(3):844-852.</li>
+				<li>Arjmandi BH, Khalil DA, Smith BJ, Lucas EA, Juma S, Payton ME, Wild RA. 2003. Soy protein has a greater effect on bone in postmenopausal women not on hormone replacement therapy, as evidenced by reducing bone resorption and urinary calcium excretion. The Journal of Clinical Endocrinology and Metabolism 88(3):1048-1054.</li>
+				<li>ASHP 2005: American Society of Health-System Pharmacists. American Hospital Formulary Service (AHFS) Drug Information. Philadelphia (PA): Lippincott Williams and Wilkins.</li>
+				<li>Bell DS, Ovalle F. 2001. Use of soy protein supplement and resultant need for increased dose of levothyroxine. Endocrine Practice: Official Journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists 7(3):193-194.</li>
+				<li>BfR 2007: Risiken erkennen - Gesundheit schutzen. Isolated Isoflavones are not without risk. Expert Opinion - Federal Institute for Risk Assessment. Germany, October 2007.</li>
+				<li>Borghi-Scoazec G, Vial T, Bobin, JV, Trepo C. 2002. H&#233;patite cytolytique due au Phytosoya. Gastroent&#233;rologie Clinique et Biologique 26(2):181-183.</li>
+				<li>Cambria-Kiely JA. 2002. Effect of soy milk on warfarin efficacy. The Annals of Pharmacotherapy 36(12):1893-1896.</li>
+				<li>Cecchi E, Lapi F, Vannacci A, Banchelli G, Mazzei T, Mugelli A. 2009. Increased levels of CA 125 and CA 19.9 serum tumour markers following cyclic combined hormone replacement therapy. Journal of Clinical Pharmacy and Therapeutics 34(1):129-132.</li>
+				<li>Chandrareddy A, Muneyyirci-Delale O, McFarlane SI, Murad OM. 2008. Adverse effects of phytoestrogens on reproductive health: a report of three cases. Complementary Therapies in Clinical Practice 14(2):132-135.</li>
+				<li>Chen YM, Ho SC, Lam SS, Ho SS, Woo JL. 2004. Beneficial effect of soy isoflavones on bone mineral content was modified by years since menopause, body weight, and calcium intake: a double-blind, randomized, controlled trial. Menopause 11(3):246-254.</li>
+				<li>CNF 2024: Canadian Nutrient File. Canadian Nutrient File (CNF). Ottawa (ON): Food and Nutrition, Health Canada. [Accessed 2024 January 15]. Available from: https://food-nutrition.canada.ca/cnf-fce/?lang=eng</li>
+				<li>Collison MW. 2008. Determination of total soy isoflavones in dietary supplements, supplement ingredients, and soy foods by high-performance liquid chromatography with ultraviolet detection: Collaborative Study. Journal of AOAC International 91(3): 489-500.</li>
+				<li>CPS 2004: Repchinsky C, editor-in-chief. 2004. Compendium of Pharmaceuticals and Specialties: The Canadian Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association.</li>
+				<li>Crisafulli A, Marini H, Bitto A, Altavilla D, Squadrito G, Romeo A, Adamo EB, Marini R, D&apos;Anna R, Corrado F, Bartolone S, Frisina N, Squadrito F. 2004. Effects of genistein on hot flushes in early postmenopausal women: a randomized, double-blind EPT- and placebo- controlled study. Menopause 11(4):400-404.</li>
+				<li>D&apos;Anna R, Cannata ML, Atteritano M, Cancellieri F, Corrado F, Baviera G, Triolo O, Antico F, Gaudio A, Frisina N, Bitto A, Polito F, Minutoli L, Altavilla D, Marini H, Squadrito F. 2007.</li>
+				<li>Effects of the phytoestrogen genistein on hot flushes, endometrium, and vaginal epithelium in postmenopausal women: a 1-year randomized, double-blind, placebo-controlled study. Menopause 14(4):648-655.</li>
+				<li>Duffy C, Perez K, Partridge A. 2007. Implications of phytoestrogen intake for breast cancer. CA: A Cancer Journal for Clinicians 57(5):260-277.</li>
+				<li>Duncan AM, Underhill KE, Xu X, Lavalleur J, Phipps WR, Kurzer MS. 1999. Modest hormonal effects of soy isoflavones in postmenopausal women. The Journal of Clinical Endocrinology and Metabolism 84(10):3479-3484.</li>
+				<li>Evans EM, Racette SB, Van Pelt RE, Peterson LR, Villareal DT. 2007. Effects of soy protein isolate and moderate exercise on bone turnover and bone mineral density in postmenopausal women. Menopause 14(3 Pt 1):481-488.</li>
+				<li>Faure ED, Chantre P, Mares P. 2002. Effects of a standardized soy extract on hot flushes: a multicenter, double-blind, randomized, placebo-controlled study. Menopause 9(5):329-334.</li>
+				<li>Franco V, Polanczyk CA, Clausell N, Rohde LE. 2004. Role of dietary vitamin K intake in chronic oral anticoagulation: prospective evidence from observational and randomized protocols. The American Journal of Medicine 166(10):651-656.</li>
+				<li>Gasteyger C, Larsen TM, Vercruysse F, Astrup A. 2008. Effect of a dietary-induced weight loss on liver enzymes in obese subjects. The American Journal of Clinical Nutrition 87(5):1141-1147.</li>
+				<li>Han KK, Soares JM Jr, Haidar MA, de Lima GR, Baracat EC. 2002. Benefits of soy isoflavone therapeutic regimen on menopausal symptoms. Obstetrics and Gynecology 99(3):389-394.</li>
+				<li>Hansten PD, Horn JR, editors. 1997. Drug Interactions Analysis and Management. Vancouver (WA): Applied Therapeutics Inc.</li>
+				<li>Hargreaves DF, Potten CS, Harding C, Shaw LE, Morton MS, Roberts SA, Howell A, Bundred NJ. 1999. Two-week dietary soy supplementation has an estrogenic effect on normal premenopausal breast. The Journal of Clinical Endocrinology and Metabolism 84(11):4017-4024.</li>
+				<li>Harkness LS, Fiedler K, Sehgal AR, Oravec D, Lerner E. 2004. Decreased bone resorption with soy isoflavone supplementation in postmenopausal women. Journal of Women&apos;s Health 13(9):1000-1007.</li>
+				<li>Helferich WG, Andrade JE, Hoagland MS. 2008. Phytoestrogens and breast cancer: a complex story. Inflammopharmacology 16:219-226.</li>
+				<li>IOM 2001: Institute of Medicine. Panel on Micronutrients, Subcommittees on Upper Reference Levels of Nutrients and Interpretation and Uses of Dietary Reference Intakes, and the Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. 2001. Dietary Reference Intakes for Vitamin A, Vitamin K, Arsenic, Boron, Chromium, Copper, Iodine, Iron, Manganese, Molybdenum, Nickel, Silicon, Vanadium, and Zinc. Washington (DC): National Academies Press.</li>
+				<li>Izzo AA, Di Carlo G, Borrelli F, Ernst E. 2005. Cardiovascular pharmacotherapy and herbal medicines: the risk of drug interaction. International Journal of Cardiology 98(1):1-14.</li>
+				<li>Jacobson BC, Moy B, Colditz GA, Fuchs CS. 2008. Postmenopausal hormone use and symptoms of gastroesophageal reflux. Archive of Internal Medicine 168(16):1798-1804.</li>
+				<li>Jefferson WN, Padilla-Banks E, Newbold RR. 2007. Disruption of the developing female reproductive system by phytoestrogens: genistein as an example. Molecular Nutrition &amp; Food Research 51(7):832-844.</li>
+				<li>Kaari C, Haidar MA, J&#250;nior JM, Nunes MG, Quadros LG, Kemp C, Stavale JN, Baracat EC. 2006. Randomized clinical trial comparing conjugated equine estrogens and isoflavones in postmenopausal women: a pilot study. Maturitas 53(1):49-58.</li>
+				<li>Kreijkamp-Kaspers S, Kok L, Grobbee DE, de Haan EH, Aleman A, Lampe JW, van der Schouw YT. 2004. Effect of soy protein containing isoflavones on cognitive function, bone mineral density, and plasma lipids in postmenopausal women: a randomized controlled trial. The Journal of the American Medical Association 292(1):65-74.</li>
+				<li>Lydeking-Olsen E, Beck-Jensen JE, Setchell KD, Holm-Jensen T. 2004. Soymilk or progesterone for prevention of bone loss--a 2 year randomized, placebo-controlled trial. European Journal of Nutrition 43(4):246-257.</li>
+				<li>Marini H, Minutoli L, Polito F, Bitto A, Altavilla D, Atteritano M, Gaudio A, Mazzaferro S, Frisina A, Frisina N, Lubrano C, Bonaiuto M, D&apos;Anna R, Cannata ML, Corrado F, Adamo EB, Wilson S, Squadrito F. 2007. Effects of the phytoestrogen genistein on bone metabolism in osteopenic postmenopausal women: a randomized trial. Annals of Internal Medicine 146(12):839-847.</li>
+				<li>Martinez J, Lewi JE. 2008. An unusual case of gynecomastia associated with soy product consumption. Endocrine Practice 14(4):415-418.</li>
+				<li>Maskarinec G, Franke AA, Williams AE, Hebshi S, Oshiro C, Murphy S, Stanczyk FZ. 2004a. Effects of a 2-year randomized soy intervention on sex hormone levels in premenopausal women. Cancer Epidemiology, Biomarkers &amp; Prevention 13(11 Pt 1):1736-1744.</li>
+				<li>Maskarinec G, Takata Y, Franke AA, Williams AE, Murphy, SP. 2004b. A 2-year soy intervention in premenopausal women does not change mammographic densities. The Journal of Nutrition 134:2911-2912.</li>
+				<li>Mazer NA. 2004. Interaction of estrogen therapy and thyroid hormone replacement in postmenopausal women. Thyroid 14(Suppl 1):S27-S34.</li>
+				<li>McMichael-Phillips DF, Harding C, Morton M, Roberts SA, Howell A, Potten CS, Bundred NJ. 1998. Effects of soy-protein supplementation on epithelial proliferation in the histologically normal human breast. The American Journal of Clinical Nutrition 68(Suppl 6):1431S-1435S.</li>
+				<li>Messina M, Redmond G. 2006. Effects of soy protein and soybean isoflavones on thyroid function in healthy adults and hypothyroid patients: a review of the relevant literature. Thyroid 16(3):249-258.</li>
+				<li>Mills S, Bone K. 2005. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone.</li>
+				<li>Murray MJ, Meyer WR, Lessey BA, Oi RH, DeWire RE, Fritz MA. 2003. Soy protein isolate with isoflavones does not prevent estradiol-induced endometrial hyperplasia in postmenopausal women: a pilot trial. Menopause 10(5):456-464.</li>
+				<li>Nahas EA, Nahas-Neto J, Orsatti FL, Carvalho EP, Oliveira ML, Dias R. 2007. Efficacy and safety of a soy isoflavone extract in postmenopausal women: a randomized, double-blind, and placebo-controlled study. Maturitas 58(3):249-258.</li>
+				<li>Newton KM, LaCroix AZ, Levy L, Li SS, Qu P, Potter JD, Lampe JW. 2006. Soy protein and bone mineral density in older men and women: a randomized trial. Maturitas 55(3):270-277.</li>
+				<li>NHPID 202419. Natural Health Products Ingredients Database. [Accessed 202419 January 15May 30]. Available from: http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do</li>
+				<li>NIH 2022: National Institute of Health. Medline Plus, Medical Encyclopedia: Ovarian Cancer. Bethesda (MD): National Institutes of Health, Department of Health and Human Services. [Accessed 2024 January 15]. Available from: http://www.nlm.nih.gov/medlineplus/ency/article/000889.html</li>
+				<li>Nikander E, Rutanen EM, Nieminen P, Wahlstr&#246;m T, Ylikorkala O, Tiitinen A. 2005. Lack of effect of isoflavonoids on the vagina and endometrium in postmenopausal women. Fertility and Sterility 83(1):137-142.</li>
+				<li>Noel JC, Anaf V, Fayt I, Wespes E. 2006. Ureteral mullerian carcinosarcoma (mixed mullerian tumor) associated with endometriosis occurring in a patient with a concentrated soy isoflavones supplementation. Archives of Gynecology and Obstetrics 274(6):389-392.</li>
+				<li>Ok HE, Kim HJ, Shim WB, Lee H, Bae DH, Chung DH, Chun HS. 2007. Natural occurrence of aflatoxin B1 in marketed foods and risk estimates of dietary exposure in Koreans. Journal of Food Protection 70(12):2824-2828.</li>
+				<li>Olawaiye A, Withiam-Leitch M, Danakas G, Kahn K. 2005. Mastalgia: a review of management. The Journal of Reproductive Medicine 50(12):933-939.</li>
+				<li>Palacios S, Pornel B, Bergeron C, Chantre P, Nogales F, Aubert L, Vazquez F, Eden J, Mares P. 2007. Endometrial safety assessment of a specific and standardized soy extract according to international guidelines. Menopause 14(6):1006-1011.</li>
+				<li>Petrakis NL, Barnes S, King EB, Lowenstein J, Wiencke J, Lee MM, Miike R, Kirk M, Coward L. 1996. Stimulatory influence of soy protein isolate on breast secretion in pre- and postmenopausal women. Cancer Epidemiology, Biomarkers &amp; Prevention 5(10):785-794.</li>
+				<li>Potter SM, Baum JA, Teng H, Stillman RJ, Shay NF, Erdman JW Jr. 1998. Soy protein and isoflavones: their effects on blood lipids and bone density in postmenopausal women. The American Journal of Clinical Nutrition 68(Suppl 6):1375S-1379S.</li>
+				<li>Rios DR, Rodrigues ET, Cardoso AP, Montes MB, Franceschini SA, Toloi MR. 2008. Effects of isoflavones on the coagulation and fibrinolytic system of postmenopausal women. Nutrition 24(2):120-126.</li>
+				<li>Roudsari AH, Tahbaz F, Hossein-Nezhad A, Arjmandi B, Larijani B, Kimiagar SM. 2005. Assessment of soy phytoestrogens&apos; effects on bone turnover indicators in menopausal women with osteopenia in Iran: a before and after clinical trial. Nutrition Journal 4:30.</li>
+				<li>Scambia G, Mango D, Signorile PG, Anselmi Angeli RA, Palena C, Gallo D, Bombardelli E, Morazzoni P, Riva A, Mancuso S. 2000. Clinical effects of a standardized soy extract in postmenopausal women: a pilot study. Menopause 7(2):105-111.</li>
+				<li>Sweetman SC, editor. 2007. Martindale: The Complete Drug Reference, 35<sup>th</sup> edition. London (GB): Pharmaceutical Press.</li>
+				<li>Tomar RS, Shiao R. 2008. Early life and adult exposure to isoflavones and breast cancer risk. Journal of Environmental Science and Health. Part C, Environmental Carcinogenesis &amp; Ecotoxicology Reviews 26(2):113-173.</li>
+				<li>Uesugi T, Toda T, Okuhira T, Chen JT. 2003. Evidence of estrogenic effect by the three-month- intervention of isoflavone on vaginal maturation and bone metabolism in early postmenopausal women. Endocrine Journal 50(5):613-619.</li>
+				<li>Unfer V, Casini ML, Costabile L, Mignosa M, Gerli S, Di Renzo GC. 2004. Endometrial effects of long-term treatment with phytoestrogens: a randomized, double-blind, placebo-controlled study. Fertility and Sterility 82(1):145-148.</li>
+				<li>Upmalis DH, Lobo R, Bradley L, Warren M, Cone FL, Lamia CA. 2000. Vasomotor symptom relief by soy isoflavone extract tablets in postmenopausal women: a multicenter, double-blind, randomized, placebo-controlled study. Menopause 7(4):236-242.</li>
+				<li>USDA 2019: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN) [online database]. 2006. <em>Glycine max</em> (L) Merr. Beltsville (MD): National Germplasm Resources Laboratory. [Accessed 2019 May 28]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysimple.aspx</li>
+				<li>Wang H-J, Murphy PA. 1996. Mass balance study of isoflavones during soybean processing. Journal of Agricultural and Food Chemistry 44(8):2377-2383.</li>
+				<li>Wangen KE, Duncan AM, Merz-Demlow BE, Xu X, Marcus R, Phipps WR, Kurzer MS. 2000. Effects of soy isoflavones on markers of bone turnover in premenopausal and postmenopausal women. The Journal of Clinical Endocrinology and Metabolism 85(9):3043-3048.</li>
+				<li>Williamson-Hughes PS, Flickinger BD, Messina MJ, Empie MW. 2006. Isoflavone supplements containing predominantly genistein reduce hot flash symptoms: a critical review of published studies. Menopause 13(5):831-839.</li>
+				<li>Wu AH, Stanczyk FZ, Hendrich S, Murphy PA, Zhang C, Wan P, Pike MC. 2000. Effects of soy foods on ovarian function in premenopausal women. British Journal of Cancer 82(11):1879-1886.</li>
+				<li>Yamori Y, Moriguchi EH, Teramoto T, Miura A, Fukui Y, Honda KI, Fukui M, Nara Y, Taira K, Moriguchi Y. 2002. Soybean isoflavones reduce postmenopausal bone resorption in female Japanese immigrants in Brazil: a ten-week study. Journal of the American College of Nutrition 21(6):560-563.</li>
+				<li>Ye YB, Tang XY, Verbruggen MA, Su YX. 2006. Soy isoflavones attenuate bone loss in early postmenopausal Chinese women: a single-blind randomized, placebo-controlled trial. European Journal of Nutrition 45(6):327-334.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Akesson K. 2003. New approaches to pharmacological treatment of Osteoporosis. Prevention and management of osteoporosis. WHO Technical Report Series 921 [online]. Geneva (CH): World Health Organization, Report of a WHO Scientific Group. [Accessed 2009 May 01]. Available from: whqlibdoc.who.int/trs/WHO_TRS_921.pdf</li>
+				<li>Anderson JJ, Anthony MS, Cline JM, Washburn SA, Garner SC. 1999. Health potential of soy isoflavones for menopausal women. Public Health Nutrition 2(4):489-504.</li>
+				<li>Anderson JJ, Chen X, Boass A, Symons M, Kohlmeier M, Renner JB, Garner SC. 2002. Soy isoflavones: no effects on bone mineral content and bone mineral density in healthy, menstruating young adult women after one year. Journal of the American College of Nutrition 21(5):388-393.</li>
+				<li>Anderson JW, Johnstone BM, Cook-Newell ME. 1995. Meta-analysis of the effects of soy protein intake on serum lipids. The New England Journal of Medicine 333(5):276-282.</li>
+				<li>Arjmandi BH, Lucas EA, Khalil DA, Devareddy L, Smith BJ, McDonald J, Arquitt AB, Payton ME, Mason C. 2005. One year soy protein supplementation has positive effects on bone formation markers but not bone density in postmenopausal women. Nutrition Journal 4:8.</li>
+				<li>Atkinson C and Bingham SA. 2002. Mammographic breast density as a biomarker of effects of isoflavones on the female breast. Breast Cancer Research 4(1):1-4.</li>
+				<li>Baber RJ, Templeman C, Morton T, Kelly GE, West L. 1999. Randomized placebo-controlled trial of an isoflavone supplement and menopausal symptoms in women. Climacteric 2(2):85-92.</li>
+				<li>Balk E, Chung M, Chew P, Ip S, Raman G, Kupelnick B, Tatsioni A, Sun Y, Devine D, Lau J. 2005. Effects of soy on health outcomes. Evidence Report/Technology Assessment (126):1-8.</li>
+				<li>Balk E, Chung M, Chew P, Ip S, Raman G, Kupelnick B, Tatsioni A, Sun Y, Wolk B, DeVine D, Lau J. 2005. Effects of Soy on Health Outcomes. Evidence Report/Technology Assessment No.126. (Prepared by Tufts-New England Medical Center Evidence-based Practice Center under Contract No. 290-02-0022.) AHRQ Publication No. 05-E024-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+				<li>Balk JL, Whiteside DA, Naus G, DeFerrari E, Roberts JM. 2002. A pilot study of the effects of phytoestrogen supplementation on postmenopausal endometrium. Journal of the Society for Gynecologic Investigation 9(4):238-242.</li>
+				<li>Balmir F, Staack R, Jeffrey E, Jimenez MD, Wang L, Potter SM. 1996. An extract of soy flour influences serum cholesterol and thyroid hormones in rats and hamsters. The Journal of Nutrition 126(12):3046-3053.</li>
+				<li>Belous AR, Hachey DL, Dawling S, Roodi N, Parl FF. 2007. Cytochrome P450 1B1-mediated estrogen metabolism results in estrogen-deoxyribonucleoside adduct formation. Cancer Research 67(2):812-817.</li>
+				<li>Bhasker CR, McKinnon W, Stone A, Lo AC, Kubota T, Ishizaki T, Miners JO. 2000. Genetic polymorphism of UDP-glucuronosyltransferase 2B7 (UGT2B7) at amino acid 268: ethnic diversity of alleles and potential clinical significance. Pharmacogenetics 10(8):679-685.</li>
+				<li>Bitto A, Burnett BP, Polito F, Marini H, Levy RM, Armbruster MA, Minutoli L, Di Stefano V, Irrera N, Antoci S, Granese R, Squadrito F, Altavilla D. 2008. Effects of genistein aglycone in osteoporotic, ovariectomized rats: a comparison with alendronate, raloxifene and oestradiol. British Journal of Pharmacology 155(6):896-905.</li>
+				<li>Bloedon LT, Jeffcoat AR, Lopaczynski W, Schell MJ, Black TM, Dix KJ, Thomas BF, Albright C, Busby MG, Crowell JA, Zeisel SH. 2002. Safety and pharmacokinetics of purified soy isoflavones: single-dose administration to postmenopausal women. The American Journal of Clinical Nutrition 76(5):1126-1137.</li>
+				<li>Boon H, Smith M. 2004. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs, 2<sup>nd</sup> edition. Toronto (ON): Robert Rose Inc.</li>
+				<li>Brink E, Coxam V, Robins S, Wahala K, Cassidy A, Branca F&semi; PHYTOS Investigators. 2008. Long-term consumption of isoflavone-enriched foods does not affect bone mineral density, bone metabolism, or hormonal status in early postmenopausal women: a randomized, double-blind, placebo controlled study. The American Journal of Clinical Nutrition 87(3):761-770.</li>
+				<li>Brinker F. 2001. Herb Contraindications and Drug Interactions, 3<sup>rd</sup> edition. Sandy (OR): Eclectic Medical Publications.</li>
+				<li>Brooks JD, Ward WE, Lewis JE, Hilditch J, Nickell L, Wong E, Thompson LU. 2004. Supplementation with flaxseed alters estrogen metabolism in postmenopausal women to a greater extent than does supplementation with an equal amount of soy. The American Journal of Clinical Nutrition 79(2):318-325.</li>
+				<li>Brown JP, Josse RG&semi; Scientific Advisory Council of the Osteoporosis Society of Canada. 2002. 2002 clinical practice guidelines for the diagnosis and management of osteoporosis in Canada. Canadian Medical Association Journal 167(Suppl 10):S1-S34.</li>
+				<li>Bruce B, Messina M, Spiller GA. 2003. Isoflavone supplements do not affect thyroid function in iodine-replete postmenopausal women. Journal of Medical Food 6(4):309-316.</li>
+				<li>Buehring GC, Letscher A, McGirr KM, Khandhar S, Che LH, Nguyen CT, Hackett AJ. 2006. Presence of epithelial cells in nipple aspirate fluid is associated with subsequent breast cancer: a 25-year prospective study. Breast Cancer Research and Treatment 98(1):63-70.</li>
+				<li>Burdock GA, Soni MG, Carabin IG. 2001. Evaluation of health aspects of kojic acid in food. Regulatory Toxicology Pharmacology 33(1):80-101.</li>
+				<li>Burger H, Woods NF, Dennerstein L, Alexander JL, Kotz K, Richardson G. 2007. Nomenclature and endocrinology of menopause and perimenopause. Expert Review Neurotherapeutics 7(Suppl 11):S35-S43.</li>
+				<li>Burke GL, Legault C, Anthony M, Bland DR, Morgan TM, Naughton MJ, Leggett K, Washburn SA, Vitolins MZ. 2003. Soy protein and isoflavone effects on vasomotor symptoms in peri- and postmenopausal women: the Soy Estrogen Alternative Study. Menopause 10(2):147-153.</li>
+				<li>Cambria-Kiely JA. 2002. Effect of soy milk on warfarin efficacy. Annals of Pharmacotherapy 36(12):1893-1896.</li>
+				<li>Campagnoli C, Abb&#224; C, Ambroggio S, Peris C, Perona M, Sanseverino P. 2005. Polyunsaturated fatty acids (PUFAs) might reduce hot flushes: an indication from two controlled trials on soy isoflavones alone and with a PUFA supplement. Maturitas 51(2):127-134.</li>
+				<li>Carlson S, Peng N, Prasain JK, Wyss JM. 2008. Effects of botanical dietary supplements on cardiovascular, cognitive, and metabolic function in males and females. Gender Medicine 5(Suppl 1):S76-S90.</li>
+				<li>Cassidy A, Bingham S, Setchell KD. 1994. Biological effects of a diet of soy protein rich in isoflavones on the menstrual cycle of premenopausal women. The American Journal of Clinical Nutrition 60(3):333-340.</li>
+				<li>Cassidy A, Albertazzi P, Neilsen IL, Hall W, Williamson G, Tetens I, Atkins A, Cross H, Manios Y, Wolk A, Steiner C, Branca F. 2006. Critical review of health effects of soyabean phyto-estrogens in post menopausal women. Proceedings of the Nutrition Society 65:76-92.</li>
+				<li>Chandrareddy A, Muneyyirci-Delale O, McFarlane SI, Murad OM. 2008. Adverse effects of phytoestrogens on reproductive health: a report of three cases. Complementary Therapies in Clinical Practice 14(2):132-135.</li>
+				<li>Chang HC, Doerge DR. 2000. Dietary genistein inactivates rat thyroid peroxidase in vivo without an apparent hypothyroid effect. Toxicology and Applied Pharmacology 68(3):244-252.</li>
+				<li>Chen A, Rogan WJ. 2004. Isoflavones in soy infant formula: a review of evidence for endocrine and other activity in infants. Annual Review of Nutrition 24:33-54.</li>
+				<li>Cheong JM, Martin BR, Jackson GS, Elmore D, McCabe GP, Nolan JR, Barnes S, Peacock M, Weaver CM. 2007. Soy isoflavones do not affect bone resorption in postmenopausal women: a dose-response study using a novel approach with 41Ca. Journal of Clinical Endocrinology &amp; Metabolism 92(2):577-582.</li>
+				<li>Chiechi LM, Secreto G, Vimercati A, Greco P, Venturelli E, Pansini F, Fanelli M, Loizzi P, Selvaggi L. 2002. The effects of a soy rich diet on serum lipids: the Menfis randomized trial. Maturitas 41(2):97-104.</li>
+				<li>Cobin RH, Futterweit W, Ginzburg SB, Goodman NF, Kleerekoper M, Licata AA, Meikle AW, Petak SM, Porte KL, Sellin RV, Smith KD, Verso MA, Watts NB&semi; AACE Menopause Guidelines Revision Task Force. 2006. American Association of Clinical Endocrinologists medical guidelines for clinical practice for the diagnosis and treatment of menopause. Endocrine Practice 12(3):315-337.</li>
+				<li>Cohen MS, Hussain HB, Moley JF. 2002. Inhibition of medullary thyroid carcinoma cell proliferation and RET phosphorylation by tyrosine kinase inhibitors. Surgery 132(6):960-966&semi; discussion 966-967.</li>
+				<li>Conrad SC, Chiu H, Silverman BL. 2004. Soy formula complicates management of congenital hypothyroidism. Archives of Disease in Childhood 89(1):37-40.</li>
+				<li>Cotran RS, Kumar V, Collins T. 1999. Pathologic Basis of Disease, 6<sup>th</sup> edition. Philadelphia, (PA): W.B. Saunders Company.</li>
+				<li>Coxam V. 2008. Phyto-oestrogens and bone health. Proceedings of the Nutrition Society 67(2):184-195.</li>
+				<li>CPS 2004: Compendium of Pharmaceuticals and Specialties. 2004. The Canadian Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association.</li>
+				<li>Dalais FS, Ebeling PR, Kotsopoulos D, McGrath BP, Teede HJ. 2003. The effects of soy protein containing isoflavones on lipids and indices of bone resorption in postmenopausal women. Clinical Endocrinology (Oxford) 58(6):704-709.</li>
+				<li>Dawson-Hughes B. 1996. Calcium and vitamin D nutritional needs of elderly women. Journal of Nutrition 126(Suppl 4):1165S-1167S.</li>
+				<li>Deroo BJ, Korach KS. 2006. Estrogen receptors and human disease. Journal of Clinical Investigation 116:561-570.</li>
+				<li>Dillingham BL, McVeigh BL, Lampe JW, Duncan AM. 2007. Soy protein isolates of varied isoflavone content do not influence serum thyroid hormones in healthy young men. Thyroid 17(2):131-137.</li>
+				<li>Dimitrakis C, Gosselink L, Gaki V, Bredakis N, Keramopoulos A. 2004. Phytoestrogen supplementation: a case report of male breast cancer. European Journal of Cancer Prevention 13: 481-484.</li>
+				<li>Divi RL, Chang HC, Doerge DR. 1997. Anti-thyroid isoflavones from soybean: isolation, characterization, and mechanisms of action. Biochemical Pharmacology 54(10):1087-1096.</li>
+				<li>Doerge DR, Chang HC. 2002. Inactivation of thyroid peroxidase by soy isoflavones, in vitro and in vivo. Journal of Chromatography B: Analytical Technologies in the Biomedical and Life Sciences 777(1-2):269-279.</li>
+				<li>Doerge DR, Sheehan DM. 2002. Goitrogenic and estrogenic activity of soy isoflavones. Environmental Health Perspectives 110(Suppl 3):349-353.</li>
+				<li>Drapier-Faure E, Chantre P, Mares P. 2002. Effects of a standardized soy extract on hot flushes: a multicenter, double-blind, randomized, placebo-controlled study. Menopause 9(5):329-334.</li>
+				<li>Duncan AM, Merz BE, Xu X, Nagel TC, Phipps WR, Kurzer MS. 1999. Soy isoflavones exert modest hormonal effects in premenopausal women. Journal of Clinical Endocrinology &amp; Metabolism 84(1):192-197.</li>
+				<li>Ebmeier CC, Anderson RJ. 2004. Human thyroid phenol sulfotransferase enzymes 1A1 and 1A3: activities in normal and diseased thyroid glands, and inhibition by thyroid hormones and phytoestrogens. Journal of Clinical Endocrinology &amp; Metabolism 89(11):5597-5605.</li>
+				<li>Engelman HM, Alekel DL, Hanson LN, Kanthasamy AG, Reddy MB. 2005. Blood lipid and oxidative stress responses to soy protein with isoflavones and phytic acid in postmenopausal women. The American Journal of Clinical Nutrition 81(3):590-596.</li>
+				<li>Evans M, Njike VY, Hoxley M, Pearson M, Katz DL. 2007. Effect of soy isoflavone protein and soy lecithin on endothelial function in healthy postmenopausal women. Menopause 14(1):141-149.</li>
+				<li>Fabian CJ, Kimler BF, Mayo MS, Khan SA. 2005. Breast-tissue sampling for risk assessment and prevention. Endocrine-Related Cancer 2005 12(2):185-213.</li>
+				<li>Fang N, Yu S, Badger TM. 2004. Comprehensive phytochemical profile of soy protein isolate. Journal of Agricultural and Food Chemistry 52(12):4012-4020.</li>
+				<li>Forsythe WA III. 1986. Comparison of Dietary Casein or Soy Protein Effects on Plasma Lipids and Hormone Concentrations in the Gerbil (Meriones unguiculatus). Journal of Nutrition 116(7):1165-1171.</li>
+				<li>Fort P, Moses N, Fasano M, Goldberg T, Lifshitz F. 1990. Breast and soy-formula feedings in early infancy and the prevalence of autoimmune thyroid disease in children. Journal of the American College of Nutrition 9(2):164-167.</li>
+				<li>Garnero P, Delmas PD. 2004. Contribution of bone mineral density and bone turnover markers to the estimation of risk of osteoporotic fracture in postmenopausal women. Journal of Musculoskeletal and Neuronal Interactions 4(1):50-63.</li>
+				<li>Gasteyger C, Larsen TM, Vercruysse F, Astrup A. 2008. Effect of a dietary-induced weight loss on liver enzymes in obese subjects. The American Journal of Clinical Nutrition 87(5):1141-1147.</li>
+				<li>Goldman L, Ausiello D, editors. 2004. Cecil Textbook of Medicine, Volume 1, 22<sup>nd</sup> edition. Philadelphia (PA): Saunders.</li>
+				<li>Grace PB, Taylor JI, Low YL, Luben RN, Mulligan AA, Botting NP, Dowsett M, Welch AA, Khaw KT, Wareham NJ, Day NE, Bingham SA. 2004. Phytoestrogen concentrations in serum and spot urine as biomarkers for dietary phytoestrogen intake and their relation to breast cancer risk in European prospective investigation of cancer and nutrition-Norfolk. Cancer Epidemiology: Biomarkers &amp; Prevention 13(5):698-708.</li>
+				<li>Green NS, Foss TR, Kelly JW. 2005. Genistein, a natural product from soy, is a potent inhibitor of transthyretin amyloidosis. Proceedings of the National Academy of Sciences USA 102(41):14545-14550. Epub 2005 Sep 29.</li>
+				<li>Guyton AC, Hall JE. 2000. Textbook of Medical Physiology, 10<sup>th</sup> edition. Philadelphia, (PA): W.B. Saunders Company.</li>
+				<li>Hall WL, Vafeiadou K, Hallund J, B&#252;gel S, Koebnick C, Reimann M, Ferrari M, Branca F, Talbot D, Dadd T, Nilsson M, Dahlman-Wright K, Gustafsson JA, Minihane AM, Williams CM. 2005. Soy-isoflavone-enriched foods and inflammatory biomarkers of cardiovascular disease risk in postmenopausal women: interactions with genotype and equol production. The American Journal of Clinical Nutrition 82(6):1260-1268.</li>
+				<li>Hall WL, Vafeiadou K, Hallund J, Bugel S, Reimann M, Koebnick C, Zunft HJ, Ferrari M, Branca F, Dadd T, Talbot D, Powell J, Minihane AM, Cassidy A, Nilsson M, Dahlman-Wright K, Gustafsson JA, Williams CM. 2006. Soy-isoflavone-enriched foods and markers of lipid and glucose metabolism in postmenopausal women: interactions with genotype and equol production. The American Journal of Clinical Nutrition 83(3):592-600.</li>
+				<li>Hampl R, Ostatnikova D, Celec P, Putz Z, Lapc&#237;k O, Matucha P. 2008. Short-term effect of soy consumption on thyroid hormone levels and correlation with phytoestrogen level in healthy subjects. Endocrine Regulations 42(2-3):53-61.</li>
+				<li>Hanley DA, Josse RG. 1996. Prevention and management of osteoporosis: consensus statements from the Scientific Advisory Board of the Osteoporosis Society of Canada. Canadian Medical Association Journal 155(7):921-923.</li>
+				<li>Hanson LN, Engelman HM, Alekel DL, Schalinske KL, Kohut ML, Reddy MB. 2006. Effects of soy isoflavones and phytate on homocysteine, C-reactive protein, and iron status in postmenopausal women. The American Journal of Clinical Nutrition 84(4):774-780.</li>
+				<li>Haselkorn T, Stewart SL, Horn-Ross PL. 2003. Why are thyroid cancer rates so high in southeast asian women living in the United States? The bay area thyroid cancer study. Cancer Epidemiology: Biomarkers and Prevention 12(2):144-150.</li>
+				<li>Heikaus S, Winterhager E, Traub O, Gr&#252;mmer R. 2002. Responsiveness of endometrial genes Connexin26, Connexin43, C3 and clusterin to primary estrogen, selective estrogen receptor modulators, phyto- and xenoestrogens. Journal of Molecular Endocrinology 29(2):239-249.</li>
+				<li>Hilakivi-Clarke L. 2007. Nutritional modulation of terminal end buds: Its relevance to breast cancer prevention. Current Cancer Drug Targets 7(5):465-474.</li>
+				<li>Ho SC, Chen YM, Ho SS, Woo JL. 2007. Soy isoflavone supplementation and fasting serum glucose and lipid profile among postmenopausal Chinese women: a double-blind, randomized, placebo-controlled trial. Menopause 14(5):905-912.</li>
+				<li>Horn-Ross PL, Hoggatt KJ, West DW, Krone MR, Stewart SL, Anton H, Bernstei CL, Deapen D, Peel D, Pinder R, Reynolds P, Ross RK, Wright W, Ziogas A. 2002. Recent diet and breast cancer risk: the California Teachers Study. Cancer Causes &amp; Control 13(5):407-415.</li>
+				<li>Horn-Ross PL, Hoggatt KJ, Lee MM. 2002. Phytoestrogens and thyroid cancer risk: the San Francisco Bay Area thyroid cancer study. Cancer Epidemiology: Biomarkers &amp; Prevention 11(1):43-49.</li>
+				<li>Howes LG, Howes JB, Knight DC. 2006. Isoflavone therapy for menopausal flushes: a systematic review and meta-analysis. Maturitas 55(3):203-211.</li>
+				<li>Huntley AL, Ernst E. 2004. Soy for the treatment of perimenopausal symptoms-a systematic review. Maturitas 47(1):1-9.</li>
+				<li>IFIC 2005: International Food Information Council. 2005. Functional Foods Fact Sheet: Soy. Washington (DC): International Food Information Council Foundation. [Accessed 2009 September 10]. Available at: http://ific.org/publications/factsheets/soyfs.cfm</li>
+				<li>IOM 2006: Otten JJ, Pitzi Hellwig J, Meyers LD, editors. 2006. Institute of Medicine Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academy Press.</li>
+				<li>IOM 1997: Institute of Medicine. Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. 1997. Dietary Reference Intakes for Calcium, Phosphorous, Magnesium, Vitamin D, and Fluoride [online]. Washington (DC): National Academy Press. [Accessed 2009 May 11]. Available from: http://www.nap.edu/openbook.php?isbn=0309063507</li>
+				<li>Ishizuki Y, Hirooka Y, Murata Y, Togashi K. 1991. [The effects on the thyroid gland of soybeans administered experimentally in healthy subjects] Nippon Naibunpi Gakkai Zasshi. 67:622-9 (in Japanese).</li>
+				<li>Izumi T, Piskula MK, Osawa S, Obata A, Tobe K, Saito M, Kataoka S, Kubota Y, Kikuchi M. 2000. Soy isoflavone aglycones are absorbed faster and in higher amounts than their glucosides in humans. Journal of Nutrition 130(7):1695-1699.</li>
+				<li>Jabbar MA, Larrea J, Shaw RA. 1997. Abnormal thyroid function tests in infants with congenital hypothyroidism: the influence of soy-based formula. Journal of the American College of Nutrition 16(3):280-282.</li>
+				<li>Jacobson BC, Moy B, Colditz GA, Fuchs CS. 2008. Postmenopausal hormone use and symptoms of gastroesophageal reflux. Archives of Internal Medicine 168(16):1798-1804.</li>
+				<li>Johnson EB, Muto MG, Yanushpolsky EH, Mutter GL. 2001. Phytoestrogen supplementation and endometrial cancer. Obstetrics &amp; Gynecology 98(5 Pt 2):947-950.</li>
+				<li>Junghans P, Derno M, Jentsch W, Kuhla S, Beyer M. 2004. Effect of a soy protein diet on protein and energy metabolism and organ development in protein-restricted growing pigs. Archives of Animal Nutrition 58(6):453-461.</li>
+				<li>Katz DL, Evans MA, Njike VY, Hoxley ML, Nawaz H, Comerford BP, Sarrel PM. 2007. Raloxifene, soy phytoestrogens and endothelial function in postmenopausal women. Climacteric 10(6):500-507.</li>
+				<li>Kawanishi S, Oikawa S, Murata M. 2005. Evaluation for safety of antioxidant chemopreventive agents. Antioxidants &amp; Redox Signaling 7(11-12):1728-1739.</li>
+				<li>Khan AA, Brown JP, Kendler DL, Leslie WD, Lentle BC, Lewiecki EM, Miller PD, Nicholson RL, Olszynski WP, Watts NB. 2002. The 2002 Canadian bone densitometry recommendations: take-home messages. Canadian Medical Association Journal 167(10):1141-1145.</li>
+				<li>Kimura S, Suwa J, Ito M, Sato H. 1976. Development of malignant goiter by defatted soybean with iodine-free diet in rats. Gann Japanese Journal of Cancer Research 67(5):763-765.</li>
+				<li>Kostelac D, Rechkemmer G, Briviba K. 2003. Phytoestrogens modulate binding response of estrogen receptors alpha and beta to the estrogen response element. Journal of Agricultural and Food Chemistry 51(26):7632-7635.</li>
+				<li>Kotsopoulos D, Dalais FS, Liang YL, McGrath BP, Teede HJ. 2000. The effects of soy protein containing phytoestrogens on menopausal symptoms in postmenopausal women. Climacteric 3(3):161-167.</li>
+				<li>Krebs EE, Ensrud KE, MacDonald R, Wilt TJ. 2004. Phytoestrogens for treatment of menopausal symptoms: a systematic review. Obstetrics &amp; Gynecology 104(4):824-836.</li>
+				<li>Kreijkamp-Kaspers S, Kok L, Bots ML, Grobbee DE, Lampe JW, van der Schouw YT. 2005. Randomized controlled trial of the effects of soy protein containing isoflavones on vascular function in postmenopausal women. The American Journal of Clinical Nutrition 81(1):189-195.</li>
+				<li>Kulling SE, Lehmann L, Metzler M. 2002. Oxidative metabolism and genotoxic potential of major isoflavone phytoestrogens. Journal of Chromatography B: Analytical Technologies in the Biomedical and Life Sciences 777(1-2):211-218.</li>
+				<li>Kurzer MS. 2002. Hormonal effects of soy in premenopausal women and men. Journal of Nutrition 132(3):570S-573S.</li>
+				<li>Lee MM, Petrakis NL, Wrensch MR, King EB, Miike R, Sickles E. 1994. Association of abnormal nipple aspirate cytology and mammographic pattern and density. Cancer Epidemiology: Biomarkers and Prevention 3(1):33-36.</li>
+				<li>Lethaby AE, Brown J, Marjoribanks J, Kronenberg F, Roberts H, Eden J. 2007. Phytoestrogens for vasomotor menopausal symptoms. Cochrane Database of Systematic Reviews Issue 4. Art. No.: CD001395. DOI: 10.1002/14651858.CD001395.pub3.</li>
+				<li>Li Y, Mezei O, Shay NF. 2007. Human and murine hepatic sterol-12-alpha-hydroxylase and other xenobiotic metabolism mRNA are upregulated by soy isoflavones. Journal of Nutrition 137(7):1705-1712.</li>
+				<li>Linseisen J, Piller R, Hermann S, Chang-Claude J. 2004. Dietary phytoestrogen intake and premenopausal breast cancer risk in a German case-control study. International Journal of Cancer 110(2):284-290.</li>
+				<li>Lu LJ, Anderson KE, Grady JJ, and Nagamani M. 1996. Effects of soya consumption for one month on steroid hormones in premenopausal women: implications for breast cancer risk reduction. Cancer Epidemiology: Biomarkers and Prevention 5(1):63-70.</li>
+				<li>Lu LJ, Anderson KE, Grady JJ, Kohen F, Nagamani M. 2000. Decreased Ovarian Hormones during a soya diet: implications for breast cancer prevention. Cancer Research 60(15):4112-4121.</li>
+				<li>Ma DF, Qin LQ, Wang PY, Katoh R. 2008. Soy isoflavone intake increases bone mineral density in the spine of menopausal women: meta-analysis of randomized controlled trials. Clinical Nutrition 27(1):57-64.</li>
+				<li>Ma DF, Qin LQ, Wang PY, Katoh R. 2008. Soy isoflavone intake inhibits bone resorption and stimulates bone formation in menopausal women: meta-analysis of randomized controlled trials. European Journal of Clinical Nutrition 62(2):155-161.</li>
+				<li>MacGregor CA, Canney PA, Patterson G, McDonald R, Paul J. 2005. A randomised double- blind controlled trial of oral soy supplements versus placebo for treatment of menopausal symptoms in patients with early breast cancer. European Journal of Cancer 41(5):708-714.</li>
+				<li>Maggiolini M, Bonofiglio D, Marsico S, Panno ML, Cenni B, Picard D, Ando S. 2001. Estrogen receptor alpha mediates the proliferative but not the cytotoxic effects of two major phytoestrogens on human breast cancer cells. Molecular Pharmacology 60(3):595-602. GQTF 1998: Grain Quality Task Force Grain Quality Fact Sheet: High Value Soybean Composition, Fact Sheet #39 [online]. West Lafayette (IN): Purdue University&semi; 1998-2009. [Accessed 2009 January 09]. Available from: http://www.ces.purdue.edu/extmedia/GQ/GQ-39.html</li>
+				<li>Martini MC, Dancisak BB, Haggans CJ, Thomas W, Slavin JL. 1999. Effects of soy intake on sex hormone metabolism in premenopausal women. Nutrition and Cancer 34(2):133-139.</li>
+				<li>Matthan NR, Jalbert SM, Ausman LM, Kuvin JT, Karas RH, Lichtenstein AH. 2007. Effect of soy protein from differently processed products on cardiovascular disease risk factors and vascular endothelial function in hypercholesterolemic subjects. The American Journal of Clinical Nutrition 85(4):960-966.</li>
+				<li>Maskarinec G, Pagano I, Lurie G, Wilkins LR, Kolonel LN. 2005. Mammographic density and breast cancer risk. American Journal of Epidemiology 162(8):743-752.</li>
+				<li>Maskarinec G, Pagano I, Lurie G, Kolonel LN. 2006. A longitudinal investigation of mammographic density: the multiethnic cohort. Cancer Epidemiology: Biomarkers and Prevention 15:732-739.</li>
+				<li>McVeigh BL, Dillingham BL, Lampe JW, Duncan AM. 2006. Effect of soy protein varying in isoflavone content on serum lipids in healthy young men. The American Journal of Clinical Nutrition 83(2):244-251.</li>
+				<li>Mendez MA, Anthony MS, Arab L. 2002. Soy-based formulae and infant growth and development: a review. Journal of Nutrition 132(8):2127-2130.</li>
+				<li>Mense SM, Chhabra J, Bhat HK. 2008. Preferential induction of cytochrome P450 1A1 over cytochrome P450 1B1 in human breast epithelial cells following exposure to quercetin. Journal of Steroid Biochemisty and Molecular Biology 110(1-2):157-162.</li>
+				<li>Merck 2008. Mastalgia and Breast Lumps [online]. Whitehouse Station (NJ): Merck &amp; Co., Inc.: 1995-2009. [Accessed 2009 January 12]. Available from: http://www.merck.com/mmpe/sec18/ch253/ch253b.html</li>
+				<li>Merritt RJ, Jenks BH. 2004. Safety of soy-based infant formulas containing isoflavones: the clinical evidence. Journal of Nutrition 134(5):1220S-1224S.</li>
+				<li>Messina M, Hughes C. 2003. Efficacy of soyfoods and soybean isoflavone supplements for alleviating menopausal symptoms is positively related to initial hot flush frequency. Journal of Medicinal Food 6(1):1-11.</li>
+				<li>Messina M, McCaskill-Stevens, Lampe JW. 2006. Addressing the soy and breast cancer relationship: Review, commentary, and workshop proceedings. Journal of the National Cancer Institute 98(18):1275-1284.</li>
+				<li>Messina MJ, Wood CE. 2008. Soy isoflavones, estrogen therapy, and breast cancer risk: analysis and commentary. Nutrition Journal 7:17.</li>
+				<li>Milerov&#225; J, Cerovsk&#225; J, Zamrazil V, B&#237;lek R, Lapc&#237;k O, Hampl R. 2006. Actual levels of soy phytoestrogens in children correlate with thyroid laboratory parameters. Clinical Chemistry and Laboratory Medicine 44(2):171-174.</li>
+				<li>Morabito N, Crisafulli A, Vergara C, Gaudio A, Lasco A, Frisina N, D&apos;Anna R, Corrado F, Pizzoleo MA, Cincotta M, Altavilla D, Ientile R, Squadrito F. 2002. Effects of genistein and hormone-replacement therapy on bone loss in early postmenopausal women: a randomized double-blind placebo-controlled study. Journal of Bone and Mineral Research 17(10):1904-1912.</li>
+				<li>Mori K, Stone S, Braverman LE, Devito WJ. 1996. Involvement of tyrosine phosphorylation in the regulation of 5&apos;-deiodinases in FRTL-5 rat thyroid cells and rat astrocytes. Endocrinology 137(4):1313-1318.</li>
+				<li>Moutsatsou P. 2007. The spectrum of phytoestrogens in nature: our knowledge is expanding. Review. Hormones 6(3):173-193.</li>
+				<li>Munro IC, Harwood M, Hlywka JJ, Stephen AM, Doull J, Flamm WG, Adlercreutz H. 2003. Soy isoflavones: a safety review. Nutrition Reviews 61(1):1-33.</li>
+				<li>Murata M, Midorikawa K, Koh M, Umezawa K, Kawanishi S. 2004. Genistein and daidzein induce cell proliferation and their metabolites cause oxidative DNA damage in relation to isoflavone-induced cancer of estrogen-sensitive organs. Biochemistry 43(9):2569-2577.</li>
+				<li>Nagata C, Takatsuka N, Inaba S, Kawakami N, Shimizu H. 1998. Effect of soymilk consumption on serum estrogen concentrations in premenopausal Japanese women. Journal of the National Cancer Institute 90(23):1830-1835.</li>
+				<li>Nagata, C, Taktsuka N, Shimizu H, Hayashi H, Akamatsu T, Murase K. 2001. Effect of soymilk consumption on serum estrogen and androgen concentrations in Japanese Men. Cancer Epidemiology: Biomarkers and Prevention 10(3):179-184.</li>
+				<li>Nagata C, Oba S, Shimizu H. 2005. Associations of menstrual cycle length with intake of soy, fat, and dietary fiber in Japanese women. Nutrition and Cancer 54(2):166-170.</li>
+				<li>NIH 2005: National Institute of Health. State-of-the-science conference statement on management of menopause-related symptoms. NIH consensus and state-of-the-science statements 22:1-38.</li>
+				<li>Nikander E, Kilkkinen A, Mets&auml;-Heikkil&auml; M, Adlercreutz H, Pietinen P, Tiitinen A, Ylikorkala O. 2003. A randomized placebo-controlled crossover trial with phytoestrogens in treatment of menopause in breast cancer patients. Obstetrics &amp; Gynecology 101(6):1213-1220.</li>
+				<li>Nikander E, Mets&auml;-Heikkil&auml; M, Ylikorkala O, Tiitinen A. 2004. Effects of phytoestrogens on bone turnover in postmenopausal women with a history of breast cancer. Journal of Clinical Endocrinology &amp; Metabolism 89(3):1207-1212.</li>
+				<li>NAMS 2009: North American Menopause Society. 2009. Menopause Practice: A Clinician&apos;s Guide. Section A: Overview of menopause and aging [online]. Cleveland (OH): North American Menopause Society. [Accessed 2009 19 August]. Available from: www.menopause.org/edumaterials/studyguide/A.pdf</li>
+				<li>NAMS 2007: North American Menopause Society. Estrogen and progestogen use in peri- and postmenopausal women: March 2007 position statement of The North American Menopause Society. Menopause 14:168-182.</li>
+				<li>NAMS 2006: North American Menopause Society. Management of osteoporosis in postmenopausal women: 2006 position statement of The North American Menopause Society. Menopause 13(3):340-367.</li>
+				<li>NIH 2007: National Institute of Health National Toxicology Program. NTP Technical Report on the Reproductive Dose Range-Finding Toxicity Study of Genistein Administered in Feed to Sprague-Dawley Rats. US Department of Health and Human Services, October 2007&semi; Toxicity Report Series Number 79.</li>
+				<li>NIH 2008: National Institute of Health Medline Plus - Medical Encyclopedia. Ovarian Cancer [online]. Bethesda (MD): National Institute of Health. [Accessed 2009 January 07]. Available from: http://www.nlm.nih.gov/medlineplus/ency/article/000889.htm</li>
+				<li>Nilsson S, Makela S, Treuter E, Tujague M, Thomsen J, Andersson G, Enmark E, Pettersson K, Warner M, Gustafsson J. 2001. Mechanisms of estrogen action. Physiology Review 81(4):1535-1565.</li>
+				<li>Nurmi T, Mazur W, Heinonen S, Kokkonen J, Adlercreutz H. 2002. Isoflavone content of the soy based supplements. Journal of Pharmaceutical and Biomedical Analysis 28(1):1-11.</li>
+				<li>Oh HY, Kim SS, Chung HY, Yoon S. 2005. Isoflavone supplements exert hormonal and antioxidant effects in postmenopausal Korean women with diabetic retinopathy. Journal of Medicinal Food 8(1):1-7.</li>
+				<li>Okajima F, Akbar M, Abdul Majid M, Sho K, Tomura H, Kondo Y. 1994. Genistein, an inhibitor of protein tyrosine kinase, is also a competitive antagonist for P1-purinergic (adenosine) receptor in FRTL-5 thyroid cells. Biochemical and Biophysical Research Communications 203(3):1488-1495.</li>
+				<li>Omi N, Aoi S, Murata K, Ezawa I. 1994. Evaluation of the effect of soybean milk and soybean milk peptide on bone metabolism in the rat model with ovariectomized osteoporosis. Journal of Nutritional Science and Vitaminology 40(2):201-211.</li>
+				<li>&#216;rgaard A, Jensen L. 2008. The effects of soy isoflavones on obesity. Experimental Biology and Medicine 233(9):1066-1080.</li>
+				<li>Packeisen J, Nakachi K, Boecker W, Brandt B, Buerger H. 2005. Cytogenic differences in breast cancer samples between German and Japanese patients. Journal of Clinical Pathology 58(10):1101-1103.</li>
+				<li>Penotti M, Fabio E, Modena AB, Rinaldi M, Omodei U, Vigan&#243; P. 2003. Effect of soy-derived isoflavones on hot flushes, endometrial thickness, and the pulsatility index of the uterine and cerebral arteries. Fertility and Sterility 79(5):1112-1117.</li>
+				<li>Pepine CJ, von Mering GO, Kerensky RA, Johnson BD, McGorray SP, Kelsey SF, Pohost G, Rogers WJ, Reis SE, Sopko G, Bairey Merz CN&semi; WISE Study Group. 2007. Phytoestrogens and coronary microvascular function in women with suspected myocardial ischemia: a report from the Women&apos;s Ischemia Syndrome Evaluation (WISE) Study. Journal of Women&apos;s Health 16(4):481-488.</li>
+				<li>Persky VW, Turyk ME, Wang L, Freels S, Chatterton R Jr, Barnes S, Erdman J Jr, Sepkovic DW, Bradlow HL, Potter S. 2002. Effect of soy protein on endogenous hormones in postmenopausal women. The American Journal of Clinical Nutrition 75(1):145-153.</li>
+				<li>Ph. Eur. 2008: European Pharmacopoeia Commission. 2008. European Pharmacopoeia, 6<sup>th</sup> edition, Volume 1. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM).</li>
+				<li>Pop EA, Fischer LM, Coan AD, Gitzinger M, Nakamura J, Zeisel SH. 2008. Effects of a high daily dose of soy isoflavones on DNA damage, apoptosis, and estrogenic outcomes in healthy postmenopausal women: a phase I clinical trial. Menopause 15(4 Pt 1):684-692.</li>
+				<li>Potter SM, Pertile J, Berber-Jimenez MD. 1996. Soy protein concentrate and isolated soy protein similarly lower blood serum cholesterol but differently affect thyroid hormones in hamsters. Journal of Nutrition 126(8):2007-2011.</li>
+				<li>Poulsen RC, Kruger MC. 2008. Soy phytoestrogens: impact on postmenopausal bone loss and mechanisms of action. Nutritional Review 66(7):359-374.</li>
+				<li>Prescrire. 2006. Phytoestrogens and endometrial hyperplasia. Prescrire International 15(82):62-63.</li>
+				<li>Quella SK, Loprinzi CL, Barton DL, Knost JA, Sloan JA, LaVasseur BI, Swan D, Krupp KR, Miller KD, Novotny PJ. 2000. Evaluation of soy phytoestrogens for the treatment of hot flashes in breast cancer survivors: A North Central Cancer Treatment Group Trial. Journal of Clinical Oncology 18(5):1068-1074.</li>
+				<li>Radovic B, Mentrup B, K&#246;hrle J. 2006. Genistein and other soya isoflavones are potent ligands for transthyretin in serum and cerebrospinal fluid. British Journal of Nutrition 95(6):1171-1176.</li>
+				<li>Reid IR. 2008. Anti-resorptive therapies for osteoporosis. Seminars in Cell and Developmental Biology 19(5):473-478.</li>
+				<li>Reimann M, Dierkes J, Carlsohn A, Talbot D, Ferrari M, Hallund J, Hall WL, Vafeiadou K, Huebner U, Branca F, Bugel S, Williams CM, Zunft HJ, Koebnick C. 2006. Consumption of soy isoflavones does not affect plasma total homocysteine or asymmetric dimethylarginine concentrations in healthy postmenopausal women. Journal of Nutrition 136(1):100-105.</li>
+				<li>Rhoades R, Pflanzer R. 1996. Human Physiology, 3 <sup>rd</sup> edition. Philadelphia (PA): Saunders College Publishing.</li>
+				<li>Riggs BL, Melton LJ. 1986. Involutional osteoporosis. New England Journal of Medicine 314(26):1676-1686.</li>
+				<li>Riggs BL, Wahner HW, Melton LJ III, Richelson LS, Judd HL, Offord KP. 1986. Rates of bone loss in the appendicular and axial skeletons of women: Evidence of substantial vertebral bone loss before menopause. Journal of Clinical Investigation 77(5):1487-1491.</li>
+				<li>Rom&#225;n GC. 2007. Autism: transient in utero hypothyroxinemia related to maternal flavonoid ingestion during pregnancy and to other environmental antithyroid agents. Journal of Neurological Science 262(1-2):15-26.</li>
+				<li>Ronis MJ, Rowlands JC, Hakkak R, Badger TM. 2001. Inducibility of hepatic CYP1A enzymes by 3-methylcholanthrene and isosafrole differs in male rats fed diets containing casein, soy protein isolate or whey from conception to adulthood. Journal of Nutrition 131(4):1180-1188.</li>
+				<li>Rossouw JE, Anderson GL, Prentice RL, LaCroix AZ, Kooperberg C, Stefanick ML, Jackson RD, Beresford SA, Howard BV, Johnson KC, Kotchen JM, Ockene J&semi; Writing Group for the Women&apos;s Health Initiative Investigators. 2002. Risks and benefits of estrogen plus progestin in healthy postmenopausal women: principal results From the Women&apos;s Health Initiative randomized controlled trial. Journal of the American Medical Association 288(3):321-333.</li>
+				<li>Roughead ZK, Hunt JR, Johnson LK, Badger TM, Lykken GI. 2005. Controlled substitution of soy protein for meat protein: effects on calcium retention, bone, and cardiovascular health indices in postmenopausal women. Journal of Clinical Endocrinology &amp; Metabolism 90(1):181-189.</li>
+				<li>Seibel MJ. 2005. Biochemical markers of bone turnover: part I: biochemistry and variability. The Clinical Biochemist Review 26(4):97-122.</li>
+				<li>Sacks FM, Lichtenstein A, Van Horn L, Harris W, Kris-Etherton P, Winston M&semi; American Heart Association Nutrition Committee. 2006. Soy protein, isoflavones, and cardiovascular health: an American Heart Association Science Advisory for professionals from the Nutrition Committee. Circulation 113(7):1034-1044.</li>
+				<li>Sakai Y, Kato M, Okada T, Sagata Y, Goh R, Kohyama A, Sumitomo M. 2004. Treatment of salt poisoning due to soy sauce ingestion with hemodialysis. Chudoku Kenkyu 17(1):61-63.</li>
+				<li>Sakauchi F, Khan MM, Mori M, Kubo T, Fujino Y, Suzuki S, Tokudome S, Tamakoshi A&semi; JACC Study Group. 2007. Dietary habits and risk of ovarian cancer death in a large-scale cohort study (JACC study) in Japan. Nutrition and Cancer 57(2):138-145.</li>
+				<li>Sammartino A, Di Carlo C, Mandato VD, Bifulco G, Di Stefano M, Nappi C. 2003. Effects of genistein on the endometrium: ultrasonographic evaluation. Gynecological Endocrinology 17(1):45-49.</li>
+				<li>Sartippour MR, Rao JY, Apple S, Wu D, Henning S, Wang H, Elashoff R, Rubio R, Heber D, Brooks MN. 2004. A pilot clinical study of short-term isoflavone supplements in breast cancer patients. Nutrition and Cancer 49(1):59-65.</li>
+				<li>Sasaki M, Tanaka Y, Sakuragi N. 2003. Six polymorphisms on estrogen receptor 1 gene in Japanese, American and German populations. European Journal of Clinical Pharmacology 59(5-6):389-393.</li>
+				<li>Scott LM, Durant P, Leone-Kabler S, Wood CE, Register TC, Townsend A, Cline JM. 2008. Effects of prior oral contraceptive use and soy isoflavonoids on estrogen-metabolizing cytochrome P450 enzymes. Journal of Steroid Biochemistry and Molecular Biology 112(4-5):179-85.</li>
+				<li>Setchell KD, Lydeking-Olsen E. 2003. Dietary phytoestrogens and their effect on bone: evidence from in vitro and in vivo, human observational, and dietary intervention studies. The American Journal of Clinical Nutrition 78(3 Suppl):593S-609S.</li>
+				<li>Seibel MJ. 2006. Biochemical Markers of Bone Turnover Part II: Clinical Applications in the Management of Osteoporosis. The Clinical Biochemist Review 27(3):123-138.</li>
+				<li>Seibel MJ. 2006. Clinical application of biochemical markers of bone turnover. Arqivos Brasileiros de Endocrinologia &amp; Metabologia 50(4):603-620.</li>
+				<li>Shao ZM, Shen ZZ, Fontana JA, Barsky SH. 2000. Genistein&apos;s "ER-dependent and independent" actions are mediated through ER pathways in ER-positive breast carcinoma cell lines. Anticancer Research 20(4):2409-2416.</li>
+				<li>Sharp GB, Lagarde F, Mizuno T, Sauvaget C, Fukuhara T, Allen N, Suzuki G, Tokuoka S. 2005. Relationship of hepatocellular carcinoma to soya food consumption: a cohort-based, case-control study in Japan. International Journal of Cancer 115(2):290-295.</li>
+				<li>Shertzer HG, Puga A, Chang C, Smith P, Nebert DW, Setchell KD, Dalton TP. 1999. Inhibition of CYP1A1 enzyme activity in mouse hepatoma cell culture by soybean isoflavones. Chemico- Biological Interactions 123(1):31-49.</li>
+				<li>Shu XO, Jin F, Dai Q, Wen W, Potter JD, Kushi LH, Ruan Z, Gao YT, Zheng W. 2001. Soyfood intake during adolescence and subsequent risk of breast cancer among Chinese women. Cancer Epidemiology: Biomarkers and Prevention 10(5):483-488.</li>
+				<li>Singhal R, Badger TM, Ronis MJ. 2008. Rats fed soy protein isolate (SPI) have impaired hepatic CYP1A1 induction by polycyclic aromatic hydrocarbons as a result of interference with aryl hydrocarbon receptor signaling. Toxicology and Applied Pharmacology 227(2):275-283.</li>
+				<li>Sites CK, Cooper BC, Toth MJ, Gastaldelli A, Arabshahi A, Barnes S. 2007. Effect of a daily supplement of soy protein on body composition and insulin secretion in postmenopausal women. Fertility and Sterility 88(6):1609-1617.</li>
+				<li>Son HY, Nishikawa A, Ikeda T, Nakamura H, Miyauchi M, Imazawa T, Furukawa F, Hirose M. 2000. Lack of modifying effects of environmental estrogenic compounds on the development of thyroid proliferative lesions in male rats pretreated with N-bis(2-hydroxypropyl)nitrosamine (DHPN). Japanese Journal of Cancer Research 91(9):899-905.</li>
+				<li>Son HY, Nishikawa A, Ikeda T, Imazawa T, Kimura S, Hirose M. 2001. Lack of effect of soy isoflavone on thyroid hyperplasia in rats receiving an iodine-deficient diet. Japanese Journal of Cancer Research 92(2):103-108.</li>
+				<li>Strauss L, M&auml;kel&auml; S, Joshi S, Huhtaniemi I, Santti R. 1998. Genistein exerts estrogen-like effects in male mouse reproductive tract. Molecular and Cellular Endocrinology 144(1-2):83-93.</li>
+				<li>Sun Y, Chen M, Lowentritt BH, Van Zijl PS, Koch KR, Keay S, Simard JM, Chai TC. 2007. EGF and HB-EGF modulate inward potassium current in human bladder urothelial cells from normal and interstitial cystitis patients. American Journal of Physiology - Cell Physiology 292(1):C106-114.</li>
+				<li>Swain JH, Alekel DL, Dent SB, Peterson CT, Reddy MB. 2002. Iron indexes and total antioxidant status in response to soy protein intake in perimenopausal women. The American Journal of Clinical Nutrition 76(1):165-171.</li>
+				<li>Teas J, Braverman LE, Kurzer MS, Pino S, Hurley TG, Hebert JR. 2007. Seaweed and soy: companion foods in Asian cuisine and their effects on thyroid function in American women. Journal of Medicinal Food 10(1):90-100.</li>
+				<li>Teede HJ, Dalais FS, Kotsopoulos D, Liang YL, Davis S, McGrath BP. 2001. Dietary soy has both beneficial and potentially adverse cardiovascular effects: a placebo-controlled study in men and postmenopausal women. Journal of Clinical Endocrinology &amp; Metabolism 86(7):3053-3060.</li>
+				<li>Teede HJ, Dalais FS, McGrath BP. 2004. Dietary soy containing phytoestrogens does not have detectable estrogenic effects on hepatic protein synthesis in postmenopausal women. The American Journal of Clinical Nutrition 79(3):396-401.</li>
+				<li>Teede HJ, Giannopoulos D, Dalais FS, Hodgson J, McGrath BP. 2006. Randomised, controlled, cross-over trial of soy protein with isoflavones on blood pressure and arterial function in hypertensive subjects. Journal of the American College of Nutrition 25(6):533-540.</li>
+				<li>Thanos J, Cotterchio M, Boucher BA, Kreiger N, Thompson LU. 2006. Adolescent dietary phytoestrogen intake and breast cancer risk (Canada). Cancer Causes &amp; Control 17(10):1253-1261.</li>
+				<li>Thibaudeau J, L&#233;pine J, Tojcic J, Duguay Y, Pelletier G, Plante M, Brisson J, T&#234;tu B, Jacob S, Perusse L, B&#233;langer A, Guillemette C. 2006. Characterization of common UGT1A8, UGT1A9, and UGT2B7 variants with different capacities to inactivate mutagenic 4-hydroxylated metabolites of estradiol and estrone. Cancer Research 66(1):125-133.</li>
+				<li>Thorp AA, Howe PR, Mori TA, Coates AM, Buckley JD, Hodgson J, Mansour J, Meyer BJ. 2008. Soy food consumption does not lower LDL cholesterol in either equol or nonequol producers. The American Journal of Clinical Nutrition 88(2):298-304.</li>
+				<li>Tortora GJ, Grabowski SR. 2000. Principles of Anatomy and Physiology, 9<sup>th</sup> edition. Sudbury (MA). Biological Sciences Textbooks, Inc.</li>
+				<li>Tousen Y, Umeki M, Nakashima Y, Ishimi Y, Ikegami S. 2006. Effects of genistein, an isoflavone, on pregnancy outcome and organ weights of pregnant and lactating rats and development of their suckling pups. Journal of Nutritional Science and Vitaminology 52(3):174-182.</li>
+				<li>Travis RC, Allen NE, Appleby PN, Spencer EA, Roddam AW, Key TJ. 2007. A prospective study of vegetarianism and isoflavone intake in relation to breast cancer in British women. International Journal of Cancer 122(3):705-710.</li>
+				<li>Trock BJ, Hilakivi-Clarke L, Clarke R. 2006. Meta-Analysis of Soy intake and breast cancer risk. Journal of the National Cancer Institute 98(7):459-471.</li>
+				<li>Umland EM. 2008. Treatment strategies for reducing the burden of menopause-associated vasomotor symptoms. Journal of Managed Care Pharmacy 14(3 Suppl):14-19.</li>
+				<li>USDA 2009: United States Department of Agriculture. Natural Resources Conservation Service, Plants Database. 2009. Glycine max (L) Merr. [Accessed 2009 August 13]. Available from http://plants.usda.gov/java/profile?symbol=GLMA4</li>
+				<li>USDA 2007: United States Department of Agriculture, Agricultural Research Service. 2007. USDA National Nutrient Database for Standard Reference, Release 20: Vitamin K (phylloquinone) (&micro;g) Content of Selected Foods per Common Measure, sorted by nutrient content. [Accessed 2008 November 4]. Available at: http://www.nal.usda.gov/fnic/foodcomp/Data/SR20/nutrlist/sr20w430.pdf</li>
+				<li>USDA 2002: U.S. Department of Agriculture, Agricultural Research Service. 2002. USDA-Iowa State University Database on the Isoflavone Content of Foods, Release 1.3 - 2002. Nutrient Data Laboratory. [Accessed 2008 September 23]. Available at: http://www.nal.usda.gov/fnic/foodcomp/Data/isoflav/isoflav.html</li>
+				<li>USP 32: United States Pharmacopeial Convention. 2009. United States Pharmacopeia and the National Formulary (USP 32 - NF 27). Rockville (MD): The United States Pharmacopeial Convention.</li>
+				<li>van Duijnhoven FJ, Peeters PH, Warren RM, Bingham SA, van Noord PA, Monninkhof EM, Grobbee DE, van Gils CH. 2007. Postmenopausal hormone therapy and changes in mammographic density. Journal of Clinical Oncology 25(11):1323-1328.</li>
+				<li>Van Patten CL, Olivotto IA, Chambers GK, Gelmon KA, Hislop TG, Templeton E, Wattie A, Prior JC. 2002. Effect of soy phytoestrogens on hot flashes in postmenopausal women with breast cancer: a randomized, controlled clinical trial. Journal of Clinical Oncology 20(6):1449-1455.</li>
+				<li>Velasquez MT, Bhathena SJ. 2007. Role of dietary soy protein in obesity. International Journal of Medical Sciences 4(2):72-82.</li>
+				<li>Verheus M, van Gils CH, Kreinan-Boker L, Grace PB, Bingham SA, Peeters HM. 2007. Plasma phytoestrogens and subsequent breast cancer risk. Journal of Clinical Oncology 25(6):648-655.</li>
+				<li>Vivacqua A, Bonofiglio D, Albanito L, Madeo A, Rago V, Carpino A, Musti AM, Picard D, And&#242; S, Maggiolini M. 2006. 17beta-estradiol, genistein, and 4-hydroxytamoxifen induce the proliferation of thyroid cancer cells through the g protein-coupled receptor GPR30. Molecular Pharmacology 70(4):1414-1423.</li>
+				<li>Warri A, Saarinen NM, Makela S, Hilakivi-Clarke L. 2008. The role of early life genistein exposures in modifying breast cancer risk. British Journal of Cancer 98(9):1485-1493.</li>
+				<li>Watanabe S, Yamaguchi M, Sobue T, Takahashi T, Miura T, Arai Y, Mazur W, W&auml;h&auml;l&auml; K, Adlercreutz H. 1998. Pharmacokinetics of soybean isoflavones in plasma, urine and feces of men after ingestion of 60 g baked soybean powder (kinako). Journal of Nutrition 128(10):1710-1715.</li>
+				<li>Welty FK, Lee KS, Lew NS, Zhou JR. 2007. Effect of soy nuts on blood pressure and lipid levels in hypertensive, prehypertensive, and normotensive postmenopausal women. Archives of Internal Medicine 167(10):1060-1067.</li>
+				<li>WHO 2003: World Health Organization. 2003. WHO Technical Report Series 921 Prevention and Management of Osteoporosis Report. Geneva (CH): World Health Organization.</li>
+				<li>Wilcox G, Wahlqvist ML, Burger HG, Medley G. 1990. Oestrogenic effects of plant foods in postmenopausal women. British Medical Journal 301(6757):905-906.</li>
+				<li>Wolff LP, Martins MR, Bedone AJ, Monteiro IM. 2006. Endometrial evaluation in menopausal women after six months of isoflavones. Revista da Associa&#231;&atilde;o M&#233;dica Brasileira 52(6):419-423.</li>
+				<li>Wrensch MR, Petrakis NL, King EB, Lee MM, Miike R. 1993. Breast cancer risk associated with abnormal cytology in nipple aspirates of breast fluid and prior history of breast biopsy. American Journal of Epidemiology 137(8): 829-833.</li>
+				<li>Wrensch MR, Petrakis NL, King EB, Miike R, Mason L, Chew K, Neuhaus J, Lee MM, Rhys M. 1992. Breast cancer incidence in women with abnormal cytology in nipple aspirates of breast fluid. American Journal of Epidemiology 135(2):130-141.</li>
+				<li>Wrensch MR, Petrakis NL, Miike R, King EB, Chew K, Neuhaus J, Lee MM, and Rhys M. 2001. Breast cancer risk in women with abnormal cytology in nipple aspirates of breast fluid. Journal of the National Cancer Institute 93(23):1791-1798.</li>
+				<li>Wu AH, Wan P, Hankin J, Tseng CC, Yu MC, Pike MC. 2002. Adolescent and adult soy intake and risk of breast cancer in Asian-Americans. Carcinogenesis 23(9):1491-1496.</li>
+				<li>Wu AH, Yu MC, Tseng CC, Pike MC. 2008. Epidemiology of soy exposures and breast cancer risk. British Journal of Cancer 98(1):9-14.</li>
+				<li>Wuttke W, Jarry H, Becker T, Schultens A, Christoffel V, Gorkow C, Seidlova-Wuttke D. 2003. Phytoestrogens: endocrine disrupters or replacement for hormone replacement therapy. Maturitas 44(Suppl. 1): S9-S20.</li>
+				<li>Wuttke W, Jarry H, Seidlova-Wuttke D. 2007. Isoflavones - safe food additives or dangerous drugs? Ageing Research Reviews 6(2):150-188.</li>
+				<li>Xiao CW. 2008. Health effects of soy protein and isoflavones in humans. Journal of Nutrition 138(6):1244S-1249S.</li>
+				<li>Xiao CW, Mei J, Huang W, Wood C, L&apos;abb&#233; MR, Gilani GS, Cooke GM, Curran IH. 2007. Dietary soy protein isolate modifies hepatic retinoic acid receptor-beta proteins and inhibits their DNA binding activity in rats. Journal of Nutrition 137(1):1-6.</li>
+				<li>Xu H, Rajesan R, Harper P, Kim RB, Lonnerdal B, Yang M, Uematsu S, Hutson J, Watson- MacDonell J, Ito S. 2005. Induction of cytochrome P450 1A by cow milk-based formula: a comparative study between human milk and formula. British Journal of Pharmacology 146(2):296-305.</li>
+				<li>Yang G, Shu XO, Jin F, Zhang X, Li HL, Li Q, Gao YT, Zheng W. 2005. Longitudinal study of soy food intake and blood pressure among middle-aged and elderly Chinese women. The American Journal of Clinical Nutrition 81(5):1012-1017.</li>
+				<li>Yap AS, Stevenson BR, Cooper V, Manley SW. 1997. Protein tyrosine phosphorylation influences adhesive junction assembly and follicular organization of cultured thyroid epithelial cells. Endocrinology 138(6):2315-2324.</li>
+				<li>Yonezawa K, Nunomiya S, Daigo M, Ogra Y, Suzuki KT, Enomoto K, Nakagama H, Yoshikawa K, Nagao M. 2003. Soy protein isolate enhances hepatic copper accumulation and cell damage in LEC rats. Journal of Nutrition 133(5):1250-1254.</li>
+				<li>Zhang M, Xie X, Lee AH, Binns CW. 2004. Soy and isoflavone intake are associated with reduced risk of ovarian cancer in southeast china. Nutrition and Cancer 49(2):125-130.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="appI">
+		<h2 id="appI">Appendix 1: Definitions and Conversion Factors</h2>
+			<p><strong>Definitions:</strong></p>
+				<p><strong>Aglycone Isoflavone Equivalents (AIE):</strong></p>
+					<p>The maximum amount of bioavailable isoflavone upon ingestion. The glycoside forms of the isoflavones must first be cleaved to the aglycone form before they can be absorbed. As such, simple addition of aglycone and glycoside forms of isoflavone quantities, without taking into consideration the biochemical transformation of the isoflavones, will overestimate bioavailable quantities by almost a factor of two (Wang and Murphy 1996).</p>
+			<p><strong>Conversion factors:</strong></p>
+				<p>The quantity of isoflavones must always be determined in terms of AIE quantities (i.e. in terms of genistein, daidzein, and/or glycitein) for each of the glycoside, acetyl glycoside, malonyl glycoside and/or aglycone forms present in the product.</p>
+				<table id="ref2" class="subject">
+					<caption>Table 2: Conversion of specific isoflavone quantities into aglycone isoflavone equivalent (AIE) quantities (Collison 2008)</caption>
+					<thead>
+						<tr>
+							<th>Isoflavone (1 mg)</th>
+							<th>Aglycone Isoflavone Equivalent (mg AIE) quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Genistein</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>Genistin</td>
+							<td>0.625</td>
+						</tr>
+						<tr>
+							<td>Malonyl genistin</td>
+							<td>0.521</td>
+						</tr>
+						<tr>
+							<td>Acetyl genistin</td>
+							<td>0.570</td>
+						</tr>
+						<tr>
+							<td>Daidzein</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>Daidzin</td>
+							<td>0.611</td>
+						</tr>
+						<tr>
+							<td>Malonyl daidzin</td>
+							<td>0.506</td>
+						</tr>
+						<tr>
+							<td>Acetyl daidzin</td>
+							<td>0.555</td>
+						</tr>
+						<tr>
+							<td>Glycitein</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>Glycitin</td>
+							<td>0.637</td>
+						</tr>
+						<tr>
+							<td>Malonyl glycitin</td>
+							<td>0.534</td>
+						</tr>
+						<tr>
+							<td>Acetyl glycitin</td>
+							<td>0.582</td>
+						</tr>
+					</tbody>
+				</table>
+			<p>Example of using the Aglycone Isoflavone Equivalent (AIE) conversion factors: Converting glycoside quantity into quantity of AIE (mg):
+				<ul style="list-style: none;">
+					<li>Convert 20 mg of genistin into mg AIE:</li>
+					<li>= 20 mg x 0.625 mg AIE/mg genistin</li>
+					<li>= 12.5 mg AIE genistin</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="appII">
+		<h2 id="appII">Appendix 2: Calculating Total Isoflavones and Reporting Amounts on the PLA Form</h2>
+			<ol>
+				<li>Example of a 30 g/day soy protein concentrate product:
+					<p>For a product with a claim for the reduction of menopausal symptoms, the amount of protein, total isoflavones, and genistein/genistin compounds must be reported on the PLA form.
+						<ol style="list-style-type: lower-alpha;">
+							<li>Calculating total isoflavones (mg AIE)
+								<ul style="list-style: none;">
+									<li>Convert genistin, genistein, malonyl genistin, acetyl genistin, daidzein, and daidzin AIE quantities into quantities of total isoflavones in AIE (mg):</li>
+									<li>= 12.5 mg AIE genistin + 10 mg AIE genistein + 1 mg AIE malonyl genistin + 1 mg AIE acetyl genistin + 6.1 mg AIE daidzin + 5 mg AIE daidzein</li>
+									<li>= 35.6 mg AIE total isoflavones</li>
+								</ul>
+							</li>
+							<li>Calculating genistein/genistin compounds (mg AIE)
+								<ul style="list-style: none;">
+									<li>Convert genistein, genistin, malonyl genistin, and acetyl genistin AIE quantities into quantities of total isoflavones in AIE (mg):</li>
+									<li>= 12.5 mg AIE genistin + 10 mg AIE genistein + 1 mg AIE malonyl genistin + 1 mg AIE acetyl genistin</li>
+									<li>= 24.5 mg AIE genistein/genistin compounds</li>
+								</ul>
+							</li>
+							<li>Reporting on the PLA form should be as follows:
+								<ul style="list-style: none;">
+									<li>Proper Name: Soy protein concentrate</li>
+									<li>Common Name: Soy protein concentrate</li>
+									<li>Quantity per dosage unit: 30 g</li>
+									<li>Source Material: <em>Glycine max</em> - Seed</li>
+									<li>Potencies: Total isoflavones: 35.6 mg AIE&semi; Genistein/genistin: 24.5 mg AIE</li>
+								</ul>
+							</li>
+						</ol>
+					</p>
+				</li>
+				<li>Example of a 30 mg/day genistein/genistin isolate product:
+					<p>For a product with a claim for the reduction of menopausal symptoms, the amount of genistein/genistin must be reported on the PLA form.
+						<ul style="list-style: none;">
+							<li>Reporting on the PLA form should be as follows:
+								<ul style="list-style: none;">
+									<li>Proper Name: Genistein / Genistin</li>
+									<li>Common Name: Genistein / Genistin</li>
+									<li>Quantity per dosage unit: 30 mg AIE</li>
+									<li>Source Ingredient: Soy isoflavone extract or Soy protein concentrate or Soy protein isolate or None</li>
+									<li>Source Material: <em>Glycine max</em> - Seed</li>
+									<li>Potencies: None</li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</li>
+			</ol>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from May 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-05-29</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Introductory notes</li>
+								<li>Addition of the note on the combination rules for Class II and III applications, which refers to the Monograph Combination Guide</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2024-09-27</td>
+						<td>Medium updates (with consultation)</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2019-07-01</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2009-10-29</td>
+						<td>Initial release</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

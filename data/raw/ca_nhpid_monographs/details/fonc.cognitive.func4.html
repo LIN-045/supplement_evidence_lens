@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=fonc.cognitive.func4\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="9547f4d2-b4bc-43c6-a0b0-438e9f9d51ee"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>COGNITIVE FUNCTION PRODUCTS</h1>
+	<div class="icon">
+		<a href="dbImages/mono_cognitive-function-products_en.pdf" title="Cognitive Function Products"><img alt="Monograph: Cognitive Function Products" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/> (PDF Version - 299 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>January 30, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1.1" class="subject">
+				<caption>Table 1.1. Proper name(s), Common name(s), Source information for ingredients with nervine action</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="4" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Anemone pulsatilla</em></td>
+						<td>
+							<ul>
+								<li>European pasqueflower</li>
+								<li>Pasqueflower</li>
+								<li>Pulsatilla</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Anemone pulsatilla</em></td>
+						<td>Herb top</td>
+						<td>Dry<sup><a href="#ref1.1-1" style="text-decoration: none;">1</a></sup></td>
+					</tr>
+					<tr>
+						<td><em>Avena sativa</em></td>
+						<td>
+							<ul>
+								<li>Common oat</li>
+								<li>Oat</li>
+								<li>Red oat</li>
+								<li>Side oat</li>
+								<li>Tree oat</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Avena sativa</em></td>
+						<td>
+							<ul>
+								<li>Seed</li>
+								<li>Herb top</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Hypericum perforatum</em></td>
+						<td>
+							<ul>
+								<li>Goatweed</li>
+								<li>Hypericum</li>
+								<li>St. John&apos;s wort</li>
+								<li>St. John&apos;s-wort</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Hypericum perforatum</em></td>
+						<td>Herb top</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="4">
+							<ul>
+								<li>5-Hydroxy-L-tryptophan</li>
+								<li>L-5-Hydroxytryptophan</li>
+							</ul>
+						</td>
+						<td rowspan="4">
+							<ul>
+								<li>L-5-HTP</li>
+								<li>L-5-Hydroxytryptophan</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Griffonia simplicifolia</em><sup><a href="#ref1.1-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Seed</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Saccharomyces cerevisiae</em><sup><a href="#ref1.1-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Whole cell for biosynthesis</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Escherichia coli</em><sup><a href="#ref1.1-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Whole cell for biosynthesis</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>L-5-HTP<sup><a href="#ref1.1-3" style="text-decoration: none;">3</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Nepeta cataria</em></td>
+						<td>
+							<ul>
+								<li>Catmint</li>
+								<li>Catnep</li>
+								<li>Catnip</li>
+								<li>Catswort</li>
+								<li>Field balm</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Nepeta cataria</em></td>
+						<td>Herb top</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Matricaria chamomilla</em></td>
+						<td>
+							<ul>
+								<li>Blue chamomile</li>
+								<li>Chamomile</li>
+								<li>Common chamomile</li>
+								<li>German chamomile</li>
+								<li>Hungarian chamomile</li>
+								<li>Matricaria</li>
+								<li>Scented chamomile</li>
+								<li>Scented mayweed</li>
+								<li>Sweet false chamomile</li>
+								<li>True chamomile</li>
+								<li>Wild chamomile</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Matricaria chamomilla</em></td>
+						<td>Flower</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Melissa officinalis</em></td>
+						<td>
+							<ul>
+								<li>Balm</li>
+								<li>Bee balm</li>
+								<li>Lemon balm</li>
+								<li>Melissa</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Melissa officinalis</em></td>
+						<td>Herb top</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Panax quinquefolius</em></td>
+						<td>
+							<ul>
+								<li>American ginseng</li>
+								<li>Canadian ginseng</li>
+								<li>Five-leaved ginseng</li>
+								<li>Occidental ginseng</li>
+								<li>Sang</li>
+								<li>Sheng</li>
+								<li>Xi yang shen</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Panax quinquefolius</em></td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Scutellaria lateriflora</em></td>
+						<td>
+							<ul>
+								<li>Helmet flower</li>
+								<li>Hoodwort</li>
+								<li>Mad-dog scullcap</li>
+								<li>Quarter bonnet</li>
+								<li>Scullcap</li>
+								<li>Skullcap</li>
+								<li>Virginian skullcap</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Scutellaria lateriflora</em></td>
+						<td>Herb top</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Stachys officinalis</em></td>
+						<td>
+							<ul>
+								<li>Bishop&apos;s-wort</li>
+								<li>Purple betony</li>
+								<li>Wood betony</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Stachys officinalis</em></td>
+						<td>Herb top</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Tilia cordata</em></td>
+						<td>
+							<ul>
+								<li>Linden</li>
+								<li>Littleleaf linden</li>
+								<li>Small-leaf European linden</li>
+								<li>Small-leaf lime</li>
+								<li>Small-leaf lime tree</li>
+								<li>Small-leaf linden</li>
+								<li>Tilia</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Tilia cordata</em></td>
+						<td>Flower</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Tilia platyphyllos</em></td>
+						<td>
+							<ul>
+								<li>Big-leaf linden</li>
+								<li>Broadleaf lime</li>
+								<li>Large-leaf lime</li>
+								<li>Large-leaf linden</li>
+								<li>Linden</li>
+								<li>Tilia</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Tilia platyphyllos</em></td>
+						<td>Flower</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Tilia x europaea</em></td>
+						<td>
+							<ul>
+								<li>European Lime tree</li>
+								<li>European linden</li>
+								<li>Lime</li>
+								<li>Lime tree</li>
+								<li>Linden</li>
+								<li>Tilia</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Tilia x europaea</em></td>
+						<td>Flower</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Turnera diffusa</em></td>
+						<td>Damiana</td>
+						<td>N/A</td>
+						<td><em>Turnera diffusa</em></td>
+						<td>
+							<ul>
+								<li>Leaf</li>
+								<li>Leaf and stem</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Withania somnifera</em></td>
+						<td>
+							<ul>
+								<li>Asgandh</li>
+								<li>Ashwagandha</li>
+								<li>Asvagandha</li>
+								<li>Winter-cherry</li>
+								<li>Withania</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Withania somnifera</em></td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: EMA 2008&semi; Bone 2003&semi; Hoffman 2003&semi; Lemaire and Adosraku 2002&semi; API 2001&semi; Bradley 1992&semi; Williamson et al. 1988&semi; BHP 1983&semi; Fellows and Bell 1970&semi; Remington and Wood 1918&semi; BPC 1911.</p>
+			<p>
+				<sup id="ref1.1-1">1</sup>Do not use the fresh plant (Bone 2003&semi; Hoffman 2003&semi; Bradley 1992&semi; BHP 1983).<br/>
+				<sup id="ref1.1-2">2</sup>Isolate<br/>
+				<sup id="ref1.1-3">3</sup>Synthetic
+			</p>
+			<table id="ref1.2" class="subject">
+				<caption>Table 1.2. Proper name(s), Common name(s), Source information for ingredients with sedative action</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Eschscholzia californica</em></td>
+						<td>California-poppy</td>
+						<td><em>Eschscholzia californica</em></td>
+						<td>
+							<ul>
+								<li>Herb top</li>
+								<li>Herb top flowering</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Humulus lupulus</em></td>
+						<td>
+							<ul>
+								<li>Bine</li>
+								<li>European hop</li>
+								<li>Hop</li>
+								<li>Hops</li>
+							</ul>
+						</td>
+						<td><em>Humulus lupulus</em></td>
+						<td>Strobile</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Passiflora incarnata</em></td>
+						<td>
+							<ul>
+								<li>Apricot-vine</li>
+								<li>Maypop</li>
+								<li>Maypop passionflower</li>
+								<li>Passionflower</li>
+							</ul>
+						</td>
+						<td><em>Passiflora incarnata</em></td>
+						<td>Herb top</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Valeriana officinalis</em></td>
+						<td>
+							<ul>
+								<li>Common valerian</li>
+								<li>Garden-heliotrope</li>
+								<li>Garden valerian</li>
+								<li>Valerian</li>
+							</ul>
+						</td>
+						<td><em>Valeriana officinalis</em></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: Hoffman 2003&semi; Williamson et al. 1988.</p>
+			<table id="ref1.3" class="subject">
+				<caption>Table 1.3. Proper name(s), Common name(s), Source information for ingredients with cognitive support action</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="5" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Organism group(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>(2R)-2-(Acetyloxy)-3-carboxy-N,N,N-trimethyl-1-propanaminium inner salt</td>
+						<td>Acetylcarnitine</td>
+						<td>
+							<ul>
+								<li>Acetyl-L-carnitine arginate dihydrochloride<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></li>
+								<li>Acetyl L-carnitine hydrochloride<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Bacopa monnieri</em></td>
+						<td>
+							<ul>
+								<li>Bacopa</li>
+								<li>Moneywort</li>
+								<li>Water hyssop</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Bacopa monnieri</em></td>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li>Herb top</li>
+								<li>Whole plant</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-[[[(2R)-2,3-Dihydroxypropoxy]hydroxyphosphinyl]oxy]-N,N,N-trimethylethanaminium hydroxide inner salt</li>
+								<li>d-Choline hydroxide 2,3-dihydroxypropylhydrogen	phosphate inner salt</li>
+								<li>L-alpha-Glycerylphosphorylcholine</li>
+							</ul>
+						</td>
+						<td>Choline alfoscerate</td>
+						<td>Choline alfoscerate<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>Choline cytidine 5&apos;-pyrophosphate (ester)</li>
+								<li>Cytidine 5&apos;-(trihydrogen diphosphate) P&apos;-[2(trimethylammonio)ethyl] ester inner salt</li>
+								<li>Cytidine 5&apos;-diphosphocholine</li>
+							</ul>
+						</td>
+						<td>Citicoline</td>
+						<td>
+							<ul>
+								<li>Citicoline sodium<sup><a href="#ref3.1-1" style="text-decoration: none;">1</a></sup></li>
+								<li>Citicoline<sup><a href="#ref3.1-1" style="text-decoration: none;">1</a></sup></li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Cod liver oil</td>
+						<td>
+							<ul>
+								<li>Cod liver oil</li>
+								<li>Lecoris Aselli Oleum</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Gadidae<sup><a href="#ref3.1-3" style="text-decoration: none;">3</a></sup></td>
+						<td>Liver</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Eleutherococcus senticosus</em></td>
+						<td>
+							<ul>
+								<li>Ci wu jia</li>
+								<li>Eleuthero</li>
+								<li>Siberian ginseng</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Eleutherococcus senticosus</em></td>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td>Fish oil</td>
+						<td>Fish oil</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li>Ammodytidae</li>
+								<li>Carangidae</li>
+								<li>Clupeidae</li>
+								<li>Engraulidae</li>
+								<li>Gadidae<sup><a href="#ref1.3-3" style="text-decoration: none;">3</a></sup></li>
+								<li>Osmeridae</li>
+								<li>Salmonidae</li>
+								<li>Scombridae</li>
+							</ul>
+						</td>
+						<td>Whole</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Ginkgo biloba</em></td>
+						<td>
+							<ul>
+								<li>Ginkgo</li>
+								<li>Ginkgo biloba</li>
+								<li>Maidenhair tree</li>
+								<li>Baiguo</li>
+								<li>Icho</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Ginkgo biloba</em></td>
+						<td>N/A</td>
+						<td>Leaf</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Panax ginseng</em></td>
+						<td>
+							<ul>
+								<li>Asian ginseng</li>
+								<li>Chinese ginseng</li>
+								<li>Hong shen</li>
+								<li>Korean ginseng</li>
+								<li>Korean red ginseng</li>
+								<li>Oriental ginseng</li>
+								<li>Panax ginseng</li>
+								<li>Red ginseng</li>
+								<li>Ren shen</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Panax ginseng</em></td>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Rootlet</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Phosphatidylserine</td>
+						<td rowspan="3">Phosphatidylserine</td>
+						<td>N/A</td>
+						<td><em>Helianthus annuus</em><sup><a href="#ref1.3-2" style="text-decoration: none;">2</a></sup></td>
+						<td>N/A</td>
+						<td>Seed</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Phosphatidylserine-enriched soy lecithin<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Phosphatidylserine<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Rhodiola rosea</em></td>
+						<td>
+							<ul>
+								<li>Hong jing tian</li>
+								<li>King&apos;s-crown</li>
+								<li>Rhodiola</li>
+								<li>Roseroot</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Rhodiola rosea</em></td>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Schizochytrium spp.</em></td>
+						<td>Schizochytrium Oil</td>
+						<td>N/A</td>
+						<td><em>Schizochytrium spp.</em></td>
+						<td>N/A</td>
+						<td>Whole</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>(S)-alpha-Amino-4-hydroxybenzenepropanoic acid</li>
+								<li>L-Tyrosine</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>L-Tyrosine</li>
+								<li>Tyrosine</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>L-Tyrosine<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></li>
+								<li>L-Tyrosine ethyl ester<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></li>
+								<li>N-Acetyl-L-tyrosine<sup><a href="#ref1.3-1" style="text-decoration: none;">1</a></sup></li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Withania somnifera</em></td>
+						<td>
+							<ul>
+								<li>Asgandh</li>
+								<li>Ashwagandha</li>
+								<li>Asvagandha</li>
+								<li>Winter-cherry</li>
+								<li>Withania</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Withania somnifera</em></td>
+						<td>N/A</td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: NHPID 2025&semi; Yurko-Mauro et al. 2010&semi; Calabrese et al. 2008&semi; Bone 2003&semi; De Jesus Moreno Moreno 2003&semi; API 2001&semi; Parnetti et al. 2001&semi; Barbagallo et al. 1994&semi; Parnetti et al. 1993&semi; Canal et al. 1991.</p>
+			<p>
+				<sup id="ref1.3-1">1</sup>Synthetic<br/>
+				<sup id="ref1.3-2">2</sup>Isolate<br/>
+				<sup id="ref1.3-3">3</sup>For cod liver oil and fish oil, the species common name can be listed as source information on the label instead of the organism group. Fish oil corresponds to oil from the whole body of one or more of species of the families listed in the table in its natural and/or concentrated triglyceride/triacylglycerol form and/or its concentrated esterified form.
+			</p>
+			<table id="ref1.4" class="subject">
+				<caption>Table 1.4. Proper name(s), Common name(s), Source information for caffeine and ingredients containing caffeine</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="4" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="7">
+							<ul>
+								<li>1,3,7-Trimethylxanthine</li>
+								<li>3,7-Dihydro-1,3,7-trimethyl-1H-purine-2,6-dione</li>
+							</ul>
+						</td>
+						<td rowspan="7">Caffeine</td>
+						<td>
+							<ul>
+								<li>Caffeine<sup><a href="#ref4.1-1" style="text-decoration: none;">1</a></sup></li>
+								<li>Caffeine citrate<sup><a href="#ref4.1-1" style="text-decoration: none;">1</a></sup></li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Camellia sinensis</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Leaf</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Coffea arabica</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+								<li><em>Coffea canephora</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+							</ul>
+						</td>
+						<td>Seed</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Cola acuminata</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+							</ul>
+						</td>
+						<td>Seed</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Ilex paraguariensis</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+								<li><em>Ilex guayusa</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+							</ul>
+						</td>
+						<td>Leaf</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Paullinia cupana</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+							</ul>
+						</td>
+						<td>Seed</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Theobroma cacao</em><sup><a href="#ref4.1-2" style="text-decoration: none;">2</a></sup></li>
+							</ul>
+						</td>
+						<td>Seed</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Ilex paraguariensis</em></td>
+						<td>
+							<ul>
+								<li>Brazilian tea</li>
+								<li>Mate</li>
+								<li>Paraguayan tea</li>
+								<li>Paraguay tea</li>
+								<li>St Bartholomew&apos;s tea</li>
+								<li>Yerba mate</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Ilex paraguariensis</em></td>
+						<td>Leaf</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Paullinia cupana</em></td>
+						<td>Guarana</td>
+						<td>N/A</td>
+						<td><em>Paullinia cupana</em></td>
+						<td>Seed</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: EMA 2013&semi; ESCOP 2009&semi; Bradley 2006&semi; Kennedy et al. 2004&semi; Taylor 2003&semi; Barnes et al. 2002&semi; BHP 1983.</p>
+			<p>
+				<sup id="ref1.4-1">1</sup>Synthetic
+				<sup id="ref1.4-2">2</sup>Isolate. If caffeine is sourced from <em>Camellia sinensis, Coffea arabica, Coffea canephora, Cola acuminata, Ilex paraguariensis, Ilex guayusa, Paullinia cupana</em> or <em>Theobroma cacao</em>, it must be isolated and purified. Extracts of <em>Ilex paraguariensis</em> and <em>Paullinia cupana</em> must be represented separately. This monograph does not support extracts of <em>Camellia sinensis, Coffea arabica, Coffea canephora, Cola acuminata, Ilex guayusa</em> or <em>Theobroma cacao</em>.
+			</p>
+			<table id="ref1.5" class="subject">
+				<caption>Table 1.5. Proper name(s), Common name(s), Source information for ingredients with relaxation action</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4">4-Aminobutanoic acid</td>
+						<td rowspan="4">
+							<ul>
+								<li>GABA</li>
+								<li>gamma-Aminobutyric acid</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Lentilactobacillus hilgardii</em><sup><a href="#ref1.5-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Whole cell for biosynthesis</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Levilactobacillus brevis</em><sup><a href="#ref1.5-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Whole cell for biosynthesis</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Laminaria japonica</em><sup><a href="#ref1.5-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>4-Aminobutanoic acid<sup><a href="#ref1.5-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td rowspan="2">
+							<ul>
+								<li>L-Theanine</li>
+								<li>N-Ethyl-L-glutamine</li>
+							</ul>
+						</td>
+						<td rowspan="2">L-Theanine</td>
+						<td>N/A</td>
+						<td><em>Camellia sinensis</em><sup><a href="#ref1.5-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Leaf</td>
+					</tr>
+					<tr>
+						<td>L-Theanine<sup><a href="#ref1.5-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: Kanehira et al. 2011&semi; Abdou et al. 2006&semi; Yamakoshi et al. 2006.</p>
+			<p>
+				<sup id="ref1.5-1">1</sup>Synthetic<br/>
+				<sup id="ref1.5-2">2</sup>Isolate
+			</p>
+			<table id="ref1.6" class="subject">
+				<caption>Table 1.6. Proper name(s), Common name(s), Source information for ingredients with adaptogen action</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Asparagus racemosus</em></td>
+						<td>
+							<ul>
+								<li>Shatamuli</li>
+								<li>Shatavari</li>
+							</ul>
+						</td>
+						<td><em>Asparagus racemosus</em></td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Astragalus membranaceus</em></td>
+						<td>
+							<ul>
+								<li>Astragalus</li>
+								<li>Huangqi</li>
+								<li>Huang qi</li>
+								<li>Membranaceus milk vetch</li>
+								<li>Membranous milk-vetch</li>
+								<li>Milk vetch root</li>
+								<li>Mo jia huang qi</li>
+							</ul>
+						</td>
+						<td><em>Astragalus membranaceus</em></td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Eleutherococcus senticosus</em></td>
+						<td>
+							<ul>
+								<li>Ci wu jia</li>
+								<li>Eleuthero</li>
+								<li>Siberian ginseng</li>
+							</ul>
+						</td>
+						<td><em>Eleutherococcus senticosus</em></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Ganoderma lucidum</em></td>
+						<td>
+							<ul>
+								<li>Ganoderma</li>
+								<li>Ling zhi</li>
+								<li>Reishi</li>
+							</ul>
+						</td>
+						<td><em>Ganoderma lucidum</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza glabra</em></td>
+						<td>
+							<ul>
+								<li>Guang guo gan cao</li>
+								<li>Licorice</li>
+								<li>Liquorice</li>
+							</ul>
+						</td>
+						<td><em>Glycyrrhiza glabra</em></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and stolon</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Ocimum tenuiflorum</em></td>
+						<td>
+							<ul>
+								<li>Holy basil</li>
+								<li>Rama tulsi</li>
+								<li>Sacred basil</li>
+								<li>Tulsi</li>
+							</ul>
+						</td>
+						<td><em>Ocimum tenuiflorum</em></td>
+						<td>Leaf</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Panax ginseng</em></td>
+						<td>
+							<ul>
+								<li>Asian ginseng</li>
+								<li>Chinese ginseng</li>
+								<li>Hong shen</li>
+								<li>Korean ginseng</li>
+								<li>Korean red ginseng</li>
+								<li>Oriental ginseng</li>
+								<li>Panax ginseng</li>
+								<li>Red ginseng</li>
+								<li>Ren shen</li>
+							</ul>
+						</td>
+						<td><em>Panax ginseng</em></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Rootlet</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Panax quinquefolius</em></td>
+						<td>
+							<ul>
+								<li>American ginseng</li>
+								<li>Canadian ginseng</li>
+								<li>Occidental ginseng</li>
+								<li>Sang</li>
+								<li>Shang</li>
+								<li>Xi yang shen</li>
+							</ul>
+						</td>
+						<td><em>Panax quinquefolius</em></td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Rhodiola rosea</em></td>
+						<td>
+							<ul>
+								<li>Hong jing tian</li>
+								<li>King&apos;s-crown</li>
+								<li>Rhodiola</li>
+								<li>Roseroot</li>
+							</ul>
+						</td>
+						<td><em>Rhodiola rosea</em></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Root and rhizome</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Schisandra chinensis</em></td>
+						<td>
+							<ul>
+								<li>Chinese Magnoliavine</li>
+								<li>Schisandra</li>
+								<li>Wu wei zi</li>
+							</ul>
+						</td>
+						<td><em>Schisandra chinensis</em></td>
+						<td>Fruit</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Tinospora cordifolia</em></td>
+						<td>Guduchi</td>
+						<td><em>Tinospora cordifolia</em></td>
+						<td>Stem</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Withania somnifera</em></td>
+						<td>
+							<ul>
+								<li>Asgandh</li>
+								<li>Ashwagandha</li>
+								<li>Asvagandha</li>
+								<li>Winter-cherry</li>
+								<li>Withania</li>
+							</ul>
+						</td>
+						<td><em>Withania somnifera</em></td>
+						<td>
+							<ul>
+								<li>Root</li>
+								<li>Whole plant</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: Upton 2012&semi; Winston and Kuhn 2008&semi; Winston and Maimes 2007&semi; WHO 2004&semi; Bone 2003&semi; Hoffman 2003&semi; Thomsen 2002&semi; Williamson 2002; API 2001&semi; Blumenthal et al. 2000; Upton 1999&semi; WHO 1999&semi; Bradley 1992&semi; BHP 1983.</p>
+			<table id="ref1.7" class="subject">
+				<caption>Table 1.7. Proper name(s), Common name(s), Source information for complementary ingredients</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="4" rowspan="1" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preperation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2">[5R-(5alpha,9beta, 11E)]-5-Amino-11-ethylidne-5,6,9, 1-tetrahydro-7-methyl-5,9-methano cycloocta [b]pyridine-2(1H)-one</td>
+						<td rowspan="2">Huperzine A</td>
+						<td>N/A</td>
+						<td><em>Huperzia serrata</em><sup><a href="#ref1.7-2" style="text-decoration: none;">2</a></sup></td>
+						<td>Whole plant</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td>Huperzine A<sup><a href="#ref1.7-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td rowspan="3">7,9-Dihydro-1,3,7,9-tetramethyl-1H-purine-2,6,8(3H)-trione</td>
+						<td rowspan="3">Theacrine</td>
+						<td rowspan="2">N/A</td>
+						<td><em>Camellia sinensis</em><sup>2</sup></td>
+						<td>Leaf</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Theobroma grandiflorum</em><sup><a href="#ref1.7-2" style="text-decoration: none;">2</a>2</sup></td>
+						<td>Fruit</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td>Theacrine<sup>1</sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td rowspan="2">
+							<ul>
+								<li>3,7-Dihydro-3,7-dimethyl-1H-purine-2,6-dione</li>
+								<li>3,7-Dimethylxanthine</li>
+							</ul>
+						</td>
+						<td rowspan="2">Theobromine</td>
+						<td>N/A</td>
+						<td><em>Theobroma cacao<sup><a href="#ref1.7-2" style="text-decoration: none;">2</a></sup></em></td>
+						<td>Seed</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td>Theobromine<sup><a href="#ref1.7-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Huperzia serrata</em></td>
+						<td>
+							<ul>
+								<li>Toothed club-moss</li>
+								<li>Toge-shiba</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Huperzia serrata</em></td>
+						<td>Whole plant</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: NHPID 2025&semi; Martinez-Pinilla et al. 2015&semi; Ma et al. 2007&semi; Kihlman 1977.</p>
+			<p>
+				<sup id="ref1.7-1">1</sup>Synthetic<br/>
+				<sup id="ref1.7-2">2</sup>Isolate
+			</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p>Refer to Tables 2.1 to 2.6. below.</p>
+				<p><strong>Notes:</strong>
+					<ul>
+						<li>The recommended uses can be combined on the product label if from the same traditional or non-traditional system of medicine.</li>
+						<li>The terms &lsquo;Helps&rsquo; or &lsquo;Helps to&rsquo; can be used interchangeably on the label.</li>
+					</ul>
+				</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p>Refer to Tables 2.1 to 2.7. below.</p>
+				<p><strong>Notes:</strong>
+					<ul>
+						<li>Methods of preparation: Solvents allowed for the methods of preparation, Non-Standardized Extracts “Dry extract” and Non-Standardized Ethanolic Extracts “Dry extract” as part of this monograph are ethanol and/or water only, unless otherwise specified. For Non-Standardized Aqueous Extracts “Dry extract”, water is the only solvent allowed.</li>
+						<li>When the method of preparation &lsquo;decoction&rsquo; or &lsquo;infusion&rsquo; is listed as part of the acceptable methods of preparation, the method of preparation &lsquo;decoction concentrate&rsquo; or &lsquo;infusion concentrate&rsquo; is also applicable.</li>
+					</ul>
+				</p>
+				<table id="ref2.1" class="subject">
+					<caption>Table 2.1. Cognitive function uses or purposes and associated daily doses for ingredients with nervine action</caption>
+					<thead>
+						<tr>
+							<th scope="col">Uses or Purposes<sup><a href="#ref2.1-1" style="text-decoration: none;">1</a>1</sup></th>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparation</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.1-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="9">(Traditionally) used in Herbal Medicine to help relieve restlessness and/or nervousness (nervine/calmative)</td>
+							<td rowspan="2"><em>Anemone pulsatilla</em> (Pasqueflower)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>0.03-0.6 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>0.1-0.9 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td><em>Avena sativa</em> (Oat)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>
+								<ul>
+									<li>0.6-20 grams dried seed, per day</li>
+									<li>3 grams dried herb top, per day</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td><em>Nepeta cataria</em> (Catnip)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>1.2-12 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td><em>Panax quinquefolius</em> (Canadian/American ginseng)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.5-12 grams dried root, per day</td>
+						</tr>
+						<tr>
+							<td><em>Tilia cordata</em> (Small-leaf linden)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>1.5-12 grams dried flower, per day</td>
+						</tr>
+						<tr>
+							<td><em>Tilia platyphyllos</em> (Large-leaf linden)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>1.5-12 grams dried flower, per day</td>
+						</tr>
+						<tr>
+							<td><em>Tilia x europaea</em> (European Linden)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>1.5-12 grams dried flower, per day</td>
+						</tr>
+						<tr>
+							<td><em>Turnera diffusa</em> (Damiana)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>1.5-4 grams dried leaf/leaf and stem, per day</td>
+						</tr>
+						<tr>
+							<td>(Traditionally) used in Herbal Medicine to help relieve restlessness and/or nervousness (nervine/calmative)</td>
+							<td rowspan="2"><em>Hypericum perforatum</em> (St. John&apos;s wort)</td>
+							<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>2-12.6 grams dried herb top, per day; Not to exceed 4.2 grams per single dose</td>
+						</tr>
+						<tr>
+							<td>Used in Herbal Medicine to help relieve restlessness and/or nervousness (nervine/calmative)<br/>AND/OR<br/>(Used in Herbal Medicine to) help(s) relieve sleep disturbances associated with mood imbalance</td>
+							<td>Standardized Extracts (Dry extract)</td>
+							<td>600-1800 milligrams of dried herb top extract, per day, standardized to 3-6% hyperforin and/or 0.12- 0.28% hypericin; Not to exceed 600 milligrams of extract per single dose</td>
+						</tr>
+						<tr>
+							<td>Helps (to) relieve sleep disturbances associated with mood imbalance</td>
+							<td>L-5-Hydroxytryptophan (L-5-HTP)</td>
+							<td>N/A</td>
+							<td>100-200 milligrams, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="5">(Traditionally) used in Herbal Medicine to help relieve restlessness and/or nervousness (which helps to promote sleep) (nervine/calmative)</td>
+							<td><em>Matricaria chamomilla</em> (German chamomile)</td>
+							<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>1.5-24 grams dried flower, per day</td>
+						</tr>
+						<tr>
+							<td><em>Melissa officinalis</em> (Lemon balm)</td>
+							<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.4-13.5 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Scutellaria lateriflora</em> (Skullcap)</td>
+							<td>Dry, Powdered, Non- Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>0.25-12 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>3-12 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td><em>Stachys officinalis</em> (Wood betony)</td>
+							<td>Dry, Powdered, Non- Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>2-4 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td>Traditionally used in Ayurveda to balance aggravated Vata (nervine)<br/>AND/OR<br/>Traditionally used in Ayurveda to help relieve restlessness and/or nervousness (which helps (to) promote sleep).</td>
+							<td><em>Withania somnifera</em> (Ashwagandha)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>2-6 grams dried root, per day</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref2.1-1">1</sup>References consulted for the uses or purposes: Sutanto et al. 2024&semi; ESCOP 2009&semi; Bradley 2006&semi; Bone 2003&semi; Hoffman 2003&semi; Barnes et al. 2002&semi; Kapoor 2001&semi; Blumenthal et al. 2000&semi; Upton 2000&semi; Wheatley 1999&semi; Poldinger et al. 1991&semi; Williamson et al. 1988&semi; Ellingwood 1983&semi; Felter and Lloyd 1983&semi; Soulairac and Lambinet 1977&semi; Grieve 1971.<br/>
+					<sup id="ref2.1-2">2</sup>References consulted for the doses: Sutanto et al. 2024&semi; CNF 2023; EMA 2008&semi; Anghelescu et al. 2006&semi; Bone 2003&semi; Hoffman 2003&semi; API 2001&semi; Kapoor 2001&semi; Blumenthal et al. 2000&semi; Bradley 1992&semi; Williamson et al. 1988&semi; BHP 1983&semi; Ellingwood 1983&semi; Felter and Lloyd 1983&semi; Soulairac and Lambinet 1977&semi; Remington and Wood 1918&semi; BPC 1911.
+				</p>
+				<table id="ref2.2" class="subject">
+					<caption>Table 2.2. Cognitive function uses or purposes and associated daily doses for ingredients with sedative (soporific) action</caption>
+					<thead>
+						<tr>
+							<th scope="col">Uses or Purposes<sup><a href="#ref2.2-1" style="text-decoration: none;">1</a></sup></th>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparation</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.2-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="4">(Traditionally) used in Herbal Medicine as a sleep aid (during times of mental stress).<br/>AND/OR<br/>(Traditionally) used in Herbal Medicine to help relieve restlessness and/or nervousness (calmative).</td>
+							<td><em>Eschscholzia californica</em> (California-poppy)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.2-3 grams dried herb top (flowering), per day</td>
+						</tr>
+						<tr>
+							<td><em>Humulus lupulus</em> (Hops)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.5-6 grams dried strobile, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Passiflora incarnata</em> (Passionflower)</td>
+							<td>Dry, Powdered, Non- Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>0.25-8 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>1-8 grams dried herb top, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2">(Traditionally used in Herbal Medicine as a) sleep aid/(to) help(s) to promote sleep.<br/>AND/OR<br/>(Traditionally) used in Herbal Medicine to relieve restlessness and/or nervousness (calmative)</td>
+							<td rowspan="2"><em>Valeriana officinalis</em> (Valerian)</td>
+							<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.3-12 grams dried root/root and rhizome, per day; Not to exceed 3.6 grams per single dose</td>
+						</tr>
+						<tr>
+							<td>Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.3-12 grams dried root/root and rhizome, per day<sup><a href="#ref2.2-3" style="text-decoration: none;">3</a></sup>&semi; Not to exceed 3.6 grams per single dose and:<br/>0.05-0.90% valerenic acid<br/>OR<br/>0.10-0.90% sesquiterpenic acids</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref2.2-1">1</sup>References consulted for the uses or purposes: Williamson et al. 1988&semi; refer to respective single ingredient monographs.<br/>
+					<sup id="ref2.2-2">2</sup>References consulted for the doses: Williamson et al. 1988&semi; refer to respective single ingredient monographs.<br/>
+					<sup id="ref2.2-3">3</sup>Note: For Valerian extracts standardized to valerenic acid or sesquiterpenic acids, the quantity dried equivalent and the extract ratio must be provided.
+				</p>
+				<table id="ref2.3" class="subject">
+					<caption>Table 2.3. Cognitive function uses or purposes and associated daily doses for ingredients with with cognitive support action</caption>
+					<thead>
+						<tr>
+							<th scope="col">Uses or Purposes<sup><a href="#ref2.3-1" style="text-decoration: none;">1</a></sup></th>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparation</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.3-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+						<tbody>
+							<tr>
+								<td rowspan="8">Helps support cognitive/brain health/function.</td>
+								<td>Acetylcarnitine</td>
+								<td>N/A</td>
+								<td>1.5-4 grams, per day</td>
+							</tr>
+							<tr>
+								<td><em>Bacopa monnieri</em> (Bacopa)</td>
+								<td>Standardized Extracts (Dry extract)</td>
+								<td>300 milligrams dried whole plant/herb top extract, per day, standardized to 40-55% bacosides</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Cod liver oil</td>
+								<td rowspan="2">Standardized fixed oil</td>
+								<td>18 years:<br/>0.77-4 grams cod liver oil, per day<br/>And<br/>150-1,360 milligrams EPA + DHA including at least 100 milligrams DHA, per day<br/>And<br/>138-2,800 micrograms RAE (vitamin A), per day<br/>And<br/>1.15-23.12 micrograms vitamin D<sub>3</sub>, per day</td>
+							</tr>
+							<tr>
+								<td>19 years and older:<br/>0.77-4 grams cod liver oil, per day<br/>And<br/>150-1,360 milligrams EPA + DHA including at least 100 milligrams DHA, per day<br/>And<br/>138-3,000 micrograms RAE (Vitamin A), per day<br/>And<br/>1.15-25 micrograms Vitamin D3, per day</td>
+							</tr>
+							<tr>
+								<td>L-alpha-Glycerophosphorylcholine (Choline alfoscerate)</td>
+								<td>N/A</td>
+								<td>1.2 grams, per day</td>
+							</tr>
+							<tr>
+								<td>Fish oil</td>
+								<td>Standardized fixed oil</td>
+								<td>150-5,000 milligrams EPA and DHA including at least 100 milligrams DHA, per day<sup><a href="#ref2.3-3" style="text-decoration: none;">3</a></sup></td>
+							</tr>
+							<tr>
+								<td>Phosphatidylserine</td>
+								<td>N/A</td>
+								<td>300 milligrams, per day</td>
+							</tr>
+							<tr>
+								<td>Schizochytrium oil</td>
+								<td>Standardized fixed oil</td>
+								<td>200-2,000 milligrams DHA, per day</td>
+							</tr>
+							<tr>
+								<td>Helps (to) support memory</td>
+								<td><em>Bacopa monnieri</em> (Bacopa)</td>
+								<td>Standardized Extracts (Dry extract)</td>
+								<td>300 milligrams dried whole plant/herb top extract, per day, standardized to 40- 55% bacosides</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Traditionally used in Ayurveda for memory enhancement</td>
+								<td><em>Bacopa monnieri</em> (Bacopa)</td>
+								<td>Dry, Powdered, Non- Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+								<td>1-6.5 grams dried whole plant/herb top, per day</td>
+							</tr>
+							<tr>
+								<td><em>Withania somnifera</em> (Ashwagandha)</td>
+								<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+								<td>2-6 grams dried root, per day</td>
+							</tr>
+							<tr>
+								<td>Helps (to) improve sustained attention.</td>
+								<td rowspan="2">Citicoline</td>
+								<td>N/A</td>
+								<td>250-1000 milligrams per day&semi; not to exceed 500 milligrams per single dose</td>
+							</tr>
+							<tr>
+								<td>Helps (to) support cognitive health and/or brain function in older adults.</td>
+								<td>N/A</td>
+								<td>500-1000 milligrams per day; not to exceed 500 milligrams per single dose</td>
+							</tr>
+							<tr>
+								<td>Used in Herbal Medicine to help improve mental performance after periods of mental exertion</td>
+								<td><em>Eleutherococcus senticosus</em> (Eleuthero)</td>
+								<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+								<td>0.91-6 grams dried root/root and rhizome, per day</td>
+							</tr>
+							<tr>
+								<td>Helps (to) enhance cognitive function and/or memory in adults</td>
+								<td><em>Ginkgo biloba</em> (Ginkgo)</td>
+								<td>Standardized Extracts (Dry extract)</td>
+								<td>80-240 milligrams of extract, per day (quantity crude equivalent 4 - 12 g of dried leaves, per day) providing at least 80 milligrams of extract per single dose and standardized to:<br/>
+								22-27% flavonoid glycosides<br/>And<br/>5-7% terpene lactones</td>
+							</tr>
+							<tr>
+								<td rowspan="2">(Used in Herbal Medicine to) help(s) support cognitive function and/or reduce mental fatigue (in cases of mental stress)<br/>AND/OR<br/>Helps support cognition</td>
+								<td rowspan="2"><em>Panax ginseng</em> (Panax ginseng)</td>
+								<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid Extract, Decoction, Infusion)</td>
+								<td>0.5-9 grams dried root/ rootlet, per day</td>
+							</tr>
+							<tr>
+								<td>Standardized Extracts (Dry extract)</td>
+								<td>200-600 milligrams of extract, per day&semi; standardized to 4-7% total ginsenosides; Not to exceed a quantity crude equivalent of 9 grams of dried root/rootlet, per day</td>
+							</tr>
+							<tr>
+								<td rowspan="2">(Used in Herbal Medicine) (to) help(s) support cognitive function (such as mental focus and mental stamina)</td>
+								<td rowspan="2"><em>Rhodiola rosea</em> (Rhodiola)</td>
+								<td>Tincture</td>
+								<td>1.2-1.8 grams dried root/root and rhizome, per day</td>
+							</tr>
+							<tr>
+								<td>Standardized Extracts (Dry extract)</td>
+								<td>144-680 milligrams of dried root/root and rhizome extract, per day&semi; Not to exceed 200 milligrams per single dose and:<br/>0.8-3% salidroside<br/>And/Or<br/>1-6% rosavins</td>
+							</tr>
+							<tr>
+								<td>Helps to decrease cognitive fatigue due to physically stressful situations (e.g. extended wakefulness, exposure to cold, excessive noise).</td>
+								<td>L-Tyrosine</td>
+								<td>N/A</td>
+								<td>10-20 grams, per day; Not to exceed 10 grams per single dose</td>
+							</tr>
+						</tbody>
+				</table>
+				<p>
+					<sup id="ref2.3-1">1</sup>References consulted for the uses or purposes: Nakazaki et al. 2021&semi; McGlade et al. 2015, 2012&semi; Morgan and Stevens 2010&semi; Yurko-Mauro et al. 2010&semi; Barbhaiya et al. 2008&semi; Calabrese et al. 2008&semi; Malaguanera et al. 2008&semi; Stough et al. 2008&semi; Raghav et al. 2006&semi; Murthy 2004&semi; De Jesus Moreno Moreno 2003&semi; Roodenrys et al. 2002&semi; API 2001&semi; Parnetti et al. 2001&semi; Stough et al. 2001&semi; Thal et al. 2000&semi; Upton 2000&semi; Neri et al. 1995&semi; Barbagallo et al. 1994&semi; Pettegrewet al. 1994&semi; Parnetti et al. 1993&semi; Sano et al. 1992&semi; Canal et al. 1991&semi; Spagnoli et al. 1991.<br/>
+					<sup id="ref2.3-2">2</sup>References consulted for the doses : Nakazaki et al. 2021&semi; McGlade et al. 2015, 2012&semi; Cotroneo et al. 2013&semi; EFSA 2013&semi; Jensen et al. 2010&semi; Morgan and Stevens 2010&semi; Quinn et al. 2010&semi; Yurko-Mauro et al. 2010&semi; Calabrese et al. 2008&semi; Malaguanera et al. 2008&semi; Mahoney et al. 2007&semi; Bone 2003&semi; De Jesus Moreno Moreno 2003&semi; API 2001&semi; Kapoor 2001&semi; Parnetti et al. 2001&semi; Stough et al. 2001&semi; Thal et al. 2000&semi; Barbagallo et al. 1994&semi; Pettegrewet al. 1994&semi; Parnetti et al. 1993&semi; Sano et al. 1992&semi; Canal et al. 1991&semi; Spagnoli et al. 1991.<br/>
+					<sup id="ref2.3-3">3</sup>For fish oil including species of Gadidae as a source material, the vitamin A and D content should be tested to ensure that the daily maximum amounts meet the Multi-Vitamin/Mineral Supplements monograph for each age group.
+				</p>
+				<table id="ref2.4" class="subject">
+					<caption>Table 2.4. Cognitive function uses or purposes and associated daily doses for caffeine and ingredients containing caffeine</caption>
+					<thead>
+						<tr>
+							<th scope="col">Uses or Purposes<sup><a href="#ref2.4-1" style="text-decoration: none;">1</a></sup></th>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparation</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.4-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="3">Helps (temporarily) (to) promote alertness and wakefulness, and (to) enhance cognitive performance<br/>AND/OR<br/>Helps (temporarily) (to) relieve/reduce fatigue/tiredness<br/>AND/OR
+							<br/>Helps (temporarily) (to) support/promote mental sharpness/alertness</td>
+							<td>1,3,7-Trimethylxanthine (Caffeine)</td>
+							<td>N/A</td>
+							<td>100-400 milligrams, per day and 100-200 milligrams per single dose</td>
+						</tr>
+						<tr>
+							<td><em>Ilex paraguariensis</em> (Yerba mate)</td>
+							<td>Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>Extract standardized to caffeine corresponding to a maximum Quantity Crude Equivalent of 6 grams dried leaf, per day; not exceeding 150 milligrams caffeine per day&semi; and providing 100-150 milligrams caffeine per single dose</td>
+						</tr>
+						<tr>
+							<td><em>Paullinia cupana</em> (Guarana)</td>
+							<td>Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>Extract standardized to caffeine corresponding to a maximum Quantity Crude Equivalent of 3 grams dried seed per day and not exceeding 200 milligrams caffeine per day; and providing 100-200 milligrams caffeine per single dose</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Used in Herbal Medicine to help temporarily promote alertness and wakefulness, and to enhance cognitive performance</td>
+							<td rowspan="2"><em>Ilex paraguariensis</em> (Yerba mate)</td>
+							<td>Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>Extract standardized to caffeine corresponding to a Quantity Crude Equivalent of 3-6 grams dried leaf, per day and not exceeding 150 milligrams caffeine per day</td>
+						</tr>
+						<tr>
+							<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>Extract standardized to caffeine corresponding to a Quantity Crude Equivalent of 2-6 grams dried leaf, per day and not exceeding 150 milligrams caffeine per day</td>
+						</tr>
+						<tr>
+							<td><em>Paullinia cupana</em> (Guarana)</td>
+							<td>Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>Extract standardized to caffeine corresponding to a Quantity Crude Equivalent of 1-3 grams dried seed, per day and not exceeding 200 milligrams caffeine per day</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref2.4-1">1</sup>References consulted for the uses or purposes: EMA 2013&semi; EMA 2010&semi; ESCOP 2009&semi; Bradley 2006&semi; Christopher et al. 2005&semi; Kennedy al. 2004&semi; Taylor 2003&semi; Barnes et al. 2002&semi; Kamimori et al. 2000&semi; Zwyghuizen- Doorenbos et al. 1990.<br/>
+					<sup id="ref2.4-2">2</sup>References consulted for the doses: Health Canada 2025&semi; EMA 2013&semi; Health Canada 2012&semi; EMA 2010&semi; ESCOP 2009&semi; Bradley 2006&semi; Taylor 2003.
+				</p>
+				<table id="ref2.5" class="subject">
+					<caption>Table 2.5. Cognitive function uses or purposes and associated daily doses for ingredients with relaxation action</caption>
+					<thead>
+						<tr>
+							<th scope="col">Uses or Purposes<sup><a href="#ref2.5-1" style="text-decoration: none;">1</a>1</sup></th>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparation</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.5-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">Helps (to) temporarily promote relaxation</td>
+							<td>4-Aminobutanoic acid (GABA)</td>
+							<td>N/A</td>
+							<td>50-3,000 milligrams, per day&semi; Not to exceed 750 milligrams per single dose</td>
+						</tr>
+						<tr>
+							<td>L-Theanine</td>
+							<td>N/A</td>
+							<td>200-250 milligrams, per day</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref2.5-1">1</sup>References consulted for the uses or purposes: Kanehira et al. 2011&semi; Abdou et al. 2006.<br/>
+					<sup id="ref2.5-2">2</sup>References consulted for the doses: Kanehira et al. 2011&semi; Powers et al. 2007&semi; Yamakoshi et al. 2006.
+				</p>
+				<table id="ref2.6" class="subject">
+					<caption>Table 2.6. Cognitive function uses or purposes and associated daily doses for ingredients with adaptogen action</caption>
+					<thead>
+						<tr>
+							<th scope="col">Uses or Purposes<sup><a href="#ref2.6-1" style="text-decoration: none;">1</a></sup></th>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparation</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.6-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="21">Used in Herbal Medicine as an adaptogen to help increase energy and resistance to stress over time (e.g. in case of mental and physical fatigue related to stress)</td>
+							<td><em>Asparagus racemosus</em> (Shatavari)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>2-6 grams dried root, per day</td>
+						</tr>
+						<tr>
+							<td><em>Astragalus membranaceus</em> (Astragalus)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>2-4.8 grams dried root, per day</td>
+						</tr>
+						<tr>
+							<td><em>Eleutherococcus senticosus</em> (Eleuthero)</td>
+							<td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>0.91-6 grams dried root/root and rhizome, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="3"><em>Ganoderma lucidum</em> (Reishi)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>1.5-6 grams dried cultured mycelium/ fruiting body/mycelium, per day</td>
+						</tr>
+						<tr>
+							<td>Decoction, Decoction concentrate</td>
+							<td>3-15 grams dried cultured mycelium/ fruiting body/mycelium, per day</td>
+						</tr>
+						<tr>
+							<td>Decoction Standardized, Decoction concentrate Standardized</td>
+							<td>3-15 grams dried cultured mycelium/ fruiting body/mycelium, per day and not to exceed 40 % polysaccharides</td>
+						</tr>
+						<tr>
+							<td><em>Glycyrrhiza glabra</em> (Licorice)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>0.6-6 grams dried root/root and stolon, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Ocimum tenuiflorum</em>(Holy basil)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>2-3 grams dried leaf, per day</td>
+						</tr>
+						<tr>
+							<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>4.2-28 grams dried leaf, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Panax ginseng</em> (Panax ginseng)</td>
+							<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid Extract, Decoction, Infusion)</td>
+							<td>0.5-9 grams dried root/ rootlet, per day</td>
+						</tr>
+						<tr>
+							<td>Standardized Extracts (Dry extract)</td>
+							<td>200-600 milligrams of extract, per day&semi; standardized to 4-7% total ginsenosides&semi; Not to exceed a quantity crude equivalent of 9 grams dried root/rootlet, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Panax quinquefolius</em> (Canadian/American ginseng)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>1-3 grams dried root, per day</td>
+						</tr>
+						<tr>
+							<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>6-9 grams dried root, per day&semi; Not to exceed 3 grams per single dose</td>
+						</tr>
+						<tr>
+							<td rowspan="3"><em>Rhodiola rosea</em> (Rhodiola)</td>
+							<td>Non-Standardized Ethanolic Extracts (Dry extract)</td>
+							<td>144-400 milligrams of extract and a quantity crude equivalent of 216-2,000 milligrams dried root/root and rhizome, per day&semi; Not to exceed 200 milligrams of extract and a QCE of 1 gram dried root/root and rhizome, per single dose</td>
+						</tr>
+						<tr>
+							<td>Tincture</td>
+							<td>1.2-1.8 grams dried root/root and rhizome, per day</td>
+						</tr>
+						<tr>
+							<td>Standardized Extracts (Dry extract)</td>
+							<td>144-680 milligrams of dried root/root and rhizome extract, per day; Not to exceed 200 milligrams per single dose and:<br/>0.8 - 3% salidroside<br/>And/Or<br/>1 - 6% rosavins</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Schisandra chinensis</em> (Schisandra)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract</td>
+							<td>1.2-6 grams dried fruit, per day</td>
+						</tr>
+						<tr>
+							<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+							<td>1.5-6 grams dried fruit, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Tinospora cordifolia</em> (Guduchi)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>0.9-3 grams dried stem, per day</td>
+						</tr>
+						<tr>
+							<td>Decoction, Decoction concentrate</td>
+							<td>20-30 grams dried stem, per day</td>
+						</tr>
+						<tr>
+							<td><em>Withania somnifera</em> (Ashwagandha)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>2.5-6.5 grams dried root/whole plant, per day</td>
+						</tr>
+						<tr>
+							<td rowspan="3">(Used in Herbal Medicine to) help(s) (to) temporarily relieve symptoms of stress (such as mental fatigue and sensation of weakness)</td>
+							<td rowspan="3"><em>Rhodiola rosea</em> (Rhodiola)</td>
+							<td>Non-Standardized Ethanolic Extracts (Dry extract)</td>
+							<td>144-400 milligrams of extract and a Quantity Crude Equivalent (QCE) of 216-2,000 milligrams dried root/root and rhizome, per day&semi; Not to exceed 200 milligrams of extract and a QCE of 1 gram dried root/root and rhizome, per single dose</td>
+						</tr>
+						<tr>
+							<td>Tincture</td>
+							<td>1.2-1.8 grams dried root/root and rhizome, per day</td>
+						</tr>
+						<tr>
+							<td>Standardized Extracts (Dry extract)</td>
+							<td>144-680 milligrams of dried root/root and rhizome extract, per day&semi; Not to exceed 200 milligrams per single dose and:<br/>0.8 - 3% salidroside<br/>And/Or<br/>1 - 6% rosavins</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Traditionally used in Ayurveda as Rasayana (rejuvenative tonic)</td>
+							<td><em>Asparagus racemosus</em> (Shatavari)</td>
+							<td>Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+							<td>3-6 grams dried root, per day</td>
+						</tr>
+						<tr>
+							<td><em>Withania somnifera</em> (Ashwagandha)</td>
+							<td>Dry, Powdered, Non- Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+							<td>2-6 grams dried root, per day</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref2.6-1">1</sup>References consulted for the uses or purposes: Upton 2012&semi; Winston and Maimes 2007&semi; Mills and Bone 2005&semi; API 2004&semi; WHO 2004&semi; Bone 2003&semi; Hoffman 2003&semi; Thomsen 2002&semi; Williamson 2002&semi; API 2001&semi; Blumenthal et al. 2000&semi; Upton 2000, 1999&semi; WHO 1999&semi; Bradley 1992.<br/>
+					<sup id="ref2.6-2">2</sup>References consulted for the doses: Upton 2012&semi; Winston and Maimes 2007&semi; Mills and Bone 2005&semi; API 2004, 2001&semi; WHO 2004&semi; Bone 2003&semi; Hoffman 2003&semi; Thomsen 2002&semi; Williamson 2002&semi; Kapoor 2001&semi; Blumenthal et al. 2000&semi; Upton 1999&semi; WHO 1999&semi; Bradley 1992.
+				</p>
+				<table id="ref2.7" class="subject">
+					<caption>Table 2.7. Maximum daily doses for complementary ingredients with no associated recommended use</caption>
+					<thead>
+						<tr>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Methods of preparations</th>
+							<th scope="col">Doses/day<sup><a href="#ref2.7-1" style="text-decoration: none;">1</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><em>Huperzia serrata</em> (Toothed club-moss)</td>
+							<td>Standardized extracts (Dry extract)</td>
+							<td>Up to 20 milligrams extract standardized to huperzine A, per day&semi; Not to exceed 1% huperzine A potency</td>
+						</tr>
+						<tr>
+							<td>Huperzine A</td>
+							<td>N/A</td>
+							<td>Up to 200 micrograms, per day</td>
+						</tr>
+						<tr>
+							<td>Theacrine</td>
+							<td>N/A</td>
+							<td>Up to 300 milligrams, per day</td>
+						</tr>
+						<tr>
+							<td>Theobromine</td>
+							<td>N/A</td>
+							<td>Up to 850 milligrams, per day</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref2.7-1">1</sup>References consulted for the doses: Clewell et al. 2016&semi; Taylor et al. 2016&semi; Neufingerl et al. 2013&semi; Ma et al. 2007&semi; Sun et al. 1999.
+				</p>
+			<h3>Direction(s) for use</h3>
+				<p>See Table <a href="#ref5" style="text-decoration: none;">5</a> below.</p>
+			<h3>Combination rules and restrictions</h3>
+				<p>All medicinal ingredients included in this monograph may be combined across all groups, with the following restrictions:</p>
+				<p><em>Use or Purpose Restrictions</em></p>
+					<ul>
+						<li>A use or purpose statement is only acceptable if at least one medicinal ingredient associated with that statement is present at a dose at or above the minimum daily dose listed in Tables 2.1 to 2.6.</li>
+						<li>Medicinal ingredients which do not meet the minimum daily dose for a use or purpose statement will be considered as acceptable complementary medicinal ingredients in product formulations.</li>
+						<li>For multi-ingredient products making at least one claim based on traditional use:
+							<ul>
+								<li>To prevent the product from being represented as a "traditional medicine," any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1&rpar; both traditional and modern claims are present or 2&rpar; when claims originate from multiple systems of traditional medicine (e.g. German chamomile is traditionally used in Herbal Medicine to help relieve restlessness and/or nervousness. Ashwagandha is traditionally used in Ayurveda to balance aggravated Vata.).</li>
+								<li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+							</ul>
+						</li>
+					</ul>
+				<p><em>Rules for sedative (soporific) ingredients (table 2.2)</em></p>
+					<p>If sedative ingredients (table <a href="#ref2.2" style="text-decoration: none;">2.2</a>) are combined, the sum of the percentages of the maximum daily reference dose must not exceed 120%, for all sedative ingredients in the product (including sedative ingredients supported by other NNHPD monographs such as melatonin). Note that no single ingredient can exceed 100% of its maximum daily reference dose. Please see Table 3 below for a calculation example.</p>
+				<table id="ref3" class="subject">
+					<caption>Table 3. Combination Table to assess Safety of Sedative/Soporific Ingredients</caption>
+					<thead>
+						<tr>
+							<th scope="col">Additive Indication</th>
+							<th scope="col" colspan="3">e.g. Used in Herbal Medicine as a sleep aid</th>
+						</tr>
+						<tr>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Maximum Daily Recommended Dose on PLA form</th>
+							<th scope="col">Maximum Daily Monograph Reference Dose</th>
+							<th scope="col">Percentage of the Maximum Daily Reference Dose (%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><em>Eschscholzia californica</em> (California-poppy)</td>
+							<td>0.5 g</td>
+							<td>3 g</td>
+							<td>0.5/3 = 16.67%</td>
+						</tr>
+						<tr>
+							<td><em>Humulus lupulus</em> (Hops)</td>
+							<td>4 g</td>
+							<td>6 g</td>
+							<td>4/6 = 66.66%</td>
+						</tr>
+						<tr>
+							<td><em>Passiflora incarnata</em> (Passionflower)</td>
+							<td>0.5 g</td>
+							<td>8 g</td>
+							<td>0.5/8 = 6.25%</td>
+						</tr>
+						<tr>
+							<td>Sum of Percentages</td>
+							<td></td>
+							<td></td>
+							<td>89.6%</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>The calculations are performed as follows:
+					<ul>
+						<li>Percentage of the Maximum Daily Reference Dose = [(Maximum Daily Recommended Dose on PLA form) / (Maximum Daily Monograph Reference Dose)] x 100%</li>
+					</ul>
+				</p>
+				<p>Safety assessment - Sum of Percentages:
+					<ul>
+						<li>In the example above, the sum of Percentages of the Maximum Daily Reference Dose is 89.6%, which is less than 120%. Safety of the combination of ingredients is therefore supported by the monograph.</li>
+					</ul>
+				</p>
+				<p><em>Rules for Caffeine</em></p>
+					<ul>
+						<li>If a product contains caffeine from any source, it cannot contain a sedative at a therapeutic dose (table 2.2) and nervine/sedative/relaxation claims (tables 2.1, 2.2 &amp; 2.5) are not permitted.</li>
+						<li>Products containing a total amount of caffeine per day that meets the minimum therapeutic dose (100 mg/day) must indicate a use or purpose associated with caffeine.</li>
+						<li>Products containing caffeine either synthetic, isolated or from plant materials must not:
+							<ul>
+								<li>indicate any uses or purpose related to healthy blood pressure or cardiovascular health at any dose (except if supported by a monograph for a medicinal ingredient providing caffeine such as green coffee bean extract).</li>
+								<li>indicate any uses or purpose related to the maintenance/support of good/general health at a daily dose of 40 mg or more total caffeine from all sources.</li>
+							</ul>
+						</li>
+						<li>The maximum amount of total caffeine permitted from all ingredients in the product is 400 mg/day, and 200 mg per single dose.</li>
+						<li>If the total amount of caffeine provided by the combination of ingredients in the product (e.g. Yerba mate and Guarana) is equal to or higher than 40 mg per day, risk statements from the NNHPD Caffeine Monograph are required. Please see Table <a href="#ref5" style="text-decoration: none;">5</a> below.</li>
+						<li>Additional synthetic caffeine added to Guarana and/or Yerba mate extracts must be represented as a separate medicinal ingredient.</li>
+						<li>When caffeine (from any source) is combined with theacrine and/or theobromine, the sum of the percentages of the maximum daily/single reference dose must not exceed 120% for these ingredients. Note that no single ingredient can exceed 100% of its maximum daily/single reference dose. Please see table 4 below.</li>
+					</ul>
+				<table id="ref4" class="subject">
+					<caption>Table 4. Combination Table to assess safety of ingredients with a caution for cardiovascular and/or blood pressure conditions.</caption>
+					<thead>
+						<tr>
+							<th scope="col">Additive Effect</th>
+							<th colspan="3" scope="colgroup">Ingredients which may have an impact on heart rate and/or blood pressure</th>
+						</tr>
+						<tr>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Maximum Daily/ Single Recommended Dose on PLA form</th>
+							<th scope="col">Maximum Daily/ Single Monograph Reference Dose</th>
+							<th scope="col">Percentage of the Maximum Daily/ Single Reference Dose (%)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Caffeine</td>
+							<td>100 mg</td>
+							<td>200 mg per single dose/400 mg per day</td>
+							<td>100/200 = 50% (single dose)<br/>100/400 = 25% (day)</td>
+						</tr>
+						<tr>
+							<td>Theacrine</td>
+							<td>120 mg</td>
+							<td>300 mg</td>
+							<td>120/300 = 40%</td>
+						</tr>
+						<tr>
+							<td>Theobromine</td>
+							<td>50 mg</td>
+							<td>850 mg</td>
+							<td>50/850 = 5.9%</td>
+						</tr>
+						<tr>
+							<td>Sum of Percentages</td>
+							<td></td>
+							<td></td>
+							<td>95.9% per single dose/ 70.9% per day</td>
+						</tr>
+				</tbody>
+				</table>
+				<p>See table <a href="#ref3" style="text-decoration: none;">3</a> above for an example of calculations. In this example, the sum of Percentages of the Maximum Monograph Reference Single Dose is 95.9%, which is less than 120%. Safety of the combination of ingredients is therefore supported by the monograph.</p>
+				<p><em>Rules for Huperzine A</em></p>
+					<p>When combining Huperzia serrata extract and Huperzine A (isolate or synthetic), the total quantity of Huperzine A provided by the product cannot exceed 200 micrograms per day.</p>
+				<p><em>Rules for Acetylcarnitine (Restrictions when this monograph is combined with other monographs)</em></p>
+					<p>When combining Acetylcarnitine with L-Carnitine, the total quantity of these ingredients cannot exceed 4 grams per day and 2 grams per single dose.</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>See Table <a href="#ref5" style="text-decoration: none;">5</a> below.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<p>Consult Table 5 for appropriate statements related to each medicinal ingredient. The medicinal ingredients in Table 5 are associated with the required numbered statements below.</p>
+				<ol>
+					<li>As per the respective NNHPD monograph.</li>
+				</ol>
+			<h3>Duration(s) of Use</h3>
+				<ol start="2">
+					<li><em>Products providing Huperzia serrata, Huperzine A, 300 mg or more GABA per day, or over 150 mg Theobromine per day:</em> Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks.</li>
+					<li><em>Products providing 101 to 300 mg/day Theacrine:</em> Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 8 weeks.</li>
+				</ol>
+			<h3>Caution(s) and warning(s)</h3>
+				<ol start="4">
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a urinary tract disorder and/or kidney disease.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have kidney disease and/or a seizure disorder.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have high blood pressure or glaucoma.</li>
+					<li>Products providing Huperzia serrata, huperzine A, or over 150 mg/day theobromine: Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a blood pressure or cardiovascular disorder.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications which affect acetylcholine levels (cholinergic or anticholinergic drugs).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking dopaminergic or cholinergic drugs.</li>
+					<li>Products making a sustained attention claim: Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have an attention deficit disorder with or without hyperactivity (ADD or ADHD).</li>
+					<li>When using this product exercise caution if you drive or use machinery as you may experience drowsiness.</li>
+					<li>Products providing 300 mg or more GABA per day: When using this product avoid taking with alcohol.</li>
+				</ol>
+			<h3>Contraindication(s)</h3>
+				<ol start="17">
+					<li>Do not use this product if you are pregnant or breastfeeding.</li>
+					<li>Do not use this product if you are pregnant.</li>
+					<li>Do not use if you have gastrointestinal irritation.</li>
+				</ol>
+			<h3>Known adverse reaction(s)</h3>
+				<ol start="20">
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience dizziness, unusual muscle cramping, agitation, gastrointestinal symptoms such as nausea, vomiting, diarrhea or excessive salivation.</li>
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if hypersensitivity/allergy occurs.</li>
+					<li>Stop use if you experience severe stomach and/or intestinal irritation.</li>
+					<li>When using this product you may experience gastrointestinal discomfort/disturbances.</li>
+					<li>When using this product you may experience headaches or gastrointestinal discomfort/disturbances.</li>
+					<li>When using this product (a) diuretic effect may occur.</li>
+				</ol>
+				<table id="ref5" class="subject">
+					<caption>Table 5. Risk information, durations of use, and directions for use associated with medicinal ingredients</caption>
+					<thead>
+						<tr>
+							<th scope="col">Medicinal Ingredients</th>
+							<th scope="col">Risk Information</th>
+							<th scope="col">Durations of Use</th>
+							<th scope="col">Directions for use</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1,3,7-Trimethylxanthine (Caffeine)</td>
+							<td>1</td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>4-Aminobutanoic acid (GABA)</td>
+							<td>5,16</td>
+							<td>2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Acetyl-L-Carnitine (Acetylcarnitine)</td>
+							<td>5, 9, 23</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Anemone pulsatilla</em> (Pasqueflower)</td>
+							<td>4, 8, 17, 19, 22</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Asparagus racemosus</em> (Shatavari)</td>
+							<td>6</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Astragalus membranaceus</em> (Astragalus)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Avena sativa</em> (Oat)</td>
+							<td>4</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Bacopa monnieri</em> (Bacopa)</td>
+							<td>5, 23</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Citicoline</td>
+							<td>5, 13, 14, 24</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Cod liver oil</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Eleutherococcus senticosus</em> (Eleuthero)</td>
+							<td>1</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Eschscholzia californica</em> (California-poppy)</td>
+							<td>1</td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>Fish oil</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Ganoderma lucidum</em> (Reishi)</td>
+							<td>1</td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><em>Ginkgo biloba</em> (Ginkgo)</td>
+							<td>1</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Glycyrrhiza glabra</em> (Licorice)</td>
+							<td>1</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Humulus lupulus</em> (Hops)</td>
+							<td>1</td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><em>Huperzia serrata</em>&semi; Huperzine A</td>
+							<td>11, 12, 17, 20</td>
+							<td>2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Hypericum perforatum</em> (St. John&apos;s wort)</td>
+							<td>1</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Ilex paraguariensis</em> (Yerba mate)</td>
+							<td>5, 10, 21, 25</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>L-5-Hydroxytryptophan (L-5-HTP)</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>L-alpha-Glycerophosphorylcholine (Choline alfoscerate)</td>
+							<td>5</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>L-Tyrosine</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><em>Matricaria chamomilla</em> (German chamomile)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Melissa officinalis</em> (Lemon balm)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Nepeta cataria</em> (Catnip)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Ocimum tenuiflorum</em> (Holy basil)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Panax ginseng</em> (Asian ginseng)</td>
+							<td>1</td>
+							<td>1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Panax quinquefolius</em>(Canadian/American ginseng)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Passiflora incarnata</em> (Passionflower)</td>
+							<td>1</td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><em>Paullinia cupana</em> (Guarana)</td>
+							<td>5, 10, 21, 25</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Phosphatidylserine</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Rhodiola rosea</em> (Rhodiola)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Schisandra chinensis</em> (Schisandra)</td>
+							<td>7, 18</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Scutellaria lateriflora</em> (Skullcap)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Stachys officinalis</em> (Wood Betony)</td>
+							<td>4, 5, 15</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Theacrine</td>
+							<td>5, 10</td>
+							<td>3
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Theobromine</td>
+							<td>5, 11, 23</td>
+							<td>2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Tilia cordata</em> (Small-leaf linden)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Tilia platyphyllos</em> (Large-leaf linden)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Tilia x europaea</em> (European linden)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Tinospora cordifolia</em> (Guduchi)</td>
+							<td>5</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Turnera diffusa</em> (Damiana)</td>
+							<td>4, 7, 18</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><em>Valeriana officinalis</em> (Valerian)</td>
+							<td>1</td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><em>Withania somnifera</em> (Ashwagandha)</td>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Combination of ingredients resulting in a total caffeine content of 40 mg/day or more (e.g. Yerba mate and Guarana extracts)</td>
+							<td>as per the caffeine monograph</td>
+							<td></td>
+							<td>as per the caffeine monograph</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>References: Nakazaki et al. 2021&semi; Clewell et al. 2016&semi; Taylor et al. 2016&semi; Kuhman et al. 2015, McGlade et al. 2015, Morasch et al. 2015, Baggott et al. 2013, Cotroneo et al. 2013&semi; EFSA 2013&semi; EMA 2013&semi; Gardner and McGuffin 2013, Neufingerl et al. 2013, Yang et al. 2013, McGlade et al. 2012, Fiebich et al. 2011&semi; AMR 2010&semi; Morgan and Stevens 2010&semi; Okun et al. 2010, Van den Bogaard et al. 2010&semi; ESCOP 2009&semi; Wang et al. 2009&semi; Calabrese et al. 2008&semi; CPS 2008&semi; Li et al. 2008, Cornelis and El-Sohemy 2007&semi; Powers et al. 2007&semi; Bain et al.2006&semi; Bradley 2006&semi; Bui et al. 2006&semi; Mills et al. 2006&semi; Shils et al. 2006&semi; Turner et al. 2006&semi; Bouchard et al. 2005&semi; Chandrasekaran et al. 2005&semi; Haller et al. 2005&semi; Noordzij et al. 2005&semi; Nathan et al. 2004&semi; Bone 2003&semi; Zangara 2003&semi; Avisar et al. 2002&semi; Barnes et al. 2002&semi; Berardi et al. 2002&semi; Thomsen 2002&semi; Brinker 2001&semi; Nathan et al. 2001&semi; Stough et al. 2001&semi; Arya et al. 2000&semi; Pepping 2000&semi; Vahedi et al. 2000&semi; Jee et al. 1999&semi; Sun et al. 1999&semi; Mester et al. 1995&semi; Xu et al. 1995, Bradley 1992&semi; Zimmerman 1992&semi; Creighton and Stanton 1990&semi; Rai et al. 1990&semi; Jefferson 1988.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+			<p><em>Products containing Cod liver oil, Fish oil or Schizochytrium oil</em></p>
+				<p><em>(except when encapsulated)</em></p>
+			<p>Refrigerate after opening (Senanayake and Fichtali 2006&semi; Wille and Gonus 1989).</p>
+				<p><em>(information for industry&semi; not for labelling)</em></p>
+			<p>To be packaged in airtight container, protected from light (Ph.Eur. 2023&semi; USP-NF 2023).</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+				<li>For the following ingredients please see the respective NNHPD monograph for additional quality requirements: Astragalus, American ginseng, Cod liver oil, Eleuthero, Fish oil, German chamomile-Oral, Ginkgo biloba, Hops, Licorice, Panax ginseng, St John&apos;s wort, L- Tyrosine, L-Theanine, Valerian.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/cognitive_function_products_1_E.gif" style="width:700px"/></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/cognitive_function_products_2_E.gif" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Abdou AM, Higashiguchi S, Horie K, Kim M, Hatta H, Yokogoshi H. Relaxation and immunity enhancement effects of gamma-aminobutyric acid (GABA) administration in humans. Biofactors 2006&semi; 26(3):201-208.</li>
+				<li>AMR 2010: Alternative Medicine Review (AMR). Acetyl-L-Carnitine Monograph. Alternative Medicine Review 2010&semi; 15(1): 76-83.</li>
+				<li>Anghelescu IG, Kohnen R, Szegedi A, Klement S, Kieser M. Comparisons of Hypericum extract WS 5570 and paroxetine in ongoing treatment after recovery from an episode of moderate to severe depression: results from a randomized multicenter study. Pharmacopsychiatry 2006&semi; 39(6):213-219.</li>
+				<li>API 2001: The Ayurvedic Pharmacopoeia of India, Part I, Volume I and II, 1<sup>st</sup> edition. New Delhi (India): Government of India, Ministry of Health and Family Welfare, Department of Indian Systems of Medicine &amp; Homoeopathy&semi; 2001.</li>
+				<li>API 2004: The Ayurvedic Pharmacopoeia of India, Part 1, Volume IV. Delhi (IN): The Controller of Publications&semi; 2004.</li>
+				<li>Arya LA, Myers DL, Jackson ND. Dietary caffeine intake and the risk for detrusor instability: a case-control study. Obstetrics and Gynecology 2000&semi; 96(1):85-89.</li>
+				<li>Avisar R, Avisar E, Weinberger D. Effect of coffee consumption on intraocular pressure. The Annals of Pharmacotherapy 2002&semi; 36(6):992-995.</li>
+				<li>Baggott MJ, Childs E, Hart AB, de Bruin E, Palmer AA, Wilkinson JE, de Wit H. Psychopharmacology of theobromine in healthy volunteers. Psychopharmacology 2013&semi; 228(1): 109-118.</li>
+				<li>Bain MA, Faull R, Fornasini G. Accumulation of trimethylamine and trimethylamine-N-oxide in end-stage renal disease patients undergoing haemodialysis. Molecular Genetics and Metabolism 2004&semi; 81:263-272.</li>
+				<li>Barbagallo SG, Barbagallo M, Giordano M, Meli M, Panzarasa R. Alpha-glycerophosphocholine in mental recovery of cerebral ischemic attacks. An Italian multicenter clinical trial. Annals of the New York Academy of Science 1994&semi; 717: 253-269.</li>
+				<li>Barbhaiya C, Desai R, Saxena V, Pravina K, Wasim P, Geetharani P, Allan J, Venkateshwarlu K, Amit A. Efficacy and tolerability of bacomind® on memory improvement in elderly participants- A double blind placebo controlled study. Journal of Pharmacology and Toxicology 2008&semi; 3(6): 425-434.</li>
+				<li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines: A Guide for Healthcare Professionals, 2<sup>nd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2002.</li>
+				<li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Non-prescription Drugs: An Interactive Approach to Self-Care, 13th edition. Washington (DC): American Pharmaceutical Association&semi; 2002.</li>
+				<li>BHP 1983: British Herbal Pharmacopoeia. Cowling (GB): British Herbal Medical Association&semi; 1983.</li>
+				<li>Blumenthal M, Goldberg A, Brinckmann J. Herbal Medicine: Expanded Commission E Monographs. American Botanical Council&semi; 2000.</li>
+				<li>Bone K. A clinical guide to blending liquid herbs: Herbal formulations for the individual patient. St. Louis (MI): Churchill Livingstone&semi; 2003.</li>
+				<li>Bouchard NC, Howland MA, Greller HA, Hoffman RS, Nelson LS. Ischemic stroke associated with use of an ephedra-free dietary supplement containing synephrine. Mayo Clinic Proceeding 2005&semi; 80(4):541-545.</li>
+				<li>BPC 1911: British Pharmaceutical Codex. Council of the Pharmaceutical Society of Great Britain&semi; 1911.</li>
+				<li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (GB): British Herbal Medicine Association&semi; 1992.</li>
+				<li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 2. Bournemouth (GB): British Herbal Medicine Association&semi; 2006.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 3<sup>rd</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2001.</li>
+				<li>Brinker F. 2010. Online Updates and Additions to Herb Contraindications and Drug Interactions, 3<sup>rd</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010. [Accessed 2014-03-04]. Available from: http://www.eclecticherb.com/emp/updatesHCDI.html.</li>
+				<li>Bui LT, Nguyen DT, Ambrose PJ. Blood pressure and heart rate effects following a single dose of bitter orange. The Annals of Pharmacotherapy 2006&semi; 40(1):53-57.</li>
+				<li>Calabrese C, Gregory WL, Leo M, Kraemer D, Bone K, and Oken B. Effects of a standardized Bacopa monnieri extract on cognitive performance, anxiety, and depression in the elderly: A randomized, double-blind, placebo-controlled trial. The Journal of Alternative and Complimentary Medicine 2008&semi; 14(6): 707-713.</li>
+				<li>Canal N, Franceschi M, Alberoni M, Castiglioni C, De Moliner P, Longoni A. Effects of L- alpha-glyceryl-phosphorylcholine on amnesia caused by scopolamine. International Journal of Clinical Pharmacology. Therapy and Toxicology 1991&semi; 29(3): 103-107.</li>
+				<li>Chandrasekaran S, Rochtchina E, Mitchell P. Effects of caffeine on intraocular pressure: the Blue Mountains Eye Study. Journal of Glaucoma 2005&semi;14(6):504-507.</li>
+				<li>Christopher G, Sutherland D, Smith A. Effects of caffeine in non-withdrawn volunteers. Human Psychopharmacology 2005&semi;20(1):47-53.</li>
+				<li>Clewell A, Hirka G, Glavits R, Palmer PA, Endres JR, Murbach TS, Marx T, Szakonyine IP. A 90-day oral toxicological evaluation of the methylurate purine alkaloid theacrine. Journal of Toxicology 2016: https://doi.org/10.1155/2016/6206859.</li>
+				<li>CNF 2023: Canadian Nutrient File (CNF). Nutrition &amp; Healthy Eating, Food and Nutrition, Health Canada. [Accessed 2023 October 27]. Available from: http://webprod3.hc-sc.gc.ca/cnf- fce/index-eng.jsp.</li>
+				<li>Cornelis MC, El-Sohemy A. Coffee, caffeine, and coronary heart disease. Current Opinion in Lipidology 2007&semi;18(1):13-19.</li>
+				<li>Cotroneo AM, Castagna A, Putignano S, Lacava R, Fanto F, Monteleone F, Rocca F, Malara A, Gareri P. Effectiveness and safety of citicoline in mild vascular cognitive impairment: the IDEALE study. Clinical interventions in aging 2013&semi;8:131-137.</li>
+				<li>CPS 2008: Compendium of Pharmaceuticals and Specialties: The Canadian Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association&semi; 2008.</li>
+				<li>Creighton SM, Stanton SL. Caffeine: does it affect your bladder? British Journal of Urology 1990&semi;66(6):613-614.</li>
+				<li>De Jesus Moreno Moreno M. Cognitive improvement in mild to moderate Alzheimer&apos;s dementia after treatment with the acetylcholine precursor choline alfoscerate: A multicenter, double-blind, randomized, placebo-controlled trial. Clinical Therapeutics 2003&semi; 25(1): 178-193.</li>
+				<li>EFSA 2013: European Food Safety Authority. Scientific Opinion on the safety of “citicoline” as a Novel Food ingredient. EFSA Journal 2013&semi; 11(10): 3421-3443.</li>
+				<li>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1919 original].</li>
+				<li>EMA 2008: European Medicines Agency. Community herbal monograph on Avena sativa L., herba. London (UK): Committee on herbal medicinal products (HMPC)&semi; 2008. [Accessed 2024 February 8]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-avena-sativa-l-herba_en.pdf.</li>
+				<li>EMA 2010: European Medicines Agency. Community herbal monograph on Ilex paraguariensis St. Hilaire, folium. London (UK): Committee on Herbal Medicinal Products (HMPC)&semi; 2009. [Accessed 2023 October 27]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-ilex-paraguariensis-st-hil-folium-first-version_en.pdf.</li>
+				<li>EMA 2013: European Medicines Agency. Community herbal monograph on Paullinia cupana Kunth ex H.B.K. var. sorbilis (Mart.) Ducke, semen. London (UK): Committee on Herbal Medicinal Products (HMPC)&semi; 2013. [Accessed 2023 October 27]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-paullinia-cupana-kunth-ex-hbk-var-sorbilis-mart-ducke-semen-first-version_en.pdf.</li>
+				<li>ESCOP 2009: European Scientific Cooperative on Phytotherapy. ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2<sup>nd</sup> edition, Supplement 2009. Exeter (GB): European Scientific Cooperative on Phytotherapy in collaboration with Thieme.</li>
+				<li>Fellows LE, Bell EA. 5-hydroxy-L-tryptophan, 5-hydroxytryptamine and L-tryptophan- 5hydroxylase in Griffonia simplicifolia. Phytochemistry 1970&semi;9(11):2389-2396.</li>
+				<li>Felter HW, Lloyd JU. King&apos;s American Dispensatory, Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</li>
+				<li>Fiebich BL, Knorle R, Appel K, Kammler T, Weiss G. Pharmacological studies in an herbal drug combination of St. John&apos;s Wort (Hypericum perforatum) and passion flower (Passiflora incarnata): In vitro and in vivo evidence of synergy between Hypericum and Passiflora in antidepressant pharmacological models 2011&semi; 82: 474-480.</li>
+				<li>Gardner Z and McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Raton (FL): CRC Press&semi; 2013.</li>
+				<li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].</li>
+				<li>Haller CA, Benowitz NL, Jacob P. Hemodynamic effects of ephedra-free weight-loss supplements in humans. The American Journal of Medicine 2005&semi;118(9):998-1003.</li>
+				<li>Health Canada 2025. Caffeine monograph. Natural and Non-Prescription Health Products Directorate. Ottawa (ON). [Accessed 2025 July 7]. Available from: http://webprod.hc- sc.gc.ca/nhpid-bdipsn/atReq.do?atid=caffeine.cafeine&lang=eng</li>
+				<li>Health Canada 2012. Caffeine in foods. Health Canada. [Accessed 2019-02-14]. Available from: https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food- additives/caffeine-foods/foods.html</li>
+				<li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>Jee SH, He J, Whelton PK, Suh II, Klag MJ. The effect of chronic coffee drinking on blood pressure: a meta-analysis of controlled clinical trials. Hypertension 1999&semi;33(2):647-652.</li>
+				<li>Jefferson JW. Lithium tremor and caffeine intake: two cases of drinking less and shaking more. Journal of Clinical Psychiatry 1988&semi;49(2):72-73.</li>
+				<li>Jensen CL Voigt RG, Llorente AM, Peters SU, Prager TC, Zou YL, Rozelle JC, Turchich, MR, Frayley JK, Anerson RE, Heird WC. Effects of early maternal docosahexaenoic acid intake on neuropsychological status and visual acuity at five years of age of breast-fed term infants. The Journal of Pediatrics 2010&semi; 125:900-905.</li>
+				<li>Kamimori H, Penetar DM, Headley DB, Thorne DR, Otterstetter R, Belenky G. Effect of three caffeine doses on plasma catecholamines and alertness during prolonged wakefulness. European Journal of Clinical Pharmacology 2000&semi;56(8):537-544.</li>
+				<li>Kanehira T, Nakamura Y, Nakamura K, Horie K, Horie N, Furugori K, Sauchi Y, Yokogoshi H. Relieving Occupational Fatigue by Consumption of a Beverage Containing gamma-Amino Butyric Acid. Journal of Nutritional Science and Vitaminology 2011&semi; 57(1):9-15.</li>
+				<li>Kapoor LD. Handbook of Ayurvedic Medicinal Plants: Herbal Reference Library. Boca Raton (FL): CRC Press&semi; 2001.</li>
+				<li>Kennedy DO, Haskell CF, Wesnes KA, Scholey AB (2004). Improved cognitive performance in human volunteers following administration of guarana (Paullinia cupana) extract: comparison and interaction with Panax ginseng. Pharmacology, Biochemistry, and Behaviour 2004&semi; 79(3):401-411.</li>
+				<li>Kihlman BA. 1,3,7,9-Tetramethyluric acid - A chromosome-damaging agent occurring as a natural metabolite in certain caffeine-producing plants. Mutation Research 1977&semi; 39: 297-316.</li>
+				<li>Kuhman DJ, Joyner KJ, Bloomer RJ. Cognitive performance and mood following ingestion of a theacrine-containing dietary supplement, caffeine, or placebo by young men and women. Nutrients 2015&semi; 7: 9618-9632.</li>
+				<li>Lemaire PA, Adosraku RK. An HPLC method for the direct assay of the serotonin precursor, 5hydroxytrophan, in seeds of Griffonia simplicifolia. Phytochemical Analysis 2002&semi;13(6):333-337.</li>
+				<li>Li et al. Huperzine A for Alzheimer&apos;s disease. Cochrane Database Syst. Rev. 2008&semi;16(2) :CD005592</li>
+				<li>Ma X, Tan C, Zhu D, Gang DR, Xiao P. Huperzine A from Huperzia species - An ethnopharmacological review. Journal of ethnopharmacology 2007&semi; 113(1): 15-34.</li>
+				<li>Mahoney CR, Castellani J, Kramer FM, Young A, Lieberman HR. Tyrosine supplementation mitigates working memory decrements during cold exposure. Physiology and Behavior 2007&semi;92(4):575-582.</li>
+				<li>Malaguarnera M, Gargate, MP, Cristaldi E, Colonna V, Messano M, Koverech A, Neri S, Vacante M, Cammalleri L, Motta, M. Acetyl L-carnitine (ALC) treatment in elderly patients with fatigue. Archives of Gerontology and Geriatrics 2008&semi; 46: 181-190.</li>
+				<li>Martinez-Pinilla E, Onatibia-Astibia A, Franco R. The relevance of theobromine for the beneficial effects of cocoa consumption. Frontiers in Pharmacology 2015&semi; 6: 30.</li>
+				<li>McGlade E, Agoston AM, DiMuzio J, Kizaki, M, Nakazaki, E, Kamiya T, Yurgelun-Todd D. The Effect of Citicoline Supplementation on Motor Speed and Attention in Adolescent Males. Journal of attention disorders 2015&semi;23(2):121-134.</li>
+				<li>McGlade E, Locatelli A, Hardy J, Kamiya T, Morita M, Morishita K, Sugimura Y, Yurgelun-Todd D. Improved attentional performance following citicoline administration in healthy adult women. Food and Nutrition Sciences 2012&semi;3:769-773.</li>
+				<li>Mester R, Toren P, Mizrachi I, Wolmer L, Karni N, Weizman A. Caffeine withdrawal increases lithium blood levels. Biological Psychiatry 1995&semi;37(5):348-350.</li>
+				<li>Mills E, Dugoua JJ, Perri D, Koren G. Herbal Medicines in Pregnancy and Lactation.Boca Raton (FL):Taylor and Francis Medical&semi; 2006.</li>
+				<li>Mills S and Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+				<li>Morasch KC, Aaron CL, Moon JE, Gordon RK. Physiological and neurobehavioral effects of cholinesterase inhibition in healthy adults. Physiology &amp; Behaviour 2015&semi; 138: 165-172</li>
+				<li>Morgan and Stevens. Does Bacopa monnieri improve memory performance in older persons? Results of a randomized, placebo-controlled, double-blind trial. The Journal of Alternative and Complementary Medicine 2010&semi; 16 (7): 753-759.</li>
+				<li>Murthy KRS. Bhavaprakasha of Bhavmisra, Volume 1. Varanasi (IND): Chowkhamba Krishnadas Academy&semi; 2004.</li>
+				<li>Nakazaki E, Mah E, Sanoshy K, Citrolo D, Watanabe F. Citicoline and memory function in healthy older adults: a randomized, double-blind, placebo-controlled clinical trial. The Journal of Nutrition 2023&semi;151(8):2153-2160.</li>
+				<li>Nathan PJ, Clarke, J, Lloyd J, Hutchison CW, Downey L, Stough C. The acute effects of an extract of Bacopa monniera (Brahmi) on cognitive function in healthy normal subjects. Human Psychopharmacology 2001&semi; 16:345-351.</li>
+				<li>Nathan PJ, Tanner S, Lloyd J, Harrison B, Curran, L, Oliver C, Stough C. Effects of a combined extract of Ginkgo biloba and Bacopa monniera on cognitive function in healthy humans. Human Psychopharmacology 2004&semi; 19(2):91-96.</li>
+				<li>Neri DF, Wiegmann D, Stanny RR, Shappell SA, McCardie A, McKay DL. The effect of tyrosine on cognitive performance during extended wakefulness. Aviation, space, and environmental medicine 1995&semi;66(4)&semi;313-319.</li>
+				<li>Neufingerl N, Zebregs YEMP, Schuring EAH, Trautwein EA. Effect of cocoa and theobromine consumption on serum HDL-cholesterol concentrations: a randomized controlled trial. The American Journal of Clinical Nutrition 2013&semi; 97: 1201-1209.</li>
+				<li>NHPID 2025. Natural Health Products Ingredients Database. [Accessed 2023-09-25]. Available from: http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do</li>
+				<li>Noordzij M, Uiterwaal CS, Arends LR, Kok FJ, Grobbee DE, Geleijnse JM. Blood pressure response to chronic intake of coffee and caffeine: a meta-analysis of randomized controlled trials. Journal of Hypertension 2005&semi;23(5):921-928.</li>
+				<li>Okun MS, Boothby LA, Bartfield RB, Doering PL. GHB: an important pharmacologic and clinical update. Journal of Pharmacy &amp; Pharmaceutical Sciences: A Publication of the Canadian Society for Pharmaceutical Sciences, Société canadienne des sciences pharmaceutiques. 2001&semi; 4(2):167-175.</li>
+				<li>Parnetti L, Abate G, Bartorelli L, Cucinotta D, Cuzzupoli M, Maggioni M, Villardita C, Senin U. Multicentre study of l-&alpha;-glyceryl-phosphorylcholine vs ST200 among patients with probablesenile dementia of Alzheimer&apos;s type. Drugs and Aging 1993&semi; 3(2): 159-164.</li>
+				<li>Parnetti L, Amenta F, and Gallai, V. Choline alphoscerate in cognitive decline and in acute cerebrovascular disease: an analysis of published clinical data. Mechanisms of Ageing and Development 2001&semi; 122:2041-2055.</li>
+				<li>Pepping J. Huperzine A. American Journal of Health-System Pharmacy 2000&semi;57(6):530-534.</li>
+				<li>Pettegrew JA, Klunk WE, Panchalingam K, Kanfer JN, McClure RJ. Clinical and neurochemical effects of acetyl-l-carnitine in Alzheimer&apos;s disease. Neurobiology of Aging 1994&semi; 16(1):1-4.</li>
+				<li>Ph.Eur. 2023: European Pharmacopoeia, 11th  edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM)&semi; 2023.</li>
+				<li>P&ouml;ldinger W, Calanchini B, Schwarz W. A functional-dimensional approach to depression: serotonin deficiency as a target syndrome in a comparison of 5-hydroxytryptophan and fluvoxamine. Psychopathology 1991&semi;24(2):53-81.</li>
+				<li>Powers ME, Yarrow JF, McCoy SC, Borst SE. Growth Hormone Isoform Responses to GABA Ingestion at Rest and after Exercise. Medicine &amp; Science in Sports &amp; Exercise 2007&semi; 40(1):104- 110.</li>
+				<li>Quinn JF, Raman R, Thomas RG, Yurko-Mauro K, Nelson EB, Van Dyck C, Galvin JE, Emond J, Jack CR, Weiner M, Shinto L, Aisen PS. Docosahexaenoic acid supplementation and cognitive decline in Alzheimer&apos;s disease. Journal of the American Medical Association 2010&semi; 304(17): 1903-1911.</li>
+				<li>Raghav S, Singh H, Dalal P, Srivastava J, Asthana O. Randomized controlled trial of standardized Bacopa monniera extract in age-associated memory impairment. Indian Journal of Psychiatry 2006&semi; 48(4): 238-242.</li>
+				<li>Rai G, Wright G, Scott L, Beston B, Rest J, Exton-Smith AN. Double-blind, placebo controlled study of acetyl-L-carnitine in patients with Alzheimer&apos;s dementia. Current Medical Research Opinion 1990&semi; 11:638-647.</li>
+				<li>Remington JP and Woods HC, editors. The Dispensatory of the United States of America, 20<sup>th</sup> edition&semi; 1918.</li>
+				<li>Roodenrys S, Booth D, Bulzomi S, Phipps A, Micallef C, Smoker J. Chronic effects of Brahmi (Bacopa monnieri) on human memory. Neuropsychopharmacology 2002&semi; 27(2):279-281.</li>
+				<li>Sano M, Bell K, Cote L, Dooneief G, Lawton A, Legler L, Marder K, Naini A, Stern Y, Mayeux R. Double blind parallel design pilot study of acetyl levocarnitine in patients with Alzheimer&apos;s disease. Archive of Neurology 1992&semi; 49 (11): 1137-1141.</li>
+				<li>Senanayake SPJN, Fichtali J. Single-cell oils as sources of nutraceutical and specialty lipids: processing technologies and applications. In: Shahidi F, editor. Neutraceutical and speciality lipids and their co-products. Boca Raton (FL): Taylor and Francis Group&semi; 2006.</li>
+				<li>Shils ME, Olson JA, Shike M, Ross AC, editors. Modern Nutrition in Health and Disease, 10<sup>th</sup> edition. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2006.</li>
+				<li>Soulairac A, Lambinet H. [Effect of 5-hydroxytryptophan, a serotonin precursor, on sleep disorders]. Annales Médico-Psychologiques 1977&semi;1(5):792-798 (in French).</li>
+				<li>Spagnoli A, Lucca U, Menasce, Bandera L, Cizza G, Forloni G, Tettamanti M, Frattura L, Tiraboschi P, Comelli M, et al. Long-term acetyl-L-carnitine treatment in Alzheimer&apos;s disease. Neurology 1991&semi; 41(11):1726-1732.</li>
+				<li>Stough C, Downey L, Lloyd J, Silber B, Redman S, Hutchison C, Wesnes K, Nathan P. Examining the nootropic effects of a special extract of Bacopa monniera on human cognitive functioning: 90 day double-blind placebo-controlled randomized trial. Phytotherapy Research 2008&semi; 22(12):1629-1634.</li>
+				<li>Stough C, Lloyd J, Clarke J, Downey L, Hutchison CW, Rodgers T, Nathan PJ. The chronic effects of an extract of Bacopa monniera (Brahmi) on cognitive function in healthy human subjects. Psychopharmacology 2001&semi; 156(4): 481-484.</li>
+				<li>Sun QQ, Xu SS, Pan JL, Guo HM, Cao WQ. Huperzine-A capsules enhance memory and learning performance in 34 pairs of matched adolescent students. Acta Pharmacologica Sinica 1999&semi; 20(7): 601-603.</li>
+				<li>Sutanto CN, Xia X, Heng CW, Tan YS, Shan Lee DP, Fam J, Kim JE. The impact of 5-hydroxytryptophan supplementation on sleep quality and gut microbiota composition in older adults: a randomized controlled trial. Clinical Nutrition 2024&semi;43(3):593-602.</li>
+				<li>Taylor L., Mumford P., Roberts M., Hayward S., Mullins J., Urbina S., Wilborn C. Safety of TeaCrine®, a non-habituating, naturally-occurring purine alkaloid over eight weeks of continuous use. Journal of the International Society of Sports Nutrition 2016&semi; 13(2): https://doi.org/10.1186/s12970-016-0113-3.</li>
+				<li>Taylor L. Technical data report for Yerba mate: Reprinted from Herbal Secrets of the Rainforest, 2<sup>nd</sup> Edition. Sage Press Inc.&semi; 2003.</li>
+				<li>Thal LJ, Calvani M, Amato A, Carta AA. 1-year controlled trial of acetyl-L-carnitine in early- onset AD. Neurology 2000&semi; 55: 805-810.</li>
+				<li>Thomsen M. Shatavari-Asparagus racemosus, Herbal Monograph, Phytomedicine. NSW Australia&semi; 2002.</li>
+				<li>Tobyn G, Denham A, Vhitelegg M. The Western Herbal Tradition: 2000 years of medicinal plant knowledge. Churchill-Livingstone&semi; 2010.</li>
+				<li>Turner EH, Loftis JM, Blackwell AD. Serotonin a la carte: supplementation with the serotonin precursor 5-hydroxytryptophan. Pharmacology &amp; Therapeutics 2006&semi;109(3):325-338.</li>
+				<li>Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium: American Ginseng Root (Panax quinquefolius L.)-Standards of Analysis, Quality Control, and Therapeutics. Santa Cruz (CA): American Herbal Pharmacopeia&semi; 2012.</li>
+				<li>Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium: Ashwagandha Root (Withania somnifera) - Standards of Analysis, Quality Control, and Therapeutics. Santa Cruz (CA): American Herbal Pharmacopoeia&semi; 2000.</li>
+				<li>Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium: Schisandra Berry (Schisandra chinensis)-Analytical, Quality Control, and Therapeutic Monograph. Santa Cruz (CA): American Herbal Pharmacopoeia&semi; 1999.</li>
+				<li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention&semi; https://online.uspnf.com</li>
+				<li>Vahedi K, Domingo V, Amarenco P, Bousser MG. Ischaemic stroke in a sportsman who consumed MaHuang extract and creatine monohydrate for body building. Journal of Neurology, Neurosurgery and Psychiatry 2000&semi;68(1):112-113.</li>
+				<li>Van den Bogaard B, Draijer R, Westerhof BE, van den Meiracker AH, van Montfrans GA, van den Born BJH. Effects on peripheral and central blood pressure of cocoa with natural or high-dose theobromine. Hypertension 2010&semi; 56(5): 839-846.</li>
+				<li>Wang BS, Wang H, Wei ZH, Song YY, Zhang L, Chen HZ. Efficacy and safety of natural acetylcholinesterase inhibitor huperzine A in the treatment of Alzheimer&apos;s disease: an updated meta-analysis. J. Neural Transm (Vienna)&semi; 2009&semi;116(4):457-465.</li>
+				<li>Wille HJ, Gonus P. Preparation of Fish Oil for Dietary Applications. In: Galli C, Simopolous AP, editors. Dietary ω3 and ω6 Fatty Acids. Biological Effects and Nutritional Essentiality. New York (NY): Plenum Press&semi; 1989.</li>
+				<li>Williamson EM, editor. Major Herbs of Ayurveda. Edinburgh (GB): Churchill Livingstone&semi; 2002</li>
+				<li>Williamson EM, Evans FJ, Wren RC. Potter&apos;s New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (GB): C.W. Daniel Company Limited&semi; 1988.</li>
+				<li>Winston D, Maimes S. Adaptogens: Herbs for strength, stamina and stress relief. Rochester (VT): Healing Arts Press&semi; 2007.</li>
+				<li>Winston D and Kuhn MA. Herbal Therapy and Supplements: A Scientific and Traditional Approach. Philadelphia (PA): Wolters Kluwer Health and Lippincott Williams &amp; Wilkins&semi; 2008.</li>
+				<li>WHO: World Health Organization. WHO monographs on selected medicinal plants 2004&semi; Volume 2.</li>
+				<li>WHO: World Health Organization. WHO monographs on selected medicinal plants 1999&semi; Volume 1.</li>
+				<li>Xu SS, Gao ZX, Weng Z, Du ZM, Xu WA, Yang JS, Zhang ML, Tong ZH, Fang YS, Chai XS et al. Efficacy of tablet huperzine-A on memory, cognition, and behavior in Alzheimer&apos;s disease. Acta Pharmacologica Sinica 1995&semi;16(5):391-395.</li>
+				<li>Yamakoshi J, Shiojo R, Nakagawa S, Izui N, Ogihaara T. Hypotensive Effects and Safety of Less-salt Soy Sauce Containing gamma-aminobutyric acid (GABA) on High-Normal Blood Pressure and Mild Hypertensive Subjects. Yakuri To Chirya 2006&semi; 34:691-709 [English Translation].</li>
+				<li>Yang G, Wang Y, Tian J, Liu JP. Huperzine A for Alzheimer&apos;s Disease: A Systematic Review and Meta-Analysis of Randomized Clinical Trials. PLoS One 2013&semi; 8(9): 1-8.</li>
+				<li>Yurko-Mauro K, McCarthy D, Rom D, Nelson EB, Ryan AS, Blackwell A, Salem N, Stedman M. Beneficial effects of docosahexaenoic acid on cognition in age-related cognitive decline, Alzheimer&apos;s and Dementia 2010&semi; 6:1-9.</li>
+				<li>Zaluski D, Kuzniewski R, Janeczko Z. HPTLC-profiling of eleutherosides, mechanism of antioxidative action of eleutheroside E1, the PAMPA test with LC/MS detection and the structure-activity relationship. Saudi Journal of Biological Sciences 2018&semi;25(3): 520-528.</li>
+				<li>Zangara A. The psychopharmacology of huperzine A: an alkaloid with cognitive enhancing and neuroprotective properties of interest in the treatment of Alzheimer&apos;s disease. Pharmacology, Biochemistry and Behavior 2003&semi;75(3):675-686</li>
+				<li>Zimmerman DR. Zimmerman&apos;s Complete Guide to Non-prescription Drugs, 2<sup>nd</sup> edition. Detroit (MI): Gale Research Inc.&semi; 1992.</li>
+				<li>Zwickey H, Brush J, Iacullo CM, Connelly E, Gregory WL, Soumyanath A, Buresh R. The effect of Echinacea purpurea, astragalus membranaceus and Glycyrrhiza glabra on CD25 Expression in Humans: A Pilot Study. Phytotherapy Research 2007&semi; 21(11): 1109-1112.</li>
+				<li>Zwyghuizen-Doorenbos A, Roehrs TA, Lipschutz L, Timms V, Roth T. Effects of caffeine on alertness. Psychopharmacology 1990&semi; 100(1):36-39.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Blumenthal M, Busse W, Goldberg A, Gruenwald, J, Hall T, Riggins C, Rister R. The complete German Commission E monographs. Austin, TX: American Botanical Council&semi; 1998.</li>
+				<li>Brinker F. The Toxicology of Botanical Medicines. Sandy (OR): Eclectic Medical Publications&semi; 2000.</li>
+				<li>Calvani, M., Carta, A., Benedetti, N., Iannuccelli, M., Caruso, G. Action of acetyl-L-carnitine in neurodegeneration and Alzheimer&apos;s disease. Aging and Cellular Defense Mechanisms 1992&semi;663:483-486.</li>
+				<li>Gogte VVM. Ayurvedic Pharmacology and Therapeutic Uses of Medicinal Plants. Mubai (IN): Bharatiya Vidya Bhavan&semi; 2000.</li>
+				<li>Keegan AP, Stough C, Paris D, Luis CA, Abdullah L, Ait-ghezala G, Crawford F, Mullan M. Bacopa monnieri supplementation has no effect on serum brain-derived neurotrophic factor levels but beneficially modulates nuclear factor kappa B and cyclic AMP response element-binding protein levels in healthy elderly subjects. Journal of clinical and translational research 2023&semi; 9(1): 50-58.</li>
+				<li>Rege NN, Thatte UM, and Dahanukar SA. Adaptogenic properties of six rasayana herbs used in Ayurvedic medicine. Phytotherapy Research 1999&semi; 13(4):275-291.</li>
+				<li>Sayre, L. A Manual of Organic Materia Medica and Pharmacognosy. P. Blakiston&apos;s Son &amp; Company&semi; 1917.</li>
+				<li>Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium: Astragalus Root (Astragalus membranaceus &amp; Astragalus membranaceus var. mongolicus)-Analytical, Quality Control, and Therapeutic Monograph. Santa Cruz (CA): American Herbal Pharmacopoeia&semi; 1999.</li>
+				<li>Wilson L. Review of adaptogenic mechanisms: Eleutherococcus senticosus, Panax ginseng, Rhodiola rosea, Schisandra chinensis and Withania somnifera. Australian Journal of Medical Herbalism 2007&semi; 19(3): 126-131.</li>
+				<li>Zwickey H, Brush J, Iacullo CM, Connelly E, Gregory WL, Soumyanath A, Buresh R. The effect of Echinacea purpurea, astragalus membranaceus and Glycyrrhiza glabra on CD25 Expression in Humans: A Pilot Study. Phytotherapy Research 2007&semi; 21(11): 1109-1112.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

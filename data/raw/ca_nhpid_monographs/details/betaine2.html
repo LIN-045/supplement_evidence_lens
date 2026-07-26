@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=betaine2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="9e3906df-2f06-47ad-a1fd-792ac7236044"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>BETAINE / BETAINE HYDROCHLORIDE</h1>
+	<div class="icon">
+		<a href="dbImages/mono_betaine-betaine-hydrochloride_en.pdf" title="BETAINE / BETAINE HYDROCHLORIDE"><img alt="Monograph: BETAINE / BETAINE HYDROCHLORIDE" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 78 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>January 30, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table class="subject">
+				<caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+                
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th rowspan="1" colspan="4">Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+						<th>Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2" scope="colgroup">
+							<ul>
+								<li>1-Carboxy-N,N,N- trimethylmethanaminium inner salt</li> 
+								<li>(Carboxymethyl) trimethylammonium hydroxide inner salt</li>
+							</ul>
+						</td>
+						<td rowspan="2" scope="colgroup">
+							<ul>
+								<li>Betaine</li>
+								<li>Betaine anhydrous</li>
+								<li>Trimethylglycine</li>
+							</ul>
+						</td>
+						<td rowspan="2" scope="colgroup">
+							<ul>
+								<li>Betaine</li>
+								<li>Betaine hydrochloride</li>
+							</ul>
+						</td>
+						<td><em>Beta vulgaris</em></td>
+						<td>Root</td>
+						<td>Isolate</td>
+					</tr>
+					<tr>	
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Synthetic</td>
+					</tr>
+					<tr>
+						<td>1-Carboxy-N,N,N- trimethylmethanaminium chloride</td>
+						<td>Betaine hydrochloride</td>
+						<td>N/A</td>
+						<td><em>Beta vulgaris</em></td>
+						<td>Root</td>
+						<td>Isolate</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: Brayfield and Cadart 2024; Moffat et al. 2024; RSC 2024; Common names: NHPID 2025; Source information: FCC 2025; Brayfield and Cadart 2024; Moffat et al. 2024; RSC 2024; DNP 2023; Allen Jr. 2012.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2>Use(s) or Purpose(s)</h2>
+			<p><em>Products containing Betaine as a medicinal ingredient (source ingredient: betaine or betaine hydrochloride)</em></p>
+				<p>Helps to support liver function (Kempson et al. 2014; Obeid 2013; Ueland 2011; Lever and Slow 2010; Purohit et al. 2007; Pajares and Perez-Sala 2006; Craig 2004; Patrick 2002; Barak et al. 1996).</p>
+			<p><em>Products containing Betaine hydrochloride as a medicinal ingredient or as a source ingredient</em></p>
+            <ul>
+                <li>Helps to support digestion (Moffat et al. 2024; RSC 2024; DNP 2023).</li>
+                <li>Digestive aid (Moffat et al. 2024; RSC 2024; DNP 2023).</li>
+            </ul>
+				
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Liver function</em></p>
+				<p><em>Betaine (source ingredient: betaine or betaine hydrochloride)</em></p>
+				<p>500 - 4,000 milligrams of Betaine, per day (Schwab et al. 2011; Atkinson et al. 2008).</p>
+				<p><em>Helps to support digestion/Digestive aid</em></p>
+				<p><em>Betaine (source ingredient: betaine hydrochloride) or betaine hydrochloride</em></p>
+								
+				<table class="subject">
+					<caption>Table 2. Dose information of Betaine hydrochloride as a medicinal ingredient or as a source ingredient</caption>
+					<thead>
+						<tr>
+							<th rowspan="1">Medicinal iIngredient(s)</th>
+							<th rowspan="1">Source ingredient(s)</th>
+							<th rowspan="1">Minimum/day</th>
+							<th rowspan="1" colspan="2">Maximum/day</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Betaine</td>
+							<td>Betaine hydrochloride</td>
+							<td>137 mg</td>
+							<td>2,670 mg</td>
+						</tr>
+						<tr>
+							<td>Betaine hydrochloride</td>
+							<td>N/A</td>
+							<td>180 mg</td>
+							<td>3,500 mg</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>References: Moffat et al. 2024; Allen Jr. 2012.</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>Products containing Betaine hydrochloride (as a medicinal ingredient or as a source ingredient)</em></p>
+					<p>Take with a meal/food (Moffat et al. 2024; Allen Jr. 2012).</p>
+			<h3>Combination rule</h3>
+			<p>No permitted combinations between the two medicinal ingredients or their source ingredients listed in Table 1.</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2>Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+				<p><em>Products containing Betaine hydrochloride (as a medicinal ingredient or as a source ingredient)</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a peptic ulcer or excess stomach acid (RSC 2024; Hendler and Rorvik 2008).</p>
+				<p><em>Products providing 600 milligrams or more of Betaine or 780 milligrams or more of Betaine hydrochloride as a medicinal ingredient, per day</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have high cholesterol (Olthof et al. 2005; Swab et al. 2002).</p>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+            <p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> 
+		    Labelling of Natural Health Products</a> for more details.</strong></p>
+		    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/BETAINE_E.gif" alt="Product Facts Table" style="width:700px" ></p> 
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>
+				<li>Allen Jr. LV (editor). Remington: The Science and Practice of Pharmacy, 22<sup>nd</sup> edition. Philadelphia College of Pharmacy. Royal Pharmaceutical Society; 2012. [Accessed 2024 June 20]. Available from: https://archive.org/details/remingtonscience0000alle_22ed</li>
+				<li>Atkinson W, Elmslie J, Lever M, Chambers ST, George PM. Dietary and supplementary betaine: acute effects on plasma betaine and homocysteine concentrations under standard and postmethionine load conditions in healthy male subjects. American Journal of Clinical Nutrition 2008;87:577-585.</li>
+				<li>Barack AJ, Beckenhauer HC, Tuma DJ. Betaine, Ethanol, and the Liver: A Review. Alcohol 1996;13(4):395-398.</li>
+				<li>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press; 2024. [Accessed 2024 November 21]. Available from: https://www.medicinescomplete.com/#/browse/martindale</li>
+                <li>Craig SAS. Betaine in human nutrition. American Journal of Clinical Nutrition 2004;80:539-549.</li>
+				<li>DNP 2023. Dictionary of Natural Products, Version 33.1, CRC Press. Hampden Data Services Ltd. Taylor & Francis Group. [Accessed 2024 June 20]. Available from: http://dnp.chemnetbase.com/faces/chemical/ChemicalSearch.xhtml</li>
+				<li>FCC 2025: Food Chemicals Codex. 14<sup>th</sup> edition. Rockville (MD): The United States Pharmacopeial Convention; 2025.</li>
+				<li>Hendler SS, Rorvik DM. PDR&#174; for Nutritional Supplements, 2<sup>nd</sup> edition. Thomson Reuters. Physicians&apos; Desk References Inc., NJ; 2008.</li>
+				<li>Kempson SA, Zhou Y, Danbolt NC. The betaine/GABA transporter and betaine: roles in brain, kidney, and liver. Integrative Physiology 2014;5:1-16.</li>
+				<li>Lever M. Slow S. The clinical significance of betaine, an osmolytes with a key role in methyl group metabolism. Clinical Biochemistry 2010;43:732-744.</li>
+				<li>Moffat AC, Osselton MD, Widdop B, Watts J (Editors). Clarke's analysis of drugs and poisons. Pharmaceutical Press. Royal Pharmaceutical Society. 2024. [Accessed 2024 June 20]. Available from: https://www.medicinescomplete.com/#/browse/clarke</li>
+				<li>Obeid R. The metabolic burden of methyl donor deficiency with focus on the betaine homocysteine methyltransferase pathway. Nutrients 2013;5:3481-3495.</li>
+				<li>NHPID 2025: Natural Health Products Ingredients Database. Natural and Non-Prescription Health Products Directorate. [Accessed 2025 December 19]. Available from: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng</li>
+                <li>Olthof MR, van Vliet T, Verhoef P, Zock PL, Katan MB. Effect of homocysteine-lowering nutrients on blood lipids: results from four randomised, placebo-controlled studies in health humans. PLoS Medicine 2005;2(5):e135.</li>
+				<li>Pajares MA, Perez-Sala D. Betaine homocysteine S-methyltransferase: just a regulator of homocysteine metabolism? Cellular and Molecular Life Sciences 2006;63:2792-2803.</li>
+				<li>Patrick L. Nonalcoholic Fatty Liver Disease: Relationship to Insulin Sensitivity and Oxidative Stress. Treatment Approaches Using Vitamin E, Magnesium, and Betaine. Alternative Medicine Review 2002;7(4):276-291.</li>
+				<li>Purohit V, Abdelmalek MF, Barve S, Benevenga NJ, Halsted CH, Kaplowitz N, Kharbanda KK, Liu Q-Y, Lu SC, McClain CJ, Swanson C, Zakhari S. Role of S-adenosylmethionine, folate, and betaine in the treatment of alcoholic liver disease: summary of a symposium. Americal Journal of Clinical Nutrition 2007;86:14-24.</li>
+				<li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 June 20]. Available from: https://merckindex.rsc.org/</li>
+                <li>Swab U, Alfthan G, Aro A, Uusitupa M. Long-term effect of betaine on risk factors associated with the metabolic syndrome in healthy subjects. European Journal of Clinical Nutrition 2011;65:70-76.</li>
+				<li>Swab U, Torronen A, Toppinen L, Alfthan G, Saarinen M, Aro A, Uusitupa M. Betaine supplementation decreases plasma homocysteine concentrations but does not affect body weight, body composition, or resting energy expenditure in human subjects. American Journal of Clinical Nutrition 2002;76:961-967.</li>
+				<li>Ueland MP. Choline and betaine in health and disease. Journal of Inherited Metabolic Disease 2011;34:3-15.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Abdelmalek MF, Angulo A, Jorgensen RA, Sylvestre PB, Lindor KD. Betaine, a promising new agent for patients with non-alcoholic steatohepatitis: results of a pilot study. American Journal of Gastroenterology 2001;96(9):2711-2717.</li>
+				<li>Abdelmalek MF, Sanderson SO, Angulo P, Soldevila-Pico C, Liu C, Peter J, Keach J, Cave M, Chen T, McClain CJ, Lindor KD. Betaine for nonalcoholic fatty liver disease: results of a randomized placebo-controlled trial. Hepatology 2009;50:1818-1826.</li>
+				<li>Aigner R, Maier G, Muller R, Seitz H. Process for the preparation of aqueous betaine solutions. United States Patent 1994;5,292,942.</li>
+				
+				<li>Atkinson W, Slow S, Elmslie J, Lever M, Chambers ST, George PM. Dietary and supplementary betaine: Effects on betaine and homocysteine concentrations in males. Nutrition, Metabolism & Cardiovascular Diseases 2009;19:767-773.</li>
+				<li>Bellis HE. Process for making aqeous betaine solutions. United States Patent 1997;5,696,287.</li>
+				<li>Bidulescu A, Chambless LE, Siega-Riz AM, Zeisel SH, Heiss G. Usual choline and betaine dietary intake and incident coronary heart disease: the Atherosclerosis Risk in Communities (ARIC) Study. BMC Cardiovascular Disorders 2007;7:20.</li>
+				<li>del Favero S, Roschel H, Artioli G, Ugrinowitsch C, Tricoli V, Costa A, Barroso R, Negrelli AL, Otaduy MC, da Costa Leite C, Lancha-Junior AH, Gualano B. Creatine but not Betaine supplementation increases muscle phosphorylcreatine content and strength performance. Amino Acids 2012;42:2299-2305.</li>
+				<li>Edsall JT. Raman spectra of amino acids and related compounds. VI. Sarcosine, ethanolamine, choline, betaine and betaine derivatives. Journal of the Americal Chemical Society 1943;66:1767-1770.</li>
+				<li>Diekman EF, de Koning TJ, Verhoeven-Duif NM, Rovers MM, van Hasselt PM. Survival and psychomotor development with early betaine treatment in patients with severe methylenetetrahydrofolate reductase deficiency. JAMA Neurology 2014;71(2):188-194.</li>
+				<li>Eussen SJPM, Ueland PM, Clarke R, Blom HJ, Hoefnagels WHL, van Staveren WA, Groot LCPGM. The association of betaine, homocysteine and related metabolites with cognitive function in Dutch elderly people. British Journal of Nutrition 2007;98:960-968.</li>
+				<li>Filipowicz M, Bernsmeier C, Terracciano L, Duong FHT, Heim MH. S-Adenosyl-methionine and betaine improve early virological response in chronic hepatitis C patients with previous nonresponse. PLoS One 2010;5(11):e15492.</li>
+				<li>Gahl WA, Bernardini I, Chen S, Kurtz D, Horvath K. The effect of oral betaine on vertebral body bone density in pyridoxine-non-responsive homocystinuria. Journal of inherited Metabolic Disease 1988;11:291-298.</li>
+				<li>Glaze DG, Percy AK, Motil KJ, Lane JB, Isaacs JS, Schultz RJ, Barrish JO, Neul JL, O&apos;Brien WE, Smith EO. A Study of the treatment of Rett syndrome with folate and betaine. Journal of Child Neurology 2009;25(5):551-556.</li>
+				<li>Hoffman JR, Ratamess NA, Kang J, Gonzalez AM, Beller NA, Craig SAS. Effect of 15 days of betaine ingestion on concentric and eccentric force outputs during isokinetic exercise. Journal of Strength and Conditioning Research 2011;25(8):2235-2241.</li>
+				<li>Hoffman JR, Ratamess NA, Kang J, Rashti SL, Faigenbaum AD. Effect of betaine supplementation on power performance and fatigue. Journal of the International Society of Sports Nutrition 2009;6:7.</li>
+				<li>Holm PI, Bleie O, Ueland PM, Lien EA, Refsum H, Nordrehaug JE, Nygard O. Betaine as a determinant of postmethionine load total plasma homocysteine before and after B-vitamins supplementation. Arteriosclerosis, Thrombosis, and Vascular Biology 2004;24:301-307.</li>
+				<li>Innis SM, Hasman D. Evidence of choline depletion and reduced betaine and dimethylglycine with increased homocysteine in plasma of children with cystic fibrosis. Journal of Nutrition 2006;136:2226-2231.</li>
+				<li>Lawson-Yuen A, Levy HL. The use of betaine in the treatment of elevated homocysteine. Molecular Genetics and Metabolism 2006;88:201-207.</li>
+				<li>Leifer A, Lippincott ER. The Infrared Spectra of Some Amino Acids. Journal of the Americal Chemical Society 1957;79:5098-5101.</li>
+				<li>Lever M, Atkinson W, Slow S, Chambers ST, George PM. Plasma and urine betaine and dimethylglycine variation in healthy young male subjects. Clinical Biochemistry 2009;42:706-712.</li>
+				<li>Lever M, George PM, Slow S, Elmslie JL, Scott RS, Richards AM, Fink JN, Chambers ST. Fibrates may cause an abnormal urinary betaine loss which is associated with elevations in plasma homocysteine. Cardiovascular Drugs and Therapy 2009;23:395-401.</li>
+				<li>McGregor DO, Dellow WJ, Robson RA, Lever M, George PM, Chambers ST. Betaine supplementation decreases post-methionine hyperhomocysteinemia in chronic renal failure. Kidney International 2002;61:1040-1046.</li>
+				<li>Melse-Boonstra A, Holm PI, Ueland PM, Olithof M, Clarke R, Verhoef P. Betaine concentration as a determinant of fasting total homocysteine concentrations and the effect of folic acid supplementation on betaine concentrations. Americal Journal of Clinical Nutrition 2005;81:1378-1382.</li>
+				<li>Miglio F, Rovali LC, Santoro A, Setnikar I. Efficacy and safety of oral betaine glucuronate in non-alcoholic steatohepatitis: A double-blind, randomized, parallel-group, placebo-controlled prospective clinical study. Arzneimittelforschung 2000;50(8):722-727. [Abstract Only].</li>
+				<li>Olthof MR, van Vliet T, Boelsma E, Verthoef P. Low dose betaine supplementation leads to immediate and long term lowering of plasma homocysteine in healthy men and women. Journal of Nutrition 2003;133:4135-4138.</li>
+				<li>Olthof MR, Verhoef P. Effects of betaine intake on plasma homocysteine concentrations and consequences for health. Current Drug Metabolism 2005;6:15-22.</li>
+				<li>Peters SU, Bird LM, Kimonis V, Glaze DG, Shinawi LM, Bichell TJ, Barbieri-Welge R, Nespeca M, Anselm I, Waisbren S, Sanborn E, Sun Q, O&apos;Brien WE, Beaudet AL, Bacino CA. Double-blind therapeutic trial in angelman syndrome using betaine and folic acid. American Journal of Medical Genetics Part A;2010;152A:1994-2001.</li>
+				<li>Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine, 4<sup>th</sup> edition. St-Louis (MI): Churchill Livingstone Elsevier Inc.; 2013.</li>
+				<li>Price RK, Keaveney EM, Hamill LL, Wallace JMW, Ward M, Ueland PM, McNulty H, Strain JJ, Parker MJ, Welch RW. Consumption of wheat aleurone-rich foods increases fasting plasma betaine and modestly decreases fasting homocysteine and LDL-cholesterol in adults. Journal of Nutrition 2010;140:2153-2157.</li>
+				<li>Schwahn BC, Hafner D, Hohlfeld T, Balkenhol N, Laryea MD, Wendel U. Pharmacokinetics of oral betaine in healthy subjects and patients with homocystinuria. British Journal of Clinical Pharmacology 2003;55:6-13.</li>
+				<li>Sharp GS, Hazlet JW. Evaluation of a new method for supplementation of gastric hydrochloric acid. American Journal of Digestive Diseases and Nutrition 1954;21(5):140-144.</li>
+				<li>Schartum-Hansen H, Ueland PM, Pedersen ER, Meyer K, Ebbing M, Bleie O, Svingen GFT, Seifert R, Vikse BE, Nygard O. Assessment of urinary betaine as a marker of diabetes mellitus in cardiovascular patients. PLoS One 2013;8(8):e69454.</li>
+				<li>Swab U, Torronen A, Meririnne E, Saarinen M, Alfthan G, Aro A, Uusitupa M. Orally administered betaine has an acute and dose-dependent effect on serum betaine and plasma homocysteine concentrations in healthy humans. Journal of Nutrition 2006;136:34-38.</li>
+				<li>Trepanowski JF, Farney TM, McCarthy CG, Schilling BK, Craig SA, Bloomer RJ. The effects of chronic betaine supplementation on exercise performance, skeletal muscle oxygen saturation and associated biochemical parameters in resistance trained men. Journal of Strength and Conditioning Research 2011;25(12):3461-3471.</li>
+				<li>Van Guldener C, Janssen MJFM, De Meer K, Donker AJM, Stehouwer CDA. Effect of folic acid and betaine on fasting and postmethionine-loading plasma homocysteine and methionine levels in chronic haemodialysis patients. Journal of Internal medicine 1999;245:175-183.</li>
+				<li>White P, Marble A, Bogan IK, Smith RM. Enlargement of the liver in diabetic children. Archives of Internal Medicine 1938;62(5):740-750.</li>
+				<li>Ziesel SH. Betaine supplementation and blood lipids: fact or artifact? Nutrition Reviews 2006;64(2):77-79.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

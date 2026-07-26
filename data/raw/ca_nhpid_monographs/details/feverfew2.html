@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=feverfew2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="8350b622-c9ae-4afb-a9f0-2d9bc764d6cb"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>FEVERFEW - <em>TANACETUM PARTHENIUM</em></h1>
+	<div class="icon">
+		<a href="dbImages/mono_feverfew_EN.pdf" title="Feverfew"><img alt="Monograph: Feverfew (English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 49.7 KB)</a>
+	</div>
+    
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>December 19, 2025</p>
+	</section>
+			
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2>Proper name(s), Common name(s), Source information</h2>
+			<table class="subject">
+				<caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="colgroup">Proper name(s)</th>
+						<th rowspan="2" scope="colgroup">Common name(s)</th>
+						<th colspan="3" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Tanacetum parthenium</em></td>
+						<td>Feverfew</td>
+						<td><em>Tanacetum parthenium</em></td>
+						<td>
+							<ul>
+								<li>Herb top</li>
+								<li>Leaf</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2024&semi; Common name: Gardner and McGuffin 2013&semi; Source information: Barnes et al. 2007&semi; Bradley 1992.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2>
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p><em>Digestive aid&semi; Headache relief</em></p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+			<p><em>Migraine prevention&semi; Reduction of severity, frequency and symptoms of migraines when taken as a prophylactic</em></p>
+				<p>The only acceptable dosage forms are: Capsules; Tablets.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>(Traditionally) used in Herbal Medicine (as a stomachic) to aid digestion (Williamson 2003&semi; Mills and Bone 2000&semi; Felter and Lloyd 1983).</li>
+				<li>(Traditionally) used in Herbal Medicine to help relieve headaches (Winston and Kuhn 2008&semi; Boon and Smith 2004&semi; Williamson 2003&semi; Cook 1869).</li>
+				<li>(Used in Herbal Medicine to) help(s) prevent migraine headaches (EMA 2020&semi; Barnes et al. 2007&semi; Hoffmann 2003&semi; Bradley 1992).</li>
+				<li>(Used in Herbal Medicine to) help(s) reduce the severity and/or frequency of migraine headaches and associated symptoms such as nausea and vomiting, when taken as a prophylactic (EMA 2020&semi; Palevitch et al. 1997&semi; Murphy et al. 1988&semi; Johnson et al. 1985).</li>
+			</ul>
+			<p><strong>Notes</strong></p> 
+				<ul>
+					<li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Used in Herbal Medicine to help prevent migraine headaches and to help reduce the severity and frequency of migraine headaches and associated symptoms such as nausea and vomiting, when taken as a prophylactic).</li>
+					<li>For multi-ingredient products:
+						<ul>
+							<li>To prevent the product from being represented as a “traditional medicine”, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g. Feverfew is traditionally used in Herbal Medicine to help relieve headaches).</li>
+							<li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+						</ul>
+					</li>
+				</ul>
+	</section>
+	
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+		        <p><em>Digestive aid&semi; Headache relief</em></p>
+				<p>Methods of preparation: Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture)</p>
+        			<p>50 &ndash; 250 milligrams of dried herb top and/or leaf, per day (Brayfield and Cadart 2024&semi; Barnes et al. 2007&semi; Hoffmann 2003&semi; Williamson 2003&semi; Mills and Bone 2000&semi; Awang 1993&semi; Bradley 1992).</p>
+        		<p>Method of preparation: Powdered standardized</p>
+        			<p>50 &ndash; 250 milligrams of dried herb top and/or leaf per day, standardized to 0.2 - 2 % parthenolide (dry weight)&semi; Not to exceed 200 milligrams of dried herb top and/or leaf, per single dose and 4 milligrams of parthenolide, per day (Awang 2010&semi; Curry et al. 2004&semi; Hoffmann 2003&semi; Awang 1993).</p>
+				<p><em>Migraine prevention; Reduction of severity, frequency and symptoms of migraines when taken as a prophylactic</em></p>
+				<p>Methods of preparation: Powdered, Powdered standardized</p>
+					<p>50 &ndash; 600 milligrams of dried herb top and/or leaf, per day&semi; Not to exceed 200 milligrams of dried herb top and/or leaf, per single dose (EMA 2020&semi; Palevitch et al. 1997&semi; Murphy et al. 1988&semi; Johnson et al. 1985).</p>
+					<p>Standardized potency: 0.2 &ndash; 2 % parthenolide (dry weight)&semi; Not to exceed 4 milligrams of parthenolide, per day.</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>All products</em></p>
+					<ul>
+						<li>Take with or after food (Gardner and McGuffin 2013&semi; Barnes et al. 2007&semi; Johnson et al. 1985).</li>
+						<li>Reduce the dosage gradually if treatment is to be paused or discontinued (ESCOP 2003&semi; Mills and Bone 2000).</li>
+					</ul>
+				<p><em>Products to be taken in divided doses</em></p>
+					<p>Gradually increase the dose until desired effect is observed/obtained (EMA 2020).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p><em>Products providing 250 mg or less of dried herb top and/or leaf, per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 16 weeks (Awang 1993).</p>
+			<p><em>Products providing more than 250 mg of dried herb top and/or leaf, per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 8 weeks (EMA 2020).</p>
+			<p><em>Migraine prevention; Reduction of severity, frequency and symptoms of migraines when taken as a prophylactic</em></p>
+				<p>Use for at least 4 to 6 weeks to see beneficial effects (Palevitch et al. 1997&semi; Murphy et al. 1988).</p>
+	</section>
+	
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em></p>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Brinker 2010&semi; Biggs et al. 1982).</li>
+					</ul>
+				<p><em>Products providing 250 mg or less of dried herb top and/or leaf, per day</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you are breastfeeding (Boon 2000).</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>Products providing 250 mg or less of dried herb top and/or leaf, per day</em></p>
+					<p>Do not use if you are pregnant (Gardner and McGuffin 2013&semi; Brinker 2010).</p>
+				<p><em>Products providing more than 250 mg of dried herb top and/or leaf, per day</em></p>
+					<p>Do not use if you are pregnant or breastfeeding (EMA 2020).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p><em>All products</em></p>
+					<ul>
+						<li>Stop use if hypersensitivity/allergy occurs (EMA 2020&semi; Paulsen et al. 2001&semi; Hausen 1996).</li>
+						<li>When using this product you may experience sore mouth, mouth ulcers and/or gastrointestinal discomfort/disturbances (EMA 2020&semi; Gardner and McGuffin 2013&semi; Murphy et al. 1988&semi; Johnson et al. 1985).</li>
+					</ul>
+	</section>
+		
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in that database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+		<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+	
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/FEVERFEW_E.gif" style="width:700px"/></p>
+	</section>
+	
+	<section aria-labelledby="referenceCited">
+		<h2 id="referenceCited">References Cited</h2>
+			<p>Awang DVC. Feverfew. In: Coates PM, Betz JM, Blackman MR, Cragg GM, Levine M, Moss J, White JD, editors. Encyclopedia of Dietary Supplements. 2<sup>nd</sup> edition. New York (NY): Informa Healthcare&semi; 2010. p. 267-273.</p>
+			<p>Awang DVC. Feverfew Fever: A Headache for the Consumer. Herbalgram 1993&semi;29:34-36.</p>
+			<p>Barnes J, Anderson LA, Philipson JD. Herbal Medicines, 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press; 2007.</p>
+			<p>Biggs MJ, Johnson ES, Persaud NP, Ratcliffe DM. Platelet aggregation in patients using feverfew for migraine. Lancet 1982&semi;320(8301):776.</p>
+			<p>Boon H. Feverfew. In: Chandler F, editor. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association&semi; 2000.</p>
+			<p>Boon H, Smith MJ. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs, 2<sup>nd</sup> edition. Toronto (ON): Robert Rose Inc&semi; 2004.</p>
+			<p>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (GB): British Herbal Medicine Association&semi; 1992.</p>
+			<p>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press&semi; 2024. [Accessed 2024 November 21]. Available from: https://www.medicinescomplete.com/#/browse/martindale</p>
+			<p>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</p>
+			<p>Cook WH. 1869. The Physio-Medical Dispensatory: A Treatise on Therapeutics, Materia Medica, and Pharmacy, in Accordance with the Principles of Physiological Medication. Cincinnati (OH): WH Cook. Reprint version by Medical Herbalism: Journal for the Clinical Practitioner. [Accessed 2024 March 19]. Available from: http://medherb.com/cook/home.htm</p>
+			<p>Curry EA, Murry DJ, Yoder C, Fife K, Armstrong V, Nakshatri H, O&apos;Connell M, Sweeney CJ. Phase I dose escalation trial of feverfew with standardized doses of parthenolide in patients with cancer. Investigational New Drugs 2004&semi;22:299-305.</p>
+			<p>EMA: European Medicines Agency. EMA/HMPC/48715/2017&semi; Committee on Herbal Medicinal Products (HMPC)&semi; European Union herbal monograph on Tanacetum parthenium (L.) Schultz Bip., herba 2020. [Accessed 2025 November 26]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-tanacetum-parthenium-l-schulz-bip-herba-revision-1_en.pdf</p>
+			<p>ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2<sup>nd</sup> edition. Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme&semi; 2003.</p>
+			<p>Felter HW, Lloyd JU. King&apos;s American Dispensatory, Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</p>
+			<p>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. Second Edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</p>
+			<p>Hausen BM. A 6-year experience with compositae mix. American Journal of Contact Dermatitis 1996&semi;7(2):94-99.</p>
+			<p>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</p>
+			<p>Johnson ES, Kadam NP, Hylands DM, Hylands PJ. 1985. Efficacy of feverfew as prophylactic treatment of migraine. British Medical Journal 291(6495):569-573.</p>
+			<p>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</p>
+			<p>Murphy JJ, Heptinstall S, Mitchell JR. Randomized double-blind placebo-controlled trial of feverfew in migraine prevention. Lancet 1988&semi;332(8604):189-192.</p>
+			<p>Palevitch D, Earon G, Carasso R. Feverfew (Tanacetum parthenium) as a prophylactic treatment for migraine: a double-blind placebo-controlled study. Phytotherapy Research 1997&semi;11:508-511.</p>
+			<p>Paulsen E, Anderson KE and Hausen BM. Sensitization and cross-reaction patterns in Danish Compositae-allergic patients. Contact Dermatitis 2001&semi;45(4):197-204.</p>
+			<p>Pittler MH, Ernst E. Feverfew for preventing migraine (Review). The Cochrane Database of Systematic Reviews, Issue 1. Art. No.: CD002286.pub2. 2004. DOI: 10.1002/14651858.CD002286.pub2.</p>
+			<p>USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) &ndash; Global. U.S. National Plant Germplasm System. [Accessed 2024 March 19]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</p>
+			<p>Williamson EM. Potter&apos;s Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (GB): The C.W. Daniel Company Limited&semi; 2003.</p>
+			<p>Winston D, Kuhn MA. Winston and Kuhn&apos;s Herbal Therapy and Supplements: A Scientific and Traditional Approach, 2<sup>nd</sup> edition. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2008.</p>
+	</section>
+	
+	<section aria-labelledby="referenceReviewed">
+		<h2 id="referenceReviewed">References Reviewed</h2>
+			<p>Abebe W. Herbal medication: potential for adverse interactions with analgesic drugs. Journal of Clinical Pharmacy and Therapeutics 2002&semi;27(6):391-401.</p>
+			<p>Anderson D, Jenkinson PC, Dewdney RS, Blowers SD, Johnson ES, Kadam NP. Chromosomal aberrations and sister chromatid exchanges in lymphocytes and urine mutagenicity of migraine patients: a comparison of chronic feverfew users and matched non-users. Human Toxicology 1988&semi;7(2):145-152.</p>
+			<p>Awang DVC, Dawson BA, Kindack DG. Parthenolide content of feverfew (Tanacetum parthenium) assessed by HPLC and 1H-NMR spectroscopy. Journal of Natural Products 1991&semi;54(6):1516-1521.</p>
+			<p>Bedard M. Feverfew and migraine prophylaxis. Canadian Pharmaceutical Journal/La Revue Pharmaceutique Canadienne 2002&semi;4:24-25.</p>
+			<p>Berry MI. Feverfew faces the future. Pharmaceutical Journal 1984&semi;232:611-614.</p>
+			<p>BHP 1996: British Herbal Pharmacopoeia. Bournemouth (GB): The British Herbal Medicine Association&semi; 1996.</p>
+			<p>Blumenthal M. ABC Clinical Guide to Herbs. New York (NY): Theime&semi; 2003.</p>
+			<p>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</p>
+			<p>Brown AM, Edwards CM, Davey MR, Power JB, Lowe KC. Pharmacological activity of feverfew (Tanacetum parthenium (L.) Schultz-Bip.): assessment by inhibition of human polymorphonuclear leukocyte chemiluminescence in-vitro. Journal of Pharmacy and Pharmacology 1997&semi;49(5):558-561.</p>
+			<p>Brown D, Gaby A, Reichert R. Clinical applications of natural medicine: migraine. American Journal of Natural Medicine 1997&semi;4(9):18-20.</p>
+			<p>Colodny L, Bryan N, Luong S, Rooney J. Magnesium, feverfew, and riboflavin: therapeutic use in migraine prevention. Journal of American Nutraceutical Association 2003&semi;6(4):35-48.</p>
+			<p>De Weerdt CJ, Bootsma HPR, Hendricks H. Herbal medicines in migraine prevention: Randomized double-blind placebo-controlled crossover trial of a feverfew preparation. Phytomedicine 1996&semi;3(3):225-230.</p>
+			<p>Diener HC, Pfaffenrath V, Schnitker J, Friede M, Henneicke-von Zepelin HH. Efficacy and safety of 6.25 mg t.i.d. feverfew CO2-extract (MIG-99) in migraine prevention - a randomized, double-blind, multicentre, placebo-controlled study. Cephalalgia: An International Journal of Headache 2005&semi;25(11):1031-1041.</p>
+			<p>Draves AH, Walker SE. Parthenolide content of Canadian commercial feverfew preparations: label claims are misleading in most cases. Canadian Pharmaceutical Journal/La Revue Pharmaceutique Canadienne 2003&semi;136(10):23-30.</p>
+			<p>Ernst E, Pittler MH. The efficacy and safety of feverfew (Tanacetum parthenium L.): an update of a systematic review. Public Health Nutrition 2000&semi;3(4A):509-514.</p>
+			<p>Farnsworth NR, Bingel AS, Cordell GA, Crane FA, Fong HH. Potential value of plants as sources of new antifertility agents I. Journal of Pharmaceutical Sciences 1975&semi;64(4):535-598.</p>
+			<p>Gawel MJ. The use of feverfew in the prophylaxis of migraine attacks. Today&apos;s Therapeutic Trends 1995&semi;13(2):79-86.</p>
+			<p>Grieve M. 1971. A Modern Herbal, Volume 1. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</p>
+			<p>Hausen BM, Osmundsen PE. Contact allergy to parthenolide in Tanacetum parthenium (L.) Schulz-Bip. (feverfew, Asteraceae) and cross-reactions to related sesquiterpene lactone containing Compositae species. Acta Dermato-Venereologica 1983&semi;63(4):308-314.</p>
+			<p>Heptinstall S. Feverfew-an ancient remedy for modern times? Journal of the Royal Society of Medicine 1988&semi;81(7):373-374.</p>
+			<p>Heptinstall S, Awang DV, Dawson BA, Kindack D, Knight DW, May J. Parthenolide content and bioactivity of feverfew (Tanacetum parthenium (L.) Schultz-Bip.). Estimation of commercial and authenticated feverfew products. Journal of Pharmacy and Pharmacology 1992&semi;44(5):391-395.</p>
+			<p>Klepser TB, Klepser ME. Unsafe and potentially safe herbal therapies. American Journal of Health-System Pharmacy 1999&semi;56(2):125-138.</p>
+			<p>Kwok BH, Koh B, Ndubuisi MI, Elofsson M, Crews CM. The anti-inflammatory natural product parthenolide from the medicinal herb Feverfew directly binds to and inhibits IkappaB kinase. Chemistry & Biology 2001&semi;8(8):759-766.</p>
+			<p>Jain NK, Kulkarni SK. Antinociceptive and anti-inflammatory effects of Tanacetum parthenium L. extract in mice and rats. Journal of Ethnopharmacology 1999&semi;68(1-3):251-259.</p>
+			<p>Makheja AN, Bailey JM. A platelet phospholipase inhibitor from the medicinal herb feverfew (Tanacetum parthenium). Prostaglandins, Leukotrienes, and Medicine 1982&semi;8(6):653-660.</p>
+			<p>Meyer JE. The Herbalist. Glenwood (IL): Meyerbooks&semi; 1993.</p>
+			<p>Miller LG. Herbal medicinals: selected clinical considerations focusing on known or potential drug-herb interactions. Archives of Internal Medicine 1998&semi;158(20):2200-2211.</p>
+			<p>Mills S. The Dictionary of Modern Herbalism. Wellingborough (GB): Thorsons Publishers Ltd&semi; 1985.</p>
+			<p>Nelson MH, Cobb SE, Shelton J. Variations in parthenolide content and daily dose of feverfew products. American Journal of Health-System Pharmacy 2002&semi;59(16):1527-1531.</p>
+			<p>Pattrick M, Heptinstall S, Doherty M. Feverfew in rheumatoid arthritis: a double blind, placebo controlled study. Annals of the Rheumatic Diseases 1989&semi;48(7):547-549.</p>
+			<p>Paulsen E, Andersen KE, Hausen BM. Compositae dermatitis in a Danish dermatology department in one year (I). Results of routine patch testing with the sesquiterpene lactone mix supplemented with aimed patch testing with extracts and sesquiterpene lactones of Compositae plants. Contact Dermatitis 1993&semi;29(1):6-10.</p>
+			<p>Tilgner S. Herbal Medicine from the Heart of the Earth. Creswell (OR): Wise Acre Press&semi; 1999.</p>
+			<p>Williamson EM, Evans FJ, Wren RC. Potter&apos;s New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (GB): C.W. Daniel Company Limited&semi; 1988.</p>
+			<p>Wren RC. Potter&apos;s Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark&semi; 1907.</p>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

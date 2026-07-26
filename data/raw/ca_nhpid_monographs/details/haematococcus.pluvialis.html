@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=haematococcus.pluvialis\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="dbb8c1cb-5acf-4790-80df-675efb31dd0a"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>
+   Haematococcus pluvialis extract
+  </h1>
+  <div class="icon">
+   <a href="dbImages/mono_haematococcus_pluvialis_english.pdf" title="Monograph: Haematococcus pluvialis (English)">
+    <img alt="Monograph: Haematococcus pluvialis (English)" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" width="22"/>
+    (PDF Version - 157 K)
+   </a>
+  </div>
+  <p>
+   This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    January 10, 2025
+   </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+   <h2 id="properNameCommonNameSourceInformation">
+    Proper name(s), Common name(s), Source information
+   </h2>
+   <table class="subject">
+    <caption>
+     Table 1. Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Proper name(s)
+      </th>
+      <th rowspan="2" scope="col">
+       Common name(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+       Source information
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Source material(s)
+      </th>
+      <th scope="col">
+       Part(s)
+      </th>
+      <th scope="col">
+       Preparation(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       <i>
+        Haematococcus pluvialis
+       </i>
+      </td>
+      <td>
+       <i>
+        Haematococcus pluvialis
+       </i>
+      </td>
+      <td>
+       <i>
+        Haematococcus pluvialis
+       </i>
+      </td>
+      <td>
+       Broken cell
+      </td>
+      <td>
+       Dry
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    References: Proper name: NHPID 2024; Common name: NHPID 2024; Source information: NHPID 2024.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of administration
+   </h2>
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage form(s)
+   </h2>
+   <p>
+    This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+   </p>
+   <p>
+    Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <ul>
+    <li>
+     Source of antioxidants/Provides antioxidants (Karppi et al. 2007; Kim and Chyun 2004).
+    </li>
+    <li>
+     Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Karppi et al. 2007; Kim and Chyun 2004).
+    </li>
+    <li>
+     Helps to maintain/support skin health (Tominaga et al. 2012; Yamashita 2006).
+    </li>
+    <li>
+     Helps to improve/maintain/support skin moisture/hydration (Ito et al. 2018; Tsukahara et al. 2016; Phetcharat et al. 2015; Yamashita 2006).
+    </li>
+    <li>
+     Helps to improve/maintain/support skin elasticity (Tsukahara et al. 2016; Phetcharat et al. 2015; Tominaga et al. 2012; Yamashita 2006).
+    </li>
+    <li>
+     Helps to maintain/support skin texture (Ito et al 2018).
+    </li>
+    <li>
+     Helps to reduce the appearance of fine lines/wrinkles (Phetcharat et al. 2015; Tominaga et al. 2012; Yamashita 2006).
+    </li>
+    <li>
+     Helps to maintain/support eye/ocular health (Hashimoto et al. 2016; Hashimoto et al. 2013; Nakamura et al. 2004).
+    </li>
+    <li>
+     Helps to reduce eye strain/eye fatigue (Nagaki et al. 2006; Nitta et al. 2005; Nakamura et al. 2004).
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Notes:
+    </strong>
+   </p>
+   <ul>
+    <li>
+     The above uses can be combined on the product label (e.g., Helps to maintain skin texture and elasticity).
+    </li>
+    <li>
+     The terms 'Helps' or 'Helps to' can be used interchangeably on the label.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    Adults 18 years and older.
+   </p>
+   <h3>
+    Quantity(ies)
+   </h3>
+   <p>
+    <strong>
+     Methods of preparation:
+    </strong>
+    Powdered, standardized; Standardized Extracts (Dry extract); Supercritical fluid extraction, Standardized.
+   </p>
+   <p>
+    <em>
+     Antioxidant
+    </em>
+   </p>
+   <p>
+    Preparation/extract providing up to 40 milligrams of astaxanthin, per day; Not to exceed 1 gram of dried broken cells (Ito et al 2018; Hashimoto et al. 2016; Tsukahara et al 2016; Phetcharat and al 2015; EFSA 2014; Hashimoto et al. 2013; Tominaga et al 2012; Earnest et al. 2011; Malmstein and Lignell 2008; Karppi et al. 2007; Iwasaki and Tawara 2006; Nagaki et al. 2006; Yamashita 2006; Nitta et al. 2005; Kim and Chyun 2004; Nakamura et al. 2004).
+   </p>
+   <p>
+    <strong>
+     Methods of preparation:
+    </strong>
+    Standardized Extracts (Dry extract); Supercritical fluid extraction, Standardized.
+   </p>
+   <p>
+    <em>
+     Eye strain, Eye fatigue
+    </em>
+   </p>
+   <p>
+    Extract providing 6 - 40 milligrams of astaxanthin, per day; Not to exceed 1 gram of dried broken cells, per day (Earnest et al. 2011; Malmstein and Lignell 2008; Iwasaki and Tawara 2006; Nagaki et al. 2006; Nitta et al. 2005; Nakamura et al. 2004).
+   </p>
+   <p>
+    <em>
+     Skin health, Skin elasticity, Skin moisture/hydration, Skin texture, Skin appearance of lines/wrinkles, Eye/ocular health
+    </em>
+   </p>
+   <p>
+    Extract providing 4 - 40 milligrams of astaxanthin, per day; Not to exceed 1 gram of dried broken cells, per day (Ito et al 2018; Hashimoto et al. 2016; Phetcharat et al 2015; Hashimoto et al. 2013; Tominaga et al 2012; Tsukahara et al 2016; Yamashita 2006; Nakamura et al. 2004).
+   </p>
+   <h3>
+    Direction(s) for use
+   </h3>
+   <p>
+    No statement required
+   </p>
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration(s) of use
+   </h2>
+   <p>
+    <em>
+     Products providing more than 4 milligrams of astaxanthin, per day
+    </em>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 3 months (EFSA 2014; Parisi et al. 2008).
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk information
+   </h2>
+   <h3>
+    Caution(s) and warning(s)
+   </h3>
+   <p>
+    <em>
+     All products
+    </em>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.
+   </p>
+   <p>
+    <em>
+     Eye strain, Eye fatigue
+    </em>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.
+   </p>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <p>
+    No statement required.
+   </p>
+   <h3>
+    Known Adverse Reaction(s)
+   </h3>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+   <h2 id="nonMedicinalIngredients">
+    Non-medicinal ingredients
+   </h2>
+   <p>
+    Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+   </p>
+  </section>
+  <section aria-labelledby="storageConditions">
+   <h2 id="storageConditions">
+    Storage conditions
+   </h2>
+   <p>
+    Must be established in accordance with the requirements described in the
+    <em>
+     Natural Health Products Regulations
+    </em>
+    .
+   </p>
+  </section>
+  <section aria-labelledby="specifications">
+   <h2 id="specifications">
+    Specifications
+   </h2>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-Prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="exampleOfProductFacts">
+   <h2 id="exampleOfProductFacts">
+    Example Of Product Facts:
+   </h2>
+   <p>
+    <strong>
+     Consult the Guidance Document,
+     <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">
+      Labelling of Natural Health Products</a>
+     for more details.
+    </strong>
+   </p>
+   <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/HAEMATOCOCCUS_E.gif" style="width:700px"/>
+   </p>
+  </section>
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References Cited
+   </h2>
+   <ul>
+    <li>
+     Earnest CP, Lupo M, White KM, Church TS. Effect of astaxanthin on cycling time trial performance. International journal of sports medicine. 2011;32(11):882-888.
+    </li>
+    <li>
+     EFSA 2014: European Food Safety Authority. Scientific Opinion: Scientific Opinion on the safety of astaxanthin-rich ingredients (AstaREAL A1010 and AstaREAL L10) as a novel food ingredients. Scientific Opinion. Vol 12(7). [Accessed 2024-08-23]. Available from: http://onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3757/epdf
+    </li>
+    <li>
+     Hashimoto H, Arai K, Hayashi S, Okamoto H, Takahashi J, Chikuda M. The effect of astaxanthin on vascular endothelial growth factor (VEGF) levels and peroxidation reactions in the aqueous humor. Journal of clinical biochemistry and nutrition. 2016;59(1):10-15.
+    </li>
+    <li>
+     Hashimoto H, Arai K, Hayashi S, Okamoto H, Takahashi J, Chikuda M, Obara Y. Effects of astaxanthin on antioxidation in human aqueous humor. Journal of Clinical Biochemistry and Nutrition. 2013;53(1):1-7.
+    </li>
+    <li>
+     Ito N, Seki S, Ueda F. The protective role of astaxanthin for UV-induced skin deterioration in healthy people—A randomized, double-blind, placebo-controlled trial. Nutrients. 2018;10(7):817.
+    </li>
+    <li>
+     Iwasaki T and Tawara A.  Effects of Astaxanthin on Eyestrain Induced by Accomodative Dysfunction. J. Eye. 2006;23(6):829-834.
+    </li>
+    <li>
+     Karppi J, Rissanen T, Nyyssonen K, Kaikkonen J, Olsson Am Voutilainen S, Salonen J.  Effects of Astaxanthin Supplementation on Lipid Peroxidation. Int. J. Vitam. Nutr. Res. 2007;77(1):3-11.
+    </li>
+    <li>
+     Kim YK, Chyun JH. The Effects of Astaxanthin Supplements on Lipid Peroxidation and Antioxidant Status in Postmenopausal Women. Nutr. Sci. 2004;7(1):41-46.
+    </li>
+    <li>
+     Malmstein CL, Lignell A. Dietary Supplementation with Astaxanthin-Rich Algal Meal Improves Strength Endurance - A Double Blind Placebo Controlled Study on Male Students. Caroteniod Science. 2008;13:20-22.
+    </li>
+    <li>
+     Nagaki Y, Mihara M, Tsukuhara H, Ohno S. The Supplementation Effect of Astaxanthin on Accommodation and Asthenopia. Journal of Clinical Theapeutics and Medicines.2006;22(1).
+    </li>
+    <li>
+     Nakamura A, Nakata D, Isobe R, Honma C, Otaka Y, Sakurai S, Abematsu Y, Shimada Y.  Changes in visual function following peroral astaxanthin. 2004;58(6):1051-1054.
+    </li>
+    <li>
+     Nitta T, Ogami K, Shiratori K, Shinmei Y, Chin S, Yoshida K. The effects of Astaxanthin on Accommodation and Asthenopia—Dose Finding Study in Healthy Volunteers. Clinical Medicine. 2005;21(5):543-556.
+    </li>
+    <li>
+     NHPID 2024. Natural Health Products Ingredients Database. [Accessed 2024 August 27]. Available from: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng
+    </li>
+    <li>
+     Parisi V, Tedeschi M, Gallinaro G, Varano M, Saviano S, Piermarocchi S. Carentonoids and Antioxidants in Age-Related Maculopathy Italian Study: Multifocal Electroretinogram Modifications after 1 year. Opthalmology 2008;115(2) 324-333.
+    </li>
+    <li>
+     Phetcharat L, Wongsuphasawat K, Winther K. The effectiveness of a standardized rose hip powder, containing seeds and shells of Rosa canina, on cell longevity, skin wrinkles, moisture, and elasticity. Clinical interventions in aging. 2015;10:1849-1856.
+    </li>
+    <li>
+     Tominaga K, Hongo N, Karato M, Yamashita E. Cosmetic benefits of astaxanthin on humans subjects. Acta Biochimica Polonica. 2012;59(1):43-47.
+    </li>
+    <li>
+     Tsukahara H, Matsuyama A, Abe T, Kyo H, Ohta T, Suzuki N. Effects of astaxanthin-containing drinks on skin. Japanese Journal of Complementary and Alternative Medicine. 2016;13(2):57-62.
+    </li>
+    <li>
+     Yamashita E. The effects of a dietary supplement containing astaxanthin on skin condition. Food Style 21. 2006;9(9):72.
+    </li>
+   </ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

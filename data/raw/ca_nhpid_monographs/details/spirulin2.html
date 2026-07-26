@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=spirulin2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="77908fb1-a551-48b6-8306-b1e179b2deaa"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Spirulina</h1>
+	<div class="icon">
+    	<a href="dbImages/mono_spirulina_english.pdf" title="Monograph: Spirulina - Spirulina platensis (English)"><img alt="Monograph: Spirulina - Spirulina platensis (English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/>(PDF Version - 36 K)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+		</ul>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+			<p>March 28, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table class="subject"> 
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<tr>
+					<th rowspan="2">Proper name(s)</th>
+					<th rowspan="2">Common name(s)</th>
+					<th colspan="3">Source information</th>
+				</tr>
+				<tr>
+					<th>Source material(s)</th>
+					<th>Part(s)</th>
+				</tr>
+				<tr>
+					<td><em>Limnospira fusiformis</em></td>
+					<td>Spirulina</td>
+					<td><em>Limnospira fusiformis </em></td>
+					<td>Whole</td>
+				</tr>
+				<tr>
+					<td><em>Limnospira indica</em></td>
+					<td>Spirulina</td>
+					<td><em>Limnospira indica</em></td>
+					<td>Whole</td>
+				</tr>
+				<tr>
+					<td><em>Limnospira maxima</em></td>
+					<td>Spirulina</td>
+					<td><em>Limnospira maxima</em></td>
+					<td>Whole</td>
+				</tr>
+				<tr>
+					<td><em>Limnospira platensis</em></td>
+					<td>Spirulina</td>
+					<td><em>Limnospira platensis</em></td>
+					<td>Whole</td>
+				</tr>
+			</table>
+			<p>References: Proper name: Guiry and Guiry 2025&semi; Nowicka-Krawczyk et al. 2019&semi; Common name: CNF 2024&semi; Mazokopakis et al. 2013&semi; Source information: Guiry and Guiry 2025&semi; Nowicka-Krawczyk et al. 2019.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">    
+        <h2 id="routeOfAdministration">Route(s) of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p><strong>Acceptable dosage forms by age group:</strong></p>
+			<p><strong>Children 2 years:</strong> The acceptable dosage forms are limited to emulsion/suspension and solution/liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).</p>
+			<p><strong>Children 3-5 years:</strong> The acceptable dosage forms are limited to chewables, emulsion/suspension, powders and solution/liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).</p>
+			<p><strong>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older:</strong> The acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><em>All Products</em></p>
+				<ul>
+					<li>Source of antioxidants/Provides antioxidants (Yu et al. 2012&semi; Kalafati et al. 2010).</li>
+					<li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Yu et al. 2012&semi; Kalafati et al. 2010).</li>
+				</ul>
+			<p><em>Products containing Limnospira platensis</em></p>
+				<ul>
+					<lI>Helps reduce symptoms of allergic rhinitis such as nasal discharge, sneezing, nasal congestion and itching (Cingi et al. 2008&semi; Mao et al. 2005).</lI>
+				</ul>
+			<p><em>Uses based on constituent potency at or above the minimum doses indicated in the dose section below</em></p>
+				<ul>
+					<li>Source of beta-carotene, a provitamin A, for the maintenance of good health (CNF 2024&semi; IOM 2006&semi; Shils <em>et al.</em> 2006).</li>
+					<li>Source of beta-carotene, a provitamin A, to help maintain eyesight, skin, membranes and immune function (CNF 2024&semi; IOM 2006&semi; Shils <em>et al.</em> 2006).</li>
+					<li>Source of beta-carotene, a provitamin A, to help in the development and maintenance of night vision (CNF 2014&semi; IOM 2006&semi; Shils <em>et al.</em> 2006).</li>
+					<li>Source of beta-carotene, a provitamin A, to help in the development and maintenance of bones and teeth (CNF 2024&semi; IOM 2006&semi; Shils <em>et al.</em> 2006).</li>
+					<li>Source of iron for the maintenance of good health (CNF 2024&semi; IOM 2006).</li>
+					<li>Source of iron which helps to form red blood cells and helps in their proper function (CNF 2024&semi; IOM 2006&semi; Shils <em>et al.</em> 2006).</li>
+					<li>Source of protein for the maintenance of good health (CNF 2024&semi; IOM 2005).</li>
+					<li>Source of protein which helps build and repair body tissues (CFIA 2012).</li>
+					<li>Source of essential amino acids for the maintenance of good health (CNF 2024&semi; IOM 2005).</li>
+					<li>Source of (essential) amino acids involved in muscle protein synthesis (CNF2025&semi; IOM 2005).</li>
+				</ul>
+			<p><STRONG>Notes</STRONG>
+				<ul>
+					<li>The above uses can be combined on the product label (e.g., Source of protein for the maintenance of good health which helps build and repair body tissues).</li>
+					<li>The claim &ldquo;Source of vitamin B12&rdquo; is not acceptable as most vitamin B12 from this source is not bioactive (Michaelson 2009&semi; Watanabe F. 2007&semi; Watanabe et al. 1999).</li>
+				</ul>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>As specified below.</p>
+			<h3>Quantity(ies)</h3> 
+				<p>Methods of preparation: Dry, Powdered, Non-Standardized and Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+				<p>*Note: Solvents allowed for the method of preparation &ldquo;Non-Standardized Extracts (Dry extract)&rdquo; as part of this monograph are ethanol and/or water only.</p>
+			<p><em>Allergic rhinitis (Limnospira platensis only)/Antioxidants</em></p>
+			<table class="subject"> 
+				<caption>Table 2. Daily doses of spirulina for allergic rhinitis. Note that for the antioxidant claim no minimum dose of spirulina has been established; however, the maximum dose of spirulina applies.</caption>
+				<thead>
+					<tr>
+						<th colspan="2" rowspan="2">Subpopulation(s)</th>
+					</tr>
+					<tr>
+						<th>Minimum dose of Spirulina (g/day)<sup><a href="#ref2-1" style="text-decoration: none;">1</a></sup></th>
+						<th>Maximum dose of Spirulina (g/day) <sup><a href="#ref2-2" style="text-decoration: none;">2</a>,<a href="#ref2-3" style="text-decoration: none;">3</a></sup></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4">Children</td>
+					</tr>
+					<tr>
+						<td>2-4 years</td>
+						<td>0.3</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>5-9 years</td>
+						<td>0.5</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>10-11 years</td>
+						<td>1</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Adolescents</td>
+					</tr>
+					<tr>
+						<td>12-14 years</td>
+						<td>1</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>15-17 years</td>
+						<td>2</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Adults</td>
+						<td>18 years and older</td>
+						<td>2</td>
+						<td>8</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><sup id="ref2-1">1</sup>Children and adolescent minimum doses calculated as a fraction of the adult dose&semi; Adult minimum doses supported by the following references: Cingi et al. 2008&semi; Mao et al. 2005.<br/>
+			<sup id="ref2-2">2</sup>Children and adolescent maximum doses calculated as a fraction of the adult dose and supported by the following references: Dia et al. 2009&semi; Simpore et al. 2006&semi; Samuels et al. 2002.<br/>
+			<sup id="ref2-3">3</sup>Adult maximum dose supported by the following references: CNF 2024&semi; Marles et al. 2011&semi; Cingi et al. 2008&semi; Lee et al. 2008&semi; Park et al. 2008&semi; Baicus and Baicus 2007.</p>
+			<p><em>Claims based on the constituent protein</em></p>
+			<table class="subject"> 
+				<caption>Table 3. Daily doses of algal protein (no minimum spirulina dose required). </caption>
+				<thead>
+					<tr>
+						<th colspan="2" rowspan="2">Subpopulation(s)</th>		
+					</tr>
+					<tr>
+						<th>Minimum dose of Algal protein (g/day)<sup><a href="ref3-1" style="text-decoration: none;">1</a></sup></th>
+						<th>Maximum dose of Algal protein and Spirulina (g/day)<sup><a href="ref3-2" style="text-decoration: none;">2</a>,<a href="ref3-3" style="text-decoration: none;">3</a></sup></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4">Children</td>
+					</tr>
+					<tr>
+						<td>2-4 years</td>
+						<td>0.6</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>5-9 years</td>
+						<td>0.9</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>10-11 years</td>
+						<td>1.5</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td rowspan="3">Adolescents</td>
+					</tr>
+					<tr>
+						<td>12-14 years</td>
+						<td>1.5</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>15-17 years</td>
+						<td>2.6</td>
+						<td>8</td>
+					</tr>
+					<tr>
+						<td>Adults</td>
+						<td>18 years and older</td>
+						<td>2.6</td>
+						<td>8</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><sup id="ref3-1">1</sup>Children, adolescent and adult minimum doses of protein supported by the following references: IOM 2006&semi; IOM 2005.<br/>
+			<sup id="ref3-2">2</sup>Children and adolescent maximum doses of spirulina calculated as a fraction of the adult dose and supported by the following references: Dia et al. 2009&semi; Simpore et al. 2006&semi; Samuels et al. 2002.<br>
+			<sup id="ref3-3">3</sup>Adult maximum dose supported by the following references: CNF 2024&semi; Marles et al. 2011&semi; Cingi et al. 2008&semi; Lee et al. 2008&semi; Park et al. 2008&semi; Baicus and Baicus 2007.</p>
+			<em>Claims based on the constituents Beta-carotene or Iron</em>
+			<table class="subject">
+				<caption>Table 4. Daily doses of beta-carotene and iron (no minimum spirulina dose required).</caption>
+				<thead>
+					<tr>
+						<th colspan="2" rowspan="2">Subpopulation(s)</th>
+						<th colspan="2">Beta-carotene<sup><a href="ref4-1" style="text-decoration: none;">1</a></sup></th>
+						<th colspan="2">Iron<sup><a href="ref4-1" style="text-decoration: none;">1</a></sup></th>
+						<th rowspan="2">Maximum dose of Spirulina (g/day)<sup><a href="ref4-2" style="text-decoration: none;">2</a>,<a href="ref4-3" style="text-decoration: none;">3</a></sup></th>
+					</tr>
+					<tr>
+						<th>Min (mcg/day)</th>
+						<th>Max (mcg/day)</th>
+						<th>Min (mg/day)</th>
+						<th>Max (mg/day)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="6">Children</td>
+					</tr>
+					<tr>
+						<td>2-3 years</td>
+						<td>180</td>
+						<td>3600</td>
+						<td>0.6</td>
+						<td>40</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>4 years</td>
+						<td>180</td>
+						<td>5400</td>
+						<td>0.6</td>
+						<td>40</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>5-8 years</td>
+						<td>180</td>
+						<td>5400</td>
+						<td>0.6</td>
+						<td>40</td>
+						<td>2</td>
+					</tr> 
+					<tr>
+						<td>9 years</td>
+						<td>180</td>
+						<td>10200</td>
+						<td>0.6</td>
+						<td>40</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>10-11 years</td>
+						<td>180</td>
+						<td>10200</td>
+						<td>0.6</td>
+						<td>40</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td rowspan="4">Adolescents</td>
+					</tr>
+					<tr>
+						<td>12-13 years</td>
+						<td>180</td>
+						<td>10200</td>
+						<td>0.6</td>
+						<td>40</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>14 years</td>
+						<td>390</td>
+						<td>16800</td>
+						<td>1.4</td>
+						<td>45</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>15-17 years</td>
+						<td>390</td>
+						<td>16800</td>
+						<td>1.4</td>
+						<td>45</td>
+						<td>8</td>
+					</tr> 
+					<tr>
+						<td rowspan="4">Adults</td>
+					</tr>
+					<tr>
+						<td>18 years</td>
+						<td>390</td>
+						<td>16800</td>
+						<td>1.4</td>
+						<td>45</td>
+						<td> 8</td>
+					</tr>
+					<tr>
+						<td>19 years and older</td>
+						<td>390</td>
+						<td>18000</td>
+						<td>1.4</td>
+						<td>45</td>
+						<td>8</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><sup id="ref4-1">1</sup>	Children, adolescent and adult minimum and maximum doses of beta-carotene and iron supported by the NNHPD Multi-Vitamin/Mineral Supplements Monograph <br>
+			<sup id="ref4-2">2</sup>Children and adolescent maximum doses of spirulina calculated as a fraction of the adult dose and supported by the following references: Dia et al. 2009&semi; Simpore et al. 2006&semi; Samuels et al. 2002.<br>
+			<sup id="ref4-3">3</sup>Adult maximum dose of spirulina supported by the following references: CNF 2024&semi; Marles et al. 2011&semi; Cingi et al. 2008&semi; Lee et al. 2008&semi; Park et al. 2008&semi; Baicus and Baicus 2007.</p>
+			<p><strong>Notes</strong></strong>
+				<ul>
+					<li>For a use or purpose based on a particular constituent (e.g., beta-carotene, iron, or protein), the name and the amount of the constituent must be provided in the potency section of the Product Licence Application form.</li>
+					<li>The minimum and maximum daily doses of the constituents must be within the range of the doses listed on the NNHPD Multi-Vitamin/Mineral Supplements Monograph or the NNHPD Workout Supplements Monograph. Note that the maximum dose of protein is limited by the maximum dose of spirulina.</li>
+					<li>If ingredients such as vitamins and minerals are added to the product they should be listed as separate medicinal ingredients on the Product Licence Application form and label. In this case, it would be considered a Class II or III application</li>
+				</ul>
+			<h3>Directions for use</h3> 
+				<p><em>Products providing 0.6 mg or more iron per day for children and adolescents 2-13 years old, or 1.4 mg or more iron per day for adults</em></p>
+				<p>Take a few hours before or after taking other medications or health products (Brayfield and Cadart 2024).</p>
+			<h3>Combination rules</h3>
+				<p>When the medicinal ingredients listed in Table 1 are combined, the total quantity of spirulina and the total quantity of its constituents if declared must not exceed the maximum quantities listed in Tables 2, 3 and 4.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+				<p><em>Allergic rhinitis</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Spirulina_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Baicus C, Baicus A. Spirulina did not ameliorate idiopathic chronic fatigue in four N-of-1 randomized controlled trials. Phytotherapy Research 2007&semi;21(6):570-573.</li>
+				<li>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press&semi; 2024. [Accessed 2024 November 21]. Available from: https://www.medicinescomplete.com/#/browse/martindale</li>
+				<li>CFIA 2025: Canadian Food Inspection Agency. Food Labelling for Industry, Ottawa (ON): Canadian Food Inspection Agency and Health Canada&semi; 2025. [Accessed 2025 February 11]. Available from: https://inspection.canada.ca/en/food-labels/labelling/industry</li>
+				<li>Cingi C, Conk-Dalay M, Cakli H, Bal C.  The effects of spirulina on allergic rhinitis. European Archives of Oto-Rhino-Laryngology 2008&semi;265(10):1219-1223.</li>
+				<li>CNF 2024: Canadian Nutrient File, Food and Nutrition, Health Canada&semi; 2024. [Accessed 2025 February 11] Available from: https://food-nutrition.canada.ca/cnf-fce</li>
+				<li>Dia AT, Camara MD, Ndiaye P, Faye A, Wone I, Gueye BC, Seck I, Diongue M. Contribution of supplementation by spiruline to the performance of school children in an introductory course in Dakar (Senegal). Sante Publique 2009&semi;21(3):297-302.</li>
+				<li>EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric population&semi; 2006. [Accessed 2025 February 11]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf</li>
+				<li>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008&semi; 30(11):2097-2101.</li>
+				<li>Guiry MD, Guiry GM. 2025. AlgaeBase. World-wide electronic publication, University of Galway. Algaebase taxon LSID: urn:lsid:algaebase.org:taxname:47342&semi; 2025. [Accessed 2025 February 11]. Available from: http://www.algaebase.org</li>
+				<li>IOM 2005: Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Food and Nutrition Board, Institute of Medicine. Washington (DC): National Academy Press&semi; 2005.</li>
+				<li>IOM 2006: Institute of Medicine. Otten JJ, Pitzi Hellwig J, Meyers LD, editors. Institute of Medicine. Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press&semi; 2006.</li>
+				<li>Kalafati M, Jamurtas AZ, Nikolaidis MG, Paschalis V, Theodorou AA, Sakellariou GK,  Koutedakis Y, Kouretas D. Ergogenic and antioxidant effects of spirulina supplementation in humans. Medicine and Science in Sports and Exercise 2010&semi;42(1):142-151.</li>
+				<li>Lee EH, Park JE, Choi YJ, Huh KB, Kim WY. A randomized study to establish the effects of spirulina in type 2 diabetes mellitus patients. Nutrition Research and Practice 2008&semi;2(4):295-300.</li>
+				<li>Mao TK, Van de Water J, Gershwin ME. Effects of a Spirulina-based dietary supplement on cytokine production from allergic rhinitis patients.  Journal of Medicinal Food 2005&semi;8(1):27-30.</li>				
+				<li>Marles RJ, Barrett ML, Barnes J, Chavez ML, Gardiner P, Ko R, Mahady GB, Low Dog T, Sarma ND, Giancaspro GI, Sharaf M, Griffiths J.  United States pharmacopeia safety evaluation of spirulina. Critical Reviews in Food Science and Nutrition 2011&semi;51(7):593-604.</li>
+				<li>Mazokopakis EE, Starakis IK, Papadomanolaki MG, Mavroeidi NG and Ganotakis ES. The hypolipidaemic effects of Spirulina (Arthrospira platensis) supplementation in a Cretan population: a prospective study. Society of Chemical Industry 2013&semi;94(3):432-437.</li>
+				<li>Michaelson KF, Hoppe C, Roos N, Kaestel P, Stougaard M, Lauritzen L, M&#248;lgaard C, Girma T and Friis H.  Choice of foods and ingredients for moderately malnourished children 6 months to 5 years of age. Food and Nutrition Bulletin 2009&semi;30(3). S343-S404</li>
+				<li>Nowicka-Krawczyk P, M&#252;hlsteinov&#224; R, Hauer T. Detailed characterization of the Arthrospira type species separating commercially grown taxa into the new genus Limnospira (Cyanobacteria). Scientific reports 2019&semi;9:Article 694.</li>
+				<li>Park HJ, Lee YJ, Ryu HK, Kim MH, Chung HW, Kim WY. A randomized double-blind, placebo-controlled study to establish the effects of spirulina in elderly Koreans. Annals of Nutrition and Metabolism 2008&semi;52(4):322-328.</li>
+				<li>Samuels R, Mani UV, Iyer UM, Nayak US. Hypocholesterolemic effect of spirulina in patients with hyperlipidemic nephrotic syndrome. Journal of Medicinal Food 2002&semi;5(2):91-96.</li>
+				<li>Shils ME, Olson JA, Shike M, Ross AC, Caballero B, Cousins RJ, editors. Modern Nutrition in Health and Disease. 10th edition. Philadelphia (PA): Lippincott Williams & Wilkins&semi; 2006.</li>
+				<li>Simpore J, Kabore F, Zongo F, Dansou D, Bere A, Pignatelli S, Biondi DM, Ruberto G, Musumeci S. Nutrition rehabilitation of undernourished children utilizing Spiruline and Misola. Nutrition Journal 2006&semi;5(3):1-7.</li>
+				<li>Watanabe F. Vitamin B12 sources and bioavailability. Exp Biol Med 2007&semi; 232, 1266-1274.</li>
+				<li>Watanabe F, Katsura H, Takenaka S, Fujita T, Abe K, Tamura Y, Nakatsuka T and Nakano Y. Pseudovitamin B(12) is the predominant cobamide of an algal health food, spirulina tablets.  J Agric Food Chem. 1999&semi; 47(11):4736-41.</li>
+				<li>Yu B, Wang J, Suter PM, Russell RM, Grusak MA, Wang Y, Wang Z, Yin S, Tang G. Spirulina is an effective dietary source of zeaxanthin to humans. British Journal of Nutrition 2012&semi;108(4):611-619.</li>
+			</ul>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Annapurna VV, Deosthale YG, Bamji MS. Spirulina as a source of vitamin A. Plant Foods for Human Nutrition 1991&semi;41(2):125-134.</li>
+				<li>Bogatov NV. Selenium deficiency and its dietary correction in patients with irritable bowel syndrome and chronic catarrhal colitis. Voprosy Pitaniia 2007&semi;76(3):35-39.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Chen T, Zheng W, Wong YS, Yang F, Bai Y. Accumulation of selenium in mixotrophic culture of Spirulina platensis on glucose. Bioresource Technology 2006&semi;97(18):2260-2265.</li>
+				<li>Ciferri O. Spirulina, the Edible Microorganism. Microbiological Reviews 1983&semi;47(4):551-578.</li>
+				<li>Ciferri O, Tiboni O. The biochemistry and industrial potential of Spirulina. Annual Review of Microbiology 1985&semi;39:503-526.</li>
+				<li>Colla LM, Bertolin TE, Costa JA. Fatty acids profile of Spirulina platensis grown under different temperatures and nitrogen concentrations. Zeitschrift f&#252;r Naturforschung C 2004&semi;59(1-2):55-59.</li>
+				<li>Deng R, Chow TJ. Hypolipidemic, antioxidant, and anti-inflammatory activities of microalgae Spirulina. Cardiovascular Therapy 2010&semi;28(4):e33-45.</li>
+				<li>Dillon JC, Phuc AP, Dubacq JP. Nutritional value of the alga Spirulina. World Review of Nutrition and Dietetics 1995&semi;77:32-46.</li>
+				<li>Eun-Kyung K, Gang-Guk C, Hee-Sik K, Chi-Young A, Hee-Mock O. Increasing gammalinolenic acid content in Spirulina platensis using fatty acid supplement and light-dark illumination. Journal of applied phycology 2011:1-8.</li>
+				<li>Facciola S. Cornucopia II. A source book of edible plants. Vista (CA): Kampong Publications&semi; 1998.</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. 2nd edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>Katz M, Levine AA, Kol-Degani H, Kav-Venaki L. A compound herbal preparation (CHP) in the treatment of children with ADHD: a randomized controlled trial. Journal of Attention Disorders 2010&semi;14(3):281-291.</li>
+				<li>Mazokopakis EE, Karefilakis CM, Tsartsalis AN, Milkas AN, Ganotakis ES. Acute rhabdomyolysis caused by Spirulina (Arthrospira platensis). Phytomedicine. 2008&semi;15(6-7):525-527.</li>
+				<li>Pedersen M. 1994. Nutritional Herbology. Warsaw, Indiana: Wendell W. Whitman Company: 161.</li>
+				<li>Puyfoulhoux G, Rouanet JM, Besan&#231;on P, Baroux B, Baccou JC, Caporiccio B. Iron availability from iron-fortified spirulina by an in vitro digestion/Caco-2 cell culture model. Journal of Agricultural and Food Chemistry 2001&semi;49(3):1625-1629.</li>
+				<li>Ronda SR, Lele SS. Culture conditions stimulating high &gamma; linoleic acid accumulation by Spirulina platensis. Brazilian Journal of Microbiology 2008&semi;39(4):693-697.</li>
+				<li>Vicat JP, Mbaigane JCD, Bellion Y. Contents of macromineral and trace elements in spirulina (Arthrospira platensis) from France, Chad, Togo, Niger, Mali, Burkina-Faso and Central African Republic. Comptes Rendus Biologies 2014&semi;337(1):44-52.</li>
+				<li>Yamani E, Kaba-Mebri J, Mouala C, Gresenquet G, Rey JL. Use of spirulina supplement for nutritional management of HIV-infected patients: study in Bangui, Central African Republic. Medecine Tropicale: Revue du Corps de Sant&#233; Colonial 2009&semi;69(1):66-70.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

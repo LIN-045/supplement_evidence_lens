@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=oral.health.sante.bucco.dentaire\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="8b1e0f40-e678-4190-90d6-bb8ffe8a167e"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'>  <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+    <h1>Oral Health Products</h1>
+
+    <p class="lightgreyBG">Help on accessing alternative formats, such as Portable Document Format (<abbr
+        title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr
+        title='PowerPoint'>PPT</abbr>) files, can be obtained in the <a
+        href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.</p>
+
+    <div class="icon">
+      <a href="dbImages/mono_oral-health-products_english.pdf" title="Monograph: Oral Health Care products (English)">
+        <img alt="Monograph: Oral Health Care products (English)" style="position:relative; top:-2px"
+          src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22" /> (PDF
+        Version&nbsp;-&nbsp;229&nbsp;K)</a>
+    </div>
+
+    <section aria-labelledby="date">
+      <h2 id="date">Date</h2>
+      <p>February 23, 2024</p>
+    </section>
+
+    <section aria-labelledby="foreword">
+      <h2 id="foreword">Foreword</h2>
+      <p>This monograph is intended to replace the existing Oral Health Products Monograph of August 26, 2022. This
+        monograph describes the requirements necessary to receive market authorization [i.e. a Drug Identification
+        Number
+        (DIN) or a Natural Product Number (NPN)], for oral health products. The monograph identifies the permitted
+        medicinal and non-medicinal ingredients, concentrations, indications, directions and conditions of use for these
+        products to be market authorized without the submission to Health Canada of additional evidence. It may also
+        contain the test methods recommended to be used to comply with the requirements of this monograph. Products
+        which
+        do not meet the criteria outlined in this document can apply for market authorization outside of the monograph
+        stream.</p>
+      <p>Applicants are reminded that oral health products, like other non-prescription drugs or natural health
+        products,
+        are subject to the <em>Food and Drug Regulations or the Natural Health Products Regulations</em> administered by
+        the
+        Natural and Non-prescription Health Products Directorate (NNHPD). This includes requirements related to
+        labelling,
+        manufacturing and product specifications. Additional information on labels, outside of those specified in the
+        monograph, such as additional directions for use and/or non-therapeutic claims are acceptable as long as they
+        meet
+        the <a
+          href="http://www.adstandards.com/en/clearance/cosmetics/Guidelines-for-the-Nonprescription-and-Cosmetic-Industry.pdf">Guidelines
+          for the Nonprescription and Cosmetic Industry Regarding Non-therapeutic Advertising and Labelling Claims</a>,
+        the <a
+          href="http://www.adstandards.com/en/clearance/ConsumerDrugs/Consumer-Advertising-Guidelines-for-Marketed-Health-Products-EN.pdf">Guidelines
+          for Consumer Advertising of Health products for Nonprescription drugs, Natural Health Products, Vaccines and
+          Medical Devices</a>, and are not false, misleading or counterintuitive to the use of the product.</p>
+
+      <p><strong>Notes:</strong></p>
+      <ul>
+        <li>Text in parentheses is additional optional information which can be included on the Product Licence
+          Application form and label at the applicant&rsquo;s discretion.</li>
+        <li>The solidus (/) indicates that the terms and/or the statements are synonymous. Either term or statement may
+          be
+          selected by the applicant.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="medicinalIngredient">
+      <h2 id="medicinalIngredient">Medicinal ingredient(s)</h2>
+      <p>Oral health products are classified as natural health products (NHP) if they contain an ingredient listed in
+        Table 1. Applicants seeking to obtain a NPN can access the appropriate forms and guidance at <a
+          href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html">https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html</a>.
+      </p>
+      <p>Oral health products are classified as non-prescription drugs (NPD) if they contain an ingredient from Table 2
+        at
+        a quantity listed. Applicants applying for a DIN can access the appropriate forms and templates at: <a
+          href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions.html">https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions.html</a>.
+      </p>
+
+
+
+      <table class="subject">
+        <caption>Table 1: <abbr title="Natural Health Product">NHP</abbr> medicinal ingredients
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2" class="alignCenter" scope="col">Proper Name<sup>1</sup></th>
+            <th rowspan="2" class="alignCenter" scope="col">Common Name<sup>1</sup></th>
+            <th class="alignCenter" scope="col">Source information<sup>1,2</sup></th>
+          </tr>
+          <tr>
+            <th class="alignCenter" scope="col">Source ingredient(s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Acidulated phosphate fluoride<sup>3</sup>
+            </td>
+            <td>
+              Acidulated phosphate fluoride
+            </td>
+            <td>
+              Acidulated phosphate fluoride
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Disodium phosphorofluoridate</li>
+                <li>Phosphorofluoridic acid, disodium salt</li>
+                <li>Sodium monofluorophosphate</li>
+              </ul>
+            </td>
+            <td>
+              
+                Sodium monofluorophosphate
+            </td>
+            <td>
+              Sodium monofluorophosphate
+            </td>
+          <tr>
+            <td>
+              Nitric acid potassium salt (1:1) 
+            </td>
+            <td>
+              Potassium nitrate
+            </td>
+            <td>
+              Potassium nitrate
+            </td>
+
+          </tr>
+          <tr>
+            <td>Sodium fluoride</td>
+            <td>Sodium fluoride</td>
+            <td>Sodium fluoride</td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>Stannous fluoride</li>
+                <li>Tin (II)-fluoride</li>
+                <li>Tin difluoride</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Stannous fluoride</li>
+                <li>Tin difluoride</li>
+                <li>Tin fluoride</li>
+              </ul>
+            </td>
+            <td>Stannous fluoride</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+      <p><sup>1</sup>At least one of the following references was consulted per proper name, common name, and source
+        information: RSC 2024; USP-NF 2023; Nikitakis and Lange 2016.</p>
+      <p><sup>2</sup>Ingredient must be pharmacopoeial grade (for a list of acceptable pharmacopoeial grades, see the
+        Quality of Natural Health Products Guide).</p>
+      <p><sup>3</sup>Acidulated phosphate fluoride is derived from sodium fluoride acidulated with a mixture of sodium
+        phosphate dibasic or monobasic and phosphoric acid to a level of 0.1 molar phosphate to yield a pH of 3.0 to 4.5
+        (US FDA 2023).</p>
+
+      
+
+      <table class="subject">
+        <caption>Table 2: NPD medicinal ingredients</caption>
+        <thead>
+          <tr>
+            <th rowspan="2" class="alignCenter" scope="col">Proper Name</th>
+            <th rowspan="2" class="alignCenter" scope="col">Common Name</th>
+            <th rowspan="2" class="alignCenter" scope="col">Quantity</th>
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              1-Hexadecylpyridinium chloride
+            </td>
+            <td>
+              Cetylpyridinium Chloride
+            </td>
+            <td>0.05 - 0.075%<br /></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+      <h2 id="routeOfAdministration">Route(s) of administration</h2>
+      <ul>
+        <li>Dental</li>
+        <li>Gingival</li>
+        <li>Periodontal</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+      <h2 id="dosageForm">Dosage form(s)</h2>
+
+      <p><strong><em>For Natural Health Products</em></strong></p>
+      <p>Acceptable dosage forms are as follows:</p>
+      <p>Dental:<br/>
+        Concentrate; Dental liquid, suspension; Dentifrice, gel; Dentifrice, paste; Gel; Mouthwash; Powder for solution;
+        Solution; Tablet, effervescent.</p>
+      <p>Gingival:<br/>
+        Concentrate; Dentifrice, gel; Dentifrice, paste; Gel; Gingival gel; Gingival solution; Mouthwash; Powder for
+        solution; Solution; Tablet, effervescent.</p>
+      <p>Periodontal:<br/>
+        Concentrate; Dental liquid, suspension; Dentifrice, gel; Dentifrice, paste; Gel; Gingival gel; Gingival
+        solution;
+        Mouthwash; Powder for solution; Solution; Tablet, effervescent.</p>
+
+      <p><strong><em>For Non-prescription drugs</em></strong></p>
+      <p>The only acceptable dosage forms for products containing Cetylpyridinium chloride are as follows: Mouthwash;
+        Solution.</p>
+
+      <p><strong>Notes:</strong></p>
+      <p>The above dosage forms correspond to the following product categories:</p>
+      <ul>
+        <li>Dentifrices: dentifrice, gel; dentifrice, paste</li>
+        <li>Preventive treatment gel: gel; gingival gel</li>
+        <li>Treatment rinse: dental liquid, suspension; gingival solution; solution</li>
+        <li>Concentrated treatment rinse: concentrate; gingival solution; solution; powder for solution; tablet,
+          effervescent</li>
+        <li>Mouthwash</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+      <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+      <h3>Self-Care Framework Category I Uses or Purposes:</h3>
+
+      <p><em>Products listed in Table 1, excluding Potassium nitrate</em></p>
+      <ul>
+        <li>Anti-cavity/Anti-caries (IOM 1997; Zimmerman 1992)</li>
+        <li>Prevents, fights and/or protects against cavities/caries (US FDA 2023; Sweetman 2017; Zimmerman 1992).</li>
+        <li>Reduces the incidence of cavities/caries (US FDA 2023; Sweetman 2017; Zimmerman 1992)</li>
+        <li>Helps prevent tooth decay (US FDA 2023; Sweetman 2017; Zimmerman 1992).</li>
+        <li>Effective fluoride protection (US FDA 2023).</li>
+        <li>Effective decay preventive fluoride (US FDA 2023).</li>
+        <li>Protects teeth from acid wear/erosion (Sweetman 2017; IOM 1997; Zimmerman 1992).</li>
+        <li>Helps delay/slow the tooth decay process at the earliest stage before it can become a cavity (IOM 1997).
+        </li>
+        <li>Penetrates tooth enamel to help rebuild weak spots (Sweetman 2017; Zimmerman 1992).</li>
+        <li>Helps remineralize tooth enamel (Sweetman 2017; Zimmerman 1992).</li>
+      </ul>
+
+      <p><em>Products containing Potassium nitrate</em></p>
+      <ul>
+        <li>Helps reduce (painful) sensitivity of the teeth (due to cold/heat/acids/sweets/contact) (US FDA 2022;
+          Silverman et al. 1996; Nagata et al. 1994).</li>
+        <li>Builds protection/Protects from (painful) sensitivity of the teeth (due to cold/heat/acids/sweets/contact)
+          (US
+          FDA 2022; Palé et al. 2013).</li>
+        <li>(Builds)(Effective) Protection against (painful) sensitivity of the teeth (due to
+          cold/heat/acids/sweets/contact) (US FDA 2022; Palé et al. 2013).</li>
+        <li>Shields/Soothes dental nerves for lasting sensitivity relief when used regularly (US FDA 2022; Silverman et
+          al. 1996; Nagata et al. 1994;).</li>
+      </ul>
+
+      <p><em>Products containing cetylpyridinium chloride</em></p>
+      <ul>
+        <li>Kills germs that cause bad breath.</li>
+        <li>Helps prevent/reduce plaque and gingivitis.</li>
+      </ul>
+
+    </section>
+
+    <section aria-labelledby="dose">
+      <h2 id="dose">Dose(s)</h2>
+
+      <h3>Subpopulation(s)</h3>
+      <p><em>For dentifrice products that do not contain Potassium nitrate</em></p>
+      <p>Children 2 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older.</p>
+      <p><em>For products that do not contain potassium nitrate in the following dosage forms: Preventive treatment gel;
+          treatment rinse; concentrated treatment rinse, mouthwash (rinse)</em></p>
+      <p>Children 6 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older.</p>
+      <p><em>For products containing Potassium nitrate</em></p>
+      <p>Adolescents 12 to 17 years, Adults 18 years and older.</p>
+
+      <h3>Quantity(ies)</h3>
+
+      <table class="subject">
+        <caption>
+          Table 3: Dose information for dentifrice (dentifrice, gel; dentifrice, paste)
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Medicinal ingredient</th>
+            <th scope="col">Quantity<br />
+              (% w/w)</th>
+            <th scope="col">Theoretical<br />
+              Total Fluoride<br />
+              (mg/kg)</th>
+            <th scope="col">Available Fluoride Ion<br />
+              (mg/kg)</th>
+            <th scope="col">Frequency</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Potassium nitrate</td>
+            <td>5</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>minimum 2 times a day</td>
+          </tr>
+          <tr>
+            <td>Sodium fluoride</td>
+            <td>0.188&nbsp;-&nbsp;0.254</td>
+            <td>850&nbsp;-&nbsp;1150</td>
+            <td>&ge; 650</td>
+            <td>minimum 2 times a day</td>
+          </tr>
+          <tr>
+            <td>Sodium monofluorophosphate</td>
+            <td>0.654&nbsp;-&nbsp;0.884</td>
+            <td>850&nbsp;-&nbsp;1150</td>
+            <td>&ge; 800 PO<sub>3</sub>F<sup>2-</sup> and F<sup>-</sup> combined</td>
+            <td>minimum 2 times a day</td>
+          </tr>
+          <tr>
+            <td>Stannous fluoride</td>
+            <td>0.351&nbsp;-&nbsp;0.474</td>
+            <td>850&nbsp;-&nbsp;1150</td>
+            <td>&ge; 700 (for products containing abrasives other than calcium pyrophosphate)<br /> &ge; 600 (for
+              products
+              containing the abrasive silica)<br /> &ge; 290 (for products containing the abrasive calcium
+              pyrophosphate)
+            </td>
+            <td>minimum 2 times a day</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br /><br />
+
+      <table class="subject">
+        <caption>
+          Table 4: Dose information for preventive treatment gel (gel; gingival gel), treatment rinse (dental liquid,
+          suspension; gingival solution; solution), concentrated treatment rinse (concentrate; effervescent tablet;
+          gingival solution; solution; powder for solution) and mouthwash
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Medicinal ingredient</th>
+            <th scope="col">Quantity(% w/w)</th>
+            <th scope="col">Frequency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Acidulated phosphate fluoride</td>
+            <td>0.01</td>
+            <td>2 times a day</td>
+          </tr>
+          <tr>
+            <td>0.02</td>
+            <td>1 time a day</td>
+          </tr>
+
+          <tr>
+            <td>Potassium nitrate</td>
+            <td>3</td>
+            <td>2 times a day</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Sodium Fluoride</td>
+            <td>0.02</td>
+            <td>2 times a day</td>
+          </tr>
+          <tr>
+            <td>0.05</td>
+            <td>1 time a day</td>
+          </tr>
+          <tr>
+            <td>0.2<sup>1</sup></td>
+            <td>1 time a week</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Sodium fluoride (as concentrated treatment rinse)<sup>2</sup></td>
+            <td>Diluted in water to 0.02</td>
+            <td>2 times a day</td>
+          </tr>
+          <tr>
+            <td>Diluted in water to 0.05</td>
+            <td>1 time a day</td>
+          </tr>
+          <tr>
+            <td>Diluted in water to 0.2</td>
+            <td>1 time a week</td>
+          </tr>
+          <tr>
+            <td>Stannous fluoride (in preventive treatment gel only)</td>
+            <td>0.4</td>
+            <td>1 time a day</td>
+          </tr>
+
+          <tr>
+            <td>Stannous fluoride (as concentrated treatment rinse)<sup>2</sup></td>
+            <td>diluted in water to 0.1</td>
+            <td>1 time a day</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p><sup>1</sup>US FDA 2023, Sharma et al. 2012, Sweetman 2017, Gillam 1996.</p>
+
+      <p><sup>2</sup>For concentrated treatment rinse products requiring dilution: The concentration of the product
+        before
+        dilution, the final concentration of the rinse once diluted and appropriate directions for use for each dilution
+        explaining how to dilute the product must be included on the Product Licence Application form and label. The
+        final
+        concentration of the rinse and the associated frequency of use must meet the information listed in Table 4.</p>
+
+
+      <p><strong>End-of shelf life minimal Fluoride Ion (mg/kg= ppm)</strong>
+      <ul>
+        <li>Sodium fluoride: &ge; 403 mg/kg</li>
+        <li>Sodium monofluorophosphate : &ge; 600 mg/kg</li>
+        <li>Stannous fluoride: &ge; 650 mg/kg for products containing abrasives other than calcium pyrophosphate; &ge;
+          108
+          mg/kg for products containing the abrasive calcium pyrophosphate</li>
+      </ul>
+
+      <p><strong>Note:</strong> End of Shelf life minimal fluoride Ion values in mg/kg can be included as
+        additional information on the label but are not required on the PLA. These values are intended for determining
+        expiration dating and are not to be used for determining safety and efficacy</p>
+
+      <h3>Permitted combinations</h3>
+      <p>Potassium nitrate can be combined with any one of the ingredient listed in Table 1. Any other combination of
+        medicinal ingredients should be assessed outside of the compendial stream.</p>
+
+
+      <h3>Directions for use</h3>
+
+      <p><em>For all products, the following statement must be made</em></p>
+      <ul>
+        <li>Do not swallow.</li>
+      </ul>
+
+      <p><em>For all products, the following statement may be made</em></p>
+      <ul>
+        <li>Should be used as/Use as part of an oral health program that includes regular flossing and dental check-ups
+          (CDA 2018).</li>
+      </ul>
+
+      <p><em>For dentifrice products, the following statement must be made</em></p>
+      <ul>
+        <li>Brush teeth thoroughly (for at least 1 minute), preferably after each meal, or as directed by a
+          dentist/health
+          care practitioner/health care provider/health care professional/doctor/physician (US FDA 2023).</li>
+      </ul>
+
+      <p><em>For dentifrice products that do not contain Potassium nitrate, the following statement must be made when the
+          subpopulation includes children under 6 years</em></p>
+      <ul>
+        <li>Children under 6 years of age should use only a pea-sized amount and be supervised (to brush properly and to
+          not swallow) (CDA 2018).</li>
+      </ul>
+
+      <p><em>For dentifrice products that do not contain Potassium nitrate, the following statement may be made when the
+          subpopulation includes children</em></p>
+      <ul>
+        <li>Ask a dentist/health care practitioner/health care provider/health care professional/doctor/physician before
+          using in children under 2 years of age.</li>
+      </ul>
+
+      <p><em>For preventive treatment gels, treatment rinses, concentrated treatment rinses, and mouthwash (rinse)
+          products, the following statements must be made</em></p>
+      <ul>
+        <li>Use after brushing (teeth) with toothpaste (US FDA 2023; Krinsky 2017).</li>
+        <li>Do not eat, drink or rinse with water for 30 minutes after use (US FDA 2023; Krinsky 2017).</li>
+      </ul>
+
+      <p><em>For preventive treatment gels, treatment rinses, concentrated treatment rinses, and mouthwash (rinse)
+          products, the following statement must be made when the subpopulation includes children under 12 years</em></p>
+      <ul>
+        <li>Instruct children under 12 years of age (in the proper use of the product and) in good brushing and rinsing
+          habits to minimize swallowing (US FDA 2023; Krinsky 2017).</li>
+      </ul>
+
+      <p><em>For daily treatment rinses, concentrated treatment rinses, and mouthwash (rinse) products containing 0.02%
+          and
+          0.05% sodium fluoride, the following statement may be made when the subpopulation includes children</em></p>
+      <ul>
+        <li>Ask a dentist/health care practitioner/health care provider/health care professional/doctor/physician before
+          using in children under 6 years of age (US FDA 2023; Krinsky 2017).</li>
+      </ul>
+
+      <p><em>For weekly rinses with 0.2% sodium fluoride, the following statements must be made when the subpopulation
+          includes children</em></p>
+      <ul>
+        <li>Not recommended for use in children under 6 years of age (Sweetman 2017).</li>
+      </ul>
+
+      <p><em>For preventive treatment gel products, the following statement must be made</em></p>
+      <ul>
+        <li>Apply the gel to teeth and brush thoroughly. Allow the gel to remain on the teeth for 1 minute and then spit
+          out (US FDA 2023; Krinsky 2017).</li>
+      </ul>
+
+      <p><em>For treatment rinses, concentrated treatment rinses (after proper dilution), and mouthwash (rinse) products
+          excluding Cetylpyridinium chloride, the following statement must be made</em></p>
+      <ul>
+        <li>Swish approximately 10 mL of rinse vigorously around and between the teeth for 1 minute and then spit out
+          (US
+          FDA 2023; Krinsky 2017).</li>
+      </ul>
+
+      <p><em>For concentrated treatment rinse products in a solution, effervescent tablet, or powder dosage form, the
+          following statements must be made</em></p>
+      <p><i>Sodium fluoride</i></p>
+      <p>Do not use before diluting with water and until the tablet/powder has dissolved completely/the solution has
+        been
+        fully mixed. Dilute the product to obtain a final concentration of 0.02% according to the following instructions
+        and rinse mouth twice a day. [Insert instructions]. Use immediately after preparing the rinse (US FDA 2023).</p>
+      <p>And/or</p>
+      <p>Do not use before diluting with water and until tablet/powder has dissolved completely/the solution has been
+        fully mixed. Dilute the product to obtain a final concentration of 0.05% according to the following instructions
+        and rinse mouth once a day. [Insert instructions]. Use immediately after preparing the rinse (US FDA 2023).</p>
+      <p>And/or</p>
+      <p>Do not use before diluting with water and until tablet/powder has dissolved completely/the solution has been
+        fully mixed. Dilute the product to obtain a final concentration of 0.2% according to the following instructions
+        and rinse mouth once a week. [Insert instructions]. Use immediately after preparing the rinse (US FDA 2023).</p>
+      <p><i>Stannous fluoride</i></p>
+      <p>Do not use before diluting with water and until tablet/powder has dissolved completely/the solution has been
+        fully mixed. Dilute the product to obtain a final concentration of 0.1% according to the following instructions
+        and rinse mouth once a day. [Insert instructions]. Use immediately after preparing the rinse (US FDA 2023).</p>
+
+      <p><strong>Note:</strong></p>
+      <p><strong>Instructions: </strong>Additional directions for use explaining appropriate dilution of the product
+        must
+        be included to the Directions for use.</p>
+
+      <p><em>For products containing potassium nitrate, the following statement must be made when the subpopulation
+          includes adolescents</em></p>
+      <ul>
+        <li>Not recommended for children under 12 years of age (US FDA 2023).</li>
+      </ul>
+
+      <p><em>For products containing Cetylpyridinium chloride, the following statements must be made</em></p>
+      <ul>
+        <li>Use after (your normal) brushing and flossing (routine). Rinse toothpaste from mouth prior to use.</li>
+        <li>Rinse/Swish/Gargle around the mouth twice a day for 30 seconds with 20 mL (4 teaspoonfuls) and spit out.
+        </li>
+        <li>Do not eat or drink anything for 30 minutes after use.</li>
+      </ul>
+
+      <p><em>For products containing Cetylpyridinium chloride, the following statements may be made:</em></p>
+      <ul>
+        <li>(This product is not intended to replace brushing or flossing).</li>
+      </ul>
+
+      <h3>Duration(s) of use</h3>
+      <p>No statement is required.</p>
+
+    </section>
+
+    <section aria-labelledby="riskInformation">
+      <h2 id="riskInformation">Risk information</h2>
+
+      <h3>Caution(s) and warning(s)</h3>
+
+      <p><em>All products</em></p>
+      <ul>
+        <li>Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away.
+        </li>
+      </ul>
+
+      <p><em>Preventative treatment gels products containing stannous fluoride</em></p>
+      <ul>
+        <li>When using this product surface staining of the teeth may occur. Adequate brushing may prevent these stains
+          which are harmless and temporary and may be removed by a dentist/dental care practitioner (US FDA 2023).</li>
+      </ul>
+
+      <p><em>Products containing potassium nitrate</em></p>
+      <ul>
+        <li>Stop use and ask a dentist/dental care practitioner/health care practitioner/health care provider/health
+          care
+          professional/doctor/physician if symptoms persist or worsen (US FDA 2023)</li>
+      </ul>
+
+      <p><em>Products containing cetylpyridinium chloride</em></p>
+      <ul>
+        <li>When using this product surface staining of the teeth may occur. Adequate brushing may prevent these stains
+          which are harmless and temporary and may be removed by a dentist/dental care practitioner.</li>
+      </ul>
+
+      <p><em>Products containing more than the equivalent of 120 mg of fluoride ion, except those in toothpaste form
+          (includes dentifrice paste and dentifrice gel)</em></p>
+      <ul>
+        <li>Keep out of reach of children. This product contains enough fluoride to seriously harm a child. (Note: These
+          cautionary statements shall be preceded by a prominently displayed symbol that is octagonal in shape,
+          conspicuous in colour and on a background of a contrasting colour. If the product is recommended solely for
+          children, all package sizes must be packaged in a child-resistant package (CRP). If the product is not
+          recommended solely for children, at least one of the sizes of packages available for sale must be packaged in
+          CRP and all other package sizes must carry a statement that the NHP is available in a CRP, as per Section 97
+          of
+          the Natural Health Product Regulations, citing Sections C.01.029, C.01.031 and C.01.031.2 (1) of the Food and
+          Drug Regulations (JC 2023)).</li>
+      </ul>
+
+
+      <h3>Contraindication(s)</h3>
+
+      <p><em>Products containing cetylpyridinium chloride</em></p>
+      <ul>
+        <li>Do not use if you have painful or swollen gums, pus from the gum line, loose teeth or increased spacing
+          between the teeth. See your dentist immediately, as these may be signs of periodontitis, a serious gum
+          disease.
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+      <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+      <p>Ingredients must be chosen from the current <a
+          href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">Natural Health Products Ingredients
+          Database</a> (NHPID) and must meet the limitations outlined in that database, the Food and Drug Regulations
+        (FDR), and the current <a
+          href="https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html">Cosmetic
+          Ingredient Hotlist</a>, when relevant.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+      <h2 id="storageConditions"> Storage conditions</h2>
+      <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+          Regulations</em> or the <em>Food and Drug Regulations</em>.</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+      <h2 id="specifications">Specifications</h2>
+
+      <p>This monograph describes those requirements that are specific to this class of non-prescription drugs and to
+        NHPs. Any change to the manufacturing process that impacts the safety and efficacy of the ingredients, such as
+        the
+        use of novel technology (e.g. nanotechnology), requires supporting data and will be reviewed outside the
+        monograph.</p>
+
+      <p>For products containing Table 1 NHP medicinal ingredients only:</p>
+      <p>The finished product specifications must be established in accordance with the requirements described in the
+        NNHPD&nbsp;<a
+          href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html">Quality
+          of Natural Health Products Guide</a>. The medicinal ingredient must comply with the requirements outlined in
+        the
+        <a href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">NHPID</a>.
+      </p>
+      <p>The medicinal ingredient(s) must either comply with the specifications outlined in the monographs published in
+        the British(BP), European (Ph. Eur.) or United States(USP) pharmacopoeias; or, be cited in an approved NHP
+        Master
+        File, authorized by a letter of access issued to the applicant by the NHP Master File's registered owner.</p>
+      <p>Diethylene glycol (DEG) is not acceptable as a non-medicinal ingredient. Product licence applicants must have a
+        copy of a Certificate of Analysis or any other equivalent document confirming the absence of DEG in the finished
+        product on file. This information is not to be submitted with the compendial Product Licence Application,
+        although
+        it may be requested at the NNHPD's discretion.</p>
+      <p>Products containing glycerin as a non-medicinal ingredient must meet the specifications as outlined in the
+        United
+        States Pharmacopoeia.</p>
+
+      <p>For products containing Table 2 NPD medicinal ingredient:</p>
+      <p>Requirements described in the Regulations to the <em>Food and Drugs Act</em> must be met.</p>
+
+      <p>For products containing Table 1 NHP medicinal ingredients only:</p>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+      <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+      <p><strong>Consult the Guidance Document, <a
+            href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling
+            of Natural Health Products</a> for more details.</strong></p>
+
+      <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ORAL-HEALTH_NHP_E.gif" alt="Product Facts Table"
+          style="width:700px" /></p>
+      <p><sup>1</sup>This section can be removed from the table if the product contains no allergen or aspartame.</p>
+      <p><sup>2</sup>For products containing more than the equivalent of 120 mg of fluoride ion, except those in
+        toothpaste form (includes dentifrice paste and dentifrice gel).</p>
+
+      <p>For products containing Table 2 NPD medicinal ingredient:</p>
+    </section>
+
+    <section aria-labelledby="drugFactsTable">
+      <h2 id="drugFactsTable">DRUG FACTS TABLE (Format Optional for Self-Care Category I)</h2>
+
+      <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ORAL-HEALTH_NPD_E.gif" alt="Product Facts Table"
+          style="width:700px" /></p>
+    </section>
+
+    <section aria-labelledby="references">
+      <h2 id="references">References</h2>
+
+      <ul>
+        <li>CDA 2018: Canadian Dental Association. 5 Steps to Good Oral Health. Ottawa (ON): Canadian Dental Association.
+          https://www.cda-adc.ca/en/oral_health/cfyt/good_for_life/</li>
+        <li>Gillam DG, Bulman JS, Jackson RJ, Newman HN. Efficacy of a potassium nitrate mouthwash in alleviating
+          cervical
+          dentine sensitivity. Journal of Clinical Periodontology 1996; 23:993-997.</li>
+        <li>Nikitakis J, Lange B, editors. International Cosmetic Ingredient Dictionary and Handbook. 16th edition.
+          Washington (DC): Cosmetic, Toiletry and Fragrance Association; 2016</li>
+        <li>IOM 1997: Institute of Medicine. Standing Committee on the Scientific Evaluation of Dietary Reference
+          Intakes,
+          Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Calcium, Phosphorus, Magnesium,
+          Vitamin D, and Fluoride. Washington (DC): National Academy Press;1997.</li>
+        <li>JC 2023: Department of Justice Canada. Food and Drug Regulations. Sections C.01.029, C.01.031 and C.01.031.2
+          (1).
+          Cautionary Statements and Child Resistant Packages. Ottawa (ON): Department of Justice Canada. [Regulations
+          are
+          current to 2023-11-27; Last amended on 2023-11-24]. [Accessed 2024 January 16]. Available from:
+          http://laws-lois.justice.gc.ca/eng/regulations/SOR-2003-196/</li>
+        <li>Nagata T, Ishida H, Shinohara H, Nishikawa S, Kasahara S, Wakano Y, Daigen S, Troullos ES. Clinical
+          evaluation
+          of
+          potassium nitrate dentifrice for the treatment of dentinal hypersensitivity. Journal of Clinical
+          Periodontology
+          1994;21(3):217-221.</li>
+        <li>Pal&eacute; M, Mayoral JR, Llopis J, Vall&egrave;s M, Baislio J, Roig M. Evaluation of the effectiveness of
+          an
+          in-office bleaching system and the effect of potassium nitrate as a desensitizing agent. Odontology
+          2013;102:203-210.</li>
+        <li>Sharma S, Shetty NJ, Uppoor A. Evaluation of the clinical efficacy of potassium nitrate desensitizing
+          mouthwash
+          and a toothpaste in the treatment of dentinal hypersensitivity. Journal of Clinical and Experimental Dentistry
+          2012;4(1):e28-e33.</li>
+        <li>Silverman G, Berman E, Hanna CB, Salvato A, Fratarcangerlo P, Bartizek RD, Bollmer BW, Campbell SL, Lanzalaco
+          AC,
+          Mackay BJ, McClanahan SF, Perlich MA, Shaffer JB. Assessing the efficacy of three dentifrices in the treatment
+          of
+          dentinal hypersensitivity. The Journal of the American Dental Association 1996;127(2):191-201.</li>
+        <li>Krinsky DL, Ferreri SP, Hemstreet B, Hume AL, Newton GD, Rollins CJ, Tietze KJ, Handbook of Nonprescription
+          Drugs: An interactive approach for Self-Care, 19th edition. Washington (DC): American Pharmaceutical
+          Association;
+          2017 Prevention of hygiene-related oral disorders, Melody K &ndash; Chapter 31.</li>
+        <li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 January 16]. Available from:
+          https://merckindex.rsc.org/</li>
+        <li>Sweetman SC, editor. Martindale: The Complete Drug Reference, 39th edition. Grayslake (IL): Pharmaceutical
+          Press;
+          2017.</li>
+        <li>US FDA 2022: United States Food and Drug Administration. Oral Health Care Drug Products for Over-the-Counter
+          Human Use; United States Department of Health and Human Services, U.S. food and Drug Administration. [Accessed
+          2024 January 16]. Available from:
+          https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2022-11/OTC%20Monograph_M022-Oral%20Healthcare%20Products%20for%20OTC%20human%20Use%2010.14.2022.pdf
+        </li>
+        <li>US FDA 2023: United States Food and Drug Administration. Anticaries Drug Products for Over-the-Counter Human
+          Use;
+          United States Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2024
+          January
+          16]. Available from:
+          https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2023-05/OTC%20Monograph%20M021-Anticaries%20Drug%20Products%20for%20OTC%20Human%20Use%2005.02.2023.pdf
+        </li>
+        <li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): United States
+          Pharmacopeial
+          Convention, Inc.; (2023)</li>
+        <li>Zimmerman DR. Zimmerman's Complete Guide to Nonprescription Drugs, 2nd edition. Detroit (MI): Gale Research
+          Inc.;
+          1992.</li>
+      </ul>
+    </section>
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

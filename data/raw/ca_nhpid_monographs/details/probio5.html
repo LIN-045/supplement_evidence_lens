@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=probio5\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="56e7ab68-0d70-4524-b460-7f7664084832"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>PROBIOTICS</h1>
+	<div class="icon">
+		<a href="dbImages/mono_probiotics_english.pdf" title="Probiotics"><img alt="Monograph: Probiotics" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 224 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>By submitting a PLA referencing this monograph, the applicant is attesting that the product will comply fully with the recommended conditions of use and specifications section outlined in this monograph. These include species identification, strain characterization, quantification in colony forming units (CFU), and a complete assessment of virulence properties (including but not limited to: antibiotic resistance profile, virulence factor production, and toxigenic activity).</li>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+			<li>Any non-viable form of the medicinal ingredients found in Tables 1,2 and 3 (e.g. heat-killed, thermostabilised) is excluded from this monograph and the compendial application process.</li>
+			<li>All of the microorganisms found in Appendix I (Table 6) are excluded from this monograph and the compendial application process.</li>
+		</ul>
+	</p>
+	<p><strong>Rules when this monograph is combined with other monographs (Class II and III applications):</strong> These restrictions do not apply if the probiotics are microencapsulated (i.e., Capsule, enteric-coated pellets and Tablet, enteric-coated granules), and provided that the microencapsulation is impermeable when the product contains prebiotics or resistant to enzymatic degradation when the product contains enzymes:
+		<ul>
+			<li>Dry probiotic preparations can be combined with other monographs at Class II when the finished product remains a dry formulation, except when the product contains enzymes.</li>
+			<li>Any preparation type other than dry (e.g., liquid) or any combination of probiotics with enzymes can only be submitted as a Class II application if no probiotic claim is made and the brand name does not refer to probiotics as the efficacy of probiotics may be affected. If a probiotic claim is associated with these products, a Class III application should be submitted with supporting evidence.</li>
+			<li>Liquid formulations containing only probiotic and prebiotic ingredients can be approved at Class II provided prebiotic claims are not made for the product and the brand name does not refer to prebiotics. If a prebiotic claim or brand name is associated with these products, a Class III application should be submitted with supporting evidence. Prebiotics are commonly found within products containing probiotics because they help maintain probiotic viability&semi; however, prebiotics can also be degraded by the probiotics themselves prior to ingestion (reducing prebiotic efficacy).</li>
+			<li>Liquid formulations containing probiotics, prebiotics, and other ingredients can only be submitted as a Class II application if no prebiotic or probiotic claims are made and the brand name does not refer to probiotics or prebiotics. If a probiotic or prebiotic claim or brand name is associated with these products, a Class III application should be submitted with supporting evidence. Probiotic viability can be readily impacted within a liquid formulation by other ingredients (reducing probiotic efficacy).</li>
+		</ul>
+	</p>
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>April 24, 2026</p>
+	</section>
+	
+	<section aria-labelledby="properNameCommonNameSourceInformationStrains">
+		<h2 id="properNameCommonNameSourceInformationStrains">Proper name(s), Common name(s), Source information, Strain(s)</h2>
+			<p><strong>Note</strong><br/>Refer to <a href="#appendixI" style="text-decoration: none;">Appendix I</a>, Table 6 for medicinal ingredients that are excluded from this monograph.</p>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information, Strain(s) - BACTERIA</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" >Proper name(s)</th>
+						<th rowspan="2" >Common name(s)</th>
+						<th colspan="2">Source Information<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+					</tr>
+					<tr>
+						<th>Part(s)</th>
+						<th>Strain(s)<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Bifidobacterium adolescentis</em></td>
+						<td><em>Bifidobacterium adolescentis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>
+					</tr>				
+					<tr>
+						<td><em>Bifidobacterium animalis</em> subsp. <em> animalis </em></td>
+						<td><em>Bifidobacterium animalis</em> subsp. <em> animalis </em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Bifidobacterium animalis</em> subsp. <em>lactis</em></td>
+						<td><em>Bifidobacterium animalis</em> subsp. <em>lactis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Bifidobacterium bifidum</em></td>
+						<td><em>Bifidobacterium bifidum</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Bifidobacterium breve</em></td>
+						<td><em>Bifidobacterium breve</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>										
+					<tr>
+						<td><em>Bifidobacterium longum</em> subsp. <em>infantis</em></td>
+						<td><em>Bifidobacterium longum</em> subsp. <em>infantis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Bifidobacterium longum</em> subsp. <em>longum</em><sup><a href="#ref1-3" style="text-decoration: none;">3</a></sup></td>
+						<td><em>Bifidobacterium longum</em> subsp. <em>longum</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Bifidobacterium longum</em> subsp. <em>suis</em></td>
+						<td><em>Bifidobacterium longum</em> subsp. <em>suis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Companilactobacillus farciminis</em> (Formerly <em>Lactobacillus farciminis</em>)</td>
+						<td><em>Companilactobacillus farciminis</em> (Formerly <em>Lactobacillus farciminis</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>				
+					<tr>
+						<td><em>Fructilactobacillus sanfranciscensis</em> (Formerly <em>Lactobacillus sanfranciscensis</em>)</td>
+						<td><em>Fructilactobacillus sanfranciscensis</em> (Formerly <em>Lactobacillus sanfranciscensis</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lacticaseibacillus casei</em> (Formerly <em>Lactobacillus casei</em>)</td>
+						<td><em>Lacticaseibacillus casei</em> (Formerly <em>Lactobacillus casei</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lacticaseibacillus paracasei</em> (Formerly <em>Lactobacillus paracasei</em>)</td>
+						<td><em>Lacticaseibacillus paracasei</em> (Formerly <em>Lactobacillus paracasei</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lacticaseibacillus rhamnosus</em> (Formerly <em>Lactobacillus rhamnosus</em>)</td>
+						<td><em>Lacticaseibacillus rhamnosus</em> (Formerly <em>Lactobacillus rhamnosus</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactiplantibacillus paraplantarum</em> (Formerly <em>Lactobacillus paraplantarum</em>)</td>
+						<td><em>Lactiplantibacillus paraplantarum</em> (Formerly <em>Lactobacillus paraplantarum</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactiplantibacillus plantarum</em> (Formerly <em>Lactobacillus plantarum</em>)</td>
+						<td><em>Lactiplantibacillus plantarum</em> (Formerly <em>Lactobacillus plantarum</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus acidophilus</em></td>
+						<td><em>Lactobacillus acidophilus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>					
+					<tr>
+						<td><em>Lactobacillus amylolyticus</em></td>
+						<td><em>Lactobacillus amylolyticus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus amylovorus</em></td>
+						<td><em>Lactobacillus amylovorus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>				
+					<tr>
+						<td><em>Lactobacillus crispatus</em><sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></td>
+						<td><em>Lactobacillus crispatus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>				
+					<tr>
+						<td><em>Lactobacillus delbrueckii</em></td>
+						<td><em>Lactobacillus delbrueckii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus delbrueckii</em> subsp. <em>bulgaricus</em></td>
+						<td><em>Lactobacillus delbrueckii</em> subsp. <em>bulgaricus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus delbrueckii</em> subsp. <em>delbrueckii</em></td>
+						<td><em>Lactobacillus delbrueckii</em> subsp. <em>delbrueckii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus gallinarum</em><sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></td>
+						<td><em>Lactobacillus gallinarum</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus gasseri</em></td>
+						<td><em>Lactobacillus gasseri</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus helveticus</em></td>
+						<td><em>Lactobacillus helveticus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus jensenii</em></td>
+						<td><em>Lactobacillus jensenii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>
+					</tr>
+					<tr>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactobacillus kefiranofaciens</em></td>
+						<td><em>Lactobacillus kefiranofaciens</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lactococcus lactis</em></td>
+						<td><em>Lactococcus lactis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Latilactobacillus curvatus</em> (Formerly <em>Lactobacillus curvatus</em>)</td>
+						<td><em>Latilactobacillus curvatus</em> (Formerly <em>Lactobacillus curvatus</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lentilactobacillus buchneri</em> (Formerly <em>Lactobacillus buchneri</em>)</td>
+						<td><em>Lentilactobacillus buchneri</em> (Formerly <em>Lactobacillus buchneri</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lentilactobacillus hilgardii</em> (Formerly <em>Lactobacillus hilgardii</em>)</td>
+						<td><em>Lentilactobacillus hilgardii</em> (Formerly <em>Lactobacillus hilgardii</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Lentilactobacillus kefiri</em> (Formerly <em>Lactobacillus kefiri</em>)</td>
+						<td><em>Lentilactobacillus kefiri</em> (Formerly <em>Lactobacillus kefiri</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Leuconostoc citreum</em></td>
+						<td><em>Leuconostoc citreum</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Leuconostoc lactis</em></td>
+						<td><em>Leuconostoc lactis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Leuconostoc mesenteroides</em></td>
+						<td><em>Leuconostoc mesenteroides</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Leuconostoc pseudomesenteroides</em></td>
+						<td><em>Leuconostoc pseudomesenteroides</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Levilactobacillus brevis</em> (Formerly <em>Lactobacillus brevis</em>)</td>
+						<td><em>Levilactobacillus brevis</em> (Formerly <em>Lactobacillus brevis</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Ligilactobacillus salivarius</em> (Formerly <em>Lactobacillus salivarius</em>)</td>
+						<td><em>Ligilactobacillus salivarius</em> (Formerly <em>Lactobacillus salivarius</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Limosilactobacillus fermentum</em> (Formerly <em>Lactobacillus fermentum</em>)</td>
+						<td><em>Limosilactobacillus fermentum</em> (Formerly <em>Lactobacillus fermentum</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Limosilactobacillus mucosae</em> (Formerly <em>Lactobacillus mucosae</em>)</td>
+						<td><em>Limosilactobacillus mucosae</em> (Formerly <em>Lactobacillus mucosae</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Limosilactobacillus panis</em> (Formerly <em>Lactobacillus panis</em>)</td>
+						<td><em>Limosilactobacillus panis</em> (Formerly <em>Lactobacillus panis</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Limosilactobacillus pontis</em> (Formerly <em>Lactobacillus pontis</em>)</td>
+						<td><em>Limosilactobacillus pontis</em> (Formerly <em>Lactobacillus pontis</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Limosilactobacillus reuteri</em> (Formerly <em>Lactobacillus reuteri</em>)</td>
+						<td><em>Limosilactobacillus reuteri</em> (Formerly <em>Lactobacillus reuteri</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Loigolactobacillus coryniformis</em> (Formerly <em>Lactobacillus coryniformis</em>)</td>
+						<td><em>Loigolactobacillus coryniformis</em> (Formerly <em>Lactobacillus coryniformis</em>)</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Oenococcus oeni</em></td>
+						<td><em>Oenococcus oeni</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Pediococcus acidilactici</em></td>
+						<td><em>Pediococcus acidilactici</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Pediococcus pentosaceus</em></td>
+						<td><em>Pediococcus pentosaceus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Propionibacterium acidipropionici</em></td>
+						<td><em>Propionibacterium acidipropionici</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Propionibacterium freudenreichii</em></td>
+						<td><em>Propionibacterium freudenreichii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Propionibacterium freudenreichii</em> subsp. <em>shermanii</em></td>
+						<td><em>Propionibacterium freudenreichii</em> subsp. <em>shermanii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>			
+				</tbody>
+			</table>
+			<p>
+				<sup id="ref1-1">1</sup>The source material should be the same as the proper name.<br/>
+				<sup id="ref1-2">2</sup>The PLA and label must identify the strain designation as the source material for each microorganism (e.g. Lactobacillus acidophilus ABC123 where "ABC123" is the strain designation).<br/>
+				<sup id="ref1-3">3</sup><em>Bifidobacterium longum</em> is an acceptable synonym for <em>Bifidobacterium longum</em> subsp. <em>longum</em> and the two terms can be used interchangeably on the label.<br/>
+				<sup id="ref1-4">4</sup>For "source of probiotics" claim only.<br/>
+				References: Zheng et al. 2020&semi; JCICSB 2008&semi; Mattarelli et al. 2008&semi; Masco et al. 2004&semi; Roos et al. 2000&semi; Validation List No. 68 1998&semi; Curk et al. 1996&semi; Wiese et al. 1996&semi; Dicks et al. 1995&semi; Vogel et al. 1994&semi; Fujisawa et al. 1992&semi; Howey et al. 1990&semi; Collins et al. 1989&semi; Farrow et al. 1989&semi; Fujisawa et al. 1988&semi; Validation List no. 20, 1985&semi; Validation List no. 16, 1984b&semi; Validation List no. 11, 1983&semi; Validation List No. 8, 1982&semi; Nakamura 1981&semi; Johnson et al. 1980&semi; Skerman et al. 1980&semi; Validation List No. 4 1980&semi; Beijerinck 1901.
+			</p>
+
+			<table id="ref2" class="subject">
+				<caption>Table 2. Proper name(s), Common name(s), Source information, Strain(s) - BACTERIA and FUNGI </caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information<sup><a href="#ref2-1" style="text-decoration: none;">1</a></sup></th>
+					</tr>
+					<tr>
+						<th>Part(s)</th>
+						<th>Strain(s)<sup><a href="#ref2-2" style="text-decoration: none;">2</a></sup></th>					
+					</tr>				
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Lacticaseibacillus rhamnosus</em></td>
+						<td><em>Lacticaseibacillus rhamnosus</em></td>
+						<td>Whole cell</td>
+						<td>GG</td>
+					</tr>
+					<tr>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td>Whole cell</td>
+						<td>La1</td>
+					</tr>
+					<tr>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td>Whole cell</td>
+						<td>Lj1</td>
+					</tr>
+					<tr>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td><em>Lactobacillus johnsonii </em></td>
+						<td>Whole cell</td>
+						<td>NCC 533</td>			
+					</tr>	
+					<tr>
+						<td><em>Saccharomyces boulardii<sup><a href="#ref2-3" style="text-decoration: none;">3</a></sup></em></td>
+						<td><em>Saccharomyces boulardii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Saccharomyces cerevisiae</em></td>
+						<td>
+							<ul>
+								<li>Baker&apos;s Yeast</li>
+								<li>Brewer&apos;s Yeast</li>
+								<li>Brewer&apos;s yeast fungus</li>
+							</ul>
+						</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<sup id="ref2-1">1</sup>The source material should be the same as the proper name.<br/>
+				<sup id="ref2-2">2</sup>The PLA and label must identify the strain designation as the source material for each microorganism (e.g. Lactobacillus acidophilus ABC123 where "ABC123" is the strain designation).<br/>
+				<sup id="ref2-3">3</sup><em>Saccharomyces boulardii </em>Seguela, Bastide &amp; Massot 1984 (Saccharomycetaceae) is not a valid proper name for a genetically distinct subtype within the species of <em>Saccharomyces cerevisae </em>(Posteraro et al. 2005). This name is still used in the scientific literature however and pending a more thorough review, will continue to be accepted as a proper name in probiotic products to prevent confusion with non-probiotic subtypes of S. <em>cerevisae</em> (ITIS 2025&semi; NCBI 2020&semi; McFarland 2010&semi; Malgoire et al. 2005&semi; de Llanos et al. 2004&semi; vander Aa Kühle et al. 2003&semi; McCullogh et al. 1998&semi; Skerman et al. 1989).<br/>
+				References: ITIS 2025&semi; NCBI 2020&semi; DSMZ 2020&semi; McFarland 2010&semi; Hawrelak et al. 2005&semi; Malgoire et al. 2005&semi; Pridmore et al. 2004&semi; FAO/WHO 2001&semi; Reid 1999&semi; Sanders 1999&semi; McCullough et al. 1998&semi; Fujisawa et al. 1992&semi; Collins et al. 1989&semi; Skerman et al. 1989&semi; Hansen 1968&semi; Meyen ex E.C. Hansen 1883.
+			</p>
+			<table id="ref3" class="subject">
+				<caption>Table 3. Proper name(s), Common name(s), Source information, Strain(s) - FUNGI</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information<sup><a href="#ref3-1" style="text-decoration: none;"></a>1</sup></th>
+					</tr>
+					<tr>
+						<th>Part(s)</th>
+						<th>Strain(s)<sup><a href="#ref3-2" style="text-decoration: none;">2</a></sup></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Debaryomyces hansenii</em></td>
+						<td><em>Debaryomyces hansenii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>
+					</tr>
+					<tr>
+						<td><em>Kluyveromyces lactis</em></td>
+						<td><em>Kluyveromyces lactis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>	
+					<tr>
+						<td><em>Kluyveromyces marxianus</em></td>
+						<td><em>Candida pseudotropicalis</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>	
+					<tr>
+						<td><em>Saccharomyces bayanus</em></td>
+						<td><em>Saccharomyces bayanus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Saccharomyces boulardii</em></td>
+						<td><em>Saccharomyces boulardii</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Saccharomyces cerevisiae</em></td>
+						<td>
+							<ul>
+								<li>Baker&apos;s Yeast</li>
+								<li>Brewer&apos;s Yeast</li>
+								<li>Brewers yeast fungus</li>
+							</ul>
+						</td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Saccharomyces pastorianus</em></td>
+						<td><em>Saccharomyces pastorianus</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Schizosaccharomyces pombe</em></td>
+						<td><em>Schizosaccharomyces pombe</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>
+					<tr>
+						<td><em>Xanthophyllomyces dendrorhous</em></td>
+						<td><em>Xanthophyllomyces dendrorhous</em></td>
+						<td>Whole cell</td>
+						<td>Strain designation</td>			
+					</tr>	
+				</tbody>	
+			</table>
+			<p>
+				<sup id="ref3-1">1</sup>The source material should be the same as the proper name.<br/>
+				<sup id="ref3-2">2</sup>The PLA and label must identify the strain designation as the source material for each microorganism (e.g. Lactobacillus acidophilus ABC123 where "ABC123" is the strain designation).<br/>
+				References: Golubev 1995&semi; van der Walt 1971&semi; Lodder 1952&semi; Saccardo 1895&semi; Lindner 1893&semi; Meyen ex E.C. Hansen 1883&semi; Reess 1870.
+			</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForms">
+		<h2 id="dosageForms">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p><strong>Acceptable dosage forms by age group:</strong></p>
+				<p><strong>Children 1-2 years:</strong> The acceptable pharmaceutical dosage forms are limited to emulsion/suspension and solution/liquid preparations(Giacoia et al. 2008&semi; EMA/CHMP 2006).<br>
+				<strong>Children 3-5 years:</strong> The acceptable pharmaceutical dosage forms are limited to chewables, emulsion/suspension, powders and solution/liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).<br>
+				<strong>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older:</strong> Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications. Although delayed release dosage forms are usually not supported by the NNHPD&apos;s monographs, this monograph includes the following dosage forms commonly used for products containing probiotics: Capsule, enteric-coated&semi; Capsule, soft, enteric-coated&semi; Capsule, enteric-coated pellets&semi; Granule enteric-coated&semi; Tablet, enteric-coated&semi; Tablets, enteric-coated granules.</p>
+	</section>
+
+	<section aria-labelledby="usesOrPurposes">
+		<h2 id="usesOrPurposes">Use(s) or Purpose(s)</h2>
+			<p><em>Medicinal ingredients from Tables 1, 2, and 3</em></p>
+				<p>Source of probiotics.</p>
+			<p><em>Medicinal ingredients from Tables 1, 2, and 3 except Lactobacillus crispatus and Lactobacillus gallinarum</em>
+				<ul>
+					<li>Helps support intestinal/gastrointestinal health (WGOGG 2023&semi; Alonso and Guarner 2013&semi; DuPont and DuPont 2011&semi; Rolfe 2000).</li>
+					<li>Could promote a favorable gut flora (Bezkorovainy 2001&semi; Morelli 2000&semi; Collins et al. 1998).</li>
+				</ul>
+			</p>
+			<table id="ref4" class="subject">
+				<caption>Table 4. Medicinal ingredients from Table 2 with specific use(s) or purpose(s)</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Medicinal Ingredients</th>
+						<th rowspan="2">Strains</th>
+						<th rowspan="2">Uses or Purposes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2"><em>Lacticaseibacillus rhamnosus</em></td>
+						<td rowspan="2">GG</td>
+						<td>Helps to manage acute infectious diarrhea</td>
+					</tr>
+					<tr>
+						<td>Helps to manage and/or reduce the risk of antibiotic-associated diarrhea</td>
+					</tr>
+					<tr>
+						<td><em>Lactobacillus johnsonii</em></td>
+						<td>
+							<ul>
+								<li>La1</li>
+								<li>Lj1</li>
+								<li>NCC 533</li>
+							</ul>
+						</td>
+						<td>An adjunct to physician-supervised antibiotic therapy in patients with Helicobacter pylori infections</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li><em>Saccharomyces boulardii</em></li>
+								<li><em>Saccharomyces cerevisiae</em></li>
+							</ul>	
+						</td>
+						<td>All</td>
+						<td>Helps to reduce the risk of antibiotic-associated diarrhea</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Canani et al. 2007&semi; Bergonzelli et al. 2006&semi; Kotowska et al. 2005&semi; Can et al. 2006&semi; Cruchet et al. 2003&semi; Pantoflickova et al. 2003&semi; Cremonini et al. 2002&semi; Armuzzi et al. 2001&semi; Felley et al. 2001&semi; Guandalini et al. 2000&semi; Vanderhoof et al. 1999&semi; Guarino et al. 1997&semi; McFarland et al. 1995&semi; Surawicz et al. 1989.</p>
+	</section>
+	
+	<section aria-labelledby="doses">
+		<h2 id="doses">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Children 1 to 11 years, Adolescents 12 to 17 years and Adults 18 years and older (Gill and Prasad 2008&semi; Lenoir-Wijnkoop et al. 2007&semi; Hawrelak 2006&semi; Picard et al. 2005&semi; Reid et al. 2003).</p>
+			<h3>Quantity(ies)</h3>
+				<p>Method of preparation: Live</p>
+					<p><em>Medicinal ingredients from Tables 1 and 3</em></p>
+						<p>1.0 x 10<sup>7</sup> total Colony Forming Units (CFU) or more, per day (Gill and Prasad 2008&semi; Lenoir-Wijnkoop et al. 2007&semi; Hawrelak 2006&semi; Picard et al. 2005&semi; Reid et al. 2003).</p>
+					<p><strong>Note</strong></p>
+						<p>The minimum daily dose is the total CFU count per day provided from all live microorganisms present in the product formulation&semi; it is not to be interpreted as a minimum quantity for individual microorganisms.</p>
+				<table id="ref5" class="subject">
+					<caption>Table 5. Medicinal ingredients from Table 2</caption>
+					<thead>
+						<tr>
+							<th rowspan="2">Medicinal Ingredients</th>
+							<th rowspan="2">Strains</th>
+							<th rowspan="2">Uses or Purposes</th>
+							<th colspan="2">Doses (CFU/day)</th>
+						</tr>
+						<tr>
+							<th>Minimum</th>
+							<th>Maximum</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="3"><em>Lacticaseibacillus rhamnosus</em></td>		
+							<td rowspan="2">GG</td>
+							<td>Management of acute infectious diarrhea</td>
+							<td>6.0 x 10<sup>9</sup></td>
+							<td>1.2 x 10<sup>10</sup></td>
+						</tr>
+						<tr>
+							<td>Management/risk reduction of antibiotic-associated diarrhea</td>
+							<td>1.0 x 10<sup>10</sup></td> 
+							<td>2.0 x 10<sup>10</sup></td>
+						</tr>
+						<tr>
+							<td>All</td>
+							<td>All other uses<sup><a href="#ref5-1" style="text-decoration: none;">1</a></sup></td> 
+							<td>1.0 x 10<sup>7</sup></td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td rowspan="2"><em>Lactobacillus johnsonii</em></td>		
+							<td>
+								<ul>
+									<li>La1</li>
+									<li>Lj1</li>
+									<li>NCC 533</li>
+								</ul>
+							</td>
+							<td><em>H. pylori</em> infections</td>
+							<td>1.25 x 10<sup>8</sup></td>
+							<td>3.6 x 10<sup>9</sup></td>
+						</tr>
+						<tr>
+							<td>All</td>
+							<td>All other uses<sup><a href="#ref5-1" style="text-decoration: none;">1</a></sup></td> 
+							<td>1.0 x 10<sup>7</sup> </td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<td rowspan="2">
+								<ul>
+									<li><em>Saccharomyces boulardii</em></li>
+									<li><em>Saccharomyces cerevisiae</em></li>
+								</ul>
+							</td>		
+							<td rowspan="2">All</td>
+							<td>Risk reduction of antibiotic- associated diarrhea</td>
+							<td>1.0 x 10<sup>10</sup></td>
+							<td>3.0 x 10<sup>10</sup></td>
+						</tr>
+						<tr>
+							<td>All other uses<sup><a href="#ref5-1" style="text-decoration: none;">1</a></sup></td>
+							<td>1.0 x 10<sup>7</sup></td> 
+							<td>N/A</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref5-1">1</sup>For &apos;All other uses&apos;, the total recommended daily CFU count must meet the minimum of 10<sup>7</sup> either as a single ingredient or in combination.
+				</p>
+				<p>References: Gill and Prasad 2008&semi; Canani et al. 2007&semi; Lenoir-Wijnkoop et al. 2007&semi; Bergonzelli et al. 2006&semi; Hawrelak 2006&semi; Can et al. 2006&semi; Picard et al. 2005&semi; Pantoflickova et al. 2003&semi; Reid et al. 2003&semi; Cremonini et al. 2002&semi; Armuzzi et al. 2001&semi; Felley et al. 2001&semi; Vanderhoof 1999&semi; Guarino et al. 1997&semi; McFarland et al. 1995.</p>
+			<p><strong>Notes</strong>
+				<ul>
+					<li>All individual strain quantities of live microorganisms must be indicated on the PLA form, label and finished product specifications in Colony Forming Units (CFU) per dosage unit.</li>
+					<li>Multiple microorganisms cultured together with only one combined microorganism count (i.e., blends) are not included in this monograph.</li>
+					<li>Gravimetric or volumetric amounts (e.g. g, mL) are not acceptable.</li>
+				</ul>
+			</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>All medicinal ingredients found in Tables 1 and 2 except Saccharomyces cerevisiae and S. boulardii</em></p>
+					<p>Take at least 2-3 hours before or after antibiotics (NIH 2011&semi; APhA 2006&semi; Biradar et al. 2005).</p>
+				<p><em>All medicinal ingredients found in Table 3</em></p>
+					<p>Take at least 2-3 hours before or after taking antifungal medications (NIH 2011&semi; APhA 2006&semi; Biradar et al. 2005).</p>
+	</section>
+	
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have fever, vomiting, bloody diarrhea or severe abdominal pain (APhA 2006&semi; WHO 2005&semi; CPhA 2002).</li>
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms of digestive upset (e.g. diarrhea) occur, worsen and/or persist beyond 3 days (APhA 2006&semi; WHO 2005).</li>
+				</ul>
+			<h3>Contraindication(s)</h3>
+				<p>Do not use if you have an immune-compromised condition (e.g. AIDS, lymphoma, patients undergoing long-term corticosteroid treatment) (APhA 2006&semi; Cukovic-Cavka et al. 2006&semi; Ledoux et al. 2006&semi; Riquelme et al. 2003&semi; Lherm et al. 2002).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>			
+		
+	<section aria-labelledby="otherInformation">
+		<h2 id="otherInformation">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+				<p><strong>Note</strong></p>
+					<p>Cryoprotectants: All ingredients that are intentionally added during the manufacturing process of a live microorganism to preserve its stability/viability need to be disclosed as non-medicinal ingredients.</p>
+	</section>
+	
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+				<p><em>Liquid products</em></p>
+					<p>Store in refrigerator in a tightly closed, light-resistant container.</p>
+				<p><strong>Note</strong></p>
+					<p>This requirement does not apply to shelf-stable liquid dosage form preparations (i.e. oil suspensions and emulsions indicated in the Compendium of Monographs Guidance Document).</p>
+				<p><em>Non-liquid products (optional)</em></p>
+					<p>Store in refrigerator in a tightly closed container (Liu 2009&semi; Juarez Thomas 2004&semi; Shillinger 1999).</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The medicinal ingredients must comply with the requirements outlined in the NHPID and the following requirements are expected to be met by each live microorganism attesting to this monograph:
+					<ul>
+						<li>The species Latin binomial identification must be up to date and validated.</li>
+						<li>Survivability of the microorganisms in the human gut must be demonstrated. In-vitro gastric acid and bile resistance testing is considered acceptable.</li>
+						<li>The microorganism must be identified by phenotype and genotype:
+							<ul>
+								<li>Phenotyping must be assessed based on characteristics routinely used to distinguish the species from others. This includes a series of testing for sufficient confirmation of observable traits of the species.</li>
+								<li>Genotyping must be assessed as follows:</li>
+									<ul>
+										<li>Species identification by comparison of genome sequence homology in percentage, to both "identical" and "closely related" type strains - obtained from an internationally recognized culture collection&semi;<br/> AND</li>
+										<li>Strain characterization through an up to date complete/whole genome sequencing method.</li>
+									</ul>
+								<li>Absence of virulence of each live microorganism must be established through the following:
+									<ul>
+										<li>Comparison of antibiotic/antifungal resistance profile to typical species resistance - as published by an internationally recognized panel&semi;<br> AND</li>
+										<li>Explanation of the genetic basis of each atypical antibiotic/antifungal resistance to the species OR demonstration of the absence of all known genetic mechanisms of resistance;<br> AND</li>
+										<li>Demonstration of lack of horizontal antibiotic/antifungal resistance transfer ability&semi; <br> AND</li>
+										<li>Demonstration of susceptibility to therapeutic concentrations of at least two commercially available antimicrobial/antifungal agents&semi;<br/> AND</li>
+										<li>Demonstration of the absence of genetic elements responsible for the production of virulence factors characteristic to the genus&semi;<br/> AND</li>
+										<li>Demonstration of lack of toxigenic activity (i.e. production of toxins) known to the genus.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Regarding risk information:
+					<ul>
+						<li>If any bacterial/fungal strain in the product has come into contact with a priority allergen or derivative (e.g. soy, gluten, milk, fish via the culture media) (list available at: http://www.hc- sc.gc.ca/fn-an/securit/allerg/fa-aa/index-eng.php) that is not listed as a medicinal or non- medicinal ingredient, one of the following risk statements must be included on the product label:</li>
+							<ul>
+								<li>Do not use if you have a XXX allergy (CG 2011&semi; HC 2012)&semi;<br/> OR</li>
+								<li>(May) contain(s) XXX (CFIA 2025&semi; HC 2012&semi; CG 2011&semi; HC 2003).</li>
+							</ul>
+						<li>If any bacterial/fungal strain in the product possesses unexplained atypical resistance to any antibiotic/antifungal agent (Mathur and Singh 2005), the name(s) of the antibiotic(s)/ antifungal(s) agent(s) must be indicated as a contraindication on the PLA form and label as follows:</li>
+							<ul>
+								<li>Do not use if you are taking XXX (e.g., Do not use if you are taking ampicillin).<br/>
+									<strong>Note:</strong> The above risk statement is not applicable to Class I (compendial) and Class II applications. If applicable to the strain attesting to this monograph, additional evidence must be provided and reviewed under the Class III stream.
+								</li>
+							</ul>
+					</ul>
+				</li>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide. In the case of live microorganisms, this includes the following:
+					<ul>
+						<li>Stability/viability measures put into place must ensure that a minimum of 80% of the quantity declared on the product label is present at the end of shelf life.</li>
+						<li>In the case where the live microorganism can interfere with microbial impurity testing, a detailed rationale on how the final product complies is required. Such rationale should include measures for live microorganism distinguishing at the finished product stage, along with a detailed explanation on how quality assurance measures are put into place to ensure microbial purity.</li>
+					</ul>
+				</li>
+			</ul>			
+			<p><strong>Note</strong></p>
+				<p>Information on the manufacturing process, including but not limited to the above, must be maintained by the applicant or the manufacturer and provided to Health Canada upon request.</p>
+	</section>
+		
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Probiotics_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Abe S, Takayama K, Kinoshita S. Taxonomic studies on glutamic acid-producing bacteria. Journal of General and Applied Microbiology 1967&semi;13(3):279-301.</li>
+				<li>Adiloglu AK, Gönülates N, Isler M, Senol A. The effect of kefir consumption on human immune system: a cytokine study. Mikrobiyoloji Bulteni 2013&semi;47(2):273-281.</li>
+				<li>Ahmadova A, Todorov SD, Hadji-Sfaxi I, Choiset Y, Rabesona H, Messaoudi S, Kuliyev A, Franco BD, Chobert JM, Haertl&#233; T. Antimicrobial and antifungal activities of Lactobacillus curvatus strain isolated from homemade Azerbaijani cheese. Anaerobe. 2013&semi;20:42-49.</li>
+				<li>Antonio MA, Hillier SL. DNA Fingerprinting of Lactobacillus crispatus Strain CTV-05 by Repetitive Element Sequence-Based PCR Analysis in a Pilot Study of Vaginal Colonization. Journal of Clinical Microbiology. 2003&semi; 41(5):1881-1887.</li>
+				<li>APhA 2006: American Pharmaceutical Association. Berardi RR, Kroon LA, McDermott JH, Newton GD, Oszko MA, Popovich NG, Remington TL, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 15<sup>th</sup> edition. Washington (DC): APhA Publications&semi; 2006.</li>
+				<li>Armuzzi A, Cremonini F, Bartolozzi F, Canducci F, Candelli M, Ojetti V, Cammarota G, Anti M, De Lorenzo A, Pola P, Gasbarrini G, Gasbarrini A. The effect of oral administration of Lactobacillus GG on antibiotic-associated gastrointestinal side-effects during Helicobacter pylori eradication therapy. Alimentary Pharmacology &amp; Therapeutics 2001&semi;15(2):163-169.</li>
+				<li>Beijerinck MW. Sur les ferments lactiques de l&apos;industrie. Archives N&#233;erlandaises des Sciences Exactes et Naturelles (Section 2) 1901&semi;6:212-243.</li>
+				<li>Bergonzelli GE, Granato D, Pridmore RD, Marvin-Guy LF, Donnicola D, Corth&#233;sy-Theulaz IE. GroEL of Lactobacillus johnsonii La1 (NCC 533) Is Cell Surface Associated: Potential Role in Interactions with the Host and the Gastric Pathogen Helicobacter pylori. Infection and Immunity 2006&semi;74(1):425-434.</li>
+				<li>Bezkorovainy A. Probiotics: determinants of survival and growth in the gut. American Journal of Clinical Nutrition 2001&semi;73(2):399S-405S.</li>
+				<li>Biradar SS, Bahagvati ST, Shegunshi B. Probiotics and antibiotics: a brief overview. The Internet Journal of Nutrition and Wellness 2005&semi;2(1):1-7.</li>
+				<li>Bohak I, Back W, Richter L, Ehrmann M, Ludwig W, Schleifer KH. Lactobacillus amylolyticus sp. nov., isolated from beer malt and beer wort. Systematic and Applied Microbiology 1998&semi;21(3):360-364.</li>
+				<li>Can M, Besirbellioglu BA, Avci IY, Beker CM, Pahsa A. Prophylactic Saccharomyces boulardii in the prevention of antibiotic-associated diarrhea: a prospective study. Medical Science Monitor: International Medical Journal of Experimental and Clinical Research 2006&semi;12(4):PI19- 122.</li>
+				<li>Canani RB, Cirillo P, Terrin G, Cesarano L, Spagnuolo MI, De Vincenzo A, Albano F, Passariello A, De Marco G, Manguso F, Guarino A. Probiotics for treatment of acute diarrhoea in children: randomised clinical trial of five different preparations. British Medical Journal 2007&semi;335(7615):340.</li>
+				<li>Casalta E, Montel MC. Safety assessment of dairy microorganisms: the Lactococcus genus. International Journal of Food Microbiology 2008&semi;126(3):271-273.</li>
+				<li>CFIA 2025: Canadian Food Inspection Agency. Understanding Food Labels. Ottawa (ON): Canadian Food Inspection Agency. 2025. [Accessed 2025 September 15]. Available from: https://inspection.canada.ca/en/food-labels/labelling/consumers/understanding-food-labels</li>
+				<li>CG 2011: Canada Gazette, Part II: Official Regulations 2011-02-16. Vol. 145, No. 4 - February 16, 2011. Registration SOR/2011-28 February 4, 2011 FOOD AND DRUGS ACT Regulations Amending the Food and Drug Regulations (1220 - Enhanced Labelling for Food Allergen and Gluten Sources and Added Sulphites) P.C. 2011-80 February 3, 2011 [Accessed 2025 March 28]. Available from: http://gazette.gc.ca</li>
+				<li>Conway PL, Gorbach SL, Goldin BR. Survival of lactic acid bacteria in the human stomach and adhesion to intestinal cells. Journal of Dairy Science 1987:70(1):1-12.</li>
+				<li>Chiang IY, Worobo RW, Churey JJ, Henick-Kling T. Growth inhibition of foodborne pathogens by Oenococcus oeni. Journal of Food Science 2012&semi;77(1):M15-M19.</li>
+				<li>Collins JK, Thornton G, O&apos;Sullivan GO. Selection of probiotic strains for human applications. International Dairy Journal 1998&semi;8(5-6):487-490.</li>
+				<li>Collins MD, Phillips BA and Zanoni P. Deoxyribonucleic acid homology studies of Lactobacillus casei, Lactobacillus paracasei sp. nov., subsp. paracasei and subsp. tolerans, and Lactobacillus rhamnosus sp. nov., comb. nov. International Journal of Systematic Bacteriology 1989&semi;39(2):105-108.</li>
+				<li>Cousin FJ, Mater DD, Folign&#233; B, Jan G. Dairy propionibacteria as human probiotics: A review of recent evidence. Dairy Science &amp; Technology 2011&semi;91(1):1-26.</li>
+				<li>CPhA 2002: Repchinsky C, editor-in-chief. Patient Self-Care: Helping Patients Make Therapeutic Choices. 1<sup>st</sup> edition. Ottawa (ON): Canadian Pharmacists Association&semi; 2002.</li>
+				<li>Cremonini F, Di Caro S, Covino M, Armuzzi A, Gabrielli M, Santarelli L, Nista EC, Cammarota G, Gasbarrini G, Gasbarrini A. Effect of different probiotic preparations on anti-Helicobacter pylori therapy-related side effects: a parallel group, triple blind, placebo-controlled study. The American Journal of Gastroenterology 2002&semi;97(11):2744-2749.</li>
+				<li>Cruchet S, Obregon MC, Salazar G, Diaz E, Gotteland M. Effect of the ingestion of a dietary product containing Lactobacillus johnsonii La1 on helicobacter pylori colonization in children. Nutrition 2003&semi;19(9):716-721.</li>
+				<li>Cukovic-Cavka S, Likic R, Francetic I, Rustemovic N, Opacic M, Vucelic B. Lactobacillus acidophilus as a cause of liver abscess in a NOD2/CARD15-positive patient with Crohn&apos;s disease. Digestion 2006&semi;73(2-3):107-110.</li>
+				<li>Curk MC, Hubert JC and Bringel F. Lactobacillus paraplantarum sp. nov., a new species related to Lactobacillus plantarum. International Journal of Systematic Bacteriology 1996&semi;46(2): 595- 598.</li>
+				<li>Dalmacio LM, Angeles AK, Larcia LL, Balolong MP, Estacio RC. Assessment of bacterial diversity in selected Philippine fermented food products through PCR-DGGE. Beneficial Microbes 2011&semi;2(4):273-281.</li>
+				<li>Dicks LM, Dellaglio F, Collins MD. Proposal to reclassify Leuconostoc oenos as Oenococcus oeni [corrig.] gen. nov., comb. nov. International Journal of Systematic Bacteriology 1995&semi;45(2):395-397.</li>
+				<li>Driehuis F, Elferink SJ, and Spoelstra SF. Anaerobic lactic acid degradation during ensilage of whole crop maize inoculated with Lactobacillus buchneri inhibits yeast growth and improves aerobic stability. Journal of Applied Microbiology 1991&semi;87(4):583-594.</li>
+				<li>DSMZ 2020: Leibniz Institute DSMZ. LPSN - List of Prokaryotic names with standing in nomenclature. 2020. [Accessed 2025 September 15]. Available from: https://lpsn.dsmz.de/</li>
+				<li>DuPont AW, DuPont HL. The Intestinal microbiota and chronic disorders of the gut. Nature Reviews Gastroenterology &amp; Hepatology 2011&semi;8(9):523-531.</li>
+				<li>EFSA 2012: European Food Safety Authority. Scientific Opinion on the removal of a maximum dose from the authorisation of microbial products assessed using the Qualified Presumption of Safety approach. EFSA Journal 2012&semi;10(5):2680. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/2680.pdf</li>
+				<li>Elli M, Callegari ML, Ferrari S, Bessi E, Cattivelli D, Soldi S, Morelli L, Goupil Feuillerat N, Antoine J. Survival of Yogurt Bacteria in the Human Gut. Applied and Environmental Microbiology 2006&semi;72(7):5113-5117.</li>
+				<li>EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric population. Adopted September 2006. [Accessed 2025 March 28]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf</li>
+				<li>FAO/WHO 2001: Food and Agriculture Organization of the United Nations and World Health Organization. Report of a Joint FAO/WHO Expert Consultation on Evaluation of Health and Nutritional Properties of Probiotics in Food Including Powder Milk with Live Lactic Acid Bacteria. C&oacute;rdoba (AR): Food and Agriculture Organization of the United Nations and World Health Organization, 2001. [Accessed on 2025 March 28]. Available from: https://openknowledge.fao.org/server/api/core/bitstreams/8b1233c6-f928-4ff0-85e1-78b2e27c6e4e/content</li>
+				<li>Farrow JA, Collins MD. DNA base composition, DNA-DNA homology and long-chain fatty acid studies on streptococcus thermophilus and Streptococcus salivarius. Journal of General Microbiology 1984&semi;130:357-362.</li>
+				<li>Farrow JAE, Facklam RR, Collins MD. Nucleic acid homologies of some vancomycin-resistant leuconostocs and description of Leuconostoc citreum sp. nov. and Leuconostoc pseudomesenteroides sp. nov. International Journal of Systematic Bacteriology 1989&semi;39(3):279- 283.</li>
+				<li>Felley CP, Corth&#233;sy-Theulaz I, Rivero JL, Sipponen P, Kaufmann M, Bauerfeind P, Wiesel PH, Brassart D, Pfeifer A, Blum AL, Michetti P. Favourable effect of an acidified milk (LC-1) on Helicobacter pylori gastritis in man. European Journal of Gastroenterology and Hepatology 2001&semi;13(1):25-29.</li>
+				<li>Fujisawa T, Adachi S, Toba T, Arihara K, Mitsuoka T. Lactobacillus kefiranofaciens sp. nov. isolated from kefir grains. International Journal of Systematic Bacteriology 1988&semi;38(1):12-14.</li>
+				<li>Fujisawa T, Benno Y, Yaeshima T, Mitsuoka T. Taxonomic study of the Lactobacillus acidophilus group, with recognition of Lactobacillus gallinarum sp. nov. and Lactobacillus johnsonii sp. nov. and synonymy of Lactobacillus acidophilus group A3 (Johnson 1980) with the type strain of Lactobacillus amylovorus (Nakamura 1981). International Journal of Systematic Bacteriology 1992&semi;42(3):487-491.</li>
+				<li>Gao W, Weng J, Gao Y, Chen X. Comparison of the vaginal microbiota diversity of women with and without human papillomavirus infection: a cross-sectional study. BMC Infectious Diseases 2013&semi;13(1):271.</li>
+				<li>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008&semi;30(11):2097-2101.</li>
+				<li>Gill H, Prasad J. Probiotics, immunomodulation, and health benefits. Advances in Experimental Medicine and Biology 2008&semi;606:423-454.</li>
+				<li>Golubev WI. Perfect state of Rhodomyces dendrorhous (Phaffia rhodozyma). Yeast 1995&semi;11(2):101-110.</li>
+				<li>Guandalini S, Pensabene L, Zikri MA, Dias JA, Casali LG, Hoekstra H, Kolacek S, Massar K, Micetic-Turk D, Papadopoulou A, de Sousa JS, Sandhu B, Szajewska H, Weizman Z. Lactobacillus GG administered in oral rehydration solution to children with acute diarrhea: a multicenter European trial. Journal of Pediatric Gastroenterology and Nutrition 2000&semi;30(1):54- 60.</li>
+				<li>Guarino A, Canani RB, Spagnuolo MI, Albano F, Di Benedetto L. Oral bacterial therapy reduces the duration of symptoms and of viral excretion in children with mild diarrhea. Journal of Pediatric Gastroenterology and Nutrition 1997&semi;25(5):516-519.</li>
+				<li>Hawrelak JA. Probiotics. In: Pizzorno JE, Murray MT, editors. 2006. Textbook of Natural Medicine, 3<sup>rd</sup> edition, volume 1. St. Louis (MI): Churchill Livingstone Elsevier. p. 1195-1215.</li>
+				<li>Hawrelak JA, Whitten DL, Myers SP. Is Lactobacillus rhamnosus GG effective in preventing the onset of antibiotic-associated diarrhoea: a systematic review. Digestion 2005&semi;72(1):51-56.</li>
+				<li>HC 2003: Health Canada, It&apos;s your Health: Severe Allergic Reactions. Ottawa (ON): Health Canada [Original: May 2003&semi; Accessed 2025 March 28] Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/hl-vs/alt_formats/pacrb-dgapcr/pdf/iyh-vsv/med/allergies-eng.pdf</li>
+				<li>HC 2012: Health Canada: The use of Food Allergen Precautionary Statements on Pre-Packaged Foods. Ottawa (ON): Food Directorate, Health Canada [Original: March 2012&semi; Accessed 2025 March 28] Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/label-etiquet/allergen/precaution_label-etiquette-eng.pdf</li>
+				<li>HC 2013: Pathway for Licensing Natural Health Products Making Modern Health Claims. Version 1.0. Ottawa (ON): Natural and Non-Prescription Health Products Directorate, Health Canada. 2013. [Accessed 2025 March 28. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/legislation/docs/modern-eng.pdf</li>
+				<li>Hjortmo SB, Hellström AM, Andlid TA.. Production of folates by yeasts in Tanzanian fermented togwa. FEMS Yeast Research 2008&semi;8(5):781-787.</li>
+				<li>Hjortmo S, Patring J, Jastrebova J, Andlid T. Inherent biodiversity of folate content and composition in yeasts. Trends in Food Science &amp; Technology. 2005&semi;16(6-7):311-316.</li>
+				<li>Hong Y, Yang HS, Li J, Han SK, Chang HC, Kim HY. Identification of lactic acid bacteria in salted Chinese cabbage by SDS-PAGE and PCR-DGGE. Journal of the Science of Food and Agriculture 2013&semi;94(2):296-300.</li>
+				<li>Howey RT, Lock CM, Moore LVH. Subspecies names automatically created by Rule 46. International Journal of Systematic Bacteriology 1990&semi;40(3):317-319.</li>
+				<li>ITIS 2025: Nicolson D, Alexander S, Hodson A, Mitchell D, Orrell, T &amp; Perez-Gelabert D. The Integrated Taxonomic Information System (version 2024-12-16). In Bánki O, Roskov Y, Döring M, Ower G, Hernández Robles DR, Plata Corredor CA, Stjernegaard Jeppesen T, Örn A, Pape T, Hobern D, Garnett S, Little H, DeWalt RE, Ma K, Miller J &amp; Orrell T, Catalogue of Life (Version 2025-01-17). Catalogue of Life, Amsterdam, Netherlands&semi; 2025. [Accessed 2025 February 5]. Available from: https://doi.org/10.48580/dglq4-4ky</li>
+				<li>Jin HZ, Fan XB, Hang XM, Li KB, Yang H. Analysis of the probiotic Bifidobacterium and Lactobacillus community in child intestinal flora. [Article in Chinese&semi; Abstract in English]. Wei Sheng Wu Xue Bao. 2005&semi;45(4):567-70.</li>
+				<li>Johnson JL, Phelps CF, Cummins CS, London J and Gasser F. Taxonomy of the Lactobacillus acidophilus group. International Journal of Systematic Bacteriology 1980&semi;30(1):53-68.</li>
+				<li>Juárez Tomás MS, Ocaña VS, Nader-Macías ME. Viability of vaginal probiotic lactobacilli during refrigerated and frozen storage. Anaerobe 2004&semi;10(1):1-5.</li>
+				<li>Kalinowski J, Bathe B, Bartels D, Bischoff N, Bott M, Burkovski A, Dusch N, Eggeling L, Eikmanns BJ, Gaigalat L, Goesmann A, Hartmann M, Huthmacher K, Krämer R, Linke B, McHardy AC, Meyer F, Möckel B, Pfefferle W, Pühler A, Rey DA, Rückert C, Rupp O, Sahm H, Wendisch VF, Wiegräbe I, Tauch A. The complete Corynebacterium glutamicum ATCC 13032 genome sequence and its impact on the production of l-aspartate-derived amino acids and vitamins. Journal of Biotechnology 2003&semi;104(1-3):5-25.</li>
+				<li>Karapinar M, Jakobsen M. Identification of lactic acid bacteria isolated from Tarhana, a traditional Turkish fermented food. International Journal of Food Microbiology 2009&semi;135(2):105-111.</li>
+				<li>Ki MR, Ghim SY, Hong IH, Park JK, Hong KS, Ji AR, Jeong KS. In vitro inhibition of Helicobacter pylori growth and of adherence of cagA-positive strains to gastric epithelial cells by Lactobacillus paraplantarum KNUC25 isolated from kimchi. Journal of Medicinal Food. 2010&semi;13(3):629-634.</li>
+				<li>Kinoshita S, Nakayama S, Akita S. Taxonomic study of glutamic acid accumulating bacteria, Micrococcus glutamicus, nov. sp. Bulletin of the Agricultural Chemical Society of Japan 1958&semi;22:176-185.</li>
+				<li>Kotowska M, Albrecht P, Szajewska H. Saccharomyces boulardii in the prevention of antibiotic- associated diarrhoea in children: a randomized double-blind placebo-controlled trial. Alimentary Pharmacology &amp; Therapeutics 2005&semi;21(5):583-590.</li>
+				<li>Ledoux D, Labombardi VJ, Karter D. Lactobacillus acidophilus bacteraemia after use of a probiotic in a patient with AIDS and Hodgkin&apos;s disease. International Journal of STD &amp; AIDS 2006&semi;17(4):280-282.</li>
+				<li>Leite AM, Leite DC, Del Aguila EM, Alvares TS, Peixoto RS, Miguel MA, Silva JT, Paschoalin VM. Microbiological and chemical characteristics of Brazilian kefir during fermentation and storage processes. Journal of Dairy Science 2013&semi;96(7):4149-4159.</li>
+				<li>Lenoir-Wijnkoop I, Sanders ME, Cabana MD, Caglar E, Corthier G, Rayes N, Sherman PM, Timmerman HM, Vaneechoutte M, Van Loo J, Wolvers DA. Probiotic and prebiotic influence beyond the intestinal tract. Nutrition Reviews 2007&semi;65(11):469-489.</li>
+				<li>Lherm T, Monet C, Nougière B, Soulier M, Larbi D, Le Gall C, Caen D, Malbrunot C. Seven cases of fungemia with Saccharomyces boulardii in critically ill patients. Intensive Care Medicine 2002&semi;28(6):797-801.</li>
+				<li>Li Y, Raftis E, Canchaya C, Fitzgerald GF, Van Sinderen D and O&apos;toole PW. Polyphasic analysis indicates that Lactobacillus salivarius subsp. salivarius and Lactobacillus salivarius subsp. salicinius do not merit separate subspecies status. International Journal of Systematic and Evolutionary Microbiology 2006&semi;56(10):2397-2403.</li>
+				<li>Lindner P. Schizosaccharomyces pombe n. sp., ein neuer Gährungserreger, volume 10. 1893. p.1298 (in German).</li>
+				<li>Liu SQ, Tsao M. Enhancement of survival of probiotic and non-probiotic lactic acid bacteria by yeasts in fermented milk under non-refrigerated conditions. International Journal of Food Microbiology 2009&semi;135(1):34-38.</li>
+				<li>Lodder J. In: Kreger-van Rij NJW, editor. The Yeasts: A Taxonomic Study. North-Holland, 1952. p.280.</li>
+				<li>Lodder J. In: Kreger-van Rij NJW. The Yeasts: A Taxonomic Study, 3<sup>rd</sup> edition. Elsevier Science, 1984. p.159.</li>
+				<li>Magnusson J, Schnürer J. Lactobacillus coryniformis subsp. coryniformis strain Si3 produces a broad-spectrum proteinaceous antifungal compound. Applied and Environmental Microbiology 2001&semi;67(1):1-5.</li>
+				<li>Malgoire JY, Bertout S, Renaud F, Bastide JM, Malli&#233; M. Typing of Saccharomyces cerevisiae clinical strains by using Microsatellite Sequence Polymorphism. Journal of Clinical Microbiology 2005&semi;43(3):1133-1137.</li>
+				<li>Masco L, Ventura M, Zink R, Huy G, Swings J. Polyphasic taxonomic analysis of Bifidobacterium animalis and Bifidobacterium lactis reveals relatedness at the subspecies level: reclassification of Bifidobacterium animalis as Bifidobacterium animalis subsp. animalis subsp. nov. and Bifidobacterium lactis as Bifidobacterium animalis subsp. lactis subsp. nov. International Journal of Systematic and Evolutionary Microbiology 2004&semi;54(4):1137-1143.</li>
+				<li>Mathur S, Singh R. Antibiotic resistance in food lactic acid bacteria - a review. International Journal of Food Microbiology 2005&semi;105(3):281-295.</li>
+				<li>Mattarelli P, Bonaparte C, Pot B, Biavati B. Proposal to reclassify the three biotypes of Bifidobacterium longum as three subspecies: Bifidobacterium longum subsp. longum subsp. nov., Bifidobacterium longum subsp. infantis comb. nov. and Bifidobacterium longum subsp. suis comb. nov. International Journal of Systematic and Evolutionary Microbiology 2008&semi;58(4):767-772.</li>
+				<li>McCullough MJ, Clemons KV, McCusker JH, Stevens DA. Species identification and virulence attributes of Saccharomyces boulardii (nom. inval.). Journal of Clinical Microbiology 1998&semi;36(9):2613-2617.</li>
+				<li>Meyen ex E.C. Hansen&semi; 1883. p.29.</li>
+				<li>McFarland LV, Surawicz CM, Greenberg RN, Elmer GW, Moyer KA, Melcher SA, Bowen KE, Cox JL. Prevention of beta-lactam-associated diarrhea by Saccharomyces boulardii compared with placebo. The American Journal of Gastroenterology 1995&semi;90(3):439-448.</li>
+				<li>McFarland LV. Systematic review and meta-analysis of Saccharomyces boulardii in adult patients. World Journal of Gastroenterology 2010&semi;16(18):2202-2222.</li>
+				<li>Morelli L. In vitro selection of probiotic lactobacilli: a critical appraisal. Current Issues in Intestinal Microbiology 2000&semi;1(2):59-67.</li>
+				<li>Nakamura Y, Fukuhara H, Sano K. Secreted phytase activities of yeasts. Bioscience Biotechnology and Biochemistry 2000&semi;64(4):841-844.</li>
+				<li>Nakamura LK. Lactobacillus amylovorus, a new starch-hydrolyzing species from cattle waste- corn fermentations. International Journal of Systematic Bacteriology 1981&semi;31(1):56-63.</li>
+				<li>Nam SH. Genome sequence of Lactobacillus farciminis KCTC 3681. Journal of Bacteriology 2011&semi;193(7):1790-1791.</li>
+				<li>NCBI 2020: NCBI taxonomy database. Bethesda (MD): National Center for Biotechnology Information, U.S. National Library of Medicine&semi; 2020. [Accessed 2025 March 28]. Available from: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi</li>
+				<li>Nielsen P, Fritze D, and Priest FG. Phenetic diversity of alkaliphilic Bacillus strains: proposal for nine new species. Microbiology 1995&semi;141:1745-1761.</li>
+				<li>NIH 2011: National Institute of Health. Medline Plus. U.S. National Library of Medicine Bethesda (MD): U.S. Department of Health and Human Services. [Updated 2011 November&semi; Accessed 2012 March 21].</li>
+				<li>Pantoflickova D, Corth&#233;sy-Theulaz I, Dorta G, Stolte M, Isler P, Rochat F, Enslen M, and Blum AL. Favourable effect of regular intake of fermented milk containing Lactobacillus johnsonii on Helicobacter pylori associated gastritis. Alimentary Pharmacology and Therapeutics 2003&semi;18(8):805-813.</li>
+				<li>Peinado RA, Moreno JJ, Maestre O, Ortega JM, Medina M, Mauricio JC. Gluconic acid consumption in wines by Schizosaccharomyces pombe and its effect on the concentrations of major volatile compounds and polyols. Journal of Agriculture and Food Chemistry 2004&semi;52(3):493-497.</li>
+				<li>P&#233;teri Z, Teren J, Vagvolgyi C, Varga J. Ochratoxin degradation and adsorption caused by astaxanthin-producing yeasts. Food Microbiology 2007&semi;24(3):205-210.</li>
+				<li>Petri A, Pfannebecker J, Fröhlich J, König H. Fast identification of wine related lactic acid bacteria by multiplex PCR. Food Microbiology 2013&semi;33(1):48-54.</li>
+				<li>Picard C, Fioramonti J, Francois A, Robinson T, Neant F, Matuchansky C. Review article: bifidobacteria as probiotic agents -- physiological effects and clinical benefits. Alimentary Pharmacology &amp; Therapeutics 2005&semi;22(6):495-512.</li>
+				<li>Pridmore RD, Berger B, Desiere F, Vilanova D, Barretto C, Pittet AC, Zwahlen MC, Rouvet M, Altermann E, Barrangou R, Mollet B, Mercenier A, Klaenhammer T, Arigoni F, Schell MA. The genome sequence of the probiotic intestinal bacterium Lactobacillus johnsonii NCC 533.</li>
+				<li>Proceedings of the National Academy of Sciences of the United States of America 2004&semi; 101(8):2512-2517.</li>
+				<li>Reess M. Botanische Untersuchungen über die Alkoholgährungspilze&semi; 1870. p.83. (in German)</li>
+				<li>Reid G, Jass J, Sebulsky MT, McCormick JK. Potential uses of probiotics in clinical practice. Clinical Microbiology Reviews 2003&semi;16(4):658-672.</li>
+				<li>Reid G. Minireview- The scientific basis for probiotic strains of Lactobacillus. Applied and Environmental Microbiology 1999&semi;65(9):3763-3766.</li>
+				<li>Riquelme AJ, Calvo MA, Guzmán AM, Depix MS, García P, P&#233;rez C, Arrese M, Labarca JA. Saccharomyces cerevisiae fungemia after Saccharomyces boulardii treatment in immunocompromised patients. Journal of Clinical Gastroenterology 2003&semi;36(1):41-43.</li>
+				<li>Robles Alonso V, Guarner F. Linking the gut microiota to human health. British Journal of Nutrition 2013&semi;109(Supplement 2):S21-26.</li>
+				<li>Rolfe RD. The role of probiotic cultures in the control of gastrointestinal health. Journal of Nutrition 2000&semi;130(Supplement 2S):396S-402S.</li>
+				<li>Rooney AP, Price NP, Ehrhardt C, Swezey JL, and Bannan JD. Phylogeny and molecular taxonomy of the Bacillus subtilis species complex and description of Bacillus subtilis subsp. inaquosorum subsp. nov. International Journal of Systematic and Evolutionary Microbiology 2009&semi;59:2429-2436.</li>
+				<li>Roos S, Karner F, Axelsson L, Jonsson H. Lactobacillus mucosae sp. nov., a new species with in vitro mucus-binding activity isolated from pig intestine. International Journal of Systematic and Evolutionary Microbiology 2000&semi;50(Part 1):251-258.</li>
+				<li>Saccardo PA. Supplementum Universale, Pars. III&semi; 11&semi; 1895. p. 457. (in Latin)</li>
+				<li>Sanders ME. Scientific Status Summary - Probiotics - A Publication of the Institute of Food</li>
+				<li>technologists&apos; Expert Panel on Food Safety and Nutrition. Food Technology 1999&semi;53(11):67-77.</li>
+				<li>Schillinger U. Isolation and identification of lactobacilli from novel-type probiotic and mild yoghurts and their stability during refrigerated storage. International Journal of Food Microbiology 1999&semi;47(1-2):79-87.</li>
+				<li>Schleifer KH, Kilpper-Bälz R. Transfer of streptococcus faecalis and streptococcus faecium to the genus enterococcus nom. rev. as enterococcus faecalis comb. nov. and enterococcus faecium comb. nov. International Journal of Systematic Bacteriology 1984&semi;34(1):31-34.</li>
+				<li>Sengun IY, Nielsen DS, Karapinar M, Jakobsen M. Identification of lactic acid bacteria isolated from tarhana, a traditional turkish fermented food. International Journal of Food Microbiology 2009&semi;135(2):105-111.</li>
+				<li>Skerman VBD, McGowan V, Sneath PHA. Approved lists of bacterial names. International Journal of Systematic Bacteriology 1980&semi;30(1):225-420.</li>
+				<li>Skerman VBD, McGowan V, Sneath PHA, editors. 1989. Approved Lists of Bacterial Names, (Amended). Washington (DC): American Society of Microbiology Press. [Accessed 2025 March 28]. Available from: http://www.ncbi.nlm.nih.gov/pubmed/20806452</li>
+				<li>Surawicz CM, Elmer GW, Speelman P, McFarland LV, Chinn J, van Belle G. Prevention of antibiotic-associated diarrhea by Saccharomyces boulardii: a prospective study.</li>
+				<li>Suresh K, Prabagaran SR, Sengupta S, and Shivaji S. Bacillus indicus sp. nov., an arsenic-resistant bacterium isolated from an aquifer in West Bengal, India. International Journal of Systematic and Evolutionary Microbiology 2004&semi;54:1369-1375.</li>
+				<li>Gastroenterology 1989&semi;96(4):981-988.</li>
+				<li>Taverniti V, Guglielmetti S. Health-promoting properties of lactobacillus helveticus. Frontiers in Microbiology 2012&semi;3:392.</li>
+				<li>Terzic-Vidojevic A, Vukasinovic M, Veljovic K, Ostojic M, Topisirovic L. Characterization of microflora in homemade semi-hard white Zlatar cheese. International Journal of Food Microbiology 2007&semi;114(1):36-42.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 4. International Journal of Systematic Bacteriology 1980&semi;30(3):601.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 8. International Journal of Systematic Bacteriology Validation 1982&semi;32(2):266-268.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 11. International Journal of Systematic Bacteriology 1983&semi;33(3):672-674.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 16. International Journal of Systematic Bacteriology 1984&semi;34:503-504.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 17. International Journal of Systematic Bacteriology 1985&semi;35:223-225.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 20. International Journal of Systematic Bacteriology 1986&semi;36:354-356.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 68. International Journal of Systematic Bacteriology 1999&semi;49:1-3.</li>
+				<li>van der Aa Kühle A, Jespersen L. The taxonomic position of Saccharomyces boulardii as evaluated by sequence analysis of the D1/D2 domain of 26S rDNA, the ITS1-5.8S rDNA-ITS2 region and the mitochondrial cytochrome-c oxidase II gene. Systematic and Applied Microbiology 2003&semi;26(4):564-571.</li>
+				<li>Van der Walt JP. New combinations in the genera Brettanomyces, Kluyveromyces, Lodderomyces and Wingea. Bothalia 1971&semi;10(3):417-418.</li>
+				<li>Vanderhoof JA, Whitney DB, Antonson DL, Hanner TL, Lupo JV, Young RJ. Lactobacillus GG in the prevention of antibiotic-associated diarrhea in children. The Journal of Pediatrics 1999&semi;135(5):564-568.</li>
+				<li>Vardjan T, Mohar Lorbeg P, Rogelj I, Canzek Majhenic A. Characterization and stability of lactobacilli and yeast microbiota in kefir grains. Journal of Dairy Science 2013&semi;96(5):2729-2736.</li>
+				<li>Vogel RF, Böcker G, Stolz P, Ehrmann M, Fanta D, Ludwig W, Pot B, Kersters K, Schleifer KH, Hammes WP. Identification of lactobacilli from sourdough and description of Lactobacillus pontis sp. nov. International Journal of Systematic Bacteriology 1994&semi;44(2):223-229.</li>
+				<li>Vogel RF, Knorr R, Müller MR, Steudel U, Gänzle MG, Ehrmann MA. Non-dairy lactic fermentations: the cereal world. Antonie Van Leeuwenhoek 1999&semi;76(1-4):403-411.</li>
+				<li>WGO Global Guideline 2023: World Gastroenterology Organisation Global Guidelines. Practice Guideline - Probiotics and Prebiotics. [Accessed 2025 March 28]. Available from: https://www.worldgastroenterology.org/UserFiles/file/guidelines/probiotics-and-prebiotics-english-2023.pdf</li>
+				<li>WHO 2005: World Health Organization. The Treatment of Diarrhoea. A manual for physicians and other senior health workers. Geneva (CH): World Health Organization&semi; 2005. [Accessed 2025 March 28]. Available from: https://iris.who.int/bitstream/handle/10665/43209/9241593180.pdf</li>
+				<li>Wiese BJ, Strohmar W, Rainey FA, Diekmann H. Lactobacillus panis sp. nov., from sourdough with a long fermentation period. International Journal of Systematic Bacteriology 1996&semi;46(2):449-453.</li>
+				<li>Witthuhn RC, Schoeman T, Britz TJ. Characterisation of the microbial population at different stages of Kefir production and Kefir grain mass cultivation. International Dairy Journal 2005&semi;15(4):383-389.</li>
+				<li>Zanoni P, Farrow JAE, Phillips BA, Collins MD. Lactobacillus pentosus (Fred, Peterson, and Anderson) sp. nov., nom. rev. International Journal of Systematic Bacteriology 1987&semi;37(4):339- 341.</li>
+				<li>Zheng J, Wittouck S, Salvetti E, Franz C, Harris H, Mattarelli P, O&apos;Toole P, Pot B, Vandamme P, Walter J, Watanabe K, Wuyts S, Felis G, Gänzle M, Lebeer S. A taxonomic note on the genus Lactobacillus: Description of 23 novel genera, emended description of the genus Lactobacillus Beijerinck 1901, and union of Lactobacillaceae and Leuconostocaceae. International Journal of Systematic and Evolutionary Microbiology 2020&semi;70:2782-2858.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Alonso RV, Guarner F. Linking the gut microiota to human health. British Journal of Nutrition 2013&semi;109(Supplement 2):S21-S26.</li>
+				<li>Bezkorovainy A. Probiotics: determinants of survival and growth in the gut. The American Journal of Clinical Nutrition 2001&semi;73(Supplement):399S-405S.</li>
+				<li>Bisby F, Roskov Y, Culham A, Orrell T, Nicolson D, Paglinawan L, Bailly N, Appeltans W, Kirk P, Bourgoin T, Baillargeon G, Ouvrard D, editors. Species 2000 &amp; ITIS Catalogue of Life: 3<sup>rd</sup> February 2012 [Internet]. Reading (GB): Species 2000. [Source database BIOS: Bacteriology Insight Orienting System, Version Dec 2006&semi; Accessed 2012 March 26]. Available from: http://www.catalogueoflife.org</li>
+				<li>Collins JK, Thornton G, O&apos;Sullivan GO. Selection of probiotic strains for human applications. International Dairy Journal 1998&semi;8(5):487-490.</li>
+				<li>Dalmacio LM, Angeles AK, Larcia LL, Balolong MP, Estacio RC. Assessment of bacterial diversity in selected Philippine fermented food products through PCR-DGGE. Benef Microbes 2011&semi;2(4):273-281.</li>
+				<li>Dellaglio F, Torriani S, Felis GE. Reclassification of Lactobacillus cellobiosus Rogosa et al. 1953 as a later synonym of Lactobacillus fermentum Beijerinck 1901. International Journal of Systematic and Evolutionary Microbiology 2004&semi;54(Part 3):809-812.</li>
+				<li>DuPont AW, DuPont HL. The intestinal microbiota and chronic disorders of the gut. Nature Reviews Gastroenterology and Hepatology 2011&semi;8(9):523-531.</li>
+				<li>EFSA 2007: European Food Safety Authority. Introduction of a Qualified Presumption of Safety (QPS) approach for assessment of selected microorganisms referred to EFSA. Opinion of the Scientific Committee. EFSA Journal 2007&semi;587:1-16. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/587.pdf</li>
+				<li>EFSA 2008: European Food Safety Authority. Technical guidance: Update of the criteria used in the assessment of bacterial resistance to antibiotics of human or veterinary importance. Prepared by the Panel on Additives and Products or Substances used in Animal Feed. EFSA Journal 2008&semi;732:1-15&semi; Updated 2012. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/732.pdf</li>
+				<li>EFSA 2009: European Food Safety Authority. Scientific Opinion on the maintenance of the list of QPS microorganisms intentionally added to food or feed. EFSA Panel on Biological Hazards (BIOHAZ). EFSA Journal 2009&semi;7(12):1431. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/1431.pdf</li>
+				<li>EFSA 2010: European Food Safety Authority. Scientific Opinion on the maintenance of the list of QPS microorganisms intentionally added to food or feed. EFSA Panel on Biological Hazards (BIOHAZ). EFSA Journal 2010&semi;8(12):1944. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/fr/efsajournal/doc/1944.pdf</li>
+				<li>EFSA 2011: European Food Safety Authority. Scientific Opinion on the maintenance of the list of QPS microorganisms intentionally added to food or feed. EFSA Panel on Biological Hazards (BIOHAZ). EFSA Journal 2011&semi;9(12):2497. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/2497.pdf</li>
+				<li>EFSA 2012: European Food Safety Authority. Scientific Opinion on the maintenance of the list of QPS microorganisms intentionally added to food or feed. EFSA Panel on Biological Hazards (BIOHAZ). EFSA Journal 2012&semi;10(12):3020. [Accessed 2025 March 28]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/3020.pdf</li>
+				<li>Euzeby JP. Notification list. Notification that new names and new combinations have appeared in volume 54, part 4 of the IJSEM. International Journal of Systematic and Evolutionary Microbiology 2004&semi;54:1911-1913.</li>
+				<li>Euzeby JP. Notification list. Notification that new names and new combinations have appeared in volume 59, part 10 of the IJSEM. International Journal of Systematic and Evolutionary Microbiology 2010&semi;60:3-4.</li>
+				<li>Felis GE &amp; Dellaglio F. Taxonomy of Lactobacilli and Bifidobacteria. <em>Current Issues in Intestinal Microbiology</em> 2007&semi;(2):44-61.</li>
+				<li>Gill H, Prasad J. Probiotics, immunomodulation, and health benefits. Advances in Experimental Medicine and Biology 2008&semi;606:423-454.</li>
+				<li>Hawrelak, Jason A. In: Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine, 2<sup>nd</sup> edition. St. Louis (MI): Churchill Livingstone, 2000. p. 1195-1215.</li>
+				<li>Hjortmo S, Patring J, Jastrebova J, Andlid T. Inherent biodiversity of folate content and composition in yeasts. Trends in Food Science and Technology 2005&semi;16(6-7):311-316.</li>
+				<li>JC 2009: Justice Canada. <em>Human Pathogens and Toxins Act</em> (S.C., 2009, c. 24). Ottawa (ON): Justice Canada. [Accessed 2025 March 28]. Available from: https://laws.justice.gc.ca/eng/acts/h-5.67/</li>
+				<li>Ledoux D, Labombardi VJ, Karter D. Lactobacillus acidophilus bacteraemia after use of a probiotic in a patient with AIDS and Hodgkin&apos;s disease. International Journal of STD &amp; AIDS 2006&semi;17(4):280-282.</li>
+				<li>Lenoir-Wijnkoop I, Sanders ME, Cabana MD, Caglar E, Corthier G, Rayes N, Sherman PM, Timmerman HM, Vaneechoutte M, Van Loo J, Wolvers DA. Probiotic and prebiotic influence beyond the intestinal tract. Nutrition Reviews 2007&semi;65(11):469-489.</li>
+				<li>Lherm T, Monet C, Nougière B, Soulier M, Larbi D, Le Gall C, Caen D, Malbrunot C. Seven cases of fungemia with Saccharomyces boulardii in critically ill patients. Intensive Care Medicine 2002&semi;28(6):797-801.</li>
+				<li>Masco L, Ventura M, Zink R, Huy G, Swings J. Polyphasic taxonomic analysis of Bifidobacterium animalis and Bifidobacterium lactis reveals relatedness at the subspecies level: reclassification of Bifidobacterium animalis as Bifidobacterium animalis subsp. animalis subsp. nov. and Bifidobacterium lactis as Bifidobacterium animalis subsp. lactis subsp. nov. International Journal of Systematic and Evolutionary Microbiology 2004&semi;54(4):1137-1143.</li>
+				<li>Mattarelli P, Bonaparte C, Pot B, Biavati B. Proposal to reclassify the three biotypes of Bifidobacterium longum as three subspecies: Bifidobacterium longum subsp. longum subsp. nov., Bifidobacterium longum subsp. infantis comb. nov. and Bifidobacterium longum subsp. suis comb. nov. International Journal of Systematic and Evolutionary Microbiology. 2008&semi;58(4):767-772.</li>
+				<li>McFarland L. Systematic review and meta-analysis of saccharomyces boulardii in adult patients. World Journal of Gastroenterology 2010&semi;16(18):2202-2222.</li>
+				<li>Miller MW, Yoneyama M, Soneda M. Phaffia, a new yeast genus in the Deuteromycotina (Blastomycetes). International Journal of Systematic Bacteriology 1976&semi;26(2):286-291.</li>
+				<li>Morelli L. In vitro selection of probiotic lactobacilli: a critical appraisal. Current Issues in Intestinal Microbiology 2000&semi;1(2):59-67.</li>
+				<li>P&#233;teri Z, Teren J, Vagvolgyi C, Varga J. Ochratoxin degradation and adsorption caused</li>
+				<li>by astaxanthin-producing yeasts. Food Microbiology 2007&semi;24(3):205-210.</li>
+				<li>Picard C, Fioramonti J, Francois A, Robinson T, Neant F, Matuchansky C. Review article: bifidobacteria as probiotic agents -- physiological effects and clinical benefits. Alimentary Pharmacology &amp; Therapeutics 2005&semi;22(6):495-512.</li>
+				<li>Rolfe RD. The Role of Probiotic Cultures in the Control of Gastrointestinal Health. Journal of Nutrition 2000&semi;130(Supplement 2S):396S-402S.</li>
+				<li>Sengun IY, Nielsen DS, Karapinar M, Jakobsen M. Identification of lactic acid bacteria isolated from Tarhana, a traditional Turkish fermented food. International Journal of Food Microbiology 2009&semi;135(2):105-111.</li>
+				<li>Senok AC, Ismaeel AY, Botta GA. Probiotics: facts and myths. Clinical Microbiology and Infection 2005&semi;11(12):958-966.</li>
+				<li>Skerman VBD, McGowan V, Sneath PHA. Approved lists of bacterial names. International Journal of Systematic Bacteriology 1980&semi;30(1):225-420.</li>
+				<li>Schillinger U. Isolation and identification of lactobacilli from novel-type probiotic and mild yoghurts and their stability during refrigerated storage. International Journal of Food Microbiology 1999&semi;47(1-2):79-87.</li>
+				<li>Validation of the publication of new names and new combinations previously effectively published outside the IJSB: List No. 15. International Journal of Systematic Bacteriology 1984&semi;34:355-357.</li>
+				<li>Validation of publication of new names and new combinations previously effectively published outside the IJSB: List No. 55. International Journal of Systematic Bacteriology 1995&semi;45:879-880.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="appendixI">
+		<h2 id="appendixI">Appendix I</h2>
+			<table id="ref6" class="subject">
+				<caption>Table 6. Excluded live microorganisms from this monograph</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper and Common Name(s)</th>
+						<th rowspan="2">References</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Bacillus clausii</em></td>		
+						<td>Nielsen et al. 1995</td>
+					</tr>
+					<tr>
+						<td><em>Bacillus coagulans</em></td>		
+						<td>Skerman et al. 1980</td>
+					</tr>
+					<tr>
+						<td><em>Bacillus indicus</em></td>		
+						<td>Suresh et al. 2004</td>
+					</tr>
+					<tr>
+						<td><em>Bacillus subtilis</em></td>		
+						<td>Skerman et al. 1980</td>
+					</tr>
+					<tr>
+						<td><em>Bacillus subtilis subsp. inaquosorum</em></td>		
+						<td>Rooney et al. 2009</td>
+					</tr>
+					<tr>
+						<td><em>Clostridium butyricum</em></td>		
+						<td>Skerman et al. 1980</td>
+					</tr>
+					<tr>
+						<td><em>Enterococcus faecalis</em></td>		
+						<td>Schleifer et al. 1984</td>
+					</tr>
+					<tr>
+						<td><em>Enterococcus faecium</em></td>		
+						<td>Schleifer et al. 1984</td>
+					</tr>
+					<tr>
+						<td><em>Escherichia coli</em></td>		
+						<td>Skerman et al. 1980</td>
+					</tr>
+					<tr>
+						<td><em>Streptococcus salivarius</em></td>		
+						<td>Skerman et al. 1980</td>
+					</tr>
+					<tr>
+						<td><em>Streptococcus salivarius subsp. thermophilus</em></td>		
+						<td>Farrow and Collins 1984</td>
+					</tr>
+				</tbody>
+			</table>	
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from April 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-04-24</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Revised the typographical error &lsquo;persists&rsquo; to &lsquo;persist&rsquo; in the risk statement section</li>
+								<li>The spelling &lsquo;diarrhea&rsquo; rather than &lsquo;diarrhoea&rsquo; was also adjusted in some instances for consistency</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2025-12-19</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2025-10-31</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2025-09-26</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2023-01-27</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2021-11-11</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2019-03-25</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2015-05-26</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2014-06-13</td>
+						<td>Initial release</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

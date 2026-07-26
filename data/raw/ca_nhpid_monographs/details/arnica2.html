@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=arnica2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="5e8c3d12-1711-4b33-a0d6-8d34131dc41d"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+<h1>ARNICA - <i>ARNICA MONTANA</i></h1>
+<p class="lightgreyBG">
+  Help on accessing alternative formats, such as Portable Document Format
+  (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint
+  (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+  <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a>
+  section.
+</p>
+<div class="icon">
+  <a href="dbImages/mono_arnica_english.pdf" title="ARNICA - ARNICA MONTANA">
+    <img alt="Monograph: ARNICA - ARNICA MONTANA" style="position: relative; top: -2px"
+      src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22" />
+    (PDF Version - 60 KB)</a>
+</div>
+<p>
+  This monograph is intended to serve as a guide to industry for the
+  preparation of Product Licence Applications (PLAs) and labels for natural
+  health product market authorization. It is not intended to be a
+  comprehensive review of the medicinal ingredient.
+</p>
+<section aria-labelledby="notes">
+  <p id="notes"><strong>Notes</strong></p>
+  <ul>
+    <li>
+      Text in parentheses is additional optional information which can be
+      included on the label at the applicant's discretion.
+    </li>
+    <li>
+      The solidus (/) indicates that the terms and/or statements are
+      synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+  </ul>
+</section>
+<section aria-labelledby="date">
+  <h2 id="date">Date</h2>
+  <p>February 28, 2025</p>
+</section>
+<section aria-labelledby="properNameCommonNameSourceInformation">
+  <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+  <table aria-labelledby="table1" class="subject">
+    <caption id="table1">
+      Table 1. Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col" rowspan="2">Proper name(s)</th>
+        <th scope="col" rowspan="2">Common name(s)</th>
+        <th scope="colgroup" colspan="3">Source information</th>
+      </tr>
+      <tr>
+        <th>Source material(s)</th>
+        <th>Part(s)</th>
+        <th>Preparation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="1">
+          <i>Arnica montana</i>
+        </td>
+
+        <td rowspan="1">
+          <ul>
+            <li>Arnica</li>
+            <li>Arnica flower</li>
+            <li>European arnica</li>
+            <li>Leopard's bane</li>
+            <li>Leopardsbane</li>
+            <li>Mountain arnica</li>
+            <li>Mountain-tobacco</li>
+            <li>Wolf's bane</li>
+          </ul>
+        </td>
+        <td rowspan="1"><i>Arnica montana</i></td>
+        <td rowspan="1">Flower</td>
+        <td rowspan="1">Dry</td>
+      </tr>
+      <tr>
+        <td><i>Arnica montana</i></td>
+        <td>
+          Arnica tincture<sup>1</sup>
+        </td>
+        <td><i>Arnica montana</i></td>
+        <td>Flower</td>
+        <td>Dry</td>
+      </tr>
+      <tr>
+        <td><i>Arnica montana</i></td>
+        <td>
+          Oil of Arnica<sup>1</sup>
+        </td>
+        <td><i>Arnica montana</i></td>
+        <td>Flower</td>
+        <td>Dry</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    References: Proper name: USDA 2024; Gardner and McGuffin 2013; Common names: USDA 2024; Gardner and McGuffin 2013; Source information: Bradley 2006; Mills and Bone 2005; Wichtl 2004.
+  </p>
+  <p>
+    <sup>1</sup>Arnica tincture and Oil of Arnica must be prepared according to methods described in the 'Dose(s)' section below.
+  </p>
+</section>
+<section aria-labelledby="routeOfAdministration">
+  <h2 id="routeOfAdministration">Route of Administration</h2>
+  <!-- CHECK IF ROUTE OR ROUTE(S) -->
+  <p>Topical</p>
+</section>
+<section aria-labelledby="dosageForm">
+  <h2 id="dosageForm">Dosage Form(s)</h2>
+  <p>
+    Acceptable dosage forms when used according to the requirements indicated in this monograph: Cream; Gel; Liniment; Liquid; Loose; Lotion; Oil; Ointment; Paste; Powder; Salve; Solution; Spray; Topical liquid.
+  </p>
+
+</section>
+<section aria-labelledby="useOrPurpose">
+  <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+  <p>
+    (Traditionally) used in Herbal Medicine to help relieve pain and/or inflammation in muscles and joints (such as sprains, bruises and/or joint pain) (Bradley 2006; Wichtl 2004; ESCOP 2003; Williamson 2003; Blumenthal et al. 2000; Felter and Lloyd 1983; Grieve 1971; Felter 1922).
+  </p>
+  <p>
+    <strong>Notes</strong>
+  </p>
+
+  <p><strong>For multi-ingredient products:</strong></p>
+  <ul>
+    <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Arnica is traditionally used in Herbal Medicine to help relieve pain and/or inflammation in muscles and joints).</li>
+    <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+  </ul>
+</section>
+<section aria-labelledby="dose">
+  <h2 id="dose">Dose(s)</h2>
+  <h3>Subpopulation(s)</h3>
+  <p>Children 2-11 years, Adolescents 12-17 years, Adults 18 years and older.</p>
+
+  <h3>Quantity(ies)</h3>
+  <p><strong>Note: </strong>On the PLA form, quantities can be expressed as percentage weight by weight (% w/w), percentage weight by volume (% w/v) or percentage volume by volume (% v/v), depending on the product formulation. On the product label, quantities can also be expressed in other equivalent concentration units (e.g., mg/mL).</p>
+ 
+  <p><i>Loose/Powder dosage forms</i></p>
+  <p><strong>Methods of preparation: </strong>Dry, Powdered</p>
+  <p>100% of dried flowers (Bradley 2006; Wichtl 2004).</p>
+  <p><strong>Note: </strong>Products in loose or powder dosage forms must be prepared as an infusion by the consumer and applied as a compress (see direction for use).</p>
+  
+  <p><i>Cream/Gel/Liniment/Liquid/Lotion/Oil/Ointment/Paste/Salve/Solution/Spray/Topical liquid dosage forms</i></p>
+  <p><strong>Methods of preparation: </strong>Decoction, Decoction concentrate, Infusion, Infusion concentrate</p>
+  <p>10 - 100% dried flower extract preparation in the finished product (Bradley 2006; Wichtl 2004; ESCOP 2003; Barnes et al. 2002; Mills and Bone 2000).</p>
+  <p><strong>Note: </strong>The extract ratio must be between 1:10 and 1:50. The formulation must be prepared in a way which is equivalent to a quantity of 10 to 20 milligrams crude dried flowers for 1 milliliter of finished product. For example, for a decoction prepared with a 1:20 w/v ratio, the concentration of decoction in the finished product must be 40% (10 -  20 mg crude dried flowers * 20 w/v (dilution) = 0.2 -  0.4 mL liquid extract in 1 mL finished product = 20 - 40% v/v extract preparation in the finished product).</p>
+  <p><strong>Method of preparation: </strong>Oil, Medicated from dried plant</p>
+  <p>1 - 15% of dried flower extract preparation in the finished product (Bradley 2006; Wichtl 2004; Blumenthal et al. 2000; Cech 2000).</p>
+  <p><strong>Note: </strong>Oil of Arnica must be prepared with a 1:5 ratio of arnica flower in vegetable fixed oil (e.g., olive oil, sunflower oil, etc.).</p>
+  <p><strong>Method of preparation: </strong>Tincture</p>
+  <p>5 - 33% of dried flower extract preparation in the finished product (Bradley 2006; Mills and Bone 2005; Wichtl 2004; Williamson 2003; Blumenthal et al. 2000; Fenner 1918; Remington and Woods 1918).</p>
+  
+  <p><strong>Notes:</strong></p>
+  <ul>
+    <li>Arnica tincture must be prepared with an extract ratio between 1:5 and 1:10 and the solvent must be a mix of ethanol and water.</li>
+    <li>For liquid dosage forms, Arnica tincture must be further diluted in water to obtain a final concentration of 5 to 33% extract preparation (i.e., Arnica tincture) in the finished product. For example, for a tincture with a 1:5 w/v ratio, the concentration of tincture in the finished product must be 5 to 33%, resulting in a formulation prepared with an equivalent quantity of 10 to 67 milligrams crude dried flowers for 1 milliliter of finished product (10 - 67 mg crude dried flowers * 5 w/v (dilution) = 0.05 - 0.33 mL tincture in 1 mL finished product = 5 - 33% v/v extract preparation in the finished product).</li>
+    <li>For semi-solid dosage forms, Arnica tincture must be diluted to reach a final concentration of 5 to 25% extract preparation (i.e., Arnica tincture) in the finished product.</li>
+  </ul>
+
+  <h3>Combination rule</h3>
+  <p>No permitted combinations between the medicinal ingredients listed in Table 1 (i.e., arnica oil with arnica tincture and/or arnica infusion).</p>
+
+
+  <h3>Direction(s) for use</h3>
+  <p><em>All products</em></p>
+  <ul>
+    <li>Rub and/or massage into skin until the preparation disappears.</li>
+    <li>
+      Do not apply to wounds or damaged skin (Brinker 2010; Bradley 2006; Pray
+      2006; Mills and Bone 2005; Felter 1922).
+    </li>
+    <li>Do not tightly bandage (Pray 2006; Felter 1922).</li>
+    <li>
+      Do not apply with external heat, such as an electric heating pad, as
+      this may result in excessive skin irritation or skin burn (Pray 2006).
+    </li>
+    <li>
+      Do not apply on or near the nipple if you are breastfeeding (Brinker
+      2010; Mills and Bone 2005).
+    </li>
+    <li>Supervise children when they use this product (Bove 2001).</li>
+  </ul>
+
+  <p><em>Loose/Powder dosage forms</em></p>
+  <p>Place [insert volume to be measured by consumer in order to obtain 1 to 2 grams dried flower, e.g., 1 teaspoon] of product in 1/2 cup (125 mL) of boiling water and infuse from 10-15 minutes. Let cool. Soak a small towel/pad/gauze/cotton in the product. Apply to affected area(s), up to 4 times per day (Bradley 2006; Pray 2006; Wichtl 2004; ESCOP 2003; Mills and Bone 2000).</p>
+
+  <p><em>Liquid dosage forms (Liquid; Solution; Topical liquid) </em></p>
+  <p>Soak a small towel/pad/gauze/cotton in the product. Apply to affected area(s), up to 4 times per day (Bradley 2006; Pray 2006; ESCOP 2003; Mills and Bone 2000).</p>
+
+  <p><em>Spray dosage form</em></p>
+  <p>Avoid inhaling or exposing others to spray.</p>
+
+  <p><em>Cream/Gel/Liniment/Lotion/Oil/Ointment/Paste/Salve/Spray dosage forms</em></p>
+  <p>Apply thinly and evenly to affected area(s), up to 4 times per day (Pray 2006).</p>
+</section>
+
+<section aria-labelledby="durationOfUse">
+  <h2 id="durationOfUse">Duration(s) of Use</h2>
+  <p>No statement required.</p>
+</section>
+<section aria-labelledby="riskInformation">
+  <h2 id="riskInformation">Risk Information</h2>
+  <h3>Caution(s) and warning(s)</h3>
+  <ul>
+    <li>For external use only.</li>
+    <li>When using this product avoid contact with the eyes and mucous membranes. If contact occurs, rinse thoroughly with water.</li>
+    <li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist, worsen, or re-occur within a few days. </li>
+    <li>Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away. </li>
+    
+  </ul>
+  
+  <h3>Contraindication(s)</h3>
+  <p>No statement required.</p>
+  <h3>Known adverse reaction(s)</h3>
+  <p>
+    Stop use if hypersensitivity/allergy, rashes or burning discomfort occur (NIH 2023; Brinker 2010; Bradley 2006; Mills and Bone 2005; ESCOP 2003; Hoffmann 2003).
+  </p>
+</section>
+<section aria-labelledby="nonMedicinalIngredients">
+  <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+  <p>
+    Must be chosen from the current Natural Health Products Ingredients
+    Database (NHPID) and must meet the limitations outlined in the database.
+  </p>
+</section>
+<section aria-labelledby="storageConditions">
+  <h2 id="storageConditions">Storage conditions</h2>
+  <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+</section>
+<section aria-labelledby="specifications">
+  <h2 id="specifications">Specifications</h2>
+  <ul>
+    <li>
+      The finished product specifications must be established in accordance
+      with the requirements described in the Natural and Non-prescription
+      Health Products Directorate (NNHPD) Quality of Natural Health Products
+      Guide.
+    </li>
+    <li>
+      The medicinal ingredient must comply with the requirements outlined in
+      the NHPID.
+    </li>
+  </ul>
+</section>
+
+<section aria-labelledby="exampleOfProductFacts">
+    <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+    <p><strong>Consult the Guidance Document, <a
+                href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+                Labelling of Natural Health Products</a> for more details.</strong>
+    <p>
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ARNICA_E.gif" alt="Product Facts Table"
+            style="width:700px"></p>
+</section>
+
+<section aria-labelledby="referencesCited">
+  <h2 id="referencesCited">References Cited</h2>
+  <ul>
+    <li>Barnes J, Anderson LA, Phillipson JD. Herbal Medicines: A Guide for Healthcare Professionals, 2nd edition. London (UK): Pharmaceutical Press; 2002.</li>
+    <li>Blumenthal M, Goldberg A, Brinckmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000.</li>
+    <li>Bove M. An Encyclopedia of Natural Healing for Children and Infants. 2nd edition. New York (NY): McGraw-Hill Publishing, Incorporated; 2001.</li>
+    <li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 2. Bournemouth (GB): British Herbal Medicine Association; 2006.</li>
+    <li>Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications; 2010.</li>
+    <li>Cech R. Making Plant Medicine. Williams (OR): Horizon Herbs; 2000.</li>
+    <li>ESCOP 2003: E/S/C/O/P Monographs: The Scientific Foundation for Herbal Medicinal Products. 2nd edition. Exeter (GB): ESCOP, the European Scientific Cooperative on Phytotherapy in collaboration with Georg Thieme Verlag and Thieme; 2003.</li>
+    <li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Cincinnati (OH): John K. Scudder; 1922. Reprinted and abridged by Southwest School of Botanical Medicine; 2001. [Accessed 2024 May 16]. Available from: http://www.swsbm.com/FelterMM/Felters_Materia_Medica.pdf </li>
+    <li>Felter HW, Lloyd JU. King's American Dispensatory. Volume 1, 18th edition. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1898 original].</li>
+    <li>Fenner B. A Complete Formulary and Hand-book of Valuable Information for Pharmacists, Manufacturers of Chemical and Pharmaceutical Preparations, Physicians and Students of Pharmacy and Medicine. 6th edition. Westfield (NJ): B. Fenner, Publisher and Proprietor; 1888.. Scanned by Southwest School of Botanical Medicine; 2001. [Accessed 2024 May 28]. Available from: https://www.swsbm.com/Fenners/Complete%20Formulary-3b.pdf</li>
+    <li>Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. 2nd edition. Boca Ration (FL): Taylor and Francis Group; 2013.</li>
+    <li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</li>
+    <li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press; 2003.</li>
+    <li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005.</li>
+    <li>NIH 2023: National Institutes of Health. National Library of Medicine. LiverTox: Clinical and research information on drug-induced liver injury. Bethesday (MD): National Institute of Diabetes and Digestive and Kidney Diseases; 2023. [Accessed 2024 September 5]. Available from: https://www.ncbi.nlm.nih.gov/books/NBK589897/</li>
+    <li>Pray WS. Non-Prescription Product Therapeutics. 2nd edition. New York (NY): Lippincott Williams & Wilkins; 2006.</li>
+    <li>Remington JP, Woods HC, editors. The Dispensatory of the United States of America, 20th edition, 1918. Scanned by Southwest School of Botanical Medicine as Abridged - botanicals only; 2008. [Accessed 2024 May 16]. Available from: http://www.swsbm.com/Dispensatory/USD-1918-complete.pdf</li>
+    <li>USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 May 13]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+    <li>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis. 3rd edition. Stuttgart (DE): Medpharm Scientific Publishers; 2004.</li>
+    <li>Williamson EM, Evans FJ, Wren RC. Potter's Herbal Cyclopaedia: The Authoritative Reference Work on Plants with a Known Medicinal Use. Saffron Walden (GB): The C.W. Daniel Company Limited; 2003.</li>
+  </ul>
+  
+</section>
+<section aria-labelledby="referencesReviewed">
+  <h2 id="referencesReviewed">References Reviewed</h2>
+  <ul>
+    <li>APhA 2002: Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13th edition. Washington (DC): American Pharmaceutical Association; 2002.</li>
+    <li>Blumenthal M. The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines. Austin (TX): American Botanical Council in cooperation with Integrative Medicine Communications; 1998.</li>
+    <li>Bove M. An Encyclopedia of Natural Healing for Children and Infants. 2nd edition. New York (NY): McGraw-Hill Publishing, Incorporated; 2001.</li>
+    <li>BP 2011: British Pharmacopoeia 2011. Volume II. London (GB): The Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA); 2010.</li>
+    <li>Peirce A. Practical Guide to Natural Medicines. New York (NY): American Pharmaceutical Association; 1999.</li>
+    <li>Ph.Eur. 2011: European Pharmacopoeia, 7th edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM), 2011.</li>
+    <li>Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine. Third edition, volume 1. St. Louis (MI): Churchill Livingstone Elsevier; 2006.</li>
+    <li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available from: https://merckindex.rsc.org/</li>
+    <li>Schilcher H. Phytotherapy in Paediatrics: Handbook for Physicians and Pharmacists: With reference to Commission E Monographs of the Federal Department of Health in Germany. Includes 100 Commission E monographs and 15 ESCOP Monographs. Stuttgart (DE): Medpharm Scientific Publishers; 1997.</li>
+  </ul>
+
+  
+</section>
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

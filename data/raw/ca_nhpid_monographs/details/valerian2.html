@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=valerian2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="12fa4133-0a29-49c4-8ab8-6e11dbbad135"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Valerian - <i>VALERIANA OFFICINALIS</i></h1>
+
+	<p class="lightgreyBG"> Help on accessing alternative formats, such as Portable Document Format (<acronym>PDF</acronym>), Microsoft Word and PowerPoint (<acronym>PPT</acronym>) files, can be obtained in the <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.</p>
+	
+	<div class="icon">
+		<a href="dbImages/mono_valerian_english.pdf" title="Valerian">
+		<img alt="Monograph: Valerian" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 78 KB)</a>
+	</div>
+
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the PLA and product label at the applicant's discretion.</li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant.</li>
+		</ul>
+
+		
+<h2>Date</h2>
+
+	<p>July 26, 2024</p>
+
+			
+<h2>Proper name(s), Common name(s), Source information</h2>
+
+	<table class="subject">
+	
+		<caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+
+		<thead>
+		
+			<tr>
+				<th rowspan="2" >Proper name(s)</th>
+				<th rowspan="2" >Common name(s)</th>
+				<th rowspan="1"  colspan="3" >Source information</th>
+			</tr>
+			
+			<tr>
+				<th>Source material(s)</th>
+				<th>Part(s)</th>
+				<th>Preparation(s)</th>
+			</tr>
+			
+		</thead>
+
+		<tbody>
+		
+			<tr>
+				<td rowspan="2"  scope="colgroup">
+						<p><i>Valeriana officinalis</i></p>  
+						
+				</td>
+
+				<td rowspan="1"  scope="colgroup">
+					<ul>
+						<li>Common valerian</li> 
+						<li>Garden-heliotrope</li>
+						<li>Garden valerian</li>
+						<li>Valerian</li>
+					</ul>
+				</td>
+
+				<td><p><i>Valeriana officinalis</i></p></td>
+				<td>
+					<ul>
+						<li>Root</li>
+						<li>Root and rhizome</li>
+					</ul>
+					
+				</td>
+				<td><p>Dry</p></td>
+			</tr>
+			
+			
+
+		</tbody>
+
+		<tfoot>
+		
+		
+		</tfoot>
+		
+	</table>
+
+	<p>References: Proper name: USDA 2023; Common names: McGuffin et al. 2000; Source information: ESCOP 2003, Hoffmann 2003, BHP 1996.</p>
+
+
+	
+<h2>Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+	<p>Oral</p>
+
+
+<h2>Dosage Form(s)</h2>
+	<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+	<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+
+
+<h2>Use(s) or Purpose(s)</h2>
+
+		<ul>
+			<li>(Traditionally) used in Herbal Medicine to help relieve restlessness and/or nervousness (calmative) (EMA 2016; Mills and Bone 2005; Bradley 1992; Ellingwood 1983; Felter 1983).</li>
+			<li>(Traditionally used in Herbal Medicine as a) sleep aid/(to) help(s) (to) promote sleep (Mills and Bone 2005; Ziegler et al. 2002; Blumenthal et al. 2000; Dominguez et al. 2000; Donath et al. 2000; Bradley 1992; Balderer and Borb&#233;ly 1985; Leathwood and Chauffard 1985; Ellingwood 1983; Felter and Lloyd 1983; Leathwood et al. 1982).</li>
+		</ul>
+		
+		<p><b>Notes</b></p>
+        <ul>
+            <li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g. Traditionally used in Herbal Medicine to help relieve restlessness and nervousness and to help promote sleep).</li>
+            <li>For multi-ingredient products:</li>
+            <ul>
+                <li>To prevent the product from being represented as a "traditional medicine," any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g. Valerian is traditionally used in Herbal Medicine as a sleep aid).</li>
+                <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+            </ul>
+        </ul>
+			
+
+	
+<h2>Dose(s)</h2>
+
+	<h4>Subpopulation(s)</h4>
+		<p>Adults 18 years and older</p>
+	
+	
+	<h4>Quantity(ies)</h4>
+		<p>Methods of preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Infusion)</p>
+		<p> 0.3-12 grams of dried root or root and rhizome, per day; Not to exceed 3.6 grams per single dose (EMA 2016; Mills and Bone 2005; Ziegler et al. 2002; Blumenthal et al. 2000; Donath et al. 2000; Bradley 1992; Balderer and Borb&#233;ly 1985; Leathwood and Chauffard 1985; BHP 1983; Leathwood et al. 1982).</p>
+		<p><strong>*Note:</strong> Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+       
+        <p>Methods of preparation: Standardized extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</p>
+		<p>0.3-12 grams of dried root or root and rhizome, per day; Not to exceed 3.6 grams per single dose </p>
+		
+			<ul>
+			<p>And:</p>
+				<li>0.05-0.90% valerenic acid (USP 2023; Brinker 2010USP)</li>
+				<p>OR</p>
+				<li>0.10-0.90% sesquiterpenic acids (Brinker 2010; Ph. Eur. 2008)
+			</ul>
+			</p>
+			
+		<p><b>Note</b><br> For extracts standardized to valerenic acid or sesquiterpenic acids, the quantity dried equivalent and the extract ratio must be provided. </p>
+		
+				
+	<h4>Direction(s) for use</h4>
+		<p><i>Sleep Aid</i></p>
+			<p>Take 30 to 60 minutes before bedtime, as needed (Ziegler et al. 2002; Dominguez et al. 2000; Donath et al. 2000; Balderer and  Borb&#233;ly 1985; Leathwood and Chauffard 1985; Leathwood et al. 1982).</p>
+
+        <p><i>Restlessness/nervousness</i></p>
+            <p>No statement required.</p>
+
+<h2>Duration(s) of Use</h2>
+	
+		<p>No statement required.</p>
+	
+<h2>Risk Information</h2>
+
+	<h4>Caution(s) and warning(s)</h4>
+		<p><i>All uses</i></p>
+        <ul>
+            <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Mills et al. 2006; Blumenthal et al. 2003; Barnes et al. 2002).</li>
+            <li>When using this product avoid taking with alcohol or products that cause drowsiness (Brinker 2010; Gennaro et al. 2000).</li>
+            <li>When using this product exercise caution if you drive or use machinery as you may experience drowsiness (EMA 2016; ESCOP 2003; Bradley 1992).</li>
+        </ul>
+        
+        <p><i>Sleep aid</i></p>
+        <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if sleeplessness persists continuously for more than 4 weeks (chronic insomnia) (EMA 2016; Berardi et al. 2002; Dipiro et al. 2002).</p>
+
+        <p><i>Restlessness/nervousness</i></p>
+        <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+	
+		
+	<h4>Contraindication(s)</h4>
+		<p>No statement required.</p>
+		
+		
+	<h4>Known adverse reaction(s)</h4>
+		<p>No statement required.</p>
+		
+		
+<h2>Non-medicinal ingredients</h2>
+		<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	
+	
+<h2>Storage conditions</h2>
+		<p>Must be established in accordance with the requirements described in the <i>Natural Health Products Regulations</i>.</p>
+	
+	
+<h2>Specifications</h2>
+		<ul> 	
+			<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+			<li>The medicinal ingredient must comply with the requirements outlined in the NHPID</li>
+		</ul>
+	
+<h2>EXAMPLE OF PRODUCT FACTS:</h2>
+ 
+<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+         
+<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/VALERIAN_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+<h2>References Cited</h2>
+	<ul>
+		<li>Balderer G, Borb&#233;ly AA. 1985. Effect of valerian on human sleep. Psychopharmacology 87(4):406-409.</li>
+		<li>Barnes J, Anderson LA, Phillipson JD. Herbal Medicines: A guide for healthcare professionals. 2nd ed. London (UK): Pharmaceutical Press; 2002.</li>
+        <li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. 2002. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13th edition. Washington (DC): American Pharmaceutical Association.</li>
+		<li>BHP 1983: British Herbal Pharmacopoeia. Cowling (GB): British Herbal Medical Association.</li>
+		<li>BHP 1996: British Herbal Pharmacopoeia. Bournemouth (GB): British Herbal Medicine Association.</li>
+		<li>Blumenthal M, Hall T, Goldberg A, Kunz T, Dinda K, Brinckmann J, Wollschlaeger B, editors. 2003. The ABC Clinical Guide to Herbs: Valerian. Austin, Texas: American Botanical Council.</li>
+        <li>Blumenthal M, Goldberg A, Brinkmann J, editors. 2000. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications. </li>
+		<li>Bradley PR, editor. 1992. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (GB): British Herbal Medicine Association.</li>
+		<li>Dipiro JT, Talbert RL, Yee GC, Matzke GR, Wells BG, Posey LM. 2002. Pharmacotherapy: A Pathophysiologic Approach, 5th edition. New York (NY): The McGraw-Hill Companies, Inc.</li>
+		<li>Dominguez RA, Bravo-Valverde RL, Kaplowitz BR, Cott JM. 2000. Valerian as a hypnotic for Hispanic patients. Cultural Diversity and Ethnic Minority Psychology 6(1):84-92. </li>
+		<li>Donath F, Quispe S, Diefenbach K, Maurer A, Fietze I, Roots I. 2000. Critical evaluation of the effect of valerian extract on sleep structure and sleep quality. Pharmacopsychiatry 33(6):47-53. </li>
+		<li>Ellingwood F. 1983. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications [Reprint of 1919 original].</li>
+		<li>EMA 2016. European Medicines Agency. Community Monograph on Valeriana Officinalis L., Radix. London (GB): EMEA Committee on Herbal Medicinal Products (HMPC), 02 Febuary 2016. [Accessed 2023 October 27]. Available from: https://www.ema.europa.eu/documents/herbal-monograph/final-european-union-herbal-monograph-valeriana-officinalis-l-radix_en.pdf</li>
+		<li>ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition. Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme.</li>
+		<li>Felter HW. 1983. The Eclectic Materia Medica, Pharmacology and Therapeutics. Sandy (OR): Eclectic Medical Publications [Reprint of 1922 original].</li>
+		<li>Felter HW, Lloyd JU. 1983. King's American Dispensatory, Volume 2, 18th edition. Sandy (OR): Eclectic Medical Publications [Reprint of 1898 original].</li>
+		<li>Gennaro AR, Marderosian AHD, Hanson GR, Medwick T, editors. 2000. Remington: The Science and Practice of Pharmacy, 20th edition. Philadelphia (PA): Lippincott Williams & Wilkins.</li>
+		<li>Hoffmann D. 2003. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press.</li>
+		<li>Leathwood PD, Chauffard F. 1985. Aqueous extract of valerian reduces latency to fall asleep in man. Planta Medica 51(2):144-148.</li>
+		<li>Leathwood PD, Chauffard F, Heck E, Munoz-Box R. 1982. Aqueous extract of valerian root (Valeriana officinalis L.) improves sleep quality in man. Pharmacology Biochemistry & Behavior 17(1):65-71.</li>
+		<li>McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. 2000. Herbs of Commerce, 2nd edition. Silver Spring (MD): American Herbal Products Association.</li>
+		<li>Mills E, Dugoua J, Perri D, Koren G. 2006. Herbal Medicines in Pregnancy and Lactation : An Evidence-Based Approach. London (GB): Taylor and Francis Medical.</li>
+        <li>Mills S, Bone K. 2005. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone.</li>
+		<li>Ph. Eur. 2008: European Pharmacopoeia, Volume 2, 6th edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM).</li>
+		<li>USDA 2023: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2023 September 11]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+		<li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention.</li>
+		<li>Ziegler G, Ploch M, Miettinen-Baumann A, Collet W. 2002. Efficacy and tolerability of valerian extract LI 156 compared with oxazepam in the treatment of non-organic insomnia - a randomized, double-blind, comparative clinical study. European Journal of Medical Research 7(11):480-486.</li>
+	</ul>
+
+	
+<h2>References Reviewed</h2>
+	<ul>
+		<li>Andreatini R, Sartori VA, Seabra MLV, Leite JR. 2002. Effect of valepotriates (valerian extract) in generalized anxiety disorder : a randomized placebo-controlled pilot study. Phytotherapy Research 16(7):650-654. </li>
+		<li>Barnes J, Anderson LA, Philipson JD. 2007. Herbal Medicines, 3rd edition. London (GB): The Pharmaceutical Press.</li>
+		<li>Bent S, Padula A, Moore D, Patterson M, Mehling W. 2006. Valerian for sleep: a systematic review and meta-analysis. The American Journal of Medicine 119(12):1005-1012.</li>
+		<li>Bliwise DL, Ansari FP. 2007. Insomnia associated with valerian and melatonin usage in the 2002 National Health Interview survey. Sleep 30(7):881-884.</li>
+		<li>Blumenthal M. 2003. ABC Clinical Guide to Herbs. New York (NY): Theime.</li>
+		<li>Blumenthal M, Busse W, Goldberg A, Gruenwald  J, Hall T, Riggins C, Rister R, editors. 1998. The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines. Austin (TX): American Botanical Council. </li>
+		<li>Boon H, Smith MJ. 2004. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs, 2nd edition. Toronto (ON): Robert Rose Inc.</li>
+		<li>Bove M. 2001. An Encyclopedia of Natural Healing for Children and Infants, 2nd edition. New York (NY): McGraw-Hill.</li>
+		<li>BP 2008: British Pharmacopoeia, Volume I. London (GB): The Stationary Office, for the Medicines and Healthcare products Regulatory Agency (MHRA).</li>
+		<li>Brinker F. 2008. Online Updates and Additions to Herb Contraindications and Drug Interactions, 3rd edition. Sandy (OR): Eclectic Medical Publications. [Accessed 2008 June 11]. Available from: http://www.eclecticherb.com/emp/updatesHCDI.html</li>
+		<li>Chandler F, editor. 2000. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association.</li>
+		<li>Cook WH. 1869. The Physio-medical Dispensatory [online] Cincinnati (OH): WH Cook. Scanned by Paul Bergner, editor, Medical Herbalism - A journal for the clinical practitioner. Boulder (CO): North American Institute of Medical Herbalism, Inc. [Accessed 2008 June 11]. Available from: http://medherb.com/cook/home/html</li>
+		<li>Coxeter P, Schluter PJ, Eastwood HL, Nikles CJ, Glasziou PP. Valerian does not appear to reduce symptoms for patients with chronic insomnia in general practice using a series of randomized n-of-1 trials. Complementary Therapies in Medicine 11(4):215-222.</li>
+		<li>Diaper A, Hindmarch I. 2004. A double-blind, placebo-controlled investigation of the effects of two doses of a valerian preparation on the sleep, cognitive and psychomotor function of sleep-disturbed older adults. Phytotherapy Research 18(10):831-836.</li>
+		<li>Dorn M. 2000. [Efficacy and tolerability of Baldrian versus oxazepam in non-organic and non-psychiatric insomniacs: a randomized, double-blind, clinical, comparative study]. Wirksamkeit und Vertr&#228;glichkeit von Baldrian versus Oxazepam bei nichtorganischen und nichtpsychiatrischen Insomnien: Eine randomisierte, doppelblinde, klinische Vergleichsstudie. Forsch Komplementarmed Klass Naturheilkd 7(2):79-84 (in German).</li>
+		<li>Geller SE, Studee L. 2007. Botanical and dietary supplements for mood and anxiety in menopausal women. The Journal of The North American Menopause Society 14(3):541-549.</li>
+		<li>ard U, Linnenbrink N, Georghiadou C, Hobi V. 1996. [Vigilance-decreasing effects of 2 plant-derived sedatives]. Vigilanzmindernde Effekte zweier pflanzlicher Schlafmittel. Schweiz Rundsch Med Prax 85(15): 473-481 (in German). </li>
+		<li>Gooneratne NS. 2008. Complementary and alternative medicine for sleep disturbances in older adults. Clinics in Geriatric Medicine 24(1):121-138.</li>
+		<li>Holst L, Nordeng H, Haavik S. 2008. Use of herbal drugs during early pregnancy in relation to maternal characteristics and pregnancy outcome. Pharmacoepidemiology and Drug Safety 17(2):151-159.</li>
+		<li>JC 2018: Justice Canada. 2018. Food and Drug Regulations. (C.01.021) [online]. Ottawa (ON): Justice Canada; 2008. [Accessed 2018 December 19]. Available from: https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.%2C_c._870/FullText.html </li>
+		<li>Kohnen W, Oswald WD. 1988. The effects of valerian, propanolol, and their combination on activation, performance, and mood of healthy volunteers under social stress conditions. Pharmacopsychiatry 21(6):447-448. </li>
+		<li>Kuhlmann J, Berger W, Podzuweit H, Schmidt U. 1999. The influence of valerian treatment on "reaction time, alertness and concentration" in volunteers. Pharmacopsychiatry 32(6):235-241. </li>
+		<li>Leathwood PD, Chauffard F. 1982/83. Quantifying the effects of mild sedatives. Journal of Psychiatric Research 17(2):115-122.</li>
+		<li>Mayer B, Springer E. 1974. [Psychoexperimental studies on the effect of a valepotriate combination as well as the combined effects of valtatum and alcohol]. Psychoexperimentelle Untersuchungen zur Wirkung einer Valepotriatkombination sowie zur kombinierten Wirkung von Valtratum und Alkohol. Arzneimittelforschung 24(12):2066-2070 (in German). </li>
+		<li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. 1997. American Herbal Products Association's Botanical Safety Handbook. Boca Raton (FL): CRC Press.</li>
+		<li>Mills S. 1993. The Essential Book of Herbal Medicine. Toronto (ON): Arkana.</li>
+		<li>Mills S. 1985. The Dictionary of Modern Herbalism. Wellingborough (GB): Thorsons Publishers Ltd.</li>
+		<li>Mills S, Bone K. 2000. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone.</li>
+		<li>Miyasaka LS, Atallah AN, Soares BGO. 2008. Valerian for anxiety disorders. Cochrane Database of Systematic Reviews Issue 4. Art. No.:CD004515. DOI: 10.1002/14651858.CD004515.pub2.</li>
+		<li>Morazzoni P, Bombardelli E. 1994. Valeriana officinalis: traditional use and recent evaluation of activity. Fitoterapia 66(2):99-112.</li>
+		<li>Morin AK, Jarvis CI, Lynch AM. 2007. Therapeutic options for sleep-maintenance and sleep-onset insomnia. Pharmacotherapy 27(1):89-110.</li>
+		<li>Oxman AD, Flottorp S, Håvelsrud K, Fretheim A, Odgaard-Jensen J, Austvoll-Dahlgren A, Carling C, Pallesen S, Bjorvatn B. 2007. A televised, web-based randomised trial of an herbal remedy (Valerian) for insomnia. PLoS ONE 2(10):e1040.</li>
+		<li>Poyares DR, Guilleminault C, Ohayon MM, Tufik S. 2002. Can valerian improve the sleep of insomniacs after benzodiazepine withdrawal? Progress in Neuro-Psychopharmacology & Biological Psychiatry 26(3):539-545.</li>
+		<li>Remington JP, Woods HC, editors. 1918. The Dispensatory of the United States of America [online] 20th edition. Abridged; botanicals only. Bisbee (AZ): Scanned by Michael Moore, director, The Southwest School of Botanical Medicine. [Accessed 2008 June 11]. Available from: http://www.swsbm.com/Dispensatory/USD-1918-complete.pdf </li>
+		<li>Saeed SA, Bloch RM, Antonacci DJ. 2007. Herbal and dietary supplements for treatment of anxiety disorders. American Family Physician 76(4):549-556.</li>
+		<li>Schilcher H. 1997. Phytotherapy in Paediatrics: Handbook for Physicians and Pharmacists. Stuttgart (DE): medpharm Scientific Publishers.</li>
+		<li>Schulz H, Jobert M, Hubner WD. 1998. The quantitative EEG as a screening instrument to identify sedative effects of single doses of plant extracts in comparison with diazepam. Phytomedicine 5(6):449-458. </li>
+		<li>Schulz H, Stolz C, Müller J. 1994. The effect of valerian extract on sleep polygraphy in poor sleepers: a pilot study. Pharmacopsychiatry 27(4):147-151.</li>
+		<li>Shimazaki M, Martin JL. 2007. Do herbal agents have a place in the treatment of sleep problems in long-term care? Journal of the American Medical Directors Association 8(4):248-252.</li>
+		<li>Sood A, Sood R, Brinker FJ, Mann R, Loehrer LL, Wahner-Roedler DL. 2008. Potential for interactions between dietary supplements and prescription medications. The American Journal of Medicine 121(3):207-211.</li>
+		<li>Taibi DM, Landis CA, Petry H, Vitiello MV. 2007. A systematic review of valerian as a sleep aid: safe but not effective. Sleep Medicine Reviews 11(3):209-230.</li>
+		<li>Taibi DM, Vitiello MV, Barsness S, Elmer GW, Anderson GD, Landis CA. 2008. A randomized clinical trial of valerian fails to improve self-reported, polysomnographic, and actigraphic sleep in older women with insomnia. Sleep Medicine doi:10.1016/j.sleep.2008.02.001.</li>
+		<li>Tariq SH, Pulisetty S. 2008. Pharmacotherapy for insomnia. Clinics in Geriatric Medicine 24(1):93-105.</li>
+		<li>Tilgner S. 1999. Herbal Medicine from the Heart of the Earth. Creswell (OR): Wise Acre Press.</li>
+		<li>Upton R, editor. 1999. American Herbal Pharmacopoeia and Therapeutic Compendium. Santa Cruz (CA): American Herbal Pharmacopoeia.</li>
+		<li>Waldschütz R, Klein P. 2008. The homeopathic preparation Neurexan&#174; vs. valerian for the treatment of insomnia: an observational study. TheScientificWorldJOURNAL 8:411-420.</li>
+		<li>WHO 1999: World Health Organization. WHO Monographs on Selected Medicinal Plants, Volume 1. Geneva (CHE): World Health Organization.</li>
+		<li>Wiersema J, L&#233;on B. 1999. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press LLC.</li>
+		<li>Williamson EM. 2003. Potter's Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medicinal Use. Saffron Walden (GB): The C.W. Daniel Company Limited.</li>
+		<li>Wren RC. 1907. Potter's Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark.</li>
+	</ul>
+
+
+
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

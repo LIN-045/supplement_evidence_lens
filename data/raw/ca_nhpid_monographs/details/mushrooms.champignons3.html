@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=mushrooms.champignons3\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="11c3a676-0ce9-49ee-9246-1a06a35f22a4"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>MUSHROOMS</h1>
+	<div class="icon">
+    	<a href="dbImages/mono_mushrooms_en.pdf" title="MUSHROOMS"><img alt="Monograph: MUSHROOMS" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>(PDF Version - 201 KB)</a>
+  	</div>
+  	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+  	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Due to poor alcohol solubility of immunomodulatory polysaccharides, ethanolic preparations of the medicinal ingredients are not permitted for the claims &ldquo;Source of fungal polysaccharides with immunomodulating properties&rdquo; and &ldquo;Used in Herbal Medicine to support the immune system&rdquo; (Huang et al. 2022).</li>
+			<li>Liquid and dry extracts prepared using only water as an extraction solvent (including decoctions and infusions) contain water soluble immunomodulatory polysaccharides and support the claim &ldquo;Source of fungal properties with immunomodulatory properties&rdquo;. Polysaccharides may be purified from these extract using ethanol to cause polysaccharide precipitation, after which the polysaccharides are separated from the water an ethanol mixture (Huang et al. 2022). The polysaccharide precipitate should be represented as an &ldquo;extract dry&rdquo; with the extraction solvent specified as &ldquo;water&rdquo; on the PLA form.</li>
+			<li>Products making any Traditional Chinese Medicine (TCM) claim must contain the TCM ingredient(s) prepared according to the current version of the Chinese pharmacopoeia or a comparable reference text. </li>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion. </li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label. </li>
+			<li>This monograph may be used to support single ingredient or multi-ingredient products containing any medicinal ingredient from Table 1.</li>
+		</ul>
+  
+	<section aria-labelledby="date">
+    	<h2 id="date">Date</h2>
+      		<p>October 31, 2025</p>
+  	</section>
+
+  	<section aria-labelledby="properNameCommonNameSourceMaterial">
+    	<h2 id="properNameCommonNameSourceMaterial">Proper name(s), Common name(s), Source information</h2>
+      		<table class="subject">
+        		<caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+				<thead>
+          			<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" rowspan="1" scope="colgroup">Source information</th>
+          			</tr>
+          			<tr>
+            			<th scope="col">Source material(s)</th>
+						<th>Part(s)</th>
+						<th>Preparation(s)</th>
+          			</tr>
+        		</thead>
+        		<tbody>
+          			<tr>
+            			<td rowspan="1"><em>Agaricus blazei</em></td>
+						<td rowspan="1">Himematsutake</td>
+						<td><em>Agaricus blazei</em></td>
+            			<td>
+              				<ul>
+                				<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+              				</ul>
+            			</td>
+            			<td>Dry</td>
+          			</tr>
+          			<tr>
+            			<td rowspan="1"><em>Auricularia auricula- judae</em></td>
+						<td rowspan="1">Jelly ear</td>
+						<td><em>Auricularia auricula- judae</em></td>
+            			<td>
+              				<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+              				</ul>
+            			</td>
+            			<td>Dry</td>
+          			</tr>
+          			<tr>
+            			<td><em>Cordyceps militaris</em></td>
+            			<td>
+              				<ul>
+								<li>Chinese caterpillar fungus</li>
+								<li>Cordyceps</li>
+								<li>Cordyceps fungus</li>
+								<li>Cordyceps militaris</li>
+								<li>Trooping cordyceps</li>
+              				</ul>
+            			</td>
+						<td><em>Cordyceps militaris</em></td>
+						<td>
+							<ul>
+								<li>Cultured fruiting body</li>
+								<li>Cultured mycelium</li>
+								<li>Stroma</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+          			<tr>
+						<td rowspan="1"><em>Ganoderma applanatum</em></td>
+						<td rowspan="1">Artist&apos;s conk</td>
+						<td><em>Ganoderma applanatum</em></td>
+            			<td>
+              				<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+              				</ul>
+            			</td>
+            			<td>Dry</td>
+          			</tr>
+          			<tr>
+						<td rowspan="1"><em>Ganoderma lucidum</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Ganoderma</li>
+								<li>Ling zhi</li>
+								<li>Reishi</li>
+							</ul>
+            			</td>
+            			<td><em>Ganoderma lucidum</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+            			<td>Dry</td>
+          			</tr>
+					<tr>
+						<td rowspan="1"><em>Grifola frondosa</em></td>
+						<td rowspan="1">Maitake</td>
+						<td><em> Grifola frondosa</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Hericium erinaceus</em></td>
+						<td rowspan="1">Lion&apos;s Mane</td>
+						<td><em>Hericium erinaceus</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Inonotus obliquus</em></td>
+						<td rowspan="1">Chaga</td>
+						<td><em>Inonotus obliquus</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Lentinula edodes</em></td>
+						<td rowspan="1">Shiitake</td>
+						<td><em>Lentinula edodes</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Ophiocordyceps sinensis</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Chinese caterpillar fungus</li>
+								<li>Cordyceps</li>
+								<li>Cordyceps sinensis</li>
+								<li>Dong chong xia cao</li>
+							</ul>
+						</td>
+						<td><em>Ophiocordyceps sinensis</em></td>
+						<td>Stroma</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Paecilomyces hepiali</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Cordyceps</li>
+								<li>Cultured Chinese caterpillar fungus</li>
+								<li>Fa jiao chong cao jun</li>
+							</ul>
+						</td>
+						<td><em>Paecilomyces hepiali</em></td>
+						<td>Cultured mycelium</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Schizophyllum commune</em></td>
+						<td rowspan="1">Split Gill fungus</td>
+						<td><em>Schizophyllum commune</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Trametes versicolor</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Kawaratake</li>
+								<li>Turkey Tail</li>
+								<li>Yunzhi</li>
+							</ul>
+						</td>
+            			<td><em>Trametes versicolor</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Tremella fuciformis</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Silver ear</li>
+								<li>White mushroom</li>
+							</ul>
+						</td>
+						<td><em>Tremella fuciformis</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Fruiting body</li>
+								<li>Mycelium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Wolfiporia extensa</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Fu ling</li>
+								<li>Hoelen</li>
+								<li>Indian bread</li>
+								<li>Poria</li>
+								<li>Sclerotium of tuckahoe</li>
+							</ul>
+						</td>
+						<td><em>Wolfiporia extensa</em></td>
+						<td>
+							<ul>
+								<li>Cultured mycelium</li>
+								<li>Mycelium</li>
+								<li>Sclerotium</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+        		</tbody>
+      		</table>
+      		<p>References: CABI 2023&semi; USDA 2023&semi; PPRC 2020&semi; Schoch 2020; De S&#224;-Nakanishi et al. 2014&semi; Gardner and McGuffin 2013&semi; Zhao 2013&semi; Dai et al. 2012&semi; Youn et al. 2009&semi; Nakajima et al. 2007&semi; Bensky et al. 2004&semi; Chang and Miles 2004&semi; Hobbs 2003&semi; Chu et al. 2002&semi; Wasser 2002&semi; Bisby et al. 2000&semi; TGA 1999&semi; Lonvah and Deosthale 1998&semi; Saar 1991&semi; Ying 1987.</p>
+  	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+      		<p>Oral</p>
+  	</section>
+
+  	<section aria-labelledby="dosageForm">
+    	<h2 id="dosageForm">Dosage Form(s)</h2>
+      		<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+  	</section>
+
+  	<section aria-labelledby="useOrPurpose">
+    	<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+      		<strong>Appropriate methods of preparations and mushroom parts associated with each claims are specified in Table 2.</strong>
+      		<p><em>All mushrooms</em></p>    
+				<ul>
+					<li>Source of antioxidants/Provides antioxidants </li>
+					<li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effects of/the oxidative damage caused by/cell damage caused by) free radicals</li>
+				</ul>
+      			<p>References: Ern et al. 2024&semi; Qiu et al. 2024&semi; Razak et al. 2024&semi; Rijia et al. 2024&semi; Al-Azad and Ping 2022&semi; Dai et al. 2022&semi; Ji et al. 2022&semi; Kolniak-Ostek et al. 2022&semi; Tachabenjarong et al. 2022&semi; Nie et al. 2020&semi; Hou et al. 2021&semi; Ma et al. 2021&semi; Mapoung et al. 2021&semi; Gebreyohannes et al. 2019&semi; He et al. 2019&semi; Panthong et al. 2016&semi; Xu et al. 2016&semi; Friedman 2015&semi; De S&#224;-Nakanishi et al. 2014&semi; Dong et al. 2014&semi; Li et al. 2014&semi; Zheng et al. 2014&semi; Han et al. 2013&semi; Qi et al. 2013&semi; Kozarski et al. 2012&semi; Da Silva and Jorge 2011&semi; Wachtel-Galor et al. 2011&semi; Wang et al. 2011&semi; Yeh et al. 2011&semi; Bisen et al. 2010&semi; Godfrey et al. 2010&semi; Xu et al. 2010&semi; Tsai et al. 2007&semi; Wicks et al. 2007&semi; Cui et al. 2005.</p>
+      		<p><em>All mushrooms (except ethanolic extracts*) </em></p>
+      			<p>Source of fungal polysaccharides with immunomodulating properties (Xu et al. 2014&semi; Mizuno and Nishitani 2013&semi; Dai et al. 2012&semi; Jung et al. 2012; Won et al. 2011&semi; Wang et al. 2009&semi; Chang and Miles 2004&semi; Bensky et al. 2004&semi; Hobbs 2003&semi; Li et al. 2002&semi; Wasser 2002&semi; Bin and Yang 1991).</p>
+      			<p>*Note: Extracts made with any quantity of ethanol.</p>
+      		<p><em>Products containing Cordyceps militaris</em></p>
+      			<p>Used in Traditional Chinese Medicine (TCM) to help tonify and replenish the lungs and kidneys, and resolve phlegm (Zhonghua Ben Cao 1999).</p>
+      		<p><em>Products containing Ganoderma lucidum</em></p>
+      			<p>Fruiting Body</p>
+					<ul>
+						<li>Used in Traditional Chinese Medicine (TCM) to dispel phlegm, stop cough and arrest wheezing (PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004).</li>
+						<li>Used in Traditional Chinese Medicine (TCM) to nourish the Heart and strengthen qi and blood to treat Heart and Spleen deficiencies that manifest in insomnia, forgetfulness, fatigue, listlessness and poor appetite (PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004).</li>
+						<li>Used in Traditional Chinese Medicine (TCM) to strengthen the body and tonify qi (PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004).</li>
+					</ul>
+      		<p>Fruiting Body&semi; Cultured Mycelium&semi; Mycelium</p>
+				<ul>
+					<li>Used in Herbal Medicine as a liver tonic (Godfrey et al. 2010&semi; Yarnell et al. 2003&semi; Saunders 2000&semi; Huang 1999&semi; Peirce 1999&semi; Belanger 1997&semi; Hsu et al. 1986).</li>
+					<li>Used in Herbal Medicine to support the immune system (Wachtel-Galor et al. 2011&semi; Godfrey et al. 2010&semi; Ko and Leung 2007&semi; Lin 2005&semi; Chen and Chen 2004&semi; Wachtel-Galor et al. 2004&semi; Hoffmann 2003&semi; Yarnell et al. 2003&semi; Wasser 2002&semi; Peirce 1999&semi; Belanger 1997&semi; Hsu et al. 1986).</li>
+					<li>Used in Herbal Medicine as an adaptogen to help increase energy and resistance to stress over time (e.g. in case of mental and physical fatigue related to stress) (Godfrey et al. 2010&semi; Hobbs 2003&semi; Hoffmann 2003&semi; Leung and Foster 2003).</li>
+				</ul>
+      		<p><em>Products containing Grifola frondosa</em></p>
+      			<p>Used in Herbal Medicine to support the immune system (Godfrey et al. 2010&semi; derMarderosian and Beutler 2008&semi; Hobbs 2003&semi; Hoffmann 2003).</p>
+      		<p><em>Products containing Lentinula edodes</em></p>
+      			<p>Used in Herbal Medicine to support the immune system (Hobbs 2003&semi; Wasser 2002).</p>
+      		<p><em>Products containing Ophiocordyceps sinensis </em></p>
+				<p>Used in Traditional Chinese Medicine (TCM) to help tonify and replenish the lungs and kidneys, and resolve phlegm (PPRC 2020&semi; Liu et al. 2005&semi; Bensky et al. 2004).</p>
+			<p><em>Products containing Paecilomyces hepiali </em></p>
+				<p>Used in Traditional Chinese Medicine (TCM) to help tonify and replenish the lungs and kidneys, tonify essence, and replenish qi (PPRC 2020).</p>
+			<p><em>Products containing Trametes versicolor</em></p>
+				<p>Used in Traditional Chinese Medicine (TCM) to fortify the spleen to drain dampness and clear toxic heat (PPRC 2020).</p>
+			<p><em>Products containing Tremella fuciformis</em></p>
+				<p>Used in Traditional Chinese Medicine (TCM) to nourish the stomach yin, moisten the lungs and generate fluids and for yin deficiency with ascendant yang (Bensky et al. 2004).</p>
+			<p><em>Products containing Wolfiporia extensa</em></p>
+				<ul>
+					<li>Used in Herbal Medicine to support the immune system (Rios 2011&semi; Hobbs 2003&semi; Hoffmann 2003).</li>
+					<li>Used in Traditional Chinese Medicine (TCM) for small quantity of urination, dizziness caused by phlegm-fluid retention, spleen deficiency, reduced food intake, sloppy stool, diarrhea, disquietude of heart spirit, and insomnia (PPRC 2020).</li>
+					<li>Used in Traditional Chinese Medicine (TCM) to promote urination and leach out dampness (for urinary difficulty and cases of scanty urine due to damp-heat) (Bensky et al. 2004).</li>
+					<li>Used in Traditional Chinese Medicine (TCM) to promote urination to drain dampness, fortify the spleen, and calm the heart (PPRC 2020).</li>
+					<li>Used in Traditional Chinese Medicine (TCM) to strengthen the spleen and harmonize the middle burner: for spleen deficiency compounded by dampness with symptoms such as loss of appetite, diarrhea, and epigastric distention (Bensky et al. 2004).</li>
+					<li>Used in Traditional Chinese Medicine (TCM) to strengthen the spleen and transform phlegm: for spleen deficiency with thin mucous in which phlegm moves upward with symptoms such as headache, dizziness, and thick, greasy tongue coating (Bensky et al. 2004).</li>
+				</ul>
+      		<p>Notes</p>
+				<ul>
+					<li>The above claims can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g. Used in Traditional Chinese medicine (TCM) to strengthen the spleen and harmonize the middle burner: for spleen deficiency compounded by dampness with symptoms such as loss of appetite, diarrhoea, and epigastric distention and to help tonify and replenish the lungs and kidneys, tonify essence, and replenish qi).</li>
+					<li>For multi-ingredient products: 
+						<ul>
+							<li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Reishi is used in Traditional Chinese Medicine (TCM) to strengthen the body and tonify qi).</li>
+							<li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required. </li>
+						</ul>
+					</li>
+				</ul>
+  	</section>
+
+  	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+      		<h3>Subpopulation(s)</h3>
+        		<p>Adults 18 years and older</p>
+      		<h3>Quantity(ies)</h3>
+        		<p>Refer to Table 2 below.</p>
+			<table class="subject">
+				<caption>Table 2.Uses or purposes and associated daily doses</caption>
+				<thead>
+					<tr>
+						<th rowspan="1" scope="col">Medicinal Ingredients</th>
+						<th rowspan="1" scope="col">Uses or purposes</th>
+						<th colspan="1" rowspan="1" scope="col">Methods of Preparation<sup><a href="#ref2-1" style="text-decoration: none;">1</a></sup></th>
+						<th colspan="1" rowspan="1">Dose(s (grams))/day</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2"><em>Agaricus blazei</em></td>
+						<td rowspan="2">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td rowspan="5"><em>Auricularia auricula- judae</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 15 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 15 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><em>Cordyceps militaris</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3 g of dried cultured fruiting body/cultured mycelium/ stroma per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3 g of dried cultured fruiting body/cultured mycelium/ stroma per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured fruiting body/cultured mycelium/ stroma per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured fruiting body/cultured mycelium/ stroma per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3 g of dried cultured fruiting body/cultured mycelium/ stroma per day</td>
+					</tr>
+					<tr>
+						<td rowspan="2">TCM claim</td>
+						<td>Dry, Powdered*, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>1.5-3 g of dried cultured fruiting body/cultured mycelium/ stroma per day</td>
+					</tr>
+					<tr>
+						<td>Decoction</td>
+						<td>3-9 g of dried cultured fruiting body/cultured mycelium/ stroma per day</td>
+					</tr>
+					<tr>
+						<td rowspan="5"><em>Ganoderma applanatum</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 30 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 30 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="13"><em>Ganoderma lucidum</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 15 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 15 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Herbal Medicine Immune Support claim</td>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>3-15 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>3-15 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td rowspan="4">Herbal Medicine Adaptogen or liver tonic claims</td>
+						<td>Dry, Powdered*, Non- Standardized Ethanolic Extract (Dry extract, Tincture, Fluid extract)</td>
+						<td>1.5-6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>1.5-6 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>3-15 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>3-15 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td rowspan="2">TCM claims</td>
+						<td>Dry, Powdered*, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>1.5-6 g of dried fruiting body per day</td>
+					</tr>
+					<tr>
+						<td>Decoction</td>
+						<td>3-15 g of dried fruiting body per day</td>
+					</tr>
+					<tr>
+						<td rowspan="9"><em>Grifola frondosa</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 7 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 7 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 7 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 7 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 7 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="4">Herbal Medicine Immune Support claim</td>
+						<td>Dry, Powdered*</td>
+						<td>1.6-7 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>1.6-7 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>3-7 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>3-7 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td rowspan="5"><em>Hericium erinaceus</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 2.8 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 2.8 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 12 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 12 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 2.8 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="5"><em>Inonotus obliquus</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="9"><em>Lentinula edodes</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 16 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 16 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="4">Herbal Medicine Immune Support claim</td>
+						<td>Dry, Powdered*</td>
+						<td>1.6-6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>1.6-6 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>6-16 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>6-16 g of dried cultured mycelium/fruiting body/mycelium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><em>Ophiocordyceps sinensis</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3 g of dried stroma per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3 g of dried stroma per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried stroma per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried stroma per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3 g of dried stroma per day </td>
+					</tr>
+					<tr>
+						<td rowspan="2">TCM claim</td>
+						<td>Dry, Powdered*, Non- Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid Extract)</td>
+						<td>1.5-3 g of dried stroma per day</td>
+					</tr>
+					<tr>
+						<td>Decoction</td>
+						<td>3-9 g of dried stroma per day</td>
+					</tr>
+					<tr>
+						<td rowspan="7"><em>Paecilomyces hepiali</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3 g of dried cultured mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3 g of dried cultured mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3 g of dried cultured mycelium per day </td>
+					</tr>
+					<tr>
+						<td rowspan="2">TCM claim</td>
+						<td>Dry, Powdered*, Non- Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid Extract)</td>
+						<td>1.5-3 g of dried cultured mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Decoction</td>
+						<td>3-9 g of dried cultured mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="5"><em>Schizophyllum commune</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 16 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 16 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><em>Trametes versicolor</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 5 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 5 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 27 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 27 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 5 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>TCM claim</td>
+						<td>Decoction</td>
+						<td>9-27 g of dried fruiting body per day</td>
+					</tr>
+					<tr>
+						<td rowspan="6"><em>Tremella fuciformis</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 9 g of dried cultured mycelium/fruiting body/mycelium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/fruiting body/mycelium per day</td>
+					</tr>
+					<tr>
+						<td>TCM claim</td>
+						<td>Decoction</td>
+						<td>3-9 g of dried fruiting body per day</td>
+					</tr>
+					<tr>
+						<td rowspan="10"><em>Wolfiporia extensa</em></td>
+						<td rowspan="4">Source of fungal polysaccharides/Source of antioxidants</td>
+						<td>Dry, Powdered*</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/mycelium/ sclerotium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/mycelium/ sclerotium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 18 g of dried cultured mycelium/mycelium/ sclerotium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>Not to exceed 18 g of dried cultured mycelium/mycelium/ sclerotium per day and 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Source of antioxidants</td>
+						<td>Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</td>
+						<td>Not to exceed 3.6 g of dried cultured mycelium/mycelium/ sclerotium per day</td>
+					</tr>
+					<tr>
+						<td rowspan="4">Herbal Medicine Immune Support claim</td>
+						<td>Dry, Powdered*</td>
+						<td>1.6-3.6 g of dried cultured mycelium/mycelium/sclerotium per day</td>
+					</tr>
+					<tr>
+						<td>Dry standardized, Powdered* standardized</td>
+						<td>1.6-3.6 g of dried cultured mycelium/mycelium/sclerotium per day and not to exceed 40% Polysaccharides</td>
+					</tr>
+					<tr>
+						<td>Non-Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>9-18 g of dried cultured mycelium/mycelium/sclerotium per day</td>
+					</tr>
+					<tr>
+						<td>Standardized Aqueous Extracts (Dry extract, Decoction, Infusion)</td>
+						<td>9-18 g of dried cultured mycelium/mycelium/sclerotium per day and not to exceed 40% polysaccharides</td>
+					</tr>
+					<tr>
+						<td>TCM claims</td>
+						<td>Decoction</td>
+						<td>9-18 g of dried cultured mycelium/mycelium/sclerotium per day</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: PPRC 2020&semi; Wachtel-Galor et al. 2011&semi; Godfrey et al. 2010&semi; Mori et al. 2009&semi; derMarderosian and Beutler 2008&semi; Liu et al. 2008&semi; Liu et al. 2005&semi; Bensky et al. 2004&semi; Chen and Chen 2004&semi; Hobbs 2003&semi; Upton 2000&semi; Huang 1999&semi; Levy et al. 1998&semi; Ying 1987.</p>
+			<p>
+				<sup id="ref2-1">1</sup>When the method of preparation &lsquo;decoction&rsquo; or &lsquo;infusion&rsquo; is listed as part of the acceptable methods of preparation in Table 2, the method of preparation &lsquo;decoction concentrate&rsquo; or &lsquo;infusion concentrate&rsquo; is also applicable. This would also apply to standardized extracts.
+			</p>
+
+			<p><strong>Notes</strong></p>
+				<ul>
+					<li>For standardized extracts, as evidence mainly supports the quantity crude equivalent, both the quantity crude equivalent and the maximum concentration of the potency constituent must be met.</li>
+					<li>*The method of preparation &lsquo;powdered&rsquo; is defined as a dried and ground preparation (= unextracted). No fungal fragments remain identifiable by visual inspection.</li>
+					<li>The maximal quantity of total polysaccharides provided by the product should not exceed 180 g per day and 45 g per single dose.</li>
+				</ul>
+
+			<h3>Direction(s) for use</h3>
+				<p><em>Products containing Ganoderma lucidum</em></p>
+					<p>Take with food (Flynn and Roest 1995).</p>
+  	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>Products making TCM claims </em></p>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have serious or major conditions, any type of acute infection, deficiency or excess. </li>
+					</ul>
+					<p><em>Consult Table 3 to determine the required risk statements for each medicinal ingredient.</em></p>
+					<ol>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</li>
+					<li><em>Products providing 150 mg or more of dry or unextracted powdered Grifola frondosa, per day and/or 300 mg or more of dried Grifola frondosa, per day, prepared as an aqueous extract, and/or 300 mg or more of dried Agaricus blazei per day, prepared as an aqueous extract</em></br>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have diabetes (Brinker 2010&semi; Firenzuoli et al. 2008&semi; Hsu et al. 2007&semi; Konno 2003, 2001).        </li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Bisen et al. 2010&semi; Wasser 2005).</li>
+				</ol>
+			<h3>Contraindication(s)</h3>
+				<ol start="4">
+					<li>Do not use if you are pregnant or breastfeeding.</li>
+				</ol>
+			<h3>Known adverse reaction(s)</h3>
+				<ol start="5">
+					<li>Stop use if hypersensitivity/allergy occurs (derMarderosian and Beutler 2008&semi; Bensky et al. 2004&semi; Gao et al. 2003, 2002&semi; Levy et al. 1998).</li>
+					<li>When using this product diuretic effect may occur (PPRC 2020).</li>
+				</ol>
+			<table class="subject">
+				<caption>Table 3. Risk information</caption>
+				<thead>
+					<tr>
+						<th rowspan="1" scope="col">Medicinal Ingredients</th>
+						<th rowspan="1" scope="col">Risk Information</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="1"><em>Agaricus blazei</em></td>
+						<td rowspan="1">1,2</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Auricularia auricula-judae</em></td>
+						<td rowspan="1">4</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Cordyceps militaris</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Ganoderma applanatum</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Ganoderma lucidum</em></td>
+						<td rowspan="1">5</td></tr>
+					<tr>
+						<td rowspan="1"><em>Grifola frondosa</em></td>
+						<td rowspan="1">2</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Hericium erinaceus</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Inonotus obliquus</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Lentinula edodes</em></td>
+						<td rowspan="1">3,5</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Ophiocordyceps sinensis</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Paecilomyces hepiali</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Schizophyllum commune</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Trametes versicolor</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Tremella fuciformis</em></td>
+						<td rowspan="1">1</td>
+					</tr>
+					<tr>
+						<td rowspan="1"><em>Wolfiporia extensa</em></td>
+						<td rowspan="1">5,6</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+				<li>The product must not contain any traces of agaritine.</li>
+			</ul>
+	</section>
+   
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Mushroom_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Al-Azad S, Ping VCA. Antioxidant Properties and Antimicrobial Activity in the Extracts of Two Edible Mushroom, Pleurotus sajor caju and Schizophyllum commune. Advanced in Bioscience and Biotechnology 2022&semi;13(9):352-361.</li>     
+				<li>Bensky D, Clavey S, St&#246;ger E, Gamble A, editors. Chinese Herbal Medicine: Materia Medica. 3rd edition. Seattle (WA): Eastland Press Inc&semi; 2004.</li>
+				<li>Belanger CA. The Chinese Herb Selection Guide: A Traditional and Modern Clinical Repertory with a Summary Materia Medica for the Health Care Practitioner. Richmond (CA): Phytotech Database Publishing Co.&semi; 1997.</li>
+				<li>Bin G, Yang G. Effects of Ganoderma applanatum polysaccharide on cellular and humoral immunity in normal and sarcoma 180 transplanted mice. Phytotherapy Research 1991&semi;5(3):134- 138.</li>
+				<li>Bisby FA, Roskov YR, Orrell TM, Nicolson D, Paglinawan LE, Bailly N, Kirk PM, Bourgoin T, van Hertum J, editors. 2008. Species 2000 & ITIS Catalogue of Life: 2008 Annual Checklist. Digital Resource. Reading (GB): Species 2000. [Accessed 2023 December 21]. Available from: http://www.catalogueoflife.org/annual-checklist/2008/</li>
+				<li>Bisen PS, Baghel RK, Sanodiya BS, Thakur GS, Prasad GBKS. Lentinula edodes: a macrofungus with pharmacological activities. Current Medicinal Chemistry 2010&semi;17(22):2419- 2430.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Eclectic Medical Publications&semi; 2010.</li>
+				<li>CABI 2023: Centre for Agriculture and Bioscience International. Index Fungorum. Wallingford (GB): CABI (Centre for Agriculture and Bioscience International). [Accessed 2023 December 21]. Available from: http://www.speciesfungorum.org./</li>
+				<li>Chang S, Miles PG. Mushrooms: cultivation, nutritional value, medicinal effect and environmental impact. Second Edition. Boca Raton (FL): CRC Press LLC.&semi; 2004.</li>
+				<li>Chen JK, Chen TT. Chinese medical herbology and pharmacology. Crampton L, editor. City of Industry (CA): Art of Medicine Press Inc.&semi; 2004.</li>
+				<li>Chu KK, Ho SS, Chow AH. Coriolus versicolor: a medicinal mushroom with promising immunotherapeutic values. Journal of Clinical Pharmacology 2002&semi;42(9):976-984.</li>
+				<li>Cui Y, Kim DS, Park KC. Antioxidant effect of Inonotus obliquus. Journal of Ethnopharmacology 2005&semi;96(1-2):79-85.</li>
+				<li>Da Silva AC, Jorge N. Antioxidant properties of Lentinus edodes and Agaricus blazei extracts. Journal of Food Quality 2011&semi;34:386-394.</li>
+				<li>Dai H, Han XQ, Gong FY, Dong H, Tu PF, Gao XM. Structure elucidation and immunological function analysis of a novel beta-glucan from the fruit bodies of Polyporus umbellatus (Pers.) Fries. Glycobiology 2012 22(12):1673-1683.</li>
+				<li>Dai Y, Ma Y, Liu X, Gao R, Min H, Zhang S, Hu S. Formation Optimization, Characterization and Antioxidant Activity of Auricularia auricula-judae Polysaccharide Nanoparticles Obtained via Antisolvent Precipitation 2022&semi;27:7037.</li>
+				<li>De S&#224;-Nakanishi AB, Soares AA, de Oliveira AL, Comar JF, Peralta RM, Bracht A. Effects of treating old rats with an aqueous Agaricus blazei extract on oxidative and functional parameters of the brain tissue and brain mitochondria. Oxidative Medicine and Cellular Longevity 2014&semi; Article ID: 563179:1-13.</li>
+				<li>derMarderosian A, Beutler JA, editors. The review of natural products&semi; 4th edition. St Louis (MO): Facts and Comparisons, Wolters Kluwer Health&semi; 2008.</li>
+				<li>Dong Y, Jing T, Meng Q, Liu C, Hu S, Ma Y, Liu Y, Lu J, Cheng Y, Wang D, Teng L. Studies on the Antidiabetic Activities of Cordyceps militaris Extract in Diet-Streptozotocin-Induced Diabetic Sprague-Dawley Rats. BioMed Research International 2014&semi; Article ID 160980.</li>
+				<li>Ern PTY, Quan TY, Yee FS, Yin ACY. Therapeutic properties of Inonotus obliquus (Chaga mushroom): A review. Mycology 2024&semi;15(2):144-161.</li>
+				<li>Firenzuoli F, Gori L, Lombardo G. The medicinal mushroom Agaricus blazei Murrill: Review of literature and pharmaco-toxicological problems. Evidence Based Complementary Alternative Medicine 2008&semi;5(1):3-15.</li>
+				<li>Flynn R. Roest M. Your Guide To Standardized Herbal Products. Prescott (AZ): One World Press&semi; 1995.</li>
+				<li>Friedman M. Chemistry, Nutrition, and Health-Promoting Properties of Hericium erinaceus (Lion&apos;s Mane) Mushroom Fruiting Bodies and Mycelia and Their Bioactive Compounds Journal of Agricultural and Food Chemistry 2015&semi;63(32):7108-7123.</li>
+				<li>Gao Y, Dai X, Chen G, Ye J, Zhou S. A randomized, placebo-controlled, multicenter study of Ganoderma lucidum (W.Curt.:Fr.) Lloyd (Aphylloromycetidae) polysaccharides (Ganopoly R) in patients with advanced lung cancer. International Journal of Medicinal Mushrooms 2003&semi;5(4):369-381.</li>
+				<li>Gao Y, Zhou SH, Chen G, Dai X, Ye J. A phase I/II study of a Ganoderma lucidum (Curt.: Fr.) P. Karst. Extract (ganopoly) in patients with advanced cancer. International Journal of Medicinal Mushrooms 2002&semi;4(3):207-214.</li>
+				<li>Gardner Z, McGuffin M. editors. 2013. American Herbal Products Association&apos;s Botanical Safety Handbook, 2nd edition. Boca Raton (FL): CRC Press.</li>
+				<li>Gebreyohannes G, Nyerere A, Bii C, Sbhatu DB. Investigation of Antioxidant and Antimicrobial Activities of Different Extracts of Auricularia and Termitomyces Species of Mushrooms The Scientific World Journal 2019&semi; Article ID 7357048.</li>
+				<li>Godfrey A, Saunders PR, with Barlow K, Gilbert C, Gowan M, Smith F. Principles and Practices of Naturopathic Botanical Medicine. Volume 1: Botanical Medicine Monographs. Toronto (ON): CCNM Press&semi; 2010.</li>
+				<li>Han ZH, Ye JM, Wang GF. Evaluation of in vivo antioxidant activity of Hericium erinaceus polysaccharides. International Journal of Biological Macromolecules 2013&semi;52:66-71.</li>
+				<li>He MT, Lee AY, Kim JH, Park CH, Shin YS, Cho EJ. Protective role of Cordyceps militaris in Ab1-42-induced Alzheimer&apos;s disease in vivo. Food Science and Biotechnology 2019&semi;28(3):865-872.</li>
+				<li>Hobbs C. Medicinal mushroom: an exploration of tradition, healing and culture. Summertown, TN: Botanica Press&semi; 2003.</li>
+				<li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>Hou R, Liu X, Wu X, Zheng M, Fu J. Therapeutic effect of natural melanin from edible fungus Auricularia auricula on alcohol-induced liver damage in vitro and in vivo. Food Science and Human Wellness 2021&semi;10:514-522.</li>
+				<li>Hsu HY, Chen YP, Shen SJ, Hsu CS, Chen CC, Chang HC. Oriental Materia Medica: a concise guide. Long Beach (CA): Oriental Healing Arts Institute&semi; 1986&semi; 640-641.</li>
+				<li>Hsu CH, Liao YL, Lin SC, Hwang KC, Chou P. The mushroom Agaricus blazei Murrill in combination with Metformin and Gliclazide improves insulin resistance in type 2 diabetes&semi; a randomized, double-blinded, and placebo-controlled clinical trial. The Journal of Alternative and Complementary Medicine 2007&semi;13(1):97-102.</li>
+				<li>Huang X, Ai Chao, Yao H, Zhao C, Xiang C, Hong T, Xiao J. Guideline for the extraction, isolation, purification, and structural characterization of polysaccharides from natural resources. eFood 2022&semi;3(6):1-16,</li>
+				<li>Huang KC. The Pharmacology of Chinese Herbs. Second edition. Boca Raton (FL): CRC Press&semi; 1999.</li>
+				<li>Ji YW, Rao GW, Xie GF. Ultrasound-assisted aqueous two-phase extraction of total flavonoids from Tremella fuciformis and antioxidant activity of extracted flavonoids. Preparative Biochemistry and Biotechnology 2022&semi;52:1060-1068.</li>
+				<li>Jung BG, Lee JA, Lee BJ. Immunoprophylactic effects of shiitake mushroom (Lentinula edodes) against Bordetella bronchiseptica in mice. The Journal of Microbiology 2012&semi;50(6):1003-1008.</li>
+				<li>Kolniak-Ostek J, Oszmia&nacute;ski J, Szyjka A, Moreira H, Barg E. Anticancer and Antioxidant Activities in Ganoderma lucidum Wild Mushrooms in Poland, as Well as Their Phenolic and Triterpenoid Compounds. International Journal of Molecular Sciences 2022&semi; 23(16)&semi; 9359.</li>
+				<li>Konno S. A mushroom extract for syndrome X and type II diabetes. Natural Pharmacy 2003&semi;7(5):16-17.</li>
+				<li>Konno S, Tortorelis DG, Fullerton SA, Samadi AA, Hettiarachchi J, Tazaki H. Diabetic Medicine 2001&semi;18:1007-1010.</li>
+				<li>Kozarski M, Klaus A, Nik&#353;i&cacute; M, Vrvi&cacute; MM, Todorovi&cacute; N, Jakovljevi&cacute; D, Van Griensven LJLD. Antioxidative activities and chemical characterization of polysaccharide extracts from the widely used mushrooms Ganoderma applanatum, Ganoderma lucidum, Lentinus edodes and Trametes versicolor. Journal of Food Composition and Analkysis 2012&semi; 26(1-2):144-153.</li>
+				<li>Leung AY, Foster S. Encyclopedia of Common Natural Ingredients Used in Food, Drugs and Cosmetics. Second edition. Hoboken (NJ): John Wiley & Sons Inc.&semi; 2003.</li>
+				<li>Levy AM, Kita H, Phillips SF, Schkade PA, Dyer PD, Gleich GJ, Dubravec VA. Eosinophilia and gastrointestinal symptoms after ingestion of shiitake mushrooms. Journal of Allergy and Clinical Immunology 1998&semi;101(5):613-620.</li>
+				<li>Li H, Lee HS, Kim SH, Moon B, Lee C. Antioxidant and anti−inflammatory activities of methanol extracts of Tremella fuciformis and its major phenolic acids. Journal of Food Science. 2014&semi;79(4):C460-468.</li>
+				<li>Li SP, Su ZR, Dong TT, Tsim KW. The fruiting body and its caterpillar host of Cordyceps sinensis show close resemblance in main constituents and anti-oxidation activity. Phytomedicine 2002&semi;9(4):319-324.</li>
+				<li>Liu C, Tseng A, Yang S. Chinese Herbal Medicine: Modern Applications of Traditional Formulas. Boca Raton, FL: CRC Press&semi; 2005.</li>
+				<li>Liu Y, Fukuwatari Y, Okumura K, Takeda K, Ischibashi KI, Furukawa M, Ohno N, Mori K, Gao M, Motoi M. Immunomodulating activity of Agaricus brasiliensis KA21 in mice and in human volunteers. Evidence Based Complementary and Alternative Medicine 2008&semi;5(2):205-219.</li>
+				<li>Longvah T, Deosthale YG. Compositional and nutritional studies on edible wild mushroom from northeast India. Food Chemistry 1998&semi;63(3):331-334.</li>
+				<li>Ma X, Yang M, He Y, Zhai C, Li C. A review on the production, structure, bioactivities and applications of Tremella polysaccharides. International Journal of Immunopathology and Pharmacology. 2021&semi;35: 20587384211000541.</li>
+				<li>Mapoung S, Umsumarng S, Semmarath W, Arjsri P, Thippraphan P, Yodkeeree S, Limtrakul P. Skin Wound-Healing Potential of Polysaccharides from Medicinal Mushroom Auricularia auricula-judae (Bull.). Journal of Fungi 2021&semi;7:247.</li>
+				<li>Mizuno M, Nishitani Y. Immunomodulating compounds in Basidiomycetes. Journal of Clinical Biochemistry and Nutrition 2013&semi;52(3):202-207.</li>
+				<li>Mori K, Inatomi S, Ouchi K, Azumi Y and Tuchida T. Improving Effects of the Mushroom Yamabushitake (Hericium erinaceus) on Mild Cognitive Impairment: A Double-blind Placebo- controlled Clinical Trial. Phytotherapy Research 2009&semi;23:367-372.</li>
+				<li>Nakajima Y, Sato Y, Konishi T. Antioxidant small phenolic ingredients in Inonotus obliquus (persoon) Pilat (Chaga). Chemical Pharmaceutical Bulletin 2007&semi;55(8):1222-1226.</li>
+				<li>Nie A, Chao Y, Zhang X, Jia W, Zhou Z, Zhu C. Phytochemistry and Pharmacological Activities of Wolfiporia cocos (F.A. Wolf) Ryvarden & Gilb. Frontiers in Pharmacology 2020&semi;11:505249.</li>
+				<li>Panthong S, Boonsathorn N, Chuchawankul S. Antioxidant activity, anti-proliferative activity, and amino acid profiles of ethanolic extracts of edible mushrooms. Genetics and Molecular Research 2016&semi;15(4).</li>
+				<li>PPRC 2020: Pharmacopoeia of the People&apos;s Republic of China 2020. Volume I. Beijing (PRC): Chinese Pharmacopoeia Commission&semi; 2020.</li>
+				<li>Peirce A. The American Pharmaceutical Association Practical Guide to Natural Medicines. New York (NY): William Morrow and Company Inc.&semi;1999.</li>
+				<li>Qi W, Zhang Y, Yan YB, Lei W, Wu ZX, Liu N, Liu S, Shi L, Fan Y. The protective effect of Cordymin, a peptide purified from the medicinal mushroom Cordyceps sinensis, on diabetic osteopenia in alloxan-induced diabetic rats. Evidence-Based Complementary and Alternative Medicine 2013&semi; Article ID 985636:1-6.</li>
+				<li>Qiu Y, Lin G, Liu W, Zhang F, Linhardt RJ, Wang X, Zhang A. Bioactive compounds in Hericium erinaceus and their biological properties: a review. Food Science and Human Wellness 2024&semi;13:1825-1844.</li>
+				<li>Razak DLA, Ghani AA, Lazim MIM, Khulidin KA, Shahidi F, Ismail A. Schizophyllum commune (Fries) mushroom: a review on its nutritional components, antioxidative, and anti-inflammatory properties. Current Opinion in Food Science 2024&semi;56:101129.</li>
+				<li>Rijia A, Krishnamoorthi R, Rasmi M, Mahalingam PU, Kim K. Comprehensive Analysis of Bioactive Compounds in Wild Ganoderma applanatum Mushroom from Kerala, South India: Insights into Dietary Nutritional, Mineral, Antimicrobial, and Antioxidant Activities. Pharmaceuticals 2024&semi;17(4):509.</li>
+				<li>Rios JL. Chemical constituents and pharmacological properties of Poria cocos. Planta Medica 2011&semi;77(7):681-691.</li>
+				<li>Saar M. Fungi in Khanty folk medicine. Journal of Ethnopharmacology 1991&semi;31(2):175- 179.</li>
+				<li>Saunders PR. Reishi. In: Chandler F, Bombardier C, Briggs C, Carruthers SG, McCutcheon AR, Saleh A, Saunders PR, editors. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian National Printers&semi; 2000. p. 181-184.</li>
+				<li>Schoch CL. NCBI Taxonomy. Database (Oxford). 2020 [Accessed 2023 December 21]. Available from: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=91752.</li>
+				<li>Tachabenjarong N, Rungsardthong V, Ruktanonchi U, Poodchakarn S, Thumthanaruk B, Vatanyoopaisarn S, Suttisintong K, Iempridee T, Uttapap D. Bioactive compounds and antioxidant activity of Lion&apos;s Mane mushroom (Hericium erinaceus) from different growth periods. E3S Web of Conferences 2022&semi;355:02016.</li>
+				<li>TGA Approved Terminology for Medicines. Australian Government, Therapeutic Goods Administration&semi; 1999..</li>
+				<li>Tsai SY, Tsai HL, Mau JL. Antioxidant properties of Agaricus blazei, Agrocybe cylindracea, and Boletus edulis. LWT - Food Science and Technology 2007&semi;40(8):1392-1402.</li>
+				<li>Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium: Reishi Mushroom, Ganoderma lucidum: Standards of Analysis, Quality Control, and Therapeutics. Santa Cruz (CA): American Herbal Pharmacopoeia&semi; 2000.</li>
+				<li>USDA 2023. U.S National Fungal Databases, ARS, USDA. [Accessed 2023 December 21]. Available from: https://fungi.ars.usda.gov/</li>
+				<li>Wachtel-Galor S, Tomlinson B, Benzie IF. Ganoderma lucidum ("Lingzhi"), a Chinese medicinal mushroom: biomarker responses in a controlled human supplementation study. British Journal of Nutrition 2004&semi;91(2),263-269.</li>
+				<li>Wachtel-Galor S, Yuen J, Buswell JA, Benzie IFF. Chapter 9 Ganoderma lucidum (Lingzhi or Reishi): A Medicinal Mushroom. In: Benzie IFF, Wachtel-Galor S, editors. Herbal Medicine: Biomolecular and Clinical Aspects. 2nd edition. Boca Raton (FL): CRC Press&semi; 2011.</li>
+				<li>Wang L, Wang G, Zhang J, Zhang G, Jia L, Liu X, Deng P, Fan K. Extraction optimization and antioxidant activity of intracellular selenium polysaccharide by Cordyceps sinensis SU-02. Carbohydrate Polymers 2011&semi;86(4):1745-1750.</li>
+				<li>Wang Y, Wang M, Ling Y, Fan W, Wang Y, Yin H. Structural determination and antioxidant activity of a polysaccharide from the fruiting bodies of cultured Cordyceps sinensis. American Journal of Chinese Medicine 2009&semi;37(5):977-989.</li>
+				<li>Wasser SP. Shiitake (Lentinus edodes). In Encyclopedia of Dietary Supplements: Edited by: Coates, PM et al. New York, NY. Marcell Dekker&semi; 2005.</li>
+				<li>Wasser SP. Medicinal mushrooms as a source of antitumor and immunomodulating polysaccharides. Applied Microbiology and Biotechnology 2002;60(3):258-274.</li>
+				<li>Wicks SM, Tong R, Wang CZ, O&apos;Connor M, Karrison T, Li S, Moss J, Yuan CS. Safety and tolerability of Ganoderma lucidum in healthy subjects: a double-blind randomized placebo- controlled trial. The American Journal of Chinese Medicine 2007&semi;35(3):407-414.</li>
+				<li>Won DP, Lee JS, Kwon DS, Lee KE, Shin WC, Hong EK. Immunostimulating activity by polysaccharides isolated from fruiting body of Inonotus obliquus. Molecules and Cells 2011&semi;31(2):165-173.</li>
+				<li>Xu H, Wu PR, Shen ZY, Chen XD. Chemical analysis of Hericium erinaceum polysaccharides and effect of the polysaccharides on derma antioxidant enzymes, MMP-1 and TIMP-1 activities. International Journal of Biological Macromolecules 2010&semi;47(1):33-36.</li>
+				<li>Xu X, Yan H, Tang J, Chen J, Zhang X. Polysaccharides in Lentinus edodes: isolation, structure, immunomodulating activity and future prospective. Critical Reviews in Food Science and Nutrition 2014&semi;54(4):474-487.</li>
+				<li>Xu S, Zhang Y, Jiang K. Antioxidant activity in vitro and in vivo of the polysaccharides from different varieties of Auricularia auricula. Food & Function 2016&semi; 9:3868-3879.</li>
+				<li>Yarnell E. Abascal K. Hooper CG. Clinical Botanical Medicine. Larchmont (NY): Mary Ann Liebert Inc.&semi; 2003.</li>
+				<li>Yeh JY, Hsieh LH, Wu KT, Tsai CF. Antioxidant Properties and Antioxidant Compounds of Various Extracts from the Edible Basidiomycete Grifola Frondosa (Maitake). Molecules 2011&semi;16(4):3197-3211.</li>
+				<li>Ying J. Icones of medicinal fungi from China. Translated by X. Yuehan. Beijing: Science Press&semi; 1987.</li>
+				<li>Youn MJ, Kim JK, Park SY, Kim Y, Park C, Kim ES, Park KI, So HS, Park R. Potential anticancer properties of the water extract of Inonotus obliquus by induction of apoptosis in melanoma B16-10 cells. Journal of ethnopharmacology 2009&semi;121(2):221-228.</li>
+				<li>Zheng L, Hao L, Tian C, Li T, Sun X, Jia M, Jia L. Production and in vivo antioxidant activity of Zn, Ge, Se-enriched mycelial by Cordyceps sinensis SU-01. Current Microbiology 2014&semi;69(3):270-276.</li>
+				<li>Zhao YY. Traditional uses, phytochemistry, pharmacology, pharmacokinetics and quality control of Polyporus umbellatus (Pers.) Fries: A review. Journal of Ethnopharmacology 2013&semi;149(1):35- 48.</li>
+				<li>Zhonghua Ben Cao. Chinese Materia Medica, State Administration of Traditional Chinese Medicine "Chinese Materia Medica" Editorial Committee, 1999.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Abdullah N, Ismail SM, Aminudin N, Shuib AS, Lau BF. Evaluation of selected culinary- medicinal mushrooms for antioxidant and ACE inhibitory activities. Evidence-Based Complementary and Alternative Medicine 2012&semi; Article ID 464238:1- 12.</li>
+				<li>Agarwal N, Majee C, Chakraborthy GS. Natural herbs as anticancer drugs. International Journal of PharmTech Research 2012&semi;4(3):1142-1153.</li>
+				<li>Al-Dbass AM, Al-Daihan SK, Bhat RS. Agaricus blazei Murrill as an efficient hepatoprotective and antioxidant agent against CCl4-induced liver injury in rats. Saudi Journal of Biological Sciences 2012&semi;19:303-309.</li>
+				<li>Asatiani MD, Elisashvili VI, Wasser SP, Reznick AZ, Nevo E. Free-radical scavenging activity of submerged mycelium extracts from higher Basidiomycetes mushrooms. Bioscience, Biotechnology and Biochemistry 2007&semi;71(12):3090-3092.</li>
+				<li>Bensky D, Gamble A. Chinese Herbal Medicine. Materia Medica. Seattle Washington, USA. Eastland Press, Incorporated&semi; 1993.</li>
+				<li>Borchers AT, Kenn CL, Gershwin ME. Mushrooms, tumors and immunity: An update. Experimental Biology and Medicine 2004&semi;229(5):393-406.</li>
+				<li>Brinker F. Herb contraindications and drug interactions. 3rd edition. Sandy (OR): Eclectic Medical Publications&semi; 2001.</li>
+				<li>Canadian Nutrient File (CNF), 2012. Ottawa (ON): Food and Nutrition, Health Canada. [Date Modified 2012-02-10&semi; Accessed 2012 April 12]. Available from: https://food-nutrition.canada.ca/cnf-fce/?lang=eng</li>
+				<li>Carvajal AE, Koehnlein EA, Soares AA, Eler GJ, Nakashima ATA, Bracht A, Peralta RM. Bioactives of fruiting bodies and submerged culture mycelial of Agaricus brasiliensis (A. blazei) and their antioxidant properties. LWT- Food Science and Technology 2012&semi;46(2):493- 499.</li>
+				<li>Chatterjee S, Biswas G, Basu SK, Acharya K. Antineoplastic effect of mushrooms: a review. Australian Journal of Crop Science 2011&semi;5(7):904-911.</li>
+				<li>Chen J, Jin X, Zhang L, Yang L. A study on the antioxidant effect of Coriolus versicolor polysaccharide in rat brain tissues. African Journal of Traditional, Complementary and Alternative Medicines 2013&semi;10(6):481-484.</li>
+				<li>CIMER 2009: Complementary and Integrative Medicine Education Resources. Coriolus versicolor Detailed Scientific Review. University of Texas MD Anderson Cancer Center. [Accessed 2010 February 14]. Available from: http://www.mdanderson.org/education- and-research/resources-for-professionals/clinical-tools-and-resources/cimer/therapies/herbal- plant-biologic-therapies/coriolus-versicolor-scientific.html</li>
+				<li>Daba AS, Ezeronye OU. Anti-cancer effect of polysaccharides isolated from higher Basidiomycetes mushrooms. African Journal of Biotechnology 2003&semi;2(12):672-678.</li>
+				<li>Dosychev EA, Bystrova VN. Treatment of psoriasis using Chaga fungus preparations. Vestnik Dermatologii i Venerologii 1973&semi;47(5):79-83.</li>
+				<li>Du XJ, Mu H, Zhou S, Zhang Y, Zhu XL. Chemical analysis and antioxidant activity of polysaccharides extracted from Inonotus obliquus sclerotia. International Journal of Biological Macromolecules 2013&semi;62:691-696.</li>
+				<li>Earnest CP, Morss GM, Wyatt F, Jordan AN, Colson S, Church TS, Fitzgerald Y, Autrey L, Jurca R, Lucia A. Effects of a commercial herbal-based formula on exercise performance in cyclists. Medicine & Science in Sports & Exercise 2004&semi;36(3):504-509.</li>
+				<li>EFSA, European Food Safety Authority: Scientific Opinion on the safety of Lentinus edodes extract (LentinexR) as a Novel Food Ingredient. EFSA Journal 2010&semi;8(7):1-15.</li>
+				<li>Fujimiya Y, Suzuki Y, Katakura R, Ebina T. Tumor-specific cytocidal and immunopotentiating effects of relatively low molecular weight products derived from the basidiomycete, Agaricus lazei Murrill. Anticancer Research 1999&semi;19(1A):113-118.</li>
+				<li>Gao QP, Jiang RZ, Chen HQ, Jensen E, Seljelid R. Characterization and cytokine stimulating activities of heteroglycans from Tremella fuciformis. Planta Medica 1996&semi;62(4):297-302.</li>
+				<li>Holliday J, Cleaver M, Wasser SP. Cordyceps. In Enclyclopedia of Dietary Supplements. Edited by Coates PM. et al. New York, Marcell Dekker&semi; 2005.</li>
+				<li>Hsieh TC, Kunicki J, Darzynkiewicz Z, Wu JM. Effects of extracts of Coriolus versicolor (I&apos;m- Yunity) on cell-cycle progression and expression of interleukins-1 beta, -6 and -8 in promyelocytic HL-60 leukemic cells and mitogenically stimulated and nonstimulated human lyphocytes. The Journal of Alternative and Complementary Medicine 2002&semi;8(5):591-602.</li>
+				<li>Hsu CH, Hwang KC, Chiang YH, Chou P. The mushroom Agaricus blazei Murrill extract normalizes liver function in patients with chronic hepatitis B. The Journal of Alternative and Complementary Medicine 2008&semi;14(3):299-301.</li>
+				<li>Izawa S, Inoue Y. A screening system for antioxidants using thioredoxin-deficient yeast: discovery of thermostable antioxidant activity from Agaricus blazei Murrill. Applied Microbiology and Biotechnology 2003&semi;64(4):537-542.</li>
+				<li>Jeong H, Yang BK, Jeong YT, Kim GN, Jeong YS, Kim SM, Mehta P, Song CH. Hypolipidemic effects of biopolymers extracted from culture broth, mycelia, and fruiting bodies of Auricularia auricula-judae in dietary-induced hyperlipidmic rats. Mycobiology 2007&semi;35(1):16-20.</li>
+				<li>Jeong YT, Yang BK, Jeong SC, Kim SM, Song CH. Ganoderma applanatum: A promising mushroom for antitumor and immunomodulating activity. Phytotherapy Research 2008&semi;22(5):614-619.</li>
+				<li>Jeong YT, Yang BK, Li CR, Song CH. Anti-tumor effects of exo- and endo-biopolymers produced from submerged cultures of three different mushrooms. Mycobiology 2008&semi;36(2):106- 109.</li>
+				<li>Johnson E, Forland DT, Saetre L, Bernardshaw SV, Lyberg T, Hetland G. Effect of an extract based on the medicinal mushroom Agaricus blazei Murrill on release of cytokines, chemokines and leukocyte growth factors in human blood ex vivo and in vivo. Clinical Immunology 2008&semi;69(3):242-250.</li>
+				<li>Ju HK, Chung HW, Hong SS, Park JH, Lee J, Kwon SW. Effect of steam treatment on soluble phenolic content and antioxidant activity of the Chaga mushroom (Inonotus obliquus). Food Chemistry 2008&semi;119(2):619-625.</li>
+				<li>Kalyoncu F, Oskay M, Kayalar H. Antioxidant activity of the mycelium of 21 wild mushroom species. Mycology 2010&semi;1(3):195-199.</li>
+				<li>Karaman M, Malbasa JE, Matavuly M, Popovic M. Medicinal and edible lignicolous fungi as natural sources of antioxidative and antibacterial agents. Phytotherapy Research 2010&semi;24(10):1473-1481.</li>
+				<li>Kho YS, Vikineswary S, Abdullah N, Kuppusamy UR, Oh HI. Antioxidant capacity of fresh and processed fruit bodies and mycelium of Auricularia auricula-judae (Fr.) Qu&#233;l. Journal of Medicinal Food 2009&semi;12(1):167-174.</li>
+				<li>Kim HS, Kacew S, Lee BM. In vitro chemopreventive effects of plant polysaccharides (Aloe barbadensis Miller, Lentinus edodes, Ganoderma lucidum and Coriolus vericolor). Carcinogenesis 1999&semi;20(8):1637-1640.</li>
+				<li>Kim SP, Kang MY, Kim JH, Nam SH, Friedman M. Composition and mechanism of antitumor effects of Hericium erinaceus mushroom extracts in tumor-bearing mice. Journal of Agricultural and Food Chemistry 2011&semi;59(18):9861-9869.</li>
+				<li>Kim YR. Immunomodulatory activity of the water extract from medicinal mushroom Inonotus obliquus. Mycobiology 2005&semi;33(3):158-162.</li>
+				<li>Klaus A, Kozarski M, Niksic M, Jakovljevic D, Todorovic N, Van Griensven LJLD. Antioxidative activities and chemical characterization of polysaccharides extracted from the basidiomycete Schizophyllum commune. LWT - Food Science and Technology 2011&semi;44(10):2005-2011.</li>
+				<li>Kobayashi Y, Kariya K, Saigenji K, Nakamura K. Oxidative stress relief for cancer-bearing hosts by the protein-bound polysaccharide of Coriolus versicolor QUEL with SOD mimicking activity. Cancer Biotherapy 1994&semi;9(1):55-62.</li>
+				<li>Koge T, Komatsu W, Sorimachi K. Heat stability of agaritine in water extracts from Agaricus blazei and other edible fungi, and removal of agaritine by ethanol fractionation. Food Chemistry 2011&semi;126(3):1172-1177.</li>
+				<li>Korzarski M, Klaus A, Niksic M, Vrvic MM, Todorovic N, Jakovljevic D, Van Griensven LJLD. Antioxidative activities and chemical characterization of polysaccharide extracts from the widely used mushrooms Ganoderma applanatum, Ganoderma lucidum, Lentinus edodes and Trametes versicolor. Journal of Food Composition and Analysis 2012&semi;26:44-153.</li>
+				<li>Kuppusamy UR, Chong YL, Mahmood AA, Indra M, Abdullah N, Vikineswary S. Lentinula edodes (shiitake) mushroom extract protects against hydrogen peroxide induced cytotoxicity in peripheral blood mononuclear cells. Indian Journal of Biochemistry & Biophysics 2009&semi;46(2):161-165.</li>
+				<li>Lee JS, Cho JY, Hong EK. Study on macrophage activation and structural characteristics of purified polysaccharides from the liquid culture broth of Hericium erinaceus. Carbohydrate Polymers 2009&semi;78(1):162-168.</li>
+				<li>Lee WY, Park EJ, Ahn JK, Ka KH. Ergothioneine contents in fruiting bodies and their enhancement in mycelial cultures by the addition of methionine. Mycobiology 2009&semi;37(1):43- 47.</li>
+				<li>Lee WY, Park Y, Ahn JK, Ka KH, Park SY. Factors influencing the production of endopolysaccharide and exopolysaccharide from Ganoderma applanatum. Enzyme and Microbial Technology 2007&semi;40(2):249-254.</li>
+				<li>Li H, Lee HS, Kim SH, Moon B, Lee C. Antioxidant and anti-inflammatory activities of methanol extracts of Tremella fuciformis and its major phenolic acids. Journal of Food Science 2014&semi;79(4):C460-C468.</li>
+				<li>Li SP, Su ZR, Dong TT, Tsim KW. The fruiting body and its caterpillar host of Cordyceps sinensis show close resemblance in main constituents and anti-oxidation activity. Phytomedicine 2002&semi;9(4):319-324.</li>
+				<li>Liang B, Guo Z, Xie F, Zhao A. Antihyperglycemic and antihyperlipidemic activities of aqueous extract of Hericium erinaceus in experimental diabetic rats. BMC Complementary & Alternative Medicine 2013&semi;13(1):253.</li>
+				<li>Lindequist U, Niedermeyer TH, J&#252;lich WD. The Pharmacological potential of mushrooms. Evidence-Based Complementary and Alternative Medicine 2005&semi;2(3):285-299.</li>
+				<li>Liu F, Ooi VE. A review of pharmacological activities of mushroom polysaccharides. International Journal of Medicinal Mushrooms 1999&semi;1(3):195-206.</li>
+				<li>Lo HC, Hsieh C, Lin FY, Hsu TH. A systematic review of the mysterious caterpillar fungus Ophiocordyceps sinensis in Dong-ChongXiaCao (Dong Chong Xia Cao) and related bioactive ingredients. Journal of Traditional and Complementary Medicine 2013&semi;3(1):16- 32.</li>
+				<li>Ma JQ, Liu CM, Qin ZH, Jiang JH, Sun YZ. Ganoderma applanatum terpenes protect mouse liver against benzo(alpha)pyren-induced oxidative stress and inflammation. Environmental Toxicology and Pharmacology 2011&semi;31(3):460-468.</li>
+				<li>Mitomi T, Tsuchiya, Lijima N, Aso K, Suzuki K, Nishiyama K, Amano T, Takahashi T, Murayama N, Oka H, Oya K, Noto T, Ogawa N. Randomized, controlled study on adjuvant immunochemotherapy with PSK in curatively resected colorectal cancer. Diseases of the Colon & Rectum 1992&semi;35(2):123-130.</li>
+				<li>Mori K, Inatomi S, Ouchi K, Azumi Y, Tuchida T. Improving effects of the mushroom Yamabushitake (Hericium erinaceus) on mild cognitive impairment: a double-blind placebo- controlled clinical trial. Phytotherapy Research 2009&semi;23(3):367-372.</li>
+				<li>Mukai H, Watanabe T, Katsumata N. An alternative medicine, Agaricus blazei, may have induced severe hepatic dysfunction in cancer patients. Japanese Journal of Clinical Oncology 2006&semi;36(12):808-810.</li>
+				<li>Nagano M, Shimizu K, Kondo R, Hayashi C, Sato D, Kitagawa K, Ohnuki K. Reduction of depression and anxiety by 4 weeks Hericium erinaceus intake. Biomedical Research 2010&semi;31(4):231-237.</li>
+				<li>Nagaraj K, Mallikarjun N, Naika R, Venugopal TM. Phytochemical analysis and in vitro antimicrobial potential of Ganoderma applanatum (Pers.) Pat. of Shivamogga District- Karnataka, India. International Journal of Pharmaceutical Sciences Review and Research 2013&semi;23(2):36-41.</li>
+				<li>Nagashima Y, Maeda N, Yamamoto S, Yoshino S, Oka M. Evaluation of host quality of life and immune function in breast cancer patients treated with combination of adjuvant chemotherapy and oral administration of Lentinula edodes mycelial extract. OncoTargets and Therapy 2013&semi;6:853-859.</li>
+				<li>Nakashima S, Umeda Y, Kanada T. Effect of polysaccharides from Ganoderma applanatum on immune responses. Microbiology & Immunology 1979&semi;23(6):501-513.</li>
+				<li>Nicandro JP, Tsourounis C, Frassetto L, Guglielmo BJ. In vivo effect of I&apos;m-Yunity on hepatic cytochrome P450 3A4. Journal of Herbal Pharmacotherapy 2007&semi;7(1):39-56.</li>
+				<li>Ning X, Luo Q, Li C, Ding Z, Pang J, Zhao C. Inhibitory effects of a polysaccharide extract from the Chaga medicinal mushroom, Inonotus obliquus (higher Basidiomycetes), on the proliferation of human neurogliocytoma cells. International Journal of Medicinal Mushrooms 2014&semi;16(1):29- 36.</li>
+				<li>Ohno S, Sumiyoshi Y, Hashine K, Shirato A, Kyo S, Inoue M. Phase I clinical study of the dietary supplement, Agaricus blazei Murrill, in cancer patients in remission. Evidence-Based Complementary and Alternative Medicine 2011&semi; Article ID 192381:1-9.</li>
+				<li>Ou Ming. Chinese-English manual of common use in Traditional Chinese Medicine. Guangdong, China. Guangdong Science and Technology Publishing House.1992&semi;602-603.</li>
+				<li>Oyetayo OV. Medicinal uses of mushrooms in Nigeria: towards full and sustainable exploitation. African Journal of Traditional Complementary Alternative Medicine 2011&semi;8(3):267-274.</li>
+				<li>Park YS, Lee HS, Won MH, Lee JH, Lee SY, Lee HY. Effect of an exo-polysaccharide from the culture broth of Hericium erinaceus on enhancement of growth and differentiation of rat adrenal nerve cells. Cytotechnology 2002&semi;39(3):155-162.</li>
+				<li>Perera PK, Li Y. Mushrooms as a functional food mediator in preventing and ameliorating diabetes. Functional Foods in Health and Disease 2011&semi;4:161-171.</li>
+				<li>Pushpa H, Anand M, Kashimaiah P. Ganoderma applanatum (persoon) Patouillard: as a source of anticancer and antioxidant agent. International Journal of Pharmacology and Bio Sciences 2014&semi;5(2):276-283.</li>
+				<li>Ramberg JE, Nelson ED, Sinnott RA. Immunomodulatory dietary polysaccharides: a systematic review of the literature. Nutrition Journal 2010&semi;9(54):1-22.</li>
+				<li>Shimizu S, Kityada H, Yamakawa J, Murayama T, Sugiyama K, Izumi H, Yamaguchi N. Activation of the alternative complement pathway by Agaricus blazei Murrill. Phytomedicine 2002&semi;9(6):536-545.</li>
+				<li>Sia GM, Candlish JK. Effects of shiitake (Lentinus edodes) extract on human neutrophils and the U937 monocytic cell line. Phytotherapy Research 1999&semi;13(2):133-137.</li>
+				<li>Rogers RD. The fungal pharmacy medicinal mushrooms of western Canada. Edmonton, AB: Prairie Deva Press&semi; 2006.</li>
+				<li>Rotolo G. The effectiveness of Coriolus versicolor in the treatment of secondary phenomena associated with HIV. 10th International Congress of Mucosal Immunology. Amsterdam&semi; 1999.</li>
+				<li>Schulzova V, Hajslova J, Peroutka R, Gry J, Andersson HC. Influence of storage and household processing on the agaritine content of the cultivated Agaricus mushroom. Food Additives & Contaminants 2002&semi;19(9):853-862.</li>
+				<li>Shashkina MY, Shashkin PN, Sergeev AV. Chemical and medicobiological properties of chaga (review). Pharmaceutical Chemistry Journal 2006&semi;40(10):560-568.</li>
+				<li>Sheu S, Lyu Y, Lee M, Cheng J. Immunomodulatory effects of polysaccharides isolated from Hericium erinaceus on dendritic cells. Process Biochemistry 2013&semi;48(9):1402-1408.</li>
+				<li>Shikov AN, Pozharitskaya ON, Heinrich M. Medicinal plants of the Russian pharmacopoeia&semi; their history and applications. Journal of Ethnopharmacology 2014&semi;154(3):481-536.</li>
+				<li>Shiu W, Leung T, Tao M. A clinical study of PSP on peripheral blood counts during chemotherapy. Phytotherapy Research 2006&semi;6(4):217-218.</li>
+				<li>Soares AA, deOliveira AL, Sa-Nakanishi AB, Comar JF, Rampazzo APS, Vicentini FA, Natali MRM, Gomes da Costa SM, Bracht A, Peralta RM. Effects of an Agaricus blazei aqueous extract pretreatment on Paracetamol-induced brain and liver injury in rats. Biomed Research International 2013&semi; Article ID 469180:1-12.</li>
+				<li>Sobieralski K, Siwulski M, Lisiecka J, Jedryczka M, Sas-Golak I, Fruzynska-Jozwiak D. Fungi- derived beta-glucans as a component of functional food. Acta Scientiarum Polonorum Horticulture 2012&semi;11(4):111-128.</li>
+				<li>Stamets P. Controlling Zoonotic Disease Vectors from insects and arthropods using preconidial mycelium and extracts of preconidial mycelium from entomopathogenic fungi. US8753656 B2&semi; 2014.</li>
+				<li>Sumiyoshi Y, Hashine K, Kakahi Y, Yoshimura K, Satou T, Kuruma H, Namiki S, Shinohara N. Dietary administration of mushroom mycelium extracts in patients with early stage prostate cancers managed expectantly: a phase II study. Japanese Journal of Clinical Oncology 2010&semi;40(10):967-972.</li>
+				<li>Sun JE, Ao ZH, Lu ZM, Xu HY, Zhang XM, Dou WF, Xu ZH. Antihyperglycemic and antilipidperoxidative effects of dry matter of culture broth of Inonotus obliquus in submerged culture on normal and alloxan-diabetes mice. Journal of Ethnopharmacology 2008&semi;118(1):7- 13.</li>
+				<li>Sun Y, Yin T, Chen XH, Zhang G, Curtis RB, Lu ZH, Jiang JH. In vitro antitumor activity and structure characterization of ethanol extracts from wild and cultivated Chaga medicinal mushrooms, Inonotus obliquus (Pers.: Fr.) Pil&#224;t (Aphyllophoromycetideae). International Journal of Medicinal Mushrooms 2011&semi;13(2):121-130.</li>
+				<li>Suzuki N, Takimoto Y, Suzuki R, Arai T, Uebaba K, Nakai M, Strong JM, Tokuda H. Efficacy of Oral Administration of Lentinula eododes mycelia extract for breast cancer patients undergoing postoperative hormone therapy. Asian Pacific Journal of Cancer Prevention 2013&semi;14(6):3469-3472.</li>
+				<li>Szeto M. Coriolus versicolor extracts: relevance in cancer management. Current Oncology 2008&semi;15(2):79.</li>
+				<li>Tripathi AM, Tiwary BN. Biochemical constituents of a wild strain of Schizophyllum commune isolated from Achanakmar-Amarkantak Biosphere Reserve (ABR), India. World Journal of Microbiology and Biotechnology 2013&semi;29:1431-1442.</li>
+				<li>Wasser SP. Medicinal mushroom science: history, current status, future trends and unsolved problems. International Journal of Medicinal Mushrooms 2010&semi;12(1):1-16.</li>
+				<li>Wong CC, Li HB, Cheng KW, Chen F. A systematic survey of antioxidant activity of 30 Chinese medicinal plants using the ferric reducing antioxidant power assay. Food Chemistry 2006&semi;97(4):705-711.</li>
+				<li>Wong JY, Abdulla MA, Raman J, Phan CW, Kuppusamy UR, Golbabapour S, Sabaratnam V. Gastroprotective effects of Lion&apos;s Mane mushroom Hericium erinaceus (Bull.:Fr.) Pers. (Aphyllophoromycetideae) extract against ethanol-induced ulcer in rats. Evidence-Based Complementary and Alternative Medicine 2013&semi; Article ID 492976:1-9.</li>
+				<li>Wu J, Ding ZY, Zhang KC. Improvement of exopolysaccharide production by macro-fungus Auricularia auricula in submerged culture. Enzyme and Microbial Technology 2005&semi;39(4):743- 749.</li>
+				<li>Wu Q, Zheng C, Ning ZX, Yang B. Modification of low molecular weight polysaccharides from Tremella fuciformis and their antioxidant activity in vitro. International Journal of Molecular Sciences 2007&semi;8(7):670-679.</li>
+				<li>Xu W, Shen X, Yang F, Han Y, Li R, Xue D, Jiang C. Protective effect of polysaccharides isolated from Tremella fuciformis against radiation-induced damage in mice. Journal of Radiation Research 2012&semi;53(3):353-360.</li>
+				<li>Xu, X, Hu Y, Quan L. Production of bioactive polysaccharides by Inonotus obliquus under submerged fermentation supplemented with lignocellulosic biomass and their antioxidant activity. Bioprocessing Biosystems Engineering 2014&semi; DOI:10.1007/s00449-014-1226-1.</li>
+				<li>Xu X, Li J, Hu Y. Polysaccharides from Inonotus obliquus sclerotia and cultured mycelia stimulate cytokine production of human peripheral blood mononuclear cells in vitro and their chemical characterization. International Immunopharmacology 2014&semi;21(2):269-278.</li>
+				<li>Yamada J, Hamuro J, Hatanaka H, Hamabata K, Kinoshita S. Alleviation of seasonal allergic symptoms with superfine beta-1,3-glucan: a randomized study. Journal of Allergy and Clinical Immunology 2007&semi;119(5):1119-1126.</li>
+				<li>Yim HS, Chye FY, Rao V, Low JY, Matanjun P, How SE, Ho CW. Optimization of extraction time and temperature on antioxidant activity of Schizophyllum commune aqueous extract using response surface methodology. Journal of Food Science & Technology 2013&semi;50(2):275-283.</li>       
+				<li>Yoshimura K, Kamoto T, Ogawa O, Matsui S, Tsuchiya N, Tada H, Murata K, Yoshimura K, Habuchi T, Fukushima M. Medical mushrooms used for biochemical failure after radical treatment for prostate cancer: an open-label study. International Journal of Urology 2010&semi;17(6):548-554.</li>
+				<li>Zembron-Lacny A, Gajewski M, Siatkowski I. Effect of shiitake (Lentinus edodes) extract on antioxidant and inflammatory response to prolonged eccentric exercise. Journal of physiology and Pharmacology 2013&semi;64(2):249-254.</li>
+				<li>Zhang E. (Editor-in-chief). (English-Chinese) Rare Chinese Materia Medica. Publishing House of Shanghai College of Traditional Medicine&semi;1989:234-239.</li>
+				<li>Zhang H, Wang ZY, Yang L, Yang X, Zhang Z. In vitro antioxidant activities of sulfated derivatives of polysaccharides extracted from Auricularia auricula. International Journal of Molecular Science 2011&semi;12(5):3288-3302.</li>
+				<li>Zhang M, Cui SW, Cheung PCK, Wang Q. Antitumor polysaccharides from mushrooms: a review on their isolation process, structural characteristics and antitumor activity. Trends in Food Science & Technology 2007&semi;18(1):4-19.</li>
+				<li>Zhang Z, Ly G, Pan H, Pandey A, He W, Fan L. Antioxidant and hepatoprotective potential of endo-polysaccharides from Hericium erinaceus grown on tofu whey. International Journal of Biological Macromolecules 2012&semi;51(5):1140-1146.</li>
+				<li>Zheng W, Zhao Y, Zheng X, Liu Y, Pan S, Dai Y, Liu F. Production of antioxidant and antitumor metabolites by submerged cultures of Inonotus obliquus cocultured with Phellinus punctatus. Applied Microbiology Biotechnology 2011&semi;89(1):157-167.</li>
+				<li>Zhixian L. (General Chief editor). The Chinese Materia Medica. Beijing University of Traditional Chinese Medicine&semi; 1998.</li>
+				<li>Zhu JS, Halpern GM, Jones K. The scientific rediscovery of an ancient Chinese herbal medicine: Cordyceps sinensis - Part I. The Journal of Alternative and Complementary Medicine 1998&semi;4(3):289-303.</li>
+			</ul>
+	</section>
+
+   <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

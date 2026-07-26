@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=ahcc.fd2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="75c5d908-c83a-4a11-9b40-d861ab605147"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'>  <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+      
+  <h1>AHCC EXTRACT - Powder</h1>
+
+
+  <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format
+    (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint
+    (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+    <a href="/home-accueil/help-aide/index-eng.php#alt"
+      >alternate format help</a
+    >
+    section.
+  </p>
+
+  <div class="icon">
+    <a
+      href="dbImages/mono_active-hexose-correlated-compound--powder-ahccfd_english.pdf"
+      title="ACTIVE HEXOSE CORRELATED COMPOUND - Powder (AHCC-FD)"
+    >
+      <img alt="Monograph: ACTIVE HEXOSE CORRELATED COMPOUND - Powder
+      (AHCC-FD)" style="position:relative; top:-2px"
+      src=http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif
+      height="21" width="22"/> (PDF Version - 83 KB)</a
+    >
+  </div>
+
+  <p>
+    This monograph is intended to serve as a guide to industry for the
+    preparation of Product Licence Applications (PLAs) and labels for natural
+    health product market authorization. It is not intended to be a
+    comprehensive review of the medicinal ingredient.
+  </p>
+
+  <p><strong>Notes</strong></p>
+  <ul>
+    <li>
+      Text in parentheses is additional optional information which can be
+      included on the label at the applicant's discretion.
+    </li>
+    <li>
+      The solidus (/) indicates that the terms and/or statements are
+      synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+    <li>
+      For products in granule form, refer to the “AHCC Extract - Granule” monograph.
+    </li>
+  </ul>
+
+  <h2>Date</h2>
+
+  <p>October 25, 2024</p>
+  
+
+  <h2>Proper name(s), Common name(s), Source information</h2>
+
+  <table class="subject">
+    <caption>
+      Table 1. Proper name(s), Common name(s), Source information
+    </caption>
+
+    <thead>
+      <tr>
+        <th scope="col" rowspan="2">Proper name(s)</th>
+        <th scope="col" rowspan="2">Common name(s)</th>
+        <th scope="colgroup" rowspan="1" colspan="3">Source information</th>
+      </tr>
+
+      <tr>
+        <th scope="col">Source material(s)</th>
+        <th scope="col">Part(s)</th>
+        <th scope="col">Preparation(s)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>AHCC<sup>1</sup></td>
+
+        <td>AHCC</td>
+
+        <td>
+          <i>Lentinula edodes</i>
+        </td>
+        <td>Cultured mycelium</td>
+        <td>Extract</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    References: Proper name: Spierings et al. 2007, Matsui et al. 2002; Common
+    name: Spierings et al. 2007, Matsui et al. 2002; Source information:
+    Fujii et al. 2011, Sumiyoshi et al. 2010.
+  </p>
+  <p><sup>1</sup>AHCC is a specific standardized extract of cultured <em>Lentinula edodes</em> mycelia. See 'Specifications' section for identity testing.</p>
+
+  <h2>Route of Administration</h2>
+  <p>Oral</p>
+
+  <h2>Dosage Form(s)</h2>
+  <p>The acceptable dosage form is limited to powder.</p>
+  <p>
+    This monograph excludes foods or food-like dosage forms as indicated in
+    the Compendium of Monographs Guidance Document.
+  </p>
+
+  <h2>Use(s) or Purpose(s)</h2>
+  <ul>
+    <li>
+      Source of antioxidants/Provides antioxidants (Ye et al.
+      2004, 2003; Wang et al. 2001).
+    </li>
+    <li>
+      Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Ye et al. 2004, 2003; Wang et al. 2001).
+    </li>
+  </ul>
+
+  <h2>Dose(s)</h2>
+
+  <h3>Subpopulation(s)</h3>
+  <p>Adults 18 years and older</p>
+
+  <h3>Quantity(ies)</h3>
+  <p>
+    Not to exceed 3.6 grams of AHCC extract (powder), per day (Fujii et al. 2011; Cowawintaweewat et al. 2006; Uno et al. 2000).
+  </p>
+
+  <h3>Direction(s) for use</h3>
+  <p>
+    Mix product well in at least 240 milliliters of liquid (e.g., water, milk,
+    fruit juice or similar aqueous beverage) immediately before consumption.
+  </p>
+
+  <h2>Duration(s) of Use</h2>
+  <p>No statement required.</p>
+
+  <h2>Risk Information</h2>
+
+  <h3>Caution(s) and warning(s)</h3>
+  <p>No statement required.</p>
+
+  <h3>Contraindication(s)</h3>
+  <p>No statement required.</p>
+
+  <h3>Known adverse reaction(s)</h3>
+  <p>
+    Stop use if symptoms such as nausea and diarrhea occur (Sumiyoshi et al.
+    2010; Matsui et al. 2002).
+  </p>
+
+  <h2>Non-medicinal ingredients</h2>
+  <p>
+    Must be chosen from the current Natural Health Products Ingredients
+    Database (NHPID) and must meet the limitations outlined in the database.
+  </p>
+
+  <h2>Storage conditions</h2>
+  <p>
+    Must be established in accordance with the requirements described in the
+    <em>Natural Health Products Regulations.</em>
+  </p>
+
+  <h2>Specifications</h2>
+  <ul>
+    <li>
+      The finished product specifications must be established in accordance
+      with the requirements described in the Natural and Non-prescription
+      Health Products Directorate (NNHPD) Quality of Natural Health Products
+      Guide.
+    </li>
+    <li>
+      The medicinal ingredient must comply with the requirements outlined in
+      the NHPID.
+    </li>
+    <li>
+      AHCC&#174; is a specific standardized extract of cultured <em>Lentinula edodes</em> mycelia, and as such, although it has in the past been referred to in the literature as ‘active hexose correlated compound’, AHCC is not a single compound but contains several constituents including the fraction called ‘active hexose correlated compound’. AHCC&#174; should be identity-tested to confirm its authenticity.
+    </li>
+  </ul>
+  
+  <h2>Example of Product Facts:</h2>
+
+  <p>
+    Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</p>
+  <p class="alignCenter">
+    <img
+      src="/nhpid-bdipsn/dbImages/AHCC-FD-Powder_E.gif"
+      alt="Product Facts Table"
+      style="width: 700px"
+    />
+  </p>
+
+  <h2>References Cited</h2>
+  <ul>
+    <li>
+      Cowawintaweewat S, Manoromana S, Sriplung H, Khuhaprema T, Tongtawe P,
+      Tapchaisri P, Chaicumpa W. Prognostic improvement of patients with
+      advanced liver cancer after active hexose correlated compound (AHCC)
+      treatment. Asian Pacific Journal of Allergy and Immunology
+      2006;24(1):33-45.
+    </li>
+    <li>
+      Fujii H, Nishioka N, Simon RR, Kaur R, Lynch B, Roberts A. Genotoxicity
+      and subchronic toxicity evaluation of Active Hexose Correlated Compound
+      (AHCC). Regular Toxicology and Pharmacology 2011;59(2):237-250.
+    </li>
+    <li>
+      Matsui Y, Uhara J, Satoi S, Kaibori M, Yamada H, Kitade H, Imamura A,
+      Takai S, Kawaguchi Y, Kwon AH, Kamiyama Y. Improved prognosis of
+      postoperative hepatocellular carcinoma patients when treated with
+      functional foods: a prospective cohort study. Journal of Hepatology
+      2002;37(1):78-86.
+    </li>
+    <li>
+      Spierings EL, Fujii H, Sun B, Walshe T. A Phase I study of the safety of
+      the nutritional supplement, active hexose correlated compound, AHCC, in
+      healthy volunteers. Journal of Nutritional Science and Vitaminology
+      (Tokyo) 2007;53(6):536-539.
+    </li>
+    <li>
+      Sumiyoshi Y, Hashine K, Kakehi Y, Yoshimura K, Satou T, Kuruma H, Namiki
+      S, Shinohara N. Dietary administration of mushroom mycelium extracts in
+      patients with early stage prostate cancers managed expectantly: a phase
+      II study. Japanese Journal of Clinical Oncology 2010;40(10):967-972.
+    </li>
+    <li>
+      Uno K, Kosuna K, Sun B, Fujii H, Wakame K, Chikumaru S, Hosokawa G, Ueda
+      Y. Active Hexose Correlated Compound (AHCC) improves immunological
+      parameters and performance status of patients with solid tumors.
+      Biotherapy 2000;14(3):303-309.
+    </li>
+    <li>
+      Wang S, Ichimura K, Wakame K. Preventive effects of Active Hexose
+      Correlated Compound (AHCC) on oxidative stress induced by ferric
+      nitrilotriacetate in the rat. Dokkyo Journal of Medical Sciences
+      2001;28(2-3):745-752.
+    </li>
+    <li>
+      Ye SF, Ichimura K, Wakame K, Ohe M. Suppressive effects of Active Hexose
+      Correlated Compound on the increased activity of hepatic and renal
+      ornithine decarboxylase induced by oxidative stress. Life Sciences
+      2003;74(5):593-602.
+    </li>
+    <li>
+      Ye SF, Wakame K, Ichimura K, Matsuzaki S. Amelioration by active hexose
+      correlated compound of endocrine disturbances induced by oxidative
+      stress in the rat. Endocrine Regulations 2004;38(1):7-13.
+    </li>
+  </ul>
+
+  <h2>References Reviewed</h2>
+  <ul>
+    <li>
+      Albers R, Antoine JM, Bourdet-Sicard R, Calder PC, Gleeson M, Lesourd B,
+      Samartín S, Sanderson IR, Van Loo J, Vas Dias FW, Watzl B. Markers to
+      measure immunomodulation in human nutrition intervention studies.
+      British Journal of Nutrition 2005;94(3):452-481.
+    </li>
+    <li>
+      Aviles H, O'Donnell PM, Orshal JM, Sonnenfeld G. Active Hexose
+      Correlated Compound (AHCC) activates immune function to decrease
+      bacteria load in a murine model of surgical wound infection. The Journal
+      of Immunology 2007;178, S73.
+    </li>
+    <li>
+      Aviles H, O'Donnell P, Orshal J, Fujii H, Sun B, Sonnenfeld G. Active
+      hexose correlated compound activates immune function to decrease
+      bacterial load in a murine model of intramuscular infection. American
+      Journal of Surgery 2008;195(4):537-545.
+    </li>
+    <li>
+      Brinker F. Herbal Contraindications and Drug Interactions: Plus Herbal
+      Adjuncts With Medicines, expanded 4th Edition. Sandy (OR): Eclectic
+      Medical Publications; 2010.
+    </li>
+    <li>
+      Gao Y, Zhang D, Sun B, Fujii H, Kosuna K, Yin Z. Active hexose
+      correlated compound enhances tumor surveillance through regulating both
+      innate and adaptive immune responses. Cancer Immunology, Immunotherapy
+      2006;55(10):1258-1266.
+    </li>
+    <li>
+      Hirose A, Sato E, Fujii H, Sun B, Nishioka H, Aruoma OI. The influence
+      of active hexose correlated compound (AHCC) on cisplatin-evoked
+      chemotherapeutic and side effects in tumor- bearing mice. Toxicology and
+      Applied Pharmacology 2007;222(2):152-158.
+    </li>
+    <li>
+      Hoffman G, Wirleitner B, Fuchs D. Potential role of immune system
+      activation-associated production of neopterin derivatives in humans.
+      Inflammation Research 2003;52(8):313-321.
+    </li>
+    <li>
+      Iqbal M, Giri U, Athar M. Ferric nitrilotriacetate (Fe-NTA) is a potent
+      hepatic tumor promoter and acts through the generation of oxidative
+      stress. Biochemical and Biophysical Research Communications
+      1995;212(2):557-563.
+    </li>
+    <li>
+      Kalkan A, Ozden M, Akbulut H. Serum neopterin level in patients with
+      chronic hepatitis B. Japanese Journal of Infectious Diseases
+      2005;58(2):107-109.
+    </li>
+    <li>
+      Kawaguchi Y. Improved Survival of Patients with Gastric Cancer or Colon
+      Cancer when treated with Active Hexose Correlated Compound (AHCC):
+      Effect of AHCC on digestive system cancer. Natural Medicine Journal
+      2009;1(1):1-6.
+    </li>
+    <li>
+      Kidd PM. The use of mushroom glucans and proteoglycans in cancer
+      treatment. Alternative Medicine Review 2000;5(1):4-27.
+    </li>
+    <li>
+      Levy AM, Kita H, Phillips SF, Schkade PA, Dyer PD, Gleich GJ, Dubravec
+      VA. Eosinophilia and gastrointestinal symptoms after ingestion of
+      shiitake mushrooms. Journal of Allergy and Clinical Immunology
+      1998;101(5):613-620.
+    </li>
+    <li>
+      Mach CM, Fugii H, Wakame K, Smith J. Evaluation of active hexose
+      correlated compound hepatic metabolism and potential for drug
+      interactions with chemotherapy agents. Journal of the Society for
+      Integrative Oncology 2008;6(3):105-109.
+    </li>
+    <li>
+      Matsushita K, Kuramitsu Y, Ohiro Y, Obara M, Kobayashi M, Li YQ,
+      Hosokawa M. Combination therapy of active hexose correlated compound
+      plus UFT significantly reduces the metastasis of rat mammary
+      adenocarcinoma. Anticancer Drugs 1998;9(4):343-350.
+    </li>
+    <li>
+      Milner JA. Functional foods: the US perspective. American Journal of
+      Clinical Nutrition 2000;71 (suppl):1654S-1659S.
+    </li>
+    <li>
+      Nogusa S, Gerbino J, Ritz BW. Low-dose supplementation with active
+      hexose correlated compound improves the immune response to acute
+      influenza infection in C57BL/6 mice. Nutrition Research
+      2009;29(2):139-143.
+    </li>
+    <li>
+      Ritz BW, Nogusa S, Ackerman EA, Gardner EM. Supplementation with active
+      hexose correlated compound increases the innate immune response of young
+      mice to primary influenza infection. The Journal of Nutrition
+      2006;136:2868-2873.
+    </li>
+    <li>
+      Sun B, Wakame K, Sato E, Nishioka H, Aruoma OI, Fujii H. The effect of
+      active hexose correlated compound in modulating cytosine
+      arabinoside-induced hair loss, and 6- mercaptopurine- and
+      methotrexate-induced liver injury in rodents. Cancer Epidemiology
+      2009;33(3-4):293-299.
+    </li>
+    <li>
+      Terakawa N, Matsui Y, Satoi S, Yanagimoto H, Takahashi K, Yamamoto T,
+      Yamao J, Takai S, Kwon AH, Kamiyama Y. Immunological effect of active
+      hexose correlated compound (AHCC) in healthy volunteers: a double-blind,
+      placebo-controlled trial. Nutrition and Cancer 2008;60(5):643-651.
+    </li>
+    <li>
+      Wang S, Welte T, Fang H, Chang GJ, Born WK, O'Brien RL, Sun B, Fujii H,
+      Kosuna K, Wang T. Oral administration of active hexose correlated
+      compound enhances host resistance to West Nile encephalitis in mice.
+      Journal of Nutrition 2009;139(3):598-602.
+    </li>
+    <li>
+      Yagita A, Maruyama S, Wakasugi S, Sukegawa Y. H-2 haplotype-dependent
+      serum IL-12 production in tumor-bearing mice treated with various
+      mycelial extracts. In Vivo 2002;16(1):49- 54.
+    </li>
+    <li>
+      Yin Z, Fujii H, Walshe T. Effects of active hexose correlated compound
+      on frequency of CD4+ and CD8+ T cells producing interferon-&#947; and/or
+      tumor necrosis factor-&#945; in healthy adults. Human Immunology
+      2010;71(12):1187-1190.
+    </li>
+  </ul>
+
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=amla2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="c197d1e6-4daa-4e2c-8771-ec55a195aaca"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+<h1>
+    Amla - <i>Phyllanthus Emblica</i>
+  </h1>
+  <div class="icon">
+   <a href="dbImages/mono_amla--phyllanthus-emblica_english.pdf" title="Amla - Phyllanthus emblica">
+    <img alt="Monograph: Amla - Phyllanthus emblica" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+    (PDF Version - 23.9 KB)
+   </a>
+  </div>
+  <p>
+   This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    March 28, 2025
+   </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceMaterial">
+   <h2 id="properNameCommonNameSourceMaterial">
+    Proper name(s), Common name(s), Source information
+   </h2>
+   <table class="subject">
+    <caption>
+     Table 1.  Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Proper name(s)
+      </th>
+      <th rowspan="2" scope="col">
+       Common name(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+       Source information
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Source material(s)
+      </th>
+      <th scope="col">
+       Part(s)
+      </th>
+      <th scope="col">
+       Preparation(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="1">
+        <i>
+         Phyllanthus emblica
+        </i>
+      </td>
+      <td rowspan="2">
+       <ul>
+        <li>
+         Amalaki
+        </li>
+        <li>
+         Amla
+        </li>
+        <li>
+         Emblic
+        </li>
+        <li>
+         Emblic myrobalan
+        </li>
+        <li>
+         Indian gooseberry
+        </li>
+        <li>
+         Myrobalan
+        </li>
+       </ul>
+      </td>
+      <td>
+        <i>
+         Phyllanthus emblica
+        </i>
+      </td>
+      <td>
+        Fruit
+      </td>
+      <td>
+        Dry
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    References: Proper name: USDA 2023; Gardner and McGuffin 2013; Common names: ITIS 2023; USDA 2023; API 2001; Gardner and McGuffin 2013; Source information: API 2001; Khory and Katrak 1999.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of Administration
+   </h2>
+   <!-- CHECK IF ROUTE OR ROUTE(S) -->
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage Form(s)
+   </h2>
+   <p>
+    This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+   </p>
+   <p>
+    Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <ul>
+    <li>
+     Source of antioxidants/Provides antioxidants (Duke 2023; Paranjpe 2005; Williamson 2002; API 2001; Kapoor 2001).
+    </li>
+    <li>
+     Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Duke 2023; Paranjpe 2005; Williamson 2002; API 2001; Kapoor 2001).
+    </li>
+    <li>
+     Traditionally used in Ayurveda as Rasayana (rejuvenative tonic) (Sudarshan 2005; Murthy 2004; Kapoor 2001; Gogte 2000).
+    </li>
+    <li>
+     Traditionally used in Ayurveda to help relieve symptoms such as heartburn and indigestion associated with Amlapitta (hyperacidity/dyspepsia) (Warrier et al. 2003; API 2001; Gogte 2000).
+    </li>
+    <li>
+     Traditionally used in Ayurveda as a digestive tonic to increase appetite and aid in digestion (stomachic) (Paranjpe 2005; Sidarshan 2005; Warrier et al. 2003; Kapoor 2001; Gogte 2000; Khory and Katrak 1999).
+    </li>
+    <li>
+     Traditionally used in Ayurveda as a mild laxative for the relief of occasional constipation (Paranjpe 2005; Sudarshan 2005; Warrier et al. 2003; Kapoor 2001; Gogte 2000; Khory and Katrak 1999).
+    </li>
+    <li>
+     Traditionally used in Ayurveda as an eye tonic (Chouhan et al. 2013; Premila 2006; Murthy 2004).
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Note
+    </strong>
+   </p>
+   <ul>
+    <li>
+        The laxative claim is based on the Ayurvedic Medicine; however, this is not a stimulant laxative nor a bulk-forming laxative. The mode of action is unclear and the laxative effect is mild.
+    </li>
+    <li>
+        The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g. Traditionally used in Ayurveda to help relieve symptoms such as heartburn and indigestion associated with Amlapitta (hyperacidity/dyspepsia) and as a digestive tonic to increase appetite and aid in digestion (stomachic)).
+    </li>
+    <li>
+        <strong>For multi-ingredient products:</strong>
+    </li>
+    <ul>
+        <li>
+            To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g. Amla is traditionally used in Ayurveda as Rasayana (rejuvenative tonic)).
+        </li>
+        <li>
+            When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required
+        </li>
+    </ul>
+    </ul>
+   </ul>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    Adults 18 years and older
+   </p>
+   <h3>
+    Quantity(ies)
+   </h3>
+   <p>
+    Methods of preparation: Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)
+   </p>
+   <p>
+    <i>
+     Antioxidant
+    </i>
+   </p>
+   <p>
+    Not to exceed 6 grams of dried fruit, per day (Williamson 2002; API 2001; Kapoor 2001; Gogte 2000).
+   </p>
+   <p>
+    <i>
+     Amlapitta, Digestive tonic, Laxative, Rasayana or Eye tonic
+    </i>
+   </p>
+   <p>
+    3-6 grams of dried fruit, per day (Williamson 2002; API 2001; Kapoor 2001; Gogte 2000).
+   </p>
+   <h3>
+    Direction(s) for use
+   </h3>
+   <p>
+    <i>
+     All products
+    </i>
+   </p>
+   <p>
+    Take a few hours before or after taking other medications or health products (HC 2009).
+   </p>
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration(s) of Use
+   </h2>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk Information
+   </h2>
+   <h3>
+    Caution(s) and warning(s)
+   </h3>
+   <p>
+    <i>
+     All products
+    </i>
+   </p>
+    <p>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding (HC 2009).
+    </p>
+    <p>
+     <i>
+     Products providing more than 3 grams of amla, per day
+     </i>
+    </p>
+    <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant (HC 2009).
+    </p>
+   <p>
+    <i>
+    Amlapitta, Digestive tonic
+    </i>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.
+   </p>
+   <p>
+    <i>
+    Laxative
+    </i>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen or if laxative effect does not occur within 7 days (HC 2009; Pray 2006; CPhA 2002).
+   </p>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <p>
+    <i>
+    Laxative
+    </i>
+   </p>
+   <p>
+    Do not use if you have fever or any undiagnosed gastrointestinal trouble (HC 2009).
+   </p>
+   <h3>
+    Known adverse reaction(s)
+   </h3>
+   <p>
+    <i>
+     Amlapitta, Antioxidant, Digestive tonic, Rasayana or Eye tonic
+    </i>
+   </p>
+   <p>
+    When using this product you may experience a laxative effect.
+   </p>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+   <h2 id="nonMedicinalIngredients">
+    Non-medicinal ingredients
+   </h2>
+   <p>
+    Must be chosen from the current  Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+   </p>
+  </section>
+  <section aria-labelledby="storageConditions">
+   <h2 id="storageConditions">
+    Storage conditions
+   </h2>
+   <p>
+    Must be established in accordance with the requirements described in the <i>Natural Health Products Regulations</i>.
+   </p>
+  </section>
+  <section aria-labelledby="specifications">
+   <h2 id="specifications">
+    Specifications
+   </h2>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+   </ul>
+  </section>
+  
+  <h2>Example of Product Facts:</h2>
+ 
+  <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+ 
+  <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/AMLA_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References Cited
+   </h2>
+   <ul>
+   <li>
+    API 2001: The Ayurvedic Pharmacopoeia of India, 1<sup>st</sup>
+    edition, Part I, Volume I. Delhi (IN): The Controller of Publications; 2001[Reprint of 1990 publication].
+   </li>
+   <li>
+    Chouhan B, Kumawat RC, Kotecha M, Ramamurthy A, Nathani S. Treiphla: A Comprehensive Ayurvedic Review. International Journal of Research in Ayurveda and Pharmacy; 2013;4(4): 612-617.
+   </li>
+   <li>
+    CPhA 2002: Repchinsky C, editor-in-chief. Patient Self-Care: Helping Patients Make Therapeutic Choices. 1<sup>st</sup>
+    edition. Ottawa (ON): Canadian Pharmacists Association; 2002.
+   </li>
+   <li>
+    Duke 2023: Dr. Duke's Phytochemical and Ethnobotanical Databases. [Accessed 2023 December 31]. Available from: https://phytochem.nal.usda.gov/
+   </li>
+   <li>
+    Gardner Z. and McGuffin M. editors. American Herbal Products Association's Botanical Safety Handbook, 2nd edition. American Herbal Products Association. Boca Raton (FL): CRC Press; 2013.
+   </li>
+   <li>
+    Gogte VVM. Ayurvedic Pharmacology and Therapeutic Uses of Medicinal Plants. Mubai (IN): Bharatiya Vidya Bhavan; 2000.
+   </li>
+   <li>
+    HC 2009: Laxatives: General - Laxatives - Labelling Standard [Internet]. Ottawa (ON): Drugs and Health Products; Health Canada; 2009. [Accessed 2023 December 31]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/nonprescription-drugs-labelling-standards/laxatives-labelling-standards-non-prescription-drugs.html
+   </li>
+   <li>
+    ITIS 2023: Phyllanthus emblica [2011] Integrated Taxonomic Information System (ITIS). [Accessed 2023 December 31]. Available from: https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=504352#null
+   </li>
+   <li>
+    Kapoor LD. Handbook of Ayurvedic Medicinal Plants. Baton Roca (FL): CRC Press LLC; 2001.
+   </li>
+   <li>
+    Khory RN, Katrak NN. Materia Medica of India and their Therapeutics. Delhi (IN): Komal Prakashan; 1999[Reprint of 1903 publication].
+   </li>
+   <li>
+    Murthy KRS. Bhavaprakasa of Bhavamisra. Volume 1. Varanasi (IN): Chowkhamba Krishnadas Academy; 2004.
+   </li>
+   <li>
+    Paranjpe P. Indian Medicinal Plants: Forgotten Healers: A Guide to Ayurvedic Herbal Medicine. Delhi (IN): Chaukhamba Sanskrit Pratishthan; 2005.
+   </li>
+   <li>
+    Pray WS. Non-Prescription Product Therapeutics. 2<sup>nd</sup>
+    edition. New York (NY): Lippincott Williams &amp; Wilkins; 2006.
+   </li>
+   <li>
+    Premila MS. Ayurvedic herbs: A clinical guide to the healing plants of traditional Indian medicine. New York (NY): The Haworth Press Inc; 2006.
+   </li>
+   <li>
+    Sudarshan SR. Encyclopaedia of Indian Medicine, Materia Medica - Herbal Drugs. Volume 4. Banglore (IN): Popular Prakashan; 2005.
+   </li>
+   <li>
+    USDA 2023: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2023 December 27]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+   </li>
+   <li>
+    Warrier PK, Nambiar VPK, Ramankutty C, editors. Indian Medicinal Plants: a compendium of 500 species. Volume 4. Chennai (IN): Orient Longman Private Limited; 2003.
+   </li>
+   <li>
+    Williamson EM, editor. Major Herbs of Ayurveda. Edinburgh (GB): Churchill Livingstone; 2002.
+   </li>
+   </ul>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+   <h2 id="referencesReviewed">
+    References Reviewed
+   </h2>
+   <ul>
+   <li>
+    Baliga MS, Dsouza JJ. Amla (Emblica officinalis Gaertn), a wonder berry in the treatment and prevention of cancer. European Journal of Cancer Prevention 2011;20(3):225-239.
+   </li>
+   <li>
+    Brinker F. 2010: Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications.
+   </li>
+   <li>
+    Charoenteeraboon J, Ngamkitidechaku C, Soonthornchareonnon N, Jaijoy K, Sireeratowong S. Antioxidant activities of the standardized water extract from fruit of Phyllanthus emblica Linn. Songklanakarin Journal of Science and Technology 2010;32(6):599-604.
+   </li>
+   <li>
+    Chaudhuri RK. Emblica cascading antioxidant: a novel natural skin care ingredient. Skin Pharmacology and Applied Skin Physiology 2002;15(5):374-380.
+   </li>
+   <li>
+    Chen TS, Liou SY, Chang YL. Supplementation of Emblica officinalis (Amla) extract reduces oxidative stress in uremic patients. American Journal of Clinical Medicine 2009;37(1):19-25.
+   </li>
+   <li>
+    Faccolia S. Cornucopia II A source book of edible plants. Vista (CA): Kampong Publications; 1998.
+   </li>
+   <li>
+    Hiraganahalli BD, Chinampudur VC, Dethe S, Mundkinajeddu D, Pandre MK, Balachandran J, Agarwal A. Hepatoprotective and antioxidant activity of standardized herbal extracts. Pharmacognosy Magazine 2012;8(30):116-123.
+   </li>
+   <li>
+    Jain SK. DeFillips RA. Medicinal Plants of India. Volume 1. Algonac (MI): Reference Publications, Inc; 1991.
+   </li>
+   <li>
+    Khare CP, editor. Indian Herbal Remedies: Rational Western Therapy, Ayurvedic and Other Traditional Usage, Botany. Berlin (DE): Springer; 2004.
+   </li>
+   <li>
+    Manjunatha S, Jaryal AK, Bijlani RL, Sachdeva U, Gupta SK. Effect of Chyawanprash and vitamin C on glucose tolerance and lipoprotein profile. Indian Journal of Physiology and Pharmacology 2001;45(1):71-79.
+   </li>
+   <li>
+    Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005.
+   </li>
+   <li>
+    Mishra LC, editor. Scientific Basis for Ayurvedia Therapies. Baton Roca (FL): CRC Press LLC; 2004.
+   </li>
+   <li>
+    Poltanov EA, Shikov AN, Dorman HJD, Pozharitskaya ON, Makarov VG, Tikhonov VP, Hiltunen R. Chemical and Antioxidant Evaluation of Indian Gooseberry (Emblica officinalis Gaertn., syn. Phyllanthus emblica L.) Supplements. Phytotherapy Research 2009;23:1309-1315.
+   </li>
+   <li>
+    Sabu MC, Kuttan R. Anti-diabetic activity of medicinal plants and its relationship with their antioxidant property. Journal of Ethnopharmacology 2002;81(2):155-169.
+   </li>
+   <li>
+    Sawant L, Pandita N, Prabhakar B. Determination of gallic acid in Phyllanthus emblica Linn. dried fruit powder by HPTLC. Journal of Pharmacy and BioAllied Sciences 2010;2(2):105-108.
+   </li>
+   <li>
+    Scartezzini P, Speroni E. Review on some plants of Indian traditional medicine with antioxidant activity. Journal of Ethnopharmacology 2000;71:23-42.
+   </li>
+   </ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

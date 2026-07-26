@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=caffeine.cafeine3\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="7fbbc8c0-51d0-4959-a9b5-ce0b49f27278"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!--CONTENT BEGINS | DEBUT DU CONTENU-->
+
+<h1>CAFFEINE</h1>
+	<div class="icon">
+		<a href="dbImages/mono_caffeine_english.pdf" title="Monograph: Caffeine"><img alt="Monograph: Caffeine" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>(PDF Version - 130 KB)</a>
+	</div>
+	
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	
+	<p><strong>Notes</strong></p>
+	<ul>
+		<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+		<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		<li>This monograph only supports caffeine as a pure chemical substance and does not support any extract preparations.</li>
+	</ul>
+	
+	<p><strong>Uses or Purposes Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+		<ul>
+			<li>Products containing caffeine from any source (synthetic, isolated or a component of plant material) must not:
+				<ul>
+					<li>indicate any uses or purposes related to healthy blood pressure or cardiovascular health at any dose of caffeine except if supported by a monograph for a specific caffeine-containing medicinal ingredient such as green coffee bean extract.</li>
+					<li>indicate any uses or purposes related to nervine/sedative/relaxation, nor contain a sedative at therapeutic dose, at any dose of caffeine.</li>
+					<li>indicate any uses or purposes related to the maintenance/support of good/general health at a daily dose of 40 mg or more total caffeine from all sources.</li>
+				</ul>
+			</li>
+			<li>Products providing a total amount of caffeine per day that meets the minimum therapeutic dose (100 mg/day) must indicate a use or purpose associated with caffeine.</li>
+			<li>Class II and III applications for products providing more than 400 mg of total caffeine per day cannot make any claims other than the ones listed on this monograph, or those from monographs with compatible recommended conditions of use (e.g., Workout Supplements monograph appendices of acceptable claims for products recommended for occasional use only). Class III applications may include additional claims if evidence is provided to support the safety and efficacy of the product according to the recommended conditions of use required for products providing more than 400 mg of total caffeine per day.</li>
+		</ul>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>December 19, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" scope="colgroup" style="text-align: center;">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+						<th scope="col">Source material(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+						<th scope="col">Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="7">
+							<ul>
+								<li>1,3,7-Trimethylxanthine</li>
+								<li>3,7-Dihydro-1,3,7-trimethyl-1H-purine-2,6-dione</li>
+							</ul>
+						</td>
+						<td rowspan="7">Caffeine</td>
+						<td>
+							<ul>
+								<li>Caffeine<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></li>
+								<li>Caffeine citrate<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Camellia sinensis</em></td>
+						<td>Leaf</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Coffea arabica</em></li>
+								<li><em>Coffea canephora</em></li>
+							</ul>
+						</td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Cola acuminata</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>
+							<ul>
+								<li><em>Ilex guayusa</em></li>
+								<li><em>Ilex paraguariensis</em></li>
+							</ul>
+						</td>
+						<td>Leaf</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Paullinia cupana</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Theobroma cacao</em></td>
+						<td>Seed</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: USP-NF 2023&semi; Common name: USP-NF 2023&semi; IOM 2003&semi; Source information: Ashihara and Suzuki 2004&semi; Zajac et al. 2003&semi; Duke 2001&semi; Gennaro 2000.</p>
+			<p>
+				<sup id="ref1-1">1</sup>Source materials listed in Table 1 are only allowed if caffeine is isolated and purified from these source materials and has a molecular structure which is identical to that which it had prior to its isolation. This monograph only supports caffeine as a pure chemical substance and does not support any extract preparations.<br/>
+				<sup id="ref1-2">2</sup>Synthetic.
+			</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral (Higdon and Frei 2006)</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph does not apply to caffeine added to food. Caffeine is regulated as a food additive when it is added to foods, including beverages, chewing gum, and bars. Questions about using caffeine in food can be sent to the Food Directorate (food-aliment@hc-sc.gc.ca).</p>
+			<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+			<p>For caffeinated energy shots, select "liquid (shot)".</p>
+			<p><strong>Note:</strong> A caffeinated energy shot is defined as a pre-packaged, ready-to-consume product with a volume of 90 mL or less and meant to be consumed at once (HC 2023, 2013).</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><em>All oral dosage forms</em></p>
+				<ul>
+					<li>Helps (temporarily) to support/promote alertness and wakefulness, and to enhance cognitive performance (Christopher et al. 2005&semi; Kamimori et al. 2000&semi; Zwyghuizen-Doorenbos et al. 1990).</li>
+					<li>Helps (temporarily) to support/promote mental sharpness/alertness (Christopher et al. 2005&semi; Kamimori et al. 2000&semi; Zwyghuizen-Doorenbos et al. 1990).</li>
+					<li>Helps (temporarily) to relieve/reduce fatigue, to promote endurance, and to enhance motor performance (Philip et al. 2006&semi; Doherty and Smith 2005&semi; Smith et al. 2005).</li>
+					<li>Helps (temporarily) to enhance (physical) energy (Philip et al. 2006&semi; Doherty and Smith 2005&semi; Smith et al. 2005).</li>
+					<li>Helps (temporarily) to relieve/reduce fatigue/tiredness (Philip et al. 2006&semi; Doherty and Smith 2005&semi; Smith et al. 2005).</li>
+				</ul>
+			<p><em>Oral dosage forms except energy shots (liquid (shot))</em></p>
+				<p>Used (temporarily) as a mild diuretic (Shirley et al. 2002&semi; Neuh&auml;user-Berthold et al. 1997).</p>
+			<p><strong>Notes:</strong></p>
+				<ul>
+					<li>The above uses can be combined on the product label (e.g. Helps temporarily to support mental alertness and reduce fatigue).</li>
+					<li>The terms &lsquo;Helps&rsquo; or &lsquo;Helps to&rsquo; can be used interchangeably on the label.</li>
+				</ul>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Mild diuretic</em></p>
+					<p>100 - 200 milligrams of caffeine, per single dose&semi; Not to exceed 800 milligrams, per day (Shirley et al. 2002&semi; IOM 2001&semi; Neuh&auml;user-Berthold et al. 1997).</p>
+				<p><em>Other uses</em></p>
+					<p>100 - 200 milligrams of caffeine, per single dose&semi; Not to exceed 1000 milligrams, per day (FDA 2023&semi; Sawynok 1995&semi; Greden 1974).</p>
+				<p><em>Energy shots (liquid (shot))</em></p>
+					<p>100 - 200 milligrams caffeine, per single dose (= per shot)&semi; Not to exceed 400 milligrams, per day (HC 2023).</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>Products providing more than 200 mg caffeine, per day (i.e. to be taken in divided doses or, for shots, if the recommended daily dose includes more than one single dose (= shot) providing more than 100 mg caffeine each)</em></p>
+					<p>Wait 3 to 4 hours between each dose.</p>
+				<p><em>Energy shots (liquid (shot))</em></p>
+					<p>Do not mix with alcohol (HC 2013).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p><em>Mild diuretic or products providing more than 400 mg of caffeine, per day</em></p>
+				<p>For occasional use only (Higdon and Frei 2006&semi; Juliano and Griffiths 2004&semi; Evans and Griffiths 1999)</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>Products providing 100 mg to 400 mg caffeine, per day<sup><a href="#ref1" style="text-decoration: none;">1</a></sup></em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have high blood pressure or glaucoma (Cornelis and El-Sohemy 2007, Chandrasekaran et al. 2005, Noordzij et al. 2005, Avisar et al. 2002, Arya et al. 2000, Jee et al. 1999, Creighton and Stanton 1990).</p>
+				<p><sup id="ref1">1</sup><strong>Note:</strong> This statement is also required at subtherapeutic quantities for products providing 40 mg or more caffeine per day from all sources for Class II and III applications.</p>
+				<p><em>Products providing more than 300 mg caffeine, per day</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant, breastfeeding, or attempting to conceive (Nawrot et al. 2003).</p>
+					<p><em>Products providing 400 mg or more caffeine, per day</em></p>
+						<p>When using this product avoid taking other health products, foods or beverages that contain caffeine and/or increase blood pressure (FDA 2023&semi; Bui et al. 2006&semi; Bouchard et al. 2005&semi; Haller et al. 2005&semi; NIH 2004&semi; Berardi et al. 2002&semi; Vahedi et al. 2000&semi; Zimmerman 1992).</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>Products providing more than 400 mg caffeine per day</em></p>
+					<p>Do not use if you have high blood pressure or glaucoma (Cornelis and El-Sohemy 2007, Chandrasekaran et al. 2005, Noordzij et al. 2005, Avisar et al. 2002, Arya et al. 2000, Jee et al. 1999, Creighton and Stanton 1990).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p><em>All products</em></p>
+					<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if hypersensitivity/allergy occurs (Infante et al. 2003&semi; Hinrichs et al. 2002).</p>
+					<p><em>Products providing 200 mg or more caffeine, per day</em></p>
+						<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms such as chest pain and irregular heartbeat occur (Higgins and Babu 2013).</p>
+					<p><em>Products providing more than 400 mg caffeine, per day</em></p>
+						<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if nervousness, anxiety, insomnia, tremor and/or headache occur (IOM 2001, Zhang 2001, Sawynok 1995).</p>
+					<p><em>All products except those making a diuretic claim<sup><a href="#ref1b" style="text-decoration: none;">1</a></sup></em></p>
+						<p>When using this product diuretic effect may occur.</p>
+					<p><sup id="ref1b">1</sup><strong>Note:</strong> This statement is also required at subtherapeutic quantities for products providing 40 mg or more caffeine per day from all sources for Class II and III applications.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/CAFFEINE_E.gif" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Arya LA, Myers DL, Jackson ND. Dietary caffeine intake and the risk for detrusor instability: a case-control study. Obstetrics and Gynecology 2000&semi;96(1):85-89.</li>
+				<li>Ashihara H, Suzuki T. Distribution and biosynthesis of caffeine in plants. Frontiers in Bioscience 2004&semi;9:1864-1876.</li>
+				<li>Avisar R, Avisar E, Weinberger D. Effect of coffee consumption on intraocular pressure. The Annals of Pharmacotherapy 2002&semi;36(6):992-995.</li>
+				<li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association&semi; 2002.</li>
+				<li>Bouchard NC, Howland MA, Greller HA, Hoffman RS, Nelson LS. Ischemic stroke associated with use of an ephedra-free dietary supplement containing synephrine. Mayo Clinic Proceeding 2005&semi;80(4):541-545.</li>
+				<li>Bui LT, Nguyen DT, Ambrose PJ. Blood pressure and heart rate effects following a single dose of bitter orange. The Annals of Pharmacotherapy 2006&semi;40(1):53-57.</li>
+				<li>Chandrasekaran S, Rochtchina E, Mitchell P. Effects of caffeine on intraocular pressure: the Blue Mountains Eye Study. Journal of Glaucoma 2005&semi;14(6):504-507.</li>
+				<li>Christopher G, Sutherland D, Smith A. Effects of caffeine in non-withdrawn volunteers. Human Psychopharmacology 2005&semi;20(1):47-53.</li>
+				<li>Cornelis MC, El-Sohemy A. Coffee, caffeine, and coronary heart disease. Current Opinion in Lipidology 2007&semi;18(1):13-19.</li>
+				<li>Creighton SM, Stanton SL. Caffeine: does it affect your bladder? British Journal of Urology 1990&semi;66(6):613-614.</li>
+				<li>Doherty M, Smith PM. Effects of caffeine ingestion on rating of perceived exertion during and after exercise: a meta-analysis. Scandinavian Journal of Medicine & Science in Sports 2005&semi;15(2):69-78.</li>
+				<li>Duke J.A. Handbook of phytochemical constituents of GRAS herbs and other economic plants. Boca Raton (FL); 2001.</li>
+				<li>Evans SM, Griffiths RR. Caffeine withdrawal: a parametric analysis of caffeine dosing conditions. The Journal of Pharmacology and Experimental Therapeutics 1999&semi;289(1):285-294.</li>
+				<li>FDA 2023: Food and Drug Administration. Title 21 Chapter 1 Part 340. Stimulant drug products for over-the-counter human use. Washington (DC): U.S. Food and Drug Administration, Department of Health and Human Services&semi; 2023. [Accessed 2023 Aug 28]. Available from: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart=340&showFR=1</li>
+				<li>Gennaro AR, editor. Remington: The Science and Practice of Pharmacy, 20<sup>th</sup> edition. Washington (DC): Lippincott Williams and Wilkins&semi; 2000.</li>
+				<li>Greden JF. Anxiety or caffeinism: a diagnostic dilemma. American Journal of Psychiatry 1974&semi;131(10):1089-1092.</li>
+				<li>Haller CA, Benowitz NL, Jacob P. Hemodynamic effects of ephedra-free weight-loss supplements in humans. The American Journal of Medicine 2005&semi;118(9):998-1003.</li>
+				<li>HC 2023, Health Canada. Caffeinated energy shots. [Accessed 2024 March 3]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/caffeinated-energy-shots.html</li>
+				<li>HC 2013: Health Canada. Food Directorate. Category specific guidance for temporary marketing authorization &ndash; Caffeinated energy drinks. [Accessed 2023 October 16]. Available from: https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/guidance-documents/category-specific-guidance-temporary-marketing-authorization-caffeinated-energy-drinks.html</li>
+				<li>Higdon JV, Frei B. Coffee and health: a review of recent human research. Critical Reviews in Food Science and Nutrition 2006&semi;46(2):101-123.</li>
+				<li>Higgins JP, Babu KM, Caffeine reduces myocardial blood flow during exercise. The American Journal of Medicine 2013&semi;126(8):730-e 1-8.</li>
+				<li>Hinrichs R, Hunzelmann N, Ritzkowsky A, Zollner TM, Krieg T, Scharffetter-Kochanek K. Caffeine hypersensitivity. Allergy 2002&semi;57(9):859-860.</li>
+				<li>Infante S, Baeza ML, Calvo M, De Barrio M, Rubio M, Herrero T. Anaphylaxis due to caffeine. Allergy 2003&semi;58(7):681-682.</li>
+				<li>IOM 2003: Institute of Medicine. Committee on Food Chemicals Codex, Food and Nutrition Board, Institute of Medicine. Food Chemicals Codex, 5<sup>th</sup> edition. Washington (DC): National Academies Press&semi; 2003.</li>
+				<li>IOM 2001: Institute of Medicine. Committee on Military Nutrition Research, Food and Nutrition Board, Institute of Medicine. Caffeine for the Sustainment of Mental Task Performance: Formulations for Military Operations. Washington (DC): National Academy Press&semi; 2001 [Accessed 2023 Aug 28]. Available from: http://books.nap.edu/openbook.php?isbn=0309082587.</li>
+				<li>Jee SH, He J, Whelton PK, Suh II, Klag MJ. The effect of chronic coffee drinking on blood pressure: a meta-analysis of controlled clinical trials. Hypertension 1999&semi;33(2):647-652.</li>
+				<li>Juliano LM, Griffiths RR. A critical review of caffeine withdrawal: empirical validation of symptoms and signs, incidence, severity, and associated features. Psychopharmacology 2004&semi;176(1):1-29.</li>
+				<li>Kamimori GH, Penetar DM, Headley DB, Thorne DR, Otterstetter R, Belenky G. Effect of three caffeine doses on plasma catecholamines and alertness during prolonged wakefulness. European Journal of Clinical Pharmacology 2000&semi;56(8):537-544.</li>
+				<li>Nawrot P, Jordan S, Eastwood J, Rotstein J, Hugenholtz A, Feeley M. Effects of caffeine on human health. Food Additives and Contaminants 2003&semi;20(1):1-30.</li>
+				<li>Neuh&auml;user-Berthold M, Beine S, Verwied SC, L&uuml;hrmann PM. Coffee consumption and total body water homeostasis as measured by fluid balance and bioelectrical impedance analysis. Annals of Nutrition and Metabolism 1997&semi;41(1):29-36.</li>
+				<li>NIH 2004: National Institutes of Health. Office of Dietary Supplements. Fact sheets. Ephedra and ephedrine alkaloids for weight loss and athletic performance&semi; 2004. [Accessed 2023 August 28]. Available from: https://ods.od.nih.gov/factsheets/ephedraandephedrine-HealthProfessional/.</li>
+				<li>Noordzij M, Uiterwaal CS, Arends LR, Kok FJ, Grobbee DE, Geleijnse JM. Blood pressure response to chronic intake of coffee and caffeine: a meta-analysis of randomized controlled trials. Journal of Hypertension 2005&semi;23(5):921-928.</li>
+				<li>Philip P, Taillard J, Moore N, Delord S, Valtat C, Sagaspe P, Bioulac B. The effects of coffee and napping on night time highway driving: a randomized trial. Annals of Internal Medicine 2006&semi;144(11):785-791.</li>
+				<li>Sawynok J. Pharmacological rationale for the clinical use of caffeine. Drugs 1995&semi;49(1):37-50.</li>
+				<li>Shirley DG, Walter SJ, Noormohamed FH. Natriuretic effect of caffeine: assessment of segmental sodium reabsorption in humans. Clinical Science 2002&semi;103(5):461-466.</li>
+				<li>Smith A, Sutherland D, Christopher G. Effects of repeated doses of caffeine on mood and performance of alert and fatigued volunteers. Journal of Psychopharmacology 2005&semi;19(6):620-626.</li>
+				<li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2023.</li>
+				<li>Vahedi K, Domingo V, Amarenco P, Bousser MG. Ischaemic stroke in a sportsman who consumed MaHuang extract and creatine monohydrate for body building. Journal of Neurology, Neurosurgery and Psychiatry 2000&semi;68(1):112-113.</li>
+				<li>Zajac MA, Zakrzewski AG, Kowal MG, Narayan S. A novel method of caffeine synthesis from uracil. Synthetic Communications 2003&semi;33(19):3291-3297.</li>
+				<li>Zhang WY. A benefit-risk assessment of caffeine as an analgesic adjuvant. Drug Safety 2001&semi;24(15):1127-1142.</li>
+				<li>Zimmerman DR. Zimmerman&apos;s Complete Guide to Nonprescription Drugs, 2<sup>nd</sup> edition. Detroit (MI): Gale Research Inc.&semi; 1992.</li>
+				<li>Zwyghuizen-Doorenbos A, Roehrs TA, Lipschutz L, Timms V, Roth T. Effects of caffeine on alertness. Psychopharmacology 1990&semi;100(1):36-39.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Ahmed SV, Jayawarna C, Jude E. Post lumbar puncture headache: diagnosis and management. Postgraduate Medical Journal 2006&semi;82(973):713-716.</li>
+				<li>Ahrens JN, Crixell SH, Lioyd LK, Walker JL. The physiological effects of caffeine in women during treadmill walking. Journal of Strength and Conditioning Research 2007&semi;21(1):164-168.</li>
+				<li>Ali M, Afzal M. A potent inhibitor of thrombin stimulated platelet thromboxane fromation from unprocessed tea. Prostaglandins, Leukotrienes and Medicine 1987&semi;27(1):9-13.</li>
+				<li>Aqel RA, Zoghbi GJ, Trimm JR, Baldwin SA, Iskandrian AE. Effect of caffeine administered intravenously on intracoronary-administered adenosine-induced coronary hemodynamics in patients with coronary artery disease. The American Journal of Cardiology 2004&semi;93(3):343-346.</li>
+				<li>Ascherio A, Weisskopf MG, O&apos;Reilly EJ, McCullough ML, Calle EE, Rodriguez C, Thun MJ. Coffee consumption, gender, and Parkinson&apos;s disease mortality in the cancer prevention study II cohort: the modifying effects of estrogen. American Journal of Epidemiology 2004&semi;160(10):977-984.</li>
+				<li>Astrup A, Toubro S, Cannon S, Hein P, Breum L, Madsen J. Caffeine: a double-blind, placebo controlled study of its thermogenic, metabolic, and cardiovascular effects in healthy volunteers. The American Journal of Clinical Nutrition 1990&semi;51(5):759-767.</li>
+				<li>Azcona O, Barbanoj MJ, Torrent J, Jane F. Evaluation of the central effects of alcohol and caffeine interaction. British Journal of Clinical Pharmacology 1995&semi;40(4):393-400.</li>
+				<li>Balat O, Balat A, Ugur MG, Pence S. The effect of smoking and caffeine on the fetus and placenta in pregnancy. Clinical and Experimental Obstetrics and Gynecology 2003&semi;30(1):57-59.</li>
+				<li>Bara AI, Barley EA. Caffeine for asthma. Oxfordshire (UK): The Cochrane Database of Systematic Reviews&semi; 2001, Issue 4. Art. No.: CD001112. DOI: 10.1002/14651858.CD001112.</li>
+				<li>Barnett G, Segura J, De La Torre R, Carbo M. Pharmacokinetic determination of relative potency of quinolone inhibition of caffeine disposition. European Journal of Clinical Pharmacology 1990&semi;39(1):63-69.</li>
+				<li>Barone, JJ, Roberts HR. Caffeine consumption. Food and Chemical Toxicology 1996&semi;34(1):119-129.</li>
+				<li>Beach CA, Mays DC, Guiler RC, Jacober CH, Gerber N. Inhibition of elimination of caffeine by disulfiram in normal subjects and recovering alcoholics. Clinical Pharmacology and Therapeutics 1986&semi;39(3):265-270.</li>
+				<li>Bell DG, Jacobs I, Ellerington K. Effect of caffeine and ephedrine ingestion on anaerobic exercise performance. Medicine and Science in Sports and Exercise 2001&semi;33(8):1399-1403.</li>
+				<li>Bell DG, McLellan TM, Sabiston CM. Effect of ingesting caffeine and ephedrine on 10-km run performance. Medicine and Science in Sports and Exercise 2002&semi;34(2):344-349.</li>
+				<li>Belza A, Frandsen E, Kondrup J. Body fat loss achieved by stimulation of thermogenesis by a combination of bioactive food ingredients: a placebo-controlled, double-blind 8-week intervention in obese subjects. International Journal of Obesity 2007&semi;31(1):121-130.</li>
+				<li>Bernstein GA, Carroll ME, Crosby RD, Perwien AR, Go FS, Benowitz NL. Caffeine effects on learning, performance, and anxiety in normal school-age children. Journal of the American Academy of Child and Adolescent Psychiatry 1994&semi;33(3):407-415.</li>
+				<li>Bott Kaspar. 1983. Preparation of caffeine. United States Patent US 4380631. 1983-04-19.</li>
+				<li>Brown NJ, Ryder D, Branch RA. A pharmacodynamic interaction between caffeine and phenylpropanolamine. Clinical Pharmacology and Therapeutics 1991&semi;50(4):363-371.</li>
+				<li>Bruce CR, Anderson ME, Fraser SF, Stepto NK, Klein R, Hopkins WG, Hawley JA. Enhancement of 2000-m rowing performance after caffeine ingestion. Medicine and Science in Sports and Exercise 2000&semi;32(11):1958-1963.</li>
+				<li>Carbo M, Segura J, De La Torre R, Badenas JM, Cami J. Effect of quinolones on caffeine disposition. Clinical Pharmacology and Therapeutics 1989&semi;45(3):234-240.</li>
+				<li>Carrillo JA, Benitez J. Clinically significant pharmacokinetic interactions between dietary caffeine and medications. Clinical Pharmacokinetics 2000&semi;39(2):127-153.</li>
+				<li>Cavalcante JW, Santos PR, Menezes MG, Marques HO, Cavalcante LP, Pacheco WS. Influence of caffeine on blood pressure and platelet aggregation. Arquivos Brasileiros de Cardiologia 2000;75(2):97-105.</li>
+				<li>Choi A, Laurito CE, Cunningham FE. Pharmacologic management of postdural puncture headache. Annals of Pharmacotherapy 1996&semi;30(7-8):831-839.</li>
+				<li>Culm-Merdek KE, Von Moltke LL, Harmatz JS, Greenblatt DJ. Fluvoxamine impairs singledose caffeine clearance without altering caffeine pharmacodynamics. British Journal of Clinical Pharmacology 2005&semi;60(5):486-493.</li>
+				<li>Devoe LD, Murray C, Youssif A, Arnaud M.  Maternal caffeine consumption and fetal behaviour in the normal third-trimester pregnancy. American Journal of Obstetrics and Gynecology 1993&semi;168(4):1105-1111.</li>
+				<li>Dickerson LM, Mazyck PJ, Hunter MH. Premenstrual syndrome. American Family Physician 2003&semi;67(8):1743-1752.</li>
+				<li>Du Y, Melchert HU, Knopf H, Braemer-Hauth M, Gerding B, Pabel E. Association of serum caffeine concentrations with blood lipids in caffeine-drug users and nonusers - results of German National Health Surveys from 1984 to 1999. European Journal of Epidemiology 2005&semi;20(4):311-316.</li>
+				<li>Edwards RG. An evaluation of the health aspects of caffeine as a food ingredient. Washington (DC): Arent Fox Kintner Plotkin & Kahn&semi; 1997.</li>
+				<li>FDA 1988a: Food and Drug Administration. Federal Register Volume 53, Number 39, page 6105. Washington (DC): U.S. Food and Drug Administration, Department of Health and Human Services. February 29, 1988.</li>
+				<li>FDA 1988b: Food and Drug Administration. Federal Register Volume 53, Number 221, page 46201. Washington (DC): U.S. Food and Drug Administration, Department of Health and Human Services. November 16, 1988.</li>
+				<li>Foxx RM, Rubinoff A. Behavioral treatment of caffeinism: reducing excessive coffee drinking. Journal of Applied Behavior Analysis 1979&semi;12(3):335-344.</li>
+				<li>Fudin R, Nicastro R. Can caffeine antagonize alcohol-induced performance decrements in humans? Perceptual and Motor Skills 1988&semi;67(2):375-391.</li>
+				<li>Goldstein J, Silberstein SD, Saper JR, Ryan RE, Lipton RB. Acetaminophen, aspirin, and caffeine in combination versus ibuprofen for acute migraine: results from a multicenter, double blind, randomized, parallel-group, single-dose, placebo-controlled study. Headache 2006&semi;46(3):444-453.</li>
+				<li>Greenberg JA, Boozer CN, Geliebter A. Coffee, diabetes, and weight control. The American Journal of Clinical Nutrition 2006&semi;84(4):682-693.</li>
+				<li>Grobbee DE, Rimm EB, Giovannucci E, Colditz G, Stampfer M, Willett W. Coffee, caffeine, and cardiovascular disease in men. New England Journal of Medicine 1990&semi;323(15):1026-1032.</li>
+				<li>Hagg S, Spigset O, Mjorndal T, Dahlqvist R. Effect of caffeine on clozapine pharmacokinetics in healthy volunteers. British Journal of Clinical Pharmacology 2000&semi;49(1):59-63.</li>
+				<li>Hallstorm H, Wolk A, Gynn A, Michaelsson K. Coffee, tea and caffeine consumption in relation to osteoporotic fracture risk in a cohort of Swedish women. Osteoporosis International. 2006&semi;17(7):1055-1064.</li>
+				<li>Haskell CF, Kennedy DO, Wesnes KA , Milne AL, Scholey AB. Double-blind, placebo controlled, multi-dose evaluation of the acute behavioural effects of guarana in humans. Journal of Psychopharmacology 2007&semi;21(1):65-70.</li>
+				<li>Ishizuk H, Eguchi H, Oda T, Ogawaf S, Nakagawa K, Honjo S, Kono S. Relation of coffee, green tea, and caffeine intake to gallstone disease in middle-aged Japanese men. European Journal of Epidemiology 2003&semi;18(5):401-405.</li>
+				<li>Jeppesen U, Loft S, Poulsen HE, Brsen K. A fluvoxamine-caffeine interaction study. Pharmacogenetics 1996&semi;6(3):213-222.</li>
+				<li>Joeres R, Klinker H, Heusler H, Epping J, Richter E. Influence of mexiletine on caffeine elimination. Pharmacology and Therapeutics 1987&semi;33(1):163-169.</li>
+				<li>Kiyohara C, Kono S, HonJo S, Todoroki I, Sakurai Y, Nishikawa H, Kogo H, Ogawa S, Nakagawa K. Inverse association between coffee drinking and serum uric acid concentrations in middle-aged Japanese males. British Journal of Nutrition 1999&semi;82(2):125-130.</li>
+				<li>Kleemola P, Jousilahti P, Pietinen P, Vartiainen E, Tuomilehto J. Coffee consumption and the risk of coronary heart disease and death. Archives of Internal Medicine 2000&semi;160(22):3393-4000.</li>
+				<li>Labbe L, Abolfathi Z, Robitaille NM, St-Maurice F, Gilbert M, Turgeon J. Stereoselective disposition of the antiarrhythmic agent mexiletine during the concomitant administration of caffeine. Therapeutic Drug Monitoring 1999&semi;21(2):191-199.</li>
+				<li>Lake CR, Rosenberg DB, Gallant S, Zaloga G, Chernow B. Phenylpropanolamine increases plasma caffeine levels. Clinical Pharmacology and Therapeutics 1990&semi;47(6):675-685.</li>
+				<li>Laska EM, Sunshine A, Mueller F, Elvers WB, Siegel C, Rubin A. Caffeine as an analgesic adjuvant. Journal of the American Medical Association 1984&semi;251(130):1711-1718.</li>
+				<li>Leitzmann MF, Stampfer MJ, Willett WC, Spiegelman D, Colditz GA, Giovannucci EL. Coffee intake is associated with lower risk of symptomatic gallstone disease in women. Gastroenterology 2002&semi;123(6):1823-1830.</li>
+				<li>Leitzmann MF, Willett WC, Rimm EB, Stampfer MJ, Spiegelman D, Colditz GA, Giovannucci E. A prospective study of coffee consumption and the risk of symptomatic gallstone disease in men. The Journal of the American Medical Association 1999&semi;281(22):2106-2112.</li>
+				<li>Leitzmann MF, Willett WC, Rimm EB, Stampfer MJ, Spiegelman D, Colditz GA, Giovannucci E, Lin W, Geiderman J. Myth: fluids, bed rest, and caffeine are effective in preventing and treating patients with post-lumbar puncture headache. The Western Journal of Medicine 2002&semi;176(1):69-70.</li>
+				<li>Lipton RB, Stewart WF, Ryan RE, Saper J, Silberstein S, Sheftell F. Efficacy and safety of acetaminophen, aspirin, and caffeine in alleviating migraine headache pain: three double-blind, randomized, placebo-controlled trials. Archives of Neurology 1998&semi;55(2):210-217.</li>
+				<li>Maillard C, Babadjamian A, Balansard G, Ollivier B, Bamba D. Study of caffeine - catechin association in lyophilized fresh seeds and in stabilized extract of cola nitida. Planta Medica 1985&semi;51(6):515-517.</li>
+				<li>Malinow MR, Bostom AG, Krauss RM. Homocyst(e)ine, diet, and cardiovascular diseases: a statement for healthcare professionals from the Nutrition Committee, American Heart Association. Circulation 1999&semi;99(1):178-182.</li>
+				<li>May DC, Jarboe CH, VanBakel AB, Williams WM. Effects of cimetidine on caffeine disposition in smokers and non-smokers. Clinical Pharmacology and Therapeutics 1982&semi;31(5):656-661.</li>
+				<li>Meyers BM, Cafarelli E. Caffeine increases time to fatigue by maintaining force and not by altering firing rates during submaximal isometric contractions. Journal of Applied Physiology 2005;99(3):1056-1063.</li>
+				<li>Migliardi JR, Armellino JJ, Friedman M, Gillings DB, Beaver WT. Caffeine as an analgesic adjuvant in tension headache. Clinical Pharmacology and Therapeutics 1994&semi;56(5):576-586.</li>
+				<li>Min B, Cios D, Kluger J, White CM. Absence of QTc-interval-prolonging or hemodynamic effects of a single dose of bitter-orange extract in healthy subjects. Pharmacotherapy 2005&semi;25(12):1719-1724.</li>
+				<li>Myers MG, Basinski A. Coffee and coronary heart disease. Archives of Internal Medicine 1992&semi;152(9):1767-1772.</li>
+				<li>Norlock FE. Benign breast pain in women: a practical approach to evaluation and treatment. Journal of the American Medical Women&apos;s Association 2002&semi;57(2):85-90.</li>
+				<li>Papaioannou TG, Vlachopoulos C, Ioakeimidis N, Alexopoulos N, Stefanadis C. Nonlinear dynamics of blood pressure variability after caffeine consumption. Clinical Medicine and Research 2006&semi;4(2):114-118.</li>
+				<li>Passmore AP, Kondowe GB, Johnston GD. Renal and cardiovascular effects of caffeine: a doseresponse study. Clinical Science 1987&semi;72(6):749-756.</li>
+				<li>Phillips-Bute BG, Lane JD. Caffeine withdrawal symptoms following brief caffeine deprivation. Physiological Behavior 1997&semi;63(1):35-39.</li>
+				<li>Pollock BG, Wylie M, Stack JA, Sorisio DA, Thompson DS, Kirshner MA, Folan MM, Condifer KA. Inhibition of caffeine metabolism by estrogen replacement therapy in postmenopausal women. Journal of Clinical Pharmacology 1999&semi;39(9):936-940.</li>
+				<li>Raaska K, Raitasuo V, Laitila J, Neuvonen PJ. Effect of caffeine-containing versus decaffeinated coffee on serum clozapine concentrations in hospitalised patients. Basic and Clinical Pharmacology and Toxicology 2004&semi;94(1):13-18.</li>
+				<li>Rapuri PB, Gallagher JC, Kinyamu HK, Ryschon KL. Caffeine intake increases the rate of bone loss in elderly women and interacts with vitamin D receptor genotypes. American Journal of Clinical Nutrition 2001&semi;74(5):694-700.</li>
+				<li>Rasheed P, Al-Sowielem LS. Prevalence and predictors of premenstrual syndrome among college-aged women in Saudi Arabia. Annals of Saudi Medicine 2003&semi;23(6):381-387.</li>
+				<li>Riesenhuber A, Boehm M, Posch M, Aufricht C. Diuretic potential of energy drinks. Amino Acids 2006&semi;31(1):81-83.</li>
+				<li>Ross GW, Abbott RD, Petrovitch H, Morens DM, Grandinetti A, Tung KH, Tanner CM, Masaki KH, Blanchette PL, Curb JD, Popper JS, White LR. Association of coffee and caffeine intake with the risk of Parkinson&apos;s disease. The Journal of the American Medical Association 2000&semi;283(20):2674-2679.</li>
+				<li>Rossignol AM. Caffeine-containing beverages and premenstrual syndrome in young women. American Journal of Public Health 1985&semi;75(11):1335-1337.</li>
+				<li>Rossignol AM, Bonnlander H. Caffeine-containing beverages, total fluid consumption, and premenstrual syndrome. American Journal of Public Health 1990&semi;80(9):1106-1110.</li>
+				<li>Rossignol AM, Bonnlander H, Song L, Phillis JW. Do women with premenstrual symptoms self-medicate with caffeine? Epidemiology 1991&semi;2(6):403-408.</li>
+				<li>Rossignol AM, Zhang JY, Chen YZ, Xiang Z. Tea and premenstrual syndrome in the People&apos;s Republic of China. American Journal of Public Health 1989&semi;79(1):67-69.</li>
+				<li>Salazar-Martinez E, Willett WC, Ascherio A, Manson JE, Leitzmann MF, Stampfer MJ, Hu FB. Coffee consumption and risk for type 2 diabetes mellitus. Annals of Internal Medicine 2004&semi;140(1):1-8.</li>
+				<li>Sanderink GJ, Bournique B, Stevens J, Petry M, Martinet M. Involvement of human CYP1A isoenzymes in the metabolism and drug interactions of riluzole in vitro. The Journal of Pharmacology and Experimental Therapy 1997&semi;282(3):1465-1472.</li>
+				<li>Santos IS. Caffeine intake and pregnancy outcomes: a meta-analytic review. Cadernos de Saúde Pública 1998&semi;14(3):523-530.</li>
+				<li>Schmidt B, Roberts RS, Davis P, Doyle LW, Barrington KJ, Ohlesson A, Solimano A, Tin W.  Caffeine therapy for apnea of prematurity. The New England Journal of Medicine 2006&semi;354(20):2112-2121.</li>
+				<li>Simon O, Cohen L, Pierrot-Deseilligny C. [Post-lumbar puncture syndrome. Causes, prevention, treatments]. Revue Neurologique 1997&semi;153(10):605-608 (in French).</li>
+				<li>Smith A. Effects of caffeine on human behavior. Food and Chemical Technology 2002&semi;40(9):1243-1255.</li>
+				<li>Smith B, Wingard DL, Smith TC, Kritz-Silverstein D, Barrett-Connor E. Does coffee consumption reduce the risk of type 2 diabetes in individuals with impaired glucose? Diabetes Care 2006&semi;29(11):2385-2390.</li>
+				<li>Smith PF, Smith A, Miners J, McNeil J, Proudfoot A. Report from the Expert Working Group on the Safety Aspects of Dietary Caffeine. Canberra (AU): Australian New Zealand Food Authority&semi; 2000.</li>
+				<li>Stavric B. An update on research with coffee/caffeine (1989-1990). Food and Chemical Toxicology 1992&semi;30(6):533-555.</li>
+				<li>Steer PA, Flenady VJ, Shearman A, Lee TC, Tudehope DI, Charles BG. Periextubation caffeine in preterm neonates: a randomized dose response trial. Journal of Paediatrics and Child Health 2003&semi;39(7):511-515.</li>
+				<li>Stuart GR, Hopkin WG, Cook C, Cairns SP. Multiple effects of caffeine on simulated highintensity team-sport perfromance. Medicine and Science in Sports and Exercise 2005&semi;37(11):1998-2005.</li>
+				<li>Urgert R, Katan MB. The cholesterol-raising factor from coffee beans. Annual Review of Nutrition 1997&semi;17:305-324.</li>
+				<li>Urgert R, Van Vliet T, Zock PL, Katan MB. Heavy coffee consumption and plasma homocysteine: a randomized controlled trial in healthy volunteers. The American Journal of Clinical Nutrition 2000&semi;72(5):1107-1110.</li>
+				<li>Van Dusseldorp M, Katan MB. Headache caused by caffeine withdrawal among moderate coffee drinkers switched from ordinary to decaffeinated coffee: a 12 week double blind trial. British Medical Journal 1990&semi;300(6739):1558-1559.</li>
+				<li>Vandenberghe K, Gillis N, Van Leemputte M, Van Hecke P, Vanstapel F, Hespel P. Caffeine counteracts the ergogenic action of muscle creatine loading. Journal of Applied Physiology 1996&semi;80(2):452-457.</li>
+				<li>Varani K, Portaluppi F, Gessi S, Merighi S, Ongini E, Belardinelli L, Borea PA. Dose and time effects of caffeine intake on human platelet adenosine A(2A) receptors: functional and biochemical aspects. Circulation 2000&semi;102(3):285-289.</li>
+				<li>Verhoef P, Pasman WJ, Van Vliet T, Urgert R, Katan MB. Contribution of caffeine to the homocysteine-raising effect of coffee: a randomized controlled trial in humans. The American Journal of Clinical Nutrition 2002&semi;76(6):1244-1248.</li>
+				<li>Wahllander A, Paumgartner G. Effect of ketoconazole and terbinafine on the pharmacokinetics of caffeine in healthy volunteers. European Journal of Clinical Pharmacology 1989&semi;37(3):279-283.</li>
+				<li>Watson JM, Jenkins EJ, Hamilton P, Lunt MJ, Kerr D. Influence of caffeine on the frequency and perception of hypoglycemia in free-living patients with type 1 diabetes. Diabetes Care 2000&semi;23(4):455-459.</li>
+				<li>Westerterp-Planteqa MS, Ljeune MP, Kovacs EM. Body weight loss and weight maintenance in relation to habitual caffeine intake and green tea supplementation. Obesity Research 2005&semi;13(7):1195-1204.</li>
+				<li>Yucel A, Ozyalcin S, Talu GK, Yucel EC, Erdine S. Intravenous administration of caffeine sodium benzoate for postdural puncture headache. Regional Anesthesia and Pain Medicine 1999&semi;24(1):51-54.</li>
+			</ul>
+	</section>
+
+<!--CONTENT ENDS | FIN DU CONTENU--></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

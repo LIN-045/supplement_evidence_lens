@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=athletes.foot.pied.dathlete2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="0b36f1ac-9a0b-4492-9e83-2b9682543365"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+ 
+<h1>Athlete&apos;s Foot Treatments </h1>
+    <div class="icon">
+        <a href="dbImages/mono_athletes-foot-treatments_english.pdf" title="Athlete's Foot Treatments" aria-label="PDF Version: Athlete's Foot Treatments, 76 KB. Opens in a new tab."><img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format" width="22" height="21" >(PDF Version - 76 KB)</a>
+    </div>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>	
+	        <p>2024-09-27</p>
+    </section>
+
+    <section aria-labelledby="foreword">
+        <h2 id="foreword">Foreword</h2>
+            <p>This monograph is intended to replace the existing Athlete&apos;s Foot Treatments Monograph of December 07, 2018. This monograph describes the requirements necessary to receive market authorization [i.e. a Drug Identification Number (DIN) or a Natural Product Number (NPN)], for athlete&apos;s foot treatment products. The monograph identifies the permitted medicinal and non-medicinal ingredients, concentrations, indications, directions and conditions of use for these products to be market authorized without the submission to Health Canada of additional evidence. Products which do not meet the criteria outlined in this document can apply for market authorization outside of the monograph stream.</p>
+            <p>Applicants are reminded that athlete&apos;s foot treatments products, like other non-prescription drugs or natural health products, are subject to the Food and Drug Regulations or the Natural Health Products Regulations administered by the Natural and Non-prescription Health Products Directorate (NNHPD). This includes requirements related to labelling, manufacturing and product specifications. Additional information on labels, outside of those specified in the monograph, such as additional directions for use and/or non-therapeutic claims are acceptable as long as they meet the Guidelines for the Nonprescription and Cosmetic Industry Regarding Non-therapeutic Advertising and Labelling Claims, the Guidelines for Consumer Advertising of Health products for Nonprescription drugs, Natural Health Products, Vaccines and Medical Devices, and are not false, misleading or counterintuitive to the use of the product.</p>
+            <p><strong>Notes:</strong>
+                <ul>
+                    <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+                    <li>The solidus (/) indicates that the terms and/or the statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="medicinalIngredients">
+        <h2 id="medicinalIngredients">Medicinal Ingredients</h2>
+            <p>Athlete&apos;s foot treatment products are classified as natural health products (NHPs) if they contain only one or several ingredients from Table <a href="#ref1" style="text-decoration: none;">1</a>. Applicants applying for an NPN can access the appropriate forms and guidance at: https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html.</p>
+                <p>Athlete&apos;s foot treatment products are classified as non-prescription drugs (NPDs) if they contain an ingredient from Table <a href="#ref2" style="text-decoration: none;">2</a>. Applicants applying for a DIN can access the appropriate forms and guidance at: https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html.</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+            <table id="ref1" class="subject">
+                <caption>Table 1: NHP medicinal ingredients</caption>
+                <thead>         
+                    <tr>
+                        <th rowspan="2">Proper name(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+                        <th rowspan="2">Common name(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+                        <th>Source information<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>                
+                        <th rowspan="2">Quantity<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></th>                
+                    </tr>
+                    <tr>
+                        <th> Source ingredient(s)</th>
+                    </tr>
+                </thead>                                    
+                <tbody>	
+                    <tr>
+                        <td>10-Undecenoic acid</td>
+                        <td>
+                            <ul>
+                                <li>Undecenoic acid</li>
+                                <li>Undecylenic acid</li>
+                            </ul>
+                        </td>
+                        <td>Undecylenic acid</td>
+                        <td>10-25%</td>
+                    </tr>
+                    <tr>
+                        <td>10-Undecenoic acid, calcium(2+) salt</td>
+                        <td>Calcium undecylenate</td >
+                        <td>Calcium undecylenate</td>
+                        <td>10-25%</td>
+                    </tr>
+                    <tr>
+                        <td>10-Undecenoic acid, copper(2+) salt</td>
+                        <td>Copper undecylenate</td>
+                        <td>Copper undecylenate</td>
+                        <td>10-25%</td>
+                    </tr>
+                    <tr>
+                        <td>10-Undecenoic acid, zinc(2+) salt</td>
+                        <td>Zinc undecylenate</td >
+                        <td>Zinc undecylenate</td>
+                        <td>10-25%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>1-Ethenyl-2-pyrrolidinone homopolymer compound with iodine</li>
+                                <li>1-Vinyl-2-pyrrolidinone polymers, iodine complex</li>
+                            </ul>
+                       </td>
+                        <td>Povidone-iodine</td >
+                        <td>Povidone-iodine</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref1-1">1</sup>At least one of the following references was consulted per proper name, common name, and source information: NHPID 2024&semi; RSC 2023&semi; US FDA 2021&semi; Sweetman 2017.<br/>
+                <sup id="ref1-2">2</sup>Quantities are expressed as percentage weight by volume (% w/v). The following reference was consulted for the quantity: US FDA 2021.
+            </p>
+            <table id="ref2" class="subject">
+                <caption>Table 2: NPD medicinal ingredients</caption>
+                <thead>         
+                    <tr>
+                        <th>Proper name(s) </th>
+                        <th>Common name(s)</th>              
+                        <th>Quantity</th>               
+                    </tr>
+                </thead>
+                <tbody>	
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>3-(4-Chlorophenoxy)-1,2-propanediol</li>
+                                <li>p-Chlorophenyl alpha-glyceryl ether</li>
+                            </ul>
+                       </td>
+                        <td>Chlorphenesin</td>
+                        <td>0.5-1%</td>
+                    </tr>
+                    <tr>
+                        <td>5-Chloro-7-iodo-8-quinolinol</td>
+                        <td>
+                            <ul>
+                                <li>Clioquinol</li>
+                                <li>Iodochlorhydroxyquin</li>
+                            </ul>
+                        </td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>1,2,4-Trichloro-5-[(3-iodo-2-propynyl)oxy]benzene</li>
+                                <li>2,4,5-Trichlorophenyl gamma-iodopropargyl ether</li>
+                                <li>3-Iodo-2-propynyl 2,4,5-trichlorophenyl ether</li>
+                            </ul>
+                        </td>
+                        <td>Haloprogin</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Methyl(3-methylphenyl)carbamothioic acid O-2-naphthalenyl ester</li>
+                                <li>O-2-Naphthyl m,N-dimethylthiocarbanilate</li>                
+                            </ul>
+                        </td>
+                        <td>Tolnaftate</td>
+                        <td>1%</td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of administration</h2>
+	        <p>Topical</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+            <p><em>Acceptable dosage forms for NHPs</em>
+                <ul>
+                    <li>Aerosol&semi; Aerosol, metered dose&semi; Aerosol, spray&semi; Cream&semi; Gel&semi; Liquid&semi; Lotion&semi; Ointment&semi; Paste&semi; Powder&semi; Solution&semi; Spray&semi; Spray, bag-on-valve&semi; Spray, metered dose&semi; Spray, suspension&semi; Swab, medicated&semi; Topical liquid&semi; Wipe.</li>
+                </ul>
+            </p>
+            <p><em>Acceptable dosage forms for NPDs</em>
+                <ul>
+                    <li>Aerosol&semi; Aerosol Foam&semi; Cream&semi; Gel&semi; Lotion&semi; Ointment&semi; Paste&semi; Powder&semi; Solution&semi; Spray&semi; Spray, bag-on-valve&semi; Spray, metered dose&semi; Swab&semi; Wipe.</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+            <p><em>All products (Self-Care Framework Category I)</em>
+                <ul>
+                    <li>For the treatment of athlete&apos;s foot (US FDA 2021).</li>
+                    <li>Cures athlete&apos;s foot (US FDA 2021).</li>
+                    <li>Kills athlete&apos;s foot fungus (US FDA 2021).</li>
+                    <li>Relieves (itching, scaling, burning, cracking, redness, soreness, irritation of) athlete&apos;s foot (US FDA 2021).</li>
+                </ul>
+            </p>
+            <p><em>Products containing tolnaftate</em>
+                <ul>
+                    <li>With daily use, for the prevention of athlete&apos;s foot, for individuals with recurring problems (US FDA 2021).</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>Children 2 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older</p>		
+            <h3>Quantity(ies)</h3>
+                <p>See Tables 1 and 2.</p>
+            <h3>Permitted combinations</h3>
+                <p>Two or more of the following ingredients from Table <a href="#ref1" style="text-decoration: none;">1</a> may be combined, provided that the combined ingredients provide a total undecylenate concentration of 10 - 25%:
+                    <ul>
+                        <li>undecylenic acid</li>
+                        <li>calcium undecylenate</li>
+                        <li>copper undecylenate</li>
+                        <li>zinc undecylenate</li>
+                    </ul>
+                </p>
+            <h3>Direction(s) for use</h3>
+                <p><em>All products except products with a claim for the prevention of athlete&apos;s foot only</em>
+                    <ul>
+                        <li>Clean skin with soap and water and dry thoroughly (US FDA 2021).</li>
+                        <li>Apply a thin layer over affected area morning and night for full treatment period of 4 weeks (US FDA 2021).</li>
+                        <li>Pay special attention to spaces between toes (US FDA 2021).</li>
+                        <li>Wear well fitting, ventilated shoes and cotton socks (US FDA 2021).</li>
+                        <li>Supervise children when they use this product (US FDA 2021).</li>
+                    </ul>
+                </p>
+                <p><em>Products containing tolnaftate with a claim for the prevention of athlete&apos;s foot</em>
+                    <ul>
+                        <li>Clean skin with soap and water and dry thoroughly (US FDA 2021).</li>
+                        <li>For prevention, apply a thin layer to the feet once or twice daily (US FDA 2021).</li>
+                        <li>Pay special attention to spaces between toes (US FDA 2021).</li>
+                        <li>Wear well fitting, ventilated shoes and cotton socks (US FDA 2021).</li>
+                        <li>Supervise children when they use this product (US FDA 2021).</li>
+                    </ul>
+                </p>
+                <p><em>Aerosols, sprays and powders</em></p> 
+                    <p>Avoid inhaling or exposing others to (the) spray/powder.</p>
+            <h3>Duration(s) of use</h3>
+                <p>No statement required</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+            <h3>Caution(s) and warning(s)</h3>	
+                <p><em>All products</em>
+                    <ul>
+                        <li>For external use only (US FDA 2021).</li>
+                        <li>When using this product  avoid contact with eyes. If contact occurs, rinse thoroughly with water (US FDA 2021).</li>
+                        <li>Stop use and ask a doctor/physician/health care practitioner/health care provider/health care professional if symptoms worsen or last for more than 4 weeks (US FDA 2021).</li>
+                        <li>Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away.</li>
+                    </ul>
+                </p>
+                <p><em>Products containing povidone-iodine</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a thyroid disease (US FDA 2013).</p>
+            <h3>Contraindication(s)</h3>
+                <p><em>All products</em></p> 
+                    <p>Do not use for infections of the nails (US FDA 2021).</p>
+                <p><em>Products containing povidone-iodine</em></p>
+                    <p>Do not use if you are pregnant or breastfeeding (US FDA 2013).</p>
+            <h3>Known adverse reaction(s)</h3> 
+                <p><em>Products containing povidone-iodine</em></p>
+                    <p>Rare anaphylactic reactions have been known to occur (Gray et al. 2013&semi; Palobart et al. 2009&semi; Yoshida et al. 2008).</p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non medicinal ingredients</h2>
+            <p>Ingredients must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in that database, the <em>Food and Drug Regulations</em>, and the current Cosmetic Ingredient Hotlist, when relevant.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2> 
+            <ul>
+                <li>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em> or the <em>Food and Drug Regulations</em>.</li>
+                <li>If the product is flammable or the if the container is under pressure, storage condition and warnings are required by the Consumer Chemicals and Containers Regulations.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+	        <p>This monograph describes those requirements that are specific to this class of non-prescription drugs and to natural health products. Any change to the manufacturing process that impacts the safety and efficacy of the ingredients, such as the use of novel technology (e.g. nanotechnology), requires supporting data and will be reviewed outside the monograph</p>
+            <p><em>For products containing a Table <a href="#ref1" style="text-decoration: none;">1</a> NHP medicinal ingredient</em></p>
+	            <p>The finished product specifications must be established in accordance with the requirements described in the NNHPD Quality of Natural Health Products Guide. The medicinal ingredient must comply with the requirements outlined in the NHPID.</p>
+	        <p><em>For products containing a Table <a href="#ref2" style="text-decoration: none;">2</a> NPD medicinal ingredient</em></p>
+	            <p>Requirements described in the Regulations to the Food and Drugs Act must be met.</p>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2>For products containing a Table <a href="#ref1" style="text-decoration: none;">1</a> NHP medicinal ingredient:<br/>EXAMPLE OF PRODUCT FACTS:</h2>
+            <p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> Labelling of Natural Health Products</a> for more details.</strong></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Athlete_Foot_E.gif" alt="Product Facts Table" style="width:700px" ></p>    
+    </section>
+    
+    <section aria-labelledby="drugFactsTables">
+        <h2>For products containing a Table <a href="#ref2" style="text-decoration: none;">2</a> NPD medicinal ingredient:<br/>Drug Facts Tables (Format Optional for Self-Care Category I)</h2>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Athlete_Foot_DFT_1_E.gif" alt="Drug Facts Table Chlorphenesin" style="width:700px"/></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Athlete_Foot_DFT_2_E.gif" alt="Drug Facts Table Clioquinol" style="width:700px"/></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Athlete_Foot_DFT_3_E.gif" alt="Drug Facts Table Haloprogin" style="width:700px"/></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Athlete_Foot_DFT_4_E.gif" alt="Drug Facts Table Tolnaftate" style="width:700px"/></p>
+    </section>
+
+    <section aria-labelledby="references">
+        <h2 id="references">References</h2>
+            <ul>
+                <li>Compendium of therapeutics for minor ailments (CTMA). Power, B, et al., editors. Canadian Pharmacists Association &semi; 2016.</li>
+                <li>Compendium of products for minor ailments (CPMA). Power, B, et al., editors. Canadian Pharmacists Association &semi; 2016.</li>	
+                <li>Drug Facts and Comparisons, 2016. Facts and Comparisons Division, Wolters Kluwer&semi; 2017 edition (Oct. 28 2016)</li>	
+                <li>Drugdex, Micromedex Inc. 2.0</li>	
+                <li>Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 13th Edition 2017 Brunton L., Knollmann B., Hilal-Dandan R. McGraw-Hill Education.</li>	
+                <li>Gray Pe, Katelaris CH, Lipson D. Recurrent anaphylaxis caused by topical povidone-iodine (Betadine). Journal of paediatrics and child health 2013&semi;49(6):506-507.</li>
+                <li>Krinsky DL, Ferreri SP, Hemstreet B, Hume AL, Newton GD, Rollins CJ, Tietze KJ. Handbook of Nonprescription Drugs: An interactive approach for Self-Care, 19th edition. Washington (DC): American Pharmaceutical Association&semi; 2017.</li>	
+                <li>NHPID 2024. Natural Health Products Ingredients Database. [Accessed 2024 January 28]. Available from: http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do</li>
+                <li>Palobart C, Cros J, Orsel I, Nathan N. Anaphylactic shock to iodinated povidone. Annales fran&#231;aises d&apos;anesth&#233;sie et de r&#233;animation 2009&semi;28(2):168-170.</li>
+                <li>Remington&apos;s Pharmaceutical Science, 13th Edition, 1996, Philadelphia College of Pharmaceutical Sciences</li>	
+                <li>RSC 2023: Royal Society of Chemistry. The Merck Index Online. [Accessed 2024 January 28]. Available from https://merckindex.rsc.org/.</li>
+                <li>Sweetman SC, editor. Martindale: The Complete Drug Reference, 39th edition. Grayslake (IL): Pharmaceutical Press&semi; 2017.</li>		
+                <li>US FDA 2013: United States Food and Drug Administration. 21 CFR Parts 310 and 333. Safety and Effectiveness of Consumer Antiseptics&semi; Topical Antimicrobial Drug Products for Over-the-Counter Human Use&semi; Proposed Amendment of the Tentative Final Monograph&semi; Reopening of Administrative Record. Federal Register, Volume 78, Number 242, December 17, 2013. [Accessed 2024 January 28]. Available from: https://www.federalregister.gov/documents/2013/12/17/2013-29814/safety-and-effectiveness-of-consumer-antiseptics-topical-antimicrobial-drug-products-for</li>
+                <li>US FDA 2021: U.S. Food and Drug Administration. Over-the-Counter (OTC) Monograph M005: Topical Antifungal Drug Products for Over-the-Counter Human Use. Washington (DC): U.S. Food and Drug Administration, Department of Health and Human Services&semi; 2021. [Accessed 2024 January 28]. Available from https://www.accessdata.fda.gov/drugsatfda_docs/omuf/OTC%20Monograph_M005-Topical%20Antifungal%20drug%20products%20for%20OTC%20Human%20Use%2012.16.2021.pdf</li>
+                <li>Yoshida K, Sakurai Y, Kawahara S, Takeda T, Ishikawa T, Murakami T, Yoshioka A. Anaphylaxis to polyvinylpyrrolidone in povidone-iodine for impetigo contagiosum in a boy with atopic dermatitis. International archives of allergy and immunology 2008&semi;146:169-173.</li>
+            </ul>
+    </section>
+
+	<section aria-labelledby="versionHistory" hidden>
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

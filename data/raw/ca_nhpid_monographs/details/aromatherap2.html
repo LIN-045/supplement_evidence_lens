@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=aromatherap2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="eb5e2b35-13f1-4029-bad9-20f5e20abd02"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>AROMATHERAPY - ESSENTIAL OILS</h1>
+    <div class="icon">
+        <a href="dbImages/mono_aromatherapy--essential-oils_english.pdf" title="Aromatherapy">
+        <img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format" width="22" height="21">(PDF Version - 218 KB)</a>
+    </div>
+
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+        <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+        <li>All claims must include the qualifier “Used in aromatherapy”.</l>
+    </ul>       
+    <p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+    <ul>
+        <li>Aromatherapy ingredients cannot be combined with other monographed medicinal ingredients if the conditions of use are not compatible (e.g., sensitizing ingredients cannot be included in products indicated for use on irritated, broken, or sensitive skin, such as in uses 1, 2, and 3 within this monograph or skin irritation relief claims in the Medicated Skin Care Products monograph). These products may be submitted as a Class III application.</li>
+        <li>For products containing a combination of essential oils and other monographed medicinal ingredients, all essential oils in the product formulation must be listed as medicinal ingredients.</li>
+        <li>If a product includes a &lsquo;Used in aromatherapy&rsquo; claim in addition to other claims, the essential oil(s) supporting the aromatherapy claim must be specified as part of the claim (e.g., XXX is used in aromatherapy to…).</li>
+    </ul>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>	    
+          <p>July 25, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+            <table class="subject">
+                <caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="colgroup">Proper name(s)</th>
+                        <th rowspan="2" scope="colgroup">Common name(s)</th>
+                        <th colspan="2" scope="colgroup">Source information</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Source material(s)</th>
+                        <th scope="col">Part(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Abies balsamea</em></td>
+                        <td>
+                            <ul>
+                                <li>Balsam essential oil</li>
+                                <li>Balsam fir essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Abies balsamea</em></td>
+                        <td>
+                            <ul>
+                                <li>Needle</li>
+                                <li>Twig</li>
+                            </ul>
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td><em>Abies sibirica</em></td>
+                        <td>Siberian fir essential oil</td>
+                        <td><em>Abies sibirica</em></td>
+                        <td>
+                            <ul>
+                                <li>Needle</li>
+                                <li>Twig</li>
+                            </ul>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td><em>Angelica archangelica</em></td>
+                        <td>Angelica essential oil</td>
+                        <td><em>Angelica archangelica</em></td>
+                        <td>
+                            <ul>
+                                <li>Root</li>
+                                <li>Seed</li>
+                            </ul>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td><em>Aniba rosaeodora</em></td>
+                        <td>Rosewood essential oil</td>
+                        <td><em>Aniba rosaeodora</em></td>
+                        <td>Wood</td>
+                    </tr> 
+                    <tr>
+                        <td><em>Apium graveolens</em></td>
+                        <td>
+                            <ul>
+                                <li>Celery essential oil</li>
+                                <li>Celery seed essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Apium graveolens</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia frereana</em></td>
+                        <td>
+                            <ul>
+                                <li>Frankincense essential oil</li>
+                                <li>Olibanum essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Boswellia frereana</em></td>
+                        <td>Stem resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia frereana</em></td>
+                        <td>
+                            <ul>
+                                <li>Frankincense absolute</li>
+                                <li>Olibanum absolute</li>
+                            </ul>
+                        </td>
+                        <td><em>Boswellia frereana</em></td>
+                        <td>Stem resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia sacra</em></td>
+                        <td>
+                            <ul>
+                                <li>Frankincense essential oil</li>
+                                <li>Olibanum essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Boswellia sacra</em></td>
+                        <td>Stem resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia sacra</em></td>
+                        <td>
+                            <ul>
+                                <li>Frankincense absolute</li>
+                                <li>Olibanum absolute</li>
+                            </ul>
+                        </td>
+                        <td><em>Boswellia sacra</em></td>
+                        <td>Stem resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cananga odorata</em></td>
+                        <td>
+                            <ul>
+                                <li>Cananga essential oil</li>
+                                <li>Ylang ylang essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cananga odorata</em></td>
+                        <td>Flower</td>
+                    </tr>
+                    <tr>
+                        <td><em>Carum carvi</em></td>
+                        <td>Caraway essential oil</td>
+                        <td><em>Carum carvi</em></td>
+                        <td>
+                            <ul>
+                                <li>Fruit</li>
+                                <li>Seed</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Cedrus atlantica</em></td>
+                        <td>
+                            <ul>
+                                <li>Atlas cedarwood essential oil</li>
+                                <li>Cedarwood essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cedrus atlantica</em></td>
+                        <td>Wood</td>
+                    </tr>
+                    <tr>
+                        <td><em>Chamaemelum nobile</em></td>
+                        <td>
+                            <ul>
+                                <li>English chamomile essential oil</li>
+                                <li>Roman chamomile essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Chamaemelum nobile</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Chrysopogon zizanioides</em></td>
+                        <td>Vetiver essential oil</td>
+                        <td><em>Chrysopogon zizanioides</em></td>
+                        <td>Root</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinnamomum camphora<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></em></td>
+                        <td>
+                            <ul>
+                                <li>Camphor essential oil</li>
+                                <li>White camphor essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cinnamomum camphora</em></td>
+                        <td>
+                            <ul>
+                                <li>Branch</li>
+                                <li>Stem Bark</li>
+                                <li>Wood</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinnamomum verum</em></td>
+                        <td>Cinnamon essential oil</td>
+                        <td><em>Cinnamomum verum</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Twig<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Cistus ladanifer</em></td>
+                        <td>Labdanum essential oil</td>
+                        <td><em>Cistus ladanifer</em></td>
+                        <td>Gum</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantiifolia</em></td>
+                        <td>Lime essential oil</td>
+                        <td><em>Citrus aurantiifolia</em></td>
+                        <td>
+                            <ul>
+                                <li>Unripe fruit peel</li>
+                                <li>Ripe fruit peel</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em></td>
+                        <td>
+                            <ul>
+                                <li>Bitter orange essential oil</li>
+                                <li>Neroli essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Citrus aurantium</em></td>
+                        <td>Flower</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em></td>
+                        <td>
+                            <ul>
+                                <li>Bitter orange absolute</li>
+                                <li>Neroli absolute</li>
+                            </ul>
+                        </td>
+                        <td><em>Citrus aurantium</em></td>
+                        <td>Flower</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em></td>
+                        <td>
+                            <ul>
+                                <li>Petitgrain essential oil</li>
+                                <li>Petitgrain oil Paraguay </li>
+                            </ul>
+                        </td>
+                        <td><em>Citrus aurantium</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus bergamia</em></td>
+                        <td>Bergamot essential oil</td>
+                        <td><em>Citrus bergamia</em></td>
+                        <td>Fruit peel</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus bergamia</em></td>
+                        <td>Bergamot (FCF) essential oil FCF = Furanocoumarin-free</td>
+                        <td><em>Citrus bergamia</em></td>
+                        <td>Fruit peel</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus paradisi</em></td>
+                        <td>Grapefruit essential oil</td>
+                        <td><em>Citrus paradisi</em></td>
+                        <td>Fruit peel</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus limon</em></td>
+                        <td>Lemon essential oil</td>
+                        <td><em>Citrus limon</em></td>
+                        <td>Fruit peel</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus sinensis</em></td>
+                        <td>
+                            <ul>
+                                <li>Orange essential oil</li>
+                                <li>Sweet orange essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Citrus sinensis</em></td>
+                        <td>Fruit peel</td>
+                    </tr>
+                    <tr>
+                        <td><em>Commiphora myrrha</em></td>
+                        <td>Myrrh essential oil</td>
+                        <td><em>Commiphora myrrha</em></td>
+                        <td>Sap resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Commiphora myrrha</em></td>
+                        <td>Myrrh absolute</td>
+                        <td><em>Commiphora myrrha</em></td>
+                        <td>Sap resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Corymbia citriodora</em></td>
+                        <td>
+                            <ul>
+                                <li>Citron-scent gum essential oil</li>
+                                <li>Lemon-scent gum essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Corymbia citriodora</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cuminum cyminum</em></td>
+                        <td>Cumin essential oil</td>
+                        <td><em>Cuminum cyminum</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cupressus sempervirens</em></td>
+                        <td>
+                            <ul>
+                                <li>Italian cypress essential oil</li>
+                                <li>Mediterranean cypress essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cupressus sempervirens</em></td>
+                        <td>
+                            <ul>
+                                <li>Needle</li>
+                                <li>Twig</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon citratus</em></td>
+                        <td>Lemongrass essential oil</td>
+                        <td><em>Cymbopogon citratus</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon flexuosus</em></td>
+                        <td>
+                            <ul>
+                                <li>East Indian lemongrass essential oil</li>
+                                <li>Malabar lemongrass essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cymbopogon flexuosus</em></td>
+                        <td>Herb top</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon martini</em></td>
+                        <td>Palmarosa essential oil</td>
+                        <td><em>Cymbopogon martini</em></td>
+                        <td>Herb top</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon nardus</em></td>
+                        <td>
+                            <ul>
+                                <li>Ceylon citronella essential oil</li>
+                                <li>Citronella essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cymbopogon nardus</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon winterianus</em></td>
+                        <td>
+                            <ul>
+                                <li>Burma citronella essential oil</li>
+                                <li>Java citronella essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Cymbopogon winterianus</em></td>
+                        <td>Herb top</td>
+                    </tr>
+                    <tr>
+                        <td><em>Elettaria cardamomum</em></td>
+                        <td>Cardamom essential oil</td>
+                        <td><em>Elettaria cardamomum</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus globulus</em></td>
+                        <td>Eucalyptus essential oil</td>
+                        <td><em>Eucalyptus globulus</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus polybractea</em></td>
+                        <td>Blue mallee essential oil</td>
+                        <td><em>Eucalyptus polybractea</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus radiata</em></td>
+                        <td>Narrow-leaf peppermint essential oil</td>
+                        <td><em>Eucalyptus radiata</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. vulgare</em></td>
+                        <td>Bitter fennel essential oil</td>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. vulgare</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. dulce</em></td>
+                        <td>
+                            <ul>
+                                <li>Roman fennel essential oil</li>
+                                <li>Sweet fennel essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. dulce</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Helichrysum italicum</em></td>
+                        <td>
+                            <ul>
+                                <li>Curry plant essential oil</li>
+                                <li>Immortelle essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Helichrysum italicum</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Illicium verum</em></td>
+                        <td>Star anise essential oil</td>
+                        <td><em>Illicium verum</em></td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td><em>Jasminum officinale</em></td>
+                        <td>Jasmine absolute</td>
+                        <td><em>Jasminum officinale</em></td>
+                        <td>Flower</td>
+                    </tr>
+                    <tr>
+                        <td><em>Juniperus communis</em></td>
+                        <td>
+                            <ul>
+                                <li>Common juniper essential oil</li>
+                                <li>Juniper essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Juniperus communis</em></td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td><em>Laurus nobilis</em></td>
+                        <td>
+                            <ul>
+                                <li>Bay laurel essential oil</li>
+                                <li>Laurel essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Laurus nobilis</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Twig</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula angustifolia</em></td>
+                        <td>Lavender essential oil</td>
+                        <td><em>Lavandula angustifolia</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula x intermedia</em></td>
+                        <td>Lavandin essential oil</td>
+                        <td><em>Lavandula x intermedia</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula latifolia</em></td>
+                        <td>Spike lavender essential oil</td>
+                        <td><em>Lavandula latifolia</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Litsea cubeba</em></td>
+                        <td>Litsea essential oil</td>
+                        <td><em>Litsea cubeba</em></td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td><em>Matricaria chamomilla</em></td>
+                        <td>
+                            <ul>
+                                <li>Chamomile essential oil</li>
+                                <li>German chamomile essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Matricaria chamomilla</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca alternifolia</em></td>
+                        <td>Tea tree essential oil</td>
+                        <td><em>Melaleuca alternifolia</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Twig leafy</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca cajuputi</em></td>
+                        <td>Cajuput essential oil</td>
+                        <td><em>Melaleuca cajuputi</em></td>
+                        <td>Twig leafy</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca quinquenervia</em></td>
+                        <td>Niaouli essential oil</td>
+                        <td><em>Melaleuca quinquenervia</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melissa officinalis</em></td>
+                        <td>Lemon balm essential oil</td>
+                        <td><em>Melissa officinalis</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha arvensis</em></td>
+                        <td>Cornmint essential oil</td>
+                        <td><em>Mentha arvensis</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Twig flowering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha x piperita</em></td>
+                        <td>Peppermint essential oil</td>
+                        <td><em>Mentha x piperita</em></td>
+                        <td>
+                            <ul>
+                                <li>Herb flowering</li>
+                                <li>Leaf</li>
+                                <li>Twig flowering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha spicata</em></td>
+                        <td>Spearmint essential oil</td>
+                        <td><em>Mentha spicata</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Twig flowering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Myristica fragrans</em></td>
+                        <td>Nutmeg essential oil</td>
+                        <td><em>Myristica fragrans</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Myrtus communis</em></td>
+                        <td>Myrtle essential oil</td>
+                        <td><em>Myrtus communis</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Twig</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Ocimum basilicum<sup><a href="#ref1-3" style="text-decoration: none;">3</a></sup></em></td>
+                        <td>Sweet basil essential oil</td>
+                        <td><em>Ocimum basilicum</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Origanum majorana</em></td>
+                        <td>
+                            <ul>
+                                <li>Sweet marjoram essential oil</li>
+                                <li>Marjoram essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Origanum majorana</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pelargonium graveolens</em></td>
+                        <td>
+                            <ul>
+                                <li>Rose geranium essential oil</li>
+                                <li>Geranium essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Pelargonium graveolens</em></td>
+                        <td>
+                            <ul>
+                                <li>Leaf</li>
+                                <li>Herb top flowering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Petroselinum crispum</em></td>
+                        <td>Parsley essential oil</td>
+                        <td><em>Petroselinum crispum</em></td>
+                        <td>
+                            <ul>
+                                <li>Herb top</li>
+                                <li>Seed</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Pinus sylvestris</em></td>
+                        <td>Scotch pine essential oil</td>
+                        <td><em>Pinus sylvestris</em></td>
+                        <td>Needle</td>
+                    </tr>
+                    <tr>
+                        <td><em>Piper cubeba</em></td>
+                        <td>Cubeb essential oil</td>
+                        <td><em>Piper cubeba</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Piper nigrum</em></td>
+                        <td>Black pepper essential oil</td>
+                        <td><em>Piper nigrum</em></td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pogostemon cablin</em></td>
+                        <td>Patchouli essential oil</td>
+                        <td><em>Pogostemon cablin</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosa x damascena</em></td>
+                        <td>
+                            <ul>
+                                <li>Damask rose essential oil</li>
+                                <li>Rose essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Rosa x damascena</em></td>
+                        <td>Flower</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosa x centifolia</em></td>
+                        <td>
+                            <ul>
+                                <li>Provence rose essential oil</li>
+                                <li>Rose essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Rosa x centifolia</em></td>
+                        <td>Flower</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosmarinus officinalis</em></td>
+                        <td>Rosemary essential oil</td>
+                        <td><em>Rosmarinus officinalis</em></td>
+                        <td>
+                            <ul>
+                                <li>Herb top</li>
+                                <li>Twig leafy flowering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia lavandulifolia</em></td>
+                        <td>Spanish sage essential oil</td>
+                        <td><em>Salvia lavandulifolia</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia officinalis</em></td>
+                        <td>
+                            <ul>
+                                <li>Dalmatian sage essential oil</li>
+                                <li>Sage essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Salvia officinalis</em></td>
+                        <td>Leaf</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia sclarea</em></td>
+                        <td>
+                            <ul>
+                                <li>Clary essential oil</li>
+                                <li>Clary sage essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Salvia sclarea</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Santalum album</em></td>
+                        <td>
+                            <ul>
+                                <li>East Indian sandalwood essential oil</li>
+                                <li>Sandalwood essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Santalum album</em></td>
+                        <td>Wood</td>
+                    </tr>
+                    <tr>
+                        <td><em>Satureja hortensis</em></td>
+                        <td>
+                            <ul>
+                                <li>Savory essential oil</li>
+                                <li>Summer savory essential oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Satureja hortensis</em></td>
+                        <td>Herb top</td>
+                    </tr>
+                    <tr>
+                        <td><em>Styrax benzoin</em></td>
+                        <td>Benzoin essential oil</td>
+                        <td><em>Styrax benzoin</em></td>
+                        <td>Sap resin</td>
+                    </tr>
+                    <tr>
+                        <td><em>Syzygium aromaticum</em></td>
+                        <td>Clove essential oil</td>
+                        <td><em>Syzygium aromaticum</em></td>
+                        <td>
+                            <ul>
+                                <li>Flower bud</li>
+                                <li>Leaf</li>
+                                <li>Stem</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Thymus vulgaris</em></td>
+                        <td>Thyme essential oil</td>
+                        <td><em>Thymus vulgaris</em></td>
+                        <td>
+                            <ul>
+                                <li>Herb top</li>
+                                <li>Herb top flowering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Thymus zygis</em></td>
+                        <td>White thyme essential oil</td>
+                        <td><em>Thymus zygis</em></td>
+                        <td>Herb top flowering</td>
+                    </tr>
+                    <tr>
+                        <td><em>Zingiber officinale</em></td>
+                        <td>Ginger essential oil</td>
+                        <td><em>Zingiber officinale</em></td>
+                        <td>Rhizome</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref1-1">1</sup>Brown and yellow camphor essential oils are not permitted due to potential toxicity/carcinogenicity (Tisserand and Young 2014).<br/> 
+                <sup id="ref1-2">2</sup>Cinnamomum verum essential oil from bark is not permitted due to potential toxicity/carcinogenicity (Tisserand and Young 2014).<br/>  
+                <sup id="ref1-3">3</sup>The estragole chemotype of the sweet basil essential oil is not permitted due to potential toxicity/carcinogenicity (Tisserand and Young 2014).<br/>
+                References: HC 2025, Tisserand and Young 2014, Lis-Balchin 2006, Battaglia 2003, Valnet 2001, Price and Price 1999, Davis 1997.
+            </p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">    
+        <h2 id="routeOfAdministration">Route(s) of Administration</h2>
+            <ul>
+                <li>Topical </li>
+                <li>Inhalation</li>
+                <li>Topical and inhalation</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+            <p><strong>Acceptable dosage forms are as follows:</strong></p>
+                <ul>
+                    <li>Topical (diluted products for local application and body massage): Cream&semi; Gel&semi; Liquid&semi; Lotion&semi; Oil&semi; Ointment&semi; Solution</li>
+                    <li>Topical (undiluted products for local application and body massage): Liquid*</li>
+                    <li>Topical (bath and compresses): Liquid*</li>
+                    <li>Inhalation: Liquid*</li>
+                    <li>Topical and Inhalation: Liquid*</li>
+                </ul>
+                <p><strong>*Note:</strong>To be packaged in a dropper bottle.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>	
+            <p>Consult Table 2 below for uses supported for each medicinal ingredient. The medicinal ingredients in Table 2 are associated with the numbered claims below.</p>
+            <p><em>Topical only</em></p>
+                <ol>
+                    <li>Used in aromatherapy for symptomatic relief of acne/boils.</li>
+                    <li>Used in aromatherapy to help relieve minor skin irritation/cuts/bruises/burns.</li>
+                    <li>Used in aromatherapy for symptomatic relief of eczema/dermatitis.</li>
+                    <li>Used in aromatherapy to help relieve joint/muscle pain associated with sprain/strain/rheumatoid arthritis.</li>
+                </ol>           
+            <p><em>Topical and/or inhalation</em></p> 
+                <ol start="5">
+                    <li>Used in aromatherapy as a nervine/calmative.</li>
+                    <li>Used in aromatherapy to help relieve headache.</li>
+                    <li>Used in aromatherapy as a carminative/antispasmodic for symptomatic relief of digestive discomfort.</li>
+                    <li>Used in aromatherapy to help relieve colds/cough.</li>
+                </ol>
+            <p><strong> Note:</strong> The above uses can be combined on the product label (e.g., Used in aromatherapy to help relieve headache and colds).</p>
+            <table class="subject">
+                <caption>Table 2. Aromatherapy essential oils uses or purposes</caption>
+                <thead>
+                    <tr>
+                        <th>Medicinal Ingredients</th>
+                        <th>Uses or Purposes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Abies balsamea</em></td>
+                        <td>4, 5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Abies sibirica</em></td>
+                        <td>4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Angelica archangelica</em></td>
+                        <td>4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Aniba rosaeodora</em></td>
+                        <td>5, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Apium graveolens</em></td>
+                        <td>4, 5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia frereana</em> (essential oil)</td>
+                        <td>2, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia frereana</em> (absolute)</td>
+                        <td>2, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia sacra</em> (essential oil)</td>
+                        <td>2, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia sacra</em> (absolute)</td>
+                        <td>2, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cananga odorata</em></td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Carum carvi</em></td>
+                        <td>7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cedrus atlantica</em></td>
+                        <td>1, 2, 4, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Chamaemelum nobile</em></td>
+                        <td>5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Chrysopogon zizanioides</em></td>
+                        <td>1, 4</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinnamomum camphora</em></td>
+                        <td>4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinnamomum verum</em></td>
+                        <td>4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cistus ladanifer</em></td>
+                        <td>4, 5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantiifolia</em></td>
+                        <td>1, 4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em> (Neroli - flower) (essential oil)</td>
+                        <td>5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em> (Neroli - flower) (absolute)</td>
+                        <td>5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em> (Petitgrain - leaf)</td>
+                        <td>4, 5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus bergamia</em> (expressed)</td>
+                        <td>6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus bergamia</em> (expressed - rectified) (FCF)</td>
+                        <td>1, 2, 3, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus paradisi</em></td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus limon</em></td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus sinensis</em></td>
+                        <td>5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Commiphora myrrha</em> (essential oil)</td>
+                        <td>2, 3, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Commiphora myrrha</em> (absolute)</td>
+                        <td>2, 3, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Corymbia citriodora</em></td>
+                        <td>4, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cuminum cyminum</em></td>
+                        <td>4, 5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cupressus sempervirens</em></td>
+                        <td>4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon citratus</em></td>
+                        <td>4, 5, 6, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon flexuosus</em></td>
+                        <td>4, 5, 6, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon martini</em></td>
+                        <td>5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon nardus</em></td>
+                        <td>4, 6, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon winterianus</em></td>
+                        <td>4, 6, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Elettaria cardamomum</em></td>
+                        <td>7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus globulus</em></td>
+                        <td>4, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus polybractea</em></td>
+                        <td>4, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus radiata</em></td>
+                        <td>4, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. vulgare</em></td>
+                        <td>2, 4, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. dulce</em></td>
+                        <td>2, 4, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Helichrysum italicum</em></td>
+                        <td>1, 2, 3, 4, 5, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>IIllicium verum</em></td>
+                        <td>4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Jasminum officinale</em></td>
+                        <td>4, 5, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Juniperus communis</em></td>
+                        <td>1, 2, 3, 4, 5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Laurus nobilis</em></td>
+                        <td>4, 5, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula angustifolia</em></td>
+                        <td>4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula x intermedia</em></td>
+                        <td>4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula latifolia</em></td>
+                        <td>4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Litsea cubeba</em></td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Matricaria chamomilla</em></td>
+                        <td>1, 2, 4, 5, 6, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca alternifolia</em></td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca cajuputi</em></td>
+                        <td>1, 3, 4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca quinquenervia</em></td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melissa officinalis</em></td>
+                        <td>5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha arvensis</em></td>
+                        <td>1, 4, 5, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha x piperita</em></td>
+                        <td>4, 5, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha spicata</em></td>
+                        <td>5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Myristica fragrans</em></td>
+                        <td>4, 5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Myrtus communis</em></td>
+                        <td>1, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Ocimum basilicum</em></td>
+                        <td>5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Origanum majorana</em></td>
+                        <td>2, 3, 4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pelargonium graveolens</em></td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Petroselinum crispum</em></td>
+                        <td>2, 4, 5</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pinus sylvestris</em></td>
+                        <td>4, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Piper cubeba</em></td>
+                        <td>2, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Piper nigrum</em></td>
+                        <td>4, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pogostemon cablin</em></td>
+                        <td>1, 2, 5, 7</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosa x damascena</em></td>
+                        <td>2, 5, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosa x centifolia</em></td>
+                        <td>2, 5, 6, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosmarinus officinalis</em></td>
+                        <td>2, 4, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia lavandulifolia</em></td>
+                        <td>2, 4, 5, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia officinalis</em></td>
+                        <td>2, 4, 5, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia sclarea</em></td>
+                        <td>4, 5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Santalum album</em></td>
+                        <td>5, 6, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Satureja hortensis</em></td>
+                        <td>4, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Styrax benzoin</em></td>
+                        <td>4, 5, 7, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Syzygium aromaticum</em></td>
+                        <td>4, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Thymus vulgaris</em></td>
+                        <td>1, 2, 4, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Thymus zygis</em></td>
+                        <td>1, 2, 4, 5, 8</td>
+                    </tr>
+                    <tr>
+                        <td><em>Zingiber officinale</em></td>
+                        <td>4, 7, 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        <p>References: HC 2025, Tisserand and Young 2014, Lis-Balchin 2006, Battaglia 2003.</p>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>Adults 18 years and older</p>
+            <h3>Quantity(ies)</h3>
+                <p>Refer to Tables 3, 4, 5 and 6 below.</p>
+                <p><strong>Notes</strong></p>
+                <ul>
+                    <li>See Appendix 1 for definitions of various preparations (i.e. steam distilled, expressed, absolute, rectified).</li>
+                    <li>The concentrations in Table 3 below refer to final concentrations after dilution to be applied on the skin.</li>
+                    <li>The quantity per dosage unit for undiluted (pure) essential oils should be indicated as a value between 99 - 100% (Table 4) on the PLA form with appropriate dilution information in the Directions for use section.</li>
+                </ul>
+            <table class="subject">
+                <caption>Table 3. Topical application - massage or local application: Methods of preparations and concentrations associated with each medicinal ingredient</caption>
+                <thead>
+                    <tr>
+                        <th>Medicinal Ingredients</th>
+                        <th>Methods of Preparations</th>
+                        <th>Concentrations for topical application for massage<sup><a href="#ref3-1" style="text-decoration: none;">1</a></sup></th>
+                        <th>Concentrations for topical local application<sup><a href="#ref3-2" style="text-decoration: none;">2</a></sup></th>
+                        <th>Sensitizing (S) and Phototoxic (P) essential oils<sup><a href="#ref3-3" style="text-decoration: none;">3</a></sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Abies balsamea</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Abies sibirica</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 2.5%</td>
+                        <td>1 - 2.5%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Angelica archangelica</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.78%</td>
+                        <td>0.78%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Aniba rosaeodora</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Apium graveolens</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia frereana</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia frereana</em></td>
+                        <td>Absolute</td>
+                        <td>1 - 3%</td>
+                        <td>1 - 3%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia sacra</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Boswellia sacra</em></td>
+                        <td>Absolute</td>
+                        <td>1 - 3%</td>
+                        <td>1 - 3%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cananga odorata</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.8 - 2%</td>
+                        <td>0.8 - 2%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Carum carvi</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cedrus atlantica</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Chamaemelum nobile</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Chrysopogon zizanioides</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 1.5%</td>
+                        <td>1 - 1.5%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinnamomum camphora</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 20%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cinnamomum verum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.6 - 5%</td>
+                        <td>0.6 - 5%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cistus ladanifer</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><em>Citrus aurantiifolia</em></td>
+                        <td>Oil, Essential (expressed)</td>
+                        <td>Unripe fruit peel: 0.7%</td>
+                        <td>Unripe fruit peel: 0.7%</td>
+                        <td>P</td>
+                    </tr>
+                    <tr>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>Ripe fruit peel: 1 - 5%</td>
+                        <td>Ripe fruit peel: 1 - 15%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em> (Neroli - flower)</td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em> (Neroli - flower)</td>
+                        <td>Absolute</td>
+                        <td>1 - 3%</td>
+                        <td>1 - 3%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus aurantium</em> (Petitgrain - leaf)</td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus bergamia</em></td>
+                        <td>Oil, Essential (expressed)</td>
+                        <td>0.4%</td>
+                        <td>0.4%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus bergamia</em> (FCF)</td>
+                        <td>Oil, Essential (expressed - rectified)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 20%</td>
+                        <td>P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus paradisi</em></td>
+                        <td>Oil, Essential (expressed)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>P</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><em>Citrus limon</em></td>
+                        <td>Oil, Essential (expressed)</td>
+                        <td>1 - 2%</td>
+                        <td>1 - 2%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Citrus sinensis</em></td>
+                        <td>Oil, Essential (expressed)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Commiphora myrrha</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Commiphora myrrha</em></td>
+                        <td>Absolute</td>
+                        <td>1 - 3%</td>
+                        <td>1 - 3%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Corymbia citriodora</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 20%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cuminum cyminum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.4%</td>
+                        <td>0.4%</td>
+                        <td>P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cupressus sempervirens</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon citratus</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.7 - 4%</td>
+                        <td>0.7 - 4%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon flexuosus</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon martini</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 6.5%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon nardus</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1%</td>
+                        <td>1%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cymbopogon winterianus</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1%</td>
+                        <td>1%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Elettaria cardamomum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus globulus</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 20%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus polybractea</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 20%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Eucalyptus radiata</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 20%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. vulgare</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 1.8%</td>
+                        <td>1 - 1.8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Foeniculum vulgare subsp. vulgare var. dulce</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 2.5%</td>
+                        <td>1 - 2.5%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Helichrysum italicum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.5%</td>
+                        <td>0.5%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>IIllicium verum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 1.75%</td>
+                        <td>1 - 1.75%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Jasminum officinale</em></td>
+                        <td>Absolute</td>
+                        <td>0.7%</td>
+                        <td>0.7%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Juniperus communis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Laurus nobilis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.5%</td>
+                        <td>0.5%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula angustifolia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 15%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula x intermedia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 5%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Lavandula latifolia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>S, P</td>
+                    </tr>
+                    <tr>
+                        <td><em>Litsea cubeba</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.8%</td>
+                        <td>0.8%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Matricaria chamomilla</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca alternifolia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1%</td>
+                        <td>1%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca cajuputi</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melaleuca quinquenervia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Melissa officinalis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.7%</td>
+                        <td>0.7%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha arvensis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha x piperita</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 5.4%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mentha spicata</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Myristica fragrans</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.8%</td>
+                        <td>0.8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Myrtus communis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 1.9%</td>
+                        <td>1 - 1.9%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Ocimum basilicum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 3.3%</td>
+                        <td>1 - 3.3%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Origanum majorana</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pelargonium graveolens</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><em>Petroselinum crispum</em></td>
+                        <td rowspan="2">Oil, Essential (water steam distillation)</td>
+                        <td>Herb top: 1 - 2%</td>
+                        <td>Herb top: 1 - 2%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Seed: 1 - 1.1%</td>
+                        <td>Seed: 1 - 1.1%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pinus sylvestris</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Piper cubeba</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Piper nigrum</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Pogostemon cablin</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosa x damascena</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.6%</td>
+                        <td>0.6%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosa x centifolia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 2%</td>
+                        <td>1 - 2%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Rosmarinus officinalis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 6.5%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia lavandulifolia</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 12.5%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia officinalis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia sclarea</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Santalum album</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 10%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Satureja hortensis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>0.5 %</td>
+                        <td>0.5 %</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Styrax benzoin</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 2%</td>
+                        <td>1 - 2%</td>
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><em>Syzygium aromaticum</em></td>
+                        <td rowspan="2">Oil, Essential (water steam distillation)</td>
+                        <td>Flower bud: 0.5 - 4%</td>
+                        <td>Flower bud: 0.5 - 4%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td>Leaf&semi; Stem: 0.6 - 2%</td>
+                        <td>Leaf&semi; Stem: 0.6 - 2%</td>
+                        <td>S</td>
+                    </tr>
+                    <tr>
+                        <td><em>Thymus vulgaris</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Thymus zygis</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 5%</td>
+                        <td>1 - 8%</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Zingiber officinale</em></td>
+                        <td>Oil, Essential (water steam distillation)</td>
+                        <td>1 - 4%</td>
+                        <td>1 - 4%</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>    
+                <sup id="ref3-1">1</sup>This section refers to minimum and maximum concentrations after dilution for body massage (covering more than 10% of body surface area).<br/> 
+                <sup id="ref3-2">2</sup>This section refers to minimum and maximum concentrations after dilution for local applications (covering up to 10% of body surface area).<br/>
+                <sup id="ref3-3">3</sup>(S) - Sensitizing: For definition, see Appendix 1. Additional duration of use and risk statements are required for medicinal ingredients indicated as sensitizing. Refer to Risk information section. Sensitizing ingredients cannot be included in products intended for use on irritated, broken or sensitive skin. (P) - Phototoxic: For definition, see Appendix 1. Additional risk statements are required for medicinal ingredients indicated as phototoxic. Refer to Risk information section.<br/>
+                References: HC 2025, Tisserand and Young 2014, Lis-Balchin 2006, Battaglia 2003.
+            </p>
+            <table class="subject">
+                <caption>Table 4. Topical application - massage or local application: Methods of preparations and concentrations for undiluted products<sup><a href="#ref4-1" style="text-decoration: none;">1</a></sup></caption>    
+                <thead>
+                    <tr>
+                        <th>Medicinal Ingredients</th>
+                        <th>Methods of Preparation<sup><a href="#ref4-3" style="text-decoration: none;">3</a></sup></th>
+                        <th>Concentration for single ingredient products or total concentration of ingredients from Table 1 for multi-ingredient products</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Any ingredient listed in Table 1<sup><a href="#ref4-2" style="text-decoration: none;">2</a></sup></td>
+                        <td>
+                            <ul>
+                                <li>Absolute</li>
+                                <li>Oil, Essential (water steam distillation)</li>
+                                <li>Oil, Essential (expressed)</li>
+                                <li>Oil, Essential (expressed- rectified)</li>
+                            </ul>
+                        </td>
+                        <td>99 - 100%<sup><a href="#ref4-4" style="text-decoration: none;">4</a></sup></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref4-1">1</sup>The quantity per dosage unit for undiluted (pure) essential oils should be indicated as a value between 99 - 100% on the PLA form with appropriate dilution information (such as mixing XX drops of the product in YY mL of carrier oil) in the Directions for use section to meet the concentrations listed in Table 3 once diluted.<br/>
+                <sup id="ref4-2">2</sup>Sensitizing ingredients cannot be included in products intended for use on irritated, broken or sensitive skin.<br/> 
+                <sup id="ref4-3">3</sup>The appropriate method of preparation associated with each essential oil is listed in Table 3.<br/>
+                <sup id="ref4-4">4</sup>A minimum concentration of 99% has been included to allow for the addition of a non-medicinal ingredient with a preservative antioxidant purpose as needed. 
+            </p>
+            <table class="subject">
+                <caption>Table 5. Topical application - bath or compresses: Methods of preparations and concentration for all medicinal ingredients listed in Table 1</caption>    
+                <thead>
+                    <tr>
+                        <th>Medicinal Ingredients</th>
+                        <th>Methods of Preparations<sup><a href="#ref5-2" style="text-decoration: none;">2</a></sup></th>
+                        <th>Concentration for single ingredient products or total concentration of ingredients from Table 1 for multi-ingredient products</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Any ingredient listed in Table 1<sup><a href="#ref5-1" style="text-decoration: none;">1</a></sup></td>
+                    <td><ul>
+                        <li>Absolute</li>
+                        <li>Oil, Essential (water steam distillation)</li>
+                        <li>Oil, Essential (expressed)</li>
+                        <li>Oil, Essential (expressed- rectified)</li>
+                    </ul></td>
+                    <td>99 - 100%<sup><a href="#ref5-3" style="text-decoration: none;">3</a></sup></td>
+                </tr>
+    
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref5-1">1</sup>Sensitizing ingredients cannot be included in products intended for use on irritated, broken or sensitive skin.<br/> 
+                <sup id="ref5-2">2</sup>The appropriate method of preparation associated with each essential oil is listed in Table 3.<br/>
+                <sup id="ref5-3">3</sup>If a combination of essential oils is used, the total concentration of essential oils must be a value between 99 &ndash; 100% and each essential oil included in the combination must contribute to the recommended uses for the product. A minimum concentration of 99% has been included to allow for the addition of a non-medicinal ingredient with a preservative antioxidant purpose as needed.
+            </p>
+            <table class="subject">
+                <caption>Table 6. Inhalation - tissue or steaming water: Methods of preparations and concentration for all medicinal ingredients listed in Table 1</caption>
+                <thead>
+                    <tr>
+                        <th>Medicinal Ingredients</th>
+                        <th>Methods of Preparations<sup><a href="#ref6-1" style="text-decoration: none;">6</a></sup></th>
+                        <th>Concentration for single ingredient products or total concentration of ingredients from Table 1 for multi-ingredient products</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Any ingredient listed in Table 1</td>
+                        <td>
+                            <ul>
+                                <li>Absolute</li>
+                                <li>Oil, Essential (water steam distillation)</li>
+                                <li>Oil, Essential (expressed)</li>
+                                <li>Oil, Essential (expressed- rectified)</li>
+                            </ul>
+                        </td>
+                        <td>99 - 100%<sup><a href="#ref6-2" style="text-decoration: none;">2</a></sup></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref6-1">1</sup>The appropriate method of preparation associated with each essential oil is listed in Table 3.<br/>
+                <sup id="ref6-2">2</sup>If a combination of essential oils is used, the total concentration of essential oils must be a value between 99 - 100% and each essential oil included in the combination must contribute to the recommended uses for the product. A minimum concentration of 99% has been included to allow for the addition of a non-medicinal ingredient with a preservative antioxidant purpose as needed.
+            </p>
+            <p><strong>Ingredient Combinations</strong></p>
+            <p>All ingredients included in this monograph may be combined together with the following restrictions:</p>
+                <ul>
+                    <li>For local topical application/body massage, the total concentration of the combined essential oils must not exceed 5%&semi; <br/>and<br/></li>
+                    <li>Each essential oil in the product combination must not exceed its maximum concentrations listed in Table 3.</li>
+                </ul>
+            <h3>Direction(s) for use</h3>	
+                <p><strong>Topical</strong></p>
+                <p><em>Local application (10% or less of body surface area)</em></p>
+                    <p>Apply to a small body area only, 1 to 3 times per day. Rub and/or massage into skin until solution vanishes.</p>
+                <p><em>Body massage (more than 10% of the body surface area)</em></p>
+                    <p>Apply as a body massage once daily. Rub and/or massage into skin until solution vanishes.</p>
+                <p><em>Products requiring dilution (topical)</em></p>
+                    <ul>              
+                        <li>Do not use the product undiluted.</li>
+                        <li>Mix XX drops of the product in YY ml of carrier oil prior to applying on the skin<sup><a href="#ref1" style="text-decoration: none;">1</a></sup>.</li>
+                    </ul>
+                <p><strong><sup id="ref1">1</sup>Notes</strong></p>
+                <p><em>Single ingredient products</em></p>
+                    <p>Directions for use explaining appropriate dilution of the product in carrier oil must be included on the PLA form and label. The final concentration to be applied on the skin must meet the concentrations in Table 3.</p>
+                    <p>The following information is required on the PLA form to calculate the final concentration of the product:</p>
+                <ul>
+                    <li>The number of drops of the product (XX) to be diluted in the carrier oil.</li>
+                    <li>The volume of the drop (ml) (e.g. 0.05 ml).</li>
+                    <li>The volume of the carrier oil (YY) (i.e. fixed oil used to dilute essential oils and absolutes) (ml). Please note that the consumer must be able to measure this volume accurately in the absence of a measuring device (e.g. 5 ml = 1 teaspoon).</li>
+                </ul>
+                <p><strong>Formula to obtain the final concentration of the product:</strong></p>
+                    <p>Final concentration of the product (%) =	# of drops of the product * Volume of the drop (ml) * 100/Final volume (ml)</p>
+                <p><em>Note: </em></p>
+                    <ul>
+                        <li>Final volume (ml) = [# of drops of the product * Volume of the drop (ml)] + Volume of carrier oil (ml)</li>
+                    </ul>        
+                <p><em>Combination products</em></p>
+                    <p>Directions for use explaining appropriate dilution of the product in carrier oil must be included on the PLA form and label. The final concentration to be applied on the skin must meet the concentrations in Table 3 for each medicinal ingredient and not exceed a total concentration of 5%.</p>
+                    <p>The following information is required on the PLA form for each medicinal ingredient to calculate the final concentration of each medicinal ingredient and of the finished product:</p>
+                    <ul>
+                        <li>The number of drops of the product (XX) to be diluted in the carrier oil.</li>
+                        <li>The volume of each medicinal ingredient per drop (ml).</li>
+                        <li>The volume of the carrier oil (YY) (i.e. fixed oil used to dilute essential oils and absolutes) (ml) (the same value for each medicinal ingredient). Please note that the consumer must be able to measure this volume accurately in the absence of a measuring device (e.g. 5 ml).</li>
+                    </ul>        
+                <p><strong>Formula to obtain the final concentration of each medicinal ingredient (MI):</strong></p>
+                    <p>Final concentration of the MI (%) =	# of drops of the product * Volume of the MI per drop (ml) * 100/Final volume (ml)</p>
+                <p><em>Note:</em></p>
+                    <ul>                
+                        <li>Final volume (ml) = [# of drops of the product * Volume of the drop (ml)] + Volume of carrier oil (ml)</li>
+                    </ul>
+                <p><strong>Formula to obtain the final concentration of the finished product (maximum concentration of combined medicinal ingredient is 5%):</strong></p>
+                    <p>Final concentration of the product (%) =	# of drops of the product * Volume of all MI per the drop (ml) * 100/Final volume (ml)</p>
+                <p><em>Notes:</em></p>
+                    <ul>
+                        <li>The volume of all medicinal ingredients (MI) per drop (ml) in the formula below = sum of the volumes of each medicinal ingredient per drop (ml)</li>
+                        <li>Final volume (ml) = [# of drops of the product * Volume of the drop (ml)] + Volume of carrier oil (ml)</li>
+                    </ul>        
+                <p><em>Bath</em></p>
+                    <p>Add 2 - 8 drops of undiluted product with the same amount of shampoo or liquid soap before adding it to the bath. Mix the water gently. For maximum benefit, remain in the bath for 10 minutes. Use 2 drops of undiluted product the first time and increase by 1 drop per bath up to a maximum of 8 drops. Use once daily (Tisserand 1977&semi; Price and Price 2007).</p>
+                <p><em>Compresses</em></p>
+                    <p>Add 2 drops of undiluted product to 500 ml of warm water in a bottle. Mix by shaking the bottle and immediately soak the compress. Squeeze lightly, apply the compress to the skin, and cover with clothes and/or towelling. Leave for 2 to 4 hours. Use 1 to 3 times per day (Tisserand 1977).</p>
+                <p><strong>Inhalation</strong></p>
+                <p><em>Handkerchief/tissue </em></p>
+                    <p>Apply 1 - 6 drops of undiluted product to a handkerchief/tissue and inhale occasionally. Use 1 to 3 times per day (Price and Price 2007). </p>
+                <p><em>Steaming water/facial steamer</em></p>
+                    <p>Add 3 - 12 drops of undiluted product to a bowl of steaming water/facial steamer. Inhale slowly and deeply for 5 to 10 minutes. Use 1 to 3 times per day (Price and Price 1999&semi; Tisserand and Balacs 1995).</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of use</h2>
+            <p><em>All products</em></p>
+                <p>For occasional use only.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+            <table class="subject">
+                <tbody>
+                    <tr>
+                        <td><em>All products</em></td>
+                        <td>
+                            <strong>Caution(s) and warning(s)</strong>
+                            <ul>
+                                <li>For external use only.</li>
+                                <li>When using this product avoid contact with eyes and mucous membranes. If contact occurs, rinse thoroughly with water/vegetable oil.</li>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have epilepsy or asthma (Tisserand and Young 2014).</li>
+                                <li>Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away</li>
+                            </ul>
+                            <strong>Contraindication(s)</strong><br/><br/>
+                                Do not use this product if you are pregnant or breastfeeding.<br/><br/>
+                            <strong>Known adverse reaction(s)</strong><br/><br/>
+                                Stop use if you experience nausea, dizziness, headache, an allergic reaction or skin irritation (Tisserand and Young 2014).<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Products for topical application (local application/body massage/bath/compresses)</em></td>
+                        <td>
+                            <strong>Caution(s) and warning(s)</strong><br/>
+                                <em>All products (except products that contain phototoxic essential oils&semi; refer to Table 3)</em><br/><br/>
+                                    When using this product avoid exposure of applied area to the sun.<br/><br/>
+                                <em>Products that contain phototoxic essential oils (refer to Table 3)</em><br/><br/>
+                                    When using this product do not expose the applied area to the sun for 24 to 48 hours after application (Kumar et al. 1992).<br/><br/>
+                            <strong>Contraindication(s)</strong><br/><br/>
+                                <em>Products that contain sensitizing essential oils (refer to Table 3)</em><br/><br/>
+                                    Do not use on broken, irritated, or sensitive skin.<br/><br/>
+                                <em>Products that contain Cananga odorata essential oil >0.8% and/or Cinnamomum verum essential oil >0.6% and/or Cymbopogon citratus essential oil >0.7% and/or Mentha spicata >1.7% and/or Syzygium aromaticum flower bud essential oil >0.5% and/or Syzygium aromaticum leaf or stem essential oil >0.6% </em><br/><br/>
+                                    Do not use if you are prone to allergic reactions, eczema or unusual skin reactions.<br/><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><em>Products intended to help relieve colds/cough</em></td>
+                        <td>
+                            <strong>Known adverse reaction(s)</strong><br/><br/>
+                                Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms are accompanied by a fever, rash, persistent headache or chronic lung condition.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <ul>
+                <li>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database. </li>
+                <li>The addition of a non-medicinal ingredient with a preservative antioxidant purpose to the product formulation is recommended. </li>
+                <li>Products supported by this monograph cannot include any essential oils as non-medicinal ingredients.</li>
+            </ul>
+    </section> 
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+            <p><em>All products (information for industry&semi; not for labelling)</em></p>
+                <ul>
+                    <li>Child-resistant packaging/containers should be used (JC 2025). </li>
+                    <li>Store in airtight, light-resistant container at room temperature or in a refrigerator (Tisserand and Young 2014). </li>
+                </ul>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-Prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+                <li>Essential oils rich in linalool or limonene should only be used when the level of peroxides is kept to the lowest practical value. The addition of antioxidants at the time of production is recommended for these essential oils (Tisserand and Young 2014&semi; IFRA 2004).</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+            <p>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</p>
+            <p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/AROMATHERAPY_E.gif" style="width:700px"></p>
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References Cited</h2>
+            <ul>
+                <li>AHPA 2012: American Herbal Products Association Guidance Policies: Trade Requirement &amp; Guidance Policy for Labeling of Undiluted Essential Oils Used Topically and Offered for Retail Sale&semi; Adopted 2012 and revised 2023, [Accessed 2025 March 6]. Available from: https://www.ahpa.org//Files/Document%20Library/AHPAGuidancePolicies/23_1024%20AHPA%20Guidance_Labeling_Essential_Oils_Retail.pdf</li>
+                <li>Battaglia, S. The Complete Guide to Aromatherapy, 2nd ed. Brisbane (AU): The International Centre of Holistic Aromatherapy&semi; 2003.</li>
+                <li>Davis P. Aromatherapy An A-Z. Saffron Walden, (GB): The C.W. Daniel Company Limited&semi; 1997.</li>
+                <li>HC 2025: Health Canada, Natural Health Product Ingredients Database: Counterirritants&semi; 2025. [Published 2025 January 10]. Available from: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq?atid=counter2&amp;lang=eng</li>
+                <li>IFRA 2004: IFRA Standards, including amendments. International Fragrance Association, Brussels&semi; 2004. [Accessed 2025 March 6]. Available from :  https://ifrafragrance.org/</li>
+                <li>JC 2025: Justice Canada. Food and Drug Regulations. Cautionary Statements and Child Resistant Packages. Sections C.01.001 (2) to (4) and C.01.029, C.01.031 and C.01.031.2 (1). Ottawa (ON): Justice Laws Website. [Accessed 2025 July 22]. Available from: https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._870/</li>
+                <li>Kumar JR, Ranadive NS, Menon A, Haberman HF. Photoinduced cutaneous inflammatory response by psoralens. Journal of Photochemistry and Photobiology 1992&semi;14(1-2):125-137.</li>
+                <li>Lis-Balchin M. Aromatherapy Science: A guide for healthcare professionals. London (GB): Pharmaceutical Press&semi; 2006.</li>
+                <li>Price S, Price L. Aromatherapy for Health Professionals, 3rd edition. Edinburgh (GB): Churchill Livingstone&semi; 2007.</li>
+                <li>Tisserand RB. The Art of Aromatherapy: The healing and beautifying properties of the essential oils of flowers and herbs. Rochester (VT): Healing Arts Press&semi; 1977.</li>
+                <li>Tisserand R, Young R. Essential oil safety: A guide for health care professionals, 2nd edition. Edinburgh (GB): Churchill Livingstone&semi; 2014.</li>
+                <li>Valnet J. Aromathérapie, 11th edition. Paris (F): Vigot&semi; 2001.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References Reviewed</h2>
+            <ul>
+                <li>
+                Battaglia, S. The Complete Guide to Aromatherapy. Brisbane (AU): The Perfect Potion&semi; 1995.
+                </li>
+                <li>
+                British Pharmacopoeia Commission. British pharmacopoeia 2013. (Vols. IV and V) London (GB): The Stationary Office&semi; 2012.
+                </li>
+                <li>
+                Carson CF, Hammer KA, Riley TV. Melaleuca alternifolia (tea tree) oil: A review of antimicrobial and other medicinal properties. Clinical Microbiology Reviews 2006&semi;19(1):50-62.
+                </li>
+                <li>
+                Council of Europe. European pharmacopeia. (Vol. 1). Strasbourg, France: Directorate for the Quality of Medicines &amp; Health Care&semi; 2010.
+                </li>
+                <li>
+                Price S, Price L. Aromatherapy for Health Professionals, 2nd edition. Edinburgh (GB): Churchill Livingstone&semi; 1999.
+                </li>
+                <li>
+                Price S, Price L. Aromatherapy for Health Professionals, 4th edition. Edinburgh (GB): Churchill Livingstone&semi; 2012.
+                </li>
+                <li>
+                Tisserand R, Balacs T. Essential oil safety: A guide for health care professionals. Edinburgh (GB): Churchill Livingstone&semi; 1995.
+                </li>
+                <li>
+                USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2024.
+                </li>
+                <li>
+                USDA 2025: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System&semi; 2025. [Accessed 2025 January 21]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+                </li>
+                <li>
+                Worwood VA. The complete book of essential oils and aromatherapy. Novato (CA): New World Library&semi; 1991.
+                </li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="appendix1">
+        <h2 id="appendix1">Appendix 1</h2>
+            <p><strong>Definitions</strong></p>
+            <p><strong>Steam distilled:</strong></p>
+                <p>Natural raw material is placed in or above water in a retort and exposed to steam, which carries the volatile oils into a condenser where the mixture is cooled. The oils separate from the water and can be collected (AHPA 2012).</p>
+            <p><strong>Expressed: </strong></p>
+                <p>Used primarily to obtain citrus essential oils. The fruit is punctured and then mechanically pressed. No external heat is applied during the extraction process (AHPA 2012).</p>
+            <p><strong>Absolute:</strong></p>
+                <p>Product of solvent extraction. A solvent is used to extract the oils from the plant material in which the product is called a “concrete” (mixture of essential oil, waxes, resins, and other lipophilic (oil soluble) plant material). A more polar solvent is added to the concrete to extract the essential oil. The alcohol is evaporated and leaves behind the absolute (AHPA 2012).</p>
+            <p><strong>Rectified:</strong></p>
+                <p>Essential oil is purified by fractional distillation in order to remove unwanted constituents (Tisserand and Young 2014).</p>
+            <p><strong>Sensitizing:</strong></p>
+                <p>Sensitizing essential oils can cause sensitization reaction, also known as allergic contact dermatitis, which is the usual clinical consequence of delayed hypersensitivity. Sensitizing oils cause more pronounced effect on patients with rash, dermatitis, eczema, sensitive skin and other skin conditions (Tisserand and Young 2014). These essential oils cause toxic effect after multiple applications (Lis-Balchin 2006).</p>
+            <p><strong>Phototoxic:</strong></p>
+                <p>Phototoxic essential oils produce burns, dermatitis, etc. (phototoxic effects) when the treated skin area is exposed to direct sunlight. Phototoxic effects generally occur due to inherent furanocoumarin content (Tisserand and Young 2014).</p>
+            <p><strong>Carrier Oil:</strong></p>
+                <p>Carrier oil is fixed oil used to dilute essential oils and absolutes before they are applied to the skin. Some of examples of carrier oils are Sweet almond oil, Grape seed oil, Sunflower oil, Apricot kernel oil, and Peach kernel oil (Price and Price 2007).</p>
+    </section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

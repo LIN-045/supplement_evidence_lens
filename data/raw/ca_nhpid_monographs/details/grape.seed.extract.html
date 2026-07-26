@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=grape.seed.extract\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="185cfd22-7394-4c6d-a1d0-2a708a28ce99"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'> <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+        <h1>GRAPE SEED EXTRACT</h1>
+        <p class="lightgreyBG"> Help on accessing alternative formats, such as Portable Document Format
+            (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in
+            the
+            <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.
+        </p>
+        <div class="icon">
+            <a href="dbImages/mono_grape-seed-extract_english.pdf" title="GRAPE SEED EXTRACT">
+                <img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format"
+                    width="22" height="21" />(PDF Version - 106 KB)</a>
+        </div>
+
+        <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence
+            Applications
+            (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive
+            review of the medicinal ingredient.</p>
+
+        <p><strong>Notes</strong></p>
+        <ul>
+            <li>Text in parentheses is additional optional information which can be included on the PLA and product
+                label at
+                the applicant's discretion.</li>
+            <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may
+                be
+                selected by the applicant.</li>
+        </ul>
+
+        <section aria-labelledby="date">
+            <h2 id="date">Date</h2>
+            <p>March 28, 2024</p>
+        </section>
+
+        <section aria-labelledby="properNameCommonNameSourceInformation">
+            <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+            <table class="subject">
+
+                <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Proper name(s)</th>
+                        <th rowspan="2" scope="col">Common name(s)</th>
+                        <th colspan="3" scope="colgroup">Source information</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Source material(s)</th>
+                        <th scope="col">Part(s)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Grape seed extract</td>
+                        <td>Grape seed extract</td>
+                        <td><i>Vitis vinifera</i></td>
+                        <td>Seed</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <p>References: Proper name: Sano et al. 2007; Common name: Sano et al. 2007; Source information: USDA 2023,
+                Sano
+                et
+                al. 2007, Henriet 1993.</p>
+
+        </section>
+
+        <section aria-labelledby="routeOfAdministration">
+            <h2 id="routeOfAdministration">Route of Administration</h2>
+            <p>Oral</p>
+        </section>
+
+        <section aria-labelledby="dosageForm">
+            <h2 id="dosageForm">Dosage Form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs
+                Guidance
+                Document.</p>
+            <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based
+                Product
+                Licence Application form for Compendial applications.</p>
+
+        </section>
+        <section aria-labelledby="useOrPurpose">
+            <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+            <ul>
+                <li>Source of antioxidants/Provides antioxidants (Sano et al. 2007; Natella et al. 2002; Bagchi et al.
+                    2000;
+                    Bagchi et al. 1998).</li>
+                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the
+                    oxidative
+                    effect of/the oxidative damage caused by/cell damage caused by) free radicals (Sano et al. 2007;
+                    Natella
+                    et
+                    al. 2002; Bagchi et al. 2000; Bagchi et al. 1998).</li>
+                <li>Helps to relieve symptoms related to non-complicated chronic venous insufficiency (CVI), such as
+                    sensation
+                    of swelling, heaviness and tingling of the legs (Henriet 1993; Henriet 1988; Th&#233;baut et al.
+                    1985;
+                    Delacroix et al. 1981; Sarrat 1981).</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="dose">
+            <h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+            <p>Adults 18 years and older</p>
+            <h3>Quantity(ies)</h3>
+            <p><em>Antioxidant</em></p>
+            <p>Methods of preparation: Standardized extracts (Dry extract)</p>
+            <p>Not to exceed 475 milligrams of grape seed extract, per day; standardized to 70-85% oligomeric
+                proanthocyanidins
+                (OPC) (Sano et al. 2007; Natella et al. 2002).
+            <p><em>Relief of symptoms related to non-complicated CVI</em></p>
+            <p>Methods of preparation: Standardized extracts (Dry extract)</p>
+            <p>150 - 475 milligrams of grape seed extract, per day; standardized to 80-85% oligomeric proanthocyanidins
+                (OPC)
+                (Sano et al. 2007; Henriet 1993; Henriet 1988; Th&#233;baut et al. 1985; Delacroix 1981; Sarrat 1981)
+            </p>
+            <h3>Direction(s) for use</h3>
+            <p>No statement required.</p>
+        </section>
+
+        <section aria-labelledby="durationOfUse">
+            <h2 id="durationOfUse">Duration of Use</h2>
+            <p><em>All products</em></p>
+            <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use
+                beyond
+                3
+                months (Sano et al. 2007).</p>
+            <p><em>Relief of symptoms related to non-complicated CVI</em></p>
+            <p>Use for at least 1 month to see beneficial effects (Th&#233;baut et al. 1985; Delacroix 1981; Sarrat
+                1981).
+            </p>
+        </section>
+
+        <section aria-labelledby="riskInformation">
+            <h2 id="riskInformation">Risk Information</h2>
+            <h3>Caution(s) and Warning(s)</h3>
+            <p><em>All products</em></p>
+            <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+                if
+                you
+                are pregnant or breastfeeding.</p>
+            <p><em>Relief of symptoms related to non-complicated CVI</em></p>
+            <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms
+                worsen.
+            </p>
+            <h3>Contraindication(s)</h3>
+            <p>No statement required.</p>
+            <h3>Known adverse reaction(s)</h3>
+            <p>No statement required.</p>
+        </section>
+
+        <section aria-labelledby="nonMedicinalIngredients">
+            <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+                limitations outlined in the database. </p>
+        </section>
+
+        <section aria-labelledby="storageCondition">
+            <h2 id="storageCondition">Storage Condition(s)</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+                    Regulations</em>.</p>
+        </section>
+
+        <section aria-labelledby="specifications">
+            <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements
+                    described in
+                    the
+                    Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products
+                    Guide.
+                </li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="exampleOfProductFacts">
+            <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+            <p><strong>Consult the Guidance Document, <a
+                        href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling
+                        of Natural Health Products</a> for more details.</strong></p>
+
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/GRAPE_SEED_EXTRACT_E.gif" alt="Product Facts Table"
+                    style="width:700px" /></p>
+        </section>
+
+        <section aria-labelledby="referencesCited">
+            <h2 id="referencesCited">References Cited</h2>
+            <ul>
+                <li>Bagchi D, Bagchi M, Stohs SJ, Das DK, Ray SD, Kuszynski CA, Joshi SS, Pruess HG. 2000. Free radicals
+                    and
+                    grape seed proanthocyanidin extract: importance in human health and disease prevention. Toxicology
+                    148(2-3):187-197.</li>
+                <li>Bagchi D, Garg A, Krohn L, Bagchi M, Bagchi DJ, Balmoori J, Stohs SJ. 1998. Protective effects of
+                    grape
+                    seed
+                    proanthocyanidins and selected antioxidants against TPA-induced hepatic and brain lipid peroxidation
+                    and
+                    DNA
+                    fragmentation, and peritoneal macrophage activation in mice. General Pharmacology 30(5):771-776.
+                </li>
+                <li>Delacroix P. 1981. [Double-blind study of Endotelon in chronic venous insufficiency.] &Eacute;tude
+                    en
+                    double
+                    aveugle de l&rsquo;endotelon dans l&rsquo;insuffisance veineuse chronique. La Revue de
+                    M&eacute;decine
+                    22(27-28):1793-1802 (in French).</li>
+                <li>Henriet JP. 1993. [Veno-lymphatic insufficiency. 4 729 patients undergoing hormonal and procyanidol
+                    oligomer
+                    therapy.] Insuffisance veino-lymphatique 4 729 patientes sous th&eacute;rapeutique hormonale et
+                    oligom&egrave;res procyanidoliques. Phl&eacute;bologie 46(2):313-325 (in French).</li>
+                <li>Henriet JP. 1988. [EndotelonR in the functional disorders caused by peripheral vascular
+                    insufficiency.]
+                    EndotelonR dans les manifestations fonctionnelles de l&rsquo;insuffisance veineuse
+                    p&eacute;riph&eacute;rique: &Eacute;tude EIVE. Actualit&eacute; M&eacute;dicales
+                    Internationales-Angiologie
+                    5(74):167-170 (in French).</li>
+                <li>Natella F, Belelli F, Gentill V, Ursini F, Scaccini C. 2002. Grape seed proanthocyanidins prevent
+                    plasma
+                    postprandial oxidative stress in humans. The Journal of Agricultural and Food Chemistry
+                    50(26):7720-7725.
+                </li>
+                <li>Sano A, Uchida R, Saito M, Shioya N, Komori Y, Tho Y, Hashizume N. 2007. Beneficial effects of grape
+                    seed
+                    extract on malondialdehyde-modified LDL. Journal of Nutritional Science and Vitaminology
+                    53(2):174-182.
+                </li>
+                <li>Sarrat L. 1981. [Therapeutic relief of functional problems of the lower legs by Endotelon, a
+                    microangrioprotector.] Abord Th&eacute;rapeutique des troubles fonctionnels des membres
+                    inf&eacute;rieurs
+                    par un microangrioprotecteur l&rsquo;Endotelon. Bordeaux M&eacute;dical 14:685-688 (in French).</li>
+                <li>Th&eacute;baut J-F, Th&eacute;baut P, Vin F. 1985. [Study of Endotelon in the functional
+                    manifestations
+                    of
+                    peripheral venous insufficiency. Results of a double-blind study of 92 patients.] &Eacute;tude de
+                    l&rsquo;Endotelon dans les manifestations fonctionelles de l&rsquo;insuffisance veineuse
+                    p&eacute;riph&eacute;rique. R&eacute;sultats d&rsquo;une &eacute;tude en double aveugle portant sur
+                    92
+                    patients. Gazette M&eacute;dicale 92(1):96-100 (in French).</li>
+                <li>USDA 2023: United States Department of Agriculture Agricultural Research Service (USDA ARS),
+                    Germplasm
+                    Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2023
+                    September 11]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch.</li>
+            </ul>
+
+        </section>
+
+        <section aria-labelledby="referencesReviewed">
+            <h2 id="referencesReviewed">References reviewed</h2>
+            <ul>
+                <li>Al-Awwadi NA, Araiz C, Bornet A, Delbosc S, Cristol JP, Linck N, Azay J, Teissedere PL, Cros G.
+                    2005.
+                    Extracts enriched in different polyphenolic families normalize increased cardiac NADPH oxidase
+                    expression
+                    while having differential effects on insulin resistance, hypertension, and cardiac hypertrophy in
+                    high-fructose-fed rats. Journal of Agricultural and Food Chemistry 53(1):151-157.</li>
+                <li>Aldini G, Carini M, Piccoli A, Rossoni G, Facino RM. 2003. Procyanidins from grape seeds protect
+                    endothelial
+                    cells from peroxynitrite damage and enhance endothelium-dependent relaxation in human artery: new
+                    evidences
+                    for cardio-protection. Life Sciences. 73(22):2883-2898.</li>
+                <li>Arne JL. 1982. [Contribution to the study of procyanidolic oligomers: Endotelon in diabetic
+                    retinopathy
+                    (based on 30 cases).] Contribution &agrave; l&rsquo;&eacute;tude des oligom&egrave;res
+                    procyanidoliques:
+                    Endotelon, dans la r&eacute;tinopathie diab&eacute;tique (&agrave; propos de 30 observations).
+                    Gazette
+                    M&eacute;dicale de France 89(30):3610-3614 (in French).</li>
+                <li>Banerjee B, Bagchi D. 2001. Beneficial effects of a novel IH636 grape seed proanthocyanidin extract
+                    in
+                    the
+                    treatment of chronic pancreatitis. Digestion 63(3):203-206.</li>
+                <li>Barnes J, Anderson LA, Philipson JD. 2002. Herbal Medicines: A Guide for Healthcare Professionals,
+                    2nd
+                    edition. London (UK): The Pharmaceutical Press.</li>
+                <li>Barnes J, Anderson LA, Philipson JD. 2007. Herbal Medicines: A Guide for Healthcare Professionals,
+                    3rd
+                    edition. London (UK): The Pharmaceutical Press.</li>
+                <li>Barrett M. 2004. The Handbook of Clinically Tested Herbal Remedies, Volume 2. New York (NY): The
+                    Haworth
+                    Herbal Press.</li>
+                <li>Baruch J. 1984. Effet de l&rsquo;Endot&eacute;lon dans les oed&egrave;mes post-chirurgicaux.
+                    R&eacute;sultats d&rsquo;une &eacute;tude en double aveugle contre placebo sur trente-deux patients.
+                    Annales
+                    de Chirurgie Plastique Esth&eacute;tique 29(4):393-395.</li>
+                <li>Bernstein DI, Bernstein CK, Deng C, Murphy KJ, Bernstein IL, Bernstein JA, Shukla R. 2002.
+                    Evaluation of
+                    the
+                    clinical efficacy and safety of grapeseed extract in the treatment of fall seasonal allergic
+                    rhinitis: a
+                    pilot study. Annals of Allergy, Asthma, and Immunology 88(3):272-278.</li>
+                <li>Bielory L. 2004. Complementary and alternative interventions in asthma, allergy, and immunology.
+                    Annals
+                    of
+                    Allergy, Asthma, and Immunology 93(2 Suppl 1):S45-S54.</li>
+                <li>Blumenthal M. 1998. The Complete German Commission E Monographs. Austin (TX): American Botanical
+                    Council.
+                </li>
+                <li>Bombardelli E, Morazzoni P. 1995. Vitis vinifera L. Fitoterapia 66(4):291-317</li>
+                <li>Bradley PR, editor. 2006. British Herbal Compendium: A Handbook of Scientific Information on Widely
+                    Used
+                    Plant Drugs, Volume 2. Bournemouth (UK): British Herbal Medicine Association.</li>
+                <li>Brito FF, Gimeno PM, Bartolom&eacute; B, Alonso AM, Lara P, Fern&aacute;ndez JA, Mart&iacute;nez A.
+                    2008.
+                    Vine pollen allergy in areas with a high density of vineyards. Annals of Allergy, Asthma, and
+                    Immunology
+                    100(6):596-600.</li>
+                <li>Brooker S, Martin S, Pearson A, Bagchi D, Earl J, Gothard L, Hall E, Porter L. Yarnold J. 2006.
+                    Double-blind, placebo-controlled, randomised phase II trial of IH636 grape seed proanthocyanidin
+                    extract
+                    (GSPE) in patients with radiation-induced breast induration. Radiotherapy and Oncology 79(1):45-51.
+                </li>
+                <li>Caiaffa MF, Tursi A, Macchia L. 2003. Grape anaphylaxis. Journal of Investigational Allergology and
+                    Clinical
+                    Immunology 13(3):211-212.</li>
+                <li>Chang WC, Hsu FL. 1989. Inhibition of platelet aggregation and arachidonate metabolism in platelets
+                    by
+                    procyanidins. Prostaglandins, Leukotrienes, and Essential Fatty Acids 38(3):181-188.</li>
+                <li>Clifton PM. 2004. Effect of grape seed extract and quercetin on cardiovascular and endothelial
+                    parameters in
+                    high-risk subjects. Journal of Biomedicine and Biotechnology 2004(5):272-278.</li>
+                <li>Day AP, Kemp HJ, Bolton C, Hartog M, Stansbie D. 1997. Effect of concentrated red grape juice
+                    consumption on
+                    serum antioxidant capacity and low-density lipoprotein oxidation. Annals of Nutrition and Metabolism
+                    41(6):353-357.</li>
+                <li>de Rijke YB, Demacker PNM, Assen NA, Sloots LM, Katan MB, Stalenhoef AFH. 1996. Red wine consumption
+                    does
+                    not affect oxidizability of low-density lipoproteins in volunteers. The American Journal of Clinical
+                    Nutrition 63(3):329-334.</li>
+                <li>Der Marderosian A, Beutters JA, editors. 2002. The Review of Natural Health Products, 3rd edition.
+                    St.
+                    Louis
+                    (MO): Facts and Comparisons&reg;, a Wolters Kluwer Company.</li>
+                <li>Duke JA, Bogenschutz-Godwin MJ, duCellier J, Duke PK. 2002. Handbook of Medicinal Herbs, 2nd
+                    edition.
+                    Boca
+                    Raton (FL): CRC Press.</li>
+                <li>ESCOP 2003: European Scientific Cooperative on Phytotherapy Scientific Committee. 2003.</li>
+                <li>ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition. Exeter (UK):
+                    European Scientific Cooperative on Phytotherapy and Thieme.</li>
+                <li>Felter HW, Lloyd JU. 1983. King&rsquo;s American Dispensatory, Volume 1, 18th edition. Sandy (OR):
+                    Eclectic
+                    Medical Publications; [Reprint of 1898 original].</li>
+                <li>Feo Brito F, Mart&iacute;nez A, Palacios R, Mur P, G&oacute;mez E, Galindo PA, Borja J,
+                    Mart&iacute;nez
+                    J.
+                    1999. Rhinoconjunctivitis and asthma caused by vine pollen: a case report. Journal of Allergy and
+                    Clinical
+                    Immunology 103(2 Pt 1):262-266.</li>
+                <li>Fuhrman B, Lavy A, Aviram M. 1995. Consumption of red wine with meals reduces the susceptibility of
+                    human
+                    plasma and low-density lipoprotein to lipid peroxidation. The American Journal of Clinical Nutrition
+                    61(3):549-554.</li>
+                <li>Fujii H, Nishioka H, Wakame K, Magnuson BA, Roberts A. 2008. Acute, subchronic and genotoxicity
+                    studies
+                    conducted with Oligonol, an oligomerized polyphenol formulated from lychee and green tea extracts.
+                    Food
+                    and
+                    Chemical Toxicology 46(12):3553-3562.</li>
+                <li>Gabetta B, Fuzzati N, Griffini A, Lolla E, Pace R, Ruffilli T, Peterlongo F. 2000.</li>
+                <li>Characterization of proanthocyanidins from grape seeds. Fitoterapia 71(2):162-175.</li>
+                <li>Galvano F, Fauci LL, Lazzarino G, Fogliano V, Ritienti A, Ciappelano S, Battistini NC, Tavazzi B,
+                    Galvano G.
+                    2004. Cyanidins: metabolism and biological properties. Journal of Nutritional Biochemistry
+                    15(1):2-11.
+                </li>
+                <li>Gehrmann B, Kock WG, Tschirch CO, Brinkmann H. 2005. Medicinal Herbs: A Compendium. New York (NY):
+                    The
+                    Haworth Herbal Press.</li>
+                <li>Gruenwald J, Brendler T, Jaenicke C, editors. 1998. PDR for Herbal Medicines, 1st edition. Montvale
+                    (NJ):
+                    Medical Economics Company.</li>
+                <li>Hoffmann D. 2003. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT):
+                    Healing
+                    Arts Press.</li>
+                <li>Kalogeromitros D, Rigopoulos D, Gregoriou S, Mousatou V, Lyris N, Papaioannou D, KatsarouKatsari A.
+                    2004.
+                    Asymptomatic sensitization to grapes in a sample of workers in the wine industry. Occupational and
+                    Environmental Medicine 61(8):709-711.</li>
+                <li>Katiyar SK. 2008. Grape seed proanthocyanidins and skin cancer prevention: inhibition of oxidative
+                    stress
+                    and protection of immune system. Molecular Nutrition and Food Research 52(S1):S71-S76.</li>
+                <li>Lagrue G, Olivier-Martin F, Grillot A. 1981. [A study of the effects of procyanidol oligomers on
+                    capillary
+                    resistance in hypertension and in certain nephropathies.] &Eacute;tude des effets des
+                    oligom&egrave;res
+                    du
+                    procyanidol sur la r&eacute;sistance capillaire dans l&rsquo;hypertension art&eacute;rielle et
+                    certaines
+                    n&eacute;phropathies. La Semaine des h&ocirc;pitaux de Paris 57(33-36):1399-1401 (in French).</li>
+                <li>Li W-G, Zhang X-Y, Wu Y-J, Tian X. 2001. Anti-inflammatory effect and mechanism of proanthocyanidins
+                    from
+                    grape seed. Acta Pharmacologica Sinica 22(12):1117-1120.</li>
+                <li>Martinez-Zapata MJ, Bonfill Cosp X, Moreno RM, Vargas E, Capell&agrave; D. 2005. Phlebotonics for
+                    venous
+                    insufficiency. Cochrane Database of Systematic Reviews Issue 3. Art.No.:CD003229. DOI:
+                    10.1002/14651858.CD003229.pub2.</li>
+                <li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. 1997. American Herbal Products
+                    Association&rsquo;s
+                    Botanical Safety Handbook. Boca Raton (FL): CRC Press.</li>
+                <li>McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. 2000. Herbs of Commerce, 2nd edition. Silver
+                    Spring
+                    (MD): American Herbal Products Association.</li>
+                <li>McKenna DJ, Jones K, Hughes K, Humphrey S. 2002. Botanical Medicines: The Desk Reference for Major
+                    Herbal
+                    Supplements, 2nd edition. New York (NY): The Haworth Herbal Press.</li>
+                <li>Meletis CD, Jacobs T. 1999. Interactions Between Drugs and Natural Medicines. Sandy (OR): Eclectic
+                    Medical
+                    Publications.</li>
+                <li>Meyer AS, Yi O-S, Pearson DA, Waterhouse AL, Frankel EN. 1997. Inhibition of human lowdensity
+                    lipoprotein
+                    oxidation in relation to composition of phenolic antioxidants in grapes (Vitis vinifera). The
+                    Journal of
+                    Agricultural and Food Chemistry 45:1638-1643.</li>
+                <li>Mills S, Bone K. 2005. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill
+                    Livingstone.
+                </li>
+                <li>Miyagi Y, Miwa K, Inoue H. 1997. Inhibition of human low-density lipoprotein oxidation by flavonoids
+                    in
+                    red
+                    wine and grape juice. The American Journal of Cardiology 80(12):1627-1631.</li>
+                <li>Nigdikar SV, Williams NR, Griffin BA, Howard AN. 1998. Consumption of red wine polyphenols reduces
+                    the
+                    susceptibility of low-density lipoproteins to oxidation in vivo. The American Journal of Clinical
+                    Nutrition
+                    68(2):258-265.</li>
+                <li>Nuttall SL, Kendall MJ, Bombardelli E, Morazzoni P. 1998. An evaluation of the antioxidant activity
+                    of a
+                    standardized grape seed extract, LeucoSelect. Journal of Clinical Pharmacy and Therapeutics
+                    23(5)385-389.
+                </li>
+                <li>Parienti J-J, Parienti-Amsellem J. 1983. [Post-traumatic edemas in sports: a controlled test of
+                    endotelon.]
+                    Les oed&egrave;mes post-traumatiques chez le sportif: essai contr&ocirc;l&eacute; de
+                    l&rsquo;Endot&eacute;lon. Gazette M&eacute;dicale de France 90(3):231-235 (in French).</li>
+                <li>Pataki T, Bak I, Kovacs P, Bagchi D, Das DK, Tosaki A. 2002. Grape seed proanthocyanidins improved
+                    cardiac
+                    recovery during reperfusion after ischemia in isolated rat hearts. The American Journal of Clinical
+                    Nutrition 75(5):894-899.</li>
+                <li>Pizzorno JE, Murray MT. 2006. Textbook of Natural Medicine, Volume 2, 3rd edition. St Louis, (MO):
+                    Churchill
+                    Livingston Elsevier.</li>
+                <li>Polagruto JA, Gross HB, Kamangar F, Kosuna K, Sun B, Fujii H, Keen CL, Hackman RM. 2007. Platelet
+                    reactivity
+                    in male smokers following the acute consumption of a flavanol-rich grapeseed extract. Journal of
+                    Medicinal
+                    Food 10(4):725-730.</li>
+                <li>Preuss HG, Wallerstedt D, Talpur N, Tutuncuoglu SO, Echard B, Myers A, Bui M, Bagchi D. 2000.
+                    Effects of
+                    niacin-bound chromium and grape seed proanthocyanidin extract on the lipid profile of
+                    hypercholesterolemic
+                    subjects: a pilot study. Journal of Medicine 31(5-6):227-246.</li>
+                <li>Rodrigues A, Trujillo MJ, Matheu V, Baeza ML, Zapatero L, Martinez M. 2001. Allergy to grape: a case
+                    report.
+                    Pediatric Allergy and Immunology 12(5):289-290.</li>
+                <li>Shenoy SF, Keen CL, Kalgaonkar S, Polagruto JA. 2007. Effects of grape seed extract consumption on
+                    platelet
+                    function in postmenopausal women. Thrombosis Research 121(3):431-432.</li>
+                <li>Shi K, Yu J, Pohorly JE, Kakuda Y. 2003. Polyphenolics in grape seeds-biochemistry and
+                    functionality.
+                    Journal of Medicinal Food 6(4):291-299.</li>
+                <li>Sweetman SC, editor. 2002. Martindale: The Complete Drug Reference, 33rd edition. London (UK):
+                    Pharmaceutical Press.</li>
+                <li>Sweetman SC, editor. 2007. Martindale: The Complete Drug Reference, 35th edition. London (UK):
+                    Pharmaceutical Press.</li>
+                <li>Terra X, Montagut G, Bustos M, Llopiz N, Ard&egrave;vol A, Blad&eacute; C, Fern&aacute;ndez-Larrea
+                    J,
+                    Pujadas G, Solvad&oacute; J, Arola L, Blay M. 2008. Grape-seed procyanidins prevent low-grade
+                    inflammation
+                    by modulating cytokine expression in rats fed a high-fat diet. Journal of Nutritional Biochemistry
+                    20(3):210-218.</li>
+                <li>USFDA 2003: United States Food and Drug Administration. Center for Food Safety and Applied Nutrition
+                    (CFSAN)/Office of Food Additive Safety: Agency Response Letter GRAS Notice No. GRN 000125. College
+                    Park,
+                    MD:
+                    Center for Food Safety and Applied Nutrition (CFSAN)/Office of Food Additive Safety, US Food and
+                    Drug
+                    Administration. [Accessed 2023 October 4]. Available from:
+                    https://www.polyphenolics.com/wp-content/uploads/2015/08/Gras-2003.pdf</li>
+                <li>van Wyk BE, Wink M. 2004. Medicinal Plants of the World. Portland, (OR): Timer Press.</li>
+                <li>Vaswani SK, Chang BW, Carey RN, Hamilton RG. 1999. Adult onset grape hypersensitivity causing life
+                    threatening anaphylaxis. Annals of Allergy, Asthma, and Immunology 83(1):25-26.</li>
+                <li>Vigna GB, Costantini F, Aldini G, Carini M, Catapano A, Schena F, Tangerini A, Zanca R, Bombardelli
+                    E,
+                    Morazzoni P, Mezzetti A, Fellin R, Facino RM. 2003. Effect of a standardized grape seed extract on
+                    low-density lipoprotein susceptibility to oxidation in heavy smokers. Metabolism 52(1):1250-1257.
+                </li>
+                <li>Vinson JA, Proch J, Bose P. 2001. MegaNatural &reg; Gold grapeseed extract: in vitro antioxidant and
+                    in
+                    vivo
+                    human supplementation studies. Journal of Medicinal Food 4(1):17-27.</li>
+                <li>Vitseva P, Varghese S, Chkrabarti S, Folts JD, Freedman JE. 2005. Grape seed and skin extracts
+                    inhibit
+                    platelet function and release of reactive oxygen intermediates. Journal of Cardiovascular
+                    Pharmacology
+                    46(4):445-451.</li>
+                <li>Vogels N, Nijs IMT, Westerterp-Plantenga MS. 2004. The effect of grape-seed extract on 24h energy
+                    intake
+                    in
+                    humans. European Journal of Clinical Nutrition 58(4):667-673.</li>
+                <li>Wang C-Z, Fishbein A, Aung HH, Mehendale SR, Chang W-T, Xie J-T, Li J, Yuan C-S. 2005. Polyphenol
+                    contents
+                    in grape-seed extracts correlated with antipica effects in cisplatin-treated Rats. The Journal of
+                    Alternative and Complementary Medicine 11(6):1059-1065.</li>
+                <li>Wang CZ, Mehendale SR, Yuan C-S. 2007. Commonly used antioxidant botanicals: active constituents and
+                    their
+                    potential role in cardiovascular illness. The American Journal of Chinese Medicine 35(4):543-558.
+                </li>
+                <li>Wang J, Ho L, Zhao W, Ono K, Rosenweig C, Chen L, Humala N, Teplow DB, Pasinetti GM. 2008.
+                    Grape-derived
+                    polyphenolics prevent a&beta; oligomerization and attenuate cognitive deterioration in a mouse model
+                    of
+                    Alzheimer&rsquo;s disease. The Journal of Neuroscience 28(25):6388-6392.</li>
+                <li>Ward NC, Hodgson JM, Croft KD, Burke V, Beilin LJ, Puddey IB. 2005. The combination of vitamin C and
+                    grape-seed polyphenols increases blood pressure: a randomized, double-blind, placebo-controlled
+                    trial.
+                    Journal of Hypertension 23(2):427-434.</li>
+                <li>Yamakoshi J, Saito M, Kataoka S, Kikuchi M. 2002. Safety evaluation of proanthocyanidin-rich extract
+                    from
+                    grape seeds. Food and Chemical Toxicology 40(5):599-607.</li>
+                <li>Yamakoshi J, Sano A, Tokutake S, Saito M, Kikuchi M, Kubota Y, Kawachi Y, Otsuka F. 2004. Oral
+                    intake of
+                    proanthocyanidin-rich extract from grape seeds improves chloasma. Phytotherapy Research
+                    18(11):895-899.
+                </li>
+                <li>Young JF, Gragsted LO, Daneshvar B, Lauridsen ST, Hansen M, Sandstorm B. 2000. The effect of
+                    grape-skin
+                    extract on oxidative stress. British Journal of Nutrition 84(4):505-513.</li>
+            </ul>
+        </section>
+        <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

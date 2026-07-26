@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=saw.palmetto.sabal2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="f63f351c-a8e2-4702-b741-ea50ef0057dd"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>SAW PALMETTO &ndash; <em>SERENOA REPENS</em></h1>
+	<div class="icon">
+		<a href="dbImages/mono_saw-palmetto_english.pdf" title="SAW PALMETTO"><img alt="Monograph: SAW PALMETTO" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/> (PDF Version - 59 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>December 19, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceMaterial">
+		<h2 id="properNameCommonNameSourceMaterial">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2"><em>Serenoa repens</em></td>
+						<td rowspan="1">
+							<ul>
+								<li>Sabal</li>
+								<li>Saw palmetto</li>
+								<li>Saw-palmetto</li>
+								<li>Scrub-palmetto</li>
+							</ul>
+						</td>
+						<td><em>Serenoa repens</em></td>
+						<td>Fruit</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td>Saw palmetto liposterolic extract</td>
+						<td><em>Serenoa repens</em></td>
+						<td>Fruit</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2024&semi; Common names: USDA 2024, Gardner and McGuffin 2013&semi; Source information: USP-NF 2024, Blumenthal et al. 2000, Mills and Bone 2000.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2><!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>Acceptable dosage forms oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><em>All subpopulations (associated with the medicinal ingredient Saw palmetto only and not with Saw palmetto liposterolic extract, which is based on non-traditional data)</em></p>
+				<p>Traditionally used in Herbal Medicine as a mild diuretic to help relieve symptoms associated with minor urinary tract infections, such as burning sensation and/or frequent urination (Bradley 2006&semi; Blumenthal et al. 2000&semi; Grieve 1971&semi; Felter and Lloyd 1898).</p>
+			<p><em>Adult males only (associated with both medicinal ingredients, Saw palmetto or Saw palmetto liposterolic extract)</em></p>
+				<p>Used in Herbal Medicine to help relieve the urologic symptoms associated with mild to moderate benign prostatic hyperplasia (BPH) (e.g., weak urine flow/incomplete voiding/frequent daytime/nighttime urination) (USP-NF 2024&semi; Croom and Chan 2010&semi; Bradley 2006&semi; Wilt et al. 2002&semi; Blumenthal et al. 2000).</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>All uses</em></p>
+				<p><strong>Methods of preparation:</strong> Dry, Powdered, Non-Standardized or Standardized* Extracts (Dry extract<sup><a href="#r-1" style="text-decoration: none;">1</a>,<a href="#r-2" style="text-decoration: none;">2</a></sup>, Glycerite, Tincture, Fluid extract, Supercritical Fluid Extraction)</p>
+				<p>1 - 4 grams of dried fruit, per day (Bradley 2006&semi; Blumenthal et al. 2000).</p>
+				<p><strong>*Note:</strong> Optional potency: 70 - 95% total fatty acids.</p>
+				<p><em>Urologic symptoms associated with benign prostatic hyperplasia</em></p>
+				<p><strong>Methods of preparation:</strong> Standardized Extracts (Dry extract<sup><a href="#r-1" style="text-decoration: none;">1</a>,<a href="#r-2" style="text-decoration: none;">2</a></sup>, Supercritical Fluid Extraction)</p>
+				<p>100 - 400 milligrams of liposterolic extract of dried fruit standardized to 70 - 95% total fatty acids, per day (USP-NF 2024&semi; Croom and Chan 2010&semi; derMarderosian and Beutler 2009).</p>
+				<p><strong>Notes:</strong>
+					<ul>
+						<li><sup id="r-1">1</sup>Dry extract means that any solvent was evaporated&semi; however, it includes lipidic/liposterolic fractions that are liquid at room temperature.</li>
+						<li><sup id="r-1">2</sup>Does not include water extracts as water would not be an appropriate solvent to extract the active constituents.</li>
+					</ul>
+				</p>
+			<h3>Combination rule</h3>
+				<p>The two medicinal ingredients listed in Table 1 cannot be combined in Class I. However, they may be combined in Class II if the total combined amount of saw palmetto fruit (e.g., Quantity for powdered/dry and/or Quantity crude equivalent (QCE) for extracts) does not exceed 4 grams per day. In order to verify this, the QCE must be provided on the PLA form or cover letter for standardized Saw palmetto liposterolic extracts.</p>
+			<h3>Direction(s) for use</h3>
+				<p>Take with food to minimize gastric disturbance (USP NF-2024&semi; derMarderosian and Beutler 2009).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+			<p><em>All subpopulations</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+			<p><em>Adult males only</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use to exclude a diagnosis of prostate cancer (USP-NF 2024&semi; Mills and Bone 2005).</p>
+			<p><em>Adult females only</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking oral contraceptives or hormone replacement therapy (UpToDate 2024).</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>Adult females only</em></p>
+					<p>Do not use if you are pregnant, breastfeeding, or attempting to conceive (UpToDate 2024).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+			<p><em>All products (information for industry&semi; not for labelling)</em></p>
+			<p>Preserve in tight containers, protected from light (USP-NF 2024&semi; WHO 2002).</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/SAW_PALMETTO_E1.gif" alt="Product Facts Table" style="width:700px"></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/SAW_PALMETTO_E2.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</li>
+				<li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 2. Bournemouth (GB): British Herbal Medicine Association&semi; 2006.</li>
+				<li>Croom EM, Chan M. Saw palmetto. In: Coates PM, Betz JM, Blackman MR, Cragg GM, Levine M, Moss J, White JD, editors. Encyclopedia of Dietary Supplements. Second Edition. New York (NY): Informa Healthcare&semi; 2010. p. 700-710.</li>
+				<li>derMarderosian A, Beutler JA, editors. The Review of Natural Products. [Saw Palmetto: Issue date June 2009&semi; Updated July 2009]. St Louis (MO): Facts and Comparisons, Wolters Kluwer Health&semi; Printed in 2008 and Updated to November 2010.</li>
+				<li>Felter HW, Lloyd JU. King's American Dispensatory. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. Second Edition. Boca Raton (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>Grieve, M. A Modern Herbal, Volume 2. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</li>
+				<li>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</li>
+				<li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+				<li>UpToDate 2024. UpToDate database. Clinical use of Saw palmetto. [Consulted 2024 December 5]. Available from : https://www.uptodate.com/contents/clinical-use-of-saw-palmetto?search=saw%20palmetto&source=search_result&selectedTitle=1%7E9&usage_type=default&display_rank=1</li>
+				<li>USDA 2024: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 November 14]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention, Inc.&semi; 2024.</li>
+				<li>WHO 2002: World Health Organization. WHO Monographs on Selected Medicinal Plants. Volume 2. "Fructus Serenoae Repentis". Geneva (CH): World Health Organization&semi; 2002.</li>
+				<li>Wilt T, Ishani A, Stark G, MacDonald R, Mulrow C, and Lau J. Serenoa repens for benign prostatic hyperplasia. The Cochrane Library 2002&semi;1:1-14.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>
+				Beckert BW, Concannon MJ, Henry SL, Smith DS, Puckett CL. The effect of herbal medicines on platelet function: an in vivo experiment and review of the literature. Plastic and Reconstructive Surgery 2007&semi;120(7):2044-2050.</li>
+				<li>Bent S, Kane C, Shinohara K, Neuhaus J, Hudes ES, Goldberg H, Avins AL. Saw palmetto for benign prostatic hyperplasia. The New England Journal of Medicine 2006&semi;354(6):557-565.</li>
+				<li>Bone K. Saw Palmetto: a critical review. The European Journal of Herbal Medicine 1994(1):1524.</li>
+				<li>Boyle P, Robertson C, Lowe F, Roehrborn C. Meta-analysis of clinical trials of permixon in the treatment of symptomatic benign prostatic hyperplasia. Urology 2000&semi;55(4):533-539.</li>
+				<li>Braeckman J. The extract of Serenoa repens in the treatment of benign prostatic hyperplasia: a multicenter open study. Current Therapeutic Research 1994&semi;55(7):776-785.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Cheema P, El-Mefty O, Jazieh AR. Intraoperative haemorrhage associated with the use of extract of Saw Palmetto herb: a case report and review of literature. Journal of Internal Medicine 2001&semi;250(2):167-169.</li>
+				<li>Chitturi S, Farrell GC. Herbal hepatotoxicity: an expanding but poorly defined problem. Journal of Gastroenterology and Hepatology 2000&semi;15(10):1093-1099.</li>
+				<li>De Bernardi di Valserra M, Tripodi AS, Contos S, Germogli R. Serenoa repens capsules: a bioequivalence study. Acta Toxicologia Therapeutica 1994&semi;15(1):21-39.</li>
+				<li>Debruyne F, Koch G, Boyle P, Da Silva FC, Gillenwater JG, Hamdy FC, Perrin P, Teillac P, Vela-Navarrete R, Raynaud JP. Comparison of a phytotherapeutic agent (Permixon) with an alpha-blocker (Tamsulosin) in the treatment of benign prostatic hyperplasia: a 1-year randomized international study. European Urology 2002&semi;41(5):497-507.</li>
+				<li>Di Silverio F, D'Eramo G, Lubrano C, Flammia GP, Sciarra A, Palma E, Caponera M, Sciarra F. Evidence that Serenoa repens extract displays an antiestrogenic activity in prostatic tissue of benign prostatic hypertrophy patients. European Urology 1992&semi;21(4):309-314.</li>
+				<li>Di Silverio F, Monti S, Sciarra A, Varasano PA, Martini C, Lanzara S, D'Eramo G, Di Nicola S, Toscano V. Effects of long-term treatment with Serenoa repens (Permixon) on the concentrations and regional distribution of androgens and epidermal growth factor in benign prostatic hyperplasia. Prostate 1998&semi;37(2):77-83.</li>
+				<li>Ernst E. Herbal medications for common ailments in the elderly. Drugs &amp; Aging 1999&semi;15(6):423-428.</li>
+				<li>Ernst E. The risk-benefit profile of commonly used herbal therapies: Ginkgo, St. John's Wort, Ginseng, Echinacea, Saw Palmetto, and Kava. Annals of Internal Medicine 2002&semi;136(1):42-53.</li>
+				<li>Gerber GS. Saw palmetto for the treatment of men with lower urinary tract symptoms. The Journal of Urology 2000&semi;163(5):1408-1412.</li>
+				<li>Gerber GS, Fitzpatrick JM. The role of a lipido-sterolic extract of Serenoa repens in the management of lower urinary tract symptoms associated with benign prostatic hyperplasia. British Journal of Urology International 2004&semi;94(3):338-344.</li>
+				<li>Goepel M, Hecker U, Krege S, Rübben H, Michel MC. Saw palmetto extracts potently and noncompetitively inhibit human alpha1-adrenoceptors in vitro. Prostate 1999&semi;38(3):208-215.</li>
+				<li>Grasso M, Montesano A, Buonaguidi A, Castelli M, Lania C, Rigatti P, Rocco F, Cesana BM, Borghi C. Comparative effects of alfuzosin versus Serenoa repens in the treatment of symptomatic benign prostatic hyperplasia. Archivos españoles de urología 1995&semi;48(1):97-103.</li>
+				<li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>Khwaja TA, Friedman EP. Pharmaceutical grade saw palmetto. United States Patent 6039950. Los Angeles (CA): University of Southern California and Irvine (CA): Pharmaprint Inc. 2000. [Accessed 2024 March 12]. Available at: http://www.freepatentsonline.com/6039950.html</li>
+				<li>Marks LS, Hess DL, Dorey FJ, Luz Macairan M, Cruz Santos PB, Tyler VE. Tissue effects of saw palmetto and finasteride: use of biopsy cores for in situ quantification of prostatic androgens. Urology 2001&semi;57(5):999-1005.</li>
+				<li>Sorenson WR, Sullivan D. 2007. Determination of campesterol, stigmasterol, and beta sitosterol in saw palmetto raw materials and dietary supplements by gas chromatography: collaborative study. Journal of the Association of Official Analytical Chemists [AOAC] International 90(3):670-678</li>
+				<li>Tacklind J, MacDonald R, Rutks I, Wilt TJ. Serenoa repens for benign prostatic hyperplasia. Cochrane Database of Systematic Reviews 2009, Issue 2. Art. No.: CD001423. DOI: 10.1002/14651858.CD001423.pub2</li>
+				<li>Yue QY. Herbal drug curbicin and anticoagulant effect with and without warfarin: possibly related to the vitamin E component. Journal of the American Geriatric Society 2001&semi;49(6)838.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

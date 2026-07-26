@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=chitosan2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="58a685c7-9fec-42ea-a731-bb50e954a394"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+<h1>
+    CHITOSAN
+   </h1>
+   <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+    <a href="/home-accueil/help-aide/index-eng.php#alt">
+     alternate format help
+    </a>
+    section.
+   </p>
+   <div class="icon">
+    <a href="dbImages/mono_chitosan_english.pdf" title="Chitosan">
+     <img alt="Monograph: Chitosan" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+     (PDF Version - 50.2 KB)
+    </a>
+   </div>
+   <p>
+    This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+   </p>
+   <p>
+    <strong>
+     Notes
+    </strong>
+   </p>
+   <ul>
+    <li>
+     Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+    </li>
+    <li>
+     The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+   </ul>
+   <section aria-labelledby="date">
+    <h2 id="date">
+     Date
+    </h2>
+    <p>
+     November 29, 2024
+    </p>
+   </section>
+   <section aria-labelledby="properNameCommonNameSourceMaterial">
+    <h2 id="properNameCommonNameSourceMaterial">
+     Proper name(s), Common name(s), Source information
+    </h2>
+    <table class="subject">
+     <caption>
+      Table 1.  Proper name(s), Common name(s), Source information
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="2" scope="colgroup">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th scope="col">
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td rowspan="2">
+        Poly-beta-(1,4)-2-amino-2-deoxy-d-glucose
+       </td>
+       <td rowspan="2">
+        <ul>
+         <li>
+          Chitosan
+         </li>
+         <li>
+          Poliglusam
+         </li>
+        </ul>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Crab
+         </li>
+         <li>
+          Krill
+         </li>
+         <li>
+          Shrimp
+         </li>
+        </ul>
+       </td>
+       <td>
+        Exoskeleton
+       </td>
+      </tr>
+      <tr>
+         <td>
+            <ul>
+               <li>Clam</li>
+               <li>Oyster</li>
+            </ul>
+         </td>
+         <td>Shell</td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     References: Proper name: Sweetman 2011; Common names: Sweetman 2011; Source information: Sweetman 2011; Dutta et al. 2004.
+    </p>
+   </section>
+   <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+     Route of Administration
+    </h2>
+    <!-- CHECK IF ROUTE OR ROUTE(S) -->
+    <p>
+     Oral
+    </p>
+   </section>
+   <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+     Dosage Form(s)
+    </h2>
+    <p>
+     This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+    </p>
+    <p>
+     Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+    </p>
+   </section>
+   <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+     Use(s) or Purpose(s)
+    </h2>
+    <ul>
+     <li>
+        Helps lower blood total (and LDL (low density lipoprotein)) cholesterol (Bokura and Kobayashi 2003; Tai et al. 2000).
+     </li>
+     <li>
+        Helps lower bad cholesterol (Bokura and Kobayashi 2003; Tai et al. 2000).
+     </li>
+     <li>
+        Helps maintain healthy cholesterol levels (EFSA 2011; Mhurchu et al. 2004).
+     </li>
+     <li>
+        Could be a complement to a healthy lifestyle that incorporates a calorie-reduced diet and regular physical activity for individuals involved in a weight management program (Moraru et al. 2018; Willers et al. 2012; Jull et al. 2008; Mhurchu et al. 2005).
+     </li>
+    </ul>
+    <p>
+     <strong>Notes:</strong>
+    </p>
+    <ul>
+        <li>The above uses can be combined on the product label (e.g., Helps lower blood total and LDL cholesterol and maintain healthy cholesterol levels).</li>
+        <li>The terms 'Helps' or 'Helps to' can be used interchangeably on the label.</li>
+    </ul>
+    <p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+    <ul>
+        <li><strong>If a weight management claim is made:</strong></li>
+        <ul>
+            <li>Weight management is a long-term process and must therefore, be associated with a long-term intervention.</li>
+            <li>Medicinal ingredient with diuretic properties may be included in weight management products, however no diuretic claim can be applied as it is associated with a short-term duration of use (occasional use only).</li>
+            <li>Stimulant laxatives cannot be present at therapeutic dose in weight management products as their short term duration of use is not compatible with the duration of use for weight management.</li>
+        </ul>
+    </ul>
+   </section>
+   <section aria-labelledby="dose">
+    <h2 id="dose">
+     Dose(s)
+    </h2>
+    <h3>
+     Subpopulation(s)
+    </h3>
+    <p>
+     Adults 18 years and older
+    </p>
+    <h3>
+     Quantity(ies)
+    </h3>
+    <p>
+     0.5 - 3 grams of chitosan, 2 times per day (Mhurchu et al. 2004; Bokura and Kobayashi 2003; Tai et al. 2000).
+    </p>
+    <h3>
+     Direction(s) for use
+    </h3>
+    <p>
+     Take with meals (Bokura and Kobayashi 2003).
+    </p>
+    <p>
+     Take a few hours before or after taking other medications or health products since the absorption of these products may be affected (Kubbinga et al. 2015).
+    </p>
+   </section>
+   <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+     Duration(s) of Use
+    </h2>
+    <p>
+     No statement required.
+    </p>
+   </section>
+   <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+     Risk Information
+    </h2>
+    <h3>
+     Caution(s) and warning(s)
+    </h3>
+    <p><em>All products</em></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Pittler et al. 1999).</p>
+    <p><em>All products (except for weight management)</em></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+    <p><em>Weight management</em></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.</p>
+    <h3>
+     Contraindication(s)
+    </h3>
+    <p><em>All products</em></p>
+    <p>Do not use if you have an allergy to seafood.</p>
+    <p><em>Weight management</em></p>
+    <p>Do not use if you are pregnant (HC 2010).</p>
+    <h3>
+     Known adverse reaction(s)
+    </h3>
+    <p>
+     When using this product you may experience gastrointestinal discomfort/disturbances (Moraru et al. 2018; Mhurchu et al. 2004; Pittler et al. 1999).
+    </p>
+   </section>
+   <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+     Non-medicinal ingredients
+    </h2>
+    <p>
+     Must be chosen from the current  Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+    </p>
+   </section>
+   <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+     Storage conditions
+    </h2>
+    <p>
+     Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.
+    </p>
+   </section>
+   <section aria-labelledby="specifications">
+    <h2 id="specifications">
+     Specifications
+    </h2>
+    <ul>
+     <li>
+      The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+     </li>
+     <li>
+      The medicinal ingredient must comply with the requirements outlined in the NHPID.
+     </li>
+     <li>
+      The degree of deacetylation for chitosan should be above 75%.
+     </li>
+    </ul>
+   </section>
+
+   <h2>Example of Product Facts:</h2>
+ 
+   <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+    
+   <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/CHITOSAN_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+   <section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">
+     References Cited
+    </h2>
+    <ul><li>
+     Bokura H, Kobayashi S. Chitosan decreases total cholesterol in women: a randomized, doubleblind, placebo-controlled trial.  European Journal of Clinical Nutrition 2003;57(5):721-725.
+    </li>
+    <li>
+     Dutta PK, Dutta J, Tripathi VS. Chitin and chitosan: Chemistry, properties and applications. Journal of Scientific &amp; Industrial Research 2004;63:20-31.
+    </li>
+    <li>
+     EFSA 2011: European Food Safety Authority. SCIENTIFIC OPINION: Scientific Opinion on the substantiation of health claims related to chitosan and reduction in body weight (ID 679, 1499), maintenance of normal blood LDL-cholesterol concentrations (ID 4663), reduction of intestinal transit time (ID 4664) and reduction of inflammation (ID 1985) pursuant to Article 13(1) of Regulation (EC) No 1924/20061; EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA), European Food Safety Authority (EFSA), Parma, Italy. [Accessed 2024 March 7]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/2214.pdf
+    </li>
+    <li>
+     HC 2010: Health Canada: Prenatal Nutrition Guidelines for health Professionals: Gestational weight gain [Accessed 2024 April 7]. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/nutrition/prenatal/ewba-mbsa-eng.pdf
+    </li>
+    <li>
+     Jull AB, Ni Mhurchu C, Bennett DA, Dunshea-Mooj CAE, Rodgers A.  Chitosan for overweight or obesity (review).  The Cochrane Collaboration; John Wiley and Sons Ltd; 2008.
+    </li>
+    <li>
+     Kubbinga M, Nguyen MA, Staubach P, Teerenstra S, Langguth P. The influence of chitosan on the oral bioavailability of Acyclovir - a comparative bioavailability study in humans. Pharmaceutical Research 2015; 32:2241-2249. 
+    </li>
+    <li>
+     Mhurchu CN, Poppitt SD, McGill AT, Leahy FE, Bennett DA, Lin RB, Ormrod D, Ward L,Strik C, Rodgers A. (on behalf of the Effect of Chitosan on Health and Obesity (ECHO) Collaboration). The effect of the dietary supplement, Chitosan, on body weight: a randomised controlled trial in 250 overweight and obese adults. International Journal of Obesity 2004;28: 1149-1156.
+    </li>
+    <li>
+     Moraru C, Mincea MM, Frandes M, Timar B, Ostafe V. A Meta-Analysis on Randomised Controlled Clinical Trials Evaluating the Effect of the Dietary Supplement Chitosan on Weight Loss, Lipid Parameters and Blood Pressure. Medicina (Kaunas) 2018; 54(6):109.
+    </li>
+    <li>
+     Pittler MH, Abbot NC, Harkness EF, Ernst E. Randomized, double-blind trial of chitosan for body weight reduction. European Journal of Clinical Nutrition 1999;53(5):379-381.
+    </li>
+    <li>
+     Sweetman SC, editor. 2011. Martindale: The Complete Drug Reference, 37th edition. London (GB): Pharmaceutical Press.
+    </li>
+    <li>
+     Tai TS, Sheu WH, Lee WJ, Yao HT, Chiang MT.  Effect of chitosan on plasma lipoprotein concentrations in type 2 diabetic subjects with hypercholesterolemia.  Diabetes Care 2000;23(11):1703-1704.
+    </li>
+    <li>
+     Willers J, Plotz SC, Hahn A. The combination of a high-protein formula diet and polyglucosamine decreases body weight and parameters of glucose and lipid metabolism in overweight and obese men and women. European Journal of Food Research and Review 2012; 2(1):29-45.
+    </li>
+ </ul>
+ </section>
+   <section aria-labelledby="referencesReviewed">
+    <h2 id="referencesReviewed">
+     References Reviewed
+    </h2>
+    <ul>
+    <li>
+     Ausar SF, Morcillo M, Leon AE, Ribotta PD, Masih R, Vilaro Mainero M, Amigone JL, Rubin G, Lescano C, Castagna LF, Beltramo DM, Diaz G, Bianco ID. Improvement of HDL- and LDLcholesterol levels in diabetic subjects by feeding bread containing chitosan.  Journal of Medicinal Food 2003;6(4):397-399.
+    </li>
+    <li>
+     European Bioinformatics Institute. Chitosan (CHEBI: 16261). European Molecular Biology Laboratory. 2023. [Accessed 2024 March 7]. Available from: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16261
+    </li>
+    <li>
+     Kaats GR, Michalek JE, Preuss HG.  Evaluating efficacy of a chitosan product using a doubleblinded, placebo-controlled protocol. Journal of the American College of Nutrition 2006;25: 389-394.
+    </li>
+    <li>
+     Maezaki Y, Tsuji K, Nakagawa Y, Kawai Y, Akimoto M. Hypocholesterolemic effect of chitosan in adult males. Bioscience, Biotechnology, and Biochemistry 1993;57(9):1439-1444.
+    </li>
+    <li>
+     Metso S, Ylitalo R, Nikkilä M, Wuolijoki E, Ylitalo P, Lehtimäki T. The effect of long-term microcrystalline chitosan therapy on plasma lipids and glucose concentrations in subjects with increased plasma total cholesterol: a randomised placebo-controlled double-blind crossover trial in healthy men and women. European Journal of Clinical Pharmacology 2003;59:741-746.
+    </li>
+    <li>
+     Schiller RN, Barrager E, Schauss AG, Nichols EJ. A randomized double blind placebo controlled study examining the effects of a rapidly soluble chitosan dietary supplement on weight loss and body composition in overweight and mildly obese individuals. Journal of the American Nutraceutical Association 2001;4(1):42-49.
+    </li>
+    <li>
+     Tapola NS, Lyyra ML, Kolehmainen RM, Sarkkinen ES, Schauss AG. Safety aspects and cholesterol-lowering efficacy of chitosan tablets. Journal of the American College of Nutrition 2008;27(1):22-30.
+    </li>
+    <li>
+     Wuolijoki E, Hirvela T, Ylitalo P.  Decrease in serum LDL cholesterol with microcrystalline chitosan.  Methods &amp; Findings in Experimental &amp; Clinical Pharmacology 1999;21(5):357-361.
+    </li>
+    <li>
+     Ylitalo R, Lehtinen S, Wuolijoki E, Ylitalo P, Lehtimaki T.  Cholesterol-lowering properties and safety of chitosan.  Arzneimittelforschung 2002;52(1):1-7.
+    </li>
+    <li>
+     Zhang J, Xia W, Liu P, Cheng Q, Tahirou T, Gu W, Li B. Chitosan Modification and Pharmaceutical/Biochemical Applications, Marine Drugs 2010;8:1962-1987.
+    </li>
+ </ul>
+      </section>
+      <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

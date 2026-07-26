@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=prebio2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="1d4f6fe0-66be-414e-b373-b7ac30ab0cd7"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>PREBIOTICS</h1>
+<div class="icon">
+		<a href="dbImages/mono_prebiotics_english.pdf" title="PREBIOTICS"><img alt="Monograph: PREBIOTICS;" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 65.0 KB)</a>
+	</div>
+    <p>
+        This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications
+        (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive
+        review
+        of the medicinal ingredients.</p>
+
+        <p style="border: 1px solid black;padding: 1em;">
+                <strong>Prebiotics</strong> are defined by their ability to selectively feed beneficial gut microbiota to confer a health
+        benefit,
+        not by being a fibre itself. It is important to note that some prebiotics <strong>are not</strong> fibres.
+        <strong>i.e., Not all prebiotics contain fibre and not all fibres are prebiotics.</strong>
+                </p>
+    
+
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>Text in parentheses is additional optional information which can be included on the label at the
+            applicant's
+            discretion.
+        </li>
+        <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+        <li>
+            This monograph may be used to support single ingredient products or multi-ingredient products containing a
+            medicinal ingredient from Table 1. Combination restrictions are described in the ‘Combination rules'
+            section.
+        </li>
+
+        <li>This monograph is intended to support prebiotic claims for the listed medicinal ingredients under
+            specified
+            conditions of use. Certain listed ingredients may also be eligible for fibre-content claims, where
+            applicable.
+            Prebiotic and fibre-content claims are distinct concepts and are assessed independently. Not all fibres
+            qualify
+            as
+            prebiotics, and a fibre-content claim must not be represented or implied as a prebiotic effect (and vice
+            versa).
+        </li>
+        <li>
+            Refer to <strong>Appendix I</strong> for the definitions of prebiotics, both internationally and domestically, and for the
+            additional considerations applied by the Natural and Non-prescription Health Products Directorate (NNHPD)
+            when
+            establishing evidence requirements.
+        </li>
+    </ul>
+
+    <p><strong>Restrictions when this monograph is combined with other monographs (Class II and III
+            applications):</strong></p>
+
+    <p> The following combinations are not acceptable as Class II applications. These products may be submitted as a
+        Class
+        III application with supporting evidence.
+    </p>
+    <ul>
+        <li>Inulin and/or FOS - with invertase</li>
+        <li>GOS - with lactase or alpha-galactosidase</li>
+        <li>XOS - with hemicellulase or xylanase</li>
+        <li>2'-Fucosyllactose and/or Lacto-N-neotetraose - with lactase</li>
+        <li>Acacia gum - with any digestive enzymes</li>
+    </ul>
+
+    <h2>Date </h2>
+
+    <p>April 24, 2026</p>
+
+    <h2>Proper name(s), Common name(s), Source information</h2>
+
+
+    <table class="subject">
+        <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Proper name(s)<sup>1</sup></th>
+                <th rowspan="2">Common name(s)<sup>1</sup></th>
+                <th colspan="3">Source information<sup>1</sup></th>
+            </tr>
+            <tr>
+                <th>Source ingredient(s)</th>
+                <th>Source material(s)</th>
+                <th>Part(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Acacia</td>
+                <td>
+                    <ul>
+                    <li>Acacia</li>
+                    <li>Acacia gum</li>
+                    <li>Gum arabic</li>
+                </ul>
+                </td>
+                <td>N/A</td>
+                <td><ul>
+                    <li><em>Senegalia senegal</em></li>
+                    <li><em>Vachellia seyal</em></li>
+                </ul></td>
+                <td>Gum</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Fructooligosaccharides (FOS)</td>
+                <td rowspan="2">
+                    <ul><li>Fructooligosaccharides</li>
+                    <li>Oligofructose</li></ul>
+                </td>
+                <td>N/A</td>
+                <td><em>Cichorium intybus</em></td>
+                <td>Root</td>
+            </tr>
+            <tr>
+              
+             
+                <td>N/A</td>
+                <td><em>Helianthus tuberosus</em></td>
+                <td>Tuber</td>
+            </tr>
+            <tr>
+                <td>Short-chain fructooligosaccharides (scFOS)</td>
+                <td>Short-chain fructooligosaccharides</td>
+                <td>Short-chain fructooligosaccharides</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Inulin</td>
+                <td rowspan="3">Inulin</td>
+                <td>N/A</td>
+                <td><em>Cichorium intybus</em></td>
+                <td>Root</td>
+            </tr>
+            <tr>
+
+                <td>N/A</td>
+                <td><em>Helianthus tuberosus</em></td>
+                <td>Tuber</td>
+            </tr>
+            <tr>
+        
+                <td>N/A</td>
+                <td><em>Agave tequilana</em></td>
+                <td>Stem and base leaves</td>
+            </tr>
+            <tr>
+                <td>Transgalactooligosaccharides (GOS)</td>
+                <td>
+                <ul>    
+                    <li>Transgalactooligosaccharides</li>
+                    <li>Galactooligosaccharides</li>
+                </ul>
+                </td>
+                <td>Transgalactooligosaccharides</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Xylooligosaccharides (XOS)</td>
+                <td rowspan="2">Xylooligosaccharides</td>
+                <td>N/A</td>
+                <td><em>Zea mays</em></td>
+                <td>Cob</td>
+            </tr>
+            <tr>
+                
+                <td>Xylooligosaccharides</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td rowspan="2">alpha-L-Fucopyranosyl-(1→2)-beta-D-galactopyranosyl-(1→4)-D-glucose</td>
+                <td rowspan="2">2'-Fucosyllactose</td>
+                <td>2'-Fucosyllactose</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>N/A</td>
+                <td><em>Escherichia coli</em></td>
+                <td>Whole cell for biosynthesis</td>
+            </tr>
+            <tr>
+                <td rowspan="2">O-beta-D-Galactopyranosyl-(1→4)-O-2-(acetylamino)-2-deoxy-beta-D-glucopyranosyl-(1→3)-O-beta-D-galactopyranosyl-(1→4)-D-glucose
+                </td>
+                <td rowspan="2">Lacto-N-neotetraose</td>
+                <td>Lacto-N-neotetraose</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>N/A</td>
+                <td><em>Escherichia coli</em></td>
+                <td>Whole cell for biosynthesis</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><sup>1</sup>At least one of the following references was consulted per proper name, common name, and source information: NHPID
+    2026; HC 2025; USDA 2025; Barkeer et al. 2024; Eveleens Maarse et al. 2024; Bongartz et al. 2022; USP 2022; Jarrar
+    et al. 2021; Kaddam et al. 2019; Mariod 2018; Babiker et al. 2017; CFIA 2016; Gardner and McGuffin 2013; Jensen et
+    al. 2013; Calame et al. 2008; IOM 2005; Cherbut et al. 2003; Facciola 1998.
+</p>
+
+    <h2>Route of administration</h2>
+
+    <p>Oral</p>
+
+
+    <h2>Dosage form(s)</h2>
+
+    <p>
+        This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance
+        Document.</p>
+
+    <p>
+        Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product
+        Licence Application form for Compendial applications.
+    </p>
+
+    <h2>Use(s) or Purpose(s)</h2>
+
+    <p>Refer to Tables 2.1 to 2.3 below.</p>
+
+
+    <h2>Dose(s)</h2>
+
+    <h3>Subpopulation(s)</h3>
+
+    <p>Adults 18 years and older</p>
+
+    <h3>Quantity(ies)</h3>
+
+    <table class="subject">
+            <caption>
+        Table 2.1. Prebiotic and growth of healthy bacteria uses or purposes, and associated dose information (grams)
+        per
+        day
+    </caption>
+        <thead>
+            <tr>
+                <th>Uses or Purposes<sup>1</sup></th>
+                <th>Medicinal ingredients</th>
+                <th>Doses/day<sup>2</sup></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="7">
+                    <ul>
+                    <li>A source of prebiotic(s).</li>
+                    <li>
+                    Helps stimulate the growth of healthy bacteria (such as bifidobacteria) in the intestine/gut.
+                    </li>
+                    <li>A source of prebiotic(s) that help(s) support/maintain a healthy digestive system.</li>
+                </td>
+                </ul>
+                </td>
+                    <td>Inulin</td>
+                <td>5 - 15 grams</td>
+            </tr>
+            <tr>
+       
+                <td>Acacia</td>
+                <td>10 - 20 grams</td>
+            </tr>
+            <tr>
+              
+                <td >Fructooligosaccharides (FOS)
+                    and/or
+                    Short-chain fructooligosaccharides (scFOS)</td>
+                <td ">2.5 - 15 grams</td>
+            </tr>
+            <tr>
+      
+                <td>Transgalactooligosaccharides (GOS)</td>
+                <td>2 - 15 grams</td>
+            </tr>
+            <tr>
+          
+                <td>Xylooligosaccharides (XOS)</td>
+                <td>1.4 - 8 grams</td>
+            </tr>
+            <tr>
+  
+                <td>2'-Fucosyllactose</td>
+                          <td rowspan="2">10 - 20 grams</td>
+
+            </tr>
+            <tr>
+          
+                <td>2'-Fucosyllactose + Lacto-N-neotetraose<sup>3</sup></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    <sup>1</sup>References consulted for the uses or purposes: Lee et al. 2024; Looijesteijn et al. 2024; Van Harsselaar et al.
+    2024; Jackson et al. 2023; Parker et al. 2023; Wilson et al. 2021; Vulevic et al. 2018; Hong et al. 2017; Elison et
+    al. 2016; Ramnani et al. 2015; Finegold et al. 2014; Holscher et al. 2014; Xiao et al. 2012; Marteau et al. 2011;
+    Ramnani 2010; Calame et al. 2009; Silk et al. 2009; Na and Kim 2007; Roberfroid 2007a,b; Bouhnik et al. 2006; IOM
+    2005; Bouhnik et al. 2004; Cherbut et al. 2003; Menne et al. 2000; Bouhnik et al. 1999; Iino et al. 1997; Gibson et
+    al. 1995; Tamai et al. 1992.<br/>
+    <sup>2</sup>References consulted for the doses: Lee et al. 2024; Looijesteijn et al. 2024; Van Harsselaar et al. 2024; Jackson
+    et al. 2023; Parker et al. 2023; Jarrar et al. 2021; Wilson et al. 2021; Kaddam et al. 2019; Vulevic et al. 2018;
+    Babiker et al. 2017; Hong et al. 2017; Elison et al. 2016; Hernandez-Gonzalez et al. 2016; Ramnani et al. 2015;
+    Childs et al. 2014; Finegold et al. 2014; Holscher et al. 2014; Xiao et al. 2012; Calame et al. 2009; Glover et al.
+    2009; Silk et al. 2009; Kolida and Gibson 2007; Kolida et al. 2007; Na and Kim 2007; Bouhnik et al. 2006; IOM 2005;
+    Bouhnik et al. 2004; Cherbut et al. 2003; Menne et al. 2000; Bouhnik et al. 1999; Coussement 1999; Iino et al. 1997;
+    Tamai et al. 1992.<br/>
+    <sup>3</sup>For products containing 2'-fucosyllactose (2'-FL) in combination with lacto-N-neotetraose (LNnt), the
+    prebiotic/growth of healthy bacteria uses or purposes are supported only when the combined daily intake of 2'-FL and
+    LNnt is 10-20 grams and the 2'-FL:LNnt ratio is between 2:1 and 4:1 (Iribarren et al. 2020, 2021; Elison et al.
+    2016).
+</p>
+
+    <h3>Fibre-related claims</h3>
+
+    <table class="subject">
+            <caption>Table 2.2. Fibre and digestive health uses or purposes, and associated dose information (grams) per day</caption>
+
+        <thead>
+            <tr>
+                <th>Uses or Purposes<sup>1, 3</sup></th>
+                <th>Medicinal ingredients</th>
+                <th>Doses/day<sup>2</sup></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">
+                    <ul>
+                    <li>Source of fibre (for the maintenance of good health).</li>
+                    <li>Source of fibre that helps support/maintain a healthy digestive system.</li>
+                    <li>Fibre supplement (for the maintenance of good health).</li>
+                    <li>Source of fibre that helps support/promote digestive regularity (as part of a fibre-containing
+                    diet).</li>
+</ul>
+                </td>
+                <td>Inulin</td>
+                <td>2 - 15 grams</td>
+            </tr>
+            <tr>
+          
+                <td>Acacia<sup>4</sup></td>
+                <td>2.5 - 20 grams</td>
+            </tr>
+            <tr>
+         
+                <td>Fructooligosaccharides (FOS)</td>
+                <td>2 - 15 grams</td>
+            </tr>
+            <tr>
+     
+                <td>Short-chain fructooligosaccharides (scFOS)</td>
+                <td>2 - 15 grams</td>
+            </tr>
+            <tr>
+    
+                <td>Transgalactooligosaccharides (GOS)</td>
+                <td>2 - 15 grams</td>
+            </tr>
+            <tr>
+     
+                <td>Xylooligosaccharides (XOS)</td>
+                <td>2 - 8 grams</td>
+            </tr>
+        </tbody>
+    </table>
+
+  <p>  <sup>1</sup>References consulted for the uses or purposes: HC 2025; CNF 2024; FCC 2024; Calame et al. 2009; IOM 2005; Cherbut
+    et al. 2003.<br/>
+    <sup>2</sup>References consulted for the doses: HC 2025; CNF 2024; Jarrar et al. 2021; Kaddam et al. 2019; Babiker et al.
+    2017; Canfora et al. 2017; Childs et al. 2014; Calame et al. 2009; Glover et al. 2009; IOM 2005; Cherbut et al.
+    2003; Menne et al. 2000; Coussement 1999.<br/>
+    <sup>3</sup>The claim “source of fibre” may be further qualified on the label, as applicable. Products providing at least 4
+    grams of fibre per day may use the additional qualifier “High source of fibre” on the label, while products
+    providing at least 6 grams of fibre per day may use “Very high source of fibre”. These thresholds were adapted from
+    Health Canada's food labelling approach and applied within the NHP framework, where products are evaluated based on
+    the recommended daily dose (HC 2025).<br/>
+    <sup>4</sup>The minimum dose of acacia was adjusted to 2.5 g as acacia contains around 80% fibre (2.5 g of acacia would
+    provide 2 g of fibre).</p>
+
+    <table class="subject">
+            <caption>Table 2.3. Gentle relief of constipation use or purpose, and associated dose information (grams) per day</caption>
+
+        <thead>
+            <tr>
+                <th>Use or Purpose<sup>1</sup></th>
+                <th>Medicinal ingredients</th>
+                <th>Doses/day<sup>1</sup></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Helps provide (gentle) relief of constipation and/or irregularity</td>
+                <td>Inulin sourced from <em>Cichorium intybus</em> and/or <em>Helianthus tuberosus</em></td>
+                <td>10 - 15 grams</td>
+            </tr>
+            <tr>
+                <td>Inulin sourced from <em>Agave tequilana</em></td>
+                <td>7.5 - 15 grams</td>
+            </tr>
+            <tr>
+                <td>Fructooligosaccharides (FOS)
+                    and/or
+                    Short-chain fructooligosaccharides (scFOS)</td>
+                <td>10 - 15 grams</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><sup>1</sup>References consulted for the use or purpose and doses: Watson et al. 2019; Buddington et al. 2017; Micka et al. 2017;
+    Meksawan et al. 2016; Holscher et al. 2014; Marteau et al. 2011; Yen et al. 2011; IOM 2005; Chen et al. 2000.
+</p>
+
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>The claims from Table 2.1. can be combined on the product label (e.g., A source of prebiotic which helps
+            stimulate
+            the growth of healthy bacteria (such as bifidobacteria) in the intestine).
+        </li>
+
+        <li>The claims from Table 2.2. and 2.3 can also be combined; however, it is recommended to keep claims from
+            Table
+            2.1
+            separate from the other claims on the label to avoid any misinterpretation or implied links between the
+            effects.</li>
+
+        <li>The terms 'Helps' or 'Helps to' can be used interchangeably on the label.</li>
+    </ul>
+
+
+    <h3>Direction(s) for use</h3>
+
+    <p><em>All products except those containing 2'-Fucosyllactose alone or in combination with Lacto-N-neotetraose</em>
+    </p>
+    <ul>
+        <li>Take with at least 250 mL of liquid (Daley and Shreenath 2025; IOM 2005; Wardlaw 1999).</li>
+        <li>Maintain adequate fluid intake (Daley and Shreenath 2025; IOM 2005; Wardlaw 1999).</li>
+        <li>Take a few hours before or after taking other medications or health products (IOM 2005; Wardlaw 1999).</li>
+    </ul>
+
+
+    <p><em>Powder dosage forms</em></p>
+    <ul>
+        <li>(Thoroughly) Mix product in at least 250 mL of liquid immediately before consumption (Daley and Shreenath
+            2025;
+            IOM 2005; Wardlaw 1999).</li>
+
+        <li>Maintain adequate fluid intake (Daley and Shreenath 2025; IOM 2005; Wardlaw 1999).</li>
+
+        <li>Take a few hours before or after taking other medications or health products (IOM 2005; Wardlaw 1999).</li>
+    </ul>
+
+    <p><em>Products containing inulin or fructooligosaccharides (FOS) (optional)</em></p>
+
+    <p>To minimize gastrointestinal side effects, take in divided doses with meals (Schaafsma and Slavin 2015).</p>
+
+    <p><em>
+            Products containing inulin, fructooligosaccharides (FOS) or Short-chain fructooligosaccharides (scFOS) for
+            constipation/irregularity
+        </em></p>
+
+    <p>Start at a lower dose and increase gradually to the recommended daily dose or until the desired effect is
+        obtained.</p>
+
+    <h3>Combination rules</h3>
+    <ul>
+        <li>The total amount of a combination of 2 or more medicinal ingredients from Table 1 must not exceed 15 g per
+            day
+            and
+            the amount of the medicinal ingredient XOS must not exceed 8 g per day.</li>
+
+        <li>The claims listed in Table 2.2. can be supported by a combination of the supporting medicinal ingredients
+            if
+            the
+            total amount meets a minimum of 2 g per day. Note that only 80% of the daily dose of acacia gum should be
+            included
+            in the calculation.</li>
+    </ul>
+
+    <h2>Duration(s) of use</h2>
+
+    <p><em>Products providing more than 10 g acacia, per day</em></p>
+    <p>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12
+        weeks (Jarrar et al. 2021; Kaddam et al. 2019; Babiker et al. 2017; Glover et al. 2009).
+    </p>
+
+    <p><em>Products providing up to 4 g xylooligosaccharides (XOS), per day</em></p>
+    <p>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 8
+        weeks
+        (Sheu et al. 2008; Tateyama et al. 2005).
+    </p>
+
+    <p><em>Products providing more than 4 g xylooligosaccharides (XOS), per day</em></p>
+
+    <p> Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 3
+        weeks
+        (Childs et al. 2014).
+    </p>
+
+    <h2>Risk information</h2>
+
+    <h3>Caution(s) and warning(s)</h3>
+
+    <p><em>Products containing inulin for constipation/irregularity</em></p>
+    <p>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms
+        persist
+        or worsen.</p>
+
+    <h3>Contraindication(s)</h3>
+
+    <p><em>Products containing inulin for constipation and/or irregularity</em></p>
+
+    <p>Do not use if you have fever or any undiagnosed gastrointestinal trouble (HC 2009).</p>
+
+    <h3>Known adverse reaction(s)</h3>
+
+    <p><em>Products containing inulin, fructooligosaccharides (FOS), or transgalactooligosaccharides (GOS)</em></p>
+    <p>
+        Stop use if hypersensitivity/allergy occurs (Lee et al. 2020; Brinker 2010; Hendler and Rorvik 2008; Franck et
+        al.
+        2005; Gay-Crosier et al. 2000).</p>
+
+    <p><em>Products providing 5 g or more inulin, fructooligosaccharides (FOS) or short-chain fructooligosaccharides
+            (scFOS) per
+            day</em>
+    </p>
+
+    <p>
+        When using this product you may experience temporary gas and bloating (Mysonhimer and Hoslcher 2022; Ramnani et
+        al.
+        2015, 2010; Schaafsma and Slavin 2015; Holsher et al. 2014; Marteau et al. 2011; Bonnema et al. 2010; Bruhwyler
+        et
+        al. 2009; Bouhnik et al. 2007, 2006; Kolida and Gibson 2007; Menne et al.p2000; Coussement 1999).
+
+    </p>
+
+    <h2>Non-medicinal ingredients</h2>
+
+    <p>
+        Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+        limitations
+        outlined in the database.
+    </p>
+
+    <h2>Storage conditions</h2>
+
+    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+            Regulations</em>.</p>
+
+    <p><em>Optional</em></p>
+
+    <p>Store in a cool, dry place. Keep tightly closed.</p>
+
+
+    <h2>Specifications</h2>
+
+    <ul>
+        <li>Isolates of inulin, fructooligosaccharides (FOS), short-chain fructooligosaccharides(scFOS),
+            transgalactooligosaccharides (GOS) and xylooligosaccharides (XOS) are acceptable provided that the quantity
+            listed
+            on the PLA and label represents the declared active oligosaccharide/fructan content (dry basis) only.</li>
+
+        <li>Isolates of acacia gum are acceptable provided that the quantity listed on the PLA and label represents
+            the
+            acacia
+            gum preparation and that it contains not less than 80% fibre (dry basis).
+        </li>
+
+        <li>Preparations of inulin (native inulin-type fructans), including preparations of inulin with a degree of
+            polymerization (DP) ≥ 2 and ≤ 60, preparations of FOS/oligofructose with a DP of ≥ 2 and ≤ 10, and
+            preparations
+            of
+            scFOS with a DP ≥2 and ≤5 are considered acceptable.
+        </li>
+
+        <li>Preparations of GOS with a DP of ≥2 and ≤9 are considered acceptable, with the majority between 3 and 5.
+            Preparations with a higher DP are not considered to be captured by this monograph.
+        </li>
+
+        <li>Preparations of XOS consisting of linear β-(1 →4) linked xylose oligomers are considered acceptable.
+            Preparations
+            of arabinoxylan-oligosaccharides (AXOS) (i.e. xylose backbone with arabinose side chains) are not considered
+            to
+            be
+            captured by this monograph.
+        </li>
+
+        <li>The finished product specifications must be established in accordance with the requirements described in
+            the
+            NNHPD
+            Quality of Natural Health Products Guide.
+        </li>
+        <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+
+        <li>Validated analytical methods for determining oligosaccharide amounts can be used (i.e., can be developed
+            by
+            the
+            manufacturer), and can include but are not limited to HPLC (High-Performance Liquid Chromatography), LC-MS
+            (Liquid
+            Chromatography-Mass Spectrometry), and SEC (Size Exclusion Chromatography).
+        </li>
+
+        <li>Enzymatic-gravimetric methods are not generally suitable on their own for the accurate quantification of
+            low
+            molecular weight oligosaccharides. Analytical methods for determining fibre amounts are available in the
+            Policy
+            for
+            Labelling and Advertising of Dietary Fibre-Containing Food Products.</li>
+    </ul>
+
+    <p>Regarding risk information:</p>
+
+<ul>    
+    <li>If any ingredient in the product (e.g., GOS) has come into contact with a priority allergen or derivative (e.g.
+    milk) (list available at:
+    https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-allergies-intolerances/food-allergies.html),
+    one of the following risk statements must be included on the product label (Consult the Guidance Document, Labelling
+    of Natural Health Products for more details):
+
+    <ul>
+        <li>Allergen: XXX OR</li>
+        <li>(May) contain(s) XXX</li>
+</ul>
+</li>
+<li>In addition to allergen labelling requirements, certain ingredients may inherently contain residual constituents
+    as a result of their manufacturing process. Where applicable, non‑allergen‑related disclosures (e.g.,
+    intolerance‑related statements or ingredient composition disclosures) may be included on the product label:
+
+    <p><em>Products providing 2'-fucosyllactose or Lacto-N-neotetraose</em></p>
+<ul>
+    <li>(May) contain(s) (small amounts of) lactose.</li>
+</ul>
+    <p><em>Products providing transgalactooligosaccharides (GOS)</em></p>
+<ul>
+    <li>(May) contain(s) (small amounts of) lactose and/or sugar/glucose.</li></li>
+</ul>
+</ul>
+
+<h2>    EXAMPLE OF PRODUCT FACTS:</h2>
+
+        <p><strong>Consult the Guidance Document, <a
+                    href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling
+                    of Natural Health Products</a> for more details.</strong></p>
+        <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Prebiotics_EN.gif" alt="Product Facts Table"
+                style="width:700px"></p>
+    <h2>References cited</h2>
+    <ul>
+        <li>
+            Babiker R, Elmusharaf K, Keogh MB, Banaga AS, Saeed AM. Metabolic effect of gum Arabic (Acacia Senegal) in
+            patients with type 2 diabetes mellitus (T2DM): randomized, placebo controlled double blind trial. Funct
+            Foods Health Dis. 2017;7(3):222-234.
+        </li>
+        <li>
+            Barkeer S, Pothuraju R, Malakar P, Pimentel TC, Siddiqui JA, Nair SA. Gum acacia dietary fiber: Significance
+            in immunomodulation, inflammatory diseases, and cancer. Phytother Res. 2024;38(3):1509-1521.
+        </li>
+        <li>
+            Bongartz U, Erlenbeck C, Wohlfahrt I. The Effect of Gum Acacia on Post-Prandial Glucose and Insulin Levels
+            in Healthy Subjects. Food and Nutrition Sciences 2022;13(04):424-438.
+            Bonnema A, Kolberg LW, Thomas W, Slavin J. Gastrointestinal Tolerance of Chicory Inulin Products. Journal of
+            the American Dietetic Association 2010;110(6):865-868.
+        </li>
+        <li>
+            Bouhnik Y, Vahedi K, Achour L, Attar A, Salfati J, Pochart P, Marteau P, Flourié B, Bornet F, Rambaud JC.
+            Short-chain fructo-oligosaccharide administration dose-dependently increases fecal bifidobacteria in healthy
+            humans. J Nutr. 1999;129(1):113-116.
+        </li>
+        <li>
+            Bouhnik Y, Raskine L, Simoneau G, Vicaut E, Neut C, Flourié B, Brouns F, Bornet FR. The capacity of
+            nondigestible carbohydrates to stimulate fecal bifidobacteria in healthy humans: a double-blind, randomized,
+            placebo-controlled, parallel-group, dose-response relation study. Am J Clin Nutr. 2004;80(6):1658-1664.
+        </li>
+        <li>
+            Bouhnik Y, Raskine L, Simoneau G, Paineau D, Bornet F. The capacity of short-chain fructo-oligosaccharides
+            to stimulate faecal bifidobacteria: a dose-response relationship study in healthy humans. Nutr J. 2006;5:8.
+        </li>
+        <li>
+            Bouhnik Y, Achour L, Paineau D, Riottot M, Attar A, Bornet F. Four-week short chain fructo-oligosaccharides
+            ingestion leads to increasing fecal bifidobacteria and cholesterol excretion in healthy elderly volunteers.
+            Nutr J. 2007;6:42.
+        </li>
+        <li>
+            Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press;
+            2025. [Accessed 2025 October 10]. Available from: https://www.medicinescomplete.com/#/browse/martindale
+        </li>
+        <li>
+            Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical
+            Publications; 2010.
+        </li>
+        <li>
+            Buddington RK, Kapadia C, Neumer F, Theis S. Oligofructose provides laxation for irregularity associated
+            with low fiber intake. Nutrients 2017;9(12):1372.
+        </li>
+        <li>
+            Calame W, Weseler AR, Viebke C, Flynn C, Siemensma AD. Gum arabic establishes prebiotic functionality in
+            healthy human volunteers in a dose-dependent manner. Br J Nutr. 2008;100(6):1269-1275.
+        </li>
+        <li>
+            Canfora EE, van der Beek CM, Hermes GDA, Goossens GH, Jocken JWE, Holst JJ, van Eijk HM, Venema K, Smidt H,
+            Zoetendal EG, Dejong CHC, Lenaerts K, Blaak EE. Supplementation of Diet With Galacto-oligosaccharides
+            Increases Bifidobacteria, but Not Insulin Sensitivity, in Obese Prediabetic Individuals. Gastroenterology
+            2017;153(1):87-97.e3.
+        </li>
+        <li>
+            CFIA 2016: Canadian Food Inspection Agency, Food Labelling for Industry, Chapter 6: Elements Within the
+            Nutrition Facts Table Section 6.8.1 Dietary Fibre. [Accessed 2019 June 26]. Available from:
+            https://epe.lac-bac.gc.ca/100/206/301/cfia-acia/2011-09-21/inspection.gc.ca/english/fssa/labeti/guide/ch6ae.shtml#a6_8
+        </li>
+        <li>
+            Charlton KE, Tapsell LC, Batterham MJ, O'Shea J, Thorne R, Beck E, Tosh SM. Effect of 6 weeks' consumption
+            of β-glucan-rich oat products on cholesterol levels in mildly hypercholesterolaemic overweight adults.
+            British Journal of Nutrition 2012;107:1037-1047.
+        </li>
+        <li>
+            Chen HL, Lu YH, Lin J, Ko LY. Effects of fructooligosaccharide on bowel function and indicators of
+            nutritional status in constipated elderly men. Nutrition Research 2000;20(12):1725-1733.
+        </li>
+        <li>
+            Cherbut C, Michel C, Raison V, Kravtchenko T, Severine M. Acacia Gum is a Bifidogenic Dietary Fibre with
+            High Digestive Tolerance in Healthy Humans. Microb Ecol Health Dis. 2003;15(1):43-50.
+        </li>
+        <li>
+            Childs CE, Röytiö H, Alhoniemi E, Fekete AA, Forssten SD, Hudjec N, Lim YN, Steger CJ, Yaqoob P, Tuohy KM,
+            Rastall RA, Ouwehand AC, Gibson GR. Xylo-oligosaccharides alone or in synbiotic combination with
+            Bifidobacterium animalis subsp. lactis induce bifidogenesis and modulate markers of immune function in
+            healthy adults: a double-blind, placebo-controlled, randomised, factorial cross-over study. Br J Nutr.
+            2014;111(11):1945-1956.
+        </li>
+        <li>
+            CNF 2024: Canadian Nutrient File. Ottawa (ON): Food and Nutrition; Health Canada. [Accessed 2026 January
+            29]. Available from: https://food-nutrition.canada.ca/cnf-fce/?lang=eng
+        </li>
+        <li>
+            Coussement PA. Inulin and Oligofructose: safe intakes and legal status. J Nutr. 1999;129(7
+            Suppl):1412S-1417S.
+        </li>
+        <li>
+            Daley SF, Shreenath AP. The Role of Dietary Fiber in Health Promotion and Disease Prevention: A Practical
+            Guide for Clinicians. StatPearls Publishing. [Updated 2025 Dec 1]. Available from:
+            https://www.ncbi.nlm.nih.gov/books/NBK559033/
+        </li>
+        <li>
+            Deehan EC, Al Antwan S, Witwer RS, Guerra P, John T, Monheit L. Revisiting the Concepts of Prebiotic and
+            Prebiotic Effect in Light of Scientific and Regulatory Progress-A Consensus Paper From the Global Prebiotic
+            Association. Adv Nutr. 2024;15(12):100329.
+        </li>
+        <li>
+            Elison E, Vigsnaes L, Krogsgaard LR, Rasmussen J, Sorensen N, McConnell B, Hennet T, Sommer MOA, Bytzer P.
+            Oral supplementation of healthy adults with 2'-O-fucosyllactose and lacto-N-neotetraose is well tolerated
+            and shifts the intestinal microbiota. British Journal of Nutrition 2016;116(8):1356-1368.
+        </li>
+        <li>
+            Eveleens Maarse BC, Eggink HM, Warnke I, et al. Impact of fibre supplementation on microbiome and resilience
+            in healthy participants: A randomized, placebo-controlled clinical trial. Nutr Metab Cardiovasc Dis.
+            2024;34(6):1416-1426.
+        </li>
+        <li>
+            Facciola, S. Cornucopia II : a source book of edible plants, 2<sup>nd</sup> edition. Kampong Publications; 1998.
+        </li>
+        <li>
+            FCC 2024: Food Chemicals Codex, 14<sup>th</sup> edition. Rockville (MD): The United States Pharmacopeial Convention;
+            2024.
+            Finegold SM, Li Z, Summanen PH, Downes J, Thames G, Corbett K, Dowd S, Krak M, Heber D. Xylooligosaccharide
+            increases bifidobacteria but not lactobacilli in human gut microbiota. Food Funct. 2014;5(3):436-445.
+        </li>
+        <li>
+            Franck P, Moneret-Vautrin DA, Morisset M, Kanny G, Mégret-Gabeaux ML, Olivier JL. Anaphylactic reaction to
+            inulin : first identification of specific IgEs to an inulin protein compound. International Archives of
+            Allergy and Immunology 2005;136:155-158.
+        </li>
+        <li>
+            Gardner Z, McGuffin M. editors. American Herbal Products Association's Botanical Safety Handbook, 2<sup>nd</sup>
+            edition. American Herbal Products Association. Boca Raton (FL): CRC Press; 2013.
+        </li>
+        <li>
+            Gay-Crosier F, Schreiber G, Hauser C. Anaphylaxis from inulin in vegetables and processed food. The New
+            England Journal of Medicine 2000;342(18):1372.
+        </li>
+        <li>
+            Gibson GR, Hutkins R, Sanders ME, Prescott SL, Reimer RA, Salminen SJ, Scott K, Stanton C, Swanson KS, Cani
+            PD, Verbeke K, Reid G. Expert consensus document: The International Scientific Association for Probiotics
+            and Prebiotics (ISAPP) consensus statement on the definition and scope of prebiotics. Nat Rev Gastroenterol
+            Hepatol. 2017;14(8):491-502.
+        </li>
+        <li>
+            Gibson GR, Beatty ER, Wang X, Cummings JH. Selective stimulation of bifidobacteria in the human colon by
+            oligofructose and inulin. Gastroenterology 1995;108(4):975-982.
+        </li>
+        <li>
+            Glover DA, Ushida K, Phillips A, Riley S. Acacia (sen) SUPERGUM™ (Gum Arabic): An evaluation of potential
+            health benefits in human subjects. Food Hydrocolloids 2009;23(8):2410-2415.
+        </li>
+        <li>
+            HC 2025: Nutrition Labelling - Table of Permitted Nutrient Content Statements and Claims - Canada.ca. Ottawa
+            (ON): Food and Nutrition; Health Canada. [Accessed 2025 December 5]. Available from:
+            https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-permitted-nutrient-content-statements-claims/table-document.html#a6
+        </li>
+        <li>
+            HC 2009: Laxatives: General - Laxatives - Labelling Standard. Ottawa (ON): Drugs and Health Products; Health
+            Canada. [Accessed 2024 January 6]. Available from:
+            https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/nonprescription-drugs-labelling-standards/laxatives-labelling-standards-non-prescription-drugs.html
+        </li>
+        <li>
+            Hendler SS, Rorvik DM, editors. Physician Desk References (PDR) for Nutritional Supplements, 2<sup>nd</sup> edition.
+            Montvale (NJ): Thomson Reuters; 2008.
+        </li>
+        <li>
+            Hernandez-Gonzalez SO, Bricio-Ramirez RI, Ramos-Zavala MG, Zavalza-Gomez AB, Cardona-Munoz EG,
+            Garcia-Benavides L, Martinez-Abundis E, Pascoe-Gonzales S. Effect of Inulin from Agave tequilana Weber Blue
+            Variety on the Metabolic Profile of Overweight and Obese Dyslipidemic Patients. Journal of Clinical Trials
+            2016;6:1.
+        </li>
+        <li>
+            Holscher HD, Doligale JL, Bauer LL, Gourineni V, Pelkman CL, Fahey GC, Swanson KS. Gastrointestinal
+            tolerance and utilization of agave inulin by healthy adults. Food Funct. 2014;5(6):1142-1149.
+        </li>
+        <li>
+            Hong YH, Chang UJ, Kim YS, Jung EY, Suh HJ. Dietary galacto-oligosaccharides improve skin health: a
+            randomized double blind clinical trial. Asia Pac J Clin Nutr. 2017;26(4):613-618.
+        </li>
+        <li>
+            Hutkins R, Walter J, Gibson GR, Bedu-Ferrari C, Scott K, Tancredi DJ, Wijeyesekera A, Sanders ME.
+            Classifying compounds as prebiotics - scientific perspectives and recommendations. Nat Rev Gastroenterol
+            Hepatol. 2025;22(1):54-70.
+        </li>
+        <li>
+            Iino T, Nishijima Y, Sawada S, Sasaki H, Harada H, Suwa Y, Kiso Y. Improvement of constipation by a small
+            amount of xylooligosaccharides ingestion in adult women. Japan Assoc Diet Fiber Res. 1997;1(1):19-24.
+        </li>
+        <li>
+            IOM 2005: Institute of Medicine of the National Academies. Dietary Reference Intakes for Energy,
+            Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Food and Nutrition Board.
+            Washington (DC): National Academies Press; 2005.
+        </li>
+        <li>
+            IPA 2025: International Probiotic Association. The International Probiotic Association (IPA) adopts ISAPP's
+            Prebiotic Definition. [Accessed 2025 December 10]. Available from:
+            https://ipa-biotics.org/isapp-prebiotic-definition/
+        </li>
+        <li>
+            Iribarren C, Törnblom H, Aziz I, Magnusson M, Sundin J, Vigsnaes LK, Amundsen ID, McConnell B, Seitzberg D,
+            Öhman L, Simrén M. Human milk oligosaccharide supplementation in irritable bowel syndrome patients: A
+            parallel, randomized, double-blind, placebo-controlled study. Neurogastroenterol Motil. 2020;32(10):e13920.
+        </li>
+        <li>
+            Iribarren C, Magnusson M Vigsnaes LK, Aziz I, Amundsen ID, Šuligoj T, Juge N, Patel P, Sapnara M, Johnsen L,
+            Sørensen N, Sundin J, Törnblom H, Simrén M, Öhman L. The Effects of Human Milk Oligosaccharides on Gut
+            Microbiota, Metabolite Profiles and Host Mucosal Response in Patients with Irritable Bowel Syndrome.
+            Nutrients 2021;13(11):3836.
+        </li>
+        <li>
+            Jackson P, Wijeyesekera A, Williams C, Theis S, Van Harsselaar J, Rastall R. Inulin-type fructans and
+            2'fucosyllactose alter both microbial composition and appear to alleviate stress-induced mood state in a
+            working population compared to placebo (maltodextrin): the EFFICAD Trial, a randomized, controlled trial. Am
+            J Clin Nutr. 2023;118(5):938-955.
+        </li>
+        <li>
+            Jarrar A, Stojanovska L, Apostolopoulos V, Feehan J, Bataineh M, Ismail L, Al Dhaheri A. The Effect of Gum
+            Arabic (Acacia senegal) on Cardiovascular Risk Factors and Gastrointestinal Symptoms in Adults at Risk of
+            Metabolic Syndrome: A Randomized Clinical Trial. Nutrients 2021;13(1):194.
+        </li>
+        <li>
+            Jensen CD, Spiller GA, Gates JE, Miller AF, Whittam JH. The effect of acacia gum and a water-soluble dietary
+            fiber mixture on blood lipids in humans. J Am Coll Nutr. 1993;12(2):147-154.
+        </li>
+        <li>
+            Kaddam L, Fadl-Elmula I, Eisawi OA, Abdelrazig HA, Saeed AM. Acacia Senegal (Gum Arabic) Supplementation
+            Modulate Lipid Profile and Ameliorated Dyslipidemia among Sickle Cell Anemia Patients. J Lipids.
+            2019;2019:3129461.
+        </li>
+        <li>
+            Kolida S, Gibson GR. Prebiotic capacity of inulin-type fructans. The Journal of Nutrition
+            2007;137:2503S-2506S.
+        </li>
+        <li>
+            Kolida S, Meyer D, Gibson GR. A double-blind placebo-controlled study to establish the bifidogenic dose of
+            inulin in healthy humans. Eur J Clin Nutr. 2007;61(10):1189-1195.
+        </li>
+        <li>
+            Lee LYGN, Zhong Y, Leow SY, Lim SC, Wen H, Soh JY, Chiang WC, Delsing DJ, Lee BW, Huang CH. Allergy to
+            prebiotic galacto-oligosaccharides: House dust mites-the putative primary sensitizer. J Allergy Clin
+            Immunol. 2020;145(2):707-710.e5.
+        </li>
+        <li>
+            Lee JH, Kim GB, Han K, Jung EJ, Suh HJ, Jo K. Efficacy and safety of galacto-oligosaccharide in the
+            treatment of functional constipation: randomized clinical trial. Food Funct. 2024;15(12):6374-6382.
+        </li>
+        <li>
+            Looijesteijn E, Schoemaker MH, van den Belt M, Hester ER, Kortman GAM, Viskaal-van Dongen M, Nauta A. A
+            double-blind intervention trial in healthy women demonstrates the beneficial impact on Bifidobacterium with
+            low dosages of prebiotic galacto-oligosaccharides. Front Nutr. 2024;11:1440319.
+        </li>
+        <li>
+            Mariod, AA. editor. Gum Arabic: Structure, Properties, Application and Economics. London (UK): Elsevier
+            Academic Press; 2018.
+        </li>
+        <li>
+            Marteau P, Jacobs H, Cazaubiel M, Signoret C, Prevel J-M, Housez B. Effects of chicory inulin in constipated
+            elderly people: a double-blind controlled trial. International Journal of Food Sciences and Nutrition
+            2011;62(2):164-170.
+        </li>
+        <li>
+            Menne E, Guggenbuhl N, Roberfroid M. Fn-type chicory inulin hydrolysate has a prebiotic effect in humans. J.
+            Nutr. 2000;130(5):1197-1199.
+        </li>
+        <li>
+            Micka A, Siepelmeyer A, Holz A, Theis S, Schön C. Effect of consumption of chicory inulin on bowel function
+            in healthy subjects with constipation: a randomized, double-blind, placebo-controlled trial. International
+            Journal of Food Sciences and Nutrition 2017;68(1):82-89.
+        </li>
+        <li>
+            Na H, Kim W. Effects of xylooligosaccharide intake on fecal bifidobacteria, lactic acid and lipid metabolism
+            in Korean young women. Korean J. Nutr. 2007;40(2):154-161.
+        </li>
+        <li>
+            NHPID 2026. Natural Health Products Ingredients Database. [Accessed 2026 March 23]. Available from:
+            http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do
+        </li>
+        <li>
+            Parker C, Hunter KA, Johnson MA, Sharpe GR, Gibson GR, Walton GE, Poveda C, Cousins B, Williams NC. Effects
+            of 24-week prebiotic intervention on self-reported upper respiratory symptoms, gastrointestinal symptoms,
+            and markers of immunity in elite rugby union players. Eur J Sport Sci. 2023;23(11):2232-2239.
+        </li>
+        <li>
+            Pray WS. Non-Prescription Product Therapeutics, 2<sup>nd</sup> edition. New York (NY): Lippincott Williams &amp;
+            Wilkins; 2006.
+        </li>
+        <li>
+            Ramnani P, Gaudier E, Bingham M, van Bruggen P, Tuohy KM, Gibson GR. Prebiotic effect of fruit and vegetable
+            shots containing Jerusalem artichoke inulin: a human intervention study. British Journal of Nutrition
+            2010;104(2):233-240.
+        </li>
+        <li>
+            Ramnani P, Costabile A, Bustillo AGR, Gibson GR. A randomized, double-blind, cross-over study investigating
+            the prebiotic effect of agave fructans in healthy human subjects. Journal of Nutritional Science.
+            2015;4:e10.
+        </li>
+        <li>
+            Roberfroid MB. Inulin-type fructans: functional food ingredients. The Journal of Nutrition
+            2007a;137:2493S-2502S.
+        </li>
+        <li>
+            Roberfroid M. Prebiotics: The Concept Revisited. The Journal of Nutrition 2007b;137:830S-837S.
+        </li>
+        <li>
+            Saville SH, Younes JA, Paraskevakos G, Venema K. The prebiotic landscape: history, health and physiological
+            benefits, and regulatory challenges - an IPA perspective part 1. Benef Microbes. 2025;16(1):1-33.
+        </li>
+        <li>
+            Schaafsma G, Slavin JL. Significance of inulin fructans in the human diet. Compr Rev Food Sci Food Saf.
+            2015;14(1):37-47.
+        </li>
+        <li>
+            Sheu WH, Lee IT, Chen W, Chan YC. Effects of xylooligosaccharides in type 2 diabetes mellitus. J Nutr Sci
+            Vitaminol (Tokyo). 2008;54(5):396-401.
+        </li>
+        <li>
+            Silk DB, Davis A, Vulevic J, Tzortzis G, Gibson GR. Clinical trial: the effects of a
+            trans-galactooligosaccharide prebiotic on faecal microbiota and symptoms in irritable bowel syndrome.
+            Aliment Pharmacol Ther. 2009;29(5):508-518.
+        </li>
+        <li>
+            Tamai S, Ohtsuka K, Ozawa O, Uchida T. Effect of a small amount of galactooligosaccharide on fecal
+            Bifidobacterium. Nippon Eiyo Shokuryo Gakkaishi 1992;45(5):456-460.
+        </li>
+        <li>
+            Tateyama I, Hashii K, Johno I, Iino T, Hirai K, Suwa Y, Kiso Y. Effect of xylooligosaccharide intake on
+            severe constipation in pregnant women. J Nutr Sci Vitaminol (Tokyo). 2005;51(6):445-448.
+        </li>
+        <li>
+            United States Pharmacopeia 2022. NF Monographs, Acacia. USP-NF. Rockville, MD: United States Pharmacopeia.
+            DOI: https://doi.org/10.31003/USPNF_M100_03_01
+        </li>
+        <li>
+            USDA 2025: United States Department of Agriculture, Agricultural Research Service, National Genetic
+            Resources Program. Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm
+            System. [Accessed 2025 October 10]. Available from:
+            https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+        </li>
+        <li>
+            Van Harsselaar J, Moedinger Y, Dharsono T, Menzel D, Theis S, Schoen C. Prebiotic effect of oligofructose
+            after 2 weeks supplementation with a low dose: A randomized, double-blind, placebo-controlled, cross-over
+            study. Journal of Functional Foods 2024;119:106356.
+        </li>
+        <li>
+            Vulevic J, Tzortzis G, Juric A, Gibson GR. Effect of a prebiotic galactooligosaccharide mixture (B-GOS®) on
+            gastrointestinal symptoms in adults selected from a general population who suffer with bloating, abdominal
+            pain, or flatulence. Neurogastroenterol Motil. 2018;30(11):e13440.
+        </li>
+        <li>
+            Wardlaw, G. Perspectives in Nutrition. 4<sup>th</sup> edition. USA; The McGraw-Hill Companies, Inc. 1999.
+            Wilson B, Eyice Ö, Koumoutsos I, Lomer MC, Irving PM, Lindsay JO, Whelan K. Prebiotic Galactooligosaccharide
+            Supplementation in Adults with Ulcerative Colitis: Exploring the Impact on Peripheral Blood Gene Expression,
+            Gut Microbiota, and Clinical Symptoms. Nutrients 2021;13(10):3598.
+        </li>
+        <li>
+            Xiao L, Ning J, Xu G. Application of xylo-oligosaccharide in modifying human intestinal function. Afr. J.
+            Micro. Res. 2012;6(9):2116-2119.
+        </li>
+        <li>
+            Yen CH, Kuo YW, Tseng YH, Lee MC, Chen HL. Beneficial effects of fructo-oligosaccharides supplementation on
+            fecal bifidobacteria and index of peroxidation status in constipated nursing-home residents--a
+            placebo-controlled, diet-controlled trial. Nutrition 2011;27(3):323-328.
+        </li>
+    </ul>
+
+    <h2>References reviewed</h2>
+
+    <ul>
+        <li>
+            Aachary AA, Prapulla SG. Xylooligosaccharides (XOS) as an emerging prebiotic: microbial synthesis,
+            utilization, structural characterization, bioactive properties, and applications. Comprehensive Reviews in
+            Food Science and Food Safety 2011;10(1):2-16.
+        </li>
+        <li>
+            Ahn K. The Effect of Prebiotics on Atopic Dermatitis. Allergy, Asthma &amp; Immunology Research
+            2023;15(3):271-275.
+        </li>
+        <li>
+            Al-Jubori Y, Ahmed NTB, Albusaidi R, Madden J, Das S, Sirasanagandla SR. The Efficacy of Gum Arabic in
+            Managing Diseases: A Systematic Review of Evidence-Based Clinical Trials. Biomolecules 2023;13(1):138.
+        </li>
+        <li>
+            Ali K, Niaz N, Waseem M, Ashraf W, Hussain M, Khalid MU, Tahir AB, Raza A, Khan IM. Xylooligosaccharides: A
+            comprehensive review of production, purification, characterization, and quantification. Food Res Int.
+            2025;201:115631.
+        </li>
+        <li>
+            Amin T, Amin MM, Adikari AADI, Zheng X, Ning Y, Wang B. Clinical evidence and mechanistic pathways of human
+            milk oligosaccharide supplementation for health benefits: an updated review. Front Nutr. 2025;12:1599678.
+        </li>
+        <li>
+            Araki R, Tominaga Y, Inoue R, Kita A, Yabe T. 2'-Fucosyllactose Alleviates Early Weaning-Induced
+            Anxiety-Like Behavior, Amygdala Hyperactivity, and Gut Microbiota Changes. Biol Pharm Bull.
+            2023;46(6):796-802.
+        </li>
+        <li>
+            Arnold JW, Roach J, Fabela S, Moorfield E, Ding S, Blue E, Dagher S, Magness S, Tamayo R, Bruno-Barcena JM,
+            Azcarate-Peril MA. The pleiotropic effects of prebiotic galacto-oligosaccharides on the aging gut.
+            Microbiome 2021;9(1):31.
+        </li>
+        <li>
+            Ashour MA, Fatima W, Imran M, Ghoneim MM, Alshehri S, Shakeel F. A Review on the Main Phytoconstituents,
+            Traditional Uses, Inventions, and Patent Literature of Gum Arabic Emphasizing Acacia seyal. Molecules
+            2022;27(4):1171.
+        </li>
+        <li>
+            Azcarate-Peril MA, Ritter AJ, Savaiano D, Monteagudo-Mera A, Anderson C, Magness ST, Klaenhammer TR. Impact
+            of short-chain galactooligosaccharides on the gut microbiome of lactose-intolerant individuals. Proc Natl
+            Acad Sci USA. 2017;114(3):E367-E375.
+        </li>
+        <li>
+            Azcarate-Peril MA, Roach J, Marsh A, Chey WD, Sandborn WJ, Ritter AJ, Savaiano DA, Klaenhammer TR. A
+            double-blind, 377-subject randomized study identifies Ruminococcus, Coprococcus, Christensenella, and
+            Collinsella as long-term potential key players in the modulation of the gut microbiome of lactose intolerant
+            individuals by galacto-oligosaccharides. Gut Microbes 2021;13(1):1957536.
+        </li>
+        <li>
+            Azpiroz F, Dubray C, Bernalier-Donadille A, Cardot JM, Accarino A, Serra J, Wagner A, Respondek F, Dapoigny
+            M. Effects of scFOS on the composition of fecal microbiota and anxiety in patients with irritable bowel
+            syndrome: a randomized, double blind, placebo controlled study. Neurogastroenterol Motil. 2017;29(2).
+        </li>
+        <li>
+            Babiker R, Merghani TH, Elmusharaf K, Badi RM, Lang F, Saeed AM. Effects of Gum Arabic ingestion on body
+            mass index and body fat percentage in healthy adult females: two-arm randomized, placebo controlled,
+            double-blind trial. Nutr J. 2012;11:111.
+        </li>
+        <li>
+            Babiker R, Elmusharaf K, Keogh MB, Saeed AM. Effect of Gum Arabic (Acacia Senegal) supplementation on
+            visceral adiposity index (VAI) and blood pressure in patients with type 2 diabetes mellitus as indicators of
+            cardiovascular disease (CVD): a randomized and placebo-controlled clinical trial. Lipids Health Dis.
+            2018;17(1):56.
+        </li>
+        <li>
+            Batsalova T, Georgiev Y, Moten D, Teneva I, Dzhambazov B. Natural Xylooligosaccharides Exert Antitumor
+            Activity via Modulation of Cellular Antioxidant State and TLR4. Int J Mol Sci. 2022;23(18):10430.
+        </li>
+        <li>
+            Becheanu CA, Tincu IF, Smădeanu RE, Coman OA, Coman L, Tincu RC, Păcurar D. Benefits of oligofructose and
+            inulin in management of functional diarrhoea in children - interventional study. Farmacia
+            2019;67(3):511-516.
+        </li>
+        <li>
+            Berger PK, Plows JF, Jones RB, Alderete TL, Yonemitsu C, Poulsen M, Ryoo JH, Peterson BS, Bode L, Goran MI.
+            Human milk oligosaccharide 2'-fucosyllactose links feedings at 1 month to cognitive development at 24 months
+            in infants of normal and overweight mothers. PLoS One 2020;15(2):e0228323.
+        </li>
+        <li>
+            Berger PK, Ong ML, Bode L, Belfort MB. Human Milk Oligosaccharides and Infant Neurodevelopment: A Narrative
+            Review. Nutrients 2023;15(3):719.
+        </li>
+        <li>
+            BHC 1992: Bradley PR, editor. British Herbal Compendium Volume 1: A Handbook of Scientific Information on
+            Widely Used Plant Drugs—Companion to Volume 1 of the British Herbal Pharmacopoeia. Bournemouth (GB): British
+            Herbal Medicine Association; 1992.
+        </li>
+        <li>
+            Bliss DZ, Jung HJ, Savik K, Lowry A, LeMoine M, Jensen L, Werner C, Shaffer K. Supplementation with dietary
+            fiber improves fecal incontinence. Nurs Res. 2001;50(4):203-213.
+        </li>
+        <li>
+            Bliss DZ, Savik K, Jung HJ, Whitebird R, Lowry A, Sheng X. Dietary fiber supplementation for fecal
+            incontinence: a randomized clinical trial. Res Nurs Health. 2014;37(5):367-78.
+        </li>
+        <li>
+            Bliss DZ, Stein TP, Schleifer CR, Settle RG. Supplementation with gum arabic fiber increases fecal nitrogen
+            excretion and lowers serum urea nitrogen concentration in chronic renal failure patients consuming a
+            low-protein diet. Am J Clin Nutr. 1996;63(3):392-398.
+        </li>
+        <li>
+            Brighenti F, Casiraghi MC, Canzi E, Ferrari A. Effect of consumption of a ready-to-eat breakfast cereal
+            containing inulin on the intestinal milieu and blood lipids in healthy male volunteers. European Journal of
+            Clinical Nutrition 1999;53(9):726-733.
+        </li>
+        <li>
+            Bruhwyler J, Carreer F, Demanet E, Jacobs H. Digestive tolerance of inulin-type fructans: a double-blind,
+            placebo-controlled, cross-over, dose ranging, randomized study in healthy volunteers. Int J Food Sci Nutr.
+            2009;60(2);165-175.
+        </li>
+        <li>
+            Caetano BF, de Moura NA, Almeida AP, Dias MC, Sivieri K, Barbisan LF. Yacon (Smallanthus sonchifolius) as a
+            Food Supplement: Health-Promoting Benefits of Fructooligosaccharides. Nutrients 2016;8(7):436.
+        </li>
+        <li>
+            Cao P, Wu L, Wu Z, Pan D, Zeng X, Guo Y, Lian L. Effects of oligosaccharides on the fermentation properties
+            of Lactobacillus plantarum. J Dairy Sci. 2019;102(4):2863-2872.
+        </li>
+        <li>
+            Causey JL, Feirtag JM, Gallaher DD, Tungland BC, Slavin JL. Effects of dietary inulin on serum lipids, blood
+            glucose and the gastrointestinal environment in hypercholesterolemic men. Nutrition Research
+            2000;20:191-201.
+        </li>
+        <li>
+            CFIA 2025: Canadian Food Inspection Agency. Health claims on food labels. [Accessed 2025 December 10].
+            Available from: https://inspection.canada.ca/en/food-labels/labelling/industry/health-claims#c11
+        </li>
+        <li>
+            Chen Y, Xie Y, Ajuwon KM, Zhong R, Li T, Chen L, Zhang H, Beckers Y, Everaert N. Xylo-Oligosaccharides,
+            Preparation and Application to Human and Animal Health: A Review. Front Nutr. 2021;8:731930.
+        </li>
+        <li>
+            Chen Y, Liao X, Li Y, Cao H, Zhang F, Fei B, Bao C, Cao H, Mao Y, Chen X, Gao X, Zhao W, Xu J. Effects of
+            prebiotic supplement on gut microbiota, drug bioavailability, and adverse effects in patients with
+            colorectal cancer at different primary tumor locations receiving chemotherapy: study protocol for a
+            randomized clinical trial. Trials 2023;24(1):268.
+        </li>
+        <li>
+            Clavel T, Fallani M, Lepage P, Levenez F, Mathey J, Rochet V, Sérézat M, Sutren M, Henderson G,
+            Bennetau-Pelissero C, Tondu F, Blaut M, Doré J, Coxam V. Isoflavones and functional foods alter the dominant
+            intestinal microbiota in postmenopausal women. J Nutr. 2005;135(12):2786-2792.
+        </li>
+        <li>
+            Corona L, Lussu A, Bosco A, Pintus R, Cesare Marincola F, Fanos V, Dessì A. Human Milk Oligosaccharides: A
+            Comprehensive Review towards Metabolomics. Children (Basel). 2021;8(9):804.
+        </li>
+        <li>
+            Da Silva Souza D, Tahan S, Weber TK, Araujo-Filho HB, de Morais MB. Randomized, Double-Blind,
+            Placebo-Controlled Parallel Clinical Trial Assessing the Effect of Fructooligosaccharides in Infants with
+            Constipation. Nutrients 2018;10(11):1602.
+        </li>
+        <li>
+            Dahl WJ, Wright AR, Specht GJ, Christman M, Mathews A, Meyer D, Boileau T, Willis HJ, Langkamp-Henken B.
+            Consuming foods with added oligofructose improves stool frequency: a randomised trial in healthy young
+            adults. J Nutr Sci. 2014;3:e7.
+        </li>
+        <li>
+            Davani-Davari D, Negahdaripour M, Karimzadeh I, Seifan M, Mohkam M, Masoumi SJ, Berenjian A, Ghasemi Y.
+            Prebiotics: Definition, Types, Sources, Mechanisms, and Clinical Applications. Foods 2019;8(3):92.
+        </li>
+        <li>
+            Davis LM, Martínez I, Walter J, Hutkins R. A dose dependent impact of prebiotic galactooligosaccharides on
+            the intestinal microbiota of healthy adults. Int J Food Microbiol. 2010;144(2):285-292.
+        </li>
+        <li>
+            de Luis DA, de la Fuente B, Izaola O, Aller R, Gutiérrez S, Morillo M. Double blind randomized clinical
+            trial controlled by placebo with a FOS enriched cookie on satiety and cardiovascular risk factors in obese
+            patients. Nutr Hosp. 2013;28(1):78-85.
+        </li>
+        <li>
+            Den Hond E, Geypens B, Ghoos Y. Effect of high performance chicory inulin on constipation. Nutrition
+            Research 2000;20(5):731-736.
+        </li>
+        <li>
+            Dias GS, Vieira AC, Baioni e Silva G, Simões NF, Milessi TS, Saraiva LS, Xavier MdCA, Longati AA, Rodrigues
+            MFA, Fernandes S, et al. Fructooligosaccharides: A Comprehensive Review on Their Microbial Source,
+            Functional Benefits, Production Technology, and Market Prospects. Processes 2025;13(4):1252.
+        </li>
+        <li>
+            Divyashri G, Sadanandan B, Chidambara Murthy KN, Shetty K, Mamta K. Neuroprotective Potential of
+            Non-Digestible Oligosaccharides: An Overview of Experimental Evidence. Front Pharmacol. 2021;12:712531.
+        </li>
+        <li>
+            Dou Y, Yu X, Luo Y, Chen B, Ma D, Zhu J. Effect of Fructooligosaccharides Supplementation on the Gut
+            Microbiota in Human: A Systematic Review and Meta-Analysis. Nutrients 2022;14(16):3298.
+        </li>
+        <li>
+            Drakoularakou A, Tzortzis G, Rastall RA, Gibson GR. A double-blind, placebo-controlled, randomized human
+            study assessing the capacity of a novel galacto-oligosaccharide mixture in reducing travellers' diarrhoea.
+            Eur J Clin Nutr. 2010;64(2):146-152.
+        </li>
+        <li>
+            EFSA 2022: EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA). Safety of the extension of use of
+            galacto-oligosaccharides (GOS) as a novel food in food for special medical purposes pursuant to Regulation
+            (EU) 2015/2283. EFSA Journal. 2022;20(3):e07203.
+        </li>
+        <li>
+            EFSA 2018: European Food Safety Authority. Safety of xylo-oligosaccharides (XOS) as a novel food pursuant to
+            Regulation (EU) 2015/2283. EFSA Journal 2018;16(7):e05361.
+        </li>
+        <li>
+            EFSA 2015: EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). Scientific Opinion on the
+            substantiation of a health claim related to “native chicory inulin” and maintenance of normal defecation by
+            increasing stool frequency pursuant to Article 13.5 of Regulation (EC) No 1924/2006. EFSA Journal
+            2015;13(1):3951.
+        </li>
+        <li>
+            EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee
+            for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric
+            population. Adopted September 2006. [Accessed 2025 March 28]. Available from:
+            https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf
+        </li>
+        <li>
+            Erhardt R, Steels E, Harnett JE, Taing M-W, Steadman KJ. Effects of a prebiotic formulation on the
+            composition of the faecal microbiota of people with functional constipation. Eur J Nutr. 2024;63(3):777-784.
+        </li>
+        <li>
+            ESCOP 2003: E/S/C/O/P Monographs: The Scientific Foundation for Herbal Medicinal Products. 2<sup>nd</sup> edition.
+            Exeter (GB): ESCOP, the European Scientific Cooperative on Phytotherapy in collaboration with Georg Thieme
+            Verlag and Thieme; 2003.
+        </li>
+        <li>
+            Espinosa-Andrews H, Urías-Silvas JE, Morales-Hernández N. The role of agave fructans in health and food
+            applications: A review. Trends Food Sci Technol. 2021;114:585-598.
+        </li>
+        <li>
+            Fanaro S, Marten B, Bagna R, Vigi V, Fabris C, Peña-Quintana L, Argüelles F, Scholz-Ahrens KE, Sawatzki G,
+            Zelenka R, Schrezenmeir J, de Vrese M, Bertino E. Galacto-oligosaccharides are bifidogenic and safe at
+            weaning: a double-blind randomized multicenter study. J Pediatr Gastroenterol Nutr. 2009;48(1):82-88.
+        </li>
+        <li>
+            Fernandes R, Beserra BT, Mocellin MC, Kuntz MG, da Rosa JS, de Miranda RC, Schreiber CS, Fröde TS, Nunes EA,
+            Trindade EB. Effects of Prebiotic and Synbiotic Supplementation on Inflammatory Markers and Anthropometric
+            Indices After Roux-en-Y Gastric Bypass: A Randomized, Triple-blind, Placebo-controlled Pilot Study. J Clin
+            Gastroenterol. 2016;50(3):208-217.
+        </li>
+        <li>
+            García-Gamboa R, Ortiz Basurto RI, Calderón-Santoyo M, Bravo-Madrigal J, Ruiz-Álvarez BE, Gonzáles-Avila M.
+            In vitro evaluation of prebiotic activity, pathogen inhibition and enzymatic metabolism of intestinal
+            bacteria in the presence of fructans extracted from agave: A comparison based on polymerization degree. LWT.
+            2018;92:380-387.
+        </li>
+        <li>
+            Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human
+            Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics
+            2008;30(11):2097-2101.
+        </li>
+        <li>
+            Goetze O, Fruehauf H, Pohl D, Giarrè M, Rochat F, Ornstein K, Menne D, Fried M, Thumshirn M. Effect of a
+            prebiotic mixture on intestinal comfort and general wellbeing in health. Br J Nutr. 2008;100(5):1077-1085.
+        </li>
+        <li>
+            Gonai M, Shigehisa A, Kigawa I, Kurasaki K, Chonan O, Matsuki T, Yoshida Y, Aida M, Hamano K, Terauchi Y.
+            Galacto-oligosaccharides ameliorate dysbiotic Bifidobacteriaceae decline in Japanese patients with type 2
+            diabetes. Benef Microbes. 2017;8(5):705-716.
+        </li>
+        <li>
+            González-Hernández LA, Jave-Suarez LF, Fafutis-Morris M, Montes-Salcedo KE, Valle-Gutierrez LG, Campos-Loza
+            AE, Enciso-Gómez LF, Andrade-Villanueva JF. Synbiotic therapy decreases microbial translocation and
+            inflammation and improves immunological status in HIV-infected patients: a double-blind randomized
+            controlled pilot trial. Nutr J. 2012;11:90.
+        </li>
+        <li>
+            González-Herrera SM, Simental-Mendía LE, López MG, Rocha-Guzmán NE, Rutiaga-Quiñones OM, Rodríguez-Herrera
+            R, Gamboa-Gómez CI. Effect of agave fructans on the production of short chain fatty acid in mice. Food Sci
+            Biotechnol. 2019;28(5):1493-1498.
+        </li>
+        <li>
+            Grimaldi R, Gibson GR, Vulevic J, Giallourou N, Castro-Mejía JL, Hansen LH, Leigh Gibson E, Nielsen DS,
+            Costabile A. A prebiotic intervention study in children with autism spectrum disorders (ASDs). Microbiome
+            2018;6(1):133.
+        </li>
+        <li>
+            Haskell WL, Spiller GA, Jensen CD, Ellis BK, Gates JE. Role of water-soluble dietary fiber in the management
+            of elevated plasma cholesterol in healthy subjects. Am J Cardiol. 1992;69(5):433-439.
+        </li>
+        <li>
+            Hasle G, Raastad R, Bjune G, Jenum PA, Heier L. Can a galacto-oligosaccharide reduce the risk of traveller's
+            diarrhoea? A placebo-controlled, randomized, double-blind study. J Travel Med. 2017;24(5).
+        </li>
+        <li>
+            HC 2021: List of Dietary Fibres Reviewed and Accepted by Health Canada's Food Directorate. Ottawa (ON): Food
+            Directorate; Health Canada. [Accessed 2025 December 12]. Available from:
+            https://www.canada.ca/en/health-canada/services/publications/food-nutrition/list-reviewed-accepted-dietary-fibres.html
+        </li>
+        <li>
+            Hegar B, Wibowo Y, Basrowi RW, Ranuh RG, Sudarmo SM, Munasir Z, Atthiyah AF, Widodo AD, Supriatmo, Kadim M,
+            Suryawan A, Diana NR, Manoppo C, Vandenplas Y. The Role of Two Human Milk Oligosaccharides,
+            2'-Fucosyllactose and Lacto-N-Neotetraose, in Infant Nutrition. Pediatr Gastroenterol Hepatol Nutr.
+            2019;22(4):330-340.
+        </li>
+        <li>
+            Hess JR, Birkett AM, Thomas W, Slavin JL. Effects of short-chain fructooligosaccharides on satiety responses
+            in healthy men and women. Appetite 2011;56(1):128-134.
+        </li>
+        <li>
+            Hidaka H, Hirayama M, Tokunaga T, Eida T. The effects of undigestible fructooligosaccharides on intestinal
+            microflora and various physiological functions on human health. Adv Exp Med Biol. 1990;270:105-117.
+        </li>
+        <li>
+            Hill DR, Buck RH. Infants Fed Breastmilk or 2'-FL Supplemented Formula Have Similar Systemic Levels of
+            Microbiota-Derived Secondary Bile Acids. Nutrients 2023;15(10):2339.
+        </li>
+        <li>
+            Hopkins MJ, Cummings JH, Macfarlane GT. Inter-species differences in maximum specific growth rates and cell
+            yields of bifidobacteria cultured on oligosaccharides and other simple carbohydrate sources. J Appl
+            Microbiol. 1998;85(2):381-386.
+        </li>
+        <li>
+            Huaman JW, Mego M, Manichanh C, Cañellas N, Cañueto D, Segurola H, Jansana M, Malagelada C, Accarino A,
+            Vulevic J, Tzortzis G, Gibson G, Saperas E, Guarner F, Azpiroz F. Effects of Prebiotics vs a Diet Low in
+            FODMAPs in Patients With Functional Gut Disorders. Gastroenterology 2018;155(4):1004-1007.
+        </li>
+        <li>
+            Hughes RL, Alvarado DA, Swanson KS, Holscher HD. The Prebiotic Potential of Inulin-Type Fructans: A
+            Systematic Review. Adv Nutr. 2022;13(2):492-529.
+        </li>
+        <li>
+            Ignatova I, Arsov A, Petrova P, Petrov K. Prebiotic Effects of α- and β-Galactooligosaccharides: The
+            Structure-Function Relation. Molecules 2025;30(4):803.
+        </li>
+        <li>
+            Ito M, Deguchi Y, Matsumoto K, Kimura M, Onodera N, Yajima T. Influence of galactooligosaccharides on the
+            human fecal microflora. J Nutr Sci Vitaminol (Tokyo). 1993;39(6):635-640.
+        </li>
+        <li>
+            Jackson PPJ, Wijeyesekera A, Rastall RA. Inulin-type fructans and short-chain fructooligosaccharides-their
+            role within the food industry as fat and sugar replacers and texture modifiers-what needs to be considered!
+            Food Sci Nutr. 2022;11(1):17-38.
+            JanssenDuijghuijsen L, van den Belt M, Rijnaarts I, Vos P, Guillemet D, Witteman B, de Wit N. Acacia fiber
+            or probiotic supplements to relieve gastrointestinal complaints in patients with constipation-predominant
+            IBS: a 4-week randomized double-blinded placebo-controlled intervention trial. Eur J Nutr.
+            2024;63(5):1983-1994.
+        </li>
+        <li>
+            Jeon JH, Kyung M, Jung S, Jo S, Chang MJ. Effect of xylooligosaccharide-sugar mixture on defecation
+            frequency and symptoms in young women with constipation: a randomized, double-blind, placebo-controlled
+            trial. Journal of Nutrition and Health 2015;48(1):19-29.
+        </li>
+        <li>
+            Jeroense FMD, Michel L, Zeder C, Herter-Aeberli I, Zimmermann MB. Consumption of Galacto-Oligosaccharides
+            Increases Iron Absorption from Ferrous Fumarate: A Stable Iron Isotope Study in Iron-Depleted Young Women. J
+            Nutr. 2019;149(5):738-746.
+        </li>
+        <li>
+            Jinno S, Toshimitsu T, Nakamura Y, Kubota T, Igoshi Y, Ozawa N, Suzuki S, Nakano T, Morita Y, Arima T,
+            Yamaide F, Kohno Y, Masuda K, Shimojo N. Maternal Prebiotic Ingestion Increased the Number of Fecal
+            Bifidobacteria in Pregnant Women but Not in Their Neonates Aged One Month. Nutrients 2017;9(3):196.
+        </li>
+        <li>
+            Johnstone N, Dart S, Knytl P, Nauta A, Hart K, Cohen Kadosh K. Nutrient Intake and Gut Microbial Genera
+            Changes after a 4-Week Placebo Controlled Galacto-Oligosaccharides Intervention in Young Females. Nutrients
+            2021;13(12):4384.
+        </li>
+        <li>
+            Johnstone N, Cohen Kadosh K. A randomised controlled trial of the effects of Galacto-Oligosaccharides on the
+            gut brain-axis of young females. Brain Behav Immun. 2025;129:573-584.
+        </li>
+        <li>
+            Kaplan H, Hutkins RW. Fermentation of fructooligosaccharides by lactic acid bacteria and bifidobacteria.
+            Appl Environ Microbiol. 2000;66(6):2682-2684.
+        </li>
+        <li>
+            Kaur AP, Bhardwaj S, Dhanjal DS, Nepovimova E, Cruz-Martins N, Kuča K, Chopra C, Singh R, Kumar H, Șen F,
+            Kumar V, Verma R, Kumar D. Plant Prebiotics and Their Role in the Amelioration of Diseases. Biomolecules
+            2021;11(3):440.
+        </li>
+        <li>
+            Kim JH, Yong SY, Kim SH, Baek A, Go TH, Kang DR. Randomized, Triple-Blind, Placebo-Controlled Study to
+            Evaluate the Safety of 6'-Sialyllactose in Healthy Adults. Regul. Toxicol. Pharmacol. 2022;129:105110.
+        </li>
+        <li>
+            Kim SH, Lee DH, Meyer D. Supplementation of infant formula with native inulin has a prebiotic effect in
+            formula-fed babies. Asia Pacific Journal of Clinical Nutrition 2007;16(1):172-177.
+        </li>
+        <li>
+            Kleessen B, Sykura B, Zunft H-J, Blaut M. Effects of inulin and lactose on fecal microflora, microbial
+            activity, and bowel habit in elderly constipated persons. American Journal of Clinical Nutrition
+            1997;65(5):1397-1402.
+        </li>
+        <li>
+            Ko J, Yoo C, Xing D, Chun J, Gonzalez DE, Dickerson BL, Leonard M, Jenkins V, van der Merwe M, Slupsky CM,
+            Sowinski R, Rasmussen CJ, Kreider RB. Effects of Human Milk Oligosaccharide 2'-Fucosyllactose Ingestion on
+            Weight Loss and Markers of Health. Nutrients 2024;16(19):3387.
+        </li>
+        <li>
+            Krumbeck JA, Rasmussen HE, Hutkins RW, Clarke J, Shawron K, Keshavarzian A, Walter J. Probiotic
+            Bifidobacterium strains and galactooligosaccharides improve intestinal barrier function in obese adults but
+            show no synergism when used together as synbiotics. Microbiome 2018;6(1):121.
+        </li>
+        <li>
+            Kubota T, Shimojo N, Nonaka K, Yamashita M, Ohara O, Igoshi Y, Ozawa N, Nakano T, Morita Y, Inoue Y, Arima
+            T, Chiba K, Nakamura Y, Ikegami S, Masuda K, Suzuki S, Kohno Y. Prebiotic consumption in pregnant and
+            lactating women increases IL-27 expression in human milk. Br J Nutr. 2014;111(4):625-632.
+        </li>
+        <li>
+            Kusakabe I, Ohgushi S, Yasui T, Kobayashi T. Structures of the arabinoxylo-oligosaccharides from the
+            hydrolytic products of corncob arabinoxylan by a xylanase from Streptomyces. Agric. Biol. Chem.
+            1983;47(12):2713-2723.
+        </li>
+        <li>
+            Lagkouvardos I, Intze E, Schaubeck M, Rooney JP, Hecht C, Piloquet H, Clavel T. Early life gut microbiota
+            profiles linked to symbiotic formula effects: a randomized clinical trial in European infants. Am J Clin
+            Nutr. 2023;117(2):326-339.
+        </li>
+        <li>
+            Larson R, Nelson C, Korczak R, Willis H, Erickson J, Wang Q, Slavin J. Acacia Gum Is Well Tolerated While
+            Increasing Satiety and Lowering Peak Blood Glucose Response in Healthy Human Subjects. Nutrients
+            2021;13(2):618.
+        </li>
+        <li>
+            Lin SH, Chou LM, Chien YW, Chang JS, Lin CI. Prebiotic Effects of Xylooligosaccharides on the Improvement of
+            Microbiota Balance in Human Subjects. Gastroenterol Res Pract. 2016;2016:5789232.
+        </li>
+        <li>
+            Liu F, Li P, Chen M, Luo Y, Prabhakar M, Zheng H, He Y, Qi Q, Long H, Zhang Y, Sheng H, Zhou H.
+            Fructooligosaccharide (FOS) and Galactooligosaccharide (GOS) Increase Bifidobacterium but Reduce Butyrate
+            Producing Bacteria with Adverse Glycemic Metabolism in healthy young population. Sci Rep. 2017;7(1):11789.
+        </li>
+        <li>
+            Lohner S, Jakobik V, Mihályi K, Soldi S, Vasileiadis S, Theis S, Sailer M, Sieland C, Berényi K, Boehm G,
+            Decsi T. Inulin-Type Fructan Supplementation of 3- to 6-Year-Old Children Is Associated with Higher Fecal
+            Bifidobacterium Concentrations and Fewer Febrile Episodes Requiring Medical Attention. J Nutr.
+            2018;148(8):1300-1308.
+        </li>
+        <li>
+            López-Velázquez G, Díaz-García L, Anzo A, Parra-Ortiz M, Llamosas-Gallardo B, Ortiz-Hernández AA,
+            Mancilla-Ramírez J, Cruz-Rubio JM, Gutiérrez-Castrellón P. Safety of a dual potential prebiotic system from
+            Mexican agave "Metlin® and Metlos®", incorporated to an infant formula for term newborn babies: a randomized
+            controlled trial. Rev Invest Clin. 2013;65(6):483-490.
+        </li>
+        <li>
+            López-Velázquez G, Parra-Ortiz M, Mora Ide L, García-Torres I, Enríquez-Flores S, Alcántara-Ortigoza MA,
+            Angel AG, Velázquez-Aragón J, Ortiz-Hernández R, Cruz-Rubio JM, Villa-Barragán P, Jiménez-Gutiérrez C,
+            Gutiérrez-Castrellón P. Effects of Fructans from Mexican Agave in Newborns Fed with Infant Formula: A
+            Randomized Controlled Trial. Nutrients 2015;7(11):8939-8951.
+        </li>
+        <li>
+            Luo J, Rizkalla SW, Alamowitch C, Boussairi A, Blayo A, Barry JL, Laffitte A, Guyon F, Bornet FR, Slama G.
+            Chronic consumption of short-chain fructooligosaccharides by healthy subjects decreased basal hepatic
+            glucose production but had no effect on insulin-stimulated glucose metabolism. Am J Clin Nutr.
+            1996;63(6):939-945.
+        </li>
+        <li>
+            Machado AM, da Silva NBM, de Freitas RMP, de Freitas MBD, Chaves JBP, Oliveira LL, Martino HSD, de Cássia
+            Gonçalves Alfenas R. Effects of yacon flour associated with an energy restricted diet on intestinal
+            permeability, fecal short chain fatty acids, oxidative stress and inflammation markers levels in adults with
+            obesity or overweight: a randomized, double blind, placebo controlled clinical trial. Arch Endocrinol Metab.
+            2021;64(5):597-607.
+        </li>
+        <li>
+            Mahalak KK, Firrman J, Narrowe AB, Hu W, Jones SM, Bittinger K, Moustafa AM, Liu L. Fructooligosaccharides
+            (FOS) differentially modifies the in vitro gut microbiota in an age-dependent manner. Front Nutr.
+            2023;9:1058910.
+        </li>
+        <li>
+            Man S, Liu T, Yao Y, Lu Y, Ma L, Lu F. Friend or foe? The roles of inulin-type fructans. Carbohydr Polym.
+            2021;252:117155.
+        </li>
+        <li>
+            Manicardi T, Baioni E Silva G, Longati AA, Paiva TD, Souza JPM, Pádua TF, Furlan FF, Giordano RLC, Giordano
+            RC, Milessi TS. Xylooligosaccharides: A Bibliometric Analysis and Current Advances of This Bioactive Food
+            Chemical as a Potential Product in Biorefineries' Portfolios. Foods 2023;12(16):3007.
+        </li>
+        <li>
+            Maráz A, Kovács Z, Benjamins E, Pázmándi M. Recent developments in microbial production of high-purity
+            galacto-oligosaccharides. World Journal of Microbiology and Biotechnology 2022;38(6):95.
+        </li>
+        <li>
+            Markowiak P, Śliżewska K. Effects of Probiotics, Prebiotics, and Synbiotics on Human Health. Nutrients
+            2017;9(9):1021.
+        </li>
+        <li>
+            Mei Z, Yuan J, Li D. Biological activity of galacto-oligosaccharides: A review. Front Microbiol.
+            2022;13:993052.
+        </li>
+        <li>
+            Mohamed RE, Gadour MO, Adam I. The lowering effect of Gum Arabic on hyperlipidemia in Sudanese patients.
+            Front Physiol. 2015;6:160.
+        </li>
+        <li>
+            Moore N, Chao C, Yang L-P, Storm H, Oliva-Hemker M, Saavedra JM. Effects of
+            fructo-oligosaccharide-supplemented infant cereal: a double-blind, randomized trial. British Journal of
+            Nutrition 2003;90(3):581-587.
+        </li>
+        <li>
+            Morel FB, Dai Q, Ni J, Thomas D, Parnet P, Fança-Berthon P. α-Galacto-oligosaccharides Dose-Dependently
+            Reduce Appetite and Decrease Inflammation in Overweight Adults. J Nutr. 2015;145(9):2052-2059.
+        </li>
+        <li>
+            Moro G, Arslanoglu S, Stahl B, Jelinek J, Wahn U, Boehm G. A mixture of prebiotic oligosaccharides reduces
+            the incidence of atopic dermatitis during the first six months of age. Arch Dis Child. 2006;91(10):814-819.
+        </li>
+        <li>
+            Mysonhimer AR, Holscher HD. Gastrointestinal Effects and Tolerance of Nondigestible Carbohydrate
+            Consumption. Adv Nutr. 2022;13(6):2237-2276.
+        </li>
+        <li>
+            Nagy DU, Sándor-Bajusz KA, Bódy B, Decsi T, Van Harsselaar J, Theis S, Lohner S. Effect of chicory-derived
+            inulin-type fructans on abundance of Bifidobacterium and on bowel function: a systematic review with
+            meta-analyses. Crit Rev Food Sci Nutr. 2023;63(33):12018-12035.
+        </li>
+        <li>
+            Nakamura S, Sarker SA, Wahed MA, Wagatsuma Y, Oku T, Moji K. Prebiotic effect of daily fructooligosaccharide
+            intake on weight gain and reduction of acute diarrhea among children in a Bangladesh urban slum: A
+            randomized double-masked placebo controlled study. Trop. Med. Health. 2006;34(3):125-131.
+        </li>
+        <li>
+            Nogueira-Prieto NM, Ansín-Vallejo C, Becerra-Fernández M, González-Siso MI. A review of the capacity of
+            xylooligosaccharides to modulate gut microbiota and promote health. Food Funct. 2025;16(12):4654-4672.
+        </li>
+        <li>
+            Olesen M, Gudmand-Hoyer E. Efficacy, safety, and tolerability of fructooligosaccharides in the treatment of
+            irritable bowel syndrome. Am J Clin Nutr. 2000;72(6):1570-1576.
+        </li>
+        <li>
+            Padilla-Camberos E, Barragán-Álvarez CP, Diaz-Martinez NE, Rathod V, Flores-Fernández JM. Effects of Agave
+            fructans (Agave tequilana Weber var. azul) on Body Fat and Serum Lipids in Obesity. Plant Foods Hum Nutr.
+            2018;73(1):34-39.
+        </li>
+        <li>
+            Paineau D, Payen F, Panserieu S, Coulombier G, Sobaszek A, Lartigau I, Brabet M, Galmiche JP, Tripodi D,
+            Sacher-Huvelin S, Chapalain V, Zourabichvili O, Respondek F, Wagner A, Bornet FR. The effects of regular
+            consumption of short-chain fructo-oligosaccharides on digestive comfort of subjects with minor functional
+            bowel disorders. Br J Nutr. 2008;99(2):311-318.
+        </li>
+        <li>
+            Palsson OS, Peery A, Seitzberg D, Amundsen ID, McConnell B, Simrén M. Human Milk Oligosaccharides Support
+            Normal Bowel Function and Improve Symptoms of Irritable Bowel Syndrome: A Multicenter, Open-Label Trial.
+            Clin Transl Gastroenterol. 2020;11(12):e00276.
+        </li>
+        <li>
+            Palur DSK, Pressley SR, Atsumi S. Microbial Production of Human Milk Oligosaccharides. Molecules
+            2023;28(3):1491.
+        </li>
+        <li>
+            Patel S, Goyal A. Applications of natural polymer gum arabic: a review. International Journal of Food
+            Properties 2015;18(5):986-998.
+        </li>
+        <li>
+            Pourghassem GB, Dehghan P, Aliasgharzadeh A, Asghari J-AM. Effects of high performance inulin
+            supplementation on glycemic control and antioxidant status in women with type 2 diabetes. Diabetes
+            Metabolism Journal 2013;37(2):140-148.
+        </li>
+        <li>
+            Puhlmann ML, Wegh CAM, van der Zalm SCC, Dam V, Doolan A, Meyer D, Belzer C, Vaughan EE, Benninga MA, Smidt
+            H. Inulin-induced improvements on bowel habit and gut microbiota in adults with functional constipation:
+            findings of a randomized, double-blind, placebo-controlled study. BMC Gastroenterol. 2025;25(1):806.
+        </li>
+        <li>
+            Rahman T, Sarwar PF, Potter C, Comstock SS, Klepac-Ceraj V. Role of human milk oligosaccharide metabolizing
+            bacteria in the development of atopic dermatitis/eczema. Front Pediatr. 2023;11:1090048.
+        </li>
+        <li>
+            Ramnani P, Costabile A, Bustillo AG, Gibson GR. A randomised, double- blind, cross-over study investigating
+            the prebiotic effect of agave fructans in healthy human subjects. J Nutr Sci. 2015;4:e10.
+        </li>
+        <li>
+            Ramos CI, Armani RG, Canziani MEF, Dalboni MA, Dolenga CJR, Nakao LS, Campbell KL, Cuppari L. Effect of
+            prebiotic (fructooligosaccharide) on uremic toxins of chronic kidney disease patients: a randomized
+            controlled trial. Nephrol Dial Transplant. 2019;34(11):1876-1884.
+        </li>
+        <li>
+            Rao AV. Dose-Response effects of inulin and oligofructose on intestinal bifidogenesis effects. Journal of
+            Nutrition 1999;129:1442S-1445S.
+        </li>
+        <li>
+            Rawi MH, Abdullah A, Ismail A, Sarbini SR. Manipulation of Gut Microbiota Using Acacia Gum Polysaccharide.
+            ACS Omega 2021;6(28):17782-17797.
+        </li>
+        <li>
+            Reimer RA, Soto-Vaca A, Nicolucci AC, Mayengbam S, Park H, Madsen KL, Menon R, Vaughan EE. Effect of chicory
+            inulin-type fructan-containing snack bars on the human gut microbiota in low dietary fiber consumers in a
+            randomized crossover trial. Am J Clin Nutr. 2020;111(6):1286-1296.
+        </li>
+        <li>
+            Rendón-Huerta JA, Juárez-Flores B, Pinos-Rodríguez JM, Aguirre-Rivera JR, Delgado-Portales RE. Effects of
+            different sources of fructans on body weight, blood metabolites and fecal bacteria in normal and obese
+            non-diabetic and diabetic rats. Plant Foods Hum Nutr. 2012;67(1):64-70.
+        </li>
+        <li>
+            Roberfroid MB, Van Loo JAE, Gibson GR. The bifidogenic nature of chicory inulin and its hydrolysis products.
+            Journal of Nutrition 1998;128:11-19.
+        </li>
+        <li>
+            Rossi M, Corradini C, Amaretti A, Nicolini M, Pompei A, Zanoni S, Matteuzzi D. Fermentation of
+            fructooligosaccharides and inulin by bifidobacteria: a comparative study of pure and fecal cultures. Appl
+            Environ Microbiol. 2005;71(10):6150-6158.
+        </li>
+        <li>
+            Ryan JJ, Monteagudo-Mera A, Contractor N, Gibson GR. Impact of 2'-Fucosyllactose on Gut Microbiota
+            Composition in Adults with Chronic Gastrointestinal Conditions: Batch Culture Fermentation Model and Pilot
+            Clinical Trial Findings. Nutrients 2021;13:938.
+        </li>
+        <li>
+            Salamone M, Di Nardo V. Effects of human milk oligosaccharides (HMOs) on gastrointestinal health. Front
+            Biosci (Elite Ed). 2020;12(1):183-198.
+        </li>
+        <li>
+            Savaiano DA, Ritter AJ, Klaenhammer TR, James GM, Longcore AT, Chandler JR, Walker WA, Foyt HL. Improving
+            lactose digestion and symptoms of lactose intolerance with a novel galacto-oligosaccharide (RP-G28): a
+            randomized, double-blind clinical trial. Nutr J. 2013;12:160.
+        </li>
+        <li>
+            Schoemaker MH, Hageman JHJ, Ten Haaf D, Hartog A, Scholtens PAMJ, Boekhorst J, Nauta A, Bos R. Prebiotic
+            Galacto-Oligosaccharides Impact Stool Frequency and Fecal Microbiota in Self-Reported Constipated Adults: A
+            Randomized Clinical Trial. Nutrients. 2022;14(2):309.
+        </li>
+        <li>
+            Schönknecht YB, Moreno Tovar MV, Jensen SR, Parschat K. Clinical Studies on the Supplementation of
+            Manufactured Human Milk Oligosaccharides: A Systematic Review. Nutrients 2023;15(16):3622.
+        </li>
+        <li>
+            Sharma RD. Hypoglycemic effect of gum acacia in healthy human subjects. Nutrition Research
+            1985;5(12):1437-1441.
+        </li>
+        <li>
+            Shibata R, Kimura M, Takahashi H, Mikami K, Aiba Y, Takeda H, Koga Y. Clinical effects of kestose, a
+            prebiotic oligosaccharide, on the treatment of atopic dermatitis in infants. Clin Exp Allergy
+            2009;39(9):1397-403.
+        </li>
+        <li>
+            Sjödin KS, Sjödin A, Ruszczyński M, Kristensen MB, Hernell O, Szajewska H, West CE. Targeting the gut-lung
+            axis by synbiotic feeding to infants in a randomized controlled trial. BMC Biol. 2023;21(1):38.
+        </li>
+        <li>
+            Suresh H, Zhou J, Ho V. The Short-Term Effects and Tolerability of Low-Viscosity Soluble Fibre on
+            Gastroparesis Patients: A Pilot Clinical Intervention Study. Nutrients 2021;28;13(12):4298.
+        </li>
+        <li>
+            Swanson KS, Grieshop CM, Flickinger EA, Bauer LL, Wolf BW, Chow J, Garleb KA, Williams JA, Fahey GC Jr.
+            Fructooligosaccharides and Lactobacillus acidophilus modify bowel function and protein catabolites excreted
+            by healthy humans. J Nutr. 2002;132(10):3042-3050.
+        </li>
+     
+        <li>
+            Szajewska H, Wizman Z, Abu-Zekry M, Kekez A, Braegger C, Kolacek S, Micetic-Turk D, Ruszczynski M, Vukavic
+            T. Inulin and fructo-oligosaccharides for the prevention of antibiotic-associated diarrhea in children:
+            report by the ESPGHAN working group on probiotics and prebiotics. Journal of Pediatric Gastroenterology and
+            Nutrition 2012;54(6):828-829.
+        </li>
+        <li>
+            Tahiri M, Tressol JC, Arnaud J, Bornet F, Bouteloup-Demange C, Feillet-Coudray C, Ducros V, Pépin D, Brouns
+            F, Rayssiguier AM, Coudray C. Five-week intake of short-chain fructo-oligosaccharides increases intestinal
+            absorption and status of magnesium in postmenopausal women. J Bone Miner Res. 2001;16(11):2152-2160.
+        </li>
+        <li>
+            Tandon D, Haque MM, Gote M, Jain M, Bhaduri A, Dubey AK, Mande SS. A prospective randomized, double-blind,
+            placebo-controlled, dose-response relationship study to investigate efficacy of fructo-oligosaccharides
+            (FOS) on human gut microflora. Sci Rep. 2019;9(1):5473.
+        </li>
+        <li>
+            Teuri U, Korpela R, Saxelin M, Montonen L, Salminen S. Increased fecal frequency and gastrointestinal
+            symptoms following ingestion of galacto-oligosaccharide-containing yogurt. J Nutr Sci Vitaminol (Tokyo).
+            1998;44(3):465-471.
+        </li>
+        <li>
+            Triantis V, Bode L, van Neerven RJJ. Immunological Effects of Human Milk Oligosaccharides. Front Pediatr.
+            2018;6:190.
+        </li>
+        <li>
+            Turati F, Concina F, Rossi M, Fiori F, Parpinel M, Taborelli M, Giacosa A, Crispo A, Pagan E, Rosato V,
+            Negri E, La Vecchia C. Association of prebiotic fiber intake with colorectal cancer risk: the PrebiotiCa
+            study. Eur J Nutr. 2023;62(1):455-464.
+        </li>
+        <li>
+            van den Heuvel EG, Muijs T, Brouns F, Hendriks HF. Short-chain fructo-oligosaccharides improve magnesium
+            absorption in adolescent girls with a low calcium intake. Nutr Res. 2009;29(4):229-237.
+        </li>
+        <li>
+            Van Dokkum W, Wezendonk B, Srikumar TS, van den Heuvel EGHM. Effect of nondigestible oligosaccharides on
+            large-bowel functions, blood lipid concentrations and glucose absorption in young healthy male subjects.
+            European Journal of Clinical Nutrition 1999;53(1):1-7.
+        </li>
+        <li>
+            Vandenplas Y, Berger B, Carnielli VP, Ksiazyk J, Lagström H, Sanchez Luna M, Migacheva N, Mosselmans JM,
+            Picaud JC, Possner M, Singhal A, Wabitsch M. Human Milk Oligosaccharides: 2'-Fucosyllactose (2'-FL) and
+            Lacto-N-Neotetraose (LNnT) in Infant Formula. Nutrients 2018;10(9):1161.
+        </li>
+        <li>
+            Vulevic J, Drakoularakou A, Yaqoob P, Tzortzis G, Gibson GR. Modulation of the fecal microflora profile and
+            immune function by a novel trans-galactooligosaccharide mixture (B-GOS) in healthy elderly volunteers. Am J
+            Clin Nutr. 2008;88(5):1438-1446.
+        </li>
+        <li>
+            Vulevic J, Juric A, Tzortzis G, Gibson GR. A mixture of trans-galactooligosaccharides reduces markers of
+            metabolic syndrome and modulates the fecal microbiota and immune function of overweight adults. J Nutr.
+            2013;143(3):324-331.
+        </li>
+        <li>
+            Vulevic J, Juric A, Walton GE, Claus SP, Tzortzis G, Toward RE, Gibson GR. Influence of
+            galacto-oligosaccharide mixture (B-GOS) on gut microbiota, immune parameters and metabonomics in elderly
+            persons. Br J Nutr. 2015;114(4):586-595.
+        </li>
+        <li>
+            Waligora-Dupriet AJ, Campeotto F, Nicolis I, Bonet A, Soulaines P, Dupont C, Butel MJ. Effect of
+            oligofructose supplementation on gut microflora and well-being in young children attending a day care
+            centre. Int J Food Microbiol. 2007;113(1):108-113.
+        </li>
+        <li>
+            Wallingford JC, Neve Myers P, Barber CM. Effects of addition of 2-fucosyllactose to infant formula on growth
+            and specific pathways of utilization by Bifidobacterium in healthy term infants. Front Nutr. 2022;9:961526.
+        </li>
+        <li>
+            Wan J, An L, Ren Z, Wang S, Yang H, Ma J. Effects of galactooligosaccharides on maternal gut microbiota,
+            glucose metabolism, lipid metabolism and inflammation in pregnancy: A randomized controlled pilot study.
+            Front Endocrinol (Lausanne). 2023;14:1034266.
+        </li>
+        <li>
+            Wardlaw, G. Perspectives in Nutrition. 4<sup>th</sup> edition. USA; The McGraw-Hill Companies, Inc.; 1999.
+        </li>
+        <li>
+            Watson A, Houghton D, Avery PJ, Stewart C, Vaughan E, Meyer P, de Bos Kuil M JJ, Weijs P, Brandt K. Changes
+            in stool frequency following chicory inulin consumption, and effects on stool consistency, quality of life
+            and composition of gut microbiota. Food Hydrocolloids 2019;96;688-698.
+        </li>
+        <li>
+            Whisner CM, Martin BR, Schoterman MH, Nakatsu CH, McCabe LD, McCabe GP, Wastney ME, van den Heuvel EG,
+            Weaver CM. Galacto-oligosaccharides increase calcium absorption and gut bifidobacteria in young girls: a
+            double-blind cross-over trial. Br J Nutr. 2013;110(7):1292-1303.
+        </li>
+        <li>
+            WHO 1999: World Health Organization. WHO Monographs on Selected Medicinal Plants, Volume 1. Geneva (CH):
+            World Health Organization; 1999.
+        </li>
+        <li>
+            Wiciński M, Sawicka E, Gębalski J, Kubiak K, Malinowski B. Human Milk Oligosaccharides: Health Benefits,
+            Potential Applications in Infant Formulas, and Pharmacology. Nutrients 2020;12(1):266.
+        </li>
+        <li>
+            Williams NC, Johnson MA, Shaw DE, Spendlove I, Vulevic J, Sharpe GR, Hunter KA. A prebiotic
+            galactooligosaccharide mixture reduces severity of hyperpnoea-induced bronchoconstriction and markers of
+            airway inflammation. Br J Nutr. 2016;116(5):798-804.
+        </li>
+        <li>
+            Wilms E, An R, Smolinska A, Stevens Y, Weseler AR, Elizalde M, Drittij MJ, Ioannou A, van Schooten FJ, Smidt
+            H, Masclee AAM, Zoetendal EG, Jonkers DMAE. Galacto-oligosaccharides supplementation in prefrail older and
+            healthy adults increased faecal bifidobacteria, but did not impact immune function and oxidative stress.
+            Clin Nutr. 2021;40(5):3019-3031.
+        </li>
+        <li>
+            Yan F, Tian S, Du K, Xue X, Gao P, Chen Z. Preparation and nutritional properties of xylooligosaccharide
+            from agricultural and forestry byproducts: A comprehensive review. Front Nutr. 2022;9:977548.
+        </li>
+        <li>
+            Yang J, Summanen PH, Henning SM, Hsu M, Lam H, Huang J, Tseng CH, Dowd SE, Finegold SM, Heber D, Li Z.
+            Xylooligosaccharide supplementation alters gut bacteria in both healthy and prediabetic adults: a pilot
+            study. Frontiers in physiology 2015;6:216.
+        </li>
+        <li>
+            Yap WKW, Mohamed S, Jamal MH, Meyer D, Manap YA. Changes in infant faecal characteristics and microbiota by
+            inulin supplementation. Journal of Clinical Biochemistry Nutrition 2008;43:159-166.
+        </li>
+        <li>
+            Yi W, Wang Q, Xue Y, Cao H, Zhuang R, Li D, Yan J, Yang J, Xia Y, Zhang F. Xylo-oligosaccharides improve
+            functional constipation by targeted enrichment of Bifidobacterium. Food Sci Nutr. 2023;12(2):1119-1132.
+        </li>
+        <li>
+            Zeuner B, Teze D, Muschiol J, Meyer AS. Synthesis of Human Milk Oligosaccharides: Protein Engineering
+            Strategies for Improved Enzymatic Transglycosylation. Molecules 2019;24(11):2033.
+        </li>
+        <li>
+            Zhang A, Sun L, Bai Y, Yu H, McArthur JB, Chen X, Atsumi S. Microbial production of human milk
+            oligosaccharide lactodifucotetraose. Metab Eng. 2021;66:12-20.
+        </li>
+        <li>
+            Zhang S, Li T, Xie J, Zhang D, Pi C, Zhou L, Yang W. Gold standard for nutrition: a review of human milk
+            oligosaccharide and its effects on infant gut microbiota. Microb Cell Fact. 2021;20(1):108.
+        </li>
+    </ul>
+
+    <h2>APPENDIX I - INTERNATIONAL AND DOMESTIC PREBIOTIC DEFINITIONS AND CONSIDERATIONS</h2>
+
+    <p>Various definitions and considerations for prebiotics are available in the scientific and regulatory literature.
+        The
+        following is provided as background for future refinement of the product class's definition and regulation in
+        Canada.
+    </p>
+    <p> The International Scientific Association for Probiotics and Prebiotics (ISAPP) prebiotic definition is described
+        as
+        follows: 
+      <ul>  <li>“A substrate that is selectively utilized by host microorganisms conferring a health benefit”.<br/>
+        (Hutkins et al. 2025; Gibson et al. 2017)</li></ul>
+    </p>
+
+    <p>The ISAPP definition has also been adopted by the International Probiotics Association (IPA 2025), which has
+        published a narrative scientific review on prebiotic history, challenges, and proposed standards (Saville et al.
+        2025). Notably and importantly, this includes five recommendations for prebiotic characteristics:
+     <ul>  <li> “The first characteristic is that the prebiotic compound should be resistant to digestion by the host; a
+        prebiotic
+        must reach the sipe of action intact.”</li>
+        <li>“The second characteristic for a prebiotic is that they should not be absorbed within the GI tract, so that they
+        will remain available for selective utilisation by the gastrointestinal microbes.“</li>
+        <li>“The third characteristic for a prebiotic relates to its fermentability, and the fourth (related) characteristic
+        implies that microbial fermentation must be selective.”</li>
+       <li> “The last characteristic requires that the product must have positive physiological effects, i.e. a prebiotic
+        compound must be delivered in a sufficient/appropriate dose to elicit a physiological benefit (i.e. promote
+        health).”<br/>(Saville et al. 2025)</li></ul>
+        
+    </p>
+
+    <p>For clarity, the NNHPD recommends the ISAPP definition and IPA characterization of prebiotics be followed. The
+        NNHPD
+        intends to uphold the notions of selectivity (i.e., increasing beneficial bacterial levels with limited/no
+        growth of
+        problematic/pathogenic bacteria) and beneficial physiological effects (based on human clinical evidence) in all
+        prebiotic products.
+    </p>
+    
+    <p>However, the NNHPD's approach to evidence requirements is also risk-based as outlined in the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/pathway-licensing-making-modern-health-claims.html">Pathway for Licensing
+    Natural Health Products Making Modern Health Claims</a> guidance document. This approach means that low-risk prebiotic
+    products do have a specific set of minimum requirements that would potentially not meet ISAPP's defined criteria of
+    controlled, well-conducted trials. Medium- and high-risk prebiotic product use scenario evidence requirements are
+    considered to align with the ISAPP definition's criteria and the IPA characterization requirements, however.</p>
+
+    <p>The NNHPD's approach to low-risk minimum evidence requirements for prebiotics includes corroborated preliminary
+    scientific findings (e.g. two pilot or open-label well conducted human clinical trials). This amounts to a
+    scientific <strong>likelihood</strong> of effect that is derived from small sample sizes and potentially uncontrolled data. Under
+    low-risk requirements and based on the accumulated evidence, a significant <strong>beneficial</strong> shift to the microbiota
+    composition is considered to be consistent with general physiological benefits inherent to a prebiotic compound's
+    effects. This includes helping support and maintain a healthy digestive system (e.g., microbiota utilization of the
+    prebiotic leads to fermentation and production of metabolites that are known to influence gut function by supporting
+    normal bowel movements and promoting a favourable gut environment).
+</p>
+
+    <p>Overall, this means that demonstration of a significant and selective beneficial shift to the microbiota composition
+    can be considered sufficient evidence of a beneficial physiological effect in low-risk scenarios for claims such as
+    ‘Source of Prebiotics' (e.g., supported by human clinical evidence from two pilot studies or open-label well
+    conducted human clinical trials). These minimum evidence requirements were obligatorily applied in the creation of
+    this monograph as the ingredients and prebiotic claims are considered low-risk as per the Pathway for Licensing
+    Natural Health Products Making Modern Health Claims guidance document.
+    </p>
+    <p>Considering the difference between NNHPD's low-risk minimum requirements and ISAPP's criteria, it is also recognized
+    that the term “prebiotic” is used variably across the global marketplace and the scientific literature. Some
+    publications, such as that from the Global Prebiotic Association (Deehan et al. 2024), use broader definitions that
+    don't put as much weight on “selectivity” as the ISAPP definition does. While NNHPD does not currently apply these
+    broader definitions, they are considered indicative of a need for continued discussion.
+    </p>
+    <p>Given this, the NNHPD re-iterates that it currently intends to follow the ISAPP definition of a prebiotic as best
+    possible, including within the limitations of pre-existing Canadian guidance for low-risk products. The NNHPD will
+    continue to monitor the literature for future developments.
+</p>
+<h2>Version History</h2>
+<table class="subject" >
+  <thead><tr>
+    <th>Publication date</th>
+    <th>Update type</th>
+    <th>Summary of main updates</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>2026-04-24</td>
+      <td>Initial release</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

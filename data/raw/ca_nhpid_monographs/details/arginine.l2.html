@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=arginine.l2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="063ddb28-1240-41c7-a112-149c90f0d8a6"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>L-ARGININE</h1> 
+    <div class="icon">
+            <a href="dbImages/mono_arginine-l_english.pdf" title="L-ARGININE">
+                <img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format" width="22" height="21">(PDF Version - 121 KB)</a>
+        </div>
+
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.  </p>
+    
+    <p><strong>Notes</strong></p>
+    <ul>
+    <li>Text in parentheses is additional optional information which can be included on the label at the applicant’s discretion. </li>
+    <li>The solidus (/) indicates that either term and/or statement may be selected on the label. </li>
+    </ul>
+    
+<section>    
+    <h2>Date</h2> 
+    <p>July 25, 2025</p>
+</section>    
+
+<section>
+    <h2>Proper name(s), Common name(s), Source information</h2>
+
+    <table class="subject">
+                <caption>Table 1. Proper name(s), Common name(s), Source Information</caption>
+
+                <thead>
+
+                    <tr>
+                        <th rowspan="2" scope="col">Proper name(s)</th>
+                        <th rowspan="2" scope="col">Common name(s)</th>
+                        <th colspan="2" scope="colgroup">Source Information</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Source ingredient(s)</th>
+                        <th scope="col">Preparation(s)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <ul>
+                                <li>(S)-2-Amino-5-[(aminoiminomethyl) amino] pentanoic acid</li>
+                                <li>L-Arginine</li>
+                            </ul>
+                        </td>
+
+                        <td rowspan="2">
+                            L-Arginine
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li>DL-Arginine</li>
+                                <li>L-Arginine</li>
+                                <li>L-Arginine alpha-ketoglutarate</li>
+                                <li>L-Arginine ketoisocaproic acid</li>
+                                <li>L-Arginine monohydrochloride</li>
+                            </ul>
+                        </td>
+
+                        <td>Synthetic</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+    <p>References: Proper names: NIH 2023; RSC 2023; Common name: NIH 2023; RSC 2023; Source information: NIH 2023; USP-NF 2023; BP 2009; Ph. Eur. 2007.</p>
+</section>
+
+
+<section>
+    <h2>Route of administration</h2> 
+
+    <p>Oral</p> 
+</section>
+ <section>   
+    <h2>Dosage form(s)</h2>
+
+    <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+
+    <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.. </p>
+
+</section>
+<section>
+    <h2>Use(s) or Purpose(s)</h2> 
+    <ul>
+        <li>May help support a modest improvement in exercise capacity in individuals with stable cardiovascular diseases (CVD) (Doutreleau et al. 2010; Doutreleau et al. 2006; Lim et al. 2004; Palloshi et al. 2004; Bode- Böger et al. 2003; Lekakis et al. 2002; Sydow et al. 2002; Nagaya et al. 2001; Bednarz et al. 2000; Hambrecht et al. 2000; Tangphao et al. 1999; Lerman et al. 1998; Clarkson et al. 1996; Rector et al. 1996). </li>
+        <li>L-Arginine is (a non-essential amino acid) involved in protein synthesis (Shils et al. 2006; IOM 2005; Groff and Gropper 2000). </li>
+
+    </ul>
+</section>
+
+<section>    
+    <h2>Dose(s)</h2> 
+
+    <h3>Subpopulation(s)</h3>		
+
+    <p>Adults 18 years and older</p>  
+
+    <h3>Quantity(ies)</h3>
+
+    <p><em>Improvement in exercise capacity in individuals with stable CVD </em></p>
+
+    <p>6 - 21 grams of L-Arginine, per day; Not to exceed 8 grams per single dose (Doutreleau et al. 2010; Shao and Hathcock 2008; Doutreleau et al. 2006; Evans et al. 2004: Lim et al. 2004; Palloshi et al. 2004; Bode-Bogër et al. 2003; Bednarz et al. 2000; Hambrecht et al. 2000; Lerman et al. 1998; Adams et al. 1997; Ceremużyński et al. 1997; Clarkson et al. 1996; Rector et al. 1996). </p>
+    
+    <p><em>Protein synthesis</em> </p>
+        
+    <p>0.21 - 21 grams of L-Arginine, per day; Not to exceed 8 grams per single dose (Shao and Hathcock 2008; IOM 2005; Evans et al. 2004; Bode-Bogër et al. 2003; Sydow et al. 2002). </p>
+
+    <h3>Direction(s) for use</h3>
+
+    <p>No statement required.</p>
+
+</section>
+
+<section>
+    <h2>Duration(s) of use</h2> 
+    
+    <p><em>Products providing 3 g or more of L-Arginine, per day</em> </p>
+
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 8 weeks if you have a cardiovascular disease (Salmani et al. 2021; Sydow et al. 2002; Hambrecht et al. 2000; Clarkson et al.1996; Rector et al. 1996).  </p>
+
+    <p><em>Products providing more than 9 g and up to 14 g of L-Arginine, per day </em></p>
+
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 months (De Nicola et al. 1999).  </p>
+
+    <p><em>Products providing more than 14 g of L-Arginine, per day </em></p>
+
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Tangphao et al. 1999).  </p>
+
+    <p><strong>Note:</strong> Durations of use can be combined on the label (e.g., Ask a health care practitioner for use beyond 6 months, or beyond 8 weeks if you have a cardiovascular disease).</p>
+
+ </section>   
+<section>
+    <h2>Risk information </h2>  
+
+    <h3>Caution(s) and warning(s)</h3> 
+    
+    <p><em>All products</em></p>  
+        
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you are pregnant or breastfeeding.</p>
+
+    <p><em>Improvement in exercise capacity in individuals with stable CVD </em></p>
+
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/ physician if your symptoms worsen.</p>
+    
+    <p><em>Products providing more than 0.42 g of L-Arginine, per day  </em></p>
+
+    <ul>    
+        <li>Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you have a cardiovascular disease and are attempting an increase in physical activity (Doutreleau et al. 2010; Doutreleau et al. 2006; Schulman et al. 2006; Goldman and Ausiello 2004; Nagaya et al. 2001; Bednarz et al. 2000; Ceremużyński et al. 1997; Rector et al. 1996). </li>
+        <li>Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you are taking medication for cardiovascular diseases, erectile dysfunction, and/or blood thinners (Huynh et al. 2002; Parker et al. 2002; Siani et al. 2000; Adams et al. 1995).</li>
+    </ul>
+
+
+
+    <h3>Contraindication(s)</h3> 
+    
+    <p><em>Products providing more than 9 g of L-Arginine, per day </em></p>
+
+    <p>Do not use if you have had a heart attack/myocardial infarction (Sun et al. 2009; Schulman et al. 2006; Bednarz et al. 2005). </p>
+
+    <h3>Known adverse reaction(s)</h3>  
+    
+    <p><em>Products providing more than 9 g of L-Arginine, per day </em></p>
+
+    <p>When using this product you may experience gastrointestinal discomfort/disturbances (Grimble 2007; Evans et al. 2004; IOM 2005; Clarkson et al. 1996). </p>
+    </section>
+
+<section>    
+    <h2>Non-medicinal ingredients</h2> 
+
+    <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database. </p>
+</section>
+
+<section>    
+    <h2>Storage conditions</h2>	
+
+    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+
+</section>
+
+<section>
+    <h2>Specifications</h2> 
+    <ul>
+        <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+        <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+    </ul>
+</section>
+    
+<section>    
+    <h2>EXAMPLE OF PRODUCT FACTS:</h2> 
+
+    <p>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</p>
+       <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/ARGININE_E.gif" style="width:700px">
+   </p>
+
+</section>
+
+    <section>
+        <h2>References cited</h2> 
+        <ul>
+            <li>
+            Adams MR, McCredie R, Jessup W, Robinson J, Sullivan D, Celermajer DS. Oral L-arginine improves endothelium-dependent dilatation and reduces monocyte adhesion to the endothelial cells in young men with coronary artery disease. Atherosclerosis 1997;129(2):261-269.
+            </li>
+            <li>
+            Adams MR, Forsyth CJ, Jessup W, Robinson J, Celermajer DS. Oral L-arginine inhibits platelet aggregation but does not enhance endothelium-dependent dilation in healthy young men.  Journal of the American College of Cardiology 1995;26(4):1054-1061.
+            </li>
+            <li>
+            Bednarz B, Jaxa-Chamiec T, Maciejewski P, Szpajer M, Janik K, Gniot J, Kawka-Urbanek T, Drozdowska D, Gessek J, Laskowski H. Efficacy and safety of oral L-arginine in acute myocardial infarction. Results of the multicenter, randomized, double-blind, placebo-controlled ARAMI pilot trial. Kardiol Pol. 2005;62(5):421-427.
+            </li>
+            <li>
+            Bednarz B, Wolk R, Chamiec T, Herbaczyńska-Cedro K, Winek D, Ceremużyński L. Effects of oral L-arginine supplementation on exercise-induced QT dispersion and exercise tolerance in stable angina pectoris. International Journal of Cardiology 2000;75(2-3):205-210.
+            </li>
+            <li>
+            Bode-Böger SM, Muke J, Surdacki A, Brobant G, Böger RH, Frölich J. Oral L-arginine improves endothelial function in healthy individuals older than 70 years. Vascular Medicine 2003;8(2):77-81.
+            </li>
+            <li>
+            BP 2009: British Pharmacopoeia Commission. British Pharmacopoeia, Volume II. London (GB): The Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA); 2009.
+            </li>
+            <li>
+            Ceremużyński L, Chamiec T, Herbaczyńska-Cedro K. Effect of supplemental oral L-arginine on exercise capacity in patients with stable angina pectoris. The American Journal of Cardiology 1997;80(3):331-333.
+            </li>
+            <li>
+            Clarkson P, Adams MR, Powe AJ, Donald AE, McCredie R, Robinson J, McCarthy SN, Keech A, Celermajer DS, Deanfield JE. Oral L-arginine endothelium-dependent dilation in hypercholesterolemic young adults. Journal of Clinical Investigation 1996;97(8):1989-1994.
+            </li>
+            <li>
+            De Nicola L, Bellizzi V, Minutolo R, Andreucci M, Capuano A, Garibotto G, Corso G, Andreucci VE, Cianciaruso B. Randomized, double-blind, placebo-controlled study of arginine supplementation in chronic renal failure. Kidney International 1999;56:674-684.
+            </li>
+            <li>
+            Doutreleau S, Rouyer O, Di Marco P, Lonsdorfer E, Richard R, Piquard F, Geny B. L-Arginine supplementation improves exercise capacity after a heart transplant. American Journal of Clinical Nutrition. 2010. Doi: 10.3945/ajcn.2009.27881.
+            </li>
+            <li>
+            Doutreleau S, Mettauer B, Piquard F, Rouyer O, Schaefer A, Lonsdorfer J., Beny B. Chronic L-Arginine Supplementation Enhances Endurance Exercise Tolerance in Heart Failure Patients. International Journal of Sports Medicine 2006;27(7):567-572.
+            </li>
+            <li>
+            Evans WR, Fernstrom JD, Thompson J, Morris SM Jr, Kuller LH. Biochemical responses of healthy subjects during dietary supplementation with L-arginine. Journal of Nutritional Biochemistry 2004;15(9):534-539.
+            </li>
+            <li>
+            Grimble GK. Adverse gastrointestinal effects of arginine and related amino acids. The Journal of Nutrition 2007;137(6 Suppl 2):1693S-1701S.
+            </li>
+            <li>
+            Groff J, Gropper S. Advanced Nutrition and Human Metabolism, 3rd edition. Belmont (CA): Wadsworth/Thomson Learning; 2000.
+            </li>
+            <li>
+            Hambrecht R, Hilbrich L, Erbs S, Gielen S, Fiehn E, Schoene N, Schuler. Correction of endothelial dysfunction in chronic heart failure: additional effects of exercise training and oral L-arginine supplementation. Journal of the American College of Cardiology 2000;35(3):706-713.
+            </li>
+            <li>
+            Huynh NT, Tayek JA. Oral arginine reduces systemic blood pressure in type 2 diabetes: Its potential role in nitric oxide generation. American College of Nutrition 2002;21(5):422-427.
+            </li>
+            <li>
+            IOM 2006: Otten JJ, Pitzi Hellwig J, Meyers LD, editors. Institute of Medicine Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press; 2006.
+            </li>
+            <li>
+            IOM 2005: Institute of Medicine. Panel on Dietary Reference Intakes for Electrolytes and Water, and the Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate. Washington (DC): National Academies Press; 2005.
+            </li>
+            <li>
+            Lekakis JP, Papathanassiou S, Papaioannou TG, Papamichael CM, Zakopoulos N, Kotsis V, Dagre AG, Stamatelopoulos K, Protogerou A, Stamatelopoulos SF. Oral L-arginine improves endothelial dysfunction in patients with essential hypertension. International Journal of Cardiology 2002;86(2-3):317-323.
+            </li>
+            <li>
+            Lerman A, Burnett JC, Higano ST, McKinley LJ, Holmes Jr DR. Long-term L-arginine supplementation improves small-vessel coronary endothelial function in humans. Circulation 1998;97(21):2123-2128.
+            </li>
+            <li>
+            Lim SD, Mooradian SJ, Goldberg CS, Gomez C, Crowley DC, Rocchini AP, Charpie JR. Effect of oral L-arginine on oxidant stress, endothelial dysfunction, and systemic arterial pressure in young cardiac transplant recipients. The American Journal of Cardiology 2004;94(6):828-831.
+            </li>
+            <li>
+            Nagaya N, Uematsu M, Oya H, Sato N, Sakamaki F, Kyotani S, Ueno K, Nakanishi N, Yamagishi M, Miyatake K. Short-term oral administration of L-arginine improves hemodynamics and exercise capacity in patients with precapillary pulmonary hypertension. American Journal of Respiratory and Critical Care Medicine 2001;163(4):887-891.
+            </li>
+            <li>
+            NIH 2023: National Institutes of Health. PubChem. Bethesda (MD): National Library of Medicine,  US Department of Health &amp; Human Services. [Accessed 2023 October 23]. Available from: https://pubchem.ncbi.nlm.nih.gov/
+            </li>
+            <li>
+            Palloshi A, Fragasso G, Piatti P, Monti LD, Setola E, Valsecchi G, Galluccio E, Chierchia SL, Morgonato A. Effect of oral L-arginine on blood pressure and symptoms and endothelial function in patients with systemic hypertension, positive exercise tests, and normal coronary arteries. The American Journal of Cardiology 2004;93(7):933-935.
+            </li>
+            <li>
+            Parker JO, Parker JD, Caldwell RW, Farrell B, Kaesemeyer WH. The effect of supplemental L-arginine on tolerance development during continuous transdermal nitroglycerin therapy. Journal of the American College of Cardiology 2002;39(7):1199-1203.
+            </li>
+            <li>
+            Ph. Eur. 2007: European Pharmacopoeia Commission. European Pharmacopoeia, 6th edition, Volume 1. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM); 2007.
+            </li>
+            <li>
+            Rector TS, Bank AJ, Mullen KA, Tschumperlin LK, Sih R, Pillai K, Kubo SH. Randomized, double-blind, placebo-controlled study of supplemental oral –arginine in patients with heart failure. Circulation 1996;93(12):2135-2141.
+            </li>
+            <li>
+            RSC 2023: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available from: https://merckindex.rsc.org/
+            </li>
+            <li>
+            Salmani M, Alipoor E, Navid H, Farahbakhsh P, Yaseri M, Imani H. Effect of L-arginine on cardiac reverse remodeling and quality of life in patients with heart failure. Clin Nutr. 2021;40(5):3037-3044.
+            </li>
+            <li>
+            Schulman SP, Becker LC, Kass DA, Champion HC, Terrin ML, Forman S, Ernst KV, Kelemen MD, Townsend SN, Capriotti A, Hare JM, Gerstenblith G. L-Arginine therapy in acute myocardial infarction: the vascular interaction with age in myocardial infarction (VINTAGE MI) randomised clinical trial. Journal of American Medical Association 2006;295(1):58-64.
+            </li>
+            <li>
+            Shao A, Hathcock JN. Risk assessment for the amino acids taurine, L-glutamine and L-arginine. Regulatory Toxicology and Pharmacology 2008;50:376-399.
+            </li>
+            <li>
+            Shils ME, Olson JA, Shike M, Ross AC, editors. Modern Nutrition in Health and Disease, 10th edition. Philadelphia (PA): Lippincott Williams and Wilkins; 2006.
+            </li>
+            <li>
+            Siani A, Pagano E, Iacone R, Iacoviello L, Scopacasa F, Strazzullo P. Blood pressure and metabolic changes during dietary L-arginine supplementation in humans. American Journal of Hypertension 2000;13(5):547-551.
+            </li>
+            <li>
+            Sun T, Zhou WB, Luo XP, Tang YL, Shi HM. Oral L-arginine supplementation in acute myocardial infarction therapy: a meta-analysis of randomized controlled trials. Clin Cardiol. 2009;32(11):649-652.
+            </li>
+            <li>
+            Sydow K, Schwedhelm E, Arakawa N, Bode-Böger SM, Tsikas D, Hornig B, Frölich, Böger RH.
+            ADMA and oxidative stress are responsible for endothelial dysfunction in hyperhomocyst(e)inemia: effects of L-arginine and B vitamins. Cardiovascular Research 2002;57(1):244-252.
+            </li>
+            <li>
+            Tangphao O, Chalon S, Moreno HJr, Hoffman BB, Blaschke TF. Pharmacokinetics of L-arginine during chronic administration to patients with hypercholesterolaemia. Clinical Science 1999;96:199-207.
+            </li>
+            <li>
+            USP-NF 2023: United States Pharmacopeial Convention. 2009. United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.; 2023.
+            </li>
+        </ul>
+</section>
+<section>
+    <h2>References reviewed</h2> 
+    
+        <ul>
+            <li>
+            Abel T, Knechtle B, Perret C, Eser P, von Arx P, Knecht H. Influence of chronic supplementation of arginine aspartate in endurance athletes on performance and substrate metabolism: A randomized, double-blind, placebo-controlled study. International Journal of Sports Medicine 2007;26(5):344-349.
+            </li>
+            <li>
+            Alexander JW, Metze TJ, McIntosh MJ, Goodman HR, First MR, Munda R, Cardi MA, Austin JN, Goel S, Safdar S, Greenberg N, Chen X, Woodle ES. The influence of immunomodulatory diets on transplant success and complications. Transplantation 2005;79:460-465.
+            </li>
+            <li>
+            Andrés A, Morales JM, Prega M, Campo C, Lahera V, García-Robles R, Rodicio JL, Ruilope LM. L-arginine reverses the antinatriuretic effect of cyclosporine in renal transplant patients. Nephrology Dialysis Transplantation 1997;12(7):1437-1440.
+            </li>
+            <li>
+            Becker Y, Olshevsky U, Levitt J. The role of arginine in the replication of Herpes simplex virus. The Journal of General Virology 1967;1(4):471-478.
+            </li>
+            <li>
+            Bednarz B, Jaxa-Chamiec T, Gębalska J, Herbaczyńska-Cedro K, Ceremużyński L. L-
+            Arginine supplementation prolongs duration of exercise in congestive heart failure. Kardiologia Polska 2004;60(4):348-353.
+            </li>
+            <li>
+            Bednarz B, Jaxa-Chamiec T, Maciejewski P, Szpajer M, Janik K, Gniot J, Kawka-Urbanek T, Drozdowska D, Gessek J, Laskowski H. Efficacy and safety of oral L-arginine in acute myocardial infarction. Results of multicenter, randomised, double-blind, placebo-controlled ARAMI pilot trial. Kardiologia Polska 2005;62(5):421-427.
+            </li>
+            <li>
+            Blum A, Cannon III RO, Costello R, Schenke WH, Csako G. Endocrine and lipid effects of oral L-arginine treatment in healthy postmenopausal women. The Journal of Laboratory and Clinical Medicine 2000;135(3):231-237.
+            </li>
+            <li>
+            Blum A, Hathaway L, Mincemoyer RN, Schenke WH Kirby M, Csako G, Waclawiw MA, Panza JA, Cannon III RO. Oral L-arginine in patients with coronary artery disease on medical management. Circulation 1999;101(18):2160-2464.
+            </li>
+            <li>
+            Blum A, Porat R, Rosenchein Uri, Keren G, Roth A, Laniado S, Miller H. Clinical and inflammatory effects of dietary L-arginine in patients with intractable angina pectoris. American Journal of Cardiology 1999;83(10):1488-1490.
+            </li>
+            <li>
+            Cannon RA III. Oral L-arginine (and other active ingredients) for ischemic heart disease? Journal of the American College of Cardiology 2002;39(1):46-48.
+            </li>
+            <li>
+            Carrier M, Pellerin M, Pagé PL, Searle NR, Martineau R, Caron C, Solymoss C, Pelletier LC. Can L-arginine improve myocardial protection during cardioplegic arrest? Results of phase I pilot study. The Annals of Thoracic Surgery 1998;66(1):108-112.
+            </li>
+            <li>
+            Carrier M, Pellerin M, Perrault LP, Bouchard D, Pagé P, Searle N, Lavoie J. Cardioplegic arrest with L-arginine improves myocardial protection: results of a prospective randomized clinical trial. The Annals of Thoracic Surgery 2002;73(3):837-842.
+            </li>
+            <li>
+            Cartledge JJ, Davies AM, Eardley I. A randomized double-blind placebo-controlled crossover trial of the efficacy of L-arginine in the treatment of interstitial cystitis. BJU International 2000;85(4):421-426.
+            </li>
+            <li>
+            Chen J, Wollman Y, Chernichovsky T, Iaina A, Sofer M, Matzkin H. Effect of oral administration of high-dose nitric oxide donor L-arginine in men with organic erectile dysfunction: results of a double-blind, randomized, placebo-controlled study. BJU International 1999;83(3):269-273.
+            </li>
+            <li>
+            Coman D, Yaplito-Lee J, Boneh A. New indications and controversies in arginine therapy.  2008;27(4):489-496.
+            </li>
+            <li>
+            Dangas G, Kuepper F. Restenosis: Repeat narrowing of a coronary artery. Circulation 2002;105(22):2586-2587.
+            </li>
+            <li>
+            Dinh H, Nathan L. Medroxyprogesterone acetate does not antagonize estrogen-induced increases in endothelium-dependent vasodilation: potential clinical implications. American Society for Reproductive Medicine 2002;78(1):122-127.
+            </li>
+            <li>
+            Facchinetti F, Saade GR, Neri I, Pizzi C, Longo M, Volpe A. L-Arginine supplementation in patients with gestational hypertension: a pilot study. Hypertension in Pregnancy 2007;26(1):121-130.
+            </li>
+            <li>
+            Fahs CA, Heffernan KS, Fernhall B. Hemodynamic and vascular response to resistance exercise with L-arginine. Medicine and Science in Sports and Exercise 2009;41(4):773-779.
+            </li>
+            <li>
+            Faldetta MC, Laurenti O, Desideri G, Bravi MC, De Luca O, Marinucci MC, De Mattai G, Ferri C. L-Arginine infusion decreases plasma total homocysteine concentrations through increased nitric oxide production and decreased oxidative status in type II diabetic patients. Diabetologia 2002;45(8):1120-1127.
+            </li>
+            <li>
+            Fricke O, Baecker N, Heer M, Tutlewski B, Schoenau E. The effect of L-arginine administration on muscle force and power in postmenopausal women. Clinical Physiology and Functional Imaging 2008;28(5):307-311.
+            </li>
+            <li>
+            Garhöfer G, Resh H, Lung S, Weigert G, Schmetterer L. Intravenous administration of L-arginine increases retinal and choroidal blood flow. American Journal of Ophthalmology 2005;140(1):69-76.
+            </li>
+            <li>
+            Gornik HL, Creaher MA. Arginine and endothelial and vascular health. Journal of Nutrition 2004;134(10 Suppl):2880S-2887S.
+            </li>
+            <li>
+            Griffith RS, DeLong DC, Nelson JD. Relation of arginine-lysine antagonism to herpes simplex growth in tissue culture. Chemotherapy 1981;27(3):209-213.
+            </li>
+            <li>
+            Inglis VBM. Requirement of arginine for the replication of herpes virus. The Journal of General Virology 1968;3(1):9-17.
+            </li>
+            <li>
+            Jahangir E, Handy D, Palmisano J, Loscalzo J. The effect of L-arginine and creatine on vascular function and homocysteine metabolism. Vascular Medicine 2009;14(3):239-248.
+            </li>
+            <li>
+            Kiziltepe U, Tunçtan B, Eyileten ZB, Sirlak M, Arikbuku M, Tasoz R, Uysalel A, Ozyurda U. Efficiency of L-arginine enriched cardioplegia and non-cardioplegic reperfusion in ischemic hearts. International Journal of Cardiology 2004;97(1):93-100.
+            </li>
+            <li>
+            Klotz T, Mathers MJ, Braun M, Bloch W, Engelmann U. Effectiveness of Oral L-Arginine in First-Line Treatment of Erectile Dysfunction in a Controlled Crossover Study. Urologia Internationalis 1999;63(4):220-223.
+            </li>
+            <li>
+            Lauer T, Kleinbongart P, Rath J, Schultz R, Kelm M, Rassaf T. L-Arginine preferentially dilates stenotic segments of coronary arteries thereby increasing coronary flow. Journal of Internal Medicine 2008;264(3):237-244.
+            </li>
+            <li>
+            Lebret T, Hervé JM, Gorny P, Worcel M, Botto H. Efficacy and safety of a novel combination of L-arginine glutamate and yohimbine hydrochloride: a new oral therapy for erectile dysfunction. European Urology 2002;41(6):608-613.
+            </li>
+            <li>
+            Lee J, Ryu H, Farrante RJ, Morris SM Jr, Ratan RR. Translational control of inducible nitric oxide synthase expression by arginine can explain the arginine paradox. Neuroscience 2003;100(8):4843-4848.
+            </li>
+            <li>
+            Loï C, Zazzo JF, Delpierre E, Niddam C, Neveux N, Curis E, Arnaud-Bettandier F, Cynober L. Increasing plasma glutamine in postoperative patients fed an arginine-rich immune-enhancing diet-A pharmacokinetic randomized controlled study. Critical Care Medicine 2009;37(2):501-509.
+            </li>
+            <li>
+            Loscalzo J. What we know and don’t know about L-arginine and NO. Circulation 2000;101(18):2126-2129.
+            </li>
+            <li>
+            Loscalzo J. Adverse effects of supplemental L-arginine in atherosclerosis: Consequences of methylation stress in a complex catabolism? Arteriosclerosis &amp; thrombosis and Vascular Biology 2003;23(1):3-5.
+            </li>
+            <li>
+            Lucotti P, Setola E, Monti LD, Galluccio E, Costa S, Sandoli EP, Fermo I, Rabaiotti G, Gatti R, Piatti PM. Beneficial effects of long-term oral L-arginine treatment added to a hypocaloric diet and exercise training program in obese, insulin-resistant type 2 diabetic patients. American Journal of Physiology, Endocrinology and Metabolism 2006;291(5):906-912.
+            </li>
+            <li>
+            Marchesi S, Lupattelli G, Siepi D, Roscini AR, Vaudo G, Sinzinger H, Monnarino E. Oral L-arginine administration attenuates postprandial endothelial dysfunction in young healthy males. Journal of Clinical Pharmacy and Therapeutics 2001;26(5):343-349.
+            </li>
+            <li>
+            Mariotti F, Huneau JF, Szczepanski I, Petzke KJ, Aggoun Y, Tomé D, Bonnet D. Meal amino acids with varied levels of arginine do not affect postprandial vascular endothelial function in healthy young men. The Journal of Nutrition 2007;137(6):1383-1389.
+            </li>
+            <li>
+            Martina V, Masha A, Gigliardi RV, Brocato L, Manzato E, Berchio A, Massarenti P, Settanni F, Casa LD, Bergamini S, Iannone A. Long-term N-acetylcysteine and L-arginine administration reduces endothelial activation and systolic blood pressure in hypertensive patients with type 2 diabetes. Diabetes Care 2008;31(5):940-944.
+            </li>
+            <li>
+            Maxwell AJ, Zapien MP, Pearce GL, MacCallum G, Stone PH. Randomized trial of a medical food for the dietary management of chronic stable angina. Journal of American College of Cardiology 2002;39(1):37-45.
+            </li>
+            <li>
+            Mikami T, Onuma M, Hayashi TTA. Requirement of arginine for the replication of Marek’s Disease herpes virus. The Journal of General Virology 1974;22(1):115-128.
+            </li>
+            <li>
+            Morris CR, Kuypers FA, Larkin S, Sweeters N, Simon J, Vichinsky EP, Styles LA.
+            Arginine therapy: a novel strategy to induce nitric oxide production in sickle cell disease. British Journal of Haematology 2000;111(2):498-500.
+            </li>
+            <li>
+            Morris CR, Morris SM, Hagar W, van Warmerdam J, Claster SKepka-Lenhart D, Machado L, Kuypers FA, Vichinsky EP. Arginine therapy: a new treatment for pulmonary hypertension in sickle cell disease? American Journal of Respiratory and Critical Care Medicine 2003;168(1):63-69.
+            </li>
+            <li>
+            Naito T, Irei H, Tsujimoto K, Ikeda K, Arakawa T, Koyama AH. Antiviral effect of arginine against herpes simplex virus type 1. International Journal of Molecular Medicine 2009;23(4):495-499.
+            </li>
+            <li>
+            Napoli C, Farzati B, Sica V, Iannuzzi E, Coppola G, Silvestroni A, Balestrieri ML, Florio A, Matarazzo A. Beneficial effects of autologous bone marrow cell infusion and antioxidants/L-arginine in patients with chronic critical limb ischemia. European Journal of Cardiovascular Prevention and Rehabilitation 2008;15(6):709-718.
+            </li>
+            <li>
+            Oka RK, Szuba A, Giacomini JC, Cooke JP. A pilot study of L-arginine supplementation on functional capacity in peripheral arterial disease. Vascular Medicine 2005;10:265-274.
+            </li>
+            <li>
+            Oomen CM, van Erk J, Feskens EJM, Kok FJ, Kromhout D. Arginine intake and risk of coronary heart disease mortality in elderly men. Arteriosclerosis, Thrombosis and Vascular Biology 2007;20(9):2134-2139.
+            </li>
+            <li>
+            Palloshi A, Fragasso G, Piatti P, Monti LD, Setola E, Valsecchi G, Galluccio E, Chierchia SL, Morgonato A. Effect of oral L-arginine on blood pressure and symptoms and endothelial function in patients with systemic hypertension, positive exercise tests, and normal coronary arteries. The American Journal of Cardiology 2004;93(7):933-935.
+            </li>
+            <li>
+            Parnell MM, Holst DP, Kaye DM. Augmentation of endothelial function following exercise training is associated with increased L-arginine transport in human heart failure. Clinical Science 2005;109(6):523-530.
+            </li>
+            <li>
+            Perusquía M, Villalón, Navarrete E, García GA, Pérez-Palacios G, Lemus AE.
+            Vasodilating effect of norethisterone and its 5α metabolites: a novel nongenomic action. European Journal of Pharmacology 2003;475(1-3):161-169.
+            </li>
+            <li>
+            Peters N, Freilinger T, Opherk C, Pfefferkorn T, Dichgans M. Enhanced L-arginine-induced vasoreactivity suggests endothelial dysfunction in CADASIL. Journal of Neurology 2008;255(8):1203-1208.
+            </li>
+            <li>
+            Polan ML, Hochberg RB, Trant AS, Wuh HCK. Estrogen bioassay of ginseng extract and
+            Arginmax, a nutritional supplement for the enhancement of female sexual function. Journal of Women’s Health 2004;13(4):427-430.
+            </li>
+            <li>
+            Preli RB, Potvin Klein K, Herrington DM. Vascular effects of dietary L-arginine supplementation. Atherosclerosis 2002;162(1):1-15.
+            </li>
+            <li>
+            Pretnar-Oblak J, Sabovic M, Zaletel M. Associations between systemic and cerebral endothelial impairment determined by cerebrovascular reactivity to L-arginine. Endothelium 2007;14(2):73-80.
+            </li>
+            <li>
+            Rajapakse NW, Mattson DL. Role of L-arginine in nitric oxide production in health and hypertension. Clinical and Experimental Pharmacology and Physiology 2009;36(3):249-255.
+            </li>
+            <li>
+            Ruel M, Beanlands RS, Lortie M, Chan V, Camack N, deKemp RA, Suuronen EJ, Rubens FD, DeSilva JN, Sellke FW, Steward DJ, Mesana TG. Concomitant treatment with oral L-arginine improves the efficacy of surgical angiogenesis in patients with severe diffuse coronary artery disease: The Endothelial Modulation in Angiogenic Therapy randomized clinical trial. The Journal of Thoracic and Cardiovascular Surgery 2008;135(4):762-770.
+            </li>
+            <li>
+            Rytlewski K, Olszanecki R, Lauterbach R, Grzyb A, Basta A. Effects of oral L-arginine on the foetal condition and neonatal outcome in preeclampsia: A preliminary study. Basic &amp; Clinical Pharmacology &amp; Toxicology 2006;99(2):146-152.
+            </li>
+            <li>
+            Rytlewski K, Olszanecki R, Lauterbach R, Grzyb A, Kiec-Wilk B, Dembinska-Kiec, Basta A. Effects of oral L-arginine on the pulsatility indices of umbilical artery and middle cerebral artery in preterm labor. European Journal of Obstetrics &amp; Gynecology and Reproductive Biology 2008;138(1):23-28.
+            </li>
+            <li>
+            Santos RS, Pacheco MTT, Martins RABL, Vilaverde AB, Giana HE, Baptista F, Zângaro RA. Study of the effect of oral administration of L-arginine on muscular performance in healthy volunteers: An isokinetic study. Isokinetics and Exercise Science 2002;10(3):153-158.
+            </li>
+            <li>
+            Shiraki T, Takamura T, Kajiyama A, Oka T, Saito D. Effect of short-term administration of high dose L-arginine on restenosis after percutaneous transluminal coronary angioplasty. Journal of Cardiology 2004;44(1):13-20.
+            </li>
+            <li>
+            Siasos G, Tousoulis D, Vlachopoulos C, Antoniades C, Stefanadi E, Ioakeimidis N, Andreou I, Papavassiliou AG, Stefanadis C. Short-term treatment with L-arginine prevents smoking-induced impairment of endothelial function and vascular elastic properties in young individuals. International Journal of Cardiology 2008;126(3):394-399.
+            </li>
+            <li>
+            Siasos G, Tousoulis D, Vlachopoulos C, Antoniades C, Stefanadi E, Ioakeimidis N, Zisimos K, Siasou Z, Papavassiliou AG, Stefanadis C. The impact of oral L-arginine supplementation on acute smoking-induced endothelial injury and arterial performance. American Journal of Hypertension 2009;22(6):586-592.
+            </li>
+            <li>
+            Stanislavov R, Nikolova V. Treatment of erectile dysfunction with pycnogenol and L-arginine. Journal of Sex &amp; Marital Therapy 2003;29(3):207-213.
+            </li>
+            <li>
+            Stanislavov R, Nikolova V, Rohdewald P. Improvement of erectile function with Prelox: a randomized, double-blind, placebo-controlled, crossover trial. International Journal of Impotence Research 2008;20(2):173-180.
+            </li>
+            <li>
+            Stein S, Todd P, Mahoney J. The arginine requirement for nucleocapsid maturation in Herpes simplex virus development. Canadian Journal of Microbiology 1970;16(9):851-854.
+            </li>
+            <li>
+            Swanson B, Keithley JK, Zeller JM, Sha BE. A pilot study of the safety and efficacy of supplemental arginine to enhance immune function in persons with HIV/AIDS. Nutrition 2002;18(78):688-690.
+            </li>
+            <li>
+            Tankersley RW Jr. Amino acid requirements of herpes simplex virus in human cells. Journal of Bacteriology 1963;87(3):609-613.
+            </li>
+            <li>
+            Tausoulis D, Antoniades C, Tentolouris C, Goumas G, Stefanadis C, Toutouzas P. L-Arginine in cardiovascular disease: dream or reality? Vascular Medicine 2002;7(3):203-211.
+            </li>
+            <li>
+            Watanabe G, Tomiyama H, Doba N. Effects of oral administration of L-arginine on renal function in patients with heart failure. Journal of hypertension 2000;18(2):229-234.
+            </li>
+            <li>
+            Yin W-H, Chen J-W, Tsai C, Chiang M-C, Young MS, Lin S-J. L-Arginine improves endothelial function and reduces LDL oxidation in patients with stable coronary artery disease. Clinical Nutrition 2005;24(6):988-997.
+            </li>
+        </ul>
+    </section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

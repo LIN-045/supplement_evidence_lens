@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=throat.lozenges.pastilles2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="a10524cc-84eb-41e5-ba50-63ff68530636"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'> <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+ <h1>
+    Throat Lozenges Monograph
+   </h1>
+   <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+    <a href="/home-accueil/help-aide/index-eng.php#alt">
+     alternate format help</a>
+    section.
+   </p>
+   <div class="icon">
+    <a href="dbImages/mono_throat-lozenges_english.pdf" title="Throat Lozenges Monograph">
+     <img alt="Monograph: Throat Lozenges Monograph" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+     (PDF Version - 104 KB)
+    </a>
+   </div>
+   <section aria-labelledby="date">
+    <h2 id="date">
+     Date
+    </h2>
+    <p>
+     2024-11-29
+    </p>
+    <p>
+     <strong>
+      Foreword
+     </strong>
+    </p>
+    <p>
+     This monograph is intended to replace the existing Throat lozenges Monograph of December 7, 2018. This monograph describes the requirements necessary to receive market authorization [i.e. a Drug Identification Number (DIN) or a Natural Product Number (NPN)], for throat lozenges products. The monograph identifies the permitted medicinal and non-medicinal ingredients, concentrations, indications, directions and conditions of use for these products to be market authorized without the submission to Health Canada of additional evidence. It also may contain the test methods recommended to be used to comply with the requirements of this monograph. Products which do not meet the criteria outlined in this document can apply for market authorization outside of the monograph stream.
+    </p>
+    <p>
+     Applicants are reminded that throat lozenges products, like other non-prescription drugs or natural health products, are subject to the Food and Drug Regulations or the Natural Health Products Regulations administered by the Natural and Non-prescription Health Products Directorate (NNHPD). This includes requirements related to labelling, manufacturing and product specifications. Additional information on labels, outside of those specified in the monograph, such as additional directions for use and/or non-therapeutic claims are acceptable as long as they meet the
+     <a href="https://adstandards.ca/wp-content/uploads/2020/02/Guidelines-for-Nonprescription-and-Cosmetic-Industry-EN.pdf">
+      Guidelines for the Nonprescription and Cosmetic Industry Regarding Non-therapeutic Advertising and Labelling Claims</a>, the
+     <a href="http://www.adstandards.com/en/clearance/ConsumerDrugs/Consumer-Advertising-Guidelines-for-Marketed-Health-Products-EN.pdf">
+      Guidelines for Consumer Advertising of Health products for Nonprescription drugs, Natural Health Products, Vaccines and Medical Devices</a>, and are not false, misleading or counterintuitive to the use of the product.
+    </p>
+    <p>
+     The development of this monograph is the result of a thorough review of existing regulations, guidance documents, policies and current practices within Health Canada and other leading regulatory agencies.
+    </p>
+    <p>
+     <strong>
+      Notes
+     </strong>
+    </p>
+    <ul>
+      <li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+      <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+    </ul>
+    
+   </section>
+   <section aria-labelledby="medicinalIngredient">
+    <h2 id="medicinalIngredient">
+     Medicinal Ingredients
+    </h2>
+    <p>
+     Throat lozenges products are classified as natural health products (NHPs) if they contain only ingredients from Table 1, 2 and 3. Applicants applying for an NPN can access the appropriate forms and guidance at: <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html">https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html.</a>
+    </p>
+    <p>
+     Throat lozenges products are classified as non-prescription drugs (NPDs) if they contain at least one ingredient from Table 4 and 5. Applicants applying for a DIN can access the appropriate forms and guidance at:
+     <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html">
+      https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html
+     </a>
+    </p>
+    <h2>Proper name(s), Common name(s), Source information</h2>
+    <table class="subject">
+     <caption>
+      Table 1: NHPs: Medicinal ingredients analgesic/anaesthetic
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="3" scope="col">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source ingredient(s)
+       </th>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th scope="col">
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+         alpha-Hydroxytoluene
+       </td>
+       <td>
+         Benzyl alcohol
+       </td>
+       <td>
+         Benzyl alcohol
+       </td>
+       <td>
+        N/A
+      </td>
+      <td>
+        N/A
+      </td>
+      </tr>
+      <tr>
+       <td>
+         4-Aminobenzoic acid, ethyl ester
+       </td>
+       <td>
+         Benzocaine
+       </td>
+       <td>
+        Benzocaine
+       </td>
+       <td>
+        N/A
+      </td>
+      <td>
+        N/A
+      </td>
+      </tr>
+      <tr>
+       <td>
+         2-Hydroxybenzenemethanol
+       </td>
+       <td>
+         Salicyl alcohol
+       </td>
+       <td>
+         Salicyl alcohol
+       </td>
+       <td>
+        N/A
+      </td>
+      <td>
+        N/A
+      </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          (1R,2S,5R)-rel-5-Methyl-2-(1-methylethyl)-cyclohexanol
+         </li>
+         <li>
+          (1RS,2RS,5RS)-(±)-5-Methyl-2-(1-methylethyl)cyclohexanol
+         </li>
+         <li>
+          dl-Menthol
+         </li>
+        </ul>
+       </td>
+       <td>
+        <ul>
+         <li>
+          dl-Menthol
+         </li>
+         <li>
+          Racemic Menthol
+         </li>
+        </ul>
+       </td>
+       <td>
+         dl-Menthol
+       </td>
+       <td>
+        N/A
+      </td>
+      <td>
+        N/A
+      </td>
+      </tr>
+      <tr>
+       <td rowspan="4">
+        <ul>
+          <li>(1R,2S,5R)-5-Methyl-2-(1-methylethyl)cyclohexanol</li>
+         <li>
+          (1R,2S,5R)-5-Methyl-2-(propan-2-yl)cyclohexan-1-ol
+         </li>
+         <li>
+          l-Menthol
+         </li>
+        </ul>
+       </td>
+       <td rowspan="4">
+        <ul>
+         <li>
+          l-Menthol
+         </li>
+         <li>
+          Menthol
+         </li>
+        </ul>
+       </td>
+       <td>
+         l-Menthol
+       </td>
+       <td>N/A</td>
+       <td>N/A</td>
+      </tr>
+      <tr>
+        <td>N/A</td>
+        <td><i>Mentha arvensis</i></td>
+        <td>
+          <ul>
+            <li>Herb top flowering</li>
+            <li>Herb top</li>
+            <li>Leaf</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>N/A</td>
+        <td><i>Mentha canadensis</i></td>
+        <td>Herb top</td>
+      </tr>
+      <tr>
+        <td>N/A</td>
+        <td><i>Mentha x piperita</i></td>
+        <td>
+          <ul>
+            <li>Herb top flowering</li>
+            <li>Leaf</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+       <td>
+         Phenol
+       </td>
+       <td>
+         Phenol
+       </td>
+       <td>
+         Phenol
+       </td>
+       <td>N/A</td>
+       <td>N/A</td>
+      </tr>
+     </tbody>
+    </table>
+    <table class="subject">
+     <caption>
+      Table 2: NHPs: Medicinal ingredients demulcent
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="3" scope="colgroup">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source ingredient(s)
+       </th>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th scope="col">
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+         Gelatin
+       </td>
+       <td>
+        <ul>
+         <li>
+          Gelatin
+         </li>
+         <li>
+          Partially hydrolyzed collagen
+         </li>
+        </ul>
+       </td>
+       <td>
+        Gelatin
+       </td>
+       <td>
+         N/A
+       </td>
+       <td>
+         N/A
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="7">
+         Pectin
+       </td>
+       <td rowspan="7">
+         Pectin
+       </td>
+       <td rowspan="7">
+         N/A
+       </td>
+       <td><i>Citrus aurantiifolia</i></td>
+       <td>
+        <ul>
+          <li>Fruit flesh</li>
+          <li>Fruit peel</li>
+          <li>Fruit peel inner</li>
+          <li>Fruit peel outer</li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+        <td><i>Citrus limon</i></td>
+        <td>
+          <ul>
+            <li>Fruit</li>
+            <li>Fruit peel</li>
+          </ul>
+         </td>
+      </tr>
+      <tr>
+        <td><i>Citrus maxima</i></td>
+        <td>Fruit</td>
+      </tr>
+      <tr>
+        <td><i>Citrus paradisi</i></td>
+        <td>
+          <ul>
+            <li>Fruit</li>
+            <li>Fruit peel</li>
+          </ul>
+         </td>
+      </tr>
+      <tr>
+        <td><i>Citrus reticulata </i></td>
+        <td>Fruit</td>
+      </tr>
+      <tr>
+        <td><i>Citrus sinensis</i></td>
+        <td>
+          <ul>
+            <li>Fruit</li>
+            <li>Fruit peel</li>
+          </ul>
+         </td>
+      </tr>
+      <tr>
+        <td><i>Malus domestica</i></td>
+        <td>Fruit</td>
+      </tr>
+      <tr>
+       <td>
+         <i>
+          Ulmus rubra
+         </i>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Red elm
+         </li>
+         <li>
+          Slippery elm
+         </li>
+        </ul>
+       </td>
+       <td>
+         N/A
+       </td>
+       <td>
+        <i>Ulmus rubra</i>
+       </td>
+       <td>
+         Stem bark inner<sup>1</sup>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup>1</sup>Preparation : Dry.</p>
+    <table class="subject">
+     <caption>
+      Table 3: NHPs: Complementary medicinal ingredient (safety only)<sup>1</sup> 
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="2" scope="colgroup">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th scope="col">
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+         <i>
+          Eucalyptus globulus
+         </i>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Eucalyptus essential oil
+         </li>
+         <li>
+          Eucalyptus globulus leaf essential oil
+         </li>
+        </ul>
+       </td>
+       <td>
+         <i>
+          Eucalyptus globulus
+         </i>
+       </td>
+       <td>
+         Leaf
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup id="t3fn1">1</sup>See permitted combinations.</p>
+ 
+    <table class="subject">
+     <caption>
+      Table 4: NPDs: Medicinal ingredients analgesic/anaesthetic
+     </caption>
+     <thead>
+      <tr>
+       <th scope="col">
+        Proper name(s)
+       </th>
+       <th scope="col">
+        Common name(s)
+       </th>
+       <th scope="colgroup">
+        Quantity per lozenge
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+         4-n-Butoxy-beta-(1-piperidyl)propiophenone hydrochloride
+       </td>
+       <td>
+         Dyclonine hydrochloride
+       </td>
+       <td>
+         1-3 mg
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          4-Hexyl-1,3-benzenediol
+         </li>
+         <li>
+          4-Hexylresorcinol
+         </li>
+        </ul>
+       </td>
+       <td>
+         Hexylresorcinol
+       </td>
+       <td>
+         2-4 mg
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <table class="subject">
+     <caption>
+      Table 5: NPDs: Medicinal ingredients antiseptic
+     </caption>
+     <thead>
+      <tr>
+       <th scope="colgroup">
+        Proper name(s)
+       </th>
+       <th scope="colgroup">
+        Common name(s)
+       </th>
+       <th scope="colgroup">
+        Quantity per lozenge
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+         1-Hexadecylpyridinium chloride
+       </td>
+       <td>
+         Cetylpyridinium chloride(antiseptic)
+       </td>
+       <td>
+         1-2 mg
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          1,1'-(1,10-Decanediyl)bis-(4-amino-2-methylquinolinium chloride)
+         </li>
+         <li>
+          1,1'-Decamethylenebis(4-aminoquinaldinium chloride)
+         </li>
+        </ul>
+       </td>
+       <td>
+         Dequalinium chloride (antiseptic)
+       </td>
+       <td>
+         0.25 mg
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          Dodecyldimethyl(2-phenoxyethyl)ammonium bromide
+         </li>
+         <li>
+          N,N-Dimethyl-N-(2-phenoxyethyl)-1-dodecanaminium bromide
+         </li>
+        </ul>
+       </td>
+       <td>
+         Domiphen bromide(antiseptic)
+       </td>
+       <td>
+         1.5 mg
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          4-Hexyl-1,3-benzenediol
+         </li>
+         <li>
+          4-Hexylresorcinol
+         </li>
+        </ul>
+       </td>
+       <td>
+         Hexylresorcinol (analgesic/anesthetic/antiseptic)
+       </td>
+       <td>
+         2-4 mg
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+   <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+     Route of administration
+    </h2>
+    <!-- CHECK IF ROUTE OR ROUTE(S) -->
+    <p>
+     Oral
+    </p>
+   </section>
+   <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+     Dosage form(s)
+    </h2>
+    <p>Lozenge</p>
+   </section>
+   <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+     Use(s) or Purpose(s)
+    </h2>
+    <p>
+     <strong>
+      Self-Care Framework Category I Uses or Purposes:
+     </strong>
+    </p>
+    <p><em>All products</em></p>
+    <ul>
+      <li>For temporary relief of (minor) sore throat.</li>
+      <li>Temporarily relieves/soothes (minor) sore throat.</li>
+    </ul>
+    <p><em>Products containing dl-menthol/l-menthol, phenol, hexylresorcinol, benzocaine, dyclonine hydrochloride, benzyl alcohol, salicyl alcohol</em></p>
+    <ul>
+      <li>For temporary relief of pain of (minor) sore throat.</li>
+      <li>Temporarily relieves/soothes pain of (minor) sore throat.</li>
+    </ul>
+    <p><em>Products containing slippery elm, gelatin, or pectin</em></p>
+    <ul>
+      <li>For (the) protection of irritated area in the throat.</li>
+      <li>Protects irritated areas in the throat.</li>
+    </ul>
+    <p><em>Products containing 2 - 20 mg of dl-menthol and/or l-menthol</em></p>
+    <ul>
+      <li>Helps ease/relieve nasal congestion</li>
+      <li>Makes nasal passages feel clearer</li>
+    </ul>
+    <p><em>Products containing 5 - 20 mg of dl-menthol and/or l-menthol</em></p>
+    <ul>
+      <li>For (the) temporary relief of coughs.</li>
+      <li>Temporarily relieves/soothes coughs.</li>
+    </ul>
+    <p><em>Products containing hexylresorcinol, cetylpyridinium chloride, domiphen bromide, phenol, or dequalinium chloride</em></p>
+    <p>Antiseptic</p>
+
+   </section>
+   <section aria-labelledby="dose">
+    <h2 id="dose">
+     Dose(s)
+    </h2>
+    <h3>
+     Subpopulation(s)
+    </h3>
+    <p>
+     Children 6 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older
+    </p>
+    <h3>
+     Quantity
+    </h3>
+    <h4>Natural health products</h4>
+    <table class="subject">
+      <caption>
+        Table 6: NHPs: Quantity of the medicinal ingredients including daily frequency
+      </caption>
+      <thead>
+       <tr>
+        <th>Medicinal ingredients</th>
+        <th>Methods of preparation</th>
+        <th>Quantity per lozenge</th>
+        <th>Maximum quantity/day</th>
+        <th>Maximum frequency/day</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Benzyl alcohol</td>
+          <td>N/A</td>
+          <td>100 - 500 mg</td>
+          <td>N/A</td>
+          <td>up to 8 times</td>
+        </tr>
+        <tr>
+          <td>Benzocaine</td>
+          <td>N/A</td>
+          <td>2 - 15 mg</td>
+          <td>N/A</td>
+          <td>up to 6 times</td>
+        </tr>
+        <tr>
+          <td>Salicyl alcohol</td>
+          <td>N/A</td>
+          <td>50 - 100 mg</td>
+          <td>N/A</td>
+          <td>up to 8 times</td>
+        </tr>
+        <tr>
+          <td>dl-Menthol and/or l-Menthol</td>
+          <td>N/A</td>
+          <td>2 - 20 mg</td>
+          <td>N/A</td>
+          <td>up to 16 times</td>
+        </tr>
+        <tr>
+          <td>Phenol</td>
+          <td>N/A</td>
+          <td>10 - 50 mg</td>
+          <td>300 mg</td>
+          <td>up to 8 times</td>
+        </tr>
+        <tr>
+          <td>Gelatin</td>
+          <td>N/A</td>
+          <td>2 - 100%</td>
+          <td>N/A</td>
+          <td>up to 16 times</td>
+        </tr>
+        <tr>
+          <td>Pectin</td>
+          <td>N/A</td>
+          <td>2 - 100%</td>
+          <td>N/A</td>
+          <td>up to 16 times</td>
+        </tr>
+        <tr>
+          <td>Slippery elm</td>
+          <td>Powdered*</td>
+          <td>200 - 300 mg</td>
+          <td>6 g</td>
+          <td>up to 16 times</td>
+        </tr>
+        <tr>
+          <td>Eucalyptus essential oil</td>
+          <td>Oil, Essential (water steam distillation)</td>
+          <td>0.2 - 15 mg</td>
+          <td>N/A</td>
+          <td>up to 16 times</td>
+        </tr>
+      </tbody>
+     </table>
+     <p><strong>*Note:</strong> The method of preparation 'powdered' is defined as a dried and ground preparation (= unextracted).</p>
+     <h4>Non-prescription drugs</h4>
+     <p>See tables 4 and 5 above for NPD quantities per lozenge.</p>
+
+    <h3>
+     Permitted combinations:
+    </h3>
+    <p>
+      The concentration of each medicinal ingredient per lozenge must not exceed its maximum value as listed in Tables 4, 5 and 6 above (e.g., 20 mg total dl-menthol/l-menthol + 15 mg eucalyptus essential oil).
+    </p>
+    <ul>
+     <li>
+      dl-menthol/l-menthol + eucalyptus essential oil
+     </li>
+     <li>
+      dl-menthol/l-menthol + hexylresorcinol
+     </li>
+     <li>
+      benzocaine + cetylpyridinium chloride
+     </li>
+     <li>
+      benzocaine + dl-menthol/l-menthol
+     </li>
+     <li>
+      benzocaine + phenol
+     </li>
+     <li>
+      1 demulcent+ 1 anaesthetic/analgesic
+     </li>
+     <li>
+      1 demulcent + 1 antiseptic
+     </li>
+    </ul>
+    <h3>
+     Directions for use
+    </h3>
+
+    <p><i>Products containing dl-menthol/l-menthol, eucalyptus essential oil, gelatin, pectin or slippery elm</i></p>
+    <p>Dissolve 1 lozenge slowly in the mouth as needed.</p>
+
+    <p><i>Products containing hexylresorcinol, benzyl alcohol, dyclonine hydrochloride,  cetylpyridinium chloride, domiphen bromide, dequalinium, salicyl alcohol or phenol</i></p>
+    <p>Dissolve 1 lozenge slowly in the mouth every 2 hours as needed.</p>
+
+    <p><i>Products containing benzocaine</i></p>
+    <ul>
+      <li>Allow product to dissolve slowly in the mouth.</li>
+      <li>Do not bite, chew or swallow whole. </li>
+      <li>May be repeated every 2 hours as needed (or as directed by a health care practitioner/health care provider/health care professional/doctor/physician) (USP DI 2006; US FDA 1994).</li>
+      <li>Use the smallest amount possible to achieve desired result.</li>
+      <li>Children under 12 years of age should be supervised by an adult in the use of this product (US FDA 1994).</li>
+    </ul>
+
+
+   </section>
+   <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+     Duration(s) of Use
+    </h2>
+
+    <p><i>Products containing benzocaine</i></p>
+    <p>For occasional use only.</p>
+
+   </section>
+   <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+     Risk Information
+    </h2>
+    <h3>
+     Caution(s) and warning(s)
+    </h3>
+    <p><i>All products</i></p>
+    <p>Keep out of reach of children. In case of overdose, call a poison control centre or get medical help right away.</p>
+
+    <p><i>Products including claim for the temporary relief of (minor) sore throat and/or temporary relief of pain of (minor) sore throat and/or irritated throat (except for products containing benzocaine)</i></p>
+    <p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if sore throat worsens or persists for more than 2 days.</p>
+
+    <p><i>Products including claim for the temporary relief of coughs</i></p>
+    <p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if cough worsens and persists for more than 7 days, or is accompanied by a fever.</p>
+
+    <p><i>Products containing ingredients in Tables 4 or 5</i></p>
+    <p>Ask a doctor/physician/health care practitioner/health care provider/health care professional before use if you are pregnant or breastfeeding.</p>
+
+    <p><i>Products containing benzocaine</i></p>
+    <ul>
+      <li>When using this product do not chew gum or food while numbness persists (USP DI 2006; CPhA 1996).</li>
+      <li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if sore throat is severe, persists for more than 2 days, or is accompanied by or followed by other symptoms such as fever, headache, rash, swelling, nausea, or vomiting (Pray 2006; USP DI 2006; US FDA 1994).</li>
+    </ul>
+
+    <h3>
+     Contraindication(s)
+    </h3>
+    <p><i>Products containing benzocaine</i></p>
+    <p>Do not use if you are allergic to benzocaine.</p>
+
+    <h3>
+     Known adverse reaction(s)
+    </h3>
+    <p><i>Products containing benzocaine</i></p>
+    <ul>
+      <li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if the following symptoms appear: weakness, confusion, headache, difficulty breathing and/or pale, gray or blue coloured skin. These symptoms may be signs of methemoglobinemia, a rare disorder, which may appear up to 2 hours after use (US FDA 2018; US FDA 2011a,b; HC 2006).</li>
+      <li>Stop use if hypersensitivity/allergy occurs (US FDA 1994).</li>
+    </ul>
+   
+   </section>
+   <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+     Non-medicinal ingredients
+    </h2>
+    <p>
+     Ingredients must be chosen from the current
+     <a href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">Natural Health Products Ingredients Database (NHPID)</a>
+     and must meet the limitations outlined in that database, the Food and Drug Regulations (FDR), and the current <a href="https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html">Cosmetic Ingredient Hotlist</a>, when relevant.
+    </p>
+   </section>
+   <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+     Storage conditions
+    </h2>
+    <p>
+      Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations or the Food and Drug Regulations</em>.
+    </p>
+   </section>
+   <section aria-labelledby="specifications">
+    <h2 id="specifications">
+     Specifications
+    </h2>
+    <p>
+     This monograph describes those requirements that are specific to this class of non-prescription drugs and to natural health products. Any change to the manufacturing process that impacts the safety and efficacy of the ingredients, such as the use of novel technology (e.g. nanotechnology), requires supporting data and will be reviewed outside the monograph.
+    </p>
+    <p>
+     <i>
+      For products containing Table 1, 2 and 3 NHP medicinal ingredients only:
+     </i>
+    </p>
+    <p>
+     The finished product specifications must be established in accordance with the requirements described in the NNHPD
+     <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html">Quality of Natural Health Products Guide</a>. The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </p>
+    <p>
+     <i>
+      For products containing Table 4 and 5 NPD medicinal ingredients:
+     </i>
+    </p>
+    <p>
+     Requirements described in the Regulations to the Food and Drugs Act must be met.
+    </p>
+    <h3>For products containing Table 1, 2 and 3 NHP medicinal ingredients only:</h3>
+
+    <section aria-labelledby="exampleOfProductFacts">
+      <h2 id="exampleOfProductFacts">EXAMPLES OF PRODUCT FACTS:</h2>
+
+      <p><strong>Consult the Guidance Document, <a
+                  href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+                  Labelling of Natural Health Products</a> for more details.</strong>
+      <p>
+      <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/THROAT_LOZENGE_E1.gif" alt="Product Facts Table"
+              style="width:700px"></p>
+
+              <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/THROAT_LOZENGE_E2.gif" alt="Product Facts Table"
+                style="width:700px"></p>
+  </section>
+
+    <h3>For products containing Table 4 and 5 NPD medicinal ingredients:</h3>
+    <p>
+     <h2>
+      DRUG FACTS TABLES (Format Optional for Self-Care Category I)
+     </h2>
+    </p>
+    <p class="alignCenter">
+     <img alt="Drug Facts Table" src="/nhpid-bdipsn/dbImages/DrugFactsCetyl.gif" style="width:700px"/>
+    </p>
+    <p class="alignCenter">
+     <img alt="Drug Facts Table" src="/nhpid-bdipsn/dbImages/DrugFactsDequ.gif" style="width:700px"/>
+    </p>
+    <p class="alignCenter">
+     <img alt="Drug Facts Table" src="/nhpid-bdipsn/dbImages/DrugFactsDomi.gif" style="width:700px"/>
+    </p>
+    <p class="alignCenter">
+     <img alt="Drug Facts Table" src="/nhpid-bdipsn/dbImages/DrugFactsDycl.gif" style="width:700px"/>
+    </p>
+    <p class="alignCenter">
+     <img alt="Drug Facts Table" src="/nhpid-bdipsn/dbImages/DrugFactsHexy.gif" style="width:700px"/>
+    </p>
+   </section>
+   <section aria-labelledby="references">
+    <h2 id="references">
+     References
+    </h2>
+    <ul>
+     <li>
+      Compendium of therapeutics for minor ailments (CTMA). Power B et al., editors. Canadian Pharmacists Association ; 2016
+     </li>
+     <li>
+      Compendium of products for minor ailments (CPMA). Power B, et al., editors. Canadian Pharmacists Association ; 2016
+     </li>
+     <li>CPhA 1996: Carruthers-Czyzewski P, Gillis C, Letwin D, editors. Nonprescription Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmaceutical Association; 1996.</li>
+     <li>
+      Federal Register vol 47, No 101 May 25, 1982. pp. 22779-22905, Over the Counter Oral Healthcare and Discomfort Drugs, Establishment of a Monograph.
+     </li>
+     <li>
+      Federal Register vol 53, No 17, January 27, 1988. pp. 2457-2461, Oral Healthcare Products for Over the Counter Human Use, Proposed Rules.
+     </li>
+     <li>
+      Federal Register vol 52, No 155, August 12, 1987. pp. 30045-30057, Final Monograph for Over the Counter Antitussive Drug Products.
+     </li>
+     <li>
+      Federal Register vol 55, No 192, October 3, 1990. pp. 40381-40383, as above.
+     </li>
+     <li>
+      Federal Register vol 41, No 176, September 9, 1976. pp. 38405-38424, Cough and Cold, Allergy, Bronchodilator and Antihistamine Products for Over the Counter Use.
+     </li>
+     <li>
+      HC 2006: Health Canada advises Canadians of health risks involved with using benzocaine products. About Health Canada. [Accessed 2024 January 22]. Available from: https://www.canada.ca/en/news/archive/2006/11/health-canada-advises-canadians-health-risks-involved-using-benzocaine.html</li>
+     <li>HC 1989: Health Canada. Third Report of the Expert Advisory Committee, Nonprescription Cough Cold Remedies, Ministry of National Health and Welfare, 1989. pp. 4-9.</li>
+      <li>
+      Krinsky DL, Ferreri SP, Hemstreet B, Hume AL, Newton GD, Rollins CJ, Tietze KJ,  Handbook of Nonprescription Drugs: An interactive approach for Self-Care, 19th edition. Washington (DC): American Pharmaceutical Association; 2017
+     </li>
+     <li>Pray WS. Non-Prescription Product Therapeutics. 2nd edition. New York (NY): Lippincott Williams & Wilkins; 2006.</li>
+     <li>
+      Principles and Practice of Disinfection, Preservation and Sterilisation, edited by AD Russell, WB Hugo and GAJ Ayliffe, 1982. Blackwell Scientific Publications.
+     </li>
+     <li>
+      Remington: The Science and Practice of Pharmacy; 22nd edition. Philadelphia, PA; Pharmaceutical Press 2012
+     </li>
+     <li>Sweetman SC, editor. Martindale: The Complete Drug Reference, 39th edition.  Grayslake (IL): Pharmaceutical Press; 2017.</li>
+     <li>US FDA 2018: FDA Drug Safety Communication: Risk of serious and potentially fatal blood disorder prompts FDA action on oral over-the-counter benzocaine products used for teething and mouth pain and prescription local anesthetics 05-23-2018. [Accessed 2019 June 24]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/risk-serious-and-potentially-fatal-blood-disorder-prompts-fda-action-oral-over-counter-benzocaine</li>
+     <li>US FDA 2011a: FDA continues to receive reports of a rare, but serious and potentially fatal adverse effect with the use of benzocaine sprays for medical procedures 04-07-2011. [Accessed 2024 January 22]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-continues-receive-reports-rare-serious-and-potentially-fatal</li>
+     <li>US FDA 2011b: FDA Drug Safety Communication: Reports of a rare, but serious and potentially fatal adverse effect with the use of over-the-counter (OTC) benzocaine gels and liquids applied to the gums or mouth 04-07-2011. [Accessed 2024 January 22]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-reports-rare-serious-and-potentially-fatal-adverse-effect-use-over#:~:text=1%20Labels%20of%20marketed%20benzocaine%20products%20currently%20do,products%20out%20of%20reach%20of%20children.%20More%20items.</li>
+     <li>US FDA 1994: US Department of Health and Human Services, Food and Drug Administration. 21 CFR Parts 356. Oral Health Care Drug Products for Over-the-Counter Human Use; Tentative Final Monograph for Oral Antiseptic Drug Products. [Accessed 2024 January 22]. Available from: https://www.federalregister.gov/documents/1994/02/09/94-2262/oral-health-care-drug-products-for-over-the-counter-human-use-tentative-final-monograph-for-oral</li>
+     <li>USP DI 2006: Drug Information for the Health Care Professional. 26th edition, Volume 1. Greenwood Village (CO): Thomson Micromedex; 2006.</li>
+    </ul>
+   </section>
+   <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

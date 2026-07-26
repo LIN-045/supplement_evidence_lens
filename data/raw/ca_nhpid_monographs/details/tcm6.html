@@ -1,0 +1,4008 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=tcm6\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="b1072ca7-40d4-41d4-bf41-d39e6bd6cb72"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Traditional Chinese Medicine Ingredients (TCMI)</h1>
+	<div class="icon">
+		<a href="dbImages/mono_traditional-chinese-medicine-ingredients_english.pdf" title="Monograph: Traditional Chinese Medicine Ingredients (TCMI)"><img alt="Traditional Chinese Medicine Ingredients (TCMI)" style="position:relative; top:-2px" src="images/pdf&#95;big.gif" height="21" width="22"/>(PDF Version - 258 K)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>By submitting a web-based PLA form referencing this monograph to the Natural and Non-Prescription Health Products Directorate (NNHPD), the applicant is attesting that the product will fully comply with the recommended conditions of use outlined in this monograph, including the conditions found in the Traditional Chinese Medicine (TCM) referenced texts (those provided in the reference section below) when more restrictive and/or not specified in this monograph. The conditions of use include methods of preparations, source materials, doses, directions for use, durations of use, combinations of medicinal ingredients, risk statements, and the theory of TCM.</li>
+			<li>All ingredients on this monograph are pharmacopoeial ingredients and all pharmacopoeial ingredients must be prepared in accordance with the most recent edition of an accepted pharmacopoeia (e.g., the Pharmacopoeia of the People&apos;s Republic of China). Ingredients not prepared according to pharmacopoeial standards are not supported by this monograph.</li>
+			<li>Any substitution of different species, subspecies or variety (i.e. proper names), despite the same common name and/or pharmacopoeial name, is considered fundamental change and not an amendment. Those products with different proper names will require a separate product licence (NPN). For example, for Gan cao, if a NPN was obtained with the proper name <em>Glycyrrhiza glabra</em>, the proper name cannot be substituted with <em>Glycyrrhiza inflata</em> even if captured under the same pharmacopoeial name (Radix et Rhizoma Glycyrrhiza). Another NPN should be obtained for <em>Glycyrrhiza inflata</em> - Gan cao.</li>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	<p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong>
+		<ul>
+			<li>Stimulant laxative and/or diuretic ingredients from Table 2 (Appendix I) cannot be combined with any other laxative and/or diuretic ingredients at Class II since the dose information is not captured by this monograph. These combinations may be submitted as a Class III application.</li>
+			<li>Any combinations of TCM ingredients or TCM ingredients with non-TCM ingredients with potential additive glucose modifying effects and/or blood pressure-lowering effects and/or sedative effects should be submitted as a Class III application.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>May 29, 2026</p>
+	</section>
+
+	<section aria-labelledby="medicinalIngredients">
+		<h2 id="medicinalIngredients">Medicinal Ingredients</h2>
+			<ul>
+				<li>Refer to <a href="#ref-1">Table 1</a> in Appendix I for lists of general medicinal ingredients.</li>
+				<li>Refer to <a href="#ref-2">Table 2</a> in Appendix I for lists of medicinal ingredients with diuretic or stimulant laxative properties.</li>
+				<li>Refer to <a href="#ref-3">Table 3</a> in Appendix I for medicinal ingredients that are only allowable when prepared/used according to the specifications/comments outlined in the Natural Health Product Ingredients Database (NHPID).</li>
+				<li>Refer to <a href="#ref-4">Table 4</a> in Appendix I for medicinal ingredients that are only allowable for topical use.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="properNameAndCommonName">
+		<h2 id="properNameAndCommonName">Proper name(s) and Common name(s)</h2>
+			<p>Refer to <a href="#AppI">Appendix I</a>, Tables 1 to 4, for lists of acceptable proper names and common names.</p>
+	</section>
+
+	<section aria-labelledby="sourceInformation">
+		<h2 id="sourceInformation">Source information</h2>
+			<p>As per NHPID.</p>
+				<p><strong>Note:</strong> The source material selected for a medicinal ingredient on the PLA form must correspond to its proper name. For example, a product including Radix et Rhizoma Glycyrrhizae / Gan cao with the proper name Glycyrrhiza glabra must specify Glycyrrhiza glabra as its source material. If the product includes multiple Glycyrrhiza species as source materials for Rhizoma Glycyrrhizae / Gan cao, these are to be represented as separate medicinal ingredients on the PLA form and label.</p>
+	</section>
+
+	<section aria-labelledby="brandName">
+		<h2 id="brandName">Brand name(s)</h2>
+			<p>The brand name(s) must not imply or refer to any specific use, disease, disorder, condition or symptom.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route(s) of administration</h2>
+			<ul>
+				<li>Oral</li>
+				<li>Topical</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral or topical route of administration are indicated in the dosage form drop-down list of the web-based Product Licence Application form.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><em>Single ingredient products prepared as per a TCM referenced text listed in this monograph OR products whose combination of ingredients and preparation is identical to a base formula in the TCM referenced text listed in this monograph:</em></p>
+				<p>Remedy/Product/Preparation based on the theory of Traditional Chinese Medicine.</p>
+			<p><em>Products whose combination of ingredients and/or preparation is not identical to a base formula in the TCM referenced text listed in this monograph:</em></p>
+				<p>Combination of Traditional Chinese Medicine Ingredients.</p>
+			<h3>Combination rules</h3>
+				<p><em>(Combination of ingredients not supported by this monograph may be submitted as a Class III application)</em>
+					<ul>
+						<li>Stimulant laxative ingredients from Table 2 (Appendix I) may not be combined together and/or with diuretics and/or with the medicinal ingredient Gan cao or Zhi gan cao (<em>Glycyrrhiza glabra, G. inflata, G. uralensis</em>) due to potential of electrolyte imbalance.</li>
+						<li>Not more than 1 diuretic from Table 2 (Appendix I) may be combined with the medicinal ingredient Gan cao or Zhi gan cao due to potential of electrolyte imbalance.</li>
+						<li>Not more than 3 diuretics from Table 2 (Appendix I) may be combined together.</li>
+						<li>Ingredients indicated as mutually incompatible or antagonistic in the TCM referenced texts should not be combined.</li>
+					</ul>
+				</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<ul>
+					<li>The quantity(ies) of medicinal ingredient(s) must not exceed the maximum daily dose specified by TCM referenced texts listed in this monograph, taking into account potential additive effects between ingredients with similar actions or properties.</li>
+					<li>Acute (high-dose) uses described in TCM reference texts are not permitted where such dose are associated with the treatment of serious conditions or an increased risk to health, in accordance with the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/pathway-licensing-traditional-medicines.html">Pathway for Licensing Natural Health Products used as Traditional Medicines</a>.</li>
+					<li>Products providing more than 1 g of <em>Piper longum</em> are excluded from this monograph.</li>
+					<li>For topical products:
+						<ul>
+							<li>The quantity of the medicinal ingredient should be entered as a percentage (%) in the finished product. Where the medicinal ingredient is an extract (e.g., extract dry, decoction, decoction concentrate), the extract ratio and quantity crude equivalent (QCE) should both be manually entered as the PLA form cannot adequately calculate the extract ratio from the medicinal ingredient quantity and QCE. The QCE should reflect the QCE that is present in 1 g (or mL) of the finished product.</li>
+							<li>On the PLA form, quantities can be expressed as percentage weight by weight (% w/w), percentage weight by volume (% w/v) or percentage volume by volume (% v/v), depending on the product formulation. On the product label, quantities can also be expressed in other equivalent concentration units (e.g., mg/mL).</li>
+						</ul>
+					</li>
+				</ul>
+			<h3>Direction(s) for use</h3>
+				<p><em>All products</em></p>
+					<p>Use/Take as directed by a health care practitioner/health care provider/health care professional/doctor/physician.<sup><a href="#r1" style="text-decoration: none;">1</a></sup><br/>And<br/>Any additional direction of use statement as specified by referenced texts.</p>
+					<p><strong><sup id="r1">1</sup> Note:</strong> If the directions of use and duration of use for the product are specified, the direction of use statement &lsquo;Use/Take as directed by a health care practitioner/health care provider/health care professional/doctor/physician&rsquo; can be replaced on the label to a specific statement followed by &lsquo;or as directed by a health care practitioner&rsquo; (e.g. Take X scoop(s) of granules, X time(s) per day or as directed by a health care practitioner. Mix in warm water. Ask a health care practitioner for use beyond X weeks). If the direction for use and the duration of use are not specified, the general direction of use &lsquo;Use/Take as directed by a health care practitioner&rsquo; is required.</p>
+			<h3>Method(s) of preparation</h3>
+				<ul>
+					<li>The method of preparation of a medicinal ingredient must be consistent with preparations and methods of processing used in the TCM practice, be outlined in a TCM referenced text listed in this monograph and included in the NHPID for this ingredient.</li>
+					<li>When the reference dosage is for a powder, the ingredient may be present as a powder or the dose could be extrapolated for a hydroethanolic extract.</li>
+					<li>When the reference dosage is for a decoction, the ingredient must be present as a decoction or decoction concentrate. The dose provided by the TCM referenced texts is always associated with a decoction when not further specified.</li>
+					<li>Where the preparation method utilizes a solvent, the same solvent must be used.</li>
+				</ul>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p><em>Oral products containing stimulants laxatives from Table 2</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 7 days.</p>
+			<p><em>Oral products containing Herba Ephedra</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 7 days (NNHPD Ephedra monograph).</p>
+			<p><em>Oral products containing any Glycyrrhiza species</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks (NNHPD Licorice monograph).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em></p>
+					<ul>
+						<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen, or if new symptoms develop.</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking prescription medications.</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have serious or major conditions, any type of acute infection, deficiency or excess.</li>
+					</ul>
+					<p>And</p>
+					<p>Any additional risk statement not covered by the above statements as specified by referenced texts.</p>
+				<p><em>Products containing any Angelica species</em></p>
+					<p>When using this product avoid exposure to the sun.</p>
+				<p><em>All topical products</em></p>
+					<p>For external use only.</p>
+				<p><em>Mel (Apis mellifera) &amp; Radix et Rhizoma Glycyrrhizae Praeparata cum Melle (Glycyrrhiza glabra, Glycyrrhiza inflata, Glycyrrhiza uralensis)</em></p>
+					<p>This product contains honey.</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>All products</em></p>
+					<p>Do not use if you are pregnant or breastfeeding.<br/>And<br/>Any additional risk statement not covered by the above statement as specified by referenced texts.</p>
+				<p><em>Oral products containing two or more diuretics from Table 2 (total QCE (Quantity Crude Equivalent): > 100 mg/day for powdered and ethanolic extracts or > 300 mg/day for decoction and decoction concentrate)</em></p>
+					<p>Do not use if you have heart disease, high or low blood pressure, kidney or liver disorder, diabetes or edema (swelling of hands, face and feet) or are taking other products containing diuretics.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p><em>All products</em></p>
+					<p>As specified by referenced texts.</p>
+				<p><em>Oral products containing any diuretic from Table 2 (total QCE: > 100 mg/day for powdered and ethanolic extracts or > 300 mg/day for decoction and decoction concentrate)</em></p>
+					<p>When using this product diuretic effect may occur.</p>
+				<p><em>Oral products containing two or more diuretics from Table 2 (total QCE: > 100 mg/day for powdered and ethanolic extracts or > 300 mg/day for decoction and decoction concentrate)</em></p>
+					<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician immediately if dizziness, confusion, muscle weakness or pain, abnormal heart beat and/or difficulty breathing occur.</p>
+				<p><em>In addition to the risk statements listed above, risk statements (caution &amp; warning, contraindication, known adverse reaction) from the NNHPD single ingredient monographs listed below are required.</em></p>
+			<table id="ref0" class="subject">
+				<caption>Oral</caption>
+				<thead>
+					<tr>
+						<th>Medicinal ingredients</th>
+						<th>NNHPD monographs</th>
+						<th>Cautions/Warnings<sup><a href="ref0-1" style="text-decoration: none;">1</a></sup></th>
+						<th>Contraindications<sup><a href="ref0-1" style="text-decoration: none;">1</a></sup></th>
+						<th>Known Adverse Reactions<sup><a href="ref0-1" style="text-decoration: none;">1</a></sup></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Aloe vera or A. ferox</em></td>
+						<td>Aloe - Oral monograph</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Angelica species</em></td>
+						<td>Dong quai - Angelica sinensis monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Apis mellifera</em> (Mel)</td>
+						<td>Royal Jelly monograph applies</td>
+						<td>X</td>
+						<td>X</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Astragalus membranaceus</em></td>
+						<td>Astragalus monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Camellia sinensis</em></td>
+						<td>Green tea extract monograph applies</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Cinnamomum aromaticum</em></td>
+						<td>Cassia cinnamon monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma sp.</em></td>
+						<td>Turmeric monograph</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Eleutherococcus senticosus</em></td>
+						<td>Eleuthero monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Ephedra species</em></td>
+						<td>Ephedra monograph</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Ganoderma species</em></td>
+						<td>Mushrooms monograph</td>
+						<td>X</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Ginkgo biloba</em> (Folium Ginkgo)</td>
+						<td>Ginkgo biloba monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Panax ginseng</em></td>
+						<td>Ginseng, Panax monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td>Propolis</td>
+						<td>Propolis - Oral monograph</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td>Radix et Rhizoma Glycyrrhizae (<em>Glycyrrhiza glabra, Glycyrrhiza inflata, Glycyrrhiza uralensis</em>)</td>
+						<td>Licorice monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Radix et Rhizoma Glycyrrhizae Praeparata cum Melle (<em>Glycyrrhiza glabra, Glycyrrhiza inflata, Glycyrrhiza uralensis</em>)</td>
+						<td>Royal Jelly monograph applies</td>
+						<td>X</td>
+						<td>X</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td>Licorice monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Rheum</em> species</td>
+						<td>Senna monograph applies</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Senna</em> species</td>
+						<td>Senna monograph</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Silybum marianum </em></td>
+						<td>Milk thistle monograph</td>
+						<td>X</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Tribulus terrestris</em></td>
+						<td>Tribulus monograph</td>
+						<td>X</td>
+						<td>&#10003;</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Valeriana officinalis</em></td>
+						<td>Valerian monograph</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Wolfiporia extensa</em></td>
+						<td>Mushrooms monograph</td>
+						<td>X</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+				</tbody>
+			</table>
+			<table id="ref0b" class="subject">
+				<caption>Topical</caption>
+				<thead>
+					<tr>
+						<th>Medicinal ingredients</th>
+						<th>NNHPD monographs</th>
+						<th>Cautions/Warnings<sup><a href="ref0-1" style="text-decoration: none;">1</a></sup></th>
+						<th>Contraindications<sup><a href="ref0-1" style="text-decoration: none;">1</a></sup></th>
+						<th>Known Adverse Reactions<sup><a href="ref0-1" style="text-decoration: none;">1</a></sup></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Apis mellifera</em> (Mel)</td>
+						<td>Royal Jelly monograph applies</td>
+						<td>X</td>
+						<td>X</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td>Propolis</td>
+						<td>Propolis - Topical monograph</td>
+						<td>&#10003;</td>
+						<td>N/A</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td>Radix et Rhizoma Glycyrrhizae Praeparata cum Melle (<em>Glycyrrhiza glabra, Glycyrrhiza inflata, Glycyrrhiza uralensis</em>)</td>
+						<td>Royal Jelly monograph applies</td>
+						<td>X</td>
+						<td>X</td>
+						<td>&#10003;</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><sup id="ref0-1">1</sup> The symbols used in the tables are defined as follows:
+				<ul style="list-style: none;">
+					<li>&#10003; = risk statements from the associated single monograph are required.</li>
+					<li>X = statements are already covered by the general risk statements listed above.</li>
+					<li>N/A = no risk statement on the associated single monograph.</li>
+				</ul>
+			</p>
+			<p><em>In addition to the risk statements listed above, risk statements listed in NHPID for the medicinal ingredients below are required.</em></p>
+			<table id="ref0c" class="subject">
+				<caption>Oral</caption>
+				<thead>
+					<tr>
+						<th>Medicinal ingredients</th>
+						<th>NHPID - risk statements</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Apocynum venetum</em> (Folium Apocyni Veneti)</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Reynoutria multiflora</em> (Radix Polygoni Multiflori)</td>
+						<td>&#10003;</td>
+					</tr>
+					<tr>
+						<td><em>Reynoutria multiflora</em> (Radix Polygoni Multiflori Praeparata)</td>
+						<td>&#10003;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current NHPID and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<ul>
+				<li>As specified by referenced texts.</li>
+				<li>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em> (NHPR).</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the NNHPD Quality of Natural Health Products Guide.</li>
+				<li>Each medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+				<li>All ingredients on this monograph are pharmacopoeial ingredients and all pharmacopoeial ingredients must be prepared in accordance with the most recent edition of an accepted pharmacopoeia (e.g. the Pharmacopoeia of the People&apos;s Republic of China), including the quality specifications outlined in ingredient monographs. However, it is the licence holder&apos;s responsibility to ensure that the test methods used and ingredient and/or finished product specifications meet all relevant criteria for manufacturing a high quality Natural Health Product as described in the Quality of Natural Health Products Guide. Test methods that are not considered suitable and ingredient and/or finished product specifications that are less stringent than those specified by the NNHPD are unacceptable.</li>
+			</ul>
+			<p><em>Cannabis sativa</em> (Huo ma ren) - Semen Cannabis</p>
+				<p>This monograph is for Cannabis sativa seeds from hemp only. Hemp is defined in the <em>Industrial Hemp regulations</em> (IHR) as <em>"a cannabis plant - or any part of that plant - in which the concentration of THC is 0.3% w/w or less in the flowering heads and leaves"</em>. Approved hemp cultivars are set out in the List of Approved Cultivars, published by the Government of Canada on its website, as amended from time to time. Additional cultivars may be permitted such as those on the Association of Official Seed Certifying Agencies (<a href="https://aosca.org/hemp-index/">AOSCA</a>) list which also meet the definition of Hemp set out in the IHR.</p>
+				<p>Cannabis sativa seeds (Hemp) must not contain more than 10 parts per million delta-9-Tetrahydrocannabinol (THC), or phytocannabinoids that have been isolated or concentrated, or synthetic duplicates of phytocannabinoids. The determination of the THC concentration must take into account the potential to convert delta-9-tetrahydrocannabinolic acid (THCA) to THC.</p>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLES OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/TCM_O_E.gif" alt="Product Facts Table - Oral" style="width:700px"></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/TCM_T_E.gif" alt="Product Facts Table - Topical" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="tcmReferencedTexts">
+		<h2 id="tcmReferencedTexts">TCM Referenced texts</h2>
+			<ul>
+				<li>Bensky D, Clavey, St&#246;ger E, Gamble A. Chinese Herbal Medicine: Materia Medica. 3<sup>rd</sup> edition. Seattle (WA): Eastland Press, Incorporated&semi; 2004.</li>
+				<li>Chen JK, Chen TT. Chinese Medical Herbology and Pharmacology. Crampton L, editor. City of Industry (CA): Art of Medicine Press Inc.&semi; 2004.</li>
+				<li>Chen JK, Chen TT. Chinese Herbal Formulas and Applications : pharmacological effects &amp; clinical research. City of Industry, Calif: Art of Medicine Press&semi; 2009.</li>
+				<li>PPRC 2020: Pharmacopoeia of the People&apos;s Republic of China. Volume 1, English edition Beijing (CN): The State Pharmacopoeia Commission of the People&apos;s Republic of China&semi; 2020.</li>
+				<li>PPRC Notice to Clinical Medicine (Lin chuang yong yao xu zhi): Pharmacopoeia of the People&apos;s Republic of China Notice to Clinical Medicine (in Chinese). China Medical Science Press: The State Pharmacopoeia Commission of the People&apos;s Republic of China&semi; 2020.</li>
+				<li>Scheid V, Bensky D, Ellis A, Barolet R. Chinese herbal medicine : formulas &amp; strategies. 2<sup>nd</sup> edition. Seattle (WA): Eastland Press&semi; 2009.</li>
+				<li>SDS: The State Pharmacopoeia Commission of the People&apos;s Republic of China. <em>State Drug Standard.</em></li>
+				<li>Zhong Hua Ben Cao (Chinese Materia Medica). State Administration of Traditional Chinese Medicine "Chinese Materia Medica" Editorial Committee, Shanghai Science and Technology Press, 1999</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="appI">
+		<h2 id="appI">Appendix 1</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1: General Medicinal Ingredients</caption>
+				<thead>
+					<tr>
+						<th>Proper name(s)</th>
+						<th>Common name(s) (Pinyin)</th>
+						<th>Pharmacopoeial name<a href="#ref1-1" style="text-decoration: none;">*</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Abrus cantoniensis</em></td>
+						<td>Ji gu cao</td>
+						<td>Herba Abri</td>
+					</tr>
+					<tr>
+						<td><em>Achyranthes aspera</em></td>
+						<td>Tu niu xi</td>
+						<td>Radix Achyranthes Longifolia</td>
+					</tr>
+					<tr>
+						<td><em>Achyranthes bidentata</em></td>
+						<td>Niu xi</td>
+						<td>Radix Achyranthis Bidentatae</td>
+					</tr>
+					<tr>
+						<td><em>Achyranthes longifolia</em></td>
+						<td>Tu niu xi</td>
+						<td>Radix Achyranthes Longifolia</td>
+					</tr>
+					<tr>
+						<td><em>Actaea dahurica</em></td>
+						<td>Sheng ma</td>
+						<td>Rhizoma Cimicifugae</td>
+					</tr>
+					<tr>
+						<td><em>Actaea foetida</em></td>
+						<td>Sheng ma</td>
+						<td>Rhizoma Cimicifugae</td>
+					</tr>
+					<tr>
+						<td><em>Actaea heracleifolia</em></td>
+						<td>Sheng ma</td>
+						<td>Rhizoma Cimicifugae</td>
+					</tr>
+					<tr>
+						<td><em>Adenophora stricta</em></td>
+						<td>Nan sha shen</td>
+						<td>Radix Adenophorae</td>
+					</tr>
+					<tr>
+						<td><em>Adenophora triphylla</em></td>
+						<td>Nan sha shen</td>
+						<td>Radix Adenophorae</td>
+					</tr>
+					<tr>
+						<td><em>Agastache rugosa</em></td>
+						<td>Tu huo xiang</td>
+						<td>Herba Agastaches</td>
+					</tr>
+					<tr>
+						<td><em>Agrimonia pilosa</em></td>
+						<td>Xian he cao</td>
+						<td>Herba Agrimoniae</td>
+					</tr>
+					<tr>
+						<td><em>Ailanthus altissima</em></td>
+						<td>Chun gen</td>
+						<td>Radix Ailanthi</td>
+					</tr>
+					<tr>
+						<td><em>Ailanthus altissima</em></td>
+						<td>Chun gen pi</td>
+						<td>Cortex Ailanthi</td>
+					</tr>
+					<tr>
+						<td><em>Akebia quinata</em></td>
+						<td>Mu tong</td>
+						<td>Caulis Akebiae</td>
+					</tr>
+					<tr>
+						<td><em>Akebia trifoliata</em></td>
+						<td>Mu tong</td>
+						<td>Caulis Akebiae</td>
+					</tr>
+					<tr>
+						<td><em>Albizia julibrissin</em></td>
+						<td>He huan pi</td>
+						<td>Cortex Albiziae</td>
+					</tr>
+					<tr>
+						<td><em>Albizia julibrissin</em></td>
+						<td>He huan hua</td>
+						<td>Flos Albiziae</td>
+					</tr>
+					<tr>
+						<td><em>Allium fistulosum</em></td>
+						<td>Cong bai</td>
+						<td>Bulbus Allii Fistulosi</td>
+					</tr>
+					<tr>
+						<td><em>Allium macrostemon</em></td>
+						<td>Xie bai</td>
+						<td>Bulbus Allii Macrostemonis</td>
+					</tr>
+					<tr>
+						<td><em>Allium tuberosum</em></td>
+						<td>Jiu cai zi</td>
+						<td>Semen Allii Tuberosi</td>
+					</tr>
+					<tr>
+						<td><em>Alpinia hainanensis</em></td>
+						<td>Cao dou kou</td>
+						<td>Semen Alpiniae Katsumadai</td>
+					</tr>
+					<tr>
+						<td><em>Alpinia oxyphylla</em></td>
+						<td>Yi zhi; Yi zhi ren</td>
+						<td>Fructus Alpiniae Oxyphyllae</td>
+					</tr>
+					<tr>
+						<td><em>Amomum compactum</em></td>
+						<td>Bai dou kou; Dou kou</td>
+						<td>Fructus Amomi Rotundus</td>
+					</tr>
+					<tr>
+						<td><em>Amomum krervanh</em></td>
+						<td>Bai dou kou; Dou kou</td>
+						<td>Fructus Amomi Rotundus</td>
+					</tr>
+					<tr>
+						<td><em>Amomum longiligulare</em></td>
+						<td>Sha ren</td>
+						<td>Fructus Amomi</td>
+					</tr>
+					<tr>
+						<td><em>Amomum villosum</em></td>
+						<td>Sha ren</td>
+						<td>Fructus Amomi</td>
+					</tr>
+					<tr>
+						<td><em>Amomum villosum</em> var.
+							<em>xanthioides</em></td>
+						<td>Sha ren</td>
+						<td>Fructus Amomi</td>
+					</tr>
+					<tr>
+						<td><em>Anadara broughtonii</em></td>
+						<td>Wa leng zi</td>
+						<td>Concha Arcae</td>
+					</tr>
+					<tr>
+						<td><em>Anadara sativa</em></td>
+						<td>Wa leng zi</td>
+						<td>Concha Arcae</td>
+					</tr>
+					<tr>
+						<td><em>Andrographis paniculata</em></td>
+						<td>Chuan xin lian</td>
+						<td>Herba Andrographis</td>
+					</tr>
+					<tr>
+						<td><em>Anemarrhena asphodeloides</em></td>
+						<td>Zhi mu</td>
+						<td>Rhizoma Anemarrhenae</td>
+					</tr>
+					<tr>
+						<td><em>Anemone chinensis</em></td>
+						<td>Bai tou weng</td>
+						<td>Radix Pulsatillae</td>
+					</tr>
+					<tr>
+						<td><em>Angelica dahurica</em></td>
+						<td>Bai zhi</td>
+						<td>Radix Angelicae Dahuricae</td>
+					</tr>
+					<tr>
+						<td><em>Angelica decursiva</em></td>
+						<td>Qian hu</td>
+						<td>Radix Peucedani</td>
+					</tr>
+					<tr>
+						<td><em>Angelica pubescens</em></td>
+						<td>Du huo</td>
+						<td>Radix Angelicae Pubescentis</td>
+					</tr>
+					<tr>
+						<td><em>Angelica sinensis</em></td>
+						<td>Dang gui</td>
+						<td>Radix Angelicae Sinensis</td>
+					</tr>
+					<tr>
+						<td><em>Angelica sinensis</em></td>
+						<td>Dang gui wei</td>
+						<td>Extremitas Radicis Angelicae Sinensis</td>
+					</tr>
+					<tr>
+						<td><em>Apis mellifera</em></td>
+						<td>Feng mi</td>
+						<td>Mel</td>
+					</tr>
+					<tr>
+						<td><em>Apocynum venetum</em></td>
+						<td>Luo bu ma ye</td>
+						<td>Folium Apocyni Veneti</td>
+					</tr>
+					<tr>
+						<td><em>Archidoskodon planifrons</em></td>
+						<td>Long gu</td>
+						<td>Os Draconis</td>
+					</tr>
+					<tr>
+						<td><em>Arctium lappa</em></td>
+						<td>Niu bang zi</td>
+						<td>Fructus Arctii</td>
+					</tr>
+					<tr>
+						<td><em>Areca catechu</em></td>
+						<td>Bing lang</td>
+						<td>Semen Arecae</td>
+					</tr>
+					<tr>
+						<td><em>Areca catechu</em></td>
+						<td>Da fu pi</td>
+						<td>Pericarpium Arecae</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema amurense</em></td>
+						<td>Dan nan xing</td>
+						<td>Arisaema cum Bile</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema erubescens</em></td>
+						<td>Dan nan xing</td>
+						<td>Arisaema cum Bile</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema heterophyllum</em></td>
+						<td>Dan nan xing</td>
+						<td>Arisaema cum Bile</td>
+					</tr>
+					<tr>
+						<td><em>Arnebia euchroma</em></td>
+						<td>Zi cao</td>
+						<td>Radix Arnebiae</td>
+					</tr>
+					<tr>
+						<td><em>Arnebia guttata</em></td>
+						<td>Zi cao</td>
+						<td>Radix Arnebiae</td>
+					</tr>
+					<tr>
+						<td><em>Asparagus cochinchinensis</em></td>
+						<td>Tian dong; Tian men dong</td>
+						<td>Radix Asparagi</td>
+					</tr>
+					<tr>
+						<td><em>Aster tataricus</em></td>
+						<td>Zi wan</td>
+						<td>Radix Asteris</td>
+					</tr>
+					<tr>
+						<td><em>Astragalus membranaceus</em></td>
+						<td>Huang qi</td>
+						<td>Radix Astragali</td>
+					</tr>
+					<tr>
+						<td><em>Atractylodes lancea</em></td>
+						<td>Cang zhu</td>
+						<td>Rhizoma Atractylodis</td>
+					</tr>
+					<tr>
+						<td><em>Atractylodes macrocephala</em></td>
+						<td>Bai zhu</td>
+						<td>Rhizoma Atractylodis Macrocephalae</td>
+					</tr>
+					<tr>
+						<td><em>Bambusa beecheyana</em></td>
+						<td>Zhu ru</td>
+						<td>Caulis Bambusae in Taeniam</td>
+					</tr>
+					<tr>
+						<td><em>Bambusa breviflora</em></td>
+						<td>Zhu ru</td>
+						<td>Caulis Bambusae in Taeniam</td>
+					</tr>
+					<tr>
+						<td><em>Bambusa breviflora</em></td>
+						<td>Zhu li</td>
+						<td>Succus Bambusae</td>
+					</tr>
+					<tr>
+						<td><em>Bambusa textilis</em></td>
+						<td>Tian zhu huang</td>
+						<td>Concretio Silicea Bambusae</td>
+					</tr>
+					<tr>
+						<td><em>Bambusa tuldoides</em></td>
+						<td>Zhu ru</td>
+						<td>Caulis Bambusae in Taeniam</td>
+					</tr>
+					<tr>
+						<td><em>Benincasa hispida</em></td>
+						<td>Dong gua zi</td>
+						<td>Semen Benincasae</td>
+					</tr>
+					<tr>
+						<td><em>Bletilla striata</em></td>
+						<td>Bai ji</td>
+						<td>Rhizoma Bletillae</td>
+					</tr>
+					<tr>
+						<td><em>Bombyx mori</em></td>
+						<td>Can sha</td>
+						<td>Excrementum Bombycis</td>
+					</tr>
+					<tr>
+						<td><em>Bombyx mori</em></td>
+						<td>Jiang can</td>
+						<td>Batryticatus Bombyx</td>
+					</tr>
+					<tr>
+						<td><em>Boswellia sacra</em></td>
+						<td>Ru xiang</td>
+						<td>Olibanum</td>
+					</tr>
+					<tr>
+						<td><em>Broussonetia papyrifera</em></td>
+						<td>Chu shi zi</td>
+						<td>Fructus Broussonetiae</td>
+					</tr>
+					<tr>
+						<td><em>Bupleurum chinense</em></td>
+						<td>Chai hu</td>
+						<td>Radix Bupleuri</td>
+					</tr>
+					<tr>
+						<td><em>Bupleurum scorzonerifolium</em></td>
+						<td>Chai hu</td>
+						<td>Radix Bupleuri</td>
+					</tr>
+					<tr>
+						<td>Calcium fluoride</td>
+						<td>Zi shi ying</td>
+						<td>Fluoritum</td>
+					</tr>
+					<tr>
+						<td><em>Calvatia gigantea</em></td>
+						<td>Ma bo</td>
+						<td>Lasiosphaera Calvatia</td>
+					</tr>
+					<tr>
+						<td><em>Calvatia lilacina</em></td>
+						<td>Ma bo</td>
+						<td>Lasiosphaera Calvatia</td>
+					</tr>
+					<tr>
+						<td><em>Camellia sinensis</em></td>
+						<td>Lu cha</td>
+						<td>Folium Camellia Sinensis</td>
+					</tr>
+					<tr>
+						<td><em>Canarium album</em></td>
+						<td>Qing guo</td>
+						<td>Fructus Canarii</td>
+					</tr>
+					<tr>
+						<td><em>Carthamus tinctorius</em></td>
+						<td>Hong hua</td>
+						<td>Flos Carthami</td>
+					</tr>
+					<tr>
+						<td><em>Centella asiatica</em></td>
+						<td>Ji xue cao</td>
+						<td>Herba Centellae</td>
+					</tr>
+					<tr>
+						<td><em>Centipeda minima</em></td>
+						<td>E bu shi cao</td>
+						<td>Herba Centipedae</td>
+					</tr>
+					<tr>
+						<td><em>Cervocerus novorossiae</em></td>
+						<td>Long gu</td>
+						<td>Os Draconis</td>
+					</tr>
+					<tr>
+						<td><em>Cervus elaphus</em></td>
+						<td>Lu jiao jiao</td>
+						<td>Colla Cornu Cervi</td>
+					</tr>
+					<tr>
+						<td><em>Cervus nippon</em></td>
+						<td>Lu jiao jiao</td>
+						<td>Colla Cornu Cervi</td>
+					</tr>
+					<tr>
+						<td><em>Cervus elaphus</em></td>
+						<td>Lu jiao</td>
+						<td>Cornu Cervi</td>
+					</tr>
+					<tr>
+						<td><em>Cervus nippon</em></td>
+						<td>Lu jiao</td>
+						<td>Cornu Cervi</td>
+					</tr>
+					<tr>
+						<td><em>Cervus elaphus</em></td>
+						<td>Lu jiao shuang</td>
+						<td>Cornu Cervi Degelatinatum</td>
+					</tr>
+					<tr>
+						<td><em>Cervus nippon</em></td>
+						<td>Lu jiao shuang</td>
+						<td>Cornu Cervi Degelatinatum</td>
+					</tr>
+					<tr>
+						<td><em>Cervus elaphus</em></td>
+						<td>Lu rong</td>
+						<td>Cornu Cervi Pantotrichum</td>
+					</tr>
+					<tr>
+						<td><em>Cervus nippon</em></td>
+						<td>Lu rong</td>
+						<td>Cornu Cervi Pantotrichum</td>
+					</tr>
+					<tr>
+						<td><em>Cervus punjabensis</em></td>
+						<td>Long gu</td>
+						<td>Os Draconis</td>
+					</tr>
+					<tr>
+						<td><em>Chaenomeles speciosa</em></td>
+						<td>Mu gua</td>
+						<td>Fructus Chaenomelis</td>
+					</tr>
+					<tr>
+						<td><em>Chinemys reevesii</em></td>
+						<td>Gui ban; Gui jia</td>
+						<td>Testudinis Carapax et Plastrum</td>
+					</tr>
+					<tr>
+						<td><em>Chinemys reevesii</em></td>
+						<td>Gui jia jiao </td>
+						<td>Testudinis Carapax et Plastrum Colla</td>
+					</tr>
+					<tr>
+						<td><em>Choerospondias axillaris</em></td>
+						<td>Guang zao</td>
+						<td>Fructus Choerospondiatis</td>
+					</tr>
+
+					<tr>
+						<td><em>Chrysanthemum indicum</em></td>
+						<td>Ye ju hua</td>
+						<td>Flos Chrysanthemi Indici</td>
+					</tr>
+					<tr>
+						<td><em>Chrysanthemum x morifolium</em></td>
+						<td>Ju hua</td>
+						<td>Flos Chrysanthemi</td>
+					</tr>
+					<tr>
+						<td><em>Cibotium barometz</em></td>
+						<td>Gou ji</td>
+						<td>Rhizoma Cibotii</td>
+					</tr>
+					<tr>
+						<td><em>Cinnamomum aromaticum</em></td>
+						<td>Rou gui</td>
+						<td>Cortex Cinnamomi</td>
+					</tr>
+					<tr>
+						<td><em>Cinnamomum aromaticum</em></td>
+						<td>Gui zhi</td>
+						<td>Ramulus Cinnamomi</td>
+					</tr>
+					<tr>
+						<td><em>Cistanche deserticola</em></td>
+						<td>Rou cong rong</td>
+						<td>Herba Cistanches</td>
+					</tr>
+					<tr>
+						<td><em>Cistanche salsa</em></td>
+						<td>Rou cong rong</td>
+						<td>Herba Cistanches</td>
+					</tr>
+					<tr>
+						<td><em>Cistanche tubulosa</em></td>
+						<td>Rou cong rong</td>
+						<td>Herba Cistanches</td>
+					</tr>
+					<tr>
+						<td><em>Citrus aurantium</em></td>
+						<td>Zhi shi&semi; Chao zhi shi</td>
+						<td>Fructus Aurantii Immaturus</td>
+					</tr>
+					<tr>
+						<td><em>Citrus aurantium</em></td>
+						<td>Zhi ke&semi; Zhi qiao</td>
+						<td>Fructus Aurantii</td>
+					</tr>
+					<tr>
+						<td><em>Citrus maxima</em></td>
+						<td>Hua ju hong</td>
+						<td>Exocarpium Citri Grandis</td>
+					</tr>
+					<tr>
+						<td><em>Citrus medica</em></td>
+						<td>Xiang yuan</td>
+						<td>Fructus Citri</td>
+					</tr>
+					<tr>
+						<td><em>Citrus medica</em> var. <em>sarcodactylis</em></td>
+						<td>Fo shou</td>
+						<td>Fructus Citri Sarcodactylis</td>
+					</tr>
+					<tr>
+						<td><em>Citrus reticulata</em></td>
+						<td>Ju he</td>
+						<td>Semen Citri Reticulatae</td>
+					</tr>
+					<tr>
+						<td><em>Citrus reticulata</em></td>
+						<td>Ju hong </td>
+						<td>Exocarpium Rubrum Citri Reticulatae</td>
+					</tr>
+					<tr>
+						<td><em>Citrus reticulata</em></td>
+						<td>Chen pi&semi; Ju pi</td>
+						<td>Pericarpium Citri Reticulatae</td>
+					</tr>
+					<tr>
+						<td><em>Citrus reticulata</em></td>
+						<td>Qing pi</td>
+						<td>Pericarpium Citri Reticulatae Viride</td>
+					</tr>
+					<tr>
+						<td><em>Citrus sinensis</em></td>
+						<td>Zhi shi&semi; Chao zhi shi</td>
+						<td>Fructus Aurantii Immaturus</td>
+					</tr>
+					<tr>
+						<td><em>Clematis chinensis</em></td>
+						<td>Wei ling xian</td>
+						<td>Radix and Rhizoma Clematidis</td>
+					</tr>
+					<tr>
+						<td><em>Cnidium monnieri</em></td>
+						<td>She chuang zi</td>
+						<td>Fructus Cnidii</td>
+					</tr>
+					<tr>
+						<td><em>Codonopsis pilosula</em></td>
+						<td>Dang shen</td>
+						<td>Radix Codonopsis</td>
+					</tr>
+					<tr>
+						<td><em>Codonopsis tangshen</em></td>
+						<td>Dang shen</td>
+						<td>Radix Codonopsis</td>
+					</tr>
+					<tr>
+						<td><em>Combretum indicum</em></td>
+						<td>Shi jun zi</td>
+						<td>Fructus Quisqualis</td>
+					</tr>
+					<tr>
+						<td><em>Commiphora myrrha</em></td>
+						<td>Mo yao</td>
+						<td>Myrrha</td>
+					</tr>
+					<tr>
+						<td><em>Coptis chinensis</em></td>
+						<td>Huang lian</td>
+						<td>Rhizoma Coptidis</td>
+					</tr>
+					<tr>
+						<td><em>Coptis deltoidea</em></td>
+						<td>Huang lian</td>
+						<td>Rhizoma Coptidis</td>
+					</tr>
+					<tr>
+						<td><em>Coptis teeta</em></td>
+						<td>Huang lian</td>
+						<td>Rhizoma Coptidis</td>
+					</tr>
+					<tr>
+						<td><em>Cordia dichotoma</em></td>
+						<td>Po bu zi ye</td>
+						<td>Folium Cordia Dichotoma</td>
+					</tr>
+					<tr>
+						<td><em>Cornus officinalis</em></td>
+						<td>Shan zhu yu</td>
+						<td>Fructus Corni</td>
+					</tr>
+					<tr>
+						<td><em>Corydalis turtschaninovii</em></td>
+						<td>Yan hu suo</td>
+						<td>Rhizoma Corydalis</td>
+					</tr>
+					<tr>
+						<td><em>Corydalis yanhusuo</em></td>
+						<td>Yan hu suo</td>
+						<td>Rhizoma Corydalis</td>
+					</tr>
+					<tr>
+						<td><em>Crassostrea gigas</em></td>
+						<td>Mu li</td>
+						<td>Concha Ostreae</td>
+					</tr>
+					<tr>
+						<td><em>Crataegus cuneata</em></td>
+						<td>Shan zha&semi; Shan zha tan</td>
+						<td>Fructus Crataegi</td>
+					</tr>
+					<tr>
+						<td><em>Crataegus pinnatifida</em></td>
+						<td>Shan zha&semi; Shan zha tan</td>
+						<td>Fructus Crataegi</td>
+					</tr>
+					<tr>
+						<td><em>Crataegus pinnatifida</em> var. <em>major</em></td>
+						<td>Shan zha&semi; Shan zha tan</td>
+						<td>Fructus Crataegi</td>
+					</tr>
+					<tr>
+						<td><em>Cristaria plicata</em></td>
+						<td>Zhen zhu</td>
+						<td>Margarita</td>
+					</tr>
+					<tr>
+						<td><em>Cristaria plicata</em></td>
+						<td>Zhen zhu mu</td>
+						<td>Concha Margaritifera</td>
+					</tr>
+					<tr>
+						<td><em>Cryptotympana atrata</em></td>
+						<td>Chan tui</td>
+						<td>Periostracum Cicadae</td>
+					</tr>
+					<tr>
+						<td><em>Cryptotympana pustulata</em></td>
+						<td>Chan tui</td>
+						<td>Periostracum Cicadae</td>
+					</tr>
+					<tr>
+						<td><em>Cullen corylifolium</em></td>
+						<td>Bu gu zhi</td>
+						<td>Fructus Psoraleae</td>
+					</tr>
+					<tr>
+						<td><em>Curculigo orchioides</em></td>
+						<td>Xian mao</td>
+						<td>Rhizoma Curculiginis</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma kwangsiensis</em></td>
+						<td>Yu jin</td>
+						<td>Radix Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma kwangsiensis</em></td>
+						<td>E zhu</td>
+						<td>Rhizoma Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma longa</em></td>
+						<td>Yu jin</td>
+						<td>Radix Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma longa</em></td>
+						<td>Jiang huang</td>
+						<td>Rhizoma Curcumae Longae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma phaeocaulis</em></td>
+						<td>Yu jin</td>
+						<td>Radix Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma phaeocaulis</em></td>
+						<td>E zhu</td>
+						<td>Rhizoma Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma wenyujin</em></td>
+						<td>Yu jin</td>
+						<td>Radix Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Curcuma wenyujin</em></td>
+						<td>E zhu</td>
+						<td>Rhizoma Curcumae</td>
+					</tr>
+					<tr>
+						<td><em>Cuscuta chinensis</em></td>
+						<td>Tu si zi</td>
+						<td>Semen Cuscutae</td>
+					</tr>
+					<tr>
+						<td><em>Cuscuta japonica</em></td>
+						<td>Tu si zi</td>
+						<td>Semen Cuscutae</td>
+					</tr>
+					<tr>
+						<td><em>Cyathula officinalis</em></td>
+						<td>Chuan niu xi</td>
+						<td>Radix Cyathulae</td>
+					</tr>
+					<tr>
+						<td><em>Cynanchum glaucescens</em></td>
+						<td>Bai qian</td>
+						<td>Rhizoma et Radix Cynanchi Stauntonii</td>
+					</tr>
+					<tr>
+						<td><em>Cynomorium songaricum</em></td>
+						<td>Suo yang</td>
+						<td>Herba Cyomorii</td>
+					</tr>
+					<tr>
+						<td><em>Cyperus rotundus</em></td>
+						<td>Xiang fu</td>
+						<td>Rhizoma Cyperi</td>
+					</tr>
+					<tr>
+						<td><em>Daemonorops draco</em></td>
+						<td>Xue jie</td>
+						<td>Sanguis Draconis</td>
+					</tr>
+					<tr>
+						<td><em>Dalbergia odorifera</em></td>
+						<td>Jiang xiang</td>
+						<td>Lignum Dalbergiae Odoriferae</td>
+					</tr>
+					<tr>
+						<td><em>Dendrobium chrysanthum</em></td>
+						<td>Shi hu</td>
+						<td>Caulis Dendrobii</td>
+					</tr>
+					<tr>
+						<td><em>Dendrobium chrysotoxum </em></td>
+						<td>Shi hu</td>
+						<td>Caulis Dendrobii</td>
+					</tr>
+					<tr>
+						<td><em>Dendrobium fimbriatum </em></td>
+						<td>Shi hu</td>
+						<td>Caulis Dendrobii</td>
+					</tr>
+					<tr>
+						<td><em>Dendrobium loddigesii</em></td>
+						<td>Shi hu</td>
+						<td>Caulis Dendrobii</td>
+					</tr>
+					<tr>
+						<td><em>Dendrobium nobile </em></td>
+						<td>Shi hu</td>
+						<td>Caulis Dendrobii</td>
+					</tr>
+					<tr>
+						<td><em>Dendrobium officinale</em></td>
+						<td>Tie pi shi hu</td>
+						<td>Caulis Dendrobii Officinalis</td>
+					</tr>
+					<tr>
+						<td><em>Descurainia sophia</em></td>
+						<td>Ting li zi</td>
+						<td>Semen Descurainiae</td>
+					</tr>
+					<tr>
+						<td><em>Dichroa febrifuga</em></td>
+						<td>Chang shan</td>
+						<td>Radix Dichroae</td>
+					</tr>
+					<tr>
+						<td><em>Dictamnus dasycarpus</em></td>
+						<td>Bai xian pi</td>
+						<td>Cortex Dictamni</td>
+					</tr>
+					<tr>
+						<td><em>Dimocarpus longan</em></td>
+						<td>Long yan rou</td>
+						<td>Arillus Longan</td>
+					</tr>
+					<tr>
+						<td><em>Dioscorea collettii</em> var.
+							<em>hypoglauca</em></td>
+						<td>Fen bi xie</td>
+						<td>Rhizoma Dioscoreae Hypoglaucae</td>
+					</tr>
+					<tr>
+						<td><em>Dioscorea futschauensis</em></td>
+						<td>Mian bi xie</td>
+						<td>Rhizoma Dioscoreae Spongiosae</td>
+					</tr>
+					<tr>
+						<td><em>Dioscorea oppositifolia</em></td>
+						<td>Shan yao</td>
+						<td>Rhizoma Dioscoreae</td>
+					</tr>
+					<tr>
+						<td><em>Dioscorea spongiosa</em></td>
+						<td>Mian bi xie</td>
+						<td>Rhizoma Dioscoreae Spongiosae</td>
+					</tr>
+					<tr>
+						<td><em>Diospyros kaki</em></td>
+						<td>Shi di</td>
+						<td>Calyx Kaki</td>
+					</tr>
+					<tr>
+						<td><em>Dipsacus asper</em></td>
+						<td>Xu duan</td>
+						<td>Radix Dipsaci</td>
+					</tr>
+					<tr>
+						<td><em>Dolomiaea souliei</em></td>
+						<td>Chuan mu xiang</td>
+						<td>Radix Vladimiriae</td>
+					</tr>
+					<tr>
+						<td><em>Drynaria fortunei</em></td>
+						<td>Gu sui bu</td>
+						<td>Rhizoma Drynariae</td>
+					</tr>
+					<tr>
+						<td><em>Ecklonia kurome</em></td>
+						<td>Hai dai; Kun bu</td>
+						<td>Thallus Eckloniae</td>
+					</tr>
+					<tr>
+						<td><em>Eclipta prostrata</em></td>
+						<td>Mo han lian</td>
+						<td>Herba Eclipta</td>
+					</tr>
+					<tr>
+						<td><em>Eleutherococcus gracilistylus</em></td>
+						<td>Wu jia pi</td>
+						<td>Cortex Acanthopanacis</td>
+					</tr>
+					<tr>
+						<td><em>Eleutherococcus senticosus</em></td>
+						<td>Ci wu jia</td>
+						<td>Radix et Rhizoma seu Caulis Acanthopanacis Senticosi</td>
+					</tr>
+					<tr>
+						<td><em>Ephedra intermedia</em></td>
+						<td>Ma huang gen</td>
+						<td>Radix et Rhizoma Ephedrae</td>
+					</tr>
+					<tr>
+						<td><em>Epimedium brevicornu</em></td>
+						<td>Yin yang huo</td>
+						<td>Folium Epimedii</td>
+					</tr>
+					<tr>
+						<td><em>Epimedium grandiflorum</em></td>
+						<td>Yin yang huo</td>
+						<td>Folium Epimedii</td>
+					</tr>
+					<tr>
+						<td><em>Epimedium koreanum</em></td>
+						<td>Yin yang huo</td>
+						<td>Folium Epimedii</td>
+					</tr>
+					<tr>
+						<td><em>Epimedium pubescens</em></td>
+						<td>Yin yang huo</td>
+						<td>Folium Epimedii</td>
+					</tr>
+					<tr>
+						<td><em>Epimedium sagittatum</em></td>
+						<td>Yin yang huo</td>
+						<td>Folium Epimedii</td>
+					</tr>
+					<tr>
+						<td><em>Equus asinus</em></td>
+						<td>E jiao</td>
+						<td>Colla Corii Asini</td>
+					</tr>
+					<tr>
+						<td><em>Eriobotrya japonica</em></td>
+						<td>Pi pa ye</td>
+						<td>Folium Eriobotryae</td>
+					</tr>
+					<tr>
+						<td><em>Erodium stephanianum</em></td>
+						<td>Lao guan cao</td>
+						<td>Herba Erodii</td>
+					</tr>
+					<tr>
+						<td><em>Erythrina variegata</em></td>
+						<td>Hai tong pi</td>
+						<td>Cortex Erythrinae</td>
+					</tr>
+					<tr>
+						<td><em>Eucommia ulmoides</em></td>
+						<td>Du zhong</td>
+						<td>Cortex Eucommiae</td>
+					</tr>
+					<tr>
+						<td><em>Euonymus echinatus</em></td>
+						<td>Da ding huang</td>
+						<td>Caulis Euonymi</td>
+					</tr>
+					<tr>
+						<td><em>Eupolyphaga sinensis</em></td>
+						<td>Tu bie chong</td>
+						<td>Eupolyphaga</td>
+					</tr>
+					<tr>
+						<td><em>Euryale ferox</em></td>
+						<td>Qian shi</td>
+						<td>Semen Euryales</td>
+					</tr>
+					<tr>
+						<td><em>Flemingia prostrata</em></td>
+						<td>Qian jin ba</td>
+						<td>Radix Flemingiae Prostratae</td>
+					</tr>
+					<tr>
+						<td><em>Flueggea virosa</em></td>
+						<td>Bai fan shu gen</td>
+						<td>Radix Securinega Virosa</td>
+					</tr>
+					<tr>
+						<td><em>Foeniculum vulgare</em></td>
+						<td>Xiao hui xiang</td>
+						<td>Fructus Foeniculi</td>
+					</tr>
+					<tr>
+						<td><em>Forsythia suspensa</em></td>
+						<td>Lian qiao</td>
+						<td>Fructus Forsythiae</td>
+					</tr>
+					<tr>
+						<td><em>Fraxinus chinensis</em></td>
+						<td>Qin pi</td>
+						<td>Cortex Fraxini</td>
+					</tr>
+					<tr>
+						<td><em>Fraxinus chinensis</em> subsp.
+							<em>rhynchophylla</em></td>
+						<td>Qin pi</td>
+						<td>Cortex Fraxini</td>
+					</tr>
+					<tr>
+						<td><em>Fraxinus stylosa</em></td>
+						<td>Qin pi</td>
+						<td>Cortex Fraxini</td>
+					</tr>
+					<tr>
+						<td><em>Fraxinus szaboana</em></td>
+						<td>Qin pi</td>
+						<td>Cortex Fraxini</td>
+					</tr>
+					<tr>
+						<td><em>Fritillaria cirrhosa</em></td>
+						<td>Chuan bei mu</td>
+						<td>Bulbus Fritillariae Cirrhosae</td>
+					</tr>
+					<tr>
+						<td><em>Fritillaria delavayi</em></td>
+						<td>Chuan bei mu</td>
+						<td>Bulbus Fritillariae Cirrhosae</td>
+					</tr>
+					<tr>
+						<td><em>Fritillaria przewalskii</em></td>
+						<td>Chuan bei mu</td>
+						<td>Bulbus Fritillariae Cirrhosae</td>
+					</tr>
+					<tr>
+						<td><em>Fritillaria thunbergii</em></td>
+						<td>Zhe bei mu</td>
+						<td>Bulbus Fritillariae Thunbergii</td>
+					</tr>
+					<tr>
+						<td><em>Fritillaria unibracteata</em></td>
+						<td>Chuan bei mu</td>
+						<td>Bulbus Fritillariae Cirrhosae</td>
+					</tr>
+					<tr>
+						<td><em>Gallus gallus domesticus</em></td>
+						<td>Ji nei jin</td>
+						<td>Endothelium Corneum Galli Gigerii</td>
+					</tr>
+					<tr>
+						<td><em>Ganoderma lucidum</em></td>
+						<td>Ling zhi</td>
+						<td>Ganoderma</td>
+					</tr>
+					<tr>
+						<td><em>Ganoderma sinense</em></td>
+						<td>Ling zhi</td>
+						<td>Ganoderma</td>
+					</tr>
+					<tr>
+						<td><em>Gardenia jasminoides</em></td>
+						<td>Zhi zi</td>
+						<td>Fructus Gardeniae</td>
+					</tr>
+					<tr>
+						<td><em>Gastrodia elata</em></td>
+						<td>Tian ma</td>
+						<td>Rhizoma Gastrodiae</td>
+					</tr>
+					<tr>
+						<td><em>Gekko gecko</em></td>
+						<td>Ge jie</td>
+						<td>Gecko</td>
+					</tr>
+					<tr>
+						<td><em>Gentiana manshurica</em></td>
+						<td>Long dan</td>
+						<td>Radix et Rhizoma Gentianae</td>
+					</tr>
+					<tr>
+						<td><em>Gentiana scabra</em></td>
+						<td>Long dan</td>
+						<td>Radix et Rhizoma Gentianae</td>
+					</tr>
+					<tr>
+						<td><em>Gentiana triflora</em></td>
+						<td>Long dan</td>
+						<td>Radix et Rhizoma Gentianae</td>
+					</tr>
+					<tr>
+						<td><em>Gentiana rigescens</em></td>
+						<td>Long dan</td>
+						<td>Radix et Rhizoma Gentianae</td>
+					</tr>
+					<tr>
+						<td><em>Gentiana macrophylla</em></td>
+						<td>Qin jiao</td>
+						<td>Radix Gentianae Macrophyllae</td>
+					</tr>
+					<tr>
+						<td><em>Geranium carolinianum</em></td>
+						<td>Lao guan cao</td>
+						<td>Herba Erodii</td>
+					</tr>
+					<tr>
+						<td><em>Geranium wilfordii</em></td>
+						<td>Lao guan cao</td>
+						<td>Herba Erodii</td>
+					</tr>
+					<tr>
+						<td><em>Gleditsia sinensis</em></td>
+						<td>Da zao jiao; Zao jiao</td>
+						<td>Fructus Gleditsiae Sinensis</td>
+					</tr>
+					<tr>
+						<td><em>Gleditsia sinensis</em></td>
+						<td>Zao jiao ci</td>
+						<td>Spina Gleditsiae</td>
+					</tr>
+					<tr>
+						<td><em>Glehnia littoralis</em></td>
+						<td>Bei sha shen</td>
+						<td>Radix Glehniae</td>
+					</tr>
+					<tr>
+						<td><em>Glycine max</em></td>
+						<td>Dan dou chi</td>
+						<td>Semen Sojae Praeparatum</td>
+					</tr>
+					<tr>
+						<td><em>Glycine max</em></td>
+						<td>Da dou huang juan</td>
+						<td>Semen Sojae Germinatum</td>
+					</tr>
+					<tr>
+						<td><em>Glycine max</em></td>
+						<td>Hei dou</td>
+						<td>Semen Sojae Nigrum</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza glabra</em></td>
+						<td>Gan cao</td>
+						<td>Radix et Rhizoma Glycyrrhizae</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza glabra</em></td>
+						<td>Zhi gan cao</td>
+						<td>Radix et Rhizoma Glycyrrhizae Praeparata cum Melle</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza inflata</em></td>
+						<td>Gan cao</td>
+						<td>Radix et Rhizoma Glycyrrhizae</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza inflata</em></td>
+						<td>Zhi gan cao</td>
+						<td>Radix et Rhizoma Glycyrrhizae Praeparata cum Melle</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza uralensis</em></td>
+						<td>Gan cao</td>
+						<td>Radix et Rhizoma Glycyrrhizae</td>
+					</tr>
+					<tr>
+						<td><em>Glycyrrhiza uralensis</em></td>
+						<td>Zhi gan cao</td>
+						<td>Radix et Rhizoma Glycyrrhizae Praeparata cum Melle</td>
+					</tr>
+					<tr>
+						<td><em>Gynostemma pentaphyllum</em></td>
+						<td>Jiao gu lan</td>
+						<td>Rhizoma seu Herba Gynostemmatis</td>
+					</tr>
+					<tr>
+						<td><em>Gypsum fibrosum</em></td>
+						<td>Shi gao</td>
+						<td>Gypsum Fibrosum</td>
+					</tr>
+					<tr>
+						<td><em>Haliotis asinina</em></td>
+						<td>Shi jue ming</td>
+						<td>Concha Haliotidis</td>
+					</tr>
+					<tr>
+						<td><em>Haliotis discus hannai</em></td>
+						<td>Shi jue ming</td>
+						<td>Concha Haliotidis</td>
+					</tr>
+					<tr>
+						<td><em>Haliotis diversicolor</em></td>
+						<td>Shi jue ming</td>
+						<td>Concha Haliotidis</td>
+					</tr>
+					<tr>
+						<td><em>Haliotis laevigata</em></td>
+						<td>Shi jue ming</td>
+						<td>Concha Haliotidis</td>
+					</tr>
+					<tr>
+						<td><em>Haliotis ovina</em></td>
+						<td>Shi jue ming</td>
+						<td>Concha Haliotidis</td>
+					</tr>
+					<tr>
+						<td><em>Haliotis ruber</em></td>
+						<td>Shi jue ming</td>
+						<td>Concha Haliotidis</td>
+					</tr>
+					<tr>
+						<td><em>Hansenia forbesii</em></td>
+						<td>Qiang huo</td>
+						<td>Rhizoma et Radix Notopterygii</td>
+					</tr>
+					<tr>
+						<td><em>Hansenia weberbaueriana</em></td>
+						<td>Qiang huo</td>
+						<td>Rhizoma et Radix Notopterygii</td>
+					</tr>
+					<tr>
+						<td><em>Helminthostachys zeylanica</em></td>
+						<td>Dao di wu gong</td>
+						<td>Rhizoma Heliminthostachytis</td>
+					</tr>
+					<tr>
+						<td><em>Hierodula patellifera</em></td>
+						<td>Sang piao xiao</td>
+						<td>O&#246;theca mantidis</td>
+					</tr>
+					<tr>
+						<td><em>Hippophae rhamnoides</em></td>
+						<td>Sha ji</td>
+						<td>Fructus Hippophae</td>
+					</tr>
+					<tr>
+						<td><em>Hirudo nipponica</em></td>
+						<td>Shui zhi</td>
+						<td>Hirudo</td>
+					</tr>
+					<tr>
+						<td><em>Homalomena occulta</em>
+						</td>
+						<td>Qian nian jian</td>
+						<td>Rhizoma Homalomenae</td>
+					</tr>
+					<tr>
+						<td><em>Hordeum vulgare</em></td>
+						<td>Mai ya&semi; Chao mai ya</td>
+						<td>Fructus Hordei Germinatus</td>
+					</tr>
+					<tr>
+						<td><em>Hordeum vulgare</em></td>
+						<td>Yi tang</td>
+						<td>Maltosum</td>
+					</tr>
+					<tr>
+						<td><em>Houttuynia cordata</em></td>
+						<td>Yu xing cao</td>
+						<td>Herba Houttuyniae</td>
+					</tr>
+					<tr>
+						<td><em>Huperzia serrata</em></td>
+						<td>Jin bu huan&semi; Qian ceng ta</td>
+						<td>Herba Lycopodii Serrati</td>
+					</tr>
+					<tr>
+						<td><em>Hypericum perforatum</em></td>
+						<td>Guan ye lian qiao</td>
+						<td>Herba Hyperici Perforati</td>
+					</tr>
+					<tr>
+						<td><em>Hyptis capitata</em></td>
+						<td>Mo gu xiao</td>
+						<td>Caulis Hyptis Capitatae</td>
+					</tr>
+					<tr>
+						<td><em>Hyriopsis cumingii</em></td>
+						<td>Zhen zhu</td>
+						<td>Margarita</td>
+					</tr>
+					<tr>
+						<td><em>Hyriopsis cumingii</em></td>
+						<td>Zhen zhu mu</td>
+						<td>Concha Margaritifera</td>
+					</tr>
+					<tr>
+						<td><em>Ilex pubescens</em></td>
+						<td>Mao dong qing</td>
+						<td>Radix Illicis Pubescentis</td>
+					</tr>
+					<tr>
+						<td><em>Illicium verum</em></td>
+						<td>Ba jiao hui xiang</td>
+						<td>Fructus Anisi Stellati</td>
+					</tr>
+					<tr>
+						<td><em>Imperata cylindrica</em></td>
+						<td>Bai mao gen</td>
+						<td>Rhizoma Imperatae</td>
+					</tr>
+					<tr>
+						<td><em>Inula britannica</em></td>
+						<td>Xuan fu hua</td>
+						<td>Flos Inulae</td>
+					</tr>
+					<tr>
+						<td><em>Iris domestica</em></td>
+						<td>She gan</td>
+						<td>Rhizoma Belamcandae</td>
+					</tr>
+					<tr>
+						<td><em>Isatis tinctoria</em></td>
+						<td>Da qing ye</td>
+						<td>Folium Isatidis</td>
+					</tr>
+					<tr>
+						<td><em>Isatis tinctoria</em></td>
+						<td>Ban lan gen</td>
+						<td>Radix Isatidis</td>
+					</tr>
+					<tr>
+						<td><em>Isatis tinctoria</em></td>
+						<td>Qing dai</td>
+						<td>Indigo Naturalis</td>
+					</tr>
+					<tr>
+						<td><em>Isodon rubescens</em></td>
+						<td>Dong ling cao</td>
+						<td>Herba Rabdosiae Rubescentis</td>
+					</tr>
+					<tr>
+						<td><em>Jasminum sambac</em></td>
+						<td>Mo li hua</td>
+						<td>Flos Jasmini Sambac</td>
+					</tr>
+					<tr>
+						<td><em>Juglans regia</em></td>
+						<td>He tao ren; Hu tao ren</td>
+						<td>Semen Juglandis</td>
+					</tr>
+					<tr>
+						<td><em>Justicia procumbens</em></td>
+						<td>Shu wei huang</td>
+						<td>Herba Rostellulariae</td>
+					</tr>
+					<tr>
+						<td><em>Lasiosphaera fenzlii</em></td>
+						<td>Ma bo</td>
+						<td>Lasiosphaera Calvatia</td>
+					</tr>
+					<tr>
+						<td><em>Leonurus japonicus</em></td>
+						<td>Chong wei zi</td>
+						<td>Fructus Leonuri</td>
+					</tr>
+					<tr>
+						<td><em>Leonurus japonicus</em></td>
+						<td>Yi mu cao</td>
+						<td>Herba Leonuri</td>
+					</tr>
+					<tr>
+						<td><em>Lepidium apetalum</em></td>
+						<td>Ting li zi</td>
+						<td>Semen Lepidii</td>
+					</tr>
+					<tr>
+						<td><em>Leucas mollissima</em> var.
+							<em>chinensis</em></td>
+						<td>Hu yao huang</td>
+						<td>Herba Leucas Mollissimae</td>
+					</tr>
+					<tr>
+						<td><em>Ligusticum sinense</em> cv.
+							<em>chuanxiong</em></td>
+						<td>Chuan xiong</td>
+						<td>Rhizoma Chuanxiong</td>
+					</tr>
+					<tr>
+						<td><em>Ligusticum sinense</em> var.
+							<em>sinense</em></td>
+						<td>Gao ben</td>
+						<td>Rhizoma et Radix Ligustici</td>
+					</tr>
+					<tr>
+						<td><em>Ligusticum sinense</em></td>
+						<td>Gao ben</td>
+						<td>Rhizoma et Radix Ligustici</td>
+					</tr>
+					<tr>
+						<td><em>Ligusticum jeholense</em></td>
+						<td>Gao ben</td>
+						<td>Rhizoma et Radix Ligustici</td>
+					</tr>
+					<tr>
+						<td><em>Ligustrum lucidum</em></td>
+						<td>Nu zhen zi</td>
+						<td>Fructus Ligustri Lucidi</td>
+					</tr>
+					<tr>
+						<td><em>Lilium brownii</em></td>
+						<td>Bai he</td>
+						<td>Bulbus Lilii</td>
+					</tr>
+					<tr>
+						<td><em>Lilium brownii</em> var.
+							<em>viridulum</em></td>
+						<td>Bai he</td>
+						<td>Bulbus Lilii</td>
+					</tr>
+					<tr>
+						<td><em>Lilium lancifolium</em></td>
+						<td>Bai he</td>
+						<td>Bulbus Lilii</td>
+					</tr>
+					<tr>
+						<td><em>Lilium pumilum</em></td>
+						<td>Bai he</td>
+						<td>Bulbus Lilii</td>
+					</tr>
+					<tr>
+						<td><em>Lindera aggregata</em></td>
+						<td>Wu yao</td>
+						<td>Radix Linderae</td>
+					</tr>
+					<tr>
+						<td><em>Lindernia anagallis</em></td>
+						<td>Ding jing cao</td>
+						<td>Herba Linderniae</td>
+					</tr>
+					<tr>
+						<td><em>Linum usitatissimum</em></td>
+						<td>Ya ma zi</td>
+						<td>Semen Lini</td>
+					</tr>
+					<tr>
+						<td><em>Liquidambar formosana</em></td>
+						<td>Lu lu tong</td>
+						<td>Fructus Liquidambaris</td>
+					</tr>
+					<tr>
+						<td><em>Litchi chinensis</em></td>
+						<td>Li zhi he</td>
+						<td>Semen Litchi</td>
+					</tr>
+					<tr>
+						<td><em>Lonicera japonica</em></td>
+						<td>Jin yin hua</td>
+						<td>Flos Lonicerae Japonicae</td>
+					</tr>
+					<tr>
+						<td><em>Lonicera japonica</em></td>
+						<td>Ren dong teng</td>
+						<td>Caulis Lonicerae Japonicae</td>
+					</tr>
+					<tr>
+						<td><em>Lophatherum gracile</em></td>
+						<td>Dan zhu ye</td>
+						<td>Herba Lophatheri</td>
+					</tr>
+					<tr>
+						<td><em>Ludwigia prostrata</em></td>
+						<td>Shui ding xiang</td>
+						<td>Herba Ludwigiae Prostratae</td>
+					</tr>
+					<tr>
+						<td><em>Luffa aegyptiaca</em></td>
+						<td>Si gua luo</td>
+						<td>Retinervus Luffae Fructus</td>
+					</tr>
+					<tr>
+						<td><em>Lycium barbarum</em></td>
+						<td>Di gu pi</td>
+						<td>Cortex Lycii</td>
+					</tr>
+					<tr>
+						<td><em>Lycium barbarum</em></td>
+						<td>Gou qi zi</td>
+						<td>Fructus Lycii</td>
+					</tr>
+					<tr>
+						<td><em>Lycium chinense</em></td>
+						<td>Di gu pi</td>
+						<td>Cortex Lycii</td>
+					</tr>
+					<tr>
+						<td><em>Lycopodium japonicum</em></td>
+						<td>Shen jin cao</td>
+						<td>Herba Lycopodii</td>
+					</tr>
+					<tr>
+						<td><em>Lycopus lucidus</em> var. <em>hirtus</em></td>
+						<td>Ze lan</td>
+						<td>Herba Lycopi</td>
+					</tr>
+					<tr>
+						<td><em>Magallana rivularis</em></td>
+						<td>Mu li</td>
+						<td>Concha Ostreae</td>
+					</tr>
+					<tr>
+						<td><em>Magnolia biondii</em></td>
+						<td>Xin yi&semi; Xin yi hua</td>
+						<td>Flos Magnoliae</td>
+					</tr>
+					<tr>
+						<td><em>Magnolia denudata</em></td>
+						<td>Xin yi&semi; Xin yi hua</td>
+						<td>Flos Magnoliae</td>
+					</tr>
+					<tr>
+						<td><em>Magnolia officinalis</em></td>
+						<td>Hou po</td>
+						<td>Cortex Magnoliae Officinalis</td>
+					</tr>
+					<tr>
+						<td><em>Magnolia officinalis</em> var. <em>biloba</em></td>
+						<td>Hou po</td>
+						<td>Cortex Magnoliae Officinalis</td>
+					</tr>
+					<tr>
+						<td><em>Magnolia sprengeri</em></td>
+						<td>Xin yi&semi; Xin yi hua</td>
+						<td>Flos Magnoliae</td>
+					</tr>
+					<tr>
+						<td><em>Mentha canadensis</em></td>
+						<td>Bo he</td>
+						<td>Herba Menthae Haplocalycis</td>
+					</tr>
+					<tr>
+						<td>l-Menthol</td>
+						<td>Bo he nao</td>
+						<td>Mentholum</td>
+					</tr>
+					<tr>
+						<td><em>Mimosa pudica</em></td>
+						<td>Han xiu cao gen</td>
+						<td>Radix Mimosae Pudicae</td>
+					</tr>
+					<tr>
+						<td><em>Morinda officinalis</em></td>
+						<td>Ba ji tian</td>
+						<td>Radix Morindae Officinalis</td>
+					</tr>
+					<tr>
+						<td><em>Morus alba</em></td>
+						<td>Sang bai pi</td>
+						<td>Cortex Mori</td>
+					</tr>
+					<tr>
+						<td><em>Morus alba</em></td>
+						<td>Sang ye</td>
+						<td>Folium Mori</td>
+					</tr>
+					<tr>
+						<td><em>Morus alba</em></td>
+						<td>Sang shen zi&semi; Sang shen</td>
+						<td>Fructus Mori</td>
+					</tr>
+					<tr>
+						<td><em>Morus alba</em></td>
+						<td>Sang zhi</td>
+						<td>Ramulus Mori</td>
+					</tr>
+					<tr>
+						<td><em>Mosla chinensis</em></td>
+						<td>Xiang ru</td>
+						<td>Herba Moslae</td>
+					</tr>
+					<tr>
+						<td><em>Myristica fragrans</em></td>
+						<td>Rou dou kou</td>
+						<td>Semen Myristicae</td>
+					</tr>
+					<tr>
+						<td><em>Myosoton aquaticum</em></td>
+						<td>Cha chi huang</td>
+						<td>Herba Stellariae Aquaticae</td>
+					</tr>
+					<tr>
+						<td><em>Nandina domestica</em></td>
+						<td>Tian zhu zi</td>
+						<td>Fructus Nandinae Domesticae</td>
+					</tr>
+					<tr>
+						<td><em>Nelumbo nucifera</em></td>
+						<td>He ye</td>
+						<td>Folium Nelumbinis</td>
+					</tr>
+					<tr>
+						<td><em>Nelumbo nucifera</em></td>
+						<td>Ou jie</td>
+						<td>Nodus Nelumbinis Rhizomatis</td>
+					</tr>
+					<tr>
+						<td><em>Nelumbo nucifera</em></td>
+						<td>Lian zi</td>
+						<td>Semen Nelumbinis</td>
+					</tr>
+					<tr>
+						<td><em>Nelumbo nucifera </em></td>
+						<td>Lian xu</td>
+						<td>Stamen Nelumbinis</td>
+					</tr>
+					<tr>
+						<td><em>Nelumbo nucifera </em></td>
+						<td>Lian zi xin</td>
+						<td>Plumula Nelumbinis</td>
+					</tr>
+					<tr>
+						<td><em>Nelumbo nucifera </em></td>
+						<td>Lian fang</td>
+						<td>Receptaculum Nelumbinis</td>
+					</tr>
+					<tr>
+						<td><em>Neopicrorhiza scrophulariiflora</em>
+						</td>
+						<td>Hu huang lian</td>
+						<td>Rhizoma Picrorhizae</td>
+					</tr>
+					<tr>
+						<td><em>Nepeta tenuifolia</em></td>
+						<td>Jing jie</td>
+						<td>Herba Schizonepetae</td>
+					</tr>
+					<tr>
+						<td><em>Ocimum basilicum</em></td>
+						<td>Jiu ceng ta</td>
+						<td>Herba Ocimi Basilic</td>
+					</tr>
+					<tr>
+						<td><em>Ocimum gratissimum</em></td>
+						<td>Dingxiang Luoleyou</td>
+						<td>Oleum Ocimi Gratissimi</td>
+					</tr>
+					<tr>
+						<td><em>Oldenlandia diffusa</em></td>
+						<td>Bai hua she she cao</td>
+						<td>Herba Hedyotis Diffusae</td>
+					</tr>
+					<tr>
+						<td><em>Ophiocordyceps sinensis</em></td>
+						<td>Dong chong xia cao</td>
+						<td>Cordyceps (wild)</td>
+					</tr>
+					<tr>
+						<td><em>Ophiopogon japonicus</em></td>
+						<td>Mai dong; Mai men dong</td>
+						<td>Radix Ophiopogonis</td>
+					</tr>
+					<tr>
+						<td><em>Oroxylum indicum</em></td>
+						<td>Mu hu die</td>
+						<td>Semen Oroxyli</td>
+					</tr>
+					<tr>
+						<td><em>Oryza sativa</em></td>
+						<td>Dao ya</td>
+						<td>Fructus Oryzae Germinatus</td>
+					</tr>
+					<tr>
+						<td><em>Oryza sativa</em></td>
+						<td>Geng mi</td>
+						<td>Semen Oryzae</td>
+					</tr>
+					<tr>
+						<td><em>Oryza sativa</em></td>
+						<td>Yi tang</td>
+						<td>Maltosum</td>
+					</tr>
+					<tr>
+						<td><em>Paecilomyces hepiali</em></td>
+						<td>Fa jiao chong cao jun fen</td>
+						<td>Cordyceps (cultured)</td>
+					</tr>
+					<tr>
+						<td><em>Paeonia anomala</em> subsp.
+							<em>veitchii</em></td>
+						<td>Chi shao</td>
+						<td>Radix Paeoniae Rubra</td>
+					</tr>
+					<tr>
+						<td><em>Paeonia lactiflora</em></td>
+						<td>Chi shao</td>
+						<td>Radix Paeoniae Rubra</td>
+					</tr>
+					<tr>
+						<td><em>Paeonia lactiflora</em></td>
+						<td>Bai shao</td>
+						<td>Radix Paeoniae Alba</td>
+					</tr>
+					<tr>
+						<td><em>Paeonia obovata</em></td>
+						<td>Chi shao</td>
+						<td>Radix Paeoniae Rubra</td>
+					</tr>
+					<tr>
+						<td><em>Paeonia suffruticosa</em></td>
+						<td>Mu dan pi</td>
+						<td>Cortex Moutan</td>
+					</tr>
+					<tr>
+						<td><em>Palaeoloxodon nomadicus</em></td>
+						<td>Long gu</td>
+						<td>Os Draconis</td>
+					</tr>
+					<tr>
+						<td><em>Panax ginseng</em></td>
+						<td>Ren shen</td>
+						<td>Radix et Rhizoma Ginseng</td>
+					</tr>
+					<tr>
+						<td><em>Panax ginseng</em></td>
+						<td>Hong shen</td>
+						<td>Radix et Rhizoma Ginseng Rubra</td>
+					</tr>
+					<tr>
+						<td><em>Panax notoginseng</em></td>
+						<td>San qi</td>
+						<td>Radix et Rhizoma Notoginseng</td>
+					</tr>
+					<tr>
+						<td><em>Panax quinquefolius</em></td>
+						<td>Xi yang shen</td>
+						<td>Radix Panacis Quinquefolii</td>
+					</tr>
+					<tr>
+						<td><em>Paris polyphylla</em></td>
+						<td>Chong lou&semi; Zao xiu</td>
+						<td>Rhizoma Paridis</td>
+					</tr>
+					<tr>
+						<td><em>Paris polyphylla</em> var. <em>chinensis</em></td>
+						<td>Chong lou&semi; Zao xiu</td>
+						<td>Rhizoma Paridis</td>
+					</tr>
+					<tr>
+						<td><em>Paris polyphylla</em> var. <em>yunnanensis</em></td>
+						<td>Chong lou&semi; Zao xiu</td>
+						<td>Rhizoma Paridis</td>
+					</tr>
+					<tr>
+						<td><em>Patrinia scabiosifolia</em></td>
+						<td>Bai jiang cao</td>
+						<td>Herba Patriniae</td>
+					</tr>
+					<tr>
+						<td><em>Pelodiscus sinensis</em></td>
+						<td>Bie jia</td>
+						<td>Carapax Trionycis</td>
+					</tr>
+					<tr>
+						<td><em>Pelodiscus sinensis</em></td>
+						<td>Bie jia jiao</td>
+						<td>Colla Carapax Trionycis</td>
+					</tr>
+					<tr>
+						<td><em>Perilla frutescens</em></td>
+						<td>Zi su geng</td>
+						<td>Caulis Perillae</td>
+					</tr>
+					<tr>
+						<td><em>Perilla frutescens</em></td>
+						<td>Zi su ye</td>
+						<td>Folium Perillae</td>
+					</tr>
+					<tr>
+						<td><em>Perilla frutescens</em></td>
+						<td>Zi su zi</td>
+						<td>Fructus Perillae</td>
+					</tr>
+					<tr>
+						<td><em>Persicaria tinctoria</em></td>
+						<td>Qing dai</td>
+						<td>Indigo Naturalis</td>
+					</tr>
+					<tr>
+						<td><em>Peucedanum praeruptorum</em></td>
+						<td>Qian hu</td>
+						<td>Radix Peucedani</td>
+					</tr>
+					<tr>
+						<td><em>Phellodendron amurense</em></td>
+						<td>Guan huang bo</td>
+						<td>Cortex Phellodendri Amurensis</td>
+					</tr>
+					<tr>
+						<td><em>Phellodendron chinense</em></td>
+						<td>Huang bo&semi; Huang bai</td>
+						<td>Cortex Phellodendri Chinensis</td>
+					</tr>
+					<tr>
+						<td><em>Pheretima aspergillum</em></td>
+						<td>Di long</td>
+						<td>Pheretima</td>
+					</tr>
+					<tr>
+						<td><em>Pheretima guillelmi</em></td>
+						<td>Di long</td>
+						<td>Pheretima</td>
+					</tr>
+					<tr>
+						<td><em>Pheretima pectinifera</em></td>
+						<td>Di long</td>
+						<td>Pheretima</td>
+					</tr>
+					<tr>
+						<td><em>Pheretima vulgaris</em></td>
+						<td>Di long</td>
+						<td>Pheretima</td>
+					</tr>
+					<tr>
+						<td><em>Phragmites australis</em></td>
+						<td>Lu gen</td>
+						<td>Rhizoma Phragmitis</td>
+					</tr>
+					<tr>
+						<td><em>Phyla nodiflora</em></td>
+						<td>Ya she huang</td>
+						<td>Herba Lippiae</td>
+					</tr>
+					<tr>
+						<td><em>Physalis angulata</em></td>
+						<td>Pao zai cao</td>
+						<td>Herba Physalis Angulatae</td>
+					</tr>
+					<tr>
+						<td><em>Phyllolobium chinense</em></td>
+						<td>Sha yuan zi</td>
+						<td>Semen Astragali Complanati</td>
+					</tr>
+					<tr>
+						<td><em>Phyllostachys nigra</em></td>
+						<td>Zhu ru</td>
+						<td>Caulis Bambusae in Taeniam</td>
+					</tr>
+					<tr>
+						<td><em>Phyllostachys nigra</em> var.
+							<em>henonis</em></td>
+						<td>Zhu li</td>
+						<td>Succus Bambusae</td>
+					</tr>
+					<tr>
+						<td><em>Phyllostachys nigra</em> var.
+							<em>henonis</em></td>
+						<td>Zhu ye</td>
+						<td>Herba Phyllostachys</td>
+					</tr>
+					<tr>
+						<td><em>Piper longum<a href="#ref1-2" style="text-decoration: none;">**</a></em></td>
+						<td>Bi bo</td>
+						<td>Fructus Piperis Longui</td>
+					</tr>
+					<tr>
+						<td><em>Planostrea pestigris</em></td>
+						<td>Mu li</td>
+						<td>Concha Ostreae</td>
+					</tr>
+					<tr>
+						<td><em>Platycladus orientalis</em></td>
+						<td>Ce bai ye</td>
+						<td>Cacumen Platycladi</td>
+					</tr>
+					<tr>
+						<td><em>Platycladus orientalis</em></td>
+						<td>Bai zi ren</td>
+						<td>Semen Platycladi</td>
+					</tr>
+					<tr>
+						<td><em>Platycodon grandiflorus</em></td>
+						<td>Jie geng</td>
+						<td>Radix Platycodonis</td>
+					</tr>
+					<tr>
+						<td><em>Pleione bulbocodioides</em></td>
+						<td>Shan ci gu</td>
+						<td>Pseudobulbus Cremastrae Pleione</td>
+					</tr>
+					<tr>
+						<td><em>Pleione yunnanensis</em></td>
+						<td>Shan ci gu</td>
+						<td>Pseudobulbus Cremastrae Pleione</td>
+					</tr>
+					<tr>
+						<td><em>Pogostemon cablin</em></td>
+						<td>Guang huo xiang</td>
+						<td>Herba Pogostemonis</td>
+					</tr>
+					<tr>
+						<td><em>Pogostemon cablin</em></td>
+						<td>Guang huo xiang you</td>
+						<td>Oleum Pogostemonis</td>
+					</tr>
+					<tr>
+						<td><em>Polygala tenuifolia</em></td>
+						<td>Yuan zhi</td>
+						<td>Radix Polygalae</td>
+					</tr>
+					<tr>
+						<td><em>Polygonatum cirrhifolium</em></td>
+						<td>Huang jing</td>
+						<td>Rhizoma Polygonati</td>
+					</tr>
+					<tr>
+						<td><em>Polygonatum cyrtonema</em></td>
+						<td>Huang jing</td>
+						<td>Rhizoma Polygonati</td>
+					</tr>
+					<tr>
+						<td><em>Polygonatum kingianum</em></td>
+						<td>Huang jing</td>
+						<td>Rhizoma Polygonati</td>
+					</tr>
+					<tr>
+						<td><em>Polygonatum odoratum</em></td>
+						<td>Yu zhu</td>
+						<td>Rhizoma Polygonati Odorati</td>
+					</tr>
+					<tr>
+						<td><em>Polygonatum sibiricum</em></td>
+						<td>Huang jing</td>
+						<td>Rhizoma Polygonati</td>
+					</tr>
+					<tr>
+						<td><em>Portulaca oleracea</em></td>
+						<td>Ma chi xian</td>
+						<td>Herba Portulacae</td>
+					</tr>
+					<tr>
+						<td>Propolis</td>
+						<td>Feng jiao</td>
+						<td>Propolis</td>
+					</tr>
+					<tr>
+						<td><em>Prunella vulgaris</em></td>
+						<td>Xia ku cao</td>
+						<td>Spica Prunellae</td>
+					</tr>
+					<tr>
+						<td><em>Prunus mume</em></td>
+						<td>Wu mei</td>
+						<td>Fructus Mume</td>
+					</tr>
+					<tr>
+						<td><em>Pseudostellaria heterophylla</em></td>
+						<td>Tai zi shen</td>
+						<td>Radix Pseudostellariae</td>
+					</tr>
+					<tr>
+						<td><em>Pteria martensii</em></td>
+						<td>Zhen zhu</td>
+						<td>Margarita</td>
+					</tr>
+					<tr>
+						<td><em>Pteria martensii</em></td>
+						<td>Zhen zhu mu</td>
+						<td>Concha Margaritifera</td>
+					</tr>
+					<tr>
+						<td><em>Pteris multifida</em></td>
+						<td>Feng wei cao</td>
+						<td>Herba Pteris</td>
+					</tr>
+					<tr>
+						<td><em>Ptyas dhumnades</em></td>
+						<td>Wu shao she</td>
+						<td>Zaocys</td>
+					</tr>
+					<tr>
+						<td><em>Pueraria montana</em> var.
+							<em>lobata</em></td>
+						<td>Ge hua</td>
+						<td>Flos Puerariae</td>
+					</tr>
+					<tr>
+						<td><em>Pyrola calliantha</em></td>
+						<td>Lu xian cao</td>
+						<td>Herba Pyrolae</td>
+					</tr>
+					<tr>
+						<td><em>Pyrola decorata</em></td>
+						<td>Lu xian cao</td>
+						<td>Herba Pyrolae</td>
+					</tr>
+					<tr>
+						<td><em>Pyrola rotundifolia</em></td>
+						<td>Lu xian cao</td>
+						<td>Herba Pyrolae</td>
+					</tr>
+					<tr>
+						<td><em>Pyrrosia lingua</em></td>
+						<td>Shi wei</td>
+						<td>Folium Pyrrosiae</td>
+					</tr>
+					<tr>
+						<td><em>Pyrrosia petiolosa</em></td>
+						<td>Shi wei</td>
+						<td>Folium Pyrrosiae</td>
+					</tr>
+					<tr>
+						<td><em>Pyrrosia sheareri</em></td>
+						<td>Shi wei</td>
+						<td>Folium Pyrrosiae</td>
+					</tr>
+					<tr>
+						<td><em>Ranunclus ternatus</em></td>
+						<td>Mao zhao cao</td>
+						<td>Radix Ranunculi Ternati</td>
+					</tr>
+					<tr>
+						<td><em>Raphanus sativus</em></td>
+						<td>Lai fu zi</td>
+						<td>Semen Raphani</td>
+					</tr>
+					<tr>
+						<td><em>Rehmannia glutinosa</em></td>
+						<td>Sheng di huang</td>
+						<td>Radix Rehmanniae</td>
+					</tr>
+					<tr>
+						<td><em>Rehmannia glutinosa</em></td>
+						<td>Shu di huang</td>
+						<td>Radix Rehmanniae Praeparata</td>
+					</tr>
+					<tr>
+						<td><em>Reynoutria japonica</em></td>
+						<td>Hu zhang</td>
+						<td>Rhizoma et Radix Polygoni Cuspidati</td>
+					</tr>
+					<tr>
+						<td><em>Reynoutria multiflora</em></td>
+						<td>He shou wu; Sheng he shou wu</td>
+						<td>Radix Polygoni Multiflori</td>
+					</tr>
+					<tr>
+						<td><em>Reynoutria multiflora</em></td>
+						<td>Zhi he shou wu</td>
+						<td>Radix Polygoni Multiflori Praeparata</td>
+					</tr>
+					<tr>
+						<td><em>Reynoutria multiflora</em></td>
+						<td>Shou wu teng&semi; Ye jiao teng</td>
+						<td>Caulis Polygoni Multiflori</td>
+					</tr>
+					<tr>
+						<td><em>Rhaponticum uniflorum</em></td>
+						<td>Lou lu</td>
+						<td>Radix Rhapontici</td>
+					</tr>
+					<tr>
+						<td><em>Rhodiola crenulata</em></td>
+						<td>Hong jing tian</td>
+						<td>Radix et Rhizoma Rhodiolae Crenulatae</td>
+					</tr>
+					<tr>
+						<td><em>Rhus chinensis</em></td>
+						<td>Wu bei zi</td>
+						<td>Galla Chinensis</td>
+					</tr>
+					<tr>
+						<td><em>Rhus potaninii</em></td>
+						<td>Wu bei zi</td>
+						<td>Galla Chinensis</td>
+					</tr>
+					<tr>
+						<td><em>Rhus punjabensis</em> var. <em>sinica</em></td>
+						<td>Wu bei zi</td>
+						<td>Galla Chinensis</td>
+					</tr>
+					<tr>
+						<td><em>Rosa laevigata</em></td>
+						<td>Jin ying zi</td>
+						<td>Fructus Rosae Laevigatae</td>
+					</tr>
+					<tr>
+						<td><em>Rubia cordifolia</em></td>
+						<td>Qian cao</td>
+						<td>Radix Rubiae</td>
+					</tr>
+					<tr>
+						<td><em>Rubus chingii</em></td>
+						<td>Fu pen zi</td>
+						<td>Fructus Rubi</td>
+					</tr>
+					<tr>
+						<td><em>Saccharina japonica</em></td>
+						<td>Kun bu; Hai dai</td>
+						<td>Thallus Laminariae</td>
+					</tr>
+					<tr>
+						<td><em>Salvia chinensis</em></td>
+						<td>Shi jian chuan</td>
+						<td>Herba Salviae Chinensis</td>
+					</tr>
+					<tr>
+						<td><em>Salvia miltiorrhiza</em></td>
+						<td>Dan shen</td>
+						<td>Radix et Rhizoma Salviae Miltiorrhizae</td>
+					</tr>
+					<tr>
+						<td><em>Sambucus chinensis</em></td>
+						<td>Mo gu xiao</td>
+						<td>Caulis Hyptis Capitatae</td>
+					</tr>
+					<tr>
+						<td><em>Sanguisorba officinalis</em></td>
+						<td>Di yu</td>
+						<td>Radix Sanguisorbae</td>
+					</tr>
+					<tr>
+						<td><em>Santalum album</em></td>
+						<td>Tan xiang</td>
+						<td>Lignum Santali Albi</td>
+					</tr>
+					<tr>
+						<td><em>Saposhnikovia divaricata</em></td>
+						<td>Fang feng</td>
+						<td>Radix Saposhnikoviae</td>
+					</tr>
+					<tr>
+						<td><em>Sarcandra glabra</em></td>
+						<td>Zhong jie feng</td>
+						<td>Herba Sarcandrae</td>
+					</tr>
+					<tr>
+						<td><em>Sargassum fusiforme</em></td>
+						<td>Hai zao</td>
+						<td>Sargassum</td>
+					</tr>
+					<tr>
+						<td><em>Sargassum pallidum</em></td>
+						<td>Hai zao</td>
+						<td>Sargassum</td>
+					</tr>
+					<tr>
+						<td><em>Sargentodoxa cuneata</em></td>
+						<td>Da xue teng&semi; Hong teng</td>
+						<td>Caulis Sargentodoxae</td>
+					</tr>
+					<tr>
+						<td><em>Saussurea costus</em></td>
+						<td>Mu xiang</td>
+						<td>Radix Aucklandiae</td>
+					</tr>
+					<tr>
+						<td><em>Scaphium affine</em></td>
+						<td>Pang da hai</td>
+						<td>Semen Sterculiae Lychnophorae</td>
+					</tr>
+					<tr>
+						<td><em>Schefflera arboricola </em></td>
+						<td>Qi ye lian</td>
+						<td>Radix Schefflerae</td>
+					</tr>
+					<tr>
+						<td><em>Schefflera leucantha</em></td>
+						<td>Qi ye lian</td>
+						<td>Radix Schefflerae</td>
+					</tr>
+					<tr>
+						<td><em>Schisandra sphenanthera</em></td>
+						<td>Nan wu wei zi</td>
+						<td>Fructus Schisandrae Sphenantherae</td>
+					</tr>
+					<tr>
+						<td><em>Schisandra chinensis</em></td>
+						<td>Wu wei zi</td>
+						<td>Fructus Schisandrae Chinensis</td>
+					</tr>
+
+					<tr>
+						<td><em>Schizostachyum chinense</em></td>
+						<td>Tian zhu huang</td>
+						<td>Concretio Silicea Bambusae</td>
+					</tr>
+					<tr>
+						<td><em>Scrophularia ningpoensis</em></td>
+						<td>Xuan shen</td>
+						<td>Radix Scrophulariae</td>
+					</tr>
+					<tr>
+						<td><em>Scutellaria baicalensis</em></td>
+						<td>Huang qin</td>
+						<td>Radix Scutellariae</td>
+					</tr>
+					<tr>
+						<td><em>Scutellaria barbata</em></td>
+						<td>Ban zhi lian</td>
+						<td>Herba Scutellariae Barbatae</td>
+					</tr>
+					<tr>
+						<td><em>Selaginella pulvinata</em></td>
+						<td>Juan bai</td>
+						<td>Herba Selaginellae</td>
+					</tr>
+					<tr>
+						<td><em>Selaginella tamariscina</em></td>
+						<td>Juan bai</td>
+						<td>Herba Selaginellae</td>
+					</tr>
+					<tr>
+						<td><em>Senegalia catechu</em></td>
+						<td>Er cha</td>
+						<td>Catechu</td>
+					</tr>
+					<tr>
+						<td><em>Sepia esculenta</em></td>
+						<td>Hai piao xiao</td>
+						<td>Endoconcha Sepiae</td>
+					</tr>
+					<tr>
+						<td><em>Sepiella inermis</em></td>
+						<td>Hai piao xiao</td>
+						<td>Endoconcha Sepiae</td>
+					</tr>
+					<tr>
+						<td><em>Sesamum indicum</em></td>
+						<td>Ma you</td>
+						<td>Oleum Sesami</td>
+					</tr>
+					<tr>
+						<td><em>Sesamum indicum</em></td>
+						<td>Hei zhi ma</td>
+						<td>Semen Sesami Nigrum</td>
+					</tr>
+					<tr>
+						<td><em>Setaria italica</em></td>
+						<td>Gu ya&semi; Chao gu ya</td>
+						<td>Fructus Setariae Germinatus</td>
+					</tr>
+					<tr>
+						<td><em>Setaria italica</em></td>
+						<td>Yi tang</td>
+						<td>Maltosum</td>
+					</tr>
+					<tr>
+						<td><em>Siegesbeckia glabrescens</em></td>
+						<td>Xi xian cao</td>
+						<td>Herba Siegesbeckiae</td>
+					</tr>
+					<tr>
+						<td><em>Siegesbeckia orientalis</em></td>
+						<td>Xi xian cao</td>
+						<td>Herba Siegesbeckiae</td>
+					</tr>
+					<tr>
+						<td><em>Siegesbeckia pubescens</em></td>
+						<td>Xi xian cao</td>
+						<td>Herba Siegesbeckiae</td>
+					</tr>
+					<tr>
+						<td><em>Silybum marianum</em></td>
+						<td>Shui fei ji</td>
+						<td>Fructus Silybi</td>
+					</tr>
+					<tr>
+						<td><em>Sinapis alba</em></td>
+						<td>Bai jie zi; Jie zi</td>
+						<td>Semen Sinapis</td>
+					</tr>
+					<tr>
+						<td><em>Sinocrassula indica</em></td>
+						<td>Shi lian zi</td>
+						<td>Herba Sinocrassulae Indicae</td>
+					</tr>
+					<tr>
+						<td><em>Siraitia grosvenorii</em></td>
+						<td>Luo han guo</td>
+						<td>Fructus Momordicae</td>
+					</tr>
+					<tr>
+						<td><em>Smilax glabra</em></td>
+						<td>Tu fu ling</td>
+						<td>Rhizoma Smilacis Glabrae</td>
+					</tr>
+					<tr>
+						<td>Sodium sulfate</td>
+						<td>Xuan ming fen</td>
+						<td>Natrii Sulfas Exsiccatus</td>
+					</tr>
+					<tr>
+						<td>Sodium sulfate decahydrate</td>
+						<td>Mang xiao</td>
+						<td>Natrii Sulfas</td>
+					</tr>
+					<tr>
+						<td><em>Solanum nigrum</em></td>
+						<td>Long kui</td>
+						<td>Herba Solani Nigri</td>
+					</tr>
+					<tr>
+						<td><em>Solidago decurrens</em></td>
+						<td>Yi zhi huang hua</td>
+						<td>Herba Solidaginis</td>
+					</tr>
+					<tr>
+						<td><em>Sophora flavescens</em></td>
+						<td>Ku shen</td>
+						<td>Radix Sophorae Flavescentis</td>
+					</tr>
+					<tr>
+						<td><em>Sparganium eurycarpum</em></td>
+						<td>San leng</td>
+						<td>Rhizoma Sparganii</td>
+					</tr>
+					<tr>
+						<td><em>Spatholobus suberectus</em></td>
+						<td>Ji xue teng</td>
+						<td>Caulis Spatholobi</td>
+					</tr>
+					<tr>
+						<td><em>Spirodela polyrhiza</em></td>
+						<td>Fu ping</td>
+						<td>Herba Spirodelae</td>
+					</tr>
+					<tr>
+						<td><em>Statilia maculata</em></td>
+						<td>Sang piao xiao</td>
+						<td>O&#246;theca mantidis</td>
+					</tr>
+					<tr>
+						<td><em>Stellaria dichotoma</em> var. <em>lanceolata</em></td>
+						<td>Yin chai hu</td>
+						<td>Radix Stellariae</td>
+					</tr>
+					<tr>
+						<td><em>Stemona japonica</em></td>
+						<td>Bai bu</td>
+						<td>Radix Stemonae</td>
+					</tr>
+					<tr>
+						<td><em>Stemona sessilifolia</em></td>
+						<td>Bai bu</td>
+						<td>Radix Stemonae</td>
+					</tr>
+					<tr>
+						<td><em>Stemona tuberosa</em></td>
+						<td>Bai bu</td>
+						<td>Radix Stemonae</td>
+					</tr>
+					<tr>
+						<td><em>Strobilanthes cusia</em></td>
+						<td>Qing dai</td>
+						<td>Indigo Naturalis</td>
+					</tr>
+					<tr>
+						<td><em>Styphnolobium japonicum</em></td>
+						<td>Huai jiao</td>
+						<td>Fructus Sophorae</td>
+					</tr>
+					<tr>
+						<td><em>Styphnolobium japonicum</em></td>
+						<td>Huai hua </td>
+						<td>Flos Sophorae</td>
+					</tr>
+					<tr>
+						<td><em>Styrax tonkinensis</em></td>
+						<td>An xi xiang</td>
+						<td>Benzoinum</td>
+					</tr>
+					<tr>
+						<td>Succinum</td>
+						<td>Hu po</td>
+						<td>Succinum</td>
+					</tr>
+					<tr>
+						<td><em>Syzygium aromaticum</em></td>
+						<td>Ding xiang</td>
+						<td>Flos Caryophylli</td>
+					</tr>
+					<tr>
+						<td><em>Taraxacum mongolicum</em></td>
+						<td>Pu gong ying</td>
+						<td>Herba Taraxaci</td>
+					</tr>
+					<tr>
+						<td><em>Taraxacum sinicum</em></td>
+						<td>Pu gong ying</td>
+						<td>Herba Taraxaci</td>
+					</tr>
+					<tr>
+						<td><em>Taxillus chinensis</em></td>
+						<td>Sang ji sheng</td>
+						<td>Herba Taxilli</td>
+					</tr>
+					<tr>
+						<td><em>Taxillus sutchuenensis</em></td>
+						<td>Sang ji sheng</td>
+						<td>Herba Taxilli</td>
+					</tr>
+					<tr>
+						<td><em>Tegillarca granosa</em></td>
+						<td>Wa leng zi</td>
+						<td>Concha Arcae</td>
+					</tr>
+					<tr>
+						<td><em>Tenodera sinensis</em></td>
+						<td>Sang piao xiao</td>
+						<td>O&#246;theca mantidis</td>
+					</tr>
+					<tr>
+						<td><em>Terminalia chebula</em></td>
+						<td>He zi</td>
+						<td>Fructus Chebulae</td>
+					</tr>
+					<tr>
+						<td><em>Tetradium ruticarpum</em></td>
+						<td>Wu zhu yu</td>
+						<td>Fructus Euodiae</td>
+					</tr>
+					<tr>
+						<td><em>Tinospora sagittata</em></td>
+						<td>Jin guo lan</td>
+						<td>Radix Tinosporae</td>
+					</tr>
+					<tr>
+						<td><em>Tinospora sinensis</em></td>
+						<td>Kuan jin teng</td>
+						<td>Caulis Tinosporae Sinensis</td>
+					</tr>
+					<tr>
+						<td><em>Trachemys scripta elegans</em></td>
+						<td>Gui ban; Gui jia</td>
+						<td>Testudinis Carapax et Plastrum</td>
+					</tr>
+					<tr>
+						<td><em>Trametes versicolor</em></td>
+						<td>Yun zhi</td>
+						<td>Coriolus</td>
+					</tr>
+					<tr>
+						<td><em>Tribulus terrestris</em></td>
+						<td>Ji li</td>
+						<td>Fructus Tribuli</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes kirilowii</em></td>
+						<td>Gua lou; Gua lou shi</td>
+						<td>Fructus Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes rosthornii</em></td>
+						<td>Gua lou; Gua lou shi</td>
+						<td>Fructus Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes kirilowii</em></td>
+						<td>Gua lou ren; Gua lou zhi</td>
+						<td>Semen Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes rosthornii</em></td>
+						<td>Gua lou ren; Gua lou zhi</td>
+						<td>Semen Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes kirilowii</em></td>
+						<td>Gua lou pi</td>
+						<td>Pericarpium Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes rosthornii</em></td>
+						<td>Gua lou pi</td>
+						<td>Pericarpium Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes kirilowii</em></td>
+						<td>Gua lou gen; Tian hua fen</td>
+						<td>Radix Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trichosanthes rosthornii</em></td>
+						<td>Gua lou gen; Tian hua fen</td>
+						<td>Radix Trichosanthis</td>
+					</tr>
+					<tr>
+						<td><em>Trigonella foenum-graecum</em></td>
+						<td>Hu lu ba</td>
+						<td>Semen Trigonellae</td>
+					</tr>
+					<tr>
+						<td><em>Triticum aestivum</em></td>
+						<td>Fu xiao mai</td>
+						<td>Semen Tritici Aestivi Levis</td>
+					</tr>
+					<tr>
+						<td><em>Triticum aestivum</em></td>
+						<td>Xiao mai</td>
+						<td>Fructus Tritici</td>
+					</tr>
+					<tr>
+						<td><em>Triticum aestivum</em></td>
+						<td>Yi tang</td>
+						<td>Maltosum</td>
+					</tr>
+					<tr>
+						<td><em>Trogopterus xanthipes</em></td>
+						<td>Wu ling zhi</td>
+						<td>Excrementum Trogopteri seu Pteromi</td>
+					</tr>
+					<tr>
+						<td><em>Typha angustifolia</em></td>
+						<td>Pu huang</td>
+						<td>Pollen Typhae</td>
+					</tr>
+					<tr>
+						<td><em>Typha orientalis</em></td>
+						<td>Pu huang</td>
+						<td>Pollen Typhae</td>
+					</tr>
+					<tr>
+						<td><em>Uncaria gambir</em></td>
+						<td>Er cha</td>
+						<td>Catechu</td>
+					</tr>
+					<tr>
+						<td><em>Uncaria hirsuta</em></td>
+						<td>Gou teng</td>
+						<td>Ramulus cum Uncis Uncariae</td>
+					</tr>
+					<tr>
+						<td><em>Uncaria macrophylla</em></td>
+						<td>Gou teng</td>
+						<td>Ramulus cum Uncis Uncariae</td>
+					</tr>
+					<tr>
+						<td><em>Uncaria rhynchophylla</em></td>
+						<td>Gou teng</td>
+						<td>Ramulus cum Uncis Uncariae</td>
+					</tr>
+					<tr>
+						<td><em>Uncaria sessilifructus</em></td>
+						<td>Gou teng</td>
+						<td>Ramulus cum Uncis Uncariae</td>
+					</tr>
+					<tr>
+						<td><em>Uncaria sinensis</em></td>
+						<td>Gou teng</td>
+						<td>Ramulus cum Uncis Uncariae</td>
+					</tr>
+					<tr>
+						<td><em>Vaccaria hispanica</em> subsp.
+							<em>hispanica</em></td>
+						<td>Wang bu liu xing</td>
+						<td>Semen Vaccariae</td>
+					</tr>
+					<tr>
+						<td><em>Valeriana officinalis</em></td>
+						<td>Xie cao </td>
+						<td>Radix et Rhizoma Valerianae</td>
+					</tr>
+					<tr>
+						<td><em>Verbena officinalis</em></td>
+						<td>Ma bian cao</td>
+						<td>Herba Verbenae</td>
+					</tr>
+					<tr>
+						<td><em>Vigna radiata</em> var. <em>radiata</em></td>
+						<td>Lu dou</td>
+						<td>Semen Phaseoli Radiati</td>
+					</tr>
+					<tr>
+						<td><em>Vincetoxicum atratum</em></td>
+						<td>Bai wei</td>
+						<td>Radix et Rhizoma Cynanchi Atrati</td>
+					</tr>
+					<tr>
+						<td><em>Vincetoxicum pycnostelma</em></td>
+						<td>Xu chang qing</td>
+						<td>Radix et Rhizoma Cynanchi Paniculati</td>
+					</tr>
+					<tr>
+						<td><em>Vincetoxicum stauntonii</em></td>
+						<td>Bai qian</td>
+						<td>Rhizoma et Radix Cynanchi Stauntonii</td>
+					</tr>
+					<tr>
+						<td><em>Vincetoxicum versicolor</em></td>
+						<td>Bai wei</td>
+						<td>Radix et Rhizoma Cynanchi Atrati</td>
+					</tr>
+					<tr>
+						<td><em>Viola philippica</em> var.
+							<em>philippica</em></td>
+						<td>Zi hua di ding</td>
+						<td>Herba Violae</td>
+					</tr>
+					<tr>
+						<td><em>Vitex rotundifolia</em></td>
+						<td>Man jing zi</td>
+						<td>Fructus Viticis</td>
+					</tr>
+					<tr>
+						<td><em>Vitex trifolia</em></td>
+						<td>Man jing zi</td>
+						<td>Fructus Viticis</td>
+					</tr>
+					<tr>
+						<td><em>Whitmania acranulata</em></td>
+						<td>Shui zhi</td>
+						<td>Hirudo</td>
+					</tr>
+					<tr>
+						<td><em>Whitmania pigra</em></td>
+						<td>Shui zhi</td>
+						<td>Hirudo</td>
+					</tr>
+					<tr>
+						<td><em>Zanthoxylum bungeanum</em></td>
+						<td>Hua jiao</td>
+						<td>Pericarpium Zanthoxyli</td>
+					</tr>
+					<tr>
+						<td><em>Zanthoxylum nitidum</em></td>
+						<td>Liang mian zhen</td>
+						<td>Radix Zanthoxyli</td>
+					</tr>
+					<tr>
+						<td><em>Zanthoxylum schinifolium</em></td>
+						<td>Hua jiao</td>
+						<td>Pericarpium Zanthoxyli</td>
+					</tr>
+					<tr>
+						<td><em>Zea mays</em></td>
+						<td>Yu mi xu</td>
+						<td>Stigma Maydis</td>
+					</tr>
+					<tr>
+						<td><em>Zea mays</em></td>
+						<td>Yi tang</td>
+						<td>Maltosum</td>
+					</tr>
+					<tr>
+						<td><em>Zingiber officinale</em></td>
+						<td>Gan jiang</td>
+						<td>Rhizoma Zingiberis</td>
+					</tr>
+					<tr>
+						<td><em>Zingiber officinale</em></td>
+						<td>Pao jiang</td>
+						<td>Rhizoma Zingiberis Praeparatum</td>
+					</tr>
+					<tr>
+						<td><em>Zingiber officinale</em></td>
+						<td>Sheng jiang</td>
+						<td>Rhizoma Zingiberis Recens</td>
+					</tr>
+					<tr>
+						<td><em>Zingiber officinale</em></td>
+						<td>Sheng jiang pi</td>
+						<td>Pericarpium Zingiberis Recens</td>
+					</tr>
+					<tr>
+						<td><em>Ziziphus jujuba</em></td>
+						<td>Da zao</td>
+						<td>Fructus Jujubae</td>
+					</tr>
+					<tr>
+						<td><em>Ziziphus jujuba</em> var.spinosa</em>
+						</td>
+						<td>Suan zao ren</td>
+						<td>Semen Ziziphi Spinosae</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<a id="ref1-1">*</a>The Pharmacopoeial name is the ingredient name found in the NHPID.<br/>
+				<a id="ref1-2">**</a>Products providing more than 1 g of <em>Piper longum</em> are excluded from this monograph
+			</p>
+
+			<table id="ref2" class="subject">
+				<caption>Table 2: Medicinal Ingredients with diuretic or stimulant laxative properties</caption>
+				<thead>
+					<tr>
+						<th>Proper name(s)</th>
+						<th>Common name(s) (Pinyin)</th>
+						<th>Pharmacopoeial name<a href="#ref2-1" style="text-decoration: none;">*</a></th>
+					</tr>
+					<tr>
+						<th colspan="3">Ingredients with diuretic properties</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Alisma plantago-aquatica</em> subsp. <em>orientale</em></td>
+						<td>Ze xie</td>
+						<td>Rhizoma Alismatis</td>
+					</tr>
+					<tr>
+						<td><em>Bassia scoparia</em></td>
+						<td>Di fu zi</td>
+						<td>Fructus Kochiae</td>
+					</tr>
+					<tr>
+						<td><em>Benincasa hispida</em></td>
+						<td>Dong gua pi</td>
+						<td>Exocarpium Benincasae</td>
+					</tr>
+					<tr>
+						<td><em>Clematis armandii</em></td>
+						<td>Chuan mu tong</td>
+						<td>Caulis Clematidis Armandii</td>
+					</tr>
+					<tr>
+						<td><em>Clematis montana</em></td>
+						<td>Chuan mu tong</td>
+						<td>Caulis Clematidis Armandii</td>
+					</tr>
+					<tr>
+						<td><em>Coix lacryma-jobi</em> var. <em>ma-yuen</em></td>
+						<td>Yi yi ren</td>
+						<td>Semen Coicis</td>
+					</tr>
+					<tr>
+						<td><em>Dianthus superbus</em></td>
+						<td>Qu mai</td>
+						<td>Herba Dianthi</td>
+					</tr>
+					<tr>
+						<td><em>Desmodium styracifolium</em></td>
+						<td>Guang jin qian cao</td>
+						<td>Herba Desmodii Styracifolii</td>
+					</tr>
+					<tr>
+						<td><em>Juncus effusus</em></td>
+						<td>Deng xin cao</td>
+						<td>Medulla Junci</td>
+					</tr>
+					<tr>
+						<td><em>Lygodium japonicum</em></td>
+						<td>Hai jin sha</td>
+						<td>Spora Lygodii</td>
+					</tr>
+					<tr>
+						<td><em>Lysimachia christinae</em></td>
+						<td>Jin qian cao</td>
+						<td>Herba Lysmachiae</td>
+					</tr>
+					<tr>
+						<td><em>Plantago asiatica</em></td>
+						<td>Che qian cao</td>
+						<td>Herba Plantaginis</td>
+					</tr>
+					<tr>
+						<td><em>Plantago asiatica</em></td>
+						<td>Che qian zi</td>
+						<td>Semen Plantaginis</td>
+					</tr>
+					<tr>
+						<td><em>Plantago depressa</em></td>
+						<td>Che qian cao</td>
+						<td>Herba Plantaginis</td>
+					</tr>
+					<tr>
+						<td><em>Plantago depressa</em></td>
+						<td>Che qian zi</td>
+						<td>Semen Plantaginis</td>
+					</tr>
+					<tr>
+						<td><em>Polygonum aviculare</em></td>
+						<td>Bian xu</td>
+						<td>Herba Polygoni Avicularis</td>
+					</tr>
+					<tr>
+						<td><em>Polyporus umbellatus</em></td>
+						<td>Zhu ling</td>
+						<td>Polyporus</td>
+					</tr>
+					<tr>
+						<td><em>Stephania tetrandra</em></td>
+						<td>Fang ji</td>
+						<td>Radix Stephaniae Tetrandrae</td>
+					</tr>
+					<tr>
+						<td><em>Tetrapanax papyrifer</em></td>
+						<td>Tong cao</td>
+						<td>Medulla Tetrapanacis</td>
+					</tr>
+					<tr>
+						<td><em>Vigna angularis</em></td>
+						<td>Chi xiao dou</td>
+						<td>Semen Vignae</td>
+					</tr>
+					<tr>
+						<td><em>Vigna umbellata</em></td>
+						<td>Chi xiao dou</td>
+						<td>Semen Vignae</td>
+					</tr>
+					<tr>
+						<td><em>Wolfiporia extensa</em></td>
+						<td>Fu ling</td>
+						<td>Poria</td>
+					</tr>
+					<tr>
+						<td><em>Wolfiporia extensa</em></td>
+						<td>Chi fu ling</td>
+						<td>Poria Rubra</td>
+					</tr>
+					<tr>
+						<td><em>Wolfiporia extensa</em></td>
+						<td>Fu ling pi</td>
+						<td>Cutis Poriae</td>
+					</tr>
+					<tr>
+						<td><em>Wolfiporia extensa</em></td>
+						<td>Fu shen</td>
+						<td>Sclerotium Pararadicus Poriae</td>
+					</tr>
+					<tr>
+						<th colspan="3">Ingredients with stimulant laxative properties</th>
+					</tr>
+					<tr>
+						<td><em>Aloe ferox</em></td>
+						<td>Lu hui</td>
+						<td>Aloe</td>
+					</tr>
+					<tr>
+						<td><em>Aloe vera</em></td>
+						<td>Lu hui</td>
+						<td>Aloe</td>
+					</tr>
+					<tr>
+						<td><em>Rheum officinale</em></td>
+						<td>Da huang</td>
+						<td>Radix et Rhizoma Rhei</td>
+					</tr>
+					<tr>
+						<td><em>Rheum palmatum</em></td>
+						<td>Da huang</td>
+						<td>Radix et Rhizoma Rhei</td>
+					</tr>
+					<tr>
+						<td><em>Rheum tanguticum</em></td>
+						<td>Da huang</td>
+						<td>Radix et Rhizoma Rhei</td>
+					</tr>
+					<tr>
+						<td><em>Senna obtusifolia</em></td>
+						<td>Jue ming zi</td>
+						<td>Semen Cassiae</td>
+					</tr>
+					<tr>
+						<td><em>Senna alexandrina</em></td>
+						<td>Fan xie ye</td>
+						<td>Folium Sennae</td>
+					</tr>
+					<tr>
+						<td><em>Senna tora</em></td>
+						<td>Jue ming zi</td>
+						<td>Semen Cassiae</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<a id="ref2-1">*</a>The Pharmacopoeial name is the ingredient name found in the NHPID.
+			</p>
+
+			<table id="ref3" class="subject">
+				<caption>Table 3: Medicinal Ingredients that are only allowable when prepared/used according to the specifications/comments outlined in the NHPID</caption>
+				<thead>
+					<tr>
+						<th>Proper name(s)</th>
+						<th>Common name(s) (Pinyin)</th>
+						<th>Pharmacopoeial name<a href="#ref3-1" style="text-decoration: none;">*</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Aconitum carmichaelii</em></td>
+						<td>Zhi fu zi</td>
+						<td>Radix Aconiti Praeparata</td>
+					</tr>
+					<tr>
+						<td><em>Aconitum carmichaelii</em></td>
+						<td>Zhi fu zi&semi; Fu zi</td>
+						<td>Radix Aconiti Lateralis Praeparata</td>
+					</tr>
+					<tr>
+						<td><em>Aconitum kusnezoffii</em></td>
+						<td>Zhi cao wu</td>
+						<td>Radix Aconiti Kusnezoffii Praeparata</td>
+					</tr>
+					<tr>
+						<td><em>Acorus calamus</em></td>
+						<td>Zang chang pu</td>
+						<td>Rhizoma Acori Calami</td>
+					</tr>
+					<tr>
+						<td><em>Acorus gramineus</em></td>
+						<td>Shi chang pu</td>
+						<td>Rhizoma Acori Tatarinowii</td>
+					</tr>
+					<tr>
+						<td><em>Anemone altaica</em></td>
+						<td>Jiu jie chang pu</td>
+						<td>Rhizoma Anemones Altaicae</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema amurense</em></td>
+						<td>Zhi tian nan xing</td>
+						<td>Rhizoma Arisaematis Praeparatum</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema erubescens</em></td>
+						<td>Zhi tian nan xing</td>
+						<td>Rhizoma Arisaematis Praeparatum</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema heterophyllum</em></td>
+						<td>Zhi tian nan xing</td>
+						<td>Rhizoma Arisaematis Praeparatum</td>
+					</tr>
+					<tr>
+						<td><em>Artemisia annua</em></td>
+						<td>Qing hao</td>
+						<td>Herba Artemisiae Annuae</td>
+					</tr>
+					<tr>
+						<td><em>Artemisia anomala</em></td>
+						<td>Liu ji nu</td>
+						<td>Herba Artemisiae Anomalae</td>
+					</tr>
+					<tr>
+						<td><em>Artemisia argyi</em></td>
+						<td>Ai ye</td>
+						<td>Folium Artemisiae Argyi</td>
+					</tr>
+					<tr>
+						<td><em>Artemisia capillaris</em></td>
+						<td>Yin chen</td>
+						<td>Herba Artemisiae Scopariae</td>
+					</tr>
+					<tr>
+						<td><em>Artemisia scoparia</em></td>
+						<td>Yin chen</td>
+						<td>Herba Artemisiae Scopariae</td>
+					</tr>
+					<tr>
+						<td><em>Buthus martensii</em></td>
+						<td>Quan xie</td>
+						<td>Scorpio</td>
+					</tr>
+					<tr>
+						<td><em>Cannabis sativa</em></td>
+						<td>Huo ma ren</td>
+						<td>Semen Cannabis</td>
+					</tr>
+					<tr>
+						<td><em>Cremastra appendiculata</em></td>
+						<td>Shan ci gu</td>
+						<td>Pseudobulbus Cremastrae Pleione</td>
+					</tr>
+					<tr>
+						<td><em>Ephedra equisetina</em></td>
+						<td>Ma huang</td>
+						<td>Herba Ephedrae</td>
+					</tr>
+					<tr>
+						<td><em>Ephedra intermedia</em></td>
+						<td>Ma huang</td>
+						<td>Herba Ephedrae</td>
+					</tr>
+					<tr>
+						<td><em>Ephedra sinica</em></td>
+						<td>Ma huang</td>
+						<td>Herba Ephedrae</td>
+					</tr>
+					<tr>
+						<td><em>Ginkgo biloba</em></td>
+						<td>Yin xing ye</td>
+						<td>Folium Ginkgo</td>
+					</tr>
+					<tr>
+						<td><em>Ginkgo biloba</em></td>
+						<td>Bai guo</td>
+						<td>Semen Ginkgo</td>
+					</tr>
+					<tr>
+						<td><em>Lablab purpureus</em></td>
+						<td>Bai bian dou</td>
+						<td>Semen Lablab Album</td>
+					</tr>
+					<tr>
+						<td><em>Lithospermum erythrorhizon</em></td>
+						<td>Zi cao gen</td>
+						<td>Radix Lithospermi</td>
+					</tr>
+					<tr>
+						<td>Massa medicata fermentata</td>
+						<td>Shen qu&semi; Liu shen qu</td>
+						<td>Massa Medicata Fermentata</td>
+					</tr>
+					<tr>
+						<td>Massa medicata fermentata (Guangdong Shenqu)</td>
+						<td>Guangdong Shenqu</td>
+						<td>Massa Medicata Fermentata (Guangdong Shenqu)</td>
+					</tr>
+					<tr>
+						<td><em>Menispermum dauricum</em></td>
+						<td>Bei dou gen</td>
+						<td>Rhizoma Menispermi</td>
+					</tr>
+					<tr>
+						<td><em>Mentha canadensis</em></td>
+						<td>Bo he su you</td>
+						<td>Oleum Menthae Dementholatum</td>
+					</tr>
+					<tr>
+						<td><em>Pinellia ternata</em></td>
+						<td>Fa ban xia; Zhi ban xia</td>
+						<td>Rhizoma Pinelliae Praeparatum</td>
+					</tr>
+					<tr>
+						<td><em>Pinellia ternata</em></td>
+						<td>Qing ban xia</td>
+						<td>Rhizoma Pinelliae Praeparatum cum Alumine</td>
+					</tr>
+					<tr>
+						<td><em>Pinellia ternata</em></td>
+						<td>Jiang ban xia</td>
+						<td>Rhizoma Pinelliae Praeparatum cum Zingibere et Alumine</td>
+					</tr>
+					<tr>
+						<td><em>Prunus armeniaca</em> var. <em>ansu</em></td>
+						<td>Ku xing ren&semi; Tian xing ren</td>
+						<td>Semen Armeniacae Amarum</td>
+					</tr>
+					<tr>
+						<td><em>Prunus armeniaca</em></td>
+						<td>Ku xing ren&semi; Tian xing ren</td>
+						<td>Semen Armeniacae Amarum</td>
+					</tr>
+					<tr>
+						<td><em>Prunus sibirica</em></td>
+						<td>Ku xing ren&semi; Tian xing ren</td>
+						<td>Semen Armeniacae Amarum</td>
+					</tr>
+					<tr>
+						<td><em>Prunus humilis</em></td>
+						<td>Yu li ren</td>
+						<td>Semen Pruni</td>
+					</tr>
+					<tr>
+						<td><em>Prunus japonica</em></td>
+						<td>Yu li ren</td>
+						<td>Semen Pruni</td>
+					</tr>
+					<tr>
+						<td><em>Prunus pedunculata</em></td>
+						<td>Yu li ren</td>
+						<td>Semen Pruni</td>
+					</tr>
+					<tr>
+						<td><em>Prunus davidiana</em></td>
+						<td>Tao ren</td>
+						<td>Semen Persicae</td>
+					</tr>
+					<tr>
+						<td><em>Prunus persica</em></td>
+						<td>Tao ren</td>
+						<td>Semen Persicae</td>
+					</tr>
+					<tr>
+						<td><em>Pueraria montana</em> var. <em>lobata</em></td>
+						<td>Ge gen</td>
+						<td>Radix Puerariae Lobatae</td>
+					</tr>
+					<tr>
+						<td>Red yeast rice</td>
+						<td>Hong qu</td>
+						<td>Monascus</td>
+					</tr>
+					<tr>
+						<td><em>Scolopendra subspinipes mutilans</em></td>
+						<td>Wu gong</td>
+						<td>Scolopendra</td>
+					</tr>
+					<tr>
+						<td><em>Stephania tetrandra</em></td>
+						<td>Fang ji</td>
+						<td>Radix Stephaniae Tetrandrae</td>
+					</tr>
+					<tr>
+						<td>Talcum</td>
+						<td>Hua shi</td>
+						<td>Talcum</td>
+					</tr>
+					<tr>
+						<td><em>Tussilago farfara</em></td>
+						<td>Kuan dong hua</td>
+						<td>Flos Farfarae</td>
+					</tr>
+					<tr>
+						<td><em>Typhonium giganteum </em></td>
+						<td>Bai fu zi</td>
+						<td>Rhizoma Typhonii</td>
+					</tr>
+					<tr>
+						<td><em>Xanthium sibiricum</em></td>
+						<td>Cang er zi</td>
+						<td>Fructus Xanthii</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<a id="ref3-1">*</a>The Pharmacopoeial name is the ingredient name found in the NHPID.
+			</p>
+
+			<table id="ref4" class="subject">
+				<caption>Table 4: Medicinal Ingredients that are only allowable for topical use</caption>
+				<thead>
+					<tr>
+						<th>Proper name(s)</th>
+						<th>Common name(s) (Pinyin)</th>
+						<th>Pharmacopoeial name<a href="#ref4-1" style="text-decoration: none;">*</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Arisaema amurense</em></td>
+						<td>Tian nan xing</td>
+						<td>Rhizoma Arisaematis</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema erubescens</em></td>
+						<td>Tian nan xing</td>
+						<td>Rhizoma Arisaematis</td>
+					</tr>
+					<tr>
+						<td><em>Arisaema heterophyllum</em></td>
+						<td>Tian nan xing</td>
+						<td>Rhizoma Arisaematis</td>
+					</tr>
+					<tr>
+						<td><em>Borneolum syntheticum</em></td>
+						<td>Bing pian</td>
+						<td>Borneolum Syntheticum</td>
+					</tr>
+					<tr>
+						<td><em>Cinnamomum camphora</em></td>
+						<td>Tian ran bing pian</td>
+						<td>Borneolum</td>
+					</tr>
+					<tr>
+						<td><em>Dryobalanops aromatica</em></td>
+						<td>Tian ran bing pian</td>
+						<td>Borneolum</td>
+					</tr>
+					<tr>
+						<td><em>Parapolybia varia</em></td>
+						<td>Feng fang</td>
+						<td>Nidus Vespae</td>
+					</tr>
+					<tr>
+						<td><em>Polistes jokahamae</em></td>
+						<td>Feng fang</td>
+						<td>Nidus Vespae</td>
+					</tr>
+					<tr>
+						<td><em>Polistes olivaceus</em></td>
+						<td>Feng fang</td>
+						<td>Nidus Vespae</td>
+					</tr>
+					<tr>
+						<td><em>Wikstroemia indica</em></td>
+						<td>Pu yin</td>
+						<td>Radix Wikstroemia Indica</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<a id="ref4-1">*</a>The Pharmacopoeial name is the ingredient name found in the NHPID.
+			</p>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from May 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-05-29</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Revisions of the combination rules to specify Zhi gan cao in addition to Gan cao</li>
+								<li>Addition of a note in the quantity section</li>
+								<li>Clarification in the table of required risk statements for oral products, indicating that Turmeric risk statements apply to all Curcuma species</li>
+								<li>Clarification in the table of required risk statements for oral products, indicating that Licorice risk statements also apply to Radix et Rhizoma Glycyrrhizae Praeparata cum Melle</li>
+								<li>Addition of a new reference to the list of TCM reference texts</li>
+								<li>Additions of one proper name and several common names</li>
+								<li>Correction of typographic errors in certain pharmacopoeial names</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2025-10-31</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2025-05-30</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2025-03-28</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2022-06-30</td>
+						<td>Validation (major revisions with consultation)</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2015-06-09</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2015-03-31</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2014-01-07</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-06-10</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-06-06</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-05-16</td>
+						<td>Initial release</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+	
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

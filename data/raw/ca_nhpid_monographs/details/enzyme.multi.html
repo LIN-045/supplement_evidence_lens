@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=enzyme.multi\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="2fd105c5-3a8d-482c-8b55-c43be6e35386"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Digestive Enzymes</h1>
+	<div class="icon">
+		<a href="dbImages/mono_digestive-enzymes_english.pdf" title="Digestive Enzymes"><img alt="Monograph: Digestive Enzymes" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 85 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Any ingredient in Tables 1 to 3 may be formulated as single ingredient products, or two or more 
+				ingredients may be combined to form multi-ingredient products.</li>
+			<li>The enzyme nomenclature identification number (IUBMB No.) is not required but may be provided as 
+				additional information on the cover letter.</li>
+			<li>The text in parentheses is additional optional information which can be included on the label at 
+				the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	<p><strong>Rules when this monograph is combined with other monographs (Class II and III applications):</strong>
+		<ul>
+			<li>Liquid and liquid-containing dosage forms (e.g., capsule, soft&semi; spray) are not acceptable as 
+				Class II applications when an enzyme is combined with non-enzymatic ingredients as this may 
+				impact the enzyme activity. These products may be submitted as a Class III application.</li>
+			<li>However, this restriction does not apply if the enzymes are microencapsulated (i.e., Capsule, 
+				enteric-coated pellets and Tablet, enteric-coated granules).</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>June 26, 2026</p>
+	</section>
+	
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Carbohydrases: Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="3">4-alpha-D-Glucan glucanohydrolase</td>
+						<td rowspan="3">alpha-Amylase</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td><em>Hordeum vulgare</em></td>
+						<td>Seed</td> 
+					</tr>
+					<tr>
+						<td><em>Rhizopus oryzae</em></td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>alpha-D-Galactoside galactohydrolase</td>
+						<td>alpha-Galactosidase</td>
+						<td><em>Aspergillus niger</em></td>
+						<td>Whole</td> 
+					</tr>
+					<tr>
+						<td>1,3-(1,3&semi;1,4)-beta-D-Glucan 3(4)-glucanohydrolase</td>
+						<td>beta-Glucanase</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus niger</em></li> 
+								<li><em>Trichoderma longibrachiatum</em></li> 
+								<li><em>Trichoderma reesei</em></li> 
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>1,4-alpha-D-Glucan glucohydrolase</li>
+								<li>4-alpha-D-Glucan glucohydrolase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Acid maltase</li>
+								<li>Amyloglucosidase</li>
+								<li>Glucoamylase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger</em></li> 
+								<li><em>Rhizopus niveus</em></li> 
+								<li><em>Rhizopus oryzae</em></li> 
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>4-(1,3&semi;1,4)-beta-D-Glucan 4-glucanohydrolase</td>
+						<td>Cellulase</td> 
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger</em></li> 
+								<li><em>Trichoderma longibrachiatum</em></li> 
+								<li><em>Trichoderma reesei</em></li> 
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>Diastase</td>
+						<td>Diastase</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger<em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>1,3-beta-D-Xylan xylanohydrolase</li>
+								<li>1,4-beta-D-Mannan mannanohydrolase</li>
+								<li>1,5-alpha-L-Arabinan arabinanohydrolase</li>
+								<li>alpha-L-Arabinofuranoside arabinofuranohydrolase</li>
+							</ul>
+						</td>
+						<td>Hemicellulase</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger</em></li> 
+								<li><em>Trichoderma longibrachiatum</em></li> 
+								<li><em>Trichoderma reesei</em></li> 
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>beta-D-Fructofuranoside fructohydrolase</li>
+								<li>beta-Fructofuranosidase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Invertase</li>
+								<li>Sucrase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus niger</em></li>
+								<li><em>Saccharomyces cerevisiae</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>Malt diastase</td>
+						<td>Malt diastase</td>
+						<td><em>Hordeum vulgare</em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>Pectin pectylhydrolase</li>
+								<li>Poly(1,4-alpha-D-galacturonide) glycanohydrolase</li>
+								<li>Poly(1,4-alpha-D-galacturonide) lyase</li>
+								<li>Poly(methoxyl-L-galacturonide) lyase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Pectinase</li>
+								<li>Polygalacturonase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger</em></li>
+								<li><em>Trichoderma longibrachiatum</em></li>
+								<li><em>Trichoderma reesei</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>1,3-beta-D-Xylan xylanohydrolase</li>
+								<li>1,4-beta-D-Xylan xylanohydrolase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>beta-1,3-Xylanase</li>
+								<li>beta-1,4-Xylanase</li>
+								<li>Xylanase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>Trichoderma longibrachiatum</em></li>
+								<li><em>Trichoderma reesei</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+				</tbody>
+			</table>
+			<table id="ref2" class="subject">
+				<caption>Table 2. Proteases: Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Bromelain</td>
+						<td>Bromelain</td>
+						<td>
+							<ul>
+								<li><em>Ananas comosus</em> var. <em>bracteatus</em></li>
+								<li><em>Ananas comosus</em> var. <em>comosus</em></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Fruit</li>
+								<li>Stem</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>Bacterial Protease</td>
+						<td>Bacterial Protease</td>
+						<td><em>Bacillus subtilis</em></td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>Chymotrypsin</td>
+						<td>Chymotrypsin</td>
+						<td>
+							<ul>
+								<li><em>Bos taurus</em></li>
+								<li><em>Sus scrofa</em></li>
+							</ul>
+						</td>
+						<td>Pancreas</td>
+					</tr>
+					<tr>
+						<td>Fungal protease</td>
+						<td>
+							<ul>
+								<li>Fungal protease</li>
+								<li>Protease</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryza</em></li>
+								<li><em>Aspergillus niger</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>Pancreatic enzymes</td>
+						<td>Pancreatic enzymes</td>
+						<td rowspan="4">
+							<ul>
+								<li><em>Bos taurus</em></li>
+								<li><em>Sus scrofa</em></li>
+							</ul>
+						</td>
+						<td rowspan="4">Pancreas</td>
+					</tr>
+					<tr>
+						<td>Pancreatic extract</td>
+						<td>Pancreatic extract</td> 
+					</tr>
+					<tr>
+						<td>Pancreatin</td>
+						<td>Pancreatin</td> 
+					</tr>
+					<tr>
+						<td>Pancrelipase</td>
+						<td>Pancrelipase</td> 
+					</tr>
+					<tr>
+						<td>Papain</td>
+						<td>Papain</td>
+						<td><em>Carica papaya</em></td>
+						<td>
+							<ul>
+								<li>Fruit</li>
+								<li>Leaf</li>
+							</ul>
+						</td>
+					</tr>
+					<td>
+						<ul>
+							<li>Pepsin A</li>
+							<li>Pepsin B</li>
+						</ul>
+					</td>
+						<td>Pepsin</td>
+						<td><em>Sus scrofa</em></td>
+						<td>Stomach</td>
+					</tr>
+					<tr>
+						<td>Trypsin</td>
+						<td>Trypsin</td>
+						<td>
+							<ul>
+								<li><em>Bos taurus</em></li>
+								<li><em>Sus scrofa</em></li>
+							</ul>
+						</td>
+						<td>Pancreas</td>
+					</tr>
+				</tbody>
+			</table>
+			<table id="ref3" class="subject">
+				<caption>Table 3. Other enzymes: Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Hydrogen-peroxide: hydrogen-peroxide oxidoreductase</td>
+						<td>Catalase</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus niger</em></li>
+								<li><em>Saccharomyces cerevisiae</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>beta-D-Galactoside galactohydrolase</td>
+						<td>
+							<ul>
+								<li>beta-Galactosidase</li>
+								<li>Lactase</li>
+							</ul>
+						</td>
+						<td><em>Aspergillus flavus</em> var. <em>oryzae</em></td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>Triacylglycerol acylhydrolase</li>
+								<li>Triacylglycerol lipase</li>
+							</ul>
+						</td>
+						<td>Lipase</td>
+						<td>
+							<ul>
+								<li><em>Aspergillus flavus</em> var. <em>oryzae</em></li>
+								<li><em>Aspergillus niger</em></li>
+								<li><em>Rhizopus oryzae</em></li>
+							</ul>
+						</td>
+						<td>Whole</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>myo-Inositol-hexakisphosphate 3-phosphohydrolase</li>
+								<li>myo-Inositol-hexakisphosphate 4-phosphohydrolase</li>
+								<li>Orthophosphoric-mono ester phosphohydrolase</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>1-Phytase</li>
+								<li>3-Phytase</li>
+								<li>4-Phytase</li>
+								<li>6-Phytase</li>
+								<li>Phytase</li>
+								</ul>
+							</td>
+						<td><em>Aspergillus niger</em></td>
+						<td>Whole</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References Tables 1 to 3: Proper names: BP 2025&semi; IUBMB 2025&semi; Ph.Eu 2025&semi; FCC 2024&semi; USP-NF 2024&semi; WHO 2011&semi; Common names: BP 2025&semi; IUBMB 2025&semi; Ph.Eu 2025&semi; FCC 2024&semi; USP-NF 2024&semi; WHO 2011&semi; Source information: BP 2025&semi; CABI 2025&semi; COL 2025&semi; Ph.Eu 2025&semi; USDA 2025&semi; Brayfield and Cadart 2024&semi; FCC 2024&semi; Kirk 2024&semi; ITIS 2024&semi; RSC 2024&semi; USP-NF 2024&semi; Bisby et al. 2010&semi; Morton 1987.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications. It includes the dosage forms listed below for pancreatic enzymes.</p>
+			<p><strong>Pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase: </strong></p>
+				<p>The only acceptable dosage forms are: Capsule, enteric-coated&semi; Capsule, soft, enteric-coated&semi; Capsule, enteric-coated pellets&semi; Granule enteric-coated&semi; Tablet, enteric-coated&semi; Tablets, enteric-coated granules.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><em>All products</em>
+				<ul>
+					<li>Digestive enzyme(s).</li>
+					<li>Digestive aid.</li>
+				</ul>
+			</p>
+			<p><em>Products containing proteases (Table 2)</em>
+				<ul>
+					<li>Helps digest proteins (Murray 1996).</li>
+				</ul>
+			</p>
+			<p><em>Products containing pancreatic enzymes</em>
+				<ul>
+					<li>Digestive aid to help decrease bloating after high caloric, high fat meals (Suarez et al. 1999).</li>
+					<li>Helps to decrease bloating after high caloric, high fat meals (Suarez et al. 1999).</li>
+				</ul>
+			</p>
+			<p><em>Products containing alpha-galactosidase</em>
+				<ul>
+					<li>Helps prevent gastrointestinal intolerance of oligosaccharides/fermentable carbohydrates (Di Stefano et al. 2007&semi; Pray 2006&semi; Ganiats et al. 1994).</li>
+					<li>Helps reduce gas production/flatulence following a meal rich in oligosaccharides/fermentable carbohydrates (such as vegetables, pulses/legumes/beans and whole grains) (Di Stefano et al. 2007&semi; Pray 2006&semi; Lettieri and Dain 1998&semi; Ganiats et al. 1994).</li>
+				</ul>
+			</p>
+			<p><em>Products containing bromelain</em>
+				<ul>
+					<li>Used in Herbal Medicine to help relieve minor pain, swelling and inflammation (Walker et al. 2002&semi; Blumenthal 1998).</li>
+				</ul>
+			</p>
+			<p><em>Products containing lactase</em>
+				<ul>
+					<li>Assist in the digestion of foods containing lactose (e.g., dairy foods, milk, etc.) (Ramirez et al. 1994&semi; Lin et al. 1993&semi; Biller et al. 1987&semi; Moskovitz et al. 1987).</li>
+					<li>Helps prevent symptoms of lactose intolerance (including gas, bloating, cramping, and diarrhea) (Ramirez et al. 1994&semi; Lin et al. 1993&semi; Biller et al. 1987&semi; Moskovitz et al. 1987).</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<table id="ref4" class="subject">
+					<caption>Table 4. Daily maximum of enzymatic activity unit (refer to Appendix I for the definitions of the activity units)</caption>
+					<thead>
+						<tr>
+							<th>Medicinal ingredients</th>
+							<th>Quantities (enzymatic activity per day&semi; and per single dose, when applicable)<sup><a href="#ref4-1" style="text-decoration: none;">1</a>,<a href="#ref4-2" style="text-decoration: none;">2</a></sup></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>alpha-Amylase</td>
+							<td>No to exceed 150,000 FCC DU per day&semi; and 34,000 FCC DU per single dose</td>
+						</tr>
+						<tr>
+							<td rowspan="2">alpha-Galactosidase</td>
+							<td><em>Digestive enzyme/Digestive aid</em><br>Not to exceed 3,000 FCC GalU per day</td>
+						</tr>
+						<tr>
+							<td><em>Prevention of gastrointestinal intolerance/Reduction of flatulence</em><br>260 - 3,000 FCC GalU per day</td>
+						</tr>
+						<tr>
+							<td>Bacterial protease</td>
+							<td>Not to exceed 490,000 FCC PC per day</td>
+						</tr>
+						<tr>
+							<td>beta-Glucanase</td>
+							<td>Not to exceed 210 FCC BGU per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Bromelain</td>
+							<td><em>Digestive enzyme/Digestive aid/Digest proteins</em><br>Not to exceed 130,000,000 FCC PU per day&semi; and 45,000,000 FCC PU per single dose</td>
+						</tr>
+						<tr> 
+							<td><em>Minor pain, swelling, and inflammation relief</em><br>480,000 - 130,000,000 FCC PU per day&semi; Not to exceed 45,000,000 FCC PU per single dose</td>
+						</tr>
+						<tr>
+							<td>Catalase</td>
+							<td>Not to exceed 3,200 FCC BU per day</td>
+						</tr>
+						<tr>
+							<td>Cellulase</td>
+							<td>Not to exceed 110,000 FCC CU per day</td>
+						</tr>
+						<tr>
+							<td>Chymotrypsin</td>
+							<td>Not to exceed 480,000 USP CchyUmotrypsin units per day&semi; and 160,000 USP CchyUmotrypsin units per single dose</td>
+						</tr>
+						<tr>
+							<td>Diastase</td>
+							<td>Not to exceed 6,000 FCC DP per day</td>
+						</tr>
+						<tr>
+							<td>Fungal protease</td>
+							<td>Not to exceed 680,000 FCC HUT and/or 6,800 FCC SAP per day</td>
+						</tr>
+						<tr>
+							<td>Glucoamylase (Amyloglucosidase)</td>
+							<td>Not to exceed 300 FCC GU per day</td>
+						</tr>
+						<tr>
+							<td>Hemicellulase</td>
+							<td>Not to exceed 45,000 FCC HCU per day</td>
+						</tr>
+						<tr>
+							<td>Invertase/sucrase</td>
+							<td>Not to exceed 3,000 FCC INVU and/or 4,200 FCC SU per day</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Lactase</td>
+							<td><em>Digestive enzyme/Digestive aid</em><br>Not to exceed 54,000 FCC ALU per day&semi; and 18,000 FCC ALU per single dose</td>
+						</tr>
+						<tr>
+							<td><em>Lactose digestion/Symptoms of lactose intolerance</em><br>3,000 - 54,000 FCC ALU per day&semi; and not to exceed 18,000 FCC ALU per single dose</td>
+						</tr>
+						<tr>
+							<td>Lipase</td>
+							<td>Not to exceed 110,000 FCC LU per day&semi; and 30,000 FCC LU per single dose</td>
+						</tr>
+						<tr>
+							<td>Malt diastase</td>
+							<td>Not to exceed 6,000 FCC DP per day</td>
+						</tr>
+						<tr>
+							<td>Pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase<sup><a href="#ref4-3" style="text-decoration: none;">3</a></sup></td>
+							<td>
+								<ul>
+									<li>Amylase: 17,000 to 149,000 USP amylase units per day&semi; and not to exceed 37,000 USP units per single dose</li>
+									<li>Lipase: 5,000 to 40,000 USP lipase units per day&semi; and not to exceed 20,000 USP units per single dose</li>
+									<li>Protease: 16,000 to 125,000 USP protease units per day&semi; and not to exceed 38,000 USP units per single dose</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Papain</td>
+							<td>Not to exceed 7,200,000 FCC PU per day&semi; and 2,400,000 FCC PU per single dose</td>
+						</tr>
+						<tr>
+							<td>Pectinase</td>
+							<td>Not to exceed 180 endo-PG per day</td>
+						</tr>
+						<tr>
+							<td>Pepsin</td>
+							<td>Not to exceed 1,900,000 FCC PepU per day</td>
+						</tr>
+						<tr>
+							<td>Phytase</td>
+							<td>Not to exceed 75 FCC FTU per day</td>
+						</tr>
+						<tr>
+							<td>Trypsin</td>
+							<td>Not to exceed 1,200,000 USP TrypU per day&semi; and 400,000 USP TrypU per single dose</td>
+						</tr>
+						<tr>
+							<td>Xylanase</td>
+							<td>Not to exceed 3,300 XU</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>References: alpha-Amylase: FCC 2024&semi; Glade et al. 2001&semi; alpha-Galactosidase: FCC 2024&semi; Di Stefano et al. 1999&semi; Domínguez-Muñoz et al. 1997&semi; Other enzymes: NNHPD 2012.</p>
+				<p>
+					<sup id="ref4-1">1</sup>When multiple enzymes are combined, the total activity of each enzyme in the finished product must not exceed the maximum single and daily activities listed in Table 4.<br/>
+					<sup id="ref4-2">2</sup>Other recognized enzymatic activity units may be listed on the product label as long as equivalent to the ones indicated on this monograph and PLA form.<br/>
+					<sup id="ref4-3">3</sup>Pharmacopoeial units other than USP may be represented on the label as additional information. The following approximate conversion factors can be used to convert the activities of pancreatic enzymes (including pancreatic extract, pancreatin, pancrelipase) into USP units (Scharpé et al. 1997):
+					<ul style="list-style: none;">
+						<li>Amylase: 1 Ph. Eur. unit = 1 BP unit = 1 FIP unit ~ 4.15 USP units</li>
+						<li>Lipase: 1 Ph. Eur. unit = 1 BP unit = 1 FIP unit ~ 1 USP unit</li>
+						<li>Protease: 1 Ph. Eur. unit = 1 BP unit = 1 FIP unit ~ 62.5 USP units</li>
+					</ul>
+				</p>
+				<p><Strong>Note:</Strong> The quantity per dosage unit must be the enzymatic activity. The quantity of the enzymatic preparation in mg or ml may also be included as additional quantity.</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>All products&semi; Optional for bromelain used for minor pain, swelling, and inflammation relief</em></p>
+					<p>Take with (or immediately before) a meal/food.<sup><a href="#r1" style="text-decoration: none;">1</a></sup></p>
+						<p><strong><sup id="r1">1</sup>Note:</strong> This directions for use statement can be adjusted on the product label to provide clear instructions to consumers. If the product contains multiple digestive enzymes and associated claims, the directions should be linked to each claim and may be modified to include additional details (e.g., "For lactose intolerance, take with each meal containing lactose"). Additional information, such as “Do not exceed (X capsules per single dose and) Y capsules per day” may replace the dosing information when there is no established minimum dose associated with a claim.</p>
+				<p><em>Products containing pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase</em></p>
+					<p>Use the smallest effective dose which controls symptoms (CPS 2008&semi; Sharpé et al. 1997).</p>
+				<p><em>Capsule, enteric-coated&semi; Capsule, soft, enteric-coated&semi; Capsule, enteric-coated pellets&semi; Granule enteric-coated&semi; Tablet, enteric-coated&semi; Tablets, enteric-coated granules</em></p>
+					<p>Swallow whole. Do not crush or chew (CPS 2008).</p>
+				<p><em>Capsule, enteric-coated pellets&semi; Tablets, enteric-coated granules</em></p>
+					<p>(For individuals who experience difficulties swallowing) Capsules/Tablets may be opened and the content may be mixed with soft food or fluid. Use immediately after mixing (CPS 2008).</p>
+			<h3>Combination rules</h3>
+				<ul>
+					<li>For multi-ingredient products containing bromelain and papain, the maximum enzymatic activity from both enzymes combined cannot exceed the maximum proteolytic activity of 130,000,000 FCC PU per day and 45,000,000 FCC PU per single dose.</li>
+					<li>For multi-ingredient products containing diastase and malt diastase, the maximum enzymatic activity from both enzymes combined cannot exceed 6,000 FCC DP per day.</li>
+				</ul>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p><em>Products providing 60,000,000 FCC PU or less bromelain, per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 16 weeks (Kasemsuk et al. 2016&semi; Gutfreund et al. 1978).</p>
+			<p><em>Products providing more than 60,000,000 FCC PU bromelain, per day and products containing pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks.</p>
+			<p><em>Products containing any other enzyme from Tables 1, 2 and 3</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 to 8 weeks<sup><a href="#r1-2" style="text-decoration: none;">1</a></sup>.</p>
+			<p>
+				<sup id="r1-2">1</sup><Strong>Note: </Strong>The term &lsquo;prolonged use &rsquo;used in previous version of the monograph has been further defined to avoid confusion.
+			</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+				<p><em>Products containing one or more carbohydrases (Table 1)&semi; cellulase&semi; lactase&semi; pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have diabetes.</p>
+				<p><em>Products containing one or more proteases (Table 2)&semi; chymotrypsin&semi; bromelain&semi; papain&semi; trypsin</em>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have gastrointestinal lesions/ulcers or are having surgery.</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners or anti-inflammatory medications.</li>
+					</ul>
+				</p>
+				<p><em>Products containing papain</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have an allergy to latex or fruits (such as avocado, banana, chestnut, passion fruit, fig, melon, mango, kiwi, pineapple, peach, and tomato) (US FDA 2008&semi; APhA 2006&semi; Brehler et al. 1997).</p>
+				<p><em>Products containing pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have pancreatitis, pancreatic exocrine insufficiency or cystic fibrosis (Halm et al. 1999&semi; Delhaye et al. 1996&semi; Guarner et al. 1993).</p>
+				<p><em>Prevention of gastrointestinal intolerance/Reduction of flatulence/Minor pain, swelling, and inflammation relief/Lactose digestion/Symptoms of lactose intolerance/Digestive aid/Decrease bloating</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>Products containing pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase</em></p>
+					<p>Do not use if you are sensitive to pancreatic enzymes (Brayfield and Cadart 2025&semi; CPS 2008).</p>
+				<p><em>Products sourced from Sus scrofa pancreas</em></p>
+					<p>Do not use if you are sensitive to pork proteins (Brayfield and Cadart 2025&semi; CPS 2008).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p><em>All products</em></p>
+					<p>Stop use if hypersensitivity/allergy occurs (Brayfield and Cadart 2025&semi; Pray 2006&semi; CPS 2005&semi; Ganiats et al. 1994).</p>
+				<p><em>Products containing lactase</em></p>
+					<p>Stop use if gastrointestinal discomfort/disturbances occur (HC 2011).</p>
+				<p><em>Products containing pancreatic enzymes&semi; pancreatic extract&semi; pancreatin&semi; pancrelipase</em></p>
+					<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if nausea, vomiting, abdominal pain/epigastric pain, and/or heartburn occur (Friess et al. 1998).</p>
+				<p><em>Products containing bromelain</em></p>
+					<p>When using this product you may experience gastrointestinal discomfort/disturbances (Brayfield and Cadart 2025&semi; Brinker 2010&semi; Brien et al. 2006&semi; Murray and Pizzorno 2006&semi; Blumenthal et al. 2000&semi; Baur and Fruhmann 1979).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from and meet the limitations outlined in the Natural Health Products Ingredients Database (NHPID).</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient(s) must comply with the requirements outlined in the NHPID.</li>
+				<li>Details of the manufacturing of the enzyme(s) at the raw material stage should include fermentation medium and the isolation process.</li>
+				<li>The specifications must include testing for enzymatic activity of the medicinal ingredient(s) at appropriate stages of formulation and manufacturing using the assay outlined in the Food Chemicals Codex (FCC).</li>
+				<li>Testing for endo-polygalacturonase activity must be done at the appropriate stages of formulation and manufacturing as outlined in Blandino et al. 2002.</li>
+				<li>Testing for xylanase activity must be done at the appropriate stages of formulation and manufacturing as outlined in Ghose and Bisaria 1987.</li>
+				<li>Manufacturers are responsible for ensuring that activity assays that are used outside the conditions specified in the FCC have been sufficiently validated for their intended use in accordance with the requirements of good manufacturing practices.</li>
+				<li>Overages to compensate for the loss of activity during manufacturing and shelf-life of the finished product are permitted as per the pharmacopoeial standard.</li>
+				<li>Where published assays are not suitable for use, manufacturers should use due diligence to ensure that the enzymes remain active to the end of the shelf-life indicated on the product label.</li>
+				<li><strong>Pancreatic enzymes:</strong> The medicinal ingredient proper name and common name should be determined by the amounts of amylolytic, lipolytic, and proteolytic activities for pancreatin, pancreatic extract, and pancrelipase according to the British, European and United States pharmacopoeias (Appendix II).</li>
+			</ul>
+	</section>
+	
+	<section aria-labelledby="exampleOfProductsFacts">
+		<h2 id="exampleOfProductsFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/DIGESTIVE_ENZYMES_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>
+				<li>APhA 2006: Berardi RR, Kroon LA, McDermott JH, Newton GD, Oszko MA, Popovich NG, Remington TL, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care. 15<sup>th</sup> edition. Washington (DC): APhA Publications&semi; 2006.</li>
+				<li>Biller JA, King S, Rosenthal A, Grand RJ. Efficacy of lactase-treated milk for lactose-intolerant pediatric patients. The Journal of Pediatrics 1987&semi;111:91-94.</li>
+				<li>Bisby F, Roskov Y, Culham A, Orrell T, Nicolson D, Paglinawan L. Bailly N, Appeltans W, Kirk P, Bourgoin T, Baillargeon G, Ouvrard D, editors. Species 2000 & ITIS Catalogue of Life, 15<sup>th</sup> March 2012. Reading (GB): Species 2000. [Source database: Species Fungorum 9.0, Sep 2010&semi; Accessed 2024 November 15]. Available from: http://www.catalogueoflife.org</li>
+				<li>Blandino A, Iqbalsyah T, Pandiella SS, Cantero D, Webb C. Polygalacturonase production by <em>Aspergillus awamori</em> on wheat in solid-state fermentation. Applied Microbiology and Technology 2002&semi;58:164-169.</li>
+				<li>Blumenthal M, Goldberg A, Brinckmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</li>
+				<li>BP 2025: British Pharmacopoeia&semi; 2025.</li>
+				<li>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press&semi; 2025. [Accessed 2025 April 25]. Available from: https://www.medicinescomplete.com/#/browse/martindale</li>
+				<li>Brown SA, Coimbra M, Coberly DM, Chao JJ, Rohrich RJ. Oral nutritional supplementation accelerates skin wound healing: a randomized, placebo-controlled, double-arm, crossover study. Plastic and Reconstructive Surgery 2004&semi;114(1):237-244.</li>
+				<li>Brehler R, Theissen U, Mohr C, Luger T. "Latex-fruit syndrome": frequency of cross- reacting IgE antibodies. Allergy 1997&semi;52(4):404-410.</li>
+				<li>Brien S, Lewith G, Walker AF, Middleton R, Prescott P, Bundy R. Bromelain as an adjunctive treatment for moderate-to-severe osteoarthritis of the knee: a randomized placebo-controlled pilot study. QJM: An International Journal of Medicine 2006&semi;99(12):841-850.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>COL 2025: Catalogue of Life [Accessed 2025 April 25]. Available from: http://www.catalogueoflife.org</li>
+				<li>CABI 2025: Centre for Agriculture and Bioscience International. Index Fungorum. Wallingford (GB): CABI (Centre for Agriculture and Bioscience International). [Accessed 2025 April 25]. Available from: http://www.speciesfungorum.org</li>
+				<li>CPS 2008: Compendium of Pharmaceuticals and Specialties: The Canadian Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association&semi; 2008.</li>
+				<li>Dale PS, Tamhankar CP, George D, Daftary GV. Co-medication with hydrolytic enzymes in radiation therapy of uterine cervix: evidence of the reduction of acute side effects. Cancer Chemotherapy and Pharmacology 2001&semi;47(Suppl):S29-S34.</li>
+				<li>Delhaye M, Meuris S, Gohimont AC, Buedts K, Cremer M. Comparative evaluation of a high lipase pancreatic enzyme preparation and a standard pancreatic supplement for treating exocrine pancreatic insufficiency in chronic pancreatitis. European Journal of Gastroenterology and Hepatology 1996&semi;8:699-703.</li>
+				<li>Di Stefano M, Miceli E, Gotti S, Missanelli A, Mizzocchi S, Corazza GR. The effect of oral alpha-galactosidase on intestinal gas production and gas-related symptoms. Digestive Diseases and Sciences 2007&semi;52(1):78-83.</li>
+				<li>Domínguez-Muñoz JE, Birckelbach U, Glasbrenner B, Sauerbruch T, Malfertheiner P. Effect of oral pancreatic enzyme administration on digestive function in healthy subjects: comparison between two enzyme preparations. Alimentary Pharmacology and Therapeutics 1997&semi;11(2):403-408.</li>
+				<li>Dörr W, Herrmann T. Efficacy of Wobe-Mugos® E for reduction of oral mucositis after radiotherapy: results of a prospective, randomized, placebo-controlled, triple-blind phase III multicenter study. Strahlentherapie und Onkologie 2007&semi;183:121-127.</li>
+				<li>FCC 2024: Food Chemicals Codex. 14th edition. Rockville (MD): The United States Pharmacopeial Convention&semi; 2024.</li>
+				<li>Friess H, Kleeff J, Malfertheiner P, Müller MW, Homuth K, Büchler MW. Influence of high- dose pancreatic enzyme treatment on pancreatic function in healthy volunteers. International Journal of Pancreatology 1998&semi; 23(2):115-123.</li>
+				<li>Ganiats TG, Norcross WA, Halverson AL, Burford PA, Palinkas LA. Does Beano prevent gas? A double-blind crossover study of oral alpha-galactosidase to treat dietary oligosaccharide intolerance. The Journal of Family Practice 1994&semi;39(5):441-445.</li>
+				<li>Ghose TK, Bisaria VS. Measurement of hemicellulase activities part 1: Xylanases. Pure and Applied Chemistry 1987&semi;59(12):1739-1752.</li>
+				<li>Glade MJ, Kendra D, Kaminski MV. Improvement in protein utilization in nursing-home patients on tube feeding supplemented with an enzyme product derived from Aspergillus niger and bromelain. Nutrition 2001&semi;17(4):348-350.</li>
+				<li>Guarner L, Rodríguez R, Guarner F, Malagelada JR. Fate of oral enzymes in pancreatic insufficiency. Gut 1993&semi;34:708-712.</li>
+				<li>Gutfreund AE, Taussig SJ, Morris AD. Effect of oral bromelain on blood pressure and heart rate of hypertensive patients. Hawaii Medical Journal 1978&semi;37(5):143-146.</li>
+				<li>Halm U, Löser C, Löhr M, Katschinski M, Mössner J. A double-blind, randomized, multicentre, crossover study to prove equivalence of pancreatin minimicrospheres versus microspheres in exocrine pancreatic insufficiency. Alimentary Pharmacology and Therapeutics 1999&semi;13(7):951-957.</li>
+				<li>Heinicke RM, van der Wal L, Yokoyama M. Effect of bromelain (ananase®) on human platelet aggregation. Experientia 1972&semi;28(7):844-845.</li>
+				<li>HC 2011: Health Canada. 2011. Canada Vigilance adverse reaction online database. Ottawa (ON): Health Canada. [Updated 2011 September 30&semi; Accessed 2024 November 21]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada/adverse-reaction-database.html</li>
+				<li>ITIS 2024: Nicolson D, Alexander S, Hodson A, Mitchell D, Orrell, T & Perez-Gelabert D. The Integrated Taxonomic Information System (version 2024-11-19). In Bánki O, Roskov Y, Döring M, Ower G, Hernández Robles DR, Plata Corredor CA, Stjernegaard Jeppesen T, Örn A, Pape T, Hobern D, Garnett S, Little H, DeWalt RE, Ma K, Miller J, Orrell T,R, Aalbu R, Abbott J, Aedo C, et al., Catalogue of Life (Version 2024-12-19). Catalogue of Life, Amsterdam, Netherlands&semi; 2024. [Accessed 2025 January 13]. Available from: https://doi.org/10.48580/dglq4-4ky</li>
+				<li>IUBMB 2025: IUBMB Enzyme Nomenclature. London (GB): Queen Mary, University of London. [Accessed 2025 April 25]. Available from: https://iubmb.qmul.ac.uk/enzyme/EC3/2/1/1.html</li>
+				<li>Kerkhoffs GM, Struijs PA, de Wit C, Rahlfs VW, Zwipp H, van Dijk CN. A double blind, randomized, parallel group study on the efficacy and safety of treating acute lateral ankle sprain with oral hydrolytic enzymes. British Journal of Sports Medicine 2004&semi;38:431-435.</li>
+				<li>Kirk PM. Species Fungorum Plus (version Apr 2024). In Bánki O, Roskov Y, Döring M, Ower G, Hernández Robles DR, Plata Corredor CA, Stjernegaard Jeppesen T, Örn A, Pape T, Hobern D, Garnett S, Little H, DeWalt RE, Ma K, Miller J, Orrell T,R, Aalbu R, Abbott J, Aedo C, et al., Catalogue of Life (Version 2024-12-19). Catalogue of Life, Amsterdam, Netherlands&semi; 2024. [Accessed 2025 January 13]. Available from: https://doi.org/10.48580/dg9ld-4hj</li>
+				<li>Klein G, Kullich W. Short-term treatment of painful osteoarthritis of the knee with oral enzymes: a randomized, double-blind study versus diclofenac. Clinical Drug Investigation 2000&semi;19(1):15-23.</li>
+				<li>Lettieri JT, Dain B. Effects of beano on the tolerability and pharmacodynamics of acarbose. Clinical Therapeutics 1998&semi;20(3):497-504.</li>
+				<li>Levine B, Weisman S. Enzyme replacement as an effective treatment for the common symptoms of complex carbohydrate intolerance. Nutrition in clinical care: an official publication of Tufts University 2004&semi;7(2):75-81.</li>
+				<li>Martin T, Uhder K, Kurek R, Roeddiger S, Schneider L, Vogt HG, Heyd R, Zamboglou N. Does prophylactic treatment with proteolytic enzymes reduce acute toxicity of adjuvant pelvic irradiation? Results of a double-blind randomized trial. Radiotherapy and Oncology 2002&semi;65:17-22.</li>
+				<li>Morton J. Papaya. In: Morton JF. Fruits of Warm Climates. Miami (FL): Julia F. Morton&semi; 1987&semi; p. 336-346. [Accessed 2024 November 28]. Available from: http://www.hort.purdue.edu/newcrop/morton/papaya_ars.html</li>
+				<li>Moskovitz M, Curtis C, Gavaler J. Does oral enzyme replacement therapy reverse intestinal lactose malabsorption? The American Journal of Gastroenterolgy 1987&semi;82(7):632-635.</li>
+				<li>Murray MT. Encyclopedia of Nutritional Supplements: The Essential Guide for Improving Your Health Naturally. New York (NY): Three Rivers Press&semi; 1996.</li>
+				<li>NNHPD 2012: As per the initial version of the Digestive enzymes monograph.</li>
+				<li>Oben J, Kothari SC, Anderson ML. An open label study to determine the effects of an oral proteolytic enzyme system on when protein concentrate metabolism in health males. Journal of the International Society of Sports Nutrition 2008&semi;5:10.</li>
+				<li>Ph.Eur. 2025: European Pharmacopoeia&semi; 2025.</li>
+				<li>Pray WS. Non-Prescription Product Therapeutics. 2<sup>nd</sup> edition. New York (NY): Lippincott Williams & Wilkins&semi; 2006.</li>
+				<li>Ramirez FC, Lee K, Graham DY. All lactase preparations are not the same: results of a prospective, randomized, placebo-controlled trial. The American Journal of Gastroenterology 1994&semi;89(4):566-570.</li>
+				<li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 November 26]. Available from: https://merckindex.rsc.org/</li>
+				<li>Scharpé S, Uyttenbroeck W, Samyn N. Pancreatic Enzyme Replacement. In: Lauwers A, Scharpé S, editors. Pharmaceutical Enzymes. London (GB): Taylor & Francis, Inc&semi; 1997:187-221.</li>
+				<li>Singer F, Singer C, Oberleitner H. Phlogenzym versus diclofenac in the treatment of activated osteoarthritis of the knee. A double-blind prospective randomized study. International Journal of Immunotherapy XVII 2001&semi;(2/3/4):135-141.</li>
+				<li>Suarez F, Levitt MD, Adshead J, Barkin JS. Pancreatic supplements reduce symptomatic response of healthy subjects to a high fat meal. Digestive Diseases and Sciences 1999&semi;44(7):1317-1321.</li>
+				<li>USDA 2025: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2025 April 25]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>US FDA 2008: Topical Drug Products Containing Papain&semi; Enforcement Action Dates. Department of Health and Human Services. Docket No. FDA-2008-N-0481.</li>
+				<li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2024.</li>
+				<li>Walker AF, Bundy R, Hicks SM, Middleton RW. Bromelain reduces mild acute knee pain and improves well-being in a dose-dependent fashion in an open study of otherwise health adults. Phytomedicine 2002&semi;9:681-686.</li>
+				<li>WHO 2011: WHO Model List of Essential Medicines. 17th edition. March 2011 [Accessed 2012 March 16]. Available from: https://www.who.int/groups/expert-committee-on-selection-and-use-of-essential-medicines/essential-medicines-lists</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Baur X, Fruhmann G. Allergic reactions, including asthma, to the pineapple protease bromelain following occupational exposure. Clinical Allergy 1979&semi;9(5):443-450.</li>
+				<li>Baur X. Studies on the specificity of human IgE-antibodies to the plant proteases papain and bromelain. Clinical & Experimental Allergy 1979&semi;9(5):451-457.</li>
+				<li>Berardi RR, Kroon LA, McDermott JH, Newton GD, Oszko MA, Popovich NG, Remington TL, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 15<sup>th</sup> edition. Washington (DC): APhA Publications&semi; 2006.</li>
+				<li>Cichoke AJ. Pancreatic Enzymes. In: Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine, Third edition, volume 1. St. Louis (MI): Churchill Livingstone Elsevier&semi; 2006 p. 1131-1146.</li>
+				<li>Elms J, Fishwick D, Walker J, Rawbone R, Jeffrey P, Griffin P, Gibson M, Curran AD. Prevalence of sensitisation to cellulase and xylanase in bakery workers. Occupational and Environmental Medicine 2003&semi;60(10):802-804.</li>
+				<li>ETA: Enzyme Technical Association. Enzyme Preparations used in Food Processing (as compiled by the ETA members). [Accessed 2019 May 21]. Available from: https://www.enzymetechnicalassociation.org/enzymes/food/</li>
+				<li>Ferrone M, Raimondo M, Scolapio JS. Pancreatic enzyme pharmacotherapy. Pharmacotherapy 2007&semi;27(6):910-920.</li>
+				<li>Groff J, Gropper S. Advanced Nutrition and Human Metabolism, 3rd edition. Belmont (CA): Wadsworth/Thomson Learning&semi; 2000.</li>
+				<li>EFSA Panel on Biological Hazards. Scientific Opinion on the maintenance of the list of QPS microorganisms intentionally added to food or feed (2009 update). EFSA Journal 2009&semi;7(12):1431.</li>
+				<li>Pereira IC, Satiro Vieira EE, de Olivieira Torres LR, Cavalcanti Carneiro da Silva F, de Castro E Sousa JM, Torres-Leal FL. Bromelain supplementation and inflammatory markers: A systematic review of clinical trials. Clinical Nutrition ESPEN 2023&semi;55:116-127.</li>
+				<li>Repchinsky C, editor-in-chief. Patient Self-Care: Helping Patients Make Therapeutic Choices, 1<sup>st</sup> edition. Ottawa (ON): Canadian Pharmacists Association&semi; 2002.</li>
+				<li>Vanhanen M, Tuomi T, Tupasela O, Keskinen H, Tuppurainen M, Hytönen M, Tarvainen K, Kanerva L, Nordman H. Cellulase allergy and challenge tests with cellulase using immunologic assessment. Scandinavian Journal of Work, Environment & Health 2000&semi;26(3):250-256.</li>
+				<li>Varilla C, Marcone M, Paiva L, Baptista J. Bromelain, a Group of Pineapple Proteolytic Complex Enzymes (Ananas comosus) and Their Possible Therapeutic and Clinical Effects. A Summary. Foods 2021&semi;10(10):2249.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="appendixI">
+		<h2 id="appendixI">Appendix I</h2>
+			<p><strong>Definitions of the activity units listed in <a href="#ref4" style="text-decoration: none;">4</a>:</strong>
+				<ul>
+					<li><strong>ALU:</strong> One lactase unit (ALU) is defined as the quantity of enzyme that will liberate o-nitrophenol at a rate of 1 μmol/minute under the conditions of the assay.</li>
+					<li><strong>BGU:</strong> One β-glucanase unit (BGU) is defined as the quantity of enzyme that will liberate reducing sugar (as glucose equivalence) at a rate of 1 μmol/minute under the conditions of the assay.</li>
+					<li><strong>BU:</strong> One Baker unit is defined as the amount of catalase that will decompose 264 mg of hydrogen peroxide under the conditions of the assay.</li>
+					<li><strong>ChyU:</strong> One USP chymotrypsin unit (ChyU) is defined as the activity causing a change in absorbance at the rate of 0.0075/minute under the conditions of the assay.</li>
+					<li><strong>CU:</strong> One cellulase unit (CU) is defined as the amount of activity that will produce a relative fluidity change of 1 in 5 minutes in a defined carboxymethyl cellulose substrate under the conditions of the assay.</li>
+					<li><strong>DP (or DDPU):</strong> One unit of diastase activity, expressed as degrees diastatic power (DP°), is defined as the amount of enzyme contained in 0.1 mL of a 5% solution of the sample enzyme preparation that will produce sufficient reducing sugars to reduce 5 mL of Fehling&apos;s solution when the sample is incubated with 100 mL of the substrate for 1 hour at 20°C.</li>
+					<li><strong>DU:</strong> One &#945;-amylase dextrinizing unit (DU) is defined as the quantity of &#945;-amylase that will dextrinize soluble starch in the presence of an excess of β-amylase at the rate of 1 g/hour at 30°C.</li>
+					<li><strong>endo-PG:</strong> One endo-polygalacturonase unit (endo-PG) is the amount of enzyme required to release 1 µmol/minute of galacturonic acid from polygalacturonic acid under the conditions of the assay.</li>
+					<li><strong>FTU:</strong> One phytase unit (FTU) is the amount of enzyme that liberates inorganic phosphate at 1 μmol/minute from 0.0051 mol/L of sodium phytate at 37ºC and pH 5.50 under the conditions of the test.</li>
+					<li><strong>GaIU:</strong> One galactosidase activity unit (GalU) is defined as the quantity of the enzyme that will liberate p-nitrophenol at the rate of 1 μmol/minute under the conditions of the assay.</li>
+					<li><strong>GU:</strong> One glucoamylase unit (GU) is defined as the amount of glucoamylase that will liberate 0.1 μmol/minute of p-nitrophenol from the p-nitrophenyl-&#945;-d-glucopyranoside solution under the conditions of the assay.</li>
+					<li><strong>HCU:</strong> One hemicellulase unit (HCU) is defined as the activity that will produce a relative fluidity change of 1 over a period of 5 minutes in a locust bean gum substrate under the conditions specified.</li>
+					<li><strong>HUT:</strong> One hemoglobin units on the tyrosine basis (HUT) is defined as the amount of enzyme that produces, in 1 minute under the specified conditions, a hydrolysate whose absorbance at 275 nm is the same as that of a solution containing 1.10 μg/mL of tyrosine in 0.006 N hydrochloric acid.</li>
+					<li><strong>SAP:</strong> One spectrophotometric acid protease unit (SAP) is that activity that will liberate 1 μmol of tyrosine per minute under the conditions specified.</li>
+					<li><strong>INVU:</strong> One invertase unit (INVU) is defined as the amount of enzyme that hydrolyzes 1.0 microµmol of sucrose to invert sugar per minute at 55ºC and pH 4.5.</li>
+					<li><strong>LU:</strong> One lipase unit (LU) is defined as the quantity of enzyme that will liberate 1 μmol of butyric acid per minute under the conditions of the test.</li>
+					<li><strong>PC:</strong> One bacterial protease unit (PC) is defined as the quantity of enzyme that produces the equivalent of 1.5 μg/mL of l-tyrosine per minute under the conditions of the assay.</li>
+					<li><strong>PepU:</strong> One pepsin unit (PepU) is defined as the quantity of enzyme that produces the equivalent of 1 µmol of tyrosine per minute under the conditions of the assay.</li>
+					<li><strong>PU:</strong> One papain unit (PU) is defined as the quantity of enzyme that liberates the equivalent of 1 μg of tyrosine per hour under the conditions of the assay. One gelatin digestion unit (GDU) is approximately equivalent to 15,000 FCC papain units (1 GDU ≈ 15,000 FCC PU).</li>
+					<li><strong>SU:</strong> One Sumner unit (SU) is the quantity of enzyme which, under the conditions of the assay, will convert 1 mg of sucrose to glucose and fructose in 5 minutes.</li>
+					<li><strong>TrypU:</strong> One USP trypsin unit (TrypU) is the activity causing a change in the absorbance of 0.003 per minute under the conditions of the assay.</li>
+					<li><strong>XU:</strong> One xylanase unit (XU) is defined as the amount of enzyme that releases 1 µmol of reducing sugar, equivalent to xylose, per minute under specific conditions. These standard conditions include a pH of 5.3 and a temperature of 50°C.</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="appendixII">
+		<h2 id="appendixII">Appendix II</h2>
+			<p><strong>Amylase, lipase and protease activity units per milligram of pancreas preparation according to the British, European and United States pharmacopoeias</strong></p>
+			<table id="refAII" class="subject">
+				<thead>
+					<tr>
+						<th rowspan="2">Pharmacopoeia</th>
+						<th rowspan="2">Enzyme</th>
+						<th colspan="3">Units of activity<sup><a href="#refAII-1" style="text-decoration: none;">1</a></sup></th>
+					</tr>
+					<tr>
+						<th>Amylase</th>
+						<th>Lipase</th>
+						<th>Protease</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>BP 2025</td>
+						<td>Pancreatin</td>
+						<td>24 FIP</td>
+						<td>20 FIP</td>
+						<td>1.4 FIP</td>
+					</tr>
+					<tr>
+						<td>USP 2024</td>
+						<td>Pancreatin</td>
+						<td>25 USP</td>
+						<td>2 USP</td>
+						<td>25 USP</td>
+					</tr>
+					<tr>
+						<td>BP 2025</td>
+						<td>Pancreatic extract<sup><a href="#refAII-2" style="text-decoration: none;">2</a></sup></td>
+						<td>12 Ph. Eur.</td>
+						<td>15 Ph. Eur.</td>
+						<td>1 Ph. Eur.</td>
+					</tr>
+					<tr>
+						<td>Ph.Eur. 2025</td>
+						<td>Pancreatic extract (powder)<sup><a href="#refAII-2" style="text-decoration: none;">2</a></sup></td>
+						<td>12 Ph. Eur.</td>
+						<td>15 Ph. Eur.</td>
+						<td>1 Ph. Eur.</td>
+					</tr>
+					<tr>
+						<td>USP 2024</td>
+						<td>Pancrelipase</td>
+						<td>100 USP</td>
+						<td>24 USP</td>
+						<td>100 USP</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<sup id="refAII-1">1</sup>Minimum amounts.<br/>
+				<sup id="refAII-2">2</sup>Cross-referenced within the respective pharmacopoeias. The proper and common name &lsquo;Pancreatic extract&rsquo; should be used for both BP 2025 and Ph.Eur 2025.
+			</p>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from June 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-06-26</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Addition of diastase</li>
+								<li>Addition of a combination rule for diastase and malt diastase</li>
+								<li>Addition of a note in the directions for use section</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2025-12-19</td>
+						<td>Medium updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2019-06-03</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2012-08-20</td>
+						<td>Initial version</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

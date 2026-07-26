@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=ginkgo.biloba2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="a1e66dd4-155d-469e-b052-7a37f90eaab7"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>GINKGO - GINKGO BILOBA</h1> 
+	<div class="icon">
+		<a href="dbImages/mono_ginkgo-biloba_english.pdf" title="Monograph: GINKGO GINKGO BILOBA (English)"><img alt="Monograph: GINKGO GINKGO BILOBA (English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 36 K)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>July 25, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Ginkgo biloba</em></td>
+						<td>
+							<ul>
+								<li><em>Ginkgo</em></li>
+								<li><em>Ginkgo biloba</em></li>
+								<li><em>Maidenhair tree</em></li>
+								<li><em>Baiguo</em></li>
+								<li><em>Icho</em></li>
+							</ul>
+						</td>
+						<td><em>Ginkgo biloba</em></td>
+						<td><em>Leaf</em></td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2024&semi; Common names: USDA 2024&semi; Gardner and McGuffin 2013&semi; WHO 1999&semi; Source information: Birks and Evans 2007.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2>
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Helps to enhance cognitive function in adults (Cieza et al. 2003&semi; Santos et al. 2003&semi; Mix and Crews 2002&semi; Stough et al. 2001&semi; Kennedy et al. 2000&semi; Mix and Crews 2000).</li>
+				<li>Helps to enhance memory in adults (Santos et al. 2003&semi; Stough et al. 2001&semi; Kennedy et al. 2000&semi; Mix and Crews 2000).</li>
+				<li>Helps to support peripheral circulation (Boelsma et al. 2004&semi; Mehlsen et al. 2002&semi; Pittler and Ernst 2000).</li>
+			</ul>
+			<p><strong>Note:</strong> The above uses can be combined on the product label (e.g., Helps to enhance cognitive function in adults and support peripheral circulation).</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><strong>Methods of Preparation:</strong> Standardized Extracts (Dry extract)</p>
+					<p>80 - 240 milligrams of extract, per day (quantity crude equivalent 4 - 12 grams of dried leaves), standardized to 22-27% flavonoid glycosides and 5-7% terpene lactones&semi; and providing at least 80 milligrams of extract per single dose (Crew et al. 2005&semi; Cieza et al. 2003&semi; Santos et al. 2003&semi; Mix and Crews 2002&semi; Blumenthal et al. 2000&semi; Kennedy et al. 2000&semi; Pittler and Ernst 2000&semi; WHO 1999).</p>
+			<h3>Direction(s) for use</h3>
+				<p>No statement required.</p> 
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p><em>Products providing 80 mg to less than 120 mg of extract (4 g to less than 6 g dried leaves), per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 8 months (Santos et al. 2003&semi; Le Bars et al. 1997&semi; Grassel 1992).</p>
+			<p><em>Products providing 120 mg to 180 mg of extract (6 g to 9 g dried leaves), per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 weeks (Elsabagh et al. 2005&semi; Mix and Crews 2002&semi; Mix and Crews 2000).</p>
+			<p><em>Products providing more than 180 mg to 240 mg of extract (more than 9 g to 12 g dried leaves), per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks (Cieza et al. 2003).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Blumenthal et al. 2000&semi; WHO 1999).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking diabetes, high blood pressure or seizure medications (Brinker 2010).</li>
+				</ul>
+			<h3>Contraindication(s)</h3>
+				<ul>
+					<li>Do not use if you are having a surgery (Gardner and McGuffin 2013).</li>
+					<li>Do not use if you are taking blood thinners or other health products that affect blood coagulation (Gardner and McGuffin 2013&semi; Brinker 2010&semi; Bent 2005).</li>
+				</ul>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+				<li>Ginkgolic acids: Testing must be performed to ensure that the finished product meets the toxicity restrictions for Ginkgolic acids of not more than 5 ppm (NHPID).</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/GINKGO_E.gif" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referenceCited">
+		<h2>References cited</h2>
+			<ul>
+				<li>Bent S, Goldberg H, Padula A, Avins AL. Spontaneous bleeding associated with ginkgo biloba: a case report and systematic review of the literature. Journal of General Internal Medicine 2005&semi;20(7):657-661.</li>
+				<li>Birks J, Grimley Evans J. Ginkgo biloba for cognitive impairment and dementia (Review). Oxfordshire (UK): The Cochrane Database of Systematic Reviews&semi; Issue 2. Art. No.: CD003120&semi; 2007. DOI: 10.1002/14651858.CD003120.pub2</li>
+				<li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Newton (MA): Integrative Medicine Communications&semi; 2000.</li>
+				<li>Boelsma E, Lamers RJ, Hendriks HF, Van Nesselrooij JH, Roza L. Evidence of the regulatory effect of Ginkgo biloba extract on skin blood flow and study of its effects on urinary metabolites in healthy humans. Planta Medica 2004&semi;70(11):1052-1057.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Cieza A, Maier P, Pöppel E. Effects of Ginkgo biloba on mental functioning in healthy volunteers. Archives of Medical Research 2003&semi;34(5):373-381.</li>
+				<li>Crews WD, Harrison DW, Griffin ML, Falwell KD, Crist T, Longest L, Hehemann L, Rey ST. The neuropsychological efficacy of Ginkgo preparations in healthy and cognitively intact adults: a comprehensive review. HerbalGram: The Journal of the American Botanical Council 2005&semi;67:43-62.</li>
+				<li>Elsabagh S, Hartley DE, Ali O, Williamson EM, File SE Differential cognitive effects of Ginkgo biloba after acute and chronic treatment in healthy young volunteers. Psychopharmacology 2005&semi;179(2):437-446.</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. Second Edition. Boca Raton (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>Grässel E. [Effect of Ginkgo-biloba extract on mental performance. Double-blind study using computerized measurement conditions in patients with cerebral insufficiency]. Fortschritte der Medizin 1992&semi;110(5):73-76 (in German).</li>
+				<li>Kennedy DO, Scholey AB, Wesnes KA. The dose-dependent cognitive effects of acute administration of Ginkgo biloba to healthy young volunteers. Psychopharmacology 2000&semi;151(4):416-423.</li>
+				<li>Le Bars PL, Katz MM, Berman N, Itil TM, Freedman AM, Schatzberg AF. A placebo-controlled, double-blind, randomized trial of an extract of Ginkgo biloba for dementia. North American EGb Study Group. The Journal of the American Medical Association 1997&semi;278(16):1327-1332.</li>
+				<li>Mehlsen J, Drabaek H, Wiinberg N, Winther K. Effects of a Ginkgo biloba extract on forearm haemodynamics in healthy volunteers. Clinical Physiology and Functional Imaging 2002&semi;22(6):375-378.</li>
+				<li>Mix JA, Crews WD. A double-blind, placebo-controlled, randomized trial of Ginkgo biloba extract EGb 761 in a sample of cognitively intact older adults: neuropsychological findings. Human Psychopharmacology: Clinical and Experimental 2002&semi;17(6):267-277.</li>
+				<li>Mix JA, Crews WD. An examination of the efficacy of Ginkgo biloba extract EGb761 on the neuropsychologic functioning of cognitively intact older adults. Journal of Alternative and Complementary Medicine 2000&semi;6(3):219-229.</li>
+				<li>Pittler MH, Ernst E. Ginkgo biloba extract for the treatment of intermittent claudication: a meta-analysis of randomized trials. The American Journal of Medicine 2000&semi;108(4):276-281.</li>
+				<li>Santos RF, Galduróz JC, Barbieri A, Castiglioni ML, Ytaya LY, Bueno OF. Cognitive performance, SPECT, and blood viscosity in elderly non-demented people using Ginkgo biloba. Pharmacopsychiatry 2003&semi;36(4):127-133.</li>
+				<li>Stough C, Clarke J, Lloyd J, Nathan PJ. Neuropsychological changes after 30-day Ginkgo biloba administration in healthy participants. The International Journal of Neuropsychopharmacology 2001&semi;4(2):131-134.</li>
+				<li>USDA 2024: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 August 20]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>WHO 1999: World Health Organization. WHO monographs on selected medicinal plants, Volume 1. Geneva (CHE): World Health Organization&semi; 1999.</li>
+			</ul>
+	</section> 
+
+	<section aria-labelledby="referenceReviewed">
+		<h2 id="referenceReviewed">References reviewed</h2> 
+			<ul>
+				<li>Allain H, Raoul P, Lieury A, LeCoz F, Gandon JM, D&apos;Arbigny P. Effect of two doses of ginkgo biloba extract (EGb 761) on the dual-coding test in elderly subjects. Clinical Therapeutics 1993&semi;15(3):549-558.</li>
+				<li>Bauer U. 6-Month double-blind randomised clinical trial of Ginkgo biloba extract versus placebo in two parallel groups in patients suffering from peripheral arterial insufficiency. Arzneimittel-Forschung 1984&semi;34(6):716-720.</li>
+				<li>Beers MH, Berkow R, editors. The Merck Manual of Diagnosis and Therapy, 17<sup>th edition. Whitehouse Station (NJ): Merck Research Laboratories&semi;1999.</li>
+				<li>Benjamin J, Muir T, Briggs K, Pentland B. A case of cerebral haemorrhage-can Ginkgo biloba be implicated? Postgraduate Medical Journal 2001&semi;77(904):112-113.</li>
+				<li>Blumenthal M. ABC Clinical Guide to Herbs. New York (NY): Theime&semi; 2003.</li>
+				<li>Blumenthal M, Busse WR, Goldberg A, Gruenwald J, Hall T, Riggins CW, Rister RS, editors. The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines. Boston (MA): Integrative Medicine Communications&semi; 1998.</li>
+				<li>Bourgain RH, Maes L, Andries R, Braquet P. Thrombus induction by endogenic pafacether and its inhibition by Ginkgo biloba extracts in the guinea pig. Prostaglandins 1986&semi;32(1):142-144.</li>
+				<li>Brautigam MRH, Blommaert FA, Verleye G, Castermans J, Jansen Steur ENH, Kleijnen J. Treatment of age-related memory complaints with Ginkgo biloba extract: a randomized double blind placebo-controlled study. Phytomedicine 1998&semi;5(6):425-434.</li>
+				<li>Bush TM, Rayburn KS, Holloway SW, Sanchez-Yamamoto DS, Allen BL, Lam T, So BK, Tran de H, Greyber ER, Kantor S, Roth LW. Adverse interactions between herbal and dieatray sunstances and prescription medications: a clinical survey. Alternative Therapies in Health and Medicine 2007&semi;13(2):30-35.</li>
+				<li>Canter PH, and Ernst E. Ginkgo biloba is not a smart drug: an updated systematic review of randomised clinical trials testing the nootropic effects of G. biloba extracts in healthy people. Human Psychopharmacology 2007&semi;22:265-278.</li>
+				<li>Carlson JJ, Farquhar JW, DiNucci E, Ausserer L, Zehnder J, Miller D, Berra K, Hagerty L, Haskell WL. Safety and efficacy of a ginkgo biloba-containing dietary supplement on cognitive function, quality of life, and platelet function in healthy, cognitively intact older adults. Journal of the American Dietetic Association 2007&semi;107(3):422-432.</li>
+				<li>Dartigues JF, Carcaillon L, Helmer C, Lechevallier N, Lafuma A, Khoshnood B. 
+				Vasodilators and nootropics as predictors of dementia and mortality in the PAQUID cohort. Journal of the American Geriatrics Society 2007&semi;55(3):395-399.</li>
+				<li>Destro MWB, Speranzini MB, Cavalheiro Filho C, Destro T, Destro C. Case report: bilateral haematoma after rhytidoplasty and blepharoplasty following chronic use of Ginkgo biloba. British Journal of Plastic Surgery 2005&semi;58(1):100-101.</li>
+				<li>Diamond BJ, Shiflett SC, Feiwel N, Matheis RJ, Noskin O, Richards JA, Schoenberger NE. Ginkgo biloba extract: mechanisms and clinical indications. Archives of Physical Medicine and Rehabilitation 2000&semi;81(5):668-678.</li>
+				<li>Diamond WJ. The Clinical Practice of Complementary, Alternative, and Western Medicine. Boca Raton (FL): CRC Press LLC&semi; 2001.</li>
+				<li>Eckmann F. [Cerebral insufficiency--treatment with Ginkgo-biloba extract. Time of onset of effect in a double-blind study with 60 inpatients]. Fortschritte der Medizin 1990&semi;108(29):557-560 (in German).</li>
+				<li>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1919 original].</li>
+				<li>Fessenden JM, Wittenborn W, Clark L. Ginkgo biloba: a case report of herbal medicine and bleeding postoperatively from a laparoscopic cholecystectomy. The American Surgeon 2001&semi;67(1):33-35.</li>
+				<li>Fong KCS, Kinnear PE. Retrobulbar haemorrhage associated with chronic Gingko biloba ingestion. Postgraduate Medical Journal 2003&semi;79(935):531-532.</li>
+				<li>Gerhardt G, Rogalla K, Jaeger J. [Drug therapy of disorders of cerebral performance. Randomized comparative study of dihydroergotoxine and Ginkgo biloba extract]. Fortschritte der Medizin 1990&semi;108(19):384-388 (in German).</li>
+				<li>Gessner B, Voelp A, Klasser M. Study of the long-term action of a Ginkgo biloba extract on vigilance and mental performance as determined by means of quantitative pharmaco-EEG and psychometric measurements. Arzneimittel-Forschung 1985&semi;35(9):1459-1465.</li>
+				<li>Gilbert GJ. Ginkgo biloba. Neurology 1997&semi;48(4):1137.</li>
+				<li>Granger AS. Ginkgo biloba precipitating epileptic seizures. Age and Ageing 2001&semi;30(6):523-525.</li>
+				<li>Greenblatt DJ, Von Moltke LL, Luo Y, Perloff ES, Horan KA, Bruce A, Reynolds RC, Harmatz JS, Avula B, Khan IA, Goldman P. Ginkgo biloba does not alter clearance of flurbiprofen, a cytochrome P450-2C9 substrate. Journal of Clinical Pharmacology 2006&semi;46(2):214-221.</li>
+				<li>Halama P, Bartsch G, Meng G. [Disorders of brain performance of vascular origin. Randomized double-blind study of the effectiveness of Gingko biloba extract]. Fortschritte der Medizin 1988&semi;106(19):408-412 (in German).</li>
+				<li>Hofferberth B. The efficacy of EGb 761 in patients with senile dementia of the Alzheimer type: a double-blind, placebo-controlled study on different levels of investigation. Human Psychopharmacology: Clinical and Experimental 1994&semi;9(3):215-222.</li>
+				<li>Hofferberth B. [The effect of Ginkgo biloba extract on neurophysiological and psychometric measurement results in patients with psychotic organic brain syndrome. A doubleblind study against placebo]. Arzneimittel-Forschung 1989&semi;39(8):918-922 (in German).</li>
+				<li>Huang SY, Jeng C, Kao SC, Yu JJ, Liu DZ. Improved haemorrheological properties by Ginkgo biloba extract (Egb 761) in type 2 diabetes mellitus complicated with retinopathy. 
+				Clinical Nutrition 2004&semi;23(4):615-621.</li>
+				<li>Jellin JM. Natural Medicines Comprehensive Database: Ginkgo. Stockton (CA): 
+				Therapeutic Research Faculty&semi; 1995-2007. [Accessed 2024 August 20]. Available from: https://naturalmedicines.therapeuticresearch.com/</li>
+				<li>Jiang X, Williams KM, Liauw WS, Ammit AJ, Roufogalis BD, Duke CC, Day RO, McLachlan AJ. Effects of ginkgo and ginger on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects. British Journal of Clinical Pharmacology 2005&semi;59(4):425-432.</li>
+				<li>Kanowski S, HerrmannWM, Stephan K, Wierich W, Hörr R. Proof of efficacy of the ginkgo biloba special extract EGb 761 in outpatients suffering from mild to moderate primary degenerative dementia of the Alzheimer type or multi-infarct dementia. Pharmacopsychiatry 1996&semi;29(2):47-56.</li>
+				<li>Kasper DL, Braunwald E, Fauci AS, Hauser SL, Longo DL, Jameson JL, editors. Harrison&apos;s Principles of Internal Medicine, 16<sup>th</sup> edition. Toronto (ON): McGraw-Hill Health Professions Division&semi; 2005.</li>
+				<li>Kudolo GB. The effect of 3-month ingestion of Ginkgo biloba extract (EGb 761) on pancreatic beta-cell function in response to glucose loading in individuals with non-insulindependent diabetes mellitus. Journal of Clinical Pharmacology 2001&semi;41(6):600-611.</li>
+				<li>Kudolo GB, Wang W, Javors M, Blodgett J. The effect of the ingestion of Ginkgo biloba extract (EGb 761) on the pharmacokinetics of metformin in non-diabetic and type 2 diabetic subjects—a double blind, placebo-controlled, crossover study. Clinical Nutrition 2006&semi;25(4):606-616.</li>
+				<li>Le Bars PL, Velasco FM, Ferguson JM, Dessain EC, Kieser M, Hoerr R. Influence of the severity of cognitive impairment on the effect of the Ginkgo biloba extract EGb 761 in Alzheimer&apos;s disease. Neuropsychobiology 2002&semi;45(1):19-26.</li>
+				<li>Mancini M, Agozzino B, Bompani R. [Clinical and therapeutic effects of Ginkgo biloba extract (GBE) compared to placebo in the treatment of patients affected by senile psychorganic dementia on an arteriosclerotic basic]. Gazzetta Medica Italiana Archivio per le Scienze Mediche 1993&semi;152(3):69-80 (in Italian).</li>
+				<li>Mattes RD, Pawlik MK. Effects of Ginkgo biloba on alertness and chemosensory function in healthy adults. Human Psychopharmacology 2004&semi;19(2):81-90.</li>
+				<li>Matthews MK. Association of Ginkgo biloba with intracerebral hemorrhage. Neurology 1998&semi;50(6):1933-1934.</li>
+				<li>Maurer K, Ihl R, Dierks T, Frölich L. Clinical efficacy of Ginkgo biloba special extract EGb 761 in dementia of the Alzheimer type. Journal of Psychiatric Research 1997&semi;31(6):645-655.</li>
+				<li>Mazza M, Capuano A, Bria P, Mazza S. Ginkgo biloba and donepezil: a comparison in the treatment of Alzheimer&apos;s dementia in a randomized placebo-controlled double-blind study. European Journal of Neurology 2006&semi;13(9):981-985.</li>
+				<li>Meisel C, Johne A, Roots I. Fatal intracerebral mass bleeding associated with Ginkgo biloba and ibuprofen. Atherosclerosis 2003&semi;167(2):367.</li>
+				<li>Murray BJ, Cowen PJ, Sharpley AL. The effect of Li 1370, extract of Ginkgo biloba, on REM sleep in humans. Pharmacopsychiatry 2001&semi;34(4):155-157.</li>
+				<li>Napryeyenko A, Ihl R, Schlaefke S, Hoerr R. Ginkgo biloba extract EGb761® in the treatment of dementia with neuropsychiatric features: a randomized, placebo-controlled, doubleblind trial. Istanbul (Turkey): 21st International Conference of Alzheimer&apos;s Disease International&semi; 2005.</li>
+				<li>Napryeyenko O, Borzenko I. GINDEM-NP Study Group. Ginkgo biloba special extract in dementia with neuropsychiatric features. A randomised, placebo-controlled, double-blind clinical trial. Arzneimittel-Forschung 2007&semi;57(1):4-11.</li>
+				<li>NCCAM 2020: National Center for Complementary and Integrative Health. Herbs at a glance: Ginkgo. Bethesda (MD): National Center for Complementary and Integrative Health, National Institutes of Health&semi; 2020. [Accessed 2024 August 20]. Available from: http://nccam.nih.gov/health/ginkgo/</li>
+				<li>Oken BS, Storzbach DM, Kaye JA. The efficacy of Ginkgo biloba on cognitive function in Alzheimer disease. Archives of Neurology 1998&semi;55(11):1409-1415.</li>
+				<li>Peters H, Kieser M, Hölscher U. Demonstration of the efficacy of ginkgo biloba special extract EGb 761 on intermittent claudication--a placebo-controlled, double-blind multicenter trial. VASA 1998&semi;27(2):106-110.</li>
+				<li>Rai GS, Shovlin C, Wesnes KA. A double-blind, placebo controlled study of Ginkgo biloba extract (&lsquo;tanakan&rsquo;) in elderly outpatients with mild to moderate memory impairment. Current Medical Research and Opinion 1991&semi;12(6):350-355.</li>
+				<li>Rigney U, Kimber S, Hindmarch I. The effects of acute doses of standardized Ginkgo biloba extract on memory and psychomotor performance in volunteers. Phytotherapy Research 1999&semi;13(5):408-415.</li>
+				<li>Rosenblatt M, Mindel J. Spontaneous hyphema associated with ingestion of Ginkgo biloba extract. The New England Journal of Medicine 1997&semi;336(15):1108.</li>
+				<li>Rowin J, Lewis SL. Spontaneous bilateral hematomas associated with chronic Ginkgo biloba ingestion. Neurology 1996&semi;46(6):1775-1776.</li>
+				<li>Schneider LS, DeKosky ST, Farlow MR, Tariot PN, Hoerr R, Kieser M. A randomized, double-blind, placebo-controlled trial of two doses of Ginkgo biloba extract in dementia of the Alzheimer&apos;s type. Current Alzheimer Research 2005&semi;2(5):541-551.</li>
+				<li>Schneider LS, Olin JT, Doody RS, Clark CM, Morris JC, Reisberg B, Schmitt FA, Grundman M, Thomas RG, Ferris SH. Validity and reliability of the Alzheimer&apos;s Disease Cooperative Study-Clinical Global Impression of Change. The Alzheimer&apos;s Disease Cooperative Study. Alzheimer Disease and Associated Disorders 1997&semi;11(Supplement 2):S22-S32.</li>
+				<li>Schweizer J, Hautmann C. Comparison of two dosages of ginkgo biloba extract EGb 761 in patients with peripheral arterial occlusive disease Fontaine&apos;s stage IIb. A randomised, doubleblind, multicentric clinical trial. Arzneimittel-Forschung 1999&semi;49(11):900-904.</li>
+				<li>Semlitsch HV, Anderer P, Saletu B, Binder GA, Decker KA. Cognitive psychophysiology in nootropic drug research: effects of Ginkgo biloba on event-related potentials (P300) in ageassociated memory impairment. Pharmacopsychiatry 1995&semi;28(4):134-142.</li>
+				<li>Shader RI, Harmatz JS, Salzman C. A new scale for clinical assessment in geriatric populations: Sandoz Clinical Assessment--Geriatric (SCAG). Journal of the American Geriatrics Society 1974&semi;22(3):107-113.</li>
+				<li>Sierpina VS, Wollschlaeger B, Blumenthal M. Ginkgo biloba. American Family Physician 2003&semi;68(5):923-926.</li>
+				<li>Skogh M. Extracts of Ginkgo biloba and bleeding or haemorrhage. Lancet 1998&semi;352(9134):1145-1146.</li>
+				<li>Solomon PR, Adams F, Silver A, Zimmer J, DeVeaux R. Ginkgo for memory enhancement: a randomized controlled trial. The Journal of the American Medical Association 2002&semi;288(7):835-840.</li>
+				<li>Taillandier J, Ammar A, Rabourdin JP, Ribeyre JP, Pichon J, Niddam S, Pierart H. [Treatment of cerebral aging disorders with Ginkgo biloba extract. A longitudinal multicenter double-blind drug vs. placebo study.] Traitement des troubles du vieillissement cérébral par l&apos;extrait de Ginkgo biloba. Presse Médicale 1986&semi;15(31):1583-1587 (in French).</li>
+				<li>Uchida S, Yamada H, Li XD, Maruyama S, Ohmori Y, Oki T, Watanabe H, Umegaki K, Ohashi K, Yamada S. Effects of Ginkgo biloba extract on pharmacokinetics and pharmacodynamics of tolbutamide and midazolam in healthy volunteers. Journal of Clinical Pharmacology 2006&semi;46(11):1290-1298.</li>
+				<li>Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium: Ginkgo Leaf Ginkgo Leaf Dry Extract (Ginkgo biloba L.) - Standards of Analysis, Quality Control, and Therapeutics. Santa Cruz (CA): American Herbal Pharmacopoeia&semi; 2003.</li>
+				<li>Vale S. Subarachnoid haemorrhage associated with Ginkgo biloba. Lancet 1998&semi;352(9121):36.</li>
+				<li>Van Dongen MC, Van Rossum E, Kessels AG, Sielhorst HJ, Knipschild PG. The efficacy of ginkgo for elderly people with dementia and age-associated memory impairment: new results of a randomized clinical trial. Journal of the American Geriatrics Society 2000&semi;48(10):1183-1194.</li>
+				<li>Vorberg G, Schenk N, Schmidt U. [The efficacy of a new Ginkgo biloba extract in 100 patients with cerebral insufficiency]. Herz Gefaβe 1989&semi;9(7):396-401 (in German).</li>
+				<li>Warot D, Lacomblez L, Danjou P, Weiller E, Payan C, Puech AJ. [Comparative effects of ginkgo biloba extracts on psychomotor performances and memory in healthy subjects.] Comparaison des effets d&apos;extraits de Ginkgo biloba sur les performances psychomotrices et la mémorie chez le sujet sain. Thérapie 1991&semi;46(1):33-36 (in French).</li>
+				<li>Weitbrecht WV, Jansen W. Double blind and comparative (Ginkgo biloba versus placebo) therapeutic study in geriatric patients with primary degenerative dementia - a preliminary evaluation. In : Agnoli A, Rapin JR, Scapagnini V, WeitbrechtWV, editors. Effects of Ginkgo Biloba Extract on Organic Cerebral Impairment. Montrouge (FR): John Libby Eurotext Ltd&semi; 1985.</li>
+				<li>Wesnes K, Simmons D, Rook M, Simpson P. A double-blind placebo-controlled trial of Tanakan in the treatment of idiopathic cognitive impairment in the elderly. Human Psychopharmacology: Clinical and Experimental 1987&semi;2(3):159-169.</li>
+				<li>Wimpissinger B, Berisha F, Garhoefer G, Polak K, Schmetterer L. Influence of Ginkgo biloba on ocular blood flow. Acta Ophthalmologica Scandinavica 2007&semi;85(4):445-449.</li>
+				<li>Winther K, Randlov C, Rein E, Mehlsen J. Effects of Ginkgo biloba extract on cognitive function and blood pressure in elderly subjects. Current Therapeutic Research: Clinical and Experimental 1998&semi;59(12):881-888.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory" hidden>
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

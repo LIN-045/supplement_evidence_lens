@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=conj.linoleic.acid\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="49acc8e9-2d59-4888-ab10-439a16879ce5"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>
+    CONJUGATED LINOLEIC ACID
+   </h1>
+   <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+    <a href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php">
+     alternate format help
+    </a>
+    section.
+   </p>
+   <div class="icon">
+    <a href="dbImages/mono_conjugated-linoleic-acid_english.pdf">
+     <img alt="Monograph: CONJUGATED LINOLEIC ACID (English)" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+     (PDF Version-36K)
+    </a>
+   </div>
+   <p>
+    This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLA) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+   </p>
+   <p>
+    <strong>
+     Notes
+    </strong>
+   </p>
+   <ul>
+    <li>
+     Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+    </li>
+    <li>
+     The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+   </ul>
+   <section aria-labelledby="date">
+    <h2 id="date">
+     Date
+    </h2>
+    <p>
+     January 10, 2025
+    </p>
+
+   </section>
+   <section aria-labelledby="properNameCommonNameSourceMaterial">
+    <h2 id="properNameCommonNameSourceMaterial">
+     Proper name(s), Common name(s), Source information
+    </h2>
+    <table class="subject">
+     <caption>
+      Table 1.  Proper name(s), Common name(s), Source information
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="2" scope="colgroup">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source ingredient(s)
+       </th>
+       <th scope="col">
+        Preparation(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        Conjugated linoleic acid
+       </td>
+       <td>
+        <ul><li>
+         Conjugated linoleic acid
+        </li>
+        <li>
+         CLA
+        </li></ul>
+       </td>
+       <td>
+        Conjugated linoleic acid
+       </td>
+       <td>
+        Synthetic
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>References: Proper name: Pariza 2004; Pariza et al. 2001; Common names: Pariza 2004; Pariza et al. 2001; Source information: FDA 2007; Pariza et al. 2001.</p>
+   </section>
+   <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+     Route of administration
+    </h2>
+    <p>
+     Oral
+    </p>
+   </section>
+   <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+     Dosage form(s)
+    </h2>
+    <p>
+     This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+    </p>
+    <p>
+        Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+   </section>
+   <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+     Use(s) or Purpose(s)
+    </h2>
+    <ul>
+     <li>
+      May help to support a modest improvement to body composition when used with a program of reduced intake of dietary calories and increased physical activity (Raff et al. 2009; Gaullier et al. 2007; Pinkoski et al. 2006; Gaullier et al. 2004; Kamphuis et al. 2003).
+     </li>
+     <li>
+      May help to support a modest reduction in fat mass when used with a program of reduced intake of dietary calories and increased physical activity (Raff et al. 2009; Gaullier et al. 2007; Watras et al. 2007; Pinkoski et al. 2006; Gaullier et al. 2004).
+     </li>
+    </ul>
+
+    <p><strong>Note: </strong>The above uses can be combined on the product label (e.g., May help to support a modest reduction in fat mass and a modest improvement to body composition when used with a calorie-reduced diet and increased physical activity).</p>
+
+    <h3>Restrictions when this monograph is combined with other monographs (Class II and III applications):</h3>
+    <ul>
+        <li>If a body composition/reduction of fat mass claim is made:</li>
+        <ul>
+            <li>Improvement of body composition/reduction of fat mass is a long-term process and must therefore be associated with a long-term intervention.</li>
+            <li>Medicinal ingredient with diuretic properties may be included in products associated with weight management, however no diuretic claim can be applied as it is associated with a short-term duration of use (occasional use only).</li>
+            <li>Stimulant laxatives cannot be present at therapeutic dose in products associated with weight management as their short term duration of use is not compatible with the duration of use for weight management.</li>
+        </ul>
+    </ul>
+   
+   </section>
+   <section aria-labelledby="dose">
+    <h2 id="dose">
+     Dose(s)
+    </h2>
+    <h3>
+     Subpopulation(s)
+    </h3>
+    <p>
+     Adults 18 years and older
+    </p>
+    <h3>
+     Quantity(ies)
+    </h3>
+    <p>3 - 5 grams of CLA, per day (Raff et al. 2009; Gaullier et al. 2007; Watras et al. 2007; Pinkoski et al. 2006; Gaullier et al. 2004; Kamphuis et al. 2003).</p>
+    <p><strong>Note: </strong>Additional information not to be submitted with the compendial PLA (although the quantity of CLA-rich oil may be requested at the NNHPD's discretion): Approximately 4-6.5 g CLA-rich oil provides 3-5 g CLA.</p>
+
+    <h3>
+     Direction(s) for use
+    </h3>
+    Optional: Take with food (Watras et al. 2007; Kamphuis et al. 2003).
+   </section>
+   <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+     Duration(s) of use
+    </h2>
+    <p>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 months (Gaullier et al. 2007; Watras et al. 2007; Gaullier et al. 2005; Gaullier et al. 2004).
+    </p>
+   </section>
+   <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+     Risk information
+    </h2>
+
+    <h3>
+     Caution(s) and warning(s)
+    </h3>
+
+    <ul>
+     <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.</li>
+     <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are obese or have cardiovascular disease (CVD) risk factors (Tholstrup et al. 2008; Gaullier et al. 2007; Steck et al. 2007; Larsen et al. 2006; Taylor et al. 2006; Gaullier et al. 2005; Smedman et al. 2005; Gaullier et al. 2004; Basu et al. 2000a,b).</li>
+     <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if your goal is to achieve weight loss.</li>
+    </ul>
+
+    <h3>
+     Contraindication(s)
+    </h3>
+
+    <ul>
+        <li>Do not use if you are pregnant (HC 2010).</li>
+        <li>Do not use if you have cardiovascular disease (CVD), diabetes, metabolic syndrome or insulin resistance (Tholstrup et al. 2008; Gaullier et al. 2007; Steck et al. 2007; Larsen et al. 2006; Taylor et al. 2006; Gaullier et al. 2005; Smedman et al. 2005; Gaullier et al. 2004; Moloney et al. 2004; Basu et al. 2000a,b).</li>
+    </ul>
+
+    <h3>
+     Known adverse reaction(s)
+    </h3>
+
+    <p>When using this product you may experience gastrointestinal discomfort/disturbances (Gaullier et al. 2007; Pinkoski et al. 2006; Berven et al. 2000; Blankson et al. 2000).</p>
+
+   </section>
+   <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+     Non-medicinal ingredients
+    </h2>
+    <p>
+     Must be chosen from the current <a title="Natural and Non-prescription Health Products Directorate" href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">Natural Health Products Ingredients Database (NHPID)</a>
+     and must meet the limitations outlined in the database.
+    </p>
+   </section>
+   <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+     Storage conditions
+    </h2>
+    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+   </section>
+   <section aria-labelledby="specifications">
+    <h2 id="specifications">
+     Specifications
+    </h2>
+    <ul>
+     <li>
+      The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+     </li>
+     <li>
+      The medicinal ingredient must comply with the requirements outlined in the NHPID.
+     </li>
+     <li>
+      The CLA-rich oil must comply with the chemical specifications: CLA total ≥ 78%; CLA (c9t11 + t10,c12 isomers) ≥ 74%; CLA c9,t11 isomers ≥ 36%; CLA t10,c12 isomers ≥ 36%; CLA trans, trans ≤ 3% (FDA 2007).
+     </li>
+     <li>
+      The maximum peroxide value derived from CLA-rich oil must be ≤ 1 meq O2/kg and be in accordance with the methods set out by the American Oil Chemists' Society (AOCS) and/or Pharmacopoeial analytical methods. This specification is necessary to ensure the oxidative stability of the CLA.
+     </li>
+    </ul>
+   </section>
+   <section aria-labelledby="exampleOfProductFacts">
+    <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+    <p><strong>Consult the Guidance Document, <a
+                href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+                Labelling of Natural Health Products</a> for more details.</strong>
+    <p>
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/CONJUGATED_L_ACID_E.gif" alt="Product Facts Table"
+            style="width:700px"></p>
+</section>
+   <section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">
+     References cited
+    </h2>
+    <ul>
+     <li>
+      Basu S, Risérus U, Turpeinen A, Vessby B. 2000a. Conjugated linoleic acid induces lipid peroxidation in men with abdominal obesity. Clinical Science 99(6):511-516.
+     </li>
+     <li>
+      Basu S, Smedman A, Vessby B. 2000b. Conjugated linoleic acid induces lipid peroxidation in humans. FEBS Letters 468(1):33-36.
+     </li>
+     <li>
+      Berven G, Bye A, Hals O, Blankson H, Fagertun H, Thom E, Wadstein J, Gudmundsen O. 2000. Safety of conjugated linoleic acid (CLA) in overweight and obese human volunteers. European Journal of Lipid Science and Technology 102(7):455-462.
+     </li>
+     <li>
+      Blankson H, Stakkestad JA, Fagertun H, Thom E, Wadstein J, Gudmundsen O. 2000. Conjugated linoleic acid reduces body fat mass in overweight and obese humans. The Journal of Nutrition 130(12):2943-2948.
+     </li>
+     <li>
+        FDA 2007: United States  Food and Drug Administration. Guidance for Industry Developing Products for Weight Management Revision 1 Draft Guidance. Washington (DC): United States Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2024 March 8]. Available from: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/developing-products-weight-management-revision-1</li>
+     <li>
+      Gaullier JM, Halse J, Høivik HO, Høye K, Syvertsen C, Nurminiemi M, Hassfeld C, Einerhand A, O'Shea M, Gudmundsen O. 2007. Six months supplementation with conjugated linoleic acid induces regional-specific fat mass decreases in overweight and obese. British Journal of Nutrition 97(3):550-560.
+     </li>
+     <li>
+      Gaullier JM, Halse J, Hoye K, Kristiansen K, Fagertun H, Vik H, Gudmundsen O. 2004. Conjugated linoleic acid supplementation for 1 y reduces body fat mass in healthy overweight humans. The American Journal of Clinical Nutrition 79:1118-1125.
+     </li>
+     <li>
+      Gaullier JM, Halse J, Hoye K, Kristiansen K, Fagertun H, Vik H, Gudmundsen O. 2005. Supplementation with conjugated linoleic acid for 24 months is well tolerated by and reduces body fat mass in healthy, overweight humans. The Journal of Nutrition 135(4):778-784.
+     </li>
+     <li>HC 2010: Health Canada: Prenatal Nutrition Guidelines for health Professionals: Gestational weight gain [Accessed 2024 April 7]. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/nutrition/prenatal/ewba-mbsa-eng.pdf</li>
+     <li>
+      Kamphuis MM, Lejeune MP, Saris WH, Westerterp-Plantenga MS. 2003. The effect of conjugated linoleic acid supplementation after weight loss on body weight regain, body composition, and resting metabolic rate in overweight subjects. International Journal of Obesity and Related Metabolic Disorders 27(7):840-847.
+     </li>
+     <li>
+      Larsen TM, Toubro S, Gundmensen O, Astrup A. 2006. Conjugated linoleic acid supplementation for 1 y does not prevent weight or body fat gain. The American Journal of Clinical Nutrition 83(3):606-612.
+     </li>
+     <li>
+      Moloney F, Yeow TP, Mullen A, Nolan JJ, Roche HM. 2004. Conjugated linoleic acid supplementation, insulin sensitivity, and lipoprotein metabolism in patients with type 2 diabetes mellitus. The American Journal of Clinical Nutrition 80(4):887-895.
+     </li>
+     <li>
+      Pariza MW. 2004. Perspective on the safety and effectiveness of conjugated linoleic acid. The American Journal of Clinical Nutrition 79(Supplement 6):1132S-1136S.
+     </li>
+     <li>
+      Pariza MW, Park Y, Cook ME. 2001. The biologically active isomers of conjugated linoleic acid. Progress in Lipid Research 40(4):283-298.
+     </li>
+     <li>
+      Pinkoski C, Chilibeck PD, Candow DG, Esliger D, Ewaschuk JB, Facci M, Farthing JP, Zello GA. 2006. The effects of conjugated linoleic acid supplementation during resistance training. Medicine and Science in Sports and Exercise 38(2):339-348.
+     </li>
+     <li>
+      Raff M, Tholstrup T, Toubro S, Bruun JM, Lund P, Straarup EM, Christensen R, Sandberg MB, Mandrup S. 2009. Conjugated linoleic acids reduce body fat in healthy postmenopausal women. The Journal of Nutrition 39(7):1347-1352.
+     </li>
+     <li>
+      Smedman A, Basu S, Jovinge S, Fredrikson GN, Vessby B. 2005. Conjugated linoleic acid increased C-reactive protein in human subjects. British Journal of Nutrition 94(5):791-795.
+     </li>
+     <li>
+      Steck SE, Chalecki AM, Miller P, Conway J, Austin GL, Hardin JW, Albright CD, Thuillier P. 2007. Conjugated linoleic acid supplementation for twelve weeks increases lean body mass in obese humans. The Journal of Nutrition 137(5):1188-1193.
+     </li>
+     <li>
+      Taylor JS, Williams SR, Rhys R, James P, Frenneaux MP. 2006. Conjugated linoleic acid impairs endothelial function. Arteriosclerosis, Thrombosis, and Vascular Biology 26(2):307-312.
+     </li>
+     <li>
+      Tholstrup T, Raff M, Straarup EM, Lund P, Basu S, Bruun JM. 2008. An oil mixture with trans-10, cis-12 conjugated linoleic acid increases markers of inflammation and in vivo lipid peroxidation compared with cis-9, trans-11 conjugated linoleic acid in postmenopausal women. The Journal of Nutrition 138(8):1445-1451.
+     </li>
+     <li>
+      Watras AC, Buchholz AC, Close RN, Zhang Z, Schoeller DA. 2007. The role of conjugated linoleic acid in reducing body fat and preventing holiday weight gain. International Journal of Obesity 31(3):481-487.
+     </li>
+    </ul>
+   </section>
+   <section aria-labelledby="referencesReviewed">
+    <h2 id="referencesReviewed">
+     References reviewed
+    </h2>
+    <ul>
+     <li>
+      Aasen G, Fagertun H, Tonstad S, Halse J. 2009. Leg fat mass as measured by dual X-ray absorptiometry (DXA) impacts insulin resistance differently in obese women versus men. Scandinavian Journal of Clinical and Laboratory Investigation 69(2):181-189.
+     </li>
+     <li>
+      Adams RE, Hsueh A, Alford B, King C, Mo H, Wildman R. 2006. Conjugated linoleic acid supplementation does not reduce visceral adipose tissue in middle-aged men engaged in a resistance-training program. Journal of the International Society of Sports Nutrition 3(2):28-36.
+     </li>
+     <li>
+      Aminot-Gilchrist DV, Anderson HDI. 2004. Insulin resistance-associated cardiovascular disease: potential benefits of conjugated linoleic acid. The American Journal of Clinical Nutrition 79(6):1159S-1163S.
+     </li>
+     <li>
+      Atkinson RL. 1999. Conjugated Linoleic Acid for Altering Body Composition and Treating Obesity. In: Yurawecz MP, Mossoba MM, Kramer JKG, Pariza MW, Nelson GJ, editors. Advances in Conjugated Linoleic Acid Research, Volume 1, pp. 348-353. Champagne (IL): AOCS Press.
+     </li>
+     <li>
+      Aydin R. 2005. Conjugated linoleic acid: Chemical structure, sources and biological properties. Turkish Journal of Veterinary and Animal Sciences 29(2):189-195.
+     </li>
+     <li>
+      Belury MA. 2002. Dietary conjugated linoleic acid in health: physiological effects and mechanisms of action. Annual Review of Nutrition 22:505-531.
+     </li>
+     <li>
+      Belury MA, Mahon A, Banni S. 2003. The conjugated linoleic acid (CLA) isomer, t10c12-CLA, is inversely associated with changes in body weight and serum leptin in subjects with Type 2 diabetes mellitus. The Journal of Nutrition 133(1):257S-260S.
+     </li>
+     <li>
+      Benito P, Nelson GJ, Kelley DS, Bartolini G, Schmidt PC, Simon V. 2001. The effect of conjugated linoleic acid on plasma lipoproteins and tissue fatty acid composition in humans. Lipids 36(3):229-236.
+     </li>
+     <li>
+      Bhattacharya A, Banu J, Rahman M, Causey J, Fernandes G. 2006. Biological effects of conjugated linoleic acids in health and disease. Journal of Nutritional Biochemistry 17(12):789-810.
+     </li>
+     <li>
+      Bos G, Snijder MB, Nijpels G, Dekker JM, Stehouwer CD, Bouter LM, Heine RJ, Jansen H. 2005. Opposite contributions of trunk and leg fat mass with plasma lipase activities: the Hoorn study. Obesity Research 13(10):1817-1823.
+     </li>
+     <li>
+      Brown DW, Giles WH, Croft JB. 2001. White blood cell count: an independent predictor of coronary heart disease mortality among a national cohort. Journal of Clinical Epidemiology 54(3):316-322.
+     </li>
+     <li>
+      Campbell B, Kreider RB. 2008. Conjugated linoleic acids. Current Sports Medicine Reports 7(4):237-241.
+     </li>
+     <li>
+      Christ ER, Carroll PV, Albany E, Umpleby AM, Lumb PJ, Wierzbicki AS, Simpson HL, Sönksen PH, Russell-Ones DL. 2001. Normal VLDL metabolism despite altered lipoprotein composition in type 1 diabetes mellitus. Clinical Endocrinology 55(6):777-787.
+     </li>
+     <li>
+      Colakoglu S, Colakoglu M, Taneli F, Cetinoz F, Turkmen M. 2006. Cumulative effects of conjugated linoleic acid and exercise on endurance development, body composition, serum leptin and insulin levels. Journal of Sports Medicine and Physical Fitness 46(4):570-577.
+     </li>
+     <li>
+      Constans J, Conri C. 2006. Circulating markers of endothelial function in cardiovascular disease. Clinica Chimica Acta 368(1-2):33-47.
+     </li>
+     <li>
+      DeFronzo RA, Tobin JD, Andres R. 1979. Glucose clamp technique: a method for quantifying insulin secretion and resistance. American Journal of Physiology 237(3):E214-E223.
+     </li>
+     <li>
+      Diaz ML, Watkins BA, Li Y, Anderson RA, Campbell WW. 2007. Chromium picolinate and conjugated linoleic acid do not synergistically influence diet- and exercise-induced changes in body composition and health indexes in overweight women. Journal of Nutritional Biochemistry 19(1):61-68.
+     </li>
+     <li>
+      EMA 2007: European Medicines Agency. Guideline on Clinical Evaluation of Medicinal Products Used in Weight Control. London (GB): Committee for Medicinal Products for Human Use (CHMP), European Medicines Agency.
+     </li>
+     <li>
+      Ens JG, Ma DW, Cole KS, Field CJ, Clandinin MT. 2001. An assessment of c9,t11 linoleic acid intake in a small group of young Canadians. Nutrition Research 21(7):955-960.
+     </li>
+     <li>
+      Erselcan T, Candan F, Saruhan S, Ayca T. 2000. Comparison of body composition analysis methods in clinical routine. Annals of Nutrition and Metabolism 44(5-6):243-248.
+     </li>
+     <li>
+      Eyjolfson V, Spriet LL, Dyck DJ. 2004. Conjugated linoleic acid improves insulin sensitivity in young, sedentary humans. Medicine and Science in Sports and Exercise 36(5):814-820.
+     </li>
+     <li>
+      FCWCLA 2003: First Canadian Workshop on CLA. Summary Report of the Workshop on the Role of Conjugated Linoleic Acid in Human Health. Proceedings on the Role of CLA in Human Health. March 13-15, 2003. Winnipeg (MB): National Organizing Committee of the First Canadian Workshop on Conjugated Linoleic Acid (CLA) and Human Health.
+     </li>
+     <li>
+      Fritsche J, Steinhart H. 1998. Amounts of conjugated linoleic acid (CLA) in German foods and evaluation of daily intake. Zeitschrift für Lebensmittel-Untersuchung und-Forschung 206(2):77-82.
+     </li>
+     <li>
+      Garton GA. 2007. Essential fatty acids. Nutrition Bulletin 10(3):153-164.
+     </li>
+     <li>
+      Gokce N, Keaney JF Jr, Hunter LM, Watkins MT, Menzoian JO, Vita JA. 2002. Risk stratification for postoperative cardiovascular events via non-invasive assessment of endothelial function: a prospective study. Circulation 105(13):1567-1572.
+     </li>
+     <li>
+      Herbel BK, McGuire MK, McGuire MA, Shultz TD. 1998. Safflower oil consumption does not increase plasma conjugated linoleic acid concentrations in humans. The American Journal of Clinical Nutrition 67(2):332-337.
+     </li>
+     <li>
+      Iwata T, Kamegai T, Yamauchi-Sato Y, Ogawa A, Kasai M, Aoyama T, Kondo K. 2007. Safety of dietary conjugated linoleic acid (CLA) in a 12-weeks trial in healthy overweight Japanese male volunteers. Journal of Oleo Science 56(10):517-525.
+     </li>
+     <li>
+      Jucker BM, Cline GW, Barucci N, Shulman GI. 1999. Differential effects of safflower oil versus fish oil feeding on insulin-stimulated glycogen synthesis, glycolysis, and pyruvate dehydrogenase flux in skeletal muscle. Diabetes 48(1):134-140.
+     </li>
+     <li>
+      Kreider RB, Ferreira MP, Greenwood M, Wilson M, Almada AL. 2002. Effects of conjugated linoleic acid supplementation during resistance training on body composition, bone density, strength, and selected hematological markers. Journal of Strength and Conditioning Research 16(3):325-334.
+     </li>
+     <li>
+      Lambert EV, Goedecke JH, Bluett K, Heggie K, Claassen A, Rae DE, West S, Dugas J, Dugas L, Meltzer S, Charlton K, Mohede I. 2007. Conjugated linoleic acid versus high-oleic acid sunflower oil: effects on energy metabolism, glucose tolerance, blood lipids, appetite and body composition in regularly exercising individuals. British Journal of Nutrition 97(5):1001-1011.
+     </li>
+     <li>
+      Larsen TM, Toubro S, Astrup A. 2003. Efficacy and safety of dietary supplements containing CLA for the treatment of obesity: evidence from animal and human studies. Journal of Lipid Research 44(12):2234-2241.
+     </li>
+     <li>
+      Laso N, Brugué E, Vidal J, Ros E, Arnaiz JA, Carné X, Vidal S, Mas S, Deulofeu R, Lafuente A. 2007. Effects of milk supplementation with conjugated linoleic acid (isomers cis-9, trans-11 and trans-10, cis-12) on body composition and metabolic syndrome components. British Journal of Nutrition 98(4):860-867.
+     </li>
+     <li>
+      Lind L. 2003. Circulating markers of inflammation and atherosclerosis. Atherosclerosis 169(2):203-214.
+     </li>
+     <li>
+      Lopez-Garcia E, Schulze MB, Meigs JB, Manson JE, Rifai N, Stampfer MJ, Willett WC, Hu FB. 2005. Consumption of trans fatty acids is related to plasma biomarkers of inflammation and endothelial dysfunction. The Journal of Nutrition 135(3):562-566.
+     </li>
+     <li>
+      Malpuech-Brugère C, Verboeket-van de Venne WP, Mensink RP, Arnal MA, Morio B, Brandolini M, Saebo A, Lassel TS, Chardigny JM, Sebedio JL, Beaufrere B. 2004. Effects of two conjugated linoleic acid isomers on body fat mass in overweight humans. Obesity Research 12(4):591-598.
+     </li>
+     <li>
+      Masters N, McGuire MA, Beerman KA, Dasgupta N, McGuire MK. 2002. Maternal supplementation with CLA decreases milk fat in humans. Lipids 37(2):133-138.
+     </li>
+     <li>
+      McGuire MK, McGuire MA, Ritzenthaler KL, Schultz TD. 1999. Dietary Sources and Intakes of Conjugated Linoleic Acid Intake in Humans. In: MP Yurawecz, MM Mossoba, JKG Kramer, MW Pariza and GJ Nelson, editors. Advances in Conjugated Linoleic Acid Research, pp. 369-377. Champaign (IL): AOCS Press.
+     </li>
+     <li>
+      Mensink RP. 2005. Metabolic and health effects of isomeric fatty acids. Current Opinions in Lipidology 16(1):27-30.
+     </li>
+     <li>
+      Moloney F, Yeow TP, Mullen A, Nolan JJ, Roche HM. 2004. Conjugated linoleic acid supplementation, insulin sensitivity, and lipoprotein metabolism in patients with type 2 diabetes mellitus. The American Journal of Clinical Nutrition 80(4):887-895.
+     </li>
+     <li>
+      Mougios V, Matsakas A, Petridou A, Ring S, Sagredos A, Melissopoulou A, Tsigilis N, Nikolaidis M. 2001. Effect of supplementation with conjugated linoleic acid on human serum lipids and body fat. The Journal of Nutritional Biochemistry 12(10):585-594.
+     </li>
+     <li>
+      Muniyappa R, Lee S, Chen H, Quon MJ. 2008. Current approaches for assessing insulin sensitivity and resistance in vivo: advantages, limitations, and appropriate usage. American Journal of Physiology 294(1):E15-E26. already emailed about similar issue with AJP
+     </li>
+     <li>
+      Nagao K, Yanagita T. 2005. Conjugated fatty acids in food and their health benefits. Journal of Bioscience and Bioengineering 100(2):152-157.
+     </li>
+     <li>
+      Nakamura YK, Flintoff-Dye N, Omaye ST. 2008. Conjugated linoleic acid modulation of risk factors associated with atherosclerosis. Nutrition and Metabolism 5:22.
+     </li>
+     <li>
+      Noone EJ, Roche HM, Nugent AP, Gibney MJ. 2002. The effect of dietary supplementation using isomeric blends of conjugated linoleic acid on lipid metabolism in healthy human subjects. British Journal of Nutrition 88(3):243-251.
+     </li>
+     <li>
+      Norris LE, Collene AL, Asp ML, Hsu JC, Liu LF, Richardson JR, Li D, Bell D, Osei K, Jackson RD, Belury MA. 2009. Comparison of dietary conjugated linoleic acid with safflower oil on body composition in obese postmenopausal women with type 2 diabetes mellitus. The American Journal of Clinical Nutrition 90(3):468-476.
+     </li>
+     <li>
+      Park Y, Albright KJ, Storkson JM, Liu W, Pariza MW. 2007. Conjugated linoleic acid (CLA) prevents body fat accumulation and weight gain in an animal model. Journal of Food Science 72(8):S612-S617.
+     </li>
+     <li>
+      Park Y, Albright KJ, Liu W, Storkson JM, Cook ME, Pariza MW. 1997. Effect of conjugated linoleic acid on body composition in mice. Lipids 32(8):853-858.
+     </li>
+     <li>
+      Park Y, McGuire MK, Behr R, McGuire MA, Evans MA, Shultz TD. 1999. High-fat dairy product consumption increases delta 9c,11t-18:2 (rumenic acid) and total lipid concentrations of human milk. Lipids 34(6):543-549.
+     </li>
+     <li>
+      Park Y and Pariza MW. 2007. Mechanisms of body fat modulation by conjugated linoleic acid (CLA). Food Research International 40(3):311-323.
+     </li>
+     <li>
+      Petridou A, Mougios V, Sagredos A. 2003. Supplementation with CLA: isomer incorporation into serum lipids and effect on body fat of women. Lipids 38(8):805-811.
+     </li>
+     <li>
+      Pickup JC, Mattock MB, Chusney GD, Burt D. 1997. NIDDM as a disease of the innate immune system: association of acute-phase reactants and interleukin-6 with metabolic syndrome X. Diabetologia 40(11):1286-1292.
+     </li>
+     <li>
+      Pi-Sunyer FX. 1991. Health implications of obesity. The American Journal of Clinical Nutrition 53(Supplement 6):1595S-1603S.
+     </li>
+     <li>
+      Plourde M, Jew S, Cunnane SC, Jones PJ. 2008. Conjugated linoleic acids: why the discrepancy between animal and human studies? Nutrition Reviews 66(7):415-421.
+     </li>
+     <li>
+      Quyyumi AA. 2003. Prognostic value of endothelial function. The American Journal of Cardiology 91(12A):19H-24H.
+     </li>
+     <li>
+      Ramos R, Mascarenhas J, Duarte P, Vicente C, Casteleiro C. 2009. Conjugated linoileic acid-induced toxic hepatits: first case report. Digestive Diseases and Sciences 54(5):1141-1143.
+     </li>
+     <li>
+      Reaven G. 2005. All obese individuals are not created equal: insulin resistance is the major determinant of cardiovascular disease in overweight/obese individuals. Diabetes and Vascular Disease Research 2(3):105-112.
+     </li>
+     <li>
+      Ridker PM. 2003. High-sensitivity C-reactive protein and cardiovascular risk: rationale for screening and primary prevention. The American Journal of Cardiology 92(4B):17K-22K.
+     </li>
+     <li>
+      Risérus U. 2006. Trans-fatty acids and insulin resistance. Atherosclerosis Supplements 7(2):37-39.
+     </li>
+     <li>
+      Risérus U, Smedman A, Basu S, Vessby B. 2004. Metabolic effects of conjugated linoleic acid in humans: the Swedish experience. The American Journal of Clinical Nutrition 79(Supplement 6):1146S-1148S.
+     </li>
+     <li>
+      Risérus U, Vessby B, Arner P, Zethelius B. 2004. Supplementation with trans10cis12-conjugated linoleic acid induces hyperproinsulinaemia in obese men: close association with impaired insulin sensitivity. Diabetologia 47(6):1016-1019.
+     </li>
+     <li>
+      Risérus U, Vessby B, Arnlov J, Basu S. 2004. Effects of cis-9,trans-11 conjugated linoleic acid supplementation on insulin sensitivity, lipid peroxidation, and proinflammatory markers in obese men. The American Journal of Clinical Nutrition 80(2):279-283.
+     </li>
+     <li>
+      Risérus U, Arner P, Brismar K, Vessby B. 2002. Treatment with dietary trans10cis12 conjugated linoleic acid causes isomer-specific insulin resistance in obese men with the metabolic syndrome. Diabetes Care 25(9):1516-1521.
+     </li>
+     <li>
+      Risérus U, Basu S, Jovinge S, Fredrikson GN, Arnlov J, Vessby B. 2002. Supplementation with conjugated linoleic acid causes isomer-dependent oxidative stress and elevated C-reactive protein: a potential link to fatty acid-induced insulin resistance. Circulation 106(15):1925-1929.
+     </li>
+     <li>
+      Risérus U, Berglund L, Vessby B. 2001. Conjugated linoleic acid (CLA) reduced abdominal adipose tissue in obese middle-aged men with signs of the metabolic syndrome: a randomized controlled trial. International Journal of Obesity and Related Metabolic Disorders 25(8):1129-1135.
+     </li>
+     <li>
+      Ritzenthaler KL, McGuire MK, Falen R, Shultz TD, Dasgupta N, McGuire MA. 2001. Estimation of conjugated linoleic acid intake by written dietary assessment methodologies underestimates actual intake evaluated by food duplicate methodology. The Journal of Nutrition 131(5):1548-1554.
+     </li>
+     <li>
+      Ryder JW, Portocarrero CP, Song XM, Cui L, Yu M, Combatsiaris T, Galuska D, Bauman DE, Barbano DM, Charron MJ, Zierath JR, Houseknecht KL. 2001. Isomer-specific antidiabetic properties of conjugated linoleic acid. Improved glucose tolerance, skeletal muscle insulin action, and UCP-2 gene expression. Diabetes 50(5):1149-1157.
+     </li>
+     <li>
+      Salas-Salvado J, Marquez-Sandoval F, Bullo M. 2006. Conjugated linoleic acid intake in humans: a systematic review focusing on its effect on body composition, glucose, and lipid metabolism. Critical Reviews in Food Science and Nutrition 46(6):479-488.
+     </li>
+     <li>
+      Samaras K, McElduff A, Twigg SM, Proietto J, Prins JB, Welborn TA, Zimmet P, Chisholm DJ, Campbell LV. 2006. Insulin levels in insulin resistance: phantom of the metabolic opera? Medical Journal of Australia 185(3):159-161.
+     </li>
+     <li>
+      Schneider JG, Tompkins C, Blumenthal RS, Mora S. 2006. The metabolic syndrome in women. Cardiology in Review 14(6):286-291.
+     </li>
+     <li>
+      Schoenhals K. 2004. Friendly fat: CLA may help you lose weight - conjugated linoleic acid. Better Nutrition 68(3):43-44.
+     </li>
+     <li>
+      Sethi JK and Hotamisligil GS. 1999. The role of TNF alpha in adipocyte metabolism. Seminars in Cell and Developmental Biology 10(1):19-29.
+     </li>
+     <li>
+      Silveira MB, Carraro R, Monereo S, Tébar J. 2007. Conjugated linoleic acid (CLA) and obesity. Public Health Nutrition 10(10A):1181-1186.
+     </li>
+     <li>
+      Smedman A, Vessby B, Basu S. 2004. Isomer-specific effects of conjugated linoleic acid on lipid peroxidation in humans: regulation by alpha-tocopherol and cyclo-oxygenase-2 inhibitor. Clinical Science 106(1):67-73.
+     </li>
+     <li>
+      Smedman A, Vessby B. 2001. Conjugated linoleic acid supplementation in humans--metabolic effects. Lipids 36(8):773-81.
+     </li>
+     <li>
+      Smolders B, Lemmens R, Thijs V. 2007. Lipoprotein (a) and stroke: a meta-analysis of observational studies. Stroke 38(6):1959-1966.
+     </li>
+     <li>
+      Song HJ, Grant I, Rotondo D, Mohede I, Sattar N, Heys SD, Wahle KW. 2005. Effect of CLA supplementation on immune function in young healthy volunteers. European Journal of Clinical Nutrition 59(4):508-517.
+     </li>
+     <li>
+      Syvertsen C, Halse J, Hoivik HO, Gaullier J-M, Nurminiemi M, Kristiansen K, Einerhand A, O'Shea M, Gudmundsen O. 2006. The effect of 6 months supplementation with conjugated linoleic acid on insulin resistance in overweight and obese. International Journal of Obesity 31(7):1148-1154.
+     </li>
+     <li>
+        Terpstra AHM. 2004. Effect of conjugated linoleic acid on body composition and plasma lipids in humans: an overview of the literature. The American Journal of Clinical Nutrition 79(3):352-361.
+       </li>
+     <li>
+      Terpstra AH. 2001. Differences between humans and mice in efficacy of the body fat lowering effect of conjugated linoleic acid: role of metabolic rate. The Journal of Nutrition 131(7):2067-2068.
+     </li>
+     <li>
+      Thom E, Wadstein J, Gudmundsen O. 2001. Conjugated linoleic acid reduces body fat in healthy exercising humans. The Journal of International Medical Research 29(5):392-396.
+     </li>
+     <li>
+      Thrush AB, Chabowski A, Heigenhauser GJ, McBride BW, Or-Rashid M, Dyck DJ. 2007. Conjugated linoleic acid increases skeletal muscle ceramide content and decreases insulin sensitivity in overweight, non-diabetic humans. Applied Physiology, Nutrition, and Metabolism 32(3):372-382.
+     </li>
+     <li>
+      Toomey S, McMonagle J, Roche HM. 2006. Conjugated linoleic acid: a functional nutrient in the different pathophysiological components on the metabolic syndrome? Current Opinion in Clinical Nutrition and Metabolic Care 9(6):740-747.
+     </li>
+     <li>
+        Tricon S, Burdge GC, Kew S, Banerjee T, Russell JJ, Jones EL, Grimble RF, Williams CM, Yaqoob P, Calder PC. 2004. Opposing effects of cis-9, trans-10,cis-12 conjugated linoleic acid on blood lipids in healthy humans. The American Journal of Clinical Nutrition 80(3):614-620.
+       </li>
+     <li>
+      Tricon S, Burdge GC, Kew S, Banerjee T, Russell JJ, Grimble RF, Williams CM, Calder PC, Yaqoob P. 2004. Effects of cis-9,trans-11 and trans-10,cis-12 conjugated linoleic acid on immune cell function in healthy humans. The American Journal of Clinical Nutrition 80(6):1626-1633.
+     </li>
+     <li>
+      Tricon S, Burdge GC, Williams CM, Calder PC, Yaqoob P. 2005. The effects of conjugated linoleic acid on human health-related outcomes. Proceedings of the Nutrition Society 64(2):171-182.
+     </li>
+     <li>
+      Tricon S, Yaqoob P. 2006. Conjugated linoleic acid and human health: a critical evaluation of the evidence. Current Opinion in Clinical Nutrition and Metabolic Care 9(2):105-110.
+     </li>
+     <li>
+      Van Lente F. 2000. Markers of inflammation as predictors in cardiovascular disease. Clinica Chimica Acta 293(1-2):31-52.
+     </li>
+     <li>
+      Wang Y, Jones PJ. 2004. Conjugated linoleic acid and obesity control: efficacy and mechanisms. International Journal of Obesity and Related Metabolic Disorders 28(8):941-955. Wang Y, Jones PJ. 2004. Dietary conjugated linoleic acid and body composition. The American Journal of Clinical Nutrition 79(Supplement 6):1153S-1158S.
+     </li>
+     <li>
+      Whigham LD, Watras AC, Schoeller DA. 2007. Efficacy of conjugated linoleic acid for reducing fat mass: a meta-analysis in humans. The American Journal of Clinical Nutrition 85(5):1203-1211.
+     </li>
+     <li>
+      Whigham LD, O'Shea M, Mohede ICM, Walaski HP, Atkinson RL. 2004. Safety profile of conjugated linoleic acid in a 12-month trial in obese humans. Food and Chemical Toxicology 42(10):1701-1709.
+     </li>
+     <li>
+      Yudkin JS, Stehouwer CD, Emeis JJ, Coppack SW. 1999. C-reactive protein in healthy subjects: associations with obesity, insulin resistance, and endothelial dysfunction: a potential role for cytokines originating from adipose tissue? Arteriosclerosis, Thrombosis, and Vascular Biology 19(4):972-978.
+     </li>
+     <li>
+      Yusuf S, Hawken S, Ounpuu S, Bautista L, Franzosi MG, Commerford P, Lang CC, Rumboldt Z, Onen CL, Lisheng L, Tanomsup S, Wangai P Jr, Razak F, Sharma AM, Anand SS; INTERHEART Study Investigators. 2005. Obesity and the risk of myocardial infarction in 27,000 participants from 52 countries: a case-control study. Lancet 366(9497):1640-1649.
+     </li>
+     <li>
+      Zambell KL, Keim NL, Van Loan MD, Gale B, Benito P, Kelley DS, Nelson GJ. 2000. Conjugated linoleic acid supplementation in humans: effects on body composition and energy expenditure. Lipids 35(7):777-782.
+     </li>
+    </ul>
+   </section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=oral.hcp\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="ba432fb7-3711-4553-b0ef-c9b8fb5395dc"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Benzocaine</h1>
+	<div class="icon">
+		<a href="dbImages/mono_benzocaine_english.pdf" title="Monograph: ORAL HEALTH CARE PRODUCTS - CONSUMER USE (English)"><img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format" width="22" height="21" /> (PDF Version - 132 K)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the PLA and product label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>March 19, 2021</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonnameSourceInformation">
+		<h2 id="properNameCommonnameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="colgroup">Proper name(s)</th>
+						<th rowspan="2" scope="colgroup">Common name(s)</th>
+						<th>Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>4-Aminobenzoic acid, ethyl ester</td>
+						<td>Benzocaine</td>
+						<td>Benzocaine</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: Merck 2012&semi; Common name: Merck 2012, USP 35 2012, CTFA 2008&semi; Source information: Merck 2012, CTFA 2008.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Routes of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<ul>
+				<li>Buccal</li>
+				<li>Dental</li>
+				<li>Gingival</li>
+				<li>Oral</li>
+				<li>Oromucosal</li>
+				<li>Periodontal</li>
+				<li>Topical</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>The following dosage forms are acceptable when used according to the requirements indicated in this monograph: Aerosol, spray&semi; Cream&semi; Film-forming gel&semi; Gargle&semi; Gel&semi; Gingival gel&semi; Gingival paste&semi; Liquid&semi; Lozenge (oral only)&semi; Mouthwash&semi; Ointment&semi; Solution&semi; Spray.</p>
+			<p><strong>Note</strong></p>
+				<p>Dosage forms must be acceptable for the specified route of administration.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><strong>Buccal/Oromucosal</strong>
+				<ul>
+					<li>For the temporary relief of occasional minor oral irritation/oral pain/sore mouth (US FDA 1991).</li>
+					<li>For the temporary relief of pain associated with canker sores/aphthous stomatitis (USP DI 2006&semi; US FDA 1991)</li>
+					<li>For the temporary relief of pain associated with cold sores/fever blisters/oral herpes (USP DI 2006&semi; CPhA 1996).</li>
+					<li>For the temporary relief of occasional minor irritation or injury of the mouth (US FDA 1991).</li>
+					<li>For the temporary relief of pain due to minor irritation of the mouth due to dentures or orthodontic appliances (US FDA 1991).</li>
+				</ul>
+			</p>
+			<p><strong>Dental</strong><br/>
+				For the temporary relief of pain arising as a result of toothache (US FDA 1991).
+			</p>
+			<p><strong>Oral</strong></p>
+				<p>For the temporary relief of (pain of) sore throat (US FDA 1991).</p>
+			<p><strong>Periodontal/Gingival</strong>
+				<ul>
+					<li>For the temporary relief of occasional minor irritation or injury of the gums (US FDA 1991).</li>
+					<li>For the temporary relief of pain due to minor dental procedures (US FDA 1991).</li>
+					<li>For the temporary relief of pain due to minor irritation of the gums due to dentures or orthodontic appliances (US FDA 1991).</li>
+				</ul>
+			</p>
+			<p><strong>Topical</strong><br/>
+				For the temporary relief of pain associated with cold sores/fever blisters/oral herpes (USP DI 2006&semi; CPhA 1996).
+			</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p><strong>Gingival paste&semi; Film-forming gel&semi; Gargle&semi; Lozenge&semi; Mouthwash</strong></p>
+                	<p>Children, Adolescents and Adults 6 years and older</p>
+				<p><strong>Aerosol, spray&semi; Cream&semi; Gel&semi; Gingival gel&semi; Liquid&semi; Ointment&semi; Solution&semi; Spray</strong></p>
+                	<p>Children, Adolescents and Adults 2 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><strong>Lozenge</strong></p>
+					<p>2 - 15 milligrams of Benzocaine, per single dose&semi; 1 to 6 times, per day (USP DI 2006&semi; US FDA 1991)</p>
+				<p><strong>Aerosol, spray&semi; Cream&semi; Film-forming gel&semi; Gargle&semi; Gel&semi; Gingival gel&semi; Gingival paste&semi; Liquid&semi; Mouthwash&semi; Ointment&semi; Solution&semi; Spray</strong></p>
+					<p>5 - 20% of Benzocaine (US FDA 1991)</p>
+			<h3>Directions for use</h3>
+				<p><strong>All products</strong>
+                	<ul>
+						<li>Use smallest amount possible to achieve desired result.</li>
+						<li>Children under 12 years of age should be supervised by an adult in the use of this product (US FDA 1991).</li>
+						<li>Do not eat for one hour following use (USP DI 2006&semi; CPhA 1996).</li>
+						<li>Do not chew gum or food while numbness persists (USP DI 2006&semi; CPhA 1996).</li>
+					</ul>
+				</p>
+                <p><strong>All products except for lozenge</strong></p>
+                	<p>Avoid contact with eyes. Immediately flush thoroughly with water if contact occurs.</p>
+                <p><strong>Products for relief of sore throat </strong></p>
+                <p><strong>Gargle</strong>
+	                <ul>
+						<li>Gargle for at least one minute and then spit out.</li>
+    	                <li>Use up to four times daily or as directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (US FDA 1991).</li>
+					</ul>
+				</p>
+                <p><strong>Lozenge</strong>
+					<ul>
+						<li>Allow product to dissolve slowly in the mouth.</li>
+						<li>Do not bite, chew or swallow whole.</li>
+						<li>May be repeated every two hours as needed or as directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (USP DI 2006&semi; US FDA 1991).</li>
+					</ul>
+				</p>
+                <p><strong>Aerosol, spray&semi; Spray</strong>
+                	<ul>
+						<li>Spray on the affected area for one second or less up to four times daily (US FDA 1991).</li>
+						<li>Avoid inhaling (USP DI 2006).</li>
+						<li>Use only when specifically directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (USP DI 2006).</li>
+					</ul>
+				</p>
+                <p><strong>Products for relief of dental appliance pain</strong></p>
+                <p><strong>Cream&semi; Gel&semi; Gingival gel&semi; Liquid&semi; Ointment&semi; Solution</strong>
+                	<ul>
+						<li>Apply to the affected area, wait until relief is obtained, and rinse the mouth before reinserting the appliance (USP DI 2006).</li>
+						<li>Contact a dentist at regular intervals when using this product to relieve pain during adjustment of new dentures or other dental appliances (USP DI 2006).</li>
+					</ul>
+				</p>
+                <p><strong>All products except for products for the relief of dental appliance pain and sore throat</strong></p>
+                <p><strong>Aerosol, spray&semi; Spray</strong>
+					<ul>
+						<li>Spray on the affected area for one second or less up to four times daily (US FDA 1991).</li>
+						<li>Avoid inhaling (USP DI 2006).</li>
+						<li>Use only when specifically directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (USP DI 2006).</li>
+					</ul>
+				</p>
+                <p><strong>Cream&semi; Gel&semi; Gingival gel&semi; Liquid&semi; Ointment&semi; Solution</strong></p>
+                	<p>Apply to the affected area up to four times daily with cotton, cotton applicator/swab or a fingertip or as directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (USP DI 2006).</p>
+                <p><strong>Gingival paste</strong></p>
+                	<p>Dab small amounts as needed onto the affected area with cotton applicator/swab, avoiding rubbing or spreading, to prevent crumbling or grittiness (USP DI 2006)</p>
+                <p><strong>Film-Forming gels</strong>
+					<ol>
+						<li>Dry the affected area with one of the swabs provided (USP DI 2006).</li>
+						<li>Apply gel to a second swab and roll over the affected area (USP DI 2006).</li>
+						<li>Keep mouth open and dry for 30 to 60 seconds after applying while film forms (USP DI 2006).</li>
+						<li>Do not remove film which will slowly disintegrate over six hours (USP DI 2006).</li>
+						<li>Apply up to four times a day or as directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (USP DI 2006).</li>
+					</ol>
+				</p>
+                <p><strong>Mouthwash</strong>
+					<ul>
+						<li>Swish around in the mouth, or allow to remain in place for at least one minute and then spit out.</li>
+						<li>Use up to four times daily or as directed by a dentist or another health care practitioner/health care provider/health care professional/doctor/physician (US FDA 1991).</li>
+					</ul>
+				</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p><strong>All products</strong></p>
+				<p>For occasional use only.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><strong>All products</strong></p>
+					<p>Keep out of reach of children.</p>
+				<p><strong>All products except topical products and products for relief of sore throat</strong></p>
+					<p>Consult your dentist or another health care practitioner/health care provider/health care professional/doctor/physician promptly if symptoms do not improve within seven days, irritation, pain or redness persists or worsens, or swelling, rash or fever develops (USP DI 2006&semi; US FDA 1991).</p>
+				<p><strong>Products for relief of sore throat</strong></p>
+					<p>Consult a health care practitioner/health care provider/health care professional/doctor/physician promptly if sore throat is severe, persists for more than two days, or is accompanied by or followed by other symptoms such as fever, headache, rash, swelling, nausea, or vomiting (Pray 2006&semi; USP DI 2006&semi; US FDA 1991).</p>
+			<h3>Contraindication(s)</h3>
+				<p><strong>All products</strong>
+				<ul>
+					<li>Stop use and consult a health care practitioner/health care provider/health care professional/doctor/physician if the following symptoms appear: weakness, confusion, headache, difficulty breathing and/or pale, gray or blue coloured skin. These symptoms may be signs of methemoglobinemia, a rare disorder, which may appear up to 2 hours after use (US FDA 2018&semi; HC 2011a,b&semi; US FDA 2011, 2006).</li>
+					<li>Do not use this product if you are allergic to benzocaine (HC 2011a,b&semi; US FDA 1991).</li>
+				</ul>
+				</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p><strong>All products</strong></p>
+					<p>Stop use if hypersensitivity/allergy occurs (HC 2011a&semi;b US FDA 1991).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<ul>
+				<li>Store in airtight container. Protect from light (Martindale 2010).</li>
+			    <li>Store between 15-30ºC (USP DI 2006).</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+    			<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts" hidden>
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>
+				<li>CPhA 1996: Carruthers-Czyzewski P, Gillis C, Letwin D, editors. Nonprescription Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmaceutical Association&semi; 1996.</li>
+				<li>CTFA 2008: Gottschalck TE, Bailey JE, editors. International Cosmetic Ingredient Dictionary and Handbook. 12<sup>th</sup> edition. Washington (DC): The Cosmetic, Toiletry and Fragrance Association&semi; 2008.</li>
+				<li>HC 2011a: Health Canada 2011. Health risks associated with the use of topical benzocaine products. Internal document. Available on Request.</li>
+				<li>HC 2011b: Health Canada advises Canadians of health risks involved with using benzocaine products. About Health Canada. [Accessed 2019 June 24]. Available from: https://www.canada.ca/en/news/archive/2006/11/health-canada-advises-canadians-health-risks-involved-using-benzocaine.html</li> 
+				<li>Martindale 2010: Sweetman SC, editor. Martindale: The Complete Drug Reference. 37<sup>th</sup> edition [Internet]. London (GB): Pharmaceutical Press&semi; 2010. Benzocaine: ethyl 4-aminobenzoate, CAS: 94-09-7, 20101127. [Accessed 2019 June 24]. Available from: http://ovidsp.tx.ovid.com/</li>
+				<li>Merck 2012: O&apos;Neil MJ, Heckelman PE, Koch CB, Roman KJ, editors. The Merck Index: An Encyclopedia of Chemicals, Drugs, and Biologicals (14<sup>th</sup> Edition - Version 14.9). Merck Sharp & Dohme Corp., a subsidiary of Merck & Co., Inc.&semi; 2006, 2012. [Accessed 2019 June 24]. Available from: http://www.knovel.com/</li>
+				<li>US FDA 2018: FDA Drug Safety Communication: Risk of serious and potentially fatal blood disorder prompts FDA action on oral over-the-counter benzocaine products used for teething and mouth pain and prescription local anesthetics 05-23-2018. [Internet]. [Accessed 2019 June 24]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/risk-serious-and-potentially-fatal-blood-disorder-prompts-fda-action-oral-over-counter-benzocaine</li>
+				<li>US FDA 2011: Benzocaine Topical Products: Sprays, Gels and Liquids - Risk of Methemoglobinemia. [Posted 04/07/2011] U.S. Food and Drug Administration MedWatch The FDA Safety Information and Adverse Event Reporting Program. [Internet]. [Accessed 2019 June 24]. Available from: https://wayback.archive-it.org/7993/20170112165108/http://www.fda.gov/Safety/MedWatch/SafetyInformation/SafetyAlertsforHumanMedicalProducts/ucm250264.htm</li>
+				<li>US FDA 1991: US Department of Health and Human Services, Food and Drug Administration. 21 CFR Parts 356 and 369. [Docket No. 81N-0033]. Oral Health Care Drug Products for Over- the-Counter Human Use&semi; Amendment to Tentative Final Monograph to Include OTC Relief of Oral Discomfort Drug Products. ACTION: Notice of proposed rulemaking. [Internet]. Federal Register, Volume 56, Number 185, September 24, 1991. FR Citation: 56FR48302 [Accessed 2019 June 24]. Available from: https://www.fda.gov/drugs/status-otc-rulemakings/rulemaking-history-otc-oral-healthcare-drug-products</li>
+				<li>USP DI 2006: Drug Information for the Health Care Professional. 26<sup>th</sup> edition, Volume 1. Greenwood Village (CO): Thomson Micromedex&semi; 2006.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Abu-Laban RB, Zed PJ, Purssell RA, Evans KG. Severe methemoglobinemia from topical anesthetic spray: case report, discussion and qualitative systematic review. Canadian Journal of Emergency Medicine 2001&semi;3(1):51-56.</li>
+				<li>AHFS DI 2010: AHFS Drug Information 2010. Snow EK, editior. Bethesda (MD): American Society of Health-System Pharmacists&semi; 2010.</li>
+				<li>APA 2002: Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association&semi; 2002.</li>
+				<li>Ash-Bernal R, Wise R, Wright SM. Acquired methemoglobinemia. A retrospective series. Medicine 2004&semi;83(5):265-273.</li>
+				<li>Balicer RD, Kitai E. Methemoglobinemia caused by topical teething preparation: a case report. Scientific World Journal 2004 July 15&semi;4:517-520.</li>
+				<li>Barker SJ, Tremper KK, Hyatt J. Effects of methemoglobinemia on pulse oximetry and mixed venous oximetry. Anesthesiology 1989&semi;70(1):112-117.</li>
+				<li>Benzocaine Topical Products: Sprays, Gels and Liquids - Risk of Methemoglobinemia. [Posted 04/07/2011] U.S. Food and Drug Administration MedWatch The FDA Safety Information and Adverse Event Reporting Program. [Internet]. [Accessed 2011 December 21] Available from http://www.fda.gov/safety/medwatch/safetyinformation/safetyalertsforhumanmedicalproducts/ucm250264.htm].</li>
+				<li>Birchem SK. Benzocane-induced methemoglobinemia during transesophageal echocardiography. Journal of the American Osteopathic Association 2005&semi;105(8)381-384.</li>
+				<li>BP 2012: British Pharmacopoeia 2012. London (GB): The Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA)&semi; 2011.</li>
+				<li>Chung N-Y, Batra R, Itzkevitch M, Borochov D, Balduf M. Severe methemoglobinemia linked to gel-type topical benzocaine use: a case report. The Journal of Emergency Medicine 2010&semi;38(5):601-606.</li>
+				<li>Clary B, Skaryak L, Tedder M, Hilton A, Botz G, Harpole D. Methemoglobinemia complicating topical an esthesia during bronchoscopic procedures. Journal of Thoracic and Cardiovascular Surgery 1997&semi;114(2):203-205.</li>
+				<li>Dahshan A, Donovan K. Severe methemoglobinemia complicating topical benzocaine use during endoscopy in a toddler: a case report and review of the literature. Pediatrics 2006&semi;117(4):e806-809.</li>
+				<li>Darracq M, Daubert P. A cyanotic toddler. Pediatric Emergency Care 2007&semi;23(3):195-199.</li>
+				<li>Dinneen SF, Mohr DN, Fairbanks BF. Methemoglobinemia from topically applied anesthetic spray. Mayo Clinic Proceedings. 1994:69(9)&semi;886-889.</li>
+				<li>Douglas WW, Fairbanks VF. Methemoglobinemia induced by a topical anesthetic spray (cetacaine). Chest 1977&semi;71(5)587-591.</li>
+				<li>El-Husseini A, Azarov N. Is threshold for treatment of methemoglobinemia the same for all? A case report and literature review. The American Journal of Emergency Medicine. 2010&semi;28(6):748.e5-748.e10.</li>
+				<li>Fisher MA, Henry D, Gillam L, Chen C. Toxic methemoglobinemia: A rare but serious complication of transesophageal echocardiography. Canadian Journal of Cardiology 1998&semi;14(9):1157-1160.</li>
+				<li>Grauer SE, Giraud GD. Toxic methemoglobinemia after topical anesthesia for transesophageal echocardiography. Journal of the American Society of Echocardiography 1996&semi;9(6):874-876.</li>
+				<li>Gray TA and Hawkins S. A PACU crisis: A case study on the development and management of methemoglobnemia. Journal of PeriAnesthesia Nursing 2004&semi;19(4):242-253.</li>
+				<li>Guay J. Methemoglobinemia related to local anesthetics: A summary of 242 episodes. Anesthesia &amp; Analgesia 2009&semi;108(3):837-845.</li>
+				<li>HC 2005: Health Canada. Category IV Monograph: Throat Lozenges. Drugs Directorate [Accessed 2019 June 24]. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/hpfb-dgpsa/pdf/prodpharma/thr_gor_cat4-eng.pdf</li>
+				<li>Khorasani A, Candido KD, Ghaleb AH, Saatee S, Appavu SK.Canister tip orientation and residual volume have significant impact on the dose of benzocaine delivered by Hurricane spray. Anesthesia &amp; Analgesia 2001&semi;92:379-383.</li>
+				<li>Moore TJ, Walsh CS, Cohen MR. Reported adverse event cases of methemoglobinemia associated with benzocaine products. Archives of Internal Medicine 2004&semi;164:1192-1196.</li>
+				<li>Nguyen, ST, Cabrales RE, Bashour CA, Rosenberger TE Jr, Michener JA, Yared J-P, Starr NJ. Benzocaine-induced methemoglobinemia, Anesthesia &amp; Analgesia 2000&semi;90(2):369-371.</li>
+				<li>O&apos;Donohue WJ Jr, Moss LM, Angelillo VA. Acute methemoglobinemia induced by topical benzocaine and lidocaine. Archives of Internal Medicine 1980&semi;140(11):1508-1510.</li>
+				<li>Olson Ml, McEvoy GK. Methemoglobinemia induced by local anesthetics. American Journal of Hospital Pharmacy 1981&semi;38(1):89-93.</li>
+				<li>Orr TM, Orr DL II.Methemoglobinemia secondary to over-the-counter Anbesol. Oral Surgery, Oral Medicine, Oral Pathology, Oral Radiology, and Endodontology 1997&semi;84(1):79-81.</li>
+				<li>Osterhoudt K. Methemoglobinemia. In: Erickson TB, Ahrens WR, Aks S, Baum C, Ling L, editors. Pediatric Toxicology. 1<sup>st</sup> edition. New York, NY: McGraw-Hill&semi; 2005.</li>
+				<li>Ph.Eur. 2012: European Pharmacopoeia. 7<sup>th</sup> edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM), 2012.</li>
+				<li>Pray WS. Non-Prescription Product Therapeutics. 2<sup>nd</sup> edition. New York (NY): Lippincott Williams & Wilkins&semi; 2006.</li>
+				<li>Public Health Advisory: Benzocaine Sprays marketed under different names, including Hurricaine, Topex, and Cetacaine. [Internet]. [Accessed 2011 June 6]. Available from http://www.fda.gov/Drugs/DrugSafety/PostmarketDrugSafetyInformationforPatientsandProviders/DrugSafetyInformationforHeathcareProfessionals/PublicHealthAdvisories/ucm124350.htm</li>
+				<li>Rodriguez LF, Smolik LM, Abehlik AJ. Benzocaine-induced methemoglobinemia: report of a severe reaction and review of the literature. The Annals of Pharmacotherapy 1994&semi;28(5):643-649.</li>
+				<li>Sachdeva R, Pugeda JG, Casale LR, Meizlish JL, Zarich SW. Benzocaine-induced methemoglobinemia. A potentially fatal complication of transesophageal echocardiography. Texas Heart Institute Journal 2003&semi;30(4):308-310.</li>
+				<li>So T-Y, Farrington E. Topical benzocaine-induced methemoglobinemia in the pediatric population. Journal of Pediatric Health Care 2008&semi;22(6):335-339.</li>
+				<li>Spiller HA, Revolinski DH, Winter ML.Multi-center retrospective evaluation of oral benzocaine exposure in children. Veterinary and Human Toxicology 2000&semi;42(4):228-231.</li>
+				<li>Stoelting RK, Miller RD. Basics of Anesthesia. 4<sup>th</sup> edition. Publisher: Elsevier Science Health Science Division&semi; 2000.</li>
+				<li>Tantisattamo E, Suwantarat N, Vierra JR, Evans SJ. Atypical presentations of methemoglobinemia from benzocaine spray. Hawai&apos;i Medical Journal 2011&semi;70(6):125-126.</li>
+				<li>Townes PL, Geertsma MA and White MR. Benzocaine-induced methemoglobinemia. American Journal of Diseases of Children 1977&semi;131(6):697-698.</li>
+				<li>Tsigrelis C, Weiner L. Methemoglobinemia revisited: an important complication after transesophageal echocardiography. The European Society of Cardiology 2006&semi;7(6):470-472.</li>
+				<li>US FDA 2011a: FDA Drug Safety Communication:  FDA continues to receive reports of a rare, but serious and potentially fatal adverse effect with the use of benzocaine sprays for medical procedures 04-07-2011. [Internet]. [Accessed 2019 June 24]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-continues-receive-reports-rare-serious-and-potentially-fatal</li>
+				<li>US FDA 2011b: FDA Drug Safety Communication: Reports of a rare, but serious and potentially fatal adverse effect with the use of over-the-counter (OTC) benzocaine gels and liquids applied to the gums or mouth 04-07-2011. [Internet]. [Accessed 2019 June 24]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-reports-rare-serious-and-potentially-fatal-adverse-effect-use-over</li>
+				<li>US FDA 1988: US Department of Health and Human Services, Food and Drug Administration. 21 CFR Parts 201, 356, and 369. [Docket No. 81N-0333]. Oral Health Care Drug Products for Over-the-Counter Human Use&semi; Tentative Final Monograph. ACTION: Notice of proposed rulemaking. [Internet]. Federal Register, Volume 53, Number 17, January 27, 1988. FR Citation: 53FR2436 [Accessed 2019 June 24]. Available from: https://www.fda.gov/drugs/status-otc-rulemakings/rulemaking-history-otc-oral-healthcare-drug-products</li>
+				<li>USP 35: United States Pharmacopeia and the National Formulary (USP 35 - NF 30). Rockville (MD): The United States Pharmacopeial Convention&semi; 2012.</li>
+				<li>Vallurupalli M, Das M, Manchanda S. Infection and the risk of topical anesthetic induced clinically significant methemoglobinemia after transesophageal echocardiography. Echocardiography 2010&semi;27(3):318-323.</li>
+				<li>Vessely MB, Zitsch RP III. Topical anaesthetic-induced methemoglobinemia: A case report and review of literature. Otolaryngology-Head and Neck Surgery 1993:108(6):763-767.</li>
+				<li>VHA Pharmacy Benefits Management Strategic Healthcare Group and the Medical Advisory Panel and the National Center for Patient Safety. A Guidance on the Use of Topical Anesthetics for Naso/Oropharyngeal and Laryngotracheal Procedures&semi; 2006.</li>
+				<li>Wong DH, Wilson SE. Avoiding topical anethesia-induced methemoglobinemia. Obesity Surgery 2005:15(7):1088.</li>
+				<li>Wright R, Lewander W, Woolf A. Methemoglobinemia: etiology, pharmacology, and clinical management. Annals of Emergency Medicine 1999&semi;34(5):646-56.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

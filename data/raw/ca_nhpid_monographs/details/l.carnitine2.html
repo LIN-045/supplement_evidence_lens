@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=l.carnitine2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="2a28fa27-d7db-43d2-96bf-d81e44743e18"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>L-CARNITINE</h1>
+	<div class="icon">
+		<a href="dbImages/mono_carnitine-l_english.pdf" title="L-Carnitine"><img alt="Monograph: L-Carnitine" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 78.6 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	<p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong>
+		<ul>
+			<li>When combining L-Carnitine with Acetylcarnitine, the total quantity of these ingredients cannot exceed 4 grams per day and 2 grams per single dose.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>July 25, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th>Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>(L-3-Carboxy-2-hydroxypropyl)trimethylammonium hydroxide, inner salt</li>
+								<li>(R)-3-Carboxy-2-hydroxy-N,N,N-trimethyl-1-propanaminium hydroxide, inner salt</li>
+								<li>L-Carnitine</li>
+								<li>Levocarnitine</li>	
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>L-Carnitine</li> 
+								<li>Levocarnitine</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>L-Carnitine</li>
+								<li>L-Carnitine fumarate</li>
+								<li>L-Carnitine tartrate</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: RSC 2024&semi; USP-NF 2024&semi; Common name: RSC 2024&semi; USP-NF 2024&semi; Source information: EFSA 2012&semi; Wall et al. 2011&semi; EFSA 2003.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p>L-Carnitine fumarate&semi; L-Carnitine tartrate&semi; L-Carnitine
+				<ul>
+					<li>Source of (an) antioxidant(s)/Provides (an) antioxidant(s) (Cao et al. 2011&semi; Arkadeb et al. 2008&semi; Gomez-Amores et al. 2007).</li>
+					<li>Source of (an) antioxidant(s)/Provides (an) antioxidant(s) that help(s) fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Cao et al. 2011&semi; Arkadeb et al. 2008&semi; Gomez-Amores et al. 2007).</li>
+					<li>Workout support/supplement (Wall et al. 2011&semi; Cha et al. 2001&semi; Arenas et al. 1994&semi; Huertas et al. 1992&semi; Arenas et al. 1991&semi; Vecchiet et al. 1990&semi; Marconi et al. 1985).</li>
+					<li>Athletic support/supplement (Wall et al. 2011&semi; Cha et al. 2001&semi; Arenas et al. 1994&semi; Huertas et al. 1992&semi; Arenas et al. 1991&semi; Vecchiet et al. 1990&semi; Marconi et al. 1985).</li>
+				</ul>
+			</p>
+			<p>L-Carnitine tartrate&semi; L-Carnitine
+				<ul>
+					<li>Aids in the muscle recovery process by reducing muscle tissue damage associated with a resistance training regimen (Ho et al. 2010&semi; Spiering et al. 2008&semi; Spiering et al. 2007&semi; Kraemer et al. 2006&semi; Kramer et al. 2003&semi; Volek et al. 2002).</li>
+					<li>Helps support muscle tissue repair in individuals involved in resistance training (Ho et al. 2010&semi; Spiering et al. 2008&semi; Spiering et al. 2007&semi; Kraemer et al. 2006&semi; Kramer et al. 2003&semi; Volek et al. 2002).</li>
+					<li>Helps improve physical performance when used in conjunction with a training regimen (Wall et al. 2011&semi; Cha et al. 2001&semi; Arenas et al. 1994&semi; Huertas et al. 1992&semi; Arenas et al. 1991&semi; Vecchiet et al. 1990&semi; Marconi et al. 1985).</li>
+					<li>Helps delay fatigue during physical activity (Cha et al. 2011&semi; Wall et al. 2011&semi; Karahan et al. 2010).</li>
+					<li>Helps support fat metabolism (Stephens et al. 2007&semi; Karlic and Lohninger 2004&semi; Müller et al. 2002).</li>
+					<li>Helps support fat oxidation (Wall et al. 2011&semi; Stephens et al. 2007&semi; Wutzke and Lorenz 2004&semi; Müller et al. 2002).</li>
+				</ul>
+			</p>
+			<p><strong>Notes:</strong>
+				<ul>
+					<li>The above uses can be combined on the product label (e.g., L-carnitine from L-carnitine tartrate: Workout supplement that helps support fat metabolism and fat oxidation).</li>
+					<li>The terms &lsquo;Helps&rsquo; or &lsquo;Helps to&rsquo; can be used interchangeably on the label.</li>
+					<li>If L-carnitine is combined with other medicinal ingredients with antioxidant properties at Class II and III, there is an option to use the claim in plural. The singular should be used when the product only contains one chemical substance as the medicinal ingredient associated with this claim.</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Antioxidant</em></p>
+					<p>Not to exceed 4 grams of L-carnitine per day and 2 grams per single dose (Karlic and Lohninger 2004&semi; Benvenga et al. 2001&semi; Ahmet et al. 2000&semi; Harper et al. 1988).</p>
+				<p><em>Muscle recovery, Muscle tissue repair, Workout/Athletic support/supplement</em></p>
+					<p>1 - 4 grams of L-carnitine, per day&semi; Not to exceed 2 grams per single dose (Ho et al. 2010&semi; Spiering et al. 2008&semi; Spiering et al. 2007&semi; Kraemer et al. 2006&semi; Kramer et al. 2003&semi; Volek et al. 2002&semi; Benvenga et al. 2001&semi; Ahmet et al. 2000&semi; Harper et al. 1988).</p>
+				<p><em>Physical performance, Fatigue</em></p>
+					<p>2 - 4 grams of L-carnitine, per day&semi; Not to exceed 2 grams per single dose (Wall et al. 2011&semi; Benvenga et al. 2001&semi; Cha et al. 2001&semi; Ahmet et al. 2000&semi; Arenas et al. 1994&semi; Huertas et al. 1992&semi; Arenas et al. 1991&semi; Vecchiet et al. 1990&semi; Harper et al. 1988&semi; Marconi et al. 1985).</p>
+				<p><em>Fat metabolism, Fat oxidation</em></p>
+					<p>3 - 4 grams of L-carnitine, per day&semi; Not to exceed 2 grams per single dose (Wall et al. 2011&semi; Stephens et al. 2007&semi; Karlic and Lohninger 2004&semi; Wutzke and Lorenz 2004&semi; Müller et al. 2002).</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>Muscle recovery, Muscle tissue repair, Workout/Athletic support/supplement, Physical performance, Fatigue</em></p>
+					<p>Take 2-4 hours prior to exercise (Harper et al. 1988).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (CPS 2008).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a seizure disorder (CPS 2008).</li>
+				</ul>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>	
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/L_CARNITINE_E.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referenceCited">
+		<h2 id="referenceCited">References Cited</h2>
+			<ul>
+				<li>Ahmet U, Abdurrahman K, Sait B, Ahmet E, Salih D, Mendane S, Ates Y, Fatih B, Necmettin K, Kemal D. L-carnitine therapy in non-alcoholic steatohepatitis. Turkish Journal of Pediatrics 2000&semi;11(3):196-201.</li>
+				<li>Arenas J, Huertas R, Campos Y, Diaz AE, Villalon JM, Vilas E. Effect of L-carnitine on the pyruvate dehydrogenase complex and carnitine palmitoyl transferase activities in muscle of endurance athletes. FEBS Letters 1994&semi;341:91-93.</li>
+				<li>Arenas J, Ricoy JR, Encinas AR, Pola P, D&apos;Iddio S, Zeviani M, Didonato S, Corsi M. Carnitine in muscle, serum, and urine of nonprofessional athletes: Effects of physical exercise, training, and L-carnitine administration. Journal of Muscle &amp; Nerve 1991&semi;14:598-604.</li>
+				<li>Arkadeb D, Koushik R, Vijay K. Singh, Vats P, Singh SN, Singh SB. L-carnitine supplementation attenuates intermittent hypoxia-induced oxidative stress and delays muscle fatigue in rats. Experimental Physiology 2008&semi;93:1139-1146.</li>
+				<li>Benvenga S, Ruggeri RM, Russo A, Lapa D, Campenni A, Trimarchi F. Usefulness of Lcarnitine, a naturally occurring peripheral antagonist of thyroid hormone action, in iatrogenic hyperthyroidism: a randomized, double-blind, placebo-controlled clinical trial. Journal of Clinical Endocrinology and Metabolism 2001&semi;86(8):3579-3594.</li>
+				<li>Cao Y, Qu HJ, Li P, Wang CB, Wang LX, Han ZW. Single dose administration of L-carnitine improves antioxidant activities in healthy subjects. The Tohoku Journal of Experimental Medicine 2011&semi;224(3):209-213.</li>
+				<li>Cha Y-S, Choi S-K, Suh H, Lee S-N, Cho D, Lim K. Effects of carnitine coingested caffeine on carnitine metabolism endurance capacity in athletes. Journal of Nutritional Science and Vitaminology 2001&semi;47:378-384.</li>
+				<li>CPS 2008: Compendium of Pharmaceuticals and Specialties: The Canadian Drug Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association&semi; 2008.</li>
+				<li>EFSA 2012: Scientific Opinion: Scientific Opinion on the safety and efficacy of L- carnitine and L-carnitine L-tartrate as feed additives for all animal species based on a dossier submitted by Lonza Benelux BV. European Food Safety Authority (EFSA), Parma, Italy. [Accessed 2024 June 10]. Available from: https://efsa.onlinelibrary.wiley.com/doi/abs/10.2903/j.efsa.2012.2676</li>
+				<li>EFSA 2003: Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food (AFC) on a request from the Commission related to LCarnitine-L-tartrate for use in foods for particular nutritional uses (adopted on 3 November 2003 by written procedure). European Food Safety Authority (EFSA). Parma. Italy. [Accessed 2024 June 10]. Available from: http://www.efsa.europa.eu/sites/default/files/scientific_output/files/main_documents/19.pdf</li>
+				<li>Gomez-Amores L, Mate A, Miguel-Carrosco J, Jimenez L, Jos A, Camean AM, Revilla E, Santa-Maria C, Vasquez C. L-carnitine attenuates oxidative stress in hypertensive rats. The Journal of Nutritional Biochemistry 2007&semi;18(8):533-540.</li>
+				<li>Harper P, Elwin CE, Cederblad G. Pharmacokinetics of intravenous and oral bolus doses of Lcarnitine in healthy subjects. European Journal of Clinical Pharmacology 1988&semi;35:555-562.</li>
+				<li>Ho JY, Kraemer WJ, Volek JS, Fragala MS, Thomas GA, Dunn-Lewis C, Coday M, Hakkinen K, Maresh CM. L-carnitine L-tartrate supplementation favorably affects biochemical markers of recovery from physical exertion in middle-aged men and women. Metabolism Clinical and Experimental Journal 2010&semi;59:1190-1199.</li>
+				<li>Huertas R, Campos Y, Diaz E, Esteban J, Vechietto L, Montanari G, D&apos;Iddio S, Corsi M, Arenas J. Respiratory chain enzymes in muscle of endurance athletes: Effect of L-carnitine. Biochemical and biophysical research communications 1992&semi;188(1):102-107.</li>
+				<li>Karahan M, Coksevim B, Artis S. The effect of L-carnitine supplementation on 1500 m running performance. Science, Movement and Health Journal 2010&semi;10(2):504-507.</li>
+				<li>Karlic H, Lohninger A. Supplementation of L-carnitine in athletes: Does it make sense? Journal of Nutrition 2004&semi;20:709-715.</li>
+				<li>Kraemer WJ, Spiering BA, Volek JS, Ratamess NA, Sharman MJ, Rubin MR, French DN, Silvestre R, Hatfield DL, Van Heest JC, Vingren JL, Judelson DA, Deschenes MR, Maresh CM. Androgenic responses to resistance exercise: Effects of feeding and L-Carnitine. Official Journal of the American College of Sports Medicine 2006&semi;1288-1296.</li>
+				<li>Kraemer WJ, Volek JS, French DN, Rubin MR, Sharman MJ, Gomez AL, Ratamess NA, Newton RU, Jemiolo B, Craig BW, Hakkinen K. The effects of L-carnitine L-tartrate supplementation on hormonal responses to resistance exercise and recovery. Journal of Strenght and Conditioning Research 2003&semi;17(3):455-462.</li>
+				<li>Marconi C, Sassi G, Carpinelli A, Cerretelli P. Effect of L-carnitine loading on the aerobic and anaerobic performance of endurance athletes. European Journal of Applied Physiology 1985&semi;54:131-135.</li>
+				<li>Müeller DM, Seim H, Kiess W, Löster H, Richter T. Effects of oral L-carnitine supplementation on in vivo long-chain fatty acid oxidation in healthy adults. Journal of Metabolism 2002&semi;51(11):1389-1391.</li>
+				<li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 June 3]. Available from: https://merckindex.rsc.org/</li>
+				<li>Spiering BA, Kraemer WJ, Hatfield DL, Vingren JL, Fragala MS, Ho J-Y, Thomas GA, Hakkinen K, Volek JS. Effects of L-carnitine L-tartrate supplementation on muscle oxygenation responses to resistance exercise. Journal of Strength and Conditioning Research 2008&semi;22(4):1130-1135.</li>
+				<li>Spiering BA, Kraemer WJ, Vingren JL, Hatfield DL, Fragala MS, Ho J-Y, Maresh CM, Anderson JM, Volek JS. Responses of criterion variables to different supplemental doses of Lcarnitine L-tartrate. Journal of Strength and Conditioning Research 2007&semi;21:259-264.</li>
+				<li>Stephens FB, Constantin-Teodosiu D, Greenhaff PL. New insights concerning the role of carnitine in the regulation of fuel metabolism in skeletal muscle. Journal of Physiology 2007&semi;581.2:431-444.</li>
+				<li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2024.</li>
+				<li>Vecchiet L, Di Lisa F, Pieralisi G, Ripari P, Menabo R, Giamberardino MA, Siliprandi N. Influence of L-carnitine administration on maximal physical exercise. European Journal of Applied Physiology 1990&semi;61:486-490.</li>
+				<li>Volek JS, Kraemer WJ, Rubin MR, Gomez AL, Ratamess NA, Gaynor P. L-carnitine L-tartrate supplementation favorably affects markers of recovery from exercise stress. American Journal of Physiology-Endocrinology and Metabolism 2002&semi;282:E474-E482.</li>
+				<li>Wall BT, Stephens FB, Constantin-Teodosiu D, Marimuthu K, Macdonald IA, Greenhaff PL. Chronic oral ingestion of L-carnitine and carbohydrate increases muscle carnitine content and alters muscle fuel metabolism during exercise in humans. The Journal of Physiology 2011&semi;589.4:963-973.</li>
+				<li>Wutzke KD, Lorenz H. The effect of L-carnitine on fat oxidation, protein turnover&semi; and body composition in slightly overweight subjects. Metabolism 2004&semi;53(8):1002-1006.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referenceReviewed">
+		<h2 id="referenceReviewed">References Reviewed</h2>
+			<ul>
+				<li>Brass EP, Hiatt WR. The role of carnitine and carnitine supplementation during exercise in man in individuals with special needs. Journal of the American College Nutrition 1998&semi;17(3):207-215.</li>
+				<li>Broad EM, Maughan RJ, Galloway S. Carbohydrate, protein, and fat metabolism during exercise after oral carnitine supplementation in humans. International Journal of Sport Nutrition and Exercise Metabolism 2008&semi;18:567-584.</li>
+				<li>Colombani P, Wenk C, Kunz I, Kraehenbul S, Kuhnt M, Arnold M, Frey-Rindova P, Frey W, Langhans W. Effects of L-carnitine supplementation on physical performance and energy metabolism of endurance-trained athletes: a double-blind crossover field study. European Journal of Applied Physiology 1996&semi;73:434-439.</li>
+				<li>Flanagan JL, Simmons PA, Vehige J, Willcox M, Garrett Q. Role in carnitine in disease. Nutrition and Metabolism 2010&semi;7(30):1-14.</li>
+				<li>Hathcock JN, Shao A. Risk assessment for carnitine. Regulatory Toxicology and Pharmacology Journal 2006&semi;46(1):23-28.</li>
+				<li>Malaguarnera M, Cammalleri L, Gargante MP, Vacante M, Colonna V, Motta M. L-carnitine treatment reduces severity of physical and mental fatigue and increases cognitive functions in centenarians : a randomized and controlled clinical trial. The American Journal of Clinical Nutrition 2007&semi;86:1738-1744.</li>
+				<li>Rubin MR, Volek JS, Gomez AL, Ratamess NA, French DN, Sharman MJ, Kraemer WJ. Safety measures of L-carnitine L-tartrate supplementation in healthy men. Journal of Strength and Conditioning Research 2001&semi;15(4):486-490.</li>
+				<li>Stuessi C, Hofer P, Meir C, Boutellier U. L-carnitine and the recovery from exhaustive endurance exercise: a randomized, double-blind, placebo-controlled trial. European Journal of Applied Physiology 2005&semi;95:431-435.</li>
+				<li>Tabibi H, Hakeshzadeh M, Malakoutian T. Effects of L-carnitine supplement on serum amyloid A and vascular inflammation markers in hemodialysis patients: a randomized controlled trial. Journal of Renal Nutrition 2011&semi;21(6):485-491.</li>
+				<li>Wyss V, Ganzit GP, Rienzi A. Effects of L-carnitine administration on VO2max and the aerobicanaerobic threshold in normoxia and acute hypoxia. European Journal of Applied Physiology 1990&semi;60:1-6.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory" hidden>
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=creatine.mono\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="1c8105a0-7992-4ae8-b7bf-6581f88bb60c"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>Creatine Monohydrate</h1>
+
+<p class="lightgreyBG">Help on accessing alternative formats, such as Portable Document Format (<abbr
+        title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr
+        title="PowerPoint">PPT</abbr>) files, can be obtained in the <a
+        href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php">alternate format help</a> section.
+</p>
+<div class="icon">
+    <a href="dbImages/mono_creatine-monohydrate_english.pdf" title="Monograph: Creatine monohydrate (English)">
+        <img alt="Monograph: Creatine monohydrate (English)" style="position:relative; top:-2px"
+            src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22" /> (PDF
+        Version&nbsp;-&nbsp;36&nbsp;K)</a>
+</div>
+
+<p>This monograph is intended to serve as a guide to industry for the preparation of
+    Product Licence Applications (<abbr title="Product Licence Applications">PLAs</abbr>) and labels for natural
+    health product
+    market authorization. It is not intended to be a comprehensive review of the
+    medicinal ingredient.</p>
+
+<p><strong>Notes</strong></p>
+<ul>
+    <li>Text in parentheses is additional optional information which can be included
+        on the <abbr title="Product Licence Application">PLA</abbr> and product label at
+        the applicant's discretion.</li>
+    <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may
+        be selected
+        by the applicant.</li>
+</ul>
+
+<section aria-labelledby="date">
+    <h2 id="date">Date</h2>
+    <p>June 28, 2024</p>
+</section>
+
+<section aria-labelledby="properNameCommonNameSourceInformation">
+    <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+    <table class="subject">
+        <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Proper name(s)</th>
+                <th rowspan="2" scope="col">Common name(s)</th>
+                <th scope="colgroup">Source information</th>
+            </tr>
+            <tr>
+                <th scope="col">Source ingredient(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>N-(Aminoiminomethyl)-N-methylglycine monohydrate</td>
+                <td>Creatine monohydrate</td>
+                <td>Creatine monohydrate</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <p>References: Proper name: RSC 2023, US NLM 2023; Common name: RSC 2023, US NLM 2023; Source information:
+        RSC 2023,
+        Weiss and Krommer 1998.</p>
+</section>
+
+<section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">Route of administration</h2>
+    <p>Oral</p>
+</section>
+
+<section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">Dosage form(s)</h2>
+    <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs
+        Guidance
+        Document.</p>
+
+    <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based
+        Product
+        Licence
+        Application form for Compendial applications.</p>
+
+    <p><strong>Note</strong><br> Liquids and solutions are not permitted due to lack of stability of the
+        finished
+        product
+        (Dash and Sawhney 2002).</p>
+</section>
+
+<section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+    <ul>
+        <li>Increases body/(lean)muscle mass/size when used in conjunction with a resistance training regimen
+            (Brose
+            et al.
+            2003; Bemben et al. 2001; Volek et al. 1999; Vandenberghe et al. 1997).</li>
+        <li>Improves strength/power/performance in repetitive bouts of brief, highly-intense physical activity
+            (e.g.
+            sprints, jumping, resistance training) (by increasing [muscle/intramuscular]
+            [creatine/phosphocreatine/energy]
+            levels) (Okudan and Gökbel 2005; Brose et al. 2003; Preen et al. 2003; Bemben et al. 2001; Volek et
+            al.
+            1999;
+            Vandenberghe et al. 1997; Hultman et al. 1996).</li>
+    </ul>
+</section>
+
+<section aria-labelledby="dose">
+    <h2 id="dose">Dose(s)</h2>
+
+    <h3>Subpopulation(s)</h3>
+    <p>Adults 18 years and older</p>
+
+    <h3>Quantity(ies)</h3>
+
+    <table class="subject">
+        <caption>Table 2. Dose(s) for creatine monohydrate (with loading phase) </caption>
+        <thead>
+            <tr>
+                <td rowspan="2"></td>
+                <th colspan="3" scope="colgroup">Loading Phase</th>
+                <th colspan="2" scope="colgroup">Maintenance Phase</th>
+            </tr>
+            <tr>
+                <th scope="col">Min/day</th>
+                <th scope="col">Max/day</th>
+                <th scope="col">Max/single dose</th>
+                <th scope="col">Min/day</th>
+                <th scope="col">Max/day</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Option 1</td>
+                <td>15 g</td>
+                <td>20 g</td>
+                <td>5 g</td>
+                <td rowspan="2">2 g</td>
+                <td rowspan="2">5 g</td>
+            </tr>
+            <tr>
+                <td>Option 2</td>
+                <td>3 g</td>
+                <td>5 g</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="subject">
+        <caption>Table 3. Dose(s) for creatine monohydrate (no loading phase)</caption>
+        <thead>
+            <tr>
+                <td></td>
+                <th scope="col">Min/day</th>
+                <th scope="col">Max/day</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Option 3</td>
+                <td>3 g</td>
+                <td>5 g</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>References for Tables 2 and 3: Okudan and Gökbel 2005; Preen et al. 2003; Bemben et al. 2001; Volek et
+        al.
+        1999;
+        Vandenberghe et al. 1997; Hultman et al. 1996.
+    </p>
+
+    <h3>Direction(s) for use and duration(s) of use</h3>
+
+
+    <table class="subject">
+        <caption>Table 4. Direction(s) for use and duration(s) of use</caption>
+        <tr>
+            <th scope="col">Option(s)<sup>1</sup></th>
+            <th scope="col">Direction(s) for use and duration(s) of use</th>
+        </tr>
+        <tr>
+            <td>Option 1 - loading phase of 15-20 g/day</td>
+            <td>Start with a loading phase of X g<sup>2</sup> per day for 5-7 days and follow with a maintenance phase (Y
+                g<sup>2</sup>/day)
+            </td>
+        </tr>
+        <tr>
+            <td>Option 2 - loading phase of 3-5 g/day</td>
+            <td>Start with a loading phase of X g<sup>2</sup> per day for a minimum of 4 weeks and follow with a maintenance
+                phase (Y
+                g<sup>2</sup>/day)</td>
+        </tr>
+        <tr>
+            <td>Option 3 - no loading phase</td>
+            <td>Use for a minimum of 4 weeks.</td>
+        </tr>
+    </table>
+</section>
+
+<p><sup>1</sup>If more than one option is listed for a product, they should be separated with 'OR' for clarity.</p>
+<p><sup>2</sup>The dose in grams can be replaced on the label with the number of dosage unit required to reach the loading dose (X g) and the maintenance dose (Y g) (e.g. X scoop(s); sachet(s); serving(s), etc).</p>
+
+<section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">Risk information</h2>
+    <h3>Caution(s) and warning(s)</h3>
+    <ul>
+        <li>When using this product you may gain weight (Volek and Rawson 2004; Bemben et al. 2001; Mihic et al.
+            2000).</li>
+        <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before
+            use
+            if you
+            are pregnant or breastfeeding.</li>
+        <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before
+            use
+            if you
+            have a kidney disorder (Pline and Smith 2005; Pritchard and Kalra 1998).</li>
+    </ul>
+
+    <h3>Contraindication(s): </h3>
+    <p>No statement required.</p>
+    <h3>Known adverse reaction(s): </h3>
+    <p>No statement required.</p>
+</section>
+
+
+<section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+    <p>Must be chosen from the current <abbr
+            title="Natural and Non-prescription Health Products Directorate"></abbr> <a
+            href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">Natural Health Products
+            Ingredients
+            Database (NHPID)</a>
+        and must meet the limitations outlined in the database.</p>
+</section>
+
+<section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">Storage conditions</h2>
+    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+            Regulations</em>
+    </p>
+</section>
+
+<section aria-labelledby="specifications">
+    <h2 id="specifications">Specifications</h2>
+    <ul>
+        <li>The finished product specifications must be established in accordance with the requirements
+            described in
+            the
+            Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products
+            Guide. </li>
+        <li>The medicinal ingredient must comply with the requirements outlined in the NHPID. </li>
+        <li>The finished product and/or raw material specifications must meet the process-related impurity acceptance criteria outlined in the USP Creatine monograph (or any other internationally recognized pharmacopoeia). Note that the NNHPD will accept these process-related impurity acceptance criteria for either the finished product or the raw material; however, the procedures described in the USP Creatine monograph are specific to the testing of creatine monohydrate as raw material. As per the NNHPD Quality of Natural Health Products Guide, if alternate methods are used for testing to meet pharmacopoeial specifications, the relevant pharmacopoeia should be consulted for information on whether or not the alternate methods are considered suitable.</li>
+    </ul>
+</section>
+
+<section aria-labelledby="exampleOfProductFacts">
+    <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+    <p>Consult the Guidance Document, <a
+            href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+            Labelling of Natural Health Products</a> for more details.
+    </p>
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/CREATINE_E.gif" alt="Product Facts Table"
+            style="width:700px">
+    </p>
+</section>
+
+<section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">References cited</h2>
+    <ul>
+        <li>Bemben MG, Bemben DA, Loftiss DD, Knehans AW. 2001. Creatine supplementation during resistance
+            training in college football athletes. Medicine &amp; Science in Sports &amp; Exercise
+            33(10):1667-1673.
+        </li>
+        <li>Brose A, Parise G, Tarnopolsky MA. 2003. Creatine supplementation enhances isometric strength and
+            body
+            composition improvements following strength exercise training in older adults. The Journals of
+            Gerontology
+            Series A: Biological Science and Medical Science 58(1):11-19.</li>
+        <li>Dash AK, Sawhney A. 2002. A simple <abbr title="Liquid chromatography">LC</abbr> method with
+            <abbr title=" Ultra violet">UV</abbr> detection for the analysis of creatine and creatinine and its
+            application
+            to
+            several creatine formulations. Journal of Pharmaceutical and Biomedical Analysis 29(5):939-945.
+        </li>
+        <li>Hultman E, Söderlund K, Timmons JA, Cederblad G, Greenhaff PL. 1996. Muscle creatine loading in men.
+            Journal of Applied Physiology 81(l):232-237.</li>
+
+        <li>Mihic S, MacDonald JR, McKenzie S, Tarnopolsky MA. 2000. Acute creatine loading increases fat-free
+            mass,
+            but
+            does not
+            affect blood pressure, plasma creatinine, or <abbr title="Creatine kinase">CK</abbr> activity in men
+            and
+            women.
+            Medicine &amp; Science in Sports and Exercise 32(2):291-296.</li>
+        <li>Okudan N, Gökbel H. 2005. The effects of creatine supplementation on performance during the repeated
+            bouts of
+            supramaximal
+            exercise. Journal of Sports Medicine and Physical Fitness 45(4):507-512.</li>
+        <li>Pline KA, Smith CL. 2005. The effect of creatine intake on renal function. The Annals of
+            Pharmacotherapy
+            39(6):1093-1096.</li>
+        <li>Preen D, Dawson B, Goodman C, Beilby J, Ching S. 2003. Creatine supplementation: a comparison of
+            loading
+            and
+            maintenance
+            protocols on creatine uptake by human skeletal muscle. International Journal of Sport Nutrition and
+            Exercise
+            Metabolism 13(1):97-111.</li>
+        <li>Pritchard NR, Kalra PA. 1998. Renal dysfunction accompanying oral creatine supplements. The Lancet
+            351(9111):1252-1253.</li>
+        <li>RSC 2023: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available
+            from:
+            https://merckindex.rsc.org/</li>
+        <li>US NLM 2023: United States National Library of Medicine. PubChem. Bethesda (MD): [Creatine
+            monohydrate.
+            RN:
+            6020-87-7. Accessed 2023 September 28]. Available from:
+            https://pubchem.ncbi.nlm.nih.gov/</li>
+        <li>Vandenberghe K, Goris M, Van Hecke P, Van Leemputte M, Vangerven L, Hespel P. 1997. Long-term
+            creatine
+            intake is
+            beneficial
+            to muscle performance during resistance training. Journal of Applied Physiology 83(6):2055-2063.
+        </li>
+        <li>Volek JS, Duncan ND, Mazzeti SA, Staron RS, Putukian M, Gomez AL , Pearson DR, Fink WJ, Kraemer WJ.
+            1999.
+            Performance and muscle fiber adaptations to creatine supplementation and heavy resistance training.
+            Medicine and
+            Science in
+            Sports Exercise 31(8):1147-1156.</li>
+        <li>Volek JS, Rawson ES. 2004. Scientific basis and practical aspects of creatine supplementation for
+            athletes.
+            Nutrition 20(7-8):609-614.</li>
+        <li>Weiss S, Krommer H. 1998. Process for the preparation of creatine or creatine monohydrate. U.S.
+            Patent
+            5,719,319.</li>
+    </ul>
+</section>
+
+<section aria-labelledby="referencesReviewed">
+    <h2 id="referencesReviewed">References reviewed</h2>
+    <ul>
+        <li>Balsom PD, Söderlund K, Ekblom B. 1994. Creatine in humans with special reference to creatine
+            supplementation.
+            Sports Medicine 18(4):268-280.</li>
+        <li>Bemben MG, Lamont HS. 2005. Creatine supplementation and exercise performance. Sports Medicine
+            35(2):107-125.
+        </li>
+        <li>Bensky D, Gamble A, Kaptchuk T. 1993. Chinese Herbal Medicine Materia Medica. Vista (CA): Eastland
+            Press.</li>
+        <li>Benzi G, Ceci A. 2001. Creatine as nutritional supplementation and medicinal product. Journal of
+            Sports
+            Medicine
+            and Physical Fitness 2001; 41(1):1-10.</li>
+        <li>Brudnak MA. 2004. Creatine: are the benefits worth the risk? Toxicology Letters 150(1):123-130.</li>
+        <li>Cooke WH, Grandjean PW, Barnes WS. 1995. Effect of oral creatine supplementation on power output and
+            fatigue
+            during
+            bicycle ergometry. Journal of Applied Physiology 78(2):670-673.</li>
+        <li>Cottrell GT, Coast JR, Herb RA. 2002. Effect of recovery interval on multiple-bout sprint cycling
+            performance
+            after
+            acute creatine supplementation. Journal of Strength and Conditioning Research 16(1):109-116.</li>
+        <li>Cox HE. 1936. Composition of meat extracts and meat cubes. Chemistry and Industry 55:69-71.</li>
+        <li>Derave W, Eijnde BO, Hespel P. 2003. Creatine supplementation in health and disease: what is the
+            evidence for
+            long-term
+            efficacy? Molecular and Cellular Biochemistry 244(1-2):49-55.</li>
+        <li>Doherty M, Smith PM, Davison RC, Hughes MG. 2002. Caffeine is ergogenic after supplementation of
+            oral
+            creatine
+            monohydrate.
+            Medicine and Science in Sports and Exercise 34(11):1785-1792.</li>
+        <li>Edmunds JW, Jayapalan S, DiMarco NM, Saboorian MH, Aukema HM. 2001. Creatine supplementation
+            increases
+            renal
+            disease progression
+            in Han:SPRD-cy rats. American Journal of Kidney Diseases 37(1):73-78.</li>
+        <li>Emery JA, Henley RR. 1919. Meat extracts, their composition and identification. Journal of
+            Agricultural
+            Research
+            17(1):1-17. </li>
+        <li>Gotshalk LA, Volek JS, Staron RS, Denegar CR, Hagerman FC, Kraemer WJ. 2002. Creatine
+            supplementation
+            improves
+            muscular performance
+            in older men. Medicine and Science in Sports and Exercise 34(3):537-543.</li>
+        <li>Greenwood M, Kreider RB, Melton C, Rasmussen C, Lancaster S, Cantler E, Milnor P, Almada A. 2003.
+            Creatine
+            supplementation during
+            college football training does not increase the incidence of cramping or injury. Molecular and
+            Cellular
+            Biochemistry 244(1-2):83-88. </li>
+        <li>Harris RC, Soderlund K, Hultman E. 1992. Elevation of creatine in resting and exercised muscle of
+            normal
+            subjects by creatine
+            supplementation. Clinical Science (London) 83(3):367-374.</li>
+        <li>Izquierdo M, Ibanez J, Gonzalez-Badillo J, Gorostiaga EM. 2002. Effects of creatine supplementation
+            on
+            muscle
+            power, endurance,
+            and sprint performance. Medicine and Science in Sports and Exercise 34(2):332-343.</li>
+        <li>Kockler DR, McCarthy MW, Lawson CL. 2001. Seizure activity and unresponsiveness after hydroxycut
+            ingestion.
+            Pharmacotherapy 21(5):647-651.</li>
+        <li>Koshy KM, Griswold E, Schneeberger EE. 1999. Interstitial nephritis in a patient taking creatine.
+            The
+            New
+            England Journal
+            of Medicine 340(10):814-815.</li>
+        <li>Kreider RB, Melton C, Rasmussen CJ, Greenwood M, Lancaster S, Cantler EC, Milnor P, Almada AL. 2003.
+            Long-term
+            creatine supplementation
+            does not significantly affect clinical markers of health in athletes. Molecular and Cellular
+            Biochemistry
+            244(1-2):95-104. </li>
+        <li>McKenna MJ, Morton J, Selig SE, Snow RJ. 1999. Creatine supplementation increases muscle total
+            creatine
+            but not
+            maximal
+            intermittent exercise performance. Journal of Applied Physiology 87(6):2244-2252</li>
+        <li>McRae CA, Agarwal K, Mutimer D, Bassendine MF. 2002. Hepatitis associated with Chinese herbs.
+            European
+            Journal
+            of Gastroenterology
+            and Hepatology 14(5):559-562.</li>
+        <li>Nissen SL and Sharp RL. 2003. Effects of dietary supplements on lean mass and strength gains with
+            resistance
+            exercise: a
+            meta-analysis. Journal of Applied Physiology 94(2):651-659. </li>
+        <li>Ostojic SM, Ahmetovic Z. 2008. Gastrointestinal distress after creatine supplementation in athletes:
+            are
+            side
+            effects dose
+            dependent? Research in Sports Medicine 16(1):15-22. </li>
+        <li>Persky AM, Brazeau GA. 2001. Clinical pharmacology of the dietary supplement creatine monohydrate.
+            Pharmacological Reviews
+            53(2):161-176. </li>
+        <li>Poortmans JR, Auquier H, Renault V, Durussel A, Saugy M, Brisson GR. 1997. Effect of short-term
+            creatine
+            supplementation on
+            renal responses in men. European Journal of Applied Physiology 76(6):566-567.</li>
+        <li>Poortmans JR, Francaux M. 2000. Adverse effects of creatine supplementation: fact or fiction?
+            SportsMedicine
+            30(3):155-170.</li>
+        <li>Poortmans JR, Francaux M. 1999. Long-term oral creatine supplementation does not impair renal
+            function
+            in
+            healthy athletes.
+            Medicine &amp; Science in Sports &amp; Exercise 31(8):1108-1110.</li>
+        <li>Powers ME, Arnold BL, Weltman AL, Perrin DH, Mistry D, Kahler DM, Kraemer W, Volek J. 2003. Creatine
+            supplementation increases
+            total body water without altering fluid distribution. Journal of Athletic Training 38(1):44-50.</li>
+        <li>Prevost MC, Nelson AG, Morris GS. 1997. Creatine supplementation enhances intermittent work
+            performance.
+            Research Quarterly
+            for Exercise and Sport 68(3):233-240.</li>
+        <li>Rawson ES, Clarkson PM, Price TB, Miles MP. 2002. Differential response of muscle phosphocreatine to
+            creatine
+            supplementation
+            in young and old subjects. Acta Physiologica Scandinavica 174(1):57-65.</li>
+        <li>Rico-Sanz J, Mendez MTM. 2000. Creatine enhances oxygen uptake and performance during alternating
+            intensity
+            exercise. Medicine
+            and Science in Sports and Exercise 32(2):379-385.</li>
+        <li>Robinson TM, Sewell DA, Casey A, Steenge G, Greenhaff PL. 2000. Dietary creatine supplementation
+            does
+            not affect
+            some
+            haematological indices, or indices of muscle damage and hepatic and renal function. British Journal
+            of
+            Sports
+            Medicine
+            34(4):284-288.</li>
+        <li>Saab G, Marsh GD, Casselman MA, Thompson RT. 2002. Changes in human muscle transverse relaxation
+            following
+            short-term
+            creatine supplementation. Experimental Physiology 87(3):383-389.</li>
+        <li>Schilling BK, Stone MH, Utter A, Kearney JT, Johnson M, Coglianese R, Smith L, O'Bryant HS, Fry AC,
+            Starks M,
+            Keith R,
+            Stone ME. 2001. Creatine supplementation and health variables: a retrospective study. Medicine &amp;
+            Science in
+            Sports &amp;
+            Exercise 33(2):183-188.</li>
+        <li>Shao A, Hathcock JN. 2006. Risk assessment for creatine monohydrate. Regulatory Toxicology and
+            Pharmacology
+            45(3):242-251.</li>
+        <li>Vahedi K, Domigo V, Amarenco P, Bousser MG. 2000. Ischaemic stroke in a sportsman who consumed
+            MaHuang
+            extract
+            and
+            creatine monohydrate for body building. Journal of Neurology, Neurosurgery, and Psychiatry
+            68(1):112-113.</li>
+        <li>Volek JK, Kraemer WJ, Bush JA, Boetes M, Incledon T, Clark KL, Lynch JM. 1997. Creatine
+            supplementation
+            enhances
+            muscular performance during high-intensity resistance exercise. Journal of the American Dietetic
+            Association
+            97(7):765-770.</li>
+        <li>Volek JS, Mazzetti SA, Farquhar WB, Barnes BR, Gómez AL, Kraemer WJ. 2001. Physiological responses
+            to
+            short-term
+            exercise in the heat after creatine loading. Medicine &amp; Science in Sports &amp; Exercise
+            33(7):1101-1108.
+        </li>
+        <li>Watson G, Casa DJ, Fiala KA, Hile A, Roti MW, Healey JC, Armstrong LE, Maresh CM. 2006. Creatine use
+            and
+            exercise
+            heat tolerance in dehydrated men. Journal of Athletic Training 41(1):18-29.</li>
+    </ul>
+</section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

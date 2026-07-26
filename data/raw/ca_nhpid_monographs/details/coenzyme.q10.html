@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=coenzyme.q10\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="79ecf780-17e9-46c5-837f-05317e3f607b"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>
+    Coenzyme Q10 (UBIQUINONE-10)
+  </h1>
+  <div class="icon">
+   <a href="dbImages/mono_coenzyme-q10_english.pdf" title="Monograph: COENZYME Q10 (English)">
+    <img alt="Monograph: COENZYME Q10 (English)" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+    (PDF Version - 36 K)
+   </a>
+  </div>
+  <p>
+   This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLA) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    January 31, 2025
+   </p>
+   <h3>
+    Proper name(s), Common name(s), Source information
+   </h3>
+   <table class="subject">
+    <caption>
+     Table 1.  Proper name(s), Common name(s), Source information
+    </caption>
+    <tbody>
+     <tr>
+      <th rowspan="2" scope="col">
+       Proper name(s)
+      </th>
+      <th rowspan="2" scope="col">
+       Common name(s)
+      </th>
+      <th colspan="4" scope="colgroup">
+       Source information
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Source ingredient(s)
+      </th>
+      <th scope="col">
+       Source material(s)
+      </th>
+      <th scope="col">
+       Part(s)
+      </th>
+      <th scope="col">
+       Preparation(s)
+      </th>
+     </tr>
+     <tr>
+      <td rowspan="2">
+       2,5-Cyclohexadiene-1,4-dione, 2-[(2E,6E,10E,14E,18E,22E,26E,30E,34E)-3,7,11,15,19,23,27,31,35,39-decamethyl-2,6,10,14,18,22,26,30,34,38-tetracontadecaenyl]-5,6-dimethoxy-3-methyl
+      </td>
+      <td rowspan="2">
+       <ul>
+        <li>
+         Coenzyme Q10
+        </li>
+        <li>
+         CoQ10
+        </li>
+        <li>
+         Ubidecarenone
+        </li>
+        <li>
+         Ubiquinone-10
+        </li>
+       </ul>
+      </td>
+      <td>
+       N/A
+      </td>
+      <td>
+       <ul>
+        <li>
+         <i>
+          Agrobacterium rhizogenes
+         </i>
+        </li>
+        <li>
+         <i>
+          Agrobacterium tumefaciens
+         </i>
+        </li>
+        <li>
+         <i>
+          Aspergillus clavatus
+         </i>
+        </li>
+        <li>
+         <i>
+          Escherichia coli
+         </i>
+        </li>
+        <li>
+         <i>
+          Gluconobacter suboxydans
+         </i>
+        </li>
+        <li>
+         <i>
+          Leucosporidium scotti
+         </i>
+        </li>
+        <li>
+         <i>
+          Paracoccus denitrificans
+         </i>
+        </li>
+        <li>
+         <i>
+          Rhodobacter sphaeroides
+         </i>
+        </li>
+        <li>
+         <i>
+          Rhodospirillum rubrum
+         </i>
+        </li>
+        <li>
+         <i>
+          Saccharomyces cerevisiae
+         </i>
+        </li>
+        <li>
+         <i>
+          Schizosaccharomyces pombe
+         </i>
+        </li>
+       </ul>
+      </td>
+      <td>
+       Whole
+      </td>
+      <td>
+       Biosynthesis
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Coenzyme Q10
+      </td>
+      <td>
+       N/A
+      </td>
+      <td>
+       N/A
+      </td>
+      <td>
+       Synthetic
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    References: Proper name: USP-NF 2024; Common names: Brayfied and Cadart 2024; RSC 2024; USP-NF 2024; Storch et al. 2007; Park et al. 2005; Source information: Lipshutz et al. 2005; Kawamukai 2002; Lipshutz et al. 2002; Szkopinska 2000; Yoshida et al. 1998; Zhao et al.1997.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of administration
+   </h2>
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage form(s)
+   </h2>
+   <p>
+    This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+   </p>
+   <p>
+    Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <ul>
+    <li>
+     Helps to maintain and/or support cardiovascular health (Rosenfeldt et al. 2007; Baggio et al. 1994; Langsjoen et al. 1988).
+    </li>
+    <li>
+     Helps to reduce the frequency of migraine headaches and associated nausea and vomiting when taken as a prophylactic/preventative (Hershey et al. 2007; Sandor et al. 2005; Rozen et al. 2002).
+    </li>
+    <li>
+     Source of (an) antioxidant(s)/Provides (an) antioxidant(s) (Kalpravidh et al. 2005; Rosenfeldt et al. 2005; Crane 2001; Chello et al. 1994).
+    </li>
+    <li>
+     Source of (an) antioxidant(s)/Provides (an) antioxidant(s) that help(s) fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals  (Kalpravidh et al. 2005; Rosenfeldt et al. 2005; Crane 2001; Chello et al. 1994).
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Notes:
+    </strong>
+   </p>
+   <ul>
+    <li>
+     The above uses can be combined on the product label (e.g., Helps to maintain and support cardiovascular health and to reduce the frequency of migraine headaches and associated nausea and vomiting when taken as a preventative).
+    </li>
+    <li>
+     The terms 'Helps' or 'Helps to' can be used interchangeably on the label.
+    </li>
+    <li>
+     If Coenzyme Q10 is combined with other medicinal ingredients with antioxidant properties, there is an option to use the antioxidant claims in plural. The singular should be used when the product only contains one chemical substance (e.g., Coenzyme Q10) as the medicinal ingredient associated with the antioxidant claim.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    Adults 18 years and older
+   </p>
+   <h3>
+    Quantity(ies)
+   </h3>
+   <em>
+    Antioxidant
+   </em>
+   <p>
+    Not to exceed 300 milligrams of Coenzyme Q10, per day (Bonakdar and Guarneri 2005; Kalpravidh et al. 2005; Rosenfeldt et al. 2005; Chello et al. 1994; Langsjoen 1994; Langsjoen et al. 1988; Tanaka et al. 1982)
+   </p>
+   <em>
+    Cardiovascular health
+   </em>
+   <p>
+    30 - 300 milligrams of Coenzyme Q10, per day (Bonakdar and Guarneri 2005; Kalpravidh et al. 2005; Rosenfeldt et al. 2005; Chello et al. 1994; Langsjoen 1994; Langsjoen et al. 1988; Tanaka et al. 1982)
+   </p>
+   <em>
+    Migraine prophylaxis
+   </em>
+   <p>
+    150 - 300 milligrams of Coenzyme Q10, per day (Sandor et al. 2005; Rozen et al. 2002)
+   </p>
+   <h3>
+    Direction(s) for use
+   </h3>
+   No statement required
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration(s) of use
+   </h2>
+   <em>
+    Migraine prophylaxis/prevention
+   </em>
+   <p>
+    Use for at least 3 months to see beneficial effects (Hershey et al. 2007; Sandor et al. 2005; Rozen et al. 2002).
+   </p>
+   <em>
+    Other uses
+   </em>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk information
+   </h2>
+   <h3>
+    Caution(s) and warning(s)
+   </h3>
+   <em>
+    All products
+   </em>
+   
+   <ul>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood pressure medication (Rosenfeldt et al. 2007; Singh et al. 1999).
+    </li>
+   </ul>
+   
+   <p>
+    <em>
+     Products providing more than 100 mg of Coenzyme Q10 per day
+    </em>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Engelsen et al. 2003; Landbo and Almdal 1998; Spigset 1994).
+   </p>
+   <em>
+    Migraine prophylaxis/prevention
+   </em>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician if migraine frequency increases and associated nausea and vomiting persist or worsen.
+   </p>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <p>
+    No statement required.
+   </p>
+   <h3>
+    Known adverse reaction(s)
+   </h3>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+   <h2 id="nonMedicinalIngredients">
+    Non-medicinal ingredients
+   </h2>
+   <p>
+    Must be chosen from the current
+    <abbr title="Natural and Non-prescription Health Products Directorate">
+    </abbr>
+    <a href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">
+     Natural Health Products Ingredients Database (NHPID)</a>
+    and must meet the limitations outlined in the database.
+   </p>
+  </section>
+  <section aria-labelledby="storageConditions">
+   <h2 id="storageConditions">
+    Storage conditions
+   </h2>
+   <p>
+    Must be established in accordance with the requirements described in the
+    <em>
+     Natural Health Products Regulations
+    </em>.
+   </p>
+  </section>
+  <section aria-labelledby="specifications">
+   <h2 id="specifications">
+    Specifications
+   </h2>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="exampleOfProductFacts">
+   <h2 id="exampleOfProductFacts">
+    Example Of Product Facts:
+   </h2>
+   <p>
+    <strong>
+     Consult the Guidance Document,
+     <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">
+      Labelling of Natural Health Products</a>
+     for more details.
+    </strong>
+   </p>
+   
+   <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/COENZYME_Q10_E.gif" style="width:700px"/>
+   </p>
+  </section>
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References cited
+   </h2>
+   <ul>
+    <li>
+     Baggio E, Gandini R, Plancher AC, Passeri M, Carmosino G.  Italian multicenter study on the safety and efficacy of coenzyme Q10 as adjunctive therapy in heart failure. CoQ10 Drug Surveillance Investigators.  Molecular Aspects of Medicine 1994;15(Supplement 1):S287-S294.
+    </li>
+    <li>
+     Bonakdar RA, Guarneri E.  Coenzyme Q10.  American Family Physician 2005;72(6):1065-1070.
+    </li>
+    <li>
+     Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press; 2024. [Accessed 2024 November 21]. Available from: https://www.medicinescomplete.com/#/browse/martindale
+    </li>
+    <li>
+     Chello M, Mastroroberto P, Romano R, Bevacqua E, Pantaleo D, Ascione R, Marchese AR, Spampinato N.  Protection by Coenzyme Q10 from myocardial reperfusion injury during coronary artery bypass grafting.  Annals of Thoracic Surgery 1994;58(5):1427-1432.
+    </li>
+    <li>
+     Crane FL.  Biochemical functions of coenzyme Q10.  Journal of the American College of Nutrition 2001;20(6):591-598.
+    </li>
+    <li>
+     Engelsen J, Nielsen JD, Hansen KF.  [Effect of coenzyme Q10 and Ginkgo biloba on warfarin dosage in patients on long-term warfarin treatment. A randomized, double-blind, placebo-controlled cross-over trial].  Ugeskr Laeger 2003;165(18):1868-1871 (in Danish).
+    </li>
+    <li>
+     Hershey AD, Powers SW, Vockell AL, Lecates SL, Ellinor PL, Segers A, Burdine D, Manning P, Kabbouche MA.  Coenzyme Q10 deficiency and response to supplementation in pediatric and adolescent migraine.  Headache 2007;47(1):73-80.
+    </li>
+    <li>
+     Kalpravidh RW, Wichit A, Siritanaratkul N, Fucharoen S.  Effect of coenzyme Q10 as an antioxidant in Î²-thalassemia/Hb E patients.  BioFactors 2005;25(1-4):225-234.
+    </li>
+    <li>
+     Kawamukai M.  Biosynthesis, bioproduction and novel roles of ubiquinone.  Journal of Bioscience and Bioengineering 2002;94(6):511-517.
+    </li>
+    <li>
+     Landbo C, Almdal TP.  [Interaction between warfarin and coenzyme Q10].  Ugeskr Laeger 1998;160(22):3226-3227 (in Danish).
+    </li>
+    <li>
+     Langsjoen PH. Introduction to coenzyme Q10. Online in: A Physician's Update on Coenzyme Q10 in U.S. Medicine. University of Washington faculty webpage of John T.A. Ely, Ph.D. Tyler (TX); 1994. [Accessed 2024 February 19]. Available from:  https://www.grc.com/sr6dev/misc/coq10/coenzyme%20q10.pdf
+    </li>
+    <li>
+     Langsjoen PH, Folkers K, Lyson K, Muratsu K, Lyson T, Langsjoen P.  Effective and safe therapy with coenzyme Q10 for cardiomyopathy.  Klinische Wochenschrift 1988;66(13):583-590.
+    </li>
+    <li>
+     Lipshutz BH, Lower A, Berl V, Schein K, Wetterich  F.  An improved synthesis of the "miracle nutrient" coenzyme Q10.  Organic Letters 2005;7(19):4095-4097.
+    </li>
+    <li>
+     Lipshutz BH, Mollard P, Pfeiffer SS, Chrisman W.  A short, highly efficient synthesis of coenzyme Q10.  Journal of the American Chemical Society 2002;124(48):14282-14283.
+    </li>
+    <li>
+     Park YC, Kim SJ, Choi JH, Lee WH, Park KM, Kawamukai M, Ryu YW, Seo JH.  Batch and fed-batch production of coenzyme Q10 in recombinant Escherichia coli containing the decaprenyl diphosphate synthase gene from Gluconobacter suboxydans.  Applied Microbiology and Biotechnology 2005;67(2):192-196.
+    </li>
+    <li>
+     Rosenfeldt F, Marasco S, Lyon W, Wowk M, Sheeran F, Bailey M, Esmore D, Davis B, Pick A, Rabinov M, Smith J, Nagley P, Pepe S.  Coenzyme Q10 therapy before cardiac surgery improves mitochondrial function and in vitro contractility of myocardial tissue.  Journal of Thoracic Cardiovascular Surgery 2005;129(1):25-32.
+    </li>
+    <li>
+     Rosenfeldt FL, Haas SJ, Krum H, Hadj A, Ng K, Leong JY, Watts GF.  Coenzyme Q10 in the treatment of hypertension: a meta-analysis of the clinical trials.  Journal of Human Hypertension 2007;21(4):297-306.
+    </li>
+    <li>
+     Rozen TD, Oshinsky ML, Gebeline CA, Bradley KC, Young WB, Shechter AL, Silberstein SD.  Open label trial of coenzyme Q10 as a migraine preventative.  Cephalgia 2002;22(2):137-141
+    </li>
+    <li>
+     RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 February 19]. Available from: https://merckindex.rsc.org/
+    </li>
+    <li>
+     Sandor PS, Di Clemente L, Coppola G, Saenger U, Fumal A, Magis D, Seidel L, Agosti RM, Schoenen J.  Efficacy of coenzyme Q10 in migraine prophylaxis: a randomized controlled trial.  Neurology 2005;64(4):713-715.
+    </li>
+    <li>
+     Singh RB, Niaz MA, Rastogi SS, Shukla PK, Thakur AS.  Effect of hydrosoluble coenzyme Q10 on blood pressures and insulin resistance in hypertensive patients with coronary artery disease.  Journal of Human Hypertension 1999;13(3):203-208.
+    </li>
+    <li>
+     Spigset O.  Reduced effect of warfarin caused by ubidecarenone.  Lancet 1994;344(8933):1372-1373.
+    </li>
+    <li>
+     Storch A, Jost WH, Vieregge P, Spiegel J, Greulich W, Durner J, MÃ¼ller T, Kupsch A, Henningsen H, Oertel WH, Fuchs G, Kuhn W, Niklowitz P, Koch R, Herting B, Reichmann H, German Coenzyme Q10 Study Group.  Randomized, double-blind, placebo-controlled trial on symptomatic effects of coenzyme Q10 in Parkinson disease.  Archives of Neurology 2007;64(7):938-944.
+    </li>
+    <li>
+     SzkopiÅ„ska A.  Review: Ubiquinone. Biosynthesis of quinone ring and its isoprenoid side chain. Intracellular localization.  Acta Biochimica Polonica 2000;47(2):469-480.
+    </li>
+    <li>
+     Tanaka J, Tominaga R, Yoshitoshi M, Matsui K, Komori M, Sese A, Yasui H, Tokunaga K.  Coenzyme Q10: the prophylactic effect on low cardiac output following cardiac valve replacement.  Annals of of Thoracic Surgery 1982;33(2):145-151.
+    </li>
+    <li>
+     USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.; 2024.
+    </li>
+    <li>
+     Yoshida H, Kotani Y, Ochiai K, Araki K.  Production of ubiquinone-10 using bacteria.  Journal of General and Applied Microbiology 1998;44(1):19-26.
+    </li>
+    <li>
+     Zhao J, Wang C, Sun X.  [Determination of solanesol in the extracts of tobacco leaves by high performance liquid chromatography (HPLC)].  Chinese Journal of Chromatography 1997;15(6):544-545 (in Chinese).
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+   <h2 id="referencesReviewed">
+    References reviewed
+   </h2>
+   <ul>
+    <li>
+     Actis-Goretta L, Carrasquedo F, Fraga CG.  The regular supplementation with an antioxidant mixture decreases oxidative stress in healthy humans. Gender effect.  Clinica Chimica Acta 2004;349(1-2):97-103.
+    </li>
+    <li>
+     Aejmelaeus R, Metsa-Ketela T, Laippala P, Solakivi T, Alho H.  Ubiquinol-10 and total peroxyl radical trapping capacity of LDL lipoproteins during aging: the effects of Q-10 supplementation.  Molecular Aspects of Medicine 1997;18(Supplement 1):S113-S120.
+    </li>
+    <li>
+     Badmaev V, Majeed M, Prakash L.  Piperine derived from black pepper increases plasma levels of coenzyme Q10 following oral supplementation.  Journal of Nutritional Biochemistry 2000;11(2):109-113.
+    </li>
+    <li>
+     Barbiroli B, Frassineti C, Martinelli P, Iotti S, Lodi R, Cortelli P, Montagna P.  Coenzyme Q10 improves mitochondrial respiration in patients with mitochondrial cytopathies. An in vivo study on brain and skeletal muscle by phosphorous magnetic resonance spectroscopy.  Cellular and Molecular Biology 1997;43(5):741-749.
+    </li>
+    <li>
+     Bargossi AM, Grossi G, Fiorella PL, Gaddi A, Di Giulio R, Battino M.  Exogenous CoQ10 preserves plasma ubiquinone levels in patients treated with 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitors.  Internal Journal of Clinical Laboratory Research 1994;24(3):171-176.
+    </li>
+    <li>
+     Baumann L.  How to prevent photoaging?  The Journal of Investigative Dermatology 2005;125(4):xii-xiii.
+    </li>
+    <li>
+     Beal MF, Matthews RT.  Coenzyme Q10 in the central nervous system and its potential usefulness in the treatment of neurodegenerative diseases.  Molecular Aspects of Medicine 1997;18(Supplement 1):S169-S179.
+    </li>
+    <li>
+     Belardinelli R, Mucaj A, Lacalaprice F, Solenghi M, Principi F, Tiano L, Littarru GP.  Coenzyme Q10 improves contractility of dysfunctional myocardium in chronic heart failure.  BioFactors 2005;25(1-4):137-145.
+    </li>
+    <li>
+     Bonetti A, Solito F, Carmosino G, Bargossi AM, Fiorella PL.  Effect of ubidecarenone oral treatment on aerobic power in middle-aged trained subjects.  Journal of Sports Medicine and Physical Fitness 2000;40(1):51-57.
+    </li>
+    <li>
+     Braun B, Clarkson PM, Freedson PS, Kohl RL.  Effects of coenzyme Q10 supplementation on exercise performance, VO2max, and lipid peroxidation in trained cyclists.  International Journal of Sport Nutrition 1991;1(4):353-365.
+    </li>
+    <li>
+     Bresolin N, Doriguzzi C, Ponzetto C, Angelini C, Moroni I, Castelli E, Cossutta E, Binda A, Gallanti A, Gabellini S.  Ubidecarenone in the treatment of mitochondrial myopathies: a multi-center double-blind trial.  Journal of Neurological Sciences 1990;100(1-2):70-78.
+    </li>
+    <li>
+     Burke BE, Neuenschwander R, Olson RD.  Randomized, double-blind, placebo-controlled trial of coenzyme Q10 in isolated systolic hypertension.  Southern Medical Journal 2001;94(11):1112-1117.
+    </li>
+    <li>
+     Caso G, Kelly P, McNurlan MA, Lawson WE.  Effect of coenzyme q10 on myopathic symptoms in patients treated with statins.  American Journal of Cardiology 2007;99(10):1409-1412.
+    </li>
+    <li>
+     Chen RS, Huang CC, Chu NS.  Coenzyme Q10 treatment in mitochondrial encephalomyopathies. Short-term double-blind, crossover study.  European Neurology 1997;37(4):212-218.
+    </li>
+    <li>
+     Choi JH, Ryu YW, Seo JH.  Biotechnological production and applications of coenzyme Q10.  Applied Microbiology and Biotechnology 2005;68(1):9-15.
+    </li>
+    <li>
+     Cohen BH, Gold DR.  Mitochondrial cytopathy in adults: what we know so far.  Cleveland Clinical Journal of Medicine 2001;68(7):625-642.
+    </li>
+    <li>
+     De Pinieux G, Chariot P, Ammi-SaÃ¯d M, Louarn F, Lejonc JL, Astier A, Jacotot B, Gherardi R.  Lipid-lowering drugs and mitochondrial function: effects of HMG-CoA reductase inhibitors on serum ubiquinone and blood lactate/pyruvate ratio.  British Journal of Clinical Pharmacology 1996;42(3):333-337.
+    </li>
+    <li>
+     Digiesi V, Cantini F, Oradei A, Bisi G, Guarino GC, Brocchi A, Bellandi F, Mancini M, Littarru GP.  Treatment of essential hypertension with coenzyme Q10.  Molecular Aspects of Medicine 1994;15(Supplement 1):S257-S263.
+    </li>
+    <li>
+     Di Giovanni S, Mirabella M, Spinazzola A, Crociani P, Silvestri G, Broccolini A, Tonali P, Di Mauro S, Servidei S.  Coenzyme Q10 reverses pathological phenotype and reduces apoptosis in familial CoQ10 deficiency.  Neurology 2001;57(3):515-518.
+    </li>
+    <li>
+     Engelsen J, Nielsen JD, Winther K.  Effect of coenzyme Q10 and Ginkgo biloba on warfarin dosage in stable, long-term warfarin treated outpatients. A randomised, double blind, placebo-crossover trial.  Thrombosis and Haemostasis 2002;87(6):1075-1076.
+    </li>
+    <li>
+     Eriksson JG, Forsen TJ, Mortensen SA, Rohde M.  The effect of coenzyme Q10 administration on metabolic control in patients with type 2 diabetes mellitus.  BioFactors 1999;9(2-4):315-318.
+    </li>
+    <li>
+     Eshginia S, Gapparov MM.  [The influence of phospholipids food and antioxidant at patients with hypertension].  Voprosy Pitaniia 2006;75(2):37-39 (in Russian).
+    </li>
+    <li>
+     Fang LC, Huang XF, Du ZH, Yuan J, Wei H, Cheng HH, Liu Y.  [Isolation and identification of a photosynthetic bacteria producing coenzyme Q10].  Wei Sheng Wu Xue Bao 2005;45:772-775 (in Chinese).
+    </li>
+    <li>
+     Ferrante KL, Shefner J, Zhang H, Betensky R, O'Brien M, Yu H, Fantasia M, Taft J, Beal MF, Traynor B, Newhall K, Donofrio P, Caress J, Ashburn C, Freiberg B, O'Neill C, Paladenech C, Walker T, Pestronk A, Abrams B, Florence J, Renna R, Schierbecker J, Malkus B, Cudkowicz M.  Tolerance of high-dose (3,000 mg/day) coenzyme Q10 in ALS.  Neurology 2005;65(11):1834-1836.
+    </li>
+    <li>
+     Folkers K, Simonsen R.  Two successful double-blind trial with coenzyme Q10 (vitamin Q10) on muscular dystrophies and neurogenic atrophies.  Biochimica et Biophysica Acta 1995;1271(1):281-286.
+    </li>
+    <li>
+     Folkers K, Wolaniuk J, Simonsen R, Morishita M, Vadhanavikit S.  Biochemical rationale and the cardiac response of patients with muscle disease to therapy with coenzyme Q10.  Proceedings of the National Academy of Science 1985;82(13):4513-4516.
+    </li>
+    <li>
+     Gazdikova K, Gvozdjakova A, Kucharska J, Spustova V, Braunova Z, Dzurik R.  [Effect of coenzyme Q10 in patients with kidney diseases].  Casopis Lekarska Ceskych 2001;140(10):307-310 (in Slovak).
+    </li>
+    <li>
+     Ghirlanda G, Oradei A, Manto A, Lippa S, Uccioli L, Caputo S, Greco AV, Littarru GP.  Evidence of plasma CoQ10-lowering effect by HMG-CoA reductase inhibitors: a double-blind, placebo-controlled study.  Journal of Clinical Pharmacology 1993;33(3):226-229.
+    </li>
+    <li>
+     Giovannini L, Bertelli AA, Scalori V, Dell'Osso L, Alessandri MG, Mian M.  Skin penetration of CoQ10 in the rat.  International Journal of Tissue Reactions 1988;10(2):103-105.
+    </li>
+    <li>
+     Hanioka T, Tonaka M, Ojima M, Shizukuishi S, Folkers K.  Effect of topical application of coenzyme Q10 on adult periodontitis.  Molecular Aspects of Medicine 1994;15(Supplement 1):S241-S248.
+    </li>
+    <li>
+     Hathcock JN, Shao A.  Risk assessment for coenzyme Q10 (ubiquinone).  Regulatory Toxicology and Pharmacology 2006;45(3):282-288.
+    </li>
+    <li>
+     Hendler SS, Rorvik D, editors.  PDR for Nutritional Supplements, 1st edition.  Montvale (NJ): Thomson PDR; 2001.
+    </li>
+    <li>
+     Henriksen JE, Andersen CB, Hother-Nielsen O, Vaag A, Mortensen SA, Beck-Nielsen H.  Impact of ubiquinone (coenzyme Q10) treatment on glycaemic control, insulin requirement and well-being in patients with Type 1 diabetes mellitus.  Diabetic Medicine 1999;16(4):312-318.
+    </li>
+    <li>
+     Hodgson JM, Watts GF, Playford DA, Burke V, Croft KD.  Coenzyme Q10 improves blood pressure and glycaemic control: a controlled trial in subjects with type 2 diabetes.  European Journal of Clinical Nutrition 2002;56(11):1137-1142.
+    </li>
+    <li>
+     Hoppe U, Bergemann J, Diembeck W, Ennen J, Gohla S, Harris I, Jacob J, Kielholz J, Mei W, Pollet D, Schachtschabel D, Sauermann G, Schreiner V, Stab F, Steckel F.  Coenzyme Q10, acutaneous antioxidant and energizer.  BioFactors 1999;9(2-4):371-378.
+    </li>
+    <li>
+     Huertas JR, Palomino N, Carrasco R, Quiles J, Ramirez-Tortosa MC, Ochoa J, Cassinello M, Battino M, Robles R, Mataix J.  Lipid peroxidation and antioxidants in newborns.  Molecular Aspects of Medicine 1997;18(Supplement 1):S229-S232.
+    </li>
+    <li>
+     Iarussi D, Auricchio U, Agretto A, Murano A, Giuliano M, Casale F, Indolfi P, Iacono A.  Protective effect of coenzyme Q10 on anthracyclines cardiotoxicity: control study in children with acute lymphoblastic leukemia and non-Hodgkin lymphoma.  Molecular Aspects of Medicine 1994;15(Supplement 1):S207-S212.
+    </li>
+    <li>
+     Isobe C, Murata T, Sato C, Terayama Y.  Increase of oxidized/total coenzyme Q-10 ratio in cerebrospinal fluid in patients with Parkinson's disease.  Journal of Clinical Neuroscience 2007;14(4):340-343.
+    </li>
+    <li>
+     Kaikkonen J, Kosonen L, Nyyssonen K, Porkkala-Sarataho E, Salonen R, Korpela H, Salonen JT.  Effect of combined coenzyme Q10 and d-alpha-tocopheryl acetate supplementation on exercise-induced lipid peroxidation and muscular damage: a placebo-controlled double-blind study in marathon runners.  Free Radical Research 1998;29(1):85-92.
+    </li>
+    <li>
+     Kaikkonen J, Nyyssonen K, Porkkala-Sarataho E, Poulsen HE, Metsa-Ketela T, Hayn M, Salonen R, Salonen JT.  Effect of oral coenzyme Q10 supplementation on the oxidation resistance of human VLDL+LDL fraction: absorption and antioxidative properties of oil and granule-based preparations.  Free Radical Biology and Medicine 1997;22(7):1195-1202.
+    </li>
+    <li>
+     Kaikkonen J, Tuomainen TP, Nyyssonen K, Salonen JT.  Coenzyme Q10: absorption, antioxidative properties, determinants, and plasma levels.  Free Radical Research 2002;36(4):389-397.
+    </li>
+    <li>
+     Kamikawa T, Kobayashi A, Yamashita T, Hayashi H, Yamazaki N.  Effects of coenzyme Q10 on exercise tolerance in chronic stable angina pectoris.  American Journal of Cardiology 1985;56(4):247-251.
+    </li>
+    <li>
+     Khatta M, Alexander BS, Krichten CM, Fisher ML, Freudenberger R, Robinson SW, Gottlieb SS.  The effect of coenzyme Q10 in patients with congestive heart failure.  Annals of Internal Medicine 2000;132(8):636-640.
+    </li>
+    <li>
+     Kuklinski B, Weissenbacher E, Fahnrich A.  Coenzyme Q10 and antioxidants in acute myocardial infarction.  Molecular Aspects of Medicine 1994;15(Supplement 1):S143-S147.
+    </li>
+    <li>
+     Kurowska EM, Dresser G, Deutsch L, Bassoo E, Freeman DJ.  Relative bioavailability and antioxidant potential of two coenzyme Q10 preparations.  Annals of Nutrition and Metabolism 2003;47(1):16-21.
+    </li>
+    <li>
+     Langsjoen H, Langsjoen P, Langsjoen P, Willis R, Folkers K.  Usefulness of coenzyme Q10 in clinical cardiology: a long-term study.  Molecular Aspects of Medicine 1994;15(Supplement 1):S165-S175.
+    </li>
+    <li>
+     Langsjoen PH. The clinical use of HMG CoA-reductase inhibitors (statins) and the associated depletion of the essential cofactor coenzyme Q10; a review of pertinent human and animal data.  Tyler (TX); 2002.  DOI: 10.1002/biof.5520180212
+    </li>
+    <li>
+     Langsjoen PH, Langsjoen A, Willis R, Folkers K.  Treatment of hypertrophic cardiomyopathy with coenzyme Q10.  Molecular Aspects of Medicine 1997;18(Supplement 1):S145-S151.
+    </li>
+    <li>
+     Langsjoen PH, Vadhanavikit S, Folkers K.  Response of patients in classes III and IV of cardiomyopathy to therapy in a blind and crossover trial with coenzyme Q10.  Proceedings of the National Academy of Science 1985;82(12):4240-4244.
+    </li>
+    <li>
+     Langsjoen P, Langsjoen P, Willis R, Folkers K.  Treatment of essential hypertension with coenzyme Q10.  Molecular Aspects of Medicine 1994;15(Supplement 1):S265-S272.
+    </li>
+    <li>
+     Levy HB, Kohlhaas HK.  Considerations for supplementing with coenzyme Q10 during statin therapy.  The Annals of Pharmacotherapy 2006;40(2):290-294.
+    </li>
+    <li>
+     Lockwood K, Moesgaard S, Folkers K.  Partial and complete regression of breast cancer in patients in relation to dosage of coenzyme Q10.  Biochemical and Biophysical Research Communications 1994;199(3):1504-1508.
+    </li>
+    <li>
+     Lockwood K, Moesgaard S, Hanioka T, Folkers K.  Apparent remission of breast cancer in high risk patients supplemented with nutritional antioxidants, essential fatty acids and coenzyme Q10.  Molecular Aspects of Medicine 1994;15(Supplement 1):S231-S240.
+    </li>
+    <li>
+     Meletis CD, Jacobs T.  Interactions between drugs and natural medicines.  Sandy (OR): Eclectic Medical Publications; 1999.
+    </li>
+    <li>
+     Miles MV, Patterson BJ, Schapiro MB, Hickey FJ, Chalfonte-Evans M, Horn PS, Hotze SL.  Coenzyme Q10 absorption and tolerance in children with Down syndrome: a dose-ranging trial.  Pediatric Neurology 2006;35(1):30-37.
+    </li>
+    <li>
+     Morisco C, Nappi A, Argenziano L, Sarno D, Fonatana D, Imbriaco M, Nicolai E, Romano M, Rosiello G, Cuocolo A.  Noninvasive evaluation of cardiac hemodynamics during exercise in patients with chronic heart failure: effects of short-term coenzyme Q10 treatment.  Molecular Aspects of Medicine 1994;15(Supplement 1):S155-S163.
+    </li>
+    <li>
+     Morisco C, Trimarco B, Condorelli M.  Effect of coenzyme Q10 therapy in patients with congestive heart failure: a long-term multicenter randomized study.  The Clinical Investigator 1993;71(Supplement 8):S134-S136.
+    </li>
+    <li>
+     Mortensen SA.  Overview on coenzyme Q10 as adjunctive therapy in chronic heart failure. Rationale, design and end-points of "Q-symbio"--a multinational trial.  BioFactors 2003;18(1-4):79-89.
+    </li>
+    <li>
+     Mortensen SA, Leth A, Agner E, Rohde M.  Dose-related decrease of serum coenzyme Q10 during treatment with HMG-CoA reductase inhibitors.  Molecular Aspects of Medicine 1997;18(Supplement 1):S137-S144.
+    </li>
+    <li>
+     Muller T, Buttner T, Gholipour AF, Kuhn W.  Coenzyme Q10 supplementation provides mild symptomatic benefit in patients with Parkinson's disease.  Neuroscience Letters 2003;341(3):201-204.
+    </li>
+    <li>
+     Nakamura R, Littarru GP, Folkers K, Wilkinson EG.  Study of CoQ10-enzymes in gingiva from patients with periodontal disease and evidence for a deficiency of Coenzyme Q10.  Proceedings of the Nationall Academy of Science 1974;71(4):1456-1460.
+    </li>
+    <li>
+     NCI 2022: National Cancer Institute. Coenzyme Q10 (PDQ(R)) Health Professional Version. Bethesda (MD): National Cancer Institute, U.S. National Institutes of Health; 2022. [Accessed 2024  February 28]. Available from: https://www.cancer.gov/about-cancer/treatment/cam/hp/coenzyme-q10-pdq
+    </li>
+    <li>
+     NCI 2006: National Cancer Institute. Coenzyme Q10 (PDQ®) Patient Version. Bethesda (MD): National Cancer Institute, U.S. National Institutes of Health; 2006. [Accessed 2024 February 28]. Available from: https://www.cancer.gov/about-cancer/treatment/cam/patient/coenzyme-q10-pdq
+    </li>
+    <li>
+     Overvad K, Diamant B, Holm L, Holmer G, Mortensen SA, Stender S.  Review: coenzyme Q10 in health and disease.  European Journal of Clinical Nutrition 1999;53(10):764-770.
+    </li>
+    <li>
+     Peterson PL.  The treatment of mitochondrial myopathies and encephalomyopathies.  Biochimica et Biophysica Acta 1995;1271(1):275-280.
+    </li>
+    <li>
+     Playford DA, Watts GF, Croft KD, Burke V.  Combined effect of coenzyme Q10 and fenofibrate on forearm microcirculatory function in type 2 diabetes.  Atherosclerosis 2003;168(1):169-179.
+    </li>
+    <li>
+     Premkumar VG, Yuvaraj S, Vijayasarathy K, Gangadaran SGD, Sachdanandam P.  Effect of coenzyme Q10, riboflavin and niacin on serum CEA and CA 15-3 levels in breast cancer patients undergoing tamoxifen therapy.  Biological and Pharmaceutical Bulletin 2007;30(2):367-370.
+    </li>
+    <li>
+     Ravaglia G, Forti P, Maioli F, Bastagli L, Facchini A, Mariani E, Savarino L, Sassi S, Cucinotta D, Lenaz G.  Effect of micronutrient status on natural killer cell immune function in healthy free-living subjects aged â‰¥90 y1-3.  The American Journal of Clinical Nutrition 2000;71(2):590-598.
+    </li>
+    <li>
+     Reichenbach J, Schubert R, Schwan C, Muller K, Bohles HJ, Zielen S.  Antioxidative capacity in patients with common variable immunodeficiency.  Journal of Clinical Immunology 2000;20(3):221-226.
+    </li>
+    <li>
+     Roffe L, Schmidt K, Ernst E.  Efficacy of Coenzyme Q10 for improved tolerability of cancer treatments: a systemic review.  Journal of Clinical Oncology 2004;22(21):4418-4424.
+    </li>
+    <li>
+     Rosenfeldt F, Hilton D, Pepe S, Krum H.  Systematic review of effect of coenzyme Q10 in physical exercise, hypertension and heart failure.  BioFactors 2003;18(1-4):91-100.
+    </li>
+    <li>
+     Sacher HL, Sacher ML, Landau SW, Kersten R, Dooley F, Sacher A, Sacher M, Dietrick K, Ichkhan K.  The clinical and hemodynamic effects of coenzyme Q10 in congestive cardiomyopathy.  American Journal of Therapeutics 1997;4(2-3):66-72.
+    </li>
+    <li>
+     Sander S, Coleman CI, Patel AA, Kluger J, White CM.  The impact of coenzyme Q10 on systolic function in patients with chronic heart failure.  Journal of Cardiac Failure 2006;12(6):464-472.
+    </li>
+    <li>
+     Sasaki K, Watanabe M, Suda Y, Ishizuka A, Nopartnaraporn N.  Applications of photosynthetic bacteria for medical fields.  Journal of Bioscience and Bioengineering 2005;100(5):481-488.
+    </li>
+    <li>
+     Savige GS.  Candidate foods in the Asia-Pacific region for cardiovascular protection: fish, fruit and vegetables.  Asia Pacific Journal of Clinical Nutrition 2001;10(2):134-137./li&gt;
+    </li>
+    <li>
+     Shults CW.  Therapeutic role of coenzyme Q(10) in Parkinson's disease.  Pharmacology and Therapeutics 2005;107(1):120-130.
+    </li>
+    <li>
+     Shults CW, Beal MF, Song D, Fontaine D. Pilot trial of high dosages of coenzyme Q10 in patients with Parkinson's disease. Experimental Neurology 2004;188(2):491-494.
+    </li>
+    <li>
+     Shults CW, Oakes D, Kieburtz K, Beal MF, Haas R, Plumb S, Juncos JL, Nutt J, Shoulson I, Carter J, Kompoliti K, Perlmutter JS, Reich S, Stern M, Watts RL, Kurlan R, Molho E, Harrison M, Lew M, Parkinson Study Group. Effects of coenzyme Q10 in early Parkinson disease: evidence of slowing of the functional decline. Archives of Neurology 2002;59(10):1541-1550.
+    </li>
+    <li>
+     Soja AM, Mortensen SA. Treatment of congestive heart failure with coenzyme Q10 illuminated by meta-analyses of clinical trials. Molecular Aspects of Medicine 1997;18(Supplement 1):S159-S168.
+    </li>
+    <li>
+     Strazisar M, Fir M, Golc-Wondra A, Milivojevic L, Prosek M, Abram V. Quantitative determination of coenyzme Q10 by liquid chromatography and liquid chromatography/mass spectrometry in dairy products. Journal of AOAC International 2005;88(4):1020-1027.
+    </li>
+    <li>
+     Strijks E, Kremer HP, Horstink MW. Q10 therapy in patients with idiopathic Parkinson's disease. Molecular Aspects of Medicine 1997;18(Supplement 1):S237-S240.
+    </li>
+    <li>
+     Swiezewska E, Dallner G, Andersson B, Ernster L. Biosynthesis of ubiquinone and plastoquinone in the endoplasmic reticulum-Golgi membranes of spinach leaves. The Journal of Biological Chemistry 1993;268(2):1494-1499.
+    </li>
+    <li>
+     The Huntington Study Group. A randomized, placebo-controlled trial of coenzyme Q10 and remacemide in Huntington’s disease. Neurology 2001;57(3):397-404.
+    </li>
+    <li>
+     The NINDS NET-PD Investigators. A randomized clinical trial of coenzyme Q10 and GPI-1485 in early Parkinson disease. Neurology 2007;68(1):20-28.
+    </li>
+    <li>
+     Tournas JA, Lin FH, Burch JA, Selim MA, Monteiro-Riviere NA, Zielinski JE, Pinnell SR. Ubiquinone, Idebenone, and kinetin provide ineffective photoprotection to skin when compared to a topical antioxidant combination of vitamins C and E with Ferulic acid. Journal of Investigative Dermatology 2006;126(5):1185-1187.
+    </li>
+    <li>
+     Tran MT, Mitchell TM, Kennedy DT, Giles JT. Role of coenzyme Q10 in chronic heart failure, angina, and hypertension. Pharmacotherapy 2001;21(7):797-806.
+    </li>
+    <li>
+     Tsuneki H, Sekizaki N, Suzuki T, Kobayashi S, Wada T, Okamoto T, Kimura I, Sasaoka T. Coenzyme Q(10) prevents high glucose-induced oxidative stress in human umbilical vein endothelial cells. European Journal of Pharmacology 2007;566(1-3):1-10.
+    </li>
+    <li>
+     Turunen M, Wehlin L, Sjoberg M, Lundahl J, Dallner G, Brismar K, Sindelar PJ. β2-Integrin and lipid modifications indicate a non-antioxidant mechanism for the anti-atherogenic effect of dietary coenzyme Q10. Biochemical and Biophysical Research Communications 2002;296(2):255-260.
+    </li>
+    <li>
+     Watson JP, Jones DE, James OF, Cann PA, Bramble MG. Case report: oral antioxidant therapy for the treatment of primary biliary cirrhosis: a pilot study. Journal of Gastroenterology and Hepatology 1999;14(10):1034-1040.
+    </li>
+    <li>
+     Watson PS, Scalia GM, Galbraith A, Burstow DJ, Bett N, Aroney CN. Lack of effect of coenzyme Q on left ventricular function in patients with congestive heart failure. Journal of the American College of Cardiology 1999;33(6):1549-1552.
+    </li>
+    <li>
+     Watts GF, Playford DA, Croft KD, Ward NC, Mori TA, Burke V. Coenzyme Q10 improves endothelial dysfunction of the brachial artery in Type II diabetes mellitus. Diabetologia 2002;45(3):420-426.
+    </li>
+    <li>
+     Watts TL. Coenzyme Q10 and periodontal treatment: is there any beneficial effect? British Dental Journal 1995;178(6):209-213.
+    </li>
+    <li>
+     Weant KA, Smith KM. The role of coenzyme Q10 in heart failure. Annals of Pharmacotherapy 2005;39(9):1522-1526.
+    </li>
+    <li>
+     Weber C, Jakobsen TS, Mortensen SA, Paulsen G, Hølmer G. Antioxidative effect of dietary coenzyme Q10 in human blood plasma. International Journal for Vitamin and Nutrition Research 1994;64(4):311-315.
+    </li>
+    <li>
+     Weber C, Jakobsen TS, Mortensen SA, Paulsen G, Hølmer G. Effect of dietary coenzyme Q10 as an antioxidant in human plasma. Molecular Aspects of Medicine 1994;15(Supplement 1):S97-S102.
+    </li>
+    <li>
+     Weston SB, Zhou S, Weatherby RP, Robson SJ. Does exogenous coenzyme Q10 affect aerobic capacity in endurance athletes? International Journal of Sport and Nutrition 1997;7(3):197-206.
+    </li>
+    <li>
+     Wilkinson EG, Arnold RM, Folkers K. Bioenergetics in clinical medicine. VI. adjunctive treatment of periodontal disease with coenzyme Q10. Research Communications in Chemical Pathology and Pharmacology 1976;14(4):715-719.
+    </li>
+    <li>
+     Yamagami T, Shibata N, Folkers K. Study of coenzyme Q10 in essential hypertension. In: Folkers K, Yamamura, editors. Biomedical and Clinical Aspects of Coenzyme Q. Amsterdam (NL): Elsevier/North-Holland Biomedical Press; 1977.
+    </li>
+    <li>
+     Yuvaraj S, Premkumar VG, Vijayasarathy K, Gangadaran SG, Sachdanandam P. Ameliorating effect of coenzyme Q(10), riboflavin and niacin in tamoxifen-treated postmenopausal breast cancer patients with special reference to lipids and lipoproteins. Clinical Biochemistry 2007;40(9-10):623-628.
+    </li>
+    <li>
+     Zülli F, Belser E, Schmid D, Liechti C, Suter F. Preparation and properties of coenzyme Q10 nanoemulsions. Hertfordshire (UK): Cosmetic Science Technology; 2006. [Accessed 2024 February  28]. Available from: https://www.yumpu.com/en/document/read/48422455/preparation-and-properties-of-coenzyme-q10-nanoemulsions
+    </li>
+   </ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

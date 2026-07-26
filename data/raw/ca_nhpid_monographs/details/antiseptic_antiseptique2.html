@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=antiseptic_antiseptique2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="f7a32840-f20c-4506-9a0f-83eb02ef4201"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Antiseptic Skin Cleansers (Personal Domestic/Commercial Use) Monograph</h1>
+    <div class="icon">
+        <a href="dbImages/mono_antiseptic-skin-cleansers_english.pdf" title="Monograph: Antiseptic Skin Cleansers (Personal Domestic Use)" aria-label="PDF Version - 83 KB. Opens in a new tab."><img alt="Monograph: Antiseptic Skin Cleansers (Personal Domestic Use)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 83 K)</a>
+    </div>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+            <p>2024-08-28</p>
+    </section>
+
+    <section aria-labelledby="foreward">
+        <h2 id="foreward">Foreword</h2>
+            <p>This monograph is intended to replace the existing Antiseptic Skin Cleansers monograph of December 24, 2021. It describes the requirements necessary to receive market authorization [i.e. a Drug Identification Number (DIN) or a Natural Product Number (NPN)] for topical antiseptic hand sanitizers intended for personal use in a domestic or commercial setting. Personal domestic use antiseptic products are self-selected by a consumer from a retail outlet for their own personal household use. Personal commercial use products are those made available to the general public in a commercial or institutional setting (e.g., workplaces, washrooms in public buildings). This monograph does not apply to antiseptic products intended for professional use in food-handling premises (e.g. restaurants, food processing plants) or in healthcare settings (e.g. hospitals, nursing homes, clinics, dental offices). The monograph also does not apply to personal use antiseptic products for wound cleansing or application to sites other than the hands, and does not support log reduction claims (e.g. kills 99.9% of germs). The monograph identifies the permitted medicinal and non-medicinal ingredients, concentrations, indications, directions and conditions of use for these products to be market authorized without the submission to Health Canada of additional evidence. Products which do not meet the criteria outlined in this document can apply for market authorization outside of the monograph stream. Applicants/sponsors should consult the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/human-use-antiseptic-drugs.html" aria-label="Read the Human-Use Antiseptic Drugs guidance document on Health Canada's website" title="Visit Health Canada's guidance document page">Human-Use Antiseptic Drugs guidance document</a>, and/or request a pre-submission meeting to discuss appropriate supporting data. For products intended as wound cleansers, applicants should refer to the First Aid Antiseptics monograph.</p>
+            <p>Health products that are not to be ingested (e.g., for topical use only) such as Antiseptic Skin Cleansers are not permitted to be packaged in food and/or beverage containers.</p>
+            <p>Personal use antiseptic hand cleansers should be used sparingly on lightly soiled hands as a second-line approach and are not a substitute for the use of plain soap and water.</p>
+            <p>Applicants are reminded that antiseptic skin cleansers, like other non-prescription drugs or natural health products, are subject to the Food and Drug Regulations or the Natural Health Products Regulations administered by the Natural and Non-prescription Health Products Directorate (NNHPD). This includes requirements related to labelling, manufacturing and product specifications. Additional information on labels, outside of those specified in the monograph, such as additional directions for use and/or non-therapeutic claims are acceptable as long as they meet the <a href="https://adstandards.ca/wp-content/uploads/2020/02/Guidelines-for-Nonprescription-and-Cosmetic-Industry-EN.pdf" title="Guidelines for the Nonprescription and Cosmetic Industry PDF" aria-label="Guidelines for the Nonprescription and Cosmetic Industry Regarding Non-therapeutic Advertising and Labelling Claims">Guidelines for the Nonprescription and Cosmetic Industry Regarding Non-therapeutic Advertising and Labelling Claims</a>, the <a href="https://adstandards.ca/wp-content/uploads/2020/02/Consumer-Advertising-Guidelines-for-Marketed-Health-Products-2020.pdf" title="Consumer Advertising Guidelines for Marketed Health Products PDF" aria-label="Guidelines for Consumer Advertising of Health products for Nonprescription drugs, Natural Health Products, Vaccines and Medical Devices">Guidelines for Consumer Advertising of Health products for Nonprescription drugs, Natural Health Products, Vaccines and Medical Devices</a>, and are not false, misleading or counterintuitive to the use of the product.</p>
+            <p><strong>Notes:</strong>
+                <ul>
+                    <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+                    <li>The solidus (/) indicates that the terms and/or the statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="medicinalIngredients">
+        <h2 id="medicinalIngredients">Medicinal Ingredient(s)</h2>
+            <p>Antiseptic skin cleansers are classified as natural health products (NHPs) if they contain only an ingredient from Table <a href="#ref1" style="text-decoration: none;">1</a>. Applicants applying for an NPN can access the appropriate forms and guidance at: <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html" aria-label="Visit Health Canada's page for forms and guidance on Natural Health Products (NHPs)" title="Click here for forms and guidance on applying for an NPN for natural health products">https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html</a>.</p>
+            <p>Antiseptic skin cleansers are classified as non-prescription drugs (NDPs) if they contain an ingredient from Table <a href="#ref2" style="text-decoration: none;">2</a> at a therapeutic quantity. Applicants applying for a DIN can access the appropriate forms and guidance at: <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html" aria-label="Visit Health Canada's page for forms and guidance on Non-Prescription Drugs (NDPs)" title="Click here for forms and guidance on applying for a DIN for non-prescription drugs">https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html</a>.</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+            <table id="ref1" class="subject">
+                <caption>Table 1: NHP medical ingredients</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Proper Name(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+                        <th rowspan="2">Common Name(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+                        <th>Source information<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+                        <th rowspan="2">Quantity (v/v)<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></th>
+                    </tr>
+                    <tr>
+                        <th>Source ingredient(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>	
+                        <td>Ethyl alcohol</td>
+                        <td>
+                            <ul>
+                                <li>Alcohol</li>
+                                <li>Anhydrous alcohol</li>
+                                <li>Ethanol</li>
+                                <li>Ethyl alcohol</li>
+                                <li>Grain alcohol</li>
+                            </ul>
+                        </td>
+                        <td>Ethanol</td>
+                        <td>60-80%</td>
+                    </tr>
+                    <tr>	
+                        <td>2-propanol</td>
+                        <td>
+                            <ul>
+                                <li>Isopropanol</li>
+                                <li>Isopropyl alcohol</li>
+                            </ul>   
+                        </td>
+                        <td>Isopropanol</td>
+                        <td>60-75%</td>
+                    </tr>	
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref1-1">1</sup>At least one of the following references was consulted per proper name, common name, and source information: USP-NF 2023&semi; RCS 2023&semi; Nikitakis 2016.<br/>
+                <sup id="ref1-2">2</sup>Quantities are expressed as percentage volume by volume (% v/v). At least one of the following references was consulted per dosage: Sweetman 2017&semi; WHO 2010&semi; WHO 2009&semi; US FDA 1994&semi; Zimmerman 1993.
+            </p>
+            <table id="ref2" class="subject">
+                <caption>Table 2: NPD medicinal ingredients</caption>
+                <thead>
+                    <tr>
+                        <th>Proper Name(s)</th>
+                        <th>Common Name(s)</th>
+                        <th>Quantity</th>     
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>	
+                        <td>
+                            <ul>
+                                <li>Alkyldimethyl(phenylmethyl)ammonium chloride</li>
+                                <li>Ammonium, alkyldimethyl(phenylmethyl)-, chloride</li>
+                            </ul>
+                        </td>
+                        <td>Benzalkonium chloride</td>
+                        <td>0.1 - 0.15%</td>
+                    </tr>
+                    <tr>	
+                        <td>
+                            <ul>
+                                <li>Benzyldimethyl[2-[2-(p-1,1,3,3-tetramethylbutylphenoxy)ethoxy]ethyl]ammonium chloride</li>
+                                <li>N.N-Dimethyl-N-[2-[2-[4-(1,1,3,3-tetramethylbutyl)phenoxy]ethoxy]>ethyl]benzenemethanaminium chloride</li>
+                            </ul>
+                        </td>
+                        <td>Benzethonium chloride</td>
+                        <td>0.05 - 0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>1,1&apos;-Hexamethylenebis[5-(p-chlorophenyl)biguanide] di-D-gluconate</li>
+                                <li>N,N&apos;&apos;-Bis(4-chlorophenyl)-3,12-diimino-2,4,11,13-tetraazatetradecanediimidamide di-D-gluconate</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Chlorhexidine digluconate</li>
+                                <li>Chlorhexidine gluconate</li>
+                            </ul>
+                        </td>
+                        <td>2 - 4%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>4-Chloro-3,5-dimethylphenol</li>
+                                <li>4-Chloro-3,5-xylenol</li>
+                            </ul>
+                        </td>
+                        <td>Chloroxylenol</td>
+                        <td>0.5 - 3%</td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of administration</h2> 
+            <p>Topical</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2>Dosage form(s)</h2>
+            <p><em>Acceptable dosage forms for NHPs</em>
+                <ul>
+                    <li>Foam&semi; Gel&semi; Liquid&semi; Solution&semi; Topical liquid&semi; Wipe</li>
+                </ul>
+            </p>
+            <p><em>Acceptable dosage forms for NPDs</em>
+                <ul>
+                    <li>Foam&semi; Gel&semi; Solution&semi; Wipe</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2>Use(s) or Purpose(s)</h2>
+            <p><em>For all ingredients, the following statements may be made (Self-Care Framework Category I)</em>
+                <ul>
+                    <li>Antiseptic (skin) cleanser (Krinsky 2017&semi; Ascenzi 1996)</li>
+                    <li>Medicated (skin) cleanser (Krinsky 2017&semi; Ascenzi 1996)</li>
+                    <li>Antibacterial (skin) cleanser (Krinsky 2017&semi; Ascenzi 1996)</li>
+                    <li>Kills harmful bacteria/germs (Krinsky 2017&semi; Ascenzi 1996)</li>
+                    <li>Effective in destroying (harmful) bacteria to provide antiseptic cleansing (Krinsky 2017&semi; Ascenzi 1996)</li>
+                    <li>For personal hand hygiene to help prevent the spread of bacteria (Trampuz and Widmer 2004&semi; Ascenzi 1996)</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>Children 2 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older</p>
+            <h3>Quantity(ies)</h3>
+                <p>See Tables <a href="#ref1" style="text-decoration: none;">1</a> and <a href="#ref2" style="text-decoration: none;">2</a>.</p>
+            <h3>Permitted combinations</h3>
+                <p>No combinations are permitted</p>
+            <h3>Direction(s) for use</h3>
+                <p><em>All products</em>
+                    <ul>
+                        <li>Supervise children when they use this product (US FDA 2016).</li>
+                        <li>Not for use in healthcare or food-handling premises (Health Canada 2019).</li>
+                    </ul>
+                </p>
+                <p><em>NHPs providing at least 70% ethanol or isopropanol and for NPDs intended as handrubs</em>
+                    <ul>
+                        <li>Apply liberally over all hand surfaces and rub thoroughly for at least 30 seconds, until dry. For occasional use when water and soap are not available (CDC 2024&semi; Health Canada 2019&semi; Kampf and Gray 2017&semi; US FDA 2016).</li>
+                    </ul>
+                </p>
+                <p><em>NHPs providing less than 70% ethanol or isopropanol</em>
+                    <ul>
+                        <li>Apply liberally over all hand surfaces and rub thoroughly for at least 30 seconds, until dry. Repeat if necessary until 3 mL have been applied (x pumps). For occasional use when water and soap are not available (CDC 2024&semi; Health Canada 2019&semi; Kampf and Gray 2017&semi; US FDA 2016&semi; BSI 2013&semi; Kampf 2008).</li>
+                    </ul>
+                </p>
+                <p><strong>Note:</strong> Products in wipe dosage form must deliver an amount of product sufficient to attain efficacy.</p>
+                <p><em>NPDs intended as handwashes</em>
+                    <ul>
+                        <li>Lather in hands with water for at least 30 seconds. Rinse well. For occasional use (Health Canada 2019).</li>
+                    </ul>
+                </p>
+            <h3>Duration(s) of use</h3>
+                <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+            <h3>Cautions and warnings</h3>
+                <p><em>All products</em>
+                    <ul>
+                        <li>For external use only</li>
+                        <li>When using this product avoid contact with eyes. If contact occurs, rinse thoroughly with water.</li>
+                        <li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if irritation develops (Krinsky 2017&semi; FDA 2013).</li>
+                        <li>Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away.</li>
+                    </ul>
+                </p>
+                <p><em>Products containing ethanol or isopropanol</em>
+                    <ul>
+                        <li>Flammability warning. Keep away from open flame and sources of heat (Ascenzi 1996).</li>
+                    </ul>
+                </p>
+            <h3>Contraindication(s)</h3>
+                <p><em>Products containing chlorhexidine gluconate</em>
+                    <ul>
+                        <li>Do not use on children/infants less than 2 years of age (unless directed by a doctor/physician/health care practitioner/health care provider/health care professional).</li>
+                    </ul>
+                </p>
+            <h3>Known Adverse Reaction(s)</h3>
+                <p><em>Products containing chlorhexidine gluconate</em>
+                    <ul>
+                        <li>Allergy alert. Stop use and seek medical help right away if you experience wheezing/difficulty breathing, shock, facial swelling, hives, or rash as this product may cause a severe allergic reaction (US FDA 2017&semi; Conraads et al. 1998&semi; Torricelli and Wuthrich 1996&semi; Okano et al. 1989).</li>
+                    </ul>
+                </p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Ingredients must be chosen from the current <a href="https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng" aria-label="Visit the Natural Health Products Ingredients Database (NHPID)" title="Click here to access the Natural Health Products Ingredients Database">Natural Health Products Ingredients Database</a> (NHPID) and must meet the limitations outlined in that database, the <em>Food and Drug Regulations</em>, and the current <a href="https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html" aria-label="View the Cosmetic Ingredient Hotlist for prohibited and restricted ingredients" title="Click here to view the Cosmetic Ingredient Hotlist">Cosmetic Ingredient Hotlist</a>, when relevant.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em> or the <em>Food and Drug Regulations</em>.</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2> 
+            <p>This monograph describes those requirements that are specific to this class of NPDs and to NHPs. Any change to the manufacturing process that impacts the safety and efficacy of the ingredients, such as the use of novel technology (e.g. nanotechnology), requires supporting data and will be reviewed outside the monograph.</p>
+            <p><em>For products containing a Table <a href="#ref1" style="text-decoration: none;">1</a> NHP medicinal ingredient</em></p>
+                <p>The finished product specifications must be established in accordance with the requirements described in the NNHPD <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html" aria-label="Read the Quality of Natural Health Products Guide by Health Canada" title="Click here to access the Quality of Natural Health Products Guide">Quality of Natural Health Products Guide</a>. The medicinal ingredient must comply with the requirements outlined in the <a href="https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng" aria-label="Access the Natural Health Products Ingredients Database (NHPID)" title="Click here to view the Natural Health Products Ingredients Database">NHPID</a>.</p>
+            <p><em>For products containing a Table <a href="#ref2" style="text-decoration: none;">2</a> NPD medicinal ingredient</em></p>
+                <p>Requirements described in the Regulations to the <em>Food and Drugs Act</em> must be met.</p>
+                <p>To meet the requirements under A.01.016 of the FDRs, sponsors who place an antiseptic in bag packaging are required to label the bag with the complete product information, and in addition, provide an additional means (generally a sticker or additional copies of the label included in the tertiary packaging) of providing the product information once it is inserted into the dispenser.</p>
+            <p><strong>A.01.016</strong> All information that is required by these Regulations to appear on a label of a food or a drug, other than a drug for human use in dosage form, shall be:
+                <ul style="list-style: none;">
+                    <li>(a) clearly and prominently displayed on the label&semi; and</li>
+                    <li>(b) readily discernible to the purchaser or consumer under the customary conditions of purchase and use.</li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">For products containing a Table <a href="#ref1" style="text-decoration: none;">1</a> NHP medicinal ingredient:<br/>EXAMPLE FOR PRODUCT FACTS TABLE:</h2>
+            <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ANTISEPTIC-SKIN-CLEANSERS_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+    </section>
+
+    <section aria-labelledby="drugFactsTables">
+        <h2 id="drugFactsTables">For products containing a Table <a href="#ref2" style="text-decoration: none;">2</a> NPD medicinal ingredient<br/>DRUG FACTS TABLES (Format Optional for Self-Care Category I)</h2>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ANSC1.gif" alt="Drug Facts Table 1" style="width:700px"/></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ANSC2.gif" alt="Drug Facts Table 2" style="width:700px"/></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ANSC3.gif" alt="Drug Facts Table 3" style="width:700px"/></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ANSC4.gif" alt="Drug Facts Table 4" style="width:700px"/></p>
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References cited</h2>
+            <ul>
+                <li>Ascenzi JM. Handbook of Disinfectants and Antiseptics. New York (NY): Marcel Dekker&semi; 1996.</li>
+                <li>BSI 2013. British Standards Institutions. EN 1500 : Chemical disinfectants and antiseptics - Hygienic handrub - Test method and requirements (phase2/step2).</li>
+                <li>CDC 2024. Hand hygiene frequently asked questions. [Accessed 2024 July 11]. Available from: https://www.cdc.gov/clean-hands/faq/?CDC_AAref_Val=https://www.cdc.gov/handwashing/faqs.html.</li>
+                <li>Conraads VM, Jorens PG, Ebo DG, Claeys MJ, Bosmans JM, Vrints CJ. Coronary artery spasm complicating anaphylaxis secondary to skin disinfectant. Chest 1998&semi;113:1417-1419.</li>
+                <li>Health Canada 2019: Guidance Document: Human-Use Antiseptic Drugs. Health Canada, July 2019. [Accessed 2024 April 18]. Available from: https://www.canada.ca/content/dam/hc-sc/documents/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/human-use-antiseptic-drugs/antiseptic_guide_ld-eng%20REPLACED%20October%202019.pdf</li>
+                <li>Kampf G 2008. How effective are hand antiseptics for the postcontamination treatment of hands when used as recommended? American Journal of Infection Control 36:356-360.</li>
+                <li>Kampf G and J Gray 2017. Dose considerations for alcohol-based hand rubs. Journal of Hospital Infection 95(2):183-184.</li>
+                <li>Krinsky DL, Ferreri SP, Hemstreet B, Hume AL, Newton GD, Rollins CJ, Tietze KJ, Handbook of Nonprescription Drugs: An interactive approach for Self-Care, 19th edition. Washington (DC): American Pharmaceutical Association&semi; 2017.</li>
+                <li>Nikitakis J, Lange B, editors. International Cosmetic Ingredient Dictionary and Handbook. 16th edition. Washington (DC): Cosmetic, Toiletry and Fragrance Association&semi; 2016.</li>
+                <li>Okano M, Nomura M, Hata S, Okada N, Sato K, Kitano Y, et al. Anaphylactic symptoms due to chlorhexidine gluconate. Arch Dermatol 1989&semi;125:50-52.</li>
+                <li>RSC 2023: Royal Society of Chemistry. The Merck Index Online. [Accessed December 13, 2023]. Available from: https://merckindex.rsc.org/.</li>
+                <li>Sweetman SC, editor. Martindale: The Complete Drug Reference, 39th edition. Grayslake (IL): Pharmaceutical Press&semi; 2017.</li>
+                <li>Trampuz AT, Widmer AF. Hand hygiene: a frequently missed lifesaving opportunity during patient care. Mayo Clinic proceedings 2004&semi;79:109-116.</li>
+                <li>US FDA 1994: United States Food and Drug Administration. Sunshine Act Meetings. Volume 59, No 116, June 17 1994. [Accessed 2024 July 24]. Available from: https://archives.federalregister.gov/issue_slice/1994/6/17/31301-31452.pdf#page=102.</li>
+                <li>US FDA 2016: United States Food and Drug Administration. 21 CFR Parts 310. Safety and Effectiveness of Consumer Antiseptics&semi; Topical Antimicrobial Drug Products for Over-the- Counter Human Use&semi; Final Monograph&semi; al Register, Volume 81 Number 172, September 06, 2016. [Accessed 2024 July 24]. Available from: https://www.gpo.gov/fdsys/pkg/FR-2016-09-06/pdf/2016-21337.pdf</li>
+                <li>US FDA 2017: United States Food and Drug Administration. FDA notice: FDA Drug Safety Communication: FDA warns about rare but serious allergic reactions with the skin antiseptic chlorhexidine gluconate. [Accessed 2024 April 26]. Available from: https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-warns-about-rare-serious-allergic-reactions-skin-antiseptic.</li>
+                <li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2023.</li>
+                <li>WHO 2010: Guide to Local Production: WHO-recommended Handrub Formulations. Geneva (CH): World Health Organization Press&semi; 2010. [Accessed 2020 March 20]. Available from: https://iris.who.int/bitstream/handle/10665/332005/WHO-IER-PSP-2010.5-eng.pdf?sequence=1</li>
+                <li>WHO 2009: WHO guidelines on hand hygiene in health care. Geneva (CH): World Health Organization Press&semi; 2009. [Accessed 2020 March 20]. Available from: https://apps.who.int/iris/bitstream/handle/10665/44102/9789241597906_eng.pdf&semi;jsessionid=611E48F97A616824A78304CFB88E7096?sequence=1</li>
+                <li>Zimmerman DR. Zimmerman&apos;s Complete Guide to Nonprescription Drugs. Detroit (MI): Gale Research Inc.&semi; 1993.</li>
+            </ul>
+    </section>
+
+	<section aria-labelledby="versionHistory" hidden>
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

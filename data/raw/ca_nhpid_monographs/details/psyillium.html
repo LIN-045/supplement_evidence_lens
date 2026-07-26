@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=psyillium\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="1a83bd3c-43b5-4690-8040-4fd572c522a5"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'> <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+  <h1>
+   Psyllium
+  </h1>
+  <p class="lightgreyBG">
+   Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+   <a href="/home-accueil/help-aide/index-eng.php#alt">
+    alternate format help</a> section.
+  </p>
+  <div class="icon">
+   <a href="dbImages/mono_psyllium_english.pdf" title="Psyllium - Plantago afra">
+    <img alt="Monograph: Psyllium" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+    (PDF Version - 63.7 KB)
+   </a>
+  </div>
+  <p>
+   This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on the PLA and product labels at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    July 26, 2024
+   </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+   <h2 id="properNameCommonNameSourceInformation">
+    Proper name(s), Common name(s), Source information
+   </h2>
+   <table class="subject">
+    <caption>
+     Table 1. Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Proper name(s)
+      </th>
+      <th rowspan="2" scope="col">
+       Common name(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+       Source information
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Source material(s)
+      </th>
+      <th scope="col">
+       Part(s)
+      </th>
+      <th scope="col">
+       Preparation(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       <i>
+        Plantago afra
+       </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         African plantain
+        </li>
+        <li>
+         Black psyllium
+        </li>
+        <li>
+         Psyllium
+        </li>
+       </ul>
+      </td>
+      <td>
+       <i>
+        Plantago afra
+       </i>
+      </td>
+      <td>
+        Seed
+      </td>
+      <td>
+        Dry
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <i>
+        Plantago arenaria
+       </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         French psyllium
+        </li>
+        <li>
+         Psyllium
+        </li>
+        <li>
+         Sand plantain
+        </li>
+       </ul>
+      </td>
+      <td>
+       <i>
+        Plantago arenaria
+       </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         Husk
+        </li>
+        <li>
+         Seed
+        </li>
+       </ul>
+      </td>
+      <td>
+        Dry
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <i>
+        Plantago ovata
+       </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         Blonde ispaghula
+        </li>
+        <li>
+         Blond psyllium
+        </li>
+        <li>
+         Indian plantago
+        </li>
+        <li>
+         Indian plantain
+        </li>
+        <li>
+         Ispaghul
+        </li>
+        <li>
+         Ispaghula
+        </li>
+        <li>
+         Psyllium
+        </li>
+       </ul>
+      </td>
+      <td>
+       <i>
+        Plantago ovata
+       </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         Husk
+        </li>
+        <li>
+         Seed
+        </li>
+       </ul>
+      </td>
+      <td>
+        Dry
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    References: Proper names: USDA 2024; Common names: EMA 2013a,b,c; Gardner and McGuffin 2013; ESCOP 2003b,c; Bradley 1992; Source information: EMA 2013a; ESCOP 2003a.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of administration
+   </h2>
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage form(s)
+   </h2>
+   <p>
+    This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+   </p>
+   <p>
+    Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <ul>
+    <li>
+     (Used in Herbal Medicine as a) bulk-forming laxative (ESCOP 2003a,b,c; Williamson 2003; FDA 1985).
+    </li>
+    <li>
+     (Used in Herbal Medicine to) promote(s) bowel movements (by increasing bulk volume and water content) (Sweetman 2007; WHO 2007; ESCOP 2003a,b,c; Bradley 1992; FDA 1985).
+    </li>
+    <li>
+     (Used in Herbal Medicine to) provide(s) gentle relief of constipation and/or irregularity (EMA 2013a,b,c; Pray 2006; ESCOP 2003a,b,c; Blumenthal et al. 2000; Gennaro 2000; Bradley 1992; FDA 1985).
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Note:
+    </strong>
+    The above uses can be combined on the product label if from the same non-traditional system of medicine (e.g. Used in Herbal Medicine as a bulk-forming laxative for gentle relief of constipation and/or irregularity).
+   </p>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    As specified below.
+   </p>
+   <h3>
+    Quantity(ies)
+   </h3>
+   <p>
+    Methods of preparation: Dry, Powdered
+   </p>
+   <table class="subject">
+    <caption>
+     Table 2. Dose information for psyllium seed
+    </caption>
+    <thead>
+     <tr>
+      <th colspan="2" rowspan="2" scope="colgroup">
+       Subpopulation(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+       Seed (grams)
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Minimum/day
+      </th>
+      <th scope="col">
+       Maximum/day
+      </th>
+      <th scope="col">
+       Maximum/single dose<sup><a href="#t2fn3" style="text-decoration: none;">3</a></sup>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       Children<sup><a href="#t2fn1" style="text-decoration: none;">1</a></sup>
+      </td>
+      <td>
+       6-11 years
+      </td>
+      <td>
+       1.25 g
+      </td>
+      <td>
+       25 g
+      </td>
+      <td>
+       8 g
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="2">
+       Adolescents<sup><a href="#t2fn2" style="text-decoration: none;">2</a></sup>
+      </td>
+      <td>
+       12 years
+      </td>
+      <td>
+       1.25 g
+      </td>
+      <td>
+       25 g
+      </td>
+      <td>
+       8 g
+      </td>
+     </tr>
+     <tr>
+      <td>
+       13-17 years
+      </td>
+      <td>
+       2.5 g
+      </td>
+      <td>
+       40 g
+      </td>
+      <td>
+       13 g
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Adults<sup><a href="#t2fn2" style="text-decoration: none;">2</a></sup>
+      </td>
+      <td>
+       18 years and older
+      </td>
+      <td>
+       2.5 g
+      </td>
+      <td>
+       40 g
+      </td>
+      <td>
+       13 g
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p><sup id="t2fn1">1</sup> EMA 2013a,b; ESCOP 2003a,b; WHO 1999; FDA 1985.<br/><sup id="t2fn2">2</sup>EMA 2013a,b; ESCOP 2003a,b; Williamson 2003; Blumenthal et al. 2000a,b; WHO 1999; FDA 1985.<br/><sup id="t2fn3">3</sup>Note: The maximum single dose (13 g) for adults and adolescents 13 years and older is based on the consensus of evidence from several references. The maximum single dose (8 g) for children and adolescents up to 12 years was calculated as a fraction of the maximum adult doses.
+   </p>
+   <table class="subject">
+    <caption>
+     Table 3. Dose information for psyllium husk
+    </caption>
+    <thead>
+     <tr>
+      <th colspan="2" rowspan="2" scope="col">
+       Subpopulation(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+       Husk (grams)
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Minimum/day
+      </th>
+      <th scope="col">
+       Maximum/day
+      </th>
+      <th scope="col">
+       Maximum/single dose<sup><a href="#t3fn3" style="text-decoration: none;">3</a></sup>
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       Children<sup><a href="#t3fn1" style="text-decoration: none;">1</a></sup>
+      </td>
+      <td>
+       6-11 years
+      </td>
+      <td>
+       1.25 g
+      </td>
+      <td>
+       15 g
+      </td>
+      <td>
+       4 g
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="2">
+       Adolescents<sup><a href="#t2fn2" style="text-decoration: none;">2</a></sup>
+      </td>
+      <td>
+       12 years
+      </td>
+      <td>
+       1.25 g
+      </td>
+      <td>
+       15 g
+      </td>
+      <td>
+       4 g
+      </td>
+     </tr>
+     <tr>
+      <td>
+       13-17 years
+      </td>
+      <td>
+       2.5 g
+      </td>
+      <td>
+       30 g
+      </td>
+      <td>
+       8 g
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Adults<sup><a href="#t3fn2" style="text-decoration: none;">2</a></sup> 
+      </td>
+      <td>
+       18 years and older
+      </td>
+      <td>
+       2.5 g
+      </td>
+      <td>
+       30 g
+      </td>
+      <td>
+       8 g
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p><sup id="t3fn1">1</sup>EMA 2013c; ESCOP 2003c; FDA 1985.<br/><sup id="t3fn2">2</sup>EMA 2013c; ESCOP 2003c; Williamson 2003; Blumenthal et al. 2000c; Bradley 1992; FDA 1985.<br/><sup id="t3fn3">3</sup>Note: The maximum single dose (8 g) for adults and adolescents 13 years and older is based on the consensus of evidence from several references. The maximum single dose (4 g) for children and adolescents up to 12 years was calculated as a fraction of the maximum adult doses.
+   </p>
+   <h3>
+    Direction(s) for use
+   </h3>
+   <ul>
+    <li>
+     For each dose, drink at least 250 ml of liquid (EMA 2013a,b,c).
+    </li>
+    <li>
+     Mix well with liquid and drink immediately.
+    </li>
+    <li>
+     Maintain adequate fluid intake (EMA 2013a,b,c).
+    </li>
+    <li>
+     Take a few hours before or after taking other medications or health products (EMA 2013a,b,c).
+    </li>
+    <li>
+     Effects observed 12-24 hours after first dose, and may take 2-3 days (EMA 2013a,b,c).
+    </li>
+   </ul>
+   <p>
+    <em>
+     Optional
+    </em>
+   </p>
+   <p>
+    Take during the day (not immediately prior to bedtime) (EMA 2013a,b,c).
+   </p>
+   <p>
+    <em>
+     Optional (for products with a dosage range)
+    </em>
+   </p>
+   <p>
+    Minimum daily dose may be increased, up to the maximum daily dose, until desired effect is obtained.
+   </p>
+   <h3>
+    Combination rules
+   </h3>
+   <p>
+    When the medicinal ingredients listed in Table 1 are combined:
+   </p>
+   <ul>
+    <li>
+     the total quantities of psyllium seed per single dose and per day must not exceed the maximum quantities listed in Table 2.
+    </li>
+    <li>
+     the total quantities of psyllium husk per single dose and per day must not exceed the maximum quantities listed in Table 3.
+    </li>
+    <li>
+     if psyllium seed and husk are combined, the total quantities per single dose and per day must not exceed the lowest maximum quantities which are the husk quantities in Table 3.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration(s) of use
+   </h2>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk information
+   </h2>
+   <h3>
+    Caution(s) and warning(s)
+   </h3>
+   <ul>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen or if laxative effect does not occur within 7 days (Pray 2006; Repchinsky 2002).
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician immediately if you experience chest pain, vomiting, or difficulty swallowing or breathing after taking this product (EMA 2013a,b,c; ESCOP 2003a,b,c).
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have diabetes or a lazy bowel (UpToDate 2024; EMA 2013a,b,c).
+    </li>
+   </ul>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <ul>
+    <li>
+     Do not use if you have difficulty swallowing (EMA 2013a,b,c).
+    </li>
+    <li>
+     Do not use if you have fever or any undiagnosed gastrointestinal trouble (EMA 2013a,b,c).
+    </li>
+   </ul>
+   <h3>
+    Known adverse reaction(s)
+   </h3>
+   <ul>
+    <li>
+     Stop use if hypersensitivity/allergy occurs (EMA 2013a,b,c).
+    </li>
+    <li>
+     When using this product you may experience temporary gas and bloating (EMA 2013a,b,c).
+    </li>
+   </ul>
+   <h3>
+    Non-medicinal ingredients
+   </h3>
+   <p>
+    Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+   </p>
+   <h3>
+    Storage conditions
+   </h3>
+   <p>
+    Must be established in accordance with the requirements described in the
+    <em>
+     Natural Health Products Regulations.
+    </em>
+   </p>
+   <h3>
+    Specifications
+   </h3>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="exampleOfProductFacts">
+   <h2 id="exampleOfProductFacts">
+    EXAMPLE OF PRODUCT FACTS:
+   </h2>
+   <p>
+    Consult the Guidance Document,
+    <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">
+     Labelling of Natural Health Products
+    </a>
+    for more details.
+   </p>
+   <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/PSYLLIUM_E.gif" style="width:700px"/>
+   </p>
+  </section>
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References cited
+   </h2>
+   <ul>
+    <li>
+     Blumenthal M, Goldberg A, Brinkmann J, editors. 2000a. Herbal Medicine: Expanded Commission E Monographs. Psyllium Seed, Black. Boston (MA): Integrative Medicine Communications.
+    </li>
+    <li>
+     Blumenthal M, Goldberg A, Brinkmann J, editors. 2000b. Herbal Medicine: Expanded Commission E Monographs. Psyllium Seed, Blonde. Boston (MA): Integrative Medicine Communications.
+    </li>
+    <li>
+     Blumenthal M, Goldberg A, Brinkmann J, editors. 2000c. Herbal Medicine: Expanded Commission E Monographs. Psyllium Seed Husk, Blonde. Boston (MA): Integrative Medicine Communications.
+    </li>
+    <li>
+     Bradley PR, editor. 1992. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (UK): British Herbal Medicine Association.
+    </li>
+    <li>
+     EMA 2013a. European Medicines Agency. Final Community Herbal Monograph on Plantago afra L. and Plantago indica L., semen. London (UK): EMEA Committee on Herbal Medicinal Products (HMPC),14 May 2013. [Accessed 2018 August 14]. Available from: http://www.ema.europa.eu/docs/en_GB/document_library/Herbal_-_Community_herbal_monograph/2013/07/WC500146770.pdf
+    </li>
+    <li>
+     EMA 2013b. European Medicines Agency. Final Community Herbal Monograph on Plantago ovata Forssk., seminis tegumentum. London (UK): EMEA Committee on Herbal Medicinal Products (HMPC), 14 May 2013. [Accessed 2018 August 14]. Available from: http://www.ema.europa.eu/docs/en_GB/document_library/Herbal_-_Community_herbal_monograph/2013/07/WC500146508.pdf
+    </li>
+    <li>
+     EMA 2013c. European Medicines Agency. Final Community Herbal Monograph on Plantago ovata Forssk., semen. London (UK): EMEA Committee on Herbal Medicinal Products (HMPC), 14 May 2013. [Accessed 2018 August 14]. Available from: http://www.ema.europa.eu/docs/en_GB/document_library/Herbal_-_Community_herbal_monograph/2013/07/WC500146514.pdf
+    </li>
+    <li>
+     ESCOP 2003a: European Scientific Cooperative on Phytotherapy Scientific Committee. 2003. ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition. Psyllii Semen (Psyllium Seed). Exeter (UK): European Scientific Cooperative on Phytotherapy and Thieme.
+    </li>
+    <li>
+     ESCOP 2003b: European Scientific Cooperative on Phytotherapy Scientific Committee. 2003. ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition.
+    </li>
+    <li>
+     Plantaginis Ovatae Semen (Ispaghula Seed). Exeter (UK): European Scientific Cooperative on Phytotherapy and Thieme.
+    </li>
+    <li>
+     ESCOP 2003c: European Scientific Cooperative on Phytotherapy Scientific Committee. 2003. ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition. Plantaginis Ovatae Testa (Ispaghula Husk /Blonde Psyllium Husk). Exeter (UK): European Scientific Cooperative on Phytotherapy and Thieme.
+    </li>
+    <li>
+     FDA 1985: Unites States Food and Drug Administration. Laxative Drug Products for Over- the-Counter Human Use; Tentative Final Monograph. Proposed Rules sections 334.10 and 334.52. Federal Register Volume 50, Number 10, Tuesday, January 15, 1985. Rockville (MD): Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2018 August 14]. Available from: http://cdn.loc.gov/service/ll/fedreg/fr050/fr050010/fr050010.pdf
+    </li>
+    <li>
+     Gardner Z, McGuffin M. editors. 2013. American Herbal Products Association's Botanical Safety Handbook, 2nd edition. Boca Raton (FL): CRC Press.
+    </li>
+    <li>
+     Gennaro AR, editor. 2000. Remington: The Science and Practice of Pharmacy, 20th edition. Baltimore (MD): Lippincott Williams &amp; Wilkins.
+    </li>
+    <li>
+     Pray WS. 2006. Non-Prescription Product Therapeutics, 2nd edition. New York (NY): Lippincott Williams &amp; Wilkins.
+    </li>
+    <li>
+     Repchinsky C, editor. 2002. Patient Self-Care. Helping Patients Make Therapeutic Choices. Ottawa (ON): Canadian Pharmacists Association.
+    </li>
+    <li>
+     Sweetman SC, editor. 2007. Martindale: The Complete Drug Reference, 35th edition. London (UK): Pharmaceutical Press.
+    </li>
+    <li>
+     UpToDate 2024: Wolters Kluwer. [Accessed 2024 January 8]. Available from: https://www.wolterskluwer.com/en/solutions/uptodate
+    </li>
+    <li>
+     USDA 2024: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 January 8]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+    </li>
+    <li>
+     WHO 2007: World Health Organization (WHO) Monographs on Selected Medicinal Plants: Volume 3. Geneva (CHE): World Health Organization.
+    </li>
+    <li>
+     WHO 1999: World Health Organization (WHO) Monographs on Selected Medicinal Plants: Volume 1. Geneva (CHE): World Health Organization.
+    </li>
+    <li>
+     Williamson EM. 2003. Potter's Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (UK): The C.W. Daniel Company Limited.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+   <h2 id="referencesReviewed">
+    References reviewed
+   </h2>
+   <ul>
+    <li>
+     Ashraf W, Pfeiffer RF, Park F, Lof J, Quigley EM. 1997. Constipation in Parkinson's disease: objective assessment and response to psyllium. Movement Disorders: Official Journal of the Movement Disorder Society 12(6):946-951.
+    </li>
+    <li>
+     Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. 2002. Handbook of Nonprescription Drugs: An Interactive Approach to SelfCare, 13th edition. Washington (DC): American Pharmaceutical Association.
+    </li>
+    <li>
+     BHP 1983: British Herbal Pharmacopoeia. Bournemouth (UK): British Herbal Medicine Association.
+    </li>
+    <li>
+     BP 2008: British Pharmacopoeia Commission. 2007. British Pharmacopoeia. London (UK): The Stationary Office.
+    </li>
+    <li>
+     Cheskin LJ, Kamal N, Crowell MD, Schuster MM, Whitehead WE. 1995. Mechanisms of constipation in older persons and effects of fiber compared with placebo. Journal of the American Geriatrics Society 43(6):666-669.
+    </li>
+    <li>
+     Liel Y, Harman-Boehm I and Shany S. 1996. Evidence for a clinically important adverse effect of fiber-enriched diet on the bioavailability of levothyroxine in adult hypothyroid patients. Journal of Clinical Endocrinology and Metabolism 81(2):857-859.
+    </li>
+    <li>
+     Marteau P, Flourié B, Cherbut C, Corrèze JL, Pellier P, Seylaz J, Rambaud JC.1994. Digestibility and bulking effect of ispaghula husks in healthy humans. Gut 35(12):1747-1752.
+    </li>
+    <li>
+     McRorie JW, Daggy BP, Morel JG, Diersing PS, Miner PB, Robinson M. 1998. Psyllium is superior to docusate sodium for treatment of chronic constipation. Alimentary Pharmacology &amp; Therapeutics 12(5):491-497.
+    </li>
+    <li>
+     Ph. Eur. 2008: European Pharmacopoeia Commission. 2008. European Pharmacopoeia, 6th edition, Volume 1. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM).
+    </li>
+    <li>
+     USP 32: United States Pharmacopeial Convention. 2009. United States Pharmacopeia and the National Formulary (USP 32 - NF 27). Rockville (MD): The United States Pharmacopeial Convention.
+    </li>
+    <li>
+     Wichtl M, editor. 2004. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 3rd edition. Stuttgart (D): Medpharm GmbH Scientific Publishers.
+    </li>
+   </ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

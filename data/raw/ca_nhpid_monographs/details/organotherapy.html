@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=organotherapy\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="34fa9de4-17fe-42b7-889d-2ca2cb255aec"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>Organotherapy</h1>
+
+<section aria-labelledby="note">
+  <p id="note" class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format
+    (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and
+    PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained
+    in the
+    <a
+      href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php#alt"
+      >alternate format help</a
+    >
+    section.
+  </p>
+
+  <div class="icon">
+    <a
+      href="dbImages/mono_organotherapy_english.pdf"
+      title="Monograph: Organotherapy (English)"
+    >
+      <img
+        src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif"
+        alt="Portable Document Format"
+        width="22"
+        height="21"
+      />
+      (PDF Version - 130 K)</a
+    >
+  </div>
+
+  <p>
+    This monograph is intended to serve as a guide to industry for the
+    preparation of Product Licence Applications (<abbr
+      title="Product Licence Application"
+      >PLA</abbr
+    >s) and labels for natural health product market authorization. It is
+    not intended to be a comprehensive review of the medicinal ingredients.
+  </p>
+  <p><strong>Notes</strong></p>
+  <ul>
+    <li>
+      By submitting a
+      <abbr title="Product Licence Application">PLA</abbr> referencing this
+      monograph, the applicant is attesting that the product will comply
+      fully with the recommended conditions of use outlined in this
+      monograph. The conditions of use include methods of preparations,
+      source materials, doses, durations of use, combinations of medicinal
+      ingredients, and risk statements.
+    </li>
+    <li>
+      Text in parentheses is additional optional information which can be
+      included on the label at the applicant's discretion.
+    </li>
+    <li>
+      The solidus (/) indicates that the terms and/or the statements are
+      synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+    <li>The use of the web-based PLA is not possible where reference is made to this monograph. Please use the PDF format available at: <a href="https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/applications/licen-prod/form/form_pl-dlmm-eng.pdf">https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/applications/licen-prod/form/form_pl-dlmm-eng.pdf</a></li>
+    <li>This monograph cannot be combined with any other monograph at Class II.</li>
+
+  </ul>
+</section>
+
+<section aria-labelledby="date">
+  <h2 id="date">Date</h2>
+  <p>January 10, 2025</p>
+</section>
+
+<section aria-labelledby="properNameAndCommonName">
+  <h2 id="properNameAndCommonName">Proper name(s), Common name(s)</h2>
+
+  <table class="subject fontSize100">
+    <caption>
+      Table 1. Proper name(s), Common name(s)
+    </caption>
+    <thead>
+      <tr>
+        <th id="properName" colspan="1">Proper name(s)</th>
+        <th id="commonName" colspan="1">Common name(s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td headers="properName">
+          <em><span lang="la" xml:lang="la">Anas barbariae</span></em>
+        </td>
+        <td headers="commonName">Duck</td>
+      </tr>
+      <tr>
+        <td headers="properName">
+          <em><span lang="la" xml:lang="la">Cavia porcellus</span></em>
+        </td>
+        <td headers="commonName">Guinea pig</td>
+      </tr>
+      <tr>
+        <td headers="properName">
+          <em><span lang="la" xml:lang="la">Danio rerio</span></em>
+        </td>
+        <td headers="commonName">Zebra danio/Zebrafish</td>
+      </tr>
+      <tr>
+        <td headers="properName">
+          <em
+            ><span lang="la" xml:lang="la"
+              >Gallus gallus domesticus</span
+            ></em
+          >
+        </td>
+        <td headers="commonName">Chicken</td>
+      </tr>
+      <tr>
+        <td headers="properName">
+          <em><span lang="la" xml:lang="la">Sus scrofa</span></em>
+        </td>
+        <td headers="commonName">Pig</td>
+      </tr>
+      <tr>
+        <td headers="properName">
+          <em
+            ><span lang="la" xml:lang="la">Oryctolagus cuniculus</span></em
+          >
+        </td>
+        <td headers="commonName">Rabbit</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section aria-labelledby="sourceMaterial">
+  <h2 id="sourceMaterial">Source information</h2>
+  <p>Please refer to Appendix I.</p>
+</section>
+
+<section aria-labelledby="routeOfAdministration">
+  <h2 id="routeOfAdministration">Route(s) of administration</h2>
+
+  <ul>
+    <li>Oral</li>
+    <li>Sublingual</li>
+    <li>Nasal</li>
+    <li>Opthalmic</li>
+    <li>Topical</li>
+    <li>Rectal</li>
+  </ul>
+</section>
+
+<section aria-labelledby="dosageForm">
+  <h2 id="dosageForm">Dosage form(s)</h2>
+  <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+  <p>The acceptable dosage forms are those indicated in Table 2 below.</p>
+
+</section>
+
+<section aria-labelledby="useOrPurpose">
+  <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+  <p>Organotherapy (preparation/remedy/medicine).</p>
+</section>
+
+<section aria-labelledby="dose">
+  <h2 id="dose">Dose(s)</h2>
+  <h3>Subpopulation(s)</h3>
+  <p>Adolescent 13-17  years, Adults 18 and older</p>
+  <h3>Quantity(ies)</h3>
+  <p>
+    The dilution for each medicinal ingredient must be equal to or greater
+    than 3X (or equivalent).
+  </p>
+
+  <table class="subject fontSize100">
+    <caption>
+      Table 2. Dosing information
+    </caption>
+    <thead>
+      <tr>
+        <th style="text-align: center" rowspan="2">
+          Dosage form(s)
+        </th>
+        <th style="text-align: center" colspan="2">
+          Maximum General Dosing
+        </th>
+        <th style="text-align: center" rowspan="1">
+          Maximum Acute Dosing
+        </th>
+        </tr>
+        <tr>
+        <th style="text-align: center "rowspan="1">
+          Amount
+        </th>
+        <th style="text-align: center" rowspan="1">
+          Frequency
+        </th>
+        <th style="text-align: center" rowspan="1">
+          (Optional)
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Globules (small pellets, pilules)</td>
+        <td>
+          1 whole unit dose (tube of container)
+        </td>
+        <td>1 time per day</td>
+        <td>
+          1 unit dose, 3 times per day
+        </td>
+      </tr>
+      <tr>
+        <td>Granules (regular and large pellets)</td>
+        <td>5 granules</td>
+        <td>3 times per day</td>
+        <td>
+          Every 15-60 minutes (up to 12 times per day) or until improvement
+          of symptoms. Then resume general dosing.
+        </td>
+      </tr>
+      <tr>
+        <td>Tablets</td>
+        <td>4 tablets</td>
+        <td>4 times per day</td>
+        <td>
+          Every 15-60 minutes (up to 12 times per day) or until improvement
+          of symptoms. Then resume general dosing.
+        </td>
+      </tr>
+
+      <tr>
+        <td>Oral Drops</td>
+        <td>30 drops</td>
+        <td>3 times per day</td>
+        <td>
+          Every 15-60 minutes (up to 12 times per day) or until improvement
+          of symptoms. Then resume general dosing.
+        </td>
+      </tr>
+
+      <tr>
+        <td>Oral Spray</td>
+        <td>10-15 sprays</td>
+        <td>3 times per day</td>
+        <td>Every 15-60 minutes (up to 12 times per day) or until improvement of symptoms. Then resume general dosing.</td>
+      </tr>
+
+      <tr>
+        <td>Liquids (oral drinkable vials)</td>
+        <td>1 ampoule</td>
+        <td>3 times per day</td>
+        <td>
+          Up to 3 times per day
+        </td>
+      </tr>
+
+      <tr>
+        <td>Oral Solutions (unit dose)</td>
+        <td>1 unit dose</td>
+        <td>3 times per day</td>
+        <td>
+          Give one unit dose upon onset of symptoms. Repeat two more times
+          at 15-minute intervals. Repeat process up to 9 times per day if
+          symptoms reappear.
+        </td>
+      </tr>
+
+      <tr>
+        <td>Oral Syrups</td>
+        <td>1-2 teaspoons</td>
+        <td>Every 4-6 hours</td>
+        <td>Not applicable</td>
+      </tr>
+
+      <tr>
+        <td>Creams/Ointments</td>
+        <td>Cover affected area</td>
+        <td>As needed</td>
+        <td>Not applicable</td>
+      </tr>
+
+      <tr>
+        <td>Nasal Sprays</td>
+        <td>2 sprays/nostril</td>
+        <td>5 times per day</td>
+        <td>Not applicable</td>
+      </tr>
+      <tr>
+        <td>Suppositories</td>
+        <td>1 suppository</td>
+        <td>1-4 times per day</td>
+        <td>
+          Up to 4 times per day
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Method(s) of preparation</h3>
+  <p class="indent1">
+    The method of preparation must be one of the following:
+  </p>
+  <ul class="indent1">
+    <li>HPUS<sup>1</sup> Class L, Method I or II;</li>
+    <li>HAB<sup>2</sup>  method 42 a or b;</li>
+    <li>PhF<sup>3</sup>  mother tinctures for drugs of animal origins; or</li>
+    <li>Ph. Eur.<sup>4</sup>  monograph 1038</li>
+  </ul>
+
+  <p><strong>Notes:</strong></p>
+  <p><sup>1</sup>Homeopathic Pharmacopoeia of the United States</p>
+  <p><sup>2</sup>Homöopathisches ArzneiBuch.</p>
+  <p><sup>3</sup>French Pharmacopoeia</p>
+  <p><sup>4</sup>European Pharmacopoeia</p>
+
+  <h3>Direction(s) of use</h3>
+  <p>Use/Take as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+
+  
+</section>
+
+<section aria-labelledby="durationOfUse">
+  <h2 id="durationOfUse">Duration(s) of use</h2>
+  <p>No statement required.</p>
+</section>
+
+<section aria-labelledby="riskInformation">
+  <h2 id="riskInformation">Risk information</h2>
+  <h3>Caution(s) and warning(s)</h3>
+  <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+
+  <h3>Contraindication(s)</h3>
+  <p>Do not use if you are pregnant or breastfeeding.</p>
+
+  <h3>Known adverse reaction(s)</h3>
+  <p>No statement required.</p>
+</section>
+
+<section aria-labelledby="nonMedicinalIngredients">
+  <h2 id="nonMedicinalIngredients">Non-Medicinal Ingredient(s)</h2>
+  <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+</section>
+
+<h2>Storage conditions</h2>
+<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+
+<section aria-labelledby="specifications">
+  <h2 id="specifications">Specifications</h2>
+  <ul>
+    <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+    <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+    <li>All medicinal ingredients of animal origin must be sterilized as per HPUS and HAB requirements or equivalent.</li>
+    <li>If the method of preparation includes the use of natural lactose for trituration, an Animal Tissue form for lactose must be submitted.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="exampleOfProductFacts">
+  <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+  <p><strong>Consult the Guidance Document, <a
+        href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+        Labelling of Natural Health Products</a> for more details.</strong>
+  <p>
+  <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ORGANOTHERAPY_E.gif" alt="Product Facts Table"
+      style="width:700px"></p>
+</section>
+
+
+<h2>References cited</h2>
+<ul>
+  <li>HAB 2023: Homöopathisches ArzneiBuch. Deutscher Apotheker Verlag, 2024. The most current version applies.</li>
+  <li>HPUS 2024: Homeopathic Pharmacopeia of the United States, Online: Homeopathic Pharmacopoeia Convention of the United States, 2024. The most current version applies.</li>
+  <li>Ph.Eur. 2024: European Pharmacopoeia, 11th edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM), 2024. The most current version applies.</li>
+  <li>PhF 2024: French Pharmacopoeia, 11th edition. Saint-Denis Cedex (FR) : French Agency for the Safety of Health Products, 2024. The most current version applies.</li>
+</ul>
+
+<section aria-labelledby="referencesReviewed">
+  <h2 id="referencesReviewed">References reviewed</h2>
+  <div lang="en" xml:lang="en">
+    <ul>
+      <li>
+        Reckeweg HH. Organ Therapy. Homotoxin-Journal. Journal for Holistic
+        Research and Synthesis in Medicine 1963;6(1):317-320.
+      </li>
+      <li>
+        Rozencwajg J. Organotherapy, Drainage and Detoxification. Kandern
+        (Germany): Natura Medical Ltd, 2010.
+      </li>
+      <li>
+        <span lang="fr" xml:lang="fr"
+          >T&eacute;tau M, Bergeret C. L'organoth&eacute;rapie dilu&eacute;e
+          et dynamis&eacute;e. Paris (FR) : &eacute;ditions Maloine,
+          1973.</span
+        >
+      </li>
+      <li>
+        <span lang="fr" xml:lang="fr"
+          >T&eacute;tau M. Nouvelles cliniques d'organoth&eacute;rapie
+          dilu&eacute;e et dynamis&eacute;e. Paris (FR): &eacute;ditions
+          Similia, 1986.</span
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="appendixI">
+  <h2 id="appendixI">Appendix I</h2>
+  Acceptable Source Materials for Organotherapy Medicinal Ingredients.
+
+  <a href="#A_SINGLE">A</a>
+
+  <a href="#B_SINGLE">B</a>
+
+  <a href="#C_SINGLE">C</a>
+
+  <a href="#D_SINGLE">D</a>
+
+  <a href="#E_SINGLE">E</a>
+
+  <a href="#F_SINGLE">F</a>
+
+  <a href="#G_SINGLE">G</a>
+
+  <a href="#H_SINGLE">H</a>
+
+  <a href="#I_SINGLE">I</a>
+
+  <a href="#J_SINGLE">J</a>
+
+  <a href="#K_SINGLE">K</a>
+
+  <a href="#L_SINGLE">L</a>
+
+  <a href="#M_SINGLE">M</a>
+
+  <a href="#N_SINGLE">N</a>
+
+  <a href="#O_SINGLE">O</a>
+
+  <a href="#P_SINGLE">P</a>
+
+  <a href="#Q_SINGLE">Q</a>
+
+  <a href="#R_SINGLE">R</a>
+
+  <a href="#S_SINGLE">S</a>
+
+  <a href="#T_SINGLE">T</a>
+
+  <a href="#U_SINGLE">U</a>
+
+  <a href="#V_SINGLE">V</a>
+
+  <a href="#W_SINGLE">W</a>
+  <a href="#Y_SINGLE">Y</a>
+
+  <!-- First Character Header -->
+  <h3 id="A_SINGLE" class="headline">A</h3>
+
+  <!-- Individual Entries -->
+  <ul>
+    <li>Adipose tissue</li>
+    <li>Adrenal cortex/Suprarenal cortex</li>
+    <li>Adrenal gland/Suprarenal gland</li>
+    <li>Adrenal medulla</li>
+    <li>Adrenal gland/Suprarenal gland</li>
+    <li>Ankle articulation</li>
+    <li>Anterior cruciate ligament</li>
+    <li>Anterior pituitary gland/Andenohypophysis</li>
+    <li>Aorta</li>
+    <li>Appendix/Caecum</li>
+    <li>Aqueous humor</li>
+    <li>Artery</li>
+    <li>Articular capsule</li>
+    <li>Ascending colon</li>
+    <li>Atlas</li>
+    <li>Auditory nerve</li>
+    <li>Auricle</li>
+    <li>Auriculo-ventricular wall</li>
+  </ul>
+
+  <!-- First Character Header -->
+  <h3 id="B_SINGLE" class="headline">B</h3>
+
+  <!-- Individual Entries -->
+
+  <ul>
+    <li>Bile</li>
+    <li>Bladder</li>
+    <li>Blood</li>
+    <li>Blood plasma</li>
+    <li>Bone marrow</li>
+    <li>Bones</li>
+    <li>Brachial plexus</li>
+    <li>Brain/Encephalon/Whole brain</li>
+    <li>Bronchial mucosa</li>
+    <li>Bronchus</li>
+  </ul>
+
+  <h3 id="C_SINGLE" class="headline">C</h3>
+
+  <ul>
+    <li>Calcaneal tendon/Achilles tendon</li>
+    <li>Canal of cervix</li>
+    <li>Capillary tissue</li>
+    <li>Cardia/Esophagogastric junction</li>
+    <li>Carotid artery</li>
+    <li>Carotid plexus</li>
+    <li>Cartilage</li>
+    <li>Cephalorachidien liquid</li>
+    <li>Cerebellum</li>
+    <li>Cerebral artery</li>
+    <li>Cerebral cortex</li>
+    <li>Cerebral cortex and hypothalamus</li>
+    <li>Cervical disc</li>
+    <li>Cervical marrow</li>
+    <li>Cervical vertebrae</li>
+    <li>Choroid</li>
+    <li>Ciliary body</li>
+    <li>Coccyx</li>
+    <li>Collagen</li>
+    <li>Colon</li>
+    <li>Common bile duct</li>
+    <li>Conjunctiva</li>
+    <li>Conjunctive tissue</li>
+    <li>Cornea</li>
+    <li>Coronary artery</li>
+    <li>Coronary vein</li>
+    <li>Corpus callosum</li>
+    <li>Corpus cavernosum</li>
+    <li>Corpus luteum/Yellow body</li>
+    <li>Corpus spongiosum</li>
+    <li>Cortex and hypothalamus</li>
+    <li>Coxo-femoral cartilage</li>
+    <li>Cranial nerve</li>
+    <li>Crystallin</li>
+    <li>Cubital nerve/Ulnar nerve</li>
+    <li>Cystic duct</li>
+  </ul>
+
+  <h3 id="D_SINGLE" class="headline">D</h3>
+  <ul style="list-style: none">
+    <li>Deferent duct/Vas deferens</li>
+    <li>Dental pulp</li>
+    <li>Descending colon</li>
+    <li>Diaphragm</li>
+    <li>Diencephalon/Interbrain</li>
+    <li>Dorsal marrow</li>
+    <li>Dorsal vertebrae</li>
+    <li>Duodenum</li>
+  </ul>
+
+  <h3 id="E_SINGLE" class="headline">E</h3>
+  <ul>
+    <li>Elbow articulation</li>
+    <li>Elbow ligament</li>
+    <li>Embryo</li>
+    <li>Endocardium</li>
+    <li>Endothelium tissue (Bone marrow + spleen + thymus)</li>
+    <li>Epididymis</li>
+    <li>Epiphysis/Pineal body/Pineal gland</li>
+    <li>Epiphyseal cartilage</li>
+    <li>Eye</li>
+    <li>Eustachian tube</li>
+  </ul>
+
+  <h3 id="F_SINGLE" class="headline">F</h3>
+
+  <ul>
+    <li>Facial nerve</li>
+    <li>Fallopian tube</li>
+    <li>Femoral artery</li>
+    <li>Fibrin</li>
+    <li>First cervical vertebrae</li>
+    <li>Flat bone</li>
+    <li>Frontal lobe</li>
+  </ul>
+
+  <h3 id="G_SINGLE" class="headline">G</h3>
+  <ul>
+    <li>Gall bladder</li>
+    <li>Gizzard</li>
+    <li>Glossopharyngeal nerve</li>
+    <li>Gray matter</li>
+    <li>Greater curvature of the stomach</li>
+    <li>Gums</li>
+  </ul>
+
+  <h3 id="H_SINGLE" class="headline">H</h3>
+  <ul>
+    <li>Hair</li>
+    <li>Heart</li>
+    <li>Heart ventricles</li>
+    <li>Hemorrhoidal vein/Rectal vein/Anal vein</li>
+    <li>Hepatic duct</li>
+    <li>Hepatopancreatic sphincter</li>
+    <li>Hip articulation</li>
+    <li>Hip ligament</li>
+    <li>Hippocampus</li>
+    <li>Hyaline cartilage</li>
+    <li>Hypogastric plexus</li>
+    <li>Hypothalamus</li>
+  </ul>
+
+  <h3 id="I_SINGLE" class="headline">
+    I
+  </h3>
+  <ul>
+    <li>Ileocecal valve</li>
+    <li>Ileum</li>
+    <li>Inferior vena cava</li>
+    <li>Internal ear</li>
+    <li>Intervertebral discs</li>
+    <li>Intestinal mucosa</li>
+  </ul>
+
+  <h3 class="headline">
+    <a id="J_SINGLE"></a>
+    J
+  </h3>
+  <ul>
+    <li>Jejunum</li>
+  </ul>
+
+  <h3 class="headline">
+    <a id="K_SINGLE"></a>
+    K
+  </h3>
+  <ul>
+    <li>Kidney</li>
+    <li>Knee articulation</li>
+    <li>Knee ligament</li>
+  </ul>
+
+  <h3 id="L_SINGLE" class="headline">L</h3>
+
+  <ul>
+    <li>Labyrinth</li>
+    <li>Lacrimal glands</li>
+    <li>Larynx</li>
+    <li>Left ventricule</li>
+    <li>Lens of the eye</li>
+    <li>Ligaments</li>
+    <li>Limbic system</li>
+    <li>Liver</li>
+    <li>Long bone</li>
+    <li>Lower portion of the brain stem</li>
+    <li>Lumbar discs</li>
+    <li>Lumbar marrow</li>
+    <li>Lumbar plexus</li>
+    <li>Lumbar vertebrae</li>
+    <li>Lung</li>
+    <li>Lung with histamine</li>
+    <li>Lymph gland/Lymphatic gland</li>
+    <li>Lymph vessel/Lymphatic vessels</li>
+    <li>Lymphatic ganglia Lymphatic node</li>
+  </ul>
+
+  <h3 id="M_SINGLE" class="headline">M</h3>
+  <ul>
+    <li>Mammary glands</li>
+    <li>Medial collateral ligament</li>
+    <li>Median nerve</li>
+    <li>Medulla oblongata</li>
+    <li>Meninges</li>
+    <li>Meniscus</li>
+    <li>Mesencephalon</li>
+    <li>Middle ear</li>
+    <li>Minor curvature of the stomach</li>
+    <li>Mitral valve</li>
+    <li>Mucosa of the bile duct</li>
+    <li>Mucosa of the bladder</li>
+    <li>Mucosa of the colon</li>
+    <li>Mucosa of the duodenum</li>
+    <li>Mucosa of the duodenum and pylorus</li>
+    <li>Mucosa of the gall bladder</li>
+    <li>Mucosa of the gums</li>
+    <li>Mucosa of the ileum</li>
+    <li>Mucosa of the intestine</li>
+    <li>Mucosa of the jejunum</li>
+    <li>Mucosa of the lung</li>
+    <li>Mucosa of the oesophagus</li>
+    <li>Mucosa of the pyloric region</li>
+    <li>Mucosa of the rectum</li>
+    <li>Mucosa of the rectum and sigmoid</li>
+    <li>Mucosa of the rhinopharynx</li>
+    <li>Mucosa of the sinus</li>
+    <li>Mucosa of the small intestine</li>
+    <li>Mucosa of the stomach</li>
+    <li>Myocardia</li>
+    <li>Muscles</li>
+  </ul>
+
+  <h3 id="N_SINGLE" class="headline">N</h3>
+  <ul>
+    <li>Nail</li>
+    <li>Nasal mucosa</li>
+    <li>Natural/Genuine lard</li>
+    <li>Neck of urinary bladder</li>
+    <li>Nerve</li>
+    <li>Nervous tissue</li>
+  </ul>
+
+  <h3 id="O_SINGLE" class="headline">O</h3>
+  <ul>
+    <li>Occipital lobe</li>
+    <li>Occipital nerve</li>
+    <li>Ocular muscle</li>
+    <li>Oculomotor nerve</li>
+    <li>Oesophagus</li>
+    <li>Olfactive nerve</li>
+    <li>Olfactory bulb</li>
+    <li>Ophthalmic artery</li>
+    <li>Optic chiasma</li>
+    <li>Optic nerve</li>
+    <li>Optic thalamus</li>
+    <li>Oral mucosa</li>
+    <li>Orbicular muscle of eye</li>
+    <li>Ossicles</li>
+    <li>Ovary</li>
+  </ul>
+
+  <h3 id="P_SINGLE" class="headline">P</h3>
+  <ul>
+    <li>Pancreas</li>
+    <li>Pancreatic duct</li>
+    <li>Parathyroid</li>
+    <li>Parietal lobe</li>
+    <li>Parotid gland</li>
+    <li>Pelvis of the kidney</li>
+    <li>Penis</li>
+    <li>Pericardium</li>
+    <li>Periodontium</li>
+    <li>Peritoneum</li>
+    <li>Periosteum</li>
+    <li>Peyer's patches</li>
+    <li>Pharyngeal tonsil/Adenoids</li>
+    <li>Pharynx</li>
+    <li>Pilosebaceous glands (cranial region)</li>
+    <li>Pituitary gland/Hypophysis</li>
+    <li>Placenta</li>
+    <li>Pleura</li>
+    <li>Pons</li>
+    <li>Posterior cruciate ligament</li>
+    <li>Posterior pituitary gland/Neurohypophysis</li>
+    <li>Poultry gizzard</li>
+    <li>Prostate</li>
+    <li>Pulmonary artery</li>
+  </ul>
+
+  <h3 id="Q_SINGLE" class="headline">Q</h3>
+  <ul>
+    <li>Quadrigeminal bodies</li>
+  </ul>
+
+  <h3 id="R_SINGLE" class="headline">R</h3>
+  <ul>
+    <li>Radial nerve</li>
+    <li>Rectum</li>
+    <li>Red blood cells</li>
+    <li>Red bone marrow</li>
+    <li>Renal cortex</li>
+    <li>Renal medulla</li>
+    <li>Reticuloendothelial system</li>
+    <li>Retina</li>
+    <li>Right ventricle</li>
+    <li>Rhinencephalon</li>
+  </ul>
+
+  <h3 id="S_SINGLE" class="headline">S</h3>
+  <ul>
+    <li>Sacral marrow</li>
+    <li>Sacral plexus</li>
+    <li>Sacral vertebrae</li>
+    <li>Salivary glands</li>
+    <li>Saphenous vein</li>
+    <li>Sciatic nerve</li>
+    <li>Second cervical vertebrae</li>
+    <li>Seminal vesicle</li>
+    <li>Short bone</li>
+    <li>Shoulder articulation</li>
+    <li>Shoulder ligament</li>
+    <li>Sigmoid colon</li>
+    <li>Small bronchi mucosa</li>
+    <li>Small intestine</li>
+    <li>Smooth muscle</li>
+    <li>Solar plexus</li>
+    <li>Spinal cord</li>
+    <li>Spleen</li>
+    <li>Spongy bone</li>
+    <li>Stomach</li>
+    <li>Striated muscle</li>
+    <li>Submandibular gland</li>
+    <li>Sympathetic ganglia</li>
+    <li>Sympathetic nerve</li>
+    <li>Synovial fluid</li>
+  </ul>
+
+  <h3 class="headline">
+    <a id="T_SINGLE"></a>
+    T
+  </h3>
+  <ul>
+    <li>Tegument/Skin</li>
+    <li>Temporal lobe</li>
+    <li>Temporomandibular articulation</li>
+    <li>Tendon</li>
+    <li>Testis</li>
+    <li>Thalamus</li>
+    <li>Thoracic discs</li>
+    <li>Thoracic vertebrae</li>
+    <li>Thymus gland</li>
+    <li>Thyroid gland</li>
+    <li>Tongue</li>
+    <li>Tonsil</li>
+    <li>Tooth</li>
+    <li>Trachea</li>
+    <li>Transverse colon</li>
+    <li>Trigeminal nerve</li>
+    <li>Tympanic membrane</li>
+  </ul>
+
+  <h3 class="headline">
+    <a id="U_SINGLE"></a>
+    U
+  </h3>
+  <ul>
+    <li>Umbilical cord</li>
+    <li>Ureter</li>
+    <li>Urethral sphincter</li>
+    <li>Ureterovesical junction</li>
+    <li>Urethra</li>
+    <li>Uterus</li>
+  </ul>
+
+  <h3 id="V_SINGLE" class="headline">V</h3>
+
+  <ul>
+    <li>Vaginal mucosa</li>
+    <li>Vagus nerve</li>
+    <li>Vegetative ganglia</li>
+    <li>Vein</li>
+    <li>Vertabrae</li>
+    <li>Vertebral column ligament</li>
+    <li>Vertebral ligament</li>
+    <li>Vesical trigone</li>
+    <li>Vitreous humour</li>
+    <li>Vulva</li>
+  </ul>
+
+  <h3 id="W_SINGLE" class="headline">W</h3>
+  <ul style="list-style: none">
+    <li>White matter</li>
+  </ul>
+
+  <h3 id="Y_SINGLE" class="headline">Y</h3>
+  <ul style="list-style: none">
+    <li>Yellow bone marrow</li>
+  </ul>
+</section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

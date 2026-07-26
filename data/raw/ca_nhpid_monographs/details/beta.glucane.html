@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=beta.glucane\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="14e36606-db58-4f35-9482-b2625c1846da"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+        <h1>BETA-GLUCAN</h1>
+
+        <p class="lightgreyBG"> Help on accessing alternative formats, such as Portable Document Format
+            (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in
+            the <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.</p>
+
+        <div class="icon">
+            <a href="dbImages/mono_betaglucan_english.pdf" title="BETA-GLUCAN">
+                <img alt="Monograph: BETA-GLUCAN" style="position:relative; top:-2px"
+                    src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22" /> (PDF
+                Version - 137 KB)</a>
+        </div>
+
+        <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence
+            Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a
+            comprehensive review of the medicinal ingredient.</p>
+
+        <p><strong>Notes</strong></p>
+        <ul>
+            <li>Text in parentheses is additional optional information which can be included on the PLA and product
+                label at the applicant's discretion.</li>
+            <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may
+                be selected by the applicant.</li>
+        </ul>
+
+
+        <section aria-labelledby="date">
+            <h2 id="date">Date</h2>
+
+            <p>February 23, 2024</p>
+        </section>
+
+        <section aria-labelledby="properNameCommonNameSourceInformation">
+            <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+            <table class="subject">
+
+                <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col" rowspan="2">Proper name(s)</th>
+                        <th scope="col" rowspan="2">Common name(s)</th>
+                        <th scope="colgroup" rowspan="1" colspan="3">Source information</th>
+                    </tr>
+
+                    <tr>
+                        <th>Source material(s)</th>
+                        <th>Part(s)</th>
+                        <th>Preparation</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td rowspan="2">
+                            beta-Glucan
+                        </td>
+
+                        <td rowspan="1">
+                            <ul>
+                                <li> beta-Glucan </li>
+                                <li> beta-D-Glucan</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li> <i>Avena sativa</i> </li>
+                                <li> <i>Hordeum vulgare</i> </li>
+                            </ul>
+                        </td>
+                        <td rowspan="2">
+                            <ul>
+                                <li> Seed </li>
+                                <li>Seed bran</li>
+                            </ul>
+                        </td>
+                        <td rowspan="2">
+                            Isolate
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Oat beta-Glucan
+                        </td>
+                        <td>
+                            <i>Avena sativa</i>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <p>References: Proper name: Charlton et al. 2012; EFSA 2011a,b, 2010; Queenan et al. 2007; Braaten et al.
+                1994;
+                Uusitupa et al. 1992; Common names: Charlton et al. 2012; EFSA 2011a,b, 2010; Queenan et al. 2007;
+                Braaten
+                et al. 1994; Uusitupa et al. 1992; Source information: USDA 2023; Charlton et al. 2012; Queenan et al.
+                2007.
+            </p>
+        </section>
+
+        <section aria-labelledby="routeOfAdministration">
+            <h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+            <p>Oral</p>
+        </section>
+
+        <section aria-labelledby="dosageForm">
+            <h2 id="dosageForm">Dosage Form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs
+                Guidance
+                Document.
+            </p>
+            <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based
+                Product
+                Licence Application form for Compendial applications.</p>
+        </section>
+
+        <section aria-labelledby="useOrPurpose">
+            <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+
+            <ul>
+                <li>Helps reduce/lower LDL cholesterol (which is one risk factor for the development of coronary heart
+                    disease) (Charlton et al. 2012; EFSA 2011a,b,2010; AbuMweiss et al. 2010; HC 2010; Wolever et al.
+                    2010;
+                    Delahoy et al. 2009; Queenan et al. 2007; Wood 2007; Biorklund et al. 2005; NECP 2002; Brown et al.
+                    1999; Ripsin et al. 1992).</li>
+                <li>Helps reduce/lower bad cholesterol (which is one risk factor for the development of coronary heart
+                    disease) (Charlton et al. 2012; EFSA 2011a,b, 2010; AbuMweiss et al. 2010; HC 2010; Wolever et al.
+                    2010;
+                    Delahoy et al. 2009; Queenan et al. 2007; Wood 2007; Biorklund et al. 2005; NECP 2002; Brown et al.
+                    1999; Ripsin et al. 1992).</li>
+                <li>Provides support for healthy (postprandial) glucose metabolism (within two hours after a meal) (EFSA
+                    2011a,b; Ulmius et al. 2011; Granfeldt et al. 2008; Panahi et al. 2007; Biorklund et al. 2005; Kabir
+                    et
+                    al. 2002).</li>
+                <li>Helps improve (postprandial) glucose metabolism (within two hours after a meal) (EFSA 2011a,b;
+                    Ulmius et
+                    al 2011; Granfeldt et al. 2008; Panahi et al. 2007; Biorklund et al. 2005; Kabir et al. 2002).</li>
+                <li>Source of fiber for the maintenance of good health (CFIA 2022; IOM 2005).</li>
+                <li>Helps support and maintain a healthy digestive system (CFIA 2022; IOM 2005).</li>
+            </ul>
+            <p><strong>Note:</strong> The above uses can be combined on the product label (e.g., Helps reduce/lower bad
+                cholesterol and improve glucose metabolism).</p>
+        </section>
+
+        <section aria-labelledby="dose">
+            <h2 id="dose">Dose(s)</h2>
+
+            <h3>Subpopulation(s)</h3>
+            <p>Adults 18 years and older </p>
+
+
+            <h3>Quantity(ies)</h3>
+            <p>2 - 10 grams of beta-Glucan, per day (Charlton et al. 2011; EFSA 2011a,b, 2010; AbuMweiss et al. 2010;
+                Queenan et al. 2007; IOM 2005; Johnston et al. 1998; Braaten et al. 1994; Torronen et al. 1992; Uusitupa
+                et
+                al. 1992).</p>
+
+            <h3>Direction(s) for use</h3>
+            <p>No statement required.</p>
+        </section>
+
+        <section aria-labelledby="durationOfUse">
+            <h2 id="durationOfUse">Duration(s) of Use</h2>
+            <p>No statement required.</p>
+        </section>
+
+        <section aria-labelledby="riskInformation">
+            <h2 id="riskInformation">Risk Information</h2>
+
+            <h3>Caution(s) and warning(s)</h3>
+
+            <p>No statement required.</p>
+
+            <h3>Contraindication(s)</h3>
+
+            <p>No statement required.</p>
+
+            <h3>Known adverse reaction(s)</h3>
+
+            <p>No statement required.</p>
+        </section>
+
+        <section aria-labelledby="nonMedicinalIngredients">
+            <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+                limitations outlined in the database.
+            </p>
+        </section>
+
+        <section aria-labelledby="storageConditions">
+            <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+                    Regulations.</em>
+            </p>
+        </section>
+
+        <section aria-labelledby="specifications">
+            <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements
+                    described in
+                    the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health
+                    Products
+                    Guide.
+                </li>
+                <li> The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="exampleOfProductFacts">
+            <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+            <p>Consult the Guidance Document, <a
+                    href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+                    Labelling of Natural Health Products</a> for more details.</p>
+            <p class="alignCenter">
+                <img src="/nhpid-bdipsn/dbImages/Beta-Glucan_E.gif" alt="Product Facts Table" style="width:700px" />
+            </p>
+        </section>
+
+        <section aria-labelledby="referencesCited">
+            <h2 id="referencesCited">References Cited</h2>
+            <ul>
+                <li>AbuMweis SS, Jew S, Ames NP. Beta-glucan from barley and its lipid lowering capacity: a
+                    meta-analysis of
+                    randomized, controlled trials. European Journal of Clinical Nutrition 2010;64:1472-1480.</li>
+
+                <li>Biorklund M, van Rees A, Mensink RP, Onning G. Changes in serum lipids and postprandial glucose and
+                    insulin concentrations after consumption of beverages with beta-glucans from oats or barley: a
+                    randomised dose-controlled trial. European Journal of Clinical Nutrition 2005;59(11):1272-1281.</li>
+
+                <li>Braaten JT, Wood PJ, Scott FW, Wolynetz MS, Lowe MK, Bradley-White P, Collins MW. Oat beta-glucan
+                    reduces blood cholesterol concentration in hypercholesterolemic subjects. European Journal of
+                    Clinical
+                    Nutrition 1994;48(7):465-474.</li>
+
+                <li>Brown L, Rosner B, Willett WW, Sacks FM. Cholesterol-lowering effects of dietary fiber: a
+                    meta-analysis.
+                    American Journal of Clinical Nutrition 1999;69(1):30-42.</li>
+
+                <li>CFIA 2022: Canadian Food Inspection Agency, Food Labelling for Industry [Accessed 2024 February 5].
+                    Available from: http://www.inspection.gc.ca/english/fssa/labeti/guide/ch6ae.shtml</li>
+
+                <li>Chapter 6: The Elements Within the Nutrition Facts Table Section 6.8.1 Dietary Fibre. [Accessed 2019
+                    May
+                    13]. Available from: http://www.inspection.gc.ca/english/fssa/labeti/guide/ch6ae.shtml</li>
+
+                <li>Charlton KE, Tapsell LC, Batterham MJ, O'Shea J, Thorne R, Beck E, Tosh SM. Effect of 6 weeks'
+                    consumption of ?-glucan-rich oat products on cholesterol levels in mildly hypercholesterolaemic
+                    overweight adults. British Journal of Nutrition 2012;107:1037-1047.</li>
+
+                <li>Delahoy PJ, Magliano DJ, Webb K, Grobler M, Liew D. The relationship between reduction in
+                    low-density
+                    lipoprotein cholesterol by statins and reduction in risk of cardiovascular outcomes: an updated
+                    meta-analysis. Clinical Therapeutics 2009;31(2):236-244.</li>
+
+                <li>EFSA 2010: Scientific Opinion: Scientific Opinion on the substantiation of a health claim related to
+                    oat
+                    beta-glucans and lowering blood cholesterol and reduced risk of (coronary) heart disease pursuant to
+                    Article 14 of Regulation (EC) No 1924/2006. EFSA Panel on Dietetic Products, Nutrition and Allergies
+                    (NDA), European Food Safety Authority (EFSA), Parma, Italy. [Accessed 2024 February 5]. Available
+                    from:
+                    http://www.efsa.europa.eu/en/efsajournal/doc/1885.pdf</li>
+
+                <li>EFSA 2011a: Scientific Opinion: Scientific Opinion on the substantiation of health claims related to
+                    beta-glucans from oats and barley and maintenance of normal blood LDL-cholesterol concentrations (ID
+                    1236, 1299), increase in satiety leading to a reduction in energy intake (ID 851, 852), reduction of
+                    post-prandial glycaemic responses (ID 821, 824), and ‘digestive function’ (ID 850) pursuant to
+                    Article
+                    13(1) of Regulation (EC) No 1924/2006. EFSA Panel on Dietetic Products, Nutrition and Allergies
+                    (NDA),
+                    European Food Safety Authority (EFSA), Parma, Italy. [Accessed 2024 February 5]. Available from:
+                    http://www.efsa.europa.eu/en/efsajournal/doc/2207.pdf</li>
+
+                <li>EFSA 2011b: Scientific Opinion: Scientific Opinion on the substantiation of a health claim related
+                    to
+                    barley beta-glucans and lowering of blood cholesterol and reduced risk of (coronary) heart disease
+                    pursuant to Article 14 or Regulation (EC) No 1924/2006. EFSA Panel on Dietetic Products, Nutrition
+                    and
+                    Allergies (DNA), European Food Safety Authority (EFSA), Parma, Italy. [Accessed 2024 February 5].
+                    Available from: http://www.efsa.europa.eu/en/efsajournal/doc/2471.pdf</li>
+
+                <li>Granfeldt Y, Nyberg L, Bjorck I. Muesli with 4 g oat beta-glucans lowers glucose and insulin
+                    responses
+                    after a bread meal in healthy subjects. European Journal of Clinical Nutrition 2008;62(5):600-607.
+                </li>
+
+                <li>HC 2010. Oat Products and Blood Cholesterol Lowering; Summary of Assessment of a Health Claim about
+                    Oat
+                    Products and Blood Cholesterol Lowering. [Accessed 2024 February 5]. Available from:
+                    http://www.hc-sc.gc.ca/fn-an/label-etiquet/claims-reclam/assess-evalu/oat-avoine-eng.php</li>
+
+                <li>IOM 2005: Institute of Medicine of the National Academies. Dietary Reference Intakes for Energy,
+                    Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Food and Nutrition
+                    Board.
+                    [Accessed 2024 February 5]. Available from: http://www.nap.edu/openbook.php?record_id=10490&page=680
+                </li>
+
+                <li>Johnston LRH, Hunninghake DB, Schultz K, Westereng B. Cholesterol-lowering benefits of a whole grain
+                    oat
+                    ready to eat cereal. Nutrition in Clinical Care 1998;1(1):6-12.</li>
+
+                <li>Kabir M, Oppert JM, Vidal H, Bruzzo F, Fiquet C, Wursch P, Slama G, Rizkalla SW. Four-week
+                    low-glycemic
+                    index breakfast with a modest amount of soluble fibers in type 2 diabetic men.</li>
+                <li>Metabolism 2002;51(7):819-826.</li>
+
+                <li>Kestin M, Moss R, Clifton PM, Nestel PJ. Comparative effects of three cereal brans on plasma lipids,
+                    blood pressure, and glucose metabolism in mildly hypercholesterolemic men. American Journal of
+                    Clinical
+                    Nutrition 1990;52:661-666.</li>
+
+                <li>NECP 2002: Expert Panel on Detection, Evaluation, and Treatment of High Blood Cholesterol in Adults.
+                    Third report of the National Cholesterol Education Program (NCEP) expert panel on detection,
+                    evaluation,
+                    and treatment of high blood cholesterol in adults (Adult Treatment Panel III): final report.
+                    Circulation
+                    2002;106:3143-3421. [Accessed 2024 February 5]. Available from:
+                    http://circ.ahajournals.org/content/106/25/3143.full.pdf</li>
+
+                <li>Panahi S, Ezatagha A, Temelli F, Vasanthan T, Vuksan V. Beta-glucan from two sources of oat
+                    concentrates
+                    affect postprandial glycemia in relation to the level of viscosity. Journal of the American College
+                    of
+                    Nutrition 2007;26(6):639-644.</li>
+
+                <li>Queenan KM, Stewart ML, Smith KN, Thomas W, Fulcher RG, Slavin JL. Concentrated oat ?- glucan, a
+                    fermentable fiber, lowers serum cholesterol in hypercholesterolemic adults in a randomized
+                    controlled
+                    trial. Nutrition Journal 2007;6:1-8.</li>
+
+                <li>Ripsin CM, Keenan JM, Jacobs DR Jr, Elmer PJ, Welch RR, Van Horn L, Liu K, Turnbull WH, Thye FW,
+                    Kestin
+                    M, Hegsted M, Davidson DM, Davidson MH, Dugan LD, Wahnefried WD, Beling S. Oat products and lipid
+                    lowering. A meta-analysis. Journal of the American Medical Association 1992;267(24):3317-3325.</li>
+
+                <li>Torronen R, Kansanen L, Uusitupa M, Hanninen O, Myllymaki O, Harkonen H, Malkki Y. Effects of an oat
+                    bran concentrate on serum lipids in free-living men with mild to moderate hypercholesterolaemia.
+                    European Journal of Clinical Nutrition 1992;46(9):621-627.</li>
+
+                <li>Ulmius M, Persson AJ, Krogh M, Olsson P, Onning G. An oat bran meal influences blood insulin levels
+                    and
+                    related gene sets in peripheral blood mononuclear cells of healthy subjects. Genes & Nutrition
+                    2011;6(4):429-439.</li>
+
+                <li>USDA 2023a: United States Department of Agriculture Agricultural Research Service (USDA ARS),
+                    Germplasm
+                    Resources Information Network (GRIN) – Global. U.S. National Plant Germplasm System. [Accessed 2024
+                    February 5]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+
+                <li>USDA 2023b: United States Department of Agriculture Agricultural Research Service (USDA ARS),
+                    Germplasm
+                    Resources Information Network (GRIN) – Global. U.S. National Plant Germplasm System. [Accessed 2024
+                    February 5]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+
+                <li>Uusitupa MI, Ruuskanen E, Makinen E, Laitinen J, Toskala E, Kervinen K, Kesaniemi YA. A controlled
+                    study
+                    on the effect of beta-glucan-rich oat bran on serum lipids in hypercholesterolemic subjects:
+                    relation to
+                    apolipoprotein E phenotype. Journal of American College of Nutrition 1992;11(6):651-659.</li>
+
+                <li>Wolever TMS, Tosh SM, Gibbs AL, Brand-Miller J, Duncan AM, Hart V, Lamarche B, Thomson BA, Duss R,
+                    Wood
+                    PJ. Physicochemical properties of oat ?-glucan influence its ability to reduce serum LDL cholesterol
+                    in
+                    humans: a randomized clinical trial. American Journal of Clinical Nutrition 2010;92(4):723-732.</li>
+
+                <li>Wood P. Cereal ?-glucans in diet and health. Journal of Cereal Science 2007;46(3):230-238.</li>
+            </ul>
+        </section>
+
+
+        <section aria-labelledby="referencesReviewed">
+            <h2 id="referencesReviewed">References Reviewed</h2>
+            <ul>
+                <li>Amundsen AL, Haugum B, Anderson H. Changes in serum cholesterol and sterol metabolites after intake
+                    of
+                    products enriched with an oat bran concentrate within a controlled diet.</li>
+                <li>Scandinavian Journal of Nutrition 2003;47(2):68-74.</li>
+
+                <li>Anceau CC, Nazare JA, Biorklund M, Le Coquil E, Sassolas A, Sothier M, Holm J, Landin- Olsson M,
+                    Onning
+                    G, Laville M, Moulin P. A controlled study of consumption of beta-glucan- enriched soups for 2
+                    months by
+                    type 2 diabetic free-living subjects. British Journal of Nutrition 2010;103(3):422-428.</li>
+
+                <li>Babineau TJ, Hackford A, Kenler A, Bistrian B, Forse RA, Fairchild PG, Heard S, Keroack M, Caushaj
+                    P,
+                    Benotti P. A phase II multicenter, double-blind, randomized, placebo-controlled study of three
+                    dosages
+                    of an immunomodulator (PGG-glucan) in high-risk surgical patients. Archives of Surgery
+                    1994;129(11):1204-1210.</li>
+
+                <li>Babineau TJ, Marcello P, Swails W, Kenler A, Bistrian B, Forse RA. Randomized phase I/II trial of a
+                    macrophage-specific immunomodulator (PGG-glucan) in high-risk surgical patients. Annals of Surgery
+                    1994;220: 601-609.</li>
+
+                <li>Bays H, Frestedt JL, Bell M, Williams C, Kolberg L, Schmelzer W, Anderson JW. Reduced viscosity
+                    Barley
+                    ?-Glucan versus placebo: a randomized controlled trial of the effects on insulin</li>
+
+                <li>sensitivity for individuals at risk for diabetes mellitus. Nutrition Metabolism (London)
+                    2011;16:8:58.
+                </li>
+
+                <li>Beck EJ, Tapsell LC, Batterham MJ, Tosh SM, Huang XF. Oat beta-glucan supplementation does not
+                    enhance
+                    the effectiveness of an energy-restricted diet in overweight women. British Journal of Nutrition
+                    2010;103(8):1212-1222.</li>
+
+                <li>Beer MU, Arrigoni E, Amado R. Effects of oat gum on blood cholesterol levels in healthy young men.
+                    European Journal of Clinical Nutrition 1995;49(7):517-522.</li>
+
+                <li>Bremer JM, Scott RS, Lintott CJ. Oat bran and cholesterol reduction: evidence against specific
+                    effect.
+                    Australian and New Zealand journal of medicine 1991;21(4):422-426.</li>
+
+                <li>Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical
+                    Publications; 2010.</li>
+
+                <li>Brown GD, Herre J, Williams DL, Willment JA, Marshall AS, Gordon S. Dectin-1 mediates the biological
+                    effects of beta-glucans. The Journal of experimental medicine 2003;197(9):1119- 1124.</li>
+
+                <li>Brown GD. Dectin-1: a signalling non-TLR pattern-recognition receptor. Nature Reviews Immunology
+                    2006;6(1):33-43.</li>
+
+                <li>Chen J, He J, Wildman RP, Reynolds K, Streiffer RH, Whelton PK. A randomized controlled trial of
+                    dietary
+                    fiber intake on serum lipids. European Journal of Clinical Nutrition 2006;60(1):62-68.</li>
+
+                <li>Chen J, Seviour R. Medicinal importance of fungal beta-(1-->3), (1-->6)-glucans. Mycology Research
+                    2007;111(6):635-652.</li>
+
+                <li>Dais P, Perlin AS. High field, 13C-NMR spectroscopy of ?-D-glucans, amylopectin and glycogen.
+                    Carbohydrate Research 1982;100(1):103-116.</li>
+
+                <li>Davy BM, Melby CL, Beske SD, Ho RC, Davrath LR, Davy KP. Oat consumption does not affect resting
+                    casual
+                    and ambulatory 24-h arterial blood pressure in men with high-normal blood pressure to stage I
+                    hypertension. The Journal of Nutrition 2002;132(3):394-398.</li>
+
+                <li>Demir G, Klein HO, Molinas MN, Tuzuner N. Beta glucan induces proliferation and activation of
+                    monocytes
+                    in peripheral blood of patients with advanced breast cancer. International Immunopharmacology
+                    2007;7(1):113-116.</li>
+
+                <li>Estrada A, Yun CH, Van Kessel A, Li B, Hauta S, Laarveld B. Immunomodulatory activities of oat
+                    beta-glucan in vitro and in vivo. Microbiology and Immunology 1997;41(12):991-998.</li>
+
+                <li>Felippe DJ, Rocha DESM, Maciel FM, Ade SM, Mendes NF. Infection prevention in patients with severe
+                    multiple trauma with the immunomodulator beta 1-3 polyglucose (glucan). Surgery, gynecology &
+                    obstetrics
+                    1993;177(4):383-388.</li>
+
+                <li>Frank J, Sundberg B, Eldin KA, Vessby B, Aman P. Yeast leavened oat breads with high or low
+                    molecular
+                    weight betaglucan do not differ in their effects on blood concentrations of lipids, insulin, or
+                    glucose
+                    in humans. Journal of Nutrition 2004;134(6):1384-1388.</li>
+
+                <li>Gantner BN, Simmons RM, Canavera SJ, Akira S, Underhill DM. Collaborative induction of inflammatory
+                    responses by dectin-1 and Toll-like receptor 2. The Journal of experimental medicine
+                    2003;197(9):1107-1117.</li>
+
+                <li>Gao Y, Zhou SH, Chen G, Dai X, Ye J. A phase I/II study of a Ganoderma lucidum (Curt.: Fr.)</li>
+                <li>P. Karst. Extract (ganopoly) in patients with advanced cancer. International Journal of Medicinal
+                    Mushrooms 2002;4(3):207-214.</li>
+
+                <li>Gerhardt AL, Gallo NB. Full-fat rice bran and oat bran similarly reduce hypercholesterolemia in
+                    humans.
+                    Journal of Nutrition 1998;128(5):865-869.</li>
+
+                <li>Goodridge HS, Simmons RM, Underhill DM. Dectin-1 stimulation by Candida albicans yeast or zymosan
+                    triggers NFAT activation in macrophages and dendritic cells. Journal of Immunology
+                    2007;178(5):3107-3115.</li>
+
+                <li>Gordon M, Guralnik M, Kaneko Y, Mimura T, Goodgame J, DeMarzo C, Pierce D, Baker M, Lang W. A phase
+                    II
+                    controlled study of a combination of the immune modulator, lentinan, with didanosine (ddI) in HIV
+                    patients with CD4 cells of 200-500/mm3. Journal of Medicine 1995;26(5-6):193-207.</li>
+
+                <li>Gross O, Gewies A, Finger K, Schafer M, Sparwasser T, Peschel C, Forster I, Ruland J. Card9 controls
+                    a
+                    non-TLR signalling pathway for innate anti-fungal immunity. Nature 2006, 442(7103):651-656.</li>
+
+                <li>Hamano K, Gohra H, Katoh T, Fujimura Y, Zempo N, Esato K. The preoperative administration of
+                    lentinan
+                    ameliorated the impairment of natural killer activity after cardiopulmonary bypass.</li>
+                <li>International Journal of Immunopharmacology 1999;21(8):531-540.</li>
+
+                <li>Hayakawa K, Mitsuhashi N, Saito Y, Takahashi M, Katano S, Shiojima K, Furuta M, Niibe H. Effect of
+                    Krestin (PSK) as adjuvant treatment on the prognosis after radical radiotherapy in patients with
+                    non-small cell lung cancer. Anticancer Research 1993;13:1815-1820.</li>
+
+                <li>Herre J, Gordon S, Brown GD. Dectin-1 and its role in the recognition of beta-glucans by
+                    macrophages.
+                    Molecular immunology 2004;40(12):869-876.</li>
+                <li>Herre J, Marshall AS, Caron E, Edwards AD, Williams DL, Schweighoffer E, Tybulewicz V, Reis e Sousa
+                    C,
+                    Gordon S, Brown GD. Dectin-1 uses novel mechanisms for yeast phagocytosis in macrophages. Blood
+                    2004;104(13):4038-4045.</li>
+
+                <li>Jenkins AL, Jenkins DJA, Zdravkovic U, Würsch P, Vuksan V. Depression of the glycemic index by high
+                    levels of ?-glucan fiber in two functional foods tested in type 2 diabetes. European Journal of
+                    Clinical
+                    Nutrition 2002;56(7):622-628.</li>
+
+                <li>Juntunen KS, Niskanen LK, Liukkonen KH, Poutanen KS, Holst JJ, Mykkanen HM. Postprandial glucose,
+                    insulin, and incretin responses to grain products in healthy subjects. American Journal of Clinical
+                    Nutrition 2002;75(2):254-262.</li>
+
+                <li>Karmally W, Montez MG, Palmas W, Martinez W, Branstetter A, Ramakrishnan R, Holleran SF, Haffner SM,
+                    Ginsberg HN. Cholesterol-lowering benefits of oat-containing cereal in Hispanic Americans. Journal
+                    of
+                    American Dietetic Association 2005;105(6):967-970.</li>
+
+                <li>Keenan JM, Goulson M, Shamliyan T, Knutson N, Kolberg L, Curry L. The effects of concentrated barley
+                    beta-glucan on blood lipids in a population of hypercholesterolaemic men and women. British Journal
+                    of
+                    Nutrition 2007;97(6):1162-1168.</li>
+
+                <li>Keenan JM, Pins JJ, Frazel C, Moran A, Turnquist L. Oat ingestion reduces systolic and diastolic
+                    blood
+                    pressure in patients with mild or borderline hypertension: a pilot trial. The Journal of Family
+                    Practice
+                    2002;51(4):369.</li>
+
+                <li>Kempen HJ, Glatz JF, Gevers Leuven JA, van der Voort HA, Katan MB. Serum lathosterol concentration
+                    is an
+                    indicator of whole-body cholesterol synthesis in humans. Journal of Lipid Research
+                    1988;29(9):1149-1155.
+                </li>
+
+                <li>Kerckhoffs DA, Hornstra G, Mensink RP. Cholesterol-lowering effect of beta-glucan from oat bran in
+                    mildly hypercholesterolemic subjects may decrease when beta-glucan is incorporated into bread and
+                    cookies. American Journal of Clinical Nutrition 2003;78(2):221-227.</li>
+
+                <li>Knudsen KE, Jensen BB, Hansen I. Digestion of polysaccharides and other major components in the
+                    small
+                    and large intestine of pigs fed on diets consisting of oat fractions rich in beta-Dglucan. British
+                    Journal of Nutrition 1993;70(2):537-556.</li>
+
+                <li>Leadbetter J, Ball MJ, Mann JI. Effects of increasing quantities of oat bran in hypercholesterolemic
+                    people. American Journal of Clinical Nutrition 1991;54(5):841-845.</li>
+
+                <li>Lei LS, Lin ZB. Effects of ganoderma polysaccharides on T cell subpopulations and production of
+                    interleukin-2 in mixed lymphocytes response. Yao Hsueh Hsueh Pao 1992;27(5):331-335.</li>
+
+                <li>Li B, Cai Y, Qi C, Hansen R, Ding C, Mitchell TC, Yan J. Orally Administered Particular ?- Glucan
+                    Modulates Tumor-capturing Dendritic Cells and Improves Anti-tumor T Cell Responses in Cancer.
+                    Clinical
+                    Cancer Research 2010;16(21):5153-5164.</li>
+
+                <li>Liao ML, Zhao JM. The II stage clinical tests of PSP in the treatment of lung cancer, in: Yang QY,
+                    Kwok
+                    CY(eds.), Proceedings of PSP International Symposium. Shanghai, China: Fudan University Press,
+                    1993;243-256.</li>
+
+                <li>Liatis S, Tsapogas P, Chala E, Dimosthenopoulos C, Kyriakopoulos K, Kapantais E, Katsilambros N. The
+                    consumption of bread enriched with betaglucan reduces LDL-cholesterol and improves insulin
+                    resistance in
+                    patients with type 2 diabetes. Diabetes & Metabolism 2009;35(2):115-120.</li>
+
+                <li>Lin YL, Liang YC, Lee SS, Chiang BL. Polysaccharide purified from Ganoderma lucidum induced
+                    activation
+                    and maturation of human monocyte-derived dendritic cells by the NF-kappaB and p38 mitogen-activated
+                    protein kinase pathways. Journal of Leukocyte Biology 2005;78(2):533-543.</li>
+
+                <li>Lovegrove JA, Clohessy A, Milon H, Williams CM. Modest doses of beta-glucan do not reduce
+                    concentrations
+                    of potentially atherogenic lipoproteins. American Journal of Clinical Nutrition 2000;72(1):49-55.
+                </li>
+
+                <li>Maki KC, Galant R, Samuel P, Tesser J, Witchger MS, Ribaya-Mercado JD, Blumberg JB, Geohas J.
+                    Effects of
+                    consuming foods containing oat beta-glucan on blood pressure, carbohydrate metabolism and biomarkers
+                    of
+                    oxidative stress in men and women with elevated blood pressure. European Journal of Clinical
+                    Nutrition
+                    2007;61(6):786-795.</li>
+
+                <li>Maki KC, Shinnick F, Seeley MA, Veith PE, Quinn LC, Hallissey PJ, Temer A, Davidson MH. Food
+                    products
+                    containing free tall oil-based phytosterols and oat beta-glucan lower serum total and LDL
+                    cholesterol in
+                    hypercholesterolemic adults. Journal of Nutrition 2003;133(3):808-813.</li>
+
+                <li>Morimoto T, Ogawa M, Orita K, Sugimachi K, Toge T, Dohi K, Nomura Y, Monden Y, Ogawa</li>
+                <li>N. Postoperative adjuvant randomized trial comparing chemoendocrine therapy, chemotherapy and
+                    immunotherapy for patients with stage II breast cancer: 5-year results from the Nishinihon
+                    Cooperative
+                    Study Group of Adjuvant Chemoendocrine Therapy for Breast Cancer (ACETBC) of Japan. European Journal
+                    of
+                    Cancer 1996;32A(2):235-242.</li>
+
+                <li>Nakazato H, Koike A, Saji S, Ogawa N, Sakamoto J. Efficacy of immunochemotherapy as adjuvant
+                    treatment
+                    after curative resection of gastric cancer. Study Group of Immunochemotherapy with PSK for Gastric
+                    Cancer. Lancet 1994;343(8906):1122-1126.</li>
+
+                <li>Naumann E, van Rees AB, Onning G, Oste R, Wydra M, Mensink RP. Beta-glucan incorporated into a fruit
+                    drink effectively lowers serum LDL-cholesterol concentrations. American Journal of Clinical
+                    Nutrition
+                    2006;83(3):601-605.</li>
+
+                <li>Ohno N, Terui T, Chiba N, Kurachi K, Adachi Y, Yadomae T. Resistance of highly branched (1-</li>
+                <li>->3)-beta-D-glucans to formolysis. Chemical & Pharmaceutical Bulletin (Tokyo) 1995;43(6):1057-1060.
+                </li>
+
+                <li>Onning G, Wallmark A, Persson M, Akesson B, Elmstahl S, Oste R. Consumption of oat milk for 5 weeks
+                    lowers serum cholesterol and LDL cholesterol in free-living men with moderate hypercholesterolemia.
+                    Annals of Nutrition & Metabolism 1999;43(5):301-309.</li>
+
+                <li>Othman RA, Moghadasian MH, Jones PJH. Cholesterol-lowering effects of oat b-glucan. Nutrition
+                    Reviews
+                    2011;69(6):299-309.</li>
+                <li>Parrish FW, Perlin AS, Reese ET. Selective enzymolysis of polyb-D-glucan and structure of the
+                    polymers.
+                    Canadian Journal of Chemistry 1960;38(11):2094-2104.</li>
+
+                <li>Pick ME, Hawrysh ZJ, Gee MI, Toth E, Garg ML, Hardin RT. Oat bran concentrate bread products improve
+                    long-term control of diabetes: a pilot study. Journal of the American Dietetic Association
+                    1996;96(12):1254-1261.</li>
+
+                <li>Ramakers JD, Volman JJ, Biorklund M, Onning G, Mensink RP, Plat J. Fecal water from ileostomic
+                    patients
+                    consuming oat beta-glucan enhances immune responses in enterocytes. Molecular Nutrition and Food
+                    Research 2007;51(2):211-220.</li>
+
+                <li>Reyna NY, Cano C, Bermudez VJ, Medina MT, Souki AJ, Ambard M, Nunez M, Ferrer MA, Inglett GE.
+                    Sweeteners
+                    and beta-glucans improve metabolic and anthropometrics variables in well controlled type 2 diabetic
+                    patients. American Journal of Therapeutics 2003;10(6):438-443.</li>
+
+                <li>Rogers NC, Slack EC, Edwards AD, Nolte MA, Schulz O, Schweighoffer E, Williams DL, Gordon S,
+                    Tybulewicz
+                    VL, Brown GD, Reis e Sousa C. Syk-dependent cytokine induction by Dectin-1 reveals a novel pattern
+                    recognition pathway for C type lectins. Immunity 2005;22(4):507-517.</li>
+
+                <li>Ruxton CHS and Derbyshire E. A systematic review of the association between cardiovascular risk
+                    factors
+                    and regular consumption of oats. British Food Journal 2008;110(11):1119-1132.</li>
+
+                <li>Schorey JS, Lawrence C. The pattern recognition receptor Dectin-1: from fungi to mycobacteria.
+                    Current
+                    Drug Targets 2008;9(2):123-129.</li>
+
+                <li>Shi JH, ChenT, Lian ZR. The clinical research of the effect 4of PSP on the immunological function of
+                    stomach cancer patients during operation and chemotherapy, in: Yang QY, Kwok CY (eds.), Proceedings
+                    of
+                    PSP International Symposium. Shanghai, China: Fudan University Press, 1993;232-240.</li>
+
+                <li>Smith KN, Queenan KM, Thomas W, Fulcher RG, Slavin JL. Physiological effects of concentrated barley
+                    beta-glucan in mildly hypercholesterolemic adults. Journal of American College of Nutrition
+                    2008;27(3):434-40.</li>
+
+                <li>Sun L, Zhao Y. The biological role of dectin-1 in immune response. International reviews of
+                    immunology
+                    2007;26(5-6):349-364.</li>
+
+                <li>Suto M, Fukuda S, Moriya N, Watanabe W, Sasaki D, Yoshida Y. Clinical study of biological response
+                    modifiers as maintenance therapy for hepatocellular carcinoma. Cancer Chemotherapy Pharmacology
+                    1994;33(Suppl.),S145-S148.</li>
+
+                <li>Taylor PR, Brown GD, Herre J, Williams DL, Willment JA, Gordon S. The role of SIGNR1 and the
+                    beta-glucan
+                    receptor (dectin-1) in the nonopsonic recognition of yeast by specific macrophages. Journal of
+                    Immunology 2004;172(2):1157-1162.</li>
+
+                <li>Taylor PR, Brown GD, Reid DM, Willment JA, Martinez-Pomares L, Gordon S, Wong SY. The beta-glucan
+                    receptor, dectin-1, is predominantly expressed on the surface of cells of the monocyte/macrophage
+                    and
+                    neutrophil lineages. Journal of Immunology 2002;169(7):3876-3882.</li>
+
+                <li>Theuwissen E, Mensink RP. Simultaneous intake of beta-glucan and plant stanol esters affects lipid
+                    metabolism in slightly hypercholesterolemic subjects. Journal of Nutrition 2007;137(3):583-588.</li>
+
+                <li>Toi M, HattoriT, Akagi M, Inokuchi K, Orita K, Sugimachi K, Dohi K, NomuraY, MondenY, HamadaY,
+                    MorimotoT, Ogawa N. Randomized adjuvant trial to evaluate the addition of tamoxifen and PSK to
+                    chemotherapy in patients with primary breast cancer. Cancer 1992;70(10):2475-2483.</li>
+
+                <li>Van Horn L, Liu K, Gerber J, et al. Oats and soy in lipidlowering diets for women with
+                    hypercholesterolemia: is there synergy? Journal of the American Dietetic Association
+                    2001;101(11):1319-1325.</li>
+
+                <li>Vasanthan T, Temelli F, Beta-glucan isolation/concentration technologies and their impact on
+                    molecular
+                    structure and functionality. Department of Agricultural, Food and Nutritional Science, University of
+                    Alberta, Edmonton, AB, Canada. In: The Future of Barley. Cereal Foods World 2005;50(5):271-277.</li>
+
+                <li>Volman JJ, Mensink RP, Buurman WA, Plat J. In vivo effects of dietary (1?3), (1?4)-?-D- glucans from
+                    oat
+                    on mucosal immune responses in man and mice. Scandinavian Journal of Gastroenterology
+                    2011;46(5):603-610.</li>
+
+                <li>Volman JJ, Mensink RP, Ramakers JD, de Winther MP, Carlsen H, Blomhoff R, Buurman WA, Plat J.
+                    Dietary
+                    (1-->3), (1-->4)-beta-D-glucans from oat activate nuclear factor-kappaB in intestinal leukocytes and
+                    enterocytes from mice. Nutrition Research 2010;30(1):40-48.</li>
+
+                <li>Vos A, M'Rabet L, Stahl B, Boehm G, Garssen J. Immune-modulatory effects and potential working
+                    mechanisms of orally applied nondigestible carbohydrates. Critical Reviews in Immunology
+                    2007;27(2):97-140.</li>
+
+                <li>Wang H, Weening D, Jonkers E, Boer T, Stellaard F, Small AC, Preston T, Vonk RJ, Priebe MG. A curve
+                    fitting approach to estimate the extent of fermentation of indigestible carbohydrates. European
+                    Journal
+                    of Clinical Investigation 2008;38(11):863-868.</li>
+
+                <li>Wang SY, Hsu ML, Hsu HC, Tzeng CH, Lee SS, Shiao MS, Ho CK. The anti-tumor effect of Ganoderma
+                    lucidum
+                    is mediated by cytokines released from activated macrophages and T lymphocytes. International
+                    Journal of
+                    Cancer 1997;70(6):699-705.</li>
+
+                <li>Wolever TMS, Gibbs AL, Miller JB, Duncan AM, Hart V, Lamarche B, Tosh SM, Duss R. Bioactive oat
+                    ?-glucan
+                    reduces LDL cholesterol in Caucasians and non-Caucasians. Nutrition Journal 2011;10:130.</li>
+
+                <li>Wood PJ. Oat ?-glucan physicochemical properties and physiological effects. Trends in Food Science &
+                    Technology 1991;2:311-314.</li>
+
+                <li>Wood PJ. Evaluation of oat bran as a soluble fibre source. Characterization of oat ?-glucan and its
+                    effects on glycaemic response. Carbohydrate Polymers 1994;25(4):331-336.</li>
+
+                <li>Wu Z, Ming J, Gao R, Wang Y, Liang Q, Yu H, Zhao G. Characterization and antioxidant activity of the
+                    complex of tea polyphenols and oat ?-glucan. Journal of Agricultural and Food Chemistry
+                    2011;59(19):10737-10746.</li>
+
+                <li>Xie SQ. The effect of PSP on red cell immunity: a clinical study on gastric cancer patients, in:
+                    Yang
+                    QY, Kwok CY (eds.), Proceedings of PSP International Symposium. Shanghai, China: Fudan University
+                    Press,
+                    1993;241-242.</li>
+
+                <li>Yatawara L, Wickramasinghe S, Nagataki M, Takamoto M, Nomura H, Ikeue Y, Watanabe Y, Agatsuma T.
+                    Aureobasidium-Derived Soluble Branched (1,3-1,6) ?-Glucan (Sophy ?-glucan) Enhances Natural Killer
+                    Activity in Leishmania amazonensis-Infected Mice. Korean Journal of Parasitology 2009;47(4):345-351.
+                </li>
+
+                <li>Yun CH, Estrada A, Van Kessel A, Gajadhar A, Redmond M, Laarveld B. Immunomodulatory effects of oat
+                    beta-glucan administered intragastrically or parenterally on mice infected with Eimeria vermiformis.
+                    Microbiology and Immunology 1998;42(6):457-465.</li>
+
+                <li>Yun CH, Estrada A, Van Kessel A, Gajadhar AA, Redmond MJ, Laarveld B. beta-(1-->3, 1-->4) oat glucan
+                    enhances resistance to Eimeria vermiformis infection in immunosuppressed mice.</li>
+                <li>International Journal for Parasitology 1997;27(3):329-337.</li>
+
+                <li>Yun CH, Estrada A, Van Kessel A, Park BC, Laarveld B. Beta-glucan, extracted from oat, enhances
+                    disease
+                    resistance against bacterial and parasitic infections. FEMS Immunology and Medical Microbiology
+                    2003;35(1):67-75.</li>
+
+                <li>Zhang LX, Mong H, Zhou HB. Effect of Japanese Ganoderma lucidum on production of interleukin-2 from
+                    murine splenocytes. Chinese journal of integrated traditional and Western medicine
+                    1993;13(10):613-615.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

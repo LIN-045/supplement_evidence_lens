@@ -1,0 +1,170 @@
+[
+  {
+    "document_id": "ashwagandha",
+    "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/"
+  },
+  {
+    "document_id": "biotin",
+    "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+  },
+  {
+    "document_id": "black-cohosh",
+    "url": "https://ods.od.nih.gov/factsheets/BlackCohosh-HealthProfessional/"
+  },
+  {
+    "document_id": "boron",
+    "url": "https://ods.od.nih.gov/factsheets/Boron-HealthProfessional/"
+  },
+  {
+    "document_id": "calcium",
+    "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+  },
+  {
+    "document_id": "carnitine",
+    "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional/"
+  },
+  {
+    "document_id": "choline",
+    "url": "https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/"
+  },
+  {
+    "document_id": "chromium",
+    "url": "https://ods.od.nih.gov/factsheets/Chromium-HealthProfessional/"
+  },
+  {
+    "document_id": "copper",
+    "url": "https://ods.od.nih.gov/factsheets/Copper-HealthProfessional/"
+  },
+  {
+    "document_id": "covid-19",
+    "url": "https://ods.od.nih.gov/factsheets/COVID19-HealthProfessional/"
+  },
+  {
+    "document_id": "ephedraand-ephedrine",
+    "url": "https://ods.od.nih.gov/factsheets/EphedraandEphedrine-HealthProfessional/"
+  },
+  {
+    "document_id": "exercise-and-athletic-performance",
+    "url": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/"
+  },
+  {
+    "document_id": "fluoride",
+    "url": "https://ods.od.nih.gov/factsheets/Fluoride-HealthProfessional/"
+  },
+  {
+    "document_id": "folate",
+    "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
+  },
+  {
+    "document_id": "immune-function",
+    "url": "https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional/"
+  },
+  {
+    "document_id": "iodine",
+    "url": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/"
+  },
+  {
+    "document_id": "iron",
+    "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+  },
+  {
+    "document_id": "magnesium",
+    "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+  },
+  {
+    "document_id": "manganese",
+    "url": "https://ods.od.nih.gov/factsheets/Manganese-HealthProfessional/"
+  },
+  {
+    "document_id": "molybdenum",
+    "url": "https://ods.od.nih.gov/factsheets/Molybdenum-HealthProfessional/"
+  },
+  {
+    "document_id": "mvms",
+    "url": "https://ods.od.nih.gov/factsheets/MVMS-HealthProfessional/"
+  },
+  {
+    "document_id": "niacin",
+    "url": "https://ods.od.nih.gov/factsheets/Niacin-HealthProfessional/"
+  },
+  {
+    "document_id": "omega-3-fatty-acids",
+    "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+  },
+  {
+    "document_id": "pantothenic-acid",
+    "url": "https://ods.od.nih.gov/factsheets/PantothenicAcid-HealthProfessional/"
+  },
+  {
+    "document_id": "phosphorus",
+    "url": "https://ods.od.nih.gov/factsheets/Phosphorus-HealthProfessional/"
+  },
+  {
+    "document_id": "potassium",
+    "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"
+  },
+  {
+    "document_id": "pregnancy",
+    "url": "https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/"
+  },
+  {
+    "document_id": "primary-mitochondrial-disorders",
+    "url": "https://ods.od.nih.gov/factsheets/PrimaryMitochondrialDisorders-HealthProfessional/"
+  },
+  {
+    "document_id": "probiotics",
+    "url": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/"
+  },
+  {
+    "document_id": "riboflavin",
+    "url": "https://ods.od.nih.gov/factsheets/Riboflavin-HealthProfessional/"
+  },
+  {
+    "document_id": "selenium",
+    "url": "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/"
+  },
+  {
+    "document_id": "thiamin",
+    "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+  },
+  {
+    "document_id": "valerian",
+    "url": "https://ods.od.nih.gov/factsheets/Valerian-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-a",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-b-12",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-b-6",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-c",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-d",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-e",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"
+  },
+  {
+    "document_id": "vitamin-k",
+    "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+  },
+  {
+    "document_id": "weight-loss",
+    "url": "https://ods.od.nih.gov/factsheets/WeightLoss-HealthProfessional/"
+  },
+  {
+    "document_id": "zinc",
+    "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+  }
+]

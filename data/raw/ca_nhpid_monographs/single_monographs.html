@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?monotype=single\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="92b33c7b-4c70-4e23-ae46-ccf51a707d89"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<h1 id="wb-cont">Single ingredient monographs</h1>
+	
+	
+	
+	
+		
+		
+		
+			<div class="row">
+				<div class="col-md-9">
+		<p>A monograph is a written description of particular elements on an identified topic. Single ingredient monographs apply to formulations containing only one medicinal ingredient.</p> <p>Monographs in the lists below which are followed by an asterisk (*) have been uploaded directly onto the <abbr title="Natural Health Products">NHP</abbr> Ingredients Database and are available to generate in the <abbr title="electronic Product Licence Application">ePLA</abbr> by pre-populating the required fields. Those monographs without an asterisk are currently referenced by the <abbr title="Natural health products">NHP</abbr> Ingredients Database but do not yet have a generated monograph, which means that less information is pre-populated in the ePLA. When attesting to a monograph with an asterisk, which means attesting to a generated monograph, the 'Compendial from Generated Monographs' application type must be selected from the Compendial from Generated Monograph Electronic Product Licence Application Form. When attesting to a monograph without an asterisk, which means attesting to a monograph that is not generated, the 'Compendial' application type must be selected from the Electronic Product Licence Application Form.</p>
+		<a href="http://www.hc-sc.gc.ca/dhp-mps/prodnatur/applications/online-enligne/pla-dlmm-view-eng.php">Electronic product licence application form</a>
+		
+		<div class="monographsIndex">
+			<a href="#,_SINGLE">,</a><a href="#A_SINGLE">A</a><a href="#B_SINGLE">B</a><a href="#C_SINGLE">C</a><a href="#D_SINGLE">D</a><a href="#E_SINGLE">E</a><a href="#F_SINGLE">F</a><a href="#G_SINGLE">G</a><a href="#H_SINGLE">H</a><a href="#I_SINGLE">I</a><a href="#J_SINGLE">J</a><a href="#K_SINGLE">K</a><a href="#L_SINGLE">L</a><a href="#M_SINGLE">M</a><a href="#N_SINGLE">N</a><a href="#O_SINGLE">O</a><a href="#P_SINGLE">P</a><a href="#Q_SINGLE">Q</a><a href="#R_SINGLE">R</a><a href="#S_SINGLE">S</a><a href="#T_SINGLE">T</a><a href="#U_SINGLE">U</a><a href="#V_SINGLE">V</a><a href="#W_SINGLE">W</a>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id=",_SINGLE">,</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=diindolylmethane&amp;lang=eng" class="at">3,3'-diindolylmethane (DIM)</a>
+						
+						<div class="icon">
+							<a href="/dbImages/828" title="Monograph: 3,3&#39;-diindolylmethane (DIM) (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 244 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=5htp&amp;lang=eng" class="at">5-HTP</a>
+						
+						<div class="icon">
+							<a href="/dbImages/932" title="Monograph: 5-HTP (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 240 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="A_SINGLE">A</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=acai.euterpe.oleracea2&amp;lang=eng" class="at">Acai - Euterpe oleracea</a>
+						
+						<div class="icon">
+							<a href="/dbImages/660" title="Monograph: Acai - Euterpe oleracea (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 210 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=irvingia.gabonensis&amp;lang=eng" class="at">African Wild Mango - Irvingia gabonensis</a>
+						
+						<div class="icon">
+							<a href="/dbImages/664" title="Monograph: African Wild Mango - Irvingia gabonensis (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 199 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ahcc.fg2&amp;lang=eng" class="at">AHCC Extract - Granule</a>
+						
+						<div class="icon">
+							<a href="/dbImages/670" title="Monograph: Active hexose correlated compound - Granule (AHCC-FG) (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 254 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ahcc.fd2&amp;lang=eng" class="at">AHCC Extract - Powder</a>
+						
+						<div class="icon">
+							<a href="/dbImages/668" title="Monograph: Active hexose correlated compound - Powder (AHCC-FD) (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 252 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=alfalfa2&amp;lang=eng" class="at">Alfalfa</a>
+						
+						<div class="icon">
+							<a href="/dbImages/674" title="Monograph: Alfalfa (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 251 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=aloe.oral.orale2&amp;lang=eng" class="at">Aloe - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/678" title="Monograph: Aloe - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 308 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=aloe.topical.topique2&amp;lang=eng" class="at">Aloe - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/680" title="Monograph: Aloe - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 181 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=aloe.gel&amp;lang=eng" class="at">Aloe vera Leaf Gel - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/676" title="Monograph: Aloe vera Leaf Gel - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 259 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=alpha.lipoic.acid2&amp;lang=eng" class="at">Alpha Lipoic Acid</a>
+						
+						<div class="icon">
+							<a href="/dbImages/672" title="Monograph: Alpha Lipoic Acid (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 207 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=amla2&amp;lang=eng" class="at">Amla - Phyllanthus emblica</a>
+						
+						<div class="icon">
+							<a href="/dbImages/686" title="Monograph: Amla - Phyllanthus emblica (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 289 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=angelica.angelique2&amp;lang=eng" class="at">Angelica</a>
+						
+						<div class="icon">
+							<a href="/dbImages/690" title="Monograph: Angelica (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 196 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=arginine.l2&amp;lang=eng" class="at">Arginine, L-</a>
+						
+						<div class="icon">
+							<a href="/dbImages/952" title="Monograph: Arginine, L- (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 237 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=arnica2&amp;lang=eng" class="at">Arnica</a>
+						
+						<div class="icon">
+							<a href="/dbImages/698" title="Monograph: Arnica (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 300 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ashwagandha2&amp;lang=eng" class="at">Ashwagandha</a>
+						
+						<div class="icon">
+							<a href="/dbImages/702" title="Monograph: Ashwagandha (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 259 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=astragalus.astragale2&amp;lang=eng" class="at">Astragalus</a>
+						
+						<div class="icon">
+							<a href="/dbImages/704" title="Monograph: Astragalus (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 271 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=avens2&amp;lang=eng" class="at">Avens</a>
+						
+						<div class="icon">
+							<a href="/dbImages/708" title="Monograph: Avens (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 205 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="B_SINGLE">B</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=arctostaphylos.uva.ursi2&amp;lang=eng" class="at">Bearberry - Arctostaphylos uva-ursi</a>
+						
+						<div class="icon">
+							<a href="/dbImages/740" title="Monograph: Bearberry - Arctostaphylos uva-ursi (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 242 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=beta.glucane&amp;lang=eng" class="at">Beta-Glucan</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1022" title="Monograph: Beta-Glucan (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 212 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=betaine2&amp;lang=eng" class="at">Betaine / Betaine hydrochloride</a>
+						
+						<div class="icon">
+							<a href="/dbImages/712" title="Monograph: Betaine / Betaine hydrochloride (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 220 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=bilberry.myrtille.buccal2&amp;lang=eng" class="at">Bilberry - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/716" title="Monograph: Bilberry - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 213 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=bilberry.myrtille.oral&amp;lang=eng" class="at">Bilberry - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/718" title="Monograph: Bilberry - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 201 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=birch.bouleau&amp;lang=eng" class="at">Birch</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1350" title="Monograph: Birch (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 212 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=blackpepper.poivrenoir3&amp;lang=eng" class="at">Black/White pepper – Piper nigrum</a>
+						
+						<div class="icon">
+							<a href="/dbImages/728" title="Monograph: Black Pepper - Piper nigrum (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 216 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=black.cohosh.actee.noire2&amp;lang=eng" class="at">Black Cohosh</a>
+						
+						<div class="icon">
+							<a href="/dbImages/710" title="Monograph: Black Cohosh (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 283 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=black.horehound.ballote.noire2&amp;lang=eng" class="at">Black Horehound</a>
+						
+						<div class="icon">
+							<a href="/dbImages/714" title="Monograph: Black Horehound (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 261 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=juglans.nigra2&amp;lang=eng" class="at">Black Walnut - Juglans nigra</a>
+						
+						<div class="icon">
+							<a href="/dbImages/726" title="Monograph: Black Walnut - Juglans nigra (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 230 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=blessed.thistle.oral2&amp;lang=eng" class="at">Blessed Thistle - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/730" title="Monograph: Blessed Thistle - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 215 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=blessed.thistle.topical2&amp;lang=eng" class="at">Blessed Thistle - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/732" title="Monograph: Blessed Thistle - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 271 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=blueberry.bleuet2&amp;lang=eng" class="at">Blueberry</a>
+						
+						<div class="icon">
+							<a href="/dbImages/724" title="Monograph: Blueberry (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 182 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=boldo2&amp;lang=eng" class="at">Boldo</a>
+						
+						<div class="icon">
+							<a href="/dbImages/734" title="Monograph: Boldo (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 209 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=borage.bourrache2&amp;lang=eng" class="at">Borage Oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/736" title="Monograph: Borage Oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 286 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=bovine.colostrum.bovin2&amp;lang=eng" class="at">Bovine Colostrum</a>
+						
+						<div class="icon">
+							<a href="/dbImages/738" title="Monograph: Bovine Colostrum (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 177 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=burdock.bardane.oral2&amp;lang=eng" class="at">Burdock - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/744" title="Monograph: Burdock - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 211 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=burdock.bardane.topical2&amp;lang=eng" class="at">Burdock - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/746" title="Monograph: Burdock - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 278 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="C_SINGLE">C</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=caffeine.cafeine3&amp;lang=eng" class="at">Caffeine</a>
+						
+						<div class="icon">
+							<a href="/dbImages/754" title="Monograph: Caffeine (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 257 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=calcium.potassium2&amp;lang=eng" class="at">Calcium-Potassium Salt of Hydroxycitric Acid</a>
+						
+						<div class="icon">
+							<a href="/dbImages/756" title="Monograph: Calcium-Potassium Salt of Hydroxycitric Acid (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 205 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=calendula.buccal&amp;lang=eng" class="at">Calendula - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/748" title="Monograph: Calendula - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 280 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=calendula.oral2&amp;lang=eng" class="at">Calendula - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/750" title="Monograph: Calendula - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 236 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=calendula.topical2&amp;lang=eng" class="at">Calendula - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/752" title="Monograph: Calendula - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 273 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=california.poppy.pavot&amp;lang=eng" class="at">California poppy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/802" title="Monograph: California poppy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 256 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=caraway.carvi2&amp;lang=eng" class="at">Caraway</a>
+						
+						<div class="icon">
+							<a href="/dbImages/760" title="Monograph: Caraway (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 274 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=l.carnitine2&amp;lang=eng" class="at">Carnitine, L-</a>
+						
+						<div class="icon">
+							<a href="/dbImages/954" title="Monograph: Carnitine, L- (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 196 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=carrot2&amp;lang=eng" class="at">Carrot - Daucus carota L. ssp sativus</a>
+						
+						<div class="icon">
+							<a href="/dbImages/758" title="Monograph: Carrot - Daucus carota L. ssp sativus (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 298 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cascara.sagrada2&amp;lang=eng" class="at">Cascara Sagrada</a>
+						
+						<div class="icon">
+							<a href="/dbImages/764" title="Monograph: Cascara Sagrada (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 253 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cassia.cinnamomum.aromaticum2&amp;lang=eng" class="at">Cassia - Cinnamomum aromaticum</a>
+						
+						<div class="icon">
+							<a href="/dbImages/762" title="Monograph: Cassia cinnamon - Cinnamomum aromaticum (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 324 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=catnip2&amp;lang=eng" class="at">Catnip</a>
+						
+						<div class="icon">
+							<a href="/dbImages/766" title="Monograph: Catnip (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 229 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cayenne.topical.topique2&amp;lang=eng" class="at">Cayenne - Capsicum annuum/Capaicin - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/770" title="Monograph: Cayenne - Capsicum annuum - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 259 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cayenne.oral.orale2&amp;lang=eng" class="at">Cayenne - Capsicum annuum - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/768" title="Monograph: Cayenne - Capsicum annuum - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 226 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=germ_chamom_allem_buccal2&amp;lang=eng" class="at">Chamomile, German - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/882" title="Monograph: Chamomile, German - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 223 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cham.germ.oral.orale2&amp;lang=eng" class="at">Chamomile, German - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/884" title="Monograph: Chamomile, German - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 244 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=germ_chamom_allem2&amp;lang=eng" class="at">Chamomile, German - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/886" title="Monograph: Chamomile, German - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 251 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=chamomile.roman2&amp;lang=eng" class="at">Chamomile, Roman</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1072" title="Monograph: Chamomile, Roman (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 44 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=chaste.tree.vitex&amp;lang=eng" class="at">Chaste tree</a>
+						
+						<div class="icon">
+							<a href="/dbImages/780" title="Monograph: Chaste tree (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 160 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=chitosan2&amp;lang=eng" class="at">Chitosan</a>
+						
+						<div class="icon">
+							<a href="/dbImages/782" title="Monograph: Chitosan (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 235 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=chlorella.vulgaris2&amp;lang=eng" class="at">Chlorella - Chlorella vulgaris</a>
+						
+						<div class="icon">
+							<a href="/dbImages/784" title="Monograph: Chlorella - Chlorella vulgaris (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 302 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cinnamomum.verum&amp;lang=eng" class="at">Cinnamon - Cinnamomum verum</a>
+						
+						<div class="icon">
+							<a href="/dbImages/792" title="Monograph: Cinnamon - Cinnamomum verum (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 189 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=citrus.bioflav.agrumes2&amp;lang=eng" class="at">Citrus Bioflavonoids</a>
+						
+						<div class="icon">
+							<a href="/dbImages/772" title="Monograph: Citrus Bioflavonoids (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 193 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cod.liver.oil2&amp;lang=eng" class="at">Cod Liver Oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/796" title="Monograph: Cod Liver Oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 228 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=coenzyme.q10&amp;lang=eng" class="at">Coenzyme Q10</a>
+						
+						<div class="icon">
+							<a href="/dbImages/804" title="Monograph: Coenzyme Q10 (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 291 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=conj.linoleic.acid&amp;lang=eng" class="at">Conjugated Linoleic Acid</a>
+						
+						<div class="icon">
+							<a href="/dbImages/794" title="Monograph: Conjugated Linoleic Acid (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 279 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cranberry.canneberge2&amp;lang=eng" class="at">Cranberry</a>
+						
+						<div class="icon">
+							<a href="/dbImages/808" title="Monograph: Cranberry (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 244 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cranberry.dried.canneberge.deshydrate2&amp;lang=eng" class="at">Cranberry juice, dried</a>
+						
+						<div class="icon">
+							<a href="/dbImages/806" title="Monograph: Cranberry juice, dried (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 239 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=creatine.mono&amp;lang=eng" class="at">Creatine monohydrate</a>
+						
+						<div class="icon">
+							<a href="/dbImages/810" title="Monograph: Creatine monohydrate (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 179 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="D_SINGLE">D</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq?atid=dandelion.pissenlit2&amp;lang=eng" class="at">Dandelion - Taraxacum officinale</a>
+						
+						<div class="icon">
+							<a href="/dbImages/816" title="Monograph: Dandelion - Taraxacum officinale (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 233 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=deg.lic.reg.buccal.buccale2&amp;lang=eng" class="at">Deglycyrrhizinated licorice - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/822" title="Monograph: Deglycyrrhizinated licorice - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 176 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=deg.lic.reg.oral.orale2&amp;lang=eng" class="at">Deglycyrrhizinated licorice - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/824" title="Monograph: Deglycyrrhizinated licorice - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 230 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=devil.claw.griffle.diable2&amp;lang=eng" class="at">Devil's Claw</a>
+						
+						<div class="icon">
+							<a href="/dbImages/820" title="Monograph: Devil&#39;s Claw (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 242 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=angelica.sinensis2&amp;lang=eng" class="at">Dong quai - Angelica sinensis</a>
+						
+						<div class="icon">
+							<a href="/dbImages/830" title="Monograph: Dong quai - Angelica sinensis (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 218 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="E_SINGLE">E</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=echinacea.angustifolia2&amp;lang=eng" class="at">Echinacea Angustifolia</a>
+						
+						<div class="icon">
+							<a href="/dbImages/832" title="Monograph: Echinacea Angustifolia (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 301 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=echinacea.pallida2&amp;lang=eng" class="at">Echinacea pallida</a>
+						
+						<div class="icon">
+							<a href="/dbImages/838" title="Monograph: Echinacea pallida (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 258 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=echinacea.purpurea2&amp;lang=eng" class="at">Echinacea purpurea</a>
+						
+						<div class="icon">
+							<a href="/dbImages/844" title="Monograph: Echinacea purpurea (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 302 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=elder.sureau2&amp;lang=eng" class="at">Elder - Sambucus</a>
+						
+						<div class="icon">
+							<a href="/dbImages/834" title="Monograph: Elder - Sambucus (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 257 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=eleuthero2&amp;lang=eng" class="at">Eleuthero</a>
+						
+						<div class="icon">
+							<a href="/dbImages/836" title="Monograph: Eleuthero (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 186 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ephedra2&amp;lang=eng" class="at">Ephedra</a>
+						
+						<div class="icon">
+							<a href="/dbImages/842" title="Monograph: Ephedra (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 249 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=l.ephedrine2&amp;lang=eng" class="at">Ephedrine, L-</a>
+						
+						<div class="icon">
+							<a href="/dbImages/960" title="Monograph: Ephedrine, L- (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 268 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=pennyroyal2&amp;lang=eng" class="at">European Pennyroyal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/840" title="Monograph: European Pennyroyal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 242 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=primrose.onagre2&amp;lang=eng" class="at">Evening Primrose Oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/846" title="Monograph: Evening Primrose Oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 199 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="F_SINGLE">F</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=fennel.fenouil.bitter.amer2&amp;lang=eng" class="at">Fennel, Bitter</a>
+						
+						<div class="icon">
+							<a href="/dbImages/742" title="Monograph: Fennel, Bitter (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 236 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=fennel.fenouil.sweet.doux2&amp;lang=eng" class="at">Fennel, Sweet</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1128" title="Monograph: Fennel, Sweet (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 277 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=fenugreek.oral2&amp;lang=eng" class="at">Fenugreek - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/850" title="Monograph: Fenugreek - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 258 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=fenugreek.topical2&amp;lang=eng" class="at">Fenugreek - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/852" title="Monograph: Fenugreek - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 257 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=feverfew2&amp;lang=eng" class="at">Feverfew</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1196" title="Monograph: Feverfew (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 257 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=figwort.scrofulaire&amp;lang=eng" class="at">Figwort</a>
+						
+						<div class="icon">
+							<a href="/dbImages/854" title="Monograph: Figwort (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 50 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=fish.oil.huile.poisson2&amp;lang=eng" class="at">Fish Oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/856" title="Monograph: Fish Oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 314 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=flaxseed.grainedelin&amp;lang=eng" class="at">Flaxseed</a>
+						
+						<div class="icon">
+							<a href="/dbImages/860" title="Monograph: Flaxseed (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 207 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=flaxseed.lin.oil.huile2&amp;lang=eng" class="at">Flaxseed oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/858" title="Monograph: Flaxseed oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 290 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=frankincense_arbre_buc2&amp;lang=eng" class="at">Frankincense - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/864" title="Monograph: Frankincense - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 271 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=frankincense.oral2&amp;lang=eng" class="at">Frankincense - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/866" title="Monograph: Frankincense - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 269 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=frankincense_arbre_top&amp;lang=eng" class="at">Frankincense - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/868" title="Monograph: Frankincense - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 294 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=free.plant.sterols.vegetaux&amp;lang=eng" class="at">Free Plant Sterols</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1042" title="Monograph: Free Plant Sterols (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 150 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="G_SINGLE">G</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=garlic_ail4&amp;lang=eng" class="at">Garlic</a>
+						
+						<div class="icon">
+							<a href="/dbImages/878" title="Monograph: Garlic (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 267 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=gentian2&amp;lang=eng" class="at">Gentian</a>
+						
+						<div class="icon">
+							<a href="/dbImages/890" title="Monograph: Gentian (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 196 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ginger.gingembre2&amp;lang=eng" class="at">Ginger</a>
+						
+						<div class="icon">
+							<a href="/dbImages/894" title="Monograph: Ginger (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 261 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ginkgo.biloba2&amp;lang=eng" class="at">Ginkgo Biloba</a>
+						
+						<div class="icon">
+							<a href="/dbImages/892" title="Monograph: Ginkgo Biloba (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 242 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=globe.artichoke.artichaut2&amp;lang=eng" class="at">Globe artichoke</a>
+						
+						<div class="icon">
+							<a href="/dbImages/900" title="Monograph: Globe artichoke (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 225 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=glucomannan&amp;lang=eng" class="at">Glucomannan</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1202" title="Monograph: Glucomannan (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 179 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=l.glutamine2&amp;lang=eng" class="at">Glutamine, L-</a>
+						
+						<div class="icon">
+							<a href="/dbImages/962" title="Monograph: Glutamine, L- (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 187 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=goldenseal.buccal2&amp;lang=eng" class="at">Goldenseal - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/902" title="Monograph: Goldenseal - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 279 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=goldenseal.oral2&amp;lang=eng" class="at">Goldenseal - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/904" title="Monograph: Goldenseal - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 257 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=grape.seed.extract&amp;lang=eng" class="at">Grape Seed Extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/912" title="Monograph: Grape Seed Extract (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 181 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=greencoffeebean.ext.fevescafevert2&amp;lang=eng" class="at">Green Coffee Bean Extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/880" title="Monograph: Green Coffee Bean Extract (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 201 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=greentea_thevert2&amp;lang=eng" class="at">Green Tea Extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1134" title="Monograph: Green Tea Extracts (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 231 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ground.ivy.oral2&amp;lang=eng" class="at">Ground Ivy - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/908" title="Monograph: Ground Ivy - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 220 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ground.ivy.topical&amp;lang=eng" class="at">Ground Ivy - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/910" title="Monograph: Ground Ivy - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 249 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="H_SINGLE">H</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq?atid=haematococcus.pluvialis&amp;lang=eng" class="at">Haematococcus pluvialis extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1455" title="Monograph: Haematococcus pluvialis (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 232 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=crataegus.monogyna&amp;lang=eng" class="at">Hawthorn</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1178" title="Monograph: Hawthorn (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 81 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=heal.all.buccal.oromucosal2&amp;lang=eng" class="at">Heal-all - Prunella Vulgaris - Buccal and Oromucosal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1205" title="Monograph: Heal-all - Prunella Vulgaris - Buccal and Oromucosal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 234 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=heal.all.oral2&amp;lang=eng" class="at">Heal-all - Prunella Vulgaris - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1206" title="Monograph: Heal-all - Prunella Vulgaris - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 218 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=heal.all.topical2&amp;lang=eng" class="at">Heal-all - Prunella Vulgaris - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1207" title="Monograph: Heal-all - Prunella Vulgaris - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 268 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=ocimum.tenuliflorum.leaf.feuille2&amp;lang=eng" class="at">Holy Basil - Ocimum Tenuliflorum - Leaf</a>
+						
+						<div class="icon">
+							<a href="/dbImages/918" title="Monograph: Holy Basil - Ocimum Tenuliflorum - Leaf (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 266 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=basil.seed.graine2&amp;lang=eng" class="at">Holy Basil - Ocimum Tenuliflorun - Seed</a>
+						
+						<div class="icon">
+							<a href="/dbImages/920" title="Monograph: Holy Basil - Ocimum Tenuliflorun - Seed (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 255 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=hops.houblon&amp;lang=eng" class="at">Hops</a>
+						
+						<div class="icon">
+							<a href="/dbImages/928" title="Monograph: Hops (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 448 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=horse.chestnut2&amp;lang=eng" class="at">Horse Chestnut</a>
+						
+						<div class="icon">
+							<a href="/dbImages/922" title="Monograph: Horse Chestnut (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 214 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=horseradish.raifort2&amp;lang=eng" class="at">Horseradish</a>
+						
+						<div class="icon">
+							<a href="/dbImages/930" title="Monograph: Horseradish (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 221 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=hydrocortisone2&amp;lang=eng" class="at">Hydrocortisone Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/916" title="Monograph: Hydrocortisone Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 173 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=hydrolized.collagen&amp;lang=eng" class="at">Hydrolyzed collagen</a>
+						
+						<div class="icon">
+							<a href="/dbImages/914" title="Monograph: Hydrolyzed collagen (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 185 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=hyssop.hysope2&amp;lang=eng" class="at">Hyssop</a>
+						
+						<div class="icon">
+							<a href="/dbImages/934" title="Monograph: Hyssop (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 241 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="I_SINGLE">I</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=indole3carbinol3&amp;lang=eng" class="at">Indole-3-carbinol</a>
+						
+						<div class="icon">
+							<a href="/dbImages/936" title="Monograph: Indole-3-carbinol (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 238 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="J_SINGLE">J</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=juniper&amp;lang=eng" class="at">Juniper</a>
+						
+						<div class="icon">
+							<a href="/dbImages/940" title="Monograph: Juniper (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 276 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="K_SINGLE">K</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=krill.oil.huile2&amp;lang=eng" class="at">Krill Oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/946" title="Monograph: Krill Oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 201 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=kutki&amp;lang=eng" class="at">Kutki - Picrorhiza kuuooa</a>
+						
+						<div class="icon">
+							<a href="/dbImages/948" title="Monograph: Kutki - Picrorhiza kuuooa (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 164 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="L_SINGLE">L</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=lecithin2&amp;lang=eng" class="at">Lecithin</a>
+						
+						<div class="icon">
+							<a href="/dbImages/956" title="Monograph: Lecithin (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 201 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=lemon.balm&amp;lang=eng" class="at">Lemon Balm</a>
+						
+						<div class="icon">
+							<a href="/dbImages/958" title="Monograph: Lemon Balm (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 445 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=licorice.reglisse2&amp;lang=eng" class="at">Licorice</a>
+						
+						<div class="icon">
+							<a href="/dbImages/964" title="Monograph: Licorice (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 246 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=linden.tilleul.euro2&amp;lang=eng" class="at">Linden</a>
+						
+						<div class="icon">
+							<a href="/dbImages/966" title="Monograph: Linden (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 251 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=lungwort.oral2&amp;lang=eng" class="at">Lungwort - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/980" title="Monograph: Lungwort - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 236 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=lungwort_pulmonaire&amp;lang=eng" class="at">Lungwort - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/982" title="Monograph: Lungwort - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 269 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=lysine2&amp;lang=eng" class="at">Lysine</a>
+						
+						<div class="icon">
+							<a href="/dbImages/984" title="Monograph: Lysine (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 227 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="M_SINGLE">M</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=maca.lepidium.meyenii2&amp;lang=eng" class="at">Maca - Lepidium meyenii</a>
+						
+						<div class="icon">
+							<a href="/dbImages/986" title="Monograph: Maca - Lepidium meyenii (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 252 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=tamar.malabar2&amp;lang=eng" class="at">Malabar tamarind - Garcinia gummi-gutta</a>
+						
+						<div class="icon">
+							<a href="/dbImages/876" title="Monograph: Malabar tamarind - Garcinia gummi-gutta (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 217 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=marshmallow.leaf.guimauve.feuille2&amp;lang=eng" class="at">Marshmallow - Althaea Officinalis - Leaf</a>
+						
+						<div class="icon">
+							<a href="/dbImages/998" title="Monograph: Marshmallow - Althaea Officinalis - Leaf (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 271 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=althaea.officinalis.root.racine2&amp;lang=eng" class="at">Marshmallow - Althaea officinalis - Root</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1000" title="Monograph: Marshmallow - Althaea officinalis - Root (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 260 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=melatonin.oral2&amp;lang=eng" class="at">Melatonin - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/992" title="Monograph: Melatonin - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 230 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=melatonin.sublinguale2&amp;lang=eng" class="at">Melatonin - Sublingual</a>
+						
+						<div class="icon">
+							<a href="/dbImages/994" title="Monograph: Melatonin - Sublingual (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 214 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=milk.thistle.oral&amp;lang=eng" class="at">Milk Thistle</a>
+						
+						<div class="icon">
+							<a href="/dbImages/996" title="Monograph: Milk Thistle (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 300 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=msm2&amp;lang=eng" class="at">MSM</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1006" title="Monograph: MSM (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 186 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=mugwort&amp;lang=eng" class="at">Mugwort</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1008" title="Monograph: Mugwort (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 98 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="N_SINGLE">N</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=n-acetyl-l-cysteine2&amp;lang=eng" class="at">N-Acetyl-L-Cysteine</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1018" title="Monograph: N-Acetyl-L-Cysteine (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 162 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="O_SINGLE">O</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=feuille.olea.europaea.leaf2&amp;lang=eng" class="at">Olive leaf - Olea europaea</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1026" title="Monograph: Olive leaf - Olea europaea (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 218 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="P_SINGLE">P</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=ginseng.panax2&amp;lang=eng" class="at">Panax ginseng</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1040" title="Monograph: Ginseng, Panax (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 282 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=ginseng.american2&amp;lang=eng" class="at">Panax quinquefolius</a>
+						
+						<div class="icon">
+							<a href="/dbImages/666" title="Monograph: Ginseng, American (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 333 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=passionflower.passiflore&amp;lang=eng" class="at">Passionflower</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1038" title="Monograph: Passionflower (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 241 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=peppermint.menthepoivree3&amp;lang=eng" class="at">Peppermint</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1036" title="Monograph: Peppermint (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 284 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=phosphatidylserine2&amp;lang=eng" class="at">Phosphatidylserine</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1048" title="Monograph: Phosphatidylserine (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 185 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=plant.stanol.esters&amp;lang=eng" class="at">Plant Stanol Esters</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1182" title="Monograph: Plant Stanol Esters (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 215 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=plant.sterol.esters&amp;lang=eng" class="at">Plant Sterol Esters</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1184" title="Monograph: Plant Sterol Esters (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 218 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=pomegranate.grenade2&amp;lang=eng" class="at">Pomegranate</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1044" title="Monograph: Pomegranate (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 220 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=propolis_buc2&amp;lang=eng" class="at">Propolis - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1052" title="Monograph: Propolis - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 257 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=propolis.oral.orale2&amp;lang=eng" class="at">Propolis - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1054" title="Monograph: Propolis - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 286 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=propolis_top2&amp;lang=eng" class="at">Propolis - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1056" title="Monograph: Propolis - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 280 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=pseudoephedrine.13.18.2&amp;lang=eng" class="at">Pseudoephedrine for Adolescents 12-17 years and Adults</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1058" title="Monograph: Pseudoephedrine for Adolescents 12-17 years and Adults (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 245 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=pseudoephedrine.6.12.2&amp;lang=eng" class="at">Pseudoephedrine for children 6-11 years</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1060" title="Monograph: Pseudoephedrine for children 6-11 years (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 242 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=pygeum&amp;lang=eng" class="at">Pygeum - Prunus africana</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1068" title="Monograph: Pygeum - Prunus africana (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 217 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="Q_SINGLE">Q</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=quercetin2&amp;lang=eng" class="at">Quercetin</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1070" title="Monograph: Quercetin (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 214 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="R_SINGLE">R</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=rcie3&amp;lang=eng" class="at">Red Clover Isoflavone Extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1074" title="Monograph: Red Clover Isoflavone Extract (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 215 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=red.wine.ext.vin.rouge2&amp;lang=eng" class="at">Red Wine Extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1090" title="Monograph: Red Wine Extract (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 195 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=rhodiol2&amp;lang=eng" class="at">Rhodiola - Rhodiola rosea</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1080" title="Monograph: Rhodiola - Rhodiola rosea (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 201 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=rosemary.romarin.oral2&amp;lang=eng" class="at">Rosemary - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1082" title="Monograph: Rosemary - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 220 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=rosemary.romarin.topical2&amp;lang=eng" class="at">Rosemary - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1084" title="Monograph: Rosemary - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 242 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=gelee.royal.jelly3&amp;lang=eng" class="at">Royal Jelly</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1086" title="Monograph: Royal Jelly (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 205 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=rutin2&amp;lang=eng" class="at">Rutin</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1088" title="Monograph: Rutin (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 195 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="S_SINGLE">S</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=sage.bt2&amp;lang=eng" class="at">Sage - Salvia officinalis - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1092" title="Monograph: Sage - Salvia officinalis - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 331 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=sage.or2&amp;lang=eng" class="at">Sage - Salvia officinalis - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1094" title="Monograph: Sage - Salvia officinalis - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 300 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=saw.palmetto.sabal2&amp;lang=eng" class="at">Saw Palmetto</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1098" title="Monograph: Saw Palmetto (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 232 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=seal.oil3&amp;lang=eng" class="at">Seal Oil</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1106" title="Monograph: Seal Oil (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 195 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=senna.sene&amp;lang=eng" class="at">Senna</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1108" title="Monograph: Senna (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 168 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=serrapeptase2&amp;lang=eng" class="at">Serrapeptase</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1120" title="Monograph: Serrapeptase (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 240 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=skullcap.scutellaire2&amp;lang=eng" class="at">Skullcap</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1104" title="Monograph: Skullcap (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 244 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=soyflour.farinesoja&amp;lang=eng" class="at">Soy Flour</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1114" title="Monograph: Soy Flour (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 229 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=spirulin2&amp;lang=eng" class="at">Spirulina</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1118" title="Monograph: Spirulina (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 388 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=stjohnswort.millepertuis.oral2&amp;lang=eng" class="at">St. John's Wort - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1110" title="Monograph: St. John&#39;s Wort - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 216 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=stjohnswort.millepertuis.topical&amp;lang=eng" class="at">St. John's Wort - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1112" title="Monograph: St. John&#39;s Wort - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 279 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=stinging.nettle2&amp;lang=eng" class="at">Stinging Nettle</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1126" title="Monograph: Stinging Nettle (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 245 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=stinging.nettle.juice2&amp;lang=eng" class="at">Stinging Nettle Juice</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1124" title="Monograph: Stinging Nettle Juice (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 240 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="T_SINGLE">T</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=taurine2&amp;lang=eng" class="at">Taurine</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1130" title="Monograph: Taurine (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 186 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=l.theanine2&amp;lang=eng" class="at">Theanine, L-</a>
+						
+						<div class="icon">
+							<a href="/dbImages/976" title="Monograph: Theanine, L- (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 181 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=thuja.oral.thuya.orale&amp;lang=eng" class="at">Thuja - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1138" title="Monograph: Thuja - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 248 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=thuja&amp;lang=eng" class="at">Thuja - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1140" title="Monograph: Thuja - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 300 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=thyme.buccal2&amp;lang=eng" class="at">Thyme - Buccal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1142" title="Monograph: Thyme - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 318 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=thyme.oral.orale&amp;lang=eng" class="at">Thyme - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1144" title="Monograph: Thyme - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 251 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=thyme.topical2&amp;lang=eng" class="at">Thyme - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1146" title="Monograph: Thyme - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 276 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=tomato.extract2&amp;lang=eng" class="at">Tomato Extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1148" title="Monograph: Tomato Extract (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 175 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=tribulus.terrestris3&amp;lang=eng" class="at">Tribulus - Tribulus terrestris</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1150" title="Monograph: Tribulus terrestris (Bronze) (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 247 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=turmeric.oral.curcuma.orale&amp;lang=eng" class="at">Turmeric - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1156" title="Monograph: Turmeric - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 237 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=turmeric.topical2&amp;lang=eng" class="at">Turmeric - Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1158" title="Monograph: Turmeric - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 323 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=l.tyrosine2&amp;lang=eng" class="at">Tyrosine, L-</a>
+						
+						<div class="icon">
+							<a href="/dbImages/978" title="Monograph: Tyrosine, L- (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 189 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="U_SINGLE">U</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=ubiquinol2&amp;lang=eng" class="at">Ubiquinol</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1160" title="Monograph: Ubiquinol (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 207 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="V_SINGLE">V</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=valerian2&amp;lang=eng" class="at">Valerian</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1162" title="Monograph: Valerian (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 190 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=vitamin.d.hd&amp;lang=eng" class="at">Vitamin D (>1,000-2,500 IU)</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1175" title="Monograph: Vitamin D (&gt;1,000-2,500 IU) (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 256 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="W_SINGLE">W</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=phaseolus.vulgaris2&amp;lang=eng" class="at">White Kidney bean extract</a>
+						
+						<div class="icon">
+							<a href="/dbImages/944" title="Monograph: White Kidney bean extract (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 188 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=white.wil.saule.bla&amp;lang=eng" class="at">Willow bark</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1168" title="Monograph: Willow bark (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 155 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=witch.hazel.buccal2&amp;lang=eng" class="at">Witch Hazel - Hamamelis Virginiana Buccal and Oromucosal</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1190" title="Monograph: Witch Hazel - Buccal (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 250 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=witch.hazel.ophthalmic2&amp;lang=eng" class="at">Witch Hazel - Hamamelis Virginiana Ophthalmic</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1192" title="Monograph: Witch Hazel - Ophthalmic (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 244 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=witch.hazel.oral3&amp;lang=eng" class="at">Witch Hazel - Hamamelis Virginiana Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1188" title="Monograph: Witch Hazel - Oral (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 238 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=witch.hazel.topical4&amp;lang=eng" class="at">Witch Hazel - Hamamelis Virginiana Topical</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1180" title="Monograph: Witch Hazel - Topical (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 263 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+				<div class="col-md-3">
+					<div class="alert alert-info">
+		<h2>Pre-Cleared information</h2>
+		<p>Pre-Cleared information (<abbr>PCI</abbr>) is any form of information supporting the safety, efficacy or quality of a medicinal ingredient or natural health product that <abbr title="Natural and Non-prescription Health Products Directorate">NNHPD</abbr> has reviewed and determined to be acceptable.</p>
+		<p><abbr title="Pre-Cleared information">PCI</abbr> can be used to speed up the evaluation of the <abbr title="Natural Health Products">NHP</abbr>, and serves as a reliable source of product information for consumers.</p>
+		<div class="well pull-left">
+			<ul>
+				<li><a href="/nhpid-bdipsn/monosReq?monotype=single">Single ingredient monographs</a></li>
+				<li><a href="/nhpid-bdipsn/monosReq?monotype=product">Product monographs </a></li>
+				
+				
+				
+				<li><a href="/nhpid-bdipsn/monosReq">All</a></li>
+			</ul>
+		</div>
+	</div>
+				</div>
+			</div>
+		
+	
+	
+<script>
+$(".at").on("click", function(e) {
+	var url = $(this).attr("href");
+	var idx = url.indexOf(".do");
+	if (idx > 0) {
+		url = url.substring(0, idx) + url.substring(idx+3);
+	}
+	$(this).attr("href", url);
+});
+</script>
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

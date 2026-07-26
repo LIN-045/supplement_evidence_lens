@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=licorice.reglisse2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="f5541f5a-0ee5-4b61-8099-79f9d14c7a03"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'>  <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+  <h1>
+    LICORICE
+   </h1>
+   <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a>
+    section.
+   </p>
+   <div class="icon">
+    <a href="dbImages/mono_licorice_english.pdf" title="LICORICE - GLYCYRRHIZA GLABRA ">
+     <img alt="Monograph: LICORICE - GLYCYRRHIZA GLABRA " height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+     (PDF Version - 373 KB)
+    </a>
+   </div>
+   <p>
+    This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+   </p>
+   <p>
+    <strong>
+     Notes
+    </strong>
+   </p>
+   <ul>
+    <li>
+     Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+    </li>
+    <li>
+     The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+   </ul>
+   <p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+   <ul>
+    <li>Licorice and stimulant laxatives: As licorice may potentiate potassium depletion of laxatives, the combination of licorice with stimulant laxatives is only permitted if:</li>
+      <ul>
+        <li>licorice is deglycyrrhizinated (consult the Deglycyrrhizinated licorice monograph), or;</li>
+        <li>for non deglycyrrhizinated preparations, if licorice is present in sufficiently small amount to provide no more than 16 mg glycyrrhizin/glycyrrhizic acid per day. In this case, this monograph may be used for safety only as the effective dose as per Tables 2 and 3 below may not be met.</li>
+      </ul>
+    (Gardner and McGuffin 2013; Brinker 2010; Isbrucker and Burdock 2006; ESCOP 2003; Hoffmann 2003; Blumenthal et al. 2000; Van Gelderen et al. 2000).
+    <li>Licorice and diuretics: Not more than 1 ingredient with diuretic properties may be combined with the medicinal ingredient licorice due to potential of electrolyte imbalance at Class II. Combinations with more diuretics may be submitted as a Class III application.</li>
+   </ul>
+
+   <section aria-labelledby="date">
+    <h2 id="date">
+     Date
+    </h2>
+    <p>
+     November 29, 2024
+    </p>
+   </section>
+   <section aria-labelledby="properNameCommonNameSourceMaterial">
+    <h2 id="properNameCommonNameSourceMaterial">
+     Proper name(s), Common name(s), Source information
+    </h2>
+    <table class="subject">
+     <caption>
+      Table 1.  Proper name(s), Common name(s), Source information
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="3" scope="colgroup">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th scope="col">
+        Part(s)
+       </th>
+       <th scope="col">
+        Preparation(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+         <i>
+          Glycyrrhiza glabra
+         </i>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Guang guo gan cao
+         </li>
+         <li>
+          Licorice
+         </li>
+         <li>
+          Liquorice
+         </li>
+        </ul>
+       </td>
+       <td>
+         <i>
+          Glycyrrhiza glabra
+         </i>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Root
+         </li>
+         <li>
+          Root and rhizome
+         </li>
+         <li>
+          Root and stolon
+         </li>
+         <li>
+          Root and rhizome and stolon
+         </li>
+        </ul>
+       </td>
+       <td>
+         Dry
+       </td>
+      </tr>
+      <tr>
+        <td><em>Glycyrrhiza inflata</em></td>
+        <td>
+          <ul>
+            <li>Chinese licorice</li>
+            <li>Zhang guo gan cao</li>
+          </ul>
+        </td>
+        <td><em>Glycyrrhiza inflata</em></td>
+        <td>
+            <ul>
+                <li>Root</li>
+                <li>Root and rhizome</li>
+            </ul>
+        </td>
+        <td>Dry</td>
+      </tr>
+      <tr>
+        <td><em>Glycyrrhiza uralensis</em></td>
+        <td>
+            <ul>
+                <li>Chinese licorice</li>
+                <li>Gan cao</li>
+            </ul>
+        </td>
+        <td><em>Glycyrrhiza uralensis</em></td>
+        <td>
+            <ul>
+                <li>Root</li>
+                <li>Root and rhizome</li>
+            </ul>
+        </td>
+        <td>Dry</td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+      References: Proper names: USDA 2024; Common names: Gardner and McGuffin 2013; Bensky et al. 2004; Source information: Mills and Bone 2005, Bensky et al. 2004; ESCOP 2003, Blumenthal et al. 2000, Bradley 1992.
+    </p>
+   </section>
+   <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+     Route of Administration
+    </h2>
+    <!-- CHECK IF ROUTE OR ROUTE(S) -->
+    <p>
+     Oral
+    </p>
+   </section>
+   <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+     Dosage Form(s)
+    </h2>
+    <p>
+     This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+    </p>
+    <p>
+     <strong>
+      Acceptable dosage forms by age group:
+     </strong>
+    </p>
+    <p>
+     <strong>
+      Children 4-5 years:
+     </strong>
+     The acceptable dosage forms are limited to chewables, emulsion/ suspension, powders and solution/liquid preparations (Giacoia et al. 2008; EMA/CHMP 2006).
+    </p>
+    <p>
+    <strong>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older: </strong>The acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+    </p>
+   </section>
+   <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+     Use(s) or Purpose(s)
+    </h2>
+    <p><em>All subpopulations</em></p>
+    <p>(Traditionally) used in Herbal Medicine as an expectorant to help relieve (mucous buildup (catarrhs) and) cough associated with upper respiratory tract infections/cold (EMA 2012; Mills and Bone 2005; ESCOP 2003; Hoffmann 2003; Blumenthal et al. 2000; Bradley 1992; Felter and Lloyd 1983, Grieve 1971).</p>
+    <p><em>Adults only</em></p>
+    <p>Used in Herbal Medicine to help relieve inflammatory conditions of the gastrointestinal tract, such as gastritis in adults (ESCOP 2003; Hoffmann 2003; Bradley 1992).</p>
+    <p><strong>Notes</strong></p>
+    <p><strong>For multi-ingredient products:</strong></p>
+    <ul>
+        <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Licorice is used in Herbal Medicine as an expectorant to help relieve cough associated with upper respiratory tract infections).</li>
+        <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+    </ul>
+   </section>
+
+   <section aria-labelledby="dose">
+    <h2 id="dose">
+     Dose(s)
+    </h2>
+    <h3>
+     Subpopulation(s)
+    </h3>
+    <p>
+     As specified below.
+    </p>
+    <h3>
+     Quantity(ies)
+    </h3>
+    <p>
+     Methods of preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)
+    </p>
+    <table class="subject">
+     <caption>
+      Table 2. Dose information for licorice dried root/root and rhizome/root and stolon/root and rhizome and stolon per day
+     </caption>
+     <thead>
+      <tr>
+       <th colspan="2" rowspan="2" scope="col">
+        Subpopulations
+       </th>
+       <th colspan="2" scope="col">
+        Dried root/rhizome/stolon (gram/day)
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Minimum
+       </th>
+       <th scope="col">
+        Maximum
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td rowspan="3">
+         Children<sup>1</sup>
+       </td>
+       <td>
+        4 years
+       </td>
+       <td>
+        0.1
+       </td>
+       <td>
+        2.5
+       </td>
+      </tr>
+      <tr>
+       <td>
+        5-9 years
+       </td>
+       <td>
+        0.15
+       </td>
+       <td>
+        3.75
+       </td>
+      </tr>
+      <tr>
+       <td>
+        10-11 years
+       </td>
+       <td>
+        0.3
+       </td>
+       <td>
+        7.5
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="2">
+         Adolescents<sup>1</sup>
+         </a>
+       </td>
+       <td>
+        12-14 years
+       </td>
+       <td>
+        0.3
+       </td>
+       <td>
+        7.5
+       </td>
+      </tr>
+      <tr>
+       <td>
+        15-17 years
+       </td>
+       <td>
+        0.6
+       </td>
+       <td>
+        15
+       </td>
+      </tr>
+      <tr>
+       <td>
+         Adults<sup>1,2</sup>
+       </td>
+       <td>
+        18 years and older
+       </td>
+       <td>
+        0.6
+       </td>
+       <td>
+        15
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup>1</sup>Children and adolescent doses were calculated as a fraction of the adult dose (JC 2018). The use of licorice in children and adolescents is supported by the following references: McIntyre 2005; Schilcher 1997; Bove 1996.</p>
+    <p><sup>2</sup>Adult dose supported by the following references: Mills and Bone 2005; ESCOP 2003; Hoffmann 2003; Blumenthal et al. 2000; Bradley 1992.</p>
+    <p><strong>*Note: </strong>Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+    <p>
+     Methods of preparation: Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)
+    </p>
+
+    <table class="subject">
+     <caption>
+      Table 3. Dose information for glycyrrhizin per day
+     </caption>
+     <thead>
+      <tr>
+       <th colspan="2" rowspan="2" scope="colgroup">
+        Subpopulations
+       </th>
+       <th colspan="2" scope="colgroup">
+        Glycyrrhizin (milligram/day)
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Minimum
+       </th>
+       <th scope="col">
+        Maximum
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td rowspan="3"> 
+         Children<sup>1</sup>
+       </td>
+       <td>
+        4 years
+       </td>
+       <td>
+        10
+       </td>
+       <td>
+        100
+       </td>
+      </tr>
+      <tr>
+       <td>
+        5-9 years
+       </td>
+       <td>
+        15
+       </td>
+       <td>
+        150
+       </td>
+      </tr>
+      <tr>
+       <td>
+        10-11 years
+       </td>
+       <td>
+        30
+       </td>
+       <td>
+        300
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="2">Adolescents<sup>1</sup>
+       </td>
+       <td>
+        12-14 years
+       </td>
+       <td>
+        30
+       </td>
+       <td>
+        300
+       </td>
+      </tr>
+      <tr>
+       <td>
+        15-17 years
+       </td>
+       <td>
+        60
+       </td>
+       <td>
+        600
+       </td>
+      </tr>
+      <tr>
+       <td>
+         Adults<sup>1,2</sup>
+       </td>
+       <td>
+        18 years and older
+       </td>
+       <td>
+        60
+       </td>
+       <td>
+        600
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup>1</sup>Children and adolescent doses were calculated as a fraction of the adult dose (JC 2023). The use of licorice in children and adolescents is supported by the following references: McIntyre 2005; Schilcher 1997; Bove 1996.</p>
+    <p><sup>2</sup>Adult dose supported by the following references: ESCOP 2003.</p>
+    </p>
+ 
+    <h3>
+     Direction(s) for use
+    </h3>
+    <p>
+     No statement required.
+    </p>
+   </section>
+   <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+     Duration(s) of Use
+    </h2>
+    <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks (EMA 2012).
+    </p>
+   </section>
+   <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+     Risk Information
+    </h2>
+    <h3>
+     Caution(s) and warning(s)
+    </h3>
+    <p><em>All products</em></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding (Gardner and McGuffin 2013).</p>
+    <p><em>Cough relief</em></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if cough worsens or persists (for) more than 1 week (EMA 2012).</p>
+    <p><em>Gastritis relief</em></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+
+    <h3>
+     Contraindication(s)
+    </h3>
+    <p><em>All products</em></p>
+    <ul>
+     <li>
+        Do not use if you are pregnant (EMA 2012).
+     </li>
+     <li>
+        Do not use if you have hypokalemia, high blood pressure, or a kidney, liver or cardiovascular disorder (EMA 2012; Brinker 2010; ESCOP 2003; Bradley 1992).
+     </li>
+     <li>
+        Do not use if you are taking heart medications, corticosteroids, stimulant laxatives, or other health products that may contribute electrolyte imbalance (Brinker 2010; ESCOP 2003; Hoffmann 2003; Blumenthal et al. 2000).
+     </li>
+    </ul>
+    <h3>
+     Known adverse reaction(s)
+    </h3>
+    <p>
+     No statement required.
+    </p>
+   </section>
+   <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+     Non-medicinal ingredients
+    </h2>
+    <p>
+     Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+    </p>
+   </section>
+   <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+     Storage conditions
+    </h2>
+    <p>
+        Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.
+    </p>
+   </section>
+   <section aria-labelledby="specifications">
+    <h2 id="specifications">
+     Specifications
+    </h2>
+    <ul>
+     <li>
+      The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+     </li>
+     <li>
+      The medicinal ingredient must comply with the requirements outlined in the NHPID.
+     </li>
+    </ul>
+   </section>
+
+   <h2>Example of Product Facts:</h2>
+ 
+    <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+ 
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/LICORICE_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+   <section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">
+     References Cited
+    </h2>
+    <ul>
+     <li>
+      Bensky D, Clavey, Stöger E, Gamble A. Chinese Herbal Medicine: Materia Medica. 3rd edition. Seattle (WA): Eastland Press, Incorporated; 2004.
+     </li>
+     <li>
+      Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000.
+     </li>
+     <li>
+      Bove M. An Encyclopedia of Natural Healing for Children and Infants. New Canaan (CT): Keats Publishing, Incorporated; 1996.
+     </li>
+     <li>
+      Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (UK): British Herbal Medicine Association; 1992.
+     </li>
+     <li>
+      Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications; 2010.
+     </li>
+     <li>
+      EMA 2012. European Medicines Agency. Community Herbal Monograph on Glycyrrhiza glabra L. and/or Glycyrrhiza inflata Bat. and/or Glycyrrhiza uralensis Fisch., radix. London (UK): EMA Committee on Herbal Medicinal Products (HMPC), 22 May 2012. [Accessed 2024 January 6]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-glycyrrhiza-glabra-l-andor-glycyrrhiza-inflata-bat-andor-glycyrrhiza-uralensis-fisch-radix-first-version_en.pdf
+     </li>
+     <li>
+      EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric population. [Accessed on 2024 January 6]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf
+     </li>
+     <li>
+      ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2<sup>nd</sup> edition. Exeter (UK): European Scientific Cooperative on Phytotherapy and Thieme; 2003.
+     </li>
+     <li>
+      Felter HW, Lloyd JU. King's American Dispensatory, Volume 2, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1898 original].
+     </li>
+     <li>
+      Gardner Z, McGuffin M. editors. 2013. American Herbal Products Association's Botanical Safety Handbook, 2nd edition. Boca Raton (FL): CRC Press.
+     </li>
+     <li>
+      Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008; 30(11):2097-2101.
+     </li>
+     <li>
+      Grieve M. A Modern Herbal, Volume 2. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].
+     </li>
+     <li>
+      Hoffmann D. Medical Herbalism. Rochester (VT): Healing Arts Press; 2003.
+     </li>
+     <li>Isbrucker RA, Burdock GA. Risk and safety assessment on the consumption of Licorice root (Glycyrrhiza sp.), its extract and powder as a food ingredient, with emphasis on the pharmacology and toxicology of glycyrrhizin. Regulatory Toxicology and Pharmacology 2006;46(3):167-192.</li>
+     <li>
+      JC 2023: Justice Canada. <em>Food and Drug Regulations</em>. (C.01.021). Ottawa (ON): Justice Canada. [Accessed 2024 January 6] Available from https://laws-lois.justice.gc.ca/eng/regulations/c.r.c.,_c._870/index.html
+     </li>
+     <li>
+      McIntyre A. Herbal Treatment of Children - Western and Ayurvedic Perspectives. Toronto (ON): Elsevier Limited; 2005.
+     </li>
+     <li>
+      Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005.
+     </li>
+     <li>
+      Schilcher H. Phytotherapy in Paediatrics: Handbook for Physicians and Pharmacists. Stuttgart (D): Medpharm Scientific Publishers; 1997.
+     </li>
+     <li>
+      USDA 2024: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 January 6]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+     </li>
+     <li>Van Gelderen CE, Bijlsma JA, Van Dokkum W, Savelkoul. Glycyrrhizic acid: the assessment of a no effect level. Human & Experimental Toxicology 2000; 19(8):434-439.</li>
+    </ul>
+   </section>
+
+   <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

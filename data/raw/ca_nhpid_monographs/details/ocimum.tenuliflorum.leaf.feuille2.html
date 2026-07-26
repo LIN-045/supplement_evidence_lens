@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=ocimum.tenuliflorum.leaf.feuille2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="bf130ca7-b98d-4db0-9321-b1ecb148bfd0"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+    <h2>HOLY BASIL - <em>OCIMUM TENUIFLORUM </em>- LEAF</h2>
+    <div class="icon">
+        <a href="dbImages/mono_holy-basil--ocimum-tenuliflorum--leaf_english.pdf"
+            title="HOLY BASIL - OCIMUM TENUIFLORUM - LEAF"><img alt="Monograph: HOLY BASIL - OCIMUM TENUIFLORUM - LEAF"
+                style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif"
+                height="21" width="22"> (PDF Version - 90 KB)</a>
+    </div>
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+
+
+    <p><strong>Notes</strong></p>
+    <p>
+    <ul>
+        <li>Text in parentheses is additional optional information which can be included on the label at the applicant's
+            discretion.</li>
+
+        <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+
+    </ul>
+    </p>
+
+    <h2>Date </h2>
+    <p>February 27, 2026</p>
+
+
+    <h2>Proper name(s), Common name(s), Source information</h2>
+
+    <table class="subject">
+        <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Proper name(s)</th>
+                <th rowspan="2">Common name(s)</th>
+                <th colspan="3">Source information</th>
+
+            </tr>
+            <tr>
+                <th>Source material(s)</th>
+                <th>Part(s)</th>
+                <th>Preparation(s)</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td><em>Ocimum tenuiflorum</em></td>
+                <td>
+                    <ul>
+                        <li>Holy basil</li>
+                        <li>Rama tulsi</li>
+                        <li>Sacred basil</li>
+                        <li>Tulsi</li>
+                    </ul>
+                </td>
+                <td><em>Ocimum tenuiflorum</em></td>
+                <td>Leaf</td>
+                <td>Dry</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p>
+        References: Proper name: USDA 2024; Gardner and McGuffin 2013; Common names: USDA 2024, Gardner and McGuffin
+        2013,
+        API 1999; Source information: API 1999, Agrawal et al. 1996.</p>
+
+
+    <h2>Route of administration</h2>
+
+    Oral
+
+
+    <h2>Dosage form(s)</h2>
+    <p>
+        This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance
+        Document.
+    </p>
+    <p>
+        Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product
+        Licence Application form for Compendial applications.
+    </p>
+    <h2> Use(s) or Purpose(s)
+    </h2>
+    <ul>
+        <li>
+            Traditionally used in Ayurveda (as an expectorant and/or demulcent) to help relieve cough (, such as
+            Kasa,)
+            and
+            colds (Premila 2006; Paranjpe 2005; Sudarshan 2005; Mishra 2004; Williamson 2002; Kapoor 2001; Gogte 2000;
+            API
+            1999;
+            Jain 1991).</li>
+        <li>
+            Traditionally used in Ayurveda (as an expectorant) to help relieve respiratory mucus buildup/catarrh
+            (Premila
+            2006; Paranjpe 2005; Sudarshan 2005; Mishra 2004; Williamson 2002; Kapoor 2001; Gogte 2000; API 1999; Jain
+            1991).
+        </li>
+        <li>
+            Traditionally used in Ayurveda as (Hrdya,) a cardiotonic (Paranjpe 2005; Sudarshan 2005; Murthy 2004;
+            Warrier
+            2003; Williamson 2002; Gogte 2000; API 1999).
+        </li>
+        <li>
+            Traditionally used in Ayurveda (as Dipan,) to aid digestion and (as a stomachic to) stimulate appetite
+            (Paranjpe
+            2005; Murthy 2004; Warrier 2003; Kapoor 2001; Gogte 2000; API 1999; Khory 1999; Jain 1991).
+        </li>
+        <li>
+            Used in Herbal Medicine as an adaptogen to help increase energy and resistance to stress over time (e.g.
+            in
+            case
+            of mental and physical fatigue related to stress) (McIntyre 2011; Winston and Maimes 2007; Hoffmann 2003;
+            Williamson
+            2003).
+        </li>
+        <li> Source of antioxidants/Provides antioxidants (Hakkim et al. 2007; Winston and Maimes 2007; Williamson
+            2003).</li>
+        <li>
+            Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative
+            effect
+            of/the oxidative damage caused by/cell damage caused by) free radicals (Hakkim et al. 2007; Winston and
+            Maimes
+            2007;
+            Williamson 2003).
+        </li>
+    </ul>
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>
+            The above uses can be combined on the product label if from the same traditional or non-traditional system
+            of
+            medicine [e.g., Traditionally used in Ayurveda to help relieve cough, such as Kasa, and colds and as Hrdya,
+            a
+            cardiotonic].
+        </li>
+        <li>
+            <strong> For multi-ingredient products:</strong>
+            <ul>
+                <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional
+                    use claim
+                    must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine
+                    from
+                    which the
+                    claim originates when 1) both traditional and modern claims are present or 2) when claims originate
+                    from
+                    multiple
+                    systems of traditional medicine (e.g., Holy basil is traditionally used in Ayurveda to help relieve
+                    cough, such
+                    as
+                    Kasa, and colds).</li>
+
+                <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified
+                    system
+                    of
+                    traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the
+                    traditional
+                    claim(s)
+                    is
+                    not required.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Dose(s)</h2>
+
+    <h3>Subpopulation(s)</h3>
+
+    <p>Adults 18 years and older</p>
+
+    <h3>Quantity(ies)</h3>
+
+    <p><strong>Methods of preparation:</strong> Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract,
+        Tincture, Fluid extract)</p>
+
+    <p><em>Antioxidant</em></p>
+
+    <p>Not to exceed 3 grams of dried leaf, per day (API 1999).</p>
+
+    <p><em>Ayurveda; Adaptogen</em></p>
+
+    <p>2 - 3 grams of dried leaf, per day (API 1999).</p>
+    <p>
+        <strong>Methods of preparation:</strong> Non-Standardized Aqueous Extracts (Dry extract, Decoction, Decoction
+        concentrate, Infusion,
+        Infusion concentrate)
+    </p>
+    <p><em>Antioxidant</em></p>
+
+    <p>Not to exceed 28 grams of dried leaf, per day (Williamson 2002; Kapoor 2001).</p>
+
+    <p><em>Ayurveda</em></p>
+
+    <p>7 - 28 grams of dried leaf, per day (Williamson 2002; Kapoor 2001).</p>
+
+    <p><em>Adaptogen</em></p>
+
+    <p>4.2 - 28 grams of dried leaf, per day (Winston and Maimes 2007; Williamson 2002; Kapoor 2001).</p>
+
+    <h3>Direction(s) for use</h3>
+
+    <p>No statement required.</p>
+
+
+    <h3>Duration(s) of use</h3>
+
+    <p>No statement required.</p>
+
+
+    <h2>Risk information</h2>
+
+    <h3>Caution(s) and warning(s)</h3>
+
+    <p><em>All products</em></p>
+
+    <ul>
+        <li> Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+            if
+            you
+            are breastfeeding (WHO 2002).
+        </li>
+        <li> Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+            if
+            you
+            have a heart condition or diabetes (Rai et al. 1997; Agrawal et al. 1996).
+        </li>
+        <li> Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+            if
+            you
+            are taking any heart or blood pressure medication (Rai et al. 1997; Agrawal et al. 1996).</li>
+    </ul>
+    <p><em>Relief of cough/cold/respiratory mucus buildup; Digestive aid; Adaptogen</em></p>
+    <p>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms
+        persist
+        or worsen.
+    </p>
+    <h3>Contraindication(s)</h3>
+
+    <p>Do not use if you are pregnant (Prakash et al. 2005; Ahmed et al. 2002; WHO 2002; Wohlmuth 2002; Kapoor 2001).
+    </p>
+
+    <h3>Known adverse reaction(s)</h3>
+
+    <p>No statement required.</p>
+
+
+    <h3>Non-medicinal ingredients</h3>
+    <p>
+        Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+        limitations
+        outlined in the database.
+    </p>
+
+    <h2>Storage conditions</h2>
+
+    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+            Regulations</em>.</p>
+
+
+    <h2>Specifications</h2>
+    <ul>
+        <li>
+            The finished product specifications must be established in accordance with the requirements described in
+            the
+            Natural and Non-Prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+        </li>
+
+        <li> The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+    </ul>
+
+
+
+    <h2>EXAMPLE OF PRODUCT FACTS:</h2>
+
+    <p>Consult the Guidance Document, <a
+            href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling
+            of Natural Health Products</a> for more details.</p>
+
+    <h2>References cited</h2>
+    <ul>
+        <li>
+            Agrawal P, Rai V, Singh RB. Randomized placebo-controlled, single blind trial of holy basil leaves in
+            patients with noninsulin-dependent diabetes mellitus. International Journal of Clinical Pharmacology and
+            Therapeutics 1996;34(9):406-409.
+        </li>
+        <li>
+            Ahmed A, Ahamed RN, Aladakatti RH, Ghoseawar MG. Reversible antifertility effect of benzene extract of
+            Ocimum sanctum on sperm parameters and fructose content in rats. Journal of basic and clinical physiology
+            and pharmacology 2002;13:51-59.
+        </li>
+        <li>
+            API 1999: The Ayurvedic Pharmacopoeia of India. 1<sup>st</sup> edition, Part I, Volume I. Delhi (IN): The
+            Controller of
+            Publications; 1999.
+        </li>
+        <li>
+            Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook.
+            2<sup>nd</sup>
+            edition. Boca Ration (FL): Taylor and Francis Group; 2013.
+        </li>
+        <li>
+            Gogte VVM. Ayurvedic Pharmacology and Therapeutic Uses of Medicinal Plants. Mubai (IN): Bharatiya Vidya
+            Bhavan; 2000.
+        </li>
+        <li>
+            Hakkim FL, Shankar CG, Girija S. Chemical Composition and Antioxidant Property of Holy Basil (Ocimum sanctum
+            L.) Leaves, Stems, and Inflorescence and Their in Vitro Callus Cultures. Journal of Agricultural and Food
+            Chemistry 2007;55(22):9109-9117.
+        </li>
+        <li>
+            Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts
+            Press; 2003.
+        </li>
+        <li>
+            Jain SK, DeFillips RA. Medicinal Plants of India. Volume 1. Algonac (MI): Reference Publications, Inc; 1991.
+        </li>
+        <li>
+            Kapoor LD. Handbook of Ayurvedic Medicinal Plants. Baton Roca (FL): CRC Press LLC; 2001.
+        </li>
+        <li>
+            Khory RN, Katrak NN. Materia Medica of India and their Therapeutics. Delhi (IN): Komal Prakashan; 1999
+            [Reprint of 1903 publication].
+        </li>
+        <li>
+            McIntyre A. Le guide complet de la phytothérapie. Paris (FR) : Le Courrier du Livre; 2011.
+        </li>
+        <li>
+            Mishra LC, editor. Scientific Basis for Ayurvedia Therapies. Baton Roca (FL): CRC Press LLC; 2004.
+        </li>
+        <li>
+            Murthy KRS. Bhāvaprakāśa of Bhāvamiśra. Volume 1. Varanasi (IN): Chowkhamba Krishnadas Academy; 2004.
+        </li>
+        <li>
+            Paranjpe P. Indian Medicinal Plants: Forgotten Healers: A Guide to Ayurvedic Herbal Medicine. Delhi (IN):
+            Chaukhamba Sanskrit Pratishthan; 2005.
+        </li>
+        <li>
+            Prakash P, Gupta N. Therapeutic uses of Ocimum sanctum Linn (Tulsi) with a note on eugenol and its
+            pharmacological actions: A short review. Indian Journal of Physiology and Pharmacology 2005;49(2):125-131.
+        </li>
+        <li>
+            Premila MS. Ayurvedic herbs: A clinical guide to the healing plants of traditional Indian medicine. New York
+            (NY): The Haworth Press Inc; 2006.
+        </li>
+        <li>
+            Sudarshan SR. Encyclopaedia of Indian Medicine, Materia Medica - Herbal Drugs. Volume 4. Banglore (IN):
+            Popular Prakashan; 2005.
+        </li>
+        <li>
+            Rai V, Iyer U, Mani UV. Effect of Ocimum sanctum leaf powder on blood lipoproteins, glycated proteins and
+            total amino acids in patients with non-insulin-dependent diabetes mellitus. Journal of Nutritional and
+            Environmental Medicine 1997;7(2):133-118.
+        </li>
+        <li>
+            USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm
+            Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 May 27].
+            Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+        </li>
+        <li>
+            Warrier PK, Nambiar VPK, Ramankutty C, editors. Indian Medicinal Plants: a compendium of 500 species. Volume
+            4. Chennai (IN): Orient Longman Private Limited; 2003.
+        </li>
+        <li>
+            WHO 2002: World Health Organization. WHO Monographs on Selected Medicinal Plants, Volume 2. Geneva (CH):
+            World Health Organization; 2002.
+        </li>
+        <li>
+            Williamson EM. Potter's Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical
+            Use. Saffron Walden (GB): The C.W. Daniel Company Limited; 2003.
+        </li>
+        <li>
+            Williamson EM, editor. Major Herbs of Ayurveda. Edinburgh (GB): Churchill Livingstone; 2002.
+        </li>
+        <li>
+            Winston D, Maimes S. Adaptogens: Herbs for strength, stamina and stress relief. Healing Arts Press;
+            Rochester (VT); 2007.
+        </li>
+        <li>
+            Wohlmuth H. Sacred basil - an Ayurvedic adaptogen. Botanical Pathways, 2002; Issue 11.
+        </li>
+    </ul>
+
+    <h2>References reviewed</h2>
+
+    <ul>
+        <li>
+            American Society of Health-System Pharmacists. American Hospital Formulary Service (AHFS) Drug Information.
+            Philadelphia (PA): Lippincott Williams and Wilkins; 2005.
+        </li>
+        <li>
+            Bhattacharyya D, Sur TK, Jana U, Debnath PK. Controlled programmed trial of Ocimum sanctum leaf on
+            generalized anxiety disorders. Nepal Medical College Journal 2008;10(3):176-179.
+        </li>
+        <li>
+            Bradley P. British Herbal Compendium - A handbook of scientific information on widely used plant drugs.
+            (Volume 2) Bournemouth (GB): British Herbal Medicine Association; 2006.
+        </li>
+        <li>
+            Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic
+            Medical
+            Publications; 2010.
+        </li>
+        <li>
+            Brinker F. The Toxicology of Botanical Medicines. Sandy, Oregon: Eclectic Medical Publications; 2000.
+        </li>
+        <li>
+            Dr. Duke's Phytochemical and Ethnobotanical Databases. [Accessed 2024 May 27]. Available from:
+            https://phytochem.nal.usda.gov/
+        </li>
+        <li>
+            Evans WC. Trease and Evans Pharmacognosy, 16<sup>th</sup> edition. Toronto (ON): Saunders Elsevier; 2009.
+        </li>
+        <li>
+            Faccolia S. Cornucopia II A source book of edible plants. Vista (CA): Kampong Publications; 1998.
+        </li>
+        <li>
+            Grover JK, Yadav S, Vats V. Medicinal plants of India with anti-diabetic potential. Journal of
+            Ethnopharmacology 2002;82(1):81-100.
+        </li>
+        <li>
+            Kapoor S. Ocimum sanctum: A therapeutic role in diabetes and the metabolic syndrome. Hormone and Metabolic
+            Research 2008;40:296.
+        </li>
+        <li>
+            Liu JP, Zhang M, Wang M, Grimsgaard S. Chinese herbal medicines for type 2 diabetes mellitus (Review).
+            Cochrane Database of Systemic Reviews 2002, Issue 3. Art. No.: CD003642. DOI:
+            10.1002/14651858.CD003642.pub2.
+        </li>
+        <li>
+            Miller R, Miller S. Tulsi Queen of Herbs: India's Holy Basil. The Green Isle Enterprise: Salt Spring Island
+            (BC); 2003.
+        </li>
+        <li>
+            Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005.
+        </li>
+        <li>
+            Mondal S, Varma S, Bamola VD, Naik SN, Mirdha BR, Padhi MM, Mehta N, Mahapatra SC. Double-blinded randomized
+            controlled trial for immunomodulatory effects of Tulsi (Ocimum sanctum Linn.) leaf extract on healthy
+            volunteers. Journal of Ethnopharmacology 2011;136(3):452-456.
+        </li>
+        <li>
+            Mondal S, Mirdha BR, Mahapatra SC. The science behind sacredness of Tulsi (Ocimum sanctum
+            Linn). Indian Journal of Physiology and Pharmacology 2009;53(4):291-306.
+        </li>
+        <li>
+            Rosenbaum CC, O'Mathúna DP, Chavez M, Shields K. Antioxidants and anti-inflammatory dietary supplements for
+            osteoarthritis and rheumatoids arthritis. Alternative Therapies in Health and Medicine 2010;16(2):32-40.
+        </li>
+        <li>
+            Shekelle PG, Hardy M, Morton SC, Coulter I, Venuturupalli S, Favreau J, Hilton LK. Are Ayurvedic herbs for
+            diabetes effective? The Journal of Family Practice 2005;54(10):876-886.
+        </li>
+        <li>
+            Singh N. A new concept on the possible therapy of stress diseases with “adaptogen” (anti-stress drugs) of
+            indigenous plant origin. Current Medical Practice 1981;25:1-50.
+        </li>
+        <li>
+            Summary of Evaluations Performed by the Joint FAO/WHO Expert Committee on Food Additives. Eugenol..
+            [Accessed 2024 May 27]. Available from: http://www.inchem.org/documents/jecfa/jeceval/jec_841.htm
+        </li>
+        <li>
+            Summary of Evaluations Performed by the Joint FAO/WHO Expert Committee on Food Additives.
+            Beta-Caryophyllene. [Accessed 2024 May 27]. Available from:
+            http://www.inchem.org/documents/jecfa/jeceval/jec_389.htm
+        </li>
+        <li>
+            Summary of Evaluations Performed by the Joint FAO/WHO Expert Committee on Food Additives. Eugenyl Methyl
+            Ether. [Accessed 2024 May 27]. Available from: http://www.inchem.org/documents/jecfa/jeceval/jec_846.htm
+        </li>
+        <li>
+            Ulbricht C, Basch E, Weissner W, Hackman D. An evidence-based systematic review of herbs and supplement
+            interactions by the Natural Standard Research Collaboration. Expert Opinion on Drug Safety
+            2006;5(5):719-728.
+        </li>
+        <li>
+            Yeh GY, Eisenberg DM, Kaptchuk TJ, Phillips RS. Systematic review of herbs and dietary supplements for
+            glycemic control in diabetes. Diabetes Care 2003;26(4):1277-1294.
+        </li>
+        <li>
+            Zamin M. Ocimum sanctum may overcome fatigue stress. Pakistan Journal of Biological Sciences.
+            2011;14(21):1000-1001.
+        </li>
+    </ul>
+
+    <h2>Version History</h2>
+    <table class="subject">
+        <thead>
+            <tr>
+                <th>
+                    Publication date </th>
+                <th>
+                    Update type </th>
+                <th>
+                    Summary of main updates (from Feb 2026) </th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>2026-02-27</td>
+                <td>Minor updates</td>
+                <td>
+                    <ul>
+                        <li>Introductory notes</li>
+                        <li>Adjustments to the wording of the claims; addition of a claim</li>
+                        <li>Addition of notes in the Uses or purposes section</li>
+                        <li>Risk statement wording</li>
+                        <li>Inclusion of the standard statement for storage conditions</li>
+                        <li>Inclusion of a Product Facts Table example</li>
+                        <li>Reference section</li>
+                        <li>Inclusion of version history information</li>
+
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>2018-12-18</td>
+                <td>Validation</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2013-03-22</td>
+                <td>Minor updates</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2013-02-25</td>
+                <td>Initial release</td>
+                <td> - </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

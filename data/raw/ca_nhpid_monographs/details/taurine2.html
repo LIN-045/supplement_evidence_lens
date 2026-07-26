@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=taurine2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="79925d8e-ab1d-4bd9-b616-2da9ec0e151d"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>TAURINE</h1>
+	<div class="icon">
+		<a href="dbImages/mono_taurine_english.pdf" title="TAURINE">
+		<img alt="Monograph: TAURINE" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 49 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+    </p>
+        
+    <section aria-labelledby="date">		
+        <h2 id="date">Date</h2>
+            <p>January 30, 2026</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+            <table id="ref1" class="subject">
+                <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th rowspan="1">Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2-Aminoethanesulfonic acid</td>
+						<td>Taurine</td>
+						<td>
+							<ul>
+								<li>L-Arginine taurinate</li>
+								<li>Taurine</li>
+								<li>Taurine ethyl ester</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: RSC 2025&semi; NIH 2024&semi; Common name: RSC 2025&semi; USP-NF 2024&semi; Source information: Zajac et al. 2003&semi; Gennaro 2000.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">	
+        <h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+            <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>	
+			<p>Helps to support cardiovascular function (Allard et al. 2006&semi; Zhang et al. 2004&semi; Baum and Weiss 2001&semi; Azuma 1994&semi; Azuma et al. 1992&semi; Fujita et al. 1987&semi; Azuma et al. 1983a,b).</p>
+    </section>
+
+    <section aria-labelledby="dose">	
+        <h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older </p>
+			<h3>Quantity(ies)</h3>
+				<p>1.5 &ndash; 3 grams of Taurine, per day (Baum and Weiss 2001&semi; Azuma 1994&semi; Azuma et al. 1992).</p>
+			<h3>Direction(s) for use</h3>
+				<p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">	
+        <h2 id="durationOfUse">Duration(s) of Use</h2>
+            <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">	
+        <h2 id="riskInformation">Risk Information</h2> 
+			<h3>Caution(s) and warning(s)</h3>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Lopez Ramon et al. 2007&semi; Seghieri et al. 2007).</p>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">		
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>	 
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">	
+        <h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+    </section>
+
+    <section aria-labelledby="specifications">	
+        <h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="./nhpid-bdipsn/dbImages/TAURINE_E.gif" style="width:700px"/></p>
+	</section>
+
+    <section aria-labelledby="referenceCited">	
+        <h2 id="referenceCited">References Cited</h2>
+		<ul>
+			<li>Allard ML, Jeejeebhoy KN, Sole MJ. The management of conditioned nutritional requirements in heart failure. Heart Failure Reviews 2006&semi;11(1):75-82.</li>
+			<li>Azuma J, Hasegawa H, Sawamura A, Awata N, Ogura K, Harada H, Yamamura Y, Kishimoto S. Therapy of congestive heart failure with orally administered taurine. Clinical Therapeutics 1983a&semi;5(4):398-408.</li>
+			<li>Azuma J, Hasegawa H, Sawamura A. Taurine for treatment of congestive heart failure. International Journal of Cardiology 1982&semi;2:303-309.</li>
+			<li>Azuma J, Sawamura A, Awata N, et al. Double-blind randomized crossover trial of taurine in congestive heart failure. Current Therapeutic Research, Clinical and Experimental 1983b&semi;34(4):543-557.</li>
+			<li>Azuma J, Sawamura A, Awata N. Usefulness of taurine in chronic congestive heart failure and its prospective application. Japanese Circulation Journal 1992&semi;56(1):95-99.</li>
+			<li>Azuma J. Long-term effect of taurine in congestive heart failure: preliminary report. Heart Failure Research with Taurine Group. Advances in Experimental Medicine and Biology 1994&semi;359:425-433.</li>
+			<li>Baum M, Weiss M. The influence of a taurine containing drink on cardiac parameters before and after exercise measured by echocardiography. Amino Acids 2001&semi;20(1):75-82.</li>
+			<li>Fujita T, Ando K, Noda H, Ito Y, Sato Y. Effects of increased adrenomedullary activity and taurine in young patients with borderline hypertension. Circulation 1987&semi;75(3):525-532.</li>
+			<li>López Ramón Y Cajal C, Ocampo Martínez R, Couceiro Naveira E, Mart&iacute;nez M. Amino acids in amniotic fluid in the 15th-16th weeks of gestation and preterm labor. The Journal of Maternal-Fetal & Neonatal Medicine: the Official Journal of the European Association of Perinatal Medicine, the Federation of Asia and Oceania Perinatal Societies, the International Society of Perinatal Obstetricians. 2007&semi;20(3):225-231.</li>
+			<li>NIH 2024: National Institutes of Health. PubChem. Bethesda (MD): National Library of Medicine, US Department of Health & Human Services&semi; 2024. [Accessed 2025 January 16]. Available from: https://pubchem.ncbi.nlm.nih.gov/</li>
+			<li>RSC 2025: Royal Society of Chemistry: The Merck Index Online&semi; 2025. [Accessed 2025 February 18]. Available from: https://merckindex.rsc.org/</li>
+			<li>Seghieri G, Tesi F, Bianchi L, Loizzo A, Saccomanni G, Ghirlanda G, Anichini R, Franconi F. Taurine in women with a history of gestational diabetes. Diabetes Research and Clinical Practice 2007&semi;76(2):187-192.</li>
+			<li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2024.</li>
+			<li>Zhang M, Bi LF, Fang JH, Su XL, Da GL, Kuwamori T, Kagamimori S. Beneficial effects of taurine on serum lipids in overweight or obese non-diabetic subjects. Amino Acids 2004&semi;26(3):267-271.</li>
+		</ul>
+    </section>
+
+    <section aria-labelledby="referenceReviewed">	
+        <h2 id="referenceReviewed">References Reviewed</h2>
+		<ul>
+			<li>Azuma J, Sawamura A, Awata N, Ohta H, Hamaguchi T, Harada H, Takihara K, Hasegawa H, Yamagami T, Ishiyama T, et al. Therapeutic effect of taurine in congestive heart failure: a double-blind crossover trial. Clinical Cardiology 1985&semi;8(5):276-282.</li>
+			<li>Bichler A, Swenson A, Harris MA. A combination of caffeine and taurine has no effect on short term memory but induces changes in heart rate and mean arterial pressure. Amino Acids 2006&semi;31:471-476.</li>
+			<li>Fennessy FM, Moneley DS, Wang JH, Kelly CJ, Bouchier-Hayes DJ. Taurine and vitamin C modify monocyte and endothelial dysfunction in young smokers. Circulation 2003&semi;28&semi;107(3):410-415.</li>
+			<li>Jeejeebhoy F, Keith M, Freeman M, Barr A, McCall M, Kurian R, Mazer D, Erret L. Nutritional supplementation with MyoVive repletes essential cardiac myocyte nutrients and reduces left ventricular size in patients with left ventricular dysfunction. American Heart Journal 2002&semi;143(6):1092-1100.</li>
+			<li>Kohashi N, Okabayashi T, Hama J, Katori R. Decreased urinary taurine in essential hypertension. Progress in Clinical Biological Research 1983&semi;125:73-87.</li>
+			<li>Shao A, Hathcock JN. Risk assessment for the amino acids taurine, L-glutamine and L-arginine. Regul Toxicol Pharmacol. 2008 Apr&semi;50(3):376-99. Epub 2008 Jan 26.</li>
+			<li>Xu YJ, Arneja AS, Tappia PS, Dhalla NS. The potential health benefits of taurine in cardiovascular disease. Experimental Clinical Cardiology 2008&semi;13(2):57-65.</li>
+			<li>Yamori Y, Liu L, Ikeda K, Miura M, Mizushima S, Miki T, Nara Y. Distribution of twenty-four hour urinary taurine excretion and association with ischemic heart disease: disease mortality in 24 populations of 16 countries: results from the WHO-CARDIAC study. Hypertension Research 2001&semi;24(4):453-457.</li>
+			<li>Yamori Y, Liu L, Mizushima S, Ikeda K, Nara Y. Male cardiovascular mortality and dietary markers in 25 population samples of 16 countries. Journal of Hypertension 2006&semi;24(8):1499-1505.</li>
+			<li>Yamori Y, Nara Y, Ikeda K, Mizushima S. Is taurine a preventive nutritional factor of cardiovascular diseases or just a biological marker of nutrition? Advances in Experimental Medicine and Biology 1996&semi;403:623-629.</li>
+		</ul>
+    </section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

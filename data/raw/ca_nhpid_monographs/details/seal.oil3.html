@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=seal.oil3\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="15a17c41-ba13-413b-a813-cb2a09c030d4"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+  <h1>SEAL OIL </h1>
+
+  <p class="lightgreyBG"> Help on accessing alternative formats, such as Portable Document Format
+	  (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr
+		  title="PowerPoint">PPT</abbr>) files, can be obtained in
+	  the <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.</p>
+
+  <div class="icon">
+	  <a href="dbImages/mono_seal-oil_english.pdf" title="SEAL OIL">
+		  <img alt="Monograph: SEAL OIL" style="position:relative; top:-2px"
+			  src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22" /> (PDF
+		  Version - 102 KB)</a>
+  </div>
+
+  <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence
+	  Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a
+	  comprehensive review of the medicinal ingredient.</p>
+  
+<p><strong>Notes</strong></p>
+    <ul>
+        <li>This monograph only covers naturally-occurring fatty acids in seal oil with EPA, DHA and DPA, 
+			including concentrated oils, but excludes seal oils spiked with additional fatty acids.</li>
+        <li>Text in parentheses is additional optional information which can be included on the label at 
+			the applicant's discretion.</li>
+        <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+    </ul>
+
+  <section aria-labelledby="date">
+	 
+	  <h2 id="date">Date</h2>
+
+	  <p>September 26, 2025</p>
+
+  </section>
+
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+	  <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+	  <table class="subject">
+		  <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+		  <thead>
+			  <tr>
+				  <th rowspan="2" scope="col">Proper name(s)</th>
+				  <th rowspan="2" scope="col">Common name(s)</th>
+				  <th colspan="2" scope="colgroup">Source information</th>
+			  </tr>
+			  <tr>
+				  <th scope="col">Source material(s)</th>
+				  <th scope="col">Part(s)</th>
+			  </tr>
+		  </thead>
+		  <tbody>
+			  <tr>
+				  <td rowspan="1">
+
+					  Seal oil
+				  </td>
+
+				  <td rowspan="1">
+					  Seal oil
+				  </td>
+
+				  <td>
+					  <ul>
+						  <li><i>Cystophora cristata </i></li>
+						  <li><i>Erignathus barbatus</i></li>
+						  <li><i>Halichoerus grypus </i></li>
+						  <li><i>Pagophilus groenlandicus </i></li>
+						  <li><i>Phoca vitulina </i></li>
+						  <li><i>Pusa hispida</i>
+					  </ul>
+				  </td>
+				  <td>
+					  Blubber
+				  </td>
+			  </tr>
+		  </tbody>
+	  </table>
+
+	<p>References: Proper name: Brox et al. 2001; &#216;sterud et al. 1995; Common name: Brox et al. 2001; &#216;
+		sterud et al. 1995; Source information: ITIS 2024; MMR 2018.</p>
+
+  </section>
+
+  <section aria-labelledby="routeOfAdministration">
+	  <h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+	  <p>Oral</p>
+  </section>
+
+
+  <section aria-labelledby="dosageForm">
+	  <h2 id="dosageForm">Dosage Form(s)</h2>
+	  <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs
+		  Guidance
+		  Document.</p>
+	  <p><strong>Acceptable dosage forms by age group: </strong></p>
+	  <p>Children 1-2 years: The acceptable dosage forms are limited to emulsion/suspension and
+		  solution/liquid preparations (Giacoia et al. 2008; EMA/CHMP 2006). </p>
+	  <p>Children 3-5 years: The acceptable dosage forms are limited to chewables, emulsion/
+		  suspension, powders and solution/liquid preparations (Giacoia et al. 2008; EMA/CHMP 2006). </p>
+	  <p>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older: The
+		  acceptable
+		  dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product
+		  Licence
+		  Application form for Compendial applications. Although delayed release dosage forms are usually 
+		  not supported by the NNHPD's monographs, this monograph includes 'Capsule, soft, enteric-coated' 
+		  which is commonly used for marine oil products.</p>
+
+  </section>
+
+<section aria-labelledby="useOrPurpose">
+<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+    <p><i>Products providing 100-5,000 milligrams of eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA), per day. Potency information for docosapentaenoic acid (DPA) is optional </i></p>
+    <ul>
+        <li>Source of omega-3 fatty acids for the maintenance of good health (FCC 2024; Wu et al. 2012; Simopoulos 2007; Oh 2005; Brox et al. 2001; Simopoulos 1999).</li>
+        <li>Source of eicosapentaenoic acid (EPA), (and) docosahexaenoic acid (DHA) (and docosapentaenoic acid (DPA)<sup>1</sup>) for the maintenance of good health (FCC 2024; Wu et al. 2012; Simopoulos 2007; Oh 2005; Brox et al. 2001; Simopoulos 1999).</li>
+    </ul>
+
+    <p><sup>1</sup><b>Note</b>: Docosapentaenoic acid (DPA) can be included in the claim if the potency information for this constituent is also listed.</p>
+
+    <p><i>Products providing 200-5,000 milligrams of EPA and DHA, per day </i></p>
+    <ul>
+        <li>Helps support/maintain (normal) heart/cardiovascular health (Mann et al. 2010; Meyer et al. 2009; WHO/FAO 2003).</li>
+        <li>Helps support/maintain (normal) heart/cardiovascular function (Mann et al. 2010; Meyer et al. 2009; WHO/FAO 2003).</li>
+    </ul>
+
+    <p><i>Products providing 1,000-5,000 milligrams of EPA and DHA, per day</i></p>
+    <ul>
+        <li>Helps reduce (blood) triglyceride(s)/triacylglycerol(s) (levels) (Mann et al. 2010; Meyer et al. 2009).</li>
+        <li>Helps support/maintain normal (blood) triglyceride/triacylglycerol levels (Mann et al. 2010; Meyer et al. 2009; WHO/FAO 2003).</li>
+    </ul>
+
+    <p><i>Products for children up to 12 years old and providing 200-2,000 milligrams of EPA and DHA including at least 150 milligrams DHA, per day (maximum doses of EPA and DHA in Table 2 below apply based on the subpopulations)</i></p>
+
+    <p>Helps support/maintain (healthy) development of the brain/(and), eyes/(and) nerves in children up to 12 years of age (FCC 2024; Ryan and Nelson 2008; Marszalek and Lodish 2005; Haag 2003; Giedd et al. 1999; Mills 1999).</p>
+
+    <p><b>Notes</b></p>
+    <ul>
+        <li>The above uses can be combined on the product label (e.g., Helps reduce triglycerides and maintain cardiovascular health).</li>
+        <li>The terms 'Helps' or 'Helps to' can be used interchangeably on the label. </li>
+    </ul>
+
+
+    </section>
+
+  <section aria-labelledby="dose">
+	  <h2 id="dose">Dose(s)</h2>
+
+	  <h3>Subpopulation(s)</h3>
+	  <p>As specified below.</p>
+
+
+	  <h3>Quantity(ies)</h3>
+	  <p>Method of preparation: Standardized fixed oil</p>
+	  <p><strong>Note</strong></p>
+	  <p>In addition to the quantity of seal oil, the potency information must be expressed as the quantity (mg) and/or percent (%) of eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA) (% w/w) relative to the total quantity of seal oil. The potency information for docosapentaenoic acid (DPA) is optional.</p>
+
+	  <table class="subject">
+
+		  <caption>Table 2: Daily doses for eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA) in seal oil.</caption>
+
+		  <thead>
+
+			  <tr>
+				  <th rowspan="2" colspan="2" scope="colgroup">Subpopulation(s)</th>
+				  <th colspan="2" scope="colgroup">EPA + DHA (mg/day) </th>
+			  </tr>
+
+			  <tr>
+				  <th colspan="1" scope="col">Minimum<sup>1</sup></th>
+				  <th colspan="1" scope="col">Maximum<sup>2</sup></th>
+			  </tr>
+
+		  </thead>
+
+		  <tbody>
+
+			  <tr>
+				  <td rowspan="1">
+					  Children
+				  </td>
+				  <td>
+					  1-8 years<br />
+					  9-11 years
+				  </td>
+				  <td>
+					  100<br />
+					  100
+				  </td>
+				  <td>
+					  1,500<br />
+					  2,000
+				  </td>
+
+			  </tr>
+			  <tr>
+				  <td rowspan="1">
+					  Adolescents
+				  </td>
+				  <td>
+					  12-13 years<br />
+					  14-17 years
+				  </td>
+				  <td>
+					  100<br />
+					  100
+				  </td>
+				  <td>
+					  2,000<br />
+					  2,500
+				  </td>
+			  </tr>
+			  <tr>
+				  <td>
+					  Adults
+				  </td>
+				  <td>
+					  18 years and older
+				  </td>
+				  <td>
+					  100
+				  </td>
+				  <td>
+					  5,000
+				  </td>
+			  </tr>
+	
+		  </tbody>
+	  </table>
+	  <p><sup>1</sup>Restrictions to minimum dose may apply according to Use(s) or Purpose(s) section above.
+		  <br /><sup>2</sup>Adult maximum dose of EPA + DHA is supported by US FDA 2019 and EFSA 2012. Children and adolescent maximum doses, calculated as a fraction of the adult dose, are relative to body weight and caloric intake.</p>
+
+	<p>Note: The following potency information is considered as additional information and can be included on the label: XX% or mg total omega-3 fatty acids.</p>  
+
+    <h3>Direction(s) for use</h3>
+	  <p>No statement required. </p>
+
+  </section>
+
+  <section aria-labelledby="durationOfUse">
+	  <h2 id="durationOfUse">Duration(s) of Use</h2>
+
+	  <p>No statement required. </p>
+  </section>
+
+  <section aria-labelledby="riskInformation">
+	  <h2 id="riskInformation">Risk Information</h2>
+
+	  <h3>Caution(s) and warning(s)</h3>
+
+	  <p>No statement required. </p>
+
+
+	  <h3>Contraindication(s)</h3>
+	  <p>No statement required. </p>
+
+
+	  <h3>Known adverse reaction(s)</h3>
+	  <p>No statement required. </p>
+
+  </section>
+
+  <section aria-labelledby="nonMedicinalIngredients">
+	  <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+	  <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+		  limitations outlined in the database.</p>
+  </section>
+
+  <section aria-labelledby="storageConditions">
+	  <h2 id="storageConditions">Storage conditions</h2>
+    <p>Must be established in accordance with the requirements described in the <i>Natural Health Products Regulations.</i></p>
+
+    <p><i>All products, except those encapsulated</i></p>
+    <p>Refrigerate after opening (Wille and Gonus 1989).</p>
+
+    <p><i>All products (information for industry; not for labelling)</i></p>
+    <p>Preserve in tight container, protected from light (Ph.Eur. 2023; USP-NF 2024).</p>
+
+    </section>
+
+  <section aria-labelledby="specifications">
+	  <h2 id="specifications">Specifications</h2>
+	  <ul>
+		  <li>The finished product specifications must be established in accordance with the requirements
+			  described
+			  in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health
+			  Products Guide.</li>
+		  <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+		  <li>Peroxide, anisidine, and totox values of seal oil or omega-3 fatty acids derived from seal oil must be in accordance with the methods set out by the Association of Analytical Community (AOAC) and/or Pharmacopoeial analytical methods. These specifications are necessary to ensure the oxidative stability of the seal oil and the omega-3 fatty acids from seal oil (HC 2015). The maximum peroxide value (PV) must be 5 mEq/kg, the maximum anisidine value (AV) must be 20 while the maximum Totox value must be 26 (calculated as 2 X PV + AV). </li>
+		  <li>The dioxins, polychlorinated dibenzo-para-dioxins (PCDDs) and polychlorinated dibenzofurans (PCDFs); the dioxin-like polychlorinated biphenyls (dioxin-like PCBs); and the polychlorinated biphenyls (PCBs) are contaminants in oils from marine sources. Testing for these contaminants is required. As indicated in the Quality of Natural Health Products Guide, testing should be performed using appropriate analytical methods, such as method No. 1613 revision B of the Environmental Protection Agency for PCDDs and PCDFs and method No. 1668B of the Environmental Protection Agency for chlorinated biphenyl congeners. Licence holders are advised to consult the Commission of the European Communities documents on dioxins and dioxin- like PCB contaminants in marine oil for further information. Refer to the Quality of Natural Health Products Guide for more information on the acceptable limits of dioxins and dioxin-like PCBs. </li>
+	  </ul>
+  </section>
+
+
+<h2>EXAMPLE OF PRODUCT FACTS:</h2>
+                              
+  <p>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> Labelling of Natural Health Products</a> for more details.<p>
+      <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Seal_Oil_E.gif" alt="Product Facts Table" style="width:700px" /></p>    
+
+
+
+  <section aria-labelledby="referencesCited">
+	  <h2 id="referencesCited">References Cited</h2>
+      <ul>
+        <li>Brox J, Olaussen K, &#216;sterud B, Elvevoll EO, Bjornstad E, Brattebog G, Iversen H. 2001. A long term seal- and cod-liver-oil supplementation in hypercholesterolemic subjects. Lipids 36(1):7-13.</li>
+        
+        <li>EFSA 2012: European Food Safety Authority. Scientific Opinion: Scientific opinion on the tolerable upper intake level of eicosapentaenoic acid (EPA), docosahexaenoic acid (DHA) and docosapentaenoic acid (DPA). EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). EFSA Journal 2012;10(7):2815.</li>
+        
+        <li>EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric population. [Accessed 2024 March 13]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf</li>
+        
+        <li>FCC 2024: Food Chemicals Codex. 8th edition. Rockville (MD): The United States Pharmacopeial Convention.</li>
+        
+        <li>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008; 30(11):2097-2101.</li>
+        
+        <li>Giedd JN, Blumenthal J, Jeffries NO, Castellanos FX, Liu H, Zijdenbos A, Paus T, Evans AC, Rapoport JL. 1999. Brain development during childhood and adolescence: a longitudinal MRI study. Nature Neuroscience 2(10):861-863.</li>
+        
+        <li>Haag M. 2003. Essential fatty acids and the brain. The Canadian Journal of Psychiatry 48(3):195-203.</li>
+        
+        <li>HC 2015: Health Canada. 2015. Quality of Natural Health Products Guide Version 3.1. Ottawa (ON): Natural Health Products Directorate, Health Canada. [Accessed 2024 March 13]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html</li>
+        
+        <li>ITIS 2024: Integrated Taxonomic Information System. Taxon Based on Biological Information System. Canadian Biodiversity Information Facility, Government of Canada. [Accessed 2024 April 18]. Available from: https://www.itis.gov/servlet/SingleRpt/SingleRpt</li>
+        
+        <li>Mann NJ, O'Connell SL, Baldwin KM, Singh I, Meyer BJ. Effects of seal oil and tuna-fish oil on platelet parameters and plasma lipid levels in healthy subjects. Lipids. 2010 Aug;45(8):669-81. doi: 10.1007/s11745-010-3450-z. Epub 2010 Jul 23.</li>
+        
+        <li>Marszalek JR, Lodish HF. 2005. Docosahexaenoic acid, fatty acid-interacting proteins, and neuronal function: breastmilk and fish are good for you. Annual Review of Cell and Developmental Biology 21:633-657.</li>
+        
+        <li>Meyer BJ, Lane AE, Mann NJ. Comparison of seal oil to tuna oil on plasma lipid levels and blood pressure in hypertriglyceridaemic subjects. Lipids. 2009 Sep;44(9):827-35. doi: 10.1007/s11745-009-3333-3.</li>
+        
+        <li>Mills MD. 1999. The eye in childhood. American Family Physician 60(3):907-918.</li>
+        
+        <li>MMR 2018: Marine Mammal Regulations. SOR/93-56. Fisheries Act. Ottawa (ON): Government of Canada. [Accessed 2024 March 13]. Available from: http://laws-lois.justice.gc.ca/eng/regulations/SOR-93-56/index.html</li>
+        
+        <li>Oh R. 2005. Practical applications of fish oil (Ω-3 fatty acids) in primary care. Journal of the American Board of Family Practitioners 18(1):28-36.</li>
+        
+        <li>&#216;sterud B, Elvevoll EO, Barstad H, Brox J, Halvorsen H, Lia K, Olsen JO, Olsen RL, Sissener C, Rekdal &#216;, Vognild E. 1995. Effect of marine oils supplementation on coagulation and cellular activation in whole blood. Lipids 30(12):1111-1118.</li>
+        
+        <li>Ph. Eur. 2023: European Pharmacopoeia, 11th edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM); 2023.</li>
+        
+        <li>Ryan AS, Nelson EB. 2008. Assessing the effect of docosahexaenoic acid on cognitive functions in healthy, preschool children: a randomized, controlled, double-blind study. Clinical Pediatrics 47(4):355-362.</li>
+        
+        <li>Simopoulos AP. 1999. Essential fatty acids in health and chronic disease. The American Journal of Clinical Nutrition 70(3):560S-569S.</li>
+        
+        <li>Simopoulos AP. 2007. Omega-3 fatty acids and athletics. Current Sports Medicine Reports 6(4):230-236.</li>
+        
+        <li>US FDA 2019. FDA Announces new qualified health claims for EPA and DHA Omega-3 consumption and the risk of hypertension and coronary disease; and associated link: FDA Response to Petition for Qualified Health Claim that EPA and DHA Omega-3 Consumption May Reduce Risk of Hypertension. [Accessed 2024 February 22]. Available from: https://www.fda.gov/food/cfsan-constituent-updates/fda-announces-new-qualified-health-claims-epa-and-dha-omega-3-consumption-and-risk-hypertension-and</li>
+        
+        <li>US EPA 2008: United States Environmental Protection Agency. November 2008. Method 1668B: Chlorinated Biphenyl Congeners in Water, Soil, Sediment, Biosolids, and Tissue by HRGC/HRMS. Washington (DC): Engineering and Analysis Division, Office of Science and Technology, Office of Water, U.S. Environmental Protection Agency. [Accessed 2024 March 13]. Available from: https://f.hubspotusercontent00.net/hubfs/6549100/EPA%20Method%201668B.pdf</li>
+        
+        <li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention, Inc.; 2024.</li>
+        
+        <li>WHO/FAO (World Health Organization/Food and Agriculture Organization), Expert Report: Diet, nutrition and prevention of chronic diseases. Report of a Joint WHO/FAO Expert Consultation. WHO Technical Report Series (916, 160 pp) 2003.</li>
+        
+        <li>Wille HJ, Gonus P. 1989. Preparation of Fish Oil for Dietary Applications. In: Galli C, Simopolous AP, editors. Dietary ω3 and ω6 Fatty Acids. Biological Effects and Nutritional Essentiality. New York (NY): Plenum Press.</li>
+        
+        <li>Wu JHY, Lemaitre RN, King IB, Song X, Sacks FM, Rimm EB, Heckbert SR, Siscovick DS, Mozaffarian D. 2012. Association of Plasma Phospholipid Long-Chain Omega-3 Fatty Acids with Incident Atrial Fibrillation in Older Adults: The Cardiovascular Health Study. Circulation. Published online before print January 26, 2012, doi: 10.1161/ CIRCULATIONAHA.111.062653</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="referencesReviewed">
+	  <h2 id="referencesReviewed">References Reviewed</h2>
+      <ul>
+        <li>Bonefeld-J&#248;rgensen EC, M&#248;ller SM, Hansen JC. 2001. Modulation of atherosclerotic risk factors by seal oil: a preliminary assessment. International Journal of Circumpolar Health 60(1):25-33.</li>
+        
+        <li>Conquer JA, Cheryk LA, Chan E, Gentry PA, Holub BJ. 1999. Effect of supplementation with dietary seal oil on selected cardiovascular risk factors and hemostatic variables in healthy male subjects. Thrombosis Research 96(3):239-250.</li>
+        
+        <li>Ikeda I, Yoshida H, Tomooka M, Yosef A, Imaizumi K, Tsuji H, Seto A. 1998. Effects of long-term feeding of marine oils with different positional distribution of eicosapentaenoic and docosahexaenoic acids on lipid metabolism, eicosanoid production, and platelet aggregation in hypercholesterolemic rats. Lipids 33(9):897-904.</li>
+        
+        <li>Kaur G, Cameron-Smith D, Garg M, Sinclair AJ. 2011. Docosapentaenoic acid (22:5n-3): a review of its biological effects. Progress in Lipid Research 50(1):28-34.</li>
+        
+        <li>Mann NJ, O'Connell SL, Baldwin KM, Singh I, Meyer BJ. 2010. Effects of seal oil and tuna-fish oil on platelet parameters and plasma lipid levels in healthy subjects. Lipids 45(8):669-81.</li>
+        
+        <li>Murphy MG, Wright V, Ackman RG, Horackova M. 1997. Diets enriched in menhaden fish oil, seal oil, or shark liver oil have distinct effects on the lipid and fatty-acid composition of guinea pig heart. Molecular and Cellular Biochemistry 177(1-2):257-269.</li>
+        
+        <li>Murphy MG, Wright V, Scott J, Timmins A, Ackman RG. 1999. Dietary menhaden, seal, and corn oils differentially affect lipid and ex vivo eicosanoid and thiobarbituric acid-reactive substances generation in the guinea pig. Lipids 34(2):115-124.</li>
+    </ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=black.cohosh.actee.noire2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="665f4b4b-2f65-4777-9dd7-072ebf8373d2"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+  <h1>
+    Black Cohosh - Actaea Racemosa
+  </h1>
+  <div class="icon">
+   <a href="dbImages/mono_black-cohosh_english.pdf" title="BLACK COHOSH - ACTAEA RACEMOSA">
+    <img alt="Portable Document Format" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" width="22"/>
+    (PDF Version - 74 KB)
+   </a>
+  </div>
+  <p>
+   This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on label at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    January 31, 2025
+   </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+   <h2 id="properNameCommonNameSourceInformation">
+    Proper name(s), Common name(s), Source information
+   </h2>
+   <table class="subject">
+    <caption>
+     Table 1.  Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Proper name(s)
+      </th>
+      <th rowspan="2" scope="col">
+       Common name(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+       Source information
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Source material(s)
+      </th>
+      <th scope="col">
+       Part(s)
+      </th>
+      <th scope="col">
+       Preparation(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="2">
+       <i>
+        Actaea racemosa
+       </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         Black bugbane
+        </li>
+        <li>
+         Black cohosh
+        </li>
+        <li>
+         Black snakeroot
+        </li>
+       </ul>
+      </td>
+      <td>
+        <i>
+         Actaea racemosa
+        </i>
+      </td>
+      <td>
+       <ul>
+        <li>
+         Rhizome
+        </li>
+        <li>
+         Root
+        </li>
+        <li>
+         Root and rhizome
+        </li>
+       </ul>
+      </td>
+      <td>
+       Dry
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    References: Proper name: USDA 2024; Common names: Gardner and McGuffin 2013; Source information: BHP 1996.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of Administration
+   </h2>
+   <!-- CHECK IF ROUTE OR ROUTE(S) -->
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage Form(s)
+   </h2>
+   <p>
+    This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+   </p>
+   <p>
+    Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <ul>
+    <li>
+     (Traditionally) used in Herbal Medicine to help relieve the pain associated with menstruation  (Hoffmann 2003, Blumenthal et al. 2000, Bradley 1992, Williamson et al. 1988, Ellingwood 1983, Felter and Lloyd 1983).
+    </li>
+   </ul>
+   <ul>
+    <li>
+     (Traditionally) used in Herbal Medicine to help relieve muscle and joint pain associated with rheumatic conditions (such as rheumatoid arthritis, osteoarthritis and/or fibrositis), and pain associated with neuralgia (such as sciatica) (Hoffmann 2003, BHP 1983, Ellingwood 1983, Felter and Lloyd 1983).
+    </li>
+   </ul>
+   <ul>
+    <li>
+     (Traditionally) used in Herbal Medicine (as a calmative) to help ease nervous tension (Hoffmann 2003, Williamson 2003, BHP 1983, Ellingwood 1983, Felter and Lloyd 1983)
+    </li>
+   </ul>
+   <ul>
+    <li>
+     Used in Herbal Medicine to help relieve premenstrual symptoms (Blumenthal et al. 2000, Bradley 1992).
+    </li>
+   </ul>
+   <ul>
+    <li>
+     (Used in Herbal Medicine to) help(s) relieve symptoms associated with menopause (EMA 2018; Raus et al. 2006, Wuttke et al. 2006, Frei-Kleiner et al. 2005, Blumenthal et al. 2000, Bradley 1992).
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Notes
+    </strong>
+   </p>
+   <ul>
+    <li>
+     The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Traditionally used in Herbal Medicine to help relieve muscle and join pain associated with rheumatic conditions, pain associated with neuralgia, and to help ease nervous tension).
+    </li>
+    <li>
+     <strong>
+      For multi-ingredient products:
+     </strong>
+    </li>
+    <li style="list-style: none;">
+    <ul>
+     <li>
+      To prevent the product from being represented as a “traditional medicine”, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g. Black cohosh is traditionally used in Herbal Medicine to help ease nervous tension).
+     </li>
+     <li>
+      When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.
+     </li>
+    </ul>
+    </li>
+    
+   </ul>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    Adults 18 years and older
+   </p>
+   <h3>
+    Quantity(ies)
+   </h3>
+   <p>
+    Methods of preparation: Dry, Powdered, Non-Standardised Extracts (Dry extract*, Tincture, Fluid Extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)
+   </p>
+   <p>
+    40 - 2,400 milligrams of dried root and/or rhizome, per day (Raus et al. 2006; Wuttke et al. 2006; Frei-Kleiner et al. 2005; Hoffmann 2003; Blumenthal et al. 2000; Bradley 1992; Williamson et al. 1988; Ellingwood 1983).
+   </p>
+   <p>
+    <strong>
+     *Note:
+    </strong>
+    Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.
+   </p>
+   <h3>
+    Direction(s) for use
+   </h3>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration of Use
+   </h2>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk Information
+   </h2>
+   <h3>
+    Caution(s) and Warning(s)
+   </h3>
+   <ul>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver disorder or develop symptoms of liver trouble (EMA 2018, 2007; Lynch et al. 2006; Mills et al. 2006; Cohen et al. 2004; NIH 2004).
+    </li>
+   </ul>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <p>
+    Do not use if you are pregnant (Brinker 2010; Hoffmann 2003; Tilgner 1999).
+   </p>
+   <h3>
+    Known Adverse Reaction(s)
+   </h3>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+   <h2 id="nonMedicinalIngredients">
+    Non Medicinal Ingredients
+   </h2>
+   <p>
+    Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+   </p>
+  </section>
+  <section aria-labelledby="storageCondition">
+   <h2 id="storageCondition">
+    Storage Condition(s)
+   </h2>
+   <p>
+    Must be established in accordance with the requirements described in the
+    <em>
+     Natural Health Products Regulations</em>.
+   </p>
+  </section>
+  <section aria-labelledby="specifications">
+   <h2 id="specifications">
+    Specifications
+   </h2>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+    <li>
+     Health Canada is aware of peer-reviewed published cases where products labelled as containing Black Cohosh were found by laboratory analysis to contain different species. In order to prevent misidentification, the identification of authentic Black Cohosh must be completed by an unambiguous validated method such as the HPLC-ELSD, HPLC-MS or HPLC-MS/MS to determine the presence of a specific marker compound and/or the absence of others. For example,
+     <i>
+      Actaea racemosa
+     </i>
+     contains the triterpene glycoside cimiracemoside C (also called cimigenol-3-Oarabinoside), while most other
+     <i>
+      Actaea/Cimicifuga
+     </i>
+     species do not; conversely, other
+     <i>
+      Actaea/Cimicifuga
+     </i>
+     species contain the phenolic acid derivatives cimifugin and (or) cimifigin-3-O-glucoside (e.g.
+     <i>
+      A. cimicifuga
+     </i>
+     and
+     <i>
+      A. yunnanensis</i>, but not
+     <i>
+      A. dahurica</i>) while Black Cohosh does not. The commonly used markers, 23-epi-26deoxyactein and actein, are found in more than one species of
+     <i>
+      Actaea
+     </i>
+     and therefore their presence is not sufficient evidence alone of the unambiguous identification of
+     <i>
+      Actaea racemosa
+     </i>
+     (Jiang et al. 2006; He et al. 2000). The NNHPD recognizes that there are numerous methods which can be used to unambiguously identify Black Cohosh. These methods include, but are not limited to, those cited in the following references: Avula et al. 2007; He et al. 2006; Jiang et al. 2006; Brigham et al. 2004; Zerega et al. 2002; He et al. 2000.
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Note:
+    </strong>
+    Data relating to the identification of Black Cohosh, using an unambiguous validated method, is not to be submitted with the compendial Product Licence Application, although it may be requested at the NNHPD's discretion.
+   </p>
+  </section>
+  <section aria-labelledby="exampleOfProductFacts">
+   <h2 id="exampleOfProductFacts">
+    Example of Product Facts:
+   </h2>
+   <p>
+    <strong>
+     Consult the Guidance Document,
+     <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">
+      Labelling of Natural Health Products</a>
+     for more details.
+    </strong>
+   </p>
+   <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/BLACK-COHOSH_E.gif" style="width:700px"/>
+   </p>
+  </section>
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References Cited
+   </h2>
+   <ul>
+    <li>
+    Avula B, Ali Z, Khan IA. Chemical Fingerprinting of
+    <i>
+     Actaea racemosa
+    </i>
+    (Black Cohosh) and its comparison study with closely related
+    <i>
+     Actaea
+    </i>
+    species
+    <i>
+     (A. pachypoda, A. podocarpa, A. rubra)
+    </i>
+    by HPLC. Chromatographia 2007;66(9/10):757-762.
+   </li>
+   <li>
+    BHP 1983: British Herbal Pharmacopoeia. Bournemouth (UK): British Herbal Medical Association.
+   </li>
+   <li>
+    BHP 1996: British Herbal Pharmacopoeia. Bournemouth (UK): The British Herbal Medicine Association.
+   </li>
+   <li>
+    Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000.
+   </li>
+   <li>
+    Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (UK): British Herbal Medicine Association; 1992.
+   </li>
+   <li>
+    Brigham T, Schröder M, Cocksedge M. 2004. Good Practices for Plant Identification for the Herbal Industry. Prepared for the Saskatchewan Herb and Spice Association/National Herb and Spice Coalition. Ottawa (ON): Agriculture and Agri-food Canada. [Accessed 2024 November 29]. Available from: https://cariboo-agricultural-research.ca/documents/CARA_lib_Schrder_2004_Good_Practices_for_Plant_Identification_for_the_Herbal_Industry.pdf
+   </li>
+   <li>
+    Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications; 2010.
+   </li>
+   <li>
+    Cohen SM, O'Connor AM, Hart J, Merel NH, Te HS. Autoimmune hepatitis associated with the use of black cohosh: a case study. Menopause: the Journal of the North American Menopause Society 2004;11(5):575-577.
+   </li>
+   <li>
+    Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications; 1983. [Reprint of 1919 original].
+   </li>
+   <li>
+    EMA 2018:  European Medicines Agency. Committee on Herbal Medicinal Products (HMPC). European Union Herbal monograph on Cimicifuga racemosa (L.) Nutt., rhizome. March 2018. [Accessed 2025 January 3]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-cimicifuga-racemosa-l-nutt-rhizome-revision-1_en.pdf
+   </li>
+   <li>
+    EMA 2007: European Medicines Agency. Committee on Herbal Medicinal Products (HMPC) Annex 1. Assessment of case reports connected to herbal medicinal products containing Cimicifugae racemosae rhizoma (Black cohosh, root). London (UK): European Medicines Agency; May 20027. [Accessed 2025 January 3]. Available from: https://www.ema.europa.eu/en/documents/herbal-report/assessment-case-reports-connected-herbal-medicinal-products-containing-cimicifugae-racemosae-rhizoma-black-cohosh-root_en.pdf
+   </li>
+   <li>
+    Felter HW, Lloyd JU. King's American Dispensatory, Volume 1, 18th edition. Sandy (OR): Eclectic Medical Publications; 1983. [Reprint of 1898 original].
+   </li>
+   <li>
+    Frei-Kleiner S, Schaffner W, Rahlfs VW, Bodmer C, Birkhäuser M.
+    <i>
+     Cimicifuga racemosa
+    </i>
+    dried ethanolic extract in menopausal disorders. Maturitas 2005;51(4):397-404.
+   </li>
+   <li>
+    Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. 2<sup>nd</sup>
+    edition. Boca Ration (FL): Taylor and Francis Group; 2013.
+   </li>
+   <li>
+    He K, Pauli GF, Zheng B, Wang H, Bai N, Peng T, Roller M, and Zheng Q.
+    <i>
+     Cimicifuga
+    </i>
+    species identification by high performance liquid chromatography-photodiode array/mass spectrometric/evaporative light scattering detection for quality control of Black Cohosh products. Journal of Chromatographic Science 2006;1112(1-2):241-254.
+   </li>
+   <li>
+    He K, Zhen B, Kim CH, Rogers L, and Zheng Q. Direct analysis and identification of triterpene glycosides by LC/MS in Black Cohosh,
+    <i>
+     Cimicifuga racemosa
+    </i>
+    , and in several commercially available Black Cohosh products. Planta Medica 2000;66(7):635-640.
+   </li>
+   <li>
+    Hoffmann D. Medical Herbalism. Rochester (VT): Healing Arts Press; 2003.
+   </li>
+   <li>
+    Jiang B, Kronenberg F, Nuntanakorn P, Qiu M-H, and Kennelly EJ. Evaluation of the botanical authenticity and phytochemical profile of Black Cohosh products by high-performance liquid chromatography with selected ion monitoring liquid chromatography-mass spectrometry. Journal of Agricultural and Food Chemistry 2006;54(9):3242-3253.
+   </li>
+   <li>
+    Lynch CR, Folkers ME, Hutson WR. Fulminant hepatic failure associated with the use of black cohosh: a case report. Liver Transplantation 2006;12(6):989-992.
+   </li>
+   <li>
+    Mills E, Duguoa J, Perri D, Koren G. Herbal Medicines in Pregnancy and Lactation. New York (NY): Taylor and Francis; 2006.
+   </li>
+   <li>
+    NIH 2004: National Institutes of Health. Workshop on the Safety of Black Cohosh in Clinical Studies. Bethesda (MD): National Institutes of Health, Department of Health and Human Services; November 22, 2004. [Accessed 2024 December 3]. Available from: https://files.nccih.nih.gov/s3fs-public/news/blackcohosh_mtngsumm.pdf
+   </li>
+   <li>
+    Raus K, Brucker C, Gorkow C, Wuttke W. First-time proof of endometrial safety of the special black cohosh extract (<i>Actaea</i>
+    or
+    <i>
+     Cimicifuga racemosa
+    </i>
+    extract) CR BNO 1055. Menopause: the Journal of the North American Menopause Society 2006;13(4):678-691.
+   </li>
+   <li>
+    Tilgner S. Herbal Medicine from the Heart of the Earth Creswell (OR): Wise Acre Press; 1999.
+   </li>
+   <li>
+    USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 February 9]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+   </li>
+   <li>
+    Williamson EM. Potter's Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (UK): The C.W. Daniel Company Limited; 2003.
+   </li>
+   <li>
+    Williamson EM, Evans FJ, Wren RC. Potter's New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (UK): The C.W. Daniel Company Limited; 1988.
+   </li>
+   <li>
+    Wuttke W, Raus K, Gorkow C. Efficacy and tolerability of the Black cohosh (<i>Actea racemosa</i>) ethanolic extract BNO 1055 on climacteric complaints. Maturitas 2006;55(Supplement 1):S583-S591.
+   </li>
+   <li>
+    Zerega NJC, Mori S, Lindqvist C, Zheng Q, Motley TJ. Using Amplified Fragment Length Polymorphisms (AFLP) to identify Black Cohosh (<i>Actaea racemosa</i>). Economic Botany 2002;56(2): 154-164.
+   </li>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+   <h2 id="referencesReviewed">
+    References Reviewed
+   </h2>
+   <ul>
+   <li>
+    Chandler F, editor. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association; 2000.
+   </li>
+   <li>
+    Der Marderosian A, Beutters JA, editors. The Review of Natural Health Products. 3<sup>rd</sup>
+    edition. St. Louis (MO): Facts and Comparisons®, a Wolters Kluwer Company; 2002.
+   </li>
+   <li>
+    EMA 2006: European Medicines Agency. EMA public statement on herbal medicine products containing
+    <i>
+     Cimicifugae racemosae rhizome
+    </i>
+    (Black cohosh, root) - serious hepatic reactions. London (UK). [Accessed 2024 December 3]. Available from:  https://www.ema.europa.eu/en/documents/public-statement/emea-public-statement-herbal-medicinal-products-containing-cimicifugae-racemosae-rhizoma-serious-hepatic-reactions_en.pdf
+   </li>
+   <li>
+    Geller SE, Studee L. Contemporary alternatives to plant estrogens for menopause. Maturitas 2006;55(Supplement 1):S3-S13.
+   </li>
+   <li>
+    Gurley B, Gardner SF, Hubbard MA, Williams DK, Gentry B, Khan IA, Shah A. In vivo effects of goldenseal, kava kava, black cohosh, and valerian on human cytochrome P450 1A2, 2D6, 2E1, and 3A4/5 phenotypes. Clinical Pharmacology and Therapeutics 2005;77(5):415-426.
+   </li>
+   <li>
+    Gurley B, Hubbard MA, Williams DK, Thaden J, Tong Y, Gentry B, Breen P, Carrier D, Cheboyina S. Assessing the clinical significance of botanical supplementation on human cytochrome P4503A activity: comparison of a milk thistle and black cohosh product to rifampin and clarithromycin. Journal of Clinical Pharmacology 2006;46:211-213.
+   </li>
+   <li>
+    HC 2006: Health Canada. Advisories, Warnings and Recalls. Ottawa (ON): Health Canada. [Accessed 2024 December 3]. Available from: https://recalls-rappels.canada.ca/en/alert-recall/archived-health-canada-advising-consumers-about-possible-link-between-black-cohosh-and
+   </li>
+   <li>
+    Hernández Muñoz G, Pluchine S. Cimicifuga racemosa for the treatment of hot flashes in women surviving breast cancer. Maturitas 2003;44(Supplement 1):S59-S65.
+   </li>
+   <li>
+    Hirschberg AL, Edlund M, Svane G, Azavedo E, Skoog L, von Schoultz B. An isopropanolic extract of black cohosh does not increase mammographic breast density or breast cell proliferation in postmenopausal women. Menopause: the Journal of the North American Menopause Society 2007;14(1):89-96.
+   </li>
+   <li>
+    Jacobson JS, Troxel AB, Evans J, Klaus L, Vahdat L, Kinne D, Lo KM, Moore A, Rosenman PJ, Kaufman EL, Neugut AI, Grann VR. Randomized trial of black cohosh for the treatment of hot flashes among women with a history of breast cancer. Journal of Clinical Oncology 2001;19(10):2739-2745
+   </li>
+   <li>
+    Kronenberg F, Fugh-Berman A. Complementary and alternative medicine for menopausal symptoms: A review of randomized, controlled trials. Annals of Internal Medicine 2002;137:805-813.
+   </li>
+   <li>
+    Levitsky J, Alli TA, Wisecarver J, Sorrell MF. Fulminant liver failure associated with the use of black cohosh. Digestive Diseases and Sciences 2005;50(3):538-539.
+   </li>
+   <li>
+    Liske E, Hänggi W, Henneike-von Zepelin H-H, Boblitz N, Wüstenberg P, Rahlfs VW. Physiological investigation of a unique extract of Black cohosh (<i>
+     Cimicifuga racemosa
+    </i>
+    rhizome): a 6-month clinical study demonstrates no systemic estrogenic effect. Journal of Women's Health and Gender-based Medicine 2002;11(2):163-174.
+   </li>
+   <li>
+    Lontos S, Jones RM, Angus PW, Gow PJ. 2003. Acute liver failure associated with the use of herbal preparations containing black cohosh. Medical Journal of Australia 2003;179: 390-391.
+   </li>
+   <li>
+    Mahady G. Black cohosh (Actaea/Cimicifuga racemosa) Review of the clinical data for safety and efficacy in menopausal symptoms. Treatments in Endocrinology 2005;4(3):177-184.
+   </li>
+   <li>
+    Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone; 2000.
+   </li>
+   <li>
+    Nappi RE, Malavasi B, Brundu B, Facchinetti F. Efficacy of
+    <i>
+     Cimicifuga racemosa
+    </i>
+    on climacteric complaints: a randomized study versus low-dose transdermal estradiol. Gynecological Endocrinology 2005;20(1):30-35.
+   </li>
+   <li>
+    Peirce A. The American Pharmaceutical Association Practical Guide to Natural Medicines. New York (NY): William Morrow and Company, Inc; 1999.
+   </li>
+   <li>
+    Pockaj BA, Gallagher JG, Loprinzi CL, Stella PJ, Barton DL, Sloan JA, Lavasseur BI, Rao RM, Fitch TR, Rowland KM, Novotny PJ, Flynn PJ, Richelson E, Fauq AH. Phase III doubleblind, randomized, placebo-controlled crossover trial of black cohosh in the management of hot flashes. Journal of Clinical Oncology 2006;24(18):2836-2841.
+   </li>
+   <li>
+    Upton R, editor. American Herbal Pharmacopoeia and Therapeutic Compendium. Black Cohosh Rhizome. Santa Cruz (CA): American Herbal Pharmacopoeia; 2002.
+   </li>
+   <li>
+    Vermes G, Bánhidy F, Acs N. The effects of remifemin on subjective symptoms of menopause. Advanced Therapy 2005;22(2):148-154.
+   </li>
+   <li>
+    Whiting PW, Clouston A, Kerlin P. Black cohosh and other herbal remedies associated with acute hepatitis. Medical Journal of Australia 2002;177(8):440-443.
+   </li>
+   <li>
+    Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 3rd edition. Stuttgart (D): Medpharm GmbH Scientific Publishers; 2004.
+   </li>
+   <li>
+    Wiersema J, Léon B. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press LLC; 1999.
+   </li>
+   <li>
+    Wuttke W, Gorkow C, Seidlova-Wuttke D. Effects of black cohosh (<i>Cimicifuga racemosa</i>) on bone turnover, vaginal mucosa, and various blood parameters in post-menopausal women. Menopause 2006;13(2):185-196.
+   </li>
+   <li>
+    Wuttke W, Seidlova-Wuttke D, Gorkow C. The
+    <i>
+     Cimicifuga
+    </i>
+    preparation BNO 1055 vs conjugated estrogens in a double-blind placebo-controlled study: effects on menopause symptoms and bone markers. Maturitas 2003;44(Supplement 1):S67-S77.
+   </li>
+</ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

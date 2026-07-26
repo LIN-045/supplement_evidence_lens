@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=multiple.joint.health2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="ca9e6294-2b2e-42ce-b0e1-d30ced45b1d7"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!--CONTENT BEGINS | DEBUT DU CONTENU-->
+
+<h1>JOINT HEALTH PRODUCTS</h1>
+    <div class="icon">
+        <a href="dbImages/mono_joint-health-products-multiple-ingredient_english.pdf" title="Joint Health Products"><img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format" width="22" height="21" />(PDF Version - 218 KB)</a>
+    </div>
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+    
+    <p><strong>Notes</strong></p>
+        <ul>
+            <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+            <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+            <li>This monograph may be used to support single ingredient or multi-ingredient products. However, it is mandatory for joint health products to contain at least one medicinal ingredient from Table 2 at therapeutic dose with its associated claim(s).</li>
+            <li>As enhanced absorption formulations are often used for Turmeric and its constituents, this is a reminder that enhanced absorption dosage forms/formulations are not covered by Natural and Non-prescription Health Products Directorate&apos;s monographs and should be submitted as Class III submissions with supporting evidence.</li>
+        </ul>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+            <p>December 19, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+            <table id="ref1" class="subject">
+                <caption>Table 1. Proper name(s), Common name(s), Source information<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></caption>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Proper name(s)</th>
+                        <th scope="col" rowspan="2">Common name(s)</th>
+                        <th scope="colgroup" colspan="4">Source information</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Source ingredient(s)</th>
+                        <th scope="col">Source material(s)</th>
+                        <th scope="col">Part(s)</th>
+                        <th scope="col">Preparation(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><em>all-trans</em>-beta-Carotene</li>
+                                <li>beta-Carotene</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><em>all-trans</em>-beta-Carotene</li>
+                                <li>beta-Carotene</li>
+                            </ul>
+                        </td>
+                        <td>beta-Carotene</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>As per NNHPD Multi- Vitamin/Mineral Supplements monograph</td>
+                    </tr>
+                    <tr>
+                        <td>Boron</td>
+                        <td>Boron</td>
+                        <td>As per NNHPD Multi-Vitamin/Mineral Supplements monograph</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>As per NNHPD Multi- Vitamin/Mineral Supplements monograph</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <em>Boswellia serrata</em>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Boswellia</li>
+                                <li>Indian frankincense</li>
+                                <li>Indian olibanum</li>
+                                <li>Indian olibanum-tree</li>
+                                <li>Shallaki</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td><em>Boswellia serrata</em></td>
+                        <td>
+                            <ul>
+                                <li>Stem bark oleogum resin</li>
+                                <li>Trunk bark oleogum resin</li>
+                            </ul>
+                        </td>
+                        <td>Dry</td>
+                    </tr>
+                    <tr>
+                        <td>Bromelain</td>
+                        <td>Bromelain</td>
+                        <td>N/A</td>
+                        <td>
+                            <ul>
+                                <li><em>Ananas comosus </em>var.<em> bracteatus</em></li>
+                                <li><em>Ananas comosus </em>var.<em> comosus</em></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Fruit</li>
+                                <li>Stem</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium</td>
+                        <td>Calcium</td>
+                        <td>As per NNHPD Multi- Vitamin/Mineral Supplements monograph</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>As per NNHPD Multi- Vitamin/Mineral Supplements monograph</td>
+                    </tr>
+                    <tr>
+                        <td>Chondroitin sulfate<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></td>
+                        <td>Chondroitin sulfate</td>
+                        <td>Sodium chondroitin sulfate</td>
+                        <td>
+                            <ul>
+                                <li><em>Anas platyrhynchos</em></li>
+                                <li><em>Anser anser</em></li>
+                                <li><em>Bos taurus</em></li>
+                                <li><em>Cygnus olor</em></li>
+                                <li><iem>Dromaius</iem></li>
+                                <li><em> novaehollandiae</em></li>
+                                <li><em>Gallus gallus</em></li>
+                                <li><em>Meleagris gallopavo</em></li>
+                                <li><em>Numida meleagris</em></li>
+                                <li><em>Rhea americana</em></li>
+                                <li><em>Struthio camelus</em></li>
+                                <li><em>Sus scrofa</em></li>
+                            </ul>
+                        </td>
+                        <td>Cartilage</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">(1E,6E)-1,7-Bis(4-hydroxy-3-methoxyphenyl)-1,6-heptadiene-3,5-dione</td>
+                        <td rowspan="2">Curcumin</td>
+                        <td>N/A</td>
+                        <td><em>Curcuma longa</em></td>
+                        <td>Rhizome</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Curcumin</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>Synthetic</td>
+                    </tr>
+                    <tr>
+                        <td>Curcuminoids</td>
+                        <td>Curcuminoids</td>
+                        <td>N/A</td>
+                        <td><em>Curcuma longa</em></td>
+                        <td>Rhizome</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td><em>Curcuma longa</em></td>
+                        <td>
+                            <ul>
+                                <li>Common turmeric</li>
+                                <li>Curcuma</li>
+                                <li>Indian-saffron</li>
+                                <li>Jianghuang</li>
+                                <li>Turmeric </li>
+                                <li>Yellow ginger</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td><em>Curcuma longa</em></td>
+                        <td>Rhizome</td>
+                        <td>Dry</td>
+                    </tr>
+                    <tr>
+                        <td><em>Harpagophytum procumbens</em></td>
+                        <td>
+                            <ul>
+                                <li>Devil&apos;s claw</li>
+                                <li>Grapple plant</li>
+                                <li>Wood spider</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td><em>Harpagophytum procumbens</em></td>
+                        <td rowspan="2">Secondary root tubers</td>
+                        <td rowspan="2">Dry</td>
+                    </tr>
+                    <tr>
+                        <td><em>Harpagophytum zeyheri</em></td>
+                        <td>
+                            <ul>
+                                <li>Devil&apos;s claw</li>
+                                <li>Grapple plant</li>
+                                <li>Wood spider</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td><em>Harpagophytum zeyheri</em></td>
+                    </tr>
+                    <tr>
+                        <td>Fish oil<sup><a href="#ref1-3" style="text-decoration: none;">3</a></sup></td>
+                        <td>Fish oil</td>
+                        <td>N/A</td>
+                        <td>
+                            <ul>
+                                <li>Ammodytidae</li>
+                                <li>Carangidae</li>
+                                <li>Clupeidae</li>
+                                <li>Engraulidae</li>
+                                <li>Gadidae<sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></li>
+                                <li>Osmeridae</li>
+                                <li>Salmonidae</li>
+                                <li>Scrombridae</li>
+                            </ul>
+                        </td>
+                        <td>Whole</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2-Amino-2-deoxy-beta-D-glucopyranose hydrochloride</td>
+                        <td rowspan="2">
+                            <ul>
+                                <li>Glucosamine HCl</li>
+                                <li>Glucosamine hydrochloride</li>
+                            </ul>
+                        </td>
+                        <td rowspan="2">Glucosamine hydrochloride</td>
+                        <td>
+                            <ul>
+                                <li>Crab<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Krill<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Lobster<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Prawn<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Shrimp<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                            </ul>
+                        </td>
+                        <td>Exoskeleton</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><em>Aspergillus flavus </em>var.<em> oryzae</em></li>
+                                <li><em>Aspergillus melleus</em></li>
+                                <li><em>Aspergillus niger</em></li>
+                                <li><em>Aspergillus niger </em>var.<em> awamori</em></li>
+                                <li><em>Monascus pilosus</em></li>
+                                <li><em>Monascus purpureus</em></li>
+                                <li><em>Rhizopus oryzae</em></li>
+                            </ul>
+                        </td>
+                        <td>Whole</td>
+                        <td>Fermented</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2-Amino-2-deoxy-D-glucose sulfate</td>
+                        <td rowspan="2">Glucosamine sulfate</td>
+                        <td rowspan="2">
+                            <ul>
+                                <li>Glucosamine sulfate potassium chloride </li>
+                                <li>Glucosamine sulfate sodium chloride</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Crab<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Krill<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Lobster<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Prawn<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                                <li>Shrimp<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></li>
+                            </ul>
+                        </td>
+                        <td>Exoskeleton</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><em>Aspergillus flavus </em>var.<em> oryzae</em></li>
+                                <li><em>Aspergillus melleus</em></li>
+                                <li><em>Aspergillus niger</em></li>
+                                <li><em>Aspergillus niger </em>var<em>. awamori</em></li>
+                                <li><em>Monascus pilosus</em></li>
+                                <li><em>Monascus purpureus</em></li>
+                                <li><em>Rhizopus oryzae</em></li>
+                            </ul>
+                        </td>
+                        <td>Whole</td>
+                        <td>Fermented</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Hyaluronic acid<sup><a href="#ref1-6" style="text-decoration: none;">6</a></sup></td>
+                        <td rowspan="2">Hyaluronic acid</td>
+                        <td>Sodium hyaluronate</td>
+                        <td><em>Gallus gallus</em></td>
+                        <td>Comb</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Hyaluronic acid</li>
+                                <li>Sodium hyaluronate</li>
+                            </ul>
+                        </td>
+                        <td><em>Streptococcus equi</em></td>
+                        <td>Bacterial extracellular capsule</td>
+                        <td>Fermented</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Hydrolyzed collagen<sup><a href="#ref1-7" style="text-decoration: none;">7</a></sup></td>
+                        <td rowspan="4">
+                            <ul>
+                                <li>Collagen hydrolysate</li>
+                                <li>Hydrolyzed collagen</li>
+                            </ul>
+                        </td>
+                        <td rowspan="4">N/A</td>
+                        <td>Bovine</td>
+                        <td>Bovine skin/hide split</td>
+                        <td rowspan="4">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Porcine</td>
+                        <td>
+                            <ul>
+                                <li>Bone</li>
+                                <li>Skin</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fish</td>
+                        <td>
+                            <ul>
+                                <li>Bone</li>
+                                <li>Skin</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>Cartilage</td>
+                    </tr>
+                    <tr>
+                        <td>Magnesium</td>
+                        <td>Magnesium</td>
+                        <td rowspan="2">As per NNHPD Multi-Vitamin/Mineral Supplements monograph</td>
+                        <td rowspan="2">N/A</td>
+                        <td rowspan="2">N/A</td>
+                        <td rowspan="2">As per NNHPD Multi-Vitamin/Mineral Supplements monograph</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese</td>
+                        <td>Manganese</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Dimethyl sulfone</li>
+                                <li>Methylsulfonylmethane</li>
+                                <li>Sulfonylbismethane </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Methylsulfonylmethane</li>
+                                <li>MSM</li>
+                            </ul>
+                        </td>
+                        <td>Dimethyl sulfone</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>Synthetic</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin A</td>
+                        <td>Vitamin A</td>
+                        <td rowspan="6">As per NNHPD Multi-Vitamin/Mineral Supplements monograph</td>
+                        <td rowspan="6">N/A</td>
+                        <td rowspan="6">N/A</td>
+                        <td rowspan="6">As per NNHPD Multi-Vitamin/Mineral Supplements monograph</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin C</td>
+                        <td>Vitamin C</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Vitamin D</td>
+                        <td>
+                            <ul>
+                                <li>Vitamin D</li>
+                                <li>Vitamin D<sub><a href="#ref1-2" style="text-decoration: none;">2</a></sub></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Vitamin D</li>
+                                <li>Vitamin D<sub><a href="#ref1-3" style="text-decoration: none;">3</a></sub></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin K<sub><a href="#ref1-1" style="text-decoration: none;">1</a></sub></td>
+                        <td>Vitamin K<sub><a href="#ref1-1" style="text-decoration: none;">1</a></sub></td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin K<sub><a href="#ref1-2" style="text-decoration: none;">2</a></sub></td>
+                        <td>Vitamin K<sub><a href="#ref1-2" style="text-decoration: none;">2</a></sub></td>
+                    </tr>
+                    <tr>
+                        <td>Willow bark</td>
+                        <td>Willow bark</td>
+                        <td>N/A</td>
+                        <td>
+                            <ul>
+                                <li><em>Salix alba</em></li>
+                                <li><em>Salix daphnoides</em></li>
+                                <li><em>Salix purpura</em></li>
+                                <li><em>Salix x fragilis</em></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Bark</li>
+                                <li>Young branch bark</li>
+                            </ul>
+                        </td>
+                        <td>Dry</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref1-1">1</sup>References: Proper names: Brayfield and Cadart 2025&semi; NIHa 2023&semi; RSC 2023&semi; USP-NF 2023&semi; USDA 2023&semi; Ph.Eur. 2012&semi; ICIDH 2008&semi; Kralovec and Barrow 2008&semi; Towheed and Anastassiades 2007&semi; IUBMB 1992. Common names: Brayfield and Cadart 2025&semi; NIHa 2023&semi; RSC 2023&semi; USP-NF 2023&semi; PPRC 2020&semi; BP 2012&semi; Ph.Eur. 2012&semi; Goel et al. 2008&semi; ICIDH 2008&semi; Kralovec and Barrow 2008&semi; Towheed and Anastassiades 2007&semi; Boon and Smith 2004&semi; McGuffin et al. 2000&semi; Moskowitz 2000&semi; IUBMB 1992&semi; Deodhar et al. 1980. Source information: Brayfield and Cadart 2025&semi; FCC 2024&semi; ITIS 2023&semi; NIHb 2023&semi; RSC 2023&semi; USDA 2023&semi; USP-NF 2023&semi; PPRC 2020&semi; Froese and Pauly 2018&semi; EMA 2017&semi; Ph.Eur. 2012&semi; Schauss et al. 2012&semi; Sitanggang et al. 2012&semi; EP 2011&semi; Khan and Abourashed 2010&semi; Evans 2009&semi; Yoshida et al. 2009&semi; Goel et al. 2008&semi; Kalman et al. 2008&semi; Kralovec and Barrow 2008&semi; Sato and Iwaso 2008&semi; Chmielowski et al. 2007&semi; Schrieber and Gareis 2007&semi; Dahiya et al 2006&semi; Chong et al. 2005&semi; Boon and Smith 2004&semi; Wichtl 2004&semi; Baziwane and He 2003&semi; ESCOP 2003&semi; Barnes et al. 2002&semi; Sato et al. 2002&semi; Blumenthal et al. 2000&semi; BHC 1992&semi; Deodhar et al. 1980.<br/>
+                <sup id="ref1-2">2</sup>Cartilage must be derived from healthy and domestic animals used for food by humans (USP-NF 2023).<br/>
+                <sup id="ref1-3">3</sup>Corresponds to oil from the whole body of one or more of species of the families listed in Table 1 in its natural and/or concentrated triglyceride/triacylglycerol form and/or its concentrated esterified form (BP 2023&semi; Ph.Eur. 2023&semi; Froese and Pauly 2022). The species common names and not the family could be listed on the label.<br/>
+                <sup id="ref1-4">4</sup>For fish oils including species of Gadidae as a source material, the vitamin A and D content should be tested to ensure that the daily maximum amounts meet the Multi-Vitamin/Mineral Supplements monograph for each age group.<br/>
+                <sup id="ref1-5">5</sup> specific organisms used as source material(s) must be indicated in the Animal Tissue Form (ATF)&semi; simply indicating “crustaceans” is insufficient.<br/>
+                <sup id="ref1-6">6</sup>The stabilizing salt (i.e. sodium) if present should be indicated.<br/>
+                <sup id="ref1-7">7</sup>For the purpose of this monograph, hydrolyzed collagen has no jelling power and is soluble in cold water (Schrieber and Gareis 2007&semi; Moskowitz 2000). The average molecular weight of hydrolyzed collagen is approximately 4 kDa (i.e. 2-6 kDa) (Moskowitz 2000&semi; Oesser et al. 1999).
+            </p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of administration</h2>
+            <p>Oral </p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+            <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+            <p>Refer to Tables <a href="#ref2" style="text-decoration: none;">2</a> and <a href="#ref3" style="text-decoration: none;">3</a>.</p>
+            <p><strong>Notes</strong></p>
+            <ul>
+                <li>It is mandatory for all products to cite at least one use or purpose statement from Table 2.</li>
+                <li>A use or purpose statement is acceptable only if at least one medicinal ingredient associated with that statement is present at a dose at or above the minimum daily dose listed in Table 2.</li>
+                <li>Medicinal ingredients which do not meet the minimum daily dose for a use or purpose statement will be considered as acceptable complementary medicinal ingredients in product formulations.</li>
+                <li><strong>For multi-ingredient products:</strong>
+                    <ul>
+                        <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Turmeric is traditionally used in Herbal Medicine to help relieve joint pain).
+                        </li>
+                        <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+                    </ul>
+                </li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>Adults 18 years and older</p>
+            <h3>Quantity(ies)</h3>
+                <p>Refer to Tables <a href="#ref2" style="text-decoration: none;">2</a> and <a href="#ref3" style="text-decoration: none;">3</a>.</p>
+                <p><strong>Note:</strong> When &lsquo;decoction&rsquo; or &lsquo;infusion&rsquo; is listed as an acceptable method of preparation, &lsquo;decoction concentrate&rsquo; or &lsquo;infusion concentrate&rsquo; is also allowed. It also applies to standardized methods of preparation.</p>
+            
+                <table id="ref2" class="subject">
+                <caption>Table 2. Joint health uses or purposes and associated daily doses</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Medicinal ingredients</th>
+                        <th scope="col" rowspan="2">Uses or purposes<sup><a href="#ref2-1" style="text-decoration: none;">1</a></sup></th>
+                        <th scope="col" rowspan="2">Methods of preparation</th>
+                        <th scope="colgroup" colspan="2">Dose/day</th>
+                        <th scope="col">Single dose</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Minimum<sup><a href="#ref2-2" style="text-decoration: none;">2</a></sup></th>
+                        <th scope="col">Maximum<sup><a href="#ref2-3" style="text-decoration: none;">3</a></sup></th>
+                        <th scope="col">Maximum single dose<sup><a href="#ref2-3" style="text-decoration: none;">3</a></sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Boswellia serrata</td>
+                        <td>Helps relieve joint pain and swelling associated with osteoarthritis of the knee.</td>
+                        <td>Standardized Extracts</td>
+                        <td>999 mg extracts standardized to 40% boswellic acid</td>
+                        <td>999 mg extracts standardized to 40% boswellic acid</td>
+                        <td>333 mg extracts standardized to 40% boswellic acid</td>
+                    </tr>
+                    <tr>
+                        <td>Chondroitin sulfate</td>
+                        <td>Helps relieve (joint) pain associated with osteoarthritis (of the knee).</td>
+                        <td>N/A</td>
+                        <td>800 mg</td>
+                        <td>1,200 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Curcumin</td>
+                        <td>Helps relieve joint pain and inflammation.</td>
+                        <td>N/A</td>
+                        <td>1,200 mg</td>
+                        <td>1,200 mg</td>
+                        <td>400 mg</td>
+                    </tr>
+                    <tr>
+                        <td>Curcuminoids</td>
+                        <td>Helps relieve joint pain and inflammation.</td>
+                        <td>N/A</td>
+                        <td>1,500 mg<br><br>Optional: The potency constituent, curcumin, can be included</td>
+                        <td>1,500 mg<br><br>Optional: The potency constituent, curcumin, can be included</td>
+                        <td>500 mg</td>
+                    </tr>
+                    <tr>
+                        <td>Turmeric<br>(concentrated extracts)</td>
+                        <td>Helps relieve joint pain and inflammation.</td>
+                        <td>Standardized Extracts</td>
+                        <td>Extract standardized to 75% curcuminoids or more&semi; Providing 1,500 mg curcuminoids<br><br>Optional: The potency constituent, curcumin, can be included</td>
+                        <td>Extract standardized to 75% curcuminoids or more&semi; Providing 1,500 mg curcuminoids<br><br>Optional: The potency constituent, curcumin, can be included</td>
+                        <td>Extract standardized to 75% curcuminoids or more; Providing 500 mg curcuminoids</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Turmeric<br>(native extracts)<sup><a href="#ref2-4" style="text-decoration: none;">4</a></sup></td>
+                        <td rowspan="2">(Traditionally) used in Herbal Medicine (as an anti-inflammatory) to help relieve joint pain.</td>
+                        <td>Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Infusion)</td>
+                        <td>1,000 mg dried rhizome&semi; For dry extracts, maximum ratio is 10:1</td>
+                        <td>9,000 mg dried rhizome&semi; For dry extracts, maximum ratio is 10:1</td>
+                        <td rowspan="2">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized Extracts</td>
+                        <td>Extracts providing up to 35% curcuminoids and a Quantity crude equivalent of 1,000 mg dried rhizome<br><br>Optional: The potency constituent, curcumin, can be included</td>
+                        <td>Extracts providing up to 35% curcuminoids and a Quantity crude equivalent of 9,000 mg dried rhizome<br><br>Optional: The potency constituent, curcumin, can be included</td>
+                    </tr>
+                    <tr>
+                        <td>Devil&apos;s claw</td>
+                        <td>Used in Herbal Medicine to help relieve joint pain associated with osteoarthritis.</td>
+                        <td>Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Infusion)</td>
+                        <td>600 mg dried secondary root tubers</td>
+                        <td>7,500 mg dried secondary root tubers</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Fish oil<sup><a href="#ref2-5" style="text-decoration: none;">5</a></sup></td>
+                        <td>In conjunction with conventional therapy, helps reduce the pain of rheumatoid arthritis in adults.</td>
+                        <td>Standardized fixed oil</td>
+                        <td>2,800 mg eicosapentaenoic acid (EPA) + docosahexaenoic acid (DHA) with a EPA:DHA ratio of 0.5:1-2:1</td>
+                        <td>5,000 mg EPA + DHA with a EPA:DHA ratio of 0.5:1-2:1</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Glucosamine hydrochloride</td>
+                        <td>Helps maintain healthy cartilage/joint health.</td>
+                        <td>N/A</td>
+                        <td>1,500 mg</td>
+                        <td>2,000 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Glucosamine sulfate</td>
+                        <td>
+                            <ul>
+                                <li>Helps relieve joint pain associated with osteoarthritis (of the knee).</li>
+                                <li>Helps protect against the deterioration of cartilage.</li>
+                                <li>A factor in maintaining healthy cartilage and/or joint health.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td>1,500 mg</td>
+                        <td>1,500 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Hyaluronic acid</td>
+                        <td rowspan="2">Helps support joint health.</td>
+                        <td rowspan="2">N/A</td>
+                        <td>48 mg (sourced from <em>Gallus gallus</em> comb)</td>
+                        <td>120 mg (sourced from <em>Gallus gallus</em> comb)</td>
+                        <td rowspan="2">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>120 mg (sourced from microbial fermentation)</td>
+                        <td>200 mg (sourced from microbial fermentation)</td>
+                    </tr>
+                    <tr>
+                        <td>Hydrolyzed collagen</td>
+                        <td>
+                            <ul>
+                                <li>Helps reduce joint pain associated with osteoarthritis.</li>
+                                <li>Helps reduce osteoarthritis-related joint pain.</li>
+                                <li>Helps manage/in the management of joint pain.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td>1,200 mg</td>
+                        <td>10,000 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Methylsulfonylmethane (MSM)</td>
+                        <td>Helps relieve (joint) pain associated with osteoarthritis (of the knee).</td>
+                        <td>N/A</td>
+                        <td>1,500 mg</td>
+                        <td>6,000 mg</td>
+                        <td>2,000 mg</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Willow bark</td>
+                        <td rowspan="2">Used in Herbal Medicine to relieve minor joint pain (due to osteoarthritis).</td>
+                        <td>Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</td>
+                        <td>3,000 mg dried (young branch) bark</td>
+                        <td>9,000 mg dried (young branch) bark</td>
+                        <td>3,000 mg dried (young branch) bark</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized Extracts</td>
+                        <td>Extract providing up to 15% total salicin equivalent to 45 mg total salicin</td>
+                        <td>Extract providing up to 15% total salicin equivalent to 240 mg total salicin</td>
+                        <td>Extract providing up to 15% total salicin equivalent to 120 mg total salicin</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref2-1">1</sup>At least two of the following references were consulted per use or purpose: EMA 2017&semi; Bruy&#232;re et al. 2012&semi; Benito-Ruiz et al. 2009&semi; Yoshida et al. 2009&semi; Clark et al. 2008&semi; Winston and Kuhn 2008&semi; Herrero-Beaumont et al. 2007&semi; Mazi&#232;res et al. 2007&semi; Sontakke et al. 2007&semi; Towheed and
+                Anastassiades 2007&semi; Kim et al. 2006&semi; Mills and Bone 2005&semi; Uebelhart et al. 2004&semi; Usha and Naidu 2004&semi; Braham et al. 2003&semi; ESCOP 2003&semi; Hoffmann 2003&semi; Kimmatkar et al. 2003&semi; Pavelka et al. 2002&semi; Sato et al. 2002&semi; Mazi&#232;res et al. 2001&semi; Reginster et al. 2001&semi; Thie et al. 2001&semi; Blumenthal et al. 2000&semi; Mills and Bone 2000&semi; Volker et al. 2000&semi; Houpt et al. 1999&semi; Bourgeois et al. 1998&semi; Bucsi and Poor 1998&semi; Uebelhart et al. 1998&semi; Sk&#246;ldstam et al. 1992&semi; Deodhar et al. 1980.<br/>
+                <sup id="ref2-2">2</sup>At least one of the following references was consulted per minimum dose: EMA 2017&semi; Bruy&#232;re et al. 2012&semi; Benito-Ruiz et al. 2009&semi; WHO 2009&semi; Yoshida et al. 2009&semi; Clark et al. 2008&semi; Kalman et al. 2008&semi; Herrero-Beaumont et al. 2007&semi; Mezieres et al. 2007&semi; Sontakke et al. 2007&semi; Fitzpatrick 2005&semi; Mills and Bone 2005&semi; Boon and Smith 2004&semi; Uebelhart et al. 2004&semi; Usha and Naidu 2004&semi; Wichtl 2004&semi; ESCOP 2003&semi; Hoffmann 2003&semi; Kimmatkar et al. 2003&semi; Williamson 2003&semi; Barnes et al. 2002&semi; Pavelka et al. 2002&semi; Mezieres et al. 2001&semi; Reginster et al. 2001&semi; Blumenthal et al. 2000&semi; Volker et al. 2000&semi; Houpt et al. 1999&semi; Bucsi and Poor 1998&semi; Uebelhart et al. 1998&semi; Deodhar et al. 1980.<br/>
+                <sup id="ref2-3">3</sup>At least one of the following references was consulted per maximum dose: EMA 2017&semi; Bruy&#232;re et al. 2012&semi; Benito-Ruiz et al. 2009&semi; WHO 2009&semi; Clark et al. 2008&semi; Sato et Iwaso 2008&semi; Herrero-Beaumont et al. 2007&semi; Sontakke et al. 2007&semi; Hathcock and Shao 2006&semi; Kim et al. 2006&semi; Mills and Bone 2005&semi; Boon and Smith 2004&semi; Wichtl 2004&semi; Braham et al. 2003&semi; ESCOP 2003&semi; Kimmatkar et al. 2003&semi; Williamson 2003&semi; Barnes et al. 2002&semi; Pavelka et al. 2002&semi; Sato et al. 2002&semi; Reginster et al. 2001&semi; Blumenthal et al. 2000&semi; Bourgeois et al. 1998&semi; US FDA 1997&semi; BHC 1992&semi; Deodhar et al. 1980.<br/>
+                <sup id="ref2-4">4</sup><strong>Turmeric:</strong> Refer to the Turmeric monograph for more information on native extracts.<br/>
+                <sup id="ref2-5">5</sup><strong>Fish oil:</strong> The EPA:DHA ratio for fish oil must be between 0.5:1 and 2:1 (Volker et al. 2000&semi; Sk&#246;ldstam et al. 1992) and potency must be expressed as the quantity (mg) and/or percent (%) of EPA and DHA (% w/w) relative to the total quantity of fish oil.
+            </p>
+            <p><strong>*Note: For Devil&apos;s claw and Turmeric, </strong>solvents allowed for the method of preparation "Non-standardized extracts (Dry extract)" as part of this monograph are ethanol and/or water only.</p>
+            <p><em>The following claims are only acceptable in addition to at least one claim from Table 2 above. A joint health product cannot contain only ingredients and claims from Table 3.</em></p>
+
+            <table id="ref3" class="subject">
+                <caption>Table 3. Additional uses or purposes (optional) and associated daily doses</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Medicinal ingredients</th>
+                        <th scope="col" rowspan="2">Uses or purposes<sup><a href="#ref3-1" style="text-decoration: none;">1</a></sup></th>
+                        <th scope="col" rowspan="2">Methods of preparation</th>
+                        <th scope="colgroup" colspan="2">Dose/day</th>
+                        <th scope="col">Single dose</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Minimum<sup><a href="#ref3-2" style="text-decoration: none;">2</a></sup></th>
+                        <th scope="col">Maximum<sup><a href="#ref3-3" style="text-decoration: none;">3</a></sup></th>
+                        <th scope="col">Maximum/ single dose<sup><a href="#ref3-3" style="text-decoration: none;">3</a></sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>beta-Carotene</td>
+                        <td>
+                            <ul>
+                                <li>Provitamin A/Source of vitamin A to help in the development and maintenance of bones.</li>
+                                <li>Helps in the development and maintenance of bones.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td>390 µg</td>
+                        <td>18,000 µg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Boron<sup><a href="#ref3-4" style="text-decoration: none;">4</a></sup></td>
+                        <td>Helps maintain healthy calcium metabolism.</td>
+                        <td>N/A</td>
+                        <td>0.7 mg</td>
+                        <td>3.36 mg<sup><a href="#ref3-4" style="text-decoration: none;">4</a></sup></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Bromelain<sup><a href="#ref3-5" style="text-decoration: none;">5</a></sup></td>
+                        <td>Used in herbal medicine to help relieve minor pain, swelling and inflammation.</td>
+                        <td>N/A</td>
+                        <td>480,000 FCC PU</td>
+                        <td>130,000,000 FCC PU</td>
+                        <td>45,000,000 FCC PU</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium</td>
+                        <td>
+                            <ul>
+                                <li>Adequate calcium (and vitamin D) (throughout life) as part of a healthy diet, (along with physical activity) may help prevent bone loss/osteoporosis (in peri- and postmenopausal women) (in later life).</li>
+                                <li>Adequate calcium (and vitamin D) (throughout life) as part of a healthy diet, (along with physical activity) may reduce the risk of developing osteoporosis (in peri- and postmenopausal women) (in later life).</li>
+                                <li>As part of a healthy diet (when taken with Vitamin D) may help prevent bone loss/osteoporosis.</li>
+                                <li>Helps in the development and maintenance of bones.</li>
+                                <li>Helps maintain/support bone health.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td>65 mg</td>
+                        <td>1,500 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Magnesium</td>
+                        <td>Helps in the development and maintenance of bones.</td>
+                        <td>N/A</td>
+                        <td>20 mg</td>
+                        <td>500 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese</td>
+                        <td>Helps in the development and maintenance of bones.</td>
+                        <td>N/A</td>
+                        <td>0.13 mg</td>
+                        <td>9 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Vitamin A</td>
+                        <td rowspan="3">
+                            <ul>
+                                <li>Helps in the development and maintenance of bones.</li>
+                                <li>Helps build strong bones</li>
+                            </ul>
+                        </td>
+                        <td rowspan="3">N/A</td>
+                        <td rowspan="3">65 µg RAE</td>
+                        <td><em>all-trans</em><br/>Retinol: 3,003 µg RAE</td>
+                        <td rowspan="3">N/A</td>
+                    </tr>
+                    <tr><td><em>all-trans</em><br/>Retinyl acetate: 3,000 µg RAE</td></tr>
+                    <tr><td><em>all-trans</em><br/>Retinyl palmitate: 3,022 µg RAE</td></tr>
+                    <tr>
+                        <td>Vitamin C</td>
+                        <td>
+                            <ul>
+                                <li>Helps in the development and maintenance of bones.</li>
+                                <li>Helps in collagen formation to maintain/support healthy bones.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td>6 mg</td>
+                        <td>2,000 mg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin D</td>
+                        <td>
+                            <ul>
+                                <li>Helps in the development and maintenance of bones.</li>
+                                <li>Vitamin D intake, when combined with sufficient calcium, a healthy diet, and regular exercise, may reduce the risk of developing osteoporosis.</li>
+                            </ul>
+                        </td>
+                        <td>N/A</td>
+                        <td>1 µg</td>
+                        <td>25 µg</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Vitamin K<sub><a href="#ref3-1" style="text-decoration: none;">1</a></sub><br/>
+                            Vitamin K<sub><a href="#ref3-2" style="text-decoration: none;">2</a></sub><br/>
+                            and total Vitamin K<sub><a href="#ref3-1" style="text-decoration: none;">1</a></sub> + K<sub><a href="#ref3-2" style="text-decoration: none;">2</a></sub>
+                        </td>
+                        <td>Helps in the maintenance of bones.</td>
+                        <td>N/A</td>
+                        <td>6 µg</td>
+                        <td>120 µg</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref3-1">1</sup>At least two of the following references were consulted per use or purpose: HC 2018&semi; Hunt 2012&semi; FDA 2008&semi; Tang et al. 2007&semi; IOM 2006&semi; NAMS 2006&semi; Shils et al. 2006&semi; Devirian and Volpe 2003&semi; Brown and Josse 2002&semi; Walker et al. 2002&semi; Groff and Gropper 2000&semi; NIH 2001&semi; Blumenthal 1998&semi; IOM 1997&semi; Nielsen et al. 1987.<br/>
+                <sup id="ref3-2">2</sup>At least one of the following references was consulted per minimum daily dose: HC 2018&semi; Hunt 2012&semi; IOM 2006&semi; Walker et al. 2002&semi; Blumenthal 1998.<br/>
+                <sup id="ref3-3">3</sup>At least one of the following references was consulted per maximum daily dose: HC 2018&semi; Hunt 2012&semi; IOM 2006&semi; Kerkhoffs et al. 2004&semi; Singer et al. 2001.<br/>
+                <sup id="ref3-4">4</sup><strong>Boron: </strong>Specific rule for boron for products providing more than 0.7 mg of boron per day. Refer to the &lsquo;<a href="#ref3-notes" style="text-decoration: none;">Notes</a>&rsquo; section below.<br/>
+                <sup id="ref3-5">5</sup><strong>Bromelain:</strong> One papain unit (PU) is defined as that quantity of enzyme that liberates the equivalent of 1 microgram of tyrosine per hour under the conditions of the assay. One gelatin digestion unit (GDU) is approximately equivalent to 15,000 FCC papain unit (1 GDU ≈ 15,000 FCC PU). The quantity per dosage unit must be the enzymatic activity. The quantity of the enzymatic preparation in mg or ml may also be included as additional quantity
+            </p>
+            <p><strong>Notes</strong></p>
+            <ul>
+                <li>The above uses can be combined on the product label (e.g. Helps maintain joint health and reduce joint pain associated with osteoarthritis).</li>
+                <li>The terms &lsquo;Helps&rsquo; or &lsquo;Helps to&rsquo; can be used interchangeably on the label.</li>
+                <li>Specific rule for products providing more than 0.7 mg of boron per day: in order to ensure a favorable risk-benefit profile, a product providing elemental boron at doses in excess of 0.7 mg and up to the maximum limit of 3.36 mg per day must:
+                    <ul>
+                        <li>be a joint health product&semi;</li>
+                        <li>contain at least one medicinal ingredient from Table 2&semi;<br/>and</li>
+                        <li>make only the specified joint pain/health claims from Table 2. In addition, the claim associated with boron &lsquo;Helps maintain healthy calcium metabolism&rsquo; can be included.</li>
+                    </ul>
+                    <p>Other health products such as multi-vitamin/mineral supplements must not provide more than the maximum limit of 0.7 mg elemental boron per day.</p>
+                </li>
+            </ul>
+
+            <h3>Direction(s) for use</h3>
+            <table id="ref4" class="subject">
+                <caption>Table 4. Direction(s) for use</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Medicinal ingredients</th>
+                        <th scope="col">Daily dose</th>
+                        <th scope="col">Directions for use<sup><a href="#ref4-1" style="text-decoration: none;">1</a></sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Boron</td>
+                        <td>0.7 mg or more boron when the claim associated with boron is made and if the product formulation does not also contain amounts of vitamin D and calcium that meet the minimum doses from the NNHPD Multi-Vitamin/Mineral Supplement monograph.</td>
+                        <td>Take with vitamin D and calcium.</td>
+                    </tr>
+                    <tr>
+                        <td>Bromelain</td>
+                        <td>All doses (Optional)</td>
+                        <td>Take with food.</td>
+                    </tr>
+                    <tr>
+                        <td>Calcium</td>
+                        <td>All doses</td>
+                        <td>
+                            <ul>
+                                <li>Take with food.</li>
+                                <li>Take a few hours before or after taking other medications or health products.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Methylsulfonylmethane (MSM)</td>
+                        <td>1,500 mg or more MSM</td>
+                        <td>
+                            <ul>
+                                <li>Take with food.</li>
+                                <li>Avoid taking at bedtime.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref4-1">1</sup>The following references were consulted for the directions for use: Boron: Devirian and Volpe 2003&semi; Zittermann 2003&semi; Calcium: Brayfield and Cadart 2025, IOM 2011, ASHP 2005&semi; MSM: Kim et al. 2006.
+            </p>
+
+            <h3>Combination rules</h3>
+            <ul>
+                <li>For multi-ingredient products containing bromelain and papain, the combined proteolytic activity should not exceed the maximum proteolytic activity of 130,000,000 FCC PU per day and 45,000,000 FCC PU per single dose.</li>
+                <li>The finished product should not exceed a total amount of curcuminoids of 500 mg per dose and 1500 mg per day.</li>
+                <li>The finished product should not exceed a total amount of curcumin of 400 mg per dose and 1200 mg per day.</li>
+                <li>The daily dose for glucosamine hydrochloride in combination with glucosamine sulfate is subject to the following limitations: the sum of the percentages of their individual maximum daily doses must not exceed 120%; [e.g. a product providing a daily dose of 2000 mg glucosamine hydrochloride (100% of the 2000 mg maximum daily dose) + 300 mg glucosamine sulfate (20% of the 1500 mg maximum daily dose) would be acceptable (100%+20%=120%)].</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of use</h2>
+            <p><strong>Notes</strong></p>
+            <ul>
+                <li>A minimum duration of use statement is required for all products citing use or purpose statements associated with boswellia, chondroitin sulfate, devil&apos;s claw, glucosamine (hydrochloride and sulfate), hydrolyzed collagen or methylsulfonylmethane (MSM).</li>
+                <li>If more than one minimum duration of use is required for a particular product formulation, the shortest minimum duration of use must be the only one listed on the label since they are associated with similar uses.</li>
+                <li>A maximum duration of use statement is required for all products containing bromelain or willow bark. If the maximum duration of use is shorter than the minimum duration of use to see beneficial effects, the associated claim cannot be included. If more than one maximum duration of use is required for a particular product formulation, the shortest maximum duration of use statement must be the only one listed on the label.</li>
+            </ul>
+            <h3>Minimum duration(s) of use</h3>
+                <table id="ref5" class="subject">
+                    <caption>Table 5. Minimum duration(s) of use</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Medicinal ingredients</th>
+                            <th scope="col">Minimum durations of use<sup><a href="#ref5-1" style="text-decoration: none;">1</a></sup></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hydrolyzed collagen</td>
+                            <td>Use for at least 20 weeks to see beneficial effects.</td>
+                        </tr>
+                        <tr>
+                            <td>Chondroitin sulfate</td>
+                            <td>Use for at least 12 weeks to see beneficial effects.</td>
+                        </tr>
+                        <tr>
+                            <td>Devil&apos;s claw</td>
+                            <td>Use for at least 8 weeks to see beneficial effects.</td>
+                        </tr>
+                        <tr>
+                            <td>Boswellia</td>
+                            <td>Use for at least 8 weeks to see beneficial effects.</td>
+                        </tr>
+                        <tr>
+                            <td>Glucosamine hydrochloride</td>
+                            <td rowspan="3">Use for at least 4 weeks to see beneficial effects.</td>
+                        </tr>
+                        <tr><td>Glucosamine sulfate</td></tr>
+                        <tr><td>Methylsulfonylmethane (MSM)</td></tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref5-1">1</sup>At least one of the following references was consulted per duration of use: Bruy&#232;re et al. 2012&semi; Benito-Ruiz et al. 2009&semi; Clark et al. 2008&semi; Bjordal et al. 2007&semi; Mehta et al. 2007&semi; Sontakke et al. 2007&semi; Kim et al. 2006&semi; Usha and Naidu 2004&semi; ESCOP 2003&semi; Kimmatkar et al. 2003&semi; Houpt et al. 1999&semi; Qiu et al. 1998.
+                </p>
+
+            <h3>Maximum duration(s) of use</h3>
+                <p><em>Products providing 60,000,000 FCC PU or less bromelain, per day</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 16 weeks (Kasemsuk et al. 2016&semi; Gutfreund et al. 1978).</p>
+                <p><em>Products providing more than 60,000,000 FCC PU bromelain, per day</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 4 weeks.</p>
+                <p><em>Products containing willow bark</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 weeks (Beer and Wegener 2008&semi; Biegert et al. 2004).</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk Information</h2>
+            <h3>Caution(s) and warning(s)</h3>
+                <p><em>Products providing more than 2.8 g of hydrolyzed collagen per day or any other medicinal ingredient from Table 2 at any dose (except products containing willow bark requiring a contraindication)</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+                <p><em>(Joint) pain (and swelling) associated with osteoarthritis or rheumatoid arthritis</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen.</p>
+                <p><em>Joint inflammation/anti-inflammatory/minor pain, swelling and inflammation relief</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+                <p><em>Products containing following medicinal ingredients</em></p>
+
+            <table id="ref6" class="subject">
+                <caption>Table 6. Caution(s) and warning(s)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Medicinal ingredients</th>
+                        <th scope="col">Daily dose</th>
+                        <th scope="col">Cautions and warnings<sup><a href="#ref6-1" style="text-decoration: none;">1</a></sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>beta-Carotene</td>
+                        <td>More than 6,000 µg</td>
+                        <td>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are a tobacco smoker.</td>
+                    </tr>
+                    <tr>
+                        <td>Boron</td>
+                        <td>More than 0.7 mg</td>
+                        <td>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have been diagnosed with estrogen-dependant cancer or have a kidney disorder.</td>
+                    </tr>
+                    <tr>
+                        <td>Bromelain</td>
+                        <td>All doses</td>
+                        <td>
+                            <ul>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have gastrointestinal lesions/ulcers or are having a surgery.</li>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners, anti-inflammatory agents or antibiotics.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Curcumin/Curcuminoids/Turmeric (concentrated extracts)</td>
+                        <td>All doses</td>
+                        <td>
+                            <ul>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver or biliary disorder.</li>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications including blood thinners.</li>
+                                <li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fish oil and willow bark combined</td>
+                        <td>All doses</td>
+                        <td>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are having a surgery.</td>
+                    </tr>
+                    <tr>
+                        <td>Manganese</td>
+                        <td>More than 5 mg</td>
+                        <td>Ask a health care practitioner/health care provider/health care professional/doctor/physician before if you have a liver disorder.</td>
+                    </tr>
+                    <tr>
+                        <td>Turmeric (native extracts)</td>
+                        <td>All doses</td>
+                        <td>
+                            <ul>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver or biliary disorder.</li>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications.</li>
+                                <li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vitamin K<sub>1</sub> and/or K<sub>2</sub></td>
+                        <td>All doses</td>
+                        <td>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners.</td>
+                    </tr>
+                    <tr>
+                        <td>Willow bark</td>
+                        <td>All doses</td>
+                        <td>
+                            <ul>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have asthma or peptic ulcer disease.</li>
+                                <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners or products containing salicylates (e.g., acetylsalicylic acid or non-steroidal anti-inflammatory drugs).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref6-1">1</sup>The following references were consulted for the caution and warning statements: beta-Carotene: Touvier et al. 2005&semi; Omenn et al. 1996&semi; ATBC 1994&semi; Boron: Usuda et al. 1996&semi; Nielsen et al. 1992&semi; Bromelain: Brinker 2010&semi; Blumenthal et al. 2000&semi; Curcumin: HC 2025&semi; Brinker 2010&semi; Mills and Bone 2005&semi; ESCOP 2003&semi; McGuffin et al. 1997&semi; Fish oil and willow bark combined: Block et al. 2012, 2013&semi; Larson et al. 2008&semi; Manganese: IOM 2006&semi; IOM 2001&semi; Krieger et al. 1995&semi; Turmeric: HC 2025&semi; EMA 2018&semi; Brinker 2010&semi; ESCOP 2003&semi; McGuffin et al. 1997&semi; Vitamin K1, K2: ASHP 2005&semi; Franco et al 2004&semi; IOM 2001&semi; Hansten et al 1997&semi; Willow bark: EMA 2017.
+            </p>
+            <h3>Contraindication(s)</h3>
+                <p><em>Products containing willow bark</em></p>
+                <ul>
+                    <li>Do not use if you are pregnant or breastfeeding (EMA 2017&semi; Brinker 2010&semi; Wichtl 2004&semi; ESCOP 2003&semi; Barnes et al. 2002&semi; Blumenthal et al. 2000).</li>
+                    <li>Do not use if you are allergic to salicylates (EMA 2017&semi; Brinker 2010&semi; Wichtl 2004, ESCOP 2003&semi; Barnes et al. 2002&semi; Blumenthal et al. 2000).</li>
+                </ul>
+            <h3>Known adverse reaction(s)</h3>
+                <p><em>Products containing boswellia and/or bromelain</em></p>
+                    <p>Stop use if hypersensitivity/allergy occurs (Brayfield and Cadart 2025&semi; Brinker 2010&semi; WHO 2009&semi; Murray and Pizzorno 2006&semi; Blumenthal et al. 2000&semi; Baur and Fruhmann 1979).</p>
+                <p><em>Products containing boswellia&semi; bromelain&semi; hydrolyzed collagen&semi; methylsulfonylmethane and/or willow bark</em></p>
+                    <p>When using this product you may experience gastrointestinal discomfort/disturbances (Brayfield and Cadart 2025&semi; EMA 2017&semi; Brinker 2010&semi; Sontakke et al. 2007&semi; Brien et al. 2006&semi; Wichtl 2004&semi; ESCOP 2003&semi; Kimmatkar et al. 2003&semi; Barnes et al. 2002&semi; Blumenthal et al. 2000&semi; McGuffin 2000&semi; Moskowitz 2000).</p>
+                <p><em>Products providing more than 350 mg magnesium per day</em></p>
+                    <p>When using this product you may experience diarrhoea (IOM 2006, IOM 1997).</p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in that database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+            <p><em>Products containing fish oil, except those encapsulated</em></p>
+                <p>Refrigerate after opening (Wille and Gonus 1989). </p>
+            <p><em>Products containing fish oil (information for industry&semi; not for labelling)</em></p>
+                <p>To be packaged in airtight container, protected from light (Ph.Eur. 2023&semi; USP-NF 2023).</p>
+            <p><em>Products containing hydrolyzed collagen (information for industry&semi; optional for labelling depending on the packaging)</em></p>
+                <p>To be protected from heat and moisture (Ph.Eur. 2023).</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+                <li><em>Ingredients sourced from bovine tissues</em>
+                    <ol style="list-style-type: lower-roman">
+                        In order to minimize the risk of Transmissible Spongiform Encephalopathies (TSEs) from products sourced from bovine tissues, product licence applicants must have a veterinary certificate on file and must ensure that the following criteria have been met (Ph.Eur. 2023):
+                        <li>Source animal is fit for human consumption&semi;</li>
+                        <li>Source material can be traced back to the herd or animal&semi;</li>
+                        <li>Avoidance of cross-contamination with high-infectivity tissues is ensured during sourcing&semi;</li>
+                        <li>Manufacturing procedures that are known to reduce infectivity are implemented (e.g. procedures that are in accordance with those outlined in Chapter 5.02.08 of the European Pharmacopoeia 2012 &lsquo;Minimising the risk of transmitting animal spongiform encephalopathy agents via human and veterinary medicinal products&rsquo;).</li>
+                    </ol>
+                </li>
+                <li><em>Fish oil</em>
+                    <ol style="list-style-type: lower-roman">
+                        <li>Peroxide, anisidine, and totox values of fish oil and omega-3 fatty acids derived from fish oil must be in accordance with the methods set out by the Association of Analytical Community (AOAC) and/or Pharmacopoeial analytical methods. These specifications are necessary to ensure the oxidative stability of the fish oil and the omega-3 fatty acids derived from fish oil (HC 2015). The maximum peroxide value (PV) must be 5 mEq/kg, the maximum anisidine value (AV) must be 20 while the maximum Totox value must be 26 (calculated as 2 X PV + AV).</li>
+                        <li>The dioxins, polychlorinated dibenzo-para-dioxins (PCDDs) and polychlorinated dibenzofurans (PCDFs); the dioxin-like polychlorinated biphenyls (dioxin-like PCBs; and the polychlorinated biphenyls (PCBs) are contaminants in oils from marine sources. Testing for these contaminants are required. As indicated in the Quality of Natural Health Products Guide, testing should be performed using appropriate analytical methods, such as method No. 1613 revision B of the Environmental Protection Agency for PCDDs and PCDFs and method No. 1668B of the Environmental Protection Agency for chlorinated biphenyl congeners. Licence holders are advised to consult the Commission of the European Communities documents on dioxins and dioxin-like PCB contaminants in marine oil for further information. Refer to the Quality of Natural Health Products Guide for more information on the acceptable limits of dioxins and dioxin-like PCBs.</li>
+                        <li>For fish oils including Gadidae as a source material, the vitamin A and D content should be tested to ensure that their respective daily maximum amounts meet the Multi-Vitamin/Mineral Supplements monograph for each age group.</li>
+                    </ol>
+                </li>
+                <li><em>Bromelain</em>
+                    <ol style="list-style-type: lower-roman">
+                        <li>Details of the manufacturing of the enzyme at the raw material stage should include fermentation medium, and the isolation process of the medicinal ingredient.</li>
+                        <li>The specifications must include testing for enzymatic activity of the medicinal ingredient at appropriate stages of formulation and manufacturing using the assay outlined in the current Food Chemicals Codex (FCC): PLANT PROTEOLYTIC ACTIVITY.</li>
+                        <li>Where published methods are not suitable for use, manufacturers will use due diligence to ensure that the enzymes remain active to the end of the shelf life indicated on the product label.</li>
+                    </ol>
+                </li>
+                <li><em>Chondroitin sulfate</em>
+                    <ol style="list-style-type: lower-roman">
+                        The medicinal ingredient must either:
+                        <li>Comply with the specifications outlined in the Chondroitin Sulfate Sodium Monographs published in the British or European Pharmacopoeiae, or the United States Pharmacopoeia or;</li>
+                        <li>Be cited in an approved NHP Master File, authorized by a letter of access issued to the applicant by the NHP Master File&apos;s registered owner</li>
+                    </ol>
+                </li>
+                <li><em>Hyaluronic acid</em>
+                    <ol style="list-style-type: lower-roman">
+                        <li>Information pertaining to the molecular weight of the hyaluronic acid must be available upon request for characterization (e.g. Certificate of Analysis, Technical Data Sheet, Product Information, etc). The average molecular weight of hyaluronic acid obtained from <em>Gallus gallus</em> comb must be 800 kDa. The average molecular weight of sodium hyaluronate from <em>Streptococcus</em> equi must be 900 kDa.</li>
+                        <li>Information regarding Method of preparation must be provided upon request</li>
+                        <li>For all products obtained through microbial fermentation, the species of <em>Streptococcus</em> used must be provided upon request and should be substantiated by the evidence. Information regarding manufacturing processes that reduce or eliminate pyrogenic or inflammatory components of the cell wall must be submitted upon request.</li>
+                        <li>The content of sulfated glycosaminoglycans, nucleic acids, protein, and microbial contamination derived from this ingredient must be in accordance with the methods set out by the European Pharmacopoeia:
+                            <ul>
+                                <li>Sulfated glycosaminoglycans: maximum 1%, if the ingredient is extracted from <em>Gallus gallus</em>comb</li>
+                                <li>Nucleic acids: the absorbance of solution at 260 nm is maximum 0.5</li>
+                                <li>Protein: maximum 0.3%</li>
+                                <li>Microbial contamination: Total Aerobic Microbial Count of 10<sup>2</sup> CFU/g</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li><em>Hydrolyzed Collagen</em></p>
+                    <ol style="list-style-type: lower-roman">
+                        <li>For the purpose of this monograph, hydrolyzed collagen has no jelling power and is soluble in cold water (Schrieber and Gareis 2007&semi; Moskowitz 2000).</li>
+                        <li>The average molecular weight of hydrolyzed collagen is approximately 4 kDa (i.e. 2-6 kDa) (Moskowitz 2000&semi; Oesser et al. 1999).</li>
+                    </ol>
+                </li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+            <p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/joint_health_products_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References cited</h2>
+            <ul>
+                <li>ASHP 2005: American Society of Health-System Pharmacists. American Hospital Formulary Service (AHFS) Drug Information. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2005.</li>
+                <li>ATBC (Alpha-tocopherol, beta-carotene cancer prevention) study group. The effect of vitamin E and beta carotene on the incidence of lung cancer and other cancers in male smokers. The New England Journal of Medicine 1994&semi;330(15):1029-1035.</li>
+                <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines: A Guide for Healthcare Professionals. 2<sup>nd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2002.</li>
+                <li>Baur X, Fruhmann G. Allergic reactions, including asthma, to the pineapple protease bromelain following occupational exposure. Clinical Allergy 1979&semi;9(5):443-450.</li>
+                <li>Baziwane D, He Q. Gelatin: The paramount food additive. Food Reviews International 2003&semi;19(4):423-435.</li>
+                <li>Beer A.-M, Wegener T. Willow bark extract (Salicis cortex) for gonarthrosis and coxarthrosis- Results of a cohort study with a control group. Journal of Phytomedicine 2008&semi;15:907-913.</li>
+                <li>Benito-Ruiz P, Camacho-Zambrano MM, Carrillo-Arcentales JN, Mestanza-Peralta MA, Vallejo-Flores CA, Vargas-L&#243;pez SV, Villac&#237;s-Tamayo RA, Zurita-Gavilanes LA. A randomized controlled trial on the efficacy and safety of a food ingredient, collagen hydrolysate, for improving joint comfort. International Journal of Food Sciences and Nutrition 2009&semi;60 Suppl 2:99-113.</li>
+                <li>BHC 1992: Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (GB): British Herbal Medicine Association&semi; 1992.</li>
+                <li>Biegert C, Wagner I, Ludtke R, Kotter I, Lohmuller C, Gunaydin I, Taxis K, Heide L. Efficacy and safety of willow bark extract in the treatment of osteoarthritis and rheumatoid arthritis: results of 2 randomized double-blind controlled trials. Journal of Rheumatology 2004&semi;31(11): 2121-2130.</li>
+                <li>Bjordal JM, Klovning A, Ljunggren AE, Sl&#248;rdal L. Short-term efficacy of pharmacotherapeutic interventions in osteoarthritic knee pain: A meta-analysis of randomised placebo-controlled trials. European Journal of Pain 2007&semi;11(2):125-138.</li>
+                <li>Block RC, Abdolahi A, Smith B, Meednu N, Thevenet-Morrison K, Cai X, Cui H, Mousa S, Brenna JT and Georas S. Effects of low-dose aspirin and fish oil on platelet function and NF-kappaB in adults with diabetes mellitus. Prostaglandins, Leukotrienes and Essential Fatty Acids 2013&semi;89(1):9-18.</li>
+                <li>Block RC, Kakinami L, Jonovich M, Antonetti I, Lawrence P, Meednu N, Artero PC, Mousa SA, Brenna JT, Georas S. The combination of EPA+DHA and low-dose aspirin ingestion reduces platelet function acutely whereas each alone may not in healthy humans. Prostaglandins, Leukotrienes and Essential Fatty Acids 2012&semi;87(4-5):143-151.</li>
+                <li>Blumenthal M. The complete german Commission E monographs: Therapeutic guide to herbal medicines. Boston (MA): American Botanical Council&semi; 1998.</li>
+                <li>Blumenthal M, Goldberg A, Brinkman J. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</li>
+                <li>Boon H, Smith M. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs. Toronto (ON): Robert Rose Inc&semi; 2004.</li>
+                <li>Bourgeois P, Chales G, Dehais J, Delcambre B, Kuntz JL, Rosenberg S. Efficacy and tolerability of chondroitin sulfate 1200 mg/day vs chondroitin sulfate 3 x 400 mg/day vs placebo. Osteoarthritis Cartilage 1998&semi;6(Suppl A):25-30.</li>
+                <li>BP 2012: British Pharmacopoeia. London (GB): The Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA)&semi; 2012.</li>
+                <li>Braham R, Dawson B, Goodman C. The effect of glucosamine supplementation on people experiencing regular knee pain. British Journal of Sports Medicine 2003&semi;37(1):45-49.</li>
+                <li>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press&semi; 2025. [Accessed 2025 April 25]. Available from: https://www.medicinescomplete.com/#/browse/martindale</li>
+                <li>Brien S, Lewith G, Walker AF, Middleton R, Prescott P, Bundy R. Bromelain as an adjunctive treatment for moderate-to-severe osteoarthritis of the knee: a randomized placebo-controlled pilot study. QJM: An International Journal of Medicine 2006&semi;99(12):841-850.</li>
+                <li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+                <li>Brown JP, Josse RG. Clinical Practice Guidelines for the Diagnosis and Management of Osteoporosis in Canada. Canadian Medical Association Journal 2002&semi;167(S10):S1-S34.</li>
+                <li>Bruy&#232;re O, Zegels B, Leonori L. Rabenda V, Janssen A, Bourges C, Reginster JY. Effect of collagen hydrolysate in articular pain: A 6-month randomized, double-blind, placebo controlled study. Complementary Therapies in Medicine 2012&semi;20:124-130.</li>
+                <li>Bucsi L, Poor G. Efficacy and tolerability of oral chondroitin sulfate as a symptomatic slow acting drug for osteoarthritis (SYSADOA) in the treatment of knee osteoarthritis. Osteoarthritis Cartilage 1998&semi;6(Suppl A):31-36.</li>
+                <li>Chmielowski RA, Wu HS, Wang SS. Scale-up of upstream and downstream operations for the production of glucosamine using microbial fermentation. Biotechnology Journal 2007&semi;2(8):996-1006.</li>
+                <li>Chong BF, Blank LM, Mclaughlin R, Nielsen LK. Microbial hyaluronic acid production. Appl Microbiol Biotechnol 2005&semi;66:341-351.</li>
+                <li>Clark KL, Sebastianelli W, Flechsenhar KR, Aukermann DF, Meza F, Millard RL, Deitch JR, Sherbondy PS, Albert A. 24-Week study on the use of collagen hydrolysate as a dietary supplement in athletes with activity-related joint pain. Current Medical Research and Opinions 2008&semi;24(5):1485-1496.</li>
+                <li>Dahiya N, Tewari R, Hoondal GS. Biotechnological aspects of chitinolytic enzymes: a review. Applied Microbiology and Biotechnology 2006&semi;71(6):773-782.</li>
+                <li>Deodhar SD, Sethi R, Srimal RC. Preliminary studies on antirheumatic activity of curcumin (di-feruloyl methane). Indian Journal of Medical Research 1980&semi;71:632-634.</li>
+                <li>Devirian TA and SL Volpe. The physiological effects of dietary boron. Critical Reviews in Food Science and Nutrition 2003&semi;43(2):219-231.</li>
+                <li>EMA 2017. European Medicines Agency. European Union herbal monograph on Salix [various species including S. purpurea L., S. daphnoides Vill., S. fragilis L.], cortex. London (GB): EMA Committee on Herbal Medicinal Products (HMPC), 31 January 2017. [Accessed 2023 October 24]. Available at: https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-salix-various-species-including-s-purpurea-l-s-daphnoides-vill_en.pdf</li>
+                <li>EMA 2018. European Medicines Agency. European Union herbal monograph on Curcuma longa L., rhizome. London (GB): EMA Committee on Herbal Medicinal Products (HMPC)&semi; 25 September 2018. [Accessed 2023 October 14] Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-curcuma-longa-l-rhizoma-revision-1_en.pdf</li>
+                <li>EP 2011: European Pharmacopoeia, 7<sup>th</sup> edition. Strasbourg (France): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM)&semi; 2011.</li>
+                <li>ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2<sup>nd</sup> edition. Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme&semi; 2003.</li>
+                <li>Evans W. Trease and Evans Pharmacognosy, 16<sup>th</sup> edition. Edinburgh: Elsevier Saunders&semi; 2009.</li>
+                <li>FCC 2024: Food Chemicals Codex. 14<sup>th</sup> edition. Rockville (MD): The United States Pharmacopeial Convention&semi; 2024.</li>
+                <li>FDA 2008: United States Food and Drug Administration. Calcium and Osteoporosis, and Calcium, Vitamin D, and Osteoporosis. Federal Register, Volume 73, Number 189, September 29, 2008, Final Rules. Docket Number FDA-2004-P-0205 (formerly Docket Number 2004P-0464) Rockville (MD): Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2023 October 24]. Available from: https://www.gpo.gov/fdsys/pkg/FR-2008-09-29/pdf/E8-22730.pdf</li>
+                <li>Fitzpatrick KC. Invitational Consultation on Fatty Acids. Winnipeg (MB): Nutritech Consulting&semi; 2005.</li>
+                <li>Franco V, Polanczyk CA, Clausell N, Rohde LE. Role of dietary vitamin K intake in chronic oral anticoagulation: prospective evidence from observational and randomized protocols. The American Journal of Medicine 2004&semi;166(10):651-656.</li>
+                <li>Froese R, Pauly D, editors. 2018. FishBase: A Global Information System on Fishes [Internet]. Penang (MY): WorldFish Center. [Accessed 2023 October 24]. Available from: http://www.fishbase.org</li>
+                <li>Goel A, Kunnumakkara AB, Aggarwal BB. Curcumin as "Curecumin": From kitchen to clinic. Biochemical Pharmacology 2008&semi;75:787-809.</li>
+                <li>Goldman L, Ausiello D, editors. Cecil Textbook of Medicine, Volume 1, 22<sup>nd</sup> edition. Philadelphia (PA): Saunders&semi; 2004.</li>
+                <li>Groff J, Gropper S. Advanced Nutrition and Human Metabolism, 3<sup>rd</sup> edition. Belmont (CA): Wadsworth/Thomson Learning&semi; 2000.</li>
+                <li>Gutfreund AE, Taussig SJ, Morris AK. Effect of oral bromelain on blood pressure and heart rate of hypertensive patients. Hawaii Med J 1978&semi;37(5):143-146.</li>
+                <li>Hansten PD, Horn JR, editors. Drug Interactions Analysis and Management. Vancouver (WA): Applied Therapeutics Inc.&semi; 1997.</li>
+                <li>Hathcock JN and Shao A. Risk assessment for glucosamine and chondroitin sulphate. Regulatory Toxicology and Pharmacology 2006&semi;47(1):78-83.</li>
+                <li>HC 2025: Health Canada: Summary Safety Review - Turmeric and Curcuminoids for Oral Use - Assessing the Potential Risk of Hepatotoxicity. [Accessed 2025 December 8]. Available from: https://dhpp.hpfb-dgpsa.ca/review-documents/resource/SSR1758121117867</li>
+                <li>HC 2022: Health Canada. Multi-vitamin/mineral Supplements Monograph. Ottawa (ON): Natural Health Products Directorate, Health Canada. [Accessed 2023 October 14]. Available from: http://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq.do?atid=multi_vitmin_suppl&lang=eng</li>
+                <li>HC 2015: Health Canada. Quality of Natural Health Products Guide. Version 3.1. Ottawa (ON): Natural Health Products Directorate, Health Canada. [Accessed 2023 October 14]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html</li>
+                <li>Herrero-Beaumont G, Ivorra JAR, Trabado MC, Blanco FJ, Benito P, Mart&#237;n-Mola E, Paulino J, Marenco JL, Porto A, Laffon A, Ara&#250;jo D, Figueroa M, Branco J. Glucosamine sulfate in the treatment of knee osteoarthritis symptoms- a randomized, double-blind, placebo-controlled study using acetaminophen as a side comparator. Arthritis and Rheumatism 2007&semi;56(2):555-567.</li>
+                <li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+                <li>Houpt JB, McMillan R, Wein C, Paget-Dellio SD. Effect of glucosamine hydrochloride in the treatment of pain of osteoarthritis of the knee. Journal of Rheumatology 1999&semi;26(11):2423-2430.</li>
+                <li>Hunt CD. Dietary boron: Progress in establishing essential roles in human physiology. Journal of Trace Elements in Medicine and Biology&semi; 2012.</li>
+                <li>ICIDH 2008: International Cosmetic Ingredient Dictionary and Handbook, Twelfth Edition, Volume 1. Gottschalck TE, Bailey JE, editors. Washington (DC): The Cosmetic, Toiletry, and Fragrance Association&semi; 2008.</li>
+                <li>IOM 2011: Institute of Medicine. Ross AC, Taylor CL, Yaktine AL, Del Valle HB, editors. Dietary Reference Intakes for Calcium and Vitamin D. Washington (DC): National Academies Press 2011.</li>
+                <li>IOM 2006: Institute of Medicine. Otten JJ, Pitzi Hellwig J, Meyers LD, editors. Dietary Reference Intakes: The Essential Guide to Nutrient Requirements.  Washington (DC): National Academies Press&semi; 2006.</li>
+                <li>IOM 2003: Institute of Medicine. Committee on Food Chemicals Codex, Food and Nutrition Board, Institute of Medicine. Food Chemicals Codex, 5<sup>th</sup> edition. Washington (DC): National Academies Press&semi; 2003.</li>
+                <li>IOM 2001: Institute of Medicine. Panel on Micronutrients, Subcommittees on Upper Reference Levels of Nutrients and Interpretation and Uses of Dietary Reference Intakes, and the Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Vitamin A, Vitamin K, Arsenic, Boron, Chromium, Copper, Iodine, Iron, Manganese, Molybdenum, Nickel, Silicon, Vanadium, and Zinc. Washington (DC): National Academies Press&semi; 2001.</li>
+                <li>IOM 1997: Institute of Medicine. Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Calcium, Phosphorous, Magnesium, Vitamin D, and Fluoride. Washington (DC) : National Academy Press&semi; 1997.</li>
+                <li>ITIS 2023: Integrated Taxonomic Information System. Canadian Biodiversity Information Facility. Ottawa (ON): Government of Canada. [Accessed 2023 October 25 ]. Available from: http://www.cbif.gc.ca/pls/itisca/taxaget?p_ifx=cbif</li>
+                <li>IUBMB 1992: IUBMB Enzyme Nomenclature. London (GB): Queen Mary, University of London. [stem bromelain: CAS 37189-34-7, EC 3.4.22.32 created 1965 as EC 3.4.4.24, transferred 1972 to EC 3.4.22.4, part transferred 1992 to EC 3.4.22.32&semi; Accessed 2023 October 24]. Available from: https://iubmb.qmul.ac.uk/enzyme/</li>
+                <li>Kalman DS, Heimer M, Valdeon A, Schwartz H, Sheldon E. Effect of a natural extract of chicken combs with a high content of hyaluronic acid (Hyal-Joint) on pain relief and quality of life in subjects with knee osteoarthritis: a pilot randomized double-blind placebo-controlled trial. Nutrition Journal 2008&semi; Jan 21:7:3.</li>
+                <li>Kasemsuk T, Saengpetch N, Sibmooh N, Unchern S. Improved WOMAC score following 16-week treatment with bromelain for knee osteoarthritis. Clinical Rheumatology 2016&semi;35:2531-2540.</li>
+                <li>Kerkhoffs GM, Struijs PA, de Wit C, Rahlfs VW, Zwipp H, van Dijk CN. A double blind, randomised, parallel group study on the efficacy and safety of treating acute lateral ankle sprain with oral hydrolytic enzymes. British Journal of Sports Medicine 2004&semi;38&semi;431-435.</li>
+                <li>Khan I, Abourashed E. Leung&apos;s Encycopledia of Common Natural Ingredients Used in Food, Drugs and Cosmetics, 3<sup>rd</sup> edition. Hoboken (NJ): John Wiley & Sons, Inc.&semi; 2010.</li>
+                <li>Kim LS, Axelrod LJ, Howard P, Buratovich N, Waters RF. Efficacy of methylsulfonylmethane (MSM) in osteoarthritis pain of the knee: a pilot clinical trial. Osteoarthritis Cartilage 2006&semi;14(3):286-294.</li>
+                <li>Kimmatkar N, Thawani V, Hingorani L, Khiyani R. Efficacy and tolerability of Boswellia serrata extract in treatment of osteoarthritis of knee--a randomized double blind placebo controlled trial. Phytomedicine: International Journal of Phytotherapy & Phytopharmacology. 2003&semi;10:3-5.</li>
+                <li>Kralovec A, Barrow CJ. Glucosamine Production and Health Benefits. In: Barrow C, Shahidi F, editors. Marine Nutraceuticals and Functional Foods. Boca Raton (FL): CRC Press, Taylor and Francis Group&semi; 2008.</li>
+                <li>Krieger D, Krieger S, Jansen O, Gass P, Theilmann L, Lichtnecker H. Manganese and chronic hepatic encephalopathy. Lancet 1995&semi;246(8970):270-274.</li>
+                <li>Kulkarni RR, Patki PS, Jog VP, Gandage SG, Patwardhan B. Treatment of osteoarthritis with a herbomineral formulation: a double-blind, placebo-controlled, cross-over study. Journal of Ethnopharmacology 1991&semi;33(1-2):91-95.</li>
+                <li>Larson MK, Ashmore JH, Harris KA, Vogelaar JL, Pottala JV, Sprehe M, Harris WS. Effects of omega-3 acid ethyl esters and aspirin, alone and in combination, on platelet function in healthy subjects. Thrombosis and Haemostasis 2008&semi;100:634-641.</li>
+                <li>Mazi&#232;res B, Combe B, Phan Van A, Tondut J, Grynfeltt M. Chondroitin sulphate in osteoarthritis of the knee: a prospective, double-blind, placebo-controlled multicenter clinical study. The Journal of Rheumatology 2001&semi;28(1):173-181.</li>
+                <li>Mazi&#232;res B, Hucher M, Za&#239;m M, Garnero P. Effect of chondroitin sulphate in symptomatic knee osteoarthritis: a multicentre, randomised, double-blind, placebo-controlled study. Annals of the Rheumatic Diseases 2007&semi;66(5):639-645.</li>
+                <li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. Boca Raton (FL1997.): CRC Press.</li>
+                <li>McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. Herbs of Commerce, 2<sup>nd</sup> edition. Silver Spring (MD): American Herbal Products Association&semi; 2000.</li>
+                <li>Mehta K, Gala J, Bhasale S, Naik S, Modak M, Thakur H, Deo N, Miller MJ. Comparison of glucosamine sulfate and a polyherbal supplement for the relief of osteoarthritis of the knee: a randomized controlled trial. BMC Complementary and Alternative Medicine 2007&semi;31(7):34.</li>
+                <li>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</li>
+                <li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+                <li>Moskowitz RW. Role of collagen hydrolysate in bone and joint disease. Seminars in Arthritis and Rheumatism 2000&semi;30(2):87-99.</li>
+                <li>Murray MT, Pizzorno JE. Bromelain. In: Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine, 3<sup>rd</sup> edition, volume 1. St. Louis (MI): Churchill Livingstone Elsevier&semi; 2006.</li>
+                <li>NAMS (The North American Menopause Society). Position Statement - The role of calcium in peri- and postmenopausal women: 2006 position statement of The North American Menopause Society. The Journal of the North American Menopause Society 2006&semi;13(6):862-877.</li>
+                <li>Nielsen FH, Gallagher SK, Johnson LK, Nielsen EJ. Boron enhances and mimics some effects of estrogen therapy in postmenopausal women. Journal of Trace Elements in Experimental Medicine 1992&semi;5:237-246.</li>
+                <li>Nielsen FH, Hunt CD, Mullen LM, Hunt JR. Effect of dietary boron on mineral, estrogen, and testosterone metabolism in postmenopausal women 1987&semi;1(5):394-397.</li>
+                <li>NIHa 2023: National Institutes of Health. PubChem. Bethesda (MD): National Library of Medicine, US Department of Health & Human Services. [Accessed 2023 October 23]. Available from: https://pubchem.ncbi.nlm.nih.gov/</li>
+                <li>NIHb 2023: National Institutes of Health. The NCBI Entrez Taxonomy Homepage. Bethesda (MD): Specialized Information Services, National Library of Medicine, National Institutes of Health, US Department of Health & Human Services. [Accessed 2023 October 25]. Available from: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Root</li>
+                <li>NIH 2001: National Institute of Health. Osteoporosis Prevention, Diagnosis, and Therapy. NIH Consensus Statement Online. Bethesda (MD): National Institute of Health&semi;. [Accessed 2023 October 25]. Available from: https://jamanetwork.com/journals/jama/fullarticle/193534</li>
+                <li>Oesser S, Adam M, Babel W, Seifert J. Oral administration of 14C labeled gelatin hydrolysate leads to an accumulation of radioactivity in cartilage of mice (C57/BL). Journal of Nutrition 1999&semi;129(10):1891-1895.</li>
+                <li>Omenn GS, Goodman GE, Thornquist MD, Balmes J, Cullen MR, Glass A, Keogh JP, Meyskens FL, Valanis B, Williams JH, Barnhart S, Hammar S. Effects of a combination of beta carotene and vitamin A on lung cancer and cardiovascular disease. New England Journal of Medicine 1996&semi;334(18):1150-1155.</li>
+                <li>Pavelka K, Gatterova J, Olejarova M, Machacek S, Giacovelli G, Rovati LC. Glucosamine sulfate use and delay of progression of knee osteoarthritis: a 3-year, randomized, placebo-controlled, double-blind study. Archives of Internal Medicine 2002&semi;162(18):2113-2123.</li>
+                <li>Ph.Eur. 2023: European Pharmacopoeia. 11th edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM), 2023.</li>
+                <li>PPRC 2020: Pharmacopoeia of the People&apos;s Republic of China, Volume 1, English edition. Beijing (CN): The State Pharmacopoeia Commission of the People&apos;s Republic of China&semi; 2020.</li>
+                <li>Qiu GX, Gao SN, Giocovelli G, Rovati L, Stenikar I. Efficacy and safety of glucosamine sulfate versus ibuprofen in patients with knee osteoarthritis. Arzneimmittelforschung 1998&semi;48(5):460-474.</li>
+                <li>Reginster JY, Deroisy R, Rovati LC, Lee RL, Lejeune E, Bruyere O, Giacovelli G, Henrotin Y, Dacre JA, Gossett C. Long-term effects of glucosamine sulphate on osteoarthritis progression: a randomized, placebo-controlled clinical trial. The Lancet 2001&semi;357(9252):251-256.</li>
+                <li>RSC 2023: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available from: https://merckindex.rsc.org/</li>
+                <li>Sato T, Iwaso H. 2008. An effectiveness study of hyaluronic acid (Hyabest®(J)) in the treatment of osteoarthritis of the knee on the patients in the United States. Journal of New Remedies & Clinics 2008&semi;57(2):128-137.</li>
+                <li>Sato T, Sakamoto W, Odanaka W, Yoshida K, Urishibata O. Clinical effects of dietary hyaluronic acid on dry, rough skin. Aesthetic Dermatology 2002&semi;12:109-120.</li>
+                <li>Schauss AG, Stenehjem J, Park J, Endres JR, Clewell A. Effect of the novel low molecular weight hydrolyzed chicken sternal cartilage extract, BioCell Collagen, on improving osteoarthritis-related symptoms: a randomized, double-blind, placebo-controlled trial. Journal of Agricultural and food Chemistry 2012&semi;60(16):4096-4101.</li>
+                <li>Schrieber R, Gareis H. Gelatine Handbook: Theory and Industrial Practice. Weinheim: Wiley-VCH. 2007.</li>
+                <li>Shils ME, Shike M, Ross AC, Caballero B, Cousins RJ, editors. Modern Nutrition in Health and Disease, 10<sup>th</sup> edition. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2006.</li>
+                <li>Singer F, Singer C, Oberleitner H. Phlogenzym versus diclofenac in the treatment of activated osteoarthritis of the knee. A double-blind prospective randomized study. International Journal of Immunotherapy XVII 2001&semi;(2/3/4):135-141.</li>
+                <li>Sitanggang AB, Wu HS, Wang SS, Ho YC. Effect of pellet size and stimulating factor on the glucosamine production using Aspergillus sp. BCRC 31742. Bioresource Technology 2010&semi; 101(10):3595-3601.</li>
+                <li>Sk&#246;ldstam L, B&#246;rjesson O, Kjällman A, Seiving B, Akesson B. Effect of six months of fish oil supplementation in stable rheumatoid arthritis. A double-blind, controlled study. Scandinavian Journal of Rheumatology 1992&semi;21(4):178-185.</li>
+                <li>Sontakke S, Thawani V, Pimpalkhute S, Kabra P, Babhulkar S, Hingorani L. Open, randomized, controlled clinical trial of Boswellia serrata extract as compared to valdecoxib in osteoarthritis of knee. Indian J Pharmacol 2007&semi;39:27-29.</li>
+                <li>Tang BMP, Eslick GD, Nowson C, Smith C, Bensoussan A. Use of calcium or calcium in combination with vitamin D supplementation to prevent fracture and bone loss in people aged 50 years and older: a meta-analysis. Lancet 2007&semi;370(9588):657-666.</li>
+                <li>Thie NM, Prasad NG, Major PW. Evaluation of glucosamine sulfate compared to ibuprofen for the treatment of temperomandibular joint osteoarthritis: a randomized double blind controlled 3 month clinical trial. The Journal of Rheumatology 2001&semi;28(6):1347-1355.</li>
+                <li>Touvier M, Kess E, Clavel-Chapelon F, Boutron-Rualt MC. Dual association of beta-carotene with risk of tobacco-related cancers in a cohort of French women. Journal of the National Cancer Institute 2005&semi;97(18):1338-1344.</li>
+                <li>Towheed, TE, Anastassiades T. Glucosamine therapy for osteoarthritis: An update. The Journal of Rheumatology 2007&semi;34(9):1787-1790.</li>
+                <li>Uebelhart D, Malaise M, Marcolongo R, de Vathaire F, Piperno M, Mailleux E, Fioravanti A, Matoso L, Vignon E. Intermittent treatment of knee osteoarthritis with oral chondroitin sulphate: a one-year, randomized, double-blind, multicenter study versus placebo. Osteoarthritis and cartilage / OARS, Osteoarthritis Research Society 2004&semi;12(4):269-276.</li>
+                <li>Uebelhart D, Thonar EJ, Delmas PD, Chant Raine A, Vignon E. Effects of oral chondroitin sulfate on the progression of knee osteoarthritis: a pilot study. Osteoarthritis Cartilage 1998&semi; 6(Suppl A):39-46.</li>
+                <li>USDA 2023: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN).National Germplasm Resources Laboratory, Beltsville (MD). [Accessed 2023 October 14]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+                <li>US FDA 1997: Food and Drug Administration. 21 CFR 184 Substances Affirmed as Generally Recognized as Safe: Menhaden Oil. Washington (DC): Food and Drug Administration, US Department of Health and Human Services&semi; 1997. [Accessed 2018 July 12]. Available from: https://www.federalregister.gov/documents/2004/01/15/04-811/substances-affirmed-as-generally-recognized-as-safe-menhaden-oil</li>
+                <li>Usha PR, Naidu MUR. Randomised, double-blind, parallel, placebo-controlled study of oral glucosamine, methylsulfonylmethane and their combination in osteoarthritis. Clinical Drug Investigation 2004&semi;24(6):353-363.</li>
+                <li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2023.</li>
+                <li>Usuda K, Kono K, Iguchi K, Nishiura K, Miyata K, Shimahara M, Konda T, Hashiguchi N, Senda J. Hemodialysis effect on serum boron level in the patients with long term hemodialysis. The science of the total environment 1996&semi;191(3):283-290.</li>
+                <li>Volker D, Fitzgerald P, Major G, Garg M. Efficacy of fish oil concentrate in the treatment of rheumatoid arthritis. The Journal of Rheumatology 2000&semi;27(10):2343-2346.</li>
+                <li>Walker AF, Bundy R, Hicks SM, Middleton RW. Bromelain reduces mild acute knee pain and improves well-being in a dose-dependent fashion in an open study of otherwise health adults. Phytomedicine 2002&semi;9:681-686.</li>
+                <li>WHO 2009: World Health Organization. WHO monographs on selected medicinal plants, Volume 4. Geneva World Health Organization&semi; 2009.</li>
+                <li>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 3<sup>rd</sup> edition. Stuttgart (DE): Medpharm GmbH Scientific Publishers&semi; 2004.</li>
+                <li>Wille HJ, Gonus P. Preparation of fish oil for dietary applications. In: Galli C, Simopolous AP, editors. Dietary ω3 and ω6 fatty acids. Biological Effects and Nutritional Essentiality. New York (NY): Plenum Press&semi; 1989.</li>
+                <li>Williamson EM. Potter&apos;s Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (GB): The C.W. Daniel Company Limited&semi; 2003.</li>
+                <li>Winston D, Kuhn MA. Winston and Kuhn&apos;s Herbal Therapy and Supplements. A Scientific and Traditional Approach, 2<sup>nd</sup> edition. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2008.</li>
+                <li>Yoshida T, Kanemitsu T, Narabe H, Tobita M. Clinical effect on dry skin by oral administration of food containing microbial fermented hyaluronic acid. Journal of New Remedies & Clinics 2009&semi;58(8).</li>
+                <li>Zittermann A. Vitamin D in preventive medicine: are we ignoring the evidence? The British Journal of Nutition 2003&semi;89(5):552-72.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References reviewed</h2>
+            <ul>
+                <li>Ackman RG. 1992. The absorption of fish oils and concentrates. Lipids 27(11):858-862.</li>
+                <li>Adams ME. 1999. Hype about glucosamine. The Lancet 354(9176):353-354.</li>
+                <li>Addis PB. 1990. Fish oil and your health. Duluth (MN): Minnesota Sea Grant Research and Education. [Accessed 2012 January 30]. Available from: http://www.seagrant.umn.edu/downloads/f9.pdf</li>
+                <li>Ahmed AA, Holub BJ. 1984. Alteration and recovery of bleeding times, platelet aggregation and fatty acid composition of individual phospholipids in platelets of human subjects receiving a supplement of cod liver oil. Lipids 19(8):617-624.</li>
+                <li>Albert SG, Oiknine RF, Parseghian S, Mooradian AD, Haas MJ, McPherson T. 2007. The effect of glucosamine on Serum HDL cholesterol and apolipoprotein AI levels in people with diabetes. Diabetes Care 30(11):2800-2803.</li>
+                <li>Allen KG, Harris MA. 2001. The role of n-3 fatty acids in gestation and parturition. Experimental Biology and Medicine 226(6):498-506.</li>
+                <li>Altman R, Brandt K, Hochberg M, Moskowitz R, Bellamy N, Bloch DA, Buckwalter J, Dougados M, Ehrlich G, Lequesne M, Lohmander S, Murphy WA Jr, Rosario-Jansen T, Schwartz B, Trippel S. 1996. Design and conduct of clinical trials in patients with osteoarthritis: recommendations from a task force of the Osteoarthritis Research Society&semi; Results from a workshop. Osteoarthritis Cartilage 4(4):217-243.</li>
+                <li>Anderson JW, Nicolosi RJ, Borzelleca JF. 2005. Glucosamine effects in humans: a review of effects on glucose metabolism, side effects, and safety considerations and efficacy. Food and Chemical Toxicology 43(2):187-201.</li>
+                <li>Angerer P, Kothny W, St&#246;rk S, von Schacky C. 2002. Effect of dietary supplementation with omega-3 fatty acids on progression of atherosclerosis in carotid arteries. Cardiovascular Research 54(1):183-190.</li>
+                <li>Annuzzi G, Rivellese A, Capaldo B, Di Marino L, Iovine C, Marotta G, Riccardi G. 1991. A controlled study on the effects of n-3 fatty acids on lipid and glucose metabolism in non-insulin-dependent diabetic patients. Atherosclerosis 87(1):65-73.</li>
+                <li>Appel LJ, Miller ER, Seidler AJ, Whelton PK. 1993. Does supplementation of diet with &lsquo;fish oil&rsquo; reduce blood pressure? Archives of Internal Medicine 153(12):1429-1438.</li>
+                <li>ASHP 2005: American Society of Health-System Pharmacists. American Hospital Formulary Service (AHFS) Drug Information. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2005.</li>
+                <li>Audimoolam VK, Bhandari S. 2006. Transhepatic venous access as an alternative for Tesio catheter in the case of a patient on haemodialysis with antiphospholipid syndrome. Nephrology Dialysis Transplantation 21(7):2031-2033.</li>
+                <li>Bairati I, Roy L, Meyer F. 1992. Effects of a fish oil supplement on blood pressure and serum lipids in patients treated for coronary artery disease. Canadian Journal of Cardiology 8(1):41-46.</li>
+                <li>Balk E, Chung M, Lichtenstein A, Chew P, Kupelnick B, Lawrence A, DeVine D, Lau J. 2004. Effects of Omega-3 Fatty Acids on Cardiovascular Risk Factors and Intermediate Markers of Cardiovascular Disease. Summary, Evidence Report/Technology Assessment No. 93. AHRQ No. 04-E010-1. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>Bana G, Jamard B, Verrouil E, Mazi&#232;res B. 2006. Chondroitin sulphate in the management of hip and knee osteoarthritis: an overview. Advances in Pharmacology 53:507-522.</li>
+                <li>Bassleer C, Rovati L, Franchimont P. 1998. Stimulation of proteoglycan production by glucosamine sulfate in chondrocytes isolated from human osteoarthritic articular cartilage in vitro. Osteoarthritis and Cartilage 6(6):427-434.</li>
+                <li>Bender NK, Kraynak MA, Chiquette E, Linn WD, Clark GM, Bussey HI. 1998. Effects of marine fish oils on the anticoagulation status of patients receiving chronic warfarin therapy. Journal of Thrombosis and Thrombolysis 5(3):257-261.</li>
+                <li>Berbert AA, Kondo CR, Almendra CL, Matsuo T, Dichi I. 2005. Supplementation of fish oil and olive oil in patients with rheumatoid arthritis. Nutrition 21(2):131-136.</li>
+                <li>Bijlsma JW, Lafeber FP. 2008. Glucosamine sulfate in osteoarthritis: the jury is still out. Annals of Internal Medicine 148(4):315-316.</li>
+                <li>Birch EE, Castaneda YS, Wheaton DH, Birch DG, Uauy RD, Hoffman DR. 2005. Visual maturation of term infants fed long-chain polyunsaturated fatty-acid supplemented or control formula for 12 mo. The American Journal of Clinical Nutrition 81(4):871-879.</li>
+                <li>Birch EE, Garfield S, Hoffman DR, Uauy R, Birch DG. 2000. A randomized controlled trial of early long-chain polyunsaturated fatty acids and mental development in term infants. Developmental Medicine and Child Neurology 42(3):174-181.</li>
+                <li>Birch EE, Hoffman DR, Castañeda YS, Fawcett SL, Birch DG, Uauy RD. 2002. A randomized controlled trial of long-chain polyunsaturated fatty acid supplementation of formula in term infants after weaning at 6 wk of age. The American Journal of Clinical Nutrition 75(3):570-580.</li>
+                <li>Bisby FA, Roskov YR, Orrell TM, Nicolson D, Paglinawan LE, Bailly N, Kirk PM, Bourgoin T, van Hertum J, editors. 2008. Species 2000 & ITIS Catalogue of Life: 2008 Annual Checklist. Digital Resource. Reading (GB): Species 2000. [Accessed 2012 January 11]. Available from: http://www.catalogueoflife.org/annual-checklist/2008/</li>
+                <li>Blonk MC, Bilo HJ, Nauta JJ, Popp-Snijders C, Mulder C, Donker AJ. 1990. Dose-response effects of fish-oil supplementation in healthy volunteers. The American Journal of Clinical Nutrition 52(1):120-127.</li>
+                <li>B&#248;naa KH, Bjerve KS, Nord&#248;y A. 1992. Docosahexaenoic and eicosapentaenoic acids in plasma phospholipids are divergently associated with high density lipoprotein in humans. Arteriosclerosis and Thrombosis 12(6):675-681.</li>
+                <li>Bonnema SJ, Jespersen LT, Marving J, Gregersen G. 1995. Supplementation with olive oil rather than fish oil increases small arterial compliance in diabetic patients. Diabetes Nutrition and Metabolism 8(2):81-87.</li>
+                <li>Boon H. 2000. Chondroitin sulfate. In: Chandler F, editor. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association.</li>
+                <li>Boon H. 2000. Glucosamine. In: Chandler F, editor. Herbs: Everyday Reference for Health Professionals. Nepean (ON): Canadian Pharmacists Association and Canadian Medical Association.</li>
+                <li>Brien S, Lewith GT, McGregor G. 2006. Devil&apos;s claw (Harpagophytum procumbens) as a treatment for osteoarthritis: a review of efficacy and safety. The Journal of Alternative and Complimentary Medicine 12(10):981-993.</li>
+                <li>Brinker F. 2010. Final Updates and Additions for Herb Contraindications and Drug Interactions, 3<sup>rd</sup> edition. Sandy (OR): Eclectic Medical Publications. [Accessed 2012 January 11]. Available from: http://www.eclecticherb.com/emp/updatesHCDI.html</li>
+                <li>Buckley MS, Goff AD, Knapp WE. 2004. Fish oil interaction with warfarin. Annals of Pharmacotherapy 38(1):50-53.</li>
+                <li>Buckley R, Shewring B, Turner R, Yaqoob P, Minihane AM. 2004. Circulating triacylglycerol and apoE levels in response to EPA and docosahexaenoic acid supplementation in adult human subjects. British Journal of Nutrition 92(3):477-483.</li>
+                <li>Cairns JA, Gill J, Morton B, Roberts R, Gent M, Hirsh J, Holder D, Finnie K, Marquis JF, Naqvi S, Cohen E. 1996. Fish oils and low-molecular-weight heparin for the reduction of restenosis after percutaneous transluminal coronary angioplasty. The EMPAR Study. Circulation 94(7):1553-1560.</li>
+                <li>Calder PC. 2004. n-3 fatty acids and cardiovascular disease: evidence explained and mechanisms explored. Clinical Science 107(1):1-11.</li>
+                <li>Calder PC. 2006. n-3 polyunsaturated fatty acids, inflammation, and inflammatory diseases. The American Journal of Clinical Nutrition 83(6):1505S-1519S.</li>
+                <li>Cal&#242; L, Bianconi L, Colivicchi F, Lamberti F, Loricchio ML, de Ruvo E, Meo A, Pandozi C, Staibano M, Santini M. 2005. N-3 fatty acids for the prevention of atrial fibrillation after coronary artery bypass surgery: a randomized, controlled trial. Journal of the American College of Cardiology 45(10):1723-1728.</li>
+                <li>Cargill Acidulants. 2004. "Proposal for making a "Substantial Equivalence" notification for Non-Shellfish Glucosamine Hydrochloride under regulation (EC) No. 258/97 for the European Parliament and the Council of Jan 27, 1997 concerning novel foods and novel food ingredients". Eddyville (IA). [Accessed 2012 January 11]. Available from: http://www.food.gov.uk/multimedia/pdfs/glucosamine1.pdf</li>
+                <li>Carlson SE. 1996. Arachidonic acid status of human infants: influence of gestational age at birth and diets with very long chain n-3 and n-6 fatty acids. The Journal of Nutrition 126(4):1092S-1098S.</li>
+                <li>Carlson SE, Werkman SH, Peeples JM, Cooke RJ, Tolley EA. 1993. Arachidonic acid status correlates with first year growth in preterm infants. Proceedings of the National Academy of Sciences 90(3):1073-1077.</li>
+                <li>Carroll DN, Roth MT. 2002. Evidence for the cardioprotective effects of omega-3 fatty acids. The Annals of Pharmacotherapy 36(12):1950-1956.</li>
+                <li>Cazzola R, Russo-Volpe S, Miles EA, Rees D, Banerjee T, Roynette CE, Wells SJ, Goua M, Wahle KW, Calder PC, Cestaro B. 2007. Age- and dose-dependent effects of an eicosapentaenoic acid-rich oil on cardiovascular risk factors in healthy male subjects. Atherosclerosis 193(1):159-167.</li>
+                <li>Chantre P, Cappelaere A, Leblan D, Guedon D, Vandermander J, Fournie B. 2007. Efficacy and tolerance of Harpagophytum procumbens versus diacerhein in treatment of osteoarthritis. Phytomedicine 7(3):177-183.</li>
+                <li>Chee KM, Gong JX, Rees DM, Meydani M, Ausman L, Johnson J, Siguel EN, Schaefer EJ. 1990. Fatty acid content of marine oil capsules. Lipids 25(9):523-528.</li>
+                <li>Chrubasik JE, Roufogalis BD, Chrubasik S. 2007. Evidence of effectiveness of herbal antiinflammatory drugs in the treatment of painful osteoarthritis and chronic low back pain. Phytotherapy Research 21(7):675-683.</li>
+                <li>Chrubasik S, Chrubasik C, Kunzel O, Black A. 2007. Patient-perceived benefit during one year of treatment with Doloteffin. Phytomedicine 14(6):371-376.</li>
+                <li>Chrubasik S, Conradt C, Black A. 2003. The quality of clinical trials with Harpagophytum procumbens. Phytomedicine 10(6-7):613-623.</li>
+                <li>Chrubasik S, Conradt C, Roufogalis BD. 2004. Effectiveness of Harpagophytum extracts and clinical efficacy. Phytotherapy Research 18(2):187-189.</li>
+                <li>Chrubasik S, Model A, Black A, Pollak S. 2003. A randomized double-blind pilot study comparing Doloteffin and Vioxx in the treatment of low back pain. Rheumatology 42(1):141-148.</li>
+                <li>Chrubasik S, Thanner J, Kunzel O, Conradt C, Black A, Pollak S. 2002. Comparison of outcome measures during treatment with the proprietary Harpagophytum extract Doloteffin in patients with pain in the lower back, knee or hip. Phytomedicine 9(3):181-194.</li>
+                <li>Clegg DO, Reda DJ, Harris CL, Klein MA, O&apos;Dell JR, Hooper MM, Bradley JD, Bingham CO 3<sup>rd</sup>, Weisman MH, Jackson CG, Lane NE, Cush JJ, Moreland LW, Schumacher HR Jr, Oddis CV, Wolfe F, Molitor JA, Yocum DE, Schnitzer TJ, Furst DE, Sawitzke AD, Shi H, Brandt KD, Moskowitz RW, Williams HJ. 2006. Glucosamine, chondroitin sulphate, and the two in combination for painful knee osteoarthritis. The New England Journal of Medicine 354(8):795-808.</li>
+                <li>Cleland LG, French JK, Betts WH, Murphy GA, Elliot MJ. 1988. Clinical and biochemical effects of dietary fish oil supplements in rheumatoid arthritis. The Journal of Rheumatology 15(10):1471-1475.</li>
+                <li>Commission of the European Communities. Commission Regulation (EC) No 1883/2006 of 19 December 2006 laying down the methods of sampling and analysis for the official control of levels of dioxins and dioxin-like PCBs in certain foodstuffs. Official Journal of the European Union L 364/32 20.12.2006. [Accessed 2012 March 23]. Available from: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:364:0032:0043:EN:PDF
+                </li>
+                <li>Commission of the European Communities. Commission Regulation (EC) No 1881/2006 of 19 December 2006 setting maximum levels for certain contaminants in foodstuffs. Official Journal of the European Union L 364/5 20.12.2006. [Accessed 2012 March 23]. Available from: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:364:0005:0024:EN:PDF</li>
+                <li>Connor WE, DeFrancesco CA, Connor SL. 1993. N-3 fatty acids from fish oil. Effects on plasma lipoproteins and hypertriglyceridemic patients. Annals of the New York Academy of Sciences 683:16-34.</li>
+                <li>Connor WE, Prince MJ, Ullmann D, Riddle M, Hatcher L, Smith FE, Wilson D. 1993. The hypotriglyceridemic effect of fish oil in adult-onset diabetes without adverse glucose control. Annals of the New York Academy of Science 683(1):337-340.</li>
+                <li>Conrozier T. 1998. Les treatments anti-arthrosiques: efficacite et tolerance des chondroitines sulfates (CS 4&6) [Osteoarthritic treatments: efficacy and tolerance of chondroitin sulfates (CS 4&6)]. Presse M&#233;dicale 27(36):1862-1865 (in French).</li>
+                <li>Council for Responsible Nutrition. 2006. VOLUNTARY MONOGRAPH for Omega-3 DHA, Omega-3 EPA, Omega-3 DHA & EPA. [Accessed 2012 January 11]. Available at: http://www.crnusa.org/pdfs/O3FINALMONOGRAPHdoc.pdf</li>
+                <li>Cunnane S, Drevon CA, Harris B, Sinclair A, Spector A. 2004. Recommendations for intake of polyunsaturated fatty acids in healthy adults. Devon (GB): International Society for the Study of Fatty Acids and Lipids. [Accessed 2012 January 11]. Available from: http://www.issfal.org/news-links/resources/publications/PUFAIntakeReccomdFinalReport.pdf</li>
+                <li>Delafuente JC. 2000. Glucosamine in the treatment of osteoarthritis. Complementary and Alternative Therapies for Rheumatic Diseases II 26(1):1-11.</li>
+                <li>Deutch B, J&#248;rgensen EB, Hansen JC. 2000. Menstrual discomfort in Danish women reduced by dietary supplements of omega-3 PUFA and B12 (fish oil or seal oil capsules). Nutrition Research 20(5):621-631.</li>
+                <li>Dokholyan RS, Albert CM, Appel LJ, Cook NR, Whelton PK, Hennekens CH. 2004. A trial of omega-3 fatty acids for prevention of hypertension. The American Journal of Cardiology 93(8):1041-1043.</li>
+                <li>Dudek A, Raczkiewicz-Papierska A, Tłustochowicz W. 2007. Efficacy of glucosamine sulfate treatment in patients with osteoarthritis. Polski Merkuriusz Lekarski: Organ Polskiego Towarzystwa Lekarskiego 22(129):204-207.</li>
+                <li>Dunstan JA, Mori TA, Barden A, Beilin LJ, Taylor AL, Holt PG, Prescott SL. 2003. Fish oil supplementation in pregnancy modifies neonatal allergen-specific immune responses and clinical outcomes in infants at high risk of atopy: a randomized, controlled trial. Journal of Allergy and Clinical Immunology 112(6):1178-1184.</li>
+                <li>Dunstan JA, Roper J, Mitoulas L, Hartmann PE, Simmer K, Prescott SL. 2004. The effect of supplementation with fish oil during pregnancy on breast milk immunoglobulin A, soluble CD14, cytokine levels, and fatty acid composition. Clinical and Experimental Allergy 34(8):1237-1242.</li>
+                <li>Engeset D, Alsaker E, Lund E, Welch A, Khaw KT, Clavel-Chapelon F, Thi&#233;baut A, Chaj&#232;s V, Key TJ, Allen NE, Amiano P, Dorronsoro M, Tj&#248;nneland A, Stripp C, Peeters PH, van Gils CH, Chirlaque MD, Nagel G, Linseisen J, Ock&#233; MC, Bueno-de-Mesquita1 HB, Sacerdote C, Tumino R, Ardanaz E, S&#225;nchez MJ, Panico S, Palli D, Trichopoulou A, Kalapothaki V, Benetou V, Quir&#243;s JR, Agudo A, Overvad K, Bjerregaard L, Wirfält E, Schulz M, Boeing H, Slimani N, Riboli E. 2006. Fish consumption and breast cancer risk. The European Prospective Investigation into Cancer and Nutrition (EPIC). International Journal of Cancer 119(1):175-182.</li>
+                <li>Engler MM, Engler MB, Malloy MJ, Paul SM, Kulkarni KR, Mietus-Snyder ML. 2005. Effect of docosahexaenoic acid on lipoprotein subclasses in hyperlipidemic children (the EARLY study). American Journal of Cardiology 95(7):869-871.</li>
+                <li>Eritsland J. 2000. Safety considerations of polyunsaturated fatty acids. The American Journal of Clinical Nutrition 71(1):197S-201S.</li>
+                <li>Eritsland J, Arnesen H, Seljeflot I, H&#248;stmark AT. 1995. Long-term metabolic effects of n-3 polyunsaturated fatty acids in patients with coronary artery disease. The American Journal of Clinical Nutrition 61(4):831-836.</li>
+                <li>Eritsland J, Arnesen H, Seljeflot I, Kierulf P. 1995. Long-term effects of n-3 polyunsaturated fatty acids on haemostatic variables and bleeding episodes in patients with coronary artery disease. Blood Coagulation and Fibrinolysis 6(1):17-22.</li>
+                <li>Eritsland J, Seljeflot I, Abdelnoor M, Arnesen H, Torjesen PA. 1994. Long-term effects of n-3 fatty acids on serum lipids and glycemic control. Scandinavian Journal of Clinical and Laboratory Investigation 54(4):273-280.</li>
+                <li>Felson DT. 2006. Glucosamine and chondroitin sulfate in knee osteoarthritis: where now? Nature Clinical Practice. Rheumatology 2(7):356-357.</li>
+                <li>Fetrow CW, Avila JR. 2004. Professional&apos;s Handbook of Complementary and Alternative Medicines, 3<sup>rd</sup> edition. Philadelphia (PA): Lippincott Williams and Wilkins.</li>
+                <li>Fitzpatrick KC. 2005. Invitational Consultation on Fatty Acids. Winnipeg (MB): Nutritech Consulting.</li>
+                <li>Fortin PR, Lew RA, Liang MH, Wright EA, Beckett LA, Chalmers TC, Sperling RI. 1995. Validation of a meta-analysis: the effects of fish oil in rheumatoid arthritis. The Journal of Clinical Epidemiology 48(11):1379-1390.</li>
+                <li>Franzen D, Schannwell M, Oette K, H&#246;pp HW. 1993. A prospective, randomized, and double-blind trial on the effect of fish oil on the incidence of restenosis following PTCA. Catheterization and Cardiovascular Diagnosis 28(4):301-310.</li>
+                <li>Freese R, Mutanen N. 1997. Alpha-linolenic acid and marine long-chain n-3 fatty acids differ only slightly in their effects on hemostatic factors in healthy subjects. The American Journal of Clinical Nutrition 66(3):591-598.</li>
+                <li>Frestedt JL, Walsh M, Kuskowski MA, Zenk JL. 2008. A natural mineral supplement provides relief from knee osteoarthritis symptoms: a randomized controlled pilot trial. Nutrition Journal 17(7):9.</li>
+                <li>Friedberg CE, Janssen MJ, Heine RJ, Grobbee DE. 1998. Fish oil and glycemic control in diabetes. A meta-analysis. Diabetes Care 21(4):494-500.</li>
+                <li>Fulop N, Marchase RB, Chatham JC. 2007. Role of Protein O-linked N-acetyl-glucosamine in mediating cell function and survival in the cardiovascular system. Cardiovascular Research 73(2):288-297.</li>
+                <li>Fux M, Benjamin J, Nemets B. 2004. A placebo-controlled crossover trial of adjunctive EPA in OCD. Journal of Psychiatric Research 38(3):323-325.</li>
+                <li>Gagnier JJ, vanTulder M, Berman B, Bombardier C. 2008. Herbal medicine for low back pain: a Cochrane review. Spine 32(1):82-92.</li>
+                <li>Gapinski JP, VanRuiswyk JV, Heudebert GR, Schectman GS. 1993. Preventing restenosis with fish oils following coronary angioplasty: a meta-analysis. Archives of Internal Medicine 153(13):1595-1601.</li>
+                <li>Geelen A, Brouwer IA, Schouten EG, Maan AC, Katan MB, Zock PL. 2005. Effects of n-3 fatty acids from fish on premature ventricular complexes and heart rate in humans. The American Journal of Clinical Nutrition 81(2):416-420.</li>
+                <li>Geleijnse JM, Giltay EJ, Grobbee DE, Donders AR, Kok FJ. 2002. Blood pressure response to fish oil supplementation: meta-regression analysis of randomized trials. Journal of Hypertension 20(8):1493-1499.</li>
+                <li>Geusens P, Wouters C, Nijs J, Jiang Y, Dequeker J. 1994. Long-term effect of omega-3 fatty acid supplementation in active rheumatoid arthritis: a 12-month, double-blind, controlled study. Arthritis & Rheumatism 37(6):824-829.</li>
+                <li>Goodnight SH, Harris WS, Connor WE. 1981. The effects of dietary omega-3 fatty acids on platelet composition and function in man: a prospective, controlled study. Blood 58(5):880-885.</li>
+                <li>Grant L, McBean DE, Fyfe L, Warnock AM. 2007. A review of the biological and potential actions of Harpagophytum procumbens. Phytotherapy Research 21(3):199-209.</li>
+                <li>Gray HC, Hutcheson PS, Slavin RG. 2004. Is glucosamine safe in patients with seafood allergy? The Journal of Allergy and Clinical Immunology 114(2):456-460.</li>
+                <li>Gregory PJ, Sperry M, Friedman Wilson A. 2008. Dietary supplements for osteoarthritis. American Family Physician 77(2):177-184.</li>
+                <li>Grimsgaard S, Bonaa KH, Hansen JB, Nord&#248;y A. 1997. Highly purified eicosapentaenoic acid and docosahexaenoic acid in humans have similar triacylglycerol-lowering effects but divergent effects on serum fatty acids. The American Journal of Clinical Nutrition 66(3):649-659.</li>
+                <li>Haag M. 2003. Essential fatty acids and the brain. Canadian Journal of Psychiatry 48(3):195-203.</li>
+                <li>Haglund O, Luostarinen R, Wallin R, Wibell L, Saldeen T. 1991. The effects of fish oil on triglycerides, cholesterol, fibrinogen and malondialdehyde in humans supplemented with vitamin E. Journal of Nutrition 121(2):165-169.</li>
+                <li>Halldorsson TI, Meltzer HM, Thorsdottir I, Knudsen V, Olsen SF. 2007. Is high consumption of fatty fish during pregnancy a risk factor for fetal growth retardation? A study of 44,824 Danish pregnant women. American Journal of Epidemiology 166(6):687-696.</li>
+                <li>Halliwell B, Chirico S. 1993. Lipid peroxidation: its mechanism, measurement, and significance. The American Journal of Clinical Nutrition 57(5):715S-725S.</li>
+                <li>Hamazaki T, Sawazaki S, Nagao Y, Kuwamori T, Yazawa K, Mizushima Y, Kobayashi M. 1998. Docosahexaenoic acid does not affect aggression of normal volunteers under nonstressful conditions. A randomized, placebo-controlled, double-blind study. Lipids 33(7):663-667.</li>
+                <li>Harel Z, Biro FM, Kottenhahn RK, Rosenthal SL. 1996. Supplementation with omega-3 polyunsaturated fatty acids in the management of dysmenorrhea in adolescents. The American Journal of Obstetrics and Gynecology 174(4):1335-1338.</li>
+                <li>Harris WS. 2007. International recommendations for consumption of long-chain omega-3 fatty acids. Journal of Cardiovascular Medicine 8(1):S50-S52.</li>
+                <li>Harrison N, Abhyankar B. 2005. The mechanism of action of omega-3 fatty acids in secondary prevention post-myocardial infarction. Current Medical Research and Opinion 21(1):95-100.</li>
+                <li>Hayes M, Carney B, Slater J, Br&#252;ck W. 2008. Mining marine shellfish wastes for bioactive molecules: chitin and chitosan-Part A: extraction methods. Biotechnology Journal 3(7):871-877.</li>
+                <li>Health Canada. Canadian Adverse Drug Reaction Monitoring Program (CADRMP) Online Query and Data Extracts. Ottawa (ON): Health Canada&semi; 2011. [Accessed 2012 January 11]. Available from: http://hc-sc.gc.ca/ahc-asc/branch-dirgen/hpfb-dgpsa/mhpd-dpsc/database-basedon_annou-annon-eng.php</li>
+                <li>Health Canada. Food Rulings Proposal - EPA and DHA: Level of Addition to Foods. Ottawa (ON): Bureau of Nutritional Sciences, Health Canada&semi; 2006.</li>
+                <li>Health Canada. MedEffect Canada: Adverse Reaction Reporting. Ottawa (ON): Health Canada&semi; 2011. [Accessed 2012 January 11]. Available from: http://www.hc-sc.gc.ca/dhp-mps/medeff/report-declaration/index_e.html</li>
+                <li>He K, Song Y, Daviglus ML, Liu K, Van Horn L, Dyer AR, Goldbourt U, Greenland P. 2004. Fish consumption and incidence of stroke: a meta-analysis of cohort studies. Stroke 35(7):1538-1542.</li>
+                <li>Hendler SS, Rorvik D, editors. 2001. PDR for Nutritional Supplements, 1<sup>st</sup> edition. Montvale (NJ): Thomson PDR.</li>
+                <li>Hjerkinn EM, Seljeflot I, Ellingsen I, Berstad P, Hjermann I, Sandvik L, Arnesen H. 2005. Influence of long-term intervention with dietary counselling, long-chain n-3 fatty acid supplements, or both on circulating markers of endothelial activation in men with long-standing hyperlipidemia. The American Journal of Clinical Nutrition 81(3):583-589.</li>
+                <li>Hodge L, Salome CM, Hughes JM, Liu-Brennan D, Rimmer J, Allman M, Pang D, Armour C, Woolcock AJ. 1998. Effect of dietary intake of omega-3 and omega-6 fatty acids on severity of asthma in children. European Respiratory Journal 11(2):361-365.</li>
+                <li>Hodge W, Barnes D, Schachter HM, Pan Y, Lowcock EC, Zhang L, Sampson M, Morrison A, Tran K, Miguelez M, Lewin G. 2005. Effects of Omega-3 Fatty Acids on Eye Health. Summary, Evidence Report/Technology Assessment No. 117. AHRQ No. 05-E008-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>Holguin F, T&#233;llez-Rojo MM, Lazo M, Mannino D, Schwartz J, Hern&#225;ndez M, Romieu I. 2005. Cardiac autonomic changes associated with fish oil vs soy oil supplementation in the elderly. Chest 127(4):1102-1107.</li>
+                <li>Hooper L, Thompson RL, Harrison RA, Summerbell CD, Moore H, Worthington HV, Durrington PN, Ness AR, Capps NE, Davey Smith G, Riemersma RA, Ebrahim SBJ. 2004. Omega 3 fatty acids for prevention and treatment of cardiovascular disease. [Internet]. The Cochrane Library [Accessed 2012 January 11]. Available from: http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD003177.pub2/full</li>
+                <li>Hornstra G. 2000. Essential fatty acids in mothers and their neonates. The American Journal of Clinical Nutrition 71(5):1262S-1269S.</li>
+                <li>Horvath K, Noker PE, Somfai-Relle S, Gl&#225;vits R, Financsek I, Schauss AG. 2002. Toxicity of methylsulfonylmethane in rats. Food and Chemical Toxicology 40(10):1459-1462.</li>
+                <li>Hughes R, Carr A. 2002. A randomized, double-blind, placebo-controlled trial of glucosamine sulphate as an analgesic in osteoarthritis of the knee. Rheumatology (Oxford, England) 41(3):279-284.</li>
+                <li>Iacoviello L, Amore C, De Curtis A, Tacconi MT, de Gaetano G, Cerletti C, Donati MB. 1992. Modulation of fibrinolytic response to venous occlusion in humans by a combination of low-dose aspirin and n-3 polyunsaturated fatty acids. Arteriosclerosis, Thrombosis and Vascular Biology 12(10):1191-1197.</li>
+                <li>iHerb Products List [Internet]. Irwindale (CA): iHerb Inc.&semi; 2007. [Accessed 2012 January 11]. Available from: http://www.iherb.com/ProductsList.aspx?c=1&cid=1546</li>
+                <li>Institute of Medicine (IOM). Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press&semi; 2002.</li>
+                <li>Iso H, Rexrode KM, Stampfer MJ, Manson JE, Colditz GA, Speizer FE, Hennekens CH. 2001. Intake of fish and omega-3 fatty acids and risk of stroke in women. Journal of the American Medical Association 285(3):304-312.</li>
+                <li>Jellin JM, editor. 2011. Natural Medicines Comprehensive Database: Fish Oil [Internet]. Stockton (CA): Therapeutic Research Faculty&semi; 1995-2011. [Accessed 2012 January 11]. Available from: http://www.naturaldatabase.com</li>
+                <li>Jimenez SA, Dodge GR. 1997. The effects of glucosamine sulfate on human chondrocyte gene expression. Osteoarthritis and Cartilage 5 Suppl A:72.</li>
+                <li>Johansen O, Brekke M, Seljeflot I, Abdelnoor M, Arnesen H. 1999. N-3 fatty acids do not prevent restenosis after coronary angioplasty: results from the CART study. Journal of the American College of Cardiology 33(6):1619-1626.</li>
+                <li>Jordan KM, Arden NK, Doherty M, Bannwarth B, Bijlsma JW, Dieppe P, Gunther K, Hauselmann H, Herrero-Beaumont G, Kaklamanis P, Lohmander S, Leeb B, Lequesne M, Mazieres B, Martin-Mola E, Pavelka K, Pendleton A, Punzi L, Serni U, Swoboda B, Verbruggen G, Zimmerman-Gorska I, Dougados M. 2003. EULAR recommendations 2003: an evidence based approach to the management of knee osteoarthritis: Report of a task force of the standing committee for international clinical studies including therapeutic trials (ESCISIT). Annals of the Rheumatic Disease 62(12):1145-1155.</li>
+                <li>Kaul U, Sanghvi S, Bahl VK, Dev V, Wasir HS. 1992. Fish oil supplements for prevention of restenosis after coronary angioplasty. International Journal of Cardiology 35(1):87-93.</li>
+                <li>Kelley DS, Siegel D, Vemuri M, Mackey BE. 2007. Docosahexaenoic acid supplementation improves fasting and postprandial lipid profiles in hypertriglyceridemic men. The American Journal of Clinical Nutrition 86(2):324-333</li>
+                <li>Kjeldsen-Kragh J, Lund JA, Riise T, Finnanger B, Haaland K, Finstad R, Mikkelsen K, F&#248;rre &#216;. 1992. Dietary omega-3 fatty acid supplementation and naproxen treatment in patients with rheumatoid arthritis. Journal of Rheumatology 19(10):1531-1536.</li>
+                <li>Kremer JM, Bigauoette J, Michalek AV, Timchalk MA, Lininger L, Rynes RI, Huyck C, Zieminski J, Bartholomew LE. 1985. Effects of manipulation of dietary fatty acids on clinical manifestations of rheumatoid arthritis. The Lancet 1(8422):184-187.</li>
+                <li>Kremer JM, Lawrence DA, Jubiz W, DiGiacomo R, Rynes R, Bartholomew LE, Sherman M. 1990. Dietary fish oil and olive oil supplementation in patients with rheumatoid arthritis: clinical and immunologic effects. Arthritis and Rheumatism 33(6):810-819.</li>
+                <li>Kremer JM, Lawrence DA, Petrillo GF, Litts LL, Mullaly PM, Rynes RI, Stocker RP, Parhami N, Greenstein NS, Fuchs BR, Mathur A, Robinson DR, Sperling RI, Bigaouette J. 1995. Effects of high-dose fish oil on rheumatoid arthritis after stopping nonsteroidal anti-inflammatory drugs. Arthritis & Rheumatism 38(8):1107-1114.</li>
+                <li>Kris-Etherton PM, Harris WS, Appel LJ. 2002. Fish consumption, fish oil, omega-3 fatty acids, and cardiovascular disease. Circulation 106(21):2747-2757.</li>
+                <li>Krokan HE, Bjerve KS, Mork E. 1993. The enteral bioavailability of eicosapentaenoic acid and docosahexaenoic acid is as good from ethyl esters as from glyceryl esters in spite of lower hydrolytic rates by pancreatic lipase in vitro. Biochimica et Biophysica Acta 1168(1):59-67.</li>
+                <li>Lau CS, McLaren M, Belch JJ. 1995. Effects of fish oil on plasma fibrinolysis in patients with mild rheumatoid arthritis. Clinical and Experimental Rheumatology 13(1):87-90.</li>
+                <li>Lau CS, Morley KD, Belch JJ. 1993. Effects of fish oil supplementation on non-steroidal anti-inflammatory drug requirement in patients with mild rheumatoid arthritis - a double-blind placebo controlled study. British Journal of Rheumatology 32(11):982-989.</li>
+                <li>Laudahn D, Walper A. 2001. Efficacy and tolerance of Harpagophytum extract LI 174 in patients with chronic non-radicular back pain. Phytotherapy Research 15(7):621-624.</li>
+                <li>Lauritzen L, Kjaer TM, Fruekilde MB, Michaelsen KF, Frokiaer H. 2005. Fish oil supplementation of lactating mothers affects cytokine production in 2 ½-year-old children. Lipids 40(7):669-676.</li>
+                <li>Lawson LD, Hughes BG. 1988. Absorption of eicosapentaenoic acid and docosahexaenoic acid from fish oil triacylglycerols or fish oil ethyl esters co-ingested with a high-fat meal. Biochemical and Biophysical Research Communications 156(2):960-963.</li>
+                <li>Leaf A, Jorgensen MB, Jacobs AK, Cote G, Schoenfeld DA, Scheer J, Weiner BH, Slack JD, Kellett MA, Raizner AE, Weber PC, Mahrer PR, Rossouw JE. 1994. Do fish oils prevent coronary angioplasty? Circulation 90(5):2248-2257.</li>
+                <li>Leaf A, Kang JX, Xiao YF, Billman GE. 2003. Clinical prevention of sudden cardiac death by n-3 polyunsaturated fatty acids and mechanism of prevention of arrhythmias by n-3 fish oils. Circulation 107(21):2646-2652.</li>
+                <li>Leblan D, Chantre P, Fourni&#233; B. 2000. Harpagophytum procumbens in the treatment of knee and hip osteoarthritis. Four-month results of a prospective, multicenter, double-blind trial versus diacerhein. Joint, Bone, Spine 67(5):462-467.</li>
+                <li>Leigh-Firbank EC, Minihane AM, Leake DS, Wright JW, Murphy MC, Griffin BA, Williams CM. 2002. Eicosapentaenoic acid and docosahexaenoic acid from fish oils: differential associations with lipid responses. British Journal of Nutrition 87(5):435-445.</li>
+                <li>Lewin GA, Schachter HM, Yuen D, Merchant P, Mamaladze V, Tsertsvadze A, Clifford T, Kourad K, Barnes D, Armour T, Yazdi F, MacNeil J, McGahern C, Senechal H, Fang M, Barrowman N, Sampson M, Morrison A, Elien D, Saint-Martin M, Sambasivan A, Lowcock E, Pan Y, Lemyre B. 2005. Effects of Omega-3 Fatty Acids on Child and Maternal Health. Summary, Evidence Report/Technology Assessment No. 118. AHRQ No. 05-E025-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>Lin A, Nguy CH, Shic F, Ross BD. 2001. Accumulation of methylsulfonylmethane in the human brain: identification by multinuclear magnetic resonance spectroscopy. Toxicology Letters 123(2-3):169-177.</li>
+                <li>Linday LA, Dolitsky JN, Shindledecker RD. 2004. Nutritional supplements as adjunctive therapy for children with chronic/recurrent sinusitis: pilot research. International Journal of Pediatric Otorhinolaryngology 68(6):785-793.</li>
+                <li>Lorenz R, Spengler U, Fischer S, Duhm J, Weber PC. 1983. Platelet function, thromboxanes formation and blood pressure control during supplementation of the Western diet with cod liver oil. Circulation 67(3):504-511.</li>
+                <li>Luo XM, Fosmire GJ, Leach RM Jr. 2002. Chicken keel cartilage as a source of chondroitin sulfate. Poultry Science 81(7):1086-1089.</li>
+                <li>MacLean CH, Issa AM, Newberry SJ, Mojica WA, Morton SC, Garland RH, Hilton LG, Traina SB, Shekelle PG. 2005. Effects of Omega-3 Fatty Acids on Cognitive Function with Aging, Dementia, and Neurological Diseases. Summary, Evidence Report/Technology Assessment No. 114. AHRQ No. 05-E011-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>MacLean CH, Mojica WA, Morton SC, Pencharz J, Hasenfeld Garland R, Tu W, Newberry SJ, Jungvig LK, Grossman J, Khanna P, Rhodes S, Shekelle P. 2004. Effects of Omega-3 Fatty Acids on Lipids and Glycemic Control in type II Diabetes and the Metabolic Syndrome and on Inflammatory Bowel Disease, Rheumatoid Arthritis, Renal Disease, Systemic Lupus Erythematosus, and Osteoporosis. Summary, Evidence Report/Technology Assessment No. 89. AHRQ No. 04-E012-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>MacLean CH, Newberry SJ, Mojica WA, Issa A, Khanna P, Lim YW, Morton SC, Suttorp M, Tu W, Hilton LG, Garland RH, Traina SB, Shekelle PG. 2005. Effects of Omega-3 Fatty Acids on Cancer. Summary, Evidence Report/Technology Assessment No. 113. AHRQ No. 05-E010-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>Magnuson BA, Appleton J, Ames GB. 2007. Pharmacokinetics and distribution of [35S]Methylsulfonylmethane following oral administration to rats. Journal of Agriculture and Food Chemistry 55(3):1033-1038.</li>
+                <li>Maillard V, Bougnoux P, Ferrari P, Jourdan ML, Pinault M, Lavillonni&#232;re M, Body G, Le Floch O, Chaj&#232;s V. 2002. N-3 and n-6 fatty acids in breast adipose tissue and relative risk of breast cancer in a case-control study in Tours, France. International Journal of Cancer 98(1):78-83.</li>
+                <li>Malavaki CJ, Asimakopoulou AP, Lamari FN, Theocharis AD, Tzanakakis GN, Karamanos NK. 2008. Capillary electrophoresis for the quality control of chondroitin sulfates in raw materials and formulations. Analytical Biochemistry 374(1):213-220.</li>
+                <li>Marangell LB, Martinez JM, Zboyan HA, Chong H, Puryear LJ. 2004. Omega-3 fatty acids for the prevention of postpartum depression: negative data from a preliminary, open-label pilot study. Depression and Anxiety 19(1):20-23.</li>
+                <li>Maresta A, Balduccelli M, Varani E, Marzilli M, Galli C, Heiman F, Lavezzari M, Stragliotto E, De Caterina R&semi; ESPRIT Investigators. 2002. Prevention of postcoronary angioplasty restenosis by omega-3 fatty acids: main results of the esapent for prevention of restenosis Italian study (ESPRIT). American Heart Journal 143(6):E5.</li>
+                <li>Marieb E. 1992. Human Anatomy and Physiology, 2<sup>nd</sup> edition. Redwood City (CA): The Benjamin/Cummings Publishing Company, Inc.</li>
+                <li>Marshall PD, Poddar S, Tweed EM, Brandes L. 2006. Clinical inquiries: Do glucosamine and chondroitin worsen blood sugar control in diabetes? The Journal of Family Practice 55(12):1091-1093.</li>
+                <li>Martin RE, Carter EP, Flick GJ, Davis LM, editors. 2000. Marine & Freshwater Products Handbook. Lancaster (PA): Technomic Publishing Company, Inc.</li>
+                <li>Marszalek JR, Lodish HF. 2005. Docosahexaenoic acid, fatty acid-interacting protein, and neuronal function: breastmilk and fish are good for you. Annual Review of Cellular and Developmental Biology 21:633-657.</li>
+                <li>Masson E, Lagarde M, Wiernsperger N, El Bawab S. 2006. Hyperglycemia and glucosamine-induced mesangial cell cycle arrest and hypertrophy: Common or independent mechanisms? IUBMB life 58(7):381-388.</li>
+                <li>Masson E, Wiernsperger N, Lagarde M, Bawab SE. 2005. Involvement of ganliosides in glucosamine-induced proliferation decrease of retinal pericytes. Glycobiology 15(6):585-591.</li>
+                <li>Mazi&#232;res B, Loyau G, Menk&#232;s CJ, Valat JP, Dreiser RL, Charlot J, Masounabe-Puyanne A. 1992. Le chondro&#239;tine sulfate dans le traitement de la gonarthrose et de la coxarthrose : r&#233;sultats &#224; 5 mois, d&apos;une &#233;tude prospective multicentrique, contr&#244;l&#233;e, en double aveugle, versus placebo [Chondroitin sulfate for the treatment of coxarthrosis and gonarthrosis. A prospective multicenter, placebo controlled, double-blind trial with five months follow-up]. Revue du Rhumatisme et des Maladies Ost&#233;o-articulaires 59(7-8):466-472 (in French).</li>
+                <li>McAlindon T, Formica M, LaValley M, Lehmer M, Kabbara K. 2004. Effectiveness of glucosamine for symptoms of knee osteoarthritis: results from an internet-based randomized double-blind controlled trial. The American Journal of Medicine 117(9):643-649.</li>
+                <li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. 1997. American Herbal Products Association&apos;s Botanical Safety Handbook. Boca Raton (FL): CRC Press.</li>
+                <li>Mehta K, Gala J, Bhasale S, Naik S, Modak M, Thakur H, Deo N, Miller MJ. 2007. Comparison of glucosamine sulfate and a polyherbal supplement for the relief of osteoarthritis of the knee: a randomized controlled trial. BMC Complementary and Alternative Medicine 31(7):34.</li>
+                <li>Meydani M, Natiello F, Goldin B, Free N, Woods M, Schaefer E, Blumberg JB, Gorbach SL. 1991. Effect of long-term fish oil supplementation on vitamin E status and lipid peroxidation in women. Journal of Nutrition 121(4):484-491.</li>
+                <li>Michel BA, Stucki G, Frey D, De Vathaire F, Vignon E, Bruehlmann P, Uebelhart D. 2005. Chondroitins 4 and 6 sulfate in osteoarthritis of the knee: a randomized, controlled trial. Arthritis and Rheumatism 52(3):779-786.</li>
+                <li>Mickleborough TD, Ionescu AA, Rundell KW. 2004. Omega-3 fatty acids and airway hyperresponsiveness in asthma. The Journal of Alternative and Complementary Medicine 10(6):1067-1075.</li>
+                <li>Mickleborough TD, Lindley MR, Ionescu AA, Fly AD. 2006. Protective effect of fish oil supplementation on exercise-induced bronchoconstriction in asthma. Chest 129(1):39-49.</li>
+                <li>Mihrshahi S, Peat JK, Webb K, Oddy W, Marks GB, Mellis CM. 2004. Effect of omega-3 fatty acid concentrations in plasma on symptoms of asthma at 18 months of age. Pediatric Allergy and Immunology 15(6):517-522.</li>
+                <li>Mills S, Bone K. 2000. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone.</li>
+                <li>Montgomery C, Speake BK, Cameron A, Sattar N, Weaver LT. 2003. Maternal docosahexaenoic acid supplementation and fetal accretion. British Journal of Nutrition 90(1):135-140.</li>
+                <li>Moore CS, Bryant SP, Mishra GD, Krebs JD, Browning LM, Miller GJ, Jebb SA. 2006. Oily fish reduces plasma triacylglycerols: a primary prevention study in overweight men and women. Nutrition 22(10):1012-1024.</li>
+                <li>Mori TA, Bao DQ, Burke V, Puddey IB, Beilin LJ. 1999. Docosahexaenoic acid but not eicosapentaenoic acid lowers ambulatory blood pressure and heart rate in humans. Hypertension 34(2):253-260.</li>
+                <li>Mori TA, Burke V, Puddey IB, Watts GF, O&apos;Neal DN, Best JD, Beilin LJ. 2000. Purified eicosapentaenoic and docosahexaenoic acids have differential effects on serum lipids and lipoproteins, LDL particle size, glucose, and insulin in mildly hyperlipidemic men. The American Journal of Clinical Nutrition 71(5):1085-1094.</li>
+                <li>Morreale P, Manopulo R, Galati M, Boccanera L, Saponati G, Bocchi L. 1996. Comparison of the anti-inflammatory efficacy of chondroitin sulfate and diclofenac sodium in patients with knee osteoarthritis. The Journal of Rheumatology 23(8):1385-1391.</li>
+                <li>Morris MC, Evans DA, Bienias JL, Tangney CC, Bennett DA, Wilson RS, Aggarwal N, Schneider J. 2003. Consumption of fish and n-3 fatty acid and risk of incident Alzheimer disease. Archives of Neurology 60(7):940-946.</li>
+                <li>Morris MC, Sacks F, Rosner B. 1993. Regulation of blood pressure: does fish oil lower blood pressure?: a meta-analysis of controlled trials. Circulation 8(2):523-533.</li>
+                <li>Mueller BA, Talbert RL, Tegeler CH, Prihoda TJ. 1991. The bleeding time effects of a single dose of aspirin in subjects receiving omega-3 fatty acid dietary supplementation. Journal of Clinical Pharmacology 31(2):185-190.</li>
+                <li>Muniyappa R, Karne RJ, Hall G, Cranson SK, Bronstein JA, Ver MR, Hortin GL, Quon MJ. 2006. Oral glucosamine for 6 weeks at standard doses does not cause or worsen insulin resistance or endothelial dysfunction in lean or obese subjects. Diabetes 55(1):3142-3150.</li>
+                <li>Murray MT. 1996. Encyclopedia of Nutritional Supplements: The Essential Guide for Improving your Health Naturally. Rocklin (CA): Prima Publishing.</li>
+                <li>Nagakura T, Matsuda S, Shichijyo K, Sugimoto H, Hata K. 2000. Dietary supplementation with fish oil rich in ω-3 polyunsaturated fatty acids in children with bronchial asthma. European Respiratory Journal 16(5):861-865.</li>
+                <li>Nakamura H, Masuko K, Yudoh K, Kato T, Kamada T, Kawahara T. 2007. Effects of glucosamine administration on patients with rheumatoid arthritis. Rheumatology International 27(3):213-218.</li>
+                <li>Nakamura K, Kariyazono H, Komokata T, Hamada N, Sakata R, Yamada K. 2005. Influence of preoperative administration of ω-3 fatty acid-enriched supplement on inflammatory and immune responses in patients undergoing major surgery for cancer. Nutrition 21(6):639-645.</li>
+                <li>Nakamurai M, Barberi AJ, Antonetti DA, LaNoue KF, Robinson KA, Buse MG, Gardner TW. 2001. Excessive hexosamines block the neuroprotective effect of insulin and induce apoptosis in retinal neurons. The Journal of Biological Chemistry 270(23):43748-43755.</li>
+                <li>Nelson GJ, Schmidt PS, Bartolini GL, Kelley DS, Kyle D. 1997. The effect of dietary docosahexaenoic acid on platelet function, platelet fatty acid composition, and blood coagulation in humans. Lipids 32(11):1129-1136.</li>
+                <li>Nemets B, Osher Y, Belmaker RH. 2004. Omega-3 fatty acids and augmentation strategies in treating resistant depression. Essential Psychopharmacology 6(1):59-64.</li>
+                <li>Nettleton JA, Katz R. 2005. N-3 long-chain polyunsaturated fatty acids in type 2 diabetes: a review. Journal of the American Dietetic Association 105(3):428-440.</li>
+                <li>Nielsen GL, Faarvang KL, Thomsen BS, Teglbjærg KL, Jensen LT, Hansen TM, Lervang HH, Schmidt EB, Dyerberg J, Ernst E. 1992. The effects of dietary supplementation with n-3 polyunsaturated fatty acids in patients with rheumatoid arthritis: a randomized, double blind trial. European Journal of Clinical Investigation 22(10):687-691.</li>
+                <li>Nilsen DW, Albrektsen G, Landmark K, Moen S, Aarsland T, Woie L. 2001. Effects of a high-dose concentrate of n-3 fatty acids or corn oil introduced early after an acute myocardial infarction on serum triacylglycerol and HDL cholesterol. The American Journal of Clinical Nutrition 74(1):50-56.</li>
+                <li>Nordic Naturals. Why Nordic Naturals? [Internet]. Watsonville (CA): Nordic Naturals, Inc.&semi; 2011. [Accessed 2012 January 11]. Available from: http://www.nordicnaturals.com/en/About_Nordic_Naturals/Why_Nordic_Naturals/86/</li>
+                <li>Noack W, Fischer M, F&#246;rster KK, Rovati LC, Setnikar I.1994. Glucosamine sulfate in osteoarthritis of the knee. Osteoarthritis and Cartilage 2(1):51-59.</li>
+                <li>Ocean Nutrition Canada. Our Products: Dietary Supplements. Dartmouth (NS): Ocean Nutrition Canada Limited&semi; 2011. [Accessed 2012 January 11]. Available http://www.ocean-nutrition.com/products/dietary_supplements</li>
+                <li>O&apos;Connor GT, Malenka DJ, Olmstead EM. 1992. A meta-analysis of randomized trials of fish oil in prevention of restenosis following coronary angioplasty. American Journal of Preventive Medicine 8(3):186-192.</li>
+                <li>Oh R. 2005. Practical applications of fish oil (Ω-3 fatty acids) in primary care. Journal of the American Board of Family Practitioners 18(1):28-36.</li>
+                <li>Olafsdottir AS, Magnusardottir AR, Thorgeirsdottir H, Hauksson A, Skuladottir GV, Steingrimsdottir L. 2005. Relationship between dietary intake of cod liver oil in early pregnancy and birthweight. BJOG: an International Journal of Obstetrics and Gynaecology 112(4):424-429.</li>
+                <li>Olsen SF, Secher NJ. 2002. Low consumption of seafood in early pregnancy as a risk factor for preterm delivery: prospective cohort study. British Medical Journal 324(7335):447-450.</li>
+                <li>Omacor. Prescribing Information. Southampton (GB): Solvay Healthcare Ltd, 2011. [Accessed 2011 December 6]. Available from: http://www.omacor.co.uk/hcp/omacor-pi.html</li>
+                <li>Onwude JL, Lilford RJ, Hjartardottir H, Staines A, Tuffnell D. 1995. A randomised double blind placebo controlled trial of fish oil in high risk pregnancy. British Journal of Obstetrics and Gynaecology 102(2):95-100.</li>
+                <li>Ossendza RA, Grandval P, Chinoune F, Rocher F, Chapel F, Bernardini D. 2007. Hépatite aiguë cholestatique à la Glucosamine forte®. Gastroentérologie Clinique et Biologique 31(4):449-450.</li>
+                <li>Ostojic SM, Arsic M, Prodanovic S, Vukovic J, Zlatanovic M. 2007. Glucosamine administration in athletes: effects on recovery of acute knee injury. Research in Sports Medicine 15(2):113-124.</li>
+                <li>Peat JK, Mihrshahi S, Kemp AS, Marks GB, Tovey ER, Webb K, Mellis CM, Leeder SR. 2004. Three-year outcomes of dietary fatty acid modification and house dust mite reduction in the Childhood Asthma Prevention Study. Journal of Allergy and Clinical Immunology 114(4):807-813.</li>
+                <li>Pedersen HS, Mulvad G, Seidelin KN, Malcom GT, Boudreau DA. 1999. N-3 fatty acids as a risk factor for haemorrhagic stroke. The Lancet 353(9155):812-813.</li>
+                <li>Peet M. 2003. Eicosapentaenoic acid in the treatment of schizophrenia and depression: rationale and preliminary double-blind clinical trial results. Prostaglandins, Leukotrienes and Essential Fatty Acids 69(6):477-485.</li>
+                <li>Persiani S, Roda E, Rovati LC, Locatelli M, Giacovelli G, Roda A. 2005. Glucosamine oral bioavailability and plasma pharmacokinetics after increasing doses of crystalline glucosamine sulfate in man. Osteoarthritis and Cartilage 13(12):1041-1049.</li>
+                <li>Picado C, Castillo JA, Schinca N, Pujades M, Ordinas A, Coronas A, Agusti-Vidal A. 1988. Effects of a fish oil enriched diet on aspirin intolerant asthmatic patients: a pilot study. Thorax 43(2):93-97.</li>
+                <li>Pisenti JM, Delany ME, Taylor, Jr. RL, Abbott UK, Abplanalp H, Arthur JA, Bakst MR, Baxter-Jones C, Bitgood JJ, Bradley FA, Cheng KM, Dietert RR, Dodgson JB, Donoghue AM, Emsley AB, Etches RJ, Frahm RR, Gerrits RJ, Goetinck PF, Grunder AA, Harry DE, Lamont SJ, Martin GR, McGuire PE, Moberg GP, Pierro LJ, Qualset CO, Qureshi MA, Shultz FT, Wilson, BW. 1999. Chapter 2: Avian genetic diversity: Domesticated species. In: Avian Genetic Resources at Risk: An Assessment and Proposal for Conservation of Genetic Stocks in the USA and Canada. Report No. 20. Davis (CA): University of California Division of Agriculture and Natural Resources, Genetic Resources Conservation Program.</li>
+                <li>Radack K, Deck C, Huster G. 1990. The comparative effects of n-3 and n-6 polyunsaturated fatty acids on plasma fibrinogen levels: a controlled clinical trial in hypertriglyceridemic subjects. Journal of the American College of Nutrition 9(4):352-357.</li>
+                <li>Raitt MH, Connor WE, Morris C, Kron J, Halperin B, Chugh SS, McClelland J, Cook J, MacMurdy K, Swenson R, Connor SL, Gerhard G, Kraemer DF, Oseran D, Marchant C, Calhoun D, Shnider R, McAnulty J. 2005. Fish oil supplementation and risk of ventricular tachycardia and ventricular fibrillation in patients with implantable defibrillators: a randomized controlled trial. The Journal of the American Medical Association 293(23):2884-2891.</li>
+                <li>Rashad S, Revell P, Hemingway A, Low F, Rainsford K, Walker F. 1989. Effect of non-steroidal anti-inflammatory drugs on the course of osteoarthritis. The Lancet 2(8662):519-522.</li>
+                <li>Reddy BS. 2004. Omega-3 fatty acids in colorectal cancer prevention. International Journal of Cancer 112(1):1-7.</li>
+                <li>Reginster JY. 2007. The efficacy of glucosamine sulfate in osteoarthritis: financial and nonfinancial conflict of interest. Arthritis and Rheumatism 56(7):2105-2110.</li>
+                <li>Reichelt A, Förster KK, Fischer M, Rovati LC, Setnikar I.1994. Efficacy and safety of intramuscular glucosamine sulfate in osteoarthritis of the knee. A randomised, placebo-controlled, double-blind study. Arzneimittelforschung 44(1):75-80.</li>
+                <li>Reichenbach S, Sterchi R, Scherer M, Trelle S, Bürgi E, Bürgi U, Dieppe PA, Jüni P. 2007. Meta-analysis: chondroitin for osteoarthritis of the knee or hip. Annals of Internal Medicine 146(8):580-590.</li>
+                <li>Reis GJ, Silverman DI, Boucher TM, Sipperly ME, Horowitz GL, Sacks FM, Pasternak RC. 1990. Effects of two types of fish oil supplements on serum lipids and plasma phospholipids fatty acids in coronary artery disease. The American Journal of Cardiology 15(66):1171-1175.  </li>
+                <li>Richardson AJ, Montgomery P. 2005. The Oxford-Durham study: a randomized, controlled trial of dietary supplementation with fatty acids in children with developmental coordination disorder. Pediatrics 115(5):1360-1366.</li>
+                <li>Richy F, Bruyere O, Ethgen O, Cucherat M, Henrotin Y, Reginster JY. 2003. Structural and symptomatic efficacy of glucosamine and chondroitin in knee osteoarthritis: a comprehensive meta-analysis. Archives of Internal Medicine 163(13):1514-1522.</li>
+                <li>Robertson LA, Kim AJ, Werstuck GH. 2006. Mechanisms linking diabetes mellitus to the development of atherosclerosis: a role for endoplasmic reticulum stress and glycogen synthase kinase-3. Canadian Journal of Physiology and Pharmacology 84(1):39-48.</li>
+                <li>Rose DP, Connolly JM. 1999. Omega-3 fatty acids as cancer chemopreventive agents. Pharmacology & Therapeutics 83(3):217-244.</li>
+                <li>Rovetta G. 1991. Galactosaminoglycuronoglycan sulfate (matrix) in therapy of tibiofibular osteoarthritis of the knee. Drugs under Experimental and Clinical Research 17(1):53-57.</li>
+                <li>Rozendaal RM, Koes BW, van Osch GJ, Uitterlinden EJ, Garling EH, Willemsen SP, Ginai AZ, Verhaar JA, Weinans H, Bierma-Zeinstra SM. 2008. Effect of glucosamine sulfate on hip osteoarthritis: a randomized trial. Annals of Internal Medicine 148(4):268-277.</li>
+                <li>Runkel DR, Cupp MJ. 1999. Glucosamine sulfate use in osteoarthritis. American journal of health-system pharmacy: American Journal of Health-System Pharmacy 56(3):267-269.</li>
+                <li>Scientific Advisory Committee on Nutrition, Foods Standard Agency, Department of Health. Advice on Fish Consumption: Benefits and Risks. London (GB): TSO (The Stationery Office)&semi; 2004. [Accessed 2012 January 11]. Available from: www.sacn.gov.uk/pdfs/fics_sacn_advice_fish.pdf</li>
+                <li>Sagredos AN. 1991. [Fatty Acid Composition of Fish Oil Capsules]. Fett Wissenschaft Technologie 93(5):184-191 (in German).</li>
+                <li>Sanders TA, Hinds A. 1992. The influence of a fish oil high in docosahexaenoic acid on plasma lipoprotein and vitamin E concentrations and haemostatic function in healthy male volunteers. British Journal of Nutrition 68(1):163-173.</li>
+                <li>Sandy JD, Gamett D, Thompson V, Verscharen C. 1998. Chondrocyte-mediated catabolism of aggrecan: aggrecanase-dependent cleavage induced by interleukin-1 or retinoic acid can be inhibited by glucosamine. The Biochemical Journal 335(Pt 1):59-66.</li>
+                <li>Saynor R, Gillott T. 1992. Changes in blood lipids and fibrinogen with a note on safety in a long term study on the effects of n-3 fatty acids in subjects receiving fish oil supplements and followed for seven years. Lipids 27(7):533-538.</li>
+                <li>Schachter HM, Kourad K, Merali Z, Lumb A, Tran K, Miguelez M, Lewin G, Sampson M, Barrowman N, Senechal H, McGahern C, Zhang L, Morrison A, Shlik J, Pan Y, Lowcock EC, Gaboury I, Bradwejn J, Duffy A. 2005. Effects of Omega-3 Fatty Acids on Mental Health. Summary, Evidence Report/Technology Assessment No. 116. AHRQ No. 05-E022-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>Schmidt EB, Lervang HH, Varming K, Madsen P, Dyerberg J. 1992. Long-term supplementation with n-3 fatty acids, I: effect on blood lipids, haemostasis and blood pressure. Scandinavian Journal of Clinical and Laboratory Investigation 52(3):221-228.</li>
+                <li>Schuster E, Dunn-Coleman N, Frisvad JC, Van Dijck PW. 2002. On the safety of Aspergillus niger: a review. Applied Microbiology and Biotechnology 59(4-5):426-435.</li>
+                <li>Schwellenbach LJ, Olson KL, McConnell KJ, Stolcpart RS, Nash JD, Merenich JA. 2006. The triglyceride-lowering effects of a modest dose of docosahexaenoic acid alone versus in combination with low dose eicosapentaenoic acid in patients with coronary artery disease and elevated triglycerides. Journal of the American College of Nutrition 25(6):480-485.</li>
+                <li>Scroggie DA, Albright A, MD Harris. 2003. The effect of glucosamine-chondroitin supplementation on glycosylated haemoglobin levels in patients with type 2 diabetes mellitus: a placebo-controlled, double-blinded, randomized clinical trial. Archives of Internal Medicine 163(13):1587-1590.</li>
+                <li>Shankland WE. 1998. The effects of glucosamine and chondroitin sulphate on osteoarthritis of the TMJ: a preliminary report of 50 patients. Cranio: The Journal of Craniomandibular Practice 16(4):230-235.</li>
+                <li>Silverman DI, Ware JA, Sacks FM, Pasternak RC. 1991. Comparison of the absorption and effect of on platelet function of a single dose of n-3 fatty acids given as fish or fish oil. The American Journal of Clinical Nutrition 53(5):1165-1170.</li>
+                <li>Simopoulos AP. 1999. Essential fatty acids in health and chronic disease. The American Journal of Clinical Nutrition 70(3):560S-569S.</li>
+                <li>Simopoulos AP. 2007. Omega-3 fatty acids and athletics. Current Sports Medicine Reports 6(4):230-236.</li>
+                <li>Simopoulos AP, Leaf A, Salem N. 1999. Workshop on the essentiality of and recommended dietary intakes for omega-6 and omega-3 fatty acids. Journal of the American College of Nutrition 18(5):487-489.</li>
+                <li>Sirtori CR, Crepaldi G, Manzato E, Mancini M, Rivellese A, Paoletti R, Pazzucconi F, Pamparana F, Stragliotto E. 1998. One-year treatment with ethyl esters of n-3 fatty acids in patients with hypertriglyceridemia and glucose intolerance: reduced triglyceridemia, total cholesterol and increased HDL-C without glycemic alterations. Atherosclerosis 137(2):419-427.</li>
+                <li>Sivojelezova A, Koren G, Einarson A. 2007. Glucosamine use in pregnancy: an evaluation of pregnancy outcome. Journal of Women&apos;s Health 16(3):345-348.</li>
+                <li>Sommerfield T, Price J, Hiatt WR. 2007. Omega-3 fatty acids for intermittent claudication .. The Cochrane Library. [Accessed 2012 January 11].  Available from: http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD003833.pub3/full</li>
+                <li>Stehr SN, Heller AR. 2006. Omega-3 fatty acid effects on biochemical indices following cancer surgery. Clinica Chimica Acta 373(1-2):1-8.</li>
+                <li>Studer M, Briel M, Leimenstoll B, Glass TR, Bucher HC. 2005. Effect of different antilipidemic agents and diets on mortality: a systematic review. Archives of Internal Medicine 165(7):725-730.</li>
+                <li>Su K, Huang S, Chiu C, Shen WW. 2003. Omega-3 fatty acids in major depressive disorder. A preliminary double-blind, placebo-controlled trial. European Neuropsychopharmacology 13(4):267-271.</li>
+                <li>Sundrarjun T, Komindr S, Archararit N, Dahlan W, Puchaiwatananon O, Angthararak S, Udomsuppayakul U, Chuncharunee S. 2004. Effects of n-3 fatty acids on serum interleukin-6, tumour necrosis factor-&alpha;, and soluble tumour necrosis factor receptor p55 in active rheumatoid arthritis. The Journal of International Medical Research 32(5):443-454.</li>
+                <li>Svensson M, Schmidt EB, Jørgensen KA, Christensen JH. 2006. N-3 fatty acids as secondary prevention against cardiovascular events in patients who undergo chronic hemodialysis: a randomized, placebo-controlled intervention trial. Clinical Journal of the American Society of Nephrology 1(4):780-786.</li>
+                <li>SzajewskaH, Horvath A, Koletzko B. 2006. Effect of n-3 long-chain polyunsaturated fatty acid supplementation of women with low-risk pregnancies on pregnancy outcomes and growth measures at birth: a meta-analysis of randomized controlled trials. The American Journal of Clinical Nutrition 83(6):1337-1344.</li>
+                <li>Takemura Y, Sakurai Y, Honjo S, Tokimatsu A, Gibo M, Hara T, Kusakari A, Kugai N. 2002. The relationship between fish intake and the prevalence of asthma: the Tokorozawa Childhood Asthma and Pollinosis Study. Preventive Medicine 34(2):221-225.</li>
+                <li>Takezaki T, Inoue M, Kataoka H, Ikeda S, Yoshida M, Ohashi Y, Tajima K, Tominaga S. 2003. Diet and lung cancer risk from a 14-year population-based prospective study in Japan: with special reference to fish consumption. Nutrition and Cancer 45(2):160-167.</li>
+                <li>Tannis AJ, Barban J, Conquer JA. 2004. Effect of glucosamine supplementation on fasting and non-fasting plasma glucose and serum insulin concentrations in healthy individuals. Osteoarthritis and Cartilage 12(6):506-511.</li>
+                <li>Terry PD, Terry JB, Rohan TE. 2004. Long-chain (n-3) fatty acid intake and risks of cancers of the breast and the prostate: recent epidemiological studies, biological mechanisms, and directions for future research. The Journal of Nutrition 134(12):3412S-3420S.</li>
+                <li>The Arthritis and Glucosamine Information Centre. Glucosamine Side Effects. Raleigh (NC): DTC Health. [Accessed 2012 January 11]. Available from: http://www.glucosamine-arthritis.org/glucosamine/glucosamine-side-effects.html</li>
+                <li>Theobald HE, Goodall AH, Sattar N, Talbot DC, Chowienczyk PJ, Sanders TA. 2007. Low-dose docosahexaenoic acid lowers diastolic blood pressure in middle-aged men and women. Journal of Nutrition 137(4):973-978.</li>
+                <li>Theodoratou E, McNeill G, Cetnarskyj R, Farrington SM, Tenesa A, Barnetson R, Porteous M, Dunlop M, Campbell H. 2007. Dietary fatty acids and colorectal cancer: a case-control study. American Journal of Epidemiology 166(2):181-195.</li>
+                <li>Thies F, Nebe-von-Caron G, Powell JR, Yaqoob P, Newsholme EA, Calder PC. 2001. Dietary supplementation with eicosapentaenoic acid, but not with other long-chain n-3 or n-6 polyunsaturated fatty acids, decreases natural killer cell activity in healthy subjects aged >55 y. The American Journal of Clinical Nutrition 73(3):539-548.</li>
+                <li>Towheed TE, Maxwell L, Anastassiades TP, Shea B, Houpt J, Robinson V, Hochberg MC, Wells G. 2005. Glucosamine therapy for treating osteoarthritis. The Cochrane Library. [Accessed 2011 December 6. Available from: http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD002946.pub2/full</li>
+                <li>Tsekos E, Reuter C, Stehle P, Boeden G. 2004. Perioperative administration of parenteral fish oil supplements in a routine clinical setting improves patient outcome after major abdominal surgery. Clinical Nutrition 23(3):325-330.</li>
+                <li>Tulleken JE, Limburg PC, Muskiet FA, van Rijswijk MH. 1990. Vitamin E status during dietary fish oil supplementation in rheumatoid arthritis. Arthritis and Rheumatism 33(9):1416-1419.</li>
+                <li>Tulleken JE, Limburg PC, van Rijswijk MH. 1988. Fish oil and plasma fibrinogen. British Medical Journal 297(6648):615-616.</li>
+                <li>Uauy R, Hoffman DR, Mena P, Llanos A, Birch EE. 2003. Term infant studies of DHA and ARA supplementation on neurodevelopment: results of randomized controlled trials. Journal of Pediatrics 143(4):S17-S25</li>
+                <li>US Food and Drug Administration. 21 CFR 184 Substances Affirmed as Generally Recognized as Safe: Menhaden Oil. Washington (DC): Food and Drug Administration, US Department of Health and Human Services&semi; 2005. [Accessed 2012 January 11]. Available from: http://www.epa.gov/fedrgstr/EPA-IMPACT/2005/March/Day-23/i5641.htm</li>
+                <li>US Food and Drug Administration. Agency Response Letter, Letter Responding to Health Claim Petition dated November 3, 2003 (Martek Petition): Omega-3 Fatty Acids and Reduced Risk of Coronary Heart Disease. Washington (DC): Food and Drug Administration, Center for Food Safety and Applied Nutrition&semi; 2004. [Accessed 2012 January 11]. Available from: http://www.fda.gov/ohrms/dockets/dockets/04q0072/04q-0072-pdn0001-18-FDA-vol6.pdf</li>
+                <li>US Food and Drug Administration. Agency Response Letter, GRAS Notice No. GRN 000105. Washington (DC): Food and Drug Administration, Center for Food Safety and Applied Nutrition&semi; 2002. [Accessed 2012 January 11]. Available from: http://www.fda.gov/Food/FoodIngredientsPackaging/GenerallyRecognizedasSafeGRAS/GRASListings/ucm153913.htm</li>
+                <li>Valagussa F, Franzosi MG, Geraci E, Mininni N, Nicolosi GL, Santini M, Tavazzi L, Vecchio C. 1999. Dietary supplementation with n-3 polyunsaturated fatty acids and vitamin E after myocardial infarction: results of the GISSI-Prevenzione trial. The Lancet 354(9177):447-455.</li>
+                <li>Valk EE, Hornstra G. 2000. Relationship between vitamin E requirement and polyunsaturated fatty acid intake in man: a review. International Journal for Vitamin and Nutrition Research 70(2):31-42.</li>
+                <li>Van der Tempel H, Tulleken JE, Limburg PC, Muskiet FA, van Rijswijk MH. 1990. Effects of fish oil supplementation in rheumatoid arthritis. Annals of the Rheumatic Diseases 49(2):76-80.</li>
+                <li>Velzing-Aarts FV, van der Klis FR, van der Dijs FP, van Beusekom CM, Landman H, Capello JJ, Muskiet FA. 2001. Effect of three low-dose fish oil supplements, administered during pregnancy, on neonatal long-chain polyunsaturated fatty acid status at birth. Prostaglandins, Leukotrienes and Essential Fatty Acids 65(1):51-57.</li>
+                <li>Verbruggen G, Goemaere S, Veys E. 1998. Chondroitin sulfate: S/MOAD (structure/disease modifying anti-osteoarthritis drug) in the treatment of finger joint OA. Osteoarthritis and Cartilage 6(suppl A):37-38.</li>
+                <li>Verbruggen G, Goemaere S, Veys E. 2002. Systems to assess the progression of finger joint osteoarthritis and the effects of disease modifying osteoarthritis drugs. Clinical Rheumatology 21(3):231-243.</li>
+                <li>Viad SC, LaValley MP, McAlindon TE, Felson DT. 2007. Glucosamine for pain in osteoarthritis: why do trial results differ? Arthritis and Rheumatism 56(7):2267-2277.</li>
+                <li>Vidgren HM, Ågren JJ, Schwab U, Rissanen T, Hänninen O, Uusitupa MI. 1997. Incorporation of n-3 fatty acids into plasma lipid fractions, and erythrocyte membranes and platelets during dietary supplementation with fish, fish oil, and docosahexaenoic acid-rich oil among healthy young men. Lipids 32(7):697-705.</li>
+                <li>Villacis J, Rice TR, Bucci LR, El-Dahr JM, Wild L, Demerell D, Soteres D, Lehrer SB. 2006. Do shrimp-allergic individuals tolerate shrimp-derived glucosamine? Clinical and Experimental Allergy: Journal of the British Society for Allergy and Clinical Immunology 36(11):1457-1461.</li>
+                <li>Visioli F, Risé P, Barassi MC, Marangoni F, Galli C. 2003. Dietary intake of fish vs. formulations leads to higher plasma concentrations of n-3 fatty acids. Lipids 38(4):415-418.</li>
+                <li>Voigt RG, Llorente AM, Jensen CL, Fraley JK, Berretta MC, Heird WC. 2001. A randomized, double-blind, placebo-controlled trial of docosahexaenoic acid supplementation in children with attention-deficit/hyperactivity disorder. The Journal of Pediatrics 139(2):189-196.</li>
+                <li>Von Schacky C, Fischer S, Weber PC. 1985. Long-term effects of dietary marine ω-3 fatty acids upon plasma and cellular lipids, platelet function, and eicosanoid formation in humans. Journal of Clinical Investigation 76(4):1626-1631.</li>
+                <li>Von Schacky C, Weber PC. 1985. Metabolism and effects on platelet function of the purified eicosapentaenoic and docosahexaenoic acids in humans. Journal of Clinical Investigation 76(6):2446-2450.</li>
+                <li>Wang C, Chung M, Balk E, Kupelnick B, DeVine D, Lawrence A, Lichtenstein A, Lau J. 2004. Effects of Omega-3 Fatty Acids on Cardiovascular Disease. Summary, Evidence Report/Technology Assessment No. 94. AHRQ No. 04-E009-2. Rockville (MD): Agency for Healthcare Research and Quality.</li>
+                <li>Whelton SP, He J, Whelton PK, Muntner P. 2004. Meta-analysis of observational studies of fish intake and coronary heart disease. The American Journal of Cardiology 93(9):1119-1123.</li>
+                <li>Williams HJ. 2006. Glucosamine, chondroitin sulfate, and the two in combination for painful knee osteoarthritis. The New England Journal of Medicine 354(8):795-808.</li>
+                <li>Wohl DA, Tien HC, Busby M, Cunningham C, Macintosh B, Napravnik S, Danan E, Donovan K, Hossenipour M, Simpson RJ Jr. 2005. Randomized study of the safety and efficacy of fish oil (omega-3 fatty acid) supplementation with dietary and exercise counselling for the treatment of antiretroviral therapy-associated hypertriglyceridemia. Clinical Infectious Diseases 41(10):1498-1504.</li>
+                <li>Wong KW. 2005. Clinical efficacy of n-3 fatty acid supplementation in patients with asthma. Journal of the American Dietetic Association 105(1):98-105.</li>
+                <li>Woodman RJ, Mori TA, Burke V, Puddey IB, Barden A, Watts GF, Beilin LJ. 2003. Effects of purified eicosapentaenoic acid and docosahexaenoic acid on platelet, fibrinolytic and vascular function in hypertensive type 2 diabetic patients. Atherosclerosis 166(1):85-93.</li>
+                <li>Woodman RJ, Mori TA, Burke V, Puddey IB, Watts GF, Beilin LJ. 2002. Effects of purified eicosapentaenoic and docosahexaenoic acids on glycemic control, blood pressure, and serum lipids in type 2 diabetic patients with treated hypertension. The American Journal of Clinical Nutrition 76(5):1007-1015.</li>
+                <li>Yu JG, Boies SM, and JM Olefsky. 2003. The effect of oral glucosamine sulphate on insulin sensitivity in human subjects. Diabetes Care 26(6):1941-1942.</li>
+                <li>Yzebe D, Lievre M. 2004. Fish oils in the care of coronary heart disease patients: a meta-analysis of randomized controlled trials. Fundamental & Clinical Pharmacology 18(5):581-592.</li>
+                <li>Zachara NE, Hart GW. 2006. Cell signaling, the essential role of O-GlcNAc! Biochimica et Biophysica Acta 1761(5-6):599-617.</li>
+                <li>Zhang W, Moskowitz RW, Nuki G, Abramson S, Altman RD, Arden N, Bierma-Zeinstra S, Brandt KD, Croft P, Doherty M, Dougados M, Hochberg M, Hunter DJ, Kwoh K, Lohmander LS, Tugwell P. 2008. OARSI recommendations for the management of hip and knee osteoarthritis part II: OARSI evidence-based, expert consensus guidelines. Osteoarthritis and Cartilage 16(2):137-162.</li>
+                </li>
+            </ul>
+    </section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

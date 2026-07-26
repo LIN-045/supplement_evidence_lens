@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?monotype=product\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="c46e597d-aa1f-4099-9757-cb202cf558c7"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<h1 id="wb-cont">Product monographs </h1>
+	
+	
+	
+	
+		
+		
+		
+			<div class="row">
+				<div class="col-md-9">
+		<p>A monograph is a written description of particular elements on an identified topic. Product monographs apply when there is more than one medicinal ingredient or to outline the conditions of use based on a product category (e.g. medicated skin care products, antiseptic skin cleansers, etc). The monographs below are currently referenced by the <abbr title="Natural Health Products">NHP</abbr> Ingredients Database but do not yet have a generated monograph, which means that less information is pre-populated in the <abbr title="Electronic product licence application">ePLA</abbr>. When selecting the application type in an <abbr title="Electronic product licence application">ePLA</abbr>, the 'Compendial' application type must be selected when attesting to a product monograph.</p>
+		<a href="http://www.hc-sc.gc.ca/dhp-mps/prodnatur/applications/online-enligne/pla-dlmm-view-eng.php">Electronic product licence application form</a>
+		
+		<div class="monographsIndex">
+			<a href="#A_PRODUCT">A</a><a href="#B_PRODUCT">B</a><a href="#C_PRODUCT">C</a><a href="#D_PRODUCT">D</a><a href="#F_PRODUCT">F</a><a href="#G_PRODUCT">G</a><a href="#H_PRODUCT">H</a><a href="#J_PRODUCT">J</a><a href="#K_PRODUCT">K</a><a href="#L_PRODUCT">L</a><a href="#M_PRODUCT">M</a><a href="#N_PRODUCT">N</a><a href="#O_PRODUCT">O</a><a href="#P_PRODUCT">P</a><a href="#S_PRODUCT">S</a><a href="#T_PRODUCT">T</a><a href="#W_PRODUCT">W</a>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="A_PRODUCT">A</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=acne2&amp;lang=eng" class="at">Acne Therapy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/662" title="Monograph: Acne Therapy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 219 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=antidandruff_anitpelliculaire&amp;lang=eng" class="at">Anti-Dandruff Products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/688" title="Monograph: Anti-Dandruff Products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 246 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=antiox&amp;lang=eng" class="at">Antioxidants</a>
+						
+						<div class="icon">
+							<a href="/dbImages/694" title="Monograph: Antioxidants (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 1303 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=antiseptic_antiseptique2&amp;lang=eng" class="at">Antiseptic Skin Cleansers</a>
+						
+						<div class="icon">
+							<a href="/dbImages/692" title="Monograph: Antiseptic Skin Cleansers (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 236 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=aromatherap2&amp;lang=eng" class="at">Aromatherapy - Essential oils</a>
+						
+						<div class="icon">
+							<a href="/dbImages/700" title="Monograph: Aromatherapy - Essential oils (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 340 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=athletes.foot.pied.dathlete2&amp;lang=eng" class="at">Athlete's Foot Treatments</a>
+						
+						<div class="icon">
+							<a href="/dbImages/706" title="Monograph: Athlete&#39;s Foot Treatments (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 214 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="B_PRODUCT">B</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=oral.hcp&amp;lang=eng" class="at">Benzocaine</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1028" title="Monograph: Benzocaine (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 82 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="C_PRODUCT">C</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=fonc.cognitive.func4&amp;lang=eng" class="at">Cognitive function products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/798" title="Monograph: Cognitive function products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 512 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=curcumin.curcumine2&amp;lang=eng" class="at">Concentrated turmeric and isolates (curcuminoids/curcumin)</a>
+						
+						<div class="icon">
+							<a href="/dbImages/812" title="Monograph: CONCENTRATED TURMERIC EXTRACTS AND ISOLATES (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 198 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=cor_call2&amp;lang=eng" class="at">Corn & Callus Remover</a>
+						
+						<div class="icon">
+							<a href="/dbImages/774" title="Monograph: Corn &amp; Callus Remover (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 204 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=counter2&amp;lang=eng" class="at">Counterirritants</a>
+						
+						<div class="icon">
+							<a href="/dbImages/800" title="Monograph: Counterirritants (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 314 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="D_PRODUCT">D</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=diaprash_erytfess&amp;lang=eng" class="at">Diaper Rash Products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/826" title="Monograph: Diaper Rash Products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 175 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=enzyme.multi&amp;lang=eng" class="at">Digestive Enzymes</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1014" title="Monograph: Digestive Enzymes (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 346 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="F_PRODUCT">F</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=firstaid.premierssoins2&amp;lang=eng" class="at">First aid antiseptics</a>
+						
+						<div class="icon">
+							<a href="/dbImages/872" title="Monograph: First aid antiseptics (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 239 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=multiple.oil3&amp;lang=eng" class="at">Fixed Oil Products - Oral</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1012" title="Monograph: Oil Products, Fixed (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 388 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=flower.essences2&amp;lang=eng" class="at">Flower Essences</a>
+						
+						<div class="icon">
+							<a href="/dbImages/862" title="Monograph: Flower Essences (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 251 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="G_PRODUCT">G</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=gemmotherapy2&amp;lang=eng" class="at">Gemmotherapy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/888" title="Monograph: Gemmotherapy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 280 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="H_PRODUCT">H</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=homeopathy2&amp;lang=eng" class="at">Homeopathy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/926" title="Monograph: Homeopathy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 218 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="J_PRODUCT">J</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=multiple.joint.health2&amp;lang=eng" class="at">Joint Health Products, Multiple Ingredient</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1010" title="Monograph: Joint Health Products, Multiple Ingredient (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 563 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="K_PRODUCT">K</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=kelp.prod.varech3&amp;lang=eng" class="at">Kelp Products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/942" title="Monograph: Kelp Products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 240 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="L_PRODUCT">L</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=laxa_carbon_dioxide&amp;lang=eng" class="at">Laxatives, Carbon Dioxide-Releasing</a>
+						
+						<div class="icon">
+							<a href="/dbImages/776" title="Monograph: Laxatives, Carbon Dioxide-Releasing (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 143 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=laxa_hyperosmo&amp;lang=eng" class="at">Laxatives, Hyperosmotic</a>
+						
+						<div class="icon">
+							<a href="/dbImages/924" title="Monograph: Laxatives, Hyperosmotic (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 147 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=lithotherapy2&amp;lang=eng" class="at">Lithotherapy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/974" title="Monograph: Lithotherapy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 213 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="M_PRODUCT">M</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=male.genital.desensitizers2&amp;lang=eng" class="at">Male Genital Desensitizers</a>
+						
+						<div class="icon">
+							<a href="/dbImages/818" title="Monograph: Male Genital Desensitizers (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 215 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=marei&amp;lang=eng" class="at">Marigold Extract and Isolates (Lutein and Zeaxanthin)</a>
+						
+						<div class="icon">
+							<a href="/dbImages/988" title="Monograph: Marigold Extract and Isolates (Lutein and Zeaxanthin) (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 163 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=skin_peau2&amp;lang=eng" class="at">Medicated Skin Care Products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1002" title="Monograph: Medicated Skin Care Products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 263 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=medicated.vap.medicamentees2&amp;lang=eng" class="at">Medicated vapours</a>
+						
+						<div class="icon">
+							<a href="/dbImages/990" title="Monograph: Medicated vapours (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 255 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=multi_vitmin_suppl&amp;lang=eng" class="at">Multi-Vitamin/Mineral Supplements</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1016" title="Monograph: Multi-Vitamin/Mineral Supplements (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 1006 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=mushrooms.champignons3&amp;lang=eng" class="at">Mushrooms</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1004" title="Monograph: Mushrooms (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 321 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="N_PRODUCT">N</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=nosodes2&amp;lang=eng" class="at">Nosodes</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1020" title="Monograph: Nosodes (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 235 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="O_PRODUCT">O</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=oligotherapy2&amp;lang=eng" class="at">Oligotherapy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1024" title="Monograph: Oligotherapy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 307 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=oral.health.sante.bucco.dentaire&amp;lang=eng" class="at">Oral Health Products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/848" title="Monograph: Oral Health Products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 227 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=oral.rehydration.sol&amp;lang=eng" class="at">Oral Rehydration Solutions</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1509" title="Monograph: Oral Rehydration Solution">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 269 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=organotherapy&amp;lang=eng" class="at">Organotherapy</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1030" title="Monograph: Organotherapy (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 239 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="P_PRODUCT">P</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=prebio2&amp;lang=eng" class="at">Prebiotics</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1767" title="mono_prebiotics_english.pdf">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 430 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=sunscreen-ecransolaire2&amp;lang=eng" class="at">Primary Sunscreen Monograph</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1102" title="Monograph: Primary Sunscreen Monograph (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 383 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=probio5&amp;lang=eng" class="at">Probiotics</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1050" title="Monograph: Probiotics (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 407 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=psyillium&amp;lang=eng" class="at">Psyllium</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1335" title="Monographie: Psyllium (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 180 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="S_PRODUCT">S</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=sunscreen-ecransolaire-secondary2&amp;lang=eng" class="at">Secondary Sunscreen Monograph</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1100" title="mono_secondary-sunscreen-monograph_english.pdf">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 330 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=soy_extra_isolate3&amp;lang=eng" class="at">Soybean Extracts and Isolates</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1116" title="Monograph: Soybean Extracts and Isolates (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 373 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="T_PRODUCT">T</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=throat.lozenges.pastilles2&amp;lang=eng" class="at">Throat Lozenges</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1136" title="Monograph: Throat Lozenges (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 309 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=tcm6&amp;lang=eng" class="at">Traditional Chinese Medicine Ingredients</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1132" title="Monograph: Traditional Chinese Medicine Ingredients (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 576 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq?atid=triphala2&amp;lang=eng" class="at">Triphala</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1152" title="Monograph: Triphala (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 229 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary center-block">
+			<div class="panel-heading">
+				<h3 style="color: white !important" class="panel-title" id="W_PRODUCT">W</h3>
+			</div>
+			
+			<div class="panel-body">
+				<ul>
+					<li>
+						<a href="atReq.do?atid=wart_remover_anti_verrues2&amp;lang=eng" class="at">Wart Remover</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1164" title="Monograph: Wart Remover (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 205 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=whey.prod.lactoserum2&amp;lang=eng" class="at">Whey products</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1166" title="Monograph: Whey products (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 254 K)</a>
+						</div>
+					</li>
+					<li>
+						<a href="atReq.do?atid=workout.supplements.entrainement4&amp;lang=eng" class="at">Workout Supplements</a>
+						
+						<div class="icon">
+							<a href="/dbImages/1170" title="Monograph: Workout Supplements (English)">
+								<img src="/nhpid-bdipsn/img/pdf.gif" style="position:relative; top:-2px" height="18" width="19">
+								 (PDF version - 616 K)</a>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="pull-right nodec">
+					<a href="#wb-cont">
+						Top of page&nbsp;&nbsp;
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+				<div class="col-md-3">
+					<div class="alert alert-info">
+		<h2>Pre-Cleared information</h2>
+		<p>Pre-Cleared information (<abbr>PCI</abbr>) is any form of information supporting the safety, efficacy or quality of a medicinal ingredient or natural health product that <abbr title="Natural and Non-prescription Health Products Directorate">NNHPD</abbr> has reviewed and determined to be acceptable.</p>
+		<p><abbr title="Pre-Cleared information">PCI</abbr> can be used to speed up the evaluation of the <abbr title="Natural Health Products">NHP</abbr>, and serves as a reliable source of product information for consumers.</p>
+		<div class="well pull-left">
+			<ul>
+				<li><a href="/nhpid-bdipsn/monosReq?monotype=single">Single ingredient monographs</a></li>
+				<li><a href="/nhpid-bdipsn/monosReq?monotype=product">Product monographs </a></li>
+				
+				
+				
+				<li><a href="/nhpid-bdipsn/monosReq">All</a></li>
+			</ul>
+		</div>
+	</div>
+				</div>
+			</div>
+		
+	
+	
+<script>
+$(".at").on("click", function(e) {
+	var url = $(this).attr("href");
+	var idx = url.indexOf(".do");
+	if (idx > 0) {
+		url = url.substring(0, idx) + url.substring(idx+3);
+	}
+	$(this).attr("href", url);
+});
+</script>
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

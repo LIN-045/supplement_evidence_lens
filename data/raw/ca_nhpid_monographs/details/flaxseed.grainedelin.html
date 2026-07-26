@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=flaxseed.grainedelin\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="d9fa4005-eecc-479c-a2f6-73772ae0186a"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+  <h1>
+   FLAXSEED -
+   <i>
+    LINUM USITATISSIMUM
+   </i>
+  </h1>
+  <p class="lightgreyBG">
+   Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+   <a href="/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.
+  </p>
+  <div class="icon">
+   <a href="dbImages/mono_flaxseed_english.pdf" title="FLAXSEED - LINUM USITATISSIMUM">
+    <img alt="Monograph: FLAXSEED - LINUM USITATISSIMUM" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+    (PDF Version - 95 KB)
+   </a>
+  </div>
+  <p>
+   This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on the PLA and product label at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    July 26, 2024
+   </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+   <h2 id="properNameCommonNameSourceInformation">
+    Proper name(s), Common name(s), Source information
+   </h2>
+   <table class="subject">
+    <caption>
+     Table 1.  Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Proper name(s)
+      </th>
+      <th rowspan="2" scope="col">
+       Common name(s)
+      </th>
+      <th colspan="3" scope="colgroup">
+        Source information
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Source material(s)
+      </th>
+      <th scope="col">
+       Part(s)
+      </th>
+      <th scope="col">
+       Preparation(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="1">
+        <i>
+         Linum usitatissimum
+        </i>
+      </td>
+      <td rowspan="1">
+       <ul>
+        <li>
+         Flax
+        </li>
+        <li>
+         Flaxseed
+        </li>
+        <li>
+         Linseed
+        </li>
+       </ul>
+      </td>
+      <td>
+        <i>
+         Linum usitatissimum
+        </i>
+      </td>
+      <td>
+        Seed
+      </td>
+      <td>
+        Dry
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    References: Proper name: USDA 2024; Common names: Sweetman 2007; Gardner and McGuffin 2013; Source information: Blumenthal et al. 2000.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of Administration
+   </h2>
+   <!-- CHECK IF ROUTE OR ROUTE(S) -->
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage Form(s)
+   </h2>
+   <p>
+    This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+   </p>
+   <p>
+    Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <ul>
+    <li>
+     Source of essential fatty acids for the maintenance of good health (IOM 2006).
+    </li>
+    <li>
+     Source of omega-3 fatty acids for the maintenance of good health (IOM 2006).
+    </li>
+    <li>
+     Source of alpha-linolenic acid (ALA) for the maintenance of good health (IOM 2006).
+    </li>
+    <li>
+     Source of omega-6 fatty acids for the maintenance of good health (IOM 2006).
+    </li>
+    <li>
+     Source of linoleic acid (LA) for the maintenance of good health (IOM 2006).
+    </li>
+    <li>
+     (Used in Herbal Medicine as a) bulk-forming laxative (Blumenthal et al. 2000; BHP 1996).
+    </li>
+    <li>
+     (Used in Herbal Medicine to) promote(s) bowel movement (by increasing bulk volume and water content) (Pray 2006; ESCOP 2003; Gennaro 2000; McGuffin et al. 1997).
+    </li>
+    <li>
+     (Used in Herbal Medicine to) provide(s) gentle relief of constipation and/or irregularity (EMA 2015; Pray 2006; ESCOP 2003; Gennaro 2000).
+    </li>
+    <li>
+     (Used in Herbal Medicine to) help(s) reduce blood lipid levels in adults (Patade et al. 2008; Lucas et al. 2002; Jenkins et al. 1999; Cunnane et al. 1993).
+    </li>
+    <li>
+     Source of antioxidants/Provides antioxidants (Kinniry et al. 2006; Rajesha et al. 2006; Prasad 2005; Prasad 1997).
+    </li>
+    <li>
+     Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Kinniry et al. 2006; Rajesha et al. 2006; Prasad 2005; Prasad 1997).
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Note:
+    </strong>
+    The above uses can be combined on the product label if from the same non-traditional system of medicine (e.g. Used in Herbal Medicine as a bulk-forming laxative for gentle relief of constipation and/or irregularity).
+   </p>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    As specified below.
+   </p>
+   <h3>
+    Quantity(ies)
+   </h3>
+   <p>
+    Method of preparation: Powdered<sup>1</sup>
+   </p>
+   <table class="subject">
+    <caption>
+     Table 2. Dose information of dried Flaxseed presented as dose per day and single dose, based on uses or purposes, subpopulations.
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Uses or Purposes
+      </th>
+      <th colspan="2" rowspan="2" scope="col">
+       Subpopulations<sup><a style="text-decoration: none;" href="#t2ft1">1</a>,<a style="text-decoration: none;" href="#t2ft2">2</a></sup>
+      </th>
+      <th colspan="2" scope="colgroup">
+        Dried seed (g)/day
+      </th>
+      <th scope="colgroup">
+        Dried seed (g)/single dose
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Min.
+      </th>
+      <th scope="col">
+       Max.
+      </th>
+      <th scope="col">
+       Max. single dose
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="3">
+       Source of essential fatty acids, omega-3 fatty acids, and/or ALA
+      </td>
+      <td>
+        Children
+      </td>
+      <td>
+        6-11 years
+      </td>
+      <td>
+        0.18
+      </td>
+      <td>
+        15
+      </td>
+      <td>
+        7.5
+      </td>
+     </tr>
+     <tr>
+      <td>
+        Adolescents
+      </td>
+      <td>
+        12-17 years
+      </td>
+      <td>
+        0.36
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1">
+        Adults
+      </td>
+      <td>
+        18 years and older
+      </td>
+      <td>
+        0.36
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="3">
+       Source of omega-6 fatty acids and/or LA
+      </td>
+      <td>
+        Children
+      </td>
+      <td>
+        6-11 years
+      </td>
+      <td>
+        7
+      </td>
+      <td>
+        15
+      </td>
+      <td>
+        7.5
+      </td>
+     </tr>
+     <tr>
+      <td>
+        Adolescents
+      </td>
+      <td>
+        12-17 years
+      </td>
+      <td>
+        14
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1">
+        Adults
+      </td>
+      <td>
+        18 years and older
+      </td>
+      <td>
+        14
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="3">
+       Provides antioxidants
+      </td>
+      <td>
+        Children
+      </td>
+      <td>
+        6-11 years
+      </td>
+      <td>
+        &gt;0
+      </td>
+      <td>
+        15
+      </td>
+      <td>
+        7.5
+      </td>
+     </tr>
+     <tr>
+      <td>
+        Adolescents
+      </td>
+      <td>
+        12-17 years
+      </td>
+      <td>
+        &gt;0
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1">
+        Adults
+      </td>
+      <td>
+        18 years and older
+      </td>
+      <td>
+        &gt;0
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="2">
+       Reduces blood lipid levels
+      </td>
+      <td>
+        Adults
+      </td>
+      <td>
+        18 years and older
+      </td>
+      <td>
+        30
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    <sup id="t2ft1">1</sup>Children and adolescent doses were calculated as a proportion of the adult dose (ESCOP 2003; Boon 2000). The use of Flaxseed in children and adolescents is supported by the following references: ESCOP 2003; Bove 2001; Boon 2000; Schilcher 1997.<br/>
+    <sup id="t2ft2">2</sup>Adult dose supported by the following references: EMA 2015; Patade et al. 2008; IOM 2006; ESCOP 2003; Lucas et al. 2002; Jenkins et al. 1999; Cunnane et al. 1993.
+   </p>
+   <p>
+    Methods of preparation: Dry, Powdered<sup>1</sup>
+   </p>
+   <table class="subject">
+    <caption>
+     Table 3.  Dose information of dried Flaxseed presented as dose per day and single dose, based on uses or purposes, subpopulations.
+    </caption>
+    <thead>
+     <tr>
+      <th rowspan="2" scope="col">
+       Uses or Purposes
+      </th>
+      <th colspan="2" rowspan="2" scope="col">
+       Subpopulations<sup><a style="text-decoration: none;" href="#t3ft1">1</a>,<a style="text-decoration: none;" href="#t3ft2">2</a></sup>
+      </th>
+      <th colspan="2" scope="colgroup">
+        Dried seed (g)/day
+      </th>
+      <th scope="colgroup">
+        Dried seed (g)/single dose
+      </th>
+     </tr>
+     <tr>
+      <th scope="col">
+       Min.
+      </th>
+      <th scope="col">
+       Max.
+      </th>
+      <th scope="col">
+       Max. single dose
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td rowspan="3">
+       Laxative
+      </td>
+      <td>
+        Children
+      </td>
+      <td>
+        6-11 years
+      </td>
+      <td>
+        4.5
+      </td>
+      <td>
+        15
+      </td>
+      <td>
+        7.5
+      </td>
+     </tr>
+     <tr>
+      <td>
+        Adolescents
+      </td>
+      <td>
+        12-17 years
+      </td>
+      <td>
+        10
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+     <tr>
+      <td rowspan="1">
+        Adults
+      </td>
+      <td>
+        18 years and older
+      </td>
+      <td>
+        10
+      </td>
+      <td>
+        45
+      </td>
+      <td>
+        22.5
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p><sup id="t3ft1">1</sup>Children and adolescent doses were calculated as a proportion of the adult dose (ESCOP 2003; Boon 2000). The use of Flaxseed in children and adolescents is supported by the following references: ESCOP 2003; Bove 2001; Boon 2000;  Schilcher 1997.<br/> 
+    <sup id="t3ft2">2</sup>Adult dose supported by the following references: EMA 2015; Patade et al. 2008; IOM 2006; ESCOP 2003; Lucas et al. 2002; Jenkins et al. 1999; Cunnane et al. 1993.
+   </p>
+   <p>
+    <strong>
+     <sup>
+      1
+     </sup>
+     Note:
+    </strong>
+    The method of preparation 'powdered' is defined as a dried and ground preparation (= unextracted).
+   </p>
+   <em>
+    Optional potency:
+   </em>
+   <p>
+    <em>
+     All products
+    </em>
+   </p>
+   <ul>
+    <li>
+     20-30 % ALA (HC 2023; CGC 2022; Cunnane 1993)
+    </li>
+    <li style="list-style: none;">
+     and/or
+    </li>
+    <li>
+     5-7 % LA (HC 2023; CGC 2022).
+    </li>
+   </ul>
+   <h3>
+    Direction(s) for use
+   </h3>
+   <p>
+    <em>
+     Products providing 5 g or more of flaxseed per day
+    </em>
+   </p>
+   <ul>
+    <li>
+     For each dose, drink at least 250 ml of liquid (EMA 2015; Gardner and McGuffin 2013; ESCOP 2003).
+    </li>
+    <li>
+     Mix well with liquid and drink immediately.
+    </li>
+    <li>
+     Maintain adequate fluid intake (EMA 2015; Gardner and McGuffin 2013).
+    </li>
+    <li>
+     Take a few hours before or after taking other medications or health products (EMA 2015; Sweetman 2007).
+    </li>
+   </ul>
+   <p>
+    <em>
+     Laxative; Promotion of bowel movement; Constipation relief
+    </em>
+   </p>
+   <p>
+    Effects observed 12-24 hours after first dose, and may take 2-3 days (EMA 2015; ESCOP 2003).
+   </p>
+   <p>
+    <em>
+     Optional
+    </em>
+   </p>
+   <p>
+    Take during the day (not immediately prior to bedtime) (EMA 2015).
+   </p>
+   <p>
+    <em>
+     Optional (for products with a dosage range)
+    </em>
+   </p>
+   <p>
+    Minimum daily dose may be increased, up to the maximum daily dose, until desired effect is obtained.
+   </p>
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration(s) of Use
+   </h2>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk Information
+   </h2>
+   <h3>
+    Caution(s) and warning(s)
+   </h3>
+   <p>
+    <em>
+     Products providing 5 g or more of flaxseed per day
+    </em>
+   </p>
+   <ul>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician immediately if you experience chest pain, vomiting, or difficulty swallowing or breathing after taking this product (EMA 2015).
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have diabetes or a lazy bowel (EMA 2015; ESCOP 2003).
+    </li>
+   </ul>
+   <p>
+    <em>
+     Laxative; Promotion of bowel movement; Constipation
+    </em>
+   </p>
+   <p>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen or if laxative effect does not occur within 7 days (Pray 2006; Repchinsky 2002).
+   </p>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <em>
+    Products providing 5 g or more of flaxseed per day
+   </em>
+   <ul>
+    <li>
+     Do not use if you have difficulty swallowing (EMA 2015; ESCOP 2003).
+    </li>
+    <li>
+     Do not use if you have fever or any undiagnosed gastrointestinal trouble (EMA 2015; Gardner and McGuffin 2013; Brinker 2010; ESCOP 2003).
+    </li>
+   </ul>
+   <h3>
+    Known adverse reaction(s)
+   </h3>
+   <p>
+    <em>
+     All products
+    </em>
+   </p>
+   <p>
+    Stop use if hypersensitivity/allergy occurs (EMA 2015; León et al. 2003).
+   </p>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+   <h2 id="nonMedicinalIngredients">
+    Non-medicinal ingredients
+   </h2>
+   <p>
+    Must be chosen from the current  Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+   </p>
+  </section>
+  <section aria-labelledby="storageCondition">
+   <h2 id="storageCondition">
+    Storage condition(s)
+   </h2>
+   <p>
+    Must be established in accordance with the requirements described in the
+    <em>
+     Natural Health Products Regulations.
+    </em>
+   </p>
+  </section>
+  <section aria-labelledby="specifications">
+   <h2 id="specifications">
+    Specifications
+   </h2>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="exampleOfProductFacts">
+   <h2 id="exampleOfProductFacts">
+    EXAMPLE OF PRODUCT FACTS:
+   </h2>
+   <p>
+    Consult the Guidance Document,
+    <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a>
+    for more details.
+   </p>
+   <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/Flaxseed_E.gif" style="width:700px"/>
+   </p>
+  </section>
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References Cited
+   </h2>
+   <ul>
+    <li>
+     BHP 1996: The British Herbal Pharmacopoeia. Exeter (GB): British Herbal Medicine Association.
+    </li>
+    <li>
+     Blumenthal M, Goldberg A, Brinkmann J, editors. 2000. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications.
+    </li>
+    <li>
+     Boon H. 2000. Flax in: Herbs: Everyday Reference for Health Professionals. Chandler F, editor. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association.
+    </li>
+    <li>
+     Bove M. 2001. An Encyclopedia of Natural Healing for Children and Infants, 2nd edition. Toronto (ON): McGraw-Hill.
+    </li>
+    <li>
+     Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications; 2010.
+    </li>
+    <li>
+     CGC 2022: Canadian Grain Commission. Quality of western Canadian Flaxseed 2022. Winnipeg (MB): Canadian Grain Commission. [Accessed 2023 December 31]. Available from: https://publications.gc.ca/collections/collection_2023/ccg-cgc/A92-15-2022-eng.pdf
+    </li>
+    <li>
+     Cunnane SC, Ganguli S, Menard C, Liede AC, Hamadeh MJ, Chen ZY, Wolever TM, Jenkins DJ. 1993. High alpha-linolenic acid flaxseed (Linum usitatissimum): some nutritional properties in humans. British Journal of Nutrition 69(2):443-53.
+    </li>
+    <li>
+     EMA 2015. European Medicines Agency. European Union Herbal Monograph on Linum usitatissimum L., semen. London (GB): EMA Committee on Herbal Medicinal Products (HMPC), 10 March 2015. [Accessed 2023 December 31]. Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-linum-usitatissimum-l-semen_en.pdf
+    </li>
+    <li>
+     ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition. Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme.
+    </li>
+    <li>
+     Gardner Z. and McGuffin M. editors. American Herbal Products Association's Botanical Safety Handbook, 2nd edition. American Herbal Products Association. Boca Raton (FL): CRC Press; 2013.
+    </li>
+    <li>
+     Gennaro AR, editor. 2000. Remington: The Science and Practice of Pharmacy, 20th edition. Baltimore (MD): Lippincott Williams &amp; Wilkins.
+    </li>
+    <li>
+     HC 2023: Health Canada. The Canadian Nutrient File. Ottawa (ON): Health Canada. [Accessed 2023 December 31]. Available from: https://food-nutrition.canada.ca/cnf-fce/index-eng.jsp
+    </li>
+    <li>
+     IOM 2006: Otten JJ, Pitzi Hellwig J, Meyers LD, editors. 2006. Institute of Medicine Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press.
+    </li>
+    <li>
+     Jenkins DJA, Kendall CWC, Vidgen E, Agarwal S, Rao AV, Rodenberg RS, Diamandis EP, Novokmet R, Mehling CC, Perera T, Griffin LC, Cunnane SC. 1999. Health aspects of partially defatted flaxseed, including effects on serum lipids, oxidative measures, and ex vivo androgen and progestin activity: A controlled crossover trial. The American Journal of Clinical Nutrition 69(3):395-402.
+    </li>
+    <li>
+     Kinniry P, Amrani Y, Vachani A, Solomides CC, Arguiri E, Workman A, Carter J, ChristofidouSolomidou M. 2006. Dietary flaxseed supplementation ameliorates inflammation and oxidative tissue damage in experimental models of acute lung injury in mice. The Journal of Nutrition 136(6):1545-1551.
+    </li>
+    <li>
+     León F, Rodríguez M, Cuevas M. 2003. Anaphylaxis to Linum. Allergologia et immunopathologia 31(1):47-49.
+    </li>
+    <li>
+     Lucas EA, Wild RD, Hammond LJ, Khalil DA, Juma S, Daggy BP, Stoecker BJ, Arjmandi BH. 2002. Flaxseed improves lipid profile without altering biomarkers of bone metabolism in postmenopausal women. Journal of Clinical Endocrinology and Metabolism 87(4):1527-1532.
+    </li>
+    <li>
+     Lukaszewicz M, Szopa Jan, Krasowska A. 2003. Susceptibility of lipids from different flax cultivars to peroxidation and its lowering by added antioxidants. Food Chemistry 88(2004):225231
+    </li>
+    <li>
+     Nykter M, Kymäläinen H-R, Gates F, Sjöberg A-M. 2006. Quality characteristics of edible linseed oil. Agricultural and Food Science 15(4):402-413.
+    </li>
+    <li>
+     Patade A, Devareddy L, Lucas EA, Korlagunta K, Daggy BP, Arjmandi BH. 2008. Flaxseed reduces total and LDL cholesterol concentrations in Native American postmenopausal women. Journal of Women's Health 17(3):355-366.
+    </li>
+    <li>
+     Ph. Eur. 2008: European Pharmacopoeia Commission. 2007. European Pharmacopoeia, 6th edition, Volume 2. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM).
+    </li>
+    <li>
+     Prasad K. 1997. Dietary flax seed in prevention of hypercholesterolemic atherosclerosis. Atherosclerosis 132(1):69-76.
+    </li>
+    <li>
+     Prasad K. 2005. Hypocholesterolemic and antiatherosclerotic effect of flax lignan complex isolated from flaxseed. Atherosclerosis 179(2):269-275
+    </li>
+    <li>
+     Pray WS. 2006. Non-Prescription Product Therapeutics, 2nd edition. New York (NY): Lippincott Williams &amp; Wilkins.
+    </li>
+    <li>
+     Rajesha J, Murthy KNC, Kumar MK, Madhusudhan B, Ravishankar GA. 2006. Antioxidant potentials of flaxseed by in vivo model. Journal of Agricultural and Food Chemistry 54(11):3794-3799.
+    </li>
+    <li>
+     Repchinsky 2002: Canadian Pharmacists Association. Patient Self-Care. Helping Patients Make Therapeutic Choices. Ottawa (ON): Canadian Pharmacists Association.
+    </li>
+    <li>
+     Schilcher H. 1997. Phytotherapy in Paediatrics: Handbook for Physicians and Pharmacists. Stuttgart (DE): Medpharm Scientific Publishers.
+    </li>
+    <li>
+     Sweetman SC, editor. 2007. Martindale: The Complete Drug Reference, 35th edition. London (GB): Pharmaceutical Press.
+    </li>
+    <li>
+     USDA 2024: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 June 17]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+   <h2 id="referencesReviewed">
+    References Reviewed
+   </h2>
+   <ul>
+    <li>
+     Alonso L, Marcos ML, Blanco JG, Navarro JA, Juste S, del Mar Garcés M, Pérez R, Carretero PJ. 1996. Anaphylaxis caused by linseed (flaxseed) intake. The Journal of Allergy and Clinical Immunology 98(2):469-470.
+    </li>
+    <li>
+     Arjmandi BH, Khan DA, Juma S, Drum ML, Venkatesh S, Sohn E, Wei L, Derman R. 1998. Whole flaxseed consumption lowers serum LDL-cholesterol and lipoprotein(a) concentrations in postmenopausal women. Nutritional Research; 18(7):1203-1214.
+    </li>
+    <li>
+     Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. 2002. Handbook of Nonprescription Drugs: An Interactive Approach to SelfCare, 13th edition. Washington (DC): American Pharmaceutical Association.
+    </li>
+    <li>
+     BHP 1983: British Herbal Pharmacopoeia. Cowling (GB): British Herbal Medical Association.
+    </li>
+    <li>
+     Birch DG, Birch EE, Hoffman DR, Uauy RD. 1992. Retinal development in very-low-birthweight infants fed diets differing in omega-3 fatty acids. Investigative Ophthalmology and Visual Science 33(8):2365-2376.
+    </li>
+    <li>
+     Bloedon LT, Balikai S, Chittams J, Cunnane SC, Berlin JA, Rader DJ, Szapary PO. 2008. Flaxseed and cardiovascular risk factors: results from a double blind, randomized, controlled clinical trial. Journal of the American College of Nutrition 27 (1):65-74.
+    </li>
+    <li>
+     Brinker 2008. Online Updates and Additions to Herb Contraindications and Drug Interactions, 3rd edition. Sandy (OR): Eclectic Medical Publications. [Accessed 2008 July 23]. Available from: http://www.eclecticherb.com/emp/updatesHCDI.html
+    </li>
+    <li>
+     CGC 2005: Canadian Grain Commission. The Quality of Flaxseed in Canada [online]. Winnipeg (MB): Canadian Grain Commission. [Accessed 2006 July 20]. Available from: http://www.grainscanada.gc.ca/flax-lin/trend-tendance/qfc-qlc-eng.htm
+    </li>
+    <li>
+     Chevallier A.1996. The Encyclopedia of Medicinal Plants. London (GB): Dorling Kindersley Limited.
+    </li>
+    <li>
+     Finnegan YE, Howarth D, Minihane AM, Kew S, Miller GJ, Calder PC, Williams CM. 2003. Plant and marine derived (n-3) polyunsaturated fatty acids do not affect blood coagulation and fibrinolytic factors in moderately hyperlipidemic humans. Journal of Nutrition 133(7):22102213.
+    </li>
+    <li>
+     Freese R, Mutanen M. 1997. Alpha-linolenic acid and marine long-chain n-3 fatty acids differ only slightly in their effects on hemostatic factors in healthy subjects. American Journal of Clinical Nutrition 66(3):591-598.
+    </li>
+    <li>
+     Hallund J, Ravn-Haren G, Bugel S, Tholstrup T, Tetens I. 2006. A lignan complex isolated from flaxseed does not affect plasma lipid concentrations or antioxidant capacity in healthy postmenopausal women. The Journal of Nutrition 136(1):112-116.
+    </li>
+    <li>
+     Jenkins DJ, Kendall CW, Vuksan V, Augustin LS, Mehling C, Parker T, Vidgen E, Lee B, Faulkner D, Seyler H, Josse R, Leiter LA, Connelly PW, Fulgoni V 3rd. 1999b. Effect of wheat bran on serum lipids: influence of particle size and wheat protein. Journal of the American College of Nutrition 18(2):159-65.
+    </li>
+    <li>
+     Jenkins DJA, Wolever TMS, Leeds AR, Gassull MA, Haisman P, Dilawari J, Goff DV, Metz GL, Alberti KG. 1978. Dietary fibres, fibre analogues, and glucose tolerance: importance of viscosity. British Medical Journal 1(6124):1392-1398.
+    </li>
+    <li>
+     Lemay A, Dodin S, Kadri N, Jacques H, Forest J-C. 2002. Flaxseed dietary supplement versus hormone replacement therapy in hypercholesterolemic menopausal women. The American Colege of Obstetricians and Gynecologists 100(3):495-504.
+    </li>
+    <li>
+     Lezaun A, Fraj J, Colás C, Duce F, Domínguez MA, Cuevas M, Eiras P. 1998. Anaphylaxis from linseed. Allergy 53(1):105-106.
+    </li>
+    <li>
+     Li D, Sinclair A, Wilson A, Nakkote S, Kelly F, Abedin L, Mann N, Turner A. 1999. Effect of dietary alpha-linolenic acid on thrombotic risk factors in vegetarian men. American Journal of Clinical Nutrition 69(5):872-882.
+    </li>
+    <li>
+     Mills S, Bone K. 2005. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone.
+    </li>
+    <li>
+     Pagana CD, Pagana TJ. 2002. Mosby's Manual of Diagnostic and Laboratory Tests, 2nd edition. St. Louis (MO): Mosby, Inc.
+    </li>
+    <li>
+     Pan A, Sun J, Chen Y, Ye X, Li H, Yu Z, Wang Y, Gu W, Zhang X, Chen X, DemarkWahnefried W, Liu Y, Lin X. 2007. Effects of a flaxseed-derived lignan supplement in Type 2 diabetic patients: a randomized, double-blind, cross-over trial. PLoS ONE 11:1-7.
+    </li>
+    <li>
+     Sanders TA, Lewis F, Slaughter S, Griffin BA, Griffin M, Davies I, Millward DJ, Cooper JA, Miller GJ. 2006. Effect of varying the ratio of n-6 to n-3 fatty acids by increasing the dietary intake of alpha-linolenic acid, eicosapentaenoic and docosahexaenoic acid or both on fibrinogen and clotting factors VII and XII in persons aged 45-70 y: the OPTILIP Study. American Journal of Clinical Nutrition 84(3):513-522.
+    </li>
+    <li>
+     Simmer K, Schulzke SM, Patole S. 2008. Longchain polyunsaturated fatty acid supplementation in preterm infants. Cochrane Database Syst Rev. 2008 Jan 23;(1):CD000375. Update of: Cochrane Database Syst Rev. 2004;(1):CD000375.
+    </li>
+    <li>
+     Zhang W, Wang X, Liu Y, Tian H, Flickinger B, Empie MW, Sun SZ. 2008. Dietary flaxseed lignan extract lowers plasma cholesterol and glucose concentrations in hypercholestrolaemic subjects. British Journal of Nutrition 99(6):1301-1309.
+    </li>
+   </ul>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

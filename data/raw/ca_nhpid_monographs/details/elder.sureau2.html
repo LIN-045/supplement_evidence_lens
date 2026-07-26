@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=elder.sureau2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="c108ad1f-5719-45be-879a-b0a342316288"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>ELDER &ndash; SAMBUCUS</h1>
+    <div class="icon">
+		<a href="dbImages/mono_elder--sambucus_english.pdf" title="ELDER - SAMBUCUS"><img alt="Monograph: ELDER - SAMBUCUS" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 104 KB)</a>
+	</div>
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+    <p><strong>Notes</strong>
+        <ul>
+            <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+            <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+        </ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+            <p>December 19, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonnameSourceInformation">
+		<h2 id="properNameCommonnameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Proper name(s)</th>
+                        <th rowspan="2" scope="col">Common name(s)</th>
+                        <th colspan="3" scope="colgroup">Source information</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Source material(s)</th>
+                        <th scope="col">Part(s)</th>
+                        <th scope="col">Preparation(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Sambucus nigra</em> subsp. <em>nigra</em></td>
+                        <td>
+                            <ul>
+                                <li>Black elder</li>
+                                <li>European elder</li>
+                            </ul>
+                        </td>
+                        <td><em>Sambucus nigra</em> subsp. <em>nigra</em></td>
+                        <td rowspan="2">
+                            <ul>
+                                <li>Flower</li>
+                                <li>Fruit</li>
+                            </ul>
+                        </td>
+                        <td rowspan="2">Dry</td>
+                    </tr>
+                    <tr>
+                        <td><em>Sambucus nigra</em> subsp. <em>canadensis</em></td>
+                        <td>
+                            <ul>
+                                <li>American elder</li>
+                                <li>Canadian elder</li>
+                                <li>Sweet elder</li>
+                            </ul>
+                        </td>
+                        <td><em>Sambucus nigra</em> subsp. <em>canadensis</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>References: Proper names: USDA 2024&semi; Gardner and McGuffin 2013&semi; Common names: NHPID 2024&semi; Source information: EMA 2018&semi; Godfrey and Saunders 2010&semi; Hoffman 2003.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>    
+            <p><strong>Acceptable dosage forms by age group:</strong>
+                <p>
+                    <strong>Children 2 years:</strong> The acceptable dosage forms are limited to emulsion/suspension and solution/ liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).<br/>
+                    <strong>Children 3-5 years:</strong> The acceptable dosage forms are limited to chewables, emulsion/suspension, powders and solution/liquid preparations (Giacoia et al. 2008&semi; EMA/CHMP 2006).<br/>
+                    <strong>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older:</strong> Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+                </p>
+            </p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+            <p>Adults 18 years and older</p>
+                <p><em>Flower</em></p>
+                <ul>
+                    <li>(Traditionally) used in Herbal Medicine (as a diaphoretic) to promote sweating to help relieve fever (in cases of common colds, flus) (Godfrey and Saunders 2010&semi; Bone 2003&semi; Hoffman 2003&semi; WHO 2002&semi; BHC 1992&semi; BHP 1983&semi; Grieve 1931&semi; Sayre 1917&semi; Felter and Lloyd 1898).</li>  
+                    <li>(Traditionally) used in Herbal Medicine to help relieve symptoms of colds and flus (such as coughs, sore throat and mucus buildup (catarrh) of the (upper) respiratory tract) (Godfrey and Saunders 2010&semi; Barnes et al. 2007&semi; Bone 2003&semi; Hoffman 2003&semi; WHO 2002&semi; BHP 1983&semi; Grieve 1931).</li>
+                    <li>Used in Herbal Medicine to help relieve nasal congestion and discharge associated with sinusitis, hay fever/allergic rhinitis (Godfrey and Saunders 2010&semi; Barnes et al. 2007&semi; Bone 2003&semi; Hoffman 2003).</li>
+                    <li>(Traditionally) used in Herbal Medicine as a diuretic (Winston and Kuhn 2008&semi; Barnes et al. 2007&semi; Williamson 2003&semi; BHC 1992&semi; Felter 1922&semi; Culbreth 1927&semi; Fyfe 1903).</li>
+                    <li>(Traditionally) used in Herbal Medicine (as an alterative) to help remove accumulated waste products via the kidneys, skin and mucus membranes (Williamson 2003&semi; Tilgner 1999&semi; Felter 1922&semi; Culbreth 1921&semi; Fyfe 1903&semi; Felter and Lloyd 1898).</li>
+                </ul>
+                <p><em>Fruit</em></p>
+                <ul>
+                    <li>(Traditionally) used in Herbal Medicine (as a diaphoretic) to promote sweating to help relieve fever (in cases of common colds, flus) (Winston and Kuhn 2008&semi; Hoffman 2003&semi; Shook 1992&semi; Grieve 1931&semi; Remington et al. 1918).</li> 
+                    <li>(Traditionally) used in Herbal Medicine to help relieve symptoms of colds and flus (such as coughs, sore throat and mucus buildup (catarrh) of the (upper) respiratory tract) (Winston and Kuhn 2008&semi; Hoffman 2003&semi; Tillotson 2001&semi; Shook 1992).</li>
+                    <li>(Traditionally) used in Herbal Medicine to help relieve joint pain associated with conditions such as arthritis (Godfrey and Saunders 2010&semi; Hoffman 2003&semi; Tilgner 1999&semi; Grieve 1931&semi; Remington et al. 1918).</li>
+                    <li>(Traditionally) used in Herbal Medicine as a diuretic (Hoffman 2003&semi; Shook 1992&semi; Fyfe 1903).</li>
+                    <li>(Traditionally) used in Herbal Medicine (as an alterative) to help remove accumulated waste products via the kidneys, skin and mucus membranes (Tilgner 1999&semi; Shook 1992&semi; Grieve 1931&semi; Remington et al. 1918&semi; Fyfe 1903).</li>
+                    <li>Source of antioxidants/Provides antioxidants (Youdim et al. 2004&semi; Abuja et al. 1998).</li>
+                    <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Youdim et al. 2004&semi; Abuja et al. 1998).</li>
+                </ul>
+                <p><strong>Children 2-11 years and Adolescents 12-17 years</strong></p>
+                <p><em>Flower and/or Fruit</em></p>
+                <ul>
+                    <li>(Traditionally) used in Herbal Medicine (as a diaphoretic) to promote sweating to help relieve fever (in cases of common colds, flus) (Godfrey and Saunders 2010&semi; Winston and Kuhn 2008&semi; Bone 2003&semi; Hoffman 2003&semi; WHO 2002&semi; Shook 1992&semi; BHC 1992&semi; BHP 1983&semi; Grieve 1931&semi; Remington et al. 1918&semi; Sayre 1917&semi; Felter et Lloyd 1898).</li>
+                    <li>(Traditionally) used in Herbal Medicine to help relieve symptoms of colds and flus (such as coughs, sore throat and mucus buildup (catarrh) of the (upper) respiratory tract) (Godfrey and Saunders 2010&semi; Winston and Kuhn 2008&semi; Barnes et al. 2007&semi; Bone 2003&semi; Hoffman 2003&semi; WHO 2002&semi; Tillotson 2001&semi; Shook 1992&semi; BHP 1983&semi; Grieve 1931).</li>
+                </ul>
+                <p><em>Flower</em></p>
+                    <p>Used in Herbal Medicine to help relieve nasal congestion and discharge associated with sinusitis, hay fever/allergic rhinitis (Godfrey and Saunders 2010&semi; Barnes et al. 2007&semi; Bone 2003&semi; Hoffman 2003).</p>
+                <p><strong>Notes</strong>
+                    <ul>
+                        <li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Used in Herbal Medicine to help relieve symptoms of colds and flus and to help relieve nasal congestion and discharge associated with sinusitis, hay fever).</li>
+                        <li>For multi-ingredient products:
+                            <ul>
+                                <li>To prevent the product from being represented as a “traditional medicine”, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Black elder is traditionally used in Herbal Medicine as a diuretic).</li>
+                                <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>As specified below.</p>
+            <h3>Quantity(ies)</h3>
+                <p><em>Flower</em></p>
+                <p><strong>Methods of preparation:</strong> Dry, Powdered, Non-Standardized Ethanolic Extracts (Dry extract, Tincture, Fluid extract)</p>
+                <table id="ref2" class="subject">
+                    <caption>Table 2. Dose information (grams) per day for dried flower of black elder or American elder or the total of black elder and American elder</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" scope="col">Use(s) or purpose(s)</th>
+                            <th colspan="2" rowspan="2" scope="col">Subpopulation(s)<sup><a href="#ref2-1" style="text-decoration: none;">1</a>,<a href="#ref2-2" style="text-decoration: none;">2</a></sup></th>
+                            <th colspan="2" scope="colgroup">Dried flower (g/day)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Minimum</th>
+                            <th scope="col">Maximum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">
+                                <ul>
+                                    <li>Diaphoretic</li>
+                                    <li>Sinusitis, hay fever</li>
+                                    <li>Symptoms of colds and flus</li>
+                                </ul>
+                            </td>
+                            <td rowspan="2">Children</td>
+                            <td>2-4 years</td>
+                            <td>0.25 g</td>
+                            <td>2.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>5-9 years</td>
+                            <td>0.375 g</td>
+                            <td>3.75 g</td>
+                        </tr>
+                        <tr>
+                            <td>Children</td>
+                            <td>10-11 years</td>
+                            <td>0.75 g</td>
+                            <td>7.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>0.75 g</td>
+                            <td>7.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>Adolescents</td>
+                            <td>14-17 years</td>
+                            <td>1.5 g</td>
+                            <td>15 g</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Alterative</li>
+                                    <li>Diaphoretic</li>
+                                    <li>Diuretic</li>
+                                    <li>Sinusitis, hay fever</li>
+                                    <li>Symptoms of colds and flus</li>
+                                </ul>
+                            </td>
+                            <td>Adults</td>
+                            <td>18 years and older</td>
+                            <td>1.5 g</td>
+                            <td>15 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref2-1">1</sup>Children and adolescent doses were calculated as a proportion of the adult dose (JC 2023). The
+                    use of Elder spp. in children and adolescents is supported by the following references: McIntyre 2005&semi; Bove 2001&semi; Gladstar 1999.<br/>
+                    <sup id="ref2-2">2</sup>Adult dose supported by the following references: Winston and Kuhn 2008&semi; Bone 2003&semi; WHO 2002&semi; BHC 1992&semi; Fyfe 1903.
+                </p>
+                <p><strong>Method of preparation:</strong> Infusion</p>
+                <table id="ref3" class="subject">
+                    <caption>Table 3. Dose information (grams) per day for dried flower of black elder or American elder or the total of black elder and American elder</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" scope="col">Use(s) or purpose(s)</th>
+                            <th colspan="2" rowspan="2" scope="col">Subpopulation(s)<sup><a href="#ref3-1" style="text-decoration: none;">1</a>,<a href="#ref3-2" style="text-decoration: none;">2</a></sup></th>
+                            <th colspan="2" scope="colgroup">Dried flower (g/day)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Minimum</th>
+                            <th scope="col">Maximum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">
+                                <ul>
+                                    <li>Diaphoretic</li>
+                                    <li>Sinusitis, hay fever</li>
+                                    <li>Symptoms of colds and flus</li>
+                                </ul>
+                            </td>
+                            <td rowspan="2">Children</td>
+                            <td>2-4 years</td>
+                            <td>1 g</td>
+                            <td>2.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>5-9 years</td>
+                            <td>1.5 g</td>
+                            <td>3.75 g</td>
+                        </tr>
+                        <tr>
+                            <td>Children</td>
+                            <td>10-11 years</td>
+                            <td>3 g</td>
+                            <td>7.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>3 g</td>
+                            <td>7.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>Adolescents</td>
+                            <td>14-17 years</td>
+                            <td>6 g</td>
+                            <td>15 g</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Alterative</li>
+                                    <li>Diaphoretic</li>
+                                    <li>Diuretic</li>
+                                    <li>Sinusitis, hay fever</li>
+                                    <li>Symptoms of colds and flus</li>
+                                </ul>
+                            </td>
+                            <td>Adults</td>
+                            <td>18 years and older</td>
+                            <td>6 g</td>
+                            <td>15 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref3-1">1</sup>Children and adolescent doses were calculated as a proportion of the adult dose (JC 2023). The
+                    use of Elder spp. in children and adolescents is supported by the following references: McIntyre 2005&semi; Bove 2001&semi; Gladstar
+                    1999.<br/>
+                    <sup id="ref3-2">2</sup>Adult dose supported by the following references: Hoffman 2003 Williamson 2003&semi; WHO 2002&semi; BHC
+                    1992.
+                </p>
+                <p><em>Fruit</em></p>
+                    <p><strong>Methods of preparation:</strong> Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+                <table id="ref4" class="subject">
+                    <caption>Table 4. Dose information (grams) per day for dried fruit of black elder or American elder or the total of black elder and American elder</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" scope="col">Use(s) or purpose(s)</th>
+                            <th colspan="2" rowspan="2" scope="col">Subpopulation(s)<sup><a href="#ref4-1" style="text-decoration: none;">1</a>,<a href="#ref4-2" style="text-decoration: none;">2</a></sup></th>
+                            <th colspan="2" scope="colgroup">Dried fruit(g/day)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Minimum</th>
+                            <th scope="col">Maximum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">
+                                <ul>
+                                    <li>Diaphoretic</li>
+                                    <li>Symptoms of colds and flus</li>
+                                </ul>
+                            </td>
+                            <td rowspan="2">Children</td>
+                            <td>2-4 years</td>
+                            <td>0.217 g</td>
+                            <td>3 g</td>
+                        </tr>
+                        <tr>
+                            <td>5-9 years</td>
+                            <td>0.325 g</td>
+                            <td>4.5 g</td>
+                        </tr>
+                        <tr>
+                            <td>Children</td>
+                            <td>10-11 years</td>
+                            <td>0.65 g</td>
+                            <td>9 g</td>
+                        </tr>
+                        <tr>
+                            <td>Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>0.65 g</td>
+                            <td>9 g</td>
+                        </tr>
+                        <tr>
+                            <td>Adolescents</td>
+                            <td>14-17 years</td>
+                            <td>1.3 g</td>
+                            <td>18 g</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Alterative</li>
+                                    <li>Diaphoretic</li>
+                                    <li>Diuretic</li>
+                                    <li>Sinusitis, hay fever</li>
+                                    <li>Symptoms of colds and flus</li>
+                                </ul>
+                            </td>
+                            <td>Adults</td>
+                            <td>18 years and older</td>
+                            <td>1.5 g</td>
+                            <td>15 g</td>
+                        </tr>
+                        <tr>
+                            <td>Antioxidants</td>
+                            <td>Adults</td>
+                            <td>18 years and Older</td>
+                            <td> - </td>
+                            <td>18 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref4-1">1</sup>Children and adolescent doses were calculated as a proportion of the adult dose (JC 2023). The use of Sambucus spp. in children and adolescents is supported by the following references: McIntyre 2005&semi; Bove 2001&semi; Gladstar 1999.<br />
+                    <sup id="ref4-2">2</sup>Adult dose supported by the following references: Winston and Kuhn 2008&semi; Tillotson 2001&semi; Fyfe 1903.
+                </p>
+                <p><strong>*Note:</strong> Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+            <h3>Direction(s) for use</h3>
+                <p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+            <p><em>Diuretic</em></p>
+                <p>For occasional use only (APhA 2002&semi; CPhA 2002).</p>
+            <p><em>All other products</em></p>
+                <p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+            <h3>Caution(s) and warning(s) </h3>
+                <p><em>All products</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+                <p><em>Diaphoretic&semi; Symptoms of colds, flus&semi; Sinusitis, hay-fever&semi; Joint pain</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+            <h3>Contraindication(s)</h3>
+                <p>No statement required.</p>
+            <h3>Known adverse reaction(s)</h3>
+                <p><em>All products</em></p>
+                    <p>Stop use if hypersensitivity/allergy occur (Forster-Waldl et al. 2003).</p>
+                <p><em>All products except those making a diuretic claim</em></p>
+                    <p>When using this product diuretic effect may occur (Bradley 1992&semi; Winston and Kuhn 2008&semi; Barnes et al. 2007&semi; Hoffman 2003).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+            </ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Elder-EN.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+            <ul>
+                <li>Abuja PM, Murkovic M., Pfannhauser W. Antioxidant and Prooxidant Activities of Elderberry (Sambucus nigra) Extract in Low-Density Lipoprotein Oxidation. Journal of Agricultural and Food Chemistry 1998&semi;46(10):4091-4096.</li>
+                <li>APhA 2002: Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care. 13<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association&semi; 2002.</li>
+                <li> Artz S.A., Paes I.C., Faloon W.W. Hypokalemia-induced hepatic coma in cirrhosis. Occurrence despite neomycin therapy. Gastroenterology 1966&semi;51(6):1046.</li>
+                <li> Barnes J, Anderson LA, Philipson JD. Herbal Medicines. 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2007.</li>
+                <li>BHC 1992: Bradley PR, editor. British Herbal Compendium Volume 1: A Handbook of Scientific Information on Widely Used Plant Drugs—Companion to Volume 1 of the British Herbal Pharmaocopeia. Bournemouth (GB): British Herbal Medicine Association&semi; 1992.</li>
+                <li> BHP 1983: British Herbal Pharmacopoeia. Bournemouth (GB): British Herbal Medicine Association&semi; 1983.</li>
+                <li>Bone K. A Clinical Guide to Blending Liquid Herbs: Herbal Formulations for the Individual Patient. St. Louis (MI): Churchill Livingstone&semi; 2003.</li>
+                <li>Bove M. An Encyclopedia of Natural Healing for Children and Infants. 2<sup>nd</sup> edition. Toronto (ON): McGraw-Hill&semi; 2001.</li>
+                <li>Carlsen JE, Kober L, Torp-Pedersen C, Johansen P. Relation between dose of bendrofluazide, antihypertensive effect and adverse biochemical effects. British Medical Journal 1990&semi;300(6730): 975.</li>
+                <li>CPhA 2002: Canadian Pharmacists Association. Patient Self-Care. Helping Patients Make Therapeutic Choices. Ottawa (ON): Canadian Pharmacists Association&semi; 2002.</li>
+                <li>Culbreth DMR. A Manual of Materia Medica and Pharmacology 7<sup>th</sup> edition&semi; 1927. Abridged and edited&semi; herbs and botanicals in use today. Scanned by Michael Moore, director, The Southwest School of Botanical Medicine, Bisbee (AZ). [Accessed 2024 February 29]. Available from: http://www.swsbm.com/ManualsOther/Culbreth.html</li>
+                <li>EMA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric population. Adopted September 2006. EMA/CHMP/PEG/194810/2005. [Accessed on 2024 February 29]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdf</li>
+                <li>EMA 2018: Sambuci flos. London (GB): European Medicines Agency: Committee on Herbal Medicinal Products (CHMP). [Accessed 2024 February 29]. Available from: https://www.ema.europa.eu/en/medicines/herbal/sambuci-flos</li>
+                <li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1922 original].</li>
+                <li>Felter HW, Lloyd JU. King&apos;s American Dispensatory. Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</li>
+                <li>Förster-Waldl E, Marchetii M, Schöll I, Focke M, Radauer C, Kinaciyan T, Nentwich I, Jäger S, Schmid ER, Boltz-Nitulescu G, Scheiner O, Jensen-Jarolim E. Type I allergy to elderberry (Sambucus nigra) is elicited by a 33.2 kDa allergen with significant homology to ribosomal inactivating proteins. Clinical and Experimental Allergy 2003&semi;33(2):1703-1710.</li>
+                <li>Fyfe JW. The Essentials of Modern Materia Medica and Therapeutics Eclectic Manual #6&semi; 1903. Abridged&semi; herbal material only. Scanned by Michael Moore, director, The Southwest School of Botanical Medicine, Bisbee (AZ).[Accessed 2024 February 29]. Available from: http://www.swsbm.com/ManualsOther/Fyfe.html</li>
+                <li>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008&semi;30(11):2097-2101.</li>
+                <li>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</li>
+                <li>Gladstar R. Herbal Remedies for Children&apos;s Health. North Adams (MA):Storey Publishing&semi; 1999.</li>
+                <li> Godfrey A, Saunders PR, Barlow K, Gilbert C, Gowan M, Smith F. Principles and Practices of Naturopathic Botanical Medicine. Volume 1: Botanical Medicine Monographs. Toronto (ON): CCNM Press&semi; 2010.</li>
+                <li>Grieve M. A Modern Herbal. Volume 1. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].</li>
+                <li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+                <li>JC 2023: Justice Canada. Natural Health Products Regulations. Ottawa (ON): Justice Canada. [Accessed 2024 December 12]. Available from: https://laws-lois.justice.gc.ca/eng/regulations/SOR-2003-196/index.html</li>
+                <li>McIntyre A. Herbal Treatment of Children: Western and Ayurvedic Perspectives. Toronto (ON): Elsevier Limited&semi; 2005.</li>
+                <li>Mujais SK, Katz AL. Potassium deficiency in the Kidney: Physiology and Pathophysiology, Seldin D.W., Giebisch G (Eds), Lippincott Williams and Wilkins, 2000. p. 1615.</li>
+                <li>NHPID 2025: Natural Health Products Ingredients Database. Natural and Non-Prescription Health Products Directorate. [Accessed 2025 November 24].</li>
+                <li>Remington JP, Woods HC, editors. The Dispensatory of the United States of America 20<sup>th</sup> edition&semi; 1918. Abridged&semi; botanicals only. Scanned by Michael Moore, director, The Southwest School of Botanical Medicine, Bisbee (AZ).[Accessed 2024 February 29]. Available from: http://www.swsbm.com/Dispensatory/USD-1918-complete.pdf</li>
+                <li>Sayre LE. A Manuel of Organic Materia Medica and Pharmacognosy 4<sup>th</sup> edition. Philadelphia (PA): P. Blakiston&apos;s Son &amp; Co.&semi; 1917.Scanned by Michael Moore, director, The Southwest School of Botanical Medicine, Bisbee (AZ).[Accessed 2024 February 29]. Available from: http://www.swsbm.com/SayreMM/SayreMM.html</li>
+                <li>Shook EE. Advanced Treatise in Herbology. Banning (CA): Enos Publishing Co&semi; 1992.</li>
+                <li>Tilgner S. Herbal Medicine from the Heart of the Earth. Creswell (OR): Wise Acre Press&semi; 1999.</li>
+                <li>Tillotson AK. The One Earth Herbal Sourcebook. New York (NY): Kensington Publishing Corp.&semi; 2001.</li>
+                <li>USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) &ndash; Global. U.S. National Plant Germplasm System. [Accessed 2024 February 29]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+                <li>WHO 2002: World Health Organization. WHO Monographs on Selected Medicinal Plants, Volume 2. Geneva (CH): World Health Organization&semi; 2002.</li>
+                <li>Williamson EM. Potter&apos;s Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (GB): The C.W. Daniel Company Limited&semi; 2003.</li>
+                <li>Winston D and Kuhn MA. Herbal Therapy &amp; Supplements A Scientific and Traditional Approach. Philadelphia (PA): Lippincott Williams &amp; Wilkins&semi; 2008.</li>
+                <li>Youdim KAU, Martin A, Josepha JA. Incorporation of the elderberry anthocyanins by endothelial cells increases protection against oxidative stress. Free Radical Biology and Medicine 2000&semi;29(1):51-60.</li>
+            </ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+            <ul>
+                <li>Barak V, Halperin T, Kalickman I. The effect of Sambucol, a black-berry-based natural product, on the production of human cytokines: I. Inflammatory cytokine 2001&semi;12(2):290-296</li>
+                <li>Blumenthal M, Goldberg A, Brinckmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Newton (MA): Integrative Medicine Communications&semi; 2000. Brinker F. The Toxicology of Botanical Medicines. Sandy (OR): Eclectic Medical Publications&semi; 2000.</li>
+                <li>Cook WH. The Physio-Medical Dispensatory: A Treatise on Therapeutics, Materia Medica, and Pharmacy, in Accordance with the Principles of Physiological Medication. Cincinnati (OH): WH Cook&semi; 1869. Reprint version by Medical Herbalism: Journal for the Clinical Practitioner. [Accessed 2024 February 29]. Available from: http://medherb.com/cook/home.htm</li>
+                <li>Duke JA, Bogenschutz-Godwin MJ, duCellier J, Duke PK. Handbook of Medicinal Herbs. 2<sup>nd</sup> edition. Boca Raton (FL): CRC Press&semi; 2002.</li>
+                <li>EMA 2014: EMA/CHMP/44208/2012 Assessment report on Sambucus nigra L., fructus. London (GB): European Medicines Agency: Committee on Herbal Medicinal Products (CHMP). [Accessed 2024 February 29]. Available from: http://www.ema.europa.eu</li>
+                <li>Hill J. The Family Herbal. Bungay: Printed and Published by C. Brightly, and T. Kinnersley&semi; 1812. Reprint version by Henriette Kress 2011-2019: Henriette&apos;s Herbs. [Accessed 2024 February 29]. Available from: http://www.henriettes-herb.com/eclectic/hill/index.html</li>
+                <li>Inami O, Tamura I, Kikuzaki H, Nakatani N. Stability of Anthocyanins of Sambucus canadensis and Sambucus nigra, Journal of Agriculture and Food Chemistry 1996&semi;44:3090-3096.</li>
+                <li>Jourdan AJL. Pharmacopée universelle, ou conspectus des pharmacopées, Volume 2. 2<sup>nd</sup> edition&semi; 1828. [Accessed 2024 April 11]. Available from: https://archive.org/details/pharmacopeunive00jourgoog/page/n6/mode/2up</li>
+                <li>Lee J, Finn CE. Anthocyanins and other polyphenolics in American elderberry (Sambucus canadensis) and European elderberry (S. nigra) cultivars. Journal of the Science of Food and Agriculture 2007&semi;87:2665-2675.</li>
+                <li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+                <li>Murkovic M, Abuja PM, Bergmann AR, Zirngast A, Adam U, Winklhofer-Roob BM, Toplak H. Effects of elderberry juice on fasting and postprandial serum lipids and low-density lipoprotein oxidation in healthy volunteers&semi; a randomized, double-blind, placebo-controlled study. European Journal of Clinical Nutrition 2004&semi;58:244-249.</li>
+                <li>Nakajima J-I, Tanaka I, Seo S, Yamazaki M, Saito K. LC/PDA/ESI-MS Profiling and Radical Scavenging Activity of Anthocyanins in Various Berries. Journal of Biomedicine and Biotechnology 2004&semi;5:241-247.</li>
+                <li>Scudder JM. Specific Medication and Specific Medicines. Cincinnati (OH)&semi; Wilstach, Baldwin &amp; Co. 1870. Reprint version by Henriette Kress 2011-2019: Henriette&apos;s Herbs. [Accessed 2024 February 29]. Available from: http://www.henriettes-herb.com/eclectic/spec-med/sambucus.html</li>
+                <li>Vlachojannis JE, Cameron M, Chrubasik S. A systematic review on the sambuci fructus effect and efficacy profiles. Phytotherapy Research 2010&semi;24(1):1-8.</li>
+                <li>Wichtl M, Anton R, editors. Plantes thérapeutiques: Tradition, pratique officinale, sciences et thérapeutique. 2<sup>nd</sup> edition. Paris (FR): Lavoisier&semi; 2003.</li>
+                <li>Zafra-Stone S, Yasmin T, Bachi M, Chatterjee A. Berry anthocyanins as novel antioxidants in human health and disease prevention. Molecular Nutrition and Food Research 2007&semi;51:576-683.</li>
+                <li>Zakay-Rones Z, Thom E, Wollan T, Wadstein J. Randomized study of the efficacy and safety of oral elderberry extract in the treatment of influenza A and B virus infections. Journal of International Medical Research 2004&semi;32:132-140.</li>
+            </ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

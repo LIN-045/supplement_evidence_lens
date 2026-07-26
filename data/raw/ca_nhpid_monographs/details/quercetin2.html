@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=quercetin2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="b35dc721-5b6e-49be-a1e9-09ab23bf1cf8"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>QUERCETIN</h1>
+	<div class="icon">
+		<a href="dbImages/mono_quercetin_english.pdf" title="QUERCETIN"><img alt="Monograph: QUERCETIN" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 72 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+    </p>
+        
+    <section aria-labelledby="date">		
+        <h2 id="date">Date</h2>
+            <p>January 30, 2026</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th rowspan="1">Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>2-(3,4-Dihydroxyphenyl)-3,5,7-trihydroxy-4H-1-benzopyran-4-one</li>  
+								<li>2-(3,4-Dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one</li>
+								<li>3,3&apos;,4&apos;,5,7-Pentahydroxyflavone</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Quercetin</li> 
+								<li>Quercetin anhydrous</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Citrus bioflavonoids</li> 
+								<li>Quercetin</li> 
+								<li>Quercetin dihydrate</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: NIH 2025&semi; Brayfield and Cadart 2024&semi; RSC 2024&semi; Common names: NIH 2025&semi; RSC 2024&semi; Source information: NHPID 2026.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">	
+        <h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+            <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+			<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>	
+			<ul>
+				<li>Source of (an) antioxidant(s)/Provides (an) antioxidant(s) (Brayfield and Cadart 2024&semi; RSC 2024&semi; Murray and Bongiorno 2006&semi; Harborne et al. 1999).</li>
+				<li>Source of (an) antioxidant(s)/Provides (an) antioxidant(s) that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Brayfield and Cadart 2024&semi; RSC 2024&semi; Murray and Bongiorno 2006&semi; Harborne et al. 1999).</li>
+				<li>Used in Herbal Medicine as a capillary/blood vessel protectant (Brayfield and Cadart 2024&semi; RSC 2024&semi; PDR 2008&semi; Murray and Bongiorno 2006&semi; Harborne et al. 1999).</li>
+			</ul>
+			<p><strong>Note:</strong> If Quercetin is combined with other medicinal ingredients with antioxidant properties, there is an option to use the antioxidant claims in plural. The singular should be used when the product only contains one chemical substance (e.g., Quercetin) as the medicinal ingredient associated with the antioxidant claim.</p>
+    </section>
+
+    <section aria-labelledby="dose">	
+        <h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Antioxidant</em></p>
+					<p>Not to exceed 1,200 milligrams of Quercetin, per day and 600 milligrams per single dose (Wang et al. 2009&semi; Boots et al. 2008&semi; PDR 2008&semi; Erlund et al. 2003&semi; Lamson and Brignall 2000&semi; Hakkinen et al. 1999).</p>
+				<p><em>Capillary/ blood vessel protectant</em></p>
+					<p>600 - 1,200 milligrams of Quercetin, per day. Not to exceed 600 milligrams per single dose (PDR 2008&semi; Murray and Bongiorno 2006).</p>
+				<p><strong>Note:</strong> Must not exceed 600 milligrams of Citrus bioflavonoids, per day, when combined with other bioflavonoids such as but not limited to, Citrus bioflavonoids, hesperidin, rutin, etc.</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>Products providing 40 milligrams or more Quercetin, per day</em></p>
+					<p>Take with a meal/food (Harwood et al. 2007).</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">	
+        <h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p><em>Products providing 40 milligrams or more Quercetin, per day</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Harwood et al. 2007&semi; Boyle et al. 2000).</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">	
+        <h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>Products providing 40 milligrams or more Quercetin, per day</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">		
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>	 
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">	
+        <h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+    </section>
+
+    <section aria-labelledby="specifications">	
+        <h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/QUERCETIN_E.gif" style="width:700px"/></p>
+	</section>
+
+    <section aria-labelledby="referenceCited">	
+        <h2 id="referenceCited">References Cited</h2>
+		<ul>
+			<li>Boots AW, Haenen GR, Bast A. Health effects of quercetin: from antioxidant to nutraceutical. European Journal of Pharmacology 2008&semi;582(2-3):325-37.</li>
+			<li>Boyle SP, Dobson VL, Duthie SJ, Hinselwood DC, Kyle JAM, Collins AR. Bioavailability and efficiency of rutin as an antioxidant: a human supplementation study. European Journal of Clinical Nutrition 2000&semi;54(10):774-784.</li>
+			<li>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical Press&semi; 2024. [Accessed 2024 November 21]. Available from: https://www.medicinescomplete.com/#/browse/martindale</li>
+			<li>Erlund I, Marniemi J, Hakala P, Alfthan G, Meririnne E, Aro A. Consumption of black currants, lingonberries and bilberries increases serum quercetin concentrations. European Journal of Clinical Nutrition 2003&semi;57(1):37-42.</li>
+			<li>H&auml;kkinen SH, K&auml;renlampi SO, Heinonen IM, Mykk&auml;nen HM, T&ouml;rr&auml;nen AR. Content of the flavonols quercetin, myricetin, and kaempferol in 25 edible berries. Journal of Agricultural and Food Chemistry 1999&semi;47(6):2274-2279.</li>
+			<li>Harborne JB, Baxter H, Moss GP, editors. Phytochemical Dictionary: A Handbook of Bioactive Compounds from Plants. 2<sup>nd</sup> edition. Philadelphia (PA): Taylor & Francis Ltd&semi; 1999.</li>
+			<li>Harwood M, Danielewska-Nikiel B, Borzelleca JF, Flamm GW, Williams GM, Lines TC. A critical review of the data related to the safety of quercetin and lack of evidence of <em>in vivo</em> toxicity, including lack of genotoxic/carcinogenic properties. Food and chemical toxicology 2007&semi;45(11):2179-2205.</li>
+			<li>Lamson DW, Brignall MS. Antioxidants and cancer, part 3: quercetin. Alternative Medicine Review 2000&semi;5(3):196-208.</li>
+			<li>Murray MT, Bongiorno PB. Flavonoids—Quercetin, Citrus Flavonoids, and Hydroxyethylrutosides. In: Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine, 3<sup>rd</sup> edition, volume 1. St. Louis (MI): Churchill Livingstone Elsevier&semi; 2006. p. 967-973.</li>
+			<li>NHPID 2026: Natural Health Products Ingredients Database. Natural and Non-Prescription Health Products Directorate. [Accessed 2026 January 4]. Available from: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/?lang=eng</li>
+			<li>NIH 2025: National Institutes of Health. PubChem. Bethesda (MD): National Library of Medicine, US Department of Health & Human Services&semi; 2025. [Accessed 2025 January 16]. Available from: https://pubchem.ncbi.nlm.nih.gov/</li>
+			<li>PDR 2008: Hendler SS, Rorvik D. PDR for Nutritional Supplements. 2<sup>nd</sup> edition. Montvale (NJ): Thomson Healthcare&semi; 2008.</li>
+			<li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 November 26]. Available from: https://merckindex.rsc.org/</li>
+			<li>Utesch D, Feige K, Dasenbrock J, Broschard TH, Harwood M, Danielewska-Nikiel B, Lines TC. Evaluation of the potential in vivo genotoxicity of quercetin. Mutation Research 2008&semi;654(1):38-44.</li>
+			<li>Wang L, Lee IM, Zhang SM, Blumberg JB, Buring JE, Sesso HD. Dietary intake of selected flavonols, flavones, and flavonoid-rich foods and risk of cancer in middle-aged and older women. The American Journal of Clinical Nutrition 2009&semi;89(3):905-912.</li>
+		</ul>
+    </section>
+
+    <section aria-labelledby="referenceReviewed">	
+        <h2 id="referenceReviewed">References Reviewed</h2>
+		<ul>
+			<li>Bae SC, Jung WJ, Lee EJ, Yu R, Sung MK. Effects of antioxidant supplements intervention on the level of plasma inflammatory molecules and disease severity of rheumatoid arthritis patients. Journal of the American College of Nutrition 2009&semi;28(1):56-62.</li>
+			<li>Boots AW, Li H, Schins RP, Duffin R, Heemskerk JW, Bast A, Haenen GR. The quercetin paradox. Toxicology and Applied Pharmacology 2007&semi;222(1):89-96.</li>
+			<li>Cai J, Nelson KC, Wu M, Sternberg P Jr, Jones DP. Oxidative damage and protection of the RPE. Progress in Retinal and Eye Research 2000&semi;19(2):205-221.</li>
+			<li>Chan MM, Mattiacci JA, Hwang HS, Shah A, Fong D. Synergy between ethanol and grape polyphenols, quercetin, and resveratrol, in the inhibition of the inducible nitric oxide synthase pathway. Biochemical Pharmacology 2000&semi;60(10):1539-1548.</li>
+			<li>Chuang CC, Martinez K, Xie G, et al. Quercetin is equally or more effective than resveratrol in attenuating tumor necrosis factor-{alpha}-mediated inflammation and insulin resistance in primary human adipocytes. American Journal of Clinical Nutrition 2010&semi;92(6):1511-1521.</li>
+			<li>Duke JA. Handbook of Phytochemical Constituents of GRAS Herbs and Other Economic Plants. Boca Raton (FL): CRC Press&semi; 2001.</li>
+			<li>Edwards RL, Lyon T, Litwin SE, Rabovsky A, Symons JD, Jalili T. Quercetin reduces blood pressure in hypertensive subjects. Journal of Nutrition 2007&semi;137(11):2405-2411.</li>
+			<li>Egert S, Bosy-Westphal A, Seiberl J, K&#252;rbitz C, Settler U, Plachta-Danielzik S, Wagner AE, Frank J, Schrezenmeir J, Rimbach G, Wolffram S, M&#252;ller MJ. Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study. British Journal of Nutrition 2009&semi;102(7):1065-1074.</li>
+			<li>Egert S, Wolffram S, Schulze B, Langguth P, Hubbermann EM, Schwarz K, Adolphi B, Bosy- Westphal A, Rimbach G, Müller MJ. Enriched cereal bars are more effective in increasing plasma quercetin compared with quercetin from powder-filled hard capsules. The British Journal of Nutrition 2012&semi;107(4):539-546.</li>
+			<li>Egert S, Wolffram S, Bosy-Westphal A, Boesch-Saadatmandi C, Wagner AE, Frank J, Rimbach G, Mueller MJ. Daily quercetin supplementation dose-dependently increases plasma quercetin concentrations in healthy humans. The Journal of Nutrition 2008&semi;138,1615-1621.</li>
+			<li>Feres CA, Madalosso RC, Rocha OA, Leite JP, Guimaraes TM, Toledo VP, Tagliati CA. Acute and chronic toxicological studies of <em>Dimorphandra mollis</em> in experimental animals. Journal of Ethnopharmacology 2006&semi;108(3):450-456.</li>
+			<li>Gates MA, Tworoger SS, Hecht JL, De Vivo I, Rosner B, Hankinson SE. A prospective study of dietary flavonoid intake and incidence of epithelial ovarian cancer. International Journal of Cancer 2007&semi;121(10):2225-2232.</li>
+			<li>Giuliani C, Noguchi Y, Harii N, Napolitano G, Tatone D, Bucci I, Piantelli M, Monaco F, Kohn LD. The flavonoid quercetin regulates growth and gene expression in rat FRTL-5 thyroid cells. Endocrinology 2008&semi;149(1):84-92.</li>
+			<li>Guardia T, Rotelli AE, Juarez AO, Pelzer LE. Anti-inflammatory properties of plant flavonoids. Effects of rutin, quercetin, and hesperidin on adjuvant arthritis in rat. Farmaco Journal 2001&semi;56(9):683-687.</li>
+			<li>Hanninen, Kaartinen K, Rauma AL, Nenonen M, Torronen R, Hakkinen AS, Adlercreutz H, Laakso J. Antioxidants in vegan diet and rheumatic disorders. Toxicology 2000&semi;155(1-3):45-53.</li>
+			<li>Kite GC, Stoneham CA, Veitch NC. Flavonol tetraglycosides and other constituents from leaves of <em>Styphnolobium japonicum</em> (Leguminosae) and related taxa. Phytochemistry 2007&semi;68(10):1407-1416.</li>
+			<li>Knekt P, Isotupa S, Rissanen H, Heli&ouml;vaara M, Järvinen R, H&auml;kkinen S, Aromaa A, Reunanen A. Quercetin intake and the incidence of cerebrovascular disease. European Journal of Clinical Nutrition 2000&semi;54(5):415-417.</li>
+			<li>Kurowska EM, Spence JD, Jordan J, Wetmore S, Freeman DJ, Piche LA, Serratore P. HDL-cholesterol-raising effect of orange juice in subjects with hypercholesterolemia. American Journal of Clinical Nutrition 2000&semi;72(5):1095-1100.</li>
+			<li>Lam TK, Rotunno M, Lubin JH, et al. Dietary quercetin, quercetin-gene interaction, metabolic gene expression in lung tissue and lung cancer risk. Carcinogenesis 2010&semi;31(4):634-642.</li>
+			<li>Longanga OA, Vercruysse A, Foriers A. Contribution to the ethnobotanical, phytochemical and pharmacological studies of traditionally used medicinal plants in the treatment of dysentery and diarrhoea in Lomela area, Democratic Republic of Congo (DRC). Journal of Ethnopharmacology 2000&semi;71(3):411-423.</li>
+			<li>Mackraj I, Govender T, Ramesar S. The antihypertensive effects of quercetin in a salt-sensitive model of hypertension. Journal of Cardiovascular Pharmacology 2008&semi;51(3):239-245.</li>
+			<li>McAnulty SR, McAnulty LS, Nieman DC, Quindry JC, Hosick PA, Hudson MH, Still L, Henson DA, Milne GL, Morrow JD, Dumke CL, Utter AC, Triplett NT, Dibarnardi A. Chronic quercetin ingestion and exercise-induced oxidative damage and inflammation. Applied Physiology Nutrition and Metabolism 2008&semi;33(2):254-262.</li>
+			<li>Nieman DC, Henson DA, Gross SJ, Jenkins DP, Davis JM, Murphy EA, Carmichael MD, Dumke CL, Utter AC, McAnulty SR, McAnulty LS, Mayer EP. Quercetin reduces illness but not immune perturbations after intensive exercise. Medicine & Science in Sports & Exercise 2007&semi;39(9):1561-1569.</li>
+			<li>Otshudi AL, Foriers A, Vercruysse A, Van Zeebroeck A, Lauwers S. In vitro antimicorbial activity of six medicinal plants traditionally used for the treatment of dysentery and diarrhoea in Democratic Republic of Congo (DRC). Phytomedicine 2000&semi;7(2):167-172.</li>
+			<li>Owen RW, Giacosa A, Hull WE, Haubner R, Spiegelhalder B, Bartsch H. The antioxidant/anticancer potential of phenolic compounds isolated from olive oil. European Journal of Cancer 2000&semi;36(10):1235-1247.</li>
+			<li>Owen RW, Mier W, Giacosa A, Hull WE, Spiegelhalder B, Bartsch H. Identification of lignans as major components in the phenolic fraction of olive oil. Clinical Chemistry 2000&semi;46(7):976-988.</li>
+			<li>Rakel D. Integrative Medicine. 2<sup>nd</sup> edition. Philadelphia (PA): Saunders Elsevier&semi; 2007.</li>
+			<li>Ramos S. Effects of dietary flavonoids on apoptotic pathways related to cancer chemoprevention. Journal of Nutritional Biochemistry 2007&semi;18(7):427-442.</li>
+			<li>Ruiz PA, Braune A, Holzlwimmer G, Quintanilla-Fend L, Haller D. Quercetin inhibits TNF- induced NF-kappaB transcription factor recruitment to proinflammatory gene promoters in murine intestinal epithelial cells. Journal of Nutrition 2007&semi;137(5):1208-1215.</li>
+			<li>Shoskes DA, Zeitlin SI, Shahed A, Rajfer J.. Quercetin in men with category III chronic prostatitis: a preliminary prospective, double-blind, placebo-controlled trial. Urology 1999&semi;54:960-963.</li>
+			<li>Taepongsorat L, Tangpraprutgul P, Kitana N, Malaivijitnond S. Stimulating effects of quercetin on sperm quality and reproductive organs in adult male rats. Asian Journal of Andrology 2008&semi;10(2):249-258.</li>
+			<li>Thornhill SM, Kelly AM. Natural treatment of perennial allergic rhinitis. Asian Journal of Andrology 2000&semi;5(5):448-454.</li>
+			<li>Xing N, Chen Y, Mitchell SH, Young CY. Quercetin inhibits the expression and function of the androgen receptor in LNCaP prostate cancer cells. Carcinogenesis 2001&semi;22(3):409-414.</li>
+		</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

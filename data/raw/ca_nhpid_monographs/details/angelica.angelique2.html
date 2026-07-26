@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=angelica.angelique2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="35c1c16e-69e6-488c-b0d1-13b5ca139fec"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>ANGELICA - ANGELICA ARCHANGELICA</h1>
+<div class="icon">
+      <a href="dbImages/mono_angelica_english.pdf" title="Monograph: Creatine monohydrate (English)">
+        <img alt="Monograph: Creatine monohydrate (English)" style="position: relative; top: -2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22">
+        (PDF Version&nbsp;-&nbsp;36&nbsp;K)</a>
+    </div>
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLA) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.   </p>
+
+    <p><strong>Notes</strong></p>
+    <ul>
+    <li>Text in parentheses is additional optional information which can be included on label at the applicant's discretion. </li>
+    <li>The solidus (/) indicates either term and/or statement may be selected on the label.</li>
+
+    </ul>
+    <section>
+    <h2>Date</h2>
+       				          
+    <p>August 29, 2025</p> 
+    </section>
+
+<section>
+    <h2>Proper name(s), Common name(s), Source information </h2>
+
+    <table class="subject">
+        <caption>
+            Table 1.Proper name(s), Common name(s), Source information
+        </caption>
+        <tbody><tr>
+            <th scope="col" rowspan="2">Proper name(s)</th>
+            <th scope="col" rowspan="2">Common name(s)</th>
+
+            <th scope="colgroup" colspan="2">Source information</th>
+        </tr>
+        <tr>
+            <th scope="col">Source material(s)</th>
+            <th scope="col">Part(s)</th>
+            <th scope="col">Preparations(s)</th>
+        </tr>
+        <tr>
+            <td><i>Angelica archangelica</i></td>
+            <td>
+            <ul>
+                <li>Angelica</li>
+                <li>Angelique</li>
+                <li>Archangel</li>
+                <li>European angelica</li>
+                <li>Garden angelica</li>
+                <li>Root of the holy ghost</li>
+                <li>Wild parsnip</li>
+            </ul>
+            </td>
+            <td><i>Angelica archangelica</i></td>
+            <td>
+            <ul>
+                <li>Leaf</li>
+                <li>Root and rhizome</li>
+                <li>Seed</li>
+            </ul>
+            </td>
+            <td>
+                Dry
+            </td>
+        </tr>
+        </tbody></table>
+
+        <p>References: Proper name: USDA 2023; Common names: USDA 2023; Brinker 2010; Barnes et al. 2007; Hoffmann 2003; Blumenthal et al. 2000; McGuffin et al. 2000; Felter and Lloyd 1983; Grieve 1971; Source information: Barnes et al. 2007; Bradley 2006; Hoffmann 2003; Blumenthal et al. 2000; Mills 1985; Felter and Lloyd 1983; Grieve 1971.</p>
+</section>
+
+<section>
+    <h2>Route of administration</h2> 
+
+    <p>Oral</p>  
+    
+</section>
+
+<section>
+    <h2>Dosage form(s)</h2> 
+    
+    <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+    <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+
+</section>
+
+<section>
+    <h2>Use(s) or Purpose(s)</h2> 	
+    <ul>
+        <li>Traditionally used in Herbal Medicine as an expectorant to help relieve bronchial illness, coughs and colds (Bradley 2006; Hoffmann 2003; Blumenthal et al. 2000; Grieve 1971).</li>
+        <li>Traditionally used in Herbal Medicine to aid digestion (stomachic) (Bradley 2006; Hoffmann 2003; Blumenthal et al. 2000; Mills 1985; Grieve 1971).</li>
+        <li>Traditionally used in Herbal Medicine to help relieve flatulent dyspepsia (carminative) (Bradley 2006; Hoffmann 2003; Grieve 1971)</li>
+        <li>Traditionally used in Herbal Medicine to help relieve feverish conditions by inducing sweating (diaphoretic) (Bradley 2006; Grieve 1971).</li>
+        <li>Traditionally used in Herbal Medicine as a diuretic (Barnes et al. 2007; Hoffmann 2003; Mills 1985; Felter and Lloyd 1983).</li>
+    </ul>
+    <p><strong>Notes</strong></p>
+    <ul>
+    <li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g. Traditionally used in Herbal Medicine to aid digestion (stomachic) and help relieve flatulent dyspepsia (carminative)).</li>
+    <li>For multi-ingredient products: 
+        <ul>
+            <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g. Angelica is traditionally used in Herbal Medicine to help relieve feverish conditions by inducing sweating (diaphoretic)).</li>
+        
+            <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required. </li>
+        </ul>
+    </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Dose(s)</h2> 	
+
+    <h3>Subpopulation(s) </h3>
+
+    <p>Adults 18 years and older</p>
+
+    <h3>Quantity(ies)</h3>
+
+    <p><strong>Methods of preparation</strong>: Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Infusion)</p>
+
+    <p><em>Root and Rhizome</em></p> 	
+
+    <p>0.3 - 12 grams dried root and rhizome, per day (Barnes et al. 2007; Bradley 2006; Blumenthal et al. 2000; Mills 1985). </p>
+    
+    <p><em>Leaf</em></p> 	 
+        
+    <p>0.4 - 5 grams dried leaf, 3 times per day (BHP 1983).</p> 
+
+    <p><em>Seed</em></p> 	 	
+
+    <p>1 - 2 grams dried seed, 3 times per day (Mills 1985).</p> 
+
+    <p><strong>*Note</strong>: Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+
+    
+    <h3>Direction(s) for use</h3>
+
+    <p>No statement required</p>
+</section>
+
+<section>
+    <h2>Duration(s) of use</h2> 
+        
+    <p><em>Diuretic</em></p> 	 
+        
+    <p>For occasional use only (Berardi et al. 2002; CPhA 2002).</p> 
+
+    <p><em>Other uses</em></p>
+        
+    <p>No statement required.</p> 
+
+</section>
+
+<section>
+    <h2>Risk information</h2> 	
+
+    <h3>Caution(s) and warning(s)</h3>  
+        
+    <ul>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding (Brinker 2010; Barnes et al. 2007).</li>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a peptic ulcer (Brinker 2010; Barnes et al. 2007).</li>
+    <li>When using this product avoid prolonged exposure to sunlight, ultraviolet light (UV) or UV therapy (Brinker 2010; Barnes et al. 2007; Blumenthal et al. 2000).</li>
+
+</ul>    
+    
+    <h3>Contraindication(s)</h3>  
+        
+    <p>Do not use if you are pregnant (Brinker 2010; Barnes et al. 2007; Blumenthal et al. 2000).</p>
+
+    <h3>Known adverse reaction(s)</h3>
+
+    <p>No statement required.</p>  
+    </section>
+
+<section>    
+    <h2>Non-medicinal ingredients</h2> 
+
+    <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p> 
+
+</section>
+
+<section>
+    <h2>Storage conditions</h2>		
+
+    <p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+
+</section>
+<section>
+    <h2>Specifications</h2> 
+    <ul>
+        <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+        <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+    </ul>
+</section>
+
+
+<section>
+    <h2>EXAMPLE OF PRODUCT FACTS:</h2> 
+
+    <p>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</p>
+    <p class="alignCenter">
+        <img src="/nhpid-bdipsn/dbImages/ANGELICA_E.gif" alt="Product Facts Table" style="width: 700px">
+    </p>
+</section>
+<section>
+    <h2>References cited</h2> 
+
+    <ul>
+    <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines, 3rd edition. London (UK): Pharmaceutical Press; 2007. </li>
+    
+    <li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13th edition. Washington (DC): American Pharmaceutical Association; 2002. </li>
+    
+    <li>BHP 1983: British Herbal Pharmacopoeia. Cowling (UK): British Herbal Medical Association; 1983. </li>
+    
+    <li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000. </li>
+    
+    <li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 2. Bournemouth (UK): British Herbal Medicine Association; 2006. </li>
+    
+    <li>Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications; 2010. </li>
+    
+    <li>CPhA 2002: Canadian Pharmacists Association. Patient Self-Care. Helping Patients Make Therapeutic Choices. Ottawa (ON): Canadian Pharmacists Association; 2002. </li>
+    
+    <li>Felter HW, Lloyd JU. King's American Dispensatory, Volume 1, 18th edition. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1898 original]. </li>
+
+    <li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace & Company publication]. </li>
+    
+    <li>Hoffmann D. Medical Herbalism. Rochester (VT): Healing Arts Press; 2003. </li>
+    
+    <li>McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. Herbs of Commerce, 2nd edition. Silver Spring (MD): The American Herbal Products Association; 2000.   </li>
+    
+    <li>Mills S. The Dictionary of Modern Herbalism. Wellingborough (UK): Thorsons Publishers Ltd; 1985. </li>
+    
+    <li>USDA 2023: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2023 September 11]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+    </ul>
+    </section>
+
+<section>    
+    <h2>References reviewed</h2> 
+    
+    <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines: A Guide for Healthcare Professionals, 2nd edition. London (UK): The Pharmaceutical Press; 2002. </li>
+    
+    <li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. American Herbal Products Association's Botanical Safety Handbook. Boca Raton (FL): CRC Press; 1997.  </li>
+    
+    <li>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone; 2000. </li>
+    
+    <li>Moerman DE. Native American Ethnobotany. Portland (OR): Timber Press; 1998. </li>
+    
+    <li>Williamson EM, Evans FJ, Wren RC. Potter's New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (UK): C.W. Daniel Company Limited; 1988. </li>
+
+</section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

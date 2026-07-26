@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=tamar.malabar2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="6d0e47bc-bc67-4205-9cd7-d788502b22ac"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>MALABAR TAMARIND - GARCINIA GUMMI-GUTTA</h1> 
+	<div class="icon">
+		<a href="dbImages/mono_malabar-tamarind--garcinia-gummigutta_english.pdf" title="Monograph: Malabar tamarind - Garcinia gummi-gutta (English)"><img alt="Monograph: Malabar tamarind - Garcinia gummi-gutta (English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 36 K)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>September 26, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject"> 
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Garcinia gummi-gutta</em></td>
+						<td>Malabar tamarind</td>
+						<td><em>Garcinia gummi-gutta</em></td>
+						<td>Fruit peel</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2025, McGuffin et al. 2000&semi; Common name: USDA 2025&semi; Source information: Hayamizu et al. 2008.</p>
+	</section> 
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2>
+			<p>Oral</p> 
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2> 
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p>Could help temporarily increase satiety/feeling of fullness (Gatta et al. 2009).</p> 
+			<p><strong>Note:</strong> The terms &lsquo;Help&rsquo; or &lsquo;Help to&rsquo; can be used interchangeably on the label.</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3> 
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3> 
+				<p><strong>Methods of preparation:</strong> Standardized extracts</p>
+					<p>2 - 3 grams of extract standardized to 50 - 60% hydroxycitric acid, per day&semi; 1.5 - 2 grams of extract per single dose (Kim et al. 2011&semi; Gatta et al. 2009&semi; Ishii et al. 2003&semi; Heymsfield et al. 1998).</p>
+			<h3>Direction(s) for use</h3> 
+				<p>Take before meals.</p> 
+		</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Ishii et al. 2003&semi; Heymsfield et al. 1998).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver disorder (HC 2025).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications (HC 2025).</li>
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain (HC 2025).</li>
+				</ul>
+			<h3>Contraindication(s)</h3> 
+				<p><em>All products</em></p>
+					<p>Do not use if you are pregnant (HC 2010).</p>
+			<h3>Known adverse reaction(s)</h3> 
+				<p>No statement required.</p> 
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2> 
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Product Regulations</em>.</p>
+	</section>
+	
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2> 
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/MALABAR-TAMARIND_E.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2> 
+			<ul>
+				<li>Gatta B, Zuberbuehler C, Arnold M, Aubert R, Langhans W, Chapelot D. Acute effects of pharmacological modifications of fatty acid metabolism on human satiety. British Journal of Nutrition 2009&semi;101:1867-1877.</li>
+				<li>Hayamizu K, Tomi H, Kaneko I, Shen M, Soni MG, Yoshino G. Effects of Garcinica cambogia extract on serum sex hormones in overweight subjects. Fitoterapia 2008&semi;79:255-261.</li>
+				<li>HC 2025: Health Canada: Summary Safety Review - Garcinia gummi-gutta and Hydroxycitric Acid - Assessing the Potential Risk of Hepatotoxicity. Available from: https://dhpp.hpfb-dgpsa.ca/review-documents/resource/SSR1755272782909</li>
+				<li>HC 2010: Health Canada: Prenatal Nutrition Guidelines for health Professionals: Gestational weight gain [Accessed 2024 April 7]. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/nutrition/prenatal/ewba-mbsa-eng.pdf</li>
+				<li>Heymsfield SB, Allison DB, Vasselli JR, Pietrobelli A, Greenfield D, Nunez C. Garcinia cambogia (Hydroxycitric acid) as a potential antiobesity agent, a randomized controlled trial. Journal of the American Medical Association 1998&semi;280(18):1596-1600.</li>
+				<li>Ishii Y, Kaneko I, Shen M, Hayamizu K, Shigematsu N, Tomi H, Yoshino G, Shimaski H. Safety of Garcinia cambogia extract in healthy volunteers: High-dose administration study II. Journal of Oleo Science 2003&semi;52(12):663-671.</li>
+				<li>Kim JE, Jeon SM, Park KH, Lee WS, Jeong TS, McGregor RA, Choi MS. Does Glycine max leaves or Garcinia Cambogia promote weight-loss or lower plasma cholesterol in overweight individuals: a randomized control trial. Nutrition Journal 2011&semi;10:94.</li>
+				<li>McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. Herbs of Commerce. 2<sup>nd</sup> edition. Silver Spring (MD): American Herbal Products Association&semi; 2000.</li>
+				<li>USDA 2025: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2025 July 28]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Antonio J, Colker M, Torina GC, Shi Q, Brink W, Kalman D. Effects of a standardized guggulsterone phosphate supplement on body composition in overweight adults: a pilot study. Current Therapeutic Research 1999&semi;60:220-227.</li>
+				<li>ASHP 2005: American Society of Health-System Pharmacists. American Hospital Formulary Service (AHFS) Drug Information. Philadelphia (PA): Lippincott Williams and Wilkins&semi; 2005.</li>
+				<li>Asghar M, Monjok E, Kouamou G, Ohia SE, Bagchi D, Lokhandwala MF. Super CitriMax (HCA-SX) attenuates increases in oxidative stress, inflammation, insulin resistance, and body weight in developing obese Zucker rats. Molecular and cellular biochemistry 2007&semi;304(1-2):93-99.</li>
+				<li>Badmaev V, Majeed M. Open field, physician controlled, clinical evaluation of botanical weight loss formula citrin. Presented at: Nutracon 1995: Nutriceuticals, Dietary Supplements and Functional Foods&semi; July 11-13, 1995&semi; Las Vegas, Nev. [as reviewed in Heymsfield et al. 1998 and Soni et al. 2004].</li>
+				<li>Behne D, Kyriakopoulos A, Gessner H, Vormann J, Gunther T. Sex-related effects of zinc deficiency on the selenium metabolism in rats. Journal of trace elements and electrolytes in health and disease 1992&semi;6(1):21-25.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Burdock G, Bagchi M. Letter to the editor: Garcinia cambogia toxicity is misleading. Food and Chemical Toxicology 2005&semi;43:1683-1684.</li>
+				<li>Cheema-Dhadli S, Halperin ML, Leznoff CC: Inhibition of enzymes which interact with citrate by (-) hydroxycitrate and 1,2,3,- tricarboxybenzene. European journal of biochemistry 1973&semi;38:98-102.</li>
+				<li>Conte AA. A non-prescription alternative on weight reduction therapy. American Journal of Bariatric Medicine 1993:17-19 [as reviewed in Heymsfield et al. 1998, Jena et al. 2002&semi; Soni et al. 2004].</li>
+				<li>Conte AA. How I do it in my bariatric practice: A non-prescription alternative in weight reduction therapy. Bariatrician 1993:7-19 [as reviewed in Kriketos et al. 1999].</li>
+				<li>Conte AA. The effects of (-)-hydroxycitrate and chromium (GTF) on obesity. Journal of the American College of Nutrition 1994&semi;13:535 [Abstract 60].</li>
+				<li>CPhA 2001: Canadian Pharmacists Association. Compendium of Nonprescription Products: Companion to CPS. Ottawa (ON): Canadian Pharmacists Association&semi; 2001.</li>
+				<li>Downs BW, Bagchi M, Subbaraju GV, Shara MA, Preuss HG, Bagchi D. Bioefficacy of a novel calcium-potassium salt of (-)-hydroxycitric acid. Mutation Research 2005&semi;579(1-2):149-162.</li>
+				<li>Fukuoka M, Kobayashi T, Hayakawa T. Mechanism of testicular atrophy induced by di-n-butyl phthalate in rats. Part 5. Testicular iron depletion and levels of ferritin, haemoglobin and transferrin in the bone marrow, liver and spleen. Journal of Applied Toxicology 1995&semi;15(5):379-386.</li>
+				<li>Girola M, De Bernardi M, Contos S, et al. Dose effect in lipid-lowering activity of a new dietary integrator (chitosan, Garcinia cambogia extract, and chrome). Acta Toxicol Ther. 1996&semi;17:25-40 [as reviewed in Heymsfield et al. 1998 and Soni et al. 2004].</li>
+				<li>Graff L, Muller G, Burnel D. In vitro and in vivo evaluation of potential aluminum chelators. Veterinary and Human Toxicology 1995&semi;37(5):455-461.</li>
+				<li>Hayamizu K, Ishii Y, Kaneko I, Shen M, Sakaguchi H, Okuhara Y, Shigematsu N, Miyazaki S, Shimaski H. Effects of long-term administration of Garcinia cambogia extract on visceral fat accumulation in humans: A placebo-controlled double blind trial. Journal of Oleo Science 2001&semi; 50(10):805-812.</li>
+				<li>Hayamizu K, Ishii Y, Kaneko I, Shen M, Okuhara Y, Sakaguchi H, SHigematsu N, Shimasaki H. No-observed-adverse-effect level (NOAEL) and sequential-high-doses administration study on Garcinia cambogia extract in humans. Journal of Oleo Science 2002&semi;51:365-369.</li>
+				<li>Hayamizu K, Ishii Y, Shigematsu N, Okuhara Y, Tomi H, Furuse M, Yoshino G, Shimasaki H. Safety of Garcinia cambogia extract in healthy men: high-doses administration study I. Journal of Oleo Science 2003a&semi;52(9):499-504.</li>
+				<li>Hayamizu K, Ishii Y, Kaneko I, Shen M, Okuhara Y, Shigematsu N, Tomi H, Furuse M, Yoshino G, Shimasaki H. Effects of Garcinia cambogia (Hydroxycitric acid) on visceral fat accumulation: A double-blind, randomized, placebo-controlled trial. Current Therapeutic Research 2003b&semi;64(8):551-567.</li>
+				<li>IOM 2005: Institute of Medicine. Panel on Dietary Reference Intakes for Electrolytes and Water, and the Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate. Washington (DC): National Academies Press&semi; 2005.</li>
+				<li>Jena BS, Jayaprakasha GK, Singh RP, Sakariah KK. Chemistry and biochemistry of (-) hydroxycitric acid from Garcinia. Journal of agricultural and food chemistry 2002&semi;50:10-22.</li>
+				<li>Kiyose C, Ogino S, Kubo K, Takeuchi M, Saito M. Relationship between Garcinia cambogia induced impairment of spermatogenesis and meiosis-activating sterol production in rat testis. Journal of clinical biochemistry and nutrition 2006&semi;38:180-187.</li>
+				<li>Kovacs EMR, Westerterp-Plantenga MS. Effects of (-)-hydroxycitrate on net fat synthesis as de novo lipogenesis. Physiology &amp; Behaviour 2006&semi;88(4-5):371-381.</li>
+				<li>Kovacs EM, Westerterp-Plantenga MS, Saris WH. The effects of 2-week ingestion of (-) hydroxycitrate and (-)-hydroxycitrate combined with medium-chain triglycerides on satiety, fat oxidation, energy expenditure and body weight. International journal of obesity and related metabolic disorders : journal of the International Association for the Study of Obesity 2001&semi; 25(7):1087-1094.</li>
+				<li>Kovacs EMR, Westerterp-Plantenga MS, de Vries M, Brouns F, Saris WHM. Effects of 2-week ingestion of (-)-hydroxycitrate and (-)-hydroxycitrate combined with medium-chain triglycerides on satiety and food intake. Physiological &amp; Behaviour 2001b&semi;74:543-549.</li>
+				<li>Kriketos AD, Thompson HR, Greene H, Hill JO. (-)-hydroxycitric acid does not affect energy expenditure and substrate oxidation in adult males in a post-absorptive state. International Journal of Obesity 1999&semi;23:867-873.</li>
+				<li>Lewis YS, Neelakantan S. (-)-Hydroxycitric acid - the principal acid in the fruits of Garcinia cambogia. Phytochemistry 1965&semi;4:619-625.</li>
+				<li>Lim K, Ryu S, Nho HS, Choi SK, Kwon T, Suh H, So J, Tomita K, Okuhara Y, Shigematsu N. (-)-Hydroxycitric acid ingestion increases fat utilization during exercise in untrained women. Journal of Nutritional Science and Vitaminology (Tokyo) 2003&semi;49(3):163-167.</li>
+				<li>Lim K, Ryu S, Ohishi Y, Watanabe I, Tomi H, Suh H, Lee WK, Kwon T. Short-term (-) hydroxycitrate ingestion increases fat oxidation during exercise in athletes. Journal of Nutritional Science and Vitaminology (Tokyo) 2002&semi;48(2):128-133.</li>
+				<li>Louter-van de Haar J, Wielinga PY, Scheurink AJW, Nieuwenhuizen AG. Comparison of the effects of three different (-)-hydroxycitric acid preparations on food intake in rats. Nutrition and Metabolism 2005&semi;2:23.</li>
+				<li>Mansi IA, Huang J. Rhabdomyolysis in response to weight-loss herbal medicine. The American Journal of the Medical Sciences 2004&semi;327(6):356-357.</li>
+				<li>Márquez F, Babio N, Bulló M, Salas-Salvadó J. Evaluation of the safety and efficacy of hydroxycitric acid or Garcinia cambogia extracts in humans. Critical Reviews in Food Science and Nutrition 2012&semi;52(7):585-594.</li>
+				<li>Mattes RD, Bormann L. Effects of (-)-hydroxycitric acid on appetite variables. Physiology &amp; Behaviour 2000&semi;71:87-94.</li>
+				<li>Meachem SJ, Nieschlag E, Simoni M. Inhibin B in male reproduction: pathophysiology and clinical relevance. European Journal of Endocrinology 2001&semi;145:561-571.</li>
+				<li>Michno A, Skibowska A, Raszeja-Specht A, Cwikowska J, Szutowicz A. The role of adenosine triphosphate citrate lyase in the metabolism of acetyl coenzyme a and function of blood platelets in diabetes mellitus. Metabolism 2004&semi;53(1):66-72.</li>
+				<li>Opala T, Rzymski P, Pischel I, Wilczak M, Woźniak J. Efficacy of 12 weeks supplementation of a botanical extract-based weight loss formula on body weight, body composition and blood chemistry in healthy, overweight subjects - A randomised double-blind placebo-controlled clinical trial. European Journal of Medicinal Research 2006&semi;11:343-350.</li>
+				<li>Pierik F, Burdorf A, de Jong F, Weber R. Inhibin B: a novel marker of spermatogenesis. Annals of Medicine 2003&semi;35(1):12-20.</li>
+				<li>Preuss HG, Bagchi D, Bagchi M, Rao CVS, Dey DK, Satyanarayana S. Effects of a natural extract of (-)-hydroxycitric acid (HCA-SX) and a combination of HCA-SX plus niacin-bound chromium and Gymnema sylvestre extract on weight loss. Diabetes, Obesity and Metabolism 2004a&semi;6:171-180.</li>
+				<li>Preuss HG, Bagchi D, Bagchi M, Rao CVS, Satyanarayana S, Dey DK. Efficacy of a novel, natural extract of (-)-hydroxycitric acid (HCA-SX) and a combination of HCA-SX, niacin-bound chromium and Gymnema sylvestre extract in weight management in human volunteers: A pilot study. Nutrition Research 2004b&semi;24:45-58.</li>
+				<li>Preuss HG, Bagchi D, Rao CVS, Echard BW, Satayanarayana S, Bagchi M. Effect of hydroxycitric acid on weight loss, body mass index and plasma leptin levels in human subjects. FASEB Journal 2002&semi;16:A1020 [as reviewed in Soni et al. 2004].</li>
+				<li>Preuss HG, Garis RI, Bramble JD, Bagchi D, Bagchi M, Rao CV, Satyanarayana S. Efficacy of a novel calcium/potassium salt of (-)-hydroxycitric acid in weight control. International Journal of Clinical Pharmacology Research 2005&semi;25(3):133-144.</li>
+				<li>Ramos R, Flores Saenz J, Alarcon D. 1996 [as reviewed in Heymsfield et al. 1998].</li>
+				<li>Ramos RR, Saenz JL, Aguilar CF. Extract of Garcinia cambogia in the control of obesity [in Spanish]. Investigacion medica International 1995&semi;22:97-100 [as reviewed in Soni et al. 2004 and Preuss et al. 2004].</li>
+				<li>Rothacker DQ, Waitman BE. Effectiveness of a Garcinia cambogia and natural caffeine combination in weight loss: a double-blind placebo-controlled pilot study. International Journal of Obesity 1997&semi;21(suppl 2):53 [as reviewed in Heymsfield et al. 1998 and Soni et al. 2004].</li>
+				<li>Saito M, Ueno M, Ogino S, Kubo K, Nagata J, Takeuchi M. High dose Garcinia cambogia is effective in suppressing fat accumulation in developing male Zucker obese rats, but is highly toxic to the testis. Food and Chemical Toxicology 2005&semi;43:411-419.</li>
+				<li>Shara M, Ohia SE, Schmidt RE, Yasmin T, Zardetto-Smith A, Kincaid A, Bagchi M, Chatterjee A, Bagchi D, Stohs SJ. Dose- and time-dependent effects of a novel (-)-hydroxycitric acid extract on body weight, hepatic and testicular lipid peroxidation, DNA fragmentation and histopathological data over a period of 90-days. Molecular and Cellular Biochemistry 2003&semi;254:339-346.</li>
+				<li>Shara M, Ohia SE, Schmidt RE, Yasmin T, Zardetto-Smith A, Kincaid A, Bagchi M, Chatterjee A, Bagchi D, Stohs SJ Physico-chemical properties of a novel (-)-hydroxycitric acid extract and its dose- and time-dependent effects on body weight, selected organ weights, hepatic lipid peroxidation and DNA fragmentation, hematology and clinical chemistry, and histopathological changes over a period of 90-days. Molecular and Cellular Biochemistry 2004&semi;260:171-186.</li>
+				<li>Soni MG, Burdock GA, Preuss HG, Stohs SJ, Ohia SE, Bagchi D. Safety assessment of (-) hydroxycitric acid and Super CitriMax®, a novel calcium/potassium salt. Food and Chemical Toxicology 2004&semi;42:1513-1529.</li>
+				<li>Thom E. A randomized, double-blind, placebo-controlled trial of new weight-reducing agent of natural origin. The Journal of International Medical Research 2000&semi;28:229-233.</li>
+				<li>Thom E. Hydroxycitrate (HCA) in the treatment of obesity. International Journal of Obesity 1996&semi;20(suppl 4):48 [as reviewed in Heymsfield et al. 1998, Jena et al. 2002, and Soni et al. 2004].</li>
+				<li>Tomita K, Okuhara Y, Shigematsu N, Suh H, Lim K. (-)-Hydroxycitrate ingestion increases fat oxidation during moderate intensity exercise in untrained men. Bioscience, biotechnology, and biochemistry 2003&semi;67(9):1999-2001.</li>
+				<li>Toromanyan E, Aslanyan G, Arroyan E, Gabrielyan E, Panossian A. Efficacy of Slim339 in reducing body weight of overweight and obese human subjects. Phytotherapy Research 2007&semi; 21:1177-1181.</li>
+				<li>van Loon LJC, van Rooijen JJM, Niesen B, Verhagen H, Saris WHM, Wagenmakers AJM. Effects of acute (-)-hydroxycitrate supplementation on substrate metabolism at rest and during exercise in humans. American Journal of Clinical Nutrition. 2000&semi;72:1445-1450.</li>
+				<li>Vasques CA, Rossetto S, Halmenschlager G, Linden R, Heckler E, Fernandez MS, Alonso JL. Evaluation of the pharmacotherapeutic efficacy of Garcinia cambogia plus Amorphophallus konjac for the treatment of obesity. Phytotherapy Research 2008&semi;22(9):1135-1140.</li>
+				<li>Venkateswara Rao G, Karunakara AC, Santhosh Babu RR, Ranjit D, Chandrasekara Reddy G. Hydroxycitric acid lactone and its salts: preparation and appetite suppression studies. Food Chemistry 2010&semi;120:235-239.</li>
+				<li>Westerterp-Plantenga MS, Kovacs EMR. The effect of (-)-hydroxycitrate on energy intake and satiety in overweight humans. International Journal of Obesity 2002&semi;26(6):870-872.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory" hidden>
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

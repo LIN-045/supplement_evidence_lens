@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=cayenne.oral.orale2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="9216136a-1244-49f0-8e15-78b61f63b5ff"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>CAYENNE - <em>CAPSICUM ANNUUM</em><p>Oral</p></h1>	
+	<div class="icon">
+		<a href="dbImages/mono_cayenne--capsicum-annuum--oral_english.pdf" title="Cayenne - Capsicum Annuum - Oral"><img alt="Monograph: Cayenne - Capsicum Annuum - Oral" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 73 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+		
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+	        <p>March 27, 2026</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+            <table id="ref1" class="subject">
+                <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Proper name(s)</th>
+                        <th rowspan="2">Common name(s)</th>
+                        <th colspan="3">Source information</th>
+                    </tr>
+                    <tr>
+                        <th>Source material(s)</th>
+                        <th>Part(s)</th>
+                        <th>Preparation(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Capsicum annuum</em></td>
+                        <td>
+                            <ul>
+                                <li>Cayenne</li> 
+                                <li>Cayenne pepper</li>
+                                <li>Chili pepper</li>
+                                <li>Paprika</li>
+                                <li>Red Pepper</li>
+                            </ul>
+                        </td>
+                        <td><em>Capsicum annuum</em></td>
+                        <td>Fruit</td>
+                        <td>Dry</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>References: Proper name: USDA 2024&semi; Common names: Gardner and McGuffin 2013&semi; Blumenthal et al. 2000&semi; Source information: Bradley 2006&semi; Felter and Lloyd 1983.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+	        <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage Form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+                <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+            <ul>
+                <li>Source of antioxidants/Provides antioxidants (CNF 2024).</li>
+                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (CNF 2024).</li>
+                <li>(Traditionally) used in Herbal Medicine to aid digestion (Bradley 2006&semi; Ellingwood 1983&semi; Felter and Lloyd 1983).</li>
+                <li>(Traditionally) used in Herbal Medicine to help support peripheral circulation (Bradley 2006&semi; Ellingwood 1983&semi; Wren 1907).</li>
+            </ul>
+	    	<p><strong>Notes</strong>
+                <ul>
+                    <li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Traditionally used in Herbal Medicine to aid digestion and to help support peripheral circulation).</li>
+                    <li><strong>For multi-ingredient products:</strong>
+                        <ul>
+                            <li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1&rpar; both traditional and modern claims are present or 2&rpar; when claims originate from multiple systems of traditional medicine (e.g., Cayenne is traditionally used in Herbal Medicine to aid digestion).</li>
+                            <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+        	<h3>Subpopulation(s)</h3>
+		        <p>Adults 18 years and older</p>
+            <h3>Quantity(ies)</h3>
+                <p>Methods of preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+                <p><em>Antioxidant</em></p>
+                    <p>Not to exceed 650 milligrams of dried fruit, per day (Bradley 2006&semi; Blumenthal 2003&semi; Hoffmann 2003&semi; Lust 1987&semi; Felter and Lloyd 1983&semi; Grieve 1971).</p>
+                <p><em>Digestion&semi; Peripheral circulation</em></p>
+                    <p>15 &ndash; 650 milligrams of dried fruit, per day (Bradley 2006&semi; Blumenthal 2003&semi; Hoffmann 2003&semi; Lust 1987&semi; Felter and Lloyd 1983&semi; Grieve 1971).</p>
+            <h3>Direction(s) for use</h3>
+                <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of Use</h2>
+		    <p>No statement required.</p>
+    </section>
+	
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk Information</h2>
+            <h3>Caution(s) and warning(s)</h3>
+                <p><em>All products</em>
+                    <ul>
+                        <li>Keep out of the reach of children. If overdose or accidental ingestion occurs, call a poison control centre or get medical help right away (CPS 2008).</li>
+                        <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Bradley 2006&semi; Boon and Smith 2004).</li>
+                        <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have stomach ulcers or inflammation (Brinker 2010).</li>
+                    </ul>
+                </p>
+                <p><em>Digestion&semi; Peripheral circulation</em></p>
+                    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+            <h3>Contraindication(s)</h3>
+                <p>No statement required.</p>		
+            <h3>Known adverse reaction(s)</h3>
+                <p>No statement required.</p>
+    </section>		
+		
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+        	<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+    </section>
+	
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+		    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+    </section>
+	
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+            </ul>
+    </section>
+        
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+            <p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+		    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/CAYENNE_ORAL_E.gif" alt="Product Facts Table" style="width:700px"/></p> 
+	</section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References cited</h2>
+            <ul>
+                <li>Blumenthal M. ABC Clinical Guide to Herbs. New York (NY): Theime&semi; 2003.</li>
+                <li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</li>
+                <li>Boon H, Smith MJ. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs, 2<sup>nd</sup> edition. Toronto (ON): Robert Rose Inc&semi; 2004.</li>
+                <li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 2. Bournemouth (GB): British Herbal Medicine Association&semi; 2006.</li>
+                <li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+                <li>CNF 2024: Canadian Nutrient File, Food and Nutrition, Health Canada. [Accessed 2026 March 5]. Available from: https://food-nutrition.canada.ca/cnf-fce/index-eng.jsp</li>
+                <li>CPS 2008: Repchinksy C, Welbanks L, Bhalla A, Fortin K, Jarvis B, Jovaisas B, Acharya S. Compendium of Pharmaceutical Specialties. Ottawa (ON): Canadian Pharmacists Association&semi; 2008.</li>
+                <li>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1919 original].</li>
+                <li>Felter HW, Lloyd JU. King&apos;s American Dispensatory, Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</li>
+                <li>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Raton (FL): Taylor and Francis Group; 2013.</li>
+                <li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].</li>
+                <li>Hoffman D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+                <li>Lust J. The Herb Book. New York (NY): Bantam Books Incorporated, published by arrangement with Benedict Lust Publications&semi; 1987.</li>
+                <li>USDA 2024: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 August 13]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+                <li>Wren RC. Potter&apos;s Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark&semi; 1907.</li>
+            </ul>
+    </section>
+	
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References reviewed</h2>
+            <ul>
+                <li>Ahuja KDK, Robertson IK, Geraghty DP, Ball MJ. The effect of 4-week chilli supplementation on metabolic and arterial function in humans. European Journal of Clinical Nutrition 2007&semi;61(3):326-333.</li>
+                <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines, 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2007.</li>
+                <li>Bernstein JE, Bickers DR, Dahl MY, Roshal JY. Treatment of chronic post-herpetic neuralgia with topical capsaicin. A preliminary study. Journal of the American Academy of Dermatology 1987&semi;17(1):93-96.</li>
+                <li>Bortolotti M, Coccia G, Grossi G, Miglioli M. Treatment of functional dyspepsia with red pepper. Alimentary Pharmacology and Therapeutics 2002&semi;16(6):1075-1082.</li>
+                <li>Charkoudian N, Fromy B, Saumet JL. Reflex control of the cutaneous circulation after acute and chronic local capsaicin. Journal of applied physiology 2001&semi;90(5):1860-1864.</li>
+                <li>Deng PY, Li YJ. Calcitonin gene-related peptide and hypertension. Peptides 2005&semi;26(9):1676-1685.</li>
+                <li>Desai HG, Venugopalan K, Anita FP. Effect of red chilli powder on the DNA content of gastric aspirates. Gut 1973&semi;14:974-976.</li>
+                <li>Ferrell WR, Wong BB, Lockhart JC, Ramsay JE. Gender differences in regional cutaneous microcirculatory responses to capsaicin. Fundamentals of Clinical Pharmacology 2004&semi;18(2):195-200.</li>
+                <li>Gupta S, Lozano-Cuenca J, Villalón CM, de Vries R, Garrelds IM, Avezaat CJ, van Kats JP, Saxena PR, MaassenVanDenBrink A. Pharmacological characterisation of capsaicin induced relaxations in human and porcine isolated arteries. Naunyn-Schmiedeberg&apos;s archives of pharmacology 2007&semi;375(1):29-38.</li>
+                <li>Heck AM, DeWitt BA, Lukes AL. Potential interactions between alternative therapies and warfarin. American Journal of Health-System Pharmacy 2000&semi;57(13):1221-1227.</li>
+                <li>Helme RD, McKernan S. Neurogenic flare responses following topical application of capsaicin in humans. Annals of Neurology 1985&semi;18(4):505-509.</li>
+                <li>Hogaboam CM, Wallace JL. Inhibition of platelet aggregation by capsaicin. An effect unrelated to actions in sensory afferent neurons. European Journal of Pharmacology 1991&semi;202(1):129-131.</li>
+                <li>Johnson W. Final report on the safety assessment of Capsicum Annuum extract, Capsicum Annuum fruit extract, capsicum Annuum Resin, Capsicum Annuum fruit powder, Capsicum Frutescens resin, and Capsaicin. International Journal of Toxicology 2007&semi;26(Supplement 1):3106.</li>
+                <li>Joliffe VA, Anand P, Kidd BL. Assessment of cutaneous sensory and autonomic axon reflexes in rheumatoid arthritis. Annals of the Rheumatic Diseases 1995&semi;54(4):251-255.</li>
+                <li>Kumar N, Vij JC, Sarin SK, Anand BS. Do chillies influence healing of duodenal ulcer? British Medical Journal 1984&semi;288(6433):1803-1804.</li>
+                <li>Lee YS, Kho HS, Kim YK, Chung SC. Influence of topical capsaicin on facial sensitivity in response to experimental pain. Journal of Oral Rehabilitation 2007&semi;34(1):9-14.</li>
+                <li>Matucci-Cerinic M, Marabini S, Jantsch S, Cagnoni M, Partsch G. Effects of capsaicin on the metabolism of rheumatoid arthritis synoviocytes in vitro. Annals of the Rheumatic Diseases 1990&semi;49(8):598-602.</li>
+                <li>Morris VH, Cruwys SC, Kidd BL. Characterization of capsaicin induced mechanical hyperalgesia as a marker for altered nociceptive processing in patients with rheumatoid arthritis. Pain 1997&semi;71(2):179-186.</li>
+                <li>Rodriguez-Stanley S, Collings KL, Robinson M, Owen W, Miner PB. The effects of capsaicin on reflux, gastric emptying and dyspepsia. Alimentary Pharmacology and Therapeutics 2000&semi;14(1):129-134.</li>
+                <li>Satyanarayana MN. Capsaicin and gastric ulcers. Critical Reviews of Food Science and Nutrition 2006&semi;46(4):275-328.</li>
+                <li>Schnitzer TJ, Morton C, Coker S, Flynn P. Effectiveness of reduced applications of topical capsaicin (0.025%) cream in osteoarthritis. Arthritis and Rheumatism 1992&semi;35:S132.</li>
+                <li>Shalansky S, Lynd L, Richardson K, Ingaszewski A, Kerr C. Risk of warfarin-related bleeding events and supratherapeutic international normalized ratios associated with complementary and alternative medicine: a longitudinal analysis. Pharmacotherapy 2007&semi;27(9):1237-1247.</li>
+                <li>Simone DA, Ochoa J. Early and late effects of prolonged topical capsaicin on cutaneous sensibility and neurogenic vasodilation in humans. Pain 1991&semi;47(3):285-294.</li>
+                <li>Tsuchiya H. Biphasic membrane effects of capsaicin, an active component in capsicum species. Journal of Ethnopharmacology 2001&semi;75(2-3):295-299.</li>
+                <li>Van der Schueren BJ, de Hoon JN, Vanmolkot FH, Van Hecken A, Depre M, Kane SA, De Lepeleire I, Sinclair SR. Reproducibility of the capsaicin-induced dermal blood flow response as assessed by laser Doppler perfusion imaging. British Journal of Clinical Pharmacology 2007&semi;64(5):580-590.</li>
+                <li>Visudhiphan S, Poolsuppasit S, Piboonnukarintr O, Tumliang S. The relationship between high fibrinolytic activity and daily capsicum ingestion in Thais. American Journal of Clinical Nutrition 1982&semi;35(6):1452-1458.</li>
+                <li>Wang DH. The vanilloid receptor and hypertension. Acta Pharmacologica Sinica 2005&semi;26(3):286-294.</li>
+                <li>Westerterp-Plantenga MS, Smeets A, Lejeune MPG. Sensory and gastrointestinal satiety effects of capsaicin on food intake. International Journal of Obesity 2005&semi;29(6):682-688.</li>
+                <li>Willams SR, Clark RF, Dunford JV. Contact dermatitis associated with capsaicin: Human hand syndrome. Annals of Emergency Medicine 1995&semi;25(5):713-715.</li>
+                <li>Yoshioka M, St-Pierre S, Drapeau V, Dionne I, Doucer E, Suzuki M, Tremblay A. Effects of red pepper on appetite and energy intake. British Journal of Nutrition 1999&semi;82(2):115-123.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+  					<tr>
+    					<th>Publication date</th>
+    					<th>Update type</th>
+						<th>Summary of main updates (from March 2026)</th>
+					</tr>
+  				</thead>
+				<tbody>
+					<tr>
+						<td>2026-03-27</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Introductory notes</li>
+                                <li>Addition of a parenthesis for the term "traditionally" in the claims to make it optional</li>
+                                <li>Addition of source of antioxidants claims</li>
+                                <li>Addition of notes in the Uses or purposes section</li>
+                                <li>Additional methods of preparation</li>
+                                <li>Risk statement wording</li>
+                                <li>Inclusion of the standard statement for storage conditions</li>
+                                <li>Inclusion of a Product Facts Table example</li>
+                                <li>Reference section</li>
+                                <li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2018-10-30</td>
+						<td>Validation (only includes oral)</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-09-13</td>
+						<td>Minor updates (includes both oral/topical)</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-05-13</td>
+						<td>Minor updates (includes both oral/topical)</td>
+						<td>&ndash;</td>
+					</tr>
+                    <tr>
+						<td>2008-01-21</td>
+						<td>Initial release (includes both oral/topical)</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

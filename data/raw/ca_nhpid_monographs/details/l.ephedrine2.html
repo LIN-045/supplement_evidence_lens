@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=l.ephedrine2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="5e167d8b-a390-45ea-b703-247bd24abbcc"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Ephedrine, L-</h1>
+	<div class="icon">
+    	<a href="dbImages/mono_ephedrine-l_english.pdf" title="Monograph: Ephedrine, L (English)"><img alt="Monograph: Ephedrine, L(English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 36 K)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLA) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	<p><strong>Compliance with Precursor Control Regulations:</strong></p>
+		<p>The <em>Precursor Control Regulations</em> (PCR) (JC 2024) allows Canada to fulfill its international obligations with respect to the <em>United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances, 1988,</em> and provides a framework for the regulation of activities involving precursor chemicals which can be used in the production of illicit drugs and substances. Under the PCR, regulated chemicals are grouped into two classes: Class A and Class B. For Class A precursors such as ephedrine and/or products containing them, persons wishing to be involved in activities such as importation, exportation, production, packaging, selling, and/or providing must first obtain a licence.</p>
+		<p>Further information regarding compliance with the PCR, including application forms and guidance documents pertaining to the application for a Class A precursor licence, is available at http://www.healthcanada.gc.ca/precursors.</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>February 27, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="2">Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>(alphaR)-alpha-[(1S)-1-(Methylamino)ethyl]-benzenemethanol</li>
+								<li>Benzenemethanol, alpha-[1-(methylamino)ethyl]-, [R-(R*,S)]-</li>
+								<li><em>l</em>-Ephedrine</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>l</em>-Ephedrine</li> 
+								<li>Ephedrine</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><em>l</em>-Ephedrine</li>
+								<li><em>l</em>-Ephedrine hydrochloride</li>
+								<li><em>l</em>-Ephedrine sulfate</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: RSC 2024&semi; USP-NF 2024&semi; NLM 2018&semi;; Common names: RSC 2024&semi; USP-NF 2024&semi; NLM 2018&semi; Source information: RSC 2024&semi; NLM 2018.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Used as a decongestant (for common cold) (US FDA 2022&semi; Mills and Bone 2005&semi; Hoffman 2003&semi; Williamson 2003&semi; Blumenthal et al. 2000&semi; BHP 1983).</li>
+				<li>Temporarily relieves/For the temporary relief of cold/(and) flu symptoms such as nasal congestion/sinus congestion/stuffy nose/nasal stuffiness (US FDA 2022&semi; Mills and Bone 2005&semi; Hoffman 2003&semi; Williamson 2003&semi; Blumenthal et al. 2000&semi; BHP 1983).</li>
+				<li>Temporarily relieves/For the temporary relief of nasal congestion/sinus congestion/stuffy nose/nasal stuffiness (due to hay fever/allergic rhinitis/the common cold) (US FDA 2022&semi; Mills and Bone 2005&semi; Hoffman 2003&semi; Williamson 2003&semi; Blumenthal et al. 2000&semi; BHP 1983).</li>
+				<li>Nasal decongestant (US FDA 2022&semi; Mills and Bone 2005&semi; Hoffman 2003&semi; Williamson 2003&semi; Blumenthal et al. 2000&semi; BHP 1983).</li>
+			</ul>
+			<p><strong>Note:</strong> The above uses can be combined on the product label (e.g., Nasal decongestant to temporarily relieve nasal congestion due to the common cold).</p>
+
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adolescents 12 to 17 years and adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p>8 &ndash; 32 milligrams l-Ephedrine per day&semi; Not to exceed 8 milligrams per single dose (US FDA 2022&semi; US FDA 2004&semi; HC 2003&semi; Pickup et al. 1976). </p>
+			<h3>Direction(s) for use</h3>
+				<p>Wait at least 4 hours between each dose (US FDA 2022).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>Consult a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 3 days (Mills and Bone 2005&semi; US FDA 2004&semi; Blumenthal et al. 2000).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+        	<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Keep out of reach of children. In case of overdose, call a poison control centre or get medical help right away (US FDA 2022).</li>
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen or last for more than 3 days (US FDA 2022).</li>
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms are accompanied by a high fever that lasts longer than 3 days, the production of thick yellow/green phlegm, rash or a persistent headache.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Brinker 2010&semi; Hackman et al. 2006&semi; Kuczkowski 2006&semi; Mills and Bone 2005&semi; Coffey et al. 2004&semi; Greenway et al. 2004&semi; Haller et al. 2004&semi; Hoffman 2003&semi; Boozer et al. 2002&semi; Boozer et al. 2001&semi; Kalman et al. 2000).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking any other cough and cold or weight control medications, or products which contain caffeine or pseudoephedrine (Brinker 2010&semi; Hackman et al. 2006&semi; Mills and Bone 2005&semi; Naik and Freudenberger 2004&semi; Boozer et al. 2002&semi; Boozer et al. 2001).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have asthma, diabetes, glaucoma, heart disease, high blood pressure, kidney disease, difficulty urinating, thyroid disease, seizure disorders or any other serious medical condition (US FDA 2022&semi; Brinker 2010&semi; Hackman et al. 2006&semi; Mills and Bone 2005&semi; Bensky et al. 2004&semi; Coffey et al. 2004&semi; Greenway et al. 2004&semi; Haller et al. 2004&semi; Hioki et al. 2004&semi; Hoffman 2003&semi; Williamson 2003&semi; Boozer et al. 2002&semi; Boozer et al. 2001&semi; Blumenthal et al. 2000&semi; Kalman et al. 2000&semi; BHP 1983).</li>
+				</ul>
+        	<h3>Contraindication(s)</h3> 
+				<p>Do not use with a monoamine oxidase inhibitor (MAOI) or for 2 weeks after stopping the MAOI drug (Brinker 2010&semi; Greenway et al. 2004&semi; Hoffman 2003&semi; Brinker 2001&semi; Blumenthal et al. 2000&semi; Kalman et al. 2000&semi; Dingemanse et al. 1996&semi; Dawson et al. 1995&semi; Elis et al. 1967).</p>		
+        	<h3>Known adverse reaction(s)</h3> 
+				<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience severe headache, confusion, visual changes/change in vision, nervousness, dizziness, sleeplessness, difficulty or pain when urinating, or allergic reactions (Khang et al. 2024&semi; Ryu et al. 2017&semi; Brinker 2010&semi; Mills and Bone 2005&semi; Bensky et al. 2004&semi; Mehendale et al. 2004&semi; Shekelle et al. 2003&semi; Boozer et al. 2001&semi; Blumenthal et al. 2000&semi; Astrup et al. 1992).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+			<p><em>All products (information for industry&semi; not for labelling).</em></p>
+				<p>To be packaged in airtight container, protected from light (USP-NF 2024&semi; Ph.Eur 2023).</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-Prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li> 
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li> 
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/EPHEDRINE_E.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>
+				<li>Astrup A, Buemann B, Christensen NJ, Toubro S, Thorbek G, Victor OJ, Quaade F. The effect of ephedrine/caffeine mixture on energy expenditure and body composition in obese women. Metabolism 1992&semi;41(7):686-688.</li>
+				<li>Bensky D, Clavey S, Stoger E, Gamble A. Chinese Herbal Medicine: Materia Medica, 3<sup>rd</sup> edition. Seattle (WA): Eastland Press&semi; 2004.</li>
+				<li>BHP 1983: British Herbal Medicine Association (BHMA) Scientific Committee. British Herbal Pharmacopoeia. Bournemouth (GB): British Herbal Medicine Association&semi; 1983.</li>
+				<li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</li>
+				<li>Boozer CN, Daly PA, Homel P, Solomon JL, Blanchard D, Nasser JA, Strauss R, Meredith T. Herbal ephedra/caffeine for weight loss: a 6-month randomized safety and efficacy trial. International Journal of Obesity and Related Metabolic Disorders 2002&semi;26(5):593-604.</li>
+				<li>Boozer CN, Nasser JA, Heymsfield SB, Wang V, Solomon JL. An herbal supplement containing Ma Huang-Guarana for weight loss: a randomized, double-blind trial. International Journal of Obesity & Related Metabolic Disorders 2001&semi;25:316-324.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Coffey CS, Steiner D, Baker BA, Allison DB. A randomized double-blind placebo-controlled clinical trial of a product containing ephedrine, caffeine, and other ingredients from herbal sources for treatment of overweight and obesity in the absence of lifestyle treatment. International Journal of Obesity & Related Metabolic Disorders 2004&semi;28(11):1411-1419.</li>
+				<li>Dawson JK, Earnshaw SM, Graham CS. Dangerous monoamine oxidase inhibitor interactions are still occurring in the 1990s. Journal of Accident and Emergency Medicine 1995&semi;12:49-51.</li>
+				<li>Dingemanse J, Guentert T, Gieschke R, Stabl M. Modification of the cardiovascular effects of ephedrine by the reversible monoamine oxidase a-inhibitor moclobemide. Journal of Cardiovascular Pharmacology 1996&semi;28(6):856-861.</li>
+				<li>Elis J, Laurence DR, Mattie H, Prichard BNC. Modification by monoamine oxidase inhibitors of the effect of some sympathomimetics on blood pressure. British Medical Journal 1967&semi;2:75-78.</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Ration (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>Greenway FJ, de Jonge L, Blanchard D, Frisard M, Smith, SR. Effect of a dietary herbal supplement containing caffeine and ephedra on weight, metabolic rate, and body composition. Obesity Research 2004&semi;12(7):1152-1157.</li>
+				<li>Hackman RM, Havel PJ, Schwartz HJ, Rutledge JC, Watnik MR, Noceti EM, Stohs SJ, Stern JS, Keen CL. Multinutrient supplement containing ephedra and caffeine causes weight loss and improves metabolic risk factors in obese women: a randomized controlled trial. International Journal of Obesity 2006&semi;30:1545-1556.</li>
+				<li>Haller CA, Jacob P, Benowitz NL. Enhanced stimulant and metabolic effects of combined ephedrine and caffeine. Clinical Pharmacology and Therapeutics 2004&semi;75(4):259-273.</li>
+				<li>HC 2003: Health Canada reminds Canadian of the dangers of Ephedra/ephedrine products. [Accessed 2024 March 18]. Available from: http://healthycanadians.gc.ca/recall-alert-rappel-avis/hc-sc/2008/13279a-eng.php</li>
+				<li>Hioki C, Yoshimoto K, Yoshida T. Efficacy of Bofu-tsusho-san, an oriental herbal medicine, in obese Japanese women with impaired glucose tolerance. Clinical and Experimental Pharmacology and Physiology 2004&semi;31:614-619.</li>
+				<li>Hoffman D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>JC 2024: Justice Canada. 2024. Precursor Control Regulations. Part 1 &ndash; Class A Precursors. Ottawa (ON) Department of Justice Canada. [Accessed 2025 April 7]. Available from:  http://laws-lois.justice.gc.ca/eng/regulations/SOR-2002-359/index.html</li>
+				<li>Kalman D, Colker C, Shi O, Swain M. Effects of a weight-loss aid in healthy overweight adults: double-blind, placebo-controlled clinical trial. Current Therapeutic Research 2000&semi;61(4):199-205.</li>
+				<li>Khang YE, Chae J, Hguyen TT, Khang JJ, Oh SY. A Case Report of Acute Bilateral Mydriasis Induced by Herbal Medication. Neuroophthalmology 2024&semi;48(3):193-197.</li>
+				<li>Kuczkowski KM. Ephedrine containing oral nutritional supplements in a pregnant athlete: is it worth the risk? Acta Obstetricia et gynecologica Scandinavica 2006&semi;85(2):247-248.</li>
+				<li>Mehendale SR, Bauer BA, Yuan C. Ephedra-containing dietary supplements in the US versus ephedra as a Chinese medicine. The American Journal of Chinese Medicine 2004&semi;32(1):1-10.</li>
+				<li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+				<li>Naik SJ, Freudenberger RS. Ephedra-associated cardiomyopathy. The Annals of Pharmacotherapy 2004&semi;38:400-403.</li>
+				<li>NLM 2018: United States National Library of Medicine. ChemIDplus Advanced. Search terms: Pseudoephedrine, Pseudoephedrine Hydrochloride, Pseudoephedrine Sulfate. Bethseda (MD): Specialized Information Services, United States National Library of Medicine, National Institutes of Health, United States Department of Health & Human Services. [Accessed 2024 March 18]. Available from: https://chem.nlm.nih.gov/chemidplus/name/ephedrine%20l-form</li>
+				<li>Ph.Eur. 2023: European Pharmacopoeia Commission. European Pharmacopoeia, 11<sup>th</sup> edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM)&semi; 2023.</li>
+				<li>Pickup ME, May Ca, Ssendagire R, Paterson JW. The pharmacokinetics of ephedrine after oral dosage in asthmatics receiving acute and chronic treatment. British Journal of Clinical Pharmacology 1976&semi;3:123-134.</li>
+				<li>RSC 2024: Royal Society of Chemistry: The Merck Index Online [Accessed 2024 March 18]. Available from: https://merckindex.rsc.org/</li>
+				<li>Ryu SJ, Shin YU, Khang MH, Cho HY, Seong M. Bilateral acute myopia and angle closure glaucoma induced by Ma-huang (Ephedra). Medicine 2017&semi;96(50):e9257.</li>
+				<li>Shekelle PG, Hardy ML, Morton SC, Maglione M, Mojica WA, Suttorp MJ, Rhodes SL, Jungvig L, Gagné J. Efficacy and safety of ephedra and ephedrine for weight loss and athletic performance: a meta-analysis. Journal of the American Medical Association 2003&semi;289(12):1537-1545.</li>
+				<li>US FDA 2022: United States Food and Drug Administration. Over-the-Counter Monograph M012: Cold, Cough, Allergy, Bronchodilator and Antiasthmatic Drug Products for Over-the-Counter Human Use&semi; Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2025 March 31]. Available from: : https://dps-admin.fda.gov/omuf/sites/omuf/files/primary-documents/2022-10/OTC%20Monograph_M012-Cough%20Cold%20Allergy%20Bronchodilator%20and%20Antiasthmatic%20Drug%20Products%20for%20OTC%20Human%20Use%2010.14.2022_0.pdf</li>
+				<li>US FDA 2004: United States Food and Drug Administration. Final Rules Declaring Dietary Supplements Containing Ephedrine Alkaloids Adulterated Because They Present an Unreasonable Risk&semi; Final Rule. Federal Register, Volume 69, Number 28, February 11, 2004, Rules and Regulations, Docket Number 1995N-0304. Rockville (MD): United States Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2024 March 18]. Available from: https://www.federalregister.gov/documents/2004/02/11/04-2912/final-rule-declaring-dietary-supplements-containing-ephedrine-alkaloids-adulterated-because-they</li>
+				<li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention, Inc.&semi; 2024.</li>
+				<li>Williamson EM. Potter&apos;s Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (GB): The C.W. Daniel Company Limited&semi; 2003.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Aaronson AL, Ehrlich NJ, Frankel DB, Gutman AA, Aaronson DW. Effective oral nasal decongestion: A double-blind crossover analysis. Annals of Allergy 1968&semi;26(3):145-150.</li>
+				<li>Bent S, Tiedt TN, Odden MC, Shlipak, MG. The relative safety of ephedra compared with other herbal products. Annals of Internal Medicine 2003&semi;138:468-471.</li>
+				<li>Bitsko RH, Reefhuis J, Louik C, Werler M, Feldkamp ML, Waller DK, Frias J, Honein MA. Periconceptional use of weight loss products including ephedra and the association with birth defects. Birth Defects Research Part A: Clinical and Molecular Teratology 2008&semi;82(8):553-562.</li>
+				<li>Burke LM. Positive Drug Tests from Supplements. Sportscience 2000&semi;4(3):1-5.</li>
+				<li>Cui J, Zhou T. Analysis of alkaloids in Chinese ephedra species by gas chromatographic methods. Phytochemical Analysis 1991&semi;2:116-119.</li>
+				<li>Doyle H. Herbal stimulant containing ephedrine has also caused psychosis. British Medical Journal 1996&semi;313:756.</li>
+				<li>Drew CD, Knight GT, Hughes DT, Bush M. Comparison of the effects of D-(-)-ephedrine and L-(+)-pseudoephedrine on the cardiovascular and respiratory systems in man. British Journal of Clinical Pharmacology 1978&semi;6(3):221-225.</li>
+				<li>Farel RM, Fanta CH. Drug therapy for asthma. New England Journal of Medicine 2009&semi;360(24): 2578-2579.</li>
+				<li>Glidden RS, DiBona FJ. 1977. Urinary retention associated with ephedrine. The Journal of Pediatrics 1977&semi;90(6):1013-1014.</li>
+				<li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</li>
+				<li>Gurley BJ, Gardner SF, White LM, Wang PL. Ephedrine pharmacokinetics after the ingestion of nutritional supplements containing Ephedra sinica (ma huang). Therapeutic Drug Monitoring 1998&semi;20(4):439-445.</li>
+				<li>Herridge CF, A&apos;Brook MF. Ephedrine psychosis. British Medical Journal 1968&semi;2:160.</li>
+				<li>Hutchins GM. Correspondence: Dietary supplements containing ephedra alkaloids. The New England Journal of Medicine 2001&semi;344(14):1094-1100.</li>
+				<li>IOM 2002: Institute of Medicine. 2002. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Washington (DC): The National Academy of Sciences&semi; 2002.</li>
+				<li>Jacobs KM, Hirsch KA. Psychiatric complications of Ma-Huang. Psychosomatics 2000&semi;41(1):58-62.</li>
+				<li>Katz JL. A psychotic manic state induced by an herbal preparation. Psychosomatics 2000&semi;41(1):73.</li>
+				<li>Kim HK, Choi YH, Chang WT, Verpoorte R. Quantitative analysis of ephedrine analogues from ephedra species using 1H-NMR. Chemical & Pharmaceutical bulletin 2003&semi;51(12):1382-1385.</li>
+				<li>Kitani Y, Zhu S, Omote T, Tanaka K, Batkhuu J, Sanchir C, Fushimi H, Mikage M, Komatsu K. Molecular analysis and chemical evaluation of ephedra plants in Mongolia. Biological & Pharmaceutical Bulletin 2009&semi;32(7):1235-1243.</li>
+				<li>Laitinen LA, Empey DW, Bye C, Britton MG, McDonnell K, Hughes DTD. A comparison of the bronchodilator action of pseudoephedrine and ephedrine in patients with reversible airway obstruction. European Journal of Clinical Pharmacology 1982&semi;23:107-109.</li>
+				<li>Lake CR, Tenglinet R, Chernow B, Holloway, H. Psychomotor stimulant-induced mania in a genetically predisposed patient: a review of the literature and report of a case. Journal of Clinical Psychopharmacology 1983&semi;3(2):97-100.</li>
+				<li>Lambert MT. Paranoid psychoses after abuse of proprietary cold remedies. British Journal of Psychiatry 1987&semi;151:548-550.</li>
+				<li>Maglione M, Miotto K, Iguchi M, Jungvig L, Morton SC, Shekelle PG. Psychiatric effects of ephedra use: an analysis of Food and Drug Administration reports of adverse events. American Journal of Psychiatry 2005&semi;62(1):189-191.</li>
+				<li>MHRA 2009: MHRA Public Assessment Report - Controlling the risk of misuse of medicines containing pseudoephedrine and ephedrine. London (UK): Medicines and Healthcare products Regulatory Agency&semi; 2009.</li>
+				<li>Miller SC, Waite C. Ephedrine-type alkaloid-containing dietary supplements and substance dependence. Psychosomatics 2003&semi;44(6):508-511.</li>
+				<li>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</li>
+				<li>Mizoguchi H, Wilson A, Jerdack GR, Hull JD, Goodale M, Grender JM, Tyler BA. Efficacy of a single evening dose of syrup containing paracetamol, dextromethorphan hydrobromide, doxylamine succinate and ephedrine sulfate in subjects with multiple common cold symptoms. International Journal of Clinical Pharmacology and Therapeutics 2007&semi;45(4):230-236.</li>
+				<li>Munns GF, Aldrich CA. Ephedrine in the treatment of bronchial asthma in children. Journal of the American Medical Association 1927&semi;88(16):1233.</li>
+				<li>Nadir A, Agrawal S, King PD, Marshall JB. Acute hepatitis associated with the use of a Chinese herbal product, Ma-huang. American Journal of Gastroenterology 1996&semi;91(7):1436-1438.</li>
+				<li>Ranieri TL, Ciolino LA. Rapid selective screening and determination of ephedrine alkaloids using GC-MS footnote mark. Phytochemical Analysis 2008&semi;19:127-135.</li>
+				<li>Rowe DJ, Baker AC. Perioperative risks and benefits of herbal supplements in aesthetic surgery. Aesthetic Surgery Journal 2009&semi;29(2):150-157.</li>
+				<li>Sagara K, Oshima T, Misaki T. A simultaneous determination of norephedrine, pseudoephedrine, ephedrine and methylephedrine in Ephedrae Herba and oriental pharmaceutical preparations by ion-pair high-performance liquid chromatography. Chemical & Pharmaceutical Bulletin (Tokyo) 1983&semi;31(7):2359-2365.</li>
+				<li>Samenuk D, Link MS, Homoud MK, Contreras R, Theoharides TC, Wang PJ, Estes III NAM. Adverse cardiovascular events temporally associated with ma huang, an herbal source of ephedrine. Mayo Clinic Proceedings 2002&semi;77:12-16.</li>
+				<li>Slodki SJ, Montgomery CA. Clinical comparison of oxymetazoline and ephedrine in nasal congestion. Current Therapeutic Research, Clinical and Experimental 1965&semi;7:19-22.</li>
+				<li>Song HJ, Shim KN, Ryu KH, Kim TH, Jung SA, Yoo K. A case of ischemic colitis associated with the herbal food supplement ma huang. Yonsei Medical Journal 2008&semi;49(3):496-499.</li>
+				<li>TGA 2023: Australian Therapeutic Goods Administration. Personal Importation Scheme. Symonston (AU): Australian Government Department of Health and Ageing, Therapeutic Goods Administration. [Accessed 2024 April 16]. Available from: https://www.tga.gov.au/products/unapproved-therapeutic-goods/personal-importation-scheme</li>
+				<li>Theoharides TC. Sudden death of a healthy college student related to ephedrine toxicity from a ma huang-containing drink. Journal of Clinical Psychopharmacology 1997&semi;17(5):437-439.</li>
+				<li>US FDA 1997: United States Food and Drug Administration. Dietary Supplements Containing Ephedrine Alkaloids. Federal Register, Volume 62, Number 107, June 4, 1997, Proposed Rule. Docket Number 95N&ndash;0304. Rockville (MD): Department of Health and Human Services, U.S. Food and Drug Administration. [Accessed 2024 April 16]. Available from: https://www.govinfo.gov/content/pkg/FR-1997-06-04/html/97-14393.htm</li>
+				<li>Vahedi K, Domigo V, Amarenco P, Bousser MG. Ischaemic stroke in a sportsman who consumed MaHuang extract and creatine monohydrate for body building. Journal of Neurology, Neurosurgery, and Psychiatry 2000&semi;68:112-113.</li>
+				<li>Walton R, Manos GH. Psychosis related to ephedra-containing herbal supplement use. Southern Medical Journal 2003&semi;96(7):718-720.</li>
+				<li>White LM, Gardner SF, Gurley BJ, Marx MA, Wang PL, Estes M. Pharmacokinetics and cardiovascular effects of ma huang (Ephedra sinica) in normotensive adults. The Journal of Clinical Pharmacology 1997&semi;37:116-122.</li>
+				<li>Whitfield AGW, Arnott WM, Waterhouse JAH. The effect of ephedrine in asthma and emphysema. Quarterly Journal of Medicine 1950&semi;19(76):319-326.</li>
+				<li>Whitehouse AM, Duncan JM. Ephedrine psychosis rediscovered. British Journal of Psychiatry 1987&semi;150:258-261.</li>
+				<li>Wingert WE, Mundy LA, Collins GL, Chmara ES. Possible role of pseudoephedrine and other over-the-counter cold medications in the deaths of very young children. Journal of Forensic Science 2007&semi;52(2):487-490.</li>
+				<li>Zahn K, Li R, Purssell R. Cardiovascular toxicity after ingestion of “herbal ecstacy.” The Journal of Emergency Medicine 1999&semi;17(2):289-291.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version history</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from Feb 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-02-27</td>
+						<td>Minor updates and regulatory alignment</td>
+						<td>
+							<ul>
+								<li>Introductory notes</li>
+								<li>Proper names</li>
+								<li>Adjustments to the wording of the claims&semi; addition of claims</li>
+								<li>Addition of a direction for use</li>
+								<li>Adjustment of the duration of use as per US FDA 2022</li>
+								<li>Reorganization and adjustments to the risk statements to ensure clarity and alignment with the revisions made for pseudoephedrine</li>
+								<li>Revision of the storage conditions (not for labelling)</li>
+								<li>Inclusion of a Product Facts Table example</li>
+								<li>Reference section</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2018-07-31</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2010-07-06</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2010-04-22</td>
+						<td>Initial release</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=whey.prod.lactoserum2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="26e0f973-aa1d-4994-9534-4691cadc4299"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'>  <!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+  <h1>
+    WHEY PRODUCTS
+   </h1>
+   <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the
+    <a href="/home-accueil/help-aide/index-eng.php#alt">
+     alternate format help</a>
+    section.
+   </p>
+   <div class="icon">
+    <a href="dbImages/mono_whey-products_english.pdf" title="WHEY PRODUCTS">
+     <img alt="Monograph: WHEY PRODUCTS" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+     (PDF Version - 217 KB)
+    </a>
+   </div>
+   <p>
+    This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+   </p>
+   <p>
+    <strong>
+     Notes
+    </strong>
+   </p>
+   <ul>
+    <li>
+     Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+    </li>
+    <li>
+     The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+    </li>
+   </ul>
+   <section aria-labelledby="date">
+    <h2 id="date">
+     Date
+    </h2>
+    <p>
+     November 29, 2024
+    </p>
+   </section>
+   <section aria-labelledby="properNameCommonNameSourceInformation">
+    <h2 id="properNameCommonNameSourceInformation">
+     Proper name(s), Common name(s), Source information
+    </h2>
+    <table class="subject">
+     <caption>
+      Table 1.  Proper name(s), Common name(s), Source information
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="2" scope="col">
+        Proper name(s)
+       </th>
+       <th rowspan="2" scope="col">
+        Common name(s)
+       </th>
+       <th colspan="2" rowspan="1" scope="colgroup">
+        Source information
+       </th>
+      </tr>
+      <tr>
+       <th scope="col">
+        Source material(s)
+       </th>
+       <th scope="col">
+        Part(s)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td rowspan="1">
+        Whey protein isolate<sup>1</sup>
+       </td>
+       <td rowspan="1">
+        Whey protein isolate
+       </td>
+       <td rowspan="6">
+        <ul>
+         <li>
+          <i>
+           Bos taurus
+          </i>
+         </li>
+         <li>
+          <i>
+           Capra hircus
+          </i>
+         </li>
+        </ul>
+       </td>
+       <td rowspan="6">
+        Milk
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Whey protein concentrate
+       </td>
+       <td>
+        Whey protein concentrate
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          Reduced lactose whey
+         </li>
+         <li>
+          Whey, reduced lactose
+         </li>
+        </ul>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Reduced lactose whey
+         </li>
+         <li>
+          Whey, reduced lactose
+         </li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <ul>
+         <li>
+          Reduced minerals whey
+         </li>
+         <li>
+          Whey, reduced minerals
+         </li>
+        </ul>
+       </td>
+       <td>
+        <ul>
+         <li>
+          Reduced minerals whey
+         </li>
+         <li>
+          Whey, reduced minerals
+         </li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Whey
+       </td>
+       <td>
+        Whey
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Whey protein hydrolysate
+       </td>
+       <td>
+        Whey protein hydrolysate
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>References: Proper names: US FDA 2024; FCC 2023; Common names: US FDA 2024; FCC 2023; Source information: ITIS 2024.</p>
+    <p><sup>1</sup>For isolates, the potency information should be equivalent to 90% or more protein on a dry weight basis.</p>
+   </section>
+   <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+     Route of Administration
+    </h2>
+    <!-- CHECK IF ROUTE OR ROUTE(S) -->
+    <p>
+     Oral
+    </p>
+   </section>
+   <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+     Dosage Form(s)
+    </h2>
+    <p>
+     This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+    </p>
+    <p>
+     Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+    </p>
+   </section>
+   <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+     Use(s) or Purpose(s)
+    </h2>
+    <p><em>Products standardized to protein</em></p>
+    <ul>
+     <li>
+      Source of (all) essential amino acids (i.e. histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine) for the maintenance of good health (CNF 2023; Potier and Tomé 2008).
+     </li>
+     <li>
+      Source of branched chain amino acids for the maintenance of good health (CNF 2023; Potier and Tomé 2008).
+     </li>
+     <li>
+      Source of (essential) amino acids involved in muscle protein synthesis (CNF 2023; IOM 2005).
+     </li>
+     <li>
+      (Excellent) Source of protein for the maintenance of good health (CFIA 2022).
+     </li>
+     <li>
+      (Excellent) Source of protein which helps build and repair body tissues (CFIA 2022).
+     </li>
+     <li>
+      (Excellent) Source of protein which helps build antibodies (CFIA 2022).
+     </li>
+    </ul>
+    <p><em>Products standardized to protein and minerals</em></p>
+    <ul>
+        <li>Source of ((the) mineral(s)) calcium/magnesium/phosphorus/potassium/(and) zinc for the maintenance of good health (CNF 2023; IOM 2005).</li>
+    </ul>
+    <p><strong>Note:</strong> The above uses can be combined on the product label (e.g., Source of protein which helps build and repair body tissues and build antibodies).</p>
+
+   </section>
+   <section aria-labelledby="dose">
+    <h2 id="dose">
+     Dose(s)
+    </h2>
+    <h3>
+     Subpopulation(s)
+    </h3>
+    <p>
+     Adults 18 years and older
+    </p>
+    <h3>
+     Quantity(ies)
+    </h3>
+    <p>
+     The potency of protein on an "as is" weight basis is required to be indicated on the PLA form and label.
+    </p>
+    <p>
+     <em>
+      Source of protein
+     </em>
+    </p>
+    <p>
+     2.6-90 grams of protein per day (CFIA 2022)
+    </p>
+    <p>
+     <em>
+      Excellent source of protein
+     </em>
+    </p>
+    <p>
+     16-90 grams of protein per day (CFIA 2022)
+    </p>
+    <p>
+     <em>
+      Source of amino acids/branched chain amino acids
+     </em>
+    </p>
+    <p>
+     3-90 grams of protein per day (CFIA 2022)
+    </p>
+    <p>
+     <em>
+      Source of minerals
+     </em>
+    </p>
+    <p>
+     Not to exceed 90 grams of protein per day (CFIA 2022)
+    </p>
+    <p>
+     and
+    </p>
+    <table class="subject">
+     <caption>
+      Table 2. Daily dose requirements for minerals in whey preparations
+     </caption>
+     <thead>
+      <tr>
+       <th rowspan="1" scope="col">
+        Minerals<sup>1</sup>
+       </th>
+       <th rowspan="1" scope="col">
+        Minimum dose (mg/day)
+       </th>
+       <th rowspan="1" scope="col">
+        Maximum dose (mg/day)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td rowspan="1">
+        Calcium
+       </td>
+       <td rowspan="1">
+        65
+       </td>
+       <td rowspan="1">
+        1,500
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="1">
+        Magnesium
+       </td>
+       <td rowspan="1">
+        20
+       </td>
+       <td rowspan="1">
+        500
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="1">
+        Phosphorus
+       </td>
+       <td rowspan="1">
+        62
+       </td>
+       <td rowspan="1">
+        2,000
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="1">
+        Potassium
+       </td>
+       <td rowspan="1">
+        100
+       </td>
+       <td rowspan="1">
+        779
+       </td>
+      </tr>
+      <tr>
+       <td rowspan="1">
+        Zinc
+       </td>
+       <td rowspan="1">
+        0.7
+       </td>
+       <td rowspan="1">
+        50
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p><sup>1</sup>Quantities for potassium are based on IOM 2005. Quantities for other minerals are based on the NNHPD Multi-vitamin/Mineral Supplements Monograph.</p>
+    <p>
+     <strong>
+      Notes
+     </strong>
+    </p>
+    <ul>
+     <li>
+      The use “<em>Source of mineral(s) xxx</em>” is only acceptable if indicated minerals are present at dosages at or above the minimum daily doses and not more than the maximum daily doses as listed in Table 2 above.
+     </li>
+     <li>
+      In order to have a use for a particular mineral, the medicinal ingredient must list the respective mineral as potency on the PLA form and label.
+     </li>
+    </ul>
+    <h3>
+     Direction(s) for use
+    </h3>
+    <p>
+     Take a few hours before or after taking other medications or health products (Sweetman 2011; Jung et al. 1997).
+    </p>
+    <h3>Permitted combinations</h3>
+    <p>Medicinal ingredients listed in Table 1 can be combined; however, the total amount of protein and minerals must meet the maximal quantities listed in this monograph.</p>
+   </section>
+   <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+     Duration(s) of Use
+    </h2>
+    <p>
+     No statement required.
+    </p>
+   </section>
+   <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+     Risk Information
+    </h2>
+    <h3>
+     Caution(s) and warning(s)
+    </h3>
+    <p>
+     <em>
+      All products
+     </em>
+    </p>
+    <ul>
+     <li>
+      Contains milk by-products (CFIA 2022; Wal 2002).
+     </li>
+     <li>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.
+     </li>
+    </ul>
+    <p>
+     <em>
+      Products providing more than 30 g protein, per day
+     </em>
+    </p>
+    <p>
+     Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver or kidney disorder (Shils et al. 2006; Bell 2000).
+    </p>
+    <h3>
+     Contraindication(s)
+    </h3>
+    <p>
+     <em>Products providing 100 mg or more potassium, per day</em>
+    </p>
+    <p>Do not use if you are taking other potassium-containing salt-substitutes or supplements (Sweetman 2011).</p>
+    <h3>
+     Known adverse reaction(s)
+    </h3>
+    <p>
+     <em>
+      Products providing more than 30 g protein, per day
+     </em>
+    </p>
+    <p>
+     When using this product you may experience gastrointestinal discomfort/disturbance(s) (Micke et al. 2002).
+    </p>
+   </section>
+   <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+     Non-medicinal ingredients
+    </h2>
+    <ul>
+     <li>
+      Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+     </li>
+     <li>
+      Whey proteins, especially powders meant to be mixed with a liquid, often require lecithin to act as a dispersing/emulsifying agent. If present, lecithin must be added as a non-medicinal ingredient.
+     </li>
+    </ul>
+   </section>
+   <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+     Storage conditions
+    </h2>
+    <p>
+     Must be established in accordance with the requirements described in the Natural Health Products Regulations.
+    </p>
+   </section>
+   <section aria-labelledby="specifications">
+    <h2 id="specifications">
+     Specifications
+    </h2>
+    <ul>
+     <li>
+      The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+     </li>
+     <li>
+      The medicinal ingredient must comply with the requirements outlined in the NHPID.
+     </li>
+     <li>
+      The medicinal ingredient proper name should be determined by the potency of whey protein on a dry weight basis as published in the Food and Chemical Codex (FCC 2023).
+     </li>
+    </ul>
+   </section>
+
+   <h2>Example of Product Facts:</h2>
+ 
+   <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+ 
+   <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/WHEY-PRODUCTS_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+   <section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">
+     References Cited
+    </h2>
+    <ul>
+     <li>
+      Bell SJ. Whey Proteins Concentrates With and Without Immunoglobulins: A Review. Journal of Medicinal Food. 2000 Spring;3(1):1-13.
+     </li>
+     <li>
+      CFIA 2022: Canadian Food Inspection Agency. Food Labelling for Industry. Ottawa (ON). [Accessed 2024 January 12]. Available from: https://inspection.canada.ca/food-labels/labelling/industry/eng/1383607266489/1383607344939
+     </li>
+     <li>
+      CNF 2023: Canadian Nutrient File (CNF). Ottawa (ON): Food and Nutrition, Health Canada. [Accessed 2024 January 12]. Available from: https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/nutrient-data/canadian-nutrient-file-about-us.html
+     </li>
+     <li>
+      FCC 2023: Food Chemicals Codex. 12th edition. Rockville (MD): The United States Pharmacopeial Convention; 2023.
+     </li>
+     <li>
+      IOM 2005: Institute of Medicine of the National Academies. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Food and Nutrition Board, [Accessed 2024 January 12]. Available from: https://nap.nationalacademies.org/catalog/10490/dietary-reference-intakes-for-energy-carbohydrate-fiber-fat-fatty-acids-cholesterol-protein-and-amino-acids
+     </li>
+     <li>
+      ITIS 2024: Integrated Taxonomic Information System. Canadian Biodiversity Information Facility. Ottawa (ON): Government of Canada. [Accessed 2024 January 12]. Available from: https://www.itis.gov/
+     </li>
+     <li>
+      Jung H, Peregrina AA, Rodriguez JM, Moreno-Esparza R. The influence of coffee with milk and tea with milk on the bioavailability of tetracycline. Biopharmaceutics &amp; Drug Disposition 1997;18(5):459-463.
+     </li>
+     <li>
+      Micke P, Beeh KM, Buhl R. Effects of long-term supplementation with whey proteins on plasma glutathione levels of HIV-infected patients. European Journal of Nutrition 2002;41(1):12-18.
+     </li>
+     <li>
+      Potier M, Tomé D. Comparison of digestibility and quality of intact proteins with their respective hydrolysates. Journal of AOAC International 2008;91(4):1002-1005.
+     </li>
+     <li>
+      Shils ME, Olson JA, Shike M, Ross AC, editors. Modern Nutrition in Health and Disease, 10th edition. Philadelphia (PA): Lippincott Williams and Wilkins; 2006.
+     </li>
+     <li>
+      Sweetman SC, editeur. Martindale : The Complete Drug Reference, 37th edition. London (UK) : Pharmaceutical Press; 2011.
+     </li>
+     <li>
+      US FDA 2024: US Food & Drug Administration. Substances added to food. Department of Health and Human Services. [Accessed 2024 January 12]. Available from: https://www.cfsanappsexternal.fda.gov/scripts/fdcc/?set=FoodSubstances
+     </li>
+     <li>
+      Wal JM. Cow's milk proteins/allergens. Annals of Allergy Asthma &amp; Immunology 2002;89(6 Suppl 1):3-10.
+     </li>
+    </ul>
+   </section>
+   <section aria-labelledby="referencesReviewed">
+    <h2 id="referencesReviewed">
+     References Reviewed
+    </h2>
+    <ul>
+     <li>
+      Bégin F, Santizo MC, Peerson JM, Torún B, Brown KH. Effects of bovine serum concentrate, with or without supplemental micronutrients, on the growth, morbidity, and micronutrient status of young children in a low-income, peri-urban Guatemalan community. European Journal of Clinical Nutrition 2008;62(1):39-50.
+     </li>
+     <li>
+      Casswall TH, Sarker SA, Faruque SM, Weintraub A, Albert MJ, Fuchs GJ, Alam NH, Dahlström AK, Link H, Brüssow H, Hammarström L. Treatment of enterotoxigenic and enteropathogenic Escherichia coli-induced diarrhoea in children with bovine immunoglobulin milk concentrate from hyperimmunized cows: a double-blind, placebo-controlled, clinical trial. Scandinavian Journal of Gastroenterology 2000;35(7):711-8.
+     </li>
+     <li>
+      Cribb PJ, Williams AD, Stathis CG, Carey MF, Hayes A. Effects of whey isolate, creatine, and resistance training on muscle hypertrophy Medicine and Science in Sports and Exercise 2007;39(2):298-307.
+     </li>
+     <li>
+      CTFA 2008: Gottschalck TE, Bailey JE, editors. International Cosmetic Ingredient Dictionary and Handbook. 12th edition. Washington (DC): The Cosmetic, Toiletry and Fragrance Association; 2008.
+     </li>
+     <li>
+      Eisenstein J, Roberts SB, Dallal G, Saltzman E. High-protein weight-loss diets: are they safe and do they work? A review of the experimental and epidemiologic data. Nutrition Reviews 2002;60(7 Pt 1):189-200.
+     </li>
+     <li>
+      Fonteh FA, Grandison AS, Lewis MJ. Variations of lactoperoxidase activity and thiocyanate content in cows' and goats' milk throughout lactation. Journal of Dairy Research 2002;69(3):401- 9.
+     </li>
+     <li>
+      Krissansen GW. Emerging health properties of whey proteins and their clinical implications. Journal of the American College of Nutrition 2007;26(6):713S-23S. Review.
+     </li>
+     <li>
+      Lands LC, Iskandar M, Beaudoin N, Meehan B, Dauletbaev N, Berthiuame Y. Dietary supplementation with pressurized whey in patients with cystic fibrosis. Journal of Medicinal Food 2010;13(1):77-82.
+     </li>
+     <li>
+      Lothian JB, Grey V, Lands LC. Effect of whey protein to modulate immune response in children with atopic asthma. International Journal of Food Sciences and Nutrition 2006;57(3-4):204-11.
+     </li>
+     <li>
+      Marshall K. Therapeutic Applications of Whey Protein. Alternative Medicine Review 2004;9(2):136-56. (Review).
+     </li>
+     <li>
+      Moreno YF, Sgarbieri VC, da Silva MN, Toro AA, Vilela MM. Features of whey protein concentrate supplementation in children with rapidly progressive HIV infection. Journal of Tropical Pediatrics 2006 Feb;52(1):34-8.
+     </li>
+     <li>
+      Pal S, Ellis V, Dhaliwal S. Effects of whey protein isolate on body composition, lipids, insulin and glucose in overweight and obese individuals. British Journal of Nutrition 2010; 9:1-8.
+     </li>
+     <li>
+      Poortmans JR, Dellalieux O. Do regular high protein diets have potential health risks on kidney function in athletes?International Journal of Sport Nutrition and Exercise Metabolism 2000;10(1):28-38.
+     </li>
+     <li>
+      Scherze I, Muschiolik G. Effects of various whey protein hydrolysates on the emulsifying and surface properties of hydrolysed lecithin. Colloids and Surfaces B: Biointerfaces 2001;21(1- 3):107-117.
+     </li>
+     <li>
+      Séverin S, Wenshui X. Milk biologically active components as nutraceuticals: review. Critical Review in Food Science and Nutrition 2005;45(7-8):645-56.
+     </li>
+     <li>
+      Tarnopolsky MA, MacDougall JD, Atkinson SA. Influence of protein intake and training status on nitrogen balance and lean body mass. Journal of Applied Physiology 1988;64(1):187-93.
+     </li>
+     <li>
+      Williams M. Dietary Supplements and Sports Performance: Amino Acids. Journal of the International Society of Sports Nutrition 2005; 2(2):63-67.
+     </li>
+     <li>
+      Wright BJ, Zevchak SE, Wright JM, Drake MA. The impact of agglomeration and storage on flavor and flavor stability of whey protein concentrate 80% and whey protein isolate. Journal of Food Science 2009;74(1):S17-29.
+     </li>
+    </ul>
+   </section>
+   <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

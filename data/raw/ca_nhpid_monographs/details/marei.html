@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=marei\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="7b2148fe-87d3-4f01-b605-05d5d86b7e0f"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>MARIGOLD EXTRACT AND ISOLATES (LUTEIN AND ZEAXANTHIN)</h1>
+	<div class="icon">
+		<a href="dbImages/mono_marigold-extract-and-isolates-lutein-and-zeaxanthin_english.pdf" title="MARIGOLD EXTRACT AND ISOLATES (LUTEIN AND ZEAXANTHIN)"><img alt="Monograph: MARIGOLD EXTRACT AND ISOLATES (LUTEIN AND ZEAXANTHIN)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/> (PDF Version - 72 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li> Text in parentheses is additional optional information which can be included on the PLA and product label at the applicant&apos;s discretion.</li>
+			<li> The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant.</li>
+			<li> A product may include one or more of the medicinal ingredients listed in Table 1.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>August 26, 2022</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonnameSourceInformation">
+		<h2 id="properNameCommonnameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>				
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th rowspan="1" colspan="4">Source information</th>
+					</tr>					
+					<tr>
+						<th>Source ingredient(s)</th>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+						<th>Preparation(s)</th>
+					</tr>					
+				</thead>
+				<tbody>					
+					<tr>
+						<td>(3R,3&apos;R,6&apos;R)-beta,epsilon-Carotene-3,3&apos;-diol</td>
+						<td>Lutein</td>
+						<td><em>N/A</em></td>
+						<td><em>Tagetes erecta</em></td>
+						<td>Herb flowering oleoresin</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td rowspan="2">
+							<ul>
+								<li>(3R,3&apos;R)-beta,beta- Carotene-3,3&apos;-diol</li>
+								<li><em>all-trans</em>-beta- Carotene-3,3&apos;-diol</li>
+							</ul>
+						</td>
+						<td rowspan="2">Zeaxanthin</td>
+						<td>N/A</td>
+						<td><em>Tagetes erecta</em></td>
+						<td>Herb flowering oleoresin</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Zeaxanthin</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Synthetic</td> 
+					</tr>
+					<tr>
+						<td>Lutein esters</td>
+						<td>Lutein esters</td>
+						<td>N/A</td>
+						<td><em>Tagetes erecta</em></td>
+						<td>Herb flowering oleoresin</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Zeaxanthin esters</td>
+						<td>Zeaxanthin esters</td>
+						<td>N/A</td>
+						<td><em>Tagetes erecta</em></td>
+						<td>Herb flowering oleoresin</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td><em>Tagetes erecta</em></td>
+						<td>
+							<ul>
+								<li>African marigold</li>
+								<li>Aztec marigold</li>
+								<li>Big marigold</li>
+								<li>Saffron marigold</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Tagetes erecta</em></td>
+						<td>Flower</td>
+						<td>Dry</td>
+					</tr>			
+				</tbody>	
+			</table>
+			<p>References: Proper names: ChemID 2022, FAO/WHO 2022, USDA 2022, USP-NF 2022&semi; Common names: ChemID 2022, FAO/WHO 2022, USP-NF 2022&semi; Source information: FAO/WHO 2022, USP-NF 2022.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><strong>Note</strong></p>
+				<p>Since lutein and zeaxanthin or their esters are both antioxidants and usually present together in a product formulation, there is an option to use the source of antioxidants claims in plural. The singular should be used when the product only contains synthetic zeaxanthin without lutein.</p>
+			<p><em>All products</em>
+				<ul>
+					<li>Source of/Provides (an) antioxidant(s) (for the maintenance of good health) (Miranda et al. 2006&semi; Blakely et al. 2003&semi; Dwyer et al. 2001).</li>
+					<li>Source of/Provides (an) antioxidant(s) for the maintenance of eye health (Miranda et al. 2006&semi; Blakely et al. 2003&semi; Dwyer et al. 2001).</li>
+				</ul>
+			</p>
+			<p><em>Products containing Lutein, Lutein esters and/or Marigold extract</em> (not supported by zeaxanthin or zeaxanthin esters - products must provide lutein/lutein esters at therapeutic dose to support these uses)
+				<ul>
+					<li>Helps to maintain eyesight/support eye health in conditions (associated with sunlight damage), such as cataracts and age-related macular degeneration (Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008&semi; Alves-Rodrigues and Shao 2004&semi; Richer et al. 2004&semi; Olmedilla et al. 2003&semi; Brown et al. 1999).</li>
+					<li>Helps to reduce the risk of developing cataracts (Christen et al. 2008&semi; Moeller et al. 2008&semi; Brown et al. 1999&semi; Chasan-Taber et al. 1999).</li>
+					<li>Helps to improve macular pigment optical density (Johnson et al. 2008&semi; Richer et al. 2004&semi; Berendschot et al. 2000).</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><strong>LUTEIN AND ZEAXANTHIN</strong></p>
+					<p><em>Source of antioxidant(s)</em></p>
+						<p>Lutein</br>
+							Not to exceed 20 milligrams of lutein, per day (Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+						<p>and/or</p>
+						<p>Zeaxanthin</br>
+							Not to exceed 2.5 milligrams of zeaxanthin, per day (Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+					<p><em>Other uses</em><sup><a href="#r1a" style="text-decoration: none;">1</a></sup></p>
+						<p>Lutein</br>
+							6 - 20 milligrams of lutein, per day (Shao and Hathcock 2006&semi; WHO 2005&semi; Alves-Rodrigues and Shao 2004&semi; Richer et al. 2004&semi; Olmedilla et al. 2003&semi; Brown et al. 1999).</p>
+					<p><strong><sup id="r1a">1</sup>Notes</strong>
+						<ul>
+							<li>The quantity of the lutein must be indicated on the PLA form and label and meet the therapeutic dose.</li>
+							<li>Disclosing the amount of zeaxanthin in a product is optional.</br>
+								Zeaxanthin (Optional)</br>
+								0.7 - 2.5 milligrams of zeaxanthin, per day (Shao and Hathcock 2006&semi; WHO 2005&semi; Alves- Rodrigues and Shao 2004&semi; Richer et al. 2004&semi; Olmedilla et al. 2003&semi; Brown et al. 1999).</li>
+						</ul>
+					</p>
+				<p><strong>LUTEIN AND ZEAXANTHIN ESTERS</strong></p>
+					<p><em>Source of antioxidant(s)</em></p>
+						<p>Lutein esters</br>
+							Not to exceed 40 milligrams of lutein esters, per day (Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+						<p>and/or</p>
+                    	<p>Zeaxanthin esters</br>
+							Not to exceed 5 milligrams of zeaxanthin esters, per day (FAO/WHO 2022&semi; USP-NF 2022&semi; Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+                	<p><em>Other uses</em><sup><a href="#r1b" style="text-decoration: none;">1</a></sup></p>
+						<p>Lutein esters</br>
+							12 - 40 milligrams of lutein esters, per day (Bone and Landrum 2010&semi; Shao and Hathcock 2006&semi; WHO 2005&semi; Alves-Rodrigues and Shao 2004&semi; Richer et al. 2004&semi; Olmedilla et al. 2003&semi; Brown et al. 1999).</p>
+                	<p><strong><sup id="r1b">1</sup>Notes</strong>
+						<ul>
+							<li>The quantity of the lutein esters must be indicated on the PLA form and label meet the therapeutic dose.</li>
+							<li>Disclosing the amount of zeaxanthin esters in a product is optional. </br>Zeaxanthin esters (Optional) </br>1.5 - 5 milligrams of zeaxanthin esters, per day (FAO/WHO 2022&semi; USP-NF 2022&semi; Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</li>
+						</ul>
+					</p>
+				<p><strong>MARIGOLD EXTRACT<sup><a href="#r1c" style="text-decoration: none;">1</a></sup></strong></p>
+					<p>Methods of preparation: Standardized extracts</p>
+						<p><em>Source of antioxidants</em></p>
+							<p>Extract containing 60% or less lutein esters and providing 40 milligrams or less of lutein esters, per day (Bone and Landrum 2010&semi; Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+							<p>Optional potency</br>
+								Not to exceed 5 milligrams of zeaxanthin esters, per day (FAO/WHO 2014&semi; USP 34 2011&semi; Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+						<p><em>Other uses</em></p>
+							<p>Extract containing 60% or less lutein esters and providing 12-40 milligrams of lutein esters, per day (Bone and Landrum 2010&semi; Shao and Hathcock 2006&semi; WHO 2005&semi; Alves-Rodrigues and Shao 2004&semi; Richer et al. 2004&semi; Olmedilla et al. 2003&semi; Brown et al. 1999).</p>
+							<p>Optional potency</br>
+								1.5 - 5 milligrams of zeaxanthin esters, per day (FAO/WHO 2022&semi; USP-NF 2022&semi; Christen et al. 2008&semi; Fletcher et al. 2008&semi; Johnson et al. 2008&semi; Moeller et al. 2008).</p>
+        		<p><strong><sup id="r1c">1</sup>Notes</strong>
+					<ul>
+						<li>The quantity of the marigold extract must be indicated on the PLA form and label.</li>
+						<li>The quantity of the potency constituent, lutein esters, must meet the therapeutic dose for uses other than antioxidants.</li>
+						<li>Lutein and zeaxanthin esters are potencies of marigold extract and must be indicated as such on the PLA form and label. The amounts of the esters must be expressed as the quantity (mg) and/or percent (%) of the total quantity of the marigold extract.</li>
+						<li>The maximum daily amount indicated for lutein and/or zeaxanthin esters should not be exceeded when lutein esters and/or zeaxanthin esters are combined with marigold extract.</li>
+						<li>Disclosing the amount of zeaxanthin esters in a product is optional.</li>
+					</ul>
+				</p>	
+			<h3>Direction(s) for use</h3>
+				<p><em>Products containing Lutein esters, Zeaxanthin esters and/or Marigold extract</em></p>
+					<p>Take with a meal containing oil/fat (Chung et al. 2004&semi; Roodenburg et al. 2000).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>			
+				<p>No statement required.</p>			
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>		
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Store in tightly sealed, light- and oxygen-resistant container in a cool, dry place (USP-NF 2022).</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements describes in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient(s) must comply with the requirements outlined in the NHPID.</li>
+				<li>Some commercial lutein preparations are sold as "5% or 10% lutein". These preparations are actually purified lutein (esterified or free) typically added at 5-15% to an inert stabilizing medium (e.g. USP-NF 2022: Lutein Preparation). When using these preparations, the applicant must specify whether lutein is esterified or free and use the appropriate dose information. For these preparations, the stabilizing medium must be listed as a non- medicinal ingredient in the PLA form and label and identified with the purpose "stabilizing agent" in the PLA form.</li>
+				<li>In all cases where lutein and zeaxanthin (free or esterified) are listed on the PLA form, potency testing at the finished product stage is required to verify the quantity as different preparations may provide different amounts of lutein and zeaxanthin OR the manufacturer of the finished product should ensure that there are sufficient controls on the raw materials so that the quantity of lutein and zeaxanthin (esterified or free) is the actual amount of lutein and zeaxanthin and not the amount of the lutein and zeaxanthin with the stabilizing agent.</li>
+			</ul>
+			<p><strong>LUTEIN AND ZEAXANTHIN</strong>
+				<ul>
+					<li>The medicinal ingredient must comply with the specifications outlined in either of the following references: FAO/WHO 2022: Lutein from <em>Tagetes erecta</em> or USP-NF 2022: Lutein, Lutein Preparation</li>
+					<li>Lutein and zeaxanthin are preparations from the oleoresin of marigold (<em>Tagetes erecta</em>) petals obtained by hexane extraction and purified by saponification and crystallization.</li>
+				</ul>
+			</p>
+        	<p><strong>LUTEIN AND ZEAXANTHIN ESTERS</strong></p>		
+				<p>Lutein and zeaxanthin esters are preparations of oleoresin of marigold (<em>Tagetes erecta</em>) petals obtained by hexane extraction and then purified and concentrated.</p>	
+        	<p><strong>MARIGOLD EXTRACT</strong></p>
+        		<p>Marigold extract is a hexane extraction of the African marigold (<em>Tagetes erecta</em>) flowers which provides less than 60% lutein.</p>	
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts" hidden>
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>
+				<li>Alves-Rodrigues A, Shao A. The science behind lutein. Toxicology Letters 2004&semi;150(1):57-83.</li>			
+				<li>Berendschot TT, Goldbohm RA, Klöpping WA, van de Kraats J, van Norel J, van Norren D. Influence of lutein supplementation on macular pigment, assessed with two objective techniques. Investigative Ophthalmology &amp; Visual Science 2000&semi;41(11):3322-3326.</li>				
+				<li>Blakely S, Herbert A, Collins M, Jenkins M, Mitchell G, Grundel E, O&apos;Neill KR, Khachik F. Lutein interacts with ascorbic acid more frequently than with alpha-tocopherol to alter biomarkers of oxidative stress in female zucker obese rats. The Journal of Nutrition 2003&semi;133(9):2838-2844.</li>				
+				<li>Bone RA, Landrum JT. Dose-dependent response of serum lutein and macular pigment optical density to supplementation with lutein esters. Archives of Biochemistry and Biophysics 2010&semi;504(1):50-55.</li>
+				<li>Brown L, Rimm EB, Seddon JM, Giovannucci EL, Chasan-Taber L, Spiegelman D, Willett WC, Hankinson SE. A prospective study of carotenoid intake and risk of cataract extraction in US men. The American Journal of Clinical Nutrition 1999&semi;70(4):517-524.</li>
+				<li>Chasan-Taber L, Willett WC, Seddon JM, Stampfer MJ, Rosner B, Colditz GA, Speizer FE, Hankinson SE. A prospective study of carotenoid and vitamin A intakes and risk of cataract extraction in US women. The American Journal of Clinical Nutrition 1999&semi;70(4):509-516.</li>
+				<li>ChemID 2022: ChemIDplus advanced [Internet]. Bethesda (MD): United States National Library of Medicine&semi; 2018. [Lutein, Lutein esters: CAS 127-40-2&semi; Accessed 2022 June 08]. Available from: https://chem.nlm.nih.gov/chemidplus/rn/startswith/127-40-2</li>
+				<li>Christen WG, Liu S, Glynn RJ, Gaziano JM, Buring JE. Dietary carotenoids, vitamins C and E, and risk of cataract in women: a prospective study. Archives of Ophthalmology 2008&semi;126(1):102-109.</li>
+				<li>Dwyer JH, Navab M, Dwyer KM, Hassan K, Sun P, Shircore A, Hama-Levy S, Hough G, Wang X, Drake T, Merz CN, Fogelman AM. Oxygenated carotenoid lutein and progression of early atherosclerosis: the Los Angeles atherosclerosis study. Circulation 2001&semi;103(24):2922-2927.</li>
+				<li>FAO/WHO 2022: Food and Agriculture Organization of the United Nations and the World Health Organization. Joint FAO/WHO Expert Committee on Food Additives. 2022. Lutein from Tagetes erecta&semi; Lutein esters from Tagetes erecta&semi; Zeaxanthin (synthetic) and Zeaxanthin-rich extract&semi; Zeaxanthin: Food and Agriculture Organization of the United Nations. [Accessed 2022 June 08]. Available from: https://www.fao.org/home/en</li>
+				<li>Fletcher AE, Bentham GC, Agnew M, Young IS, Augood C, Chakravarthy U, de Jong PT, Rahu M, Seland J, Soubrane G, Tomazzoli L, Topouzis F, Vingerling JR, Vioque J. Sunlight exposure, antioxidants, and age-related macular degeneration. Archives of Ophthalmology 2008&semi;(10):1396- 1403.</li>				
+				<li>Johnson EJ, Chung HY, Caldarella SM, Snodderly DM. The influence of supplemental lutein and docosahexaenoic acid on serum, lipoproteins, and macular pigmentation. The American Journal of Clinical Nutrition 2008&semi;87(5):1521-1529.</li>				
+				<li>Miranda M, Muriach M, Roma J, Bosch-Morell F, Genov&#233;s JM, Barcia J, Araiz J, Díaz-Llospis M, Romero FJ. Estr&#233;s oxidativo en un modelo de retinopatía diab&#233;tica experimental ii: utilidad de agentes secuestrantes de peroxinitritos. Archivos de la Sociedad Espa&#241;ola de Oftalmología 2006&semi;81(1):27-32. Spanish. [Oxidative stress in a model of experimental diabetic retinopathy: the utility of peroxynitrite scavengers.]</li>
+				<li>Moeller SM, Voland R, Tinker L, Blodi BA, Klein ML, Gehrs KM, Johnson EJ, Snodderly DM, Wallace RB, Chappell RJ, Parekh N, Ritenbaugh C, Mares JA&semi; CAREDS Study Group&semi; Women&apos;s Health Initiative. Associations between age-related nuclear cataract and lutein and zeaxanthin in the diet and serum in the carotenoids in the Age-Related Eye Disease Study, an Ancillary Study of the Women&apos;s Health Initiative. Archives of Ophthalmology 2008&semi;126(3):354- 364.</li>
+				<li>Olmedilla B, Granado F, Blanco I, Vaquero M. Lutein, but not alpha-tocopherol, supplementation improves visual function in patients with age-related cataracts: a 2-y double- blind, placebo-controlled pilot study. Nutrition 2003&semi;19(1):21-24.</li>
+				<li>Richer S, Stiles W, Statkute L, Pulido J, Frankowski J, Rudy D, Pei K, Tsipursky M, Nyland J. Double-masked, placebo-controlled, randomized trial of lutein and antioxidant supplementation in the intervention of atrophic age-related macular degeneration: the Veterans LAST study (Lutein Antioxidant Supplementation Trial). Optometry 2004&semi;75(4):216-230.</li>
+				<li>Shao A, Hathcock JN. Risk assessment for the carotenoids lutein and lycopene. Regulatory Toxicology and Pharmacology 2006&semi;45(3):289-298.</li>
+				<li>USDA 2022: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN) [Internet]. Beltsville (MD): National Germplasm Resources Laboratory. [Tagetes erecta L. Asteraceae: Last updated 24-Mar-2012&semi; Accessed 2022 June 08]. Available from: https://npgsweb.ars- grin.gov/gringlobal/taxonomydetail.aspx?id=36197</li>
+				<li>USP-NF 2022: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention&semi; 2022.</li>
+				<li>WHO 2005: World Health Organization. Evaluation of certain food additives: sixty-third report of the Joint FAO/WHO Expert Committee on Food Additives. (WHO Technical Report Series 928) [Internet]. Geneva (CH): World Health Organization&semi; 2005. [Accessed 2022 June 08]. Available from: http://whqlibdoc.who.int/trs/WHO_TRS_928.pdf</li>
+			</ul>	
+	</section>
+
+	<section aria-labelledby="referencesReviewed" hidden>
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

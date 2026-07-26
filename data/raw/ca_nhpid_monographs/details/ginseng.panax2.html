@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=ginseng.panax2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="1757ab9d-a3e4-4341-bb89-bacf1a247616"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>PANAX GINSENG </h1>
+
+    <div class="icon">
+            <a href="dbImages/mono_ginseng-panax_english.pdf" title="PANAX GINSENG">
+                <img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format" width="22" height="21">(PDF Version - 102 KB)</a>
+        </div>
+
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient. </p>
+    
+    <p><strong>Notes</strong> </p>
+    <ul>
+    <li>Text in parentheses is additional optional information which can be included on the label at the applicant’s discretion.</li>
+    <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+    
+</ul>    <section>
+    
+    <h2>Date  					</h2>
+    <p>June 27, 2025</p>
+
+</section>
+<section>
+    <h2>Proper name(s), Common name(s), Source information</h2>
+    <table aria-labelledby="table1" class="subject">
+                    <caption id="table1">Table 1. Proper name(s), Common name(s), Source information</caption>
+
+                    <thead>
+
+                        <tr>
+                            <th rowspan="2" scope="col">Proper name(s)</th>
+                            <th rowspan="2" scope="col">Common name(s)</th>
+                            <th colspan="3" scope="colgroup">Source information</th>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">Source material(s)</th>
+                            <th scope="col">Part(s)</th>
+                            <th scope="col">Preparation(s)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="1">
+                                <i>Panax ginseng</i>
+                            </td>
+
+                            <td rowspan="2">
+                                <ul>
+                                    <li>Asian ginseng</li>
+                                    <li>Chinese ginseng</li>
+                                    <li>Hong shen</li>
+                                    <li>Korean ginseng</li>
+                                    <li>Korean red ginseng</li>
+                                    <li>Oriental ginseng</li>
+                                    <li>Panax ginseng</li>
+                                    <li>Red ginseng</li>
+                                    <li>Ren shen</li>
+                                </ul>
+                            </td>
+
+                            <td><i>Panax ginseng</i></td>
+                            <td>
+                                <ul>
+                                    <li>Root</li>
+                                    <li>Rootlet</li>
+                                </ul>
+                            </td>
+                            <td>Dry</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <p>References: Proper name: USDA 2024; Gardner and McGuffin 2013; Common names: USDA 2024; USP-NF 2023; PPRC 2020; Gardner and McGuffin 2013; Vuksan et al. 2008; Reay et al. 2006; Kim et al. 2005; Sünram-Lea et al. 2005; WHO 1999; Source information: USP-NF 2023; PPRC 2020; Ph. Eur 2008; Vuksan et al. 2008; Sievenpiper et al. 2006; ESCOP 2003; WHO 1999; Bradley 1992; BHP 1983; Wren 1907.</p>
+
+</section>
+
+<section>
+    <h2>Route of administration</h2>
+
+    <p>Oral </p>
+    </section>
+    
+<section>
+    <h2>Dosage form(s) 	</h2>
+
+    <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+
+    <p>Acceptable dosage forms for  oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications. </p>
+
+    </section>
+
+<section>    
+    <h2>Use(s) or Purpose(s)  </h2>
+<ul>    
+    <li>(Used in Herbal Medicine as) supportive therapy for the promotion of healthy glucose levels (Vuksan et al. 2008; Sievenpiper et al. 2006; Williamson 2003; Tetsutani et al. 2000; WHO 1999; Sotaniemi et al. 1995). </li>
+    <li>(Used in Herbal Medicine to) help(s) support cognitive function and/or reduce mental fatigue (in cases of mental stress) (Reay et al. 2006; Reay et al. 2005; Sünram-Lea et al. 2005; Kennedy et al. 2004; ESCOP 2003; Kennedy et al. 2002; Scholey and Kennedy 2002; Kennedy et al. 2001; Sorensen and Sonne 1996; Bradley 1992; D’Angelo et al. 1986; BHP 1983).</li>
+    <li>Helps support cognition (Reay et al. 2006; Reay et al. 2005; Sünram-Lea et al. 2005; Kennedy et al. 2004; ESCOP 2003; Kennedy et al. 2002; Scholey and Kennedy 2002; Kennedy et al. 2001; Sorensen and Sonne 1996; Bradley 1992; D’Angelo et al. 1986; BHP 1983).</li>
+    <li>(Used in Herbal Medicine to) help(s) enhance physical capacity/performance (in cases of physical stress) (Kim et al. 2005; ESCOP 2003; Gross et al. 2002; WHO 1999; Gross et al. 1995; Sotaniemi et al. 1995; Schepdael 1993). </li>
+    <li>Used in Herbal Medicine as an adaptogen to help increase energy and resistance to stress over time (e.g. in case of mental and physical fatigue related to stress) (Winston and Maimes 2007; Bone 2003; Hoffman 2003; Blumenthal et al. 2000; WHO 1999; Bradley 1992).</li>
+    <li>Used in Traditional Chinese Medicine (TCM) to reinforce qi, benefit the spleen and lung, relieve symptoms of thirst due to impairment of body fluids and internal heat (PPRC 2020; Bensky et al. 2004; Chen and Chen 2004). </li>
+
+</ul>    
+<p><strong>Notes</strong></p>
+    <ul>
+    <li>The above uses can be combined on the product label if from the same traditional or non-traditional system of medicine (e.g., Used in Herbal Medicine to help support cognitive function and/or reduce mental fatigue and as an adaptogen to help increase energy and resistance to stress over time).</li>
+    <li>
+        For multi-ingredient products:
+        <br/>
+   <ul>     
+    <li>To prevent the product from being represented as a “traditional medicine”, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized system of medicine from which the claim originates when 1) both the traditional and modern claims are present or 2) when claims original from multiple systems of traditional medicine (e.g., Panax Ginseng is used in Traditional Chinese Medicine to reinforce qi, benefit the spleen and lung, relieve symptoms of thirst due to impairment of body fluids and internal heat ).</li>
+    
+    <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+
+</ul>
+</li>
+</ul>
+</section>
+  <section>  
+    <h2>Dose(s)</h2>
+
+    <h3>Subpopulation(s)</h3>	
+
+    <p>Adults 18 years and older   </p>
+
+    <h3>Quantity(ies)</h3>
+
+    <p><em>Glucose levels; Cognitive function/cognition; Mental stress; Physical stress; Adaptogen</em></p>
+
+    <p><strong>Methods of preparation:</strong> Standardized extracts (Dry extract)</p>
+
+    <p>200 - 600 milligrams of extract, per day; standardized to 4 - 7% total ginsenosides; Not to exceed 9 grams of dried root/rootlet, per day (Vuksan et al. 2008; Reay et al. 2006; Sievenpiper et al. 2006; Reay et al. 2005; Sünram-Lea et al. 2005; Kennedy et al. 2004; ESCOP 2003; Kennedy et al. 2002; Scholey and Kennedy 2002; Engels et al. 2001; Kennedy et al. 2001; Scaglione et al. 2001; Blumenthal et al. 2000; Tetsutani et al. 2000; Engels et al. 1996; Scaglione et al. 1996; Gross et al. 1995; Scaglione et al. 1994; Scaglione et al. 1990; Petkov and Mosharrof 1987; D’Angelo et al. 1986; Soldati and Sticher 1980). </p>
+
+    <p><strong>Methods of preparation:</strong> Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)</p>
+
+    <p>0.5 - 9 grams dried root/rootlets, per day (Vuksan et al. 2008; Reay et al. 2006; Sievenpiper et al. 2006; Reay et al. 2005; Sunram-Lea et al. 2005; Kennedy et al. 2004; ESCOP 2003; Kennedy et al. 2002; Scholey and Kennedy 2002; Engels et al. 2001; Kennedy et al. 2001; Scaglione et al. 2001; Blumenthal et al. 2000;  Engels et al. 1996; Scaglione et al. 1996; Gross et al. 1995; Scaglione et al. 1994; Scaglione et al. 1990; Petkov and Mosharrof 1987; D'Angelo et al. 1986; Soldati and Sticher 1980).</p>
+
+    <p><em>Traditional Chinese Medicine </em></p>
+
+    <p><strong>Methods of preparation:</strong> Decoction, Decoction concentrate</p>
+
+    <p>3 - 10 grams dried root, per day (PPRC 2020; Bensky et al. 2004, Chen and Chen 2004).</p>
+
+    <p><strong>Methods of preparation:</strong> Powdered (unextracted)</p>
+
+    <p>0.5 - 4 grams dried root, per day (PPRC 2020, Bensky et al. 2004, Chen and Chen 2004).</p>
+
+
+    <h3>Direction(s) for use</h3>
+
+    <p>No statement required.</p>
+
+</section>
+
+<section>
+    <h2>Duration(s) of use </h2>
+
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Mills and Bone 2005; Blumenthal et al. 2000; Bradley 1992).</p>
+    
+</section>
+
+<section>
+    <h2>Risk information </h2>
+
+    <h3>Caution(s) and warning(s)  </h3>
+<ul>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</li>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have diabetes (Brinker 2010; Vuksan et al. 2008; Seely et al. 2008; Sievenpiper et al. 2006; ESCOP 2003; Tetsutani et al. 2000; Sotaniemi et al. 1995; Chin 1991).</li>
+    <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking antidepressant medication, blood thinners or digoxin (Brinker 2010; Lee et al. 2008a; Dasgupta and Reyes 2005; Janetzki and Morreale 1997; Gonzalez-Seijo et al. 1995; Shader and Greenblatt 1988; Jones and Runikis 1987; Shader and Greenblatt 1985).</li>
+
+</ul>    <h3>Contraindication(s) </h3>
+    
+    <p><em>Traditional Chinese Medicine</em> </p>
+
+    <p>Do not use in cases of yin deficiency with heat signs, heat excess, or in the absence of significant qi deficiency (Bensky et al. 2004). </p>
+    
+    <h3>Known adverse reaction(s) </h3>
+
+    <p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience insomnia, anxiety or headaches (Lee et al. 2008b; Vuksan et al 2008; de Andrade et al.2007; Sievenpiper et al. 2006; Coon and Ernst 2002; Ellis and Reddy 2002; Scaglione et al. 2001; Siegel 1979). </p>
+
+
+
+
+</section>
+
+<section>
+
+    <h2>Non-medicinal ingredients</h2>
+
+    <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database. </p>
+
+</section>
+
+<section>
+    <h2>Storage conditions		</h2>
+
+    <p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+
+</section>
+
+<section>
+    <h2>Specifications</h2>
+   <ul>         
+    <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide. </li>
+    <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+    </ul>
+</section>
+
+<section>
+
+    <h2>EXAMPLE OF PRODUCT FACTS:</h2>
+
+    <p>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</p>
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/PANAX_GINSENG_E.gif" alt="Product Facts Table of Panax ginseng (Asian ginseng-root) extract" style="width:700px"></p>
+</section>
+
+<section>
+
+    <h2>References cited</h2> 
+<ul>
+    <li>Bensky D, Clavey, Stöger E, Gamble A. Chinese Herbal Medicine: Materia Medica. 3rd edition. Seattle (WA): Eastland Press, Incorporated; 2004.</li>
+    
+    <li>BHP 1983: British Herbal Pharmacopoeia. Bournemouth (UK): British Herbal Medical Association; 1983. </li>
+    
+    <li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications; 2000. </li>
+
+    <li>Bone K. A clinical guide to blending liquid herbs: Herbal formulations for the individual patient.  St. Louis (MI): Churchill Livingstone; 2003.</li>
+    
+    <li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 1. Bournemouth (UK): British Herbal Medicine Association; 1992. </li>
+    
+    <li>Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical Publications; 2010.  </li>
+
+    <li>Chen JK, Chen TT. Chinese Medical Herbology and Pharmacology. Crampton L, editor. City of Industry (CA): Art of Medicine Press Inc.; 2004.</li>
+
+    <li>Chin RKH. Ginseng and common pregnancy disorders. Asia-Oceania Journal of Obstetrics and Gynaecology 1991;17(4):379-380.  </li>
+    
+    <li>Coon JT, Ernst E. Panax ginseng: a systematic review of adverse effects and drug interactions. Drug Safety 2002;25(5):323-344.  </li>
+    
+    <li>D’Angelo L, Grimaldi R, Caravaggi M, Marcoli M, Perucca E, Lecchini S, Frigo GM, Crema A. 
+    A double-blind, placebo-controlled clinical study on the effect of a standardized ginseng extract on psychomotor performance in healthy volunteers. Journal of Ethnopharmacology 1986;16(1):15-22. 
+    </li>
+    <li>Dasgupta A, Reyes MA. Effect of Brazillian, Indian, Siberian, Asian, and North American ginseng on serum digoxin measurement by immunoassays and binding of digoxin-like immunoreactive components of ginseng with Fab Fragment of antidigoxin antibody (Digiband). American Journal of Clinical Pathology 2005;124(2):229-236.  </li>
+    
+    <li>de Andrade E, de Masquita AA, de Almeida Claro J, de Andrade PM, Ortiz V, Paranhos M, Srougi M. Study of the efficacy of Korean Red Ginseng in the treatment of erectile dysfunction. Asian Journal of Andrology 2007;9(2):241-244.  </li>
+    
+    <li>Ellis JM, Reddy P. Effects of Panax ginseng on quality of life. The Annals of Pharmacotherapy 2002;36(3):375-379.  </li>
+    
+    <li>Engels HJ, Fahlman MM, Wirth JC. Effects of ginseng on secretory IgA, performance, and recovery from interval exercise. Medicine & Science in Sports & Exercise 2003;35(4):690-696.  </li>
+    
+    <li>Engels HJ, Kolokouri I, Cieslak TJ, Wirth JC. Effects of ginseng supplementation on supramaximal exercise performance and short-term recovery. Journal of Strength and Conditioning Research 2001;15(3):290-295.  </li>
+    
+    <li>Engels HJ, Said JM, Wirth JC. Failure of chronic ginseng supplementation to affect work performance and energy metabolism in healthy adult females. Nutrition Research 1996;6(8):1295-1305.  </li>
+    
+    <li>Engels HJ, Wirth JC. No ergogenic effects of ginseng (Panax ginseng C.A. Meyer) during graded maximal aerobic exercise. Journal of the American Dietetic Association 1997;97(10):1110-1115.  </li>
+    
+    <li>ESCOP 2003: European Scientific Cooperative on Phytotherapy Scientific Committee. ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition. Exeter (UK): European Scientific Cooperative on Phytotherapy and Thieme; 2003. </li>
+
+    <li>Gardner Z, McGuffin M, editors. American Herbal Products Association’s Botanical Safety Handbook. Second Edition. Boca Raton (FL): Taylor and Francis Group; 2013.</li>
+    
+    <li>Gonzalez-Seijo JC, Ramos YM, Lastra I. Manic episode and ginseng: report of a possible case. Journal of Clinical Psychopharmacology 1995;15(6):447-448.  </li>
+    
+    <li>Gross D, Krieger D, Efrat R, Dayan. Ginseng extract G115 for the treatment of chronic respiratory diseases. Schweiz Zschr Ganzheits Medizin 1995;1:29-33.   </li>
+
+    <li>Gross D, Shenkman Z, Bleiberg B, Dayan M, Gittelson M, Efrat R. Ginseng improves pulmonary functions and exercise capacity in patients with COPD. Monaldi Archives for Chest Disease 2002;57(5-6):242-246. </li>
+
+    <li>Heo JH, Lee ST, Chu K, Oh MJ, Park HJ, Shim JY, Kim M. An open-label trial of Korean red ginseng as an adjuvant treatment for cognitive impairment in patients with Alzeimer’s disease. European Journal of Neurology 2008;15(8):865-868.  </li>
+    
+    <li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press; 2003. </li>
+    
+    <li>Janetzki K, Morreale AP. Probable interaction between warfarin and ginseng. American Journal of Health-System Pharmacy 1997;54(6):692-693.  </li>
+    
+    <li>Jones BD, Runikis AM. Interaction of ginseng with phenelzine. Journal of Clinical Pharmacology 1987;7(3):201-202.  </li>
+    
+    <li>Kennedy DO, Haskell CF, Wesnes KA, Scholey AB. Improved cognitive performance in human volunteers following administration of guarana (Paullinia cupana) extract: comparison and interaction with Panax ginseng. Pharmacology, Biochemistry and Behavior 2004;79(3):401-411. </li>
+    
+    <li>Kennedy DO, Scholey AB, Wesnes KA. Modulation of cognition and mood following administration of single doses of Ginkgo biloba, ginseng, and a ginkgo/ginseng combination to healthy young adults. Physiology & Behavior 2002;75(5):739-751.   </li>
+    
+    <li>Kennedy DO, Scholey AB, Wesnes KA. Dose dependent changes in cognitive performance and mood following acute administration of Ginseng to healthy young volunteers. Nutritional Neuroscience 2001;4(4):295-310.  </li>
+    
+    <li>Kim SH, Park KS, Chang MJ, Sung JH. Effects of panax ginseng extract on exercise-induced oxidative stress. Journal of Sports Medicine and Physical Fitness 2005;45(2):178-182.  </li>
+    
+    <li>Lee SH, Ahn YM, Ahn SY, Doo HK, Lee BC. Interaction between warfarin and Panax ginseng in ischemic stroke patients. The Journal of Alternative and Complementary Medicine 2008a;14(6):715-721.  </li>
+    
+    <li>Lee ST, Chu K, Sim JY, Heo JH, Kim M. Panax ginseng enhances cognitive performance in Alzheimer disease. Alzheimer Disease and Associated Disorders 2008b;22(3):222-226.  </li>
+    
+    <li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005. </li>
+    
+    <li>Petkov VD, Mosharrof AH. Effects of standardized ginseng extract on learning, memory and physical capabilities. American Journal of Chinese Medicine 1987;15(1-2):19-29. </li>
+    
+    <li>Ph. Eur. 2008: European Pharmacopoeia Commission. European Pharmacopoeia, 6th edition, Volume 1. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM); 2008. </li>
+    
+    <li>PPRC 2020: Pharmacopoeia of the People’s Republic of China, Volume I. English edition. Beijing (CN): The State Pharmacopoeia Commission of the People's Republic of China; 2020.   </li>
+    
+    <li>Reay JL, Kennedy DO, Scholey AB. Effects of Panax ginseng, consumed with and without glucose, on blood glucose levels and cognitive performance during sustained ‘mentally demanding’ tasks. Journal of Psychopharmacology 2006;20(6):771-781. </li>
+    
+    <li>Reay JL, Kennedy DO, Scholey AB. Single doses of Panax ginseng (G115) reduce blood glucose levels and improve cognitive performance during sustained mental activity. Journal of Psychopharmacology 2005;19(4):357-365.  </li>
+    
+    <li>Scaglione F, Cattaneo G, Alessandria M, Cogo R. Efficacy and safety of the standardized ginseng extract G115 for potentiating vaccination against common cold and/or influenza syndrome. Drugs Under Experimental and Clinical Research 1996;22(2):65-72.  </li>
+    
+    <li>Scaglione F, Cogo R, Cocuzza C, Arcidiacono M, Beretta A. Immunomodulatory effects of Panax ginseng C.A. Meyer (G115) on alveolar macrophages from patients suffering with chronic bronchitis. International Journal of Immunotherapy 1994;10(1):21-24.  </li>
+    
+    <li>Scaglione F, Ferrara F, Dugnani S, Falchi M, Santoro G, Fraschini F. Immunomodulatory effects of two extracts of Panax ginseng C.A. Meyer. Drugs Under Experimental and Clinical Research 1990;16(10):537-542.  </li>
+    
+    <li>Scaglione F, Weiser K, Alessandria M. Effects of the standardised ginseng extract G115 in patients with chronic bronchitis. Clinical Drug Investigation 2001;21(1):41-45.  </li>
+    
+    <li>Schepdael PV. Les effets du ginseng G115 sur la capacité physique de sportifs d’endurance. Acta Therapeutica 1993;19(4):337-347.  </li>
+    
+    <li>Scholey AB, Kennedy DO. Acute, dose-dependent cognitive effects of Ginkgo biloba, Panax ginseng and their combination in healthy young volunteers: differential interactions with cognitive demand. Human Psychopharmacology 2002;17(1):35-44.  </li>
+    
+    <li>Seely D, Dugoua JJ, Perri D, Mills E, Koren G. Safety and efficacy of Panax ginseng during pregnancy and lactation. The Canadian Journal of Clinical Pharmacology 2008;15(1):e87-e94.  </li>
+    
+    <li>Shader RI, Greenblatt DJ. Bees, ginseng and MAOIs revisited. Journal of Clinical Psychopharmacology 1988;8(4):235.  </li>
+    
+    <li>Shader RI, Greenblatt DJ. Phenelzine and the dream machine – ramblings and reflections. Journal of Clinical Psychopharmacology 1985;5(2):65.  </li>
+    
+    <li>Siegel RK. Ginseng abuse syndrome. Problems with the panacea. The Journal of the American Medical Association 1979;241(15):1614-1615. </li>
+    
+    <li>Sievenpiper JL, Sung MK, Buono MD, Seung-Lee K, Nam KY, Arnason JT, Leiter LA, Vuksan V. Korean red ginseng rootlets decrease acute postprandial glycemia: results from sequential preparation- and dose-finding studies. Journal of the American College of Nutrition 2006;25(2):100-107.  </li>
+    
+    <li>Soldati F, Sticher O. HPLC separation and quantitative determination of ginsenosides from Panax ginseng, Panax quinquefolium and from ginseng drug preparations. 2nd communication. Planta Medica 1980;39(4):348-357.  </li>
+    
+    <li>Sorensen H, Sonne J. A double-masked study of the effects of ginseng on cognitive functions. Current Therapeutic Research 1996;57(12):959-968.  </li>
+    
+    <li>Sotaniemi EA, Haapakoski E, Rautio A. Ginseng therapy in non-insulin-dependent diabetic patients. Diabetes Care 1995;18(10):1373-1375.  </li>
+    
+    <li>Sünram-Lea SI, Birchall RJ, Wesnes KA, Petrini O. The effect of acute administration of 400 mg of Panax ginseng on cognitive performance and mood in healthy young volunteers. Current Topics in Nutraceutical Research 2005;3(1):65-74.  </li>
+    
+    <li>Tetsutani T, Yamamura M, Yamaguchi T, Onoyama O, Kono M. Can red ginseng control blood glucose in diabetic patients. The Ginseng Review 2000;28:44-47.  </li>
+    
+    <li>USDA 2024: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) – Global. U.S. National Plant Germplasm System. [Accessed 2024 January 11]. Available from: https://npgsweb.ars-rin.gov/gringlobal/taxon/taxonomysearch</li>
+    
+    <li>USP-NF 2023: United States Pharmacopeial Convention. United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention. </li>
+    
+    <li>Vuksan V, Sung MK, Sievenpiper JL, Stavro PM, Jenkins AL, Buono MD, Lee KS, Leiter LA, Nam KY, Arnason JT, Choi M, Naeem A. Korean red ginseng (Panax ginseng) improves glucose and insulin regulation in well-controlled, type 2 diabetes: results of a randomized, double-blind, placebo-controlled study of efficacy and safety. Nutrition, Metabolism & Cardiovascular Diseases 2008;18(1):46-56.  </li>
+    
+    <li>WHO 1999: World Health Organization (WHO) Monographs on Selected Medicinal Plants: Volume 1. Geneva (CHE): World Health Organization. </li>
+    
+    <li>Williamson EM. Potter’s Herbal Cyclopaedia: The Authoritative Reference work on Plants with a Known Medical Use. Saffron Walden (UK): The C.W. Daniel Company Limited; 2003. </li>
+
+    <li>Winston D, Maimes S. Adaptogens: Herbs for strength, stamina and stress relief. Rochester (VT): Healing Arts Press; 2007.</li>
+
+    <li>Wren RC. Potter’s Cyclopedia of Botanical Drugs and Preparations. London (UK): Potter and Clark; 1907. </li>
+    </ul>
+    </section>
+    <h2>References reviewed</h2> 
+    <section>
+<ul>    
+    <li>Awang DVC, Fugh-Berman A. Herbal interactions with cardiovascular drugs. The Journal of  Cardiovascular Nursing 2002;16(4):64-70.  </li>
+    
+    <li>Bahrke MS. Comments on ‘manic episode and ginseng: report of a possible case’. Journal of Clinical Psychopharmacology 1997;17(2):140-141.  </li>
+        
+    <li>Bahrke MS, Morgan WP. Evaluation of the ergogenic properties of ginseng. Sports Medicine 1994;18(4):229-248.  </li>
+
+    <li>Bahrke MS, Morgan WP. Evaluation of the ergogenic properties of ginseng: an update. Sports Medicine 2000;29(2):113-133.  </li>
+    
+    <li>Bartram T. Bartram’s Encyclopedia of Herbal Medicine. London (UK): Robinson Publishing Ltd; 1998. </li>
+    
+    <li>BHP 1996: British Herbal Pharmacopoeia. Bournemouth (UK): The British Herbal Medicine Association; 1996. </li>
+    
+    <li>Blumenthal M. ABC Clinical Guide to Herbs. New York (NY): Theime; 2003. </li>
+    
+    <li>Bove M. An Encyclopedia of Natural Healing for Children and Infants, 2nd edition. Toronto (ON): McGraw-Hill; 2001. </li>
+    
+    <li>BP 2008: British Pharmacopoeia Commission. British Pharmacopoeia London (UK): The Stationary Office; 2008. </li>
+    
+    <li>Bradley PR, editor. British Herbal Compendium: A Handbook of Scientific Information on Widely Used Plant Drugs, Volume 2. Bournemouth (UK): British Herbal Medicine Association; 2006. </li>
+    
+    <li>Bucci LR. Selected herbs and human exercise performance. The American Journal of Clinical Nutrition 2000;72(Suppl 2):624S-636S. </li>
+    
+    <li>Buettner C, Yeh GY, Phillips RS, Mittleman MA, Kaptchuk TJ. Systematic review of the effects of ginseng on cardiovascular risk factors. Complementary and Alternative Medicine 2006;40(1):83-95. </li>
+    
+    <li>Cardinal BJ, Engels HJ. Ginseng does not enhance psychological well-being in healthy, young adults: results of a double-blind, placebo-controlled, randomized clinical trial. Journal of the American Dietetic Association 2001;101(6):655-660.  </li>
+
+    <li>Chen K. The effect and abuse syndrome of ginseng. Journal of Traditional Chinese Medicine 1981;1(1):69-72.  </li>
+    
+    <li>Cho YK, Sung H, Lee HJ, Joo CH, Cho GJ. Long-term intake of Korean red ginseng in HIV-1-infected patients: development of resistance mutation to zidovudine is delayed. International Immunopharmacology 2001;1(7):1295-1305.  </li>
+    
+    <li>Choi HK, Choi YJ, Choi YD, Rha KH, Kim JH, Kim DK. SS-penogram: a new diagnostic test for erectile dysfunction. Yonsei Medical Journal 2002;43(1):1-6.  </li>
+    
+    <li>Choi HK, Seong DH, Rha KH. Clinical efficacy of Korean red ginseng for erectile dysfunction. International Journal of Impotence Research 1995;7(3):181-186.  </li>
+
+    <li>Chosidow O, Dega H, Peytavin G. Ginseng as cause of Stevens-Johnson syndrome? The Lancet 1996;348(9022):267.  </li>
+    
+    <li>Coleman CI, Hebert JH, Reddy P. The effects of Panax ginseng on quality of life. Journal of Clinical Pharmacy and Therapeutics 2003;28(1):5-15. </li>
+    
+    <li>Collomp K, Wright F, Collomp R, Shamari K, Bozzolan F, Préfaut C. Ginseng et exercice supramaximal. Science & Sports 1996;11(4):250-251.  </li>
+    
+    <li>Covington MB. Traditional Chinese medicine in the treatment of diabetes. Diabetes Spectrum 2001;14(3):154-159.  </li>
+    
+    <li>Dega H, Laporte JL, Francès C, Herson S, Chosidow O. Ginseng as a cause for StevensJohnson syndrome? The Lancet 1996;347(9011):1344.  </li>
+    
+    <li>Dukes MNG. Ginseng and mastalgia. British Medical Journal 1978;1(6127):1621.  </li>
+    
+    <li>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1919 original]. </li>
+    
+    <li>Engelberg D, McCutcheon A. A case of ginseng-induced mania. Journal of Clinical Psychopharmacology 2001;21(5):535-537.  </li>
+    
+    <li>Faleni R, Soldati F. Ginseng as cause of Stevens-Johnson syndrome? The Lancet 1996;348(9022):267.  </li>
+    
+    <li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1922 original]. </li>
+    
+    <li>Felter HW, Lloyd JU. King’s American Dispensatory, Volume 1, 18th edition. Sandy (OR): Eclectic Medical Publications; 1983 [Reprint of 1898 original]. </li>
+    
+    <li>Forgo I. The effect of different ginsenoside concentration on physical work capacity. Notabene Medici 1982;12:721.  </li>
+
+    <li>Forgo I. [Effect of drugs on physical and the hormonal system of athletes]. Wirkung von Pharmaka auf korperliche Leistung und Hormonsystem von Sportlern. 2. Mitteilung. Münchener Medizinische Wochenschrift 1983;125(38):822-824. [in German]. </li>
+    
+    <li>Forgo I. The duration of effect of the standardized ginseng extract G115 in healthy competitive athletes. Notabene Medici 1985;15:636.   </li>
+
+    <li>Forgo I, Kayasseh L, Staub JJ. [Effect of a standardized ginseng extract on general wellbeing, reaction time, lung function and gonadal hormones]. Einfluss eines standardisierten Ginseng-Extraktes auf das Allgemeinbefinden, die Reaktionsfahigkeit, Lungenfunktion und die gonadalen Hormone. Die Medizinische Welt 1981;32(19):751-756. [in German]. </li>
+
+    <li>Forgo I, Kirchdorfer AM. [On the question of influencing the performance of top sportmen by means of biologically active substances]. Ginseng steigert die köperliche Leistung. Arztliche Praxis 1981;33(44):1784-1786. [in German]. </li>
+    
+    <li>Gaffney BT, Hügel HM, Rich PA. The effects of Eleutherococcus senticosus and Panax ginseng on steroidal hormone indices of stress and lymphocyte subset numbers in endurance athletes. Life Sciences 2001;70(4):431-442.  </li>
+    
+    <li>Gillis CN. Panax ginseng pharmacology: a nitric oxide link? Biochemical Pharmacology 1997;54(1):1-8. </li>
+    
+    <li>Grieve M. A Modern Herbal, Volume 1. New York (NY): Dover Publications; 1971 [Reprint of 1931 Harcourt, Brace & Company publication]. </li>
+    
+    <li>Gross D, Shenkman Z, Bleiberg B, Dayan M, Gittelson M, Efrat R. Ginseng improves pulmonary functions and exercise capacity in patients with COPD. Monaldi Archives for Chest Disease 2002;57(5-6):242-246. </li>
+    
+    <li>Hallstrom C, Fulder S, Carruthers M. Effects of ginseng on the performance of nurses on night duty. Comparative Medicine East and West 1982;6(4):277-282.  </li>
+    
+    <li>Hong H, Ji YH, Hong JH, Nam KY, Ahn TY. A double-blind crossover study evaluating the efficacy of Korean red ginseng in patients with erectile dysfunction: a preliminary report. The Journal of Urology 2002;168(5):2070-2073.  </li>
+
+    <li>Izzo AA, Di Carlo G, Borrelli F, Ernst E. Cardiovascular pharmacotherapy and herbal medicines: the risk of drug interaction. International Journal of Cardiology 2005;98(1):1-14.  </li>
+    
+    <li>Jang DJ, Lee MS, Shin BC, Lee YC, Ernst E. Red ginseng for treating erectile dysfunction: a systematic review. British Journal of Clinical Pharmacology 2008;66(4):444-450. </li>
+    
+    <li>Jiang X, Blair EYL, McLachlan AJ. Investigation of the effects of herbal medicines on warfarin response in healthy subjects: a population pharmacokinetic-pharmacodynamix modeling approach. Journal of Clinical Pharmacology 2006;46(11):1370-1378.   </li>
+    
+    <li>Jiang X, Williams KM, LIauw WS, Ammit AJ, Roufogalis BD, Duke CC, Day RO, McLachlan AJ. Effect of St. John’s wort and ginseng on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects. British Journal of Clinical Pharmacology 2004;57(5):592-599.  </li>
+    
+    <li>Kaneko H, Nakanishi K. Proof of the mysterious efficacy of ginseng: basic and clinical trials: clinical effects of medical ginseng, Korean red ginseng: specifically, its anti-stress action for prevention of disease. Journal of Pharmacological Sciences 2004;95(2):158-162. </li>
+
+    <li>Kaneko H, Nakanishi K, Kuwashima K, Ikeda K. Effects of the long-term administration of red ginseng on working stress and changes of physiological parameters of workers. A study at a care hospital for the aged (ROUJIN BYOUIN). Therapeutic Research 2000;21(5):1451-1463. [abstract] </li>
+    
+    <li>Kang HY, Kim SH, Lee WJ, Byrne HK. Effects of ginseng ingestion on growth hormone, testosterone, cortisol, and insulin-like growth factor 1 responses to acute resistance exercise. Journal of Strength and Conditioning Research 2002;16(2):179-183.  </li>
+    
+    <li>Kennedy DO, Scholey AB. Ginseng: potential for the enhancement of cognitive performance and mood. Pharmacology, Biochemistry and Behavior 2003;75(3):687-700. </li>
+    
+    <li>Kennedy DO, Scholey AB, Drewery L, Marsh VR, Moore B, Ashton H. Electroencephalograph effects of single doses of Ginkgo biloba and Panax ginseng in healthy young volunteers. Pharmacology, Biochemistry and Behavior 2003;75(3):701-709.  </li>
+    
+    <li>Kim JH, Park CY, Lee SJ. Effects of sun ginseng on subjective quality of life in cancer patients: a double-blind, placebo-controlled pilot trial. Journal of Clinical Pharmacy and Therapeutics 2006;31(4):331-334.  </li>
+    
+    <li>Klepser TB, Klepser ME. Unsafe and potentially safe herbal therapies. American Journal of Health-System Pharmacy 1999;56(2):125-138. </li>
+    
+    <li>Kolokouri I, Engels HJ, Cieslack T, Wirth JC. Effect of chronic ginseng supplementation on short duration, supramaximal exercise test performance. Medicine & Science in Sports & Exercise 1999;31(Suppl 5):S117.  </li>
+
+    <li>Kulaputana O, Thanakomsirichot S, Anomasiri W. Ginseng supplementation does not change lactate threshold and physical performances in physically active Thai men. Journal of the Medical Association of Thailand 2007;90(6):1172-1179.  </li>
+    
+    <li>Kwak HE, Kim SS, Kim YC, Jung SR, Kang HY, Lee CD. Effects of red ginseng intake on muscle injury due to eccentric exercise. Medicine & Science in Sports & Exercise 2007;39(Suppl 5):S361.  </li>
+    
+    <li>Lee HY, Kim CS. [Clinical investigation of Insam (Korean ginseng) on sexual potency]. Korean Journal of Urology 1986;27(2):235-240. [in Korean]. </li>
+    
+    <li>Lee FC, Ko JH, Park JK, Lee JS. Effects of Panax ginseng on blood alcohol clearance in man. Clinical and Experimental Pharmacology & Physiology 1987;14(6):543-546. </li>
+    
+    <li>Lee HY, Paick JS, Lee SW. [Efficacy of ginseng extract on patients with oligospermia]. Korean Journal of Urology 1988;29(8):950-960. [in Korean]. </li>
+    
+    <li>Lust J. The Herb Book. New York (NY): Bantam Books Incorporated, published by arrangement with Benedict Lust Publications; 1974. </li>
+
+    <li>Ma SW, Benzie IF, Chu TT, Fok BS, Tomlinson B, Critchley LA. Effect of Panax ginseng supplementation on biomarkers of glucose tolerance, antioxidant status and oxidative stress in type 2 diabetic subjects: results of a placebo-controlled human intervention trial. Diabetes, Obesity and Metabolism 2008;10(11):1125-1127.  </li>
+    
+    <li>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone; 2000. </li>
+    
+    <li>Mills E, Duguoa J, Perri D, Koren G. Herbal Medicines in Pregnancy and Lactation. An Evidence-Based Approach. New York (NY): Taylor and Francis; 2006. </li>
+    
+    <li>Moerman DE. Native American Ethnobotany. Portland (OR): Timber Press; 1998. </li>
+    
+    <li>Murphy LL, Lee TJ. Ginseng, sex behavior, and nitric oxide. Annals of the New York Academy of Sciences 2002;962:372-377. </li>
+    
+    <li>Nocerino E, Amato M, Izzo AA. The aphrodisiac and adaptogenic properties of ginseng. Fitoterapia 2000;71(Suppl 1):S1-S5. </li>
+    
+    <li>Palmer BV, Montgomery ACV, Monteiro JCMP. Gin seng and mastalgia. British Medical Journal 1978;1(6122):1284.  </li>
+    
+    <li>Persson J, Bringlov E, Nilsson LG, Nyberg L. The memory-enhancing effects of ginseng and ginkgo biloba in healthy volunteers. Psychopharmacology 2004;172(4):430-434.  </li>
+
+    <li>Ravens JA, Edwards D. Roots: evolutionary origins and biogeochemical significance. Journal of Experimental Botany 2001;52(90001):381-401.  </li>
+    
+    <li>Reay JL, Kennedy DO, Scholey AB. The glycaemic effects of single doses of Panax ginseng in young healthy volunteers. British Journal of Nutrition 2006;96(4):639-642.  </li>
+    
+    <li>Reay JL, Scholey AB, Milne A, Fenwick J, Kennedy DO. Panax ginseng has no effect on indices of glucose regulation following acute or chronic ingestion in healthy volunteers. British Journal of Nutrition 2008;19:1-6. </li>
+    
+    <li>Ryu SJ, Chien YY. Ginseng-associated cerebral arteritis. Neurology 1995;45:829-830.  </li>
+    
+    <li>Salvati G, Genovesi G, Marcellini L, Paolini P, De Nuccio I, Pepe M, Re M. Effects of Panax ginseng C.A. Meyer saponins on male fertility. Panminerva Medica 1996;38(4):249-254.  </li>
+    
+    <li>Schilcher, H. Phytotherapy in Paediatrics. Handbook for Physicians and Pharmacists. Stuttgart (D): Medpharm Scientific Publishers; 1997. </li>
+    
+    <li>Shou-zhong Y, translator. The Divine Farmer’s Materia Medica - A translation of the Shen Nong Ben Cao Jing. Boulder (CO): Blue Poppy Press; 2004. </li>
+    
+    <li>Sievenpiper JL, Arnason JT, Leiter LA, Vuksan V. Null and opposing effects of asian ginseng (Panax ginseng C.A Meyer) on acute glycemia: results of two acute dose escalation studies. Journal of the American College of Nutrition 2003;22(6):524-532.  </li>
+
+    <li>Sievenpiper JL, Arnason JT, Leiter LA, Vuksan V. Decreasing, null and increasing effects of eight popular types of ginseng on acute postprandial glycemic indices in healthy humans: the role of ginsenosides. Journal of the American College of Nutrition 2004;23(3):248-258.  </li>
+    
+    <li>Soldati F. Immunological studies of ginseng. Proceedings of the 5th International Ginseng Symposium, Seoul: 1988;108-114. </li>
+    
+    <li>Srisurapanon S, Rungroeng K, Apibal S, Cherdrugsi P, Siripol R, Vanich-Angkul V, Timvipark C. The effect of standardized ginseng extract on peripheral blood leukocytes and lymphocyte subsets: a preliminary study in young healthy adults. Journal of the Medical Association of Thailand 1997;80(Suppl 1):S81-S85.  </li>
+    
+    <li>Sticher O, Soldati F. HPLC Trennung and quantitative Bestimmung der Ginsenoside von Panax ginseng, Panax quinquefolium and von ginseng-spezialitaten. Planta Medica 1979;36(5):30-42.  </li>
+    
+    <li>Sung H, Kang SM, Lee MS, Kim TG, Cho YK. Korean red ginseng slows depletion of CD4 T cells in human immunodeficiency virus type 1-infected patients. Clinical and Diagnostic Laboratory Immunology 2005;12(4):497-501.  </li>
+    
+    <li>Teves M, Wright J, Welch M, Patton J, Mello R, Rock PB, Knapik JJ, Vogel JA, der 
+    Marderosian A. Effects of ginseng on repeated bouts of exhaustive exercise. Medicine & Science in Sports & Exercise 1983;15(2):162. 
+    </li>
+    <li>Tilgner S. Herbal Medicine from the Heart of the Earth. Creswell (OR): Wise Acre Press; 1999. </li>
+    
+    <li>Tode T, Kikuchi Y, Hirata J, Kita T, Nakata H, Nagata I. Effect of Korean red ginseng on psychological functions in patients with severe climacteric syndromes. International Journal of Gynecology & Obstetrics 1999;67(3):169-174.  </li>
+    
+    <li>von Ardenne M, Klemm W. Measurements of the increase in the difference between the arterial and venous Hb-O2 saturation obtained with daily administration of 200 mg standardized ginseng extract G115 for four weeks. Panminerva Medica 1987;29:143-150.   </li>
+    
+    <li>Vogel VJ. American Indian Medicine. Norman (OK): The University of Oklahoma Press; 1970. </li>
+    
+    <li>Vogler BK, Pittler MH, Ernst E. The efficacy of ginseng. A systematic review of randomized clinical trials. European Journal of Clinical Pharmacology 1999;55(8):567-575. </li>
+    
+    <li>Weiss RF. Herbal Medicine. Gothenburg (SE), Beaconsfield (UK): AB Arcanum, Beaconsfield Publishers Ltd; 1998. </li>
+
+    <li>Wiersema J, León B. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press LLC; 1999. </li>
+    
+    <li>Williamson EM, Evans FJ, Wren RC. Potter's New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (UK): C.W. Daniel Company Limited; 1998. </li>
+    
+    <li>Wiseman N and Ye F. A Practical Dictionary of Chinese Medicine. 2nd edition. Brookline (MA): Paradigm Publications; 1999. </li>
+    
+    <li>Yeh G, Eisenberg DM, Kaptchuk TJ, Phillips RS. Systematic review of herbs and dietary supplements for glycemic control in diabetes. Diabetes Care 2003;26(4):1277-1294. </li>
+    
+    <li>Yeung H. Handbook of Chinese Herbal Formulas. Rosemeade (CA): Institute of Chinese Medicine; 1998. </li>
+    
+    <li>Ziemba AW, Chmura J, Kaciuba-Uscilko H, Nazar K, Wisnik P, Gawronski W. Ginseng treatment improves psychomotor performance at rest and during graded exercise in young athletes. International Journal of Sport Nutrition 1999;9(4):371-377. </li>
+    
+</ul>
+</section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

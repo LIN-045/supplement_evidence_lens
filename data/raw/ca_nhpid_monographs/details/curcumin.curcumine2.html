@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=curcumin.curcumine2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="0b4f9cd8-c487-4bc6-bb7f-25ce1f768cec"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>CONCENTRATED TURMERIC EXTRACTS AND ISOLATES (CURCUMINOIDS/CURCUMIN)</h1>
+	<div class="icon">
+		<a href="dbImages/mono_concentrated-turmeric-extracts-isolates_english.pdf" title="Monograph: CONCENTRATED TURMERIC EXTRACTS AND ISOLATES (English)"><img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="CURCUMIN" width="22" height="21" >(PDF Version - 50 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+			<li>As enhanced absorption formulations are often used for Turmeric and its constituents, this is a reminder that enhanced absorption dosage forms/formulations are not covered by Natural and Non-prescription Health Products Directorate&apos;s  monographs and should be submitted as Class III submissions with supporting evidence.</li>
+		</ul>
+	</p>
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>September 26, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonnameSourceInformation">
+		<h2 id="properNameCommonnameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source  information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="col">Proper name(s)</th>
+						<th rowspan="2" scope="col">Common name(s)</th>
+						<th colspan="3" scope="colgroup">Source information</th>
+					</tr>
+					<tr>
+						<th scope="col">Source material(s)</th>
+						<th scope="col">Part(s)</th>
+						<th scope="col">Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Curcuma longa</em></td>
+						<td>
+							<ul>
+								<li>Common turmeric</li>
+								<li>Curcuma</li>
+								<li>Indian-saffron</li>
+								<li>Jianghuang</li>
+								<li>Turmeric</li>
+								<li>Yellow ginger</li>
+							</ul>
+						</td>
+						<td><em>Curcuma longa</em></td>
+						<td>Rhizome</td>
+						<td>Dry</td>	
+					</tr>
+					<tr>
+						<td>Curcuminoids</td>
+						<td>Curcuminoids</td>
+						<td><em>Curcuma longa</em></td>
+						<td>Rhizome</td>
+						<td>Isolate</td>	
+					</tr>
+					<tr>
+						<td rowspan="2">(1E,6E)-1,7-Bis(4-hydroxy-3-methoxyphenyl)-1,6-heptadiene-3,5-dione</td>
+						<td rowspan="2">Curcumin</td>
+						<td><em>Curcuma longa</em></td>
+						<td>Rhizome</td>
+						<td>Isolate</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>Synthetic</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: Curcuminoids: USP-NF 2023&semi; EFSA 2017&semi; Curcumin: RSC 2023&semi; Turmeric: USDA 2023&semi; Common names: Curcuminoids: USP-NF 2023&semi; EFSA 2017&semi; Curcumin: Goel et al. 2008&semi; Boon and Smith 2004&semi; Deodhar et al. 1980&semi; Turmeric: USDA 2023&semi; PPRC 2020&semi; McGuffin et al. 2000&semi; Source information: PPRC 2020&semi; Goel et al. 2008&semi; Boon and Smith 2004&semi; ESCOP 2003&semi; Blumenthal et al. 2000&semi; Deodhar et al. 1980.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Source of (an) antioxidant(s)/Provides (an) antioxidant(s) (ESCOP 2003&semi; Blumenthal et al. 2000&semi; Mills and Bone 2000).</li>
+				<li>Source of (an) antioxidant(s)/Provides (an) antioxidant(s) that help(s) fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (ESCOP 2003&semi; Blumenthal et al. 2000&semi; Mills and Bone 2000).</li>
+				<li>Helps relieve joint pain and inflammation (Kuptniratsaikul et al. 2014&semi; Panahi et al. 2014&semi; Deodhar et al. 1980).</li>
+			</ul>
+			<p><strong>Note:</strong> For source of antioxidant(s) claims, the singular should be used on the label when the product only contains one medicinal ingredient (MI) (single compound) associated with the claim (e.g. curcumin)&semi; the plural form should be used when the product formulation contains more than one MI with such properties or one MI containing several compounds with antioxidant properties such as curcuminoids.</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+        		<p><strong>Concentrated Turmeric Extracts</strong></p>
+        		<p>Methods of preparation: Standardized Extracts</p>
+					<p><em>Antioxidant</em></p>
+						<p>Extract standardized to 75% Curcuminoids or more&semi; Not to exceed 1500 milligrams curcuminoids per day and 500 milligrams per single dose (USP-NF 2023&semi; Kuptniratsaikul et al. 2014&semi; Panahi et al. 2014).</p>
+						<p><strong>Note:</strong> Optional: The potency constituent, curcumin, can be included.</p>
+					<p><em>Relief of joint pain/inflammation</em></p>
+						<p>Extract standardized to 75% Curcuminoids or more&semi; Providing 1500 milligrams curcuminoids, per day&semi; Not to exceed 500 milligrams per single dose (USP-NF 2023&semi; Kuptniratsaikul et al. 2014&semi; Panahi et al. 2014).</p>
+						<p><strong>Note:</strong> Optional: The potency constituent, curcumin, can be included.</p>
+        		<p><strong>Curcuminoids</strong></p>
+        			<p><em>Antioxidant</em></p>
+        				<p>Not to exceed 1500 milligrams curcuminoids per day and 500 milligrams per single dose (USP-NF 2023&semi; Kuptniratsaikul et al. 2014&semi; Panahi et al. 2014).</p>
+        				<p><strong>Note:</strong> Optional: The potency constituent, curcumin, can be included.</p>
+        			<p><em>Relief of joint pain/inflammation</em></p>
+        				<p>1500 milligrams curcuminoids, per day&semi; Not to exceed 500 milligrams per single dose (USP-NF 2023&semi; Kuptniratsaikul et al. 2014&semi; Panahi et al. 2014).</p>
+        				<p><strong>Note:</strong> Optional: The potency constituent, curcumin, can be included.</p>
+        		<p><strong>Curcumin</strong></p>
+        			<p><em>Antioxidant</em></p>
+        				<p>Not to exceed 1200 milligrams curcumin per day and 400 milligrams per single dose (Deodhar et al. 1980).</p>
+        			<p><em>Relief of joint pain/inflammation</em></p>
+        				<p>1200 milligrams curcumin, per day&semi; Not to exceed 400 milligrams per single dose (Boon and Smith 2004&semi; Deodhar et al. 1980).</p>
+			<h3>Direction(s) for use</h3>
+				<p>No statement required.</p>
+			<h3>Combination rules</h3>
+				<ul>
+					<li>The finished product should not exceed a total amount of curcuminoids of 500 mg per dose and 1500 mg per day.</li>
+					<li>The finished product should not exceed a total amount of curcumin of 400 mg per dose and 1200 mg per day.</li>
+				</ul>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a liver or biliary disorder (HC 2025&semi; Brinker 2010&semi; ESCOP 2003&semi; McGuffin et al. 2000).</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications including blood thinners (HC 2025&semi; Brinker 2010&semi; Mills and Bone 2005).</li>
+						<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience any new symptoms including yellowing of the eyes or skin, dark urine, nausea, vomiting, stomach pain (HC 2025).</li>
+					</ul>
+				</p>
+				<p><em>Relief of joint pain/inflammation</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</p>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Ingredients must be chosen from the current <em>Natural Health Products Ingredients Database</em> (NHPID) and must meet the limitations outlined in that database, the <em>Food and Drug Regulations</em> (FDR), and the current Cosmetic Ingredient Hotlist, when relevant.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+				<li>The medicinal ingredients may comply with pharmacopoeial monographs. For example, as per USP-NF 2023, curcuminoids is defined as a partially purified natural complex of diaryl heptanoid derivatives isolated from Turmeric, <em>Curcuma longa</em> L. The ingredient contains NLT 95.0% of curcuminoids, calculated on the dried basis, as the sum of curcumin, desmethoxycurcumin, and bisdesmethoxycurcumin. It contains not less than 70% and no more than 80% curcumin, NLT 15.0% and NMT 25.0% of desmethoxycurcumin, and NLT 2.5% and NMT 6.5% of bisdesmethoxycurcumin.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS (for NHPs):</h2>
+    		<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/CURCUMIN_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Blumenthal M, Goldberg A, Brinkmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Boston (MA): Integrative Medicine Communications&semi; 2000.</li>
+				<li>Boon H, Smith M. The Complete Natural Medicine Guide to the 50 Most Common Medicinal Herbs. Toronto (ON): Robert Rose Inc&semi; 2004.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Deodhar SD, Sethi R, Srimal RC. Preliminary studies on anti-rheumatic activity of curcumin (di-feruloyl methane). Indian Journal of Medical Research 1980&semi;71:632-634.</li>
+				<li>EFSA 2017: European Food Safety Authority. Scientific opinion: Curcumin and normal functioning of joints: evaluation of a health claim pursuant Article 13(5) of Regulation (EC) No 1924/2006. Vol 15(5). [Accessed 2023 September 28]. Available from: https://efsa.onlinelibrary.wiley.com/doi/epdf/10.2903/j.efsa.2017.4774</li>
+				<li>ESCOP: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2<sup>nd</sup> edition. 2003. Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme&semi; 2003.</li>
+				<li>Goel A, Kunnumakkara AB, Aggarwal BB. 2008. Curcumin as "Curecumin": From kitchen to clinic. Biochemical Pharmacology 75:787-809.</li>
+				<li>HC 2025: Health Canada: Summary Safety Review - Turmeric and Curcuminoids for Oral Use - Assessing the Potential Risk of Hepatotoxicity. Available from: https://dhpp.hpfb-dgpsa.ca/review-documents/resource/SSR1758121117867</li>
+				<li>Kuptniratsaikul V, Dajpratham P, Taechaarpornkul2 W, Buntragulpoontawee M, Lukkanapichonchut P, Chootip C, Saengsuwan J, Tantayakom K, Laongpech S. Efficacy and safety of Curcuma domestica extracts compared with ibuprofen in patients with knee osteoarthritis: a multicenter study. Clinical Interventions in Aging 2014&semi;9:451-458.</li>
+				<li>McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. Herbs of Commerce, 2<sup>nd</sup> edition. Silver Spring (MD): American Herbal Products Association&semi; 2000.</li>
+				<li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+				<li>Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</li>
+				<li>Panahi Y., Rahimnia AR., Sharafi M., Alishiri G., Saburi A., Sahebkar A. Curcuminoid treatment for knee osteoarthritis: a randomized double-blind placebo-controlled trail. Phytotherapy Research 2014&semi;28(11):1625-1631.</li>
+				<li>PPRC 2020: Pharmacopoeia of the People&apos;s Republic of China, Volume 1, English edition. Beijing (CN): The State Pharmacopoeia Commission of the People&apos;s Republic of China&semi; 2020.</li>
+				<li>RSC 2023: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available from: https://merckindex.rsc.org/</li>
+				<li>USDA 2023: United States Department of Agriculture, Agricultural Research Service, National Genetics Resource Program. Germplasm Resources Information Network (GRIN). Beltsville (MD): National Germplasm Resources Laboratory. [Accessed 2023 October 14]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>USP-NF 2023:  United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2023.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Araújo CA, Leon LL. Abstract: Biological activities of Curcuma longa L. Mem Inst Oswaldo Cruz 2001&semi;96(5):723-728.</li>
+				<li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1922 original].</li>
+				<li>Felter HW, Lloyd JU. King&apos;s American Dispensatory, Volume 2, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</li>
+				<li>Funk JL, Oyarzo JN, Frye JB, Chen G, Lantz RC, Jolad SD, Sólyom AM, Timmermann BN. Turmeric extracts containing curcuminoids prevent experimental rheumatoid arthritis. Journal of Natural Products 2006&semi;69(3):351-355.</li>
+				<li>Gerard J. The Herbal or General History of Plants. The Complete 1633 Edition as Revised and Enlarged by Thomas Johnson. NY (NY): Dover Publications&semi; 1975.</li>
+				<li>Grieve M. A Modern Herbal, Volume 2. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931 Harcourt, Brace &amp; Company publication].</li>
+				<li>Hatcher H, Planalp R, Cho J, Torti FM, Torti SV. Curcumin: From ancient medicine to current clinical trials. Cellular and Molecular Life Sciences 2008&semi;65:1631-1652.</li>
+				<li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>Jurenka JS. Anti-inflammatory properties of curcumin, a major constituent of Curcuma longa: a review of preclinical and clinical research. Alternative Medicine Review 2009&semi;14(2):141-153.</li>
+				<li>Khory RN, Katrak NN. Materia Medica of India and their Therapeutics. Delhi (IN): Komal Prakashan&semi; 1999.</li>
+				<li>Kiso Y, Suzuki Y, Watanabe N, Oshima Y, Hikino H. Anti-hepatotoxic principles of Curcuma longa rhizomes. Journal of Medicinal Plant Research 1983&semi;49:185-187.</li>
+				<li>Kohli K, Ali J, Ansari J, Raheman Z. Curcumin: a natural anti-inflammatory agent. Indian Journal of Pharmacology 2005&semi;37(3):141-147.</li>
+				<li>Kulkarni RR, Patki PS, Jog VP, Gandage SG, Patwardhan B. Treatment of osteoarthritis with a herbomineral formulation: a double-blind, placebo-controlled, cross-over study. Journal of Ethnopharmacology 1991&semi;33:91-95.</li>
+				<li>Mills S. The Dictionary of Modern Herbalsim. Wellingborough (GB): Thorsons Publishers Ltd&semi; 1985.</li>
+				<li>Moerman DE. Native American Ethnobotany. Portland (OR): Timber Press&semi; 1998.</li>
+				<li>Rivera-Espinoza Y, Muriel P. Pharmacological actions of curcumin in liver diseases or damage. Liver International 2009&semi;29(10):1457-1466.</li>
+				<li>Satoskar RR, Shah SJ, Shenoy SG. Evaluation of anti-inflammatory property of curcumin (diferuloyl methane) in patients with postoperative inflammation. International Journal of Clinical Pharmacology, Therapy and Toxicology 1986&semi;24(12):651-654.</li>
+				<li>Srimal R, Dhawan B. Pharmacology of diferuloyl methane (curcumin), a non-steroidal anti-inflammatory agent. Journal of Pharmacy and Pharmacology 1973&semi;25:447-452.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

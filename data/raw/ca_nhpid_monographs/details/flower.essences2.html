@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=flower.essences2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="49e1769e-63ea-425c-9a9c-921d23f8b8ca"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>Flower Essences</h1>
+
+<p class="lightgreyBG">Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title='PowerPoint'>PPT</abbr>) files, can be obtained in the <a href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php#alt">alternate format help</a> section.</p>
+	
+<div class="icon">
+    <a href="dbImages/mono_flower-essences_english.pdf" title="Flower Essences">
+    <img alt="monograph: Flower Essences" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version&nbsp;-&nbsp;107&nbsp;K)</a>
+</div>
+
+<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (<abbr title="Product Licence Applications">PLAs</abbr>) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+<p><strong>Notes</strong></p>
+<ul>
+    <li>By submitting a <abbr title="Product Licence Application">PLA</abbr> referencing this monograph, the applicant is attesting that the product will comply fully with the recommended conditions of use outlined in this monograph. The conditions of use include methods of preparations, source materials, doses, durations of use, combinations of medicinal ingredients, and risk statements.</li>
+	<li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+	<li>The solidus (/) indicates that the terms and/or the statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+	<li>The use of the web-based PLA is not possible where reference is made to this monograph. Please use the PDF format available at: <a href=https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/applications/licen-prod/form/form_pl-dlmm-eng.pdf>https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/applications/licen-prod/form/form_pl-dlmm-eng.pdf</a></li>
+    <li>This monograph cannot be combined with any other monograph at Class II.</li>
+</ul>
+
+<h2>Date</h2>
+    <p>January 10, 2025</p>
+
+<h2>Proper name(s), Common name(s), Source information</h2>
+
+<table class="subject fontSize100">
+	<caption><strong>Table 1.</strong> Products may contain one or more of the following ingredients</caption>
+	<thead>
+		<tr>
+			<th scope="col" id="properName">Proper name(s)</th>
+			<th scope="col" id="commonName">Common name(s)</th>
+			<th scope="col" id="sourceMaterial">Source material - part(s)</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Aesculus carnea</span></em></td>
+			<td headers="commonName">Red Horse chestnut</td>
+			<td headers="sourceMaterial">Twigs with flowering pyramids and young leaves.</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Aesculus hippocastanum</span></em></td>
+			<td headers="commonName">Horse chestnut</td>
+			<td headers="sourceMaterial">Buds and twigs</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Aesculus hippocastanum</span></em></td>
+			<td headers="commonName">Horse chestnut</td>
+			<td headers="sourceMaterial">Flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Agrimonia eupatoria</span></em></td>
+			<td headers="commonName">Agrimony</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><span lang="la" xml:lang="la">Aqua petra</span></td>
+			<td headers="commonName">Rock water</td>
+			<td headers="sourceMaterial">Well or spring water</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Bromus ramosus</span></em></td>
+			<td headers="commonName">Wild oat</td>
+			<td headers="sourceMaterial">Flowering spikelets</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Calluna vulgaris</span></em></td>
+			<td headers="commonName">Heather</td>
+			<td headers="sourceMaterial">Flowering sprays and leaves</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Carpinus betulus</span></em></td>
+			<td headers="commonName">Hornbeam</td>
+			<td headers="sourceMaterial">Young twigs with leaves, and flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Castanea sativa</span></em></td>
+			<td headers="commonName">Sweet chestnut</td>
+			<td headers="sourceMaterial">Young twigs with leaves, and flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Centaurium umbellatum</span></em></td>
+			<td headers="commonName">Centaury</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Ceratostigma willmottianum</span></em></td>
+			<td headers="commonName">Cerato</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Cichorium intybus</span></em></td>
+			<td headers="commonName">Chicory</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Clematis vitalba</span></em></td>
+			<td headers="commonName">Clematis</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Fagus sylvatica</span></em></td>
+			<td headers="commonName">Beech</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Gentianella amarella</span></em></td>
+			<td headers="commonName">Gentian</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Helianthemum nummularium</span></em></td>
+			<td headers="commonName">Rock rose</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Hottonia palustris</span></em></td>
+			<td headers="commonName">Water violet</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Ilex aquifolium</span></em></td>
+			<td headers="commonName">Holly</td>
+			<td headers="sourceMaterial">Flowering twigs</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Impatiens glandulifera</span></em></td>
+			<td headers="commonName">Impatiens</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Juglans regia</span></em></td>
+			<td headers="commonName">Walnut</td>
+			<td headers="sourceMaterial">Young shoots, leaves and flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Larix decidua</span></em></td>
+			<td headers="commonName">Larch</td>
+			<td headers="sourceMaterial">Twigs with the young green leaf-tufts, and flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Lonicera caprifolium</span></em></td>
+			<td headers="commonName">Honeysuckle</td>
+			<td headers="sourceMaterial">Flowering clusters with stalk and leaves</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Malus pumila</span></em></td>
+			<td headers="commonName">Crab apple</td>
+			<td headers="sourceMaterial">Leaves and flower clusters</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Mimulus guttatus</span></em></td>
+			<td headers="commonName">Mimulus</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Olea europaea</span></em></td>
+			<td headers="commonName">Olive</td>
+			<td headers="sourceMaterial">Flower clusters</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Ornithogalum umbellatum</span></em></td>
+			<td headers="commonName">Star of Bethlehem</td>
+			<td headers="sourceMaterial">Flowering clusters</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Pinus sylvestris</span></em></td>
+			<td headers="commonName">Pine</td>
+			<td headers="sourceMaterial">Young shoots with flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Populus tremula</span></em></td>
+			<td headers="commonName">Aspen</td>
+			<td headers="sourceMaterial">Catkins</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Prunus cerasifera</span></em></td>
+			<td headers="commonName">Cherry plum</td>
+			<td headers="sourceMaterial">Flowering twigs</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Quercus robur</span></em></td>
+			<td headers="commonName">Oak</td>
+			<td headers="sourceMaterial">Catkins</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Rosa canina</span></em></td>
+			<td headers="commonName">Wild rose/Dog rose</td>
+			<td headers="sourceMaterial">Flowers and leaves</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Salix vitellina</span></em></td>
+			<td headers="commonName">Willow</td>
+			<td headers="sourceMaterial">Catkins</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Scleranthus annuus</span></em></td>
+			<td headers="commonName">Scleranthus</td>
+			<td headers="sourceMaterial">Flowering stems and leaves</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Sinapis arvensis</span></em></td>
+			<td headers="commonName">Mustard</td>
+			<td headers="sourceMaterial">Flower-heads and seed pods</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Ulex europaeus</span></em></td>
+			<td headers="commonName">Gorse</td>
+			<td headers="sourceMaterial">Flowers</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Ulmus procera</span></em></td>
+			<td headers="commonName">Elm</td>
+			<td headers="sourceMaterial">Twigs with flower clusters</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Verbena officinalis</span></em></td>
+			<td headers="commonName">Vervain</td>
+			<td headers="sourceMaterial">Flower</td>
+		</tr>
+		<tr>
+			<td headers="properName"><em><span lang="la" xml:lang="la">Vitis vinifera</span></em></td>
+			<td headers="commonName">Vine</td>
+			<td headers="sourceMaterial">Flowering clusters</td>
+		</tr>
+		</tbody>
+	</table>
+
+<h2>Route(s) of administration</h2>
+    <ul>
+	  <li>Oral</li>
+	  <li>Topical</li>
+    </ul>
+<h2>Dosage form(s)</h2>
+    <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+    <p><strong>Acceptable oral dosage forms:</strong> granule, liquid, lozenge, spray.</p>
+    <p><strong>Acceptable topical dosage forms:</strong> cream, liquid, ointment.</p>
+
+<h2>Use(s) or Purpose(s)</h2>
+    <p>Flower Essence preparation/remedy/medicine.</p>
+
+<h2>Dose(s)</h2> 
+	<h3>Subpopulation(s)</h3>
+    <p>Adults 18 years and older</p>
+  
+	<h3>Quantity(ies)</h3>
+    <p>The dilution for each medicinal ingredient must be equivalent to 5X.</p>
+  
+	<h3>Method(s) of preparation</h3>
+    <p>The method of preparation must be one of the following:</p>
+    <ul>
+	  <li>BHomP<sup>1</sup> Method Br 9</li>
+	  <li>BHomP<sup>1</sup> Method Br 10</li>
+    </ul>
+    <p><strong><sup>1</sup>Note:</strong> British Homeopathic Pharmacopoeia.</p>
+  
+	<h3>Direction(s) for use</h3>
+    <p><strong>Oral</strong></p>
+    <p><em>Granule</em></p>
+    <p>Take 5 granules, 2 times per day, before lunch and evening meal or as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+    <p><em>Liquid</em></p>
+    <p>Take 2 drops , 1 time per day or as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+    <p>Optional:<br>
+        Add drops in water and sip throughout the day.</p>
+    <p><em>Lozenge</em></p>
+    <p>Take 1 or 2 lozenge(s), 3 times per day or as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+    <p><em>Spray</em></p>
+    <p>Take 1 spray, 1 time per day or as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+    <p>Optional:<br>
+        Add 1 spray in water and sip throughout the day.</p>
+    <p><strong>Topical</strong></p>
+    <p><em>Cream, liquid, ointment</em></p>
+    <p>Clean affected area and then apply or as directed by a health care practitioner/health care provider/health care professional/doctor/physician. Cover with a bandage if necessary.</p>
+
+<h2>Duration(s) of use</h2>
+    <p>No statement required.</p>
+	
+<h2>Risk information</h2>
+  <h3>Caution(s) and warning(s)</h3>
+    <ul>
+      <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</li>
+      <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+    </ul>
+  <h3>Contraindication(s)</h3>
+    <p>No statement required.</p>
+  <h3>Known adverse reaction(s)</h3>
+    <p>No statement required.</p>
+
+<h2>Non-medicinal ingredients</h2>
+	<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+
+<h2>Storage conditions</h2>
+    <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+
+<h2>Specifications</h2>
+	<ul>
+	  <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+	  <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+	</ul>
+
+<h2>Example of Product Facts:</h2>
+ 
+<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+	 
+<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/FLOWER-ESSENCES_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+<h2>References cited</h2>
+<ul>
+    <li>BHomP 2024: British Homoeopathic Pharmacopoeia, 11th edition. London (GB): British Association of Homoeopathic Manufacturers, 2024. The most current version applies.</li>
+</ul>
+
+<h2>References reviewed</h2>
+<ul>
+	<li>Bach E. The Twelve Healers and Other Remedies. Saffron Walden (GB): The C.W. Daniel Company Ltd, 1999.</li>
+	<li>Ramsell J. Questions and Answers: Explaining the Basic Principles and Standards of The Bach Flower Remedies. Saffron Walden (GB): The C.W. Daniel Company Ltd, 1996.</li>
+	<li>Scheffer M. Bach Flower Therapy: Theory and Practice. Rochester (VT): Healing Arts Press, 1998.</li>
+	<li>Weeks N, Bullen V. The Bach Flower Remedies: Illustrations and Preparations. Saffron Walden (GB): The C.W. Daniel Company Ltd, 1998.</li>
+	<li>Wheeler FJ. The Bach Remedies Repertory. Saffron Walden (GB): The C.W. Daniel Company Ltd, 1996.</li>
+</ul></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=oral.rehydration.sol\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="397afd2c-30e2-43ce-802c-6a17c464c344"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+  <h1>
+   Oral Rehydration Solutions
+  </h1>
+  <div class="icon">
+   <a href="dbImages/mono_oral_rehydration_solutions_english.pdf" title="Oral Rehydration Solution">
+    <img alt="Monograph: Oral Rehydration Solution" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/>
+    (PDF Version - 65 KB)
+   </a>
+  </div>
+  <p>
+   Oral rehydration salts generally consist of a mixture of electrolytes and glucose. When reconstituted in water to produce an oral rehydration solution (ORS), they are used for the treatment and/or prevention of mild-to-moderate dehydration caused by acute watery diarrhea. Severe dehydration constitutes a medical emergency requiring immediate intravenous rehydration, and clinical practice recommends health care practitioner supervision/monitoring in the treatment of mild-to-moderate dehydration (Buckingham 2020; Government of Canada 2015; Diggins 2008; CPS 2006; WHO 2006; WHO 2005; CDC 2003).
+  </p>
+  <p>
+   This monograph is therefore intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for market authorizations of natural health products recommended for the prevention of mild-to-moderate dehydration caused by acute watery diarrhea. These products are not to be recommended to maintain hydration during exercise or for rehydration after exercise, as according to the World Health Organization (WHO), a clear distinction should be made between products recommended for treating and/or preventing dehydration caused by diarrhea and preparations with compositions that are designed for replacing water and salt losses during exercise (WHO 2006).
+  </p>
+  <p>
+   <strong>
+    Notes
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+   </li>
+   <li>
+    The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+   </li>
+   <li>
+    Brand name: The term (re)hydration may be used provided the brand name does not imply a use beyond the approved claims.
+   </li>
+  </ul>
+  <section aria-labelledby="date">
+   <h2 id="date">
+    Date
+   </h2>
+   <p>
+    February 28, 2025
+   </p>
+   <p>
+    This monograph cannot be combined with any other monograph at Class II. Products providing any medicinal ingredients outside this monograph will require Class III assessment.
+    <br/>
+    Note that ingredients which contribute to body water loss, such as diuretics and diaphoretics, are not allowed in Oral rehydration solutions.
+   </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+   <h2 id="properNameCommonNameSourceInformation">
+    Proper name(s), Common name(s), Source information
+   </h2>
+   <table class="subject">
+    <caption>
+     Table 1. Proper name(s), Common name(s), Source information
+    </caption>
+    <thead>
+     <tr>
+      <th scope="col">
+       Proper name(s)
+      </th>
+      <th scope="col">
+       Common name(s)
+      </th>
+      <th scope="colgroup">
+       Source ingredient(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       Sodium
+      </td>
+      <td>
+       Sodium
+      </td>
+      <td>
+       <ul>
+        <li>
+         Sodium chloride
+        </li>
+        <li>
+         Sodium citrate<sup>1</sup>
+        </li>
+        <li>
+         Sodium citrate dihydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Potassium
+      </td>
+      <td>
+       Potassium
+      </td>
+      <td>
+       <ul>
+        <li>
+         Potassium chloride
+        </li>
+        <li>
+         Potassium citrate<sup>1</sup>
+        </li>
+        <li>
+         Potassium citrate, monohydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Chloride
+      </td>
+      <td>
+       Chloride
+      </td>
+      <td>
+       <ul>
+        <li>
+         Potassium chloride
+        </li>
+        <li>
+         Sodium chloride
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Sodium chloride
+      </td>
+      <td>
+       Sodium chloride
+      </td>
+      <td>
+       <ul>
+        <li>
+         Citric acid
+        </li>
+        <li>
+         Potassium citrate
+        </li>
+        <li>
+         Sodium citrate<sup>1</sup>
+        </li>
+        <li>
+         Sodium citrate dihydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       D-Glucose
+      </td>
+      <td>
+       <ul>
+        <li>
+         Dextrose
+        </li>
+        <li>
+         D-Glucose
+        </li>
+        <li>
+         Glucose
+        </li>
+       </ul>
+      </td>
+      <td>
+       Glucose<sup>2</sup>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    Reference: NHPID 2024.
+   </p>
+   <p>
+    <sup>
+     1
+    </sup>Anhydrous
+   </p>
+   <p>
+    <sup>
+     2
+    </sup>Anhydrous or monohydrate.
+   </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+   <h2 id="routeOfAdministration">
+    Route of administration
+   </h2>
+   <p>
+    Oral
+   </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+   <h2 id="dosageForm">
+    Dosage form(s)
+   </h2>
+   <p>
+    This monograph is not intended to include foods or food-like dosage forms such as ready-to-drink or powdered products if represented as beverages as per the principles outlined in the Guidance Document:
+    <a href="https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.canada.ca%2Fen%2Fhealth-canada%2Fservices%2Fdrugs-health-products%2Fnatural-non-prescription%2Flegislation-guidelines%2Fguidance-documents%2Fclassification-products-at-food-natural-health-product-interface.html&amp;data=05%7C02%7CHeera.Singh%40hc-sc.gc.ca%7Cf3a3b866c4bb49457e3b08dd542cd86b%7C42fd9015de4d4223a368baeacab48927%7C0%7C0%7C638759273764870964%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=r0bT6afURujL%2FYbJB3Ck4i%2ButFYQ%2BRux07RAR%2BdBzbg%3D&amp;reserved=0">
+     Classification of products at the food-natural health product interface: products in food formats.</a>
+   </p>
+   <p>
+    Acceptable dosage forms are: Powder, for solution; Solution; Solution, concentrated; Tablet, for solution; Tablet, effervescent (Buckingham 2020; Diggins 2008; CPS 2006; WHO 2006; WHO 2004).
+   </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+   <h2 id="useOrPurpose">
+    Use(s) or Purpose(s)
+   </h2>
+   <p>
+    <em>
+     All products
+    </em>
+   </p>
+   <ul>
+    <li>
+     Helps to prevent dehydration caused by (acute/watery) diarrhea and/or vomiting (due to acute gastroenteritis) (Buckingham 2020; Government of Canada 2015; Ciccarelli et al. 2013; Diggins 2008; CPS 2006; WHO 2006; WHO 2005; Bellemare et al. 2004; Fonseca et al. 2004; WHO 2004; CDC 2003; WHO 2001; WHO-ICDDR 1994).
+    </li>
+    <li>
+     Helps to maintain hydration status/electrolytes and fluid balance in cases of (acute/watery) diarrhea and/or vomiting (due to acute gastroenteritis) (Buckingham 2020; Government of Canada 2015; Ciccarelli et al. 2013; Diggins 2008).
+    </li>
+    <li>
+     (Source of electrolytes and glucose to) Help(s) (to) restore/replace water/fluid and electrolytes lost in cases of (acute/watery) diarrhea and/or vomiting (due to acute gastroenteritis) (Buckingham 2020; Government of Canada 2015; Ciccarelli et al. 2013; CPS 2006; WHO 2005; CDC 2003).
+    </li>
+   </ul>
+   <p>
+    <em>
+     Products formulated as, or resulting in, the WHO formulation as outlined in Table 2
+    </em>
+   </p>
+   <ul>
+    <li>
+     Helps to reduce duration of diarrhea, stool output, and vomiting resulting from acute watery diarrhea in children (Musekiwa and Volmink 2011; CPS 2006; Pulungsih et al. 2006; WHO 2006; WHO 2005; CHOICE Study Group 2001; Hahn et al. 2001; WHO 2001; Alam et al. 1999; Santosham et al. 1996; WHO-ICDDR 1994).
+    </li>
+   </ul>
+   <p>
+    Note: The terms 'Helps' or 'Helps to' can be used interchangeably on the label.
+   </p>
+  </section>
+  <section aria-labelledby="dose">
+   <h2 id="dose">
+    Dose(s)
+   </h2>
+   <h3>
+    Subpopulation(s)
+   </h3>
+   <p>
+    Infants 0-12 months; Children 1-11 years; Adolescents 12-17 years; Adults 18 years and older
+   </p>
+   <h3>
+    Quantity/Concentration
+   </h3>
+   <p>
+    All medicinal ingredients must be present in the formulation (applies to Tables 2 and 3).
+   </p>
+   <p>
+    Osmolarity must be indicated on the PLA form under 'additional dosage information' and on the product label.
+   </p>
+   <table class="subject">
+    <caption>
+     Table 2. Medicinal ingredients and formulation characteristics - WHO formulation<sup>1</sup> </caption>
+    <thead>
+     <tr>
+      <th scope="col">
+       Medicinal ingredients
+      </th>
+      <th scope="col">
+       Concentration in prepared product<sup>2</sup>
+      </th>
+      <th scope="colgroup">
+       Source ingredient(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       Sodium
+      </td>
+      <td>
+       75 mmol/L 
+            (1.72 mg/mL or 75 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Sodium chloride<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate dihydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Potassium
+      </td>
+      <td>
+       20 mmol/L 
+            (0.78 mg/mL or 20 mEq)
+      </td>
+      <td>
+       Potassium chloride<sup>3</sup>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Chloride
+      </td>
+      <td>
+       65 mmol/L 
+            (2.3 mg/mL or 65 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Potassium chloride<sup>3</sup>
+        </li>
+        <li>
+         Sodium chloride
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Citrate
+      </td>
+      <td>
+       10 mmol/L 
+            (1.89 mg/mL or 30 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Sodium citrate<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate dihydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       D-Glucose
+      </td>
+      <td>
+       75 mmol/L 
+            (13.5 mg/mL)
+      </td>
+      <td>
+       Glucose<sup>4</sup>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Total osmolarity (mOsm/L)
+       <br/>
+       (See Appendix 1)
+      </td>
+      <td colspan="2">
+       245 mOsm/L
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    <sup>
+     1
+    </sup>References: WHO 2006; WHO 2005; WHO 2004; WHO 2001; WHO-ICDDR 1994.
+   </p>
+   <p>
+    <sup>
+     2
+    </sup>The unit 'mmol/L' should be used on the PLA form; however, the units 'mg/mL' or 'mEq' may also be used on the label.
+   </p>
+   <p>
+    <sup>
+     3
+    </sup>Anhydrous.
+   </p>
+   <p>
+    <sup>
+     4
+    </sup>Anhydrous or monohydrate.
+   </p>
+   <table class="subject">
+    <caption>
+     Table 3.  Medicinal ingredients and formulation characteristics - Other acceptable formulations<sup>1</sup>
+    </caption>
+    <thead>
+     <tr>
+      <th>
+       Medicinal ingredients
+      </th>
+      <th>
+       Concentration in prepared product<sup>2</sup>
+      </th>
+      <th>
+       Source ingredient(s)
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td colspan="3">
+       Electrolytes
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Sodium
+      </td>
+      <td>
+       45 - 75 mmol/L 
+            (1.035 - 1.725 mg/mL or 45 - 75 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Sodium chloride<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate dihydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Potassium
+      </td>
+      <td>
+       15 - 25 mmol/L 
+            (0.59 - 0.98 mg/mL or 15 - 25 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Potassium chloride<sup>3</sup>
+        </li>
+        <li>
+         Potassium citrate<sup>3</sup>
+        </li>
+        <li>
+         Potassium citrate, monohydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Chloride
+      </td>
+      <td>
+       25 - 80 mmol/L 
+            (0.8875 - 2.84 mg/mL or 25 - 80 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Potassium chloride<sup>3</sup>
+        </li>
+        <li>
+         Sodium chloride<sup>3</sup>
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td colspan="3">
+       Base
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Citrate
+      </td>
+      <td>
+       Minimum 8 mmol/L 
+            (1.51 mg/mL or 24 mEq)
+      </td>
+      <td>
+       <ul>
+        <li>
+         Citric acid
+        </li>
+        <li>
+         Potassium citrate<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate<sup>3</sup>
+        </li>
+        <li>
+         Sodium citrate dihydrate
+        </li>
+       </ul>
+      </td>
+     </tr>
+     <tr>
+      <td colspan="3">
+       Carbohydrate
+      </td>
+     </tr>
+     <tr>
+      <td>
+       D-Glucose
+      </td>
+      <td>
+       at least 1 time the quantity of sodium in mmol/L
+      </td>
+      <td>
+       Glucose<sup>4</sup>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Total osmolarity (mOsm/L)
+       <br/>
+       (See Appendix 1)
+      </td>
+      <td colspan="2">
+       Not to exceed 280 mOsm/L (i.e. hypotonic)
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    <sup>
+     1
+    </sup>At least one of the following references was consulted per medicinal ingredient: Buckingham 2020; Government of Canada 2015; Binder et al. 2014; Ciccarelli et al. 2013; Mathew 2009; Diggins 2008; CPS 2006; WHO 2006; WHO 2005; WHO 2004; CDC 2003; CHOICE Study Group 2001; WHO 2001; WHO-ICDDR 1994.
+   </p>
+   <p>
+    <sup>
+     2
+    </sup>The unit 'mmol/L' should be used on the PLA form; however, the units 'mg/mL' or 'mEq' may also be used on the label.
+   </p>
+   <p>
+    <sup>
+     3
+    </sup>Anhydrous.
+   </p>
+   <p>
+    <sup>
+     4
+    </sup>Anhydrous or monohydrate.
+   </p>
+   <h3>
+    Direction(s) for use
+   </h3>
+   <p>
+    <em>
+     Infants under 12 months; Children under 2 years
+    </em>
+   </p>
+   <p>
+    Give as tolerated in small amount/sips, up to 100 mL per episode of diarrhea and/or vomiting.
+   </p>
+   <p>
+    <em>
+     Children 2 - 9 years
+    </em>
+   </p>
+   <p>
+    Take/give as tolerated in small amount/sips, up to 200 mL per episode of diarrhea and/or vomiting.
+   </p>
+   <p>
+    <em>
+     Children 10 - 11 years, Adolescents 12 - 17 years, Adults 18 years and older
+    </em>
+   </p>
+   <p>
+    Take/give as tolerated in small amount/sips, up to 400 mL per episode of diarrhea and/or vomiting.
+   </p>
+   <p>
+    Note: At least one of the following references was consulted per age group: Buckingham 2020; Government of Canada 2015; Ciccarelli et al. 2013; Diggins 2008; WHO 2006; WHO 2005; WHO 2004; CDC 2003.
+   </p>
+   <p>
+    <em>
+     All products
+    </em>
+   </p>
+   <p>
+    Attempt to take/give solution as soon as diarrhea begins (Government of Canada 2015; CDC 2003).
+   </p>
+   <p>
+    <em>
+     Products to be dissolved/diluted (powder, for solution; solution, concentrated; tablet, for solution; tablet, effervescent)
+    </em>
+   </p>
+   <ul>
+    <li>
+     Dissolve/Dilute (e.g., 1 effervescent tablet; entire content of packet, etc.) in XX mL of potable water (Buckingham 2020; WHO 2006).
+    </li>
+    <li>
+     If potable water is not available, use boiled water (Buckingham 2020; Government of Canada 2015).
+    </li>
+    <li>
+     Stir the product before taking/giving (WHO 2006).
+    </li>
+    <li>
+     Do not boil the product after it is prepared (Buckingham 2020; Government of Canada 2015).
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="durationOfUse">
+   <h2 id="durationOfUse">
+    Duration(s) of use
+   </h2>
+   <p>
+    For occasional use only (Health Canada 2022).
+   </p>
+  </section>
+  <section aria-labelledby="riskInformation">
+   <h2 id="riskInformation">
+    Risk information
+   </h2>
+   <h3>
+    Caution(s) and warning(s)
+   </h3>
+   <p>
+    <em>
+     All products
+    </em>
+   </p>
+   <ul>
+    <li>
+     Get medical help right away for infants under 1 year of age as dehydration may be a medical emergency.
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/ physician before use if you have a gastrointestinal obstruction, cardiovascular or kidney disease (Buckingham 2020; CPS 2006; WHO 2004; CDC 2003).
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/ physician if diarrhea/vomiting worsen or persist for more than 24 hours (WHO 2006; WHO 2005).
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/ physician if diarrhea contains blood or mucus, if vomit is green or contains blood, if diarrhea/vomiting are accompanied by a high fever, yellowing of eye or skin, severe abdominal pain, or if a bowel obstruction is suspected (Buckingham 2020; Government of Canada 2015; CPS 2006; CDC 2003).
+    </li>
+    <li>
+     Ask a health care practitioner/health care provider/health care professional/doctor/ physician if you experience irritability, confusion, tiredness/weakness, reduced urine output, dry mouth, increased heart and/or breathing rate, decreased tears and/or sunken eyes , disproportionate thirst, or swelling of the hands, face and/or feet (Diggins 2008; CPS 2006; WHO 2005; CDC 2003).
+    </li>
+   </ul>
+   <h3>
+    Contraindication(s)
+   </h3>
+   <p>
+    Do not use for (re)hydration associated with exercise (WHO 2006; CPA 2001; IOM 1994).
+   </p>
+   <h3>
+    Known adverse reaction(s)
+   </h3>
+   <p>
+    No statement required.
+   </p>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+   <h2 id="nonMedicinalIngredients">
+    Non-medicinal ingredients
+   </h2>
+   <p>
+    Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+   </p>
+  </section>
+  <section aria-labelledby="storageConditions">
+   <h2 id="storageConditions">
+    Storage conditions
+   </h2>
+   <p>
+    Must be established in accordance with the requirements described in the
+    <em>
+     Natural Health Products Regulations.
+    </em>
+   </p>
+   <p>
+    <em>
+     Ready-to-drink products
+    </em>
+   </p>
+   <p>
+    Store opened product in the refrigerator, discard remaining product after XX hours.
+   </p>
+   <p>
+    Note: XX to be replaced with the storage time established based on stability data for the product once opened.
+   </p>
+   <p>
+    <em>
+     Products to be dissolved/diluted
+    </em>
+   </p>
+   <p>
+    Store reconstituted solution in the refrigerator, discard remaining solution after 24 hours (Buckingham 2020; Government of Canada 2015; WHO 2006).
+   </p>
+  </section>
+  <section aria-labelledby="specifications">
+   <h2 id="specifications">
+    Specifications
+   </h2>
+   <ul>
+    <li>
+     The finished product specifications must be established in accordance with the requirements described in the Natural and Non-Prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide
+    </li>
+    <li>
+     The medicinal ingredient must comply with the requirements outlined in the NHPID.
+    </li>
+    <li>
+     Osmolarity must be measured for the finished product, including non-medicinal ingredients.
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="exampleOfProductFacts">
+   <h2 id="exampleOfProductFacts">
+    Example Of Product Facts:
+   </h2>
+   <p>
+    Consult the Guidance Document,
+    <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">
+     Labelling of Natural Health Products</a>
+    for more details.
+   </p>
+   <p>
+   </p>
+   <p class="alignCenter">
+    <img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/Oral_Rehydration_E.gif" style="width:700px"/>
+   </p>
+  </section>
+  <section aria-labelledby="referencesCited">
+   <h2 id="referencesCited">
+    References cited
+   </h2>
+   <ul>
+    <li>
+     Alam NH, Majumder RN, Fuchs GJ, and the CHOICE Study Group. Efficacy and safety of oral rehydration solution with reduced osmolarity in adults with cholera: a randomized double-blind clinical trial. Lancet 1999;354:296-299.
+    </li>
+    <li>
+     Bellemare S, Hartling L, Wiebe N, Russell K, Craig WR, McConnell D, Klassen TP. Oral rehydration versus intravenous therapy for treating dehydration due to gastroenteritis in children: a meta-analysis of randomised controlled trials. BMC Medicine 2004;2:11.
+    </li>
+    <li>
+     Binder HJ, Brown I, Ramakrishna BS, Young GP. Oral rehydration therapy in the second decade of the twenty-first century. Curr. Gastroenterol. Rep. 2014;16:376.
+    </li>
+    <li>
+     Buckingham R. (ed). 2020. The Complete Drug Reference. London: Pharmaceutical Press. [Accessed 2024 April 11]. Available from: http://www.medicinescomplete.com/
+    </li>
+    <li>
+     CDC 2003. King CK, Glass R, Bresee JS, Duggan C, Centers for Disease Control and Prevention.  Managing acute gastroenteritis among children: oral rehydration, maintenance, and nutritional therapy. MMWR Recomm. Rep. 2003;52(RR-16):1-16.
+    </li>
+    <li>
+     CHOICE Study Group 2001. Multicenter, randomized, double-blind clinical trial to evaluate the efficacy and safety of a reduced osmolarity oral rehydration salts solution in children with acute watery diarrhea. Pediatrics 2001;107(4):613-618.
+    </li>
+    <li>
+     Ciccarelli S, Stolfi I, Caramia G. Management strategies in the treatment of neonatal and pediatric gastroenteritis. Infection and Drug Resistance 2013;6:133-161.
+    </li>
+    <li>
+     CPS 2018. Dehydration and diarrhea in children: Prevention and treatment. [Accessed 2024 November 29]. Available from: https://caringforkids.cps.ca/handouts/health-conditions-and-treatments/dehydration_and_diarrhea
+    </li>
+    <li>
+     CPS 2006. Leung A, Prince T, Canadian Paediatric Society Nutrition and Gastroenterology Committee. Oral rehydration therapy and early refeeding in the management of childhood gastroenteritis. Paediatr. Child Health 2006;11(8):527-531.
+    </li>
+    <li>
+     Diggins KC. Treatment of mild to moderate dehydration in children with oral rehydration therapy. Journal of the American Academy of Nurse Practitioners 2008;20:402-406.
+    </li>
+    <li>
+     Fonseca BK, Holdgate A, Craig JC. Enteral vs intravenous rehydration therapy for children with gastroenteritis. Arch. Pediatr. Adolesc. Med. 2004;158:483-490.
+    </li>
+    <li>
+     Government of Canada 2015. Oral Rehydration Solutions. [Accessed 2024 August 28]. Available from: http://travel.gc.ca/travelling/health-safety/rehydration.
+    </li>
+    <li>
+     Hahn S, Kim Y, Garner P. Reduced osmolarity oral rehydration solution for treating dehydration due to diarrhoea in children: systematic review.  BMJ 2001;323:81-85.
+    </li>
+    <li>
+     Health Canada 2022. Sodium and your health. [Accessed 2024 August 28]. Available from: https://www.canada.ca/en/health-canada/services/nutrients/sodium.html
+    </li>
+    <li>
+     IOM 1994. Fluid Replacement and Heat Stress. Committee on Military Nutrition Research.  Food and Nutrition Board. Institute of Medicine. National Academy Press. Washington, D.C.
+    </li>
+    <li>
+     Mathew JL. Non-glucose oral rehydration solution - Does it make a good thing better?. Indian Pediatrics 2009;46:501-505.
+    </li>
+    <li>
+     Musekiwa A, Volmink J. Oral rehydration salt solution for treating cholera: ≤ 270 mOsm/L solutions vs ≥ 310 mOsm/L solutions (Review).  Cochrane Database of Systematic Reviews, 2011;12. Art. No.: CD003754. DOI: 10.1002/14651858.CD003754.pub3.
+    </li>
+    <li>
+     NHPID 2024. Natural Health Products Ingredients Database. [Accessed 2024 August 28]. Available from: http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do
+    </li>
+    <li>
+     Pulungsih SP, Punjabi NH, Rafli K, Rifajati A, Kumala S, Simanjuntak CH, Yuwono, Lesmana M, Subekti D, Sutoto, Fontaine O. Standard WHO-ORS versus reduced-osmolarity ORS in the management of cholera patients. J. Health Popul. Nutr. 2006;24(1):107-112.
+    </li>
+    <li>
+     Santosham M, Fayad I, Zikri MA, Hussein A, Amponsah A, Duggan C, Hashem M, Sady NE, Zikri MA, Fontaine O. A double-blind clinical trial comparing World Health Organization oral rehydration solution with a reduced osmolarity solution containing equal amounts of sodium and glucose.  J. Pediatr. 1996;128:45-51.
+    </li>
+    <li>
+     WHO 2006. Oral Rehydration Salts - Production of the New ORS. Department of Child and Adolescent Health and Development. World Health Organization. Geneva.
+    </li>
+    <li>
+     WHO 2005. The Treatment of Diarrhoea - A Manual for Physicians and Other Senior Health Workers. Department of Child and Adolescent Health and Development. World Health Organization. Geneva.
+    </li>
+    <li>
+     WHO 2004. New Formulation of Oral Rehydration Salts (ORS) with Reduced Osmolarity.  World Health Organization. Rehydration Product. [Accessed 2024 August 28]. Available from: http://rehydrate.org/ors/low-osmolarity-ors.htm
+    </li>
+    <li>
+     WHO 2001. Oral Rehydration Salts (ORS) - A New Reduced Osmolarity Formulation. World Health Organization. Rehydration Project. [Accessed 2024 August 28]. Available from: http://rehydrate.org/ors/expert-consultation.html
+    </li>
+    <li>
+     WHO - ICDDR 1994.  25 Years of ORS - Joint WHO/ICDDR,B Consultative Meeting on ORS Formulation.  Division of Diarrhoeal an Acute Respiratory Disease Control. World Health Organization - International Centre for Diarrhoeal Disease Research, Bangladesh. Dhaka, Bangladesh, 10-12 December. [Accessed 2024 August 28]. Available from: https://iris.who.int/bitstream/handle/10665/61332/CDR_CDD_95.2.pdf?sequence=1&amp;isAllowed=y
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+   <h2 id="referencesReviewed">
+    References reviewed
+   </h2>
+   <ul>
+    <li>
+     Gore SM, Fontaine O, Pierce NF. Impact of rice based oral rehydration solution on stool output and duration of diarrhoea: meta-analysis of 13 clinical trials. BMJ 1992;304:287-291.
+    </li>
+    <li>
+     Gregorio GV, Gonzales MLM, Dans LF, Martinez EG. Polymer-based oral rehydration solution for treating acute watery diarrhoea (Review). Cochrane Database of Systematic Reviews 2009;2. Art. No.: CD006519. DOI: 10.1002/14651858.CD006519.pub2.
+    </li>
+    <li>
+     Hamilton KL. Robert K. Crane - Na+-glucose cotransporter to cure? Frontiers in Physiology 2013;4:53.
+    </li>
+    <li>
+     Lenters LM, Das JK, Bhutta ZA. Systematic review of strategies to increase use of oral rehydration solution at the household level. BMC Public Health 2013;13(3):528.
+    </li>
+    <li>
+     Munos MK, Walker CLF, Black RE. The effect of oral rehydration solution and recommended home fluids on diarrhoeal mortality. International Journal of Epidemiology 2010;39: i75-i87.
+    </li>
+    <li>
+     Wesley JW.  Evaluation of Infant Rehydration Solutions. 2004. [Accessed 2024 April 11]. Available from: https://labfriendcoredataprod.blob.core.windows.net/johnmorriscore-data-prod/files/micro-osmometer_1196004_13.pdf
+    </li>
+   </ul>
+  </section>
+  <section aria-labelledby="appendix1">
+   <h2 id="appendix1">
+    Appendix 1
+   </h2>
+   <p>
+    <b>
+     Osmolarity
+    </b>
+   </p>
+   <p>
+    Osmotic concentration (osmolarity), is the measure of solute concentration, defined as the number of osmoles (Osm) of solute per litre (L) of solution (osmol/L or Osm/L). The osmolarity of a solution is usually expressed as Osm/L.  Osmolarity measures the number of osmoles of solute particles per unit volume of solution. This value allows the measurement of the osmotic pressure of a solution and the determination of how the solvent will diffuse across a semipermeable membrane (osmosis) separating two solutions of different osmotic concentration.
+   </p>
+   <p>
+    To obtain the best medical outcome, the osmolarity of the Oral Rehydration Solution should be hypotonic [less than 280 mOsm/L], and ideally in the range of [225-250 mOsm/L].
+    An isotonic solution [280-295 mOsm/L] will have slightly delayed absorption because there is no osmotic concentration gradient present to accelerate absorption from the intestine to the bloodstream (Wesley 2004).
+   </p>
+   <p>
+    <i>
+     How to calculate Osmolarity
+    </i>
+   </p>
+   <p>
+    Ionic compounds, such as salts, can dissociate in solution into their constituent ions, so there is not a one-to-one relationship between the molarity and the osmolarity of a solution. For example, sodium chloride (NaCl) dissociates into Na+ and Cl− ions. Thus, for every 1 mole of NaCl in solution, there are 2 osmoles of solute particles (i.e., a 1 mol/L NaCl solution is a 2 osmol/L NaCl solution). Both sodium and chloride ions affect the osmotic pressure of the solution.
+   </p>
+   <p>
+    Nonionic compounds do not dissociate, and form only 1 osmole of solute per 1 mole of solute. For example, a 1 mol/L solution of glucose is 1 osmol/L. 
+    Multiple compounds may contribute to the osmolarity of a solution. For example, a 3 Osm solution might consist of: 3 moles glucose, or 1.5 moles NaCl, or 1 mole glucose + 1 mole NaCl, or 2 moles glucose + 0.5 mole NaCl, or any other such combination.
+   </p>
+   <p>
+    For the WHO formulation which does not have any non-medicinal ingredients, osmolarity may be calculated rather than tested (addition of the concentrations of solutes, i.e. 75 + 20 + 65 + 10 + 75 = 245).  If the formulation includes any non-medicinal ingredients, osmolarity may be affected so applicant must test their product to determine osmolarity.
+   </p>
+   <ul>
+    <li>
+     1 mole of sodium chloride (58.44 g/mol) dissociates in 1 mole of sodium (22.98977 g/mol) and 1 mole of chloride (35.4527 g/mol).
+    </li>
+    <li>
+     1 mole of potassium chloride (74.55 g/mol) dissociates in 1 mole of potassium (39.0983 g/mol) and 1 mole of chloride (35.4527 g/mol).
+    </li>
+    <li>
+     1 mole of trisodium citrate dihydrate (294.10 g/mol) dissociates in 3 moles of sodium (22.98977 g/mol) and 1 mole of citrate (189.1 g/mol).
+    </li>
+    <li>
+     2.6 g of sodium chloride = 0.045 mole = 45 mmol or mOsm of sodium and 45 mmol or mOsm of chloride
+    </li>
+    <li>
+     1.5 g of potassium chloride = 0.020 mole = 20 mmol or mOsm of potassium and 20 mmol or mOsm of chloride
+    </li>
+    <li>
+     2.9 g trisodium citrate dihydrate = 0.0097 mol = 9.86 mmol or 10 mmol or mOsm of citrate and (3 x 9.86) = 29.58 mmol or mOsm of sodium
+    </li>
+    <li>
+     13.5 g of glucose (180.16 g/mol = 0.075 mol = 75 mmol or mOsm of glucose.
+    </li>
+    <li>
+     45 mmol or mOsm of sodium (from sodium chloride) + 29.58 mmol or mOsm of sodium (from trisodium citrate dihydrate) = 74.58 mmol or 75 mmol or mOsm of sodium.
+    </li>
+    <li>
+     45 mmol or mOsm of chloride (from sodium chloride) + 20 mmol or mOsm of chloride (from potassium chloride) = 65 mmol or mOsm of chloride
+    </li>
+   </ul>
+   <p>
+    Osmolarity = 20 + 10 + 75 + 75 + 65 = 245 mmol/L or mOsm/L
+   </p>
+  </section>
+  <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

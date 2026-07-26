@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=melatonin.sublinguale2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="60cbff84-1b1a-4952-86c9-7fa6fdc2a156"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>MELATONIN - Sublingual</h1>
+	<div class="icon">
+    	<a href="dbImages/mono_melatonin--sublingual_english.pdf" title="Melatonin - Sublingual"><img alt="Monograph: Melatonin - Sublingual(English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version&nbsp;-&nbsp;36&nbsp;K)</a>
+ 	</div>
+	<p>For Melatonin products with an oral route of administration, please use the Melatonin-oral monograph.</p>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLA) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient. </p>
+	<p><strong>Notes</strong></p>
+    	<ul>
+        	<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+        	<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+    	</ul>
+	<p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+    	<ul>
+        	<li>Products containing melatonin must not indicate any uses or purposes related to the maintenance/support of good/general health.</li>
+        	<li>Products providing a quantity of melatonin that meets the minimum therapeutic dose must indicate a use or purpose associated with melatonin.</li>
+			<li>This monograph supports the use of melatonin when needed only, for occasional sleeplessness. As such, it is not compatible in combination with ingredients which are required to be taken daily in order to exert a beneficial health effect.</li>
+    	</ul>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+    		<p>December 19, 2025</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source Information</h2>
+		    <table class="subject"> 
+        		<caption>Table 1.Proper name(s), Common name(s), Source Information</caption>
+				<thead>
+        			<tr>
+            			<th rowspan="2" scope="col">Proper name(s)</th>
+            			<th rowspan="2" scope="col">Common name(s)</th>
+            			<th colspan="2" scope="colgroup" style="text-align: center;">Source Information</th>
+        			</tr>
+        			<tr>
+            			<th scope="col">Source ingredient(s)</th>
+            			<th scope="col">Preparation(s)</th>
+        			</tr>
+				</thead>
+				<tbody>
+        			<tr>
+            			<td>
+                			<ul>
+                    			<li>N-[2-(5-Methoxy-1H-indol-3-yl)ethyl]acetamide</li>
+                    			<li>N-Acetyl-5-methoxytryptamine</li>
+                			</ul>
+            			</td>
+            			<td>
+                			<ul>
+                    			<li>Melatonin</li>
+                    			<li>Pineal hormone</li>
+                			</ul>
+            			</td>
+						<td>Melatonin</td>
+            			<td>Synthetic</td>
+        			</tr>
+				</tbody>
+    		</table>
+			<p>References: Proper names: RSC 2023&semi; Buscemi et al. 2004&semi; Common names: RSC 2023, Buscemi et al. 2004&semi; Source information: RSC 2023.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2>
+    		<p>Sublingual</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage form(s)</h2>
+    		<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+    		<p>Acceptable dosage forms for sublingual use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications. Note that this list does not include prolonged-release, extended-release or delayed-release dosage forms.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>(Used as a) sleep aid (to help promote sleep) (Costello et al. 2014&semi; Wyatt et al. 2006&semi; Brzezinski et al. 2005).</li>
+				<li>Helps (to) increase the total sleep time (aspect of sleep quality) in people suffering from sleep restriction or altered sleep schedule (e.g. shift-work and jet lag) (Zhdanova et al. 2001&semi; Brusco et al. 1999&semi; Sanders et al. 1999&semi; Skene et al. 1999&semi; Garfinkel et al. 1995&semi; Sack et al. 1991).</li>
+				<li>Helps (to) prevent and/or reduce the effects of jet lag/minimize jet lag (e.g. daytime fatigue, sleep disturbance) (for people/if travelling by plane easterly across two or more time zones/flying east over two or more time zones) (Brown et al. 2009&semi; Herxheimer and Petrie 2002&semi; Suhner et al. 1998a&semi; Petrie et al. 1993&semi; Claustrat et al. 1992&semi; Petrie et al. 1989).</li>
+				<li>Helps (to) speed up/reduce the time it takes to fall asleep (sleep onset latency aspect of sleep quality) in people who fall asleep slowly/with delayed sleep phase disorder (van Geijlswijk et al. 2010).</li>
+				<li>Helps (to) re-set the body&apos;s sleep-wake cycle (aspect of the circadian rhythm) (van Geijlswijk et al. 2010&semi; Kunz et al. 2004&semi; Sack et al. 2000).</li>
+			</ul>
+		    <p><strong>Note:</strong> The above claims can be combined on the product label (e.g. Helps re-set the body&apos;s sleep-wake cycle (aspect of the circadian rhythm) and increase the total sleep time (aspect of sleep quality) in people suffering from sleep restriction or altered sleep schedule).</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+		    <h3>Subpopulation(s)</h3>
+		        <p>Adults 18 years and older</p>
+		    <h3>Quantity(ies)</h3>
+		        <p><em>All uses except jet lag</em></p>
+        			<p>0.1 - 10 milligrams of melatonin, per day (Brzezinski et al. 2005&semi; IOM 2004&semi; Kayumov et al. 2001&semi; Koda-Kimble 2001&semi; Zhdanova et al. 2001&semi; Brusco et al. 1999&semi; Jean-Louis et al. 1999&semi; Matsumoto 1999&semi; Jorgensen and Witting 1998&semi; Sack et al. 1997&semi; Attenburrow et al. 1996&semi; Zhdanova et al. 1995&semi; Garfinkel 1995&semi; Tzischinsky and Lavie 1994&semi; Dollins et al. 1994&semi; Dahlitz et al. 1991&semi; James et al. 1987).</p>
+		        <p><em>Jet lag </em></p>
+        			<p>0.5 - 10 milligrams of melatonin, per day (Brown et al. 2009&semi; Herxheimer and Petrie 2002&semi; Suhner et al. 1998a).</p>				
+    		<h3>Direction(s) for use</h3>
+        		<p><em>All uses </em></p>
+        			<p>Take as needed, 10 to 30 minutes before bedtime. Place under the tongue until it is dissolved (Abdellah et al. 2023&semi; Bartoli et al. 2012&semi; Naguib and Samarkandi 1999&semi; Jorgensen and Witting 1998).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of use</h2> 
+    		<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk information</h2>
+		    <h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking medications for seizure, blood pressure, to suppress the immune system, to affect mental state or increase sedation, steroids or blood thinners (Wirtz et al. 2008&semi; IOM 2004&semi; Herxheimer and Petrie 2002&semi; Lusardi et al. 2000&semi; Maestroni 1993).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a cardiovascular, immune, liver or kidney disease, seizure disorder, asthma or diabetes (Peschke and M&#252;hlbauer 2010&semi; Carrillo-Vico et al. 2005&semi; IOM 2004&semi; der Marderosian and Beuttlers 2003&semi; Sutherland et al. 2003&semi; Calvo et al. 2002&semi; Herxheimer and Petrie 2002&semi; Sutherland et al. 2002&semi; Cagnacci et al. 2001a&semi; Arangino et al. 1999&semi; Sheldon 1998&semi; Maestroni 1993).</li>
+					<li>When using this product avoid taking with alcohol or products that cause drowsiness (Herxheimer and Petrie 2002&semi; Holliman and Chyka 1997).</li>
+					<li>When using this product avoid driving or using machinery for 5 hours (Avery et al. 1998&semi; Suhner et al. 1998b).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if sleeplessness persists for more than 4 weeks (chronic insomnia) (Buscemi et al. 2004&semi; IOM 2004&semi; Dipiro et al. 2002).</li>
+				</ul>
+		    <h3>Contraindication(s)</h3>
+        		<p>Do not use if you are pregnant or breastfeeding (IOM 2004).</p>
+		    <h3>Known adverse reaction(s)</h3>
+        		<p>Stop use if allergy occurs or if you experience headache, confusion, or nausea (Herxheimer and Petrie 2002).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+    		<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+    		<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+    		<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>                             
+        	<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> Labelling of Natural Health Products</a> for more details.</strong></p>
+        	<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/melatonin_sublingual_E.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References cited</h2>
+			<ul>
+				<li>Abdellah SA, Raverot V, Gal C, Guinobert I, Bardo V, Blondeau C, Claustrat B. Bioavailability of melatonin after administration of an oral prolonged-release tablet and an immediate-release sublingual spray in healthy male volunteers. Drugs in R&D 2023&semi;23:257-265.</li>
+				<li>Arangino S, Cagnacci A, Angiolucci M, Vacca AMB, Longu G, Volpe A, Melis GB. Effects of melatonin on vascular reactivity, catecholamine levels, and blood pressure in healthy men.</li>
+				<li>American Journal of Cardiology 1999&semi; 83(9):1417-1419.</li>
+				<li>Attenburrow ME, Cowen PJ, Sharpley AL. Low dose melatonin improves sleep in healthy middle-aged subjects. Psychopharmacology (Berlin) 1996&semi;126(2):179-181.</li>
+				<li>Avery D, Lenz M, Landis C. Guidelines for prescribing melatonin. Annals of Medicine 1998&semi;30(1):122-130.</li>
+				<li>Bartoli AN, De Gregori S, Molinaro M, Broglia M, Tinelli C, Imberti R. Bioavailability of a new oral spray melatonin emulsion compared with a standard oral formulation in healthy volunteers. Journal of Bioequivalence and Bioavailability 2012&semi;4(7):96-9.</li>
+				<li>Brown GM, Pandi-Perumal SR, Trakht I, Cardinali DP. Melatonin and its relevance to jet lag. Travel Medicine and Infectious Disease 2009&semi;7:69-81.</li>
+				<li>Brusco LI, Fainstein I, Marquez M, Cardinali DP. Effect of melatonin in selected populations of sleep-disturbed patients. Biological Signals and Receptors 1999&semi;8(1-2):126-131.</li>
+				<li>Brzezinski A, Vangel MG, Wurtman RJ, Norrie G, Zhdanova I, Ben-Shushan A, Ford I. Effects of exogenous melatonin on sleep: a meta-analysis. Sleep Medicine Reviews 2005&semi;9:41-50.</li>
+				<li>Buscemi N, Vandermeer B, Pandya R, Hooton N, Tjosvold L, Hartling L, Baker G, Vohra S, Klassen T. Melatonin for treatment of sleep disorders. Evidence Report/Technology Assessment No. 108. AHRQ Publication No. 05-E002-2. Rockville (MD): U.S. Department of Health and Human Services, Agency for Healthcare Research and Quality. November, 2004.</li>
+				<li>Cagnacci A, Arangino S, Renzi A, Paoletti AM, Melis GB, Cagnacci P, Volpe A. Influence of melatonin administration on glucose tolerance and insulin sensitivity of postmenopausal women. Clinical Endocrinology (Oxford) 2001a&semi;54(3):339-346.</li>
+				<li>Calvo JR, Guerrero JM, Osuna C, Molinero P, Carrillo-Vico A. Melatonin triggers Crohn&apos;s disease symptoms. Journal of Pineal Research 2002&semi;32(4):277-278.</li>
+				<li>Carrillo-Vico A, Guerrero JM, Lardone PJ, Reiter RJ. A review of the multiple actions of melatonin on the immune system. Endocrine 2005&semi;27:189-200.</li>
+				<li>Claustrat B, Brun J, David M, Sassolas G, Chazot G. Melatonin and jet lag: confirmatory result using a simplified protocol. Biological Psychiatry 1992&semi;32(8):705-711.</li>
+				<li>Costello RB, Lentino CV, Boyd CC, O&apos;Connell ML, Crawford CC, Sprengel ML, Deuster PA. The effectiveness of melatonin for promoting healthy sleep: a rapid evidence assessment of the literature. Nutrition journal 2014&semi;13:1-7.</li>
+				<li>Dahlitz M, Alvarez B, Vignau J, English J, Arendt J, Parkes JD. Delayed sleep phase syndrome response to melatonin. Lancet 1991&semi;337(8750):1121-1124.</li>
+				<li>der Marderosian A, Beutters JA, editors. 2003. The Review of Natural Health Products, 3<sup>rd</sup> edition. St. Louis (MO): Facts and Comparisons&reg;, a Wolters Kluwer Company.</li>
+				<li>DiPiro JT, Talbert RL, Yee GC, Matzke GR, Wells BG, Posey LM. Pharmacotherapy: A Pathophysiological Approach. 5<sup>th</sup> edition. New York (NY): McGraw-Hill Co. Inc.&semi; 2002.</li>
+				<li>Dollins AB, Lynch HJ, Wurtman RJ, Deng MH, Lieberman HR. Effects of illumination on human nocturnal serum melatonin levels and performance. Physiology and Behavior 1994&semi;53(1):153-160.</li>
+				<li>Garfinkel D, Laudon M, Nof D, Zisapel N. Improvement of sleep quality in elderly people by controlled-release melatonin. Lancet 1995&semi;346(8974):541-4.</li>
+				<li>H&auml;rtter S, Nordmark A, Rose DM, Bertilsson L, Tybring G, Laine K. Effects of caffeine intake on the pharmacokinetics of melatonin, a probe drug for CYP1A2 activity. British Journal of Clinical Pharmacology 2003&semi;56(6):679-682.</li>
+				<li>Herxheimer  A, Petrie KJ. Melatonin for the prevention and treatment of jet lag. Cochrane Database of Systematic Reviews Issue 2 2002. Art. No.: CD001520. DOI: 10.1002/14651858.CD001520. [Accessed 2023 August 22]. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8958662/pdf/CD001520.pdf</li>
+				<li>IOM 2004: Institute of Medicine Committee on the Framework for Evaluating the Safety of Dietary Supplements. Prototype monograph on melatonin. Dietary Supplement Ingredient Prototype Monographs, Developed as Examples for the Report Dietary Supplements: A Framework for Evaluating Safety. Institute of Medicine and the National Research Council of the National Academies, Washington (DC): National Academies Press 2004: D1-D71.</li>
+				<li>James SP, Mendelson WB, Sack DA, Rosenthal NE, Wehr TA. The effect of melatonin on normal sleep. Neuropsychopharmacology 1987&semi;1(1):41-4.</li>
+				<li>Jean-Louis G, von Gizycki H, Zizi F. Predictors of subjective sleepiness induced by melatonin administration. Journal of Psychosomatic Research 1999&semi;47(4):355-358.</li>
+				<li>Jorgensen KM, Witting MD. Does exogenous melatonin improve day sleep or night alertness in emergency physicians working night shifts? Annals of emergency medicine 1998&semi;31(6):699-704.</li>
+				<li>Kayumov L, Brown G, Jindal R, Buttoo K, Shapiro CM. A randomized, double-blind, placebo-controlled crossover study of the effect of exogenous melatonin on delayed sleep phase syndrome. Psychosomatic Medicine 2001&semi;63(1):40-48.</li>
+				<li>Koda-Kimble MA, editor. Applied Therapeutics: The Clinical Use of Drugs. Baltimore (MD): Lippincott Williams and Wilkins&semi; 2001.</li>
+				<li>Kunz D, Mahlberg R, M&#252;ller C, Tilmann A, Bes F. Melatonin in patients with reduced REM sleep duration: two randomized controlled trials. Journal of Clinical Endocrinology & Metabolism 2004&semi;89(1):128-134.</li>
+				<li>Lusardi P, Piazza E, Fogari R. Cardiovascular effects of melatonin in hypertensive patients well controlled by nifedipine: a 24-hour study. British Journal of Clinical Pharmacology 2000&semi;49:423427.</li>
+				<li>Maestroni GJM. The immunoneuroendocrine role of melatonin. Journal of Pineal Research 1993&semi;14(1):1-10.</li>
+				<li>Matsumoto M. The hypnotic effects of melatonin treatment on diurnal sleep in humans. Psychiatry and Clinical Neurosciences 1999&semi;53(2):243-245.</li>
+				<li>Murray MT, Pizzorno Jr JE, Bongiorno PB. Melatonin. In: Pizzorno Jr JE, Murray MT. Textbook of Natural Medicine. Third edition. Chapter 105, pages 1057-1064. St.Louis (MI): Churchill Livingstone Elsevier&semi; 2006.</li>
+				<li>Naguib M, Samarkandi AH. Premedication with melatonin: a double-blind, placebo-controlled comparison with midazolam. British Journal of Anaesthesia 1999&semi;82(6):875-80.</li>
+				<li>Peschke E, M&#252;hlbauer E. New evidence for a role of melatonin in glucose regulation. Best practice & research. Clinical endocrinology & metabolism 2010&semi;24(5):829-841.</li>
+				<li>Petrie K, Dawson AG, Thompson L, Brook R. A double-blind trial of melatonin as a treatment for jet lag in international cabin crew. Biological Psychiatry 1993&semi;33(7): 526-530.</li>
+				<li>Petrie K, Conaglen JV, Thompson L, Chamberlain K. Effect of melatonin on jet lag after long haul flights. British Medical Journal 1989&semi;298(6675):705-707.</li>
+				<li>RSC 2023: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available from: https://merckindex.rsc.org/</li>
+				<li>Sack RL, Brandes RW, Kendall AR, Lewy AJ. Entrainment of free-running circadian rhythms by melatonin in blind people. New England Journal of Medicine 2000&semi;343 (15):1070-1077.</li>
+				<li>Sack RL, Hughes RJ, Edgar DM, Lewy AJ. Sleep-promoting effects of melatonin: at what dose, in whom, under what conditions, and by what mechanisms? Sleep 1997&semi;20(10):908-915.</li>
+				<li>Sack RL, Lewy AJ, Blood ML, Stevenson J, Keith LD. Melatonin administration to blind people: phase advances and entrainment. Journal of Biological Rhythms 1991&semi;6(3):249-261.</li>
+				<li>Sanders DC, Chaturvedi AK, Hordinsky JR. Melatonin: aeromedical, toxicopharmacological, and analytical aspects. Journal of Analytical Toxicology 1999&semi;23(3):159-167.</li>
+				<li>Sheldon SH. Pro-convulsant effects of oral melatonin in neurologically disabled children. Lancet 1998&semi;351:1254.</li>
+				<li>Skene DJ, Lockley SW, Arendt J. Melatonin in circadian sleep disorders in the blind. Biological Signals and Receptors 1999&semi;8(1-2):90-95.</li>
+				<li>Suhner A, Schlagenhauf P, Johnson R, Tschopp A, Steffen R. Comparative study to determine the optimal melatonin dosage form for the alleviation of jet lag. Chronobiology International 1998a&semi;15(6):655-656.</li>
+				<li>Suhner A, Schlagenhauf P, Tschopp A, Hauri-Bionda R, Friedrich-Koch A, Steffen R. Impact of melatonin on driving performance. Journal of Travel Medicine 1998b&semi;5(1):7-13.</li>
+				<li>Sutherland ER, Martin RJ, Ellison MC, Kraft M. Immunomodulatory effects of melatonin in asthma. American Journal of respiratory and critical care medicine 2002&semi;166:1055-1061.</li>
+				<li>Sutherland ER, Ellison MC, Kraft M, Martin RJ. Elevated serum melatonin is associated with the nocturnal worsening of asthma. Journal of Allergy and Clinical Immunology 2003&semi;112(3):513517.</li>
+				<li>Tzischinsky O, Lavie P. Melatonin possesses time-dependent hypnotic effects. Sleep 1994&semi;17(7):638-645.</li>
+				<li>van Geijlswijk IM, Korzilius HP, Smits MG. The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis. Sleep 2010&semi;33(12):1605-1614.</li>
+				<li>Wirtz PH, Spillmann M, B&auml;rtschi C, Ehlert U, von K&auml;nel R. Oral melatonin reduces blood coagulation activity: a placebo-controlled study in healthy young men. Journal of Pineal Research 2008;44:127-133.</li>
+				<li>Wyatt JK, Dijk DJ, Cecco AR, Ronda JM, Czeisler CA. Sleep-facilitating effect of exogenous melatonin in healthy young men and women is circadian-phase dependent. Sleep 2006&semi;29(5):609-618.</li>
+				<li>Zhdanova IV, Wurtman RJ, Lynch HJ, Ives JR, Dollins AB, Morabito C, Matheson JK, Schomer DL 1995. Sleep-inducing effects of low doses of melatonin ingested in the evening. Clinical Pharmacology & Therapeutics 57(5):552-558.</li>
+				<li>Zhdanova IV, Wurtman RJ, Regan MM, Taylor JA, Shi JP, Leclair OU. Melatonin treatment for age-related insomnia. Journal of Clinical Endocrinology and Metabolism 2001&semi;86(10):4727-4730.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References reviewed</h2>
+			<ul>
+				<li>Abbas A, Raju J, Milles J, Ramachandran S. A circadian rhythm sleep disorder: melatonin resets the biological clock. The Journal of the Royal College of Physicians of Edinburgh 2010&semi;40(4):311-313.</li>
+				<li>Ahmad RA, Samarkandi A, Al-Mansouri SM, Al Obeidan SA. Sedation characteristics of melatonin and midazolam for premedication of adult patients undergoing cataract surgery under local anaesthesia. Saudi Journal of Anaesthesia. 2007 Jan 1&semi;1(1):6.</li>
+				<li>Aicardi J. Epilepsy in brain-injured children. Review article. Developmental Medicine and Child Neurology 1990&semi;32:191-202.</li>
+				<li>Aksu F. Nature and prognosis of seizures in patients with cerebral palsy. Developmental Medicine and Child Neurology 1990&semi;32:661-668.</li>
+				<li>Andrade C, Srihari BS, Reddy KP, Chandramma L. Melatonin in medically ill patients with insomnia: a double blind placebo-controlled study. Journal of Clinical Psychiatry 2001&semi;62(1):4145.</li>
+				<li>Arendt J. Does melatonin improve sleep? BMJ 2006&semi;332:550.</li>
+				<li>Ashwal S, Russman BS, Blasco PA, Miller G, Dansler A, Shevell M, Stevenson R. Practice parameter: diagnostic assessment of the child with cerebral palsy. Neurology 2004&semi;62:851-863</li>
+				<li>Blask DE, Sauer LA, Dauchy RT. Melatonin as a chronobiotic/anticancer agent: cellular, biochemical, and molecular mechanisms of action and their implications for circadian-based cancer therapy. Current Topics in Medicinal Chemistry 2002&semi;2(2):113-132.</li>
+				<li>Brzezinski A, Vangel MG, Wurtman RJ, Norrie G, Zhdanova I, Ben-Shushan A, Ford I. Effects of exogenous melatonin on sleep: a meta-analysis. Sleep Medicine Reviews 2005&semi;9:41-50.</li>
+				<li>Burgess HJ, Revell VL, Eastman CI. A three pulse phase response curve to three milligrams of melatonin in humans. Journal of Physiology 2008&semi;586:639-647.</li>
+				<li>Buscemi N, Vandermeer B, Hooton N, Pandya R, Tjosvold L, Hartling L, Vohra S, Klassen TP, Baker G. Efficacy and safety of exogenous melatonin for secondary sleep disorders and sleep disorders accompanying sleep restriction: meta-analysis. British Medical Journal, doi:10.1136/bmj.38731.532766.F6 (published 10 February 2006).</li>
+				<li>Cagnacci A, Arangino S, Angiolucci M, Melis GB, Facchinetti F, Malmusi S, Volpe A. Effect of exogenous melatonin on vascular reactivity and nitric oxide in postmenopausal women: role of hormone replacement therapy. Clinical Endocrinology 2001b&semi;54:261-266.</li>
+				<li>Cagnacci A, Elliott JA, Yen SSC. Melatonin: a major regulator of the circadian rhythm of core temperature in humans. Journal of Clinical Endocrinology and Metabolism 1992&semi;75(2):447-452.</li>
+				<li>Carman JS, Post RM, Buswell R, Goodwin FK. Negative effects of melatonin on depression. American Journal of Psychiatry 1976&semi;133(10):1181-1186.</li>
+				<li>Citera G, Arias MA, Maldonado, Cocco JA, Lazaro MA, Rosemffet MG, Brusco LI, Scheines EJ, Cardinalli DP. The effect of melatonin in patients with fibromyalgia: a pilot study. Clinical Rheumatology 2000&semi;19(1):9-13.</li>
+				<li>Cutolo M, Villaggio B, Candido F, Valenti S, Giusti M, Felli L, Sulli A, Accardo S. Melatonin influences interleukin-12 and nitric oxide production by primary cultures of rheumatoid synovial macrophages and THP-1 cells. Annals of the New York Academy of Sciences 1999&semi;876:246254.</li>
+				<li>Danilenko KV, Putilov AA. Melatonin treatment of winter depression following total sleep deprivation: waking EEG and mood correlates. Neuropsychopharmacology. 2005 Jul&semi;30(7):1345-52.</li>
+				<li>DeMuro RL, Nafziger AN, Blask DE, Menhinick AM, Bertino JS. The absolute bioavailability of oral melatonin. Journal of Clinical Pharmacology 2000&semi;40(7):781-784.</li>
+				<li>Dolberg OT, Hirschmann S, Grunhaus L. Melatonin for the treatment of sleep disturbances in major depressive disorder. American Journal of Psychiatry 1998&semi;155(8):1119-1121.</li>
+				<li>Ellis CM, Lemmens G, Parkes D. Melatonin and insomnia. Journal of Sleep Research 1996&semi;5:6165.</li>
+				<li>Fauteck J-D, Schmidt H, Lerchl A, Kurlemann G, Wittkowski W. Melatonin in epilepsy: first results of replacement therapy and first clinical results. Biological Signals and Receptors 1999&semi;8:105-110.</li>
+				<li>GAO 2001: United States General Accounting Office. Report to Chairman, Special Committee on Aging, U.S. Senate. Health Products for Seniors: &ldquo;Anti-Aging&rdquo; Products Pose Potential for Physical and Economic Harm. September 2001. GAO-01-1129. [Accessed 2023 August 22] Available from: https://www.gao.gov/assets/gao-01-1129.pdf</li>
+				<li>Goncalves AL, Martini Ferreira A, Teixeira Ribeiro R, Zukerman E, Cipolla-Neto J, Prieto Peres MF. Randomised clinical trial comparing melatonin 3 mg, amitriptyline 25 mg and placebo for migraine prevention. Journal of Neurology, Neurosurgery & Psychiatry 2016&semi;87(10):1127-1132.</li>
+				<li>Grossman E, Laudon M, Yalcin R, Zengil H, Peleg E, Sharabi Y, Kamari Y, Shen-Orr Z, Zisapel N. Melatonin reduces night blood pressure in patients with nocturnal hypertension. The American Journal of Medicine 2006&semi;119:898-902.</li>
+				<li>Hadjipanayis A, Hadjichristodoulou C, Youroukos S. Epilepsy in patients with cerebral palsy. Developmental Medicine and Child Neurology 1997&semi;39:659-663.</li>
+				<li>Haimov I, Lavie P, Laudon M, Herer P, Vigder C, Zisapel N. Melatonin replacement therapy of elderly insomniacs. Sleep 1995&semi;18(7):598-603.</li>
+				<li>Holliman BJ, Chyka PA. Problems in assessment of acute melatonin overdose. Southern Medical Journal 1997&semi;90(4):451-453.</li>
+				<li>Khezri MB, Merate H. The effects of melatonin on anxiety and pain scores of patients, intraocular pressure, and operating conditions during cataract surgery under topical anesthesia. Indian J Ophthalmol. 2013 Jul&semi;61(7):319-24. doi: 10.4103/0301-4738.99637.</li>
+				<li>Lewy AJ, Bauer VK, Cutler NL, Sack RL. Melatonin treatment of winter depression: a pilot study. Psychiatry Research 1998&semi;77(1):57-61.</li>
+				<li>Lewy AJ, Ahmed Saeeduddin, Latham Jackson JM, Sack RL. Melatonin shifts human circadian rhythms according to a phase-response curve. Chronobiology International 1992&semi;9(5):380-392.</li>
+				<li>Lissoni P, Barni S, Mandala M, Ardizzoia A, Paolorossi F, Vaghi M, Longarini R, Malugani F, Lusardi P, Piazza E, Fogari R. Cardiovascular effects of melatonin in hypertensive patients well controlled by nifedipine: a 24-hour study. British Journal of Clinical Pharmacology 2000&semi;49:423427.</li>
+				<li>Lissoni P, Barni S, Mandal&#224; M, Ardizzoia A, Paolorossi F, Vaghi M, Longarini R, Malugani F, Tancini G. Decreased toxicity and increased efficacy of cancer chemotherapy using the pineal hormone melatonin in metastatic solid tumour patients with poor clinical status. European Journal of Cancer 1999&semi;35(12):1688-1692.</li>
+				<li>Mundey K, Benloucif S, Harsanyi K, Dubocovich ML, Zee PC. Phase-dependent treatment of delayed sleep phase syndrome with melatonin. Sleep 2005&semi;28(10):1271-1278.</li>
+				<li>Neri B, De Leonardis V, Gemelli MT, Di Loro F, Mottola A. Ponchietti R, Raugei A, Cini G. Melatonin as biological response modifier in cancer patients. Anticancer Research 1998&semi;18:1329-1332.</li>
+				<li>Ninomiya T, Iwatani N, Tomoda A, Miike T. Effects of exogenous melatonin on pituitary hormones in humans. Clinical Physiology 2001&semi;21(3):292-299.</li>
+				<li>Pandi-Perumal SR, Smits M, Spence W, Srinivasan V, Cardinali DP, Lowe AD, Kayumov L. Dim light melatonin onset (DLMO): A tool for the analysis of circadian phase in human sleep and chronobiological disorders. Review article. Progress in Neuro-Psychopharmacology & Biological Psychiatry 2007&semi;31:1-11.</li>
+				<li>Pires MLN, Benedito-Silva AA, Pinto L, Souza L, Vismari L, Calil HM. Acute effects of low doses of melatonin on the sleep of young healthy subjects. Journal of Pineal Research 2001&semi;31:326-332.</li>
+				<li>Pizzorno Jr JEP, Murray MT. Textbook of Natural Medicine. 3<sup>rd</sup> edition, Volume 1. St-Louis (MI): Churchill Livingstone Elsevier&semi; 2006.</li>
+				<li>Reid KJ, Zee PC. Circadian rhythm sleep disorders. Handbook of Clinical Neurology 2011&semi;99:963-977.</li>
+				<li>Reiter RJ, Calvo JR, Karbownik M, Qi W, Tan DX. Melatonin and its relation to the immune system and inflammation. Annals of the New York Academy of Sciences 2006&semi;917:376-386.</li>
+				<li>Sletten TL, Vincenzi S, Redman JR, Lockley SW, Rajaratnam SMW. Timing of sleep and its relationship with the endogenous melatonin rhythm. Frontiers in neurology 2010&semi;1:137.</li>
+				<li>Suhner A, Schlagenhauf P, Johnson R, Tschopp A, Steffen R. Comparative study to determine the optimal melatonin dosage form for the alleviation of jet lag. Chronobiology International 1998&semi;15(6):655-656.</li>
+				<li>Tancini G. Decreased toxicity and increased efficacy of cancer chemotherapy using the pineal hormone melatonin in metastatic solid tumor patients with poor clinical status. European Journal of Cancer 1999&semi;35:1688-1692.</li>
+				<li>Vijayalaxmi CRT Jr, Reiter RJ, Herman TS. Melatonin: from basic research to cancer treatment clinics. Journal of Clinical Oncology 2002&semi;20:2575-2601.</li>
+				<li>Voordouw BCG, Euser R, Verdonk RER, Alberda BT, De Jong FH, Drogendijk AC, Fauser BCJM, Cohen M. Melatonin and melatonin-progestin combinations alter pituitary-ovarian function in women and can inhibit ovulation. Journal of Clinical Endocrinology and Metabolism 1992&semi;74(1):108-117.</li>
+				<li>Zawilska JB, Nowak JZ. Melatonin: from biochemistry to therapeutic applications. Polish Journal of Pharmacology 1999&semi;51:3-23.</li>
+				<li>Zee PC. Shedding light on the effectiveness of melatonin for circadian rhythm sleep disorders. Sleep 2010&semi;33(12):1581-1582</li>
+				<li>Zee PC. Shedding light on the effectiveness of melatonin for circadian rhythm sleep disorders. Commentary on van Geijlswijk et al. The use of exogenous melatonin in delayed sleep phase disorder: a meta-analysis. Sleep 2010&semi;33:1605-1614.</li>
+				<li>Zee PC, Goldstein CA. Treatment of shift work disorder and jet lag. Current Treatment Options in Neurology 2010&semi;12(5):396-411.</li>
+				<li>Zhdanova IV, Wurtman RJ, Morabito C, Piotrovska VR, Lynch HJ. Effects of low oral doses of melatonin, given 2-4 hours before habitual bedtime, on sleep in normal young humans. Sleep. 1996 Jul 1&semi;19(5):423-31.</li>
+				<li>Zhdanova IV and RJ Wurtman 1997. Efficacy of melatonin as a sleep-promoting agent. Journal of Biological Rhythms 12(6):644-650.</li>
+			</ul>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

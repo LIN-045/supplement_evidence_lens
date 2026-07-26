@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=kelp.prod.varech3\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="a661cb2b-b398-46cb-b5a6-e073584a4719"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>Kelp Products</h1>
+	<div class="icon">
+		<a href="dbImages/mono_kelp-products_english.pdf" title="KELP PRODUCTS"><img alt="Monograph: KELP PRODUCTS" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/> (PDF Version - 109 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>May 29, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="3">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+						<th>Preparation(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Ascophyllum nodosum</em></td>
+						<td>
+							<ul>
+								<li>Knotted wrack</li>
+								<li>Egg wrack</li>
+								<li>Kuppetang</li>
+								<li>Norwegian kelp</li>
+							</ul>
+						</td>
+						<td><em>Ascophyllum nodosum</em></td>
+						<td>
+							<ul>
+								<li>Thallus</li>
+								<li>Whole</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Fucus vesiculosus</em></td>
+						<td>
+							<ul>
+								<li>Black tang</li>
+								<li>Bladder fucus</li>
+								<li>Bladderwrack</li>
+								<li>Kelpware</li>
+								<li>Seawrack</li>
+							</ul>
+						</td>
+						<td><em>Fucus vesiculosus</em></td>
+						<td>
+							<ul>
+								<li>Thallus</li>
+								<li>Whole</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Laminaria digitata</em></td>
+						<td>
+							<ul>
+								<li>Horsetail kelp</li>
+								<li>Kelp</li>
+								<li>Silketare</li>
+							</ul>
+						</td>
+						<td><em>Laminaria digitata</em></td>
+						<td>
+							<ul>
+								<li>Thallus</li>
+								<li>Whole</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+					<tr>
+						<td><em>Saccharina japonica</em></td>
+						<td>
+							<ul>
+								<li>Hai dai</li>
+								<li>Japanese kelp</li>
+								<li>Makombu</li>
+								<li>Sea tangle</li>
+							</ul>
+						</td>
+						<td><em>Saccharina japonica</em></td>
+						<td>
+							<ul>
+								<li>Thallus</li>
+								<li>Whole</li>
+							</ul>
+						</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: Guiry and Guiry 2018a,b&semi; Common names: TGA 2020&semi; Source information: Guiry and Guiry 2018a,b.</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p><em>All products</em>
+				<ul>
+					<li>Source of antioxidants/Provides antioxidants (CNF 2024&semi; Murphya et al. 2013&semi; Kang et al. 2012&semi; Veena et al. 2008&semi; Veena et al. 2007&semi; Zhang et al. 2007&semi; Jin et al. 2004).</li>
+					<li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (CNF 2024&semi; Murphya et al. 2013&semi; Kang et al. 2012&semi; Veena et al. 2008&semi; Veena et al. 2007&semi; Zhang et al. 2007&semi; Jin et al. 2004).</li>
+				</ul>
+			</p>
+			<p><em>Products providing 0.8 g or more of Fucus vesiculosus per day</em>
+				<ul>
+					<li>(Traditionally) used in Herbal Medicine as an alterative for the glandular system (Hoffman 2003&semi; Duke 2002&semi; Grieve 1931a,b&semi; Felter and Lloyd 1898).</li>
+					<li>Used in Herbal Medicine to support normal thyroid function (Bradley 1992&semi; Grieve 1931a,b&semi; Ellingwood 1919).</li>
+				</ul>
+			</p>
+			<p><em>Products standardized to iodine</em></p>
+				<p>As per the Natural and Non-prescription Health Products Directorate (NNHPD) Multi-vitamin/mineral Supplements monograph.</p>
+			<p><strong>Notes</strong></p>
+				<p><strong>For multi-ingredient products:</strong>
+					<ul>
+						<li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized system of medicine from which the claim originates when 1&rpar; both traditional and modern claims are present or 2&rpar; when claims originate from multiple systems of traditional medicine (e.g., Kelp is traditionally used in Herbal Medicine as an alterative for the glandular system).</li>
+						<li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+					</ul>
+				</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Antioxidants</em></p>
+					<p><strong>Methods of preparation:</strong> Dry, Powdered, Non-standardized ethanolic extracts (Dry extract, Tincture, Fluid extract)</p>
+						<p>Not to exceed 1 gram of kelp per day (Barnes et al 2007&semi; Mills and Bone 2005&semi; Kolb et al 2004&semi; Duke 2002&semi; BHP 1996&semi; Bradley 1992).</p>
+				<p><em>Fucus vesiculosus: alterative, support normal thyroid function</em></p>
+					<p><strong>Methods of preparation:</strong> Dry, Powdered, Non-standardized ethanolic extracts (Dry extract, Tincture, Fluid extract)</p>
+						<p>0.8 - 1 gram of Fucus vesiculosus per day (Mills and Bone 2005&semi; Bradley 1992).</p>
+				<p><em>Iodine claims (Multi-vitamin/mineral Supplements monograph)</em></p>
+					<p><strong>Methods of preparation:</strong> Dry standardized, Powdered standardized, Standardized extracts (Dry extract, Tincture, Fluid extract, Decoction, Infusion)
+						<ul>
+							<li>Medicinal ingredient(s) must provide the minimum amount of iodine outlined on the current NNHPD Multi-vitamin/mineral Supplements monograph.</li>
+							<li>Iodine should be indicated on the PLA form as a potency constituent.</li>
+						</ul>
+					</p>
+				<p><strong>Note:</strong> The total amount of iodine provided by the product must not exceed 800 micrograms iodine per day (IOM 2006).</p>
+			<h3>Direction(s) for use</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Gardner and McGuffin 2013&semi; Ren et al 2013&semi; Zhao et al 2012&semi; Brinker 2010&semi; Gruenwald et al 2007&semi; Duke 2002).</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Brinker 2010&semi; Barnes 2002).</li>
+					</ul>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">Example of Product Facts:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/KELP_E.gif" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Barnes J. Herbal Medicines. A guide for healthcare professionals. 2<sup>nd</sup> edition. London (UK): The Pharmaceutical Press&semi; 2002.</li>
+				<li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines. 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press&semi; 2007.</li>
+				<li>BHP 1996: British Herbal Pharmacopoeia. Bournemouth (GB): British Herbal Medicine Association&semi; 1996.</li>
+				<li>Bradley P. British Herbal Compendium Vol 1&semi; Companion to Volume 1 of the British Herbal Pharmacopoeia&semi; 1992.</li>
+				<li>Brinker F. Herbal Contraindications and Drug Interactions: Plus Herbal Adjuncts with Medicines, expanded 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>CNF 2024: Canadian Nutrient File, Food and Nutrition, Health Canada. [Accessed 2024 January 15 ]. Available from: https://food-nutrition.canada.ca/cnf-fce</li>
+				<li>Duke JA, Bogenschutz-Godwin MJ, duCellier J, Duke PK. Handbook of Medicinal Herbs. 2<sup>nd</sup> edition. Boca Raton (FL): CRC Press&semi; 2002.</li>
+				<li>Ellingwood F. American Materia Medica, Therapeutics and Pharmacognosy. Sandy (OR): Eclectic Medical Publications&semi; 1998 [Reprint of 1919 original].</li>
+				<li>Felter HW, Lloyd JU. King&apos;s American Dispensatory. Volume 1, 18<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 1983 [Reprint of 1898 original].</li>
+				<li>Gardner Z, McGuffin M, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. 2<sup>nd</sup> edition. Boca Raton (FL): Taylor and Francis Group&semi; 2013.</li>
+				<li>Grieve M. A Modern Herbal. Volume 1. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931a. Harcourt, Brace &amp; Company publication].</li>
+				<li>Grieve M. A Modern Herbal. Volume 2. New York (NY): Dover Publications&semi; 1971 [Reprint of 1931b. Harcourt, Brace &amp; Company publication].</li>
+				<li>Gruenwald J, Brendler T, Jaenicke C. PDR for Herbal Medicines. Fourth Edition. Montvale (NJ): Thomspon Healthcare Inc.&semi; 2007.</li>
+				<li>Guiry MD, Guiry GM. 20183a. Ascophyllum nodosum (Linnaeus). AlgaeBase - World-wide electronic publication. National University of Ireland, Galway. [Accessed 2024 January 11]. Available from: http://www.algaebase.org</li>
+				<li>Guiry MD, Guiry GM. 2018b. Laminaria digitata (Hudson) J.V. Lamouroux. AlgaeBase - World-wide electronic publication. National University of Ireland, Galway. [Accessed 2024 January 11]. Available from: http://www.algaebase.org</li>
+				<li>Hoffman D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>
+				<li>IOM 2006: Institute of Medicine. Otten JJ, Pitzi Hellwig J, Meyers LD, editors. Institute of Medicine. Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press&semi; 2006.</li>
+				<li>Jin DQ, Li G, Kim JS, Yong CS, Kim JA, Huh K. Preventive Effects of Laminaria japonica Aqueous Extract on the Oxidative Stress and Xanthine Oxidase Activity in Streptozotocin-induced diabetic rat liver. Biological and Pharmaceutical Bulletin 2004&semi;27(7):1037-1040.</li>
+				<li>Kang YM, Lee BJ, Kim JI, Nam BH, Cha JY, Kim YM, Ahn CB, Choi JS, Choi IS, Je JY. Antioxidant effects of fermented sea tangle (<em>Laminaria japonica</em>) by Lactobacillus brevis BJ20 in individuals with high level of gamma-GT: A randomized double-blind and placebo controlled clinical study. Food and Chemical Toxicology 2012&semi;50:1166-1169.</li>
+				<li>Kolb N, Vallorani L, Milanovic N, Stocchi. Evaluation of marine algae Wakame (<em>Undaria pinnatifida</em>) and Kombu (<em>Laminaria digitata japonica</em>) as food supplements. Food Technology and Biotechnology 2004&semi;42:57-61.</li>
+				<li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2005.</li>
+				<li>Murphya P, Dal Bello F, O&apos;Doherty J, Arendt EK, Sweeney T, Coffey A. The effects of liquid versus spray-dried Laminaria digitata extract on selected bacterial groups in the piglet gastrointestinal tract (GIT) microbiota. Anaerobe 2013&semi;21:1-8.</li>
+				<li>Ren R, Azuma Y, Ojima T, Hashimoto T, Mizuno M, Nishitani Y, Yoshida M, Azuma T, Kanazawa K. Modulation of platelet aggregation-related eicosanoid production by dietary F-fucoidan from brown alga Laminaria japonica in human subjects. British Journal of Nutrition 2013&semi;110:880-890.</li>
+				<li>TGA 2020: Australian Therapeutic Goods: TGA Approved Terminology for Medicines, Section 3 - Herbal Substances. March 2020. Symonston (AU): Australian Government Department of Health and Ageing, Therapeutic Goods Administration. [Accessed 2024 January 15]. Available from: https://www.tga.gov.au/sites/default/files/tga-approved-terminology-therapeutic-goods.pdf</li>
+				<li>The Biodiversity Committee of Chinese Academy of Science 2013. Catalogue of Life China, 2013 Annual Checklist. [Accessed 2024 January 11]. Available from: https://www.gbif.org/dataset/3772da2f-daa1-4f07-a438-15a881a2142c</li>
+				<li>Veena CK, Josephine A, Preetha SP, Varalakshmi P. Effect of sulphated polysaccharides on erythrocyte changes due to oxidative and nitrosative stress in experimental hyperoxaluria. Human &amp; Experimental Toxicology 2007&semi;26:923-932.</li>
+				<li>Veena CK, Josephine A, Preetha SP, Rajesh NG, Varalakshimi P. Mitochondrial dysfunction in an animal model of hyperoxaluria: a prophylactic approach with fucoidan. European Journal of Pharmacology 2008&semi;579(1-3):330-336.</li>
+				<li>Zhang J, Tiller C, Shen J, Wang C, Girouard GS, Dennis D, Barrow CJ, Miao M, Ewart HS. Antidiabetic properties of polysaccharide- and polyphenolic-enriched fractions from the brown seaweed Ascophyllum nodosum. Canadian Journal of Physiology and Pharmacology 2007&semi;85(11):1116-1123.</li>
+				<li>Zhao X, Dong S, Wang J, Li F, Chen A, Li B. A comparative study of antithrombotic and antiplatelet activities of different fucoidans from Laminaria japonica. Thrombosis Research 2012&semi;129(6):771-778.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Abbott IA, Hollenberg GJ. Marine Algae of California. Stanford (CA): Stanford University Press&semi; 1976.</li>
+				<li>Abidov M, Ramazanov Z, Seifulla R, Grachev S. The effects of Xanthigen in the weight management of obese premenopausal women with non-alcoholic fatty liver disease and normal liver fat. Diabetes Obesity and Metabolism 2010&semi;12(1):72-81.</li>
+				<li>Arbaizar B, Llorca J. Fucus vesiculosus induced hyperthyroidism in a patient undergoing concomitant treatment with lithium. Actas Epanolas de Psiquiatria 2011&semi;39(6):301-403. [Article in Spanish].</li>
+				<li>Atlas RO, Lemus J, Reed J 3<sup>rd</sup>, Atkins D, Alger LS. Second trimester abortion using prostaglandin E2 suppositories with or without intracervical Laminaria japonica: A randomized study. Obstetrics &amp; Gynecology 1998&semi;92(3):398-402.</li>
+				<li>Audibert L, Fauchon M, Blan N, Hauchard D, Gall EA. Phenolic compounds in the brown seaweed Ascophyllum nodosum: distribution and radical-scavenging activities. Phytochemical Analysis 2010&semi;21(5):399-405.</li>
+				<li>Becker G, Osterloh K, Schäfer S, Forth W, Paskins-Hurlburt AJ, Tanaka G, Skoryna Sc. Influence of fucoidan on the intestinal absorption of iron, cobalt, manganese and zinc in rats. Digestion 1981&semi;21(10):6-12.</li>
+				<li>Bensky D, Clavey, Stöger E, Gamble A. Chinese Herbal Medicine: Materia Medica. 3<sup>rd</sup> edition. Seattle (WA): Eastland Press, Incorporated&semi; 2004.</li>
+				<li>Birkett DA, Maggs C, Dring MJ. An overview of dynamic and sensitivity characteristics for conservation management of marine SACs. Infralittoral Reef Biotopes with Kelp Species 1998&semi;7:1-174.</li>
+				<li>Bisby F, Roskov Y, Culham A, Orrell T, Nicolson D, Paglinawan L, Bailly N, Kirk P, Bourgoin T, Baillargeon G, Hernandez F, editors. Species 2000 &amp; ITIS Catalogue of Life, 20<sup>th</sup> November 2012. Reading (GB): Species 2000&semi; 2012. [Accessed 2024 January 11]. Available from: www.catalogueoflife.org</li>
+				<li>Bisset NG, Wichtl M, editors. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis. 2<sup>nd</sup> edition. Stuttgart (DE): Medpharm Scientific Publishers&semi; 2001.</li>
+				<li>Blanc N, Hauchard D, Audibert L, Gall EA. Radical-scavenging capacity of phenol fractions in the brown seaweed Ascophyllum nodosum: an electrochemical approach. Talanta 2011&semi;84(2):513-518.</li>
+				<li>Bleichrodt N, Shrestha RM, West CE, Hautvast JG, van de Vijver FJ, Born MP. The Benefits of adequate iodine intake. Nutrition Reviews 1996&semi;54 (4):S72-78.</li>
+				<li>Blumenthal M, editor. The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines. Austin (TX): American Botanical Council in cooperation with Integrative Medicine Communications&semi; 1998.</li>
+				<li>Bone K. A Clinical Guide to Blending Liquid Herbs: Herbal Formulations for the Individual Patient. St. Louis (MI): Churchill Livingstone&semi; 2003.</li>
+				<li>BPC 1934: The British Pharmaceutical Codex: An imperial dispensatory for the use of medical practitioners and pharmacists. London (GB): The Pharmaceutical Press&semi; 1934.</li>
+				<li>Chevolot L, Foucault A, Chaubet F, Kervarec N, Singuin C, Fisher AM, Boisson-Vidal C. Further data on the structure of brown seaweed fucans: relationships with anticoagulant activity. Carbohydrate Research 1999&semi;319(1-4):154-165.</li>
+				<li>Church FC, Meade JB, Treanor RE, Whinna HC. Antithrombin activity of fucoidan. The interaction of fucoidan with heparin cofactor II, antithrombin III, and thrombin. The Journal of Biological Chemistry 1989&semi;264(6):3618-3623.</li>
+				<li>Combet E, Ma ZF, Cousins F, Thompson B, Lean ME. Low-level seaweed supplementation improves iodine status in iodine-insufficient women. British Journal of Nutrition 2014&semi;112(5):753-761.</li>
+				<li>Cumashi, A, Ushakova NA, Preobrazhenskaya ME, D&apos;Incecco A, Piccoli A, Totani L, Tinari N, MorozevichA comparative study of the anti-inflammatory, anticoagulant, antiangiogenic, and antiadhesive activities of nine different fucoidans from brown seaweeds. Glycobiology 2007&semi;17(5):541-552.</li>
+				<li>De Smet PA, Stricker BH, Wilderink F, Wiersinga WM. Hyperthyroidism during treatment with kelp tablets. Ned Tijdschr Geneeskd 1990&semi;134(21):1058-1059. [Article in Dutch].</li>
+				<li>D&apos;Orazio N, Gemello E, Gammone MA, de Girolamo M, Ficoneri C, Riccioni G. Fucoxantin: A Treasure from the Sea. Marine Drug 2012&semi;10(3)&semi;604-616.</li>
+				<li>Duke JA. Handbook of phytochemical constituents of GRAS herbs and other economic plants. Boca Raton (FL): CRC Press&semi; 2001.</li>
+				<li>Durig J, Bruhn T, Zurborn KH, <em>et al</em> Anticoagulant fucoidan fractions from Fucus vesiculosus induce platelet activation in vitro. Thrombosis Research 1997&semi;85:479-491.</li>
+				<li>Dutot M, Fagon R, Hemon M, Rat P. Antioxidant, Anti-inflammatory, and Anti-senescence Activities of a Phlorotannin-Rich Natural Extract from Brown Seaweed Ascophyllum nodosum. Applied Biochemistry and Biotechnology 2012&semi;167&semi;2234-2240.</li>
+				<li>Facciola S. Cornucopia II: A source book of edible plants. Vista (CA): Kampong Publications&semi; 1998.</li>
+				<li>Fleming T. editor. PDR for Herbal Medicine. 2<sup>nd</sup> edition. New Jersey (US): Medical Economics Company&semi; 2000.</li>
+				<li>Garber DW, Henkin Y, Osterlund LC, Woolley TW, Segrest JP. Thyroid function and other clinical chemistry parameters in subjects eating iodine-enriched eggs. Food and Chemical Toxicology 1993&semi;31(4):247-251.</li>
+				<li>Gehrmann et al Medicinal Herbs. A compendium. Binghamton (NY): The Haworth Herbal Press&semi; 2005.</li>
+				<li>Gower RH, Toraya J, Miller JM Jr. Laminaria for preinduction cervical ripening. Obstetrics &amp; Gynecology 1982&semi;60(5):617-619.</li>
+				<li>Ha AW, Kim WK. The effect of fucoxanthin rich power on the lipid metabolism in rats with a high fat diet. Nutrition Research and Practice 2013&semi;7(4):287-293.</li>
+				<li>Hall AC, Fairclough AC, Mahadevan K, Paxman JR. Ascophyllum nodosum enriched bread reduces subsequent energy intake with no effect on post-prandial glucose and cholesterol in healthy, overweight males. A pilot study. Appetite 2012&semi;58(1):379-386.</li>
+				<li>Health Canada 2013. Guidance Document: Schedule A and Section 3 to the Food and Drugs Act. [Accessed 2024 January 11]. Available from: http://www.hc-sc.gc.ca/dhp- mps/prodpharma/applic-demande/guide-ld/scha_guide_ld-eng.php#a7</li>
+				<li>Hoffmann D. The Complete Illustrated Holistic Herbal. Boston (MA): Element Books Ltd.&semi; 1996.</li>
+				<li>Hu X, Li Y, Li C, Fu Y, Cai F, Chen Q, Li D. Combination of fucoxanthin and conjugated linoleic acid attenuates body weight gain and improves lipid metabolism in high-fat diet induced obese rats. Archives of Biochemistry and Biophysics 2012&semi;519(1):59-65.</li>
+				<li>IOM 2001: Institute of Medicine. Panel on Micronutrients, Subcommittees on Upper Reference Levels of Nutrients and Interpretation and Uses of Dietary Reference Intakes, and the Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Vitamin A, Vitamin K, Arsenic, Boron, Chromium, Copper, Iodine, Iron, Manganese, Molybdenum, Nickel, Silicon, Vanadium, and Zinc. Washington (DC): National Academies Press&semi; 2001.</li>
+				<li>IOM 2002: Institute of Medicine of the National Academies. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Food and Nutrition Board, Institute of Medicine. Washington (DC): National Academy Press&semi; 2002.</li>
+				<li>IOM 2003: Institute of Medicine. Committee on Food Chemicals Codex, Food and Nutrition Board, Institute of Medicine. Food Chemicals Codex, 5<sup>th</sup> edition. Washington (DC): National Academies Press&semi; 2003.</li>
+				<li>Irhimeh, M. R., Fitton, J. H., Lowenthal, R. M. Pilot clinical study to evaluate the anticoagulant activity of fucoidan. Blood Goagulation &amp; Fibrinolysis 2009&semi;20(7):607-610.</li>
+				<li>Jeon SM, Kim HJ, Woo MN, Lee MK, Shin YC, Park YB, Choi MS. Fucoxanthin-rich seaweed extract suppresses body weight gain and improves lipid metabolism in high-fat-fed C57BL/6J mice. Biotechnology Journal 2010&semi;5(9):961-969.</li>
+				<li>Kang KS, Kim ID, Kwon RH, Lee JY, Kang JS, Ha BJ. The effects of fucoidan extracts on CCI(4)-induced liver injury. Archives of Pharmacal Research 2008&semi;31(5):622-627.</li>
+				<li>Kazzi GM, Bottoms SF, Rosen MG. Efficacy and safety of Laminaria digitata for preinduction ripening of the cervix. Obstetrics &amp; Gynecology 1982&semi;60(4):440-443.</li>
+				<li>Kim SH, Chang YH, Kim WK, Kim YK, Cho SH, Kim YY, Min KU. Two cases of anaphylaxis after laminaria insertion. Journal of Korean Medical Science 2003&semi;18(6):886-888.</li>
+				<li>Kim KT, Rioux LE, Turgeon SL. Alpha-amylase and alpha-glucosidase inhibition is differentially modulated by fucoidan obtained from Fucus vesiculosus and Ascophyllum nodosum. Phytochemistry 2014&semi;98:27-33.</li>
+				<li>Konno N, Makita H, Yuri K, Iizuka N, Kawasaki K. Association between dietary iodine intake and prevalence of subclinical hypothyroidism in the coastal regions of Japan. Journal of Clinical Endocrinology Metabolism 1994&semi;78(2):393-397.</li>
+				<li>Le Tutour B., Benslimane F, Gouleau MP, Gouygou JP, Saadan B, Quemeneur F. Antioxidant and pro-oxidant activities of the brown algae, Laminaria digitata, Himanthalia elongata, Fucus vesiculosus, Fucus serratus and Ascophyllum nodosum. Journal of Applied Phycology 1998&semi;10:121-129.</li>
+				<li>Lee BJ, Senevirathne M, Kim JS, Kim YM, Lee MS, Jeong MH, Kang YM, Kim JI, Nam BH, Ahn CB, Je JY. Protective effect of fermented sea tangle against ethanol and carbon tetrachloride-induced hepatic damage in Sprague-Dawley rats. Food and Chemical Toxicology 2010&semi;48(4):1123-1128.</li>
+				<li>Leung AM, Braverman, L.E. Consequences of excess iodine. Nature Reviews Endocrinology 2014&semi;10(3):136-142.</li>
+				<li>Leung AY, Foster S. Encyclopedia of Common Natural Ingredients Used in Food, Drugs and Cosmetics. 2<sup>nd</sup> edition. Hoboken (NJ): John Wiley &amp; Sons, Inc.&semi; 2003.</li>
+				<li>Liu C, Tseng A, Yang S. Chinese Herbal Medicine: Modern Applications of Traditional Formulas. Boca Raton, FL: CRC Press&semi; 2005.</li>
+				<li>Maeda H, Hosokawa M, Sashima T, Funayama K, Miyashita K. Effect of medium-chain triacylglycerols on anti-obesity effect of fucoxanthin. Journal of Oleo Science 2007&semi;56(12):615-621.</li>
+				<li>Maruyama H, Watanabe K, Yamamoto I. Effect of dietary kelp on lipid peroxidation and glutathione peroxidase activity in livers of rats given breast carcinogen DMBA. Nutrition and Cancer 1991&semi;15(3-4):221-228.</li>
+				<li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. Boca Raton (FL): CRC Press&semi; 1997.</li>
+				<li>Michiels J, Skrivanova E, Missotten J, Ovyn A, Mrazek J, De Smet S, Dierick N. Intact brown seaweed (Ascophyllum nodosum) in diets of weaned piglets: effects on performance, gut bacteria and morphology and plasma oxidative status. Journal of Animal Physiology and Animal Nutrition 2012&semi;96(6):1101-1111.</li>
+				<li>Mills S, Bone K. Principals and Practice of Phytotherapy. Modern Herbal Medicine. 2<sup>nd</sup> Edition. Churchill Livingstone Elsevier&semi;2003.</li>
+				<li>Miyai K, Tokushige T, Kondo M and Iodine Research Group. Suppression of Thyroid Function during Ingestion of Seaweed "Kombu" (<em>Laminaria japonaoca</em>) in Normal Japanese Adults. Endocrine Journal 2008&semi;55(6):1103-1108.</li>
+				<li>Moro CO, Basile G. Obesity and medicinal plants. Fitoterapia 2000&semi;71(1):S73-S82.</li>
+				<li>Moroney NC, O&apos;Grady MN, O&apos;Doherty JV, Kerry JP. Effect of a brown seaweed (Laminaria digitata) extract containing laminarin and fucoidan on the quality and shelf life of fresh and cooked minced prok patties. Meat Science 2013&semi;94(3):304-311.</li>
+				<li>Müssig K, Thamer C, Bares R, Lipp HP, Haring HU, Gallwitz B. Case Report: Iodine-Induced Thyrotoxicosis After ingestion of Kelp Containing Tea. Journal of General Internal Medicine 2006&semi;21:C11-C14.</li>
+				<li>Myers S. A combined phase I and II open label study on the effects of a seaweed extract nutrient complex on osteoarthritis. Biologics 2010&semi;4:33-44.</li>
+				<li>Nagata K, Takasu N, Akamine H, Ohshiro C, Komiya I, Murakami K, Suzawa A, Nomura T. Urinary iodine and thyroid antibodies in Okinawa, Yamagata, Hyogo and Nagano, Japan: The differences in iodine intake do not affect thyroid antibody positivity. Endocrine Journal 1998&semi;45(6):797-803.</li>
+				<li>Newall CA, Anderson LA, Phillipson JD. Herbal Medicines. A Guide For Health Care Professionals. London: The Pharmaceutical Press&semi; 1996.</li>
+				<li>Nishiyama S, Mikeda T, Okada T, Nakamura K, Kotani T, Hishinuma A. Transient hypothyroidism or persistent hyperthyrotropinemia in neonates born to mothers with excessive iodine intake. Thyroid 2004&semi;14(12):1077-1083.</li>
+				<li>Odunsi ST, Vazguez-Rogue MI, Camilleri M, Papathanasopoulos A, Clark MM, Wodrich L, Lempke M, McKinzie S, Ryks M, Burton D, Zinsmeister AR. Effect of Alginate of Satiation, Appetite, Gastric Function and Selected Gut Satiety Hormones in Overweight and Obesity. Obesity (Silver Spring) 2011&semi;18(8):1579-1584.</li>
+				<li>Paradis M-E, Couture P, Lamarche B. A randomized crossover placebo-controlled trial investigating the effect of brown seaweed (Ascophyllum nodosum and Fucus vesiculosus) on postchallenge plasma glucose and insulin levels in men and women. Applied Physiology, Nutrition, and Metabolism 2011&semi;36(6):913-919.</li>
+				<li>Park PJ, Kim EK, Lee SJ, Park SY, Kang DS, Jung BM, kim KS, Je JY, Ahn CB. Protective effects against H<sub>2</sub>O<sub>2</sub>-induced damage by enzymatic hydrolysates of an edible brown seaweed, sea tangle (laminaria japonica). Journal of Medicinal Foods 2009&semi;12(1):159-166.</li>
+				<li>Phaneuf D, Côt&eacute; I, Dumas P, Ferron LA, LeBlanc A. Evaluation of the contamination of marine algae (seaweed) from the St. Lawrence River and likely to be consumed by humans. Environmental Research Section A 1999&semi;80(2pt2):S175-S182.</li>
+				<li>Pizzorno Jr, Murray M. Textbook of Natural Medicine. 4<sup>th</sup> edition. St. Louis (MO): Elsevier Churchill Livingstone&semi; 2013.</li>
+				<li>PPRC 2015: Pharmacopoeia of the People&apos;s Republic of China. English edition 2015. Volume I. Beijing (CN): The State Pharmacopoeia Commission of the People&apos;s Republic of China&semi; 2015.</li>
+				<li>Queiroz KC, Medeiros VP, Queiroz LS, Abreu LR, Rocha HA, Ferreira CV, Juc&aacute; MB, Aoyama H, Leite EL. Inhibition of reverse transcriptase activity of HIV by polysaccharides of brown algae. Biomedicine &amp; Pharmacotherapy 2008&semi;62(5)&semi;303-307.</li>
+				<li>Roy M-C, Anguenot R, Fillion C, Beaulieu M, B&eacute;rub&eacute; J, Richard D. Effect of a commercially-available algal phlorotannins extract on digestive enzymes and carbohydrate absorption in vivo. Food Research International 2011&semi;44(9):3026-3029.</li>
+				<li>Royal Society of Chemistry 2024: The Merck Index Online [Accessed 2024 January 11]. Available from: https://www.rsc.org/Merck-Index/</li>
+				<li>Sherman JA. The Complete Botanical Prescriber. 3<sup>rd</sup> edition. Oregon(US): National College of Naturopathic Medicine&semi; 1993.</li>
+				<li>Skenderi, G. Herbal Vade Mecum. Rutherford (NJ): Herbacy Press&semi; 2003.</li>
+				<li>Skibola CF. The effect of Fucus vesiculosus, an edible brown seaweed, upon menstrual cycle length and hormonal status in three pre-menopausal women: a case report. BMC Complementary and Alternative Medicine 2004&semi; 4(10):1-8.</li>
+				<li>Skibola CF, Curry JD, VandeVoort C, Conley A, Smith MT. Brown kelp modulates endocrine hormones in female Sprague Dawley rats and in human luteinized granulosa cells. The Journal of Nutrition 2005&semi;135(2):296-300.</li>
+				<li>Shilo S, Hirsch H.J. Iodine-induced hyperthyroidism in a patient with a normal thyroid gland. Postgraduate Medical Journal. 1986&semi;62(729):661-662.</li>
+				<li>Shils ME, Olson JA, Shike M, Ross AC, Caballero B, Cousins RJ, editors. Modern Nutrition in Health and Disease, 10<sup>th</sup> edition. Philadelphia (PA): Lippincott Williams &amp; Wilkins&semi; 2006.</li>
+				<li>Suzuki N, Fujimura A, Nagai T, Mizumoto I, Itami T, Hatate H, Nozawa T, Kato N, Nomoto T, Yoda B. Antioxidative activity of animal and vegetable dietary fibers. Biofactors 2004&semi;21(1-4):329-333.</li>
+				<li>Teas J, Pino S, Critchley A, Braverman LE. Variability of iodine content in common commercially available edible seaweeds. Thyroid 2004&semi;14(10):836-841.</li>
+				<li>Tzanetakou IP, Doulamis IP, Korou LM, Agrogiannis G, Vlachos IS, Pantopoulou A, Mikhailidis DP, Patsouris E, Vlachos I and Perrea DN. Effects of ID-alG TM on weight management and body fat mass in high-fat-fed rats. Phytotherapy Research 2012&semi;26(5):727-733.</li>
+				<li>Wang J, Liu H, Li N, Zhang Q, Zhang H. The Protective Effect of Fucoidan in Rats with Streptozotocin-Induced Diabetic Nephropathy. Marine Drugs 2014&semi;12(6):3292-3306.</li>
+				<li>Wang J, Jin W, Zhang W, Hou Y, Zhang H, Zhang Q. Hypoglycemic property of acidic polysaccharide extracted from Saccharina japonica and its potential mechanism. Carbohydrate Polymers 2013&semi;95(1):143-147.</li>
+				<li>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis, 3<sup>rd</sup> edition. Stuttgart (D): Medpharm GmbH Scientific Publishers&semi; 2004.</li>
+				<li>Williamson E. Potter&apos;s Herbal Cyclopaedia. Trowbridge (GB): C.W Daniel Company Limited&semi; 2003.</li>
+				<li>Wren RC. Potter&apos;s Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark&semi; 1907.</li>
+				<li>Zaragoz&aacute; MC, L&oacute;pez D, P S&aacute;iz M, Poquet M, P&eacute;rez J, Puig-Parellada P, M&abreve;rmol F, Simonetti P, Gardana C, Lerat Y, Burtin P, Inisan C, Rousseau I, Besnard M, Mitjavila MT. Toxicity and antioxidant activity in vitro and in vivo of two Fucus vesiculosus extracts. Journal of Agricultural and Food Chemistry 2008&semi;56(17):7773-7780.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from May 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-05-29</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Introductory notes</li>
+								<li>Addition of a parenthesis for the term &lsquo;traditionally&rsquo; in the claim section</li>
+								<li>Addition of the missing section listing the methods of preparation for the <em>Fucus vesiculosus</em> specific uses</li>
+								<li>Minor adjustments to the reference section</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2024-10-25</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2022-10-28</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2018-09-25</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2015-03-31</td>
+						<td>Initial release</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

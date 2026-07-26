@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=bovine.colostrum.bovin2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="ddde9778-6134-4217-acdc-5029c8944acd"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+    <h1>BOVINE COLOSTRUM </h1>
+
+    <div class="icon">
+        <a href="dbImages/mono_bovine-colostrum_english.pdf" title="BOVINE COLOSTRUM">
+            <img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format"
+                width="22" height="21" />(PDF Version - 62 KB)</a>
+    </div>
+
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence
+        Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a
+        comprehensive review of the medicinal ingredient.</p>
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>Text in parentheses is additional optional information which can be included on the label at the applicant's
+            discretion.</li>
+        <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+    </ul>
+
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+        <p>October 31, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceMaterial">
+        <h2 id="properNameCommonNameSourceMaterial">Proper name(s), Common name(s), Source information</h2>
+
+        <table class="subject">
+
+            <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Proper name(s)</th>
+                    <th rowspan="2" scope="col">Common name(s)</th>
+                    <th colspan="3" scope="colgroup">Source information</th>
+                </tr>
+                <tr>
+                    <th scope="col">Source material(s)</th>
+                    <th scope="col">Part(s)</th>
+                    <th scope="col">Preparation(s)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="1">
+                        Bovine colostrum
+                    </td>
+
+                    <td rowspan="2">
+                        Bovine colostrum
+                    </td>
+
+                    <td><i>Bos taurus</i></td>
+                    <td>Colostrum<sup>1</sup></td>
+                    <td>Dry</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <p>References: Brayfield and Cadart 2024; Kim et al. 2009; Cesarone et al. 2007; Shing et al. 2007; Common name:
+            Brayfield and Cadart 2024; Kim et al. 2009; Cesarone et al. 2007; Shing et al. 2007; Source information: Kim
+            et al. 2009; Cesarone et al. 2007; Shing et al. 2007.</p>
+        <p><sup>1</sup>Not from hyper-immunized cattle.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+        <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage Form(s)</h2>
+        <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs
+            Guidance
+            Document.</p>
+        <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product
+            Licence Application form for Compendial applications.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+
+        <ul>
+            <li>Helps maintain/support immune function within the upper respiratory tract (Davison and Diment 2009;
+                Cesarone
+                et al. 2007; Crooks et al. 2006; Patel and Rana 2006; Brinkworth and Buckley 2003; Mero et al.
+                2002).
+            </li>
+            <li>Helps maintain/support the immune system (Davison and Diment 2009; Cesarone et al. 2007; Crooks et al.
+                2006;
+                Patel and Rana 2006; Brinkworth and Buckley 2003; Mero et al. 2002).</li>
+        </ul>
+        <p><strong>Note:</strong> The terms 'Helps' or 'Helps to' can be used interchangeably on the label.</p>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+        <h3>Subpopulation(s)</h3>
+        <p>Adults 18 years and older </p>
+
+        <h3>Quantity(ies)</h3>
+        <p><strong>Method of preparation:</strong> Powdered</p>
+        <p>0.4 - 10 grams of dried colostrum, per day (Kim et al. 2009; Cesarone et al. 2007; Shing et al. 2007;
+            Shing
+            et al. 2006).</p>
+
+        <h3>Direction(s) for use</h3>
+        <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration of Use</h2>
+        <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for
+            use beyond 12 weeks (Davison et al. 2019; Cesarone et al. 2007; Brinkworth and Buckley 2004; Brinkworth et
+            al. 2004; Coombes et al.
+            2002; Antonio et al. 2001).</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk Information</h2>
+        <h3>Caution(s) and Warning(s)</h3>
+        <ul>
+            <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+                if you are pregnant or breastfeeding.</li>
+            <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+                if you have diabetes, a history of cancer, or an immune system disorder (Kim et al. 2009; Rowlands 2009;
+                Salvioli et al. 2009; Tripathi et al. 2006; Albers et al. 2005; Mero et al. 2002; Mero et al. 1997).
+            </li>
+            <li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+                if you are taking medications to suppress the immune system (Albers et al. 2005).</li>
+        </ul>
+
+        <h3>Contraindication(s)</h3>
+        <p>Do not use if you have a known allergy/hypersensitivity to cow's milk (HC 2012).</p>
+
+
+        <h3>Known Adverse Reaction(s)</h3>
+        <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non Medicinal Ingredients</h2>
+        <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+            limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageCondition">
+        <h2 id="storageCondition">Storage Condition(s)</h2>
+        <p>Must be established in accordance with the requirements described in the <i>Natural Health Products
+                Regulations</i>.</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+        <ul>
+            <li>The finished product specifications must be established in accordance with the requirements
+                described in
+                the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health
+                Products
+                Guide.</li>
+            <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+        </ul>
+    </section>
+
+    <h2>Example of Product Facts:</h2>
+
+    <p><strong>Consult the Guidance Document, <a
+                href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling
+                of Natural Health Products</a> for more details.</strong></p>
+
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/BOVINE_E.gif" alt="Product Facts Table"
+            style="width:700px" /></p>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References Cited</h2>
+        <ul>
+            <li>Albers R, Antoine JM, Bourdet-Sicard R, Calder PC, Gleeson M, Lesourd B, Samartín S, Sanderson IR,
+                Van
+                Loo J,
+                Vas Dias FW, Watzl B. Markers to measure immunomodulation in human nutrition intervention studies.
+                British
+                Journal of Nutrition 2005;94(3):452-458.</li>
+            <li>Antonio J, Sanders MS, Gammeren VD. The effects of bovine colostrum supplementation on body
+                composition
+                and
+                exercise performance in active men and women. Nutrition 2001;17(3):243-247.</li>
+            <li>Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical
+                Press; 2024. [Accessed 2024 December 5]. Available from:
+                https://www.medicinescomplete.com/#/browse/martindale</li>
+            <li>Brinkworth GD, Buckley JD. Bovine colostrum supplementation does not affect plasma buffer capacity
+                or
+                haemoglobin content in elite female rowers. European Journal of Applied Physiology
+                2004;91(2-3):353-356.
+            </li>
+            <li>Brinkworth, GD, Buckley JD. Concentrated bovine colostrum protein supplementation reduces the incidence
+                of self-reported symptoms of upper respiratory tract infection in adult males. European Journal of
+                Nutrition 2003;42(4):228-232.</li>
+            <li>Brinkworth GD, Buckley JD, Slavotinek JP, Kurmis AP. Effects of bovine colostrum supplementation on
+                the
+                composition of resistance trained and untrained limbs in healthy young men. European Journal of
+                Applied
+                Physiology 2004;91(1):53-60.</li>
+            <li>Cesarone MR, Belcaro G, Di Renzo A, Dugall M, Cacchio M, Ruffini I, Pellegrini L, Del Boccio G, Fano
+                F,
+                Ledda
+                A, Bottari A, Ricci A, Stuard S, Vinciguerra G. Prevention of influenza episodes with colostrum
+                compared
+                with vaccination in healthy and high-risk cardiovascular subjects: The epidemiologic study in San
+                Valentino.
+                Clinical and Applied Thrombosis/Hemostasis 2007;13(2):130-136.</li>
+            <li>Coombes JS, Conacher M, Austen SK, Marshall PA. Dose effects of oral bovine colostrum on physical
+                work
+                capacity in cyclists. Medicine and Science in Sports and Exercise 2002;34(7):1184-1188.</li>
+            <li>Crooks CV, Wall CR, Cross ML, Rutherfurd-Markwick KJ. The effect of bovine colostrum supplementation
+                on
+                salivary IgA in distance runners. International Journal of Sport Nutrition and Exercise Metabolism
+                2006;16(1):47-64.</li>
+            <li>Davison G, Diment BC. Bovine colostrum supplementation attenuates the decrease of salivary lysozyme
+                and
+                enhances the recovery of neutrophil function after prolonged exercise. British Journal of Nutrition
+                2009;103(10):1425-1432.</li>
+            <li>Davison G, Jones AW, Marchbank T, Playford RJ. Oral bovine colostrum supplementation does not increase
+                circulating insulin-like growth factor-1 concentration in healthy adults: results from short- and
+                long-term administration studies. European Journal of Nutrition 2019;59(4):1473-1479.</li>
+            <li>HC 2012: Health Canada, The Use of Food Allergen Precautionary Statements on Prepackaged Foods.
+                [Accessed 2024 March 4]. Available from:
+                https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/label-etiquet/allergen/precaution_label-etiquette-eng.pdf
+            </li>
+            <li>Kim JH, Jung WS, Choi NJ, Kim DO, Shin DH, Kim YJ. Health-promoting effects of bovine colostrum in
+                Type 2
+                diabetic patients can reduce blood glucose, cholesterol, triglyceride and ketones. Journal of
+                Nutritional
+                Biochemistry 2009;20(4):298-303.</li>
+            <li>Mero A, Miikkulainen H, Riski J, Pakkanen R, Aalto J, Takala T. Effects of bovine colostrum
+                supplementation
+                on serum IGF-I, IgG hormone, and saliva IgA during training. Journal of Applied Physiology
+                1997;83(4):1144-1151</li>
+            <li>Mero A, Kahkonen J, Nykanen T, Parviainen T, Jokinen I, Takala T, Nikula T, Rasi S, Leppaluoto J.
+                IGF-I,
+                IgA,
+                and IgG responses to bovine colostrum supplementation during training. Journal of Applied Physiology
+                2002;93(2):732-739.</li>
+            <li>Patel K, Rana R. Pedimune in recurrent respiratory infection and diarrhea- the Indian Experience -
+                the
+                PRIDE
+                study. Indian Journal of Pediatrics 2006;73(7):585-591.</li>
+            <li>Rowlands MA, Gunnell D, Harris R, Vatten LJ, Holly JM, Martin RM. Circulating insulin-like growth
+                factor
+                peptides and prostate cancer risk: a systematic review and meta-analysis. International Journal of
+                Cancer
+                2009;124(10):2416-2429.</li>
+            <li>Salvioli S, Capri M, Bucci L, Lanni C, Racchi M, Uberti D, Memo M, Mari D, Govoni S, Franceschi C.
+                Why do
+                centenarians escape or postpone cancer? The role of IGF-1, inflammation and p53. Cancer Immunology,
+                Immunotherapy 2009;58(12):1909-1917.</li>
+            <li>Shing CM, Jenkins DG, Stevenson L, Coombes JS. The influence of bovinen colostrum supplementation on
+                exercise
+                performance in highly trained cyclists. British Journal of Sports Medicine 2006;40:797-801.</li>
+            <li>Shing CM, Peake J, Suzuki K. Effects of bovine colostrums supplementation on immune variables in
+                highly
+                trained cyclists. Journal of Applied. Physiology 2007;102(3):1113-1122.</li>
+            <li>Tripathi V, Vashishtha B. Bioactive compounds of colostrum and its application. Food Reviews
+                International
+                2006;22(3):225-244.</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References Reviewed</h2>
+        <ul>
+            <li>Bolke E, Jehle PM, Hausmann F. Preoperative oral application of immunoglobulin-enriched colostrum
+                milk
+                and
+                mediator response during abdominal surgery. Shock 2002;17(1):9-12.</li>
+            <li>Brinkworth GD, Buckley JD, Bourdon PC, Gulbin JP, David AZ. Oral bovine colostrum supplementation
+                enhances
+                buffer capacity but not rowing performance in elite female rowers. International Journal of Sport
+                Nutrition
+                and Exercise Metabolism 2002;12:349-363.</li>
+            <li>Buckley JD, Abbot MJ, Brinkworth GD, Whyte PBD. Bovine colostrum supplementation during endurance
+                running
+                training improves recovery, but not performance. Journal of Science and Medicine in Sport
+                2002;5(2):65-79.
+            </li>
+            <li>Buckley JD, Brinkworth GD, Abbot MJ. Effect of bovine colostrum on anaerobic exercise performance
+                and
+                plasma
+                insulin-like growth factor I. Journal of Sports Sciences 2003;21(7):577588.</li>
+            <li>Caccavo D, Pellegrino NM, Altamura M, Rigon A, Amati L, Amoroso A, Jirillo E. Antimicrobial and
+                immunoregulatory functions of lactoferrin and its potential therapeutic application. Journal of
+                Endotoxin
+                Research 2002;8(6):403-417.</li>
+            <li>Cross ML, Gill HS. Immunomodulatory properties of milk. British Journal of Nutrition
+                2000;84(S1):S81-S89.
+            </li>
+            <li>El-Loly, MM. Bovine milk immunoglobulins in relation to human health. International Journal of
+                Dietary
+                Science 2007;2(3):183-195.</li>
+            <li>Farke C, Rattenberger E, Roiger SU, Meyer HH. Bovine colostrum: determination of naturally occurring
+                steroid
+                hormones by Liquid Chromatography-Tandem Mass spectrometry (LCMS/MS). Journal of Agricultural and
+                Food
+                Chemistry 2011;59(4):1423-1427.</li>
+            <li>Gopal PK, Gill HS. Oligosaccharides and glycoconjugates in bovine milk and colostrum. British
+                Journal of
+                Nutrition 2000;84(S1):S69-S74.</li>
+            <li>Greenberg PD, Cello JP. Treatment of severe diarrhea caused by Cryptosporidium parvum with oral
+                bovine
+                immunoglobin concentrate in patients with AIDS. Journal of Acquired Immune Deficiency Syndromes and
+                Human
+                Retrovirology 1996;13(4):348-354.</li>
+            <li>Hammarstrom L, Weiner CK. Targeted antibodies in dairy-based products. Advances in Experimental
+                Medicine
+                and
+                Biology 2008;606:321-343.</li>
+            <li>He F, Tuomola E, Arvilommi H, Salminen S. Modulation of human humoral immune response through orally
+                administered bovine colostrum. FEMS Immunology and Medical Microbiology 2001;31(2):93-96.</li>
+            <li>Huppertz HI, Rutkowski R, Busch DH, Eisebit R, Lissner R, Karch H. Bovine colostrum ameliorates
+                diarrhea
+                infestion with diarrheagic Escherichia coli, shiga toxin-producing E. coli, and E. coli expressing
+                intimin
+                and hemolysin. Journal of Pediatric Gastroenterology and Nutrition 1999;29(4):452-456</li>
+            <li>Kelly GS. Bovine Colostrums: A review of clinical uses. Alternative Medicine Review
+                2003;8(4):378-394.
+            </li>
+            <li>Korhonen H, Marnila P, Gill HS. Milk immunoglobulins and complement factors. British Journal of
+                Nutrition
+                2000;84(S1):S75-S80.</li>
+            <li>Mero A, Nykanen T, Keinanen O, Knuutinen J, Lahti K, Alen M, Rasi S, Leppaluoto J. Protein
+                metabolism
+                and
+                strength performance after bovine colostrum supplementation. Amino Acids 2005;28(3):327-335.</li>
+            <li>Mitra AK, Mahalanabis D, Ashraf H, Unicomb L, Eeckls R, Tzipori S. Hyperimmune cow colostrum reduces
+                diarrhoea due to rotovirus: a double-bind, controlled clinical trial. Acta Paediatrica
+                1995;84(9):996-1001
+            </li>
+            <li>Pakkanen R, Aalto J. Growth factors and antimicrobial factors of bovine colostrum. International
+                Dairy
+                Journal 1997;7(5):285-297</li>
+            <li>Playford RJ, Macdonald CE, Johnson WS. Colostrum and milk-derived peptide growth factors for the
+                treatment of
+                gastrointestinal disorders. American Journal of Clinical Nutrition 2000;72(1):5-14.</li>
+            <li>Plettenberg A, Stoehr A, Stellbrink HJ, Albrecht H, Meigel W. A preparation from bovine colostrum in
+                the
+                treatment of HIV-positive patients with chronic diarrhea. The Clinical Investigator
+                1993;71(1):42-45.
+            </li>
+            <li>Poke GS, Roy JH. The oestrogenic activity of bovine colostrum. The Biochemical Journal
+                1953;53(3):427-430.
+            </li>
+            <li>Przybylska J, Albera E, Kankofer M. Antioxidants in bovine colostrum. Reproduction in Domestic
+                Animals
+                2007;42(4):402-409.</li>
+            <li>Roos N, Mahe S, Benamouzig R, Sick H, Rautureau J, Tome D. 15N-labeled immunoglobulins from bovine
+                colostrum
+                are partially resistant to digestion in the human intestine. The Journal of Nutrition
+                1995;125(5):1238-1244.
+            </li>
+            <li>Rump JA, Arndt R, Arnold A, Bendick C, Dichtelmuller H, Franke M, Helm EB, Jager H, Kampmann B, Kolb
+                P,
+                Kreuz
+                W, Lissner R, Meigel W, Ostendorf P, Peter HH, Plettenberg A, Schedel I, Stellbrink HW, Stephan W.
+                Treatment
+                of diarrhoea in human immunodeficiency virus-infected patients with immunoglobulins from bovine
+                colostrum.
+                The Clinical Investigator 1992;70(7):588-594.</li>
+            <li>Solomons NW. Modulation of the immune system and the response against pathogens with bovine
+                colostrum concentrates. European Journal of Clinical Nutrition 2002; 56(S3): S24-S28.</li>
+            <li>Struff, WG, Sprotte G. Bovine colostrum as a biologic in clinical medicine: a review. Part II:
+                clinical
+                studies. International Journal of Clinical Pharmacology and Therapeutics 2008;46(5):211-225.</li>
+            <li>Thapa BR. Health factors in colostrum. Indian Journal of Pediatrics 2005;72(7):579-581.</li>
+            <li>Thapa, BR. Therapeutic potentials of bovine colostrums. Indian Journal of Pediatrics 2005;72
+                (10):849-852.
+            </li>
+            <li>Uruakpa FO, Ismond MAH, Akobundu ENT. Colostrum and its benefits: a review. Nutrition Research
+                2002;22(6):755-767.</li>
+            <li>van Hooijdonk, ACM, Kussendrager KD, Steijns JM. In vivo antimicrobial and antiviral activity of
+                components
+                in bovine milk and colostrum involved in non-specific defence. British Journal of Nutrition
+                2000;84(S1):S127-S134.</li>
+            <li>Weiner C, Pan Q, Hurtig M, Boren T, Bostwick E, Hammarstrom L. Passive immunity against human
+                pathogens
+                using
+                bovine antibodies. Clinical and Experimental Immunology 1999;116:193-205.</li>
+            <li>Wolvers DAW, van Herpen-Broekmans WMR, Logman MHGM van der Wielen RPJ, Albers R. Effect of a mixture
+                of
+                micronutrients, but not of bovine colostrum concentrate, on immune function parameters in healthy
+                volunteers: a randomized placebo-controlled study. Nutrition Journal 2006;5:28-39.</li>
+            <li>Xu L, Zhang L, Zhang Y, Sheng Q, Zhao A. Qualitative and quantitative comparison of hormone contents
+                between
+                bovine and human colostrums. International Dairy Journal 2011;21(1):54-57.</li>
+        </ul>
+
+    </section>
+
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

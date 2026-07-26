@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=cod.liver.oil2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="96470096-d6f8-44ee-a01a-dfc07fecfc70"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>COD LIVER OIL</h1>
+    <div class="icon">
+        <a href="dbImages/mono_cod-liver-oil_english.pdf" title="COD LIVER OIL">
+        <img alt="Monograph: COD LIVER OIL" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 151 KB)</a>
+    </div>
+
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+        <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+        <li>The use(s) or purpose(s) statements in this monograph are based on the efficacy of vitamin A, vitamin D, eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA) that are present in cod liver oil. The references used to support these statements refer to the efficacy of these individual constituents and are not specific to cod liver oil.</li>
+    </ul>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+        <p>September 26, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">        
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+        <table class="subject">
+            <caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Proper name(s)</th>
+                    <th rowspan="2" scope="col">Common name(s)</th>
+                    <th colspan="2" scope="colgroup" style="text-align: center;">Source information</th>
+                </tr>
+                <tr>
+                    <th scope="col">Source material(s)</th>
+                    <th scope="col">Part(s)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Cod liver oil</td>
+                    <td>
+                        <ul>
+                            <li>Cod Liver Oil</li>
+                            <li>Lecoris Aselli Oleum</li>
+                        </ul>
+                    </td>
+                    <td>Gadidae<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></td>
+                    <td>Liver</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>References: Proper name: USP-NF 2023&semi; Ph.Eur. 2012&semi; Common names: USP-NF 2023&semi; Ph.Eur. 2012&semi; Source information: USP-NF 2023&semi; BP 2012, Ph.Eur. 2012.</p>
+        <p><sup id="ref1-1">1</sup>The species common names and not the family could be listed on the label.</p>
+    </section> 
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of Administration</h2>
+        <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">Dosage Form(s)</h2>
+        <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+        <p><strong>Acceptable dosage forms by age group:</strong></p>
+        <p>Infants 0 - 12 months, and Children 1-2 years: The acceptable dosage forms are limited to emulsion/suspension and solution/liquid preparations drops (Giacoia et al. 2008&semi; EMA/CHMP 2006).</p>
+        <p>Children 3-5 years: The acceptable dosage forms are limited to chewables, emulsion/suspension, powders and solution/liquid preparations drops (Giacoia et al. 2008&semi; EMA/CHMP 2006).</p>
+        <p>Children 6-11 years, Adolescents 12-17 years, and Adults 18 years and older: The acceptable dosage forms for this age category and specified route of administration are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications. Although delayed release dosage forms are usually not supported by the NNHPD&apos;s monographs, this monograph includes &apos;Capsule, soft, enteric-coated&apos; which is commonly used for marine oil products.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+
+        <p><em>Products providing daily doses of vitamin A at or above the Recommended Dietary Allowance (RDA) or Adequate Intake (AI) (adjusted for the life stage groups)</em></p>
+            <ul>
+                <li>Helps to prevent vitamin A deficiency (IOM 2006; Shils et al. 2006; Groff and Gropper 2000).</li>
+            </ul>
+        <p><em>Products providing daily doses of vitamin D at or above the Recommended Dietary Allowance (RDA) or Adequate Intake (AI) (adjusted for the life stage groups)</em></p>
+            <ul>
+                <li>Helps to prevent vitamin D deficiency (IOM 2011, 2006; Shils et al. 2006; Groff and Gropper 2000; IOM 1997).</li>
+            </ul>
+        <p><em>Products providing 138-3,000<span>&#181;</span>g retinol activity equivalents (RAE) (<span>&#181;</span>g vitamin A/all-trans retinol (palmitate)), per day </em></p>
+            <p>As per the current NNHPD Multi-vitamin/Mineral Supplements Monograph.</p>
+        <p><em>Products providing 1.15-25 <span>&#181;</span>g vitamin D<sub>3</sub>/cholecalciferol, per day</em></p>
+        <p>As per the current NNHPD Multi-vitamin/Mineral Supplements Monograph.</p>
+        <p><em>Products providing 100-1,360 mg eicosapentaenoic acid (EPA) + docosahexaenoic acid (DHA), per day </em></p>
+            <ul>
+                <li>Source of omega-3 fatty acids for the maintenance of good health (Simopoulos 2007; Oh 2005; IOM 2002; Simopoulos 1999) </li>
+                <li>Source of eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA) for the maintenance of good health (Simopoulos 2007; Oh 2005; IOM 2002; Simopoulos 1999) </li>
+            </ul>
+        <p><em>Products providing 150-1,360 mg EPA + DHA including at least 100 mg DHA, per day </em></p>
+            <ul>
+                <li>Helps support/maintain cognitive health (van de Rest et al. 2008; Freund-Levi et al. 2006; Fontani et al. 2005a,b; Haag 2003; Morris et al. 2003; IOM 2002).</li>
+                <li>Helps support/maintain brain function (van de Rest et al. 2008; Freund-Levi et al. 2006; Fontani et al. 2005a,b; Haag 2003; Morris et al. 2003; IOM 2002).</li>
+        </ul>
+        <p><em>Products for children up to 12 years old and providing 200-765 mg EPA + DHA including at least 150 mg DHA, per day</em></p>
+        <ul>
+                <li>Helps support/maintain (healthy) development of brain/(and), eyes/(and) nerves in children up to 12 years of age (Agostini 2008; Helland et al. 2008; Ryan and Nelson 2008; Marszalek and Lodish 2005; Haag 2003; IOM 2002; Giedd et al. 1999; Mills 1999).</li>
+                
+        </ul>
+        <p><strong>Notes:</strong></p>
+            <ul>
+                <li>Refer to Appendix IV of the NNHPD Multivitamin/mineral Supplements monograph for the RDA and AI of Vitamin A and Vitamin D.</li>
+                <li>The above uses can be combined on the product label (e.g., Helps support cognitive health and to prevent vitamin A and D deficiency).</li>
+                <li>The terms &lsquo;Helps&rsquo; or &lsquo;Helps to&rsquo; can be used interchangeably on the label.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>As specified below.</p>
+            <h3>Quantity(ies)</h3>
+                <p>Method of preparation: Standardized fixed oil</p>            
+                <p><strong>Note:</strong></p>
+                <p>The potencies of vitamin A, vitamin D<sub>3</sub> and EPA + DHA must be indicated on the PLA and label, in addition to the dose of Cod liver oil.</p>
+                <table class="subject">
+                    <caption>Table 2. Daily dose for cod liver oil<sup><a href="#ref2-1" style="text-decoration: none;">1</a></sup></caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="3" colspan="2" scope="colgroup">Subpopulation(s)</th>
+                            <th colspan="4" scope="colgroup" style="text-align: center;">Cod liver oil</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" scope="colgroup" style="text-align: center;">Minimum<sup><a href="#ref2-2" style="text-decoration: none;">2</a></sup></th>
+                            <th colspan="2" scope="colgroup" style="text-align: center;">Maximum<sup><a href="#ref2-3" style="text-decoration: none;">3</a></sup></th>
+                        </tr>
+                        <tr>
+                            <th scope="col">(ml/day)<sup><a href="#ref2-4" style="text-decoration: none;">4</a></sup></th>
+                            <th scope="col">(g/day)</th>
+                            <th scope="col">(ml/day)<sup><a href="#ref2-4" style="text-decoration: none;">4</a></sup></th>
+                            <th scope="col">(g/day)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Infants</td>
+                            <td>0-12 month(s)</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>0.87</td>
+                            <td>0.80</td>	
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Children</td>
+                            <td>1-3 year(s)</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>0.87</td>
+                            <td>0.80</td>
+                        </tr>
+                        <tr>
+                            <td>4-8 years</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>1.3</td>
+                            <td>1.2</td>
+                        </tr>
+                        <tr>
+                            <td>9-11 years</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>2.4</td>
+                            <td>2.2</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>2.4</td>
+                            <td>2.2</td>
+                        </tr>
+                        <tr>
+                            <td>14-17 years</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>4.0</td>
+                            <td>3.7</td>
+                        </tr>
+                        <tr>
+                            <td>Adults</td>
+                            <td>18 years and older</td>
+                            <td>0.83</td>
+                            <td>0.77</td>
+                            <td>4.3</td>
+                            <td>4.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref2-1">1</sup>BP 2012, Ph.Eur. 2012 or USP-NF 2023 grade Cod liver oil must be used to ensure that potencies of vitamin A, vitamin D3, and EPA + DHA listed in Tables 3, 4 and 5 are met.<br>
+                    <sup id="ref2-2">2</sup>The minimum dose of Cod liver oil is based on the minimum quantities of EPA + DHA required for efficacy.<br>
+                    <sup id="ref2-3">3</sup>The maximum dose is based on the quantity of Cod liver oil providing the maximum daily amount of vitamin A, in <span>&#181;</span>g RAE, according to the UL (IOM 2006). For adults, the same maximum of oil was established for 18 years and older; however, the amount of vitamin A should not exceed the maximum values as per Table 3.<br>
+                    <sup id="ref2-4">4</sup>Based on the specific gravity of Cod liver oil (USP-NF 2023)
+                </p>
+            <h3>Potencies</h3>
+                <table class="subject">
+                    <caption>Table 3.Potency<sup><a href="#ref3-1" style="text-decoration: none;">1</a></sup> for vitamin A in cod liver oil</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="2" scope="colgroup">Subpopulation(s)</th>
+                            <th colspan="2" scope="colgroup" style="text-align: center;">Vitamin A (<span>&#181;</span>g RAE/day)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Minimum <sup><a href="#ref2-2" style="text-decoration: none;">2</a></sup></th>
+                            <th scope="col">Maximum<sup><a href="#ref2-3" style="text-decoration: none;">3</a></sup></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Infants</td>
+                            <td>0-12 month(s)</td>
+                            <td>138</td>
+                            <td>600</td>	
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Children</td>
+                            <td>1-3 year(s)</td>
+                            <td>138</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>4-8 years</td>
+                            <td>138</td>
+                            <td>900</td>
+                        </tr>
+                        <tr>
+                            <td>9-11 years</td>
+                            <td>138</td>
+                            <td>1,700</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>138</td>
+                            <td>1,700</td>
+                        </tr>
+                        <tr>
+                            <td>14-17 years</td>
+                            <td>138</td>
+                            <td>2,800</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Adults</td>
+                            <td>18 years</td>
+                            <td>138</td>
+                            <td>2,800</td>
+                        </tr>
+                        <tr>
+                            <td>19 years and older</td>
+                            <td>138</td>
+                            <td>3,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref2-1">1</sup>References for the potency of vitamin A are: BP 2012, Ph.Eur. 2012, and Tischer 1938.<br>
+                    <sup id="ref2-2">2</sup>Calculated as the minimum amount of vitamin A available in 0.77 g Cod liver oil, which is the based on the minimum quantities of EPA + DHA required for efficacy.<br>
+                    <sup id="ref2-3">3</sup>Maximum potency based on the UL (IOM 2006).
+                </p>
+                <table class="subject">
+                    <caption>Table 4.Potency<sup><a href="#ref4-1" style="text-decoration: none;">1</a></sup> for vitamin D<sub>3</sub>/cholecalciferol in cod liver oil</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="2" scope="colgroup">Subpopulation(s)</th>
+                            <th colspan="2" scope="colgroup" style="text-align: center;">Vitamin D<sub>3</sub> (<span>&#181;</span>g/day) </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Minimum<sup><a href="#ref4-2" style="text-decoration: none;">2</a></sup></th>
+                            <th scope="col">Maximum<sup><a href="#ref4-3" style="text-decoration: none;">3</sup></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Infants</td>
+                            <td>0-12 month(s)</td>
+                            <td>1.15</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Children</td>
+                            <td>1-3 year(s)</td>
+                            <td>1.15</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>4-8 years</td>
+                            <td>1.15</td>
+                            <td>7.50</td>
+                        </tr>
+                        <tr>
+                            <td>9-11 years</td>
+                            <td>1.15</td>
+                            <td>14.06</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>1.15</td>
+                            <td>14.06</td>
+                        </tr>
+                        <tr>
+                            <td>14-17 years</td>
+                            <td>1.15</td>
+                            <td>23.12</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Adults</td>
+                            <td>18 years</td>
+                            <td>1.15</td>
+                            <td>23.12</td>
+                        </tr>
+                        <tr>
+                            <td>19 years and older</td>
+                            <td>1.15</td>
+                            <td>25.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref4-1">1</sup>References for the potency of vitamin D<sub>3</sub> are: BP 2012, Ph.Eur. 2012, and Green 1951.<br>
+                    <sup id="ref4-2">2</sup>Based on the minimum amount of vitamin D<sub>3</sub> available in 0.77g Cod liver oil, and supported by the RDA and AI for.vitamin D (IOM 2011, 2006).<br>
+                    <sup id="ref4-3">3</sup>For all subpopulations, the maximum potencies are based on the amount of vitamin D<sub>3</sub> available in the quantity of Cod liver oil which provides the maximum daily amount of vitamin A, in <span>&#181;</span>g RAE, according to the UL (IOM 2006).  
+                </p>
+                <table class="subject">
+                    <caption>Table 5.Potency<sup><a href="#ref5-1" style="text-decoration: none;">1</a></sup> for EPA + DHA in cod liver oil  </caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="2" scope="colgroup">Subpopulation(s)</th>
+                            <th colspan="2" scope="colgroup" style="text-align: center;">EPA + DHA (mg/day)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Minimum <sup><a href="#ref5-2" style="text-decoration: none;">2</a></sup></th>
+                            <th scope="col">Maximum <sup><a href="#ref5-3" style="text-decoration: none;">3</a></sup></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Infants<sup><a href="#ref5-4" style="text-decoration: none;">4</a></sup></td>
+                            <td>0-12 month(s)</td>
+                            <td>100</td>
+                            <td>272</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Children</td>
+                            <td>1-3 year(s)</td>
+                            <td>100</td>
+                            <td>272</td>
+                        </tr>
+                        <tr>
+                            <td>4-8 years</td>
+                            <td>100</td>
+                            <td>408</td>                    
+                        </tr>
+                        <tr>
+                            <td>9-11 years</td>
+                            <td>100</td>
+                            <td>765</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Adolescents</td>
+                            <td>12-13 years</td>
+                            <td>100</td>
+                            <td>765</td>
+                        </tr>
+                        <tr>
+                            <td>14-17 years</td>
+                            <td>100</td>
+                            <td>1,258</td>
+                        </tr>
+                        <tr>
+                            <td>Adults</td>
+                            <td>18 years and older</td>
+                            <td>100</td>
+                            <td>1,360</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <sup id="ref5-1">1</sup>References for the potency of EPA + DHA are: BP 2012 and Ph.Eur. 2012.<br>
+                    <sup id="ref5-2">2</sup>Restrictions to minimum potency may apply according to Use(s) or Purpose(s) section above.<br>
+                    <sup id="ref5-3">3</sup>The maximum potencies are based on the amount of EPA + DHA available in the quantity of Cod liver oil which provides the maximum daily amount of vitamin A, in <span>&#181;</span>g RAE, according to the UL (IOM 2006). For adults, the same maximum of oil was established for 18 years and older&semi; however, the amount of vitamin A should not exceed the maximum values as per Table 3.<br>
+                    <sup id="ref5-4">4</sup>USP-NF 35 2023&semi; Rajakumar and Thomas 2005&semi; Stene et al 2003&semi; Linday et al. 2002. 
+                </p>
+            <h3>Direction(s) for use</h3>
+                <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">    
+        <h2 id="durationOfUse">Duration(s) of Use</h2>
+            <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk Information</h2>
+            <h3>Caution(s) and warning(s)</h3>
+                <p>No statement required.</p>
+            <h3>Contraindication(s)</h3>
+                <p>No statement required.</p>
+            <h3>Known adverse reaction(s)</h3>
+                <p>No statement required.</p>
+    </section>        
+
+    <section aria-labelledby="nonMedicinalIngredients">    
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+            <p><em>All products, except those encapsulated</em></p>
+            <p>Refrigerate after opening (Wille and Gonus 1989).</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+                <li>Peroxide, anisidine, and totox values of cod liver oil and omega-3 fatty acids derived from cod liver oil must be in accordance with the methods set out by the Association of Analytical Communities (AOAC) and/or Pharmacopoeial analytical methods. These specifications are necessary to ensure the oxidative stability of the cod liver oil and the omega-3 fatty acids from cod liver oil (HC 2007). The maximum peroxide value (PV) must be 5 mEq/kg, the maximum anisidine value (AV) must be 20 while the maximum Totox value must be 26 (calculated as 2 X PV + AV).</li>
+                <li>The dioxins, polychlorinated dibenzo-para-dioxins (PCDDs) and polychlorinated dibenzofurans (PCDFs); the dioxin-like polychlorinated biphenyls (DL PCBs); and the polychlorinated biphenyls (PCBs) are contaminants in marine oils. Testing for these contaminants is required. Testing should be performed using appropriate analytical methods, such as method No. 1613 revision B of the Environmental Protection Agency for PCDDs and PCDFs and method No. 1668B of the Environmental Protection Agency for chlorinated biphenyl congeners (Ph. Eur: EPA 2008&semi; EPA 1994). Licence holders are advised to consult the Commission of the European Communities documents on dioxins and dioxin-like PCB contaminants in marine oil for further information (EU 2006a.b&semi; EU 2001). Refer to the Quality of Natural Health Products Guide for more information on the acceptable limits of dioxins and dioxin-like PCBs.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+            <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/COD-LIVER-OIL_E.gif" alt="Product Facts Table" style="width:700px"></p>
+    </section>
+        
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References Cited</h2>
+            <ul>
+                <li>Agostoni C. 2008. Role of long-chain polyunsaturated fatty acids in the first year of life. Journal of Pediatric Gastroenterology and Nutrition 47(Suppl 2):S41-S44. </li>
+                <li>BP 2012: British Pharmacopoeia 2012. London (GB): The Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA)&semi; 2011.</li>
+                <li>EMEA/CHMP 2006: European Medicines Agency: Pre-authorization Evaluation of Medicines for Human Use. Committee for Medicinal Products for Human Use. Reflection Paper: Formulations of choice for the paediatric population. [Accessed 2024 February 1318 June 1]. Available from: https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-formulations-choice-paediatric-population_en.pdfhttp://www.ema.europa.eu/docs/en_GB/document_library/Scientific_guideline/2009/09/WC500 003782.pdf</li>
+                <li>EU 2011: European Commission. Commission Regulation (EU) No 1259/2011 of 2 December 2011 amending Regulation (EC) No 1881/2006 as regards maximum levels for dioxins, dioxinlike PCBs and non dioxin-like PCBs in foodstuffs. Official Journal of the European Union L 320/18 3.12.2011. [Accessed 2024 February 8]. Available from: http://eurlex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2011:320:0018:0023:EN:PDF</li>
+                <li>Fontani G, Corradeschi F, Felici A, Alfatti F, Bugarini R, Fiaschi AI, Cerretani D, Montorfano G, Rizzo AM, Berra B. 2005a. Blood profiles, body fat and mood state in healthy subjects on different diets supplemented with omega-3 polyunsaturated fatty acids. European Journal of Clinical Investigation 35(8):499-507.</li>
+                <li>Fontani G, Corradeschi F, Felici A, Alfatti F, Migliorini S, Lodi L. 2005b. Cognitive and physiological effects of omega-3 polyunsaturated fatty acid supplementation in healthy subjects. European Journal of Clinical Investigation 35(11):691-699.</li>
+                <li>Freund-Levi Y, Eriksdotter-Jonhagen M, Cederholm T, Basun H, Faxen-Irving G, Garlind A, Vedin I, Vessby B, Wahlund LO, Palmblad J. 2006. Omega-3 fatty acid treatment in 174 patients with mild to moderate Alzheimer disease: OmegAD study. Archives of Neurology 63(10):14021408.</li>
+                <li>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008; 30(11):2097-2101.</li>
+                <li>Giedd JN, Blumenthal J, Jeffries NO, Castellanos FX, Liu H, Zijdenbos A, Paus T, Evans AC, Rapoport JL. 1999. Brain development during childhood and adolescence: a longitudinal MRI study. Nature Neuroscience 2(10):861-863.</li>
+                <li>Green J. 1951. The chemical determination of Vitamin D in fish-liver oils and other materials containing Vitamin A. Biochemistry Journal 49(part 2):243-246.</li>
+                <li>Groff J, Gropper S. 2000. Advanced Nutrition and Human Metabolism, 3rd edition. Belmont (CA): Wadsworth/Thomson Learning. </li>
+                <li>Haag M. 2003. Essential fatty acids and the brain. The Canadian Journal of Psychiatry 48(3):195-203.</li>
+                <li>HC 2015: Health Canada. Quality of Natural Health Products Guide. Version 3.1. Ottawa (ON): Natural Health Products Directorate, Health Canada. [Accessed 2024 February 13]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html</li>
+                <li>Helland IB, Smith L, Blom&#233;n B, Saarem K, Saugstad OD, Drevon CA. 2008. Effect of supplementing pregnant and lactating mothers with n-3 very-long-chain fatty acids on children&apos;s IQ and body mass index at 7 years of age. Pediatrics 122(2):e472-e479.</li>
+                <li>IOM 2011: Institute of Medicine. Ross AC, Taylor CL, Yaktine AL, Del Valle HB, editors. 2011. Dietary Reference Intakes for Calcium and Vitamin D. Washington (DC): National Academies Press.</li>
+                <li>IOM 2006: Institute of Medicine. Otten JJ, Pitzi Hellwig J, Meyers LD, editors. 2006. Institute of Medicine Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press.</li>
+                <li>IOM 2002: Institute of Medicine. Food and Nutrition Board. 2002. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Washington (DC): National Academy Press.</li>
+                <li>IOM 1997: Institute of Medicine. Standing Committee on the Scientific Evaluation of Dietary Reference Intakes, Food and Nutrition Board, Institute of Medicine. 1997. Dietary Reference Intakes for Calcium, Phosphorous, Magnesium, Vitamin D, and Fluoride. Washington (DC): National Academies Press.</li>
+                <li>Linday LA, Dolitsky JN, Shindledecker RD, Pippenger CE. 2002. Lemon-flavored cod liver oil and a multivitamin-mineral supplement for the secondary prevention of otitis media in young children: pilot research. Annals of Otology, Rhinology and Laryngology 111(7 Pt 1):642-52.</li>
+                <li>Marszalek JR, Lodish HF. 2005. Docosahexaenoic acid, fatty acid-interacting protein, and neuronal function: breastmilk and fish are good for you. Annual Review of Cell and Developmental Biology 21:633-657. </li>
+                <li>Mills, MD. 1999. The eye in childhood. American Family Physician 60(3):907-918.</li>
+                <li>Morris MC, Evans DA, Bienias JL, Tangney CC, Bennett DA, Wilson RS, Aggarwal N, Schneider J. 2003. Consumption of fish and n-3 fatty acid and risk of incident Alzheimer disease. Archives of Neurology 60(7):940-946.</li>
+                <li>Nelson JS. 2006. Fishes of the World, 4<sup>th</sup> edition. Hoboken (NY): John Wiley & Sons.</li>
+                <li>Oh R. 2005. Practical applications of fish oil (Omega-3 fatty acids) in primary care. Journal of the American Board of Family Practice 18(1):28-36.</li>
+                <li>Ph.Eur. 2012: European Pharmacopoeia, 8<sup>th</sup> edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM), 2012.</li>
+                <li>Rajakumar K, Thomas SB. 2005. Reemerging nutritional rickets: a historical perspective. Archives of Pediatrics & Adolescent Medicine 159(4):335-341.</li>
+                <li>Ryan AS, Nelson EB. 2008. Assessing the effect of docosahexanoic acid on cognitive functions in heal preschool children: a randomized, controlled, double-blind study. Clinical Pediatrics 47(4):355-362.</li>
+                <li>Shils ME, Olson JA, Shike M, Ross AC, Caballero B, Cousins RJ, editors. 2006. Modern Nutrition in Health and Disease, 10<sup>th</sup> edition. Philadelphia (PA): Lippincott Williams & Wilkins.</li>
+                <li>Simopoulos AP. 2007. Omega-3 fatty acids and athletics. Current Sports Medicine Reports 6(4):230-236. </li>
+                <li>Simopoulos AP. 1999. Essential fatty acids in health and chronic disease. The American Journal of Clinical Nutrition 70(3 Suppl):560S-569S.</li>
+                <li>Stene LC, Joner G. 2003. Use of cod liver oil during the first year of life is associated with lower risk of childhood-onset type 1 diabetes: a large, population-based, case-control study. The American Journal of Clinical Nutrition 78(6):1128-1134. </li>
+                <li>Tischer AO. 1938. The Nature of Vitamin A in Cod Liver Oil. Journal of Biological Chemistry 125:475-477. [Accessed 2024 February 8]. Available from: http://www.jbc.org/content/125/2/475.full.pdf+html</li>
+                <li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention, Inc.&semi; 2023.</li>
+                <li>van de Rest O, Geleijnse JM, Kok JF, van Staveren WA, Dullemeijer C, OldeRikkert MGM, Beekman ATF, de Groot CPGM. 2008. Effect of fish oil on cognitive performance in older subjects: a randomized, controlled trial. Neurology 71(6):430-438.</li>
+                <li>Wille HJ, Gonus P. 1989. Preparation of Fish Oil for Dietary Applications. In: Galli C, Simopolous AP, editors. Dietary <span>&#631;</span>3 and <span>&#631;</span>6 Fatty Acids. Biological Effects and Nutritional Essentiality. New York (NY): Plenum Press.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References Reviewed</h2>
+            <ul>
+                <li>Brox J, Olaussen K, Osterud B, Elvevoll EO, Bj&oslash;rnstad E, Bratteb&oslash;g G, Iversen H. 2001. A longterm seal- and cod-liver-oil supplementation in hypercholesterolemic subjects. Lipids 36(1):7-13.</li>
+                <li>Brunborg LA, Madland TM, Lind RA, Arslan G, Berstad A, Fr&oslash;yland L. 2008. Effects of shortterm oral administration of dietary marine oils in patients with inflammatory bowel disease and joint pain: a pilot study comparing seal oil and cod liver oil. Clinical Nutrition 27(4):614-622.</li>
+                <li>Commission of the European Communities. Commission Regulation (EC) No 1883/2006 of 19 December 2006 laying down the methods of sampling and analysis for the official control of levels of dioxins and dioxin-like PCBs in certain foodstuffs. Official Journal of the European Union L 364/32 20.12.2006. [Accessed 2024 February 8]. Available from: http://eurlex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:364:0032:0043:EN:PDF</li>
+                <li>Commission of the European Communities. Commission Regulation (EC) No 1881/2006 of 19 December 2006 setting maximum levels for certain contaminants in foodstuffs. Official Journal of the European Union L 364/5 20.12.2006. [Accessed 2024 February 8]. Available from: http://eurlex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2006:364:0005:0024:EN:PDF</li>
+                <li>Galarraga B, Ho M, Youssef HM, Hill A, McMahon H, Hall C, Ogston S, Nuki G, Belch JJ. 2008. Cod liver oil (n-3 fatty acids) as a non-steroidal anti-inflammatory drug sparing agent in rheumatoid arthritis. Rheumatology (Oxford) 47(5):665-669.</li>
+                <li>Giacoia GP, Taylor-Zapata P, Mattison D. Eunice Kennedy Shriver National Institute of Child Health and Human Development Pediatric Formulation Initiative: selected reports from working groups. Clinical Therapeutics 2008&semi;30(11):2097-2101.</li>
+                <li>Hansen JB, Berge LN, Svensson B, Lyngmo V, Nord&oslash;y A. 1993. Effects of cod liver oil on lipids and platelets in males and females. European Journal of Clinical Nutrition 47(2):123-131.</li>
+                <li>Helland IB, Saugstad OD, Smith L, Saarem K, Solvoll K, Ganes T, Drevon CA. 2001. Similar effects on infants of n-3 and n-6 fatty acids supplementation to pregnant and lactating women. Pediatrics 108(5)E82.</li>
+                <li>Helland IB, Smith L, Saarem K, Saugstad OD, Drevon CA. 2003. Maternal supplementation with very-long-chain n-3 fatty acids during pregnancy and lactation augments children&apos;s IQ at 4 years of age. Pediatrics 111(1):e39-e44.</li>
+                <li>Osterud B, Elvevoll E, Barstad H, Brox J, Halvorsen H, Lia K, Olsen JO, Olsen RL, Sissener C, Rekdal O, et al. 1995. Effect of marine oils supplementation on coagulation and cellular activation in whole blood. Lipids 30(12):1111-1118.</li>
+                <li>Skúladóttir GV, Gudmundsdóttir E, Olafsdóttir E, Gudmundsson TV, Hardarson T, Kristinsson A, Asvaldsdóttir H, Snorrason SP, Gudbjarnason S. 1990. Influence of dietary cod liver oil on fatty acid composition of plasma lipids in human male subjects after myocardial infarction. Journal of Internal Medicine 228(6):563-568.</li>
+                <li>Stene LC, Ulriksen J, Magnus P, Joner G. 2000. Use of cod liver oil during pregnancy associated with lower risk of Type I diabetes in the offspring. Diabetologia 43(9):1093-1098.</li>
+                <li>US FDA 2005: United States Food and Drug Administration 2005. 21 CFR 184 Rules and Regulations: Final rule. Substances Affirmed as Generally Recognized as Safe: Menhaden Oil. Federal Register: March 23, 2005 Volume 70, Number 55:14530-14532. Docket No. 1999P5332. Silver Spring (MD): United States Department of Health and Human Services, United States Food and Drug Administration. [Accessed 2012 January 11]. Available from: https://www.federalregister.gov/documents/2005/03/23/05-5641/substances-affirmed-as-generally-recognized-as-safe-menhaden-oil</li>
+                <li>Vognild E, Elvevoll EO, Brox J, Olsen RL, Barstad H, Aursand M, Osterud B. 1998. Effects of dietary marine oils and olive oil on fatty acid composition, platelet membrane fluidity, platelet responses, and serum lipids in healthy humans. Lipids 33(4):427-436.</li>
+            </ul>
+    </section>
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

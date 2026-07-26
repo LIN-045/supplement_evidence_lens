@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=maca.lepidium.meyenii2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="9c8c09a0-c2ff-455c-83b5-83d9fd5f89f5"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+<h1>
+    Maca - <i>Lepidium Meyenii</i>
+    </h1>
+  
+    <div class="icon">
+     <a href="dbImages/mono_maca--lepidium-meyenii_english.pdf" title="MACA - LEPIDIUM MEYENII">
+      <img alt="Portable Document Format" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" width="22"/>
+      (PDF Version - 56 KB)
+     </a>
+    </div>
+    <p>
+     This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.
+    </p>
+    <p>
+     <strong>
+      Notes
+     </strong>
+    </p>
+    <ul>
+     <li>
+      Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.
+     </li>
+     <li>
+      The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.
+     </li>
+    </ul>
+    <section aria-labelledby="date">
+     <h2 id="date">
+      Date
+     </h2>
+     <p>
+      September 27, 2024
+     </p>
+    </section>
+    <section aria-labelledby="properNameCommonNameSourceMaterial">
+     <h2 id="properNameCommonNameSourceMaterial">
+      Proper name(s), Common name(s), Source information
+     </h2>
+     <table class="subject">
+      <caption>
+       Table 1.  Proper name(s), Common name(s), Source information
+      </caption>
+      <thead>
+       <tr>
+        <th rowspan="2" scope="col">
+         Proper name(s)
+        </th>
+        <th rowspan="2" scope="col">
+         Common name(s)
+        </th>
+        <th colspan="3" scope="colgroup">
+         Source information
+        </th>
+       </tr>
+       <tr>
+        <th scope="col">
+         Source material(s) 
+        </th>
+        <th scope="col">
+         Part(s)
+        </th>
+        <th scope="col">
+         Preparation(s)
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td rowspan="2">
+          <i>
+           Lepidium meyenii
+          </i>
+         </p>
+        </td>
+        <td rowspan="2">
+         <ul>
+          <li>
+           Maca
+          </li>
+          <li>
+           Peruvian-ginseng
+          </li>
+         </ul>
+        </td>
+        <td>
+         <i>
+          Lepidium meyenii
+         </i>
+        </td>
+        <td>
+         <ul>
+          <li>
+           Hypocotyl
+          </li>
+          <li>
+           Root
+          </li>
+         </ul>
+        </td>
+        <td>
+         Dry
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <p>
+      References: Proper name: USDA 2024, Gardner and McGuffin 2013; Common names: USDA 2024, Gardner and McGuffin 2013; Source information: Dording et al. 2008, Meissner et al. 2006.
+     </p>
+    </section>
+    <section aria-labelledby="routeOfAdministration">
+     <h2 id="routeOfAdministration">
+      Route of Administration
+     </h2>
+     <!-- CHECK IF ROUTE OR ROUTE(S) -->
+     <p>
+      Oral
+     </p>
+    </section>
+    <section aria-labelledby="dosageForm">
+     <h2 id="dosageForm">
+      Dosage Form(s)
+     </h2>
+     <p>
+      This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.
+     </p>
+     <p>
+      Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.
+     </p>
+    </section>
+    <section aria-labelledby="useOrPurpose">
+     <h2 id="useOrPurpose">
+      Use(s) or Purpose(s)
+     </h2>
+     <ul>
+      <li>
+       Source of antioxidants/Provides antioxidants (Brooks et al. 2008; Vecera et al. 2007).
+      </li>
+      <li>
+       Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals (Brooks et al. 2008; Vecera et al. 2007).
+      </li>
+      <li>
+       Helps to support emotional aspects of sexual health (Shin et al. 2010; Zenico et al. 2009; Brooks et al. 2008; Dording et al. 2008; Meissner et al. 2006, 2005; Gonzales et al. 2002).
+      </li>
+      <li>
+       Helps to support healthy mood balance during menopause (Brooks et al. 2008; Meissner et al. 2006).
+      </li>
+     </ul>
+     <p>
+      <strong>Notes:</strong>
+     </p>
+     <ul>
+      <li>
+        The above uses can be combined on the product label (e.g. Helps support healthy mood balance during menopause and emotional aspects of sexual health).
+      </li>
+      <li>
+        The terms 'Helps' or 'Helps to' can be used interchangeably on the label.
+      </li>
+     </ul>
+    </section>
+    <section aria-labelledby="dose">
+     <h2 id="dose">
+      Dose(s)
+     </h2>
+     <h3>
+      Subpopulation(s)
+     </h3>
+     <p>
+      Adults 18 years and older.
+     </p>
+     <h3>
+      Quantity(ies)
+     </h3>
+     <p>
+      Methods of preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract, Tincture, Fluid Extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)
+     </p>
+     <p>
+      <em>
+       Antioxidant
+      </em>
+     </p>
+     <p>
+      Not to exceed 3 grams dried root/hypocotyl, per day (Dording et al. 2008).
+     </p>
+     <p>
+      <em>
+       Mood balance during menopause
+      </em>
+     </p>
+     <p>
+      2 - 3.5 grams dried root/hypocotyl, per day (Brooks et al. 2008; Meissner et al. 2006).
+     </p>
+     <p>
+      <em>
+       Sexual health
+      </em>
+     </p>
+     <p>
+      3 - 3.5 grams dried root/hypocotyl, per day (Shin et al. 2010; Zenico et al. 2009; Brooks et al. 2008; Dording et al. 2008; Meissner et al. 2006; Meissner et al. 2005; Gonzales et al. 2002).
+     </p>
+     <h3>
+      Direction(s) for use
+     </h3>
+     <p>
+      No statement required.
+     </p>
+    </section>
+    <section aria-labelledby="durationOfUse">
+     <h2 id="durationOfUse">
+      Duration(s) of Use
+     </h2>
+     <p>
+      <em>
+       Products providing 0.6 to 3 g dried root/hypocotyl, per day
+      </em>
+     </p>
+     <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 3 months (Zenico et al. 2009; Dording et al. 2008; Meissner et al. 2006; Gonzales et al. 2002).
+     </p>
+     <p>
+      <em>
+       Products providing more than 3 g dried root/hypocotyl, per day
+      </em>
+     </p>
+     <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 weeks (Brooks et al. 2008).
+     </p>
+    </section>
+    <section aria-labelledby="riskInformation">
+     <h2 id="riskInformation">
+      Risk Information
+     </h2>
+     <h3>
+      Caution(s) and warning(s)
+     </h3>
+     <p>
+      <em>
+       All products
+      </em>
+     </p>
+     <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.
+     </p>
+     <p>
+      <em>
+       Products providing 0.6 g or more dried root/hypocotyl, per day
+      </em>
+     </p>
+     <ul>
+      <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a blood pressure condition (Valentova et al. 2008).
+      </li>
+      <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking blood thinners (Gonzales and Gonzales-Castaneda 2009; Dording et al. 2008).
+      </li>
+     </ul>
+     <p>
+      <em>
+        Healthy mood balance; Sexual health
+      </em>
+     </p>
+     <p>
+      Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have psychological disorders such as anxiety or depression (Brotto 2010; Gonzales and Gonzales-Castaneda 2009; Dording et al. 2008).
+     </p>
+     <h3>
+      Contraindication(s)
+     </h3>
+     <p>
+      No statement required.
+     </p>
+     <h3>
+      Known adverse reaction(s)
+     </h3>
+     <p>
+      No statement required.
+     </p>
+    </section>
+    <section aria-labelledby="nonMedicinalIngredients">
+     <h2 id="nonMedicinalIngredients">
+      Non-medicinal ingredients
+     </h2>
+     <p>
+      Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.
+     </p>
+    </section>
+    <section aria-labelledby="storageConditions">
+     <h2 id="storageConditions">
+      Storage conditions
+     </h2>
+     <p>
+      Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.
+     </p>
+    </section>
+    <section aria-labelledby="specifications">
+     <h2 id="specifications">
+      Specifications
+     </h2>
+     <ul>
+      <li>
+       The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.
+      </li>
+      <li>
+       The medicinal ingredient must comply with the requirements outlined in the NHPID.
+      </li>
+     </ul>
+    </section>
+
+    <h2>Example of Product Facts:</h2>
+ 
+    <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+     
+    <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/MACA_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+    <section aria-labelledby="referencesCited">
+     <h2 id="referencesCited">
+      References Cited
+     </h2>
+     <p>
+      Brooks NA, Wilcox G, Walker KZ, Ashton JF, Cox MB, Stojanovska L. Beneficial effects of Lepidium meyenii (Maca) on physiological symptoms and measures of sexual dysfunction in postmenopausal women are not related to estrogen or androgen content. Menopause 2008;15(6):1157-1162.
+     </p>
+     <p>
+      Brotto LA. The DSM diagnostic criteria for hypoactive sexual desire disorder in women. Archives of Sexual Behavior 2010;39(2):221-239.
+     </p>
+     <p>
+      Dording CM, Fsher L, Papakostas G, Farabaugh A, Sonawalla S, Fava M, Mischoulon D. A double-blind, randomized, pilot dose-finding study of maca root (L. meyenii) for the management of SSRI-induced sexual dysfunction. CNS Neuroscience Therapy and Therapeutics 2008;14(3):182-191.
+     </p>
+     <p>
+      Gardner Z, McGuffin M. editors. 2013. American Herbal Products Association's Botanical Safety Handbook, 2nd edition. Boca Raton (FL): CRC Press.
+     </p>
+     <p>
+      Gonzales GF, Gonzales-Castaneda GC. The Methyltetrahydro-{beta}-Carbolines in Maca (Lepidium meyenii). Evidence Based Complementary Alternative Medicine 2009;6(3):315-316.
+     </p>
+     <p>
+      Gonzales GF, Cordova A, Vega K, Chung A, Villena A, Gonez C, Costillo S. Effect of Lepidium meyenii (Maca) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men. Andrologia 2002;34(6):367-372.
+     </p>
+     <p>
+      Meissner, Kapczynski, Mscisz, Lutomski. Use of Gelatinized Maca (Lepidium peruvianum) in Early Postmenopausal Women - a Pilot Study. International Journal of Biomedical Sciences 2005;1(1):33-45.
+     </p>
+     <p>
+      Meissner, Reich-Bilinska, Kedzia. Therapeutic Effects of Pre-Gelatinized Maca (Lepidium peruvianum Chacon) used as a non-hormonal alternative to HRT in perimenopausal women - Clinical Pilot study. International Journal of Biomedical Sciences 2006;2(2):143-159.
+     </p>
+     <p>
+      Shin BC, Lee MS, Yang EJ, Lim H-S, Ernst E. Maca (L. meyenii) for improving sexual function: a systematic review. BMC Complementary and Alternative Medicine 2010;10(44):1-6.
+     </p>
+     <p>
+      USDA 2024: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. Germplasm Resources Information Network (GRIN)- Global. U.S. National Plant Germplasm System. [Accessed 2024 January 8]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+     </p>
+     <p>
+      Valentova K, Stejskal D, Bartek J, Dvoráckova S, Kren V, Ulrichova J, Simanek V. Maca (Lepidium meyenii) and yacon (Smallanthus sonchifolius) in combination with silymarin as food supplements: in vivo safety assessment. Food and Chemical Toxicology 2008;46(3):1006-1013.
+     </p>
+     <p>
+      Vecera R, Orolin J, Skottova N, Kazdova L, Oliyarnik O, Ulrichova J, Simaner V. The Influence of Maca (<em>Lepidium meyenii</em>) on Antioxidant Status, Lipid and Glucose Metabolism in Rat. Plant Foods for Human Nutrition 2007;62(2):59-63.
+     </p>
+     <p>
+      Zenico T, Cicero AF, Valmorri L, Merculiali M, Bercovich E. Subjective effects of Lepidium meyenii (Maca) extract on well-being and sexual performances in patients with mild erectile dysfunction: a randomized, double-blind clinical trial. Andologia 2009;41(2):95-99.
+     </p>
+    </section>
+    <section aria-labelledby="referencesReviewed">
+     <h2 id="referencesReviewed">
+      References Reviewed
+     </h2>
+     <p>
+      Baldwin DS. Depression and sexual dysfunction. British Medical Bulletin 2001;57: 81-99.
+     </p>
+     <p>
+      Gonzales GF, Cordova A, Gonzales C, Chung A, Vega K, Villena A. Lepidium meyenii (Maca) improved semen parameters in adult men. Asian Journal of Andrology 2001;3(4):301-303.
+     </p>
+     <p>
+      Gonzales GF, Cordova A, Vega K, Chung A, Villena A, Gonez C. Effect of Lepidium meyenii (Maca), a root with aphrodisiac and fertility-enhancing properties, on serum reproductive hormone levels in adult healthy men. Journal of Endocrinology 2003;176(1):163-168.
+     </p>
+     <p>
+      Herraiz T, Galisteo J. Tetrahydro-beta-carboline alkaloids occur in fruits and fruit juices. Activity as antioxidants and radical scavengers. Journal of Agriculture and Food Chemistry 2003;51(24):7156-7161.
+     </p>
+     <p>
+      Laumann, Paik, Rosen. Sexual Dysfunction in the United States: Prevalence and Predictors. Journal of the American Medical Association 1999;281(6):537-544.
+     </p>
+     <p>
+      McCollom MM, Villinski JR, McPhail KL, Craker LE, Gafner S. Analysis of macamides in samples of Maca (Lepidium meyenii) by HPLC-UV-MS/MS. Phytochemical Analysis 2005;16(6):463-469.
+     </p>
+     <p>
+      McKay D. Nutrients and botanicals for erectile dysfunction: Examining the evidence. Alternative medicine review 2004;9(1):4-16.
+     </p>
+     <p>
+      Mehta K, Gala J, Bhasake S, Naik S, Modak M, Thakur H, Deo N, Miller S. Comparison of glucosamine sulfate and a polyherbal supplement for the relief of osteoarthritis of the knee. BMC Complementary and Alternative Medicine 2007;7(34):1-13.
+     </p>
+     <p>
+      Piacente S, Carbone V, Plaza A, Zampelli A, Pizza C. Investigation of the tuber constituents of maca (Lepidium meyenii Walp.). Journal of Agriculture and Food Chemistry 2002;50:5621-5625.
+     </p>
+     <p>
+      Sandoval M, Okuhama NN, Angeles MF, Melchor VV, Condezo AL, Lao L, Miller JSM. Antioxidant activity of the cruciferous vegetable Maca (Lepidemium meyenii). Food Chemistry 2002;79(2):207-213.
+     </p>
+     <p>
+      Schumacher M et al. Novel perspectives for progesterone in hormone replacement therapy, with special reference to the nervous system. Endocrine Reviews 2007;28(4):387-439.
+     </p>
+     <p>
+      Sloley BD, Urichuk LJ, Morley P, Durkin J, Shan JJ, Pang PK, Coutts RT. Identification of kaempferol as a monoamine oxidase inhibitor and potential neuroprotectant in extracts of Ginkgo biloba leaves.  Journal of Pharmacy and Pharmacology 2000;52(4):451-459.
+     </p>
+     <p>
+      Stone M, Ibarra A, Roller M, Zangara A, Stevenson A. A pilot investigation into the effect of maca supplementation on physical activity and sexual desire in sportsmen. Journal of Ethnopharmacology 2009;126(3):574-576.
+     </p>
+     <p>
+      Valentova K, Buckiova D, Kren V, Peknicova J, Ulrichova J, Simanek V. The in vitro biological activity of Lepidium meyenii extracts. Cell Biology and Toxicology 2006;22(2):91-99.
+     </p>
+     <p>
+      Valentova K, Ulrichova J. Smallanthus sonchifolius and Lepidum meyenii - Prospective Andean crops for the prevention of chronic diseases. Biomedical papers of the Medical Faculty of the University Palacky, Olomouc, Czechoslovakia 2003;147(2):119-130.
+     </p>
+     <p>
+      Zheng BL, He K, Kim CH, Rogers L, Shao Y, Huang ZY, Lu Y, Yan SJ, Qien LC, Zheng QY. Effect of a lipidic extract from Lepidium meyenii on sexual behavior in mice and rats. Urology 2000;55(4):598-602.
+     </p>
+    </section>
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

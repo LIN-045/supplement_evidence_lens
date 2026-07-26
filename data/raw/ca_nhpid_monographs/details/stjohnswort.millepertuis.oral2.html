@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=stjohnswort.millepertuis.oral2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="f345f115-e944-4c6c-9932-5f4233b22e7d"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>
+    ST. JOHN'S WORT -
+    <i>
+      HYPERICUM PERFORATUM
+    </i>
+    - Oral
+  </h1>
+  <p class="lightgreyBG">
+    Help on accessing alternative formats, such as Portable Document Format
+    (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in
+    the
+    <a href="/home-accueil/help-aide/index-eng.php#alt">
+      alternate format help
+    </a>
+    section.
+  </p>
+  <div class="icon">
+    <a href="dbImages/mono_st-johns-wort--oral_english.pdf" title="ST. JOHN'S WORT - HYPERICUM PERFORATUM - Oral">
+      <img alt="Monograph: ST. JOHN'S WORT - HYPERICUM PERFORATUM - Oral" height="21"
+        src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px"
+        width="22" />
+      (PDF
+      Version - 94 KB)
+    </a>
+  </div>
+  <p>
+    This monograph is intended to serve as a guide to industry for the preparation of Product Licence
+    Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a
+    comprehensive review of the medicinal ingredient.
+  </p>
+  <p>
+    <strong>
+      Notes
+    </strong>
+  </p>
+  <ul>
+    <li>
+      Text in parentheses is additional optional information which can be included on the PLA and product
+      label at the applicant's discretion.
+    </li>
+    <li>
+      The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may
+      be selected by the applicant.
+    </li>
+  </ul>
+  <section aria-labelledby="date">
+    <h2 id="date">
+      Date
+    </h2>
+    <p>
+      July 26, 2024
+    </p>
+  </section>
+  <section aria-labelledby="properNameCommonNameSourceInformation">
+    <h2 id="properNameCommonNameSourceInformation">
+      Proper name(s), Common name(s), Source information
+    </h2>
+    <table class="subject">
+      <caption>
+        Table 1. Proper name(s), Common name(s), Source information
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2" scope="col">
+            Proper name(s)
+          </th>
+          <th rowspan="2" scope="col">
+            Common name(s)
+          </th>
+          <th colspan="3" scope="colgroup">
+            Source information
+          </th>
+        </tr>
+        <tr>
+          <th scope="col">
+            Source material(s)
+          </th>
+          <th scope="col">
+            Part(s)
+          </th>
+          <th scope="col">
+            Preparation(s)
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <i>
+              Hypericum perforatum
+            </i>
+          </td>
+          <td>
+            <ul>
+              <li>
+                Goatweed
+              </li>
+              <li>
+                Hypericum
+              </li>
+              <li>
+                St. John's wort
+              </li>
+              <li>
+                St. John's-wort
+              </li>
+            </ul>
+          </td>
+          <td>
+            <i>
+              Hypericum perforatum
+            </i>
+          </td>
+          <td>
+            Herb top
+          </td>
+          <td>
+            Dry
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      References: Proper name: USDA 2023; Common names: Anghelescu et al. 2006,Gastpar et al. 2006, Szegedi et al.
+      2005, Wichtl 2004, McGuffin et al. 2000; Source information: Bradley 2006; Mills and Bone 2005, Hoffmann
+      2003, Blumenthal et al. 2000, Felter and Lloyd 1983, Wren 1907.
+    </p>
+  </section>
+  <section aria-labelledby="routeOfAdministration">
+    <h2 id="routeOfAdministration">
+      Route of Administration
+    </h2>
+    <p>
+      Oral
+    </p>
+  </section>
+  <section aria-labelledby="dosageForm">
+    <h2 id="dosageForm">
+      Dosage Form(s)
+    </h2>
+    <p>
+      This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance
+      Document.
+    </p>
+    <p>
+      Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product
+      Licence Application form for Compendial applications.
+    </p>
+  </section>
+  <section aria-labelledby="useOrPurpose">
+    <h2 id="useOrPurpose">
+      Use(s) or Purpose(s)
+    </h2>
+    <ul>
+      <li>
+        (Traditionally) used in Herbal Medicine to help relieve restlessness and/or nervousness (nervine/calmative)
+        (Mills and Bone 2005; Hoffmann 2003; Blumenthal et al. 2000; Felter and Lloyd 1983; Grieve 1971).
+      </li>
+      <li>
+        (Used in Herbal Medicine to) help(s) promote healthy mood balance (Brattström 2009; Anghelescu et al.
+        2006; Gastpar et al. 2006; Kasper et al. 2006; Fava et al. 2005; Mills and Bone 2005; Szegedi et al.
+        2005; Uebelhack et al. 2004; ESCOP 2003; Hoffmann 2003; Lecrubier et al. 2002; Volz et al. 2002; Kalb et
+        al. 2001).
+      </li>
+      <li>
+        (Used in Herbal Medicine to) help(s) relieve sleep disturbances associated with mood imbalance (Randløv
+        et al. 2006; Wichtl 2004; Friede et al. 2001; Wheatley 1999; Schrader et al. 1998).
+      </li>
+    </ul>
+    
+    <p>
+      <strong>
+        Notes
+      </strong>
+   </p>
+   <ul>
+      <li>The recommended uses above can be combined on the product label if they are from the same traditional or non-traditional paradigm (e.g. Used in Herbal Medicine to help promote healthy mood balance and to help relieve sleep disturbances associated with mood imbalance).</li>
+      <li>For multi-ingredient products:</li>
+      <ul>
+          <li>To prevent the product from being represented as a "traditional medicine," any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g. St John's wort is traditionally used in Herbal Medicine to help relieve restlessness and nervousness).</li>
+          <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+      </ul>
+   </ul>
+  </section>
+  <section aria-labelledby="dose">
+    <h2 id="dose">
+      Dose(s)
+    </h2>
+    <h3>
+      Subpopulation(s)
+    </h3>
+    <p>
+      Adults 18 years and older
+    </p>
+    <h3>
+      Quantity(ies)
+    </h3>
+    <p>
+      <i>
+        Restlessness/nervousness
+      </i>
+    </p>
+    <p>
+      Methods of preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract,
+      Decoction, Infusion)
+    </p>
+    <p>
+      2 - 12.6 grams of dried herb top, per day; Not to exceed 4.2 grams per single dose (Anghelescu et al. 2006;
+      Witchtl 2004; ESCOP 2003; Blumenthal et al. 2000).
+    </p>
+    <p><strong>*Note:</strong> Solvents allowed for the method of preparation “Non-standardized extracts (Dry extract)” as part of this monograph are ethanol and/or water only.</p>
+    <p>
+      <i>
+        Mood balance; Sleep disturbances
+      </i>
+    </p>
+    <p>
+      Methods of preparation: Standardized extracts (Dry extract)
+    </p>
+    <p>
+      600 - 1800 milligrams of extract, per day, standardized to 3-6% hyperforin and/or 0.12-0.28% hypericin; Not
+      to exceed 600 milligrams of extract per single dose (Anghelescu et al. 2006; Gastpar et al. 2006; Kasper et
+      al. 2006; Fava et al. 2005; Szegedi et al. 2005; Uebelhack et al. 2004; Wichtl 2004; ESCOP 2003; Hoffmann
+      2003; Lecrubier et al. 2002; Volz et al. 2002; Kalb et al. 2001; Blumenthal et al. 2000; BHP 1983).
+    </p>
+    <h3>
+      Direction(s) for use
+    </h3>
+    <p>
+      No statement required.
+    </p>
+  </section>
+  <section aria-labelledby="durationOfUse">
+    <h2 id="durationOfUse">
+      Duration(s) of Use
+    </h2>
+    <ul>
+      <li>
+        Use for at least 2 to 4 weeks to see beneficial effects (Papakostas et al. 2007; Kalb et al. 2001).
+      </li>
+      <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician for
+        use beyond 18 weeks (Anghelescu et al. 2006; Gastpar et al. 2006; Kasper et al. 2006; Fava et al. 2005;
+        Mills and Bone 2005; Szegedi et al. 2005; Uebelhack et al. 2004; ESCOP 2003; Hypericum Depression Trial
+        Study Group 2002; Lecrubier et al. 2002; Vloz et al. 2002; Kalb et al. 2001; BHP 1983).
+      </li>
+    </ul>
+  </section>
+  <section aria-labelledby="riskInformation">
+    <h2 id="riskInformation">
+      Risk Information
+    </h2>
+    <h3>
+      Caution(s) and warning(s)
+    </h3>
+    <p><i>Healthy mood balance</i></p>
+    <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a psychological disorder such as anxiety or depression.</p>
+    <p>
+      <i>
+        All products
+      </i>
+    </p>
+    <ul>
+      <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding (Brinker 2010; Barnes et al. 2007; Mills and Bone 2005).
+      </li>
+      <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking seizure medications, antihistamines, bronchodilators, muscle relaxants and/or opiates (Brinker 2010; Barnes et al. 2007; Mills and Bone 2005; Kawaguchi et al. 2004; Morimoto et al. 2004; Eich-Höchli et al. 2003; Dresser et al. 2003; Hoffman 2003; Markowitz et al. 2003; Xie et al. 2003; Dannawi 2002; Gurley et al. 2002; Spinella and Eaton 2002; Wang et al. 2002; Parker et al. 2001; Wang et al. 2001; Burstein et al. 2000; Nebel et al. 1999).
+      </li>
+      <li>
+        When using this product avoid prolonged exposure to sunlight, ultraviolet light (UV) or UV therapy (Brinker 2010; Barnes et al. 2007; Mills and Bone 2005; ESCOP 2003; Hoffmann 2003; McGuffin et al. 1997).
+      </li>
+      <li>
+        When using this product exercise caution if you drive or use machinery as you may experience drowsiness (Bilia et al. 2002; Ernst et al. 1998). 
+      </li>
+      <li>
+        Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.
+      </li>
+    </ul>
+    
+    <h3>
+      Contraindication(s)
+    </h3>
+    <p>
+      Do not use if you are taking antidepressants, anxiolytics, anti-cancer, cardiovascular, contraceptive medications, blood thinners, anti-HIV agents and/or medications to suppress the immune system (Brinker 2010; Barnes et al. 2007; Bradley 2006; Mills and Bone 2005; Murphy et al. 2005; Frye et al. 2004; Hebert et al. 2004; Jiang et al. 2004; Mueller et al. 2004; Smith et al. 2004; Sparreboom et al. 2004; Tannergren et al. 2004; Wichtl 2004; Alscher and Klotz 2003; Bauer et al. 2003; Dresser et al. 2003; ESCOP 2003; Hall et al. 2003; Hoffmann 2003; Pfrunder et al. 2003; Schwarz et al. 2003; Bolley 2002; Gorski et al. 2002; Mathijssen et al. 2002; Ahmed et al. 2001; De Maat et al. 2001; Moschella and Jaber 2001; Roby et al. 2001; Sugimoto et al. 2001; Turton-Weeks 2001; Wang et al. 2001; Barone et al. 2000; Durr et al. 2000; Karliova et al. 2000; Mai et al. 2000; Piscitelli et al. 2000; Ruschitzka et al. 2000; Ernst 1999; Johne et al. 1999; Maurer et al. 1999; Rey and Walter 1998).
+    </p>
+    <h3>
+      Known adverse reaction(s)
+    </h3>
+    <ul>
+      <li>
+        When using this product you may experience mild gastrointestinal disturbances, restlessness, and/or headaches (Barnes et al. 2007; ESCOP 2003).
+      </li>
+      <li>
+        Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience muscle rigidity or contractions, tremors, agitation/confusion, increased heart rate, or hypersensitivity/allergy (Boyer 2023; Mayo Clinic Staff 2022; Erner et al. 2003; Papakostas et al. 2007; Barnes et al. 2007; ESCOP 2003).
+      </li>
+    </ul>
+  </section>
+  <section aria-labelledby="nonMedicinalIngredients">
+    <h2 id="nonMedicinalIngredients">
+      Non-medicinal ingredients
+    </h2>
+    <p>
+      Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+      limitations outlined in the database.
+    </p>
+  </section>
+  <section aria-labelledby="storageConditions">
+    <h2 id="storageConditions">
+      Storage conditions
+    </h2>
+    <p>
+      Must be established in accordance with the requirements described in the
+      <i>
+        Natural Health Products
+        Regulations</i>.</p>
+  </section>
+  <section aria-labelledby="specifications">
+    <h2 id="specifications">
+      Specifications
+    </h2>
+    <ul>
+      <li>
+        The finished product specifications must be established in accordance with the requirements described in
+        the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products
+        Guide.
+      </li>
+      <li>
+        The medicinal ingredient must comply with the requirements outlined in the NHPID.
+      </li>
+    </ul>
+  </section>
+
+<h2>EXAMPLE OF PRODUCT FACTS:</h2>
+ 
+<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+ 
+<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/ST_JOHN_WORT_ORAL_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+  <section aria-labelledby="referencesCited">
+    <h2 id="referencesCited">
+      References Cited
+    </h2>
+    <ul>
+      <li>
+        Ahmed SM, Banner NR, Dubrey SW. 2001. Low cyclosporin-A level due to Saint-John's-wort in heart
+        transplant patients. Journal of Heart and Lung Transplantation 20(7):795.
+      </li>
+      <li>
+        Alscher DM, Klotz U. 2003. Drug interaction of herbal tea containing St. John's wort with cyclosporine.
+        Transplant International 16(7):543-544.
+      </li>
+      <li>
+        Anghelescu IG, Kohnen R, Szegedi A, Klement S, Kieser M. 2006. Comparisons of Hypericum extract WS 5570
+        and paroxetine in ongoing treatment after recovery from an episode of moderate to severe depression:
+        results from a randomized multicenter study. Pharmacopsychiatry 39(6):213-219.
+      </li>
+      <li>
+        Barnes J, Anderson LA, Philipson JD. 2007. Herbal Medicines, 3rd edition. London (GB): The
+        Pharmaceutical Press.
+      </li>
+      <li>
+        Barone GW, Gurley BJ, Ketel BL, Lightfoot ML, Abul-Ezz SR. 2000. Drug interaction between St. John's
+        wort and cyclosporine. The Annals of Pharmacotherapy 34(9):1013-1016.
+      </li>
+      <li>
+        Bauer S, Störmer E, Johne A, Krüger H, Budde K, Neumayer HH, Roots I, Mai I. 2003. Alterations in
+        cyclosporin A pharmacokinetics and metabolism during treatment with St John's wort in renal transplant
+        patients. British Journal of Clinical Pharmacology 55(2):203-211.
+      </li>
+      <li>
+        BHP 1983: British Herbal Pharmacopoeia. Cowling (GB): British Herbal Medical Association.
+      </li>
+      <li>
+        Bilia AR, Gallori S, Vincieri FF. St John's wort and depression: efficacy, safety and tolerability - an update. Life Sciences 2002;70(26):3077-3096. 
+      </li>
+      <li>
+        Blumenthal M, Goldberg A, Brinkmann J, editors. 2000. Herbal Medicine: Expanded Commission E Monographs.
+        Boston (MA): Integrative Medicine Communications.
+      </li>
+      <li>
+        Bolley R, Zülke C, Kammerl M, Fischereder M, Krämer BK. 2002. Tacrolimus-induced nephrotoxicity
+        unmasked by induction of the CYP3A4 system with St John's wort. Transplantation 73(6):1009.
+      </li>
+      <li>
+        Bove M. 2001. An Encyclopedia of Natural Healing for Children &amp; Infants, 2nd edition. Toronto (ON):
+        McGraw-Hill.
+      </li>
+      <li>
+        Boyer EW. Liebelt EL, Ganetsky M. 2023. Serotonin syndrome (serotonin toxicity). UpToDate. [Accessed 2023 September 11]. Available from: https://www.uptodate.com/contents/serotonin-syndrome-serotonin-toxicity
+      </li>
+      <li>
+        Bradley PR, editor. 2006. British Herbal Compendium, Volume 1. Bournemouth (GB): British Herbal Medicine
+        Association.
+      </li>
+      <li>
+        Brattström A. 2009. Long-term effects of St. John's wort (Hypericum perforatum) treatment: a 1 year
+        safety study in mild to moderate depression.
+      </li>
+      <li>
+        Brinker F. Herb Contraindications and Drug Interactions, 4th edition. Sandy (OR): Eclectic Medical
+        Publications. 2010.
+      </li>
+      <li>
+        Burstein AH, Horton RL, Dunn T, Alfaro RM, Piscitelli SC, Theodore W. 2000. Lack of effect of St John's
+        Wort on carbazepine pharmacokinetics in healthy volunteers. Clinical Pharmacology and Therapeutics
+        68(6):605-612.
+      </li>
+      <li>
+        Dannawi M. 2002. Possible serotonin syndrome after combination of buspirone and St John's wort. Journal
+        of Psychopharmacology 16(4):401.
+      </li>
+      <li>
+        De Maat MM, Hoetelmans RM, Math t RA, van Gorp EC, Meenhorst PL, Mulder JW, Beijnen JH. 2001. Drug
+        interaction between St John's wort and nevirapine. AIDS 15(3):420-421.
+      </li>
+      <li>
+        Dresser GK, Schwarz UI, Wilkinson GR, Kim RB. 2003. Coordinate induction of both cytochrome P4503A and
+        MDR1 by St John's wort in healthy subjects. Clinical Pharmacology and Therapeutics 73(1):41-50.
+      </li>
+      <li>
+        Dürr D, Stieger B, Kullak-Ublick GA, Rentsch KM, Steinert HC, Meier PJ, Fattinger K. 2000.
+      </li>
+      <li>
+        St. John's wort induces intestinal P-glycoprotein/MDR1 and intestinal and hepatic CYP3A4. Clinical
+        Pharmacology and Therapeutics 68(6):598-604.
+      </li>
+      <li>
+        Eich-Höchli D, Oppliger R, Golay KP, Baumann P, Eap CB. 2003. Methadone maintenance treatment and St
+        John's wort: a case report. Pharmacopsychiatry 36(1):35-37.
+      </li>
+      <li>
+        ESCOP 2003: ESCOP Monographs: The Scientific Foundation for Herbal Medicinal Products, 2nd edition.
+        Exeter (GB): European Scientific Cooperative on Phytotherapy and Thieme.
+      </li>
+      <li>
+        Erner RA, Meglathery SB, Van Decker WA, Gallagher RM. 2003. Serotonin Syndrome and Other Serotonergic Disorders, Pain Medicine, Volume 4, Issue 1, Pages 63-74.
+      </li>
+      <li>
+        Ernst E. 1999. Second thoughts about the safety of St. John's wort. Lancet 354(9195):20142016.
+      </li>
+      <li>
+        Ernst E, Rand JI, Barnes J, Stevinson C. Adverse effects profile of the herbal antidepressant St. John's wort (Hypericum perforatum L.). European Journal of Clinical Pharmacology 1998;54:589-594. 
+      </li>
+      <li>
+        Fava M, Alpert J, Nierenberg AA, Mischoulon D, Otto MW, Zajecka J, Murck H, Rosenbaum JF. 2005. A
+        double-blind, randomized trial of St John's wort, fluoxetine, and placebo in major depressive disorder.
+        Journal of Clinical Psychopharmacology 25(5):441-447.
+      </li>
+      <li>
+        Felter HW, Lloyd JU. 1983. King's American Dispensatory, Volume 1, 18th edition. Sandy (OR): Eclectic
+        Medical Publications; [Reprint of 1898 original].
+      </li>
+      <li>
+        Friede M, von Zepelin H, Freudenstein J. 2001. Differential therapy of mild to moderate depressive
+        episodes (ICD-10 F 32.0; F 32.1) with St. John's wort. Pharmacopsychiatry 34(Supplement 1):S38-S41.
+      </li>
+      <li>
+        Frye RF, Fitzgerald SM, Lagattuta TF, Hruska MW, Egorin MJ. 2004. Effect of St John's wort on imatinib
+        mesylate pharmacokinetics. Clinical Pharmacology and Therapeutics 76(4):323-329.
+      </li>
+      <li>
+        Gastpar M, Singer A, Zeller K. 2006. Comparative efficacy and safety of a once-daily dosage of hypericum
+        extract STW3-VI and citalopram in patients with moderate depression: a doubleblind, randomised,
+        multicentre, placebo-controlled study. Pharmacopsychiatry 39(2):66-75.
+      </li>
+      <li>
+        Gorski JC, Hamman MA, Wang Z, Vasavada N, Huang S, Hall SD. 2002. The effect of St John's wort on the
+        efficacy of oral contraception. Clinical Pharmacology and Therapeutics 71:P25.
+      </li>
+      <li>
+        Grieve M. 1971. A Modern Herbal, Volume 2. New York (NY): Dover Publications [Reprint of 1931 Harcourt,
+        Brace &amp; Company publication].
+      </li>
+      <li>
+        Gurley BJ, Gardner SF, Hubbard MA, Williams DK, Gentry WB, Cui Y, Ang CY. 2002. Cytochrome P450
+        phenotypic ratios for predicting herb-drug interactions in humans. Clinical Pharmacology and
+        Therapeutics 72(3):276-287.
+      </li>
+      <li>
+        Hall SD, Wang Z, Huang SM, Hamman MA, Vasavada N, Adigun AQ, Hilligoss JK, Miller M, Gorski JC. 2003.
+        The interaction between St. John's wort and an oral contraceptive. Clinical Pharmacology and
+        Therapeutics 74(6):525-535.
+      </li>
+      <li>
+        Hebert MF, Park JM, Chen YL, Akhatar S, Larson AM. 2004. Effects of St. John's wort (Hypericum
+        perforatum) on tacrolimus pharmacokinetics in healthy volunteers. Journal of Clinical Pharmacology
+        44(1):89-94.
+      </li>
+      <li>
+        Hoffmann D. 2003. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT):
+        Healing Arts Press.
+      </li>
+      <li>
+        Hypericum Depression Trial Study Group. 2002. Effect of Hypericum perforatum (St John's wort) in major
+        depressive disorder: a randomized controlled trial. The Journal of the American Medical Association
+        287(14):1807-1814.
+      </li>
+      <li>
+        Isacchi B, Bergonzi MC, Carnevali F, van der Esch SA, Vincieri FF, Bilia AR. 2007. Analysis and
+        stability of the constituents of St. John's wort oils prepared with different methods. Journal of
+        Pharmaceutical and Biomedical Analysis September 7. doi:10.1016/j.jpba.2007.08.025.
+      </li>
+      <li>
+        Jiang X, Williams KM, Liauw WS, Ammit AJ, Roufogalis BD, Duke CC, Day RO, McLachlan AJ. 2004. Effect of
+        St John's wort and ginseng on the pharmacokinetics and pharmacodynamics of warfarin in healthy subjects.
+        British Journal of Clinical Pharmacology 57(5):592-599.
+      </li>
+      <li>
+        Johne A, Brockmoller J, Bauer S, Maurer A, Langheinrich, M, Roots I. 1999. Pharmacokinetic interaction
+        of digoxin with an herbal extract from St John's wort (Hypericum perforatum). Clinical Pharmacology and
+        Therapeutics 66(4):338-345.
+      </li>
+      <li>
+        Kalb R, Trautmann-Sponsel RD, Kieser M. 2001. Efficacy and tolerability of hypericum extract WS 5572
+        versus placebo in mildly to moderately depressed patients. A randomized double-blind multicenter
+        clinical trial. Pharmacopsychiatry 34(3):96-103.
+      </li>
+      <li>
+        Karliova M, Treichel U, Malagò M, Frilling A, Gerken G, Broelsch CE. 2000. Interaction of Hypericum
+        perforatum (St. John's wort) with cyclosporin A metabolism in a patient after liver transplantation.
+        Journal of Hepatology 33(5):853-855.
+      </li>
+      <li>
+        Kasper S, Anghelescu IG, Szegedi A, Dienel A, Kieser M. 2006. Superior efficacy of St John's wort
+        extract WS 5570 compared to placebo in patients with major depression: a randomized, double-blind,
+        placebo-controlled, multi-center trial [ISRCTN77277298]. BMC Medicine 4:14.
+      </li>
+      <li>
+        Kawaguchi A, Ohmori M, Tsuruoka S, Nishiki K, Harada K, Miyamori I, Yano R, Nakamura T, Masada M,
+        Fujimura A. 2004. Drug interaction between St John's Wort and quazepam. British Journal of Clinical
+        Pharmacology 58(4):403-410.
+      </li>
+      <li>
+        Lecrubier Y, Clerc G, Didi R, Kieser M. 2002. Efficacy of St. John's wort extract WS 5570 in major
+        depression: a double-blind, placebo-controlled trial. The American Journal of Psychiatry
+        159(8):1361-1366.
+      </li>
+      <li>
+        Mai I, Krüger H, Budde K, Johne A, Brockmöller J, Neumayer HH, Roots I. 2000. Hazardous pharmacokinetic
+        interaction of Saint John's wort (Hypericum perforatum) with the immunosuppressant cyclosporin.
+        International Journal of Clinical Pharmacology and Therapeutics 38(10):500-502.
+      </li>
+      <li>
+        Maisenbacher P, Kovar KA. 1992. Analysis and stability of Hyperici oleum. Planta Medica 58(4):351-354.
+      </li>
+      <li>
+        Markowitz JS, Donovan JL, DeVane CL, Talor RM, Ruan Y, Wang J, Chavin KD. 2003. Effect of St. John's
+        wort on drug metabolism by induction of cytochrome P450 3A4 enzyme. The Journal of the American Medical
+        Association. 290(11):1500-1504.
+      </li>
+      <li>
+        Mathijssen RH, Verweij J, de Bruijn P, Loos WJ, Sparreboom A. 2002. Effects of St John's wort on
+        irinotecan metabolism. Journal of the National Cancer Institute 94(16):1247-1249.
+      </li>
+      <li>
+        Maurer A, Johne A, Bauer S, Brockmoller F, Conath I, Roots M, Langheinrich M, Hubner WD. 1999.
+        Interaction of St. John's wort extract with phenprocoumon [Abstract]. European Journal of Clinical
+        Pharmacology 55:A22.
+      </li>
+      <li>
+        Mayo Clinic Staff. 2022. Persistent depressive disorder. Mayo Clinic. [Accessed 2023 September 11]. Available from : https://www.mayoclinic.org/diseases-conditions/persistent-depressive-disorder/diagnosis-treatment/drc-20350935
+      </li>
+      <li>
+        McGuffin M, Kartesz JT, Leung AY, Tucker AO, editors. 2000. Herbs of Commerce, 2nd edition. Silver
+        Spring (MD): American Herbal Products Association.
+      </li>
+      <li>
+        McGuffin M, Hobbs C, Upton R, Goldberg A, editors. 1997. American Herbal Products Association's
+        Botanical Safety Handbook. Boca Raton (FL): CRC Press.
+      </li>
+      <li>
+        Mills S, Bone K. 2005. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill
+        Livingstone.
+      </li>
+      <li>
+        Morimoto T, Kotegawa T, Tsutsumi K, Ohtani Y, Imai H, Nakano S. 2004. Effect of St. John's wort on the
+        pharmacokinetics of theophylline in healthy volunteers. Journal of Clinical Pharmacology 44(1):95-101.
+      </li>
+      <li>
+        Moschella C, Jaber BL. 2001. Interaction between cyclosporine and Hypericum perforatum (St. John's wort)
+        after organ transplantation. American Journal of Kidney Diseases 38(5):1105-1107.
+      </li>
+      <li>
+        Mueller SC, Uehleke B, Woehling H, Petzsch M, Majcher-Peszynska J, Hehl EM, Sievers H, Frank B,
+        Riethling AK, Drewelow B. 2004. Effect of St. John's wort dose and preparations on the pharmacokinetics
+        of digoxin. Clinical Pharmacology and Therpeutics 75(6):546-557.
+      </li>
+      <li>
+        Murphy A, Kern SE, Stanczyk FZ, Westhoff CL. 2005. Interaction of St. John's Wort with oral
+        contraceptives: effects on the pharmacokinetics of norethindrone and ethinyl estradiol, ovarian activity
+        and breakthrough bleeding. Contraception 71(6):402-408.
+      </li>
+      <li>
+        Nebel A, Schneider BJ, Baker RK, Kroll DJ. 1999. Potential metabolic interaction between St. John's wort
+        and theophylline. The Annals of Pharmacotherapy 33(4):502.
+      </li>
+      <li>
+        Papakostas GI, Crawford CM, Scalia MJ, Fava M. 2007. Timing of clinical improvement and symptom
+        resolution in the treatment of major depressive disorder. A replication of findings with the use of a
+        double-blind, placebo-controlled trial of Hypericum perforatum versus fluoxetine. Neuropsychobiology
+        56(2-3):132-137.
+      </li>
+      <li>
+        Parker V, Wong AH, Boon HS, Seeman MV. 2001. Adverse reactions to St John's wort. Canadian Journal of
+        Psychiatry 46(1):77-79.
+      </li>
+      <li>
+        Pfrunder A, Schiesser M, Gerber S, Haschke M, Bitzer J, Drewe J. 2003. Interaction of St. John's wort
+        with low-dose oral contraceptive therapy: a randomized controlled trial. British Journal of Clinical
+        Pharmacology 56(6):683-690.
+      </li>
+      <li>
+        Piscitelli SC, Burstein AH, Chaitt D, Alfaro RM, Falloon J. 2000. Indinavir concentrations and St John's
+        wort. Lancet 355(9203):547-548.
+      </li>
+      <li>
+        Randløv C, Mehlsen J, Thomsen CF, Hedman C, von Fircks H, Winther K. 2006. The efficacy of St. John's
+        Wort in patients with minor depressive symptoms or dysthymia--a double-blind placebo-controlled study.
+        Phytomedicine 13(4):215-221.
+      </li>
+      <li>
+        Rey JM, Walter G. 1998. Hypericum perforatum (St John's wort) in depression: pest or blessing? The
+        Medical Journal of Australia 169(11-12):583-586.
+      </li>
+      <li>
+        Roby CA, Dryer DA, Burstein AH. 2001. St. John's wort: effect on CYP2D6 activity using
+        dextromethorphan-dextrorphan ratios. Journal of Clinical Psychopharmacology 21(5):530-532.
+      </li>
+      <li>
+        Ruschitzka F, Meier PJ, Turina M, Lüscher TF, Noll G. 2000. Acute heart transplant rejection due to
+        Saint John's wort. Lancet 355(9203):548-549.
+      </li>
+      <li>
+        Schrader E, Meier B, Brattström A. 1998. Hypericum treatment of mild-moderate depression in a
+        placebo-controlled study: a prospective, double blind, randomised, placebo-controlled, multicenter
+        study. Human Psychopharmacology: Clinical and Experimental 13:163-169.
+      </li>
+      <li>
+        Schwarz UI, Büschel B, Kirch W. 2003. Unwanted pregnancy on self- medication with St John's wort despite
+        hormonal contraception. British Journal of Clinical Pharmacology 55(1):112-113.
+      </li>
+      <li>
+        Smith P, Bullock JM, Booker BM, Haas CE, Berenson CS, Jusko WJ. 2004. The influence of St. John's wort
+        on the pharmacokinetics and protein binding of imatinib mesylate. Pharmacotherapy 24(11):1508-1514.
+      </li>
+      <li>
+        Sosa S, Pace R, Bornancin A, Morazzoni P, Riva A, Tubaro A, Della Loggia R. 2007. Topical
+        anti-inflammatory activity of extracts and compounds from Hypericum perforatum L. The Journal of
+        Pharmacy and Pharmacology 59(5):703-709.
+      </li>
+      <li>
+        Sparreboom A, Cox MC, Acharya MR, Figg WD. 2004. Herbal remedies in the United States: potential adverse
+        interactions with anticancer agents. Journal of Clinical Oncology 22(12):2489-2503.
+      </li>
+      <li>
+        Spinella M, Eaton LA. 2002. Hypomania induced by herbal and pharmaceutical psychotropic medicines
+        following mild traumatic brain injury. Brain Injury 16(4):359-367.
+      </li>
+      <li>
+        Sugimoto K, Ohmori M, Tsuruoka S, Nishiki K, Kawaguchi A, Harada K, Arakawa M, Sakamoto K, Masada M,
+        Miyamori I, Fujimura A. 2001. Different effects of St John's Wort on the pharmacokinetics of simvastatin
+        and pravastatin. Clinical Pharmacology and Therapeutics 70(6):518-524.
+      </li>
+      <li>
+        Szegedi A, Kohnen R, Dienel A, Kieser M. 2005. Acute treatment of moderate to severe depression with
+        hypericum extract WS 5570 (St John's wort): randomised controlled double blind non-inferiority trial
+        versus paroxetine. British Medical Journal 330(7490):503.
+      </li>
+      <li>
+        Tannergren C, Engman H, Knutson L, Hedeland M, Bondesson U, Lennernäs H. 2004. St. John's wort
+        decreases the bioavailability of R- and S-verapamil through induction of the first-pass metabolism.
+        Clinical Pharmacology and Therapeutics 75(4):298-309.
+      </li>
+      <li>
+        Turton-Weeks SM, Barone GW, Gurley BJ, Ketel BL, Lightfoot ML, Abul-Ezz SR. 2001. St John's wort: a
+        hidden risk for transplant patients. Progress in Transplantation 11(2):116-120.
+      </li>
+      <li>
+        Uebelhack R, Gruenwald J, Graubaum HJ, Busch R. 2004. Efficacy and tolerability of
+      </li>
+      <li>
+        Hypericum extract STW 3-VI in patients with moderate depression: a double-blind, randomized,
+        placebo-controlled clinical trial. Advances in Therapy 21(4):265-275.
+      </li>
+      <li>
+        USDA 20182023: United States Department of Agriculture, Agricultural Research Service, National Genetic Resources Program. (USDA ARS), Germplasm Resources Information Network (GRIN) [online database]. Hypericum perforatum L. Beltsville (MD): National– Global. U.S. National Plant Germplasm Resources Laboratory.System. [Accessed 18 March 20082023 September 11]. Available from: https://npgsweb.ars- grin.gov/gringlobal/taxonomydetail.aspx?id=19600taxon/taxonomysearch
+      </li>
+      <li>
+        Volz HP, Murck H, Kasper S, Möller HJ. 2002. St John's wort extract (LI 160) in somatoform disorders:
+        results of a placebo-controlled trial. Psychopharmacology 164(3):294-300.
+      </li>
+      <li>
+        Wang ZQ, Hamman MA, Huang SM, Lesko LJ, Hall SD. 2002. Effect of St John's wort on the pharmacokinetics
+        of fexofenadine. Clinical Pharmacology and Therapeutics 71(6):414-420.
+      </li>
+      <li>
+        Wang ZQ, Gorski C, Hamman MA, Huang S, Lesko LJ, Hall SD. 2001. The effects of St John's wort (Hypericum
+        perforatum) on human cytochrome P450 activity. Clinical Pharmacology and Therapeutics 70(4):317-326.
+      </li>
+      <li>
+        Wheatley D. 1999. Hypericum in Seasonal Affective Disorder (SAD). Current Medical Research and Opinion
+        15(1):33-37.
+      </li>
+      <li>
+        Wichtl M, editor. 2004. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific
+        Basis, 3rd edition. Stuttgart (D): Medpharm GmbH Scientific Publishers.
+      </li>
+      <li>
+        Wren RC. 1907. Potter's Cyclopedia of Botanical Drugs and Preparations. London (GB): Potter and Clark.
+      </li>
+      <li>
+        Xie R, Tan L, Polasek EC, Hong C, Teillol-Foo M, Gordi T, Sharma A, Nickens DJ, Arakawa T, Knuth DW,
+        Antal EJ. 2003. CYP3A and P-glycoprotein induction with St. John's wort in healthy volunteers of
+        selected ethnic populations. Journal of Clinical Pharmacology 45(3):352-356.
+      </li>
+    </ul>
+  </section>
+  <section aria-labelledby="referencesReviewed">
+    <h2 id="referencesReviewed">
+      References reviewed
+    </h2>
+    <ul>
+      <li>
+        Arold G, Donath F, Maurer A, Diefenbach K, Bauer S, Henneicke-von Zepelin HH, Friede M, Roots I. 2005.
+        No relevant interaction with alprazolam, caffeine, tolbutamide, and digoxin by treatment with a
+        low-hyperforin St John's wort extract. Planta Medica 71(4):331-337.
+      </li>
+      <li>
+        Bjerkenstedt L, Edman GV, Alken RG, Mannel M. 2005. Hypericum extract LI 160 and fluoxetine in mild to
+        moderate depression: a randomized, placebo-controlled multi-center study in outpatients. European
+        Archives of Psychiatry and Clinical Neuroscience 255(1):40-47.
+      </li>
+      <li>
+        Brenner R, Azbel V, Madhusoodanan S, Pawlowska M. 2000. Comparison of an extract of hypericum (LI 160)
+        and sertraline in the treatment of depression: a double-blind, randomized pilot study. Clinical
+        Therapeutics 22(4):411-419.
+      </li>
+      <li>
+        Cosmetic Ingredient Review Expert Panel. 2001. Final report on the safety assessment of Hypericum
+        Perforatum extract and Hypericum perforatum oil. International Journal of Toxicology 20 (Suppl 2):31-39.
+      </li>
+      <li>
+        Crowe S, McKeating K. 2002. Delayed emergence and St. John's wort. Anesthesiology 96(4):1025-1027.
+      </li>
+      <li>
+        Findling RL, McNamara NK, O'Riordan MA, Reed MD, Demeter CA, Branicky LA, Blumer JL. 2003. An open-label
+        pilot study of St. John's wort in juvenile depression. Journal of the American Academy of Child and
+        Adolescent Psychiatry 42(8):908-914.
+      </li>
+      <li>
+        Gastpar M, Singer A, Zeller K. 2005. Efficacy and tolerability of hypericum extract STW3 in long-term
+        treatment with a once-daily dosage in comparison with sertraline. Pharmacopsychiatry 38(2):78-86.
+      </li>
+      <li>
+        Irefin S, Sprung J. 2000. A possible cause of cardiovascular collapse during anesthesia: longterm use of
+        St. John's Wort. Journal of Clinical Anesthesia 12(6):498-499.
+      </li>
+      <li>
+        Johne A, Schmider J, Brockmöller J, Stadelmann AM, Störmer E, Bauer S, Scholler G, Langheinrich M, Roots
+        I.. 2002. Decreased plasma levels of amitriptyline and its metabolites on comedication with an extract
+        from St John's wort (Hypericum perforatum). Journal of Clinical Psychopharmacology 22(1):46-54.
+      </li>
+      <li>
+        Kasper S, Anghelescu IG, Szegedi A, Dienel A, Kieser M. 2007. Placebo controlled continuation treatment
+        with Hypericum extract WS 5570 after recovery from a mild or moderate depressive episode. Wiener
+        Medizinische Wochenschrift 157(13-14):362-366.
+      </li>
+      <li>
+        Kobak KA, Taylor LV, Bystritsky A, Kohlenberg CJ, Greist JH, Tucker P, Warner G, Futterer R, Vapnik T.
+        2005. St John's wort versus placebo in obsessive-compulsive disorder: results from a double-blind study.
+        International Clinical Psychopharmacology 20(6):299-304.
+      </li>
+      <li>
+        Khawaja IS, Marotta RF, Lippmann S. 1999. Herbal medicines as a factor in delirium. Psychiatric Services
+        50(7):969-970.
+      </li>
+      <li>
+        Linde K, Mulrow CD, Berner M, Egger M. 2005. St John's wort for depression. Cochrane Database of
+        Systematic Reviews Issue 2. Art. No.:CD000448. DOI: 10.1002/14651858. CD000448.pub2.
+      </li>
+      <li>
+        Mannel M. 2004. Drug interactions with St. John's wort: Mechanisms and clinical implications. Drug
+        Safety 27(11):773-797.
+      </li>
+      <li>
+        Moreno RA, Teng CT, Almeida KM, Tavares Junior H. 2006. Hypericum perforatum versus fluoxetine in the
+        treatment of mild to moderate depression: a randomized double-blind trial in a Brazilian sample. Revista
+        Brasileira de Psiquiatria 28(1):29-32.
+      </li>
+      <li>
+        Müller T, Mannel M, Murck H, Rahlfs VW. 2004. Treatment of somatoform disorders with St. John's wort: a
+        randomized, double-blind and placebo-controlled trial. Psychosomatic Medicine 66(4):538-547.
+      </li>
+      <li>
+        Philipp M, Kohnen R, Hiller KO. 1999. Hypericum extract versus imipramine or placebo in patients with
+        moderate depression: randomised multicentre study of treatment for eight weeks. British Medical Journal
+        319(7224):1534-1538.
+      </li>
+      <li>
+        Schempp CM, Hezel S, Simon JC. 2003. Topical treatment of atopic dermatitis with Hypericum cream. A
+        randomised, placebo-controlled, double-blind half-side comparison study. Der
+      </li>
+      <li>
+        Hautarzt; Zeitschrift für Dermatologie, Venerologie, und Verwandte Gebiete 54(3):248-253.
+      </li>
+      <li>
+        Schempp CM, Ludtke R, Winghofer B, Simon JC. 2000. Effect of topical application of hypericum perforatum
+        extract (St. John's wort) on skin sensitivity to solar simulated radiation. Photodermatology,
+        Photoimmunology and Photomedicine 16(3):125-128.
+      </li>
+      <li>
+        Schulz H, Jobert M. 1994. Effects of hypericum extract on the sleep EEG in older volunteers. Journal of
+        Geriatric Psychiatry and Neurology 7(Suppl 1):S39-S43.
+      </li>
+      <li>
+        Shelton RC, Keller MB, Gelenberg A, Dunner DL, Hirschfeld R, Thase ME, Russell J, Lydiard
+      </li>
+      <li>
+        RB, Crits-Cristoph P, Gallop R, Todd L, Hellerstein D, Goodnick P, Keitner G, Stahl SM, Halbreich U.
+        2001. Effectiveness of St John's wort in major depression: a randomized controlled trial. The Journal of
+        the American Medical Association 285(15):1978-1986.
+      </li>
+      <li>
+        Simeon J, Nixon MK, Milin R, Jovanovic R, Walker S. 2005. Open-label pilot study of St. John's wort in
+        adolescent depression. Journal of Child and Adolescent Psychopharmacology 15(2):293301.
+      </li>
+      <li>
+        van Gurp G, Meterissian GB, Haiek LN, McCusker J, Bellavance F. 2002. St John's wort or sertraline?
+        Randomized controlled trial in primary care. Canadian Family Physician 48:905-912.
+      </li>
+      <li>
+        Vorbach EU, Arnoldt KH, Hübner WD. 1997. Efficacy and tolerability of St. John's wort extract LI 160
+        versus imipramine in patients with severe depressive episodes according to ICD-10. Pharmacopsychiatry
+        30(Suppl 2):81-85.
+      </li>
+      <li>
+        Wang LS, Zhou G, Zhu B, Wu J, Wang JG, Abd El-Aty AM, Li T, Liu J, Yang TL, Wang D, Zhong XY, Zhou HH.
+        2004. St. John's wort induces both cytochrome P450 3A4-catalyzed sulfoxidation and 2C19-dependent
+        hydroxylation of omeprazole. Clinical Pharmacology and Therapeutics 75(3):191-197.
+      </li>
+      <li>
+        Wenk M, Todesco L, Krähenbühl S. 2004. Effect of St John's Wort on the activities of CYP1A2,
+        CYP3A4, N-acetyltransferase 2, and xanthine oxidase in healthy males and females. British Journal of
+        Clinical Pharmacology 57(4):495-499.
+      </li>
+      <li>
+        Wiersema J, Léon B. 1999. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press
+        LLC.
+      </li>
+      <li>
+        Woelk H. 2000. Comparison of St John's wort and imipramine for treating depression: randomised
+        controlled trial. British Medical Journal 321(7260):536-539.
+      </li>
+      <li>
+        Yue QY, Bergquist C, Gerdén B. 2000. Safety of St John's wort (Hypericum perforatum). Lancet
+        355(9203):576-577.
+      </li>
+    </ul>
+  </section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

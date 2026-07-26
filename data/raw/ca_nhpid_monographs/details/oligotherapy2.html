@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=oligotherapy2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="20b8e626-de2f-4a93-8678-feab40485917"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><h1>Oligotherapy</h1>
+
+<p class="lightgreyBG">
+  Help on accessing alternative formats, such as Portable Document Format
+  (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and
+  PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in
+  the
+  <a href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php#alt"
+    >alternate format help</a
+  >
+  section.
+</p>
+
+<div class="icon">
+  <a
+    href="dbImages/mono&#95;oligotherapy&#95;english.pdf"
+    title="Monograph: Oligotherapy (English)"
+  >
+    <img
+      src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif"
+      alt="Portable Document Format"
+      width="22"
+      height="21"
+    />
+    (PDF Version - 132 K)</a
+  >
+</div>
+
+<p>
+  This monograph is intended to serve as a guide to industry for the
+  preparation of Product Licence Applications (<abbr
+    title="Product Licence Application"
+    >PLA</abbr
+  >s) and labels for natural health product market authorization. It is not
+  intended to be a comprehensive review of the medicinal ingredients.
+</p>
+<p><strong>Notes</strong></p>
+<ul>
+  <li>
+    By submitting a
+    <abbr title="Product Licence Application">PLA</abbr> referencing this
+    monograph, the applicant is attesting that the product will comply fully
+    with the recommended conditions of use outlined in this monograph. The
+    conditions of use include methods of preparations, source materials,
+    doses, durations of use, combinations of medicinal ingredients, and risk
+    statements.
+  </li>
+  <li>
+    Text in parentheses is additional optional information which can be
+    included on the label at the applicant's discretion.
+  </li>
+  <li>
+    The solidus (/) indicates that the terms and/or the statements are
+    synonymous. Either term or statement may be selected by the applicant on the label.
+  </li>
+  <li>
+    The use of the web-based <abbr title="Product Licence Application">PLA</abbr> form is not possible where reference is made to this monograph. Please use the <abbr title="Portable Document Format">PDF</abbr> format available at: <a href=https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/applications/licen-prod/form/form_pl-dlmm-eng.pdf>https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/dhp-mps/alt_formats/pdf/prodnatur/applications/licen-prod/form/form_pl-dlmm-eng.pdf</a>.
+  </li>
+  <li>
+    This monograph cannot be combined with any other monograph at Class II.
+  </li>
+</ul>
+<h2>Date</h2>
+<p>January 10, 2025</p>
+
+<h2>Proper name(s), Common name(s), Source information</h2>
+<p>Please refer to Tables 1 and 2 below.</p>
+
+<h2>Route(s) of administration</h2>
+<ul>
+  <li>Oral</li>
+  <li>Sublingual</li>
+</ul>
+
+<h2>Dosage form(s)</h2>
+<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+<p>The acceptable dosage forms are capsules, chewables (e.g. gummies, tablets), liquids, powders, strips or tablets.</p>
+
+<h2>Use(s) or Purpose(s)</h2>
+<p>Oligotherapy preparation/remedy/medicine</p>
+
+<h2>Dose(s)</h2>
+
+<h3>Subpopulation(s)</h3>
+<p>Adults 18 years and older.</p>
+<h3>Quantity(ies)</h3>
+<p>
+  <em>All products except those specified below</em>
+</p>
+<p>1 dosage unit, 1 - 2 times per day.</p>
+<p>
+  <strong
+    >Dosage information for specific single ingredient products:</strong
+  >
+</p>
+<p class="indent1">
+  <em>Products containing only Bismuth as a medicinal ingredient</em
+  >
+</p>
+<p>1 dosage unit every 3 hours up to 8 times per day.</p>
+<p class="indent1">
+  <em>Products containing Cobalt as a medicinal ingredient</em>
+</p>
+<p>1 dosage unit per day.</p>
+<p class="indent1">
+  <em>Products containing only Copper as a medicinal ingredient</em
+  >
+</p>
+<p>1 dosage unit every 3 hours up to 8 times per day.</p>
+<p class="indent1">
+  <em
+    >Products containing only Iodine, Iron, Magnesium, Phosphorus or Zinc as
+    a medicinal ingredient</em
+  >
+</p>
+<p>1 dosage unit, 1 - 2 times per day.</p>
+<p>
+  <strong>Dosage information for specific multi-ingredient products:</strong>
+</p>
+<p class="indent1">
+  <em
+    >Products containing only Zinc and Copper in combination as medicinal
+    ingredients</em
+  >
+</p>
+<p>1 dosage unit, 1 - 2 times per day.</p>
+<p class="indent1">
+  <em
+    >Products containing Copper, Gold and Silver in combination as medicinal
+    ingredients
+  </em>
+</p>
+<p>1 dosage unit, 1 - 2 times per day.</p>
+<table class="subject fontSize100">
+  <caption>
+    Table 1: Proper name(s), Common name(s), Source information and Dosage
+    information for single ingredient preparation
+  </caption>
+
+  <thead>
+    <tr>
+      <th id="properName" colspan="1">Proper name(s)</th>
+      <th id="commonName" colspan="1">Common name(s)</th>
+      <th id="sourceMaterial" colspan="1">Source ingredient(s)</th>
+      <th id="MaximumQuantityPerDosageUnit" colspan="1">
+        Maximum quantity per dosage unit (&#956;g)
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td headers="properName">Aluminium</td>
+      <td headers="commonName">Aluminium</td>
+      <td headers="sourceMaterial">Aluminium gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">176</td>
+    </tr>
+    <tr>
+      <td headers="properName">Bismuth</td>
+      <td headers="commonName">Bismuth</td>
+      <td headers="sourceMaterial">Bismuth gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">70</td>
+    </tr>
+    <tr>
+      <td headers="properName">Cobalt</td>
+      <td headers="commonName">Cobalt</td>
+      <td headers="sourceMaterial">Cobalt gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">59</td>
+    </tr>
+    <tr>
+      <td headers="properName">Chromium</td>
+      <td headers="commonName">Chromium</td>
+      <td headers="sourceMaterial">Chromium (III) chloride</td>
+      <td headers="MaximumQuantityPerDosageUnit">25</td>
+    </tr>
+    <tr>
+      <td headers="properName">Copper</td>
+      <td headers="commonName">Copper</td>
+      <td headers="sourceMaterial">Copper gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">725.2</td>
+    </tr>
+    <tr>
+      <td headers="properName">Fluoride</td>
+      <td headers="commonName">Fluoride</td>
+      <td headers="sourceMaterial">Sodium fluoride</td>
+      <td headers="MaximumQuantityPerDosageUnit">200</td>
+    </tr>
+    <tr>
+      <td headers="properName">Iodine</td>
+      <td headers="commonName">Iodine</td>
+      <td headers="sourceMaterial">Sodium iodide;<br/>Potassium iodide</td>
+      <td headers="MaximumQuantityPerDosageUnit">24</td>
+    </tr>
+    <tr>
+      <td headers="properName">Iron</td>
+      <td headers="commonName">Iron</td>
+      <td headers="sourceMaterial">Iron gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">14</td>
+    </tr>
+
+    <tr>
+      <td headers="properName">Magnesium</td>
+      <td headers="commonName">Magnesium</td>
+      <td headers="sourceMaterial">Magnesium gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">104.4</td>
+    </tr>
+    <tr>
+      <td headers="properName">Manganese</td>
+      <td headers="commonName">Manganese</td>
+      <td headers="sourceMaterial">Manganese gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">72.8</td>
+    </tr>
+
+    <tr>
+      <td headers="properName">Nickel</td>
+      <td headers="commonName">Nickel</td>
+      <td headers="sourceMaterial">Nickel gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">72.6</td>
+    </tr>
+
+    <tr>
+      <td headers="properName">Phosphorus</td>
+      <td headers="commonName">Phosphorus</td>
+      <td headers="sourceMaterial">Disodium phosphate</td>
+      <td headers="MaximumQuantityPerDosageUnit">140</td>
+    </tr>
+
+    <tr>
+      <td headers="properName">Potassium</td>
+      <td headers="commonName">Potassium</td>
+      <td headers="sourceMaterial">Potassium gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">40</td>
+    </tr>
+
+    <tr>
+      <td headers="properName">Selenium</td>
+      <td headers="commonName">Selenium</td>
+      <td headers="sourceMaterial">Selenite sodium</td>
+      <td headers="MaximumQuantityPerDosageUnit">100</td>
+    </tr>
+
+    <tr>
+      <td headers="properName">Sulphur</td>
+      <td headers="commonName">Sulphur</td>
+      <td headers="sourceMaterial">Sodium thiosulfate</td>
+      <td headers="MaximumQuantityPerDosageUnit">122</td>
+    </tr>
+    <tr>
+      <td headers="properName">Zinc</td>
+      <td headers="commonName">Zinc</td>
+      <td headers="sourceMaterial">Zinc gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">67.4</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<table class="subject fontSize100">
+  <caption>
+    Table 2: Proper name(s), Common name(s), Source information and Dosage
+    information for multi-ingredient preparation containing one or more of
+    the following ingredients
+  </caption>
+
+  <thead>
+    <tr>
+      <th scope="col" id="properName" colspan="1">Proper name(s)</th>
+      <th scope="col" id="commonName" colspan="1">Common name(s)</th>
+      <th scope="col" id="sourceMaterial" colspan="1">Source ingredient(s)</th>
+      <th scope="col" id="MaximumQuantityPerDosageUnit" colspan="1">
+        Maximum quantity per dosage unit (&#956;g)
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td headers="properName">Manganese;<br/>Cobalt</td>
+      <td headers="commonName">Manganese;<br/>Cobalt</td>
+      <td headers="sourceMaterial">Manganese gluconate;<br/>Cobalt gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">72.8<br/>72.6</td>
+    </tr>
+    <tr>
+      <td headers="properName">Manganese;<br/>Copper;<br/>Cobalt</td>
+      <td headers="commonName">Manganese;<br/>Copper;<br/>Cobalt</td>
+      <td headers="sourceMaterial">
+        Manganese gluconate;<br/>Copper gluconate;<br/>Cobalt gluconate
+      </td>
+      <td headers="MaximumQuantityPerDosageUnit">72.8<br/>72.6<br/>72.8</td>
+    </tr>
+    <tr>
+      <td headers="properName">Manganese;<br/>Copper</td>
+      <td headers="commonName">Manganese;<br/>Copper</td>
+      <td headers="sourceMaterial">Manganese gluconate;<br/>Copper gluconate;</td>
+      <td headers="MaximumQuantityPerDosageUnit">72.6<br/>72.6</td>
+    </tr>
+    <tr>
+      <td headers="properName">Cobalt;<br/>Nickel</td>
+      <td headers="commonName">Cobalt;<br/>Nickel</td>
+      <td headers="sourceMaterial">Cobalt gluconate <br/>Nickel gluconate;</td>
+      <td headers="MaximumQuantityPerDosageUnit">72.6<br/>72.6</td>
+    </tr>
+    <tr>
+      <td headers="properName">Copper;<br/>Zinc</td>
+      <td headers="commonName">Copper;<br/>Zinc</td>
+      <td headers="sourceMaterial">Coppergluconate;<br/>Zinc gluconate</td>
+      <td headers="MaximumQuantityPerDosageUnit">72.6<br/>67.4</td>
+    </tr>
+    <tr>
+      <td headers="properName">
+        Cobalt;<br/>
+        Nickel;<br/>
+        Zinc
+      </td>
+      <td headers="commonName">
+        Cobalt;<br/>
+        Nickel;<br/>
+        Zinc
+      </td>
+      <td headers="sourceMaterial">
+        Cobalt gluconate;<br/>
+        Nickel gluconate;<br/>
+        Zinc gluconate
+      </td>
+      <td headers="MaximumQuantityPerDosageUnit">72.6<br/>72.6<br/>67.4</td>
+    </tr>
+    <tr>
+      <td headers="properName">
+        Copper;<br/>
+        Gold;<br/>
+        Silver
+      </td>
+      <td headers="commonName">
+        Copper;<br/>
+        Gold;<br/>
+        Silver
+      </td>
+      <td headers="sourceMaterial">
+        Copper gluconate; <br/>
+        Gold elemental;<br/>
+        Silver gluconate
+      </td>
+      <td headers="MaximumQuantityPerDosageUnit">31<br/>98<br/>50</td>
+    </tr>
+    <tr>
+      <td headers="properName">
+        Copper;<br/>
+        Gold;<br/>
+        Silver
+      </td>
+      <td headers="commonName">
+        Copper;<br/>
+        Gold;<br/>
+        Silver
+      </td>
+      <td headers="sourceMaterial">
+        Copper gluconate; <br/>
+        Gold elemental;<br/>
+        Silver gluconate
+      </td>
+      <td headers="MaximumQuantityPerDosageUnit">63<br/>1.4<br/>21.36</td>
+    </tr>
+    <tr>
+      <td headers="properName">
+        Copper;<br/>
+        Gold;<br/>
+        Silver
+      </td>
+      <td headers="commonName">
+        Copper;<br/>
+        Gold;<br/>
+        Silver
+      </td>
+      <td headers="sourceMaterial">
+        Copper gluconate; <br/>
+        Gold elemental;<br/>
+        Silver gluconate
+      </td>
+      <td headers="MaximumQuantityPerDosageUnit">500<br/>0.2<br/>7.4</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Direction(s) for use</h3>
+<p class="indent1">
+  <em>All products</em>
+</p>
+<p>Use/Take as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+<p class="indent1">
+  <em>Products containing Iron or Zinc</em>
+</p>
+<ul class="indent1">
+  <li>
+    Take a few hours before or after taking other medications or health products (Health Canada 2023; Sweetman 2017).
+  </li>
+  <li>Take with food (Health Canada 2023; Sweetman 2017).</li>
+</ul>
+<h2>Duration(s) of use</h2>
+<p><em>Products containing Bismuth and/or Copper</em></p>
+<p>Use for 3 - 5 days or as recommended by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+<p><em>Other products</em></p>
+<p>Use for up to 2 months or as recommended by a health care practitioner/health care provider/health care professional/doctor/physician (Brigo 1999).</p>
+<h2>Risk information</h2>
+<h3>Cautions and warnings</h3>
+<p>
+  <em>All products</em>
+</p>
+<ul class="indent1">
+  <li>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.
+  </li>
+  <li>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.
+  </li>
+</ul>
+<p>
+  <em>Products containing Aluminium</em>
+</p>
+<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a kidney disorder (JECFA 1987).</p>
+<p>
+  <em>Products containing Cobalt</em>
+</p>
+<ul class="indent1">
+  <li>
+    Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking Vitamin B12 (EVM 2003).
+  </li>
+  <li>
+    Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience gastrointestinal discomfort/disturbances and/or skin rashes.
+  </li>
+</ul>
+<p>
+  <em>Products providing doses of Selenium &ge; 200 &mu;g per day.</em
+  >
+</p>
+<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a history of non-melanoma skin cancer.</p>
+
+<h3>Contraindication(s)</h3>
+<p>
+  <em>Products containing Cobalt</em>
+</p>
+<p>Do not use if you have an iodine deficiency (EVM 2003).</p>
+<p>
+  <em>Products containing Manganese</em>
+</p>
+<p>Do not use if you have tuberculosis or a history of tuberculosis (Padrazzi 1988; Ménétrier 1983).</p>
+<p>
+  <em>Products containing Manganese and Cobalt</em>
+</p>
+<p>Do not use if you have tuberculosis or a history of tuberculosis (Ménétrier 1983).</p>
+<p>
+  <em>Products containing Zinc and/or Copper</em>
+</p>
+<p>Do not use if you have cancer, tuberculosis or a history of tuberculosis (Padrazzi 1988; Ménétrier 1983).</p>
+<h3>Known adverse reaction(s)</h3>
+<p>
+  <em>Products containing Fluoride</em>
+</p>
+<p>When using this product you may experience mottling of the tooth enamel in an area where the drinking water has a natural
+  fluorine content in excess of 0.7 parts of fluoride ion per million parts
+  of water or is artificially fluoridated.</p>
+<h2>Non-medicinal Ingredients</h2>
+<p>
+  Must be chosen from the current
+  <a href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do"
+    ><em>Natural Health Products Ingredients Database</em></a
+  >
+  (<abbr title="Natural Health Products Ingredient Database">NHPID</abbr>)
+  and must meet the limitations outlined in the database.
+</p>
+<h2>Storage conditions</h2>
+<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+<h2>Specifications</h2>
+<ul>
+  <li>
+    The finished product specifications must be established in accordance with the requirements described in the Natural and Non-Prescription Health Products Directorate Quality of Natural Health Products Guide.
+  </li>
+  <li>
+    The finished product must comply with the minimum specifications
+    outlined in the current <abbr title="Natural Health Products Ingredient Database">NHPID</abbr>.
+  </li>
+</ul>
+
+<h2>Example of Product Facts:</h2>
+ 
+<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+
+<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/OLIGOTHERAPY_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+<h2>References cited</h2>
+<ul>
+    <li>Brigo, B. Logique thérapeutique des Oligoéléments et des remèdes en lithothérapie. Collection Résurgence. (LU): Marco Pietteur, editor, 1999.</li>
+    <li>EVM 2003: Expert Group on Vitamins and Minerals. Safe Upper Levels for Vitamins and Minerals. May 2003. [Accessed 2024 August 29]. Available from: https://cot.food.gov.uk/sites/default/files/vitmin2003.pdf</li>
+    <li>Health Canada 2023: Multi-vitamin/mineral supplements monograph.  Natural and Non-prescription Health Products Directorate. Ottawa (ON). [Accessed 2024 August 26]. Available from: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq?atid=multi_vitmin_suppl&lang=eng</li>
+    <li>JECFA 1987: WHO/FAO Joint Expert Committee on Food Additives. Food Additives Monographs. [Consulted 2024 December 10]. Available from: https://www.inchem.org/documents/ehc/ehc/ehc194.htm</li>
+    <li>Ménétrier J. La médecine des fonctions, deuxième édition. (FR): Hemsi, 1983.</li>
+    <li>Padrazzi P. L'oligothérapie réactionnelle. (FR): Éditions Similia, 1988. </li>
+    <li>Sweetman SC, editor. Martindale: The Complete Drug Reference, 39th edition. Grayslake (IL): Pharmaceutical Press; 2017.</li>
+</ul>
+<h2>References reviewed</h2>
+<div lang="en" xml:lang="en">
+  <ul>
+    <li>
+      ANSM 2024: Agence nationale de sécurité du médicament et des produits de santé. [Accessed 2024 August 29]. Available from: https://ansm.sante.fr/
+    </li>
+
+    <li>
+      ASHP 2005: American Society of Health-System Pharmacists. American
+      Hospital Formulary Service (AHFS) Drug Information. Philadelphia (PA):
+      Lippincott Williams and Wilkins; 2005.
+    </li>
+
+    <li>
+      Chappuis P. Favier A.
+      <span lang="fr" xml:lang="fr"
+        >Les oligo&#233;l&#233;ments en nutrition et en
+        th&#233;rapeutique.</span
+      >
+      (FR): Lavoisier, 1995.
+    </li>
+    <li>
+      Douart, JP.
+      <span lang="fr" xml:lang="fr"
+        >L'Oligoth&#233;rapie en pathologie fonctionnelle: Donn&#233;es
+        scientifiques et cliniques.</span
+      >
+      (FR): <span lang="fr" xml:lang="fr">&#201;ditons Maloine</span>, 1994.
+    </li>
+    <li>
+      Dupouy A.
+      <span lang="fr" xml:lang="fr"
+        >Oligoth&#233;rapie: Pr&#233;cis de Clinique et de
+        th&#233;rapeutique. (FR): &#201;ditions Maloine</span
+      >, 1988.
+    </li>
+    <li>
+      EC 2009: European Commission. Scientific Committee on Cosmetic Products (SCCP), Health & Consumer Protection, Directorate-General. Clarificaton on the opinions SCCNFP/0653/03 and SCCP/0882/05 on the safety of fluorine compounds in oral hygiene products for children under the age of 6 years. [Accessed 2024 August 29].
+    </li>
+    <li>
+      Greaves M. Gemmotherapy and Oligotherapy Regenerators of Dying
+      Intoxicated Cells. (US): Xlibris, 2002.
+    </li>
+    <li>
+      Padrazzi P.
+      <span lang="fr" xml:lang="fr"
+        >Fatigue et oligo-&#233;l&#233;ments. (FR) : &#201;ditions</span
+      >
+      Similia, 1997.
+    </li>
+    <li>
+      Picard H.
+      <span lang="fr" xml:lang="fr"
+        >Utilisation th&#233;rapeutique des oligo-&#233;l&#233;ments, 5<sup
+          >e</sup
+        >
+        &#233;dition.</span
+      >
+      (FR) : <span lang="fr" xml:lang="fr">&#201;ditions</span> Maloine,
+      1986.
+    </li>
+    <li>
+      Sal J., Donadieu Y.
+      <span lang="fr" xml:lang="fr"
+        >Les th&#233;rapeutiques naturelles : les oligo&#233;l&#233;ments.
+        (FR) : &#201;ditions</span
+      >
+      Maloine, 1986.
+    </li>
+    <li>
+      Simon V.
+      <span lang="fr" xml:lang="fr"
+        >Les troubles fonctionnels et leur traitement. (FR): &#201;ditions </span
+      >Maloine, 2002.
+    </li>
+
+    <li>
+      U.S. Food and Drug Administration, Food and Drugs, Food and Drug Administration Department of Health and Human Services, Drugs for Human Use. Part 369 - Interpretative Statements Re Warnings on Drugs and Devices for Over-The-Counter Sale. [Accessed 2024 August 29]. Available from: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart=369 
+    </li>
+
+    <li>
+      U.S. Food and Drug Administration, Food and Drugs, Food and Drug Administration Department of Health and Human Services, Drugs for Human Use. Part 355 - Anticaries Drug Products For Over-The-Counter Human Use. [Accessed 2024 August 29]. Available from: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart=355
+    </li>
+  </ul>
+</div></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

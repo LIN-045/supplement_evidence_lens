@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=hydrolized.collagen\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="a11dcfbc-bc94-4c2e-a45f-84c66785f7e4"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'>     <h1>Hydrolyzed Collagen</h1>
+
+        <p class="lightgreyBG">Help on accessing alternative formats, such as Portable Document Format (<abbr
+                title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr
+                title='PowerPoint'>PPT</abbr>) files, can be obtained in the <a
+                href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php#alt">alternate format help</a>
+            section.</p>
+
+        <div class="icon">
+            <a href="dbImages/mono&#95;hydrolyzed-collagen&#95;english.pdf"
+                title="Monograph: Hydrolyzed Collagen (English)">
+                <img src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" alt="Portable Document Format"
+                    width="22" height="21" /> (PDF Version - 132 K)</a>
+        </div>
+
+        <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence
+            Applications (<abbr title="Product Licence Applications">PLAs</abbr>) and labels for natural health product
+            market authorization.
+            It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+
+        <strong>Notes</strong>
+
+        <ul>
+            <li>For the purpose of this monograph, hydrolyzed collagen has no jelling power and is soluble in cold water
+                (Schrieber and Gareis 2007; Moskowitz 2000).The average molecular weight of hydrolyzed collagen is
+                approximately 4 kDa (i.e. 2-6 kDa) (Moskowitz 2000; Oesser <em>et al</em>. 1999).</li>
+
+            <li>Text in parentheses is additional optional information which can be included on the <abbr
+                    title="Product Licence Application">PLA</abbr> and product label at the applicant's discretion.
+            </li>
+
+            <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may
+                be selected by the applicant.</li>
+        </ul>
+
+        <section aria-labelledby="date">
+            <h2 id="date">Date</h2>
+            <p>March 28, 2024</p>
+        </section>
+
+        <section aria-labelledby="properNameCommonNameSourceInformation">
+            <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+
+            <table class="subject">
+                <caption>Table 1. Proper name(s), Common name(s), Source information </caption>
+
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Proper name(s)</th>
+                        <th rowspan="2" scope="col">Common name(s)</th>
+                        <th colspan="2" scope="colgroup">Source information</th>
+
+                    </tr>
+                    <tr>
+                        <th scope="col">Source material(s)</th>
+                        <th scope="col"> Part(s) </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">
+                            Hydrolyzed collagen
+                        </td>
+                        <td rowspan="4">
+                            <ul>
+                                <li>Collagen hydrolysate</li>
+                                <li>Hydrolyzed collagen</li>
+                            </ul>
+                        </td>
+
+                        <td>Bovine</td>
+                        <td>Bovine skin/hide split</td>
+                    </tr>
+                    <tr>
+                        <td> Porcine</td>
+                        <td>
+                            <ul>
+                                <li>Bone </li>
+                                <li>Skin</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Fish </td>
+                        <td>
+                            <ul>
+                                <li>Bone </li>
+                                <li>Skin</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chicken </td>
+                        <td>Cartilage</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <p>References: Proper name: NIH 2023, ICIDH 2008; Common names: NIH 2023, ICIDH 2008, Moskowitz 2000; Source
+                information: Schauss et al 2012, FCC 7 2010, Schrieber and Gareis 2007, Baziwane and He 2003.</p>
+            </ul>
+        </section>
+
+        <section aria-labelledby="routeOfAdministration">
+            <h2 id="routeOfAdministration">Route of administration</h2>
+            <p>Oral</p>
+        </section>
+
+        <section aria-labelledby="dosageForm">
+            <h2 id="dosageForm">Dosage form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs
+                Guidance
+                Document.</p>
+            <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based
+                Product
+                Licence Application form for Compendial applications.</p>
+        </section>
+
+        <section aria-labelledby="useOrPurpose">
+            <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+
+            <ul>
+                <li>Source of (the) essential amino acid(s) (histidine, isoleucine, leucine, lysine, methionine,
+                    phenylalanine, threonine, valine) for the maintenance of good health/involved in (muscle) protein
+                    synthesis (CNF 2023; IOM 2005; Eastoe 1955). </li>
+                <li>Source of (the) non-essential amino acid(s) (alanine, arginine, aspartic acid, glutamic acid,
+                    glycine,
+                    proline, serine, tyrosine) involved in (muscle) protein synthesis (CNF 2023; IOM 2005; Eastoe 1955).
+                </li>
+                <li>Source of (the essential amino acid) lysine to help in collagen formation/synthesis (derMarderosian
+                    and
+                    Beutler 2011; Baziwane and He 2003; Garrison and Somer 1995; Jansen 1962).</li>
+                <li>Helps reduce joint pain associated with osteoarthritis (Bruyère et al. 2012; Benito-Ruiz et al.
+                    2009;
+                    Clark et al. 2008). </li>
+                <li>Helps reduce osteoarthritis-related joint pain (Bruyère et al. 2012; Benito-Ruiz et al. 2009; Clark
+                    et
+                    al. 2008). </li>
+                <li>Helps manage/in the management of joint pain (Bruyère et al. 2012; Benito-Ruiz et al. 2009; Clark et
+                    al.
+                    2008). </li>
+            </ul>
+            <p><strong>Notes:</strong></p>
+            <ul>
+                <li>The above uses can be combined on the product label (e.g. Source of essential amino acids for the
+                    maintenance of good health and non-essential amino acids involved in muscle protein synthesis).</li>
+                <li>The terms 'Helps' or 'Helps to' can be used interchangeably on the label. </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="dose">
+            <h2 id="dose">Dose(s)</h2>
+
+            <h3>Subpopulation(s)</h3>
+            <p>Adults 18 years and older</p>
+
+            <h3>Quantity(ies)</h3>
+
+            <p><em>Source of (the) essential amino acid(s)(histidine, isoleucine, leucine, lysine, methionine,
+                    phenylalanine,
+                    threonine, valine)</em>
+            <p> 2.6-10 grams hydrolyzed collagen, per day (IOM 2005; Moskowitz 2000).</p>
+            <p>OR</p>
+            <table class="subject">
+                <thead>
+                    <tr>
+                        <th scope="col">Essential amino acids</th>
+                        <th scope="col">
+                            Minimum dose (mg/day) <br />
+                            5% of the RDA<sup>1</sup>
+                        </th>
+                        <th scope="col">Maximum dose of hydrolyzed collagen (g/day)<sup>2</sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>L-Histidine</td>
+                        <td>49 mg</td>
+                        <td rowspan="9"> 10 g </td>
+                    </tr>
+                    <tr>
+                        <td>L-Isoleucine</td>
+                        <td>66.5 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Leucine</td>
+                        <td>147 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Lysine</td>
+                        <td>133 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Methionine</td>
+                        <td>66.5 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Phenylalanine</td>
+                        <td>115.5 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Threonine</td>
+                        <td>70 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Valine</td>
+                        <td>84 mg</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><sup>1</sup>Minimum doses have been calculated as 5% of each specific amino acid Recommended Dietary
+                Allowance with a reference weight of 70 kg (IOM 2005).<br><sup>2</sup>Maximum dose (Benito-Ruiz et al.
+                2009;
+                IOM 2005; Moskowitz 2000).</p>
+
+
+            <p><em>Source of (the) non-essential amino acid(s) (alanine, arginine, aspartic acid, glutamic acid,
+                    glycine,
+                    proline,
+                    serine, tyrosine) </em></p>
+            <p>2.6-10 grams hydrolyzed collagen, per day (IOM 2005; Moskowitz 2000).</p>
+            <p>OR</p>
+            <table class="subject">
+                <thead>
+                    <tr>
+                        <th>Non-Essential amino acids</th>
+                        <th>
+                            Minimum dose (mg/day) <br />
+                            5% of the RDA<sup>1</sup>
+                        </th>
+                        <th>Maximum dose of hydrolyzed collagen (g/day)<sup>2</sup></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>L-Alanine</td>
+                        <td>181.5 mg</td>
+                        <td rowspan="9"> 10 g </td>
+                    </tr>
+                    <tr>
+                        <td>L-Arginine</td>
+                        <td>208.5 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Aspartic acid</td>
+                        <td>325 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Glutamic acid</td>
+                        <td>750 mg</td>
+                    </tr>
+                    <tr>
+                        <td>Glycine</td>
+                        <td>160 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Proline</td>
+                        <td>259.5 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Serine</td>
+                        <td>175.5 mg</td>
+                    </tr>
+                    <tr>
+                        <td>L-Tyrosine</td>
+                        <td>139 mg</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><sup>1</sup>Minimum doses have been calculated as 5% of each specific amino acid Mean Intake (IOM
+                2005)<br><sup>2</sup>Maximum dose (Benito-Ruiz et al. 2009; IOM 2005; Moskowitz 2000).</p>
+            <p><em>Source of lysine</em></p>
+            <table class="subject">
+                <thead>
+                    <tr>
+                        <th scope="col">Essential amino acids</th>
+                        <th scope="col">
+                            Minimum dose(mg/day)<br/>
+                            5% of the RDA<sup>1</sup>
+                        </th>
+                        <th scope="col">Maximum dose of hydrolyzed collagen (g/day)<sup>2</sup></th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>L-Lysine</td>
+                    <td>133 mg</td>
+                    <td>10 g</td>
+                </tr>
+            </table>
+            <p><sup>1</sup>Minimum doses have been calculated as 5% of Recommended Dietary Allowance with a reference
+                weight of 70
+                kg (IOM 2005).<br><sup>2</sup>Maximum dose (Benito-Ruiz et al. 2009; IOM 2005; Moskowitz 2000).</p>
+
+            <p><em>Joint pain</em></p>
+            <p>1.2-10 grams hydrolyzed collagen, per day (Bruyère et al. 2012; Benito-Ruiz et al. 2009; Clark et al.
+                2008). </p>
+            <h3>Direction(s) for use </h3> No statement required.
+            <h2>Duration(s) of use</h2>
+            <p><em>Joint pain</em></p>
+
+            Use for at least 5 months to see beneficial effects (Bruyère <em>et al</em>. 2012; Benito-Ruiz <em>et
+                al</em>. 2009;
+            Clark <em>et al</em>. 2008).
+            </p>
+        </section>
+
+        <section aria-labelledby="riskInformation">
+            <h2 id="riskInformation">Risk information</h2>
+
+            <h3>Caution(s) and warning(s)</h3>
+
+            <p><em>Joint pain </em></p>
+
+            <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms
+                worsen.
+            </p>
+
+            <p><em>Products providing more than 2.8 g hydrolyzed collagen, per day </em></p>
+
+            <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use
+                if
+                you are
+                pregnant or breastfeeding (Shils et al. 2006; Goldman and Ausiello 2004).
+            </p>
+
+            <h3>Contraindication(s)</h3>
+            <p>No statement required.</p>
+            <h3>Known adverse reaction(s)</h3>
+            <p>When using this product you may experience gastrointestinal discomfort/disturbances (Moskowitz 2000).
+            </p>
+
+            <h2>Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current <abbr
+                    title="Natural and Non-prescription Health Products Directorate"></abbr><a
+                    href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do"><em> Natural Health Products
+                        Ingredients
+                        Database </em></a>and must meet the limitations outlined in the database.
+            </p>
+        </section>
+
+        <section aria-labelledby="storageConditions">
+            <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+                    Regulations.</em>
+            </p>
+            <p><em>All products (information for industry; optional for labelling depending on the packaging)</em></p>
+            <p>To be protected from heat and moisture (Ph.Eur. 2023). </p>
+        </section>
+
+        <section aria-labelledby="specifications">
+            <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements
+                    described in
+                    the
+                    <abbr title="Natural and Non-Prescription Health Products Directorate">Natural and Non-Prescription
+                        Health
+                        Products (NNHPD)</abbr> <a
+                        href="http://www.hc-sc.gc.ca/dhp-mps/prodnatur/legislation/docs/eq-paq-eng.php"><em>Quality of
+                            Natural
+                            Health Products Guide.</em></a>
+                </li>
+                <li>The medicinal ingredient must comply with the requirements outlined in the <a
+                        href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">NHPID</a> <abbr
+                        title="Natural Health Products Ingredient Database"></abbr>. </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="exampleOfProductFacts">
+            <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+
+            <p>Consult the Guidance Document, <a
+                    href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>
+                    Labelling of Natural Health Products</a> for more details.
+            <p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/HYDROLYZED_COLLAGEN_E.gif" alt="Product Facts Table"
+                    style="width:700px" /></p>
+
+
+        </section>
+
+        <section aria-labelledby="referencesCited">
+            <h2 id="referencesCited">References cited</h2>
+
+            <ul>
+                <li>Baziwane D, He Q. Gelatin: The paramount food additive. Food Reviews International
+                    2003;19(4):423-435.
+                </li>
+
+                <li>Benito-Ruiz P, Camacho-Zambrano MM, Carrillo-Arcentales JN, Mestanza-Peralta MA, Vallejo-Flores CA,
+                    Vargas-López
+                    SV, Villacís-Tamayo RA, Zurita-Gavilanes LA. A randomized controlled trial on the efficacy and
+                    safety of
+                    a food
+                    ingredient, collagen hydrolysate, for improving joint comfort. International Journal of Food
+                    Sciences
+                    and
+                    Nutrition 2009;60 Suppl 2:99-113.</li>
+
+                <li>Bruyère O, Zegels B, Leonori L. Rabenda V, Janssen A, Bourges C, Reginster JY. Effect of collagen
+                    hydrolysate in
+                    articular pain: A 6-month randomized, double-blind, placebo controlled study. Complementary
+                    Therapies in
+                    Medicine 2012;20:124-130.</li>
+
+                <li>Clark KL, Sebastianelli W, Flechsenhar KR, Aukermann DF, Meza F, Millard RL, Deitch JR, Sherbondy
+                    PS,
+                    Albert A.
+                    24-Week study on the use of collagen hydrolysate as a dietary supplement in athletes with
+                    activity-related joint
+                    pain. Current Medical Research and Opinions 2008;24(5):1485-1496.</li>
+
+                <li>CNF 2023: Canadian Nutrient File (CNF). Nutrition & Healthy Eating, Food and Nutrition, Health
+                    Canada.
+                    [Accessed
+                    2024 March 8]. Available from: https://food- nutrition.canada.ca/cnf-fce/serving-portion.do?id=1484
+                </li>
+
+                <li>derMarderosian A, Beutler JA, editors. The Review of Natural Products. ?Lysine: Issue date February
+                    2011? St
+                    Louis (MO): Facts and Comparisons, Wolters Kluwer Health; Printed in 2008 and Updated to June 2011.
+                </li>
+
+                <li>Eastoe JE. The amino acid composition of mammalian collagen and gelatin. Biochemical Journal
+                    1955;61(4):589-600.
+                </li>
+
+                <li>FCC 7: Food Chemical Codex, Seventh Edition. Rockville (MD): The United States Pharmacopeial
+                    Convention,
+                    2010.
+                </li>
+
+                <li>Garrison RH, Somer E. Nutrition Desk Reference, 3<sup>rd</sup> edition. New Canaan (CT): Keats
+                    Publishing, 1995.
+                </li>
+
+                <li>Goldman L, Ausiello D, editors. Cecil Textbook of Medicine, Volume 1, 22<sup>nd</sup> edition.
+                    Philadelphia
+                    (PA): Saunders; 2004.</li>
+
+                <li>ICIDH 2008: International Cosmetic Ingredient Dictionary and Handbook, Twelfth Edition, Volume 1.
+                    Gottschalck
+                    TE, Bailey JE, editors. Washington (DC): The Cosmetic, Toiletry, and Fragrance Association, 2008.
+                </li>
+
+                <li>IOM 2005: Institute of Medicine of the National Academies. Dietary Reference Intakes for Energy,
+                    Carbohydrate,
+                    Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Food and Nutrition Board, [Accessed
+                    2018
+                    June
+                    5]. Available from:
+                    https://www.nal.usda.gov/sites/default/files/fnic_uploads/energy_full_report.pdf
+                </li>
+
+                <li>Jansen GR. Lysine in Human Nutrition. The Journal of Nutrition 1962;76:1-35.</li>
+
+                <li>Moskowitz RW. Role of collagen hydrolysate in bone and joint disease. Seminars in Arthritis and
+                    Rheumatism
+                    2000;30(2):87-99.</li>
+
+                <li>NIH 2023: National Institutes of Health. PubChem. Bethesda (MD): National Library of Medicine, US
+                    Department of
+                    Health & Human Services. [Accessed 2023 October 23]. Available from:
+                    https://pubchem.ncbi.nlm.nih.gov/
+                </li>
+
+                <li>Oesser S, Adam M, Babel W, Seifert J. Oral administration of <sup>14</sup>C labeled gelatin
+                    hydrolysate
+                    leads to
+                    an accumulation of radioactivity in cartilage of mice (C57/BL). Journal of Nutrition 129(10):1891-5,
+                    1999.</li>
+
+                <li>Ph.Eur. 2023: European Pharmacopoeia. 11th edition. Strasbourg (FR): Directorate for the Quality of
+                    Medicines
+                    and HealthCare of the Council of Europe (EDQM), 2023.</li>
+
+                <li>Schauss AG, Stenehjem J, Park J, Endres JR, Clewell A. Effect of the novel low molecular weight
+                    hydrolyzed
+                    chicken sternal cartilage extract, BioCell Collagen, on improving osteoarthritis-related symptoms: a
+                    randomized,
+                    double-blind, placebo-controlled trial. J Agric Food Chem. 2012 Apr 25;60(16):4096-101</li>
+
+                <li>Schrieber R, Gareis H. Gelatine Handbook: Theory and Industrial Practice. Weinheim: Wiley-VCH. 2007
+                </li>
+
+                <li>Shils ME, Shike M, Ross AC, Caballero B, Cousins RJ, editors. Modern Nutrition in Health and
+                    Disease,
+                    10th
+                    edition. Philadelphia (PA): Lippincott Williams and Wilkins, 2006.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="referencesReviewed">
+            <h2 id="referencesReviewed">References reviewed</h2>
+
+            <ul>
+                <li>American College of Toxicology. Final Report on the Safety Assessment of Hydrolyzed Collagen.
+                    International
+                    Journal of Toxicology 1985;4:199-221.</li>
+
+                <li>Balian G, Bowes JH. The structure and properties of collagen. In: Ward AG, Courts A, editors. The
+                    science and
+                    technology of gelatin. London (GB): Academic Press, 1977.</li>
+
+                <li>Barnett ML, Kremer JM, St Clair EW, Clegg DO, Furst D, Weisman M, Fletcher MJ, Chasan-Taber S,
+                    Finger E,
+                    Morales
+                    A, Le CH, Trentham DE. Treatment of rheumatoid arthritis with oral type II collagen. Results of a
+                    multicenter,
+                    double-blind, placebo-controlled trial. Arthritis and Rheumatism 1998;41(2):290-7.</li>
+
+                <li>Bello AE, Oesser S. Collagen hydrolysate for the treatment of osteoarthritis and other joint
+                    disorders:
+                    a review
+                    of the literature. Current Medical Research and Opinion 2006;22(11):2221-2232.</li>
+
+                <li>Bornstein P, Sage H. Structurally Distinct Collagen Types. Annual Review of Biochemistry
+                    1980;49:957-1003.</li>
+
+                <li>BP 2008: British Pharmacopoeia Commission. 2007. British Pharmacopoeia 2008. Volume I. London (GB):
+                    The
+                    Stationary Office on behalf of the Medicines and Healthcare products Regulatory Agency (MHRA).</li>
+
+                <li>Clark KL, Sebastianelli W, Flechsenhar KR, Aukermann DF, Meza F, Millard RL, Deitch JR, Sherbondy
+                    PS,
+                    Albert A.
+                    24-Week study on the use of collagen hydrolysate as a dietary supplement in athletes with
+                    activity-related joint
+                    pain. Current Medical Research and Opinions 2008;24(5):1485-1496.</li>
+
+                <li>Deparle LA, Gupta RC, Canerdy TD, Goad JT, D'Altilio M, Bagchi M, Bagchi D. Efficacy and safety of
+                    glycosylated
+                    undenatured type-II collagen (UC-II) in therapy of arthritic dogs. Journal of Veterinary
+                    Pharmacology
+                    and
+                    Therapeutics 2005;28(4):385-90.</li>
+
+                <li>Djagny KB, Wang Z, Xu S. Gelatin: A Valuable Protein for Food and Pharmaceutical Industries: Review.
+                    Critical
+                    Reviews in Food Science and Nutrition 2001;41(6):481-492.</li>
+
+                <li>European Food Safety Authority (EFSA). Opinion of the Scientific Panel on Biological Hazards of the
+                    European
+                    Food Safety Authority on the "Quantitative assessment of the human and animal BSE risk posed by
+                    gelatine
+                    with
+                    respect to residual BSE risk". Question No EFSA-Q-2003-099. Adopted on 18 January 2006. The EFSA
+                    Journal
+                    2006:312:1-29.</li>
+
+                <li>FDA 1975: U.S. Food and Drug Administration.<img
+                        src="http://www.hc-sc.gc.ca/imsd/images/common/newwindow.gif"
+                        alt="Next link will take you to another Web site" width="18" height="13" />
+                    <a href="http://www.accessdata.fda.gov/scripts/fcn/fcnDetailNavigation.cfm?rpt=scogsListing&amp;id=141"
+                        title="Gelatin (external link)"> Database of Select Committee on GRAS Substances (SCOGS)
+                        Reviews.
+                        Gelatin.
+                    </a> [Last Updated: 2006 October 31; Accessed 2012 May 15].
+                </li>
+
+                <li>Fini M, Torricelli P, Giavaresi G, Carpi A, Nicolini A, Giardino R. Effect of L-lysine and
+                    L-arginine on
+                    primary
+                    osteoblast cultures from normal and osteopenic rats. Biomedical Pharmacotherapy 2011;55:213-220.
+                </li>
+
+                <li>Fragakis AS, Thomson C. The Health Professional's Guide to Popular Dietary Supplements,
+                    3<sup>rd</sup>
+                    edition.
+                    Chicago (IL): American Dietetic Association.</li>
+
+                <li>Fujita T, Ohue M, Fujii Y, Miyauchi A, Takagi Y. The effect of active absorbable algal calcium (AAA
+                    Ca)
+                    with
+                    collagen and other matrix components on back and joint pain and skin impedance. Journal of Bone and
+                    Mineral
+                    Metabolism 2002;20:298-302.</li>
+
+                <li>Goldman L, Ausiello D, editors. Cecil Textbook of Medicine, Volume 1, 22<sup>nd</sup> edition.
+                    Philadelphia
+                    (PA): Saunders; 2004.</li>
+
+                <li>Groff J, Gropper S. Advanced Nutrition and Human Metabolism. 3<sup>rd</sup> edition. Belmont (CA):
+                    Wadsworth/Thomson Learning; 2000.</li>
+
+                <li>Hays NP, Kim H, Wells AM, Kajkenova O, Evans WJ. Effects of whey and fortified collagen hydrolysate
+                    protein
+                    supplements on nitrogen balance and body composition in older women. Journal of the American
+                    Dietetic
+                    Association 2009;109(6):1082-7.</li>
+
+                <li>Iwai K, Hasegawa T, Taguchi Y, Morimatsu F, Sato K, Nakamura Y, Higashi A, Kido Y, Nakabo Y, Ohtsuki
+                    K,
+                    Identification of Food-Derived Collagen Peptides in Human Blood after Oral Ingestion of Gelatin
+                    Hydrolysates.
+                    Journal of Agricultural and Food Chemistry 2005;53:6531-6536.</li>
+
+                <li>Lee SK, Posthauer ME, Dorner B, Redovian V, Maloney MJ. Pressure ulcer healing with a concentrated,
+                    fortified,
+                    collagen protein hydrolysate supplement: a randomized controlled trial. Advances in Skin and Wound
+                    Care
+                    2006;19(2):92-6.</li>
+
+                <li>Li F, Jia Dongying, Yao K. Amino acid composition and functional properties of collagen polypeptide
+                    from
+                    Yak
+                    (Bos grunniens) bone. Food Science and Technology 2009;42:945-949.</li>
+
+                <li>Martin-Bautista E. Marint-Matillas M, Maring-Lagos JA, Miranda-Leon MT, Muñoz-Torres M, ruiz-Requena
+                    E,
+                    Rivero
+                    M, Quer J, Puigdueta I, Campoy C. A nutritional intervention study with hydrolyzed collagen in
+                    pre-pubertal
+                    Spanish children: influence on bone modeling biomarkers. Journal of Pediatric Endocrinology and
+                    Metabolism
+                    2011;24(3-4):147-53Oesser S, Adam M, Babel W, Seifert J. Oral administration of <sup>14</sup>C
+                    labeled
+                    gelatin
+                    hydrolysate leads to an accumulation of radioactivity in cartilage of mice (C57/BL). Journal of
+                    Nutrition
+                    1999;129(10):1891-5.</li>
+
+                <li>Merck 2012: The Merck Index Version 14.1. Whitehouse Station (NJ): Merck & Co., Inc. Copyright ©
+                    2006,
+                    2012
+                    Merck Sharp &Dohme Corp., a subsidiary of Merck & Co., Inc. [Accessed 2012 May 15]. Available from:
+                    http://www.medicinescomplete.com </li>
+
+                <li>Oesser S, Seifert J. Stimulation of type II collagen biosynthesis and secretion in bovine
+                    chondrocytes
+                    cultured
+                    with degraded collagen. Cell and Tissue Research`2003;311(3):393-9.</li>
+
+                <li>Popenoe EA, Aronson RB, Van Slyke DD. Hydroxylysine formation from lysine during collagen
+                    biosynthesis.
+                    Biochemistry 1966;55:393-397.</li>
+
+                <li>Rowe RC, Sheskey PJ and Owen SC. Handbook of Pharmaceutical Excipients 5th edition. American
+                    Pharmacists
+                    Association, 2006.</li>
+
+                <li>Schauss AG, Merkel DJ, Glaza SM, Sorenson SR. Acute and subchronic oral toxicity studies in rats of
+                    a
+                    hydrolyzed
+                    chicken sternal cartilage preparation. Food and Chemical Toxicology 2007;45(2):315-21.</li>
+
+                <li>Schrieber R and Gareis H. Gelatine Handbook: Theory and Industrial Practice. Weinheim (DE):
+                    Wiley-VCH,
+                    2007.
+                </li>
+
+                <li>Shils ME, Olson JA, Shike M, Ross AC, editors. Modern Nutrition in Health and Disease, 10th edition.
+                    Philadelphia (PA): Lippincott Williams and Wilkins, 2006.</li>
+
+                <li>Sieper J, Kary S, Sörensen H, Alten R, Eggens U, Hüge W, Hiepe F, Kühne A, Listing J, Ulbrich N,
+                    Braun
+                    J, Zink
+                    A, Mitchison NA. Oral type II collagen treatment in early rheumatoid arthritis. A double-blind,
+                    placebo-controlled, randomized trial. Arthritis and Rheumatism 1996;39(1):41-51.</li>
+
+                <li>Sundell MB, Cavanaugh KL, Pingsheng W, Shintani A, Hakim RM, Ikizler TA. Oral Protein
+                    Supplementation
+                    Alone
+                    Improves Anabolism in a Dose-Dependent Manner in Chronic Hemodialysis Patients. Journal of Renal
+                    Nutrition
+                    2009;19(5):412-421.</li>
+
+                <li>Trentham DE, Dynesius-Trentham RA, Orav EJ, Combitchi D, Lorenzo C, Sewell KL, Hafler DA, Weiner HL.
+                    Effects of
+                    oral administration of type II collagen on rheumatoid arthritis. Science 1993;261(5129):1727-1730.
+                </li>
+
+                <li>Veis A, The macromolecular chemistry of gelatine. New York (NY): Academic Press, 1964.</li>
+
+                <li>Ward AG and Courts A. The Science and Technology of Gelatin. London (GB): Academic Press, 1977.</li>
+
+                <li>Wei W, Zhang LL, Xu JH, Xiao F, Bao CD, Ni LQ, Li XF, Wu YQ, Sun LY, Zhang RH, Sun BL, Xu SQ, Liu S,
+                    Zhang W,
+                    Shen J, Liu HX, Wang RC. A multicenter, double-blind, randomized, controlled phase III clinical
+                    trial of
+                    chicken
+                    type II collagen in rheumatoid arthritis. Arthritis Res Ther. 2009;11(6):R180.</li>
+
+                <li>Wu J, Fujioka M, Sugimoto K, Mu G, Ishimi Y. Assessment of effectiveness of oral administration of
+                    collagen
+                    peptide on bone metabolism in growing and mature rats. Journal of Bone and Mineral Metabolism
+                    2004;22(6):547-53.
+                </li>
+
+                <li>Zhang Z, Li G, Shi B. Physiochemical properties of collagen, gelatin and collagen hydrosylate
+                    derived
+                    from
+                    bovine lime split wastes. Journal of the Society of Leather Technologists and Chemists
+                    2006;90(1):32-28.
+                </li>
+
+                <li>Zhao W, Tong T, Wang L, Li PP, Chang Y, Zhang LL, Wei W. Chicken type II collagen induced immune
+                    tolerance of
+                    mesenteric lymph node lymphocytes by enhancing beta2-adrenergic receptor desensitization in rats
+                    with
+                    collagen-induced arthritis. International Immunopharmacology 2011;11(1):12-8.</li>
+
+                <li>Zuckley L, Angelopoulou KM, Carpenter MR, McCarthy S, Meredith BA, Kline G, Rowinski M, Smith D,
+                    Angelopoulos
+                    TJ, Rippe JM. Collagen Hydrolysate Improves Joint Function in Adults with Mild Symptoms of
+                    Osteoarthritis of the
+                    Knee. Medicine and Science in Sports and Exercise 2004;36(5):S153-S154.</li>
+
+            </ul>
+        </section></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

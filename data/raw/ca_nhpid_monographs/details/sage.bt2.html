@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=sage.bt2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="3bf34aeb-96cf-4a4b-a843-7bbe01a9bcb1"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>SAGE - <em>SALVIA OFFICINALIS</em> - Buccal </h1>
+    
+    <p class="lightgreyBG">Help on accessing alternative formats, such as Portable Document Format (<abbr title="Portable Document Format">PDF</abbr>), Microsoft Word and PowerPoint (<abbr title="PowerPoint">PPT</abbr>) files, can be obtained in the <a href="http://www.hc-sc.gc.ca/home-accueil/help-aide/index-eng.php">alternate format help</a> section.</p>
+        
+        <div class="icon">
+            <a href="dbImages/mono_Sage_Buccal_EN.pdf" title="Sage - Salvia officinalis - Buccal">
+            <img alt="Monograph: Sage - Salvia officinalis - Buccal" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 131 KB)</a>
+        </div>
+        
+        <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+        
+        <p><strong>Notes</strong></p>
+            <ul>
+                <li>Text in parentheses is additional optional information which can be included on the label at the applicant's discretion.</li>
+                <li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+            </ul>
+    
+            
+    <h2>Date</h2>
+        <p>March 28, 2025</p>
+    
+                
+    <h2>Proper name(s), Common name(s), Source information</h2>
+    
+        <table class="subject">
+        
+            <caption>Table 1.  Proper name(s), Common name(s), Source information</caption>
+    
+            <thead>
+            
+                <tr>
+                    <th rowspan="2"  scope="col">Proper name(s)</th>
+                    <th rowspan="2"  scope="col">Common name(s)</th>
+                    <th colspan="3"  scope="colgroup" style="text-align: center;">Source information</th>
+                </tr>
+                
+                <tr>
+                    <th scope="col">Source material(s)</th>
+                    <th scope="col">Part(s)</th>
+                    <th scope="col">Preparation(s)</th>
+                </tr>
+                
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td><i>Salvia officinalis</i></td>
+    
+                    <td>
+                        <ul>
+                            <li>Common sage</li> 
+                            <li>Dalmatian sage</li>
+                            <li>Garden sage</li>
+                            <li>Sage</li>
+                        </ul>
+                    </td>
+    
+                    <td><i>Salvia officinalis</i></td>
+                    <td>Leaf</td>
+                    <td>Dry</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <p>References: Proper name: USDA 2024; Gardner and McGuffin 2013; Common names: USDA 2024; Gardner and McGuffin 2013; Source information: Blumenthal et al. 2000; BHP 1983; Cook 1869.</p>
+        
+    <h2>Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+        <p>Buccal</p>
+    
+    <h2>Dosage Form(s)</h2>
+        <p>Acceptable dosage forms when used according to the requirements indicated in this monograph: Gargle; Liquid; Loose; Mouthwash; Powder (Blumenthal 2000; ESCOP 1996; BHP 1983; Grieve 1971; Culbreth 1927; Felter 1922; Felter and Lloyd 1898).</p>
+    
+        
+    <h2>Use(s) or Purpose(s)</h2>
+        <p>(Traditionally) used in Herbal Medicine to help relieve minor mucous membrane inflammations of the  mouth and throat (including aphthous ulcers/canker sores) (BHC 2006; Mills and Bone 2005; Wichtl 2004; Blumenthal et al. 2000; ESCOP 1996; BHP 1983; Culbreth 1927; Felter 1922).</p>  
+        <p><strong>Notes</strong></p> 
+        <p><strong>For multi-ingredient products:</strong></p>
+        <ul>
+            <li>To prevent the product from being represented as a “traditional medicine”, any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1) both traditional and modern claims are present or 2) when claims originate from multiple systems of traditional medicine (e.g., Sage is traditionally used in Herbal Medicine to help relieve minor mucous membrane inflammations of the mouth and throat).</li>
+            <li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required.</li>
+        </ul>
+    
+    <h2>Dose(s)</h2>
+    
+        <h3>Sub-population(s)</h3>
+            <p>Adults 18 years and older</p>
+        
+        <h3>Quantity(ies)</h3>
+            <p><strong>Note:</strong> On the PLA form, quantities can be expressed as percentage weight by weight (% w/w), percentage weight by volume (% w/v) or percentage volume by volume (% v/v), depending on the product formulation. On the product label, quantities can also be expressed in other equivalent concentration units (e.g., mg/mL).</p>
+            <p><em>Loose/Powder dosage forms</em></p>
+            <p><strong>Methods of preparation: </strong>Dry, Powdered</p>
+            <p>100% dried leaf (Blumenthal 2000; ESCOP 1996)</p>
+            <p><strong>Note: </strong>Powdered and dried leaves must be prepared as an infusion by the consumer prior to use (see direction for use) and must provide an equivalent of 20 to 50 milligrams dried leaves per 1 milliliter of finished product.</p>
+            <p><em>Gargle/Mouthwash dosage forms</em></p>
+            <p><strong>Methods of preparation: </strong>Non-Standardized Liquid Extracts (Decoction, Decoction concentrate, Infusion, Infusion concentrate, Liquid extract)</p>
+            <p>4 - 100% dried leaf extract preparation in the finished product (Blumenthal 2000; ESCOP 1995; Williamson 1988; Grieve 1931; Cook 1869).</p>
+            <p><strong>Notes:</strong></p>
+            <ul>
+                <li>The extract ratio must be between 1:2 and 1:50. The formulation must be prepared in a way which is equivalent to a quantity of 20 to 50 milligrams crude dried leaves per 1 milliliter of finished product. For example, for an infusion prepared with a 1:20 w/w ratio, the concentration of infusion in the final formulation must be 40 to 100% (20 - 50 mg crude dried leaves * 20 w/v (dilution) = 400 - 1000 mg liquid extract in 1 mL finished product = 40 - 100% w/v extract preparation in the finished product).</li>
+                <li>Solvents permitted for liquid extract preparations other than decoctions and infusions are vinegar and water only, in a 1:1 mixture.</li>
+            </ul>
+            <p><strong>Method of preparation: </strong>Non-Standardized Ethanolic Liquid Extracts (Fluid extract, Tincture)</p>
+            <p>2 - 50% dried leaf extract preparation in the finished product (Mills and Bone 2005; Blumenthal 2000).</p>
+            <p><strong>Note: </strong>The extract ratio must be between 1:1 (fluid extract) and 1:10. The formulation must be prepared in a way which is equivalent to a quantity of 20 to 50 milligrams crude dried leaves per 1 milliliter of finished product. For example, for a tincture prepared with a 1:5 w/w ratio, the concentration of tincture in the finished product must be 2 to 5% (20 - 50 mg crude dried leaves * 5 w/w (dilution) = 100 - 250 mg liquid extract in 1 mL finished product = 10 - 25% w/v extract preparation in the finished product).</p>
+            <p><strong>Methods of preparation: </strong>Non-Standardized Dry Extracts (Extract dry)</p>
+            <p>0.5 - 2.5% dried leaf extract preparation in the finished product (Mills and Bone 2005; Blumenthal 2000; ESCOP 1996).</p>
+            <p><strong>Notes:</strong></p>
+            <ul>
+                <li>The extract ratio must be between 2:1 and 10:1. The formulation must be prepared in a way which is equivalent to a quantity of 20 to 50 milligrams crude dried leaves for 1 milliliter of finished product. For example, for a dry extract prepared with a 4:1 w/w ratio, the concentration of dry extract in the final formulation must be between 40 to 100% (20 - 50 mg crude dried leaves / 4 w/w (concentration) = 5 - 12.5 mg dry extract in 1 mL finished product = 0.5 - 1.25% w/w extract preparation in the finished product).</li>
+                <li>The minimum quantity of 0.5% still applies for more concentrated extracts (e.g., a product containing 0.5% of a dry extract contains 5 mg dry extract in 1 g finished product; 5 mg of a 10:1 w/w dry extract is equivalent to 50 mg crude dried leaves).</li>
+                <li>Solvents allowed for this method of preparation are water and/or ethanol, or a 1:1 mixture of vinegar and water.</li>
+            </ul>
+            <p><em>Liquid dosage form</em></p>
+            <p><strong>Method of preparation: </strong>Fluid extract</p>
+            <p>100% dried leaf extract preparation in the finished product (Blumenthal 2000).</p>
+            <p><strong>Note: </strong>The extract ratio must be 1:1 and the solvent must be ethanol or a mix of ethanol and water. Undiluted fluid extract preparations must be applied to the mouth with a brush or swab (see direction for use).</p>
+
+        <h3>Direction(s) for use</h3>
+            <p><i>Loose/Powder dosage forms</i></p>
+            <ul>
+                <li>Place [insert volume to be measured by consumer in order to obtain 2 to 5 grams dried leaves, e.g., ½ teaspoon] of product in ½ cup (125 mL) of boiling water, infuse for 10 minutes and strain. Let cool. Use 1 tablespoon (15 mL) as a mouthwash/gargle, 3 times a day (Keukenmeester et al. 2012; BHP 1983).</li>
+                <li>Do not swallow (Berardi et al. 2002).</li>
+            </ul>
+    
+            <p><i>Gargle/Mouthwash dosage forms</i></p>
+            <ul>
+                <li>Use 1 tablespoon (15 mL) as a mouthwash/gargle, 3 times a day (Keukenmeester et al. 2012; BHP 1983).</li>
+                <li>Do not swallow (Berardi et al. 2002).</li> 
+            </ul>
+    
+            <p><i>Liquid dosage form</i></p>
+            <ul>
+                <li>Apply directly to affected area(s) with a brush or swab, 3 times per day (Blumenthal et al. 2000).</li>
+                <li>Do not eat or drink for 30 to 60 minutes after applying.</li>
+            </ul>
+        
+    <h2>Duration(s) of Use</h2>
+        <p>No statement required.</p>
+        
+    <h2>Risk Information</h2>
+    
+        <h3>Caution(s) and warning(s)</h3>
+            <p>Stop use and ask a health care practitioner/health care provider/health care professional/ doctor/physician if symptoms worsen or last (for) more than 7 days.</p>
+            
+        <h3>Contraindication(s)</h3>
+            <p>No statement required.</p>
+            
+        <h3>Known adverse reaction(s)</h3>
+            <p>No statement required.</p>
+            
+    <h2>Non-medicinal ingredients</h2>
+        <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+        
+    <h2>Storage conditions</h2>
+        <p>Must be established in accordance with the requirements described in the Natural Health Products Regulations.</p>
+        
+    <h2>Specifications</h2>
+        <ul>
+            <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide. </li>
+            <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+        </ul>
+    <h2>Example of Product Facts:</h2>
+ 
+        <p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+         
+        <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/SAGE-BUCCAL_E.gif" alt="Product Facts Table" style="width:700px" /></p>
+
+    <h2>References Cited</h2>
+        <ul>
+            <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines. 3<sup>rd</sup> edition. London (GB): The Pharmaceutical Press; 2007.</li>
+            <li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self- Care, 13th edition. Washington (DC): American Pharmaceutical Association; 2002.</li>
+            <li>BHC 2006: Bradley PR, editor. British Herbal Compendium Volume 2: A Handbook of Scientific Information on Widely Used Plant Drugs - Companion to the British Herbal Pharmacopoeia. Bournemouth (GB): British Herbal Medicine Association; 2006.</li>
+            <li>BHP 1983: British Herbal Pharmacopoeia. Bournemouth (GB): The British Herbal Medicine Association; 1983.</li>
+            <li>Blumenthal M, Goldberg A, Brinckmann J, editors. Herbal Medicine: Expanded Commission E Monographs. Newton (MA): Integrative Medicine Communications; 2000.</li>
+            <li>Bone K. A Clinical Guide to Blending Liquid Herbs: Herbal Formulations for the Individual Patient. St. Louis (MI): Churchill Livingstone; 2003.</li>
+            <li>Cook WMH. The Physio-Medical Dispensatory: A Treatise on Therapeutics, Materia Medica, and Pharmacy, in Accordance with the Principles of Physiological Medication. Cincinnati (OH): WM.H. Cook; 1869. Reprint version by Medical Herbalism and medherb.com, Boulder (CO). [Accessed 2024 June 11]. Available from: http://www.henriettesherbal.com/eclectic/cook/index.html</li>
+            <li>Culbreth DMR. A Manual of Materia Medica and Pharmacology 7<sup>th</sup> ed. Philadelphia (PA): Lea & Febiger; 1927. Abridged and alphabetized by Michael Moore, director. The Southwest School of Botanical Medicine, Bisbee (AZ). [Accessed 2024 June 11]. Available from: http://www.swsbm.com/ManualsOther/Culbreth.html</li>
+            <li>ESCOP 1996: European Scientific Cooperative of Phytotherapy. Monographs on the Medicinal Uses of Plant Drugs. Exeter (GB): European Scientific Cooperative on Phytotheraphy; 1996.</li>
+            <li>Felter HW. The Eclectic Materia Medica, Pharmacology and Therapeutics. Cincinnati (OH): John K. Scudder; 1922. Reprint version by Michael Moore, The Southwest School of Botanical Medicine, Bisbee (AZ). [Accessed 2024 June 11]. Available from: http://www.swsbm.com/FelterMM/Felters.html</li>
+            <li>Felter HW, Lloyd JU. Kings American Dispensatory. 18th ed, 3rd revision. Cincinnati (OH): Ohio Valley Co.; 1898. Scanned version by Henriette Kress 1999-2011. [Accessed 2024 June 11]. Available from: http://www.henriettesherbal.com/eclectic/kings/index.html</li>
+            <li>Gardner Z, McGuffin M, editors. American Herbal Products Association's Botanical Safety Handbook. 2nd edition. Boca Raton (FL): Taylor and Francis Group; 2013.</li>
+            <li>Grieve, M. A Modern Herbal, Volume 1-2. New York (NY): Dover Publications, 1971 [Reprint of 1931 Harcourt, Brace & Company publication].</li>
+            <li>Keukenmeester RS, Slot DE, Rosema NAM, Van der Weijden GA. Determination of a comfortable volume of mouthwash for rinsing. International Journal of Dental Hygiene 2012;10(3):169-174.</li>
+            <li>Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone; 2005.</li>
+            <li>USDA 2024: United States Department of Agriculture Agricultural Research Service (USDA ARS), Germplasm Resources Information Network (GRIN) - Global. U.S. National Plant Germplasm System. [Accessed 2024 June 11]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+            <li>Wichtl M, editor. Herbal Drugs and Phytopharmaceuticals: A Handbook for Practice on a Scientific Basis. 3<sup>rd</sup> edition. Stuttgart (DE): Medpharm Scientific Publishers; 2004.</li>
+        </ul>
+    
+    <h2>References Reviewed</h2>
+        <ul>
+            <li>ASHP 2005: American Society of Health-System Pharmacists. American Hospital Formulary Service (AHFS) Drug Information. Philadelphia (PA): Lippincott Williams and Wilkins; 2005.</li>
+            <li>Azevedo MF, Lima CF, Fernandes-Ferreira M, Almeida MJ, Wilson JM, Pereira-Wilson C. Rosmarinic acid, major phenolic constituent of Greek sage herbal tea, modulates rat intestinal SGLT1 levels with effects on blood glucose. Mol Nutr Food Res 2011; 55(Suppl 1): S15025. </li>
+            <li>Bartram T. Bartram's Encyclopaedia of Herbal Medicine: The definitive guide to the herbal treatment of diseases. New York: Marlowe & Company; 1998.</li>
+            <li>Blumenthal M, Brusse WR, Goldberg A, Gruenwald J, Hall T, Riggins CW, Rister RS. The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines. Austin (TX): American Botanical Council in Cooperation with Integrative Medicine Communications; 1998 </li>
+            <li>Bommer S, Klein P, Suter A. First time proof of sage's tolerability and efficacy in menopausal women with hot flushes. Adv Ther 2011; 28(6): 490-500.</li>
+            <li>CNF 2023: Canadian Nutrient File, Food and Nutrition, Health Canada. [Accessed 2024 June 11] Available from: https://food-nutrition.canada.ca/cnf-fce</li>
+            <li>Christensen KB, Jorgensen M, Kotowska D, Petersen RK, Kristiansen K, Christensen LP. Activation of the nuclear receptor PPAR&gamma; by metabolities isolated from sage (<i>Salvia officinalis</i> L.). J Ethnopharmacol. 2010; 132(1): 127-33.</li>
+            <li>Duke JA, Bogenschutz-Godwin MJ, duCellier J, Duke P-AK. Handbook of Medicinal Herbs. 2<sup>nd</sup> ed. Boca Raton (FL): CRC Press LLC; 2002. </li>
+            <li>European Medicines Agency. Public statement on <i>Salvia officinalis</i> L., aetheroleum. London (GB): EMA Committee on Herbal Medicinal Products (HMPC); 19 October 2010. [Accessed 2024 July 04] Available from: https://www.ema.europa.eu/en/documents/public-statement/public-statement-salvia-officinalis-l-aetheroleum_en.pdf</li>
+            <li>European Medicines Agency. Community Herbal Monograph on <i>Salvia officinalis</i> L., Folium. London (GB): EMA Committee on Herbal Medicinal Products (HMPC); 20 September 2016. [Accessed 2024 July 04] Available from: https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-salvia-officinalis-l-folium-revision-1_en.pdf</li>
+            <li>European Medicines Agency. Community Herbal Monograph on <i>Salvia officinalis</i> L., Folium. London (GB): EMA Committee on Herbal Medicinal Products (HMPC); 20 September 2016. [Accessed 2024 July 04] Available from: https://www.ema.europa.eu/en/documents/herbal-opinion/opinion-hmpc-european-union-herbal-monograph-salvia-officinalis-l-folium-revision-1_en.pdf</li>
+            <li>Facciola S. Cornucopia II: A source book of edible plants. Vista (CA): Kampong Publications; 1998.</li>
+            <li>Gruenwald J, Brendler T, Jaenicke C, editors. PDR for Herbal Medicines. 4<sup>th</sup> ed. Montvale (NJ): Thomson Healthcare Inc; 2007. </li>
+            <li>Halicioglu O, Astarcioglu G, Yaprak I, Aydinlioglu H. Toxicity of <i>Salvia officinalis</i> in a newborn and a child: an alarming report. Pediatr Neurol 2011; 45(4): 259-60 </li>
+            <li>Kennedy DO, Scholey AB. The psychopharmacology of European herbs with cognitionenhancing properties. Curr Pharm Des 2006; 12(35): 4613-23 </li>
+            <li>Lima CF, Andrade PB, Seabra RM, Fernandes-Ferreira M, Pereira-Wilson C. The drinking of a <i>Salvia officinalis</i> infusion improves liver antioxidant status in mice and rats. J Ethnopharmacol 2005; 97(2): 383-9 </li>
+            <li>Lima CF, Azevedo MF, Araujo R, Fernandes-Ferreira M, Pereira-Wilson C. Metform-like effect of <i>Salvia officinalis</i> (common sage): is it useful in diabetes prevention? Br J Nutr 2006; 92(2): 326033</li>
+            <li>Newall CA, Anderson LA, Phillipson JD. Herbal Medicines: A Guide for Health-care Professionals. London (GB): Pharmaceutical Press; 1996 </li>
+            <li>Perry NS, Bollen C, Perry EK, Ballard C. Salvia for dementia therapy: review of pharmacological activity and pilot tolerability clinical trial. Pharmacol Biochem Behav 2003; 75(3): 651-9 </li>
+            <li>Remington JP, Woods HC, editors. 1918. The Dispensatory of the United States of America 20th edition. Abridged; botanicals only. Scanned by Michael Moore, director, The Southwest School of Botanical Medicine, Bisbee (AZ). [Accessed 2024 June 11]. Available from: http://www.swsbm.com/Dispensatory/USD-1918-complete.pdf  </li>
+            <li>Sá CM, Ramos AA, Azevedo MF, Lima CF, Fernandes-Derreira M, Pereira-Wilson C. Sage tea drinking improves lipid profile and antioxidant defences in humans. Int J Mol Sci 2009; 10(9): 3937-50 </li>
+            <li>Swanston-Flatt SK, Day C, Flatt PR, Gould BJ, Bailey CJ. Diabetes Res. 1989; 10(2): 69-73 Umezu T. Evaluation of the effects of plant-derived essential oils on central nervous system function using discrete shuttle-type conditioned avoidance response in mice. Phytotherapy Research 2012;26(6):884-891. </li>
+            <li>TGA 2020: Australian Therapeutic Goods TGA Approved Terminology for Medicines, Section 3 - Herbal Substances. March 2020. Symonston (AU): Australian Government Department of Health and Ageing, Therapeutic Good Administration. [Accessed 2024 June 11] Available from: https://www.tga.gov.au/sites/default/files/tga-approved-terminology-therapeutic-goods.pdf</li>
+            <li>Weiss RF. Fintelmann VF. Herbal Medicine. Second edition, revised and expanded. Stuggart (NY): Thieme; 2000. </li>
+            <li>World Health Organization. International Programme on Chemical Safety. Toxicological Evaluation of Certain Food Additives: WHO Food Additives Series 16. Geneva (CH): World Health Organization; 1981. [Accessed 2024 June 11]. Available from: http://www.inchem.org/documents/jecfa/jecmono/v16je01.htm  </li>
+            <li>World Health Organization. Summary of Evaluations Performed by the Joint FAO/WHO Expert Committee on Food Additives. Thujone. [Accessed 2024 June 11]. Available from: http://www.inchem.org/documents/jecfa/jeceval/jec_2273.htm  </li>
+            <li>World Health Organization. Summary of Evaluations Performed by the Joint FAO/WHO Expert Committee on Food Additives. Isothujone. [Accessed 2024 June 11]. Available from:  http://www.inchem.org/documents/jecfa/jeceval/jec_2273.htm</li>
+        </ul>
+    
+    
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

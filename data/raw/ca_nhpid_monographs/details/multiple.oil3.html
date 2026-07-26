@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=multiple.oil3\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="bcbe4261-196e-4e78-8732-899fbea92127"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+<h1>Fixed Oil Products - Oral</h1>
+    <div class="icon">
+        <a href="dbImages/Fixed_oil_Products_EN.pdf" title="Monograph: Oil Products, Fixed (English)"><img alt="Monograph: Oil Products, Fixed (English)" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif"  width="22" height="21" > (PDF Version - 409 K)</a>
+    </div>
+
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (<abbr title="Product Licence Application">PLA</abbr>s) for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+
+    <p><strong>Notes</strong></p>
+        <ul>
+            <li>This monograph only covers naturally-occurring fatty acids in each fixed oil, including concentrated oils, but excludes fixed oils spiked with additional fatty acids.</li>
+            <li>Essential/volatile oil preparations (e.g. those prepared by distillation) are not within the scope of this monograph.</li>
+            <li>Hydrogenated oils and partially hydrogenated oils are not within the scope of this monograph.</li>
+            <li>This monograph may be used to support single ingredient or multi-ingredient products containing any medicinal ingredient from Table 1.</li>
+            <li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+            <li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+        </ul>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+            <p>September 26, 2025</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceInformation">
+        <h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source Information</h2>
+            <table class="subject">
+                <caption>Table 1. Proper name(s), Common name(s) and Source information</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Proper name(s)</th>
+                        <th rowspan="2" scope="col">Common name(s)</th>
+                        <th colspan="2" scope="colgroup" style="text-align: center;">Source information</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Source material(s)</th>
+                        <th scope="col">Part(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Borago officinalis</em></td>
+                        <td>
+                            <ul>
+                                <li>Borage oil</li>
+                                <li>Borage seed oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Borago officinalis</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Camelina sativa</em></td>
+                        <td>False flax oil</td>
+                        <td><em>Camelina sativa</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cannabis sativa</em></td>
+                        <td>Hemp seed oil</td>
+                        <td><em>Cannabis sativa</em></td>
+                        <td>Non-viable Seed</td>
+                    </tr>
+                    <tr>
+                        <td>Canola Oil</td>
+                        <td>
+                            <ul>
+                                <li>Canola oil</li>
+                                <li>Colza oil</li>
+                                <li>Rapeseed oil</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><em>Brassica napus</em></li>
+                                <li><em>Brassica juncea</em></li>
+                                <li><em>Brassica rapa</em></li>
+                            </ul>
+                        </td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Carthamus tinctorius</em></td>
+                        <td>Safflower oil</td>
+                        <td><em>Carthamus tinctorius</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cocos nucifera</em></td>
+                        <td>Coconut oil</td>
+                        <td><em>Cocos nucifera</em></td>
+                        <td>Seed endosperm</td>
+                    </tr>
+                    <tr>
+                        <td>Cod liver oil</td>
+                        <td>
+                            <ul>
+                                <li>Cod liver oil</li>
+                                <li>Lecoris aselli oleum</li>
+                            </ul>
+                        </td>
+                        <td>Gadidae<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></td>
+                        <td>Liver</td>
+                    </tr>
+                    <tr>
+                        <td><em>Cucurbita pepo</em></td>
+                        <td>Pumpkin seed oil</td>
+                        <td><em>Cucurbita pepo</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td>Fish oil<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></td>
+                        <td>Fish oil</td>
+                        <td>
+                            <ul>
+                                <li>Ammodytidae</li>
+                                <li>Carangidae</li>
+                                <li>Clupeidae</li>
+                                <li>Engraulidae</li>
+                                <li>Gadidae<sup><a href="#ref1-3" style="text-decoration: none;">3</a></sup></li>
+                                <li>Osmeridae</li>
+                                <li>Salmonidae</li>
+                                <li>Scombridae</li>
+                            </ul>
+                        </td>
+                        <td>Whole</td>
+                    </tr>
+                    <tr>
+                        <td><em>Helianthus annuus</em></td>
+                        <td>Sunflower oil</td>
+                        <td><em>Helianthus annuus</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><em>Hippophae rhamnoides</em></td>
+                        <td>Sea buckthorn fruit oil</td>
+                        <td><em>Hippophae rhamnoides</em></td>
+                        <td>Fruit</td>
+                    </tr>            
+                    <tr>
+                        <td>Sea buckthorn seed oil</td>
+                        <td><em>Hippophae rhamnoides</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td>Krill oil</td>
+                        <td>Krill oil</td>
+                        <td>
+                            <ul>
+                                <li><em>Euphausia pacifica</em></li>
+                                <li><em>Euphausia superba</em></li>
+                            </ul>
+                        </td>
+                        <td>Whole</td>
+                    </tr>
+                    <tr>
+                        <td><em>Linum usitatissimum</em></td>
+                        <td>
+                            <ul>
+                                <li>Flax oil</li>
+                                <li>Flaxseed oil</li>
+                                <li>Linseed oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Linum usitatissimum</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Oenothera biennis</em></td>
+                        <td>
+                            <ul>
+                                <li>Evening primrose oil</li>
+                                <li>Primrose oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Oenothera biennis</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Olea europaea</em></td>
+                        <td>Olive oil</td>
+                        <td><em>Olea europaea</em></td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td><em>Prunus dulcis</em></td>
+                        <td>
+                            <ul>
+                                <li>Almond oil</li>
+                                <li>Sweet almond oil</li>
+                            </ul>
+                        </td>
+                        <td><em>Prunus dulcis</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Ribes nigrum</em></td>
+                        <td>Blackcurrant seed oil</td>
+                        <td><em>Ribes nigrum</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salvia hispanica</em></td>
+                        <td>Chia seed oil</td>
+                        <td><em>Salvia hispanica</em></td>
+                        <td>Seed</td>
+                    </tr>
+                    <tr>
+                        <td><em>Schizochytrium spp</em></td>
+                        <td>Schizochytrium oil</td>
+                        <td><em>Schizochytrium spp.</em></td>
+                        <td>Whole</td>
+                    </tr>
+                    <tr>
+                        <td>Seal oil</td>
+                        <td>Seal oil</td>
+                        <td>
+                            <ul>
+                                <li><em>Cystophora cristata</em></li>
+                                <li><em>Erignathus barbatus</em></li>
+                                <li><em>Halichoerus grypus</em></li>
+                                <li><em>Pagophilus groenlandicus</em></li>
+                                <li><em>Phoca vitulina</em></li>
+                                <li><em>Pusa hispida</em></li>
+                            </ul>
+                        </td>
+                        <td>Blubber</td>
+                    </tr>
+                    <tr>
+                        <td>Squid oil</td>
+                        <td>Squid oil</td>
+                        <td>
+                            <ul>
+                                <li><em>Todarodes pacificus</em></li>
+                                <li><em>Docidicus gigas</em></li>
+                                <li><em>Illex argentinus</em></li>
+                                <li><em>Illex illecebrosus</em></li>
+                            </ul>
+                        </td>
+                        <td>Whole</td>
+                    </tr>
+                    <tr>
+                        <td><em>Triticum aestivum</em></td>
+                        <td>Wheat germ oil</td>
+                        <td><em>Triticum aestivum</em></td>
+                        <td>Seed germ</td>
+                    </tr>
+                    <tr>
+                        <td><em>Vitis vinifera</em></td>
+                        <td>Grape seed oil</td>
+                        <td><em>Vitis vinifera</em></td>
+                        <td>Seed</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>References: Proper names: NHPID 2025&semi; Common names: NHPID 2025&semi; Source information: FCC 2023&semi; ITIS 2023&semi; USP-NF 2023&semi; Ph.Eur 2023&semi; Linnamaa et al. 2010&semi; Yurko-Mauro et al. 2010&semi; Dubois et al. 2007&semi; Callaway et al. 2005&semi; Hoffmann 2003&semi; Yang et al. 1999.</p>
+            <dl>
+                <dt><sup id="ref1-1">1</sup><strong>Cod liver oil:</strong></dt>
+                    <dd>The species common names and not the family could be listed on the label.</dd>
+                <dt><sup id="ref1-2">2</sup><strong>Fish oil:</strong></dt>
+                    <dd>Corresponds to oil from the whole body of one or more species of the families listed in Table 1 in its natural and/or concentrated triglyceride/triacylglycerol form and/or its concentrated esterified form (BP 2023; Ph.Eur. 2023; Froese and Pauly 2022). The species common names and not the family could be listed on the label.</dd>
+                <dt><sup id="ref1-3">3</sup><strong>Fish oil:</strong></dt>
+                    <dd>For fish oils including species of Gadidae as a source material, the vitamin A and D content should be tested to ensure that the daily maximum amounts meet the Multi-Vitamin/Mineral Supplements monograph for each age group.</dd>
+            </dl>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of administration</h2>
+            <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+            <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+            <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications. Although delayed release dosage forms are usually not supported by NNHPD&apos;s monographs, this monograph includes &lsquo;Capsule, soft, enteric-coated&rsquo; which is commonly used for products containing marine oils.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurposeAndDose">
+        <h2>Use(s) or Purpose(s) and Dose(s)</h2>
+            <h3>Subpopulation(s)</h3>
+                <p>Adults 18 years and older</p>
+            <h3>Quantity(ies)</h3>
+                <p>Refer to Tables 2 and 3.</p>
+            <table class="subject">
+                <caption>Table 2. Uses or purposes, associated daily dose and potency constituents (LA - Linoleic acid; ALA - Alpha-linolenic acid&semi; EPA - Eicosapentaenoic acid&semi; DHA - Docosahexaenoic acid&semi; DPA - Docosapentaenoic acid&semi; GLA-Gamma-linolenic acid; OA - Oleic acid)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Medicinal ingredient</th>
+                        <th scope="col">Methods of preparation</th>
+                        <th scope="col">Uses or Purposes</th>
+                        <th scope="col">Daily Dose<sup><a href="#ref2-1" style="text-decoration: none;">1</a></sup></th>
+                        <th scope="col">Potency Constituents</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Borage oil</td>
+                        <td>Non-standardized fixed oil</td>	
+                        <td>As per Borage oil monograph</td>
+                        <td>As per Borage oil monograph</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 5 g and LA, ALA, GLA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, GLA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Hemp seed oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA, ALA, GLA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, GLA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Canola oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*.</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">False flax Oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*.</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Safflower oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*.</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Coconut oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals and/or</li>
+                                <li>As per Table 3</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Cod liver oil</td>
+                        <td rowspan="2">Standardized fixed oil</td>
+                        <td>As per Cod liver oil monograph</td>
+                        <td>As per Cod liver oil monograph</td>
+                        <td rowspan="2">EPA, DHA, Vitamin A, Vitamin D</td>
+                    </tr>
+                    <tr>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 4 g and Minimum amounts of EPA and DHA as per Table 3* and Maximum amounts of EPA, DHA, Vitamin A and Vitamin D as per the Cod liver oil monograph</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Pumpkin seed oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA and/or OA as per Table 3*</td>
+                        <td>LA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Fish oil</td>
+                        <td rowspan="2">Standardized fixed oil</td>
+                        <td>As per Fish oil monograph</td>
+                        <td>As per Fish oil monograph</td>
+                        <td rowspan="2">EPA, DHA</td>
+                    </tr>
+                    <tr>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 10 g and EPA and DHA as per Table 3*</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sunflower oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals and/or</li>                     
+                                <li>As per Table 3</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g and LA and/or OA as per Table 3*</td>
+                        <td>LA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sea buckthorn seed oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 5 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 5 g and LA, ALA and/or OA as per Table 3*.</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sea buckthorn fruit oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 5 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 5 g and LA, ALA and/or OA as per Table 3*.</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Krill oil</td>
+                        <td rowspan="2">Standardized fixed oil</td>
+                        <td>As per Krill oil monograph</td>
+                        <td>As per Krill oil monograph</td>
+                        <td rowspan="2">EPA, DHA, DPA</td>
+                    </tr>
+                    <tr>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 4.1 g and EPA and DHA as per Table 3*</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Flaxseed oil</td>
+                        <td>Non-Standardized fixed oil</td>
+                        <td>As per Flaxseed oil monograph</td>
+                        <td>As per Flaxseed oil monograph</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 32 g and LA, ALA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Evening primrose oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>As per Evening primrose oil monograph</td>
+                        <td>As per Evening primrose oil monograph</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 6 g and LA, ALA, GLA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, GLA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Olive oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals and/or</li>
+                                <li>As per Table 3</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g and LA and/or OA as per Table 3*</td>
+                        <td>LA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Almond oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Blackcurrant seed oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 10.5 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 10.5 g and LA, ALA, GLA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, GLA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Chia seed oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 4.5 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 4.5 g and LA, ALA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Schizochytrium oil</td>
+                        <td rowspan="2">Standardized fixed oil</td>
+                        <td>Helps support cognitive/brain health/function</td>
+                        <td>DHA: 200-2,000 mg</td>
+                        <td rowspan="2">EPA, DHA</td>
+                    </tr>
+                    <tr>
+                        <td>As per Table 3 (except the use for cognitive health and/or brain function)</td>
+                        <td>Oil: up to 5 g and EPA and/or DHA as per Table 3*</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Seal oil</td>
+                        <td rowspan="2">Standardized fixed oil</td>
+                        <td>As per Seal oil monograph</td>
+                        <td>As per Seal oil monograph</td>
+                        <td rowspan="2">EPA, DHA, DPA</td>
+                    </tr>
+                    <tr>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 10 g and EPA and DHA (and DPA) as per Table 3*</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Squid oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 5 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 5 g and EPA and DHA as per Table 3*</td>
+                        <td>EPA, DHA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Wheat germ oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>
+                            <ul>
+                                <li>Source of antioxidants/Provides antioxidants</li>
+                                <li>Source of antioxidants/Provides antioxidants that help fight/protect (cell) against/reduce (the oxidative effect of/the oxidative damage caused by/cell damage caused by) free radicals and/or</li>
+                                <li>As per Table 3</li>
+                            </ul>
+                        </td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Grape seed oil</td>
+                        <td>Non-standardized fixed oil</td>
+                        <td>N/A</td>
+                        <td>Oil: up to 15 g</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Standardized fixed oil</td>
+                        <td>As per Table 3</td>
+                        <td>Oil: up to 15 g and LA, ALA and/or OA as per Table 3*</td>
+                        <td>LA, ALA, OA</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>References: NNHPD 2023; Zielinska et al. 2017&semi; Quinn et al. 2010&semi; Yang et al. 1999&semi; Leventhal et al. 1994.<br>
+                <sup id="ref2-1">1</sup>The amount of fixed oils can also be represented in volumetric amount (i.e., mL) based on the density information listed in Appendix 1.<br>
+                *The total amount of a specific fatty acid (e.g., LA) in the product should meet the minimum dose as per Table 3 to support a claim from this table. It is not required that each oil meets the minimum amount of specific fatty acids if the total amount of a fatty acid in the finished product meets it.
+            </p>
+            <table class="subject">
+                <caption>Table 3. Uses or Purposes based on potency constituents - fatty acids</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Potency constituents: Fatty acids<sup><a href="#ref3-1" style="text-decoration: none;">1</a></sup></th>
+                        <th scope="col">Uses or Purposes</th>
+                        <th scope="col">Minimum Daily Doses<sup><a href="#ref3-2" style="text-decoration: none;">2</a></sup></th>
+                    </tr>        
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LA</td>
+                        <td>
+                            <ul>
+                                <li>Source of linoleic acid (LA) for the maintenance of good health</li>
+                                <li>Source of omega-6 fatty acid for the maintenance of good health</li>
+                                <li>Source of an essential fatty acid for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>850 mg</td>
+                    </tr>
+                    <tr>
+                        <td>ALA</td>
+                        <td>
+                            <ul>
+                                <li>Source of alpha-linolenic acid (ALA) for the maintenance of good health</li>
+                                <li>Source of omega-3 fatty acid for the maintenance of good health</li>
+                                <li>Source of an essential fatty acid for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>80 mg</td>
+                    </tr>
+                    <tr>
+                        <td>LA + ALA</td>
+                        <td>Source of essential fatty acids for the maintenance of good health</td>
+                        <td>850 mg LA And 80 mg ALA</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">
+                            EPA + DHA (+ DPA<sup>3</sup>)
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Source of omega-3 fatty acids for the maintenance of good health</li>
+                                <li>Source of essential fatty acids for the maintenance of good health</li>
+                                <li>Source of eicosapentaenoic acid (EPA), (and) docosahexaenoic acid (DHA) (and docosapentaenoic acid (DPA)<sup><a href="#ref3-3" style="text-decoration: none;">3</a></sup>) for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>EPA + DPA: 100 mg</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Helps support/maintain cognitive health</li>
+                                <li>Helps support/maintain brain function</li>
+                            </ul>
+                        </td>
+                        <td>150 mg EPA + DHA including at least 100 mg DHA<sup><a href="#ref3-4" style="text-decoration: none;">4</a></sup></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Helps support/maintain (normal) heart/ cardiovascular health</li>
+                                <li>Helps support/maintain (normal) heart/ cardiovascular function</li>
+                            </ul>
+                        </td>
+                        <td>EPA + DHA: 200 mg</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Helps support/maintain normal (blood) triglyceride/triacylglycerol levels</li>
+                                <li>Helps reduce (blood) triglyceride(s)/ triacylglycerol(s) (levels)</li>
+                            </ul>
+                        </td>
+                        <td>EPA + DHA: 1000 mg </td>
+                    </tr>
+                    <tr>
+                        <td>EPA</td>
+                        <td>
+                            <ul>
+                                <li>Source of eicosapentaenoic acid (EPA) for the maintenance of good health</li>
+                                <li>Source of omega-3 fatty acid for the maintenance of good health</li>
+                                <li>Source of an essential fatty acid for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>100 mg</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">DHA</td>
+                        <td>
+                            <ul>
+                                <li>Source of docosahexaenoic acid (DHA) for the maintenance of good health</li>
+                                <li>Source of omega-3 fatty acid for the maintenance of good health</li>
+                                <li>Source of an essential fatty acid for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>100 mg</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Helps support/maintain eye health/function</li>
+                                <li>Helps support/maintain visual health/function</li>
+                            </ul>
+                        </td>
+                        <td>200 mg</td>
+                    </tr>
+                    <tr>
+                        <td>DPA</td>
+                        <td>
+                            <ul>
+                                <li>Source of docosapentaenoic acid (DPA) for the maintenance of good health</li>
+                                <li>Source of omega-3 fatty acid for the maintenance of good health</li>
+                                <li>Source of an essential fatty acid for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>100 mg</td>
+                    </tr>
+                    <tr>
+                        <td>GLA</td>
+                        <td>
+                            <ul>
+                                <li>Source of gamma-linoleic acid (GLA) for the maintenance of good health</li>
+                                <li>Source of omega-6 fatty acid for the maintenance of good health</li>
+                                <li>Source of an essential fatty acid for the maintenance of good health</li>
+                            </ul>
+                        </td>
+                        <td>100 mg</td>
+                    </tr>
+                    <tr>
+                        <td>OA</td>
+                        <td>Source of oleic acid (OA)</td>
+                        <td>100 mg</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <sup id="ref3-1">1</sup>For products making claims from this table, the potencies must be indicated for the relevant fatty acid constituents.<br>
+                <sup id="ref3-2">2</sup>References: NNHPD 2023&semi; EFSA 2010a&semi; EFSA 2010b&semi; EFSA 2009&semi; Simopolous 2007&semi; IOM 2006&semi; IOM 2002&semi; Simopolous 1999.<br>
+                <sup id="ref3-3">3</sup>Docosapentaenoic acid (DPA) can be included in the claim if the potency information for this constituent is also listed.<br>
+                <sup id="ref3-4">4</sup>For Schizochytrium oil, the specific quantity listed in Table 2 for the cognitive/brain health/function applies (i.e., DHA: 200 - 2000 mg per day).
+            </p>
+            <p><strong>Notes:</strong></p>
+                <ul>
+                    <li>The above uses can be combined on the product label (e.g. Helps reduce triglycerides and maintain cardiovascular health).</li>
+                    <li>The terms &lsquo;Helps&rsquo; or &lsquo;Helps to&rsquo; can be used interchangeably on the label.</li>
+                    <li>The following potency information is considered as additional information and can be included on the label: XX% or mg total omega-3 (or omega-6) fatty acids.</li>
+                </ul>
+            <h3>Direction(s) for use</h3>
+                <p>No statement required.</p>
+            <h3>Combination rules and restrictions</h3>
+                <ul>
+                    <li>A use or purpose statement is only acceptable if at least one medicinal ingredient/potency constituent associated with that statement is present at a dose at or above the minimum daily dose listed in Tables 2 and 3.</li>
+                    <li>Medicinal ingredients which do not meet the minimum daily dose for a use or purpose statement will be considered as acceptable complementary medicinal ingredients in product formulations.</li>
+                    <li>All medicinal ingredients included in this monograph may be combined with the following restrictions:
+                        <ul>
+                            <li>The combined maximum daily dose of oils in a product must not exceed 15.0 g per day (NNHPD 2023). Maximum daily doses for individual medicinal ingredient as per Table 2 apply.</li>
+                            <li>The combined maximum daily dose of EPA+DHA in a single product must not exceed 5,000 mg for 18 years and older per day (US FDA 2019&semi; EFSA 2012).</li>
+                        </ul>
+                    </li>
+                </ul>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of use</h2>
+	        <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+            <h3>Caution(s) and warnings(s)</h3>
+                <p><em>Products containing Hemp seed oil, Sea buckthorn seed oil, Krill oil, Blackcurrant seed oil and/or Squid oil</em></p>			
+                <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+                <p><em>Products containing fish oil</em></p>
+                <p><em>Pain of rheumatoid arthritis</em></p>			
+                <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms worsen.</p>
+                <p><em>Healthy mood balance</em></p>
+                <p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have psychological disorders such as anxiety or depression.</p>
+            <h3>Contraindication(s)</h3>
+                <p>No statements required.</p>
+            <h3>Known adverse reaction(s)</h3>
+                <p><em>Products containing Krill oil and/or Squid oil</em></p>
+                <p>Stop use if hypersensitivity/allergy occurs (HC 2017).</p>
+    </section>
+       
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+            <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in that database.</p>
+    </section>
+		
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+            <p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations.</em></p>
+            <p><em>Products containing Schizochytrium oil, False flax oil, Hemp seed oil, Cod liver oil, Fish oil, Sea buckthorn seed oil, Krill oil, Flaxseed oil, Black current seed oil, Chia seed oil, Seal oil and Squid Oil except those encapsulated</em></p>
+            <p>Refrigerate after opening (Wille and Gonus 1989).</p>
+            <p><em>All products (information for industry; not for labelling)</em></p>
+            <p>To be packaged in airtight container, protected from light (Ph.Eur. 2023; USP-NF 2023).</p>
+    </section>
+		
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+            <ul>
+                <li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+                <li>The medicinal ingredients must comply with the requirements outlined in the NHPID.</li>
+                <li>Cod liver oil, Fish oil, Krill oil, Seal oil and Squid oil are considered marine oils and therefore the requirements for the contaminants in marine oils of the NNHPD Quality of Natural Health Products Guide applies to products containing these ingredients apply.</li>
+                <li>The requirements for the oxidative stability in oils of the NNHPD Quality of Natural Health Products Guide applies to all products containing any medicinal ingredient on this monograph.</li>
+                <li>For all products indicating one or more of the potencies listed in the dose section, an assay must be performed in order to confirm the potency(ies).</li>
+            </ul>
+            <p><em>Fish oil from Gadidae species</em></p>
+            <p>For fish oils including Gadidae as a source material, the vitamin A and D content should be tested to ensure that their respective daily maximum amounts meet the Multi-Vitamin/Mineral Supplements monograph for each age group.</p>
+            <p><em>Hemp seed oil</em></p>
+            <p>This monograph is for Cannabis sativa seed oil from hemp only. Hemp is defined in the <em>Industrial Hemp regulations</em> (IHR) as “<em>a cannabis plant — or any part of that plant — in which the concentration of THC is 0.3% w/w or less in the flowering heads and leaves</em>”. Approved hemp cultivars are set out in the List of Approved Cultivars, published by the Government of Canada on its website, as amended from time to time. Additional cultivars may be permitted such as those on the Association of Official Seed Certifying Agencies (<a href="https://aosca.org/hemp-index/">AOSCA</a>) list which also meet the definition of Hemp set out in the IHR.</p>
+            <p>Products containing hemp seed oil must not contain more than 10 parts per million delta-9-Tetrahydrocannabinol (THC), or phytocannabinoids that have been isolated or concentrated, or synthetic duplicates of phytocannabinoids. The determination of the THC concentration must take into account the potential to convert delta-9-tetrahydrocannabinolic acid (THCA) to THC.</p>
+    </section>
+    
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>              
+            <p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html> Labelling of Natural Health Products</a> for more details.</strong><p>
+            <p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/FIXEDOIL_ORAL_E.gif" alt="Product Facts Table" style="width:700px"></p>  
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References cited</h2>
+            <ul>       
+                <li>Alamu OJ, Dehinbo O, Sulaiman AM. Production and testing of coconut oil biodiesel fuel and its blend. Leonardo Journal of Sciences. 2010&semi;16:95-104.</li>
+                <li>the Medicines and Healthcare products Regulatory Agency (MHRA)&semi; 2023.</li>
+                <li>Budavari, S., Ed. Evening primrose oil (monograph number 3953) and Linoleic acid (monograph number 5529). The Merck Index, 12th ed. Merck and Company, Inc., Whitehouse Station, NJ. CD-ROM version 12:1, Chapman & Hall Electronic Publishing Division 1996.</li>        
+                <li>Callaway J, Schwab U, Harvima I, Halonen P, Mykkanen O, Hyvonen P, Jarinen T. Efficacy of dietary hempseed oil in patients with atopic dermatitis. Journal of Dermatological Treatment 2005&semi;16:87-94.</li>        
+                <li>Delgado-Tob&oacute;n A.E, Aperador-Charparro W.A, Garc&iacute;a-C&aacute;ceres R. Evaluation of the lubricating power of sweet almond oil without additives. Revista DYNA 2018&semi;85(205):179-183.</li>
+                <li>Dubois V, Breton S, Linder M, Fanni J, Parmentier M. Fatty acid profiles of 80 vegetable oils with regard to their nutritional potential. European Journal of Lipid Science and Technology 2007&semi;109:710-732.</li>        
+                <li>Edwin E, Garcia R, Jane SR, Coimbra, Javier T. Thermophysical Properties of Cotton, Canola, Sunflower and Soybean Oils as a Function of Temperature. International Journal of Food Properties 2013&semi;16(7):1620-1629.</li>
+                <li>EFSA 2009. European Food Safety Authority. Scientific Opinion: Scientific opinion on the substantiation of health claims related to EPA, DHA, DPA and maintenance of normal blood pressure (ID 502), maintenance of normal HDL-cholesterol concentrations (ID 515), maintenance of normal (fasting) blood concentrations of triglycerides (ID 517), maintenance of normal LDL-cholesterol concentrations (ID 528, 698) and maintenance of joints (ID 503, 505, 507, 511, 518, 524, 526, 535, 537) pursuant to Article 13(1) of Regulation (EC) No 1924/2006. EFSA Panel of Dietetic Products, Nutrition and Allergies (NDA). EFSA Journal 2009&semi;7(9): 1263. [Accessed 2023 March 07]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/1263.pdf</li>        
+                <li>EFSA 2010a. Scientific Opinion on the substantiation of health claims related to docosahexaenoic acid (DHA) and maintenance of normal (fasting) blood concentrations of triglycerides (ID 533, 691, 3150), protection of blood lipids from oxidative damage (ID 630), contribution to the maintenance or achievement of a normal body weight (ID 629), brain, eye and nerve development (ID 627, 689, 704, 742, 3148, 3151), maintenance of normal brain function (ID 565, 626, 631, 689, 690, 704, 742, 3148, 3151), maintenance of normal vision (ID 627, 632, 743, 3149) and maintenance of normal spermatozoa motility (ID 628) pursuant to Article 13(1) of Regulation (EC) No 1924/20061. EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). EFSA Journal 2010; 8(10):1734. [Accessed 2023 March 07]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/1734.pdf.</li>        
+                <li>EFSA 2010b. Scientific Opinion on the substantiation of health claims related to eicosapentaenoic acid (EPA), docosahexaenoic acid (DHA), docosapentaenoic acid (DPA) and maintenance of normal cardiac function (ID 504, 506, 516, 527, 538, 703, 1128, 1317, 1324, 1325), maintenance of normal blood glucose concentrations (ID 566), maintenance of normal blood pressure (ID 506, 516, 703, 1317, 1324), maintenance of normal blood HDL-cholesterol concentrations (ID 506), maintenance of normal (fasting) blood concentrations of triglycerides (ID 506, 527, 538, 1317, 1324, 1325), maintenance of normal blood LDL-cholesterol concentrations (ID 527, 538, 1317, 1325, 4689), protection of the skin from photo-oxidative (UV-induced) damage (ID 530), improved absorption of EPA and DHA (ID 522, 523), contribution to the normal function of the immune system by decreasing the levels of eicosanoids, arachidonic acid-derived mediators and pro-inflammatory cytokines (ID 520, 2914), and &ldquo;immunomodulating agent&rdquo; (4690) pursuant to Article 13(1) of Regulation (EC) No 1924/2006. EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). EFSA Journal 2010&semi; 8(10):1796. [Accessed 2023 March 07]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/1796.pdf.</li>       
+                <li>EFSA 2012: European Food Safety Authority. Scientific Opinion: Scientific opinion on the tolerable upper intake level of eicosapentaenoic acid (EPA), docosahexaenoic acid (DHA) and docosapentaenoic acid (DPA). EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). EFSA Journal 2012&semi;10(7):2815. [Accessed 2023 March 07]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/2815.pdf.</li>        
+                <li>Firestone, D, editor. Physical and chemical characteristics of oils, fats, and waxes, 3rd edition. Urbana (IL): American Oil Chemists&apos; Society; 2013.</li>
+                <li>Fitzpatrick KC. 2005. Invitational Consultation on Fatty Acids. Winnipeg (MB): Nutritech Consulting.</li>        
+                <li>Food Chemicals Codex. Eighth edition. Rockville (MD): The United States Pharmacopeial Convention;&semi; 2023.</li>        
+                <li>HC 2017: Health Canada. Crustaceans and Molluscs. Priority food allergens. [Accessed 2023 March 07]. Available from: https://www.canada.ca/content/dam/hc-sc/documents/services/food-nutrition/reports-publications/food-safety/2017-crustaceans-crustaces-eng.pdf</li>        
+                <li>Hoffmann D. Medical Herbalism: The Science and Practice of Herbal Medicine. Rochester (VT): Healing Arts Press&semi; 2003.</li>        
+                <li>IOM 2006: Institute of Medicine. Otten JJ, Pitzi Hellwig J, Meyers LD, editors. Institute of Medicine Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press&semi; 2006.</li>       
+                <li>IOM 2002: Panel on Macronutrients, Panel on the Definition of Dietary Fiber, Subcommittee on Upper Reference Levels of Nutrients, Subcommittee on Interpretation and Uses of Dietary Reference Intakes, and the Standing Committee on the Scientific Evaluation of Dietary Reference Intakes. Food and Nutrition Board, Institute of Medicine. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty Acids, Cholesterol, Protein, and Amino Acids. Washington (DC): The National Academies Press&semi; 2002.</li>        
+                <li>ITIS 2023: Integrated Taxonomic Information System. Taxon Based on Biological Information System. Canadian Biodiversity Information Facility, Government of Canada. [Accessed 2023 March 07]. Available from: http://www.cbif.gc.ca/acp/eng/itis/search</li>        
+                <li>Karvonen HM, Aro A, Tapola NS, Salminen I, Uusitupa MIJ, Sarkkinen ES. Effect of ?-linolenic acid-rich Camelina sativa oil on serum fatty acid composition and serum lipids in hypercholesterolemic subjects. Metabolism 2002&semi;51(10):1253-1260.</li>            
+                <li>Kyte R.M. Technological studies on the processing of sea lions. Commercial fisheries review 1956&semi;18(6).</li>
+                <li>Lee H-Y, Haque A.S.M. T, Kim S-B, Lee T-B, Chun B-S. Effect of reaction parameters on conversion of krill (Euphausia superba) oil by immobilized lipase ethanolysis. Journal of Industrial and Engineering Chemistry 2014&semi;20(3):1097-1102.</li>
+                <li>Leventhal LJ, Boyce EG, Zurier RB. Treatment of rheumatoid arthritis with blackcurrant seed oil. British Journal of Rheumatology 1994&semi;33:847-852.</li>        
+                <li>Linnamaa P, Savolainen J, Koulu L, Tuomasjukka S, Kallio H, Yang B, Vahlberg T, Tahvonen R. Blackcurrant seed oil for prevention of atopic dermatitis in newborns: a randomized, double-blind, placebo-controlled trial. Clinical and Experimental Allergy: Journal of the British Society for Allergy and Clinical Immunology 2010&semi;40:1247-1255.</li>        
+                <li>Manisha K, Sharma P.C. Nutritional and antimicrobial property of seabuckthorn (Hippophae sp.) seed oil. Journal of Scientific and Industrial Research 2011&semi;70:1033-1036.</li>        
+                <li>Moovendhan M, Kavisri M, Vairamani S, Shanmugam A. Valorization of cephalopod liver viscera for oil production: chemical characteristics, nutritional profile and pharmacological activities. Biomass Conversion and Biorefinery 2023&semi;13:10011-10019.</li>        
+                <li><abbr title="Natural and Non-prescription Health Products Directorate">NNHPD</abbr> 2023: Non-prescription and Natural Health Products Directorate. Internal evidence on Natural Health Products.</li>        
+                <li>Petcu AC, Ple&#351;u V, Berbente Corneliu. Estimation methods for thermophysical properties of camelina sativa crude oil. University Polithenica of Bucharest Scientific Bulletin 2016&semi;78(1): 59-70.</li>
+                <li>Ph.Eur. 2023: European Pharmacopoeia. 11th edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM)&semi; 2023.</li>        
+                <li>Purnamayati L, Sumardianto, Romadhon, Dewi EN. Physical Blending Characteristics of Fish Oil and Sesame Oil. IOP Conference Series: Earth and Environmental Science 2019&semi;246:012054.</li>
+                <li>Quinn JF, Raman R, Thomas RG, Yurko-Mauro K, Nelson EB, Van Dyck C, Galvin JE, Emond J, Jack CR, Weiner M, Shinto L, Aisen PS. Docosahexaenoic acid supplementation and cognitive decline in Alzheimer&apos;s disease. Journal of the American Medical Association 2010&semi;304(17):1903-1911.</li>        
+                <li>Simopoulos AP. Omega-3 fatty acids and athletics. Current Sports Medicine Reports 2007&semi;6(4):230-236.</li>        
+                <li>Simopoulos AP. Essential fatty acids in health and chronic disease. The American Journal of Clinical Nutrition 1999&semi;70(3):560S-569S.</li>        
+                <li>Subrahmanyam MSR, Vedanayagam S, Venkatacharyulu P. Estimation of the sharma constant and thermoacoustic properties of vegetables oils. Journal of the American Oil Chemists&apos; Society. 1994&semi;71(8):901-905</li>
+                <li>Turck D, Castenmiller J, De Henauw S, Hirsch-Ernst K.I, Kearney J, Knutsen H.K, Maciuk A, Mangelsdorf I., McArdle H.J, Naska A, Pelaez C, Pentieva K., Siani A., Thies F., Tsabouri S. and Vinceti M. Safety of oil from Schizochytrium limacinum (strain FCC-3204) for use in food supplements as a novel food pursuant to Regulation (EU) 2015/2283. European Food Safety Authority Journal 2021&semi;19(1):6345.</li>
+                <li>US FDA 2019. FDA Announces new qualified health claims for EPA and DHA Omega-3 consumption and the risk of hypertension and coronary disease; and associated link: FDA Response to Petition for Qualified Health Claim that EPA and DHA Omega-3 Consumption May Reduce Risk of Hypertension. [Accessed 2024 February 22]. Available from: https://www.fda.gov/food/cfsan-constituent-updates/fda-announces-new-qualified-health-claims-epa-and-dha-omega-3-consumption-and-risk-hypertension-and</li>
+                <li>USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States Pharmacopeial Convention; https://online.uspnf.com.</li>        
+                <li>Uzunova M., Perifanova-Nemska M., Petkova Zh., Minkova St., Nikolova Kr. Physiochemical characteristics of chia seed oil from Peru. Bulgarian Chemical Communications 2019&semi;51:217-220.</li>
+                <li>Wille HJ, Gonus P. Preparation of fish oil for dietary applications. In: Galli C, Simopolous AP, editors. Dietary ?-3 and ?-6 Fatty Acids. Biological Effects and Nutritional Essentiality. New York (NY): Plenum Press&semi; 1989.</li>        
+                <li>Yang B, Kalimo KO, Matilla LM, Kallio SE, Katajisto JK, Peltola OJ, Kallio HP. Effects of dietary supplementation with sea buckthorn (Hippophae rhamnoides) seed and pulp oils in atopic dermatitis. Journal of Nutritional Biochemistry 1999&semi;10:622-630</li>        
+                <li>Yurko-Mauro K, McCarthy D, Rom D, Nelson EB, Ryan AS, Blackwell A, Salem N, Stedman M. Beneficial effects of docosahexaenoic acid on cognition in age-related cognitive decline, Alzheimer&apos;s and Dementia 2010&semi;6:1-9.</li>        
+                <li>Zhang Z-S, Wang L-J, Li D, Li S-J, &Ouml;zkan N. Characteristics of flaxseed oil from two different flax plants. International Journal of Food Properties 2011&semi;14:1286-1296.</li>
+                <li>Zielinska A, Nowak I. Abundance of active ingredients in sea-buckthorn oil. Lipids in Health and Disease 2017&semi;16(1):95.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References reviewed</h2>     
+            <ul>
+                <li>Ackman RG. The absorption of fish oils and concentrates. Lipids 1992&semi;27(11):858-862.</li>
+                <li>Aggett PJ, Antoine JM, Asp NG, Bellisle F, Contor L, Cummings JH, Howlett J, M&uuml;ller DJ, Persin C, Pijls LT, Rechkemmer G, Tuijtelaars S, Verhagen H. PASSCLAIM: consensus on criteria. European Journal of Nutrition 2005&semi;44(Suppl 1):i5-i30.</li>
+                <li>Agostini C, Massetto N, Biasucci G, Rottoli A, Bonvissuto M, Bruzzese MG, Giovannini M, Riva E. Effects of long-chain polyunsaturated fatty acid supplementation on fatty acid status and visual function in treated children with hyperphenylalaninemia. Journal of Pediatrics 2000;&semi;137(4):504-509.</li>
+                <li>Ahmed AA, Holub BJ. Alteration and recovery of bleeding times, platelet aggregation and fatty acid composition of individual phospholipids in platelets of human subjects receiving a supplement of cod liver oil. Lipids 1984&semi;19(8):617-624.</li>	
+                <li>Angerer P, Kothny W, St&ouml;rk S, von Schacky C. Effect of dietary supplementation with omega-3 fatty acids on progression of atherosclerosis in carotid arteries. Cardiovascular Research 2002&semi;54(1):183-190.</li>	
+                <li>Annuzzi G, Rivellese A, Capaldo B, Di Marino L, Iovine C, Marotta G, Riccardi G. A controlled study on the effects of n-3 fatty acids on lipid and glucose metabolism in non-insulin-dependent diabetic patients. Atherosclerosis 1991&semi;87(1):65-73.</li>
+                <li>Appel LJ, Miller ER, Seidler AJ, Whelton PK. Does supplementation of diet with &lsquo;fish oil&rsquo; reduce blood pressure? Archives of Internal Medicine 1993&semi;153(12):1429-1438.</li>
+                <li>Bairati I, Roy L, Meyer F. Effects of a fish oil supplement on blood pressure and serum lipids in patients treated for coronary artery disease. Canadian Journal of Cardiology 1992&semi;8(1):41-46.</li>
+                <li>Barnes J, Anderson LA, Philipson JD. Herbal Medicines, 3<sup>rd</sup> edition. London (UK): The Pharmaceutical Press&semi; 2007.</li>
+                <li>Beblo S, Reinhardt H, Muntau AC, Mueller-Felber W, Roscher AA, Koletzko B. 2001. Fish oil supplementation improves visual evoked potentials in children with phenylketonuria. Neurology 2001&semi;57(8):1488-1491.</li>
+                <li>Beblo S, Reinhardt H, Demmelmair H, Muntau AC, Koletzko B. Effects of fish oil supplementation on fatty acid status, coordination, and fine motor skills in children with phenylketonuria. Journal of Pediatrics 2007&semi;150(5):479-484.</li>
+                <li>Bender NK, Kraynak MA, Chiquette E, Linn WD, Clark GM, Bussey HI. Effects of marine fish oils on the anticoagulation status of patients receiving chronic warfarin therapy. Journal of Thrombosis and Thrombolysis 1998&semi;5(3):257-261.</li>
+                <li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association&semi; 2002.</li>
+                <li>Berbert AA, Kondo CR, Almendra CL, Matsuo T, Dichi I. Supplementation of fish oil and olive oil in patients with rheumatoid arthritis. Nutrition 2005&semi;21(2):131-136.</li>
+                <li>Birberg-Thornberg U, Karlsson T, Gustafsson PA, Duchen K. Nutrition and theory of mind - the role of polyunsaturated fatty acids (PUFA) in the development of theory of mind. Prostaglandins, Leukotrienes and Essential Fatty Acids 2006&semi;75(1):33-41.</li>
+                <li>Birch DG, Birch EE, Hoffman DR, Uauy RD. Retinal development in very-low-birth-weight infants fed diets differing in omega-3 fatty acids. Investigative Ophthalmology and Visual Science 1992&semi;33(8):2365-2376.</li>
+                <li>Birch EE, Castaneda YS, Wheaton DH, Birch DG, Uauy RD, Hoffman DR. Visual maturation of term infants fed long-chain polyunsaturated fatty-acid supplemented or control formula for 12 mo. The American Journal of Clinical Nutrition 2005&semi;81(4):871-879.</li>
+                <li>Birch EE, Garfield S, Hoffman DR, Uauy R, Birch DG. A randomized controlled trial of early long-chain polyunsaturated fatty acids and mental development in term infants. Developmental Medicine and Child Neurology 2000&semi;42(3):174-181.</li>
+                <li>Birch EE, Hoffman DR, Casta&ntilde;eda YS, Fawcett SL, Birch DG, Uauy RD. A randomized controlled trial of long-chain polyunsaturated fatty acid supplementation of formula in term infants after weaning at 6 wk of age. The American Journal of Clinical Nutrition 2002&semi;75(3):570-580.</li>
+                <li>Blonk MC, Bilo HJ, Nauta JJ, Popp-Snijders C, Mulder C, Donker AJ. Dose-response effects of fish-oil supplementation in healthy volunteers. The American Journal of Clinical Nutrition 1990&semi;52(1):120-127.</li>
+                <li>B&oslash;naa KH, Bjerve KS, Nord&oslash;y A. Docosahexaenoic and eicosapentaenoic acids in plasma phospholipids are divergently associated with high density lipoprotein in humans. Arteriosclerosis and Thrombosis 1992&semi;12(6):675-681.</li>
+                <li>Bonefeld-J&oslash;rgensen EC, M&oslash;ller SM, Hansen JC. Modulation of atherosclerotic risk factors by seal oil: a preliminary assessment. International Journal of Circumpolar Health 2001&semi;60(1):25-33.</li>
+                <li>Bonnema SJ, Jespersen LT, Marving J, Gregersen G. Supplementation with olive oil rather than fish oil increases small arterial compliance in diabetic patients. Diabetes Nutrition and Metabolism 1995&semi;8(2):81-87.</li>
+                <li>Boon H. Flax. In: Chandler F, editor. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association&semi; 2000.</li>
+                <li>Bourre JM. Effects of nutrients (in food) on the structure and function of the nervous system: update on dietary requirements for brain. Part 2: macronutrients. Journal of Nutrition, Health, and Aging 2006&semi;10(5):386-399.</li>
+                <li>Brady LM, Lovegrove SS, Lesauvage SV, Gower BA, Minihane AM, Williams CM, Lovegrove JA. 2004. Increased n-6 polyunsaturated fatty acids do not attenuate the effects of long-chain n-3 polyunsaturated fatty acids on insulin sensitivity or triacylglycerol reduction in Indian Asians.  The American Journal of Clinical Nutrition 79(6):983-991.</li>
+                <li>Brinker F. Herb Contraindication and Drug Interactions, 3<sup>rd</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2001.</li>
+                <li>Buckley MS, Goff AD, Knapp WE. Fish oil interaction with warfarin. Annals of Pharmacotherapy 2004&semi;38(1):50-53.</li>
+                <li>Buckley R, Shewring B, Turner R, Yaqoob P, Minihane AM. Circulating triacylglycerol and apoE levels in response to EPA and docosahexaenoic acid supplementation in adult human subjects. The British Journal of Nutrition 2004&semi;92(3):477-483.</li>
+                <li>Burgess JR, Stevens L, Zhang W, Peck L. Long-chain polyunsaturated fatty acids in children with attention-deficit hyperactivity disorder. The American Journal of Clinical Nutrition 2000&semi;71(Suppl l):327S-30S.</li>
+                <li>Cairns JA, Gill J, Morton B, Roberts R, Gent M, Hirsh J, Holder D, Finnie K, Marquis JF, Naqvi S, Cohen E. Fish oils and low-molecular-weight heparin for the reduction of restenosis after percutaneous transluminal coronary angioplasty. The EMPAR Study. Circulation 1996&semi;94(7):1553-1560.</li>
+                <li>Calder PC. n-3 polyunsaturated fatty acids, inflammation, and inflammatory diseases. The American Journal of Clinical Nutrition 2006&semi;83(Suppl 6):1505S-1519S.</li>
+                <li>Calder PC. n-3 fatty acids and cardiovascular disease: evidence explained and mechanisms explored. Clinical Science 2004&semi;107(1):1-11.</li>
+                <li>Calder PC. Polyunsaturated fatty acids, inflammation, and immunity. Lipids 2001&semi;36(9):1007-1024.</li>
+                <li>Cal&ograve; L, Bianconi L, Colivicchi F, Lamberti F, Loricchio ML, de Ruvo E, Meo A, Pandozi C, Staibano M, Santini M. N-3 fatty acids for the prevention of atrial fibrillation after coronary artery bypass surgery: a randomized, controlled trial. Journal of the American College of Cardiology 2005&semi;45(10):1723-1728.</li>
+                <li>Calon F, Lim GP, Yang F, Morihara T, Teter B, Ubeda O, Rostaing P, Triller A, Salem N Jr, Ashe KH, Frautschy SA, Cole GM. Docosahexaenoic acid protests from dendritic pathology in an Alzheimer&apos;s disease mouse model. Neuron 2004&semi;43(5):596-599.</li>
+                <li>Carlson SE. Arachidonic acid status of human infants: influence of gestational age at birth and diets with very long chain n-3 and n-6 fatty acids. The Journal of Nutrition 1996&semi;126(Suppl 4):1092S-1098S.</li>
+                <li>Carlson SE, Werkman SH, Peeples JM, Cooke RJ, Tolley EA. Arachidonic acid status correlates with first year growth in preterm infants. Proceedings of the National Academy of Sciences 1993&semi;90(3):1073-1077.</li>
+                <li>Carroll DN, Roth MT. Evidence for the cardioprotective effects of omega-3 fatty acids. The Annals of Pharmacotherapy 2002&semi;36(12):1950-1956.</li>
+                <li>Cazzola R, Russo-Volpe S, Miles EA, Rees D, Banerjee T PubMed, Roynette CE, Wells SJ, Goua M, Wahle KW PubMed, Calder PC PubMed, Cestaro B. Age- and dose-dependent effects of an eicosapentaenoic acid-rich oil on cardiovascular risk factors in healthy male subjects. Atherosclerosis 2007&semi;193(1):159-167.</li>
+                <li>Chee KM, Gong JX, Rees DM, Meydani M, Ausman L, Johnson J, Siguel EN, Schaefer EJ. Fatty acid content of marine oil capsules. Lipids 1990&semi;25(9):523-528.</li>
+                <li>Cleary MA, Feillet F, White FJ, Vidailhet M, MacDonald A, Grimsley A, Maurin N, de Baulny HO, Rutherford PJ. Randomised controlled trial of essential fatty acid supplementation in phenylketonuria. European Journal of Clinical Nutrition 2006&semi;60(7):915-920.</li>
+                <li>Cleland LG, French JK, Betts WH, Murphy GA, Elliot MJ. Clinical and biochemical effects of dietary fish oil supplements in rheumatoid arthritis. The Journal of Rheumatology 1988&semi;15(10):1471-1475.</li>
+                <li>Colter AL, Cutler C, Meckling KA. Fatty acid status and behavioural symptoms of Attention Deficit Hyperactivity Disorder in adolescents: a case-control study. Nutrition Journal 2008&semi;7:8.</li>
+                <li>Conklin SM, Gianaros PJ, Brown SM, Yao JK, Hariri AR, Manuck SB, Muldoon MF. Long-chain omega-3 fatty acid intake is associated positively with corticolimbic gray matter volume in healthy adults. Neuroscience Letter 2007&semi;421(3):209-212.</li>
+                <li>DeFrancesco CA, Connor SL. N-3 fatty acids from fish oil: Effects on plasma lipoproteins and hypertriglyceridemic patients. Annals of the New York Academy of Sciences 1993&semi;683:16-34.</li>
+                <li>Connor WE, Prince MJ, Ullmann D, Riddle M, Hatcher L, Smith FE, Wilson D. The hypotriglyceridemic effect of fish oil in adult-onset diabetes without adverse glucose control. Annals of the New York Academy of Science 1993&semi;683(1):337-340.</li>
+                <li>Conquer JA, Cheryk LA, Chan E, Gentry PA, Holub BJ. Effect of supplementation with dietary seal oil on selected cardiovascular risk factors and hemostatic variables in healthy male subjects. Thrombosis Research 1999&semi;96(3):239-250.</li>
+                <li>Cunnane S, Drevon CA, Harris B, Sinclair A, Spector A. Recommendations for intake of polyunsaturated fatty acids in healthy adults. Devon (GB): International Society for the Study of Fatty Acids and Lipids; 2004. [Accessed 2023 March 07]. Available from: https://www.ojp.gov/ncjrs/virtual-library/abstracts/recommendations-intake-polyunsaturated-fatty-acids-healthy-adults.</li>
+                <li>Dangour AD, Uauy R. N-3 long-chain polyunsaturated fatty acids for optimal function during brain development and ageing. Asian Pacific Journal of Clinical Nutrition 2008&semi;17(Suppl 1):185-188.</li>
+                <li>De Groot RHM, Hornstra G, Jolles J. Exploratory study into the relation between plasma phospholipid fatty acid status and cognitive performance. Prostaglandins, Leukotrienes, Essential Fatty Acids 2007&semi;76(3):165-172.</li>
+                <li>Deutch B, J&oslash;rgensen EB, Hansen JC. Menstrual discomfort in Danish women reduced by dietary supplements of omega-3 PUFA and B<sub>12</sub> (fish oil or seal oil capsules). Nutrition Research 2000&semi;20(5):621-631.</li>
+                <li>Dokholyan RS, Albert CM, Appel LJ, Cook NR, Whelton PK, Hennekens CH. A trial of omega-3 fatty acids for prevention of hypertension. The American Journal of Cardiology 2004&semi;93(8):1041-1043.</li>
+                <li>Dunstan JA, Mori TA, Barden A, Beilin LJ, Taylor AL, Holt PG, Prescott SL. Fish oil supplementation in pregnancy modifies neonatal allergen-specific immune responses and clinical outcomes in infants at high risk of atopy: a randomized, controlled trial. Journal of Allergy and Clinical Immunology 2003&semi;112(6):1178-1184.</li>
+                <li>Dunstan JA, Roper J, Mitoulas L, Hartmann PE, Simmer K, Prescott SL. The effect of supplementation with fish oil during pregnancy on breast milk immunoglobulin A, soluble CD14, cytokine levels, and fatty acid composition. Clinical and Experimental Allergy 2004&semi;34(8):1237-1242.</li>
+                <li>EFSA 2011. Scientific Opinion on the substantiation of health claims related to docosahexaenoic acid (DHA), eicosapentaenoic acid (EPA) and gamma-linolenic acid (GLA) and contribution to normal cognitive function (ID 532) and maintenance of normal bone (ID 642, 697, 1552) pursuant to Article 13(1) of Regulation (EC) No 1924/20061. EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA). EFSA Journal 2011&semi;9(6):2224. [Accessed 2023 March 07]. Available from: http://www.efsa.europa.eu/en/efsajournal/doc/2224.pdf.</li>
+                <li>Engeset D, Alsaker E, Lund E, Welch A, Khaw KT, Clavel-Chapelon F, Thi&eacute;baut A, Chaj&egrave;s V, Key TJ, Allen NE, Amiano P, Dorronsoro M, Tj&oslash;nneland A, Stripp C, Peeters PH, van Gils CH, Chirlaque MD, Nagel G, Linseisen J, Ock&eacute; MC, Bueno-de-Mesquita1 HB, Sacerdote C, Tumino R, Ardanaz E, S&aacute;nchez MJ, Panico S, Palli D, Trichopoulou A, Kalapothaki V, Benetou V, Quir&oacute;s JR, Agudo A, Overvad K, Bjerregaard L, Wirf&auml;lt E, Schulz M, Boeing H, Slimani N, Riboli E.  Fish consumption and breast cancer risk. The European Prospective Investigation into Cancer and Nutrition (EPIC). International Journal of Cancer 2006&semi;119(1):175-182.</li>
+                <li>Engler MM, Engler MB, Malloy MJ, Paul SM, Kulkarni KR, Mietus-Snyder ML. Effect of docosahexaenoic acid on lipoprotein subclasses in hyperlipidemic children (the EARLY study). American Journal of Cardiology 2005&semi;95(7):869-871.</li>
+                <li>Eritsland J. Safety considerations of polyunsaturated fatty acids. The American Journal of Clinical Nutrition 2000&semi;71(Suppl 1):197S-201S.</li>
+                <li>Eritsland J, Arnesen H, Seljeflot I, H&oslash;stmark AT. Long-term metabolic effects of n-3 polyunsaturated fatty acids in patients with coronary artery disease. The American Journal of Clinical Nutrition 1995&semi;61(4):831-836.</li>
+                <li>Eritsland J, Arnesen H, Seljeflot I, Kierulf P. Long-term effects of n-3 polyunsaturated fatty acids on haemostatic variables and bleeding episodes in patients with coronary artery disease. Blood Coagulation and Fibrinolysis 1995&semi;6(1):17-22.</li>
+                <li>Eritsland J, Seljeflot I, Abdelnoor M, Arnesen H, Torjesen PA. Long-term effects of n-3 fatty acids on serum lipids and glycemic control. Scandinavian Journal of Clinical and Laboratory Investigation 1994&semi;54(4):273-280.</li>
+                <li>European Food Safety Authority. Scientific substantiation of a health claim related to Docosahexaenoic Acid (DHA) and Arachidonic Acid (ARA) and support of the neural development of the brain and eyes pursuant to Article 14 of Regulation (EC) No 1924/2006. The EFSA Journal 2008&semi;794:1-11.</li>
+                <li>European Food Safety Authority. Scientific substantiation of a health claim related to &#945;-linolenic acid and linoleic acid and growth and development of children pursuant to Article 14 of Regulation (EC) No 1924/2006. The EFSA Journal 2008&semi;783:1-9.</li>
+                <li>Finnegan YE, Howarth D, Minihane AM, Kew S, Miller GJ, Calder PC, Williams CM. Plant and marine derived (n-3) polyunsaturated fatty acids do not affect blood coagulation and fibrinolytic factors in moderately hyperlipidemic humans. The Journal of Nutrition 2003&semi;133(7):2210-2213.</li>
+                <li>Fortin PR, Lew RA, Liang MH, Wright EA, Beckett LA, Chalmers TC, Sperling RI. Validation of a meta-analysis: the effects of fish oil in rheumatoid arthritis. The Journal of Clinical Epidemiology 1995&semi;48(11):1379-1390.</li>
+                <li>Frais AT. Depression and the causal role of specific memory system degenerations: Link may be supported by reported therapeutic benefits of omega 3 fatty acids. Medical Hypothesis 2007&semi;69(1):67-69.</li>
+                <li>Frangou S, Lewis M, McCrone P. Efficacy of ethyl-eicosapentaenoic acid in bipolar depression: randomised double-blind placebo-controlled study. British Journal of Psychiatry 2006&semi;188:46-50.</li>
+                <li>Franzen D, Schannwell M, Oette K, H&ouml;pp HW. A prospective, randomized, and double-blind trial on the effect of fish oil on the incidence of restenosis following PTCA. Catheterization and Cardiovascular Diagnosis 1993&semi;28(4):301-310.</li>
+                <li>Freese R, Mutanen N. Alpha-linolenic acid and marine long-chain n-3 fatty acids differ only slightly in their effects on hemostatic factors in healthy subjects. The American Journal of Clinical Nutrition 1997&semi;66(3):591-598.</li>
+                <li>Fregni F, Schachter SC, Pascual-Leone A. Review: Transcranial magnetic stimulation treatment for epilepsy: Can it also improve depression and vice versa? Epilepsy and Behavior 2005&semi;7(2):182-189.</li>
+                <li>Freund-Levi Y, Eriksdotter-Jonhagen M, Cederholm T, Basun H, Faxen-Irving G, Garlind A, Vedin I, Vessby B, Wahlund LO, Palmblad J. &#969;-3 fatty acid treatment in 174 patients with mild to moderate Alzheimer disease: omegAD study. Archives of Neurology 2006&semi;63(10):1402-1408.</li>
+                <li>Friedberg CE, Janssen MJ, Heine RJ, Grobbee DE. Fish oil and glycemic control in diabetes. A meta-analysis. Diabetes Care 1998&semi;21(4):494-500.</li>
+                <li>Fux M, Benjamin J, Nemets B. A placebo-controlled crossover trial of adjunctive EPA in OCD. Journal of Psychiatric Research 2004&semi;38(3):323-325.</li>
+                <li>Gadoth N. On fish oil and omega-3 supplementation in children: The role of such supplementation on attention and cognitive dysfunction. Brain and Development 2008&semi;30(5):309-312.</li>
+                <li>Gapinski JP, VanRuiswyk JV, Heudebert GR, Schectman GS. Preventing restenosis with fish oils following coronary angioplasty: a meta-analysis. Archives of Internal Medicine 1993&semi;153(13):1595-1601.</li>
+                <li>Government of Canada 2023a. Cannabis Act. [Accessed 2023 March 07]. Available from: https://laws-lois.justice.gc.ca/eng/acts/C-24.5/</li>
+                <li>Government of Canada 2023b. Industrial Hemp Regulations. [Accessed 2023 March 07]. Available from: https://laws-lois.justice.gc.ca/eng/regulations/SOR-2018-145/</li>
+                <li>Government of Canada 2023. Natural Health Products Regulations. [Accessed 2023 March 07]. Available from: https://laws-lois.justice.gc.ca/eng/regulations/SOR-2003-196/?showtoc=&instrumentnumber=SOR-2003-196</li>
+                <li>Geelen A, Brouwer IA, Schouten EG, Maan AC, Katan MB, Zock PL. Effects of n-3 fatty acids from fish on premature ventricular complexes and heart rate in humans. The American Journal of Clinical Nutrition 2005&semi;81(2):416-420.</li>
+                <li>Geleijnse JM, Giltay EJ, Grobbee DE, Donders AR, Kok FJ. Blood pressure response to fish oil supplementation: metaregression analysis of randomized trials. Journal of Hypertension 2002&semi;20(8):1493-1499.</li>
+                <li>Geusens P, Wouters C, Nijs J, Jiang Y, Dequeker J. Long-term effect of omega-3 fatty acid supplementation in active rheumatoid arthritis: a 12-month, double-blind, controlled study. Arthritis &amp; Rheumatism 1994&semi;37(6):824-829.</li>
+                <li>Goodnight SH, Harris WS, Connor WE. The effects of dietary omega-3 fatty acids on platelet composition and function in man: a prospective, controlled study. Blood 1981&semi;58(5):880-885.</li>
+                <li>Grimsgaard S, Bonaa KH, Hansen JB, Nord&oslash;y A. Highly purified eicosapentaenoic acid and docosahexaenoic acid in humans have similar triacylglycerol-lowering effects but divergent effects on serum fatty acids. The American Journal of Clinical Nutrition 1997&semi;66(3):649-659.</li>
+                <li>Guivernau N, Meza N, Barja P, Roman O. Clinical and experimental study on the long-term effect of dietary gamma-linolenic acid on plasma lipids, platelet aggregation, thromboxane formation, and prostacyclin production. Prostaglandins, Leukotrienes, and Essential Fatty Acids 1994&semi;51(5):311-316.</li>
+                <li>Haglund O, Luostarinen R, Wallin R, Wibell L, Saldeen T. The effects of fish oil on triglycerides, cholesterol, fibrinogen and malondialdehyde in humans supplemented with vitamin E. The Journal of Nutrition 1991&semi;121(2):165-169.</li>
+                <li>Hakkarainen R, Partonen T, Haukka J, Virtamo J, Albanes D, Lonnqvist J. Food and nutrient intake in relation to mental well being. Nutritional Journal 2004&semi;3:14. </li>
+                <li>Halldorsson TI, Meltzer HM, Thorsdottir I, Knudsen V, Olsen SF. Is high consumption of fatty fish during pregnancy a risk factor for fetal growth retardation? A study of 44,824 Danish pregnant women. American Journal of Epidemiology 2007&semi;166(6):687-696.</li>
+                <li>Halliwell B, Chirico S. Lipid peroxidation: its mechanism, measurement, and significance. The American Journal of Clinical Nutrition 1993&semi;57(Suppl 5):715S-725S.</li>
+                <li>Hamazaki T, Sawazaki S, Nagao Y, Kuwamori T, Yazawa K, Mizushima Y, Kobayashi M. Docosahexaenoic acid does not affect aggression of normal volunteers under nonstressful conditions. A randomized, placebo-controlled, double-blind study. Lipids 1998&semi;33(7):663-667.</li>
+                <li>Hamazaki T, Sawazaki S, Itomura M, Asaoka E, Nagao Y, Nishimura N, Yazawa K, Kuwamori T, Kobayashi M. The effect of docosahexaenoic acid on aggression in young adults: a placebo-controlled double-blind study. Journal Clinical Investigation 1996&semi;97(4):1129-1134.</li>
+                <li>Harel Z, Biro FM, Kottenhahn RK, Rosenthal SL. Supplementation with omega-3 polyunsaturated fatty acids in the management of dysmenorrhea in adolescents. The American Journal of Obstetrics and Gynecology 1996&semi;174(4):1335-1338.</li>
+                <li>Harris WS. International recommendations for consumption of long-chain omega-3 fatty acids. Journal of Cardiovascular Medicine 2007&semi;8(Suppl 1):S50-S52.</li>
+                <li>Harrison N, Abhyankar B. The mechanism of action of omega-3 fatty acids in secondary prevention post-myocardial infarction. Current Medical Research and Opinion 2005&semi;21(1):95-100.</li>
+                <li>Health Canada 2018. Health products containing cannabis or for use with cannabis: Guidance for the Cannabis Act, the Food and Drugs Act, and related regulations. [Accessed 2021 June 29]. Available from: https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/guidance-cannabis-act-food-and-drugs-act-related-regulations/document.html</li>
+                <li>Health Canada 2012. Novel food information - Camelina oil. [Accessed 2014 September 29].</li>
+                <li>Health Canada 2009. The Canadian Nutrient File. Ottawa (ON): Health Canada. [Accessed 2023 March 07]. Available from: http://www.hc-sc.gc.ca/fn-an/nutrition/fiche- nutri-data/cnf_aboutus-aproposdenous_fcen-eng.php.</li>
+                <li>He K, Song Y, Daviglus ML, Liu K, Van Horn L, Dyer AR, Goldbourt U, Greenland P. Fish consumption and incidence of stroke: a meta-analysis of cohort studies. Stroke 2004&semi;35(7):1538-1542.</li>
+                <li>Hendler SS, Rorvik D, editors. PDR for Nutritional Supplements, 1<sup>st</sup> edition. Montvale (NJ): Thomson PDR&semi; 2001.</li>
+                <li>Hibbeln JR, Ferguson TA, Blasbalg TL. Omega-3 fatty acid deficiencies in neurodevelopment, aggression and autonomic dysregulation: opportunities for intervention. International Review of Psychiatry 2006&semi;18(2):107-118.</li>
+                <li>Hjerkinn EM, Seljeflot I, Ellingsen I, Berstad P, Hjermann I, Sandvik L, Arnesen H. Influence of long-term intervention with dietary counselling, long-chain n-3 fatty acid supplements, or both on circulating markers of endothelial activation in men with long-standing hyperlipidemia. The American Journal of Clinical Nutrition 2005&semi;81(3):583-589.</li>
+                <li>Hodge L, Salome CM, Hughes JM, Liu-Brennan D, Rimmer J, Allman M, Pang D, Armour C, Woolcock AJ. Effect of dietary intake of omega-3 and omega-6 fatty acids on severity of asthma in children. European Respiratory Journal 1998&semi;11(2):361-365.</li>
+                <li>Hodge W, Barnes D, Schachter HM, Pan Y, Lowcock EC, Zhang L, Sampson M, Morrison A, Tran K, Miguelez M, Lewin G. Effects of Omega-3 Fatty Acids on Eye Health. Summary, Evidence Report/Technology Assessment No. 117. AHRQ No. 05-E008-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2005.</li>
+                <li>Hoffman DR, Locke KG, Wheaton DH, Fish GE, Spencer R, Birch DG. A randomized, placebo-controlled clinical trial of docosahexaenoic acid supplementation for X-linked retinitis pigmentosa. American Journal of Ophthalmology 2004&semi;137(4):704-718.</li>
+                <li>Holguin F, T&eacute;llez-Rojo MM, Lazo M, Mannino D, Schwartz J, Hern&aacute;ndez M, Romieu I. Cardiac autonomic changes associated with fish oil vs soy oil supplementation in the elderly. Chest 2005&semi;127(4):1102-1107.</li>
+                <li>Hornstra G. Essential fatty acids in mothers and their neonates. The American Journal of Clinical Nutrition 2000&semi;71(Suppl 5):1262S-1269S.</li>
+                <li>Horrobin DF. Essential fatty acid metabolism and its modification in atopic eczema. The American Journal of Clinical Nutrition 2000&semi;71(Suppl 1):367S-372S.</li>
+                <li>Horrobin DF. Interactions between n-3 and n-6 essential fatty acids (EFAs) in the regulation of cardiovascular disorders and inflammation. Prostaglandins, Leukotrienes, and Essential Fatty Acids 1991&semi;44(2):127-31.</li>
+                <li>Iacoviello L, Amore C, De Curtis A, Tacconi MT, de Gaetano G, Cerletti C, Donati MB. Modulation of fibrinolytic response to venous occlusion in humans by a combination of low-dose aspirin and n-3 polyunsaturated fatty acids. Arteriosclerosis, Thrombosis and Vascular Biology 1992&semi;12(10):1191-1197.</li>
+                <li>Ikeda I, Yoshida H, Tomooka M, Yosef A, Imaizumi K, Tsuji H, Seto A. Effects of long-term feeding of marine oils with different positional distribution of eicosapentaenoic and docosahexaenoic acids on lipid metabolism, eicosanoid production, and platelet aggregation in hypercholesterolemic rats. Lipids 1998&semi;33(9):897-904.</li>
+                <li>Innis SM. Dietary (n-3) fatty acids and brain development. The Journal of Nutrition 2007&semi;137(4):855-859.</li>
+                <li>IOM 2007: Committee on Nutrient Relationships in Seafood Selection to balance Benefits and Risks, Food and Nutrition Board, Institute of Medicine. Seafood Choices: Balancing Benefits and Risks. Washington (DC): National Academies Press&semi; 2007.</li>
+                <li>Iso H, Rexrode KM, Stampfer MJ, Manson JE, Colditz GA, Speizer FE, Hennekens CH. Intake of fish and omega-3 fatty acids and risk of stroke in women. JAMA: The Journal of the American Medical Association 2001&semi;285(3):304-312.</li>
+                <li>Johansen O, Brekke M, Seljeflot I, Abdelnoor M, Arnesen H. n-3 fatty acids do not prevent restenosis after coronary angioplasty: results from the CART study. Journal of the American College of Cardiology 1999&semi;33(6):1619-1626.</li>
+                <li>Johnson EJ, Chung HY, Caldarella SM, Snodderly DM. The influence of supplemental lutein and docosahexaenoic acid on serum, lipoproteins, and macular pigmentation. The American Journal of Clinical Nutrition 2008&semi;87(5):1521-1529.</li>
+                <li>Kalmijn S, van Boxten MP, Ocke M, Verschuren WMM, Kromhout D, Launer LJ. Dietary intake of fatty acids and fish in relation to cognitive performance at middle age. Neurology 2004&semi;62(2):275-280.</li>
+                <li>Kalmijn S, Feskens EJ, Launer LJ, Kromhout D. Polyunsaturated fatty acids, antioxidants, and cognitive function in very old men. American Journal of Epidemiology 1997&semi;145(1):33-41.</li>
+                <li>Kaul U, Sanghvi S, Bahl VK, Dev V, Wasir HS. Fish oil supplements for prevention of restenosis after coronary angioplasty. International Journal of Cardiology 1992&semi;35(1):87-93.</li>
+                <li>Kaur G, Cameron-Smith D, Garg M, Sinclair AJ. Docosapentaenoic acid (22:5n-3): a review of its biological effects. Progress in Lipid Research 2011&semi;50(1):28-34.</li>
+                <li>Kelley DS, Siegel D, Vemuri M, Mackey BE. Docosahexaenoic acid supplementation improves fasting and postprandial lipid profiles in hypertriglyceridemic men. The American Journal of Clinical Nutrition 2007&semi;86(2):324-333.</li>
+                <li>Kernoff PBA, Willis AL, Stone KJ, Davies JA, McNicol GP. Antithrombotic potential of dihomo-gamma-linolenic acid in man. British Medical Journal 1977&semi;2(6100):1441-1444.</li>
+                <li>Khan F, Elherik K, Bolton-Smith C, Barr R, Hill A, Murrie I, Belch JJ. The effects of dietary fatty acid supplementation on endothelial function and vascular tone in healthy subjects. Cardiovascular Research 2003&semi;59(4):955-962.</li>
+                <li>Kidd PM. Omega-3 DHA and EPA for cognition, behavior, and mood: clinical findings and structural-functional synergies with cell membrane phospholipids. Alternative Medical Review 2007&semi;12(3):207-227.</li>
+                <li>Kjeldsen-Kragh J, Lund JA, Riise T, Finnanger B, Haaland K, Finstad R, Mikkelsen K, F&oslash;rre &Oslash;. Dietary omega-3 fatty acid supplementation and naproxen treatment in patients with rheumatoid arthritis. Journal of Rheumatology 1992&semi;19(10):1531-1536.</li>
+                <li>Kotani S, Sakaguchi E, Warashina S, Matsukawa N, Ishikura Y, Kiso Y, Sakakibara M, Yoshimoto T, Guo J, Yamashima T. Dietary supplementation of arachidonic and docosahexaenoic acids improves cognitive dysfunction. Neuroscience Research 2006&semi;56(2):159-164.</li>
+                <li>Kremer JM, Bigauoette J, Michalek AV, Timchalk MA, Lininger L, Rynes RI, Huyck C, Zieminski J, Bartholomew LE. Effects of manipulation of dietary fatty acids on clinical manifestations of rheumatoid arthritis. The Lancet 1985&semi;1(8422):184-187.</li>
+                <li>Kremer JM, Lawrence DA, Jubiz W, DiGiacomo R, Rynes R, Bartholomew LE, Sherman M. Dietary fish oil and olive oil supplementation in patients with rheumatoid arthritis: clinical and immunologic effects. Arthritis and Rheumatism 1990&semi;33(6):810-819.</li>
+                <li>Kremer JM, Lawrence DA, Petrillo GF, Litts LL, Mullaly PM, Rynes RI, Stocker RP, Parhami N, Greenstein NS, Fuchs BR, Mathur A, Robinson DR, Sperling RI, Bigaouette J. Effects of high-dose fish oil on rheumatoid arthritis after stopping nonsteroidal anti-inflammatory drugs. Arthritis &amp; Rheumatism 1995&semi;38(8):1107-1114.</li>
+                <li>Krokan HE, Bjerve KS, Mork E. The enteral bioavailability of eicosapentaenoic acid and docosahexaenoic acid is as good from ethyl esters as from glyceryl esters in spite of lower hydrolytic rates by pancreatic lipase in vitro. Biochimica et Biophysica Acta 1993&semi;1168(1):59-67.</li>
+                <li>Kuhnt K, Degen C, Jaudszus A, Jahreis G. Searching for health beneficial n-3 and n-6 fatty acids in plant seeds. European Journal of Lipid Science &amp; Technology 2012&semi;114(2)&semi;153-160.</li>
+                <li>Kyrozis A, Psaltopoulou T, Stathopoulos P, Trichopoulos D, Vassilopoulos D, Trichopoulou A. Dietary lipids and geriatric depression scale score among elders: the EPIC-Greece cohort. Journal of Psychiatric Research 2009&semi;43(8):763-769.</li>
+                <li>Laidlaw M and Holub B. Effects of supplementation with fish oil-derived n-3 fatty acids and gamma-linolenic acid on circulating plasma lipids and fatty acid profiles in women. The American Journal of Clinical Nutrition 2003&semi;77(1):37-42.</li>
+                <li>Lau CS, McLaren M, Belch JJ. Effects of fish oil on plasma fibrinolysis in patients with mild rheumatoid arthritis. Clinical and Experimental Rheumatology 1995&semi;13(1):87-90.</li>
+                <li>Lauritzen L, Kjaer TM, Fruekilde MB, Michaelsen KF, Frokiaer H. Fish oil supplementation of lactating mothers affects cytokine production in 2 &frac12;-year-old children. Lipids 2005&semi;40(7):669-676.</li>
+                <li>Lawson LD, Hughes BG. Absorption of eicosapentaenoic acid and docosahexaenoic acid from fish oil triacylglycerols or fish oil ethyl esters co-ingested with a high-fat meal. Biochemical and Biophysical Research Communications 1988&semi;156(2):960-963.</li>
+                <li>Leaf A, Jorgensen MB, Jacobs AK, Cote G, Schoenfeld DA, Scheer J, Weiner BH, Slack JD, Kellett MA, Raizner AE, Weber PC, Mahrer PR, Rossouw JE. Do fish oils prevent coronary angioplasty? Circulation 1994&semi;90(5):2248-2257.</li>
+                <li>Leigh-Firbank EC, Minihane AM, Leake DS, Wright JW, Murphy MC, Griffin BA, Williams CM. Eicosapentaenoic acid and docosahexaenoic acid from fish oils: differential associations with lipid responses. The British Journal of Nutrition 2002&semi;87(5):435-445.</li>
+                <li>Leng GC, Lee AJ, Fowkes FG, Jepson RG, Lowe GD, Skinner ER, Mowat BF. Randomized controlled trial of gamma-linolenic acid and eicosapentaenoic acid in peripheral arterial disease. Clinical Nutrition 1998&semi;17(6):265-271.</li>
+                <li>Leventhal LJ, Boyce EG, Zurier RB. Treatment of rheumatoid arthritis with gammalinolenic acid. Annals of Internal Medicine 1993&semi;119(9):867-873.</li>
+                <li>Lewin GA, Schachter HM, Yuen D, Merchant P, Mamaladze V, Tsertsvadze A, Clifford T, Kourad K, Barnes D, Armour T, Yazdi F, MacNeil J, McGahern C, Senechal H, Fang M, Barrowman N, Sampson M, Morrison A, Elien D, Saint-Martin M, Sambasivan A, Lowcock E, Pan Y, Lemyre B. Effects of Omega-3 Fatty Acids on Child and Maternal Health. Summary, Evidence Report/Technology Assessment No. 118. AHRQ No. 05-E025-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2005.</li>
+                <li>Li D, Sinclair A, Wilson A, Nakkote S, Kelly F, Abedin L, Mann N, Turner A. Effect of dietary alpha-linolenic acid on thrombotic risk factors in vegetarian men. The American Journal of Clinical Nutrition 1999&semi;69(5):872-82.</li>
+                <li>Linday LA, Dolitsky JN, Shindledecker RD. Nutritional supplements as adjunctive therapy for children with chronic/recurrent sinusitis: pilot research. International Journal of Pediatric Otorhinolaryngology 2004&semi;68(6):785-793.</li>
+                <li>Llorente AM, Jensen CL, Voigt RG, Fraley JK, Berretta MC, Heird WC. Effect of maternal docosahexaenoic acid supplementation on postpartum depression and information processing. American Journal Obstetrics and Gynecology 2003&semi;188(5):1348-1353.</li>
+                <li>Logan AC. Review: omega-3 fatty acids and major depression: a primer for the mental health professional. Lipids in Health and Disease 2004&semi;3:25.</li>
+                <li>Lorenz R, Spengler U, Fischer S, Duhm J, Weber PC. Platelet function, thromboxanes formation and blood pressure control during supplementation of the Western diet with cod liver oil. Circulation 1983&semi;67(3):504-511.</li>
+                <li>Lovell CR, Burton JL, Horrobin DF. Treatment of atopic eczema with evening primrose oil [letter]. The Lancet 1981&semi;317(8214):278.</li>
+                <li>MacLean CH, Issa AM, Newberry SJ, Mojica WA, Morton SC, Garland RH, Hilton LG, Traina SB, Shekelle PG. Effects of Omega-3 Fatty Acids on Cognitive Function with Aging, Dementia, and Neurological Diseases. Summary, Evidence Report/Technology Assessment No. 114. AHRQ No. 05-E011-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2005.</li>
+                <li>MacLean CH, Mojica WA, Morton SC, Pencharz J, Hasenfeld Garland R, Tu W, Newberry SJ, Jungvig LK, Grossman J, Khanna P, Rhodes S, Shekelle P. Effects of Omega-3 Fatty Acids on Lipids and Glycemic Control in type II Diabetes and the Metabolic Syndrome and on Inflammatory Bowel Disease, Rheumatoid Arthritis, Renal Disease, Systemic Lupus Erythematosus, and Osteoporosis. Summary, Evidence Report/Technology Assessment No. 89. AHRQ No. 04-E012-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2004.</li>
+                <li>MacLean CH, Newberry SJ, Mojica WA, Issa A, Khanna P, Lim YW, Morton SC, Suttorp M, Tu W, Hilton LG, Garland RH, Traina SB, Shekelle PG. Effects of Omega-3 Fatty Acids on Cancer. Summary, Evidence Report/Technology Assessment No. 113. AHRQ No. 05-E010-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2005.</li>
+                <li>Maes M, Christophe A, Delanghe J, Altamura C, Neels H, Meltzer HY. Lowered omega-3 polyunsaturated fatty acids in serum phospholipids and cholesterol esters of depressed patients. Psychiatry Research 1999&semi;85(3):275-291.</li>
+                <li>Maes M, Mihaylova I, Kubera M, Bosmans E. Why fish oils may not always be adequate treatments for depression or other inflammatory illnesses: docosahexaenoic acid, an omega-3 polyunsaturated fatty acid, induces a Th-1-like immune response. Neuro Endocrinology Letters 2007&semi;28(6):875-880.</li>
+                <li>Maes M, Mihaylova I, Leunis JC. In chronic fatigue syndrome, the decreased levels of omega-3 poly-unsaturated fatty acids are related to lowered serum zinc and defects in T cell activation. Neuro Endocrinology Letters 2005&semi;26(6):745-751.</li>
+                <li>Maillard V, Bougnoux P, Ferrari P, Jourdan ML, Pinault M, Lavillonni&egrave;re M, Body G, Le Floch O, Chaj&egrave;s V. N-3 and n-6 fatty acids in breast adipose tissue and relative risk of breast cancer in a case-control study in Tours, France. International Journal of Cancer 2002&semi;98(1):78-83.</li>
+                <li>Makrides M. 2008. Commentary: outcomes for mothers and their babies: do n-3 long-chain polyunsaturated fatty acids and seafoods make a difference? Journal of the American Dietetic Association 2008&semi;108(10):1622-1626.</li>
+                <li>Manku MS, Horrobin DF, Morse N, Kyte V, Jenkins K. Reduced levels of prostaglandin precursors in the blood of atopic patients: defective delta-6-desaturase function as a biochemical basis for atopy. Prostaglandins, Leukotrienes and Medicine 1982&semi;9(6):615-628.</li>
+                <li>Manku MS, Horrobin DF, Morse NL, Wright S, Burton JL. Essential fatty acids in the plasma phospholipids of patients with atopic eczema. The British Journal of Dermatology 1984&semi;110(6):643-648.</li>
+                <li>Mann NJ, O&apos;Connell SL, Baldwin KM, Singh I, Meyer BJ. Effects of seal oil and tuna-fish oil on platelet parameters and plasma lipid levels in healthy subjects. Lipids 2010&semi;45(8):669-681.</li>
+                <li>Marangell LB, Martinez JM, Zboyan HA, Chong H, Puryear LJ. Omega-3 fatty acids for the prevention of postpartum depression: negative data from a preliminary, open-label pilot study. Depression and Anxiety 2004&semi;19(1):20-23.</li>
+                <li>Marangell LB, Martinez JM, Zboyan HA, Kertz B, Kim HF, Puryear LJ. A double-blind, placebo-controlled study of the omega-3 fatty acid docosahexaenoic acid in the treatment of major depression. American Journal Psychiatry 2003&semi;160(5):996-998.</li>
+                <li>Maresta A, Balduccelli M, Varani E, Marzilli M, Galli C, Heiman F, Lavezzari M, Stragliotto E, De Caterina R, ESPRIT Investigators. Prevention of postcoronary angioplasty restenosis by omega-3 fatty acids: main results of the Esapent for Prevention of Restenosis Italian Study (ESPRIT). American Heart Journal 2002&semi;143(6):E5.</li>
+                <li>Martin RE, Carter EP, Flick GJ, Davis LM, editors. Marine &amp; Freshwater Products Handbook. Lancaster (PA): Technomic Publishing Company, Inc&semi; 2000.</li>
+                <li>McCann JC, Ames BN. Is docosahexaenoic acid, an n-3 long-chain polyunsaturated fatty acid, required for development of normal brain function? An overview of evidence from cognitive and behavioral tests in humans and animals. The American Journal of Clinical Nutrition 2005&semi;82(2):281-295.</li>
+                <li>McFayden IJ, Forrest AP, Chetty U. Cyclical breast pain - some observations and the difficulties in treatment. The British Journal Clinical Practice 1992&semi;46(3):161-164.</li>
+                <li>McGregor L, Smith AD, Sidey M, Belin J, Zilkha KJ, McGregor JL. Effects of dietary linoleic acid and gamma linolenic acid on platelets of patients with multiple sclerosis. Acta Neurologica Scandinavica 1989&semi;80(1):23-27.</li>
+                <li>McGuffin M, Hobbs C, Upton R, Goldberg A, editors. American Herbal Products Association&apos;s Botanical Safety Handbook. Boca Raton (FL): CRC Press.&semi; 1997.</li>
+                <li>Meydani M, Natiello F, Goldin B, Free N, Woods M, Schaefer E, Blumberg JB, Gorbach SL. 1991. Effect of long-term fish oil supplementation on vitamin E status and lipid peroxidation in women. The Journal of Nutrition 1991&semi;121(4):484-491.</li>
+                <li>Mickleborough TD, Ionescu AA, Rundell KW. Omega-3 fatty acids and airway hyperresponsiveness in asthma. The Journal of Alternative and Complementary Medicine 2004&semi;10(6):1067-1075.</li>
+                <li>Mickleborough TD, Lindley MR, Ionescu AA, Fly AD. Protective effect of fish oil supplementation on exercise-induced bronchoconstriction in asthma. Chest 2006&semi;129(1):39-49.</li>
+                <li>Mihrshahi S, Peat JK, Webb K, Oddy W, Marks GB, Mellis CM. Effect of omega-3 fatty acid concentrations in plasma on symptoms of asthma at 18 months of age. Pediatric Allergy and Immunology 2004&semi;15(6):517-522.</li>
+                <li>Miles EA, Banerjee T, Calder PC. Self-reported health problems in young male subjects supplementing their diet with oils rich in eicosapentaenoic, gamma-linolenic and stearidonic acids. Prostaglandins, Leukotrienes, and Essential Fatty Acids 2006&semi;75(1):57-60.</li>
+                <li>Miller LG. Herbal medicinals: selected clinical considerations focusing on known or potential drug-herb interactions. Archives of Internal Medicine 1998&semi;158(20):2200-2211.</li>
+                <li>Miller CC, Tang W, Ziboh VA, Fletcher MP. Dietary supplementation with ethyl ester concentrates of fish oil (n-3) and borage oil (n-6) polyunsaturated fatty acids induces epidermal generation of local putative anti-inflammatory metabolites. The Journal of Investigative Dermatology 1991&semi;96(1):98-103.</li>
+                <li>Mills S, Bone K. 2000. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone&semi; 2000.</li>
+                <li>Montgomery C, Speake BK, Cameron A, Sattar N, Weaver LT. Maternal docosahexaenoic acid supplementation and fetal accretion. The British Journal of Nutrition 2003&semi;90(1):135-140.</li>
+                <li>Moore CS, Bryant SP, Mishra GD, Krebs JD, Browning LM, Miller GJ, Jebb SA. Oily fish reduces plasma triacylglycerols: a primary prevention study in overweight men and women. Nutrition 2006&semi;22(10):1012-1024.</li>
+                <li>Mori TA, Bao DQ, Burke V, Puddey IB, Beilin LJ. Docosahexaenoic acid but not eicosapentaenoic acid lowers ambulatory blood pressure and heart rate in humans. Hypertension 1999&semi;34(2):253-260.</li>
+                <li>Mori TA, Burke V, Puddey IB, Watts GF, O&apos;Neal DN, Best JD, Beilin LJ. Purified eicosapentaenoic and docosahexaenoic acids have differential effects on serum lipids and lipoproteins, LDL particle size, glucose, and insulin in mildly hyperlipidemic men. The American Journal of Clinical Nutrition 2000&semi;71(5):1085-1094.</li>
+                <li>Morris MC, Sacks F, Rosner B. Regulation of blood pressure: does fish oil lower blood pressure? A meta-analysis of controlled trials. Circulation 1993&semi;8(2):523-533.</li>
+                <li>Morse NL, Clough PM. A meta-analysis of randomized, placebo-controlled clinical trials of efamol evening primrose oil in atopic eczema. Where do we go from here in light of more recent discoveries? Current Pharmaceutical Biotechnology 2006&semi;7(6):24-503.</li>
+                <li>Morse PF, Horrobin DF, Manku MS, Stewart JC, Allen R, Littlewood S, Wright S, Burton J, Gould DJ, Holt PJ, Jansen CT, Mattila L, Meigel W, Dettke TH, Wexler D, Guenther L, Bordoni A, Patrizi A. Meta-analysis of placebo-controlled studies of the efficacy of epogam in the treatment of atopic eczema. Relationship between plasma essential fatty acid changes and clinical response. The British Journal of Dermatology 1989&semi;121(1):75-90.</li>
+                <li>Mueller BA, Talbert RL, Tegeler CH, Prihoda TJ. The bleeding time effects of a single dose of aspirin in subjects receiving omega-3 fatty acid dietary supplementation. Journal of Clinical Pharmacology 1991&semi;31(2):185-190.</li>
+                <li>Murphy MG, Wright V, Ackman RG, Horackova M. Diets enriched in menhaden fish oil, seal oil, or shark liver oil have distinct effects on the lipid and fatty-acid composition of guinea pig heart. Molecular and Cellular Biochemistry 1997&semi;177(1-2):257-269.</li>
+                <li>Murphy MG, Wright V, Scott J, Timmins A, Ackman RG. Dietary menhaden, seal, and corn oils differentially affect lipid and ex vivo eicosanoid and thiobarbituric acid-reactive substances generation in the guinea pig. Lipids 1999&semi;34(2):115-124.</li>
+                <li>Nagakura T, Matsuda S, Shichijyo K, Sugimoto H, Hata K. Dietary supplementation with fish oil rich in &#969;-3 polyunsaturated fatty acids in children with bronchial asthma. European Respiratory Journal 2000&semi;16(5):861-865.</li>
+                <li>Nakamura K, Kariyazono H, Komokata T, Hamada N, Sakata R, Yamada K. Influence of preoperative administration of &#969;-3 fatty acid-enriched supplement on inflammatory and immune responses in patients undergoing major surgery for cancer. Nutrition 2005&semi;21(6):639-645.</li>
+                <li>Nelson GJ, Schmidt PS, Bartolini GL, Kelley DS, Kyle D. The effect of dietary docosahexaenoic acid on platelet function, platelet fatty acid composition, and blood coagulation in humans. Lipids 1997&semi;32(11):1129-1136.</li>
+                <li>Nemets B, Osher Y, Belmaker RH. Omega-3 fatty acids and augmentation strategies in treating resistant depression. Essential Psychopharmacology 2004&semi;6(1):59-64.</li>
+                <li>Nemets B, Stahl Z, Belmaker RH. Addition of omega-3 fatty acid to maintenance medication treatment for recurrent unipolar depressive disorder. American Journal of Psychiatry 2002&semi;159(3):477-479.</li>
+                <li>Nettleton JA, Katz R. N-3 long-chain polyunsaturated fatty acids in type 2 diabetes: a review. Journal of the American Dietetic Association 2005&semi;105(3):428-440.</li>
+                <li>Nielsen GL, Faarvang KL, Thomsen BS, Teglbj&aelig;rg KL, Jensen LT, Hansen TM, Lervang HH, Schmidt EB, Dyerberg J, Ernst E. The effects of dietary supplementation with n-3 polyunsaturated fatty acids in patients with rheumatoid arthritis: a randomized, double blind trial. European Journal of Clinical Investigation 1992&semi;22(10):687-691.</li>
+                <li>Noaghiul S, Hibbeln JR. Review: Cross-national comparisons of seafood consumption and rates of bipolar disorders. The American Journal of Psychiatry 2003&semi;160(12):2222-2227.</li>
+                <li>Nordoy A, Barstad L, Connor WE, Hatcher L. Absorption of the n-3 eicosapentaenoic and docosahexaenoic acids as ethyl esters and triglycerides by humans. The American Journal of Clinical Nutrition 1991&semi;53(5):1185-1190.</li>
+                <li>Nordstr&#246;m DC, Honkanen VE, Nasu Y, Antila E, Friman C, Konttinen YT. Alpha-linolenic acid in the treatment of rheumatoid arthritis. A double-blind, placebo-controlled and randomized study: flaxseed vs. safflower seed. Rheumatology International 1995&semi;14(6):231-234.</li>
+                <li>O&apos;Connor GT, Malenka DJ, Olmstead EM. A meta-analysis of randomized trials of fish oil in prevention of restenosis following coronary angioplasty. American Journal of Preventive Medicine 1992&semi;8(3):186-192.</li>
+                <li>Ockerman P, Bachrack I, Glans S, Rassner S. Evening primrose oil as a treatment of premenstrual syndrome. Recent Advances in Clinical Nutrition 1989&semi;2:405-404.</li>
+                <li>Olafsdottir AS, Magnusardottir AR, Thorgeirsdottir H, Hauksson A, Skuladottir GV, Steingrimsdottir L. Relationship between dietary intake of cod liver oil in early pregnancy and birthweight. BJOG: An International Journal of Obstetrics and Gynaecology 2005&semi;112(4):424-429.</li>
+                <li>Oliwiecki S, Burton J.. Evening primrose oil and marine oil in the treatment of psoriasis. Clinical and Experimental Dermatology 1994&semi;19(2):127-129.</li>
+                <li>Oliwiecki S, Armstrong J, Burton J, Bradfield J. The effect of essential fatty acids on epidermal atrophy due to topical steroids. Clinical and Experimental Dermatology 1993&semi;18(4):326-328.</li>
+                <li>Olsen SF, Secher NJ. Low consumption of seafood in early pregnancy as a risk factor for preterm delivery: prospective cohort study. British Medical Journal 2002324(7335):447-450.</li>
+                <li>Onwude JL, Lilford RJ, Hjartardottir H, Staines A, Tuffnell D. A randomised double blind placebo controlled trial of fish oil in high risk pregnancy. British Journal of Obstetrics and Gynaecology 1995&semi;102(2):95-100.</li>
+                <li>Osher Y, Bersudsky U, Belmaker, RH. Omega-3 eicosapentaenoic acid in bipolar depression: report of a small open-label study. Journal of Clinical Psychiatry 2005&semi;66(6):726-729.</li>
+                <li>Pan Y, Lemyre B. Effects of Omega-3 Fatty Acids on Child and Maternal Health. Summary, Evidence Report/Technology Assessment No. 118. AHRQ No. 05-E025-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2005.</li>
+                <li>Parker G G, Gibson NA, Brotchie H, Heruc G, Rees AM, Hadzi-Pavlovic D. Review: omega-3 fatty acids and mood disorders. American Journal of Psychiatry 2006&semi;163(6):969-978.</li>
+                <li>Pashby NL, Mansel RE, Hughes LE, Hanslip J, Preece PE. A clinical trial of evening primrose oil in mastalgia. The British Journal of Surgery 1981&semi;68:801.</li>
+                <li>Paus T, Zijdenbos A, Worsley K, Collins DL, Blumenthal J, Giedd JN, Rapoport JL, Evans AC. Structural maturation of neural pathways in children and adolescents: in vivo study. Science 1999&semi;283(5409):1908-1911.</li>
+                <li>Pawlosky RJ, Bacher J, Salem N. Ethanol consumption alters electroretinograms and depletes neural tissues of docosahexaenoic acid in rhesus monkeys: nutritional consequences of a low n-3 fatty acid diet. Alcoholism: Clinical and Experimental Research 2001&semi;25(12):1758-1765.</li>
+                <li>Peat JK, Mihrshahi S, Kemp AS, Marks GB, Tovey ER, Webb K, Mellis CM, Leeder SR. Three-year outcomes of dietary fatty acid modification and house dust mite reduction in the Childhood Asthma Prevention Study. Journal of Allergy and Clinical Immunology 2004&semi;114(4):807-813.</li>
+                <li>Pedersen HS, Mulvad G, Seidelin KN, Malcom GT, Boudreau DA. N-3 fatty acids as a risk factor for haemorrhagic stroke. The Lancet 1999&semi;353(9155):812-813.</li>
+                <li>Peet M. Eicosapentaenoic acid in the treatment of schizophrenia and depression: rationale and preliminary double-blind clinical trial results. Prostaglandins, Leukotrienes and Essential Fatty Acids 2003&semi;69(6):477-485.</li>
+                <li>Picado C, Castillo JA, Schinca N, Pujades M, Ordinas A, Coronas A, Agusti-Vidal A. Effects of a fish oil enriched diet on aspirin intolerant asthmatic patients: a pilot study. Thorax 1988&semi;43(2):93-97.</li>
+                <li>Puolakka J, M&auml;k&auml;r&auml;inen L, Viinikka L, Ylikorkala O. Biochemical and clinical effects of treating the premenstrual syndrome with prostaglandin sysnthesis precursors. The Journal of Reproductive Medicine 1985&semi;30(3):149-153.</li>
+                <li>Puri BK. The safety of evening primrose oil in epilepsy. Prostaglandins, Leukotrienes and Essential Fatty Acids 2007&semi;77:101-103.</li>
+                <li>Radack K, Deck C, Huster G. The comparative effects of n-3 and n-6 polyunsaturated fatty acids on plasma fibrinogen levels: a controlled clinical trial in hypertriglyceridemic subjects. Journal of the American College of Nutrition 1990&semi;9(4):352-357.</li>
+                <li>Raitt MH, Connor WE, Morris C, Kron J, Halperin B, Chugh SS, McClelland J, Cook J, MacMurdy K, Swenson R, Connor SL, Gerhard G, Kraemer DF, Oseran D, Marchant C, Calhoun D, Shnider R, McAnulty J. Fish oil supplementation and risk of ventricular tachycardia and ventricular fibrillation in patients with implantable defibrillators: a randomized controlled trial. JAMA: The Journal of the American Medical Association 2005&semi;293(23):2884-2891.</li>
+                <li>Reddy BS. Omega-3 fatty acids in colorectal cancer prevention. International Journal of Cancer 2004&semi;112(1):1-7.</li>
+                <li>Reis GJ, Silverman DI, Boucher TM, Sipperly ME, Horowitz GL, Sacks FM, Pasternak RC. Effects of two types of fish oil supplements on serum lipids and plasma phospholipids fatty acids in coronary artery disease. The American Journal of Cardiology 1990&semi;15(66):1171-1175.</li>
+                <li>Richardson AJ. Clinical trials of fatty acid treatment in ADHD, dyslexia, dyspraxia and the autistic spectrum. Prostaglandins, Leukotrienes, and Essential Fatty Acids 2004&semi;70(4):383-390.</li>
+                <li>Richardson AJ, Montgomery P. The Oxford-Durham study: a randomized, controlled trial of dietary supplementation with fatty acids in children with developmental coordination disorder. Pediatrics 2005&semi;115(5):1360-1366.</li>
+                <li>Richardson AJ, Puri BK. A randomized double-blind, placebo-controlled study of the effects of supplementation with highly unsaturated fatty acids on ADHD-related symptoms in children with specific learning difficulties. Progress in Neuropsychopharmacology and Biological Psychiatry 2002&semi;26(2):233-239.</li>
+                <li>Richardson AJ, Puri BK. The potential role of fatty acids in attention-deficit/hyperactivity disorder. Prostaglandins, Leukotrienes and Essential Fatty Acids 2000&semi;63(1-2):79-87.</li>
+                <li>Rose DP, Connolly JM. Omega-3 fatty acids as cancer chemopreventive agents. Pharmacology &amp; Therapeutics 1999&semi;83(3):217-244.</li>
+                <li>Rosenstein ED, Kushner LJ, Kramer N, Kazandjian G. Pilot study of dietary fatty acid supplementation in the treatment of adult periodontitis. Prostaglandins, Leukotrienes, and Essential Fatty Acids 2003&semi;68(3):213-218.</li>
+                <li>Sagduyu K, Docucu ME, Eddy BA, Craigen G, Baldassano CF, Y1ldlz A. Omega-3 fatty acids decreased irritability of patients with bipolar disorder in an add-on, open label study. Nutrition Journal 2005&semi;4:6.</li>
+                <li>Sagredos AN. [Fatty Acid Composition of Fish Oil Capsules]. Fett Wissenschaft Technologie 1991&semi;93(5):184-191 [article in German].</li>
+                <li>Samieri C, Feart C, Letenneur L, Dartigues JF, Peres K, Auriacombe S, Peuchant E, Delcourt C, Barberger-Gateau P. Low plasma eicosapentaenoic acid and depressive symptomatology are independent predictors of dementia risk. The American Journal of Clinical Nutrition 2008&semi;88(3):714-721.</li>
+                <li>Sanders TA, Hinds A. The influence of a fish oil high in docosahexaenoic acid on plasma lipoprotein and vitamin E concentrations and haemostatic function in healthy male volunteers. The British Journal of Nutrition 1992&semi;68(1):163-173.</li>
+                <li>Sanders TA, Lewis F, Slaughter S, Griffin BA, Griffin M, Davies I, Millward DJ, Cooper JA, Miller GJ. Effect of varying the ratio of n-6 to n-3 fatty acids by increasing the dietary intake of alpha-linolenic acid, eicosapentaenoic and docosahexaenoic acid or both on fibrinogen and clotting factors VII and XII in persons aged 45-70 y: the OPTILIP Study. The American Journal of Clinical Nutrition 2006&semi;84(3)513-522.</li>
+                <li>Saynor R, Gillott T. Changes in blood lipids and fibrinogen with a note on safety in a long term study on the effects of n-3 fatty acids in subjects receiving fish oil supplements and followed for seven years. Lipids 1992&semi;27(7):533-538.</li>
+                <li>Schachter HM, Kourad K, Merali Z, Lumb A, Tran K, Miguelez M, Lewin G, Sampson M, Barrowman N, Senechal H, McGahern C, Zhang L, Morrison A, Shlik J, Pan Y, Lowcock EC, Gaboury I, Bradwejn J, Duffy A. Effects of Omega-3 Fatty Acids on Mental Health. Summary, Evidence Report/Technology Assessment No. 116. AHRQ No. 05-E022-2. Rockville (MD): Agency for Healthcare Research and Quality&semi; 2005.</li>
+                <li>Sch&auml;fer L, Kragballe K. Supplementation with evening primrose oil in atopic dermatitis: effect on fatty acids in neutrophils and epidermis. Lipids 1991&semi;26(7):557-560.</li>
+                <li>Schalin-Karrila M, Mattila L, Jansen CT, Uotila P. Evening primrose oil in the treatment of atopic eczema: effect on clinical status, plasma phospholipid fatty acids and circulating blood prostaglandins. The British Journal of Dermatology 1987&semi;117(1):11-19.</li>
+                <li>Schmidt EB, Lervang HH, Varming K, Madsen P, Dyerberg J. Long-term supplementation with n-3 fatty acids, I: effect on blood lipids, haemostasis and blood pressure. Scandinavian Journal of Clinical and Laboratory Investigation 1992&semi;52(3):221-228.</li>
+                <li>Schubert R, Kitz R, Beermann C, Rose MA, Baer PC, Zielen S, Boehles H. Influence of low-dose polyunsaturated fatty acids supplementation on the inflammatory response of healthy adults. Nutrition 2007&semi;23(10):724-730.</li>
+                <li>Scientific Advisory Committee on Nutrition, Foods Standard Agency, Department of Health. Advice on Fish Consumption: Benefits and Risks. London (GB): TSO (The Stationery Office); 2004. [Accessed 2023 March 07]. Available from: https://cot.food.gov.uk/sites/default/files/cot/fishreport200401.pdf.</li>
+                <li>Sharpe GR, Farr PM. Evening primrose oil and eczema. The Lancet 1990&semi;335(8690):667-668.</li>
+                <li>Shuster J. Black cohosh root? Chasteberry tree? Seizures! Hospital Pharmacy 1996&semi;31(12):1553-1554.</li>
+                <li>Silverman DI, Ware JA, Sacks FM, Pasternak RC. Comparison of the absorption and effect of on platelet function of a single dose of n-3 fatty acids given as fish or fish oil. The American Journal of Clinical Nutrition 1991&semi;53(5):1165-1170.</li>
+                <li>Silvers KM, Woolley CC, Hamilton FC, Watts PM, Watson RA. Randomised double-blind placebo-controlled trial of fish oil in the treatment of depression. Prostaglandins, Leukotrienes and Essential Fatty Acids 2005&semi;72(3):211-218.</li>
+                <li>Simmer K, Schulzke SM, Patole S. Longchain polyunsaturated fatty acid supplementation in preterm infants. Cochrane Database of Systematic Reviews Issue 1 Art. No.:CD000375. DOI: 10.1002/14651858.CD000375pub3&semi; 2008.</li>
+                <li>Simons LA, Parfitt A, Simons J, Balasubramaniam S. Effects of an ethyl ester preparation of fish oils (Himega) on lipids and lipoproteins in hyperlipidaemia. Australian and New Zealand Journal of Medicine 1990&semi;20(5):689-694.</li>
+                <li>Simopoulos AP, Leaf A, Salem N. Workshop on the essentiality of and recommended dietary intakes for omega-6 and omega-3 fatty acids. Journal of the American College of Nutrition 1999&semi;18(5):487-489.</li>
+                <li>Singh M. Essential fatty acids, DHA and human brain. Indian Journal of Pediatrics 2005&semi;72(3):239-242.</li>
+                <li>Sinn N, Bryan J. Effect of supplementation with polyunsaturated fatty acids and micronutrients on learning and behavior problems associated with child ADHD. Journal of Development and Behavioural Pediatrics 2007&semi;28(2):82-91.</li>
+                <li>Solfrizzi V, Colacicco AM, D&apos;Introno A, Capurso C, Del Parigi A, Capurso SA, Argentieri G, Capurso A, Panza F. Dietary fatty acids intakes and rate of mild cognitive impairment. The Italian Longitudinal Study on Aging. Experimental Gerontology 2006&semi;41(6):619-627.</li>
+                <li>Stehr SN, Heller AR. Omega-3 fatty acid effects on biochemical indices following cancer surgery. Clinica Chimica Acta 2006&semi;373(1-2):1-8.</li>
+                <li>Stevens LJ, Zentall SS, Deck JL, Abate ML, Watkins BA, Lipp SR, Burgess JR. Essential fatty acid metabolism in boys with attention-deficit hyperactivity disorder. The American Journal of Clinical Nutrition 1995&semi;62(4):761-768.</li>
+                <li>Stevens LJ, Zentall SS, Abate ML, Kuczek T, Burgess JR. Omega-3 fatty acids in boys with behavior, learning and health problems. Physiology and Behaviour 1996&semi;59(4-5):915-920.</li>
+                <li>Stevens L, Zhang W, Peck L, Kuczek T, Grevstad N, Mahon A, Zentall SS, Arnold LE, Burgess JR. EFA supplementation in children with inattention, hyperactivity, and other disruptive behaviors. Lipids 2003&semi;38(10):1007-1021.</li>
+                <li>Stoll AL, Severus WE, Freeman MP, Rueter S, Zboyan HA, Diamond E, Cress KK, Marangell LB. Omega 3 fatty acids in bipolar disorder: a preliminary double-blind, placebo-controlled trial. Archives of General Psychiatry 1999&semi;56(5):407-412.</li>
+                <li>Stone KJ, Willis AL, Hart WM, Kirtland SJ, Kernoff PB, McNicol GP. The metabolism of dihomo-&#947;-linolenic acid in man. Lipids 1979&semi;14(2):174-180.</li>
+                <li>Studer M, Briel M, Leimenstoll B, Glass TR, Bucher HC. Effect of different antilipidemic agents and diets on mortality: a systematic review. Archives of Internal Medicine 2005&semi;165(7):725-730.</li>
+                <li>Su KP, Huang S, Chiu C, Shen WW. Omega-3 fatty acids in major depressive disorder. A preliminary double-blind, placebo-controlled trial. European Neuropsychopharmacology 2003&semi;13(4):267-271.</li>
+                <li>Sundrarjun T, Komindr S, Archararit N, Dahlan W, Puchaiwatananon O, Angthararak S, Udomsuppayakul U, Chuncharunee S. Effects of n-3 fatty acids on serum interleukin-6, tumour necrosis factor-&#945;, and soluble tumour necrosis factor receptor p55 in active rheumatoid arthritis. The Journal of International Medical Research 2004&semi;32(5):443-454.</li>
+                <li>Svensson M, Schmidt EB, J&oslash;rgensen KA, Christensen JH. N-3 fatty acids as secondary prevention against cardiovascular events in patients who undergo chronic hemodialysis: a randomized, placebo-controlled intervention trial. Clinical Journal of the American Society of Nephrology 2006&semi;1(4):780-786.</li>
+                <li>SzajewskaH, Horvath A, Koletzko B. Effect of n-3 long-chain polyunsaturated fatty acid supplementation of women with low-risk pregnancies on pregnancy outcomes and growth measures at birth: a meta-analysis of randomized controlled trials. The American Journal of Clinical Nutrition 2006&semi;83(6):1337-1344.</li>
+                <li>Takemura Y, Sakurai Y, Honjo S, Tokimatsu A, Gibo M, Hara T, Kusakari A, Kugai N. The relationship between fish intake and the prevalence of asthma: the Tokorozawa Childhood Asthma and Pollinosis Study. Preventive Medicine 2002&semi;34(2):221-225.</li>
+                <li>Takezaki T, Inoue M, Kataoka H, Ikeda S, Yoshida M, Ohashi Y, Tajima K, Tominaga S. Diet and lung cancer risk from a 14-year population-based prospective study in Japan: with special reference to fish consumption. Nutrition and Cancer 2003&semi;45(2):160-167.</li>
+                <li>Takwale A, Tan E, Agarwal S, Barclay G, Ahmed I, Hotchkiss K, Thompson JR, Chapman T, Berth-Jones J. Efficacy and tolerability of borage oil in adults and children with atopic eczema: randomised, double blind, placebo controlled, parallel group trial. British Medical Journal 2003&semi;327(7428):1385.</li>
+                <li>Tanskanen A, Hibbeln JR, Tuomilehto J, Uutela A, Haukkala A, Viinamaki H, Lehtonen J, Vartiainen E. Fish consumption and depressive symptoms in the general population in Finland. Psychiatric Services 2001&semi;52(4):529-531.</li>
+                <li>Terry PD, Terry JB, Rohan TE. Long-chain (n-3) fatty acid intake and risks of cancers of the breast and the prostate: recent epidemiological studies, biological mechanisms, and directions for future research. The Journal of Nutrition 2004&semi;134(Suppl 12):3412S-3420S.</li>
+                <li>Theobald HE, Goodall AH, Sattar N, Talbot DC, Chowienczyk PJ, Sanders TA. Low-dose docosahexaenoic acid lowers diastolic blood pressure in middle-aged men and women. The Journal of Nutrition 2007&semi;137(4):973-978.</li>
+                <li>Theodoratou E, McNeill G, Cetnarskyj R, Farrington SM, Tenesa A, Barnetson R, Porteous M, Dunlop M, Campbell H. Dietary fatty acids and colorectal cancer: a case-control study. American Journal of Epidemiology 2007&semi;166(2):181-195.</li>
+                <li>Thies F, Nebe-von-Caron G, Powell JR, Yaqoob P, Newsholme EA, Calder PC. Dietary supplementation with eicosapentaenoic acid, but not with other long-chain n-3 or n-6 polyunsaturated fatty acids, decreases natural killer cell activity in healthy subjects aged &gt;55 y. The American Journal of Clinical Nutrition 2001&semi;73(3):539-548.</li>
+                <li>Tsekos E, Reuter C, Stehle P, Boeden G. Perioperative administration of parenteral fish oil supplements in a routine clinical setting improves patient outcome after major abdominal surgery. Clinical Nutrition 2004&semi;23(3):325-330.</li>
+                <li>Tulleken JE, Limburg PC, Muskiet FA, van Rijswijk MH. Vitamin E status during dietary fish oil supplementation in rheumatoid arthritis. Arthritis and Rheumatism 1990&semi;33(9):1416-1419.</li>
+                <li>Tulleken JE, Limburg PC, van Rijswijk MH. Fish oil and plasma fibrinogen. British Medical Journal 1988&semi;297(6648):615-616.</li>
+                <li>Turchini GM, NG WK, Tocher DR, editors. Fish oil replacement and alternative lipid sources in aquaculture feeds. Boca Raton (FL): Taylor and Francis Group&semi; 2011.</li>
+                <li>Uauy R, Hoffman DR, Mena P, Llanos A, Birch EE. Term infant studies of DHA and ARA supplementation on neurodevelopment: results of randomized controlled trials. Journal of Pediatrics 2003&semi;143(Suppl 4):S17-S25.</li>
+                <li>Vaddadi KS. The use of gamma-linolenic acid and linoleic acid to differentiate between temporal lobe epilepsy and schizophrenia. Prostaglandins and Medicine 1981&semi;6(4):375-379.</li>
+                <li>Vaisman N, Kaysar N, Zaruk-Adasha Y, Pelled D, Brichon G, Zwingelstein G, Bodennec J. Correlation between changes in blood fatty acid composition and visual sustained attention performance in children with inattention: effect of dietary n-3 fatty acids containing phospholipids. The American Journal of Clinical Nutrition 2008&semi;87(5):1170-1180.</li>
+                <li>Valagussa F, Franzosi MG, Geraci E, Mininni N, Nicolosi GL, Santini M, Tavazzi L, Vecchio C. Dietary supplementation with n-3 polyunsaturated fatty acids and vitamin E after myocardial infarction: results of the GISSI-Prevenzione trial. The Lancet 1999&semi;354(9177):447-455.</li>
+                <li>Valk EE, Hornstra G. Relationship between vitamin E requirement and polyunsaturated fatty acid intake in man: a review. International Journal for Vitamin and Nutrition Research 2000&semi;70(2):31-42.</li>
+                <li>van de Rest O, Geleijnse JM, Kok FJ, van Staveren WA, Hoefnagels WH, Beekman AT, de Groot LC. Effect of fish-oil supplementation on mental well-being in older subjects: a randomized, double-blind, placebo-controlled trial. The American Journal of Clinical Nutrition 2008&semi;88(3):706-713.</li>
+                <li>Van der Tempel H, Tulleken JE, Limburg PC, Muskiet FA, van Rijswijk MH. Effects of fish oil supplementation in rheumatoid arthritis. Annals of the Rheumatic Diseases 1990&semi;49(2):76-80.</li>
+                <li>van Gelder BM, Tijhuis M, Kalmijn S, Kromhout D. Fish consumption, n-3 fatty acids, and subsequent 5-y cognitive decline in elderly men: the Zutphen Elderly Study. The American Journal of Clinical Nutrition 2007&semi;85(4):1142-1147.</li>
+                <li>Van Gool CJ, Zeegers MP, Thijs C. Oral essential fatty acid supplementation in atopic dermatitis - a meta-analysis of placebo-controlled trials. The British Journal of Dermatology 2004&semi;150(4):728-740.</li>
+                <li>Veale D, Torley HI, Richards IM, O&apos;Dowd A, Fitzsimons C, Belch JJ, Sturrock RD. A double-blind placebo controlled trial of Efamol&reg; Marine on skin and joint symptoms of psoriatic arthritis. British Journal of Rheumatology 1994&semi;33(10):954-958.</li>
+                <li>Velho S, Marques-Vidal P, Baptista F, Camilo ME. Dietary intake adequacy and cognitive function in free-living active elderly: a cross-sectional and short-term prospective study. Clinical Nutrition 2008&semi;27(1)77-86.</li>
+                <li>Velzing-Aarts FV, van der Klis FR, van der Dijs FP, van Beusekom CM, Landman H, Capello JJ, Muskiet FA. Effect of three low-dose fish oil supplements, administered during pregnancy, on neonatal long-chain polyunsaturated fatty acid status at birth. Prostaglandins, Leukotrienes and Essential Fatty Acids 2001&semi;65(1):51-57.</li>
+                <li>Vericel E, Lagarde M, Mendy F, Courpron PH, Dechavanne M. Effects of gamma-linolenic acid intake on platelet functions in elderly people. Thrombosis Research 1986&semi;42(4):499-509.</li>
+                <li>Vidgren HM, &Aring;gren JJ, Schwab U, Rissanen T, H&auml;nninen O, Uusitupa MI. Incorporation of n-3 fatty acids into plasma lipid fractions, and erythrocyte membranes and platelets during dietary supplementation with fish, fish oil, and docosahexaenoic acid-rich oil among healthy young men. Lipids 1997&semi;32(7):697-705.</li>
+                <li>Visioli F, Ris&eacute; P, Barassi MC, Marangoni F, Galli C. Dietary intake of fish vs. formulations leads to higher plasma concentrations of n-3 fatty acids. Lipids 2003&semi;38(4):415-418.</li>
+                <li>Vlaandingerbroek H, Hornstra G, de Koning TJ, Smeitink JA, Bakker HD, de Klerk HBC, Rubio-Gozalbo ME. Essential polyunsaturated fatty acids in plasma and erythrocytes of children with inborn errors of amino acid metabolism. Molecular genetics and metabolism 2006&semi;88(2):159-165.</li>
+                <li>Voigt RG, Llorente AM, Jensen CL, Fraley JK, Berretta MC, Heird WC. A randomized, double-blind, placebo-controlled trial of docosahexaenoic acid supplementation in children with attention-deficit/hyperactivity disorder. The Journal of Pediatrics 2001&semi;139(2):189-196.</li>
+                <li>von Schacky C, Fischer S, Weber PC. Long-term effects of dietary marine &#969;-3 fatty acids upon plasma and cellular lipids, platelet function, and eicosanoid formation in humans. The Journal of Clinical Investigation 1985&semi;76(4):1626-1631.</li>
+                <li>von Schacky C, Weber PC. Metabolism and effects on platelet function of the purified eicosapentaenoic and docosahexaenoic acids in humans. The Journal of Clinical Investigation 1985&semi;76(6):2446-2450.</li>
+                <li>Wang W, Shinto L, Connor WE, Quinn JF. Nutritional biomarkers in Alzheimer&apos;s disease: the association between carotenoids, n-3 fatty acids, and dementia severity. Journal of Alzheimer&apos;s Disease: JAD 2008&semi;13(1):31-38.</li>
+                <li>Westenhoefer J, Bellisle F, Blundell JE, de Vries J, Edwards D, Kallus W, Milon H, Pannemans D, Tuijtelaars S, Tuorila H. PASSCLAIM - mental state and performance. European Journal of Nutrition 2004&semi;43(Suppl 2):ii85-ii117.</li>
+                <li>Wetzig N. Mastalgia: a 3 year Australian study. The Australian and New Zealand Journal of Surgery 1994&semi;64(5):321-329.</li>
+                <li>Whalley LJ, Fox HC, Wahle KW, Starr JM, Deary IJ. Cognitive aging, childhood intelligence, and the use of food supplements: possible involvement of n-3 fatty acids. The American Journal of Clinical Nutrition 2004&semi;80(6):1650-1657.</li>
+                <li>Whelton SP, He J, Whelton PK, Muntner P. Meta-analysis of observational studies of fish intake and coronary heart disease. The American Journal of Cardiology 2004&semi;93(9):1119-1123.</li>
+                <li>Whitaker D, Cilliers J, de Beer C. Evening primrose (Epogam&reg;) in the treatment of chronic hand dermatitis: disappointing therapeutic results. Dermatology 1996&semi;193(2):115-120.</li>
+                <li>Wiersema J, Le&oacute;n B. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press LLC; 1999.</li>
+                <li>Williamson EM, Evans FJ, Wren RC. Potter&apos;s New Cyclopaedia of Botanical Drugs and Preparations. Saffron Walden (UK): C.W. Daniel Company Limited&semi; 1988.</li>
+                <li>Wohl DA, Tien HC, Busby M, Cunningham C, Macintosh B, Napravnik S, Danan E, Donovan K, Hossenipour M, Simpson RJ Jr. Randomized study of the safety and efficacy of fish oil (omega-3 fatty acid) supplementation with dietary and exercise counselling for the treatment of antiretroviral therapy-associated hypertriglyceridemia. Clinical Infectious Diseases 2005&semi;41(10):1498-1504.</li>
+                <li>Wong KW. Clinical efficacy of n-3 fatty acid supplementation in patients with asthma. Journal of the American Dietetic Association 2005&semi;105(1):98-105.</li>
+                <li>Woodman RJ, Mori TA, Burke V, Puddey IB, Barden A, Watts GF, Beilin LJ. Effects of purified eicosapentaenoic acid and docosahexaenoic acid on platelet, fibrinolytic and vascular function in hypertensive type 2 diabetic patients. Atherosclerosis 2003&semi;166(1):85-93.</li>
+                <li>Woodman RJ, Mori TA, Burke V, Puddey IB, Watts GF, Beilin LJ. Effects of purified eicosapentaenoic and docosahexaenoic acids on glycemic control, blood pressure, and serum lipids in type 2 diabetic patients with treated hypertension. The American Journal of Clinical Nutrition 2002&semi;76(5):1007-1015.</li>
+                <li>Wright S, Burton JL. Oral evening primrose seed oil improves atopic eczema. The Lancet 1982&semi;(8308):1120-1122.</li>
+                <li>Yehuda S, Rabinovich S, Mostofsky DI. Modulation of learning and neuronal membrane composition in the rat by essential fatty acid preparation: time-course analysis. Neurochemical Research 1998&semi;23(5):627-634.</li>
+                <li>Yoon S, Lee J, Lee S. The therapeutic effect of evening primrose oil in atopic dermatitis patients with dry scaly skin lesions is associated with the normalization of serum gamma-interferon levels. Skin Pharmacology and Applied Skin Physiology 2002&semi;15(1):20-25.</li>
+                <li>Yoshimoto-Furuie K, Yoshimoto K, Tanaka T, Saima S, Kikuchi Y, Shay J, Horrobin DF, Echizen H. Effects of oral supplementation with evening primrose oil for six weeks on plasma essential fatty acid and uremic skin symptoms in hemodialysis patients. Nephron 1999&semi;81(2):151-159.</li>
+                <li>Yzebe D, Lievre M. Fish oils in the care of coronary heart disease patients: a meta-analysis of randomized controlled trials. Fundamental &amp; Clinical Pharmacology 2004&semi;18(5):581-592.</li>
+            </ul>
+    </section>
+
+    <section aria-labelledby="app1">
+        <h2 id="app1">Appendix I</h2>
+            <table class="subject">
+                <caption>Density of the fixed oils</caption>
+                <thead>
+                    <tr>
+                        <th>Fixed oils</th>
+                        <th>Parts</th>
+                        <th>Density</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Borage oil</td>
+                        <td>Seed </td>
+                        <td>0.908 - 0.925 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>False flax oil</td>
+                        <td>Seed</td>
+                        <td>0.918 - 0.927 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Hemp Seed Oil</td>
+                        <td>Non-viable seed</td>
+                        <td>0.920 - 0.930 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Canola Oil</td>
+                        <td>Seed</td>
+                        <td>0.917 - 0.923 g/mL*</td>
+                    </tr>
+                    <tr>
+                        <td>Safflower Oil</td>
+                        <td>Seed</td>
+                        <td>0.918 - 0.937 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Coconut Oil</td>
+                        <td>Seed endosperm</td>
+                        <td>0.913 - 0.919 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Cod liver oil</td>
+                        <td>Liver</td>
+                        <td>0.921 - 0.927 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Pumpkin seed oil</td>
+                        <td>Seed</td>
+                        <td>0.901 - 0.924 g/mL </td>
+                    </tr>
+                    <tr>
+                        <td>Fish oil</td>
+                        <td>Whole</td>
+                        <td>0.929 - 0.931 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Sunflower oil</td>
+                        <td>Seed</td>
+                        <td>0.919 - 0.920 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Sea buckthorn fruit oil</td>
+                        <td>Fruit</td>
+                        <td>0.913 - 0.919 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Sea buckthorn seed oil</td>
+                        <td>Seed</td>
+                        <td>0.913 - 0.919 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Krill oil</td>
+                        <td>Whole</td>
+                        <td>0.919 - 0.925 g/mL*</td>
+                    </tr>
+                    <tr>
+                        <td>Flaxseed oil</td>
+                        <td>Seed</td>
+                        <td>0.928 - 0.935 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Evening Primrose Oil</td>
+                        <td>Seed</td>
+                        <td>0.918 - 0.930 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Olive oil</td>
+                        <td>Fruit</td>
+                        <td>0.908 - 0.914  g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Almond Oil</td>
+                        <td>Seed</td>
+                        <td>0.913 - 0.919 g/mL*</td>
+                    </tr>
+                    <tr>
+                        <td>Blackcurrant seed oil</td>
+                        <td>Seed</td>
+                        <td>0.919 - 0.926 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Chia seed oil</td>
+                        <td>Seed</td>
+                        <td>0.922 - 0.927 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Schizochytrium Oil (algal oil)</td>
+                        <td>Whole</td>
+                        <td>0.944 - 0.950 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Seal oil</td>
+                        <td>Blubber</td>
+                        <td>0.921 - 0.927 g/mL*</td>
+                    </tr>
+                    <tr>
+                        <td>Squid oil</td>
+                        <td>Whole</td>
+                        <td>0.953 - 0.959  g/mL*</td>
+                    </tr>
+                    <tr>
+                        <td>Wheat germ oil</td>
+                        <td>Seed germ</td>
+                        <td>0.922 - 0.937 g/mL</td>
+                    </tr>
+                    <tr>
+                        <td>Grape Seed oil</td>
+                        <td>Seed</td>
+                        <td>0.921 - 0.924 g/mL</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>*When only a single value was found in the evidence, a variation of +/- 0.003 g/mL was applied to allow for potential variability.
+                <br>At least one of the following references was used to support density ranges: Moovendhan 2023; Turck et al. 2021; Purnamayati et al. 2019; Uzunova et al. 2019; Delgado-et al. 2018; Petcu et al. 2016; Lee et al. 2014; Edwin et al. 2013; Firestone 2013; Manisha and Sharma 2011; Zhang et al. 2011; Alamu et al. 2010; Budavari 1996; Subrahmanyam et al. 1994; Kyte R.M. 1956.
+            </p>
+    </section>
+    
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

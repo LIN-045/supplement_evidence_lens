@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=homeopathy2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="34177ec5-449a-40ed-a9e9-57f090062bfe"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+<h1>Homeopathy</h1>
+	<div class="icon">
+		<a href="dbImages/mono_homeopathy_english.pdf" title="Homeopathy"><img alt="Monograph: Homeopathy" height="21" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" style="position:relative; top:-2px" width="22"/> (PDF Version - 398 KB) </a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredients.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>By submitting a PLA referencing this monograph, the applicant is attesting that the product will comply fully with the recommended conditions of use outlined in this monograph. The conditions of use include methods of preparations, source materials, doses, durations of use, combinations of medicinal ingredients, and risk statements.</li>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>February 27, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<p><strong>Notes</strong>
+				<ul>
+					<li>The proper name(s), common name(s) and source material(s) must be as per the homeopathic monograph referenced as the Standard or Grade (please refer to the specifications).</li>
+					<li>The medicinal ingredient(s) must be a permitted substance with a homeopathic monograph in one of the Natural and Non-Prescription Health Products Directorate (NNHPD) accepted homeopathic pharmacopoeias (see section Standard or Grade below).</li>
+					<li>Medicinal ingredients considered &lsquo;imponderables&rsquo; are not included within the scope of this monograph. These are remedies prepared from energetic fields or conducted energy, such as electromagnetic waves, X-rays, heat, electricity, sunlight rays, sound vibration.</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route(s) of administration</h2>	<!-- CHECK IF ROUTE OR ROUTE(S) -->
+			<p>The acceptable route(s) of administration must be acceptable as per the NNHPD <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/evidence-homeopathic-medicines.html">Evidence for Homeopathic Medicines</a> guidance document.</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>The acceptable dosage forms are indicated in Table <a href="#ref1" style="text-decoration: none;">1</a> below.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p>Homeopathic preparation/remedy/medicine.</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>As specified below.</p>
+			<h3>Quantity(ies)</h3>
+				<p><strong>Notes</strong>
+					<ul>
+						<li>The maximum daily dosage has been listed in Table 1 to allow flexibility in terms of single dose and frequency per day. However, doses should generally be taken in 1 to 4 divided doses throughout the day.</li>
+						<li>A statement such as "or as recommended/indicated by a health care practitioner/health care provider/health care professional/doctor/physician" may be added after the recommended dose (e.g., Take 3 to 5 globules, 2 to 3 times per day, or as indicated by a health care practitioner).</li>
+						<li>Please refer to the Evidence for Homeopathic Medicines guideline for more information.</li>
+					</ul>
+				</p>
+				<table id="ref1" class="subject">
+					<caption>Table 1. Dosage forms and their recommended dose for each subpopulation (replaces the doses indicated in the Evidence for Homeopathic Medicines guideline)</caption>
+					<thead>
+						<tr>
+							<th>Dosage Form(s)</th>
+							<th>Subpopulation(s)</th>
+							<th>Maximum General Dosing per day</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="3">Globules (tube)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td rowspan="3">Up to 3 tubes<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Granules/Globules/Pellets/Pills (small, regular or large size)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td rowspan="3">Up to 15 granules/globules/pellets/pills</td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Tablets</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 16 tablets</td>
+						</tr>
+						<tr>
+							<td>Children 6-11 years</td>
+							<td>Up to 12 tablets</td>
+						</tr>
+						<tr>
+							<td>Children 1-5 years</td>
+							<td>Up to 9 tablets</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 6 tablets</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Oral drops</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 90 drops</td>
+						</tr>
+						<tr>
+							<td>Children 6-11 years</td>
+							<td>Up to 45 drops</td>
+						</tr>
+						<tr>
+							<td>Children 1-5 years</td>
+							<td>Up to 30 drops</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 15 drops</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Oral liquid (ampoule)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 3 ampoules<sup><a href="#ref1-2" style="text-decoration: none;">2</a></sup></td>
+						</tr>
+						<tr>
+							<td>Children 6-11 years</td>
+							<td>Up to 2 ampoules</td>
+						</tr>
+						<tr>
+							<td>Children 1-5 years</td>
+							<td>Up to 1.5 ampoules</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 1 ampoule</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Oral liquid, solution (dose)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td rowspan="4">Up to 3 dose<sup><a href="#ref1-3" style="text-decoration: none;">3</a></sup></td>
+						</tr>
+						<tr>
+							<td>Children 6-11 years</td>
+						</tr>
+						<tr>
+							<td>Children 1-5 years</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Syrup</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 30 mL<sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+							<td>Up to 15 mL<sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 7.5 mL<sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></td>
+						</tr>
+						<tr>
+							<td rowspan="3">Topical preparations such as cream, liniment, ointment, gel<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td rowspan="3">See directions for use</td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Spray (nasal)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 10 sprays per nostril</td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+							<td>Up to 4 sprays per nostril</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 4 sprays per nostril</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Eye drops</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 12 drops per eye</td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+							<td>Up to 12 drops per eye</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 2 drops per eye</td>
+						</tr>
+						<tr>
+							<td rowspan="3">Ear drops</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 12 drops per eye</td>
+						</tr>
+						<tr>
+							<td>Children 1-11 years</td>
+							<td>Up to 12 drops per eye</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 9 drops per eye</td>
+						</tr>
+						<tr>
+							<td rowspan="4">Suppositories (rectal)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 4 suppositories</td>
+						</tr>
+						<tr>
+							<td>Children 6-11 years</td>
+							<td>Up to 3 suppositories</td>
+						</tr>
+						<tr>
+							<td>Children 1-5 years</td>
+							<td>Up to 2 suppositories</td>
+						</tr>
+						<tr>
+							<td>Infants 0-11 months</td>
+							<td>Up to 2 suppositories</td>
+						</tr>
+						<tr>
+							<td>Suppositories/Pessaries (vaginal)</td>
+							<td>Adolescents 12-17 years and Adults 18 years and older</td>
+							<td>Up to 2 suppositories/pessaries</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<sup id="ref1-1">1</sup>Other equivalent units of measure, such as vial, single-dose tube/container, tube-dose, can be used on the label.<br/>
+					<sup id="ref1-2">2</sup>Other equivalent units of measure, such as, vial, drinkable vial, can be used on the label.<br/>
+					<sup id="ref1-3">3</sup>Other equivalent units of measure, such as drinkable unidose, can be used on the label.<br/>
+					<sup id="ref1-4">4</sup>The units of measure to be indicated on the label for measuring the volume of syrup may be, for example, a teaspoon (5 mL), a tablespoon (15 mL) where applicable, or a measuring cup provided with the product.<br/>
+					<sup id="ref1-5">5</sup>Other topical dosage forms used in Homeopathy are also acceptable if available in the Natural Health Products Ingredient Database.
+				</p>
+			<h3>Potency</h3>
+				<p>The homeopathic potency of each medicinal ingredient must be at or above the minimum potency specified in the Natural Health Products Ingredients Database (NHPID).</p>
+				<p><strong>Notes</strong>
+					<p>The minimum potencies indicated in the NHPID are generally based on the following unless specific safety concerns have been identified:
+						<ul>
+							<li>The OTC limit for HPUS&semi;</li> 
+							<li>4D for HAB&semi;</li>
+							<li>12 CH if attesting to an homeopathic pharmacopoeia which does not have a corresponding HPUS/HAB/GHP pharmacopoeia.</li>
+						</ul>
+					</p>
+			<h3>Method(s) of preparation</h3>
+				<p>The method(s) of preparation must be as per the homeopathic monograph referenced as the Standard or Grade (please refer to the specifications). It is also acceptable to use another method from an NNHPD accepted homeopathic pharmacopoeia not referenced as the Standard or Grade. In this case, the selected method of preparation must be appropriate for the medicinal ingredient.</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>When the statement "or as recommended/indicated by a health care practitioner/health care provider/health care professional/doctor/physician" is not included as part of the recommended dosing (optional)</em></p>
+					<p>Use/Take as directed by a health care practitioner/health care provider/health care professional/doctor/physician.</p>
+				<p><em>For globules, pills, pellets, granules, tablets - Infants and children less than 2 years old</em></p>
+					<p>Infants/children less than 2 years old, dissolve dose in a small amount of water before administration.</p>
+				<p><em>Topical preparations such as cream, liniment, ointment, gel</em></p>
+					<p>Apply to the affected area(s), as needed.</p>
+				<p><em>Other optional instructions for consumers</em></p>
+					<p>The directions for use may include additional information such as instructions on the time intervals between doses or dosing for an acute phase [e.g., Take 3 to 5 globules, 2 to 3 times daily. During the acute phase, take 1 dose, every 15 to 60 minutes (do not exceed 12 doses per day). Once symptoms improve, reduce the dose and return to the general dosage].
+
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</li>
+				</ul>
+				<p>And</p>
+				<p>Any ingredient specific risk statement when required as per the NHPID.</p>
+			<h3>Contraindication(s)</h3>
+				<p>No statement required.</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required.</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product must comply with the requirements outlined in the current NNHPD <em>Evidence for Homeopathic Medicines</em> guidance document.</li>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient(s) must comply with the requirements outlined in the NHPID.</li>
+				<li>All medicinal ingredients of animal origin must be sterilized as per HPUS and HAB requirements or equivalent.</li>
+				<li>If the method of preparation includes the use of natural lactose for trituration, an Animal Tissue form for lactose must be submitted.</li>
+			</ul>
+			<h3>Standard or Grade</h3>
+				<p>Must reference a homeopathic monograph in one of the most recent versions of NNHPD accepted homeopathic pharmacopoeias listed below:
+					<ul>
+						<li>Homeopathic Pharmacopeia of the United States (HPUS)</li>
+						<li>Homöopathisches ArzneiBuch (HAB) or German Homeopathic Pharmacopoeia (GHP)</li>
+						<li>Pharmacopée française or French Pharmacopoeia (PhF)</li>
+						<li>European Pharmacopoeia (Ph.Eur.)</li>
+						<li>Encyclopedia of Homeopathic Pharmacopoeia (EHP)</li>
+					</ul>
+				</p>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/HOMEOPATHY_E.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>EHP 2007: Encyclopaedia of Homeopathic Pharmacopoeia, Volume 3. New Delhi (IN): Kuldeep Jain and B. Jain&semi; 2007.</li>
+				<li>GHP 2025: German Homeopathic Pharmacopoeia. Stuttgart (DE): Wissenschaftliche Verlagsgesellschaft&semi; 2025. </li>
+				<li>HAB 2025: Homöopathisches ArzneiBuch. Stuttgart (DE): Deutscher Apotheker Verlag&semi; 2025.</li>
+				<li>HPUS: Homeopathic Pharmacopeia of the United States, Revision Service. Pennsylvania (PA): Homeopathic Pharmacopoeia Convention of the United States [Accessed February 2 2026]. Available from: hpus.com</li>
+				<li>Ph.Eur. 2025: European Pharmacopoeia, 12<sup>th</sup> edition. Strasbourg (FR): Directorate for the Quality of Medicines and HealthCare of the Council of Europe (EDQM), 2025.</li>
+				<li>PhF 2017: French Pharmacopoeia, 11<sup>th</sup> edition. Saint-Denis Cedex(FR) : French Agency for the Safety of Health Products, 2017.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version history</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from Feb 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-02-27</td>
+						<td>Updates</td>
+						<td>
+							<ul>
+								<li>Introductory notes</li>
+								<li>Clarification of the note regarding imponderables</li>
+								<li>Additional flexibility for the dose section: specific dosage units and frequencies are replaced with a maximum daily dose&semi;; additional notes are included to clarify expectations&semi; additional dosage forms</li>
+								<li>Additional Table <a href="#ref1" style="text-decoration: none;">1</a> footnotes listing flexibility for the units of measure used on the label</li>
+								<li>Removal of the specific acute dosing information from Table <a href="#ref1" style="text-decoration: none;">1</a>. Acute dosing information can be included as an optional information in the Direction for use section</li>
+								<li>Direction for use for solid dosage forms  required for infants and children under 2 years old (rather than 0-5 years old)</li>
+								<li>Risk statement wording</li>
+								<li>Inclusion of the standard statement for storage conditions</li>
+								<li>Inclusion of a Product Facts Table example</li>
+								<li>Reference section</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2019-08-05</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2017-07-18</td>
+						<td>Updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2015-06-09</td>
+						<td>Updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2014-11-18</td>
+						<td>Updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-06-24</td>
+						<td>Updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2012-10-25</td>
+						<td>Initial release of the NNHPD&apos;s monograph<sup><a href="#ver-1" style="text-decoration: none;">1</a></sup></td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<sup id="ver-1">1</sup>Was previously a labelling standard.
+			</p>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

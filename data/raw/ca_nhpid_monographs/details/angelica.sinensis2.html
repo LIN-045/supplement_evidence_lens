@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=angelica.sinensis2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="2372e71d-620b-4c67-b760-a0199fe91f60"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>DONG QUAI - <em>ANGELICA SINENSIS</em></h1>
+	<div class="icon">
+		<a href="dbImages/mono_dong-quai--angelica-sinensis_english.pdf" title="DONG QUAI - ANGELICA SINENSIS" aria-label="PDF Version: DONG QUAI - ANGELICA SINENSIS, 61 KB. Opens in a new tab."><img alt="Monograph: DONG QUAI - ANGELICA SINENSIS" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 61 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Products making any Traditional Chinese Medicine (TCM) claim must be prepared according to the most recent version of the Chinese Pharmacopoeia (e.g. identification criteria, processing methods, methods of preparation).</li>
+			<li>Text in parentheses is additional optional information which can be included on the PLA and product label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+		</ul>
+	</p>
+	<p><strong>Restrictions when this monograph is combined with other monographs (Class II and III applications):</strong></p>
+		<p>Specific combination rules apply to medicinal ingredients with estrogenic (e.g., red clover isoflavone extract, soybean extracts and isolates and dong quai - <em>Angelica sinensis</em>) or anti-estrogenic effects [e.g., indole-3-carbinol (I3C) and, diindolylmethane (DIM)]. Consult the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/monograph-combination-guide.html">Monograph combination guide</a> for more information.</p>
+
+	<section aria-labelledby="date">
+		<h2>Date</h2>
+			<p>May 29, 2026</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="3">Source information</th>
+					</tr>
+					<tr>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+						<th>Preparation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><em>Angelica sinensis</em></td>
+						<td>
+							<ul>
+								<li>Chinese Angelica</li> 
+								<li>Dang quai</li>
+								<li>Dang qui</li>
+								<li>Dong gui</li>
+								<li>Dong quai</li>
+								<li>Tang-kuei</li>
+							</ul>
+						</td>
+
+						<td><em>Angelica sinensis</em></td>
+						<td>Root</td>
+						<td>Dry</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper name: USDA 2023&semi; Gardner and McGuffin 2013&semi; Common names: USDA 2023&semi; NS 2021&semi; PPRC 2020&semi; Gardner and McGuffin 2013&semi; derMarderosian and Beutler 2010&semi; Bensky et al. 2004&semi; Chen and Chen 2004&semi; Source information: PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004.</p>
+	</section>
+	
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Used in Traditional Chinese Medicine (TCM) to invigorate and tonify the blood (PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004).</li>
+				<li>Used in Traditional Chinese Medicine (TCM) to harmonize the blood (Bensky et al. 2004).</li>
+			</ul>
+			<p><strong>Notes</strong></p>
+			<p><strong>For multi-ingredient products:</strong>
+				<ul>
+					<li>To prevent the product from being represented as a "traditional medicine", any indicated traditional use claim must refer to the specific medicinal ingredient(s) and recognized traditional system of medicine from which the claim originates when 1&rpar; both traditional and modern claims are present or 2&rpar; when claims originate from multiple systems of traditional medicine (e.g. Dong quai is used in Traditional Chinese medicine to invigorate and tonify the blood).</li>
+					<li>When ALL of the medicinal ingredients (MIs) in the product are used within the SAME identified system of traditional medicine AND the product makes ONLY traditional claims, listing of MIs in the traditional claim(s) is not required</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p>Methods or preparation: Dry, Powdered, Non-Standardized Extracts (Dry extract*, Tincture, Fluid extract, Decoction, Decoction concentrate, Infusion, Infusion concentrate)</p>
+					<p>4.5 - 15 grams of dried root, per day (PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004).</p>
+				<p><strong>Notes</strong>
+					<ul>
+						<li>The root may also be &lsquo;prepared&rsquo; as per the specific TCM methods of preparation for Dong quai root described in TCM reference texts (e.g. dry-fried&semi; stir-baked or dry-fried with wine/grain based liquor/vinegar&semi; charred&semi; etc.) (PPRC 2020&semi; Bensky et al. 2004&semi; Chen and Chen 2004).</li>
+						<li>*Solvents allowed for the method of preparation "Non-standardized extracts (Dry extract)" as part of this monograph are ethanol and/or water only.</li>
+					</ul>
+				</p>
+			<h3>Direction(s) for use</h3>
+				<p>No statement required.</p>
+	</section>
+	
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 6 months (Hirata et al. 1997).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<ul>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding (NS 2021).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician prior to use if you are taking any medications including blood thinners, birth control pills or hormone therapy (NS 2021&semi; Brinker 2010&semi; WHO 2002).</li>
+					<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have serious or major conditions, any type of acute infection, deficiency or excess (HC 2022).</li>
+					<li>When using this product avoid exposure to the sun (NS 2021&semi; Thorne 2004).</li>
+				</ul>
+			<h3>Contraindication(s)</h3>
+				<ul>
+					<li>Do not use if you are pregnant (NS 2021&semi; WHO 2002).</li>
+					<li>Do not use if you have diarrhea, hemorrhagic diseases or heavy periods (NS 2021, Bensky et al. 2004&semi; Chen and Chen 2004&semi; WHO 2002).</li>
+				</ul>
+			<h3>Known adverse reaction(s)</h3>
+				<p>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen, or if new symptoms develop such as breast pain or any changes in menstrual cycles (Brinker 2010&semi; Schumacher et al. 2007&semi; Thorne 2004&semi; Russell et al. 2002).</p>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide. Note that if the ingredient is prepared according to the most recent version of the Chinese Pharmacopoeia, the quality requirements must meet or exceed those described in the NNHPD Quality Guidance.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/Dong_Quai_E.gif" alt="Product Facts Table" style="width:700px"></p>
+	</section>
+	
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Bensky D, Clavey, St&#246;ger E, Gamble A. Chinese Herbal Medicine: Materia Medica. 3<sup>rd</sup> edition. Seattle (WA): Eastland Press, Incorporated&semi; 2004.</li>
+				<li>Brinker F. Herb Contraindications and Drug Interactions, 4<sup>th</sup> edition. Sandy (OR): Eclectic Medical Publications&semi; 2010.</li>
+				<li>Chen JK, Chen TT. Chinese Medical Herbology and Pharmacology. Crampton L, editor. City of Industry (CA): Art of Medicine Press Inc.&semi; 2004.</li>
+				<li>derMarderosian A, Beutler JA, editors. The Review of Natural Products. 6<sup>th</sup> edition, Missouri (MO): Wolters Kluwer Health&semi; 2010.</li>
+				<li>Gardner Z. and McGuffin M. editors. American Herbal Products Association&apos;s Botanical Safety Handbook, 2<sup>nd</sup> edition. American Herbal Products Association. Boca Raton (FL): CRC Press&semi; 2013.</li>
+				<li>HC 2022: Health Canada. Traditional Chinese Medicine Ingredients monograph. [Accessed 2024 July 10]. Available from: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq?atid=tcm&lang=eng</li>
+				<li>Hirata JD, Swiersz LM, Zell B, Small R, Ettinger B. Does dong quai have estrogenic effects in postmenopausal women? A double-blind, placebo-controlled trial. Fertility and Sterility 1997&semi;68(6):981-986.</li>
+				<li>NS 2021: Natural Standard. Dong quai (Angelica sinensis [Oliv.] Diels). [Accessed 2023 December 31]. Available from: https://naturalmedicines.therapeuticresearch.com/databases/food,-herbs-supplements/professional.aspx?productid=936</li>
+				<li>PPRC 2020: Pharmacopoeia of the People&apos;s Republic of China 2020. English Edition. Compiled by The State Pharmacopoeia Commission of the P.R. China. Beijing (CN): China Medical Science Press&semi; 2020.</li>
+				<li>Russell L, Hicks GS, Low AK, Shepherd JM, Brown CA. Phytoestrogens: a viable option? The American Journal of the Medical Sciences 2002&semi;324(4):185-188.</li>
+				<li>Schumacher M, Guennoun R, Ghoumari A, Massaad C, Robert F, El-Etr M, Akwa Y, Rajkowski K, and Baulieu E. Novel perspectives for progesterone in Hormone Replacement Therapy, with special reference to the nervous system. Endocrine Reviews 2007&semi;28:387-439.</li>
+				<li>Thorne 2004: Thorne Research Inc. Monograph Angelica sinensis (Dong quai). Alternative Medicine Review 2004&semi;9(4):429-433.</li>
+				<li>USDA 2023: USDA, ARS, National Genetic Resources Program. Germplasm Resources Information Network (GRIN). - Global. U.S. National Plant Germplasm System. [Accessed 2023 December 27]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch</li>
+				<li>WHO 2002: World Health Organization Monographs on Selected Medicinal Plants - Volume 2. Geneva (CH): World Health Organization&semi; 2002.</li>
+			</ul>
+	</section>
+	
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Chandler F, editor. Herbs: Everyday Reference for Health Professionals. Ottawa (ON): Canadian Pharmacists Association and the Canadian Medical Association&semi; 2000.</li>
+				<li>Cotran RS, Kumar V, Collins T. Pathologic Basis of Disease. 6<sup>th</sup> edition. Philadelphia (PA): W.B. Saunders Company&semi; 1999.</li>
+				<li>Dr. Duke&apos;s Phytochemical and Ethnobotanical Databases. Angelica sinensis. [Accessed 2023 December 31]. Available from: http://www.ars-grin.gov/duke.</li>
+				<li>European Commission. HEALTH &amp; CONSUMER PROTECTION DIRECTORATE- GENERAL Directorate C - Scientific Opinions, C2 - Management of scientific committees&semi; scientific co-operation and networks, Scientific Committee on Food. SCF/CS/FLAV/ FLAVOUR/30 Final 9 April 2003. Opinion of the Scientific Committee on Food on Isosafrole (expressed on 4 April 2003). [Accessed 2023 December 31]. Available from: http://ec.europa.eu/food/fs/sc/scf/out188_en.pdf</li>
+				<li>Upton R. Dong quai. In: Coates PM, Betz JM, Blackman MR, Cragg GM, Levine M, Moss J, White JD, editors. Encyclopedia of Dietary Supplements. 2<sup>nd</sup> edition. New York (NY): Informa Healthcare&semi; 2010. p. 208-216.</li>
+				<li>Wu SJ, Ng LT, Lin CC. Antioxidant activities of some common ingredients of traditional chinese medicine, Angelica sinensis, Lycium barbarum and Poria cocos. Phytotherapy Research 2004&semi;18(12):1008-1012.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr> 	
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from May 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-05-29</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Introductory notes</li>
+								<li>Addition of the note on the combination rules for Class II and III applications, which refers to the Monograph Combination Guide</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2024-07-26</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2019-06-03</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2012-11-27</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2012-06-19</td>
+						<td>Initial release</td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=5htp\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="052d15be-bb06-4ff4-b694-f4b0df475020"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>5-HTP</h1>
+	<div class="icon">
+		<a href="dbImages/mono_5htp_english.pdf" title="5-HTP"><img alt="Monograph: 5-HTP" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"> (PDF Version - 80 KB)</a>
+	</div>
+	<p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive review of the medicinal ingredient.</p>
+	<p><strong>Notes</strong>
+		<ul>
+			<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+			<li>The solidus (/) indicates that the terms and/or statements are synonymous. Either term or statement may be selected by the applicant on the label.</li>
+		</ul>
+	</p>
+		
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>August 28, 2024</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+				<thead>
+					<tr>
+						<th rowspan="2">Proper name(s)</th>
+						<th rowspan="2">Common name(s)</th>
+						<th colspan="3">Source information</th>
+					</tr>
+					<tr>
+						<th>Source ingredient(s)</th>
+						<th>Source material(s)</th>
+						<th>Part(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4">
+							<ul>
+								<li>5-Hydroxy-L-tryptophan</li>
+								<li>L-5-Hydroxytryptophan</li>
+							</ul>
+						</td>
+						<td rowspan="4">
+							<ul>
+								<li>L-5-HTP</li> 
+								<li>L-5-Hydroxytryptophan</li>
+							</ul>
+						</td>
+						<td>N/A</td>
+						<td><em>Griffonia simplicifolia<em></td>
+						<td>Seed</td>
+					</tr>
+					<tr>
+						<td>L-5-HTP<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Escherichia coli<em></td>
+						<td>Whole cell for biosynthesis</td>
+					</tr>
+					<tr>
+						<td>N/A</td>
+						<td><em>Saccharomyces cerevisiae<em></td>
+						<td>Whole cell for biosynthesis</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>References: Proper names: RSC 2023&semi; Common names: RSC 2023&semi; Source information: Lemaire and Adosraku 2002, Fellows and Bell 1970.</p>
+			<p>
+				<sup id="ref1-1">1</sup>Synthetic
+			</p>
+	</section>
+	
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of Administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) --> 
+			<p>Oral</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance Document.</p>
+				<p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product Licence Application form for Compendial applications.</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<ul>
+				<li>Helps (to) promote healthy mood balance (P&ouml;ldinger et al. 1991&semi; Zmilacher et al. 1988&semi; Nakajima et al. 1978).</li>
+				<li>Helps (to) relieve sleep disturbances associated with mood imbalance (Sutanto et al. 2024&semi; Poldinger et al. 1991&semi; Soulairac and Lambinet 1988)</li>
+				<li>Helps (to) relieve symptoms of fibromyalgia (Nicolodi and Sicuteri 1996&semi; Sarzi Puttini and Caruso 1992&semi; Caruso et al. 1990).</li>
+				<li>Helps (to) reduce the severity and duration of migraine headaches when taken as a preventative (prophylactic) (Titus et al. 1986&semi; Bono et al. 1984&semi; Sicuteri 1973).</li>
+				<li>To be used with a program of reduced intake of dietary calories and increased physical activity (if possible) to help in weight management by reducing carbohydrate cravings (Cangiano et al.1998&semi; Cangiano et al. 1992&semi; Ceci et al. 1989).</li>	
+			</ul>
+		    <h3>Restrictions when this monograph is combined with other monographs (Class II and III applications):</h3>
+    			<ul>
+        			<li><strong>If a weight management claim is made:</strong>
+						<ul>
+							<li>Weight management is a long-term process and must therefore, be associated with a long-term intervention.</li>
+							<li>Medicinal ingredient with diuretic properties may be included in weight management products, however no diuretic claim can be applied as it is associated with a short-term duration of use (occasional use only).</li>
+							<li>Stimulant laxatives cannot be present at therapeutic dose in weight management products as their short term duration of use is not compatible with the duration of use for weight management.</li>
+						</ul>
+    				</li>
+    			</ul>
+	</section>
+
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Adults 18 years and older </p>
+			<h3>Quantity(ies)</h3>
+				<p><em>Healthy mood balance</em></p>
+					<p>150 - 300 milligrams of 5-HTP, per day (P&ouml;ldinger et al. 1991&semi; Nakajima et al. 1978).</p>
+				<p><em>Fibromyalgia symptoms</em></p>
+					<p>300 - 400 milligrams of 5-HTP, per day&semi; Not to exceed 300 milligrams per single dose (Nicolodi and Sicuteri 1996&semi; Caruso et al. 1990).</p>
+				<p><em>Migraine prophylaxis</em></p>
+					<p>200 - 600 milligrams of 5-HTP, per day&semi; Not to exceed 300 milligrams per single dose (Titus et al. 1986&semi; Sicuteri 1973).</p> 
+ 				<p><em>Weight management</em></p>
+					<p>750 - 900 milligrams of 5-HTP, per day&semi; Not to exceed 300 milligrams per single dose (Cangiano et al. 1998&semi; Cangiano et al. 1992&semi; Ceci et al. 1989).</p> 
+ 				<p><em>Sleep disturbances</em></p> 
+					<p>100 - 200 milligrams of 5-HTP, per day (Sutanto et al. 2024&semi; Soulairac and Lambinet 1988&semi; Soulairac and Lambinet 1977&semi; Wyatt et al. 1971).</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>All uses</em></p>  
+					<p>To minimize the risk of gastrointestinal side effects, start at lower dose and slowly increase to effective dose over 2-week period (Birdsall 1998).</p>
+ 				<p><em>All uses (excluding weight management)</em></p> 
+					<p>Take with food (P&ouml;ldinger et al. 1991).</p> 
+				<p><em>Weight management</em></p> 
+					<p>Take 30 minutes before meals (Cangiano et al. 1998&semi; Cangiano et al. 1992&semi; Ceci et al. 1989).</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p><em>Healthy mood balance&semi; Fibromyalgia symptoms&semi; Migraine prophylaxis&semi; Sleep disturbances</em></p>
+				<p>Use for at least 2 weeks to see beneficial effects (Jangid et al. 2013&semi; Caruso et al. 1990&semi; Nakajima et al. 1978&semi; Sicuteri 1973).</p>
+			<p><em>Weight management (products providing over 600 mg 5-HTP, per day)</em></p>
+				<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician for use beyond 12 weeks (Cangiano et al. 1992).</p>
+	</section>
+
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">Risk Information</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All uses</em>
+					<ul>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are taking carbidopa or health products with serotonergic activity such as mood balance supplements, cough medication containing dextromethorphan, pain killers or medications for nausea or migraine (Mayo Clinic Staff 2022&semi; Patel and Marzella 2017&semi; Turner et al 2006).</li> 
+						<li>When using this product exercise caution while driving or using machinery, as you may experience drowsiness (Berardi et al. 2002).</li>
+						<li>Ask a health care practitioner/health care provider/health care professional/doctor/physician if symptoms persist or worsen.</li>
+					</ul>
+				</p>
+				<p><em>All uses (excluding weight management)</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are pregnant or breastfeeding.</p>
+				<p><em>Weight management</em></p>
+					<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you are breastfeeding.</p>
+		        <p><em>Healthy mood balance&semi; Fibromyalgia symptoms</em></p>
+        			<p>Ask a health care practitioner/health care provider/health care professional/doctor/physician before use if you have a psychological disorder such as anxiety or depression.</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>All uses</em>
+					<ul>
+						<li>Do not use if you have scleroderma (Lampert et al. 1992&semi; Sternberg et al. 1980).</li>
+						<li>Do not use if you are taking antidepressants (Mayo Clinic Staff 2022&semi; Patel and Marzella 2017).</li>
+					</ul>
+				</p>
+				<p><em>Weight management</em></p>
+					<p>Do not use if you are pregnant (HC 2010).</p>
+			<h3>Known adverse reaction(s)</h3>
+				<ul>
+					<li>When using this product you may experience gastrointestinal discomfort/disturbances (Turner et al. 2006&semi; Byerley et al. 1987).</li>
+					<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if you experience skin hardening, pain or stiffness of muscles or joints, tremors, agitation/confusion, or an increased heart rate (Boyer 2023&semi; Varga 2023&semi; Mayo Clinic Staff 2022&semi; Patel and Marzella 2017&semi; Das et al. 2004&semi; Erner et al. 2003&semi; Lampert et al. 1992&semi; Sternberg et al. 1980).</li>
+				</ul>
+	</section>
+
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the limitations outlined in the database.</p>
+	</section>
+
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">Storage conditions</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em>.</p>
+	</section>
+
+	<section aria-labelledby="specifications">
+		<h2 id="specifications">Specifications</h2>
+			<ul>
+				<li>The finished product specifications must be established in accordance with the requirements described in the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products Guide.</li>
+				<li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+     		<p class="alignCenter"><img src="/nhpid-bdipsn/dbImages/5HTP_E.gif" alt="Product Facts Table" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="referencesCited">
+		<h2 id="referencesCited">References Cited</h2>
+			<ul>
+				<li>Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollings CJ, Shimp LA, Tietze KJ, editors. Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association&semi; 2002.</li>
+				<li>Birdsall TC. 5-Hydroxytryptophan: a clinically-effective serotonin precursor. Alternative Medicine Review 1998&semi;3(4):271-280.</li>
+				<li>Bono G, Micieli G, Sances G, Calvani M, Nappi G. L-5HTP treatment in primary headaches: an attempt at clinical identification of responsive patients. Cephalalgia 1984&semi;4(3):159-165.</li>
+				<li>Byerley WF, Judd LL, Reimherr FW, Grosser BI. 5-Hydroxytryptophan: a review of its antidepressant efficacy and adverse effects. Journal of Clinical Psychopharmacology 1987&semi;7(3):127-137.</li>
+				<li>Boyer EW. Serotonin syndrome (serotonin toxicity). UpToDate 2023 [Accessed 2023 October 18]. Available from: Available from : https://www.uptodate.com/.</li>
+				<li>Cangiano C, Ceci F, Cascino A, Del Ben M, Laviano A, Muscaritoli M, Antonucci F, RossiFanelli F. Eating behavior and adherence to dietary prescriptions in obese adult subjects treated with 5-hydroxytryptophan. American Journal of Clinical Nutrition 1992&semi;56(5):863-867.</li>
+				<li>Cangiano C, Laviano A, Del Ben M, Preziosa I, Angelico F, Cascino A, Rossi-Fanelli F. Effects of oral 5-hydroxy-tryptophan on energy intake and macronutrient selection in non-insulin dependent diabetic patients. International Journal of Obesity and Related Metabolic Disorders 1998&semi;22(7):648-654.</li>
+				<li>Caruso I, Sarzi Puttini P, Cazzola M, Azzolini V. Double-blind study of 5-hydroxytryptophan versus placebo in the treatment of primary fibromyalgia syndrome. Journal of International Medical Research 1990&semi;18(3):201-209.</li>
+				<li>Ceci F, Cangiano C, Cairella M, Cascino A, Del Ben M, Muscaritoli M, Sibilia L, Rossi Fanelli F. The effects of oral 5-hydroxytryptophan administration on feeding behavior in obese adult female subjects. Journal of Neural Transmission 1989&semi;76(2):109-117. </li>
+				<li>Das YT, Bagchi M, Bagchi D, Preuss HG. Safety of 5-hydroxy-L-tryptophan. Toxicology Letters 2004&semi;150(1):111-122.</li>
+				<li>Dipiro JT, Talbert RL, Yee GC, Matzke GR, Wells BG, Posey LM. Pharmacotherapy: a pathophysiologic approach, 5<sup>th</sup> edition. New York (NY): The McGraw-Hill Companies, Inc.&semi; 2002.</li>
+				<li>Erner RA, Meglathery SB, Van Decker WA, Gallagher RM. Serotonin Syndrome and Other Serotonergic Disorders. Pain Medicine 2003&semi;4(1): 63-74.</li>
+				<li>Fellows LE, Bell EA. 5-hydroxy-L-tryptophan, 5-hydroxytryptamine and L-tryptophan-5hydroxylase in Griffonia simplicifolia. Phytochemistry 1970&semi;9(11):2389-2396.</li>
+				<li>HC 2010: Health Canada: Prenatal Nutrition Guidelines for health Professionals: Gestational weight gain [Accessed 2024 April 7]. Available from: https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/fn-an/alt_formats/pdf/nutrition/prenatal/ewba-mbsa-eng.pdf</li>
+				<li>Jangid P, Malik P, Singh P, Sharma M, Gulia AK. Comparative study of efficacy of l-5-hydroxytryptophan and fluoxetine in patients presenting with first depressive episode. Asian J Psychiatr. 2013 Feb&semi;6(1):29-34.</li>
+				<li>Lampert A, Joly P, Thomine E, Ortoli JC, Lauret P. [Scleroderma-like syndrome with bullous morphea during treatment with 5-hydroxytryptophan, carbidopa and flunitrazepam]. Annales de Dermatologie et de V&#233;n&#233;r&#233;ologie 1992&semi;119(3):209-211 (in French).</li>
+				<li>Lemaire PA, Adosraku RK. An HPLC method for the direct assay of the serotonin precursor, 5hydroxytrophan, in seeds of Griffonia simplicifolia. Phytochemical Analysis 2002&semi;13(6):333-337.</li>
+				<li>Mayo Clinic Staff. Serotonin Syndrome. Rochester (MN): Mayo Foundation for Medical Education and Research&semi; 2022. [Accessed 2023 March 07]. Available from: https://www.mayoclinic.org/diseases-conditions/serotonin-syndrome/symptoms-causes/syc-20354758.</li>
+				<li>Nakajima T, Kudo Y, Kaneko Z. Clinical evaluation of 5-hydroxy-L-tryptophan as an antidepressant drug. Folia Psychiatrica et Neurologica Japonica 1978&semi;32(2):223-230.</li>
+				<li>Nicolodi M, Sicuteri F. Fibromyalgia and migraine, two faces of the same mechanism. Serotonin as the common clue for pathogenesis and therapy. Advances in Experimental Medicine and Biology 1996&semi;398:373-379.</li>
+				<li>Patel YA, Marzella N. Dietary supplement-drug interaction-induced serotonin syndrome progressing to acute compartment syndrome. American Journal of Case Reports 2017&semi; 18:926-930.</li>
+				<li>Pizzorno JE, Murray MT, editors. Textbook of Natural Medicine, Volume 1, 3<sup>rd</sup> edition. St. Louis (MO): Churchill Livingstone Elsevier&semi; 2006.</li>
+				<li>P&ouml;ldinger W, Calanchini B, Schwarz W. A functional-dimensional approach to depression: serotonin deficiency as a target syndrome in a comparison of 5-hydroxytryptophan and fluvoxamine. Psychopathology 1991&semi;24(2):53-81.</li>
+				<li>RSC 2023: Royal Society of Chemistry: The Merck Index Online [Accessed 2023 August 14]. Available from: https://merckindex.rsc.org/</li>
+				<li>Sarzi Puttini P, Caruso I. Primary fibromyalgia syndrome and 5-hydroxy-L-tryptophan: a 90-day open study. Journal of International Medical Research 1992&semi;20(2):182-189.</li>
+				<li>Sicuteri F. The ingestion of serotonin precursors (L-5-hydroxytryptophan and L-tryptophan) improves migraine headache. Headache 1973&semi;13(1):19-22.</li>
+				<li>Soulairac A, Lambinet H. [Clinical studies of the effect of the serotonin precursor, L-5hydroxytryptophan, on sleep disorders]. Schweizerische Rundschau für Medizin Praxis 1988&semi;77(34a):19-23 (in French).</li>
+				<li>Soulairac A, Lambinet H. [Effect of 5-hydroxytryptophan, a serotonin precursor, on sleep disorders]. Annales M&#233;dico-Psychologiques 1977&semi;1(5):792-798 (in French).</li>
+				<li>Sternberg EM, Van Woert MH, Young SN, Magnussen I, Baker H, Gauthier S, Osterland CK. Development of a scleroderma-like illness during therapy with L-5-hydroxytryptophan and carbidopa. New England Journal of Medicine 1980&semi;303(14):782-787.</li>
+				<li>Sutanto CN, Xia X, Heng CW, Tan YS, Shan Lee DP, Fam J, Kim JE 2024. The impact of 5-hydroxytryptophan supplementation on sleep quality and gut microbiota composition in older adults: a randomized controlled trial. Clinical Nutrition 43(3):593-602.</li>
+				<li>Titus F, Dávalos A, Alom J, Codina A. 5-Hydroxytryptophan versus methysergide in the prophylaxis of migraine. Randomized clinical trial. European Neurology 1986&semi;25(5):327-329.</li>
+				<li>Turner EH, Loftis JM, Blackwell AD. Serotonin a la carte: supplementation with the serotonin precursor 5-hydroxytryptophan. Pharmacology & Therapeutics 2006&semi;109(3):325-338.</li>
+				<li>Varga J. Clinical manifestations and diagnosis of systemic sclerosis (scleroderma) in adults. UpToDate 2023 [Accessed 2023 October 18]. Available from : https://www.uptodate.com/.</li>
+				<li>Wyatt RJ, Zarcone V, Engelman K, Dement WC, Snyder F, Sjoerdsma A. Effects of 5-hydroxytryptophan on the sleep of normal human subjects. Electroencephalography and Clinical Neurophysiology 1971&semi;30(6):505-509.</li>
+				<li>Zmilacher K, Battegay R, Gastpar M. L-5-hydroxytryptophan alone and in combination with a peripheral decarboxylase inhibitor in the treatment of depression. Neuropsychobiology 1988&semi;20(1):28-35.</li>
+			</ul>
+	</section>
+	
+	<section aria-labelledby="referencesReviewed">
+		<h2 id="referencesReviewed">References Reviewed</h2>
+			<ul>
+				<li>Agazzi A, De Ponti F, De Giorgio R, Candura SM, Anselmi L, Cervio E, Di Nucci A, Tonini M. Review of the implications of dietary tryptophan intake in patients with irritable bowel syndrome and psychiatric disorders. Digestive and Liver Disease 2003&semi;35(8):590-595. </li>
+				<li>Amer A, Breu J, McDermott J, Wurtman RJ, Maher TJ. 5-Hydroxy-L-tryptophan suppresses food intake in food-deprived and stressed rats. Pharmacology, Biochemistry, and Behavior 2004&semi;77(1):137-143. </li>
+				<li>Auffranc JC, Berbis P, Fabre JF, Garnier JP, Privat Y. [Sclerodermiform and poikilodermal syndrome observed during treatment with carbidopa and 5-hydroxytryptophan]. Annales de Dermatologie et de Venereologie 1985&semi;112(9):691-692 (in French). </li>
+				<li>Battistella PA, Bordin A, Cernetti R, Broetto S, Corra S, Piva E, Plebani M. Beta-endorphin in plasma and monocytes in juvenile headache. Headache 1996&semi;36(2):91-94. </li>
+				<li>Beers MH, Berkow R, editors. The Merck Manual of Diagnosis and Therapy, 17<sup>th</sup> edition. Whitehouse Station (NJ): Merck & Co., Inc&semi; 1999. </li>
+				<li>Bhushan B, Seth SD, Saxena S, Gupta YK, Karmarkar MG. An adverse reaction to L-5hydroxytryptophan. The American Journal of Psychiatry 1991&semi;148(2):268-269. </li>
+				<li>Boiardi A, Crenna P, Merati B, Negri S, Tansini E, Bussone G. 5-OH-tryptophane in migraine: clinical and neurophysiological considerations. Journal of Neurology 1981&semi;225(1):41-46. </li>
+				<li>Boiardi A, Picotti GB, Di Giulio AM, Bussone G, Galva MD, La Mantia L, Mantegazza P. Platelet met-enkephalin immunoreactivity and 5-hydroxytryptamine concentrations in migraine patients: effects of 5-hydroxytryptophan, amitriptyline and chlorimipramine treatment. Cephalalgia 1984&semi;4(2):81-84. </li>
+				<li>Bono G, Criscuoli M, Martignoni E, Salmon S, Nappi G. Serotonin precursors in migraine prophylaxis. Advances in Neurology 1982&semi;33:357-363. </li>
+				<li>Buckingham J, editor. Dictionary of Natural Products, Version 16:1. Boca Raton (FL): Chapman & Hall/CRC&semi; 2007. </li>
+				<li>Bussone G, Boiardi A, Cerrati A, Girotti F, Merati B, Rivolta G. Monoamine oxidase activities in patients with migraine or with cluster headache during the acute phases and after treatment with L-5-hydroxytryptophan. Rivista Di Patologia Nervosa E Mentale 1979&semi;100(5):269-274. </li>
+				<li>Cangiano C, Ceci F, Cairella M, Cascino A, Del Ben M, Laviano A, Muscaritoli M, RossiFanelli F. Effects of 5-hydroxytryptophan on eating behavior and adherence to dietary prescriptions in obese adult subjects. Advances in Experimental Medicine and Biology 1991&semi;294:591-593. </li>
+				<li>De Benedittis G, Massei R. Serotonin precursors in chronic primary headache. A double-blind cross-over study with L-5-hydroxytryptophan vs. placebo. Journal of Neurosurgical Sciences 1985&semi;29(3):239-248.</li>
+				<li>De Giorgis G, Miletto R, Iannuccelli M, Camuffo M, Scerni S. Headache in association with sleep disorders in children: a psychodiagnostic evaluation and controlled clinical study--L-5HTP versus placebo. Drugs Under Experimental and Clinical Research 1987&semi;13(7):425-433. </li>
+				<li>Ek A, Witkop B. The synthesis of labile hydroxytryptophan metabolites. Journal of the American Chemical Society 1954&semi;76(22):5579-5588. </li>
+				<li>Farinelli S, Mariani A, Grimaldi A, Mariani M, Iannessi A, De Rosa F. [Eosinophilia-myalgia syndrome associated with 5-OH-tryptophan. Description of a case]. Recenti Progressi in Medicina 1991&semi;82(7-8):381-384 (in Italian). </li>
+				<li>FDA 2001: Food and Drug Administration. Information Paper on L-Tryptophan and 5- Hydroxy-L-Tryptophan. Rockville (MD): Food and Drug Administration, Center for Food Safety and Applied Nutrition, Office of Nutritional Products, Labeling, and Dietary Supplements&semi; 2001. [Accessed 2023 March 07]. Available from: https://www.nemsn.org/Articles/FDA-Info.pdf.</li>
+				<li>Frangatos G, Chubb FL. A new synthesis of 5-hydroxytryptophan. Canadian Journal of Chemistry 1959&semi;37:1374-1376. </li>
+				<li>Fugh-Berman A, Cott JM. Dietary supplements and natural products as psychotherapeutic agents. Psychosomatic Medicine 1999&semi;61(5):712-728.</li>
+				<li>Garcia C. [Mianserin agranulocytosis followed by oxitriptan eosinophilia]. Der Nervenarzt 1992&semi;63(5):303-307 (in German). </li>
+				<li>Genazzani AR, Sandrini G, Facchinetti F, Rizzo V, Alfonsi E, Sances G, Calvani M, Nappi G. Effects of L-5HTP with and without carbidopa on plasma beta-endorphin and pain perception. Possible implications in migraine prophylaxis. Cephalalgia 1986&semi;6(4):241-245. </li>
+				<li>Gijsman HJ, Van Gerven JM, De Kam ML, Schoemaker RC, Pieters MS, Weemaes M, De Rijk R, Van Der Post J, Cohen AF. Placebo-controlled comparison of three dose-regimens of 5-hydroxytryptophan challenge test in healthy volunteers. Journal of Clinical Psychopharmacology 2002&semi;22(2):183-189. </li>
+				<li>Goodnick PJ, Sandoval R. Psychotropic treatment of chronic fatigue syndrome and related disorders. Journal of Clinical Psychiatry 1993&semi;54(1):13-20. </li>
+				<li>Guilleminault C, Cathala JP, Castaigne P. Effects of 5-hydroxytryptophan on sleep of a patient with a brain-stem lesion. Electroencephalography and Clinical Neurophysiology 1973&semi;34(2):177-184. </li>
+				<li>Gwaltney-Brant SM, Albretsen JC, Khan SA. 5-Hydroxytryptophan toxicosis in dogs: 21 cases (1989-1999). Journal of the American Veterinary Medical Association 2000&semi;216(12):1937-1940. </li>
+				<li>Halford JC, Harrold JA, Lawton CL, Blundell JE. Serotonin (5-HT) drugs: effects on appetite expression and use for the treatment of obesity. Current Drug Targets 2005&semi;6(2):201-213. </li>
+				<li>Imeri L, Mancia M, Bianchi S, Opp MR. 5-Hydroxytryptophan, but not L-tryptophan, alters sleep and brain temperature in rats. Neuroscience 2000&semi;95(2):445-452. </li>
+				<li>Jacobsen FM, Sack DA, Wehr TA, Rogers S, Rosenthal NE. Neuroendocrine response to 5-hydroxytryptophan in seasonal affective disorder. Archives of General Psychiatry 1987&semi;44(12):1086-1091. </li>
+				<li>Juhl JH. Fibromyalgia and the serotonin pathway. Alternative Medicine Review 1998&semi;3(5):367-375. </li>
+				<li>Kahn RS, Westenberg HG. L-5-hydroxytryptophan in the treatment of anxiety disorders. Journal of Affective Disorders 1985&semi;8(2):197-200. </li>
+				<li>Kahn RS, Westenberg HG, Verhoeven WM, Gispen-de Wied CC, Kamerbeek WD. Effect of a serotonin precursor and uptake inhibitor in anxiety disorders&semi; a double-blind comparison of 5hydroxytryptophan, clomipramine and placebo. International Clinical Psychopharmacology 1987&semi;2(1):33-45. </li>
+				<li>Klarskov K, Johnson KL, Benson LM, Gleich GJ, Naylor S. Eosinophilia-myalgia syndrome case-associated contaminants in commercially available 5-hydroxytryptophan. Advances in Experimental Medicine and Biology 1999&semi;467:461-468. </li>
+				<li>Maron E, Toru I, Vasar V, Shlik J. The effect of 5-hydroxytryptophan on cholecystokinin-4 induced panic attacks in healthy volunteers. Journal of Psychopharmacology 2004&semi;18(2):194-199. </li>
+				<li>Martin TG. Serotonin syndrome. Annals of Emergency Medicine 1996&semi;28(5):520-526. </li>
+				<li>Martinelli I, Mainini E, Mazzi C. [Effect of 5-hydroxytryptophan on the secretion of PRL, GH, TSH and cortisol in obesity]. Minerva Endocrinologia 1992&semi;17(3):121-126 (in Italian). </li>
+				<li>Meyers S. Use of neurotransmitter precursors for treatment of depression. Alternative Medicine Review 2000&semi;5(1):64-71. </li>
+				<li>Michelson D, Page SW, Casey R, Truchsess MW, Love LA, Milstien S, Wilson C, Massaquoi SG, Crofford LJ, Hallett M, Gold PW, Sternberg EM. An eosinophilia-myalgia syndrome related disorder associated with exposure to L-5-hydroxytryptophan. The Journal of Rheumatology 1994&semi;21(12):2261-2265. </li>
+				<li>Morris AJ, Armstrong MD. Preparation of 5-hydroxy-L-and D-tryptophan. Journal of Organic Chemistry 1957&semi;22:306-308. </li>
+				<li>NIH 2023: National Institutes of Health. PubChem. Bethesda (MD): Specialized Information Services, National Library of Medicine, National Institutes of Health, US Department of Health & Human Services. 5-Hydroxytryptophan&semi; RN: 56-69-9. [Accessed 2023 March 07]. Available from: https://pubchem.ncbi.nlm.nih.gov/compound/5-Hydroxytryptophan.</li>
+				<li>PDR Health 2023: Drug Information, Nutritional Supplements. 5-Hydroxytryptophan (5-HTP). Montvale (NJ): Thomson PDR&semi; 2007. [Accessed 2023 March 07]. Available from: http://www.pdrhealth.com/drug_info/nmdrugprofiles/nutsupdrugs/5hy_0011.shtml.</li>
+				<li>Pijl H, Koppeschaar HP, Cohen AF, Iestra JA, Schoemaker HC, Frolich M, Onkenhout W, Meinders AE. Evidence for brain serotonin-mediated control of carbohydrate consumption in normal weight and obese humans. International Journal of Obesity and Related Metabolic Disorders 1993&semi;17(9):513-520. </li>
+				<li>Renson J, Goodwin F, Weissbach H, Udenfriend S. Conversion of tryptophan to 5hydroxytryptophan by phenylalanine hydroxylase. Biochemical and Biophysical Research Communications 1961&semi;6(1):20-23. </li>		
+				<li>Ribeiro CA. L-5-Hydroxytryptophan in the prophylaxis of chronic tension-type headache: a double-blind, randomized, placebo-controlled study. For the Portuguese Head Society. Headache 2000&semi;40(6):451-456.</li>
+				<li>Santucci M, Cortelli P, Rossi PG, Baruzzi A, Sacquegna T. L-5-hydroxytryptophan versus placebo in childhood migraine prophylaxis: a double-blind crossover study. Cephalalgia 1986&semi;6(3):155-157. </li>
+				<li>Schruers K, Van Diest R, Overbeek T, Griez E. Acute L-5-hydroxytryptophan administration inhibits carbon dioxide-induced panic in panic disorder patients. Psychiatry Research 2002&semi;113(3):237-243. </li>
+				<li>Shaw K, Turner J, DelMar C. Tryptophan and 5-hydroxytryptophan for depression. Oxfordshire (UK): The Cochrane Database of Systematic Reviews&semi; 2002, Issue 1. Art. No.: CD003198. DOI: 10.1002/14651858.CD003198. </li>
+				<li>Sigma-Aldrich 2023: Sigma-Aldrich Corporation. H9772 5-Hydroxy-L-tryptophan Solid. St. Louis (MO): Sigma-Aldrich Co.&semi; 2007. [Accessed 2023 March 07]. Available from: http://www.sigmaaldrich.com/catalog/search/ProductDetail/SIGMA/H9772.</li>
+				<li>Singhal AB, Caviness VS, Begleiter AF, Mark EJ, Rordorf G, Koroshetz WJ. Cerebral vasoconstriction and stroke after use of serotonergic drugs. Neurology 2002&semi;58(1):130-133. </li>
+				<li>Takahashi S, Takahashi R, Masumura I, Miike A. Measurement of 5-hydroxyindole compounds during L-5-HTP treatment in depressed patients. Folia Psychiatrica et Neurologica Japonica 1976&semi;30(4):463-473.</li>
+				<li>The Arthritis Society 2023. Scleroderma. Toronto (ON): The Arthritis Society&semi; 2023. [Accessed 2023 March 07]. Available from: https://arthritis.ca/about-arthritis/arthritis-types-(a-z)/types/scleroderma.</li>
+				<li>Thorne Research, Inc. 5-Hydroxytryptophan. Alternative Medicine Review 1998&semi;3(3):224-226. </li>
+				<li>Van Praag HM. In search of the mode of action of antidepressants. 5-HTP/tyrosine mixtures in depressions. Neuropharmacology 1983&semi;22(3):433-440. </li>
+				<li>Van Praag HM. Management of depression with serotonin precursors. Biological Psychiatry 1981&semi;16(3):291-310. </li>
+				<li>Van Praag HM. Central monoamine metabolism in depressions. I. Serotonin and related compounds. Comprehensive Psychiatry 1980&semi;21(1):30-43. </li>
+				<li>Van Praag HM, De Haan S. Chemoprophylaxis of depressions. An attempt to compare lithium with 5-hydroxytryptophan. Acta Psychiatrica Scandanavica Supplementum 1981&semi;290:191-201. </li>
+				<li>Van Praag HM, Korf J, Dols LC, Schut T. A pilot study of the predictive value of the probenecid test in application of 5-hydroxytryptophan as antidepressant. Psychopharmacologia 1972&semi;25(1):14-21. </li>
+				<li>Van Vliet IM, Slaap BR, Westenberg HG, Den Boer JA. Behavioral, neuroendocrine and biochemical effects of different doses of 5-HTP in panic disorder. European Neuropsychopharmacology 1996&semi;6(2):103-110. </li>
+				<li>Webb M, Kirker JG. Severe post-traumatic insomnia treated with L-5-hydroxytryptophan. Lancet 1981&semi;1(8234):1365-1366. </li>
+				<li>Westenberg HG, Gerritsen TW, Meijer BA, Van Praag HM. Kinetics of l-5-hydroxytryptophan in healthy subjects. Psychiatry Research 1982&semi;7(3):373-385. </li>
+				<li>Yamada J, Sugimoto Y, Ujikawa M. Involvement of leptin in hypophagia induced by the serotonin precursor 5-hydroxytryptophan (5-HTP) in mice. Biological and Pharmaceutical Bulletin 2006&semi;29(3):557-559. </li>
+				<li>Zarcone VP, Berger PA, Brodie KH, Sack R, Barchas JD. The indoleamine hypothesis of depression: an overview and pilot study. Diseases of the Nervous System 1977&semi;38(8):646-653.</li>
+			</ul>
+	</section>
+
+    <section aria-labelledby="versionHistory" hidden>
+        <h2 id="versionHistory">Version History</h2>
+            <table id="ver" class="subject">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+    </section>
+
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

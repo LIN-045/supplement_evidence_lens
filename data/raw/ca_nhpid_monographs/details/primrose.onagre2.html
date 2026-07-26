@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=primrose.onagre2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="b8895b40-81e6-48a1-b7a5-a9249c31f2d7"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU -->
+
+    <h1>EVENING PRIMROSE OIL</h1>
+    <div class="icon">
+        <a href="dbImages/mono_evening-primrose-oil_english.pdf" title="EVENING PRIMROSE OIL"><img
+                alt="Monograph: EVENING PRIMROSE OIL" style="position:relative; top:-2px"
+                src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22" /> (PDF Version
+            - 50 KB)</a>
+    </div>
+    <p>This monograph is intended to serve as a guide to industry for the preparation of Product Licence Applications
+        (PLAs) and labels for natural health product market authorization. It is not intended to be a comprehensive
+        review of the medicinal ingredient.</p>
+    <p><strong>Notes</strong>
+    <ul>
+        <li>Text in parentheses is additional optional information which can be included on the label at
+            the applicant's discretion.</li>
+        <li>The solidus (/) indicates that either term or statement may be
+            selected by the applicant.</li>
+    </ul>
+    </p>
+
+    <section aria-labelledby="date">
+        <h2 id="date">Date</h2>
+        <p>February 27, 2026</p>
+    </section>
+
+    <section aria-labelledby="properNameCommonNameSourceMaterial">
+        <h2 id="properNameCommonNameSourceMaterial">Proper name(s), Common name(s), Source information</h2>
+        <table id="ref1" class="subject">
+            <caption>Table 1. Proper name(s), Common name(s), Source information</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="colgroup">Proper name(s)</th>
+                    <th rowspan="2" scope="colgroup">Common name(s)</th>
+                    <th colspan="2" scope="colgroup">Source information</th>
+                </tr>
+                <tr>
+                    <th scope="col">Source material(s)</th>
+                    <th scope="col">Part(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><em>Oenothera biennis</em></td>
+                    <td>
+                        <ul>
+                            <li>Evening Primrose Oil</li>
+                            <li>Primrose oil</li>
+                        </ul>
+                    </td>
+                    <td><em>Oenothera biennis</em></td>
+                    <td>Seed</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>References: Proper name: 2024&semi; Common names: Brayfield and Cadart 2007, Gardner and McGuffin 2013&semi;
+            Source
+            information: Brayfield and Cadart 2007, WHO 2002.</p>
+    </section>
+
+    <section aria-labelledby="routeOfAdministration">
+        <h2 id="routeOfAdministration">Route of administration</h2> <!-- CHECK IF ROUTE OR ROUTE(S) -->
+        <p>Oral</p>
+    </section>
+
+    <section aria-labelledby="dosageForm">
+        <h2 id="dosageForm">Dosage form(s)</h2>
+        <p>This monograph excludes foods or food-like dosage forms as indicated in the Compendium of Monographs Guidance
+            Document.</p>
+        <p>Acceptable dosage forms for oral use are indicated in the dosage form drop-down list of the web-based Product
+            Licence Application form for Compendial applications. Although delayed release dosage forms are usually not
+            supported by NNHPD's monographs, this monograph includes ‘Capsule, soft, enteric-coated’ which may be used
+            for products containing fixed oils.</p>
+    </section>
+
+    <section aria-labelledby="useOrPurpose">
+        <h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+        <ul>
+            <li>Source of essential fatty acids for the maintenance of good health (Brayfield and Cadart 2024&semi; IOM
+                2006).</li>
+            <li>Source of omega-6 fatty acids for the maintenance of good health (IOM 2006&semi; Mills and
+                Bone 2005&semi; WHO 2002).</li>
+            <li>Source of linoleic acid (LA) for the maintenance of good health (IOM 2006&semi; Mills and Bone
+                2005&semi; WHO 2002).</li>
+        </ul>
+        <p><strong>Note:</strong> The above uses can be combined on the product label (e.g., Source of omega-6 fatty
+            acids, including linoleic acid, for the maintenance of good health).</p>
+    </section>
+
+    <section aria-labelledby="dose">
+        <h2 id="dose">Dose(s)</h2>
+        <h3>Subpopulation(s)</h3>
+        <p>Adults 18 years and older</p>
+        <h3>Quantity(ies)</h3>
+        <p><strong>Method of preparation:</strong> Non-standardized fixed oil</p>
+        <p>1.3-6 grams of evening primrose oil, per day (Brayfield and Cadart 2024&semi; IOM 2006&semi; Mills and Bone
+            2005&semi; WHO 2002&semi; Keen et al. 1993).</p>
+        <p><strong>Method of preparation:</strong> Standardized fixed oil</p>
+        <p>1.3-6 grams of evening primrose oil, per day (Brayfield and Cadart 2024&semi; IOM 2006&semi; Mills and Bone
+            2005&semi; WHO 2002&semi; Keen et al. 1993) standardized to:
+        <ul>
+            <li>7-14% gamma-linolenic/gamolenic acid (GLA), and/or</li>
+            <li>65-85% linoleic acid (LA).</li>
+        </ul>
+        </p>
+        <p><strong>Note:</strong> The following potency information is considered as additional information and can be
+            included on the label: XX% total omega-6 fatty acids </p>
+        <h3>Direction(s) for use</h3>
+        <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="durationOfUse">
+        <h2 id="durationOfUse">Duration(s) of use</h2>
+        <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="riskInformation">
+        <h2 id="riskInformation">Risk information</h2>
+        <h3>Caution(s) and warning(s)</h3>
+        <p>No statement required.</p>
+        <h3>Contraindication(s)</h3>
+        <p>No statement required.</p>
+        <h3>Known adverse reaction(s)</h3>
+        <p>No statement required.</p>
+    </section>
+
+    <section aria-labelledby="nonMedicinalIngredients">
+        <h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+        <p>Must be chosen from the current Natural Health Products Ingredients Database (NHPID) and must meet the
+            limitations outlined in the database.</p>
+    </section>
+
+    <section aria-labelledby="storageConditions">
+        <h2 id="storageConditions">Storage conditions</h2>
+        <p>Must be established in accordance with the requirements described in the <em>Natural Health Products
+                Regulations</em>.
+        </p>
+        <p><em>All products (information for industry; not for labelling)</em></p>
+        <p>To be packaged in airtight container, protected from light (Ph.Eur. 2023; USP-NF 2023).</p>
+    </section>
+
+    <section aria-labelledby="specifications">
+        <h2 id="specifications">Specifications</h2>
+        <ul>
+            <li>The finished product specifications must be established in accordance with the requirements described in
+                the Natural and Non-prescription Health Products Directorate (NNHPD) Quality of Natural Health Products
+                Guide.</li>
+            <li>The medicinal ingredient must comply with the requirements outlined in the NHPID.</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="exampleOfProductFacts">
+        <h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+        <p><strong>Consult the Guidance Document, <a
+                    href=https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html>Labelling
+                    of Natural Health Products</a> for more details.</strong></p>
+        <p class="alignCenter"><img src="nnhpid-bdipsn/dbImages/Primerose-EN.gif" alt="Product Facts Table"
+                style="width:700px"></p>
+    </section>
+
+    <section aria-labelledby="referencesCited">
+        <h2 id="referencesCited">References cited</h2>
+        <ul>
+            <li>
+                Brayfield A, Cadart C, editors. Martindale: The Complete Drug Reference. London (GB): Pharmaceutical
+                Press; 2024. [Accessed 2024 November 21]. Available from:
+                https://www.medicinescomplete.com/#/browse/martindale
+            </li>
+            <li>
+                Gardner Z, McGuffin M, editors. American Herbal Products Association’s Botanical Safety Handbook.
+                2<sup>nd</sup> edition. Boca Raton (FL): Taylor and Francis Group; 2013.
+            </li>
+            <li>
+                IOM 2003: Institute of Medicine. Committee on Food Chemicals Codex, Food and Nutrition Board, Institute
+                of Medicine. Food Chemicals Codex, 5th edition. Washington (DC): National Academies Press.
+            </li>
+            <li>
+                IOM 2006: Institute of Medicine. Otten JJ, Pitzi Hellwig J, Meyers LD, editors. Dietary Reference
+                Intakes: The Essential Guide to Nutrient Requirements. Washington (DC): National Academies Press.
+            </li>
+            <li>
+                Keen H, Payan J, Allawi J, Walker J, Jamal GA, Weir AI, Henderson LM, Bissessar EA, Watkins PJ, Sampson
+                M, Gale EA, Scarpello J, Boddie HG, Hardy KJ, Thomas PK, Misra P, Halonen JP. Treatment of diabetic
+                neuropathy with gamma-linolenic acid. The gammaLinolenic Acid Multicenter Trial Group. Diabetes Care
+                1993;16(1):8-15.
+            </li>
+            <li>
+                Mills S, Bone K. The Essential Guide to Herbal Safety. St. Louis (MO): Elsevier Churchill Livingstone;
+                2005.
+            </li>
+            <li>
+                Ph.Eur. 2023: European Pharmacopoeia. 11th edition. Strasbourg (FR): Directorate for the Quality of
+                Medicines and HealthCare of the Council of Europe (EDQM); 2023.
+            </li>
+            <li>
+                USDA 2024: United States Department of Agriculture, Agricultural Research Service (USDA ARS), Germplasm
+                Resources Information Network (GRIN) – Global. U.S. National Plant Germplasm System. [Accessed 2024
+                September 27]. Available from: https://npgsweb.ars-grin.gov/gringlobal/taxon/taxonomysearch
+            </li>
+            <li>
+                USP-NF 2023: United States Pharmacopeia and the National Formulary. Rockville (MD): The United States
+                Pharmacopeial Convention, Inc.; 2023.
+            </li>
+            <li>
+                WHO 2002: World Health Organization (WHO) Monographs on Selected Medicinal Plants, Volume 2. Geneva
+                (CHE): World Health Organization; 2002.
+            </li>
+        </ul>
+
+
+
+    </section>
+
+    <section aria-labelledby="referencesReviewed">
+        <h2 id="referencesReviewed">References reviewed</h2>
+        <ul>
+            <li>
+                Barnes J, Anderson LA, Philipson JD. Herbal Medicines, 3<sup>rd</sup> edition. London (UK): The
+                Pharmaceutical
+                Press; 2007.
+            </li>
+            <li>
+                Berardi RR, DeSimone EM, Newton GD, Oszko MA, Popovich NG, Rollins CJ, Shimp LA, Tietze KJ, editors.
+                Handbook of Nonprescription Drugs: An Interactive Approach to Self-Care, 13<sup>th</sup> edition.
+                Washington (DC):
+                American Pharmaceutical Association; 2002.
+            </li>
+            <li>
+                BP 2008: British Pharmacopoeia, Volume 1. London (UK): British Pharmacopoeia Commission. The Stationary
+                Office; 2008.
+            </li>
+            <li>
+                Guivernau N, Meza N, Barja P, Roman O. Clinical and experimental study on the long term effect of
+                dietary gamma-linolenic acid on plasma lipids, platelet aggregation, thromboxane formation, and
+                prostacyclin production. Prostaglandins, Leukotrienes, and Essential Fatty Acids 1994;.51(5):311-316.
+            </li>
+            <li>
+                Hoffmann D. 2003. Medical Herbalism. Rochester (VT): Healing Arts Press; 2003.
+            </li>
+            <li>
+                IOM 2002: Institute of Medicine. Dietary Reference Intakes for Energy, Carbohydrate, Fiber, Fat, Fatty
+                Acids, Cholesterol, Protein, and Amino Acids. Washington (DC): National Academy Press.
+            </li>
+            <li>
+                Lovell CR, Burton JL, Horrobin DF. Treatment of atopic eczema with evening primrose oil [letter]. Lancet
+                1981;1(8214):278.
+            </li>
+            <li>
+                Manku MS, Horrobin DF, Morse N, Kyte Vicki, Jenkins K. Reduced levels of prostaglandin precursors in the
+                blood of atopic patients: defective delta-6-desaturase function as a biochemical basis for atopy.
+                Prostaglandins Leukotrienes and Medicine 1982;9:615-628.
+            </li>
+            <li>
+                Manku MS, Horrobin DF, Morse NL, Wright S, Burton JL. Essential fatty acids in the plasma phospholipids
+                of patients with atopic eczema. The British Journal of Dermatology 1984;. 110(6):8-643.
+            </li>
+            <li>
+                McFayden IJ, Forrest AP, Chetty U. Cyclical breast pain - some observations and the difficulties in
+                treatment. The British Journal Clinical Practice 1992;46(3):161-164.
+            </li>
+            <li>
+                McGregor L, Smith AD, Sidey M, Belin J, Zilkha KJ, McGregor JL. Effects of dietary linoleic acid and
+                gamma linolenic acid on platelets of patients with multiple sclerosis. Acta Neurologica Scandinavica
+                1989;80(1):23-27.
+            </li>
+            <li>
+                Mills S, Bone K. Principles and Practice of Phytotherapy. Toronto (ON): Churchill Livingstone; 2000.
+            </li>
+            <li>
+                Morse NL, Clough PM. A meta-analysis of randomized, placebo-controlled clinical trials of efamol evening
+                primrose oil in atopic eczema. Where do we go from here in light of more recent discoveries? Current
+                Pharmaceutical Biotechnology 2006;7(6):24-503.
+            </li>
+            <li>
+                Morse PF, Horrobin DF, Manku MS, Stewart JC, Allen R, Littlewood S, Wright S, Burton J, Gould DJ, Holt
+                PJ, Jansen CT, Mattila L, Meigel W, Dettke TH, Wexler D, Guenther L, Bordoni A, Patrizi A. Meta-analysis
+                of placebo-controlled studies of the efficacy of epogam in the treatment of atopic eczema. Relationship
+                between plasma essential fatty acid changes and clinical response. The British Journal of Dermatology
+                1989;121(1):75-90.
+            </li>
+            <li>
+                Ockerman P, Bachrack I, Glans S, Rassner S. Evening primrose oil as a treatment of premenstrual
+                syndrome. Recent Advances in Clinical Nutrition 1986;2:405-404.
+            </li>
+            <li>
+                Oliwiecki S, Armstrong J, Burton J, Bradfield J. The effect of essential fatty acids on epidermal
+                atrophy due to topical steroids. Clinical and Experimental Dermatology 1993;18(4):8-326.
+            </li>
+            <li>
+                Oliwiecki S, Burton J. Evening primrose oil and marine oil in the treatment of psoriasis. Clinical and
+                Experimental Dermatology 1994;19(2):9-127.
+            </li>
+            <li>
+                Pashby NL, Mansel RE, Hughes LE, Hanslip J, Preece PE. A clinical trial of evening primrose oil in
+                mastalgia. The British Journal of Surgery 1981;68:801.
+            </li>
+            <li>
+                Puolakka J, Mäkäräinen L, Viinikka L, Ylikorkala O. Biochemical and clinical effects of treating the
+                premenstrual syndrome with prostaglandin synthesis precursors. The Journal of Reproductive Medicine
+                1985;30:149-153.
+            </li>
+            <li>
+                Puri BK. The safety of evening primrose oil in epilepsy. Prostaglandins, Leukotrienes and Essential
+                Fatty Acids 2007;77:101-103.
+            </li>
+            <li>
+                Schäfer L, Kragballe K. Supplementation with evening primrose oil in atopic dermatitis: effect on fatty
+                acids in neutrophils and epidermis. Lipids 1991;26(7):60-557.
+            </li>
+            <li>
+                Schalin-Karrila M, Mattila L, Jansen CT, Uotila P. Evening primrose oil in the treatment of atopic
+                eczema: effect on clinical status, plasma phospholipid fatty acids and circulating blood prostaglandins.
+                The British Journal of Dermatology 1987;117(1):11-19.
+            </li>
+            <li>
+                Sharpe GR, Farr PM. Evening primrose oil and eczema. Lancet 1990;335:667-668.
+            </li>
+            <li>
+                Vaddadi KS. The use of gamma-linolenic acid and linoleic acid to differentiate between temporal lobe
+                epilepsy and schizophrenia. Prostaglandins and Medicine 1981;6:375-379.
+            </li>
+            <li>
+                Van Gool CJ, Zeegers MP, Thijs C. Oral essential fatty acid supplementation in atopic dermatitis – a
+                meta-analysis of placebo-controlled trials. The British Journal of Dermatology 2004;150:728-740.
+            </li>
+            <li>
+                Veale D, Torley H, Richards IM, O'Dowd A, Fitzsimons C, Belch JJ, Sturrock RD. A double-blind placebo
+                controlled trial of Efamol® Marine on skin and joint symptoms of psoriatic arthritis. British Journal of
+                Rheumatology 1994;33(10):8-954.
+            </li>
+            <li>
+                Vericel E, Lagarde M, Mendy F, Courpron PH, Dechavanne M. Effects of linoleic acid and gamma-linolenic
+                acid intake on
+                platelet functions in elderly people. Thrombosis Research 1986;42:499-509.
+            </li>
+            <li>
+                Walker T, Singh PK, Wyatt KM, O’Brien PM. The effect of prostanoid precursors and inhibitors on platelet
+                angiotensin II binding. Journal of Obstetrics and Gynaecology 1999;19(1):56-58.
+            </li>
+            <li>
+                Wetzig N. Mastalgia: a 3 year Australian study. The Australian and New Zeland Journal of Surgery
+                1994;64(5):31-329.
+            </li>
+            <li>
+                Whitaker D, Cilliers J, de Beer C. Evening primrose (Epogam®) in the treatment of chronic hand
+                dermatitis: disappointing therapeutic results. Dermatology 1996;193(2):20-115.
+            </li>
+            <li>
+                Wiersema J, León B. World Economic Plants: A Standard Reference. Boca Raton (FL): CRC Press LLC; 1999.
+            </li>
+            <li>
+                Williamson EM, Evans FJ, Wren RC. Potter's New Cyclopaedia of Botanical Drugs and Preparations. Saffron
+                Walden (UK): C.W. Daniel Company Limited; 1988.
+            </li>
+            <li>
+                Wright S, Burton JL. Oral evening primrose seed oil improves atopic eczema. Lancet
+                1982;2(8308):1120-1122.
+            </li>
+            <li>
+                Yoon S, Lee J &amp; Lee S. The therapeutic effect of evening primrose oil in atopic dermatitis patients
+                with dry scaly skin lesions is associated with the normalization of serum gammainterferon levels. Skin
+                Pharmacology and Applied Skin Physiology 2002;15:20-25.
+            </li>
+            <li>
+                Yoshimoto-Furuie K, Yoshimoto K, Tanaka T, Saima S, Kikuchi Y, Shay J, Horrobin DF, Echizen H. Effects
+                of oral supplementation with evening primrose oil for six weeks on plasma essential fatty acid and
+                uremic skin symptoms in hemodialysis patients. Nephron 1999;91:9151.
+            </li>
+        </ul>
+
+
+    </section>
+
+    <section>
+
+        <h2>Version history</h2>
+
+        <table class="subject">
+            <thead>
+                <th>
+                    Publication date </th>
+                <th>
+                    Update type </th>
+                <th>
+                    Summary of main updates (from Feb 2026) </th>
+            </thead>
+            <tbody>
+
+
+                <tr>
+                    <td>2026-02-27</td>
+                    <td>Minor updates</td>
+                    <td>
+                        <ul>
+                            <li>Introductory notes</li>
+                            <li>Common names</li>
+                            <li>Addition of the dosage form ‘Capsule, soft, enteric-coated’</li>
+                            <li>Adjustment of the linoleic acid claim</li>
+                            <li>Additional note for the optional addition of the total omega-6 fatty acids percentage on
+                                the label</li>
+                            <li>Revision of the storage conditions (not for labelling)</li>
+                            <li>Inclusion of a Product Facts Table example</li>
+                            <li>Reference section</li>
+                            <li>Inclusion of version history information</li>
+
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2018 09 25</td>
+                    <td>Validation</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2008-07-16</td>
+                    <td>Initial release</td>
+                    <td> - </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+    </section>
+
+    <!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>

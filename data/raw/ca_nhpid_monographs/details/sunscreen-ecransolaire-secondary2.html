@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" dir="ltr"><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="en" dir="ltr" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    
+    <title>Temporary title</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+ 
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
+    <noscript>
+      <!-- Write closure fall-back static file -->
+      
+      <!-- Close the tag in the template -->
+      </noscript>
+      <link href="/nhpid-bdipsn/css/main.css" rel="stylesheet" />
+      <script src="/nhpid-bdipsn/webjars/jquery/3.5.1/jquery.min.js"></script>
+      <script src="/nhpid-bdipsn/webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+      <script src="/nhpid-bdipsn/js/app.js"></script>
+      <script>
+  		$( document ).ready(function() {
+  			// Set page title as the same as h1 text
+  			var header = $('h1').html();
+  			if (header != undefined) {
+  				var regX = /(<([^>]+)>)/ig;
+  				$('title').html(header.replace(regX, ""));
+  			}
+  		});
+  		</script><!--[if gte IE 9 | !IE ]><!-->
+
+<link
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico"
+	rel="icon" type="image/x-icon" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/theme.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsfixes.css" />
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/favicon.ico" rel="shortcut icon"></link>
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/css/ie8-theme.min.css"></link>
+
+<![endif]-->
+<!--[if lte IE 9]><![endif]-->
+<!-- Are you using the application templates? If so add the following CSS file -->
+<!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsapps.css">-->
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/css/noscript.min.css" />
+<link rel="stylesheet"
+	href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdtsnoscript.css" />
+    </noscript>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refTop({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false"
+      }));
+      /*]]>*/
+    </script>
+    <!-- Write custom CSS elements here. Added through 'cssIncludes' model attribute. -->
+             
+    <!-- Write external CSS elements here. Added through 'externalCssIncludes' model attribute. -->
+            
+  </head>
+  <body vocab="http://schema.org/" typeof="WebPage">
+    <!-- Insert session timeout here. -->
+      
+    <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <div><nav aria-label="Skip Links">
+	<ul id="wb-tphp">
+		<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to
+				main content</a></li>
+		<li class="wb-slc visible-xs visible-sm visible-md visible-lg"><a
+			class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
+	</ul>
+</nav>
+<header>
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher"
+				typeof="GovernmentOrganization">
+				<a href="https://www.canada.ca/en.html" property="url"><img
+					src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/sig-blk-en.svg"
+					alt="Government of Canada" property="logo" /><span class="wb-inv">
+						/ <span lang="fr">Gouvernement du Canada</span>
+				</span></a>
+				<meta property="name" content="Government of Canada" />
+				<meta property="areaServed" typeof="Country" content="Canada" />
+				<link id="StdIssueWasHere1" property="logo"
+					href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg" />
+			</div>
+			<section id="wb-srch"
+				class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+				<h2>Search</h2>
+				<form action="https://www.canada.ca/en/sr/srb.html" method="get"
+					name="cse-search-box" role="search">
+					<div class="form-group wb-srch-qry">
+						<label for="wb-srch-q" class="wb-inv">Search Canada.ca</label> <input
+							id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control"
+							name="q" type="search" value="" size="34" maxlength="170"
+							placeholder="Search Canada.ca" /> <input type="hidden"
+							name="_charset_" value="UTF-8" />
+						<datalist id="wb-srch-q-ac">
+						</datalist>
+					</div>
+					<div class="form-group submit">
+						<button type="submit" id="wb-srch-sub"
+							class="btn btn-primary btn-small" name="wb-srch-sub">
+							<span class="glyphicon-search glyphicon"></span><span
+								class="wb-inv">Search</span>
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<nav class="gcweb-menu" typeof="SiteNavigationElement"
+		aria-labelledby="gcwebMenu">
+		<div class="container">
+			<h2 class="wb-inv" id="gcwebMenu">Menu</h2>
+			<button type="button" aria-haspopup="true" aria-expanded="false">
+				<span class="wb-inv">Main </span>Menu <span
+					class="expicon glyphicon glyphicon-chevron-down"></span>
+			</button>
+			<ul role="menu" aria-orientation="vertical"
+				data-ajax-replace="//www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/jobs.html">Jobs and the
+						workplace</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration
+						and citizenship</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://travel.gc.ca/">Travel and tourism</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/business.html">Business
+						and industry</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/health.html">Health</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/environment.html">Environment
+						and natural resources</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/defence.html">National
+						security and defence</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/culture.html">Culture,
+						history and sport</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/policing.html">Policing,
+						justice and emergencies</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/transport.html">Transport
+						and infrastructure</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada
+						and the world</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/finance.html">Money and
+						finances</a></li>
+				<li role="presentation"><a role="menuitem"
+					href="https://www.canada.ca/en/services/science.html">Science
+						and innovation</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav id="wb-bc" property="breadcrumb"
+		aria-labelledby="breadcrumbPosition">
+		<h2 id="breadcrumbPosition">You are here:</h2>
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="https://www.canada.ca/en.html">Canada.ca</a></li>
+			</ol>
+		</div>
+	</nav>
+</header>
+</div>
+    </div>    
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.top({
+          cdnEnv: "Akamai",
+          search: false,
+          lngLinks: [{
+              lang: "fr",
+              href: "?atid=sunscreen-ecransolaire-secondary2\u0026lang=fre",
+              text: "Fran\u0026ccedil;ais"
+          }],
+          showPreContent: true,
+          breadcrumbs: [{"title":"Health Canada","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/index-eng.php","viewName":null,"acronym":null},{"title":"Drugs \u0026amp; Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products","titleEN":null,"titleFR":null,"href":"http:\/\/www.hc-sc.gc.ca\/dhp-mps\/prodnatur\/index-eng.php","viewName":null,"acronym":null},{"title":"Natural Health Products Ingredients Database","titleEN":null,"titleFR":null,"href":"\/nhpid-bdipsn\/","viewName":null,"acronym":null}]
+      });
+      /*]]>*/
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+      <!-- the main content -->
+      <div>
+			<input type="hidden" id="_csrf" value="01041aa1-130a-404c-a8e2-9e491979627e"/>
+			<div><span class="wb-sessto" data-wb-sessto='{"inactivity": 7200000, "reactionTime": 300000, "sessionalive": 7200000, "logouturl": "/nhpid-bdipsn"}'></span></div>
+			<div>
+
+	<div id='wb-cont'><!-- CONTENT BEGINS | DEBUT DU CONTENU --> 
+
+<h1>Secondary Sunscreen Monograph</h1>
+	<div class="icon">
+		<a href="dbImages/mono_secondary-sunscreen-monograph_english.pdf" title="Secondary Sunscreen Monograph"><img alt="Monograph: Secondary Sunscreen Monograph" style="position:relative; top:-2px" src="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/images/pdf_big.gif" height="21" width="22"/>(PDF Version - 119 KB)</a>
+	</div>
+
+	<section aria-labelledby="date">
+		<h2 id="date">Date</h2>
+			<p>2026-02-27</p>
+	</section>
+
+	<section aria-labelledby="foreward">
+		<h2 id="foreward">FOREWORD</h2>
+    		<p>This monograph is intended to replace the existing Secondary Sunscreen Monograph of December 19, 2025. This monograph describes the requirements necessary to receive market authorization [i.e. a Drug Identification Number (DIN) or a Natural Product Number (NPN)], for secondary sunscreen products. The monograph identifies the permitted medicinal and non-medicinal ingredients, concentrations, indications, directions and conditions of use for these products to be market authorized without the submission to Health Canada of additional evidence. It also contains the test methods recommended to be used to comply with the requirements of this monograph. Products which do not meet all of the criteria outlined in this document can apply for market authorization outside of the monograph stream.</p>
+			<p>Primary sunscreen products are products that are intended to be applied to the skin to prevent sunburn and related conditions of sun exposure. Secondary sunscreen products are products that are intended to be applied to the face or skin as makeup or skincare products and which carry limited sunscreen claims. If no explicit primary cosmetic function is evident from the inner and outer package labels and/or the brand name, then the sunscreen will be deemed to be a primary sunscreen and applicants should reference the Primary Sunscreen Monograph.</p>
+			<p>Applicants are reminded that secondary sunscreen products, like other drugs or natural health products, are subject to the Food and Drug Regulations or the Natural Health Products Regulations administered by the Natural and Non-prescription Health Products Directorate (NNHPD). This includes requirements related to labelling, manufacturing and product specifications. Additional information on labels, outside of those specified in the monograph, such as additional directions for use and/or non-therapeutic claims are acceptable as long as they meet the <a href="http://adstandards.ca/en/clearance/cosmetics/Guidelines-for-the-Nonprescription-and-Cosmetic-Industry.pdf">Guidelines for the Nonprescription and Cosmetic Industry Regarding Non-therapeutic Advertising and Labelling Claims</a>, the <a href="http://adstandards.ca/en/clearance/ConsumerDrugs/Consumer-Advertising-Guidelines-for-Marketed-Health-Products-EN.pdf">Guidelines for Consumer Advertising of Health products for Nonprescription drugs, Natural Health Products, Vaccines and Medical Devices</a>, and are not false, misleading or counterintuitive to the use of the product.</p>
+			<p>The development of this monograph is the result of a thorough review of existing regulations, guidance documents, policies and current practices within Health Canada and other leading regulatory agencies.</p>
+			<p><strong>Notes</strong>
+				<ul>
+					<li>Text in parentheses is additional optional information which can be included on the label at the applicant&apos;s discretion.</li>
+					<li>The solidus (/) indicates that either term and/or statement may be selected on the label.</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="medicinalIngredients">
+		<h2 id="medicinalIngredients">Medicinal ingredient(s)</h2>
+			<p>Secondary sunscreen products are classified as natural health products (NHPs) if they contain at least one ingredient listed in Table 1 and do not contain any ingredient listed in Table 2. Applicants applying for an NPN can access the appropriate forms and guidance at: <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html">https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription.html</a>.</p>
+			<p>Secondary sunscreen products are classified as non-prescription drugs (NPDs) if they contain at least one ingredient from Table 2. Applicants applying for a DIN can access the appropriate forms and guidance at: <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html">https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents.html</a>.</p>
+	</section>
+
+	<section aria-labelledby="properNameCommonNameSourceInformation">
+		<h2 id="properNameCommonNameSourceInformation">Proper name(s), Common name(s), Source information</h2>
+			<table id="ref1" class="subject">
+				<caption>Table 1: NHP medicinal ingredients</caption>
+				<thead>
+					<tr>
+						<th rowspan="2" scope="colgroup">Proper name(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+						<th rowspan="2" scope="colgroup">Common name(s)<sup><a href="#ref1-1" style="text-decoration: none;">1</a></sup></th>
+						<th colspan="1" scope="colgroup">Source information<sup><a href="#ref1-1" style="text-decoration: none;">1</a>,<a href="#ref1-2" style="text-decoration: none;">2</a></sup></th>
+						<th rowspan="2" scope="colgroup">UV Protection<sup><a href="#ref1-3" style="text-decoration: none;">3</a></sup></th>
+						<th rowspan="2" scope="colgroup">Quantity<sup><a href="#ref1-4" style="text-decoration: none;">4</a></sup></th>
+					</tr>
+					<tr>
+						<th scope="col">Source ingredient(s)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Titanium dioxide<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></td>
+						<td>
+							<ul>
+								<li>C.I. No. 77891</li> 
+								<li>Titanium dioxide</li>
+								<li>Titanic anhydride</li>
+							</ul>
+						</td>
+						<td>Titanium dioxide</td>
+						<td>UVA</br>UVB</td>
+						<td>&le; 25%<sup><a href="#ref1-5" style="text-decoration: none;">5</a></sup></td>
+					</tr>
+					<tr>
+						<td>Zinc oxide<sup><a href="#ref1-6" style="text-decoration: none;">6</a></sup></td>
+						<td>
+							<ul>
+								<li>C.I. No. 77947</li> 
+								<li>Zinc oxide</li>
+							</ul>
+						</td>
+						<td>Zinc oxide</td>
+						<td>UVA</br>UVB</td>
+						<td>&le; 25%<sup><a href="#ref1-6" style="text-decoration: none;">6</a></sup></td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<sup id="ref1-1">1</sup>At least one of the following references was consulted per proper name, common name and source information: RSC 2025&semi; USP-NF 2024&semi; TGA 2023&semi; Nikitakis and Lange 2016.<br/>
+				<sup id="ref1-2">2</sup>Ingredient must be pharmacopoeial grade (for a list of acceptable pharmacopoeial grades, see the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html">Quality of Natural Health Products Guide</a>).<br/>
+				<sup id="ref1-3">3</sup>At least one of the following references was consulted for UV protection: Wang et al. 2010&semi; Antoniou et al. 2008&semi; Ferguson and Dover 2006.<br/>
+				<sup id="ref1-4">4</sup>Quantity can be expressed as percentage weight by weight (%w/w) or percentage weight by volume (%w/v), depending on the product formulation. At least one of the following references was consulted for the dosage: TGA 2023&semi; US FDA 2021&semi; EC 2019&semi; Wang et al. 2010.<br/>
+				<sup id="ref1-5">5</sup>The titanium dioxide entry includes the nanomaterial form. In case of combined use of titanium dioxide and nano titanium dioxide, the sum shall not exceed the limit given in the quantity column, i.e. 25%, in the finished product (EC 2019).<br/>
+				<sup id="ref1-6">6</sup>The zinc oxide entry includes the nanomaterial form. In case of combined use of zinc oxide and nano zinc oxide, the sum shall not exceed the limit given in the quantity column, i.e. 25%, in the finished product (EC 2019).
+			</p>
+			<table id="ref2" class="subject">
+				<caption>Table 2: NPD medicinal ingredients</caption>
+				<thead>
+					<tr>
+						<th scope="colgroup">Proper name(s)</th>
+						<th scope="colgroup">Common name(s)</th>
+						<th scope="colgroup">UV Protection</th>
+						<th scope="colgroup">Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li>1-(p-tert-Butylphenyl)-3-(p-methoxyphenyl)-1,3-propanedione</li>  
+								<li>1-[4-(1,1-Dimethylethyl)phenyl]-3-(4-methoxyphenyl)-1,3-propanedione</li>
+								<li>4-tert-Butyl-4'-methoxydibenzoylmethane</li>
+							</ul>
+						</td>
+						<td>Avobenzone</td>
+						<td>UVA I</td>
+						<td>&le; 3%</td>
+					</tr>
+					<tr>
+						<td>2,2&apos;-[6-(4-Methoxyphenyl) -1,3,5-triazine-2,4-diyl]bis(5-[(2-ethylhexyl)oxy]phenol)</td>
+						<td>Bemotrizinol</td>
+						<td>UVA<br/>UVB</td>
+						<td>&le; 6%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>(2-Hydroxy-4-methoxyphenyl)phenylmethanone</li>  
+								<li>2-Hydroxy-4-methoxybenzophenone</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Benzophenone-3</li>  
+								<li>Oxybenzone </li>
+							</ul>
+						</td>
+						<td>UVA II</br>UVB</td>
+						<td>&le; 6%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Benzoyl-5-methoxy-1-phenol-4-sulfonic acid</li>  
+								<li>2-Hydroxy-4-methoxybenzophenone-5-sulfonic acid</li>
+								<li>3-Benzoyl-4-hydroxy-6-methoxybenzenesulfonic acid</li>
+								<li>5-Benzoyl-4-hydroxy-2-methoxybenzenesulfonic acid</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Benzophenone-4</li>  
+								<li>Sulisobenzone</li>
+							</ul>
+						</td>
+						<td>UVA II</br>UVB</td>
+						<td>&le; 10%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>(2-Hydroxy-4-methoxyphenyl)(2-hydroxyphenyl)methanone</li>  
+								<li>2,2&apos;-Dihydroxy-4-methoxybenzophenone</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Benzophenone-8</li>  
+								<li>Dioxybenzone</li>
+							</ul>
+						</td>
+						<td>UVA II</br>UVB</td>
+						<td>&le; 3%</td>
+					</tr>
+					<tr>
+						<td>2,2&apos;-Methylenebis-(6-(2H-benzotriazol-2yl)-4-(1,1,3,3-tetramethylbutyl)-phenol)</td>
+						<td>Bisoctrizole</td>
+						<td>UVA<br/>UVB</td>
+						<td>&le; 5%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Ethoxyethyl p-methoxycinnamate</li>  
+								<li>3-(4-Methoxyphenyl)-2-propenoic acid 2-ethoxyethyl ester</li>
+							</ul>
+						</td>
+						<td>Cinoxate</td>
+						<td>UVB</td>
+						<td>&le; 3%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>3-(4-Methoxyphenyl)-2-propenoic acid, compd. with 2,2&apos;-iminobis(ethanol) (1:1)</li>  
+								<li>p-Methoxycinnamic acid, compound with 2,2&apos;-iminodiethanol (1:1)</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>DEA-methoxycinnamate</li>
+								<li>Diethanolamine methoxycinnamate</li>
+							</ul>
+						</td>
+						<td>UVB</td>
+						<td>&le; 10%</td>
+					</tr>
+					<tr>
+						<td>2-(2H-Benzotriazol-2-yl)-4-methyl-6-(2-methyl-3-{1,3,3,3-tetramethyl-1-[(trimethylsilyl)oxy]-1-disiloxanyl}propyl)phenol</td>
+						<td>Drometrizole trisiloxane</td>
+						<td>UVA</br>UVB</td>
+						<td>&le; 15%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>(+-)-(3E,3&apos;E)-(p-Phenylenedimethylidyne)bis[2-oxo-10-bornanesulfonic acid]</li>  
+								<li>3,3&apos;-(1,4 Phenylenedimethylidene)bis(7,7-dimethyl-2-oxobicyclo[2.2.1]heptane-1- methanesulfonic acid)</li>
+								<li>Terephthalylidene-3,3&apos;-dicamphor-10,10&apos;-disulfonic acid</li>
+								<li>Terephthalylidene dicamphor sulfonic acid</li>
+							</ul>
+						</td>
+						<td>Ecamsule</td>
+						<td>UVA</br>UVB</td>
+						<td>&le; 10%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Phenyl-1H-benzimidazole-5-sulphonic acid</li>  
+								<li>2-Phenylbenzimidazole-5-sulfonic acid </li>
+							</ul>
+						</td>
+						<td>Ensulizole</td>
+						<td>UVB</td>
+						<td>&le; 4%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>(&plusmn;)-3-(p-Methylbenzylidene)camphor</li>  
+								<li>1,7,7-Trimethyl-3-[(4-methylphenyl)methylene]bicyclo[2.2.1]heptan-2-one</li>
+							</ul>
+						</td>
+						<td>Enzacamene</td>
+						<td>UVB</td>
+						<td>&le; 4%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Hydroxybenzoic acid 3,3,5-trimethylcyclohexyl ester</li>  
+								<li>3,3,5-Trimethylcyclohexyl salicylate</li>
+								<li>Salicylic acid 3,3,5-trimethylcyclohexyl ester</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Homomenthyl salicylate</li>  
+								<li>Homosalate</li>
+							</ul>
+						</td>
+						<td>UVB</td>
+						<td>&le; 15%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>5-Methyl-2-(1-methylethyl)cyclohexanol 2-aminobenzoate</li>  
+								<li>Anthranilic acid, p-menth-3-yl ester</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Menthyl anthranilate </li>  
+								<li>Meradimate</li>
+							</ul>
+						</td>
+						<td>UVA II</td>
+						<td>&le; 5%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Ethylhexyl p-methoxycinnamate</li>  
+								<li>3-(4-Methoxyphenyl)-2-propenoic acid, 2-ethylhexyl ester</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Octinoxate </li>  
+								<li>Octyl methoxycinnamate</li>
+							</ul>
+						</td>
+						<td>UVB</td>
+						<td>&le; 7.5%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Ethylhexyl salicylate </li>  
+								<li>2-Hydroxybenzoic acid 2-ethylhexyl ester</li>
+							</ul>
+						</td>
+						<td>Octisalate</td>
+						<td>UVB</td>
+						<td>&le; 5%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Cyano-3,3-diphenyl-2-propenoic acid, 2-ethylhexyl ester</li>  
+								<li>2-Ethylhexyl-2-cyano-3,3-diphenylacrylate</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Octocrilene</li>  
+								<li>Octocrylene</li>
+							</ul>
+						</td>
+						<td>UVA II</br>UVB</td>
+						<td>&le; 10%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Ethylhexyl p-(dimethylamino)benzoate</li>  
+								<li>4-(Dimethylamino)benzoic acid, 2-ethylhexyl ester</li>
+							</ul>
+						</td>
+						<td>Padimate O</td>
+						<td>UVB</td>
+						<td>&le; 8%</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>2-Hydroxybenzoic acid, compd. with 2,2',2''-nitrilotris(ethanol) (1:1)</li>  
+								<li>Salicylic acid, compound with 2,2',2''-nitrilotriethanol (1:1)</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Triethanolamine salicylate </li>
+								<li>Trolamine salicylate </li>
+							</ul>
+						</td>
+						<td>UVB</td>
+						<td>&le; 12%</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+
+	<section aria-labelledby="routeOfAdministration">
+		<h2 id="routeOfAdministration">Route of administration</h2> <!-- check if route or routes -->
+			<p>Topical</p>
+	</section>
+
+	<section aria-labelledby="dosageForm">
+		<h2 id="dosageForm">Dosage Form(s)</h2>
+			<p><em>Acceptable dosage forms for all NHPs</em>
+				<ul>
+					<li>Cream&semi; Emulsion&semi; Foam&semi; Gel&semi; Liquid&semi; Lotion&semi; Ointment&semi; Paste&semi; Pressed powder&semi; Salve&semi; Solution&semi; Suspension&semi; Topical liquid</li>
+				</ul>
+			</p>
+			<p><em>Acceptable dosage forms for NHPs not containing nano titanium dioxide or nano zinc oxide</em>
+				<ul>
+					<li>Aerosol&semi; Aerosol, spray&semi; Loose powder&semi; Spray&semi; Spray (bag-on-valve)</li>
+				</ul>
+			</p>
+			<p><em>Acceptable dosage forms for NPDs</em>
+				<ul>
+					<li>Aerosol&semi; Aerosol, spray&semi; Cream&semi; Emulsion&semi; Foam&semi; Gel&semi; Lotion&semi; Ointment&semi; Paste&semi; Powder&semi; Salve&semi; Solution&semi; Spray&semi; Spray (bag-on-valve)&semi; Stick&semi; Suspension</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="useOrPurpose">
+		<h2 id="useOrPurpose">Use(s) or Purpose(s)</h2>
+			<p>Secondary sunscreens have a function other than sun protection while still providing the skin and lips protection from UV rays, i.e. moisturizers, make-up, lip balm, anti-ageing, anti-wrinkle creams.</p>
+			<p><em>All products (mandatory)</em>
+				<ul>
+					<li>Sun Protection Factor "X"/SPF "X"<a href="#asterix-1" style="text-decoration: none;">*</a></li>
+				</ul>
+			</p>
+			<p><em>Products with a critical wavelength of ≥ 370 nm<a href="#asterix-2" style="text-decoration: none;">**</a> and with medicinal ingredient(s) that provide UVA and UVB protection (optional)</em>
+				<ul>
+					<li>Broad spectrum</li>
+					<li>Absorbs throughout the UVA/UVB spectrum</li>
+					<li>UVA/UVB protection</li>
+				</ul>
+			</p>
+			<p><em>Products that are water resistant<a href="#asterix-3" style="text-decoration: none;">***</a> (optional)</em>
+				<ul>
+					<li>Water/Sweat Resistant [40 minutes/80 minutes]</li>
+				</ul>
+			</p>
+			<p><strong>Note:</strong> For NPDs, products making any of the above claims are eligible for the labelling flexibilities set out in section 2.6 of the <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling-requirements-non-prescription-drugs.html">Labelling requirements for non-prescription drugs guidance document</a> except for the warning statement regarding the risk of rashes, as mentioned in the Risk information section below.</p>
+			<p>
+				<a id="asterix-1">*</a> As determined using a standardized and reproducible method, such as the one referenced in US FDA 2021 M020 monograph, ISO 24444, ISO 23675 or ISO 23698. The SPF value must be &ge; 2 and values greater than 50 are to be declared as SPF 50+.<br/>
+				<a id="asterix-2">**</a> As determined using a standardized and reproducible method, such as the one referenced in US FDA 2021 M020 monograph, ISO 24443, ISO 23698 or Colipa 2011<br/>
+				<a id="asterix-3">***</a> As determined using a standardized and reproducible method, such as the one referenced in US FDA 2021 M020 monograph or Colipa 2005. When the Colipa methodology is used, the labelled SPF value must be the SPF value of the final product formulation determined following immersion (Antoniou et al. 2008).
+			</p>
+			<p><em>Unacceptable use(s) or purpose(s)</em></p>
+			<p>See Appendix <a href="#appendix-1" style="text-decoration: none;">1</a>.</p>
+			<p><strong>Notes</strong></p>
+			<p><strong>PA rating (Protection grade of UVA)</strong>
+				<ul>
+					<li>The PA rating system was developed in Japan and is currently used by most Asian countries.</li>
+					<li>This system addresses UVA protection based on the Persistent Pigment Darkening method (e.g., ISO 24442).</li>
+					<li>For NPD ingredients, data must be provided to NNHPD through the labelling only submission pathway to support any additional information regarding the PA rating.</li>
+					<li>For NHP products containing zinc oxide or a combination of zinc oxide and titanium dioxide, the PA rating is acceptable as additional information on the label, as long as it is truthful and not misleading. Valid data using a standardized and reproducible method must be available upon request. This does not apply to titanium dioxide alone which is less effective at blocking long-wave UVA (UVA I) rays.</li>
+				</ul>
+			</p>
+	</section>
+	
+	<section aria-labelledby="dose">
+		<h2 id="dose">Dose(s)</h2>
+			<h3>Subpopulation(s)</h3>
+				<p>Infants 6 to 12 months, Children 1 to 11 years, Adolescents 12 to 17 years, Adults 18 years and older</p>
+			<h3>Quantity(ies)</h3>
+				<p>See Tables <a href="#ref1" style="text-decoration: none;">1</a> and <a href="#ref2" style="text-decoration: none;">2</a>.</p>
+			<h3>Permitted combinations</h3>
+				<p>Any combination of medicinal ingredients listed in Tables 1 and 2 are permitted, provided that the individual concentration limits outlined in the tables are respected.</p>
+			<h3>Direction(s) for use</h3>
+				<p><em>Products excluding sprays and aerosols</em>
+					<ul>
+						<li>Apply as needed</li>
+					</ul>
+				</p>
+				<p><em>Spray and aerosol products</em>
+					<ul>
+						<li>Apply as needed</li>
+						<li>Hold container 4 to 6 inches/10 to 15 centimetres from the skin to apply</li>
+						<li>Do not spray directly onto face. Spray on hands then apply to face</li>
+						<li>Do not apply in windy conditions</li>
+						<li>Use in a well-ventilated area</li>
+						<li>Avoid inhaling or exposing others to spray</li>
+					</ul>
+				</p>
+				<p><em>All products (optional)</em>
+					<ul>
+						<li>Test on a small area of skin before first use. If irritation occurs (within 24 hours), use a different product.</li>
+					</ul>
+				</p>
+	</section>
+
+	<section aria-labelledby="durationOfUse">
+		<h2 id="durationOfUse">Duration(s) of Use</h2>
+			<p>No statement required.</p>
+	</section>
+	
+	<section aria-labelledby="riskInformation">
+		<h2 id="riskInformation">RISK INFORMATION</h2>
+			<h3>Caution(s) and warning(s)</h3>
+				<p><em>All products</em>
+					<ul>
+						<li>For external use only</li>
+						<li>When using this product avoid contact with eyes. If contact occurs, rinse thoroughly with water (US FDA 2021).</li>
+						<li>Stop use and ask a health care practitioner/health care provider/health care professional/doctor/physician if rash occurs<a href="#asterix-4" style="text-decoration: none;">****</a></li>
+						<li>Keep out of reach of children. If swallowed, call a poison control centre or get medical help right away.</li>
+					</ul>
+				</p>
+				<p><a id="asterix-4">****</a>Note: For NPDs, this warning statement must appear on the outer label of all secondary sunscreen products, and is ineligible for Level 4 Graduated and Labelling for Low-Risk Non-prescription Drugs (Category I) flexibilities as described in the <em>Guidance Document: Labelling Requirements for Non-prescription Drugs</em>.</p>
+			<h3>Contraindication(s)</h3>
+				<p><em>All products</em>
+					<ul>
+						<li>Do not use on broken skin (US FDA 2021)</li>
+					</ul>
+				</p>
+			<h3>Known adverse reaction(s)</h3>
+				<p>No statement required</p>
+	</section>	
+		
+	<section aria-labelledby="nonMedicinalIngredients">
+		<h2 id="nonMedicinalIngredients">Non-medicinal ingredients</h2>
+			<p>Ingredients must be chosen from the current <a href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">Natural Health Products Ingredients Database</a> (NHPID) and must meet the limitations outlined in that database, the Food and Drug Regulations (FDR), and the current <a href="https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html">Cosmetic Ingredient Hotlist</a>, when relevant.</p>
+	</section>
+	
+	<section aria-labelledby="storageConditions">
+		<h2 id="storageConditions">STORAGE CONDITIONS</h2>
+			<p>Must be established in accordance with the requirements described in the <em>Natural Health Products Regulations</em> or the <em>Food and Drug Regulations</em>.</p>
+	</section>
+	
+	<section aria-labelledby="specifications">
+		<h2>Specifications</h2>
+			<p>This monograph describes those requirements that are specific to this class of drugs and to NHPs. Any change to the manufacturing process that impacts the safety and efficacy of the ingredients, such as the use of novel technology, requires supporting data and will be reviewed outside the monograph. Note that nanosized (definition: HC 2011) titanium dioxide and nanosized zinc oxide ingredients are supported by this monograph, when used in applications that may not lead to exposure of the end user&apos;s lungs by inhalation. Please consult Annex VI to Regulation (EC) No 1223/2009 for nanomaterial characteristic requirements for titanium dioxide and zinc oxide.</p>
+			<p><em>Products containing Table 1 NHP medicinal ingredients only</em></p>
+				<p>The finished product specifications must be established in accordance with the requirements described in the NNHPD <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/quality-guide.html">Quality of Natural Health Products Guide</a>. The medicinal ingredient must comply with the requirements outlined in the <a href="http://webprod.hc-sc.gc.ca/nhpid-bdipsn/search-rechercheReq.do">NHPID</a>.</p>
+			<p><em>Products containing Table <a href="#ref2" style="text-decoration: none;">2</a> drug medicinal ingredients</em></p>
+				<p>Requirements described in the Regulations to the Food and Drugs Act must be met.</p>
+	</section>
+
+	<section aria-labelledby="exampleOfProductFacts">
+		<h2 id="exampleOfProductFacts">EXAMPLE OF PRODUCT FACTS:</h2>
+			<p><strong>Consult the Guidance Document, <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/natural-non-prescription/legislation-guidelines/guidance-documents/labelling.html">Labelling of Natural Health Products</a> for more details.</strong></p>
+			<p class="alignCenter"><img alt="Product Facts Table" src="/nhpid-bdipsn/dbImages/SUNSCREEN_SECONDARY_E.gif" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="drugFactsTable">
+		<h2 id="drugFactsTable">DRUG FACTS TABLE (Format Optional for Self-Care Category I)</h2>
+			<p class="alignCenter"><img alt="Drug Facts Table" src="/nhpid-bdipsn/dbImages/SUNSCREEN_SECONDARY_2_E.gif" style="width:700px"/></p>
+	</section>
+
+	<section aria-labelledby="references">
+		<h2 id="references">References</h2>
+			<ul>
+				<li>Antoniou C, Kosmadaki MG, Stratigos AJ, Katsambas AD. Sunscreens &ndash; what&apos;s important to know. J.E.A.D.V. 2008&semi;22:1110-1119.</li>
+				<li>Colipa 2011. Cosmetics Europe: the Personal Care Association. In vitro Method for the Determination of the UVA Protection Factor and "Critical Wavelength" Values of Sunscreen Products. Guideline prepared by the COLIPA In vitro UV Protection Method Task Force&semi; 2011. [Accessed 2025 March 28]. Available from: https://www.ceceditore.com/wp-content/uploads/2022/10/Colipa-UVA-In-Vitro-Method-March-2011-Final.pdf</li>
+				<li>Colipa 2005. Cosmetics Europe: the Personal Care Association. Guidelines for Evaluating Sun Product Water Resistance&semi; 2005. [Accessed 2025 March 28]. Available from: https://www.cosmeticseurope.eu/files/7914/6407/7400/Guidelines_for_Evaluating_Sun_Product_Water_Resistance_-_2005.pdf.</li>
+				<li>EC 2019: European Commission: Commission Regulation (EU) 2019/1857 of 6 November 2019 amending Annex VI to Regulation (EC) No 1223/2009 of the European Parliament and of the Council on cosmetic products&semi; 2019. [Accessed 2025 November 5]. Available from: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32019R1857.</li>
+				<li>Ferguson J, Dover JS, editors. Photodermatology. Manson Publishing Ltd. London, UK&semi; 2006.</li>
+				<li>Health Canada 2011. Policy Statement on Health Canada's Working Definition for Nanomaterial&semi; 2011. [Accessed 2025 November 10]. Available from: https://www.canada.ca/en/health-canada/services/science-research/reports-publications/nanomaterial/policy-statement-health-canada-working-definition.html</li>
+				<li>ISO 23675: International Organization for Standardization. ISO 23675:2024. Cosmetics &ndash; Sun protection test methods &ndash; In vitro determination of sun protection factor (SPF). URL: https://www.iso.org/standard/76616.html</li>
+				<li>ISO 23698: International Organization for Standardization. ISO 23698:2024. Cosmetics &ndash; Measurement of the sunscreen efficacy by diffuse reflectance spectroscopy. URL: https://www.iso.org/standard/76699.html</li>
+				<li>ISO 24442: International Organization for Standardization. ISO 24442:2022. Cosmetics &ndash; Sun protection test methods &ndash; In vivo determination of sunscreen UVA protection. URL: https://www.iso.org/standard/75496.html</li>
+				<li>ISO 24443: International Organization for Standardization. ISO 24443:2021. Determination of sunscreen UVA photoprotection in vitro. URL: https://www.iso.org/standard/75059.htmlM</li> 
+				<li>ISO 24444: International Organization for Standardization. ISO 24444:2019. Cosmetics &ndash; Sun protection test methods &ndash; In vivo determination of sun protection factor (SPF). URL: https://www. https://www.iso.org/standard/72250.html</li>
+				<li>Krinsky DL, Ferreri SP, Hemstreet B, Hume AL, Newton GD, Rollins CJ, Tietze KJ,  Handbook of Nonprescription Drugs: An interactive approach for Self-Care, 19<sup>th</sup> edition. Washington (DC): American Pharmaceutical Association&semi; 2017.</li>
+				<li>Nikitakis J, Lange B, editors. International Cosmetic Ingredient Dictionary and Handbook. 16<sup>th</sup> edition. Washington (DC): Cosmetic, Toiletry and Fragrance Association&semi; 2016.</li>
+				<li>RSC 2025: Royal Society of Chemistry: The Merck Index Online&semi; 2025. [Accessed 2025 February 18]. Available from: https://merckindex.rsc.org/</li>
+				<li>Shaath NA, editor. Sunscreens: Regulations and Commercial Development. 3<sup>rd</sup> edition. White Plains (NY): Taylor & Francis Group&semi; 2005.</li>
+				<li>TGA 2023.  Department of Health, Therapeutic Goods Administration: Australian regulatory guidelines for sunscreens&semi; 2023. [Accessed 2025 March 28]. Available from: https://www.tga.gov.au/sites/default/files/australian-regulatory-guidelines-for-sunscreens.pdf</li>
+				<li>US FDA 2021. U.S. Food and Drug Administration. Over-the-counter monograph M020: Sunscreen drug products for over-the-counter human use&semi; 2021. [Accessed 2025 October 22]. Available from: https://www.accessdata.fda.gov/drugsatfda_docs/omuf/Order/Final%20Administrative%20Order%20OTC000006_M020-Sunscreen%20Drug%20Products%20for%20OTC%20Human%20Use.pdf</li>
+				<li>US FDA 2012. Department of Health and Human Services. Guidance for Industry: Labeling and Effectiveness Testing: Sunscreen Drug Products for Over-The-Counter Human Use &ndash; Small Entity Compliance Guide. URL: https://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm330696.pdf</li>
+				<li>US FDA 2011. Department of Health and Human Services: Food and Drug Administration. Sunscreen Drug Products for Over-the-Counter Human Use; Request for Data and Information Regarding Dosage Forms. 21 CFR Part 352 [Docket No. FDA-1978-N-0018; formerly Docket No. 1978N-0038]. Federal Register / Vol 76, No. 117 / Friday, June 17, 2011 / Proposed Rules. https://www.gpo.gov/fdsys/pkg/FR-2011-06-17/pdf/2011-14768.pdf</li>
+				<li>US FDA 2010. Department of Health and Human Services: Food and Drug Administration. Drometrizole Trisiloxane Eligibility for Potential Inclusion in Sunscreen Monograph; Over-the- Counter Sunscreen Drug Products for Human Use&semi; Request for Safety, Effectiveness, and Environmental Data https://www.gpo.gov/fdsys/pkg/FR-2010-06-02/pdf/2010-13001.pdf</li>
+				<li>US FDA 2006. Center for Drug Evaluation and Research. CDER Data Standards Manual Definitions for Topical Dosage Forms. URL: https://www.fda.gov/downloads/Drugs/DevelopmentApprovalProcess/ucm071122.pdf</li>
+				<li>US FDA 1999. Department of Health and Human Services: Food and Drug Administration. Sunscreen Drug Products For Over-The-Counter Human Use; Final Monograph. 21 CFR Parts 310, 352, 700 and 740 [Docket No. 78N-0038] RIN 09-AA01&semi; Final Rule.</li>
+				<li>USP-NF 2024: United States Pharmacopeia and the National Formulary. Rockville (MD): United States Pharmacopeial Convention, Inc.&semi; 2024.</li>
+				<li>Wang SQ, Balagula Y, Osterwalder U. Photoprotection: a review of the current and future technologies. Dermatologic Therapy 2010&semi;23(1):31-47.</li>
+			</ul>
+	</section>
+
+	<section aria-labelledby="appendix-1">
+		<h2 id="appendix-1">APPENDIX 1:  Unacceptable Use(s) or Purpose(s)</h2>
+			<p><strong>Unacceptable use(s) or purpose(s) which are misleading or counterintuitive to the safety and efficacy of secondary sunscreen use:</strong></p>
+			<p>Statement(s) to the effect of:
+				<ul>
+					<li>"Sunblock", "sun shield", or any other term implying that the product either prevents UV ray penetration and/or provides total or complete protection&semi;</li>
+					<li>Provides "X" times your natural protection against sunburn&semi;</li>
+					<li>For sun-sensitive or fair-skinned persons, to prevent sunburn&semi;</li>
+					<li>For skin where exposure to UV light is contraindicated&semi;</li>
+					<li>Increases, perpetuates, or aids in the development of a tan&semi;</li>
+					<li>Allows you to stay longer in the sun&semi;</li>
+					<li>Waterproof, sweat proof&semi;</li>
+					<li>Representation that use of this product will repair or reverse any skin damage&semi;</li>
+					<li>Products for infants' scalps&semi; and/or</li>
+					<li>A "+" ("plus") indication next to the SPF value, with the exception of SPF 50+.</li>
+					<li>Sustained-release&semi;</li>
+					<li>Sustained action/long-lasting (i.e. longer than 2 hours or longer than 80 minutes in water)&semi;</li>
+					<li>Secondary sunscreens with insect repellents&semi;</li>
+					<li>Representation for the prevention of cancer </li>
+					<li>Representation for the prevention of photoaging and/or related damage (i.e. age spots, wrinkles, etc.)&semi;</li>
+					<li>Representation that the use of this product alone will prevent or minimize long term damage to the skin or skin cancer&semi;</li>
+					<li>UVC protection claims (or other UV rays apart from UVA/UVB)&semi;</li>
+					<li>Claims that the product is photostable or photostabilized&semi; and/or</li>
+					<li>Claims that the product can be applied directly to wet or sweaty skin.</li>
+				</ul>
+			</p>
+	</section>
+
+	<section aria-labelledby="versionHistory">
+		<h2 id="versionHistory">Version History</h2>
+			<table id="ver" class="subject">
+				<thead>
+					<tr>
+						<th>Publication date</th>
+						<th>Update type</th>
+						<th>Summary of main updates (from Feb 2026)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2026-02-27</td>
+						<td>Minor updates</td>
+						<td>
+							<ul>
+								<li>Removal of Table <a href="#ref2" style="text-decoration: none;">2</a> footnote associated with Bemotrizinol and Bisoctrizole</li>
+								<li>Removal of the specific self-care category 1 titles in the Uses or purposes section; replaced with a note regarding labelling requirements</li>
+								<li>Revision of the Product Facts Table for NHPs to fix errors in the listed claims</li>
+								<li>Inclusion of version history information</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2025-12-19</td>
+						<td>Minor updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2022-11-25</td>
+						<td>Validation</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2018-12-07</td>
+						<td>Updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2013-07-07</td>
+						<td>Updates</td>
+						<td>&ndash;</td>
+					</tr>
+					<tr>
+						<td>2006-10-12</td>
+						<td>Initial release of the NNHPD’s monograph<sup><a href="#ver-1" style="text-decoration: none;">1</a></sup></td>
+						<td>&ndash;</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<sup id="ver-1">1</sup>Was previously a Cat IV monograph of the Therapeutic Products Directorate (former name).
+			</p>
+	</section>
+	
+<!-- CONTENT ENDS | FIN DU CONTENU --></div>
+	<br class="clear"/>
+	
+<script type="text/javascript">
+$(document).ready(function() {
+	var header = $('h1').html();
+	if (header == undefined) {
+		header = $('#wb-cont h2').html();
+	}
+	if (header != undefined) {
+		var regX = /(<([^>]+)>)/ig;
+		$('title').html(header.replace(regX, ""));
+	}
+});
+</script>
+
+</div>
+		</div>
+      <!-- end main content -->
+      <div id="def-preFooter">
+        <!-- Write closure fall-back static file -->
+        <div><div class="pagedetails">
+	<div class="row">
+		<div class="col-sm-6 col-md-5 col-lg-4">
+			<a href="https://www.canada.ca/en/report-problem.html"
+				class="btn btn-default btn-center">Report a problem on this page</a>
+		</div>
+	</div>
+	<dl id="wb-dtmd">
+		<dt>Date modified:&#32;</dt>
+		<dd>
+			<time property="dateModified">2019-03-01</time>
+		</dd>
+	</dl>
+</div>
+</div>
+      </div>
+      <!-- Write closure template -->
+      <script>
+        /*<![CDATA[*/
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+            cdnEnv: "Akamai",
+            dateModified: "2026-02-05",
+            showPostContent: true, 
+            showFeedback: false,
+            showShare: false
+        });
+        /*]]>*/
+      </script>
+    </main>    
+    <div id="def-footer">
+      <!-- Write closure fall-back static file -->
+      <div><footer id="wb-info">
+	<div id="transactFooter" class="landscape">
+		<nav class="container wb-navcurr" aria-labelledby="aboutGov">
+			<h2 class="wb-inv" id="aboutGov">About government</h2>
+			<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+				<li><a href="https://www.canada.ca/en/contact.html">Contact
+						us</a></li>
+				<li><a href="https://www.canada.ca/en/government/dept.html">Departments
+						and agencies</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/publicservice.html">Public
+						service and military</a></li>
+				<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+				<li><a
+					href="https://www.canada.ca/en/government/system/laws.html">Treaties,
+						laws and regulations</a></li>
+				<li><a
+					href="https://www.canada.ca/en/transparency/reporting.html">Government-wide
+						reporting</a></li>
+				<li><a href="https://pm.gc.ca/en">Prime Minister</a></li>
+				<li><a href="https://www.canada.ca/en/government/system.html">About
+						government</a></li>
+				<li><a href="https://open.canada.ca/en">Open government</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="brand">
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-9 col-lg-10 ftr-urlt-lnk"
+					aria-labelledby="aboutSite">
+					<h2 class="wb-inv" id="aboutSite">About this site</h2>
+					<ul>
+						<li><a href="https://www.canada.ca/en/social.html">Social
+								media</a></li>
+						<li><a href="https://www.canada.ca/en/mobile.html">Mobile
+								applications</a></li>
+						<li><a href="https://www.canada.ca/en/government/about.html">About
+								Canada.ca</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/terms.html">Terms
+								and conditions</a></li>
+						<li><a
+							href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+					</ul>
+				</nav>
+				<div class="col-xs-6 visible-sm visible-xs tofpg">
+					<a href="#wb-cont">Top of Page <span
+						class="glyphicon glyphicon-chevron-up"></span></a>
+				</div>
+				<div id="StdIssueWasHere2" class="col-xs-6 col-md-2 text-right">
+					<img
+						src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/wet-boew/assets/wmms-blk.svg"
+						alt="Symbol of the Government of Canada" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer></div>
+    </div>        
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      var defFooter = document.getElementById("def-footer");
+      defFooter.outerHTML = wet.builder.footer({
+          cdnEnv: "Akamai",
+          showFooter:true,
+          showFeatures: false,
+          contactLinks: null
+          //termsLink: /*null*/ "/",
+          //privacyLink: /*null*/ "/" 
+      });
+      /*]]>*/
+    </script>
+    <!-- Write closure template -->
+    <script>
+      /*<![CDATA[*/
+      document.write(wet.builder.refFooter({
+          cdnEnv: "Akamai",
+          jqueryEnv: "false",
+          exitScript: false,
+          exitURL: "",
+          exitMsg: "You are about to leave a secure site, do you wish to continue?",
+          exitDomains: ""
+      }));
+      /*]]>*/
+    </script>         
+    <!-- Additional JavaScript includes.  Added through jsLibraryIncludes model attribute. -->
+          
+    
+    <!-- Additional JavaScript includes.  Added through jsIncludes model attribute. -->
+      
+    
+    <script type="text/javascript" src="/nhpid-bdipsn/js/breadcrumbs.js" ></script>
+    
+    <!-- Additional analytics, if required. -->
+     <!-- Add analytics here -->
+     
+  </body>
+</html>
