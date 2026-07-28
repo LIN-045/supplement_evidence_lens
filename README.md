@@ -1,523 +1,269 @@
 # Supplement Evidence Lens
 
-Ask a dietary supplement question in plain language. Get a cited answer assembled from official regulatory and health sources.
+Supplement Evidence Lens is an evidence-grounded RAG assistant for questions about dietary supplements.
 
-```text
-“Magnesium glycinate improves sleep and eliminates anxiety. Is this supported?”
-“What supplement ingredients are associated with sleep?”
-“What are the recognised uses and dose range for melatonin?”
-“What safety concerns apply to high-dose zinc?”
-```
+It retrieves evidence from official EU, Canadian, and US sources, reranks the retrieved passages, and uses an LLM to produce a cited answer. The current version is available through the command line; a web UI is the next development step.
 
----
+Example questions:
+
+- Does melatonin actually help with sleep?
+- What are the risks of taking too much zinc?
+- Is the claim that magnesium glycinate eliminates anxiety supported?
+- Can a supplement make a particular health claim in the EU?
 
 ## Problem
 
-Supplement marketing may say:
+Information about supplement benefits, permitted claims, dosage conditions, and safety is distributed across different government sources. Search results can also mix regulatory claims, scientific summaries, and marketing language.
 
-> “Boosts immunity”  
-> “Your late-night rescue”  
-> “Eliminates stress”
+This project brings several official sources into one searchable evidence base and makes the distinction visible through citations and source metadata.
 
-Regulatory sources use more precise language, such as:
+It is an informational tool, not medical advice.
 
-> “Contributes to the normal function of the immune system.”
+## Current Status
 
-These statements may refer to similar concepts while sharing few words, making official information difficult to find through ordinary keyword search.
+Implemented:
 
-Relevant information is also distributed across multiple technical sources that cannot easily be searched together:
+- ingestion from three official data sources
+- normalized document construction and chunking
+- Elasticsearch indexing
+- BM25, vector, hybrid, and reranked retrieval
+- an Agentic RAG command-line workflow
+- retrieval and answer-quality evaluation
 
-- The **EU Register of Nutrition and Health Claims** contains authorised and non-authorised health claims, official wording, and conditions of use.
-- **Health Canada’s NHPID and Compendium of Monographs** provide ingredient terminology, pre-cleared uses, dose conditions, target populations, duration of use, and risk information.
-- **NIH Office of Dietary Supplements fact sheets** provide research context, evidence limitations, upper intake levels, adverse effects, and drug interactions.
+Still to be built:
 
-Supplement Evidence Lens makes these sources searchable through a single free-text interface and combines relevant results into a cited explanation.
-
-**The application does not independently decide whether a supplement claim is scientifically true.** Scientific conclusions requiring systematic evidence review remain with qualified scientific and regulatory bodies. The application reports what official sources state and clearly indicates when those sources do not cover a question.
-
----
+- web UI
+- user feedback and monitoring
+- full application containerization
+- final deployment documentation and screenshots
 
 ## Data Sources
 
-| Source                                           | Provides                                                                                               | Access                                  |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| EU Register of Nutrition and Health Claims       | Claim status, official wording, health relationships, and conditions of use                            | Structured download                     |
-| Health Canada NHPID and Compendium of Monographs | Ingredient terminology, pre-cleared uses, dose conditions, populations, duration, and risk information | Searchable database and HTML monographs |
-| NIH ODS Fact Sheets                              | Research findings, evidence limitations, upper limits, adverse effects, and interactions               | HTML                                    |
+| Source | Jurisdiction | Content | Processed records |
+|---|---|---|---:|
+| EU Register on Nutrition and Health Claims | EU | authorised and non-authorised health claims, conditions, and regulatory status | 2,337 claims |
+| Health Canada NHPID monographs | Canada | single-ingredient and product monograph sections | 3,009 sections from 243 monographs |
+| NIH Office of Dietary Supplements | United States | health-professional fact-sheet sections | 379 sections from 42 fact sheets |
 
-Versioned source snapshots or reproducible download manifests are stored under `data/raw/`, depending on source size and redistribution constraints.
+After document construction and chunking, these sources produce 8,021 searchable chunks:
 
----
+| Source | Chunks |
+|---|---:|
+| EU Register | 2,340 |
+| Health Canada NHPID | 4,354 |
+| NIH ODS | 1,327 |
 
-## How It Works
+The index keeps source, jurisdiction, title, section, URL, and document identifiers as metadata. All sources are stored in one Elasticsearch index so they can be searched together and filtered by metadata when needed.
 
-```text
-Free-text question
-        │
-[LLM] Interpret the query:
-      ingredient, health concern, claim wording, dose
-        │
-[LLM] Decompose complex questions and rewrite retrieval queries
-        │
-Source-specific hybrid retrieval
-├── EU Register claims
-├── Health Canada monographs
-└── NIH ODS sections
-        │
-Lexical search + vector search + reranking
-        │
-[Tools] Structured lookups:
-        claim status, dose comparison, upper-limit checks
-        │
-[LLM] Filter context, compare wording, synthesise, and cite
-```
-
-The parsed query determines the retrieval emphasis for each source. A claim-wording question may prioritise the EU Register, while a dose or safety question may retrieve more context from Health Canada and NIH ODS.
-
-The system explicitly states when a source does not contain relevant information.
-
----
-
-## Why the Sources Are Indexed Separately
-
-The sources have different schemas and retrieval units:
-
-- EU claims are short, structured regulatory records.
-- Health Canada monographs contain conditional relationships between ingredient, purpose, dose, population, and risk.
-- NIH ODS fact sheets are longer documents requiring section-level chunking.
-
-Separate indexes allow each source to use appropriate metadata, chunking rules, retrieval thresholds, and result limits.
-
-The EU Register is stored both as structured records and as a searchable index:
-
-- structured records provide exact claim status and official wording;
-- retrieval connects informal user language with the most relevant regulatory records.
-
-For example, a database lookup may not connect:
-
-> “Your late-night rescue”
-
-with:
-
-> “Contributes to the reduction of tiredness and fatigue.”
-
-Finding the correct record despite this wording gap is a central retrieval problem in the project.
-
----
-
-## Role of the LLM
-
-| LLM-assisted tasks                                         | Deterministic tasks                                               |
-| ---------------------------------------------------------- | ----------------------------------------------------------------- |
-| Interpreting open-ended questions                          | Reading claim status from source records                          |
-| Extracting ingredients, concerns, claims, and doses        | Returning official claim wording                                  |
-| Splitting compound questions into sub-queries              | Reading dose ranges and conditions of use                         |
-| Normalising informal and promotional language              | Dose arithmetic and upper-limit comparison                        |
-| Rewriting retrieval queries                                | Verifying structured source fields                                |
-| Identifying potentially therapeutic or overstated language | Flagging high-risk terms such as _treat_, _cure_, and _eliminate_ |
-| Comparing user wording with official wording               | Attaching the correct source and jurisdiction                     |
-| Synthesising results into a readable explanation           |                                                                   |
-
-Facts that map to explicit source fields are read directly from the records rather than generated by the LLM.
-
-The LLM is responsible for language understanding and explanation, not for inventing regulatory status, dose limits, or safety conditions.
-
----
-
-## Example Output
-
-For the query:
-
-> “Magnesium glycinate improves sleep and eliminates anxiety.”
-
-The response may include:
-
-1. **Query interpretation**
-   - Ingredient: magnesium glycinate
-   - Health concerns: sleep and anxiety
-   - Claim strength: improvement and elimination
-
-2. **Closest official claims**
-   - Relevant EU-authorised wording for magnesium
-   - Relevant Health Canada uses, where available
-
-3. **Wording comparison**
-   - Which parts are covered by official wording
-   - Which parts are broader or stronger
-   - Which parts have no matching official claim
-
-4. **Dose and conditions**
-   - Recognised dose conditions
-   - Population or duration restrictions
-   - Upper-limit comparison, when applicable
-
-5. **Evidence and safety context**
-   - NIH research summary
-   - Evidence limitations
-   - Adverse effects and interactions
-
-6. **Citations**
-   - Direct links to the retrieved official records
-
-The application does not make a definitive legal judgment that a product or claim is unlawful.
-
----
-
-## Retrieval Evaluation
-
-Retrieval evaluation is implemented in:
+## Architecture
 
 ```text
-notebooks/01-retrieval-eval.ipynb
+User question
+    |
+    v
+Agent decides what to search
+    |
+    v
+BM25 search + vector search
+    |
+    v
+Reciprocal Rank Fusion
+    |
+    v
+Cross-encoder reranking
+    |
+    v
+Top evidence passages
+    |
+    v
+Grounded answer with citations
 ```
 
-Each source index is evaluated separately because retrieval difficulty and document structure differ across sources.
+The Agentic workflow can rewrite or split a question into additional searches when the first evidence is insufficient. Search is capped at four queries to keep the workflow predictable.
 
-### Retrieval configurations
+## Models and Search
 
-Four configurations are compared:
+- Search engine: Elasticsearch 9.4.4
+- Embedding model: `BAAI/bge-small-en-v1.5`
+- Embedding size: 384 dimensions
+- Keyword retrieval: Elasticsearch BM25
+- Hybrid fusion: Reciprocal Rank Fusion
+- Reranker: `cross-encoder/ms-marco-MiniLM-L6-v2`
+- Answer and search-planning model: `gpt-5.4-mini`
 
-1. lexical search;
-2. vector search;
-3. hybrid search;
-4. hybrid search with reranking.
+The application retrieves a larger hybrid candidate set, reranks it, and supplies the top five passages to the answer model.
 
-Query rewriting is evaluated as a separate ablation:
-
-- original user query;
-- LLM-rewritten queries.
-
-### Metrics
-
-| Index                    | Hit Rate@5 | Recall@5 | MRR |
-| ------------------------ | ---------: | -------: | --: |
-| EU Register claims       |            |          |     |
-| Health Canada monographs |            |          |     |
-| NIH ODS sections         |            |          |     |
-
-Additional task-specific metrics may include:
-
-- top-result accuracy;
-- ingredient extraction accuracy;
-- sub-query coverage;
-- source coverage.
-
-### Evaluation dataset
-
-Candidate queries are generated from indexed records and manually reviewed.
-
-The test set also includes independently written free-text questions representing:
-
-- informal language;
-- marketing language;
-- paraphrased claims;
-- compound claims;
-- misspellings;
-- ingredient-first questions;
-- health-concern-first questions;
-- questions with no supported answer.
-
-Development queries may be used for retrieval tuning. Final test queries are kept separate from configuration selection.
-
-**Best retrieval configuration: `[to be completed]`**
-
-The selected configuration is used in `app/retrieval.py`.
-
----
-
-## LLM Evaluation
-
-LLM evaluation is implemented in:
+## Project Structure
 
 ```text
-notebooks/02-llm-eval.ipynb
+app/
+  rag.py                         Agentic RAG workflow and CLI
+  retrieval.py                   BM25, vector, hybrid, and reranked search
+
+ingestion/
+  eu_health_claims.py            EU Register ingestion
+  ca_nhpid_monographs.py         Health Canada monograph ingestion
+  us_nih_ods.py                  NIH ODS fact-sheet ingestion
+  chunk_documents.py             Normalization and chunking
+  index_documents.py             Elasticsearch index creation
+
+evaluation/
+  generate_questions.py          Evaluation-question generation
+  build_relevance_pool.py        Candidate-pool construction
+  judge_relevance.py             LLM relevance judgments
+  evaluate_retrieval.py          Retrieval metrics
+  evaluate_answers.py            RAG answer generation and judging
+
+data/
+  raw/                           Downloaded source files
+  processed/                     Normalized records and chunks
+  evaluation/                    Evaluation datasets and results
+
+docs/
+  future_work.md                 Candidate data and evaluation improvements
 ```
 
-Three prompt strategies are compared:
+## Setup
 
-| Prompt strategy                 | Relevance | Groundedness | Correct abstention |
-| ------------------------------- | --------: | -----------: | -----------------: |
-| Zero-shot                       |           |              |                    |
-| Few-shot with explicit criteria |           |              |                    |
-| Decompose then synthesise       |           |              |                    |
+The project uses Python 3.13 and `uv`.
 
-Evaluation focuses on:
+Install dependencies:
 
-- correct query interpretation;
-- claim decomposition;
-- ingredient and health-concern extraction;
-- faithfulness to retrieved context;
-- correct explanation of wording differences;
-- citation support;
-- correct abstention when sources do not cover the question;
-- avoidance of unsupported medical or legal conclusions.
+```bash
+uv sync
+```
 
-**Best prompt strategy: `[to be completed]`**
+Start Elasticsearch:
 
-The selected prompt is stored in `app/prompts.py`.
+```bash
+docker compose up -d
+```
 
----
+Check that it is running:
 
-## Structured Factual Checks
+```bash
+curl http://localhost:9200
+```
 
-Facts that map to explicit structured fields are checked automatically:
-
-- cited records belong to the retrieved result set;
-- EU authorisation status matches the source record;
-- official wording matches the source record;
-- dose values and units match parsed monograph fields;
-- conditions of use are attached to the correct ingredient and purpose;
-- source links and jurisdictions are correct.
-
-Statements synthesised from narrative NIH ODS text are evaluated separately for faithfulness and citation support.
-
----
-
-## Judge Reliability
-
-An LLM judge may produce incorrect evaluation scores.
-
-A manually annotated sample is therefore compared with the automated judge using a written rubric.
+Create a `.env` file for RAG and LLM-based evaluation:
 
 ```text
-evaluation/rubric.md
-evaluation/spot_check.csv
+OPENAI_API_KEY=your-api-key
 ```
 
-**Manual sample size:** `[N]`  
-**Judge agreement:** `[to be completed]%`
+The `.env` file is ignored by Git.
 
----
+## Build the Evidence Index
 
-## Ingestion
-
-Source ingestion is implemented in:
-
-```text
-ingestion/eu_health_claims.py
-ingestion/ca_nhpid_monographs.py
-ingestion/us_nih_ods.py
-ingestion/chunk_documents.py
-```
-
-The source scripts perform:
-
-```text
-fetch
-  → parse
-  → normalise
-  → validate
-```
-
-Rebuild the processed source datasets with:
+Run the ingestion scripts:
 
 ```bash
 uv run python ingestion/eu_health_claims.py
 uv run python ingestion/ca_nhpid_monographs.py
 uv run python ingestion/us_nih_ods.py
+```
+
+Build the common document collection and index it:
+
+```bash
 uv run python ingestion/chunk_documents.py
+uv run python ingestion/index_documents.py
 ```
 
-`chunk_documents.py` converts the processed records to a common `title` and
-`content` format, then creates fixed 2,000-character chunks with a
-1,500-character step. It retains every processed record and its source
-metadata. Embedding, indexing, and retrieval are handled in later stages.
-
-Ingredient names differ across jurisdictions and sources, for example:
-
-```text
-Vitamin C
-Ascorbic acid
-L-ascorbic acid
-```
-
-The application handles name variation through query interpretation, query
-rewriting, and hybrid retrieval. A small reviewed mapping may be added later
-if retrieval evaluation identifies consistent terminology gaps.
-
-The pipeline processes all successfully accessible source records. Formal evaluation focuses on a representative subset of common ingredients and health concerns.
-
----
-
-## Interface
-
-The application provides one free-text input box.
-
-There is no required ingredient dropdown or fixed question type. Interpreting ordinary and inconsistent user language is part of the problem being solved.
-
-Users can:
-
-- ask a supplement-related question;
-- inspect the parsed query;
-- read the generated answer;
-- inspect retrieved source records;
-- follow citations;
-- submit thumbs-up or thumbs-down feedback.
-
----
-
-## Monitoring
-
-Each request logs:
-
-- original query;
-- parsed query;
-- rewritten retrieval queries;
-- retrieved records and scores;
-- retrieval configuration;
-- generated response;
-- source coverage;
-- response latency;
-- user feedback.
-
-The monitoring dashboard is implemented in:
-
-```text
-monitoring/dashboard.py
-```
-
-Planned dashboard views include:
-
-- query volume over time;
-- feedback rate;
-- response latency distribution;
-- retrieval-score distribution;
-- source coverage per query;
-- share of answers that abstained because of insufficient coverage.
-
----
-
-## Running the Project
+Confirm the indexed document count:
 
 ```bash
-git clone [repo-url]
-cd supplement-evidence-lens
-cp .env.example .env
+curl http://localhost:9200/supplement_evidence/_count
 ```
 
-Add the required API credentials to `.env`, then run:
+The expected count for the current dataset is 8,021.
+
+## Run the Assistant
+
+Ask a question from the command line:
 
 ```bash
-docker compose up
+uv run python app/rag.py "What are the risks of taking too much zinc?"
 ```
 
-Open:
+The response includes numbered citations and the URLs of the retrieved official sources.
 
-```text
-http://localhost:8501
+## Retrieval Evaluation
+
+The retrieval evaluation uses 75 source-grounded questions: 25 seeded from each source. Candidate pools are formed from the union of BM25, vector, and hybrid results. An LLM assigns binary relevance judgments with explanations, and the seed document is retained as a known relevant document.
+
+Four retrieval approaches are compared at rank 5:
+
+| Approach | Hit Rate@5 | MRR@5 | Pooled Recall@5 |
+|---|---:|---:|---:|
+| BM25 | 0.907 | 0.808 | 0.593 |
+| Vector | 0.867 | 0.789 | 0.609 |
+| Hybrid | 0.907 | 0.853 | 0.643 |
+| Hybrid + reranker | **0.947** | **0.928** | **0.711** |
+
+Hybrid retrieval with reranking is therefore used by the application. It produced the strongest overall result, with especially large gains on the Health Canada subset. On the EU subset, plain hybrid retrieval remained slightly stronger on some recall measures, so the overall result should not be interpreted as a universal improvement for every source.
+
+The detailed results are stored in [`data/evaluation/retrieval_metrics.json`](data/evaluation/retrieval_metrics.json).
+
+Run the retrieval evaluation pipeline:
+
+```bash
+uv run python -m evaluation.generate_questions
+uv run python -m evaluation.build_relevance_pool
+uv run python -m evaluation.judge_relevance
+uv run python -m evaluation.evaluate_retrieval
 ```
 
-`docker-compose.yml` runs the application, search infrastructure, and logging database.
+## Answer Evaluation
 
-The system is designed to run without a GPU. Dependencies are managed in
-`pyproject.toml` and locked in `uv.lock`.
+The same 75 questions are used to compare two RAG workflows:
 
-**Live demo:** `[url]`
+- Fixed RAG: searches the original question once.
+- Agentic RAG: allows the model to rewrite, decompose, or repeat searches when useful.
 
----
+Both approaches use the same index, retrieval pipeline, reranker, answer model, and evaluation rubric. Because there are no manually written reference answers, an LLM judge scores:
 
-## Repository Layout
+- answer relevance
+- faithfulness to retrieved evidence
+- citation correctness
 
-```text
-ingestion/
-    eu_health_claims.py
-    ca_nhpid_monographs.py
-    us_nih_ods.py
-    chunk_documents.py
+Each metric is scored from 1 to 5 with a written reason.
 
-data/
-    raw/
-    processed/
-    ground_truth/
+| Workflow | Relevance | Faithfulness | Citation correctness | Perfect answers |
+|---|---:|---:|---:|---:|
+| Fixed RAG | 4.920 | **4.720** | 4.667 | **49** |
+| Agentic RAG | **4.933** | 4.667 | **4.680** | 48 |
 
-app/
-    main.py
-    agent.py
-    retrieval.py
-    tools.py
-    prompts.py
-    db.py
+The paired combined result was close:
 
-notebooks/
-    01-retrieval-eval.ipynb
-    02-llm-eval.ipynb
+- Agentic wins: 16
+- Fixed wins: 18
+- Ties: 41
 
-evaluation/
-    rubric.md
-    spot_check.csv
+The Agentic workflow remains the application default because it can handle less search-ready questions through query rewriting and decomposition. However, the current source-generated evaluation questions already resemble effective search queries, so this dataset does not demonstrate a clear overall advantage for the Agentic approach.
 
-monitoring/
-    dashboard.py
+The Agentic run averaged 1.04 searches per question, used at most two searches in this evaluation, and returned evidence for all 75 questions.
+
+Detailed results are stored in [`data/evaluation/answer_metrics.json`](data/evaluation/answer_metrics.json).
+
+Run answer generation and judging:
+
+```bash
+uv run python -m evaluation.evaluate_answers
 ```
 
----
+This evaluation calls the OpenAI API and can incur usage costs.
 
-## Scope and Limitations
+## Evaluation Limitations
 
-The initial version focuses on:
+- The questions were generated from source documents rather than collected from real users.
+- Source-grounded questions can favor direct keyword search and under-test query rewriting.
+- Relevance and answer judgments use an LLM rather than human annotators.
+- The generator, answer model, and judge are not fully independent.
+- Pooled recall measures recall against the judged candidate pool, not against every possibly relevant passage in the full corpus.
 
-- ingredient-level dietary supplement information;
-- English-language free-text questions;
-- EU and Canadian regulatory references;
-- NIH evidence and safety context;
-- recognised uses, claims, doses, and safety conditions.
-
-Users may paste wording from a real product, but the application does not verify the product’s quality, authenticity, composition, or overall legal compliance.
-
-Dose comparison is limited to cases where dose units and ingredient forms can be meaningfully aligned.
-
-It is initially enabled for straightforward single compounds such as vitamins, minerals, and melatonin.
-
-Dose comparison is disabled when equivalence cannot be established reliably, including many botanical extracts. For example, 500 mg of a concentrated extract cannot automatically be compared with 500 mg of raw plant material.
-
-The application does not provide:
-
-- personalised supplement recommendations;
-- diagnosis or treatment advice;
-- individual medication-safety decisions;
-- product-quality or contamination testing;
-- definitive legal compliance determinations.
-
-Regulatory conclusions are jurisdiction-specific. An EU non-authorised claim does not automatically determine a product’s legal status in another country.
-
----
-
-## Future Work
-
-Potential extensions include:
-
-- human-scored explanation clarity;
-- US supplement product-label data;
-- FDA warning letters and recalls;
-- broader drug–supplement interaction coverage;
-- product and multi-ingredient formula analysis;
-- multilingual queries;
-- improved ingredient-form and botanical-extract normalisation.
-
----
-
-## Project Evaluation Criteria
-
-| Criterion            | Implementation                               |
-| -------------------- | -------------------------------------------- |
-| Problem description  | `README.md`                                  |
-| Retrieval flow       | `app/retrieval.py`, `app/agent.py`           |
-| Retrieval evaluation | `notebooks/01-retrieval-eval.ipynb`          |
-| LLM evaluation       | `notebooks/02-llm-eval.ipynb`                |
-| Interface            | `app/main.py`                                |
-| Ingestion pipeline   | `ingestion/*.py`                             |
-| Monitoring           | `monitoring/dashboard.py`                    |
-| Containerisation     | `docker-compose.yml`                         |
-| Reproducibility      | Running instructions and pinned dependencies |
-| Hybrid search        | `app/retrieval.py`                           |
-| Document reranking   | `app/retrieval.py`                           |
-| Query rewriting      | `app/prompts.py`                             |
-| Cloud deployment     | Live demo link                               |
-
----
+Testing with real consumer questions and human review is planned for a later version. Candidate sources and a recorded real-question failure case are described in [`docs/future_work.md`](docs/future_work.md).
 
 ## Disclaimer
 
-Supplement Evidence Lens is for educational and informational purposes only.
-
-It is not a substitute for advice from a physician, pharmacist, dietitian, lawyer, or regulatory professional.
+Supplement Evidence Lens summarizes retrieved official-source excerpts. It does not diagnose conditions, recommend treatment, or replace advice from a qualified health professional. Users should consult a health professional before changing medication or supplement use, particularly for children, pregnancy, existing health conditions, or possible interactions.

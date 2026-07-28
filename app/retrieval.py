@@ -9,8 +9,10 @@ import argparse
 from typing import Any
 
 from elasticsearch import Elasticsearch
-from sentence_transformers import SentenceTransformer
-
+from sentence_transformers import (
+    CrossEncoder,
+    SentenceTransformer,
+)
 
 # Configuration
 
@@ -24,6 +26,7 @@ CANDIDATE_COUNT = 20
 RESULT_COUNT = 5
 RRF_CONSTANT = 60
 
+RERANKER_MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L6-v2"
 
 # Search
 
@@ -72,6 +75,7 @@ def vector_search(
 
 def reciprocal_rank_fusion(
     result_lists: list[list[dict[str, Any]]],
+    limit: int = RESULT_COUNT,
 ) -> list[dict[str, Any]]:
     fused_results: dict[str, dict[str, Any]] = {}
 
@@ -93,19 +97,70 @@ def reciprocal_rank_fusion(
         fused_results.values(),
         key=lambda result: result["rrf_score"],
         reverse=True,
-    )[:RESULT_COUNT]
+    )[:limit]
 
+def rerank_results(
+    model: CrossEncoder,
+    query: str,
+    results: list[dict[str, Any]],
+    limit: int = RESULT_COUNT,
+) -> list[dict[str, Any]]:
+    pairs = [
+        (
+            query,
+            (
+                f"{result['_source']['title']}\n"
+                f"{result['_source']['content']}"
+            ),
+        )
+        for result in results
+    ]
+
+    scores = model.predict(pairs)
+
+    reranked_results = [
+        {
+            **result,
+            "reranker_score": float(score),
+        }
+        for result, score in zip(
+            results,
+            scores,
+            strict=True,
+        )
+    ]
+
+    return sorted(
+        reranked_results,
+        key=lambda result: result["reranker_score"],
+        reverse=True,
+    )[:limit]
 
 def search(
     client: Elasticsearch,
     model: SentenceTransformer,
     query: str,
+    reranker_model: CrossEncoder | None = None,
 ) -> list[dict[str, Any]]:
     bm25_results = bm25_search(client, query)
     vector_results = vector_search(client, model, query)
 
-    return reciprocal_rank_fusion(
-        [bm25_results, vector_results]
+    fused_results = reciprocal_rank_fusion(
+        [bm25_results, vector_results],
+        limit=(
+            CANDIDATE_COUNT
+            if reranker_model is not None
+            else RESULT_COUNT
+        ),
+    )
+
+    if reranker_model is None:
+        return fused_results
+
+    return rerank_results(
+        reranker_model,
+        query,
+        fused_results,
     )
 
 

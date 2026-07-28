@@ -1,0 +1,63 @@
+{
+  "agentic_rag": {
+    "question_count": 75,
+    "average_scores": {
+      "answer_relevance": 4.933333333333334,
+      "faithfulness": 4.666666666666667,
+      "citation_correctness": 4.68
+    },
+    "perfect_answers": 48,
+    "trajectory": {
+      "average_searches": 1.04,
+      "maximum_searches": 2,
+      "multi_search_answers": 3,
+      "average_cited_contexts": 2.1466666666666665,
+      "answers_without_cited_contexts": 0
+    }
+  },
+  "fixed_rag": {
+    "question_count": 75,
+    "average_scores": {
+      "answer_relevance": 4.92,
+      "faithfulness": 4.72,
+      "citation_correctness": 4.666666666666667
+    },
+    "perfect_answers": 49,
+    "trajectory": {
+      "average_searches": 1.0,
+      "maximum_searches": 1,
+      "multi_search_answers": 0,
+      "average_cited_contexts": 2.36,
+      "answers_without_cited_contexts": 0
+    }
+  },
+  "paired_comparison": {
+    "answer_relevance": {
+      "agentic_wins": 3,
+      "fixed_wins": 2,
+      "ties": 70
+    },
+    "faithfulness": {
+      "agentic_wins": 10,
+      "fixed_wins": 14,
+      "ties": 51
+    },
+    "citation_correctness": {
+      "agentic_wins": 11,
+      "fixed_wins": 10,
+      "ties": 54
+    },
+    "combined_score": {
+      "agentic_wins": 16,
+      "fixed_wins": 18,
+      "ties": 41
+    }
+  },
+  "selected_approach": "agentic_rag",
+  "selection_rationale": "The two approaches were effectively tied on source-generated questions. Agentic RAG was retained for its ability to rewrite, decompose, and refine less search-ready real-world questions.",
+  "limitations": [
+    "Questions were generated from source documents and are often already search-ready.",
+    "The answer generator and judge both used gpt-5.4-mini.",
+    "Real-world query rewriting behavior requires a separate challenge set or production query logs."
+  ]
+}
