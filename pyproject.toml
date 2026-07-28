@@ -6,4 +6,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.15.0",
+    "elasticsearch>=9.4.1",
+    "openai>=2.49.0",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.6.1",
 ]

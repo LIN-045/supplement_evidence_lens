@@ -291,29 +291,37 @@ evaluation/spot_check.csv
 
 ## Ingestion
 
-The ingestion pipeline is implemented in:
+Source ingestion is implemented in:
 
 ```text
-ingestion/pipeline.py
+ingestion/eu_health_claims.py
+ingestion/ca_nhpid_monographs.py
+ingestion/us_nih_ods.py
+ingestion/chunk_documents.py
 ```
 
-The pipeline performs:
+The source scripts perform:
 
 ```text
 fetch
   → parse
   → normalise
   → validate
-  → chunk
-  → embed
-  → index
 ```
 
-Rebuild the datasets and indexes with:
+Rebuild the processed source datasets with:
 
 ```bash
-docker compose run app python ingestion/pipeline.py
+uv run python ingestion/eu_health_claims.py
+uv run python ingestion/ca_nhpid_monographs.py
+uv run python ingestion/us_nih_ods.py
+uv run python ingestion/chunk_documents.py
 ```
+
+`chunk_documents.py` converts the processed records to a common `title` and
+`content` format, then creates fixed 2,000-character chunks with a
+1,500-character step. It retains every processed record and its source
+metadata. Embedding, indexing, and retrieval are handled in later stages.
 
 Ingredient names differ across jurisdictions and sources, for example:
 
@@ -323,13 +331,9 @@ Ascorbic acid
 L-ascorbic acid
 ```
 
-Name alignment uses:
-
-```text
-data/ingredient_map.csv
-```
-
-The initial mapping is seeded from proper-name, common-name, and synonym fields available in Health Canada data, then reviewed for ambiguous cases.
+The application handles name variation through query interpretation, query
+rewriting, and hybrid retrieval. A small reviewed mapping may be added later
+if retrieval evaluation identifies consistent terminology gaps.
 
 The pipeline processes all successfully accessible source records. Formal evaluation focuses on a representative subset of common ingredients and health concerns.
 
@@ -405,7 +409,8 @@ http://localhost:8501
 
 `docker-compose.yml` runs the application, search infrastructure, and logging database.
 
-The system is designed to run without a GPU. Dependencies are version-pinned in `requirements.txt`.
+The system is designed to run without a GPU. Dependencies are managed in
+`pyproject.toml` and locked in `uv.lock`.
 
 **Live demo:** `[url]`
 
@@ -415,15 +420,14 @@ The system is designed to run without a GPU. Dependencies are version-pinned in 
 
 ```text
 ingestion/
-    pipeline.py
-    sources/
-    parsers/
-    index.py
+    eu_health_claims.py
+    ca_nhpid_monographs.py
+    us_nih_ods.py
+    chunk_documents.py
 
 data/
     raw/
     processed/
-    ingredient_map.csv
     ground_truth/
 
 app/
@@ -501,7 +505,7 @@ Potential extensions include:
 | Retrieval evaluation | `notebooks/01-retrieval-eval.ipynb`          |
 | LLM evaluation       | `notebooks/02-llm-eval.ipynb`                |
 | Interface            | `app/main.py`                                |
-| Ingestion pipeline   | `ingestion/pipeline.py`                      |
+| Ingestion pipeline   | `ingestion/*.py`                             |
 | Monitoring           | `monitoring/dashboard.py`                    |
 | Containerisation     | `docker-compose.yml`                         |
 | Reproducibility      | Running instructions and pinned dependencies |
