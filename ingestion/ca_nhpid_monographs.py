@@ -11,7 +11,9 @@ source HTML, and writes their main sections as JSON Lines.
 import json
 import time
 from collections import Counter
+from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, urljoin, urlparse
 from urllib.request import Request, urlopen
@@ -112,10 +114,11 @@ def parse_monograph_index(
 def parse_monograph_sections(
     content: bytes,
     monograph: dict[str, str],
-) -> list[dict[str, str]]:
+    retrieved_at: str,
+) -> list[dict[str, Any]]:
     """Convert one NHPID monograph into main-section documents."""
     soup = BeautifulSoup(content, "html.parser")
-    sections: list[dict[str, str]] = []
+    sections: list[dict[str, Any]] = []
     section_id_counts: Counter[str] = Counter()
 
     for section in soup.find_all("section"):
@@ -156,7 +159,12 @@ def parse_monograph_sections(
                 "section_title": section_title,
                 "text": section_text,
                 "source": "health_canada_nhpid",
+                "publisher": "Health Canada",
                 "jurisdiction": "CA",
+                "document_type": "monograph_section",
+                "evidence_role": "regulatory_monograph",
+                "updated_date": None,
+                "retrieved_at": retrieved_at,
                 "source_url": monograph["detail_url"],
             }
         )
@@ -166,7 +174,7 @@ def parse_monograph_sections(
 
 def validate_records(
     monographs: list[dict[str, str]],
-    sections: list[dict[str, str]],
+    sections: list[dict[str, Any]],
 ) -> None:
     """Reject empty or duplicate source and section records."""
     if not monographs:
@@ -188,7 +196,7 @@ def validate_records(
             raise ValueError(f"Duplicate {label} IDs: {duplicates[:10]}")
 
 
-def serialise_jsonl(records: list[dict[str, str]]) -> bytes:
+def serialise_jsonl(records: list[dict[str, Any]]) -> bytes:
     lines = [
         json.dumps(record, ensure_ascii=False, sort_keys=True)
         for record in records
@@ -201,6 +209,7 @@ def serialise_jsonl(records: list[dict[str, str]]) -> bytes:
 def main() -> None:
     single_content = download(SINGLE_MONOGRAPHS_URL)
     product_content = download(PRODUCT_MONOGRAPHS_URL)
+    retrieved_at = datetime.now(UTC).isoformat()
 
     atomic_write(SINGLE_OUTPUT_PATH, single_content)
     atomic_write(PRODUCT_OUTPUT_PATH, product_content)
@@ -216,7 +225,7 @@ def main() -> None:
     )
 
     monographs = single_monographs + product_monographs
-    all_sections: list[dict[str, str]] = []
+    all_sections: list[dict[str, Any]] = []
     download_errors: list[dict[str, str]] = []
 
     for position, monograph in enumerate(monographs, start=1):
@@ -242,6 +251,7 @@ def main() -> None:
                 parse_monograph_sections(
                     detail_content,
                     monograph,
+                    retrieved_at,
                 )
             )
         except (

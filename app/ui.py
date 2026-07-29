@@ -36,6 +36,9 @@ SOURCE_LABELS = {
     "eu_health_claims_register": "EU Register",
     "health_canada_nhpid": "Health Canada",
     "nih_ods": "NIH ODS",
+    "nih_ods_guidance": "NIH ODS Consumer Guidance",
+    "us_dri_tables": "Dietary Reference Intakes",
+    "nccih_herbs": "NCCIH Herbs at a Glance",
 }
 
 

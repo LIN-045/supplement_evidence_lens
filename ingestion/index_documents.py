@@ -16,10 +16,15 @@ from sentence_transformers import SentenceTransformer
 # Configuration
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-INPUT_PATH = PROJECT_ROOT / "data" / "processed" / "document_chunks.jsonl"
+INPUT_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "document_chunks_v2.jsonl"
+)
 
 ELASTICSEARCH_URL = "http://localhost:9200"
-INDEX_NAME = "supplement_evidence"
+INDEX_NAME = "supplement_evidence_v2"
 
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
 EMBEDDING_DIMENSIONS = 384
@@ -54,8 +59,56 @@ def create_index(client: Elasticsearch) -> None:
                 "source": {
                     "type": "keyword",
                 },
+                "source_document_id": {
+                    "type": "keyword",
+                },
                 "jurisdiction": {
                     "type": "keyword",
+                },
+                "publisher": {
+                    "type": "keyword",
+                },
+                "document_type": {
+                    "type": "keyword",
+                },
+                "evidence_role": {
+                    "type": "keyword",
+                },
+                "section_title": {
+                    "type": "text",
+                    "analyzer": "english",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                        },
+                    },
+                },
+                "updated_date": {
+                    "type": "keyword",
+                },
+                "retrieved_at": {
+                    "type": "date",
+                },
+                "nutrient": {
+                    "type": "keyword",
+                },
+                "reference_type": {
+                    "type": "keyword",
+                },
+                "population_group": {
+                    "type": "keyword",
+                },
+                "life_stage": {
+                    "type": "keyword",
+                },
+                "value": {
+                    "type": "keyword",
+                },
+                "unit": {
+                    "type": "keyword",
+                },
+                "value_established": {
+                    "type": "boolean",
                 },
                 "source_url": {
                     "type": "keyword",

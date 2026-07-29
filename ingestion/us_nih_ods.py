@@ -11,7 +11,9 @@ index, saves the source HTML, and writes their main sections as JSON Lines.
 import json
 import re
 import time
+from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
@@ -121,7 +123,8 @@ def parse_fact_sheet_index(content: bytes) -> list[dict[str, str]]:
 def parse_fact_sheet(
     content: bytes,
     fact_sheet: dict[str, str],
-) -> list[dict[str, str]]:
+    retrieved_at: str,
+) -> list[dict[str, Any]]:
     """Convert one NIH fact sheet into main-section retrieval documents."""
     soup = BeautifulSoup(content, "html.parser")
     fact_sheet_content = soup.select_one("#fact-sheet")
@@ -140,10 +143,10 @@ def parse_fact_sheet(
     updated_date = (
         updated_element.get_text(" ", strip=True)
         if updated_element is not None
-        else ""
+        else None
     )
 
-    sections: list[dict[str, str]] = []
+    sections: list[dict[str, Any]] = []
 
     for heading in fact_sheet_content.find_all("h2", id=True):
         section_id = str(heading["id"])
@@ -173,7 +176,11 @@ def parse_fact_sheet(
                 "text": section_text,
                 "updated_date": updated_date,
                 "source": "nih_ods",
+                "publisher": "NIH Office of Dietary Supplements",
                 "jurisdiction": "US",
+                "document_type": "professional_fact_sheet_section",
+                "evidence_role": "clinical_evidence_summary",
+                "retrieved_at": retrieved_at,
                 "source_url": urljoin(
                     fact_sheet["url"],
                     f"#{section_id}",
@@ -197,7 +204,7 @@ def serialise_jsonl(records: list[dict[str, str]]) -> bytes:
 
 def validate_records(
     fact_sheets: list[dict[str, str]],
-    sections: list[dict[str, str]],
+    sections: list[dict[str, Any]],
 ) -> None:
     """Reject empty or duplicate source and section records."""
     if not fact_sheets:
@@ -219,8 +226,9 @@ def validate_records(
 def main() -> None:
     index_content = download(INDEX_URL)
     fact_sheets = parse_fact_sheet_index(index_content)
+    retrieved_at = datetime.now(UTC).isoformat()
 
-    all_sections: list[dict[str, str]] = []
+    all_sections: list[dict[str, Any]] = []
     download_errors: list[dict[str, str]] = []
 
     for position, fact_sheet in enumerate(fact_sheets, start=1):
@@ -236,7 +244,11 @@ def main() -> None:
                 time.sleep(REQUEST_DELAY_SECONDS)
                 action = "Wrote"
 
-            sections = parse_fact_sheet(content, fact_sheet)
+            sections = parse_fact_sheet(
+                content,
+                fact_sheet,
+                retrieved_at,
+            )
             all_sections.extend(sections)
 
             print(

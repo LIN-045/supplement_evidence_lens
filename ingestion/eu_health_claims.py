@@ -14,6 +14,7 @@ import json
 import re
 import time
 from collections import Counter
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -120,6 +121,7 @@ def clean_values(values: list[Any]) -> list[str]:
 def normalise_record(
     record: dict[str, Any],
     status_labels: dict[str, str],
+    retrieved_at: str,
 ) -> dict[str, Any]:
     """Convert one nested portal record to the project's EU claim schema."""
     document_id = clean_text(first_value(record, "policyItemCode"))
@@ -128,7 +130,12 @@ def normalise_record(
     return {
         "document_id": document_id,
         "source": "eu_health_claims_register",
+        "publisher": "European Commission",
         "jurisdiction": "EU",
+        "document_type": "health_claim",
+        "evidence_role": "regulatory_claim",
+        "updated_date": None,
+        "retrieved_at": retrieved_at,
         "ingredient": clean_text(first_value(record, "hcNutSubFoodCat")),
         "claim_text": clean_text(first_value(record, "hcClaim")),
         "status": status_labels.get(status_code, status_code),
@@ -188,6 +195,7 @@ def serialise_jsonl(records: list[dict[str, Any]]) -> bytes:
 def main() -> None:
     claims_content, raw_claims = download_json(CLAIMS_URL)
     statuses_content, raw_statuses = download_json(STATUSES_URL)
+    retrieved_at = datetime.now(UTC).isoformat()
 
     if not isinstance(raw_claims, list):
         raise ValueError("Claims response must be a JSON list")
@@ -200,7 +208,7 @@ def main() -> None:
         if item.get("value") and item.get("description")
     }
     records = [
-        normalise_record(record, status_labels)
+        normalise_record(record, status_labels, retrieved_at)
         for record in raw_claims
     ]
     validate_records(records)

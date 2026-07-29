@@ -6,6 +6,7 @@ Run from the project root:
 """
 
 import argparse
+import os
 from typing import Any
 
 from elasticsearch import Elasticsearch
@@ -17,7 +18,10 @@ from sentence_transformers import (
 # Configuration
 
 ELASTICSEARCH_URL = "http://localhost:9200"
-INDEX_NAME = "supplement_evidence"
+INDEX_NAME = os.getenv(
+    "SUPPLEMENT_EVIDENCE_INDEX",
+    "supplement_evidence",
+)
 
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "

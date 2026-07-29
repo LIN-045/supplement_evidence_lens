@@ -39,6 +39,71 @@ part of the current index or reported evaluation results.
 - Value: Adds United States regulatory actions and communications about
   selected supplement ingredients.
 
+### 4. FAQ-linked official resources
+
+The NIH ODS Consumer FAQ links to several official resources that may fill
+different evidence gaps. Do not ingest all linked pages by default. First run
+the FAQ holdout evaluation against the current index, then use the observed
+coverage gaps to decide which resources to add.
+
+#### NIH ODS Dietary Supplement Fact Sheets directory
+
+- Source: https://ods.od.nih.gov/factsheets/list-all/
+- Ingestion decision: Do not index the directory page as evidence. Use it as an
+  official source registry for discovering relevant ODS, NCCIH, MedlinePlus,
+  FDA, OPSS, and other federal resources.
+- Existing coverage: The current index already includes the ODS health
+  professional fact sheets.
+- Consumer versions: Avoid indexing all consumer and health professional
+  versions when their content substantially overlaps. Add a consumer version
+  selectively when it contains practical guidance missing from the health
+  professional version, and label it `consumer_guidance`.
+
+#### NIH ODS Nutrient Recommendations and Databases
+
+- Source:
+  https://ods.od.nih.gov/HealthInformation/nutrientrecommendations.aspx
+- Priority: High
+- Value: Provides authoritative explanations of DRI, RDA, AI, EAR, UL, and DV,
+  together with links to official tables and the DRI calculator.
+- Initial ingestion: Index the explanatory page as `nutrient_reference`.
+- Structured expansion: Add age- and sex-specific DRI tables only if the FAQ
+  coverage audit shows that the current nutrient fact sheets do not support the
+  required answers. Do not treat calculator output as a personalised
+  recommendation.
+
+#### FDA supplement safety alerts
+
+- Source:
+  https://www.fda.gov/food/recalls-outbreaks-emergencies/alerts-advisories-safety-information
+- Priority: Medium
+- Value: Adds current warnings about contaminated, adulterated, substituted,
+  or otherwise unsafe supplement products and ingredients.
+- Ingestion decision: Do not index the mixed food-safety listing wholesale.
+  Select only dietary-supplement-related alerts and ingest each underlying
+  alert as a separate `safety_alert` document.
+- Required metadata: Preserve the product or ingredient, publication date,
+  update date, alert status, and source URL.
+- Maintenance implication: Because alerts change over time, this source needs
+  an explicit refresh policy and should not be treated as a static fact-sheet
+  snapshot.
+
+#### FTC consumer and advertising guidance
+
+- General homepage: https://consumer.ftc.gov/
+- Supplement-specific consumer resource:
+  https://consumer.ftc.gov/media/79912
+- Health-products compliance guidance:
+  https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance
+- Ingestion decision: Do not index the general FTC consumer homepage. Consider
+  the supplement-specific consumer resource as `consumer_guidance` for
+  evaluating marketing claims, product reliability, side effects,
+  interactions, and purchasing questions.
+- Scope decision: Add the broader health-products compliance guidance only if
+  the application is expected to answer advertising-substantiation or business
+  compliance questions. Keep this role distinct from clinical evidence and
+  personalised purchasing advice.
+
 ## Evidence roles and purchasing questions
 
 The current index combines documents that serve different purposes. A Health

@@ -1,0 +1,282 @@
+[
+  {
+    "document_id": "acai",
+    "name": "Acai",
+    "url": "https://www.nccih.nih.gov/health/acai"
+  },
+  {
+    "document_id": "aloe-vera",
+    "name": "Aloe Vera",
+    "url": "https://www.nccih.nih.gov/health/aloe-vera"
+  },
+  {
+    "document_id": "ashwagandha",
+    "name": "Ashwagandha",
+    "url": "https://www.nccih.nih.gov/health/ashwagandha"
+  },
+  {
+    "document_id": "asian-ginseng",
+    "name": "Asian Ginseng",
+    "url": "https://www.nccih.nih.gov/health/asian-ginseng"
+  },
+  {
+    "document_id": "astragalus",
+    "name": "Astragalus",
+    "url": "https://www.nccih.nih.gov/health/astragalus"
+  },
+  {
+    "document_id": "bilberry",
+    "name": "Bilberry",
+    "url": "https://www.nccih.nih.gov/health/bilberry"
+  },
+  {
+    "document_id": "bitter-orange",
+    "name": "Bitter Orange",
+    "url": "https://www.nccih.nih.gov/health/bitter-orange"
+  },
+  {
+    "document_id": "black-cohosh",
+    "name": "Black Cohosh",
+    "url": "https://www.nccih.nih.gov/health/black-cohosh"
+  },
+  {
+    "document_id": "boswellia",
+    "name": "Boswellia",
+    "url": "https://www.nccih.nih.gov/health/boswellia"
+  },
+  {
+    "document_id": "bromelain",
+    "name": "Bromelain",
+    "url": "https://www.nccih.nih.gov/health/bromelain"
+  },
+  {
+    "document_id": "butterbur",
+    "name": "Butterbur",
+    "url": "https://www.nccih.nih.gov/health/butterbur"
+  },
+  {
+    "document_id": "cats-claw",
+    "name": "Cat’s Claw",
+    "url": "https://www.nccih.nih.gov/health/cats-claw"
+  },
+  {
+    "document_id": "chamomile",
+    "name": "Chamomile",
+    "url": "https://www.nccih.nih.gov/health/chamomile"
+  },
+  {
+    "document_id": "chasteberry",
+    "name": "Chasteberry",
+    "url": "https://www.nccih.nih.gov/health/chasteberry"
+  },
+  {
+    "document_id": "cinnamon",
+    "name": "Cinnamon",
+    "url": "https://www.nccih.nih.gov/health/cinnamon"
+  },
+  {
+    "document_id": "cranberry",
+    "name": "Cranberry",
+    "url": "https://www.nccih.nih.gov/health/cranberry"
+  },
+  {
+    "document_id": "dandelion",
+    "name": "Dandelion",
+    "url": "https://www.nccih.nih.gov/health/dandelion"
+  },
+  {
+    "document_id": "echinacea",
+    "name": "Echinacea",
+    "url": "https://www.nccih.nih.gov/health/echinacea"
+  },
+  {
+    "document_id": "elderberry",
+    "name": "Elderberry",
+    "url": "https://www.nccih.nih.gov/health/elderberry"
+  },
+  {
+    "document_id": "ephedra",
+    "name": "Ephedra",
+    "url": "https://www.nccih.nih.gov/health/ephedra"
+  },
+  {
+    "document_id": "european-mistletoe",
+    "name": "European Mistletoe",
+    "url": "https://www.nccih.nih.gov/health/european-mistletoe"
+  },
+  {
+    "document_id": "evening-primrose-oil",
+    "name": "Evening Primrose Oil",
+    "url": "https://www.nccih.nih.gov/health/evening-primrose-oil"
+  },
+  {
+    "document_id": "fenugreek",
+    "name": "Fenugreek",
+    "url": "https://www.nccih.nih.gov/health/fenugreek"
+  },
+  {
+    "document_id": "feverfew",
+    "name": "Feverfew",
+    "url": "https://www.nccih.nih.gov/health/feverfew"
+  },
+  {
+    "document_id": "flaxseed-and-flaxseed-oil",
+    "name": "Flaxseed and Flaxseed Oil",
+    "url": "https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil"
+  },
+  {
+    "document_id": "garcinia-cambogia",
+    "name": "Garcinia Cambogia",
+    "url": "https://www.nccih.nih.gov/health/garcinia-cambogia"
+  },
+  {
+    "document_id": "garlic",
+    "name": "Garlic",
+    "url": "https://www.nccih.nih.gov/health/garlic"
+  },
+  {
+    "document_id": "ginger",
+    "name": "Ginger",
+    "url": "https://www.nccih.nih.gov/health/ginger"
+  },
+  {
+    "document_id": "ginkgo",
+    "name": "Ginkgo",
+    "url": "https://www.nccih.nih.gov/health/ginkgo"
+  },
+  {
+    "document_id": "goldenseal",
+    "name": "Goldenseal",
+    "url": "https://www.nccih.nih.gov/health/goldenseal"
+  },
+  {
+    "document_id": "grape-seed-extract",
+    "name": "Grape Seed Extract",
+    "url": "https://www.nccih.nih.gov/health/grape-seed-extract"
+  },
+  {
+    "document_id": "green-tea",
+    "name": "Green Tea",
+    "url": "https://www.nccih.nih.gov/health/green-tea"
+  },
+  {
+    "document_id": "hawthorn",
+    "name": "Hawthorn",
+    "url": "https://www.nccih.nih.gov/health/hawthorn"
+  },
+  {
+    "document_id": "hoodia",
+    "name": "Hoodia",
+    "url": "https://www.nccih.nih.gov/health/hoodia"
+  },
+  {
+    "document_id": "horse-chestnut",
+    "name": "Horse Chestnut",
+    "url": "https://www.nccih.nih.gov/health/horse-chestnut"
+  },
+  {
+    "document_id": "kava",
+    "name": "Kava",
+    "url": "https://www.nccih.nih.gov/health/kava"
+  },
+  {
+    "document_id": "lavender",
+    "name": "Lavender",
+    "url": "https://www.nccih.nih.gov/health/lavender"
+  },
+  {
+    "document_id": "licorice-root",
+    "name": "Licorice Root",
+    "url": "https://www.nccih.nih.gov/health/licorice-root"
+  },
+  {
+    "document_id": "milk-thistle",
+    "name": "Milk Thistle",
+    "url": "https://www.nccih.nih.gov/health/milk-thistle"
+  },
+  {
+    "document_id": "mugwort",
+    "name": "Mugwort",
+    "url": "https://www.nccih.nih.gov/health/mugwort"
+  },
+  {
+    "document_id": "noni",
+    "name": "Noni",
+    "url": "https://www.nccih.nih.gov/health/noni"
+  },
+  {
+    "document_id": "passionflower",
+    "name": "Passionflower",
+    "url": "https://www.nccih.nih.gov/health/passionflower"
+  },
+  {
+    "document_id": "peppermint-oil",
+    "name": "Peppermint Oil",
+    "url": "https://www.nccih.nih.gov/health/peppermint-oil"
+  },
+  {
+    "document_id": "pomegranate",
+    "name": "Pomegranate",
+    "url": "https://www.nccih.nih.gov/health/pomegranate"
+  },
+  {
+    "document_id": "red-clover",
+    "name": "Red Clover",
+    "url": "https://www.nccih.nih.gov/health/red-clover"
+  },
+  {
+    "document_id": "rhodiola",
+    "name": "Rhodiola",
+    "url": "https://www.nccih.nih.gov/health/rhodiola"
+  },
+  {
+    "document_id": "sage",
+    "name": "Sage",
+    "url": "https://www.nccih.nih.gov/health/sage"
+  },
+  {
+    "document_id": "saw-palmetto",
+    "name": "Saw Palmetto",
+    "url": "https://www.nccih.nih.gov/health/saw-palmetto"
+  },
+  {
+    "document_id": "soy",
+    "name": "Soy",
+    "url": "https://www.nccih.nih.gov/health/soy"
+  },
+  {
+    "document_id": "st-johns-wort",
+    "name": "St. John’s Wort",
+    "url": "https://www.nccih.nih.gov/health/st-johns-wort"
+  },
+  {
+    "document_id": "tea-tree-oil",
+    "name": "Tea Tree Oil",
+    "url": "https://www.nccih.nih.gov/health/tea-tree-oil"
+  },
+  {
+    "document_id": "thunder-god-vine",
+    "name": "Thunder God Vine",
+    "url": "https://www.nccih.nih.gov/health/thunder-god-vine"
+  },
+  {
+    "document_id": "turmeric",
+    "name": "Turmeric",
+    "url": "https://www.nccih.nih.gov/health/turmeric"
+  },
+  {
+    "document_id": "valerian",
+    "name": "Valerian",
+    "url": "https://www.nccih.nih.gov/health/valerian"
+  },
+  {
+    "document_id": "white-mulberry-leaf",
+    "name": "White Mulberry Leaf",
+    "url": "https://www.nccih.nih.gov/health/white-mulberry-leaf"
+  },
+  {
+    "document_id": "yohimbe",
+    "name": "Yohimbe",
+    "url": "https://www.nccih.nih.gov/health/yohimbe"
+  }
+]
