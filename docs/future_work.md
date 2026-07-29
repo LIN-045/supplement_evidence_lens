@@ -13,11 +13,17 @@ part of the current index or reported evaluation results.
 - Value: Adds consumer-facing guidance about supplement safety, regulation,
   nutrient deficiencies, medication replacement, children, and when to consult
   a health care provider.
-- Ingestion idea: Parse each question-and-answer pair as one source document,
-  preserving the question as the title and the answer as the content.
-- Evaluation caution: Do not use an ingested FAQ question verbatim to evaluate
-  query rewriting. Use independently collected or naturally paraphrased
-  questions to avoid exact-match leakage.
+- Initial use: Keep the FAQ outside the index and use its questions and official
+  answers as a real-world answer-evaluation set.
+- Evaluation value: The official answers provide reference answers for testing
+  answer correctness, which the current source-generated evaluation does not
+  have.
+- Ingestion decision: First use the FAQ to identify knowledge gaps. Prefer
+  adding the underlying NIH, NCCIH, FDA, or other authoritative source when it
+  contains the missing evidence. Add FAQ content to the index only when the
+  relevant guidance is not available in a more direct source.
+- Leakage rule: A FAQ question-and-answer pair used as indexed content must not
+  also be used as a holdout evaluation example for the same project version.
 
 ### 2. NCCIH Herbs at a Glance
 
@@ -32,6 +38,42 @@ part of the current index or reported evaluation results.
 - Priority: Medium
 - Value: Adds United States regulatory actions and communications about
   selected supplement ingredients.
+
+## Evidence roles and purchasing questions
+
+The current index combines documents that serve different purposes. A Health
+Canada monograph can define acceptable product-licence and label claims, doses,
+and warnings, but it is not by itself a consumer purchasing recommendation or a
+clinical guideline. This distinction becomes important for questions such as
+"Does this product work?" and "Should I buy this for my parents?"
+
+V2 should:
+
+- Add an `evidence_role` field during document construction, with values such
+  as:
+  - `regulatory_claim`
+  - `regulatory_monograph`
+  - `clinical_evidence_summary`
+  - `consumer_guidance`
+  - `safety_reference`
+- Preserve the difference between an accepted regulatory label claim,
+  traditional use, evidence of clinical effectiveness, and a clinical
+  recommendation.
+- For effectiveness and purchasing questions, prioritize clinical evidence
+  summaries and guidelines over regulatory monographs.
+- Use regulatory monographs to explain permitted uses, product conditions,
+  doses, and warnings without treating them as proof that a product is worth
+  buying.
+- Avoid inferring that a branded product is effective from evidence about one
+  ingredient, especially when the formulation, ingredient form, or dose is
+  unknown.
+- State explicitly when the index contains regulatory support but lacks enough
+  clinical evidence to make an effectiveness comparison.
+
+This may require adding broader NCCIH evidence summaries or other authoritative
+clinical guidelines, not only changing the answer prompt. Retrieval evaluation
+should include questions that test whether the system distinguishes regulatory
+status from clinical effectiveness and consumer recommendations.
 
 ## Real-world regression case
 
@@ -95,8 +137,86 @@ Failure tags:
 - `reference_list_retrieval`
 - `missing_consumer_safety_context`
 
+### Move Free, knee pain, and joint protection
+
+Question:
+
+> Is Move Free a good choice for a man in his 60s to relieve knee pain and
+> protect his knees?
+
+Relevant clinical evidence source:
+
+- NCCIH, *Glucosamine and Chondroitin for Osteoarthritis: What You Need to
+  Know*
+- https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis-what-you-need-to-know
+
+Observed current behavior:
+
+- Correctly avoided claiming that Move Free was proven to relieve pain or
+  prevent future knee damage.
+- Distinguished osteoarthritis-related knee pain from knee pain with an
+  unknown cause.
+- Still opened by calling Move Free a "reasonable joint-health supplement,"
+  even though the indexed excerpts did not evaluate the brand or confirm its
+  exact formulation and dose.
+- Treated Health Canada monograph claims as relatively positive effectiveness
+  evidence instead of clearly identifying them as regulatory product-licence
+  and labelling information.
+- Suggested that glucosamine sulfate and chondroitin sulfate may help knee
+  osteoarthritis without retrieving the broader clinical conclusion that
+  studies and professional guidelines have reached inconsistent conclusions.
+
+Desired V2 behavior:
+
+- Do not recommend or positively characterize a branded product when its exact
+  formula, ingredient forms, and doses are unknown.
+- Clearly separate Health Canada permitted-use or label information from
+  evidence of clinical effectiveness.
+- For pain-relief and purchasing questions, retrieve an authoritative clinical
+  evidence summary such as NCCIH in addition to regulatory monographs.
+- State that evidence for glucosamine and chondroitin in knee osteoarthritis is
+  inconsistent and that guidelines disagree.
+- Do not translate cartilage-maintenance wording into proof that a supplement
+  prevents future knee deterioration.
+- Explain that evidence concerning knee osteoarthritis does not establish
+  effectiveness for knee pain from an unknown cause.
+
+Ingestion implication:
+
+- Expand the NCCIH candidate source beyond botanical fact sheets to include
+  condition- and ingredient-level clinical evidence summaries.
+- Use this case to test whether source-role-aware retrieval prioritizes clinical
+  evidence for effectiveness questions while retaining regulatory sources for
+  permitted claims, doses, and warnings.
+
+Failure tags:
+
+- `brand_without_formula`
+- `regulatory_claim_vs_effectiveness`
+- `purchasing_recommendation`
+- `mixed_clinical_evidence`
+- `joint_protection_overstatement`
+- `missing_clinical_evidence_summary`
+
 ## V2 evaluation plan
 
+- Build a structured NIH Consumer FAQ dataset with at least the question,
+  official reference answer, source URL, and topic.
+- Keep this dataset separate from the Elasticsearch index while it is used as
+  holdout evaluation data.
+- Run a coverage audit against the current evidence index and label each FAQ:
+  - `fully_answerable`: the indexed evidence covers the important conclusions
+    in the official answer.
+  - `partially_answerable`: some useful evidence is present, but one or more
+    important conclusions or safety qualifications are missing.
+  - `not_answerable`: the current index does not contain evidence supporting the
+    important conclusions.
+- Compare system answers with the official FAQ answers using answer correctness
+  in addition to answer relevance, faithfulness, and citation correctness.
+- Use the coverage audit to decide which underlying authoritative sources
+  should be added to ingestion.
+- If some FAQ entries are eventually ingested, create a clean split between
+  indexed development examples and untouched holdout evaluation examples.
 - Collect real-world questions from application feedback and a small,
   privacy-preserving sample of public consumer questions.
 - Remove usernames and identifying health details; paraphrase when appropriate

@@ -10,6 +10,7 @@ import json
 import re
 from pathlib import Path
 from typing import Any
+from urllib.parse import urldefrag
 
 from dotenv import load_dotenv
 from elasticsearch import Elasticsearch
@@ -39,6 +40,7 @@ else:
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 LLM_MODEL_NAME = "gpt-5.4-mini"
+RAG_VERSION = "agentic_rag_v2"
 MAX_SEARCH_CALLS = 4
 MAX_AGENT_TURNS = 8
 
@@ -68,12 +70,31 @@ Retrieval rules:
 - Stop searching once the available evidence is sufficient.
 
 Answer rules:
+- Start with a direct conclusion whose certainty matches the evidence described
+  in the rest of the answer. Do not open with an unqualified "Yes" or "No" when
+  the evidence is limited, mixed, indirect, or shows only a modest effect.
+- Use calibrated wording such as "possibly, but the evidence is limited",
+  "the evidence is mixed", or "the excerpts do not establish this" when that
+  better reflects the retrieved sources. Clearly separate what is supported
+  from what remains uncertain.
+- If sources or findings point in different directions, acknowledge that in the
+  opening conclusion rather than resolving the uncertainty into a stronger
+  claim.
+- By default, give one concise synthesis rather than mechanically creating a
+  section for every source. Organise supporting details by evidence role, such
+  as research evidence, regulatory status, dose conditions, or safety.
+- Separate NIH, EU, and Health Canada findings when they disagree, serve
+  materially different roles in answering the question, or when the user asks
+  about a specific jurisdiction. Do not add empty source sections when a source
+  has no relevant evidence.
 - Cite supporting excerpts with their provided reference numbers, such as [1]
   or [1, 2].
 - Do not add factual claims unsupported by the returned excerpts.
 - Do not treat "studied for" as proof of effectiveness. Preserve distinctions
   such as "studied for", "may help", and "authorised claim".
-- Distinguish regulatory claims from general health information.
+- Distinguish regulatory claims from general health information. An authorised
+  claim or regulatory monograph is not by itself proof that a supplement is
+  broadly effective, optimal, or appropriate for an individual.
 - For dose questions, report only source-stated dose ranges and their use,
   population, jurisdiction, and conditions. Do not turn them into a personalised
   recommendation about what the user should buy or take.
@@ -163,21 +184,60 @@ def compact_citations(
             ):
                 cited_numbers.append(number)
 
-    number_map = {
-        old_number: new_number
-        for new_number, old_number in enumerate(cited_numbers, start=1)
-    }
+    number_map: dict[int, int] = {}
+    cited_references: list[dict[str, Any]] = []
+    source_numbers: dict[str, int] = {}
+
+    for old_number in cited_numbers:
+        result = references[old_number - 1]
+        document = result["_source"]
+        source_url = document.get("source_url", "")
+        source_key = (
+            urldefrag(source_url).url
+            if source_url
+            else result["_id"]
+        )
+
+        if source_key not in source_numbers:
+            new_number = len(cited_references) + 1
+            source_numbers[source_key] = new_number
+            cited_references.append(
+                {
+                    **result,
+                    "_source": {**document},
+                }
+            )
+        else:
+            new_number = source_numbers[source_key]
+            existing_document = cited_references[
+                new_number - 1
+            ]["_source"]
+            new_content = document.get("content", "")
+
+            if (
+                new_content
+                and new_content not in existing_document["content"]
+            ):
+                existing_document["content"] += f"\n\n{new_content}"
+
+        number_map[old_number] = new_number
 
     def replace_citation(match: re.Match[str]) -> str:
         old_numbers = [
             int(number)
             for number in re.findall(r"\d+", match.group(1))
         ]
-        new_numbers = [
-            number_map[number]
-            for number in old_numbers
-            if number in number_map
-        ]
+        new_numbers: list[int] = []
+
+        for number in old_numbers:
+            mapped_number = number_map.get(number)
+
+            if (
+                mapped_number is not None
+                and mapped_number not in new_numbers
+            ):
+                new_numbers.append(mapped_number)
+
         return f"[{', '.join(map(str, new_numbers))}]"
 
     compacted_answer = re.sub(
@@ -185,11 +245,6 @@ def compact_citations(
         replace_citation,
         answer,
     )
-    cited_references = [
-        references[number - 1]
-        for number in cited_numbers
-    ]
-
     return compacted_answer, cited_references
 
 
