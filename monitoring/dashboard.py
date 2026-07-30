@@ -19,6 +19,10 @@ SOURCE_LABELS = {
     "eu_health_claims_register": "EU Register",
     "health_canada_nhpid": "Health Canada",
     "nih_ods": "NIH ODS",
+    "nih_ods_guidance": "NIH ODS Consumer Guidance",
+    "us_dri_tables": "Dietary Reference Intakes",
+    "nccih_herbs": "NCCIH Herbs at a Glance",
+    "us_nih_ods_faq": "NIH ODS Consumer FAQ",
 }
 
 
@@ -394,7 +398,7 @@ with st.container(border=True, key="interactions_card"):
             "created_at": "Time",
             "question": "Question",
             "search_count": "Searches",
-            "context_count": "Sources",
+            "context_count": "Cited Contexts",
             "response_time_seconds": st.column_config.NumberColumn(
                 "Response Time",
                 format="%.1f s",

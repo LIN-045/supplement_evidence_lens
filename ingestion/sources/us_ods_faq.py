@@ -75,14 +75,57 @@ def extract_records(
     current_section = ""
     current_record: dict[str, Any] | None = None
 
+    def save_current_record() -> None:
+        nonlocal current_record
+
+        if current_record is None:
+            return
+
+        answer = clean_text(
+            " ".join(current_record["answer_parts"])
+        )
+        if not answer:
+            raise RuntimeError(
+                "FAQ question has no answer: "
+                f"{current_record['question']}"
+            )
+
+        question_key = current_record["question_key"]
+
+        if question_key in records_by_question:
+            existing = records_by_question[question_key]
+
+            if existing["answer"] != answer:
+                raise RuntimeError(
+                    "Duplicate FAQ question has different "
+                    f"answers: {current_record['question']}"
+                )
+
+            existing["duplicate_count"] += 1
+
+            for section in current_record["sections"]:
+                if section not in existing["sections"]:
+                    existing["sections"].append(section)
+
+            for url in current_record["answer_urls"]:
+                if url not in existing["answer_urls"]:
+                    existing["answer_urls"].append(url)
+        else:
+            records_by_question[question_key] = {
+                **current_record,
+                "answer": answer,
+            }
+
+        current_record = None
+
     for element in article.find_all(["h2", "h3", "p", "ul", "ol"], recursive=True):
         if element.find_parent(["p", "ul", "ol"]) is not None:
             continue
 
         if element.name in {"h2", "h3"}:
+            save_current_record()
             current_heading = element
             current_section = clean_text(element.get_text(" ", strip=True))
-            current_record = None
             continue
 
         section_key = current_section.lower()
@@ -96,15 +139,16 @@ def extract_records(
         is_question = element.name == "p" and strong_text.lower().startswith("q.")
 
         if is_question:
+            save_current_record()
             question = re.sub(r"^Q\.\s*", "", strong_text, flags=re.IGNORECASE)
             question_key = normalise_question(question)
             if not question_key:
-                current_record = None
                 continue
 
             fragment = section_fragment(current_heading)
             source_url = f"{SOURCE_URL}#{fragment}" if fragment else SOURCE_URL
             candidate = {
+                "question_key": question_key,
                 "question": question,
                 "sections": [current_section] if current_section else [],
                 "answer_parts": [],
@@ -113,16 +157,7 @@ def extract_records(
                 "source_sha256": source_sha256,
                 "duplicate_count": 1,
             }
-
-            if question_key in records_by_question:
-                existing = records_by_question[question_key]
-                existing["duplicate_count"] += 1
-                if current_section and current_section not in existing["sections"]:
-                    existing["sections"].append(current_section)
-                current_record = existing
-            else:
-                records_by_question[question_key] = candidate
-                current_record = candidate
+            current_record = candidate
             continue
 
         if current_record is None or not text:
@@ -134,11 +169,13 @@ def extract_records(
             if absolute_url not in current_record["answer_urls"]:
                 current_record["answer_urls"].append(absolute_url)
 
+    save_current_record()
+
     records: list[dict[str, Any]] = []
     for question_key, item in records_by_question.items():
-        answer = clean_text(" ".join(item.pop("answer_parts")))
-        if not answer:
-            raise RuntimeError(f"FAQ question has no answer: {item['question']}")
+        answer = item.pop("answer")
+        item.pop("answer_parts")
+        item.pop("question_key")
 
         stable_id = hashlib.sha256(question_key.encode("utf-8")).hexdigest()[:16]
         title = f"NIH ODS Consumer FAQ — {item['question']}"

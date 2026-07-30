@@ -19,17 +19,11 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import streamlit as st
 from dotenv import load_dotenv
-from elasticsearch import Elasticsearch
 from openai import OpenAI
-from sentence_transformers import CrossEncoder, SentenceTransformer
 
+from app.agentic_rag import AgenticRAG
+from app.retrieval import EvidenceRetriever
 from monitoring.store import record_feedback, record_interaction
-from rag import LLM_MODEL_NAME, RAG_VERSION, answer_question
-from retrieval import (
-    ELASTICSEARCH_URL,
-    MODEL_NAME as EMBEDDING_MODEL_NAME,
-    RERANKER_MODEL_NAME,
-)
 
 
 SOURCE_LABELS = {
@@ -39,6 +33,7 @@ SOURCE_LABELS = {
     "nih_ods_guidance": "NIH ODS Consumer Guidance",
     "us_dri_tables": "Dietary Reference Intakes",
     "nccih_herbs": "NCCIH Herbs at a Glance",
+    "us_nih_ods_faq": "NIH ODS Consumer FAQ",
 }
 
 
@@ -240,29 +235,12 @@ st.markdown(
 
 
 @st.cache_resource(show_spinner="Loading search models...")
-def load_resources() -> tuple[
-    Elasticsearch,
-    SentenceTransformer,
-    CrossEncoder,
-    OpenAI,
-]:
-    """Create long-lived clients and models once per Streamlit process."""
+def load_rag() -> AgenticRAG:
+    """Create the long-lived RAG service once per Streamlit process."""
 
     load_dotenv(PROJECT_ROOT / ".env")
-
-    elasticsearch_client = Elasticsearch(ELASTICSEARCH_URL)
-    if not elasticsearch_client.ping():
-        raise ConnectionError(
-            f"Cannot connect to Elasticsearch at {ELASTICSEARCH_URL}"
-        )
-
-    embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-    reranker_model = CrossEncoder(RERANKER_MODEL_NAME)
-
-    return (
-        elasticsearch_client,
-        embedding_model,
-        reranker_model,
+    return AgenticRAG(
+        EvidenceRetriever.from_defaults(),
         OpenAI(),
     )
 
@@ -447,30 +425,14 @@ if submitted:
             with st.spinner(
                 "Searching official sources and reviewing the evidence..."
             ):
-                (
-                    elasticsearch_client,
-                    embedding_model,
-                    reranker_model,
-                    openai_client,
-                ) = load_resources()
-
-                result = answer_question(
-                    question,
-                    elasticsearch_client,
-                    embedding_model,
-                    reranker_model,
-                    openai_client,
-                    return_trace=True,
-                )
-
-            if not isinstance(result, dict):
-                raise TypeError("Expected a traced RAG response")
+                rag = load_rag()
+                result = rag.answer(question)
 
             interaction_id = record_interaction(
                 result,
                 perf_counter() - started_at,
-                LLM_MODEL_NAME,
-                RAG_VERSION,
+                rag.model_name,
+                rag.rag_version,
             )
             st.session_state["result"] = result
             st.session_state["interaction_id"] = interaction_id

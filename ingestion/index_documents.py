@@ -6,12 +6,19 @@ Run from the project root:
 """
 
 import argparse
+import hashlib
 from pathlib import Path
 from typing import Any
+from uuid import uuid4
 
 from elasticsearch import Elasticsearch, helpers
 from sentence_transformers import SentenceTransformer
 
+from app.retrieval import (
+    ELASTICSEARCH_URL,
+    EMBEDDING_MODEL_NAME,
+    INDEX_NAME,
+)
 from ingestion.ingestion_io import read_jsonl
 
 
@@ -25,10 +32,6 @@ INPUT_PATH = (
     / "document_chunks.jsonl"
 )
 
-ELASTICSEARCH_URL = "http://localhost:9200"
-INDEX_NAME = "supplement_evidence"
-
-EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 EMBEDDING_DIMENSIONS = 384
 BATCH_SIZE = 32
 
@@ -38,13 +41,15 @@ BATCH_SIZE = 32
 def create_index(
     client: Elasticsearch,
     index_name: str,
+    document_sha256: str,
 ) -> None:
-    if client.indices.exists(index=index_name):
-        client.indices.delete(index=index_name)
-
     client.indices.create(
         index=index_name,
         mappings={
+            "_meta": {
+                "document_sha256": document_sha256,
+                "embedding_model": EMBEDDING_MODEL_NAME,
+            },
             "properties": {
                 "content": {
                     "type": "text",
@@ -127,6 +132,65 @@ def create_index(
     )
 
 
+def file_sha256(path: Path) -> str:
+    """Return the SHA-256 digest of a file without loading it at once."""
+
+    digest = hashlib.sha256()
+
+    with path.open("rb") as file:
+        for block in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(block)
+
+    return digest.hexdigest()
+
+
+def switch_alias(
+    client: Elasticsearch,
+    alias_name: str,
+    new_index_name: str,
+) -> list[str]:
+    """Atomically point the public alias at a completed physical index."""
+
+    old_indices: list[str] = []
+    actions: list[dict[str, Any]] = []
+
+    if client.indices.exists_alias(name=alias_name):
+        aliases = client.indices.get_alias(name=alias_name)
+        old_indices = list(aliases)
+        actions.extend(
+            {
+                "remove": {
+                    "index": old_index,
+                    "alias": alias_name,
+                }
+            }
+            for old_index in old_indices
+        )
+    elif client.indices.exists(index=alias_name):
+        # The first safe rebuild may replace the old concrete index with
+        # an alias. remove_index and add happen in one cluster-state update.
+        old_indices = [alias_name]
+        actions.append(
+            {"remove_index": {"index": alias_name}}
+        )
+
+    actions.append(
+        {
+            "add": {
+                "index": new_index_name,
+                "alias": alias_name,
+                "is_write_index": True,
+            }
+        }
+    )
+    client.indices.update_aliases(actions=actions)
+    return [
+        index_name
+        for index_name in old_indices
+        if index_name != alias_name
+    ]
+
+
 # Embedding and indexing
 
 def build_actions(
@@ -157,12 +221,16 @@ def run(
     index_name: str = INDEX_NAME,
     elasticsearch_url: str = ELASTICSEARCH_URL,
 ) -> dict[str, Any]:
-    """Embed all chunks, replace one index, and return a run summary."""
+    """Embed chunks, validate a new index, then atomically switch its alias."""
 
     if not index_name.strip():
         raise ValueError("index_name must not be empty")
 
     documents = read_jsonl(input_path)
+    if not documents:
+        raise ValueError(f"No documents found in {input_path}")
+
+    document_sha256 = file_sha256(input_path)
     print(f"Loaded documents: {len(documents)}")
 
     model = SentenceTransformer(EMBEDDING_MODEL_NAME)
@@ -180,25 +248,61 @@ def run(
             f"Cannot connect to Elasticsearch at {elasticsearch_url}"
         )
 
-    create_index(client, index_name)
-
-    actions = build_actions(documents, embeddings, index_name)
-    indexed_count, errors = helpers.bulk(
-        client.options(request_timeout=120),
-        actions,
-        chunk_size=200,
+    physical_index_name = (
+        f"{index_name}-{uuid4().hex[:12]}"
+    )
+    create_index(
+        client,
+        physical_index_name,
+        document_sha256,
     )
 
-    if errors:
-        raise RuntimeError(f"Failed indexing operations: {len(errors)}")
+    alias_switched = False
 
-    client.indices.refresh(index=index_name)
-
-    stored_count = client.count(index=index_name)["count"]
-    if stored_count != len(documents):
-        raise ValueError(
-            f"Expected {len(documents)} documents, found {stored_count}"
+    try:
+        actions = build_actions(
+            documents,
+            embeddings,
+            physical_index_name,
         )
+        indexed_count, errors = helpers.bulk(
+            client.options(request_timeout=120),
+            actions,
+            chunk_size=200,
+        )
+
+        if errors:
+            raise RuntimeError(
+                f"Failed indexing operations: {len(errors)}"
+            )
+
+        client.indices.refresh(index=physical_index_name)
+
+        stored_count = client.count(
+            index=physical_index_name
+        )["count"]
+        if stored_count != len(documents):
+            raise ValueError(
+                f"Expected {len(documents)} documents, "
+                f"found {stored_count}"
+            )
+
+        old_physical_indices = switch_alias(
+            client,
+            index_name,
+            physical_index_name,
+        )
+        alias_switched = True
+
+        for old_index in old_physical_indices:
+            client.indices.delete(index=old_index)
+    except Exception:
+        if not alias_switched:
+            client.indices.delete(
+                index=physical_index_name,
+                ignore_unavailable=True,
+            )
+        raise
 
     return {
         "document_count": len(documents),
@@ -207,6 +311,8 @@ def run(
         "stored_count": stored_count,
         "input_path": str(input_path),
         "index_name": index_name,
+        "physical_index_name": physical_index_name,
+        "document_sha256": document_sha256,
         "elasticsearch_url": elasticsearch_url,
         "embedding_model": EMBEDDING_MODEL_NAME,
     }

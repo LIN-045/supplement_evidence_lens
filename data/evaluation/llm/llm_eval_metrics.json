@@ -1,0 +1,413 @@
+{
+  "index_document_sha256": "8f93ad4d6f9cedb3688a8cb2cb75bca68200e3181904354d6b460bc431c0dce7",
+  "baseline_rag": {
+    "rag_version": "baseline_rag_v1",
+    "answer_model": "gpt-5.4-mini",
+    "judge_version": "answer_judge_v1",
+    "judge_model": "gpt-5.4-mini",
+    "overall": {
+      "question_count": 134,
+      "average_scores": {
+        "correctness": 4.835820895522388,
+        "completeness": 4.514925373134329,
+        "faithfulness": 4.708955223880597,
+        "citation_correctness": 4.619402985074627
+      },
+      "perfect_answers": 67
+    },
+    "by_source": {
+      "eu_health_claims_register": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.8,
+          "completeness": 4.5,
+          "faithfulness": 4.7,
+          "citation_correctness": 4.5
+        },
+        "perfect_answers": 4
+      },
+      "health_canada_nhpid": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.3,
+          "completeness": 4.2,
+          "faithfulness": 4.3,
+          "citation_correctness": 4.2
+        },
+        "perfect_answers": 5
+      },
+      "nccih_herbs": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.9,
+          "completeness": 4.8,
+          "faithfulness": 4.9,
+          "citation_correctness": 4.9
+        },
+        "perfect_answers": 7
+      },
+      "nih_ods": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.9,
+          "completeness": 4.8,
+          "faithfulness": 4.8,
+          "citation_correctness": 4.7
+        },
+        "perfect_answers": 6
+      },
+      "nih_ods_guidance": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 5.0,
+          "completeness": 4.8,
+          "faithfulness": 4.7,
+          "citation_correctness": 4.6
+        },
+        "perfect_answers": 6
+      },
+      "us_dri_tables": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.8,
+          "completeness": 4.8,
+          "faithfulness": 4.7,
+          "citation_correctness": 4.8
+        },
+        "perfect_answers": 7
+      },
+      "us_nih_ods_faq": {
+        "question_count": 74,
+        "average_scores": {
+          "correctness": 4.878378378378378,
+          "completeness": 4.405405405405405,
+          "faithfulness": 4.72972972972973,
+          "citation_correctness": 4.621621621621622
+        },
+        "perfect_answers": 32
+      }
+    },
+    "trajectory": {
+      "average_searches": 1.0,
+      "maximum_searches": 1,
+      "multi_search_answers": 0,
+      "average_cited_contexts": 2.111940298507463,
+      "answers_without_cited_contexts": 0
+    }
+  },
+  "agentic_rag": {
+    "rag_version": "agentic_rag_v3",
+    "answer_model": "gpt-5.4-mini",
+    "judge_version": "answer_judge_v1",
+    "judge_model": "gpt-5.4-mini",
+    "overall": {
+      "question_count": 134,
+      "average_scores": {
+        "correctness": 4.7611940298507465,
+        "completeness": 4.440298507462686,
+        "faithfulness": 4.649253731343284,
+        "citation_correctness": 4.611940298507463
+      },
+      "perfect_answers": 54
+    },
+    "by_source": {
+      "eu_health_claims_register": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.8,
+          "completeness": 4.6,
+          "faithfulness": 4.9,
+          "citation_correctness": 4.9
+        },
+        "perfect_answers": 6
+      },
+      "health_canada_nhpid": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.5,
+          "completeness": 4.4,
+          "faithfulness": 4.4,
+          "citation_correctness": 4.3
+        },
+        "perfect_answers": 5
+      },
+      "nccih_herbs": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.9,
+          "completeness": 4.7,
+          "faithfulness": 4.9,
+          "citation_correctness": 4.9
+        },
+        "perfect_answers": 7
+      },
+      "nih_ods": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.9,
+          "completeness": 4.6,
+          "faithfulness": 4.6,
+          "citation_correctness": 4.5
+        },
+        "perfect_answers": 6
+      },
+      "nih_ods_guidance": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 4.8,
+          "completeness": 4.6,
+          "faithfulness": 4.7,
+          "citation_correctness": 4.6
+        },
+        "perfect_answers": 5
+      },
+      "us_dri_tables": {
+        "question_count": 10,
+        "average_scores": {
+          "correctness": 5.0,
+          "completeness": 4.9,
+          "faithfulness": 4.7,
+          "citation_correctness": 4.8
+        },
+        "perfect_answers": 7
+      },
+      "us_nih_ods_faq": {
+        "question_count": 74,
+        "average_scores": {
+          "correctness": 4.716216216216216,
+          "completeness": 4.283783783783784,
+          "faithfulness": 4.608108108108108,
+          "citation_correctness": 4.5675675675675675
+        },
+        "perfect_answers": 18
+      }
+    },
+    "trajectory": {
+      "average_searches": 1.0223880597014925,
+      "maximum_searches": 2,
+      "multi_search_answers": 3,
+      "average_cited_contexts": 1.9179104477611941,
+      "answers_without_cited_contexts": 0
+    }
+  },
+  "paired_comparison": {
+    "overall": {
+      "correctness": {
+        "agentic_wins": 11,
+        "baseline_wins": 20,
+        "ties": 103
+      },
+      "completeness": {
+        "agentic_wins": 23,
+        "baseline_wins": 31,
+        "ties": 80
+      },
+      "faithfulness": {
+        "agentic_wins": 15,
+        "baseline_wins": 23,
+        "ties": 96
+      },
+      "citation_correctness": {
+        "agentic_wins": 23,
+        "baseline_wins": 27,
+        "ties": 84
+      },
+      "combined_score": {
+        "agentic_wins": 37,
+        "baseline_wins": 47,
+        "ties": 50
+      }
+    },
+    "by_source": {
+      "eu_health_claims_register": {
+        "correctness": {
+          "agentic_wins": 1,
+          "baseline_wins": 1,
+          "ties": 8
+        },
+        "completeness": {
+          "agentic_wins": 3,
+          "baseline_wins": 2,
+          "ties": 5
+        },
+        "faithfulness": {
+          "agentic_wins": 2,
+          "baseline_wins": 0,
+          "ties": 8
+        },
+        "citation_correctness": {
+          "agentic_wins": 3,
+          "baseline_wins": 0,
+          "ties": 7
+        },
+        "combined_score": {
+          "agentic_wins": 5,
+          "baseline_wins": 2,
+          "ties": 3
+        }
+      },
+      "health_canada_nhpid": {
+        "correctness": {
+          "agentic_wins": 2,
+          "baseline_wins": 0,
+          "ties": 8
+        },
+        "completeness": {
+          "agentic_wins": 3,
+          "baseline_wins": 1,
+          "ties": 6
+        },
+        "faithfulness": {
+          "agentic_wins": 2,
+          "baseline_wins": 2,
+          "ties": 6
+        },
+        "citation_correctness": {
+          "agentic_wins": 2,
+          "baseline_wins": 3,
+          "ties": 5
+        },
+        "combined_score": {
+          "agentic_wins": 3,
+          "baseline_wins": 4,
+          "ties": 3
+        }
+      },
+      "nccih_herbs": {
+        "correctness": {
+          "agentic_wins": 1,
+          "baseline_wins": 1,
+          "ties": 8
+        },
+        "completeness": {
+          "agentic_wins": 0,
+          "baseline_wins": 1,
+          "ties": 9
+        },
+        "faithfulness": {
+          "agentic_wins": 1,
+          "baseline_wins": 1,
+          "ties": 8
+        },
+        "citation_correctness": {
+          "agentic_wins": 1,
+          "baseline_wins": 1,
+          "ties": 8
+        },
+        "combined_score": {
+          "agentic_wins": 2,
+          "baseline_wins": 2,
+          "ties": 6
+        }
+      },
+      "nih_ods": {
+        "correctness": {
+          "agentic_wins": 1,
+          "baseline_wins": 1,
+          "ties": 8
+        },
+        "completeness": {
+          "agentic_wins": 1,
+          "baseline_wins": 3,
+          "ties": 6
+        },
+        "faithfulness": {
+          "agentic_wins": 2,
+          "baseline_wins": 3,
+          "ties": 5
+        },
+        "citation_correctness": {
+          "agentic_wins": 2,
+          "baseline_wins": 3,
+          "ties": 5
+        },
+        "combined_score": {
+          "agentic_wins": 3,
+          "baseline_wins": 3,
+          "ties": 4
+        }
+      },
+      "nih_ods_guidance": {
+        "correctness": {
+          "agentic_wins": 0,
+          "baseline_wins": 2,
+          "ties": 8
+        },
+        "completeness": {
+          "agentic_wins": 1,
+          "baseline_wins": 3,
+          "ties": 6
+        },
+        "faithfulness": {
+          "agentic_wins": 2,
+          "baseline_wins": 2,
+          "ties": 6
+        },
+        "citation_correctness": {
+          "agentic_wins": 2,
+          "baseline_wins": 2,
+          "ties": 6
+        },
+        "combined_score": {
+          "agentic_wins": 2,
+          "baseline_wins": 5,
+          "ties": 3
+        }
+      },
+      "us_dri_tables": {
+        "correctness": {
+          "agentic_wins": 2,
+          "baseline_wins": 0,
+          "ties": 8
+        },
+        "completeness": {
+          "agentic_wins": 1,
+          "baseline_wins": 0,
+          "ties": 9
+        },
+        "faithfulness": {
+          "agentic_wins": 0,
+          "baseline_wins": 0,
+          "ties": 10
+        },
+        "citation_correctness": {
+          "agentic_wins": 1,
+          "baseline_wins": 1,
+          "ties": 8
+        },
+        "combined_score": {
+          "agentic_wins": 2,
+          "baseline_wins": 0,
+          "ties": 8
+        }
+      },
+      "us_nih_ods_faq": {
+        "correctness": {
+          "agentic_wins": 4,
+          "baseline_wins": 15,
+          "ties": 55
+        },
+        "completeness": {
+          "agentic_wins": 14,
+          "baseline_wins": 21,
+          "ties": 39
+        },
+        "faithfulness": {
+          "agentic_wins": 6,
+          "baseline_wins": 15,
+          "ties": 53
+        },
+        "citation_correctness": {
+          "agentic_wins": 12,
+          "baseline_wins": 17,
+          "ties": 45
+        },
+        "combined_score": {
+          "agentic_wins": 20,
+          "baseline_wins": 31,
+          "ties": 23
+        }
+      }
+    }
+  }
+}

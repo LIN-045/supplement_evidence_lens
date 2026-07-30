@@ -13,3 +13,8 @@ dependencies = [
     "sentence-transformers>=5.6.1",
     "streamlit>=1.60.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

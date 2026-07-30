@@ -1,0 +1,207 @@
+{
+  "question_count": 134,
+  "cutoff": 5,
+  "index_document_sha256": "8f93ad4d6f9cedb3688a8cb2cb75bca68200e3181904354d6b460bc431c0dce7",
+  "relevance_judge_version": "relevance_judge_v1",
+  "relevance_judge_model": "gpt-5.4-mini",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "overall": {
+    "bm25": {
+      "hit_rate@5": 0.8805970149253731,
+      "mrr@5": 0.8189054726368159,
+      "pooled_recall@5": 0.4465358646328796
+    },
+    "vector": {
+      "hit_rate@5": 0.9626865671641791,
+      "mrr@5": 0.9359452736318409,
+      "pooled_recall@5": 0.6582167003808795
+    },
+    "hybrid": {
+      "hit_rate@5": 0.9701492537313433,
+      "mrr@5": 0.9144278606965174,
+      "pooled_recall@5": 0.6427947260036813
+    },
+    "hybrid_reranked": {
+      "hit_rate@5": 0.9925373134328358,
+      "mrr@5": 0.9660447761194029,
+      "pooled_recall@5": 0.677146319683633
+    }
+  },
+  "by_source": {
+    "eu_health_claims_register": {
+      "question_count": 10,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 0.7,
+          "mrr@5": 0.6,
+          "pooled_recall@5": 0.43499999999999994
+        },
+        "vector": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.7849999999999999
+        },
+        "hybrid": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.795,
+          "pooled_recall@5": 0.6849999999999999
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.95,
+          "pooled_recall@5": 0.7883333333333333
+        }
+      }
+    },
+    "health_canada_nhpid": {
+      "question_count": 10,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 0.4,
+          "mrr@5": 0.4,
+          "pooled_recall@5": 0.16083333333333333
+        },
+        "vector": {
+          "hit_rate@5": 0.5,
+          "mrr@5": 0.45,
+          "pooled_recall@5": 0.31916666666666665
+        },
+        "hybrid": {
+          "hit_rate@5": 0.6,
+          "mrr@5": 0.5333333333333333,
+          "pooled_recall@5": 0.46416666666666667
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 0.9,
+          "mrr@5": 0.85,
+          "pooled_recall@5": 0.7358333333333333
+        }
+      }
+    },
+    "nccih_herbs": {
+      "question_count": 10,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 0.8,
+          "mrr@5": 0.7333333333333333,
+          "pooled_recall@5": 0.49333333333333335
+        },
+        "vector": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.8316666666666667
+        },
+        "hybrid": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.875,
+          "pooled_recall@5": 0.7716666666666667
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.8516666666666666
+        }
+      }
+    },
+    "nih_ods": {
+      "question_count": 10,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 0.9,
+          "mrr@5": 0.75,
+          "pooled_recall@5": 0.6341666666666667
+        },
+        "vector": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.95,
+          "pooled_recall@5": 0.7620238095238095
+        },
+        "hybrid": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.740952380952381
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.7695238095238095
+        }
+      }
+    },
+    "nih_ods_guidance": {
+      "question_count": 10,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.8166666666666667,
+          "pooled_recall@5": 0.4735714285714286
+        },
+        "vector": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.95,
+          "pooled_recall@5": 0.5946428571428571
+        },
+        "hybrid": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.95,
+          "pooled_recall@5": 0.6013095238095237
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.6045238095238095
+        }
+      }
+    },
+    "us_dri_tables": {
+      "question_count": 10,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 0.6,
+          "mrr@5": 0.2733333333333333,
+          "pooled_recall@5": 0.25833333333333336
+        },
+        "vector": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.7916666666666667,
+          "pooled_recall@5": 0.6583333333333333
+        },
+        "hybrid": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.7,
+          "pooled_recall@5": 0.725
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 0.745,
+          "pooled_recall@5": 0.6916666666666667
+        }
+      }
+    },
+    "us_nih_ods_faq": {
+      "question_count": 74,
+      "metrics": {
+        "bm25": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.47680303930303924
+        },
+        "vector": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.6580095205095206
+        },
+        "hybrid": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.62504785004785
+        },
+        "hybrid_reranked": {
+          "hit_rate@5": 1.0,
+          "mrr@5": 1.0,
+          "pooled_recall@5": 0.6259747384747385
+        }
+      }
+    }
+  }
+}

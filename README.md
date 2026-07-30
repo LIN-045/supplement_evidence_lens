@@ -2,7 +2,7 @@
 
 Supplement Evidence Lens is an evidence-grounded RAG assistant for questions about dietary supplements.
 
-It retrieves evidence from official EU, Canadian, and US sources, reranks the retrieved passages, and uses an LLM to produce a cited answer. The current version is available through the command line; a web UI is the next development step.
+It retrieves evidence from official EU, Canadian, and US sources, reranks the retrieved passages, and uses an LLM to produce a cited answer through a Streamlit interface.
 
 Example questions:
 
@@ -23,17 +23,16 @@ It is an informational tool, not medical advice.
 
 Implemented:
 
-- ingestion from three official data sources
+- ingestion from seven official datasets
 - normalized document construction and chunking
-- Elasticsearch indexing
+- safe, versioned Elasticsearch indexing
 - BM25, vector, hybrid, and reranked retrieval
-- an Agentic RAG command-line workflow
+- baseline and Agentic RAG workflows
+- a Streamlit application and SQLite monitoring
 - retrieval and answer-quality evaluation
 
 Still to be built:
 
-- web UI
-- user feedback and monitoring
 - full application containerization
 - final deployment documentation and screenshots
 
@@ -41,19 +40,19 @@ Still to be built:
 
 | Source | Jurisdiction | Content | Processed records |
 |---|---|---|---:|
-| EU Register on Nutrition and Health Claims | EU | authorised and non-authorised health claims, conditions, and regulatory status | 2,337 claims |
-| Health Canada NHPID monographs | Canada | single-ingredient and product monograph sections | 3,009 sections from 243 monographs |
-| NIH Office of Dietary Supplements | United States | health-professional fact-sheet sections | 379 sections from 42 fact sheets |
+| EU Register on Nutrition and Health Claims | EU | authorised and non-authorised health claims | 2,337 |
+| Health Canada NHPID | Canada | natural-health-product monographs | 3,009 |
+| NIH ODS Professional Fact Sheets | United States | professional supplement fact sheets | 379 |
+| NIH ODS Consumer Guidance | United States | consumer supplement guidance | 19 |
+| US Dietary Reference Intakes | United States | nutrient reference values | 2,022 |
+| NCCIH Herbs at a Glance | United States | herb benefit and safety summaries | 392 |
+| NIH ODS FAQ | United States | original consumer questions and answers | 74 |
 
-After document construction and chunking, these sources produce 8,021 searchable chunks:
-
-| Source | Chunks |
-|---|---:|
-| EU Register | 2,340 |
-| Health Canada NHPID | 4,354 |
-| NIH ODS | 1,327 |
-
-The index keeps source, jurisdiction, title, section, URL, and document identifiers as metadata. All sources are stored in one Elasticsearch index so they can be searched together and filtered by metadata when needed.
+Document preparation and filtering produce 7,675 complete documents and
+9,046 searchable chunks. The index keeps source, jurisdiction, title, section,
+URL, parent-document ID, and chunk ID as metadata. A completed physical index
+is atomically assigned to the public `supplement_evidence` alias, so a failed
+rebuild does not destroy the working index.
 
 ## Architecture
 
@@ -97,30 +96,28 @@ The application retrieves a larger hybrid candidate set, reranks it, and supplie
 
 ```text
 app/
-  rag.py                         Agentic RAG workflow and CLI
   retrieval.py                   BM25, vector, hybrid, and reranked search
+  base_rag.py                    Single-search baseline RAG
+  agentic_rag.py                 Query planning and multi-search RAG
+  ui.py                          Streamlit application
 
 ingestion/
-  eu_health_claims.py            EU Register ingestion
-  ca_nhpid_monographs.py         Health Canada monograph ingestion
-  us_nih_ods.py                  NIH ODS fact-sheet ingestion
+  sources/                       Seven source-specific adapters
   chunk_documents.py             Normalization and chunking
-  index_documents.py             Elasticsearch index creation
+  index_documents.py             Safe index build and alias switch
+  prefect_flow.py                End-to-end ingestion workflow
 
 evaluation/
-  generate_questions.py          Evaluation-question generation
-  build_relevance_pool.py        Candidate-pool construction
-  judge_relevance.py             LLM relevance judgments
-  evaluate_retrieval.py          Retrieval metrics
-  evaluate_answers.py            RAG answer generation and judging
+  generate_questions.py          134-question dataset construction
+  structured_llm.py              Shared structured judge output
+  retrieval/                     Pool, relevance judge, and metrics
+  llm/                           Answers, answer judge, and metrics
 
 data/
   raw/                           Downloaded source files
   processed/                     Normalized records and chunks
-  evaluation/                    Evaluation datasets and results
-
-docs/
-  future_work.md                 Candidate data and evaluation improvements
+  evaluation/                    Regenerated evaluation artifacts
+  monitoring/                    Persistent interaction database
 ```
 
 ## Setup
@@ -155,19 +152,17 @@ The `.env` file is ignored by Git.
 
 ## Build the Evidence Index
 
-Run the ingestion scripts:
+Run the complete ingestion pipeline:
 
 ```bash
-uv run python ingestion/eu_health_claims.py
-uv run python ingestion/ca_nhpid_monographs.py
-uv run python ingestion/us_nih_ods.py
+uv run python -m ingestion.prefect_flow
 ```
 
-Build the common document collection and index it:
+Or, after the processed source files exist, rebuild only the common document collection and index:
 
 ```bash
-uv run python ingestion/chunk_documents.py
-uv run python ingestion/index_documents.py
+uv run python -m ingestion.chunk_documents
+uv run python -m ingestion.index_documents
 ```
 
 Confirm the indexed document count:
@@ -176,88 +171,93 @@ Confirm the indexed document count:
 curl http://localhost:9200/supplement_evidence/_count
 ```
 
-The expected count for the current dataset is 8,021.
-
 ## Run the Assistant
 
-Ask a question from the command line:
+Start the Streamlit application:
 
 ```bash
-uv run python app/rag.py "What are the risks of taking too much zinc?"
+uv run streamlit run app/ui.py
 ```
 
 The response includes numbered citations and the URLs of the retrieved official sources.
 
 ## Retrieval Evaluation
 
-The retrieval evaluation uses 75 source-grounded questions: 25 seeded from each source. Candidate pools are formed from the union of BM25, vector, and hybrid results. An LLM assigns binary relevance judgments with explanations, and the seed document is retained as a known relevant document.
+The final evaluation set contains 134 questions: all 74 original NIH ODS FAQ questions plus 10 questions generated from complete documents for each of the other six sources. Retrieval is performed on chunks but scored by parent document ID.
 
-Four retrieval approaches are compared at rank 5:
+Candidate pools contain BM25, vector, and RRF-hybrid results. An LLM assigns binary relevance judgments. BM25, vector, hybrid, and hybrid-plus-reranker are compared at rank 5.
 
-| Approach | Hit Rate@5 | MRR@5 | Pooled Recall@5 |
+| Method | Hit Rate@5 | MRR@5 | Pooled Recall@5 |
 |---|---:|---:|---:|
-| BM25 | 0.907 | 0.808 | 0.593 |
-| Vector | 0.867 | 0.789 | 0.609 |
-| Hybrid | 0.907 | 0.853 | 0.643 |
-| Hybrid + reranker | **0.947** | **0.928** | **0.711** |
+| BM25 | 0.881 | 0.819 | 0.447 |
+| Vector | 0.963 | 0.936 | 0.658 |
+| Hybrid | 0.970 | 0.914 | 0.643 |
+| Hybrid + reranker | **0.993** | **0.966** | **0.677** |
 
-Hybrid retrieval with reranking is therefore used by the application. It produced the strongest overall result, with especially large gains on the Health Canada subset. On the EU subset, plain hybrid retrieval remained slightly stronger on some recall measures, so the overall result should not be interpreted as a universal improvement for every source.
-
-The detailed results are stored in [`data/evaluation/retrieval_metrics.json`](data/evaluation/retrieval_metrics.json).
+Hybrid retrieval with cross-encoder reranking performs best overall. The
+source-level results remain important: Health Canada is the hardest subset,
+and reranking raises its Hit Rate@5 from 0.600 to 0.900.
 
 Run the retrieval evaluation pipeline:
 
 ```bash
 uv run python -m evaluation.generate_questions
-uv run python -m evaluation.build_relevance_pool
-uv run python -m evaluation.judge_relevance
-uv run python -m evaluation.evaluate_retrieval
+uv run python -m evaluation.retrieval.build_relevance_pool
+uv run python -m evaluation.retrieval.judge_relevance
+uv run python -m evaluation.retrieval.calculate_retrieval_eval_metrics
 ```
 
 ## Answer Evaluation
 
-The same 75 questions are used to compare two RAG workflows:
+The same 134 questions compare two RAG workflows:
 
 - Fixed RAG: searches the original question once.
 - Agentic RAG: allows the model to rewrite, decompose, or repeat searches when useful.
 
-Both approaches use the same index, retrieval pipeline, reranker, answer model, and evaluation rubric. Because there are no manually written reference answers, an LLM judge scores:
+Both approaches use the same index, retrieval pipeline, reranker, and answer model. The judge uses official FAQ answers or complete seed-document context as reference evidence and scores:
 
-- answer relevance
-- faithfulness to retrieved evidence
+- correctness
+- completeness
+- faithfulness
 - citation correctness
 
 Each metric is scored from 1 to 5 with a written reason.
 
-| Workflow | Relevance | Faithfulness | Citation correctness | Perfect answers |
-|---|---:|---:|---:|---:|
-| Fixed RAG | 4.920 | **4.720** | 4.667 | **49** |
-| Agentic RAG | **4.933** | 4.667 | **4.680** | 48 |
+| Workflow | Correctness | Completeness | Faithfulness | Citation correctness | Perfect answers |
+|---|---:|---:|---:|---:|---:|
+| Baseline RAG | **4.836** | **4.515** | **4.709** | **4.619** | **67** |
+| Agentic RAG | 4.761 | 4.440 | 4.649 | 4.612 | 54 |
 
-The paired combined result was close:
+Baseline wins 47 paired questions, Agentic wins 37, and 50 are tied. The
+overall baseline advantage is concentrated in the 74 original FAQ questions,
+whose exact wording is also indexed. On the 60 non-FAQ questions, the systems
+are approximately tied: Agentic wins 17 paired totals, baseline wins 16, and
+27 are tied. Agentic is slightly higher on correctness, faithfulness, and
+citation correctness in that subset, while baseline is slightly higher on
+completeness.
 
-- Agentic wins: 16
-- Fixed wins: 18
-- Ties: 41
-
-The Agentic workflow remains the application default because it can handle less search-ready questions through query rewriting and decomposition. However, the current source-generated evaluation questions already resemble effective search queries, so this dataset does not demonstrate a clear overall advantage for the Agentic approach.
-
-The Agentic run averaged 1.04 searches per question, used at most two searches in this evaluation, and returned evidence for all 75 questions.
-
-Detailed results are stored in [`data/evaluation/answer_metrics.json`](data/evaluation/answer_metrics.json).
+Agentic averages 1.022 searches and performs multiple searches for only 3 of
+134 questions, so this dataset does not establish a strong benefit from
+multi-search orchestration.
 
 Run answer generation and judging:
 
 ```bash
-uv run python -m evaluation.evaluate_answers
+uv run python -m evaluation.llm.generate_answers
+uv run python -m evaluation.llm.judge_answers
+uv run python -m evaluation.llm.calculate_llm_eval_metrics
 ```
 
-This evaluation calls the OpenAI API and can incur usage costs.
+Question generation, answer generation, and judging call the OpenAI API and can incur usage costs. Evaluation artifacts store question, answer, prompt/version, model, pool, and index-data hashes; a stale partial run is rejected instead of being silently mixed with new results.
 
 ## Evaluation Limitations
 
 - The questions were generated from source documents rather than collected from real users.
 - Source-grounded questions can favor direct keyword search and under-test query rewriting.
+- Exact-match FAQ questions favor retaining the original query and therefore
+  favor the baseline workflow.
+- Only three questions triggered multiple Agentic searches, so complex
+  decomposition behavior remains under-tested.
 - Relevance and answer judgments use an LLM rather than human annotators.
 - The generator, answer model, and judge are not fully independent.
 - Pooled recall measures recall against the judged candidate pool, not against every possibly relevant passage in the full corpus.
