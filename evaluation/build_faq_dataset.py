@@ -15,7 +15,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 INPUT_PATH = (
     PROJECT_ROOT
-    / "data/raw/us_nih_ods/consumer_faq.html"
+    / "data/raw/us_ods_faq/consumer_faq.html"
 )
 OUTPUT_PATH = (
     PROJECT_ROOT
