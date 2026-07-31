@@ -116,14 +116,13 @@ def build_evaluation_records() -> list[dict[str, Any]]:
                 f"{question_id}"
             )
 
-        judged_relevant_ids = judgment_records[
-            question_id
-        ]["relevant_document_ids"]
-
-        relevant_document_ids = set(judged_relevant_ids)
-        relevant_document_ids.add(
-            pooled_record["seed_document_id"]
-        )
+        relevant_chunk_ids = {
+            judgment["document_id"]
+            for judgment in judgment_records[
+                question_id
+            ]["judgments"]
+            if judgment["relevance"] == "relevant"
+        }
 
         evaluation_records.append(
             {
@@ -141,19 +140,19 @@ def build_evaluation_records() -> list[dict[str, Any]]:
                     question_id
                 ]["judge_model"],
                 "candidates": pooled_record["candidates"],
-                "relevant_document_ids": relevant_document_ids,
+                "relevant_chunk_ids": relevant_chunk_ids,
             }
         )
 
     return evaluation_records
 
 
-def ranked_document_ids(
+def ranked_chunk_ids(
     record: dict[str, Any],
     method: str,
 ) -> list[str]:
     if method == "hybrid_reranked":
-        return record["reranked_document_ids"][:CUTOFF]
+        return record["reranked_chunk_ids"][:CUTOFF]
 
     ranked_candidates = [
         candidate
@@ -166,7 +165,7 @@ def ranked_document_ids(
     )
 
     return [
-        candidate["source_document_id"]
+        candidate["document_id"]
         for candidate in ranked_candidates[:CUTOFF]
     ]
 
@@ -207,8 +206,8 @@ def add_reranked_results(
             limit=CUTOFF,
         )
 
-        record["reranked_document_ids"] = [
-            result["_source"]["source_document_id"]
+        record["reranked_chunk_ids"] = [
+            result["_id"]
             for result in reranked
         ]
 
@@ -226,19 +225,19 @@ def calculate_metrics(
     recalls = []
 
     for record in records:
-        retrieved_ids = ranked_document_ids(
+        retrieved_ids = ranked_chunk_ids(
             record,
             method,
         )
-        relevant_ids = record["relevant_document_ids"]
+        relevant_ids = record["relevant_chunk_ids"]
 
         relevant_ranks = [
             rank
-            for rank, document_id in enumerate(
+            for rank, chunk_id in enumerate(
                 retrieved_ids,
                 start=1,
             )
-            if document_id in relevant_ids
+            if chunk_id in relevant_ids
         ]
 
         hits.append(1.0 if relevant_ranks else 0.0)
@@ -253,8 +252,12 @@ def calculate_metrics(
             set(retrieved_ids) & relevant_ids
         )
         recalls.append(
-            len(retrieved_relevant_ids)
-            / len(relevant_ids)
+            (
+                len(retrieved_relevant_ids)
+                / len(relevant_ids)
+            )
+            if relevant_ids
+            else 0.0
         )
 
     question_count = len(records)
@@ -325,6 +328,11 @@ def main() -> None:
     results = {
         "question_count": len(records),
         "cutoff": CUTOFF,
+        "relevance_level": "chunk",
+        "questions_without_relevant_pool_chunks": sum(
+            not record["relevant_chunk_ids"]
+            for record in records
+        ),
         "index_document_sha256": next(iter(index_hashes)),
         "relevance_judge_version": next(
             iter(judge_versions)

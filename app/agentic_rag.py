@@ -8,7 +8,7 @@ from app.base_rag import ANSWER_RULES, BaseRAG
 
 MAX_SEARCH_CALLS = 4
 MAX_AGENT_TURNS = 8
-AGENTIC_RAG_VERSION = "agentic_rag_v3"
+AGENTIC_RAG_VERSION = "agentic_rag_v4"
 
 AGENT_INSTRUCTIONS = f"""
 You answer dietary supplement questions using the search_official_sources tool
@@ -87,6 +87,7 @@ class AgenticRAG(BaseRAG):
                     "title": document["title"],
                     "source": document["source"],
                     "jurisdiction": document["jurisdiction"],
+                    "evidence_role": document["evidence_role"],
                     "url": document["source_url"],
                     "excerpt": document["content"],
                 }

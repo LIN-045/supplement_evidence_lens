@@ -40,7 +40,7 @@ def build_pool_record() -> dict:
     }
 
 
-def test_retrieval_evaluation_uses_parent_document_ids(
+def test_retrieval_evaluation_uses_relevant_chunk_ids(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
@@ -57,7 +57,16 @@ def test_retrieval_evaluation_uses_parent_document_ids(
                 "pool_hash": pooled_record["pool_hash"],
                 "judge_version": "relevance_judge_v1",
                 "judge_model": "test-model",
-                "relevant_document_ids": ["parent-document-2"],
+                "judgments": [
+                    {
+                        "document_id": (
+                            "parent-document-1::chunk-1"
+                        ),
+                        "source_document_id": "parent-document-1",
+                        "relevance": "relevant",
+                        "reason": "Contains the answer.",
+                    }
+                ],
             }
         ],
     )
@@ -70,14 +79,29 @@ def test_retrieval_evaluation_uses_parent_document_ids(
 
     records = metrics.build_evaluation_records()
 
-    assert records[0]["relevant_document_ids"] == {
-        "parent-document-1",
-        "parent-document-2",
+    assert records[0]["relevant_chunk_ids"] == {
+        "parent-document-1::chunk-1",
     }
-    assert metrics.ranked_document_ids(
+    assert metrics.ranked_chunk_ids(
         records[0],
         "hybrid",
-    ) == ["parent-document-1"]
+    ) == ["parent-document-1::chunk-1"]
+
+
+def test_zero_relevant_pool_chunks_score_zero() -> None:
+    record = {
+        "candidates": [],
+        "relevant_chunk_ids": set(),
+    }
+
+    assert metrics.calculate_metrics(
+        [record],
+        "bm25",
+    ) == {
+        "hit_rate@5": 0.0,
+        "mrr@5": 0.0,
+        "pooled_recall@5": 0.0,
+    }
 
 
 def test_retrieval_evaluation_rejects_changed_pool(
@@ -97,7 +121,7 @@ def test_retrieval_evaluation_rejects_changed_pool(
                 "pool_hash": "old-pool-hash",
                 "judge_version": "relevance_judge_v1",
                 "judge_model": "test-model",
-                "relevant_document_ids": [],
+                "judgments": [],
             }
         ],
     )

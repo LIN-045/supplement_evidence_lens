@@ -267,11 +267,18 @@ def main() -> None:
                 continue
 
             judgments = judge_candidates(client, record)
-            relevant_document_ids = [
-                judgment["source_document_id"]
+            relevant_chunk_ids = [
+                judgment["document_id"]
                 for judgment in judgments
                 if judgment["relevance"] == "relevant"
             ]
+            relevant_source_document_ids = sorted(
+                {
+                    judgment["source_document_id"]
+                    for judgment in judgments
+                    if judgment["relevance"] == "relevant"
+                }
+            )
 
             output_record = {
                 "question_id": question_id,
@@ -280,7 +287,10 @@ def main() -> None:
                 "judge_version": RELEVANCE_JUDGE_VERSION,
                 "judge_model": JUDGE_MODEL_NAME,
                 "judgments": judgments,
-                "relevant_document_ids": relevant_document_ids,
+                "relevant_chunk_ids": relevant_chunk_ids,
+                "relevant_source_document_ids": (
+                    relevant_source_document_ids
+                ),
             }
 
             file.write(
@@ -295,7 +305,7 @@ def main() -> None:
             print(
                 f"[{number}/{len(records)}] "
                 f"{question_id}: "
-                f"{len(relevant_document_ids)} relevant"
+                f"{len(relevant_chunk_ids)} relevant chunks"
             )
 
     print(f"Wrote judgments to {OUTPUT_PATH}")

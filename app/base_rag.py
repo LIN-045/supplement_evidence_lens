@@ -3,7 +3,6 @@
 import json
 import re
 from typing import Any
-from urllib.parse import urldefrag
 
 from openai import OpenAI
 
@@ -13,12 +12,16 @@ from app.retrieval import EvidenceRetriever
 LLM_MODEL_NAME = "gpt-5.4-mini"
 BASELINE_RAG_VERSION = "baseline_rag_v1"
 MINIMUM_CHUNK_OVERLAP = 50
+CITATION_PATTERN = re.compile(r"\[([\d,\s\-–—]+)\]")
 
 ANSWER_RULES = """
 - Start with a direct conclusion whose certainty matches the evidence.
 - Clearly distinguish limited, mixed, indirect, and unsupported evidence.
 - Cite supporting excerpts with reference numbers such as [1] or [1, 2].
 - Do not add factual claims unsupported by the supplied excerpts.
+- Evidence role describes a source's purpose, not its quality, authority,
+  relevance, or priority. Use it only to avoid confusing regulatory claims,
+  clinical summaries, nutrient reference values, and consumer guidance.
 - Do not treat "studied for" as proof of effectiveness.
 - Preserve distinctions such as "studied for", "may help", and "authorised
   claim".
@@ -76,6 +79,7 @@ class BaseRAG:
                     "title": document["title"],
                     "source": document["source"],
                     "jurisdiction": document["jurisdiction"],
+                    "evidence_role": document["evidence_role"],
                     "source_url": document["source_url"],
                     "excerpt": document["content"],
                 }
@@ -113,16 +117,39 @@ class BaseRAG:
         return f"{existing_content}\n\n{new_content}"
 
     @staticmethod
+    def _citation_numbers(citation: str) -> list[int]:
+        """Expand comma-separated citation numbers and numeric ranges."""
+
+        numbers = []
+
+        for part in citation.split(","):
+            part = part.strip()
+            if part.isdigit():
+                numbers.append(int(part))
+                continue
+
+            range_match = re.fullmatch(
+                r"(\d+)\s*[-–—]\s*(\d+)",
+                part,
+            )
+            if range_match is None:
+                continue
+
+            start, end = map(int, range_match.groups())
+            if start <= end:
+                numbers.extend(range(start, end + 1))
+
+        return numbers
+
+    @staticmethod
     def _compact_citations(
         answer: str,
         references: list[dict[str, Any]],
     ) -> tuple[str, list[dict[str, Any]]]:
         cited_numbers: list[int] = []
 
-        for citation in re.findall(r"\[([\d,\s]+)\]", answer):
-            for number_text in re.findall(r"\d+", citation):
-                number = int(number_text)
-
+        for citation in CITATION_PATTERN.findall(answer):
+            for number in BaseRAG._citation_numbers(citation):
                 if (
                     1 <= number <= len(references)
                     and number not in cited_numbers
@@ -131,21 +158,21 @@ class BaseRAG:
 
         number_map: dict[int, int] = {}
         cited_references: list[dict[str, Any]] = []
-        source_numbers: dict[str, int] = {}
+        source_document_numbers: dict[str, int] = {}
 
         for old_number in cited_numbers:
             result = references[old_number - 1]
             document = result["_source"]
-            source_url = document.get("source_url", "")
-            source_key = (
-                urldefrag(source_url).url
-                if source_url
-                else result["_id"]
+            source_document_id = document.get(
+                "source_document_id",
+                result["_id"],
             )
 
-            if source_key not in source_numbers:
+            if source_document_id not in source_document_numbers:
                 new_number = len(cited_references) + 1
-                source_numbers[source_key] = new_number
+                source_document_numbers[
+                    source_document_id
+                ] = new_number
                 cited_references.append(
                     {
                         **result,
@@ -153,7 +180,9 @@ class BaseRAG:
                     }
                 )
             else:
-                new_number = source_numbers[source_key]
+                new_number = source_document_numbers[
+                    source_document_id
+                ]
                 existing_document = cited_references[
                     new_number - 1
                 ]["_source"]
@@ -168,10 +197,9 @@ class BaseRAG:
             number_map[old_number] = new_number
 
         def replace_citation(match: re.Match[str]) -> str:
-            old_numbers = [
-                int(number)
-                for number in re.findall(r"\d+", match.group(1))
-            ]
+            old_numbers = BaseRAG._citation_numbers(
+                match.group(1)
+            )
             new_numbers = []
 
             for number in old_numbers:
@@ -185,8 +213,7 @@ class BaseRAG:
 
             return f"[{', '.join(map(str, new_numbers))}]"
 
-        compacted_answer = re.sub(
-            r"\[([\d,\s]+)\]",
+        compacted_answer = CITATION_PATTERN.sub(
             replace_citation,
             answer,
         )
@@ -204,9 +231,14 @@ class BaseRAG:
                 {
                     "reference": reference,
                     "document_id": result["_id"],
+                    "source_document_id": document.get(
+                        "source_document_id",
+                        result["_id"],
+                    ),
                     "title": document["title"],
                     "source": document["source"],
                     "jurisdiction": document["jurisdiction"],
+                    "evidence_role": document["evidence_role"],
                     "source_url": document["source_url"],
                     "content": document["content"],
                 }
