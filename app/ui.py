@@ -19,23 +19,21 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import streamlit as st
 from dotenv import load_dotenv
-from elasticsearch import Elasticsearch
 from openai import OpenAI
-from sentence_transformers import CrossEncoder, SentenceTransformer
 
+from app.agentic_rag import AgenticRAG
+from app.retrieval import EvidenceRetriever
 from monitoring.store import record_feedback, record_interaction
-from rag import LLM_MODEL_NAME, RAG_VERSION, answer_question
-from retrieval import (
-    ELASTICSEARCH_URL,
-    MODEL_NAME as EMBEDDING_MODEL_NAME,
-    RERANKER_MODEL_NAME,
-)
 
 
 SOURCE_LABELS = {
     "eu_health_claims_register": "EU Register",
     "health_canada_nhpid": "Health Canada",
     "nih_ods": "NIH ODS",
+    "nih_ods_guidance": "NIH ODS Consumer Guidance",
+    "us_dri_tables": "Dietary Reference Intakes",
+    "nccih_herbs": "NCCIH Herbs at a Glance",
+    "us_nih_ods_faq": "NIH ODS Consumer FAQ",
 }
 
 
@@ -173,6 +171,24 @@ st.markdown(
             margin-left: 0.55rem;
         }
 
+        .st-key-feedback_panel div[data-testid="stPopover"] button {
+            color: #65746f;
+            height: 2.5rem;
+            min-height: 2.5rem;
+            min-width: 2.5rem;
+            padding: 0.35rem;
+        }
+
+        .st-key-feedback_panel div[data-testid="stPopover"] button p {
+            display: none;
+        }
+
+        .st-key-feedback_panel
+        div[data-testid="stPopover"]
+        span[data-testid="stIconMaterial"] {
+            font-size: 1.5rem;
+        }
+
         div[data-testid="stExpander"] {
             background: #ffffff;
             border: 1px solid #dce8e3;
@@ -211,6 +227,10 @@ st.markdown(
             text-decoration: underline !important;
         }
 
+        .evidence-title-label {
+            color: #245e4c;
+        }
+
         h2 {
             color: #18352d;
             font-size: 1.75rem !important;
@@ -237,29 +257,12 @@ st.markdown(
 
 
 @st.cache_resource(show_spinner="Loading search models...")
-def load_resources() -> tuple[
-    Elasticsearch,
-    SentenceTransformer,
-    CrossEncoder,
-    OpenAI,
-]:
-    """Create long-lived clients and models once per Streamlit process."""
+def load_rag() -> AgenticRAG:
+    """Create the long-lived RAG service once per Streamlit process."""
 
     load_dotenv(PROJECT_ROOT / ".env")
-
-    elasticsearch_client = Elasticsearch(ELASTICSEARCH_URL)
-    if not elasticsearch_client.ping():
-        raise ConnectionError(
-            f"Cannot connect to Elasticsearch at {ELASTICSEARCH_URL}"
-        )
-
-    embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-    reranker_model = CrossEncoder(RERANKER_MODEL_NAME)
-
-    return (
-        elasticsearch_client,
-        embedding_model,
-        reranker_model,
+    return AgenticRAG(
+        EvidenceRetriever.from_defaults(),
         OpenAI(),
     )
 
@@ -296,19 +299,50 @@ def show_contexts(contexts: list[dict[str, Any]]) -> None:
             f"{source} · {len(source_contexts)} cited {excerpt_label} "
             f"{reference_numbers}"
         ):
+            contexts_by_title: dict[
+                str,
+                list[dict[str, Any]],
+            ] = defaultdict(list)
             for context in source_contexts:
-                title = escape(str(context["title"]))
-                source_url = escape(
-                    str(context["source_url"]),
-                    quote=True,
+                contexts_by_title[str(context["title"])].append(
+                    context
                 )
+
+            for raw_title, title_contexts in contexts_by_title.items():
+                title = escape(raw_title)
+
+                if len(title_contexts) == 1:
+                    context = title_contexts[0]
+                    source_url = escape(
+                        str(context["source_url"]),
+                        quote=True,
+                    )
+                    source_links = (
+                        f'<a href="{source_url}" target="_blank">'
+                        f'[{context["reference"]}] {title} ↗</a>'
+                    )
+                else:
+                    reference_links = []
+                    for context in title_contexts:
+                        source_url = escape(
+                            str(context["source_url"]),
+                            quote=True,
+                        )
+                        reference_links.append(
+                            f'<a href="{source_url}" target="_blank">'
+                            f'[{context["reference"]}] ↗</a>'
+                        )
+                    source_links = (
+                        f'<span class="evidence-title-label">'
+                        f'{title}</span> · '
+                        + " ".join(reference_links)
+                    )
+
                 st.markdown(
                     f"""
                     <div class="evidence-item">
                         <div class="evidence-title">
-                            <a href="{source_url}" target="_blank">
-                                [{context["reference"]}] {title} ↗
-                            </a>
+                            {source_links}
                         </div>
                     </div>
                     """,
@@ -316,30 +350,25 @@ def show_contexts(contexts: list[dict[str, Any]]) -> None:
                 )
 
 
-def show_search_trace(search_queries: list[str]) -> None:
-    """Show how the agent searched while keeping it secondary."""
-
-    with st.expander("How the evidence was found"):
-        if not search_queries:
-            st.write("No search trace was recorded.")
-            return
-
-        for number, query in enumerate(search_queries, start=1):
-            st.markdown(f"**Search {number}:** {query}")
-
-
 def show_feedback(interaction_id: str) -> None:
-    """Collect one positive or negative rating for the displayed answer."""
+    """Collect a rating and optional explanation for the answer."""
 
     feedback_panel = st.container(key="feedback_panel")
 
     with feedback_panel:
         st.caption("Was this answer useful?")
-        selection = st.feedback(
-            "thumbs",
-            key=f"feedback-{interaction_id}",
-            width="content",
+        action_row = st.container(
+            horizontal=True,
+            gap="small",
+            vertical_alignment="center",
         )
+
+        with action_row:
+            selection = st.feedback(
+                "thumbs",
+                key=f"feedback-{interaction_id}",
+                width="content",
+            )
 
         if selection is not None:
             feedback = 1 if selection == 1 else -1
@@ -347,9 +376,37 @@ def show_feedback(interaction_id: str) -> None:
             if st.session_state.get("feedback") != feedback:
                 record_feedback(interaction_id, feedback)
                 st.session_state["feedback"] = feedback
+                st.toast("Feedback recorded — thank you.")
 
-        if st.session_state.get("feedback") in {-1, 1}:
-            st.caption("Feedback recorded — thank you.")
+        with action_row:
+            with st.popover(
+                "Add feedback note",
+                type="tertiary",
+                icon=":material/edit_note:",
+                disabled=(
+                    st.session_state.get("feedback") not in {-1, 1}
+                ),
+                help="Rate the answer before adding a note.",
+                key=f"feedback-note-popover-{interaction_id}",
+            ):
+                with st.form(f"feedback-comment-form-{interaction_id}"):
+                    feedback_comment = st.text_area(
+                        "What worked or what could improve?",
+                        height=100,
+                        max_chars=1000,
+                        key=f"feedback-comment-{interaction_id}",
+                    )
+                    comment_submitted = st.form_submit_button(
+                        "Save note"
+                    )
+
+                if comment_submitted:
+                    record_feedback(
+                        interaction_id,
+                        st.session_state["feedback"],
+                        feedback_comment,
+                    )
+                    st.toast("Feedback note saved.")
 
 
 st.markdown(
@@ -406,8 +463,8 @@ st.markdown(
         <h1 class="hero-title">Supplement Evidence Lens</h1>
     </div>
     <p class="hero-copy">
-        Evidence-based answers from official supplement sources —
-        EU Register, Health Canada, and NIH ODS.
+        Evidence-grounded answers from official U.S., Canadian, and
+        European supplement sources.
     </p>
     """,
     unsafe_allow_html=True,
@@ -444,30 +501,14 @@ if submitted:
             with st.spinner(
                 "Searching official sources and reviewing the evidence..."
             ):
-                (
-                    elasticsearch_client,
-                    embedding_model,
-                    reranker_model,
-                    openai_client,
-                ) = load_resources()
-
-                result = answer_question(
-                    question,
-                    elasticsearch_client,
-                    embedding_model,
-                    reranker_model,
-                    openai_client,
-                    return_trace=True,
-                )
-
-            if not isinstance(result, dict):
-                raise TypeError("Expected a traced RAG response")
+                rag = load_rag()
+                result = rag.answer(question)
 
             interaction_id = record_interaction(
                 result,
                 perf_counter() - started_at,
-                LLM_MODEL_NAME,
-                RAG_VERSION,
+                rag.model_name,
+                rag.rag_version,
             )
             st.session_state["result"] = result
             st.session_state["interaction_id"] = interaction_id
@@ -492,7 +533,6 @@ if (
     st.markdown(displayed_result["answer"])
     show_feedback(st.session_state["interaction_id"])
     show_contexts(displayed_result["contexts"])
-    show_search_trace(displayed_result["search_queries"])
 
 st.markdown(
     """

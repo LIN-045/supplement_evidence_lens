@@ -6,6 +6,7 @@ Run from the project root:
 """
 
 import argparse
+import os
 from typing import Any
 
 from elasticsearch import Elasticsearch
@@ -16,10 +17,17 @@ from sentence_transformers import (
 
 # Configuration
 
-ELASTICSEARCH_URL = "http://localhost:9200"
-INDEX_NAME = "supplement_evidence"
+ELASTICSEARCH_URL = os.getenv(
+    "ELASTICSEARCH_URL",
+    "http://localhost:9200",
+)
+INDEX_NAME = os.getenv(
+    "SUPPLEMENT_EVIDENCE_INDEX",
+    "supplement_evidence",
+)
 
-MODEL_NAME = "BAAI/bge-small-en-v1.5"
+EMBEDDING_MODEL_NAME = "BAAI/bge-small-en-v1.5"
+
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 
 CANDIDATE_COUNT = 20
@@ -33,9 +41,11 @@ RERANKER_MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L6-v2"
 def bm25_search(
     client: Elasticsearch,
     query: str,
+    *,
+    index_name: str = INDEX_NAME,
 ) -> list[dict[str, Any]]:
     response = client.search(
-        index=INDEX_NAME,
+        index=index_name,
         size=CANDIDATE_COUNT,
         query={
             "multi_match": {
@@ -52,6 +62,8 @@ def vector_search(
     client: Elasticsearch,
     model: SentenceTransformer,
     query: str,
+    *,
+    index_name: str = INDEX_NAME,
 ) -> list[dict[str, Any]]:
     query_embedding = model.encode(
         QUERY_PREFIX + query,
@@ -59,7 +71,7 @@ def vector_search(
     ).tolist()
 
     response = client.search(
-        index=INDEX_NAME,
+        index=index_name,
         knn={
             "field": "embedding",
             "query_vector": query_embedding,
@@ -105,6 +117,9 @@ def rerank_results(
     results: list[dict[str, Any]],
     limit: int = RESULT_COUNT,
 ) -> list[dict[str, Any]]:
+    if not results:
+        return []
+
     pairs = [
         (
             query,
@@ -136,32 +151,126 @@ def rerank_results(
         reverse=True,
     )[:limit]
 
-def search(
-    client: Elasticsearch,
-    model: SentenceTransformer,
-    query: str,
-    reranker_model: CrossEncoder | None = None,
-) -> list[dict[str, Any]]:
-    bm25_results = bm25_search(client, query)
-    vector_results = vector_search(client, model, query)
+class EvidenceRetriever:
+    """Provide hybrid retrieval through one reusable object."""
 
-    fused_results = reciprocal_rank_fusion(
-        [bm25_results, vector_results],
-        limit=(
-            CANDIDATE_COUNT
-            if reranker_model is not None
-            else RESULT_COUNT
-        ),
-    )
+    def __init__(
+        self,
+        client: Elasticsearch,
+        embedding_model: SentenceTransformer,
+        reranker_model: CrossEncoder | None = None,
+        index_name: str = INDEX_NAME,
+    ) -> None:
+        self.client = client
+        self.embedding_model = embedding_model
+        self.reranker_model = reranker_model
+        self.index_name = index_name
 
-    if reranker_model is None:
-        return fused_results
+    @classmethod
+    def from_defaults(
+        cls,
+        *,
+        use_reranker: bool = True,
+    ) -> "EvidenceRetriever":
+        """Create the default Elasticsearch client and search models."""
 
-    return rerank_results(
-        reranker_model,
-        query,
-        fused_results,
-    )
+        client = Elasticsearch(ELASTICSEARCH_URL)
+        if not client.ping():
+            raise ConnectionError(
+                f"Cannot connect to Elasticsearch at {ELASTICSEARCH_URL}"
+            )
+
+        embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+        reranker_model = (
+            CrossEncoder(RERANKER_MODEL_NAME)
+            if use_reranker
+            else None
+        )
+
+        return cls(
+            client,
+            embedding_model,
+            reranker_model,
+            INDEX_NAME,
+        )
+
+    def index_document_sha256(self) -> str:
+        """Return the processed-data hash stored on the live index."""
+
+        mappings = self.client.indices.get_mapping(
+            index=self.index_name,
+        )
+        hashes = {
+            index_mapping.get("mappings", {})
+            .get("_meta", {})
+            .get("document_sha256")
+            for index_mapping in mappings.values()
+        }
+
+        if len(hashes) != 1 or None in hashes:
+            raise ValueError(
+                f"Index {self.index_name!r} has missing or "
+                "inconsistent document_sha256 metadata. "
+                "Rebuild it with ingestion.index_documents."
+            )
+
+        return next(iter(hashes))
+
+    def bm25_search(self, query: str) -> list[dict[str, Any]]:
+        """Return BM25 candidates for one query."""
+
+        return bm25_search(
+            self.client,
+            query,
+            index_name=self.index_name,
+        )
+
+    def vector_search(self, query: str) -> list[dict[str, Any]]:
+        """Return vector candidates for one query."""
+
+        return vector_search(
+            self.client,
+            self.embedding_model,
+            query,
+            index_name=self.index_name,
+        )
+
+    def hybrid_search(
+        self,
+        query: str,
+        *,
+        limit: int = RESULT_COUNT,
+    ) -> list[dict[str, Any]]:
+        """Fuse BM25 and vector candidates with reciprocal rank fusion."""
+
+        return reciprocal_rank_fusion(
+            [
+                self.bm25_search(query),
+                self.vector_search(query),
+            ],
+            limit=limit,
+        )
+
+    def search(self, query: str) -> list[dict[str, Any]]:
+        """Return hybrid evidence, reranked when a model is configured."""
+
+        fused_results = self.hybrid_search(
+            query,
+            limit=(
+                CANDIDATE_COUNT
+                if self.reranker_model is not None
+                else RESULT_COUNT
+            ),
+        )
+
+        if self.reranker_model is None:
+            return fused_results
+
+        return rerank_results(
+            self.reranker_model,
+            query,
+            fused_results,
+        )
 
 
 # Command-line interface
@@ -180,14 +289,10 @@ def parse_arguments() -> argparse.Namespace:
 def main() -> None:
     arguments = parse_arguments()
 
-    client = Elasticsearch(ELASTICSEARCH_URL)
-    if not client.ping():
-        raise ConnectionError(
-            f"Cannot connect to Elasticsearch at {ELASTICSEARCH_URL}"
-        )
-
-    model = SentenceTransformer(MODEL_NAME)
-    results = search(client, model, arguments.query)
+    retriever = EvidenceRetriever.from_defaults(
+        use_reranker=False,
+    )
+    results = retriever.search(arguments.query)
 
     for rank, result in enumerate(results, start=1):
         document = result["_source"]

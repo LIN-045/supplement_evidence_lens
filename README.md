@@ -1,269 +1,370 @@
 # Supplement Evidence Lens
 
-Supplement Evidence Lens is an evidence-grounded RAG assistant for questions about dietary supplements.
+![Official supplement evidence being filtered into a cited answer](assets/supplement-evidence-lens-hero.png)
 
-It retrieves evidence from official EU, Canadian, and US sources, reranks the retrieved passages, and uses an LLM to produce a cited answer. The current version is available through the command line; a web UI is the next development step.
+**Does melatonin really help with sleep? Can taking too much zinc be harmful?
+How much magnesium should an adult get each day?...**
 
-Example questions:
+It is easy to find answers to supplement questions online, but much harder to
+tell what those answers are based on. Reliable information is spread across
+government fact sheets, regulatory records, product monographs, nutrient
+reference tables, and consumer guidance. A claim that regulators allow, a
+summary of clinical research, and a recommended daily intake may all sound
+authoritative, but they answer different questions.
 
-- Does melatonin actually help with sleep?
-- What are the risks of taking too much zinc?
-- Is the claim that magnesium glycinate eliminates anxiety supported?
-- Can a supplement make a particular health claim in the EU?
+**Supplement Evidence Lens** makes this information easier to use. It searches
+official sources from the EU, Canada, and the United States, identifies the
+evidence most relevant to the user's question, and returns a concise answer
+with links to the supporting material.
 
-## Problem
+This is an informational tool to help people find reliable information. The aim is not to recommend a particular supplement or replace professional medical advice.
 
-Information about supplement benefits, permitted claims, dosage conditions, and safety is distributed across different government sources. Search results can also mix regulatory claims, scientific summaries, and marketing language.
+---
 
-This project brings several official sources into one searchable evidence base and makes the distinction visible through citations and source metadata.
+## Evidence sources
 
-It is an informational tool, not medical advice.
+| Source                                     | What it contains                                            | Indexed documents |
+| ------------------------------------------ | ----------------------------------------------------------- | ----------------: |
+| EU Register on Nutrition and Health Claims | Official health-claim decisions and conditions of use       |             2,337 |
+| Health Canada NHPID                        | Uses, doses, and safety information from product monographs |             2,620 |
+| NIH ODS professional fact sheets           | Research-based nutrient and supplement summaries            |               379 |
+| NIH ODS consumer guidance                  | Guidance on choosing and using dietary supplements          |                19 |
+| US Dietary Reference Intake tables         | Reference values by nutrient and population group           |             2,022 |
+| NCCIH Herbs at a Glance                    | Research and safety summaries for herbs and botanicals      |               224 |
+| NIH ODS consumer FAQ                       | Official answers to common supplement questions             |                74 |
 
-## Current Status
+After processing, the searchable index contains **7,675 documents and 9,046
+chunks**. Raw snapshots, processed documents, chunks, and frozen evaluation artifacts are
+included in the repository.
 
-Implemented:
+---
 
-- ingestion from three official data sources
-- normalized document construction and chunking
-- Elasticsearch indexing
-- BM25, vector, hybrid, and reranked retrieval
-- an Agentic RAG command-line workflow
-- retrieval and answer-quality evaluation
+## How it works
 
-Still to be built:
+### Data pipeline
 
-- web UI
-- user feedback and monitoring
-- full application containerization
-- final deployment documentation and screenshots
+```text
+7 official sources
+        |
+        v
+source adapters -> normalized documents -> chunks -> embeddings
+                                                        |
+                                                        v
+                                                 Elasticsearch
+```
 
-## Data Sources
+Prefect orchestrates ingestion as one ordered workflow. It runs the seven source
+adapters, then document preparation, chunking, and indexing, while making each
+stage and any failure visible as a separate task. A new physical index is
+validated before the public `supplement_evidence` alias is switched, so a
+failed rebuild does not destroy the working index.
 
-| Source | Jurisdiction | Content | Processed records |
-|---|---|---|---:|
-| EU Register on Nutrition and Health Claims | EU | authorised and non-authorised health claims, conditions, and regulatory status | 2,337 claims |
-| Health Canada NHPID monographs | Canada | single-ingredient and product monograph sections | 3,009 sections from 243 monographs |
-| NIH Office of Dietary Supplements | United States | health-professional fact-sheet sections | 379 sections from 42 fact sheets |
-
-After document construction and chunking, these sources produce 8,021 searchable chunks:
-
-| Source | Chunks |
-|---|---:|
-| EU Register | 2,340 |
-| Health Canada NHPID | 4,354 |
-| NIH ODS | 1,327 |
-
-The index keeps source, jurisdiction, title, section, URL, and document identifiers as metadata. All sources are stored in one Elasticsearch index so they can be searched together and filtered by metadata when needed.
-
-## Architecture
+### Answer flow
 
 ```text
 User question
-    |
-    v
-Agent decides what to search
-    |
-    v
-BM25 search + vector search
-    |
-    v
+     |
+     v
+Agentic RAG chooses a focused search query
+     |
+     v
+BM25 top 20 + vector top 20
+     |
+     v
 Reciprocal Rank Fusion
-    |
-    v
-Cross-encoder reranking
-    |
-    v
-Top evidence passages
-    |
-    v
-Grounded answer with citations
+     |
+     v
+Cross-encoder reranks the top candidates
+     |
+     v
+Top 5 excerpts return to the agent
+     |
+     +---- evidence incomplete? ----> another focused search
+     |
+     v
+Cited answer -> citation compaction -> Streamlit UI -> Monitoring
 ```
 
-The Agentic workflow can rewrite or split a question into additional searches when the first evidence is insufficient. Search is capped at four queries to keep the workflow predictable.
+Every answer begins with a search. The agent reviews the returned excerpts and
+either answers from that evidence or runs a more focused follow-up search when
+important information is still missing. It can search up to four times, and a
+repeated query reuses its previous results.
 
-## Models and Search
+![Example of a cited answer about melatonin and sleep](assets/cited-answer-example.jpg)
 
-- Search engine: Elasticsearch 9.4.4
-- Embedding model: `BAAI/bge-small-en-v1.5`
-- Embedding size: 384 dimensions
-- Keyword retrieval: Elasticsearch BM25
-- Hybrid fusion: Reciprocal Rank Fusion
-- Reranker: `cross-encoder/ms-marco-MiniLM-L6-v2`
-- Answer and search-planning model: `gpt-5.4-mini`
+---
 
-The application retrieves a larger hybrid candidate set, reranks it, and supplies the top five passages to the answer model.
+## Models and infrastructure
 
-## Project Structure
+- **Data orchestration:** Prefect coordinates and tracks the ingestion stages
+- **Storage and search:** Elasticsearch 9.4.4
+- **Embeddings:** `BAAI/bge-small-en-v1.5`, 384 dimensions
+- **Reranking:** `cross-encoder/ms-marco-MiniLM-L6-v2`
+- **Answering and search planning:** `gpt-5.4-mini`
+- **Application and monitoring:** Streamlit and SQLite
+- **Deployment:** Docker Compose with CPU-only PyTorch
 
-```text
-app/
-  rag.py                         Agentic RAG workflow and CLI
-  retrieval.py                   BM25, vector, hybrid, and reranked search
+---
 
-ingestion/
-  eu_health_claims.py            EU Register ingestion
-  ca_nhpid_monographs.py         Health Canada monograph ingestion
-  us_nih_ods.py                  NIH ODS fact-sheet ingestion
-  chunk_documents.py             Normalization and chunking
-  index_documents.py             Elasticsearch index creation
+## Evaluation
 
-evaluation/
-  generate_questions.py          Evaluation-question generation
-  build_relevance_pool.py        Candidate-pool construction
-  judge_relevance.py             LLM relevance judgments
-  evaluate_retrieval.py          Retrieval metrics
-  evaluate_answers.py            RAG answer generation and judging
+Both evaluations use the same balanced set of **105 consumer-style questions:
+15 from each source**. Every question is verified as answerable from its source
+document. The same set is used to test retrieval and final answers.
 
-data/
-  raw/                           Downloaded source files
-  processed/                     Normalized records and chunks
-  evaluation/                    Evaluation datasets and results
+### Retrieval evaluation
 
-docs/
-  future_work.md                 Candidate data and evaluation improvements
-```
+Retrieval is scored at chunk level. Each question receives a pooled BM25,
+vector, and hybrid candidate set; an LLM judge labels each pooled chunk as
+relevant or not relevant.
 
-## Setup
+- **Hit Rate@5:** how often at least one relevant chunk appears in the top five.
+- **MRR@5:** how early the first relevant chunk appears; rank one scores highest.
+- **Pooled Recall@5:** how much of the judged relevant pool appears in the top
+  five.
 
-The project uses Python 3.13 and `uv`.
+| Method                | Hit Rate@5 |     MRR@5 | Pooled Recall@5 |
+| --------------------- | ---------: | --------: | --------------: |
+| BM25                  |      0.800 |     0.683 |           0.434 |
+| Vector                |      0.895 |     0.878 |           0.581 |
+| Hybrid (RRF)          |      0.952 |     0.881 |           0.614 |
+| **Hybrid + reranker** |  **0.962** | **0.918** |       **0.690** |
 
-Install dependencies:
+The final application therefore uses **hybrid retrieval (BM25 + vector search,
+combined with RRF) followed by cross-encoder reranking**, with the top five
+excerpts passed to the RAG workflow. Per-source results are available in
+[`retrieval_eval_metrics.json`](data/evaluation/retrieval/retrieval_eval_metrics.json).
+
+### LLM evaluation
+
+The same questions compare two query strategies over the same retriever,
+reranker, answer model, and answer rules:
+
+- **Baseline RAG** searches the original question once.
+- **Agentic RAG** chooses and, when useful, refines searches.
+
+An LLM judge scores each dimension from 1 to 5:
+
+- **Correctness:** whether the conclusions match the reference evidence.
+- **Completeness:** whether the answer covers the important supported points.
+- **Faithfulness:** whether factual statements are supported by cited excerpts.
+- **Citation correctness:** whether citations are attached to claims they
+  actually support.
+
+| Workflow        | Correctness | Completeness | Faithfulness | Citation correctness | Perfect answers |
+| --------------- | ----------: | -----------: | -----------: | -------------------: | --------------: |
+| Baseline RAG    |       4.533 |        4.390 |        4.562 |                4.438 |              53 |
+| **Agentic RAG** |   **4.695** |    **4.600** |    **4.695** |            **4.619** |          **67** |
+
+On combined paired scores, Agentic wins 33 questions, Baseline wins 16, and 56
+are tied. Agentic averages 1.038 searches and uses a second search on four
+questions. Most questions were generated from a single answerable source
+document, so one focused search was usually sufficient. A future challenge set
+built from ambiguous, comparative, or multi-part real-world questions would
+better test when query refinement and multiple searches add value.
+
+The final application therefore uses **Agentic RAG** over the shared hybrid and
+reranked retrieval pipeline: it plans a focused search and can refine or split
+the query when another search is useful.
+
+Full results are in
+[`llm_eval_metrics.json`](data/evaluation/llm/llm_eval_metrics.json).
+
+The frozen questions, retrieval pools, judgments, answers, and metrics are
+stored in [`data/evaluation`](data/evaluation). Docker startup does not rerun
+the evaluation.
+
+---
+
+## Monitoring
+
+The application records the question, answer, RAG/model versions, search
+queries, cited contexts, latency, and optional user feedback in SQLite.
+
+The Streamlit dashboard includes:
+
+- questions over time
+- daily average answer latency
+- positive, negative, and unrated feedback
+- searches per question
+- cited contexts by source
+- recent interactions with search queries, feedback, and notes
+
+The dashboard can be filtered by RAG version. These versions identify Prompt
+iterations used during development, making behavior changes easier to compare.
+
+![Monitoring dashboard showing usage, latency, feedback, searches, and cited sources](assets/monitoring-dashboard.jpg)
+
+---
+
+## Run the application
+
+The complete application runs with Docker Compose; no local Python installation
+is required.
+
+Requirements:
+
+- Docker Desktop with Docker Compose
+- an OpenAI API key
+
+Clone the repository and create `.env`:
 
 ```bash
-uv sync
+git clone https://github.com/LIN-045/supplement_evidence_lens.git
+cd supplement_evidence_lens
 ```
-
-Start Elasticsearch:
-
-```bash
-docker compose up -d
-```
-
-Check that it is running:
-
-```bash
-curl http://localhost:9200
-```
-
-Create a `.env` file for RAG and LLM-based evaluation:
 
 ```text
 OPENAI_API_KEY=your-api-key
 ```
 
-The `.env` file is ignored by Git.
-
-## Build the Evidence Index
-
-Run the ingestion scripts:
+Start the complete project:
 
 ```bash
-uv run python ingestion/eu_health_claims.py
-uv run python ingestion/ca_nhpid_monographs.py
-uv run python ingestion/us_nih_ods.py
+docker compose up -d --build
 ```
 
-Build the common document collection and index it:
+Open:
+
+- App: <http://localhost:8501>
+- Monitoring: <http://localhost:8502>
+- Elasticsearch: <http://localhost:9200>
+
+![Supplement Evidence Lens product interface](assets/product-ui.png)
+
+The first run downloads the embedding model and creates embeddings for the
+committed 9,046 chunks. The reranker is downloaded when the application first
+loads its RAG resources. These steps do not call OpenAI, but can take several
+minutes. Later starts reuse the model cache and Elasticsearch volume. If the
+chunk hash, embedding model, and document count are unchanged, the indexer exits
+without recomputing embeddings.
+
+Check the services and index:
 
 ```bash
-uv run python ingestion/chunk_documents.py
-uv run python ingestion/index_documents.py
-```
-
-Confirm the indexed document count:
-
-```bash
+docker compose ps -a
+docker compose logs indexer
 curl http://localhost:9200/supplement_evidence/_count
 ```
 
-The expected count for the current dataset is 8,021.
+The expected count is `9046`, and the one-shot indexer should exit with code
+`0`.
 
-## Run the Assistant
-
-Ask a question from the command line:
+Stop the project without deleting the index or model cache:
 
 ```bash
-uv run python app/rag.py "What are the risks of taking too much zinc?"
+docker compose down
 ```
 
-The response includes numbered citations and the URLs of the retrieved official sources.
+Monitoring data is stored locally in `data/monitoring/interactions.db`. It is
+ignored by Git and survives container removal.
 
-## Retrieval Evaluation
+---
 
-The retrieval evaluation uses 75 source-grounded questions: 25 seeded from each source. Candidate pools are formed from the union of BM25, vector, and hybrid results. An LLM assigns binary relevance judgments with explanations, and the seed document is retained as a known relevant document.
+## Developer workflows (optional)
 
-Four retrieval approaches are compared at rank 5:
+Docker is sufficient for using the application. These workflows are for
+reviewers or developers who want to inspect the code, run the tests, refresh
+the evidence, or rerun the evaluation.
 
-| Approach | Hit Rate@5 | MRR@5 | Pooled Recall@5 |
-|---|---:|---:|---:|
-| BM25 | 0.907 | 0.808 | 0.593 |
-| Vector | 0.867 | 0.789 | 0.609 |
-| Hybrid | 0.907 | 0.853 | 0.643 |
-| Hybrid + reranker | **0.947** | **0.928** | **0.711** |
+### Project structure
 
-Hybrid retrieval with reranking is therefore used by the application. It produced the strongest overall result, with especially large gains on the Health Canada subset. On the EU subset, plain hybrid retrieval remained slightly stronger on some recall measures, so the overall result should not be interpreted as a universal improvement for every source.
+```text
+app/             retrieval, baseline RAG, Agentic RAG, product Streamlit UI
+ingestion/       source adapters, chunking, indexing, Prefect flow
+evaluation/      question generation, retrieval evaluation, LLM evaluation
+monitoring/      SQLite store and monitoring Streamlit dashboard
+tests/           ingestion, retrieval, RAG, evaluation, monitoring tests
+data/            raw, processed, evaluation, and local monitoring data
+Dockerfile       shared CPU-only Python image
+docker-compose.yaml
+```
 
-The detailed results are stored in [`data/evaluation/retrieval_metrics.json`](data/evaluation/retrieval_metrics.json).
+### Local setup
 
-Run the retrieval evaluation pipeline:
+The project uses Python 3.13, `uv` 0.11.8, and locked dependencies. From the
+cloned repository root, install the development environment:
 
 ```bash
+uv sync
+```
+
+Run the test suite:
+
+```bash
+uv run pytest
+```
+
+### Refresh source data and rebuild the index
+
+The repository already contains the processed data used by the application, so
+this workflow is optional. Use it to fetch fresh copies of all seven official
+sources and rebuild everything that follows:
+
+```text
+source downloads -> processed documents -> chunks -> embeddings -> search index
+```
+
+This workflow does not call OpenAI, but it downloads source data and embedding
+models and may take several minutes.
+
+Start the optional ingestion services:
+
+```bash
+docker compose --profile ingestion up -d --build
+```
+
+This starts the Prefect server, registers the `local-manual` deployment, and
+starts its worker. It does **not** run ingestion automatically. Open
+<http://localhost:4200>, select the deployment, and choose **Run** when the
+source data should be refreshed. The UI shows the status and logs for each
+stage.
+
+### Rerun the full evaluation
+
+The complete evaluation uses the local `uv` environment and the Elasticsearch
+index. Question generation, relevance judging, answer generation, and answer
+judging call OpenAI and incur API usage.
+
+```bash
+# Retrieval
 uv run python -m evaluation.generate_questions
-uv run python -m evaluation.build_relevance_pool
-uv run python -m evaluation.judge_relevance
-uv run python -m evaluation.evaluate_retrieval
+uv run python -m evaluation.retrieval.build_relevance_pool
+uv run python -m evaluation.retrieval.judge_relevance
+uv run python -m evaluation.retrieval.calculate_retrieval_eval_metrics
+
+# Answers
+uv run python -m evaluation.llm.generate_answers
+uv run python -m evaluation.llm.judge_answers
+uv run python -m evaluation.llm.calculate_llm_eval_metrics
 ```
 
-## Answer Evaluation
+Compatible partial outputs resume automatically; hashes prevent results from
+different prompts, models, questions, or indexes from being mixed.
 
-The same 75 questions are used to compare two RAG workflows:
+---
 
-- Fixed RAG: searches the original question once.
-- Agentic RAG: allows the model to rewrite, decompose, or repeat searches when useful.
+## Limitations and next steps
 
-Both approaches use the same index, retrieval pipeline, reranker, answer model, and evaluation rubric. Because there are no manually written reference answers, an LLM judge scores:
+- Most evaluation questions are clear and answerable from one source document.
+  Real users may ask vaguer questions or combine several concerns in one query.
+- Only four questions needed a second Agentic search, so the current evaluation
+  does not fully test the value of multi-step searching.
+- An LLM judged relevance and answer quality. Human expert review would provide
+  a stronger check on those scores.
+- Retrieval was judged against a pooled set of likely candidates rather than
+  every chunk in the index, so additional relevant evidence may exist outside
+  that pool.
 
-- answer relevance
-- faithfulness to retrieved evidence
-- citation correctness
+The next step is to add a small challenge set of de-identified real questions
+and manually review a representative sample of the judgments. Broader US
+regulatory data would also make the evidence base more complete.
 
-Each metric is scored from 1 to 5 with a written reason.
-
-| Workflow | Relevance | Faithfulness | Citation correctness | Perfect answers |
-|---|---:|---:|---:|---:|
-| Fixed RAG | 4.920 | **4.720** | 4.667 | **49** |
-| Agentic RAG | **4.933** | 4.667 | **4.680** | 48 |
-
-The paired combined result was close:
-
-- Agentic wins: 16
-- Fixed wins: 18
-- Ties: 41
-
-The Agentic workflow remains the application default because it can handle less search-ready questions through query rewriting and decomposition. However, the current source-generated evaluation questions already resemble effective search queries, so this dataset does not demonstrate a clear overall advantage for the Agentic approach.
-
-The Agentic run averaged 1.04 searches per question, used at most two searches in this evaluation, and returned evidence for all 75 questions.
-
-Detailed results are stored in [`data/evaluation/answer_metrics.json`](data/evaluation/answer_metrics.json).
-
-Run answer generation and judging:
-
-```bash
-uv run python -m evaluation.evaluate_answers
-```
-
-This evaluation calls the OpenAI API and can incur usage costs.
-
-## Evaluation Limitations
-
-- The questions were generated from source documents rather than collected from real users.
-- Source-grounded questions can favor direct keyword search and under-test query rewriting.
-- Relevance and answer judgments use an LLM rather than human annotators.
-- The generator, answer model, and judge are not fully independent.
-- Pooled recall measures recall against the judged candidate pool, not against every possibly relevant passage in the full corpus.
-
-Testing with real consumer questions and human review is planned for a later version. Candidate sources and a recorded real-question failure case are described in [`docs/future_work.md`](docs/future_work.md).
+---
 
 ## Disclaimer
 
-Supplement Evidence Lens summarizes retrieved official-source excerpts. It does not diagnose conditions, recommend treatment, or replace advice from a qualified health professional. Users should consult a health professional before changing medication or supplement use, particularly for children, pregnancy, existing health conditions, or possible interactions.
+Supplement Evidence Lens summarizes retrieved official-source excerpts. Consult
+a qualified health professional before changing medication or supplement use,
+especially for children, pregnancy, existing conditions, or possible drug
+interactions.
