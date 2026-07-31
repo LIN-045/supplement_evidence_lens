@@ -136,19 +136,19 @@ st.markdown(
         }
 
         .st-key-latency_card {
-            border-top: 3px solid #3f7564 !important;
+            border-top: 3px solid #4f7f6f !important;
         }
 
         .st-key-feedback_card {
-            border-top: 3px solid #5b8c7b !important;
+            border-top: 3px solid #4f7f6f !important;
         }
 
         .st-key-searches_card {
-            border-top: 3px solid #72a091 !important;
+            border-top: 3px solid #7fa899 !important;
         }
 
         .st-key-sources_card {
-            border-top: 3px solid #8ab5a6 !important;
+            border-top: 3px solid #245e4c !important;
         }
 
         .st-key-interactions_card {
@@ -234,6 +234,26 @@ dataframe["created_at"] = pd.to_datetime(
 )
 dataframe["date"] = dataframe["created_at"].dt.date
 
+available_versions = list(
+    dict.fromkeys(reversed(dataframe["rag_version"].tolist()))
+)
+filter_column, _ = st.columns([1.4, 4.6])
+
+with filter_column:
+    selected_version = st.selectbox(
+        "RAG Version",
+        ["All versions", *available_versions],
+    )
+
+if selected_version != "All versions":
+    dataframe = dataframe[
+        dataframe["rag_version"] == selected_version
+    ].copy()
+
+st.caption(
+    f"Showing {len(dataframe)} of {len(records)} recorded interactions."
+)
+
 feedback_count = int(dataframe["feedback"].notna().sum())
 positive_count = int((dataframe["feedback"] == 1).sum())
 positive_rate = (
@@ -245,7 +265,7 @@ positive_rate = (
 metric_columns = st.columns(4)
 metric_columns[0].metric("Questions", len(dataframe))
 metric_columns[1].metric(
-    "Average Response Time",
+    "Average Answer Latency",
     f"{dataframe['response_time_seconds'].mean():.1f}s",
 )
 metric_columns[2].metric(
@@ -278,19 +298,64 @@ with left_column:
 
 with right_column:
     with st.container(border=True, key="latency_card"):
-        st.subheader("Average Response Time")
-        st.caption("Daily end-to-end latency in seconds")
-        daily_latency = (
+        st.subheader("Daily Average Answer Latency")
+        st.caption("End-to-end user wait by day")
+        latency_chart = (
             dataframe.groupby("date")["response_time_seconds"]
-            .mean()
-            .rename("seconds")
+            .agg(average_seconds="mean", answers="count")
             .reset_index()
         )
-        st.line_chart(
-            daily_latency,
-            x="date",
-            y="seconds",
-            color="#3f7564",
+        latency_chart["date_label"] = latency_chart["date"].map(
+            lambda date: date.strftime("%b %d, %Y")
+        )
+        date_order = latency_chart["date_label"].tolist()
+
+        st.vega_lite_chart(
+            latency_chart,
+            {
+                "mark": {
+                    "type": "line",
+                    "color": "#4f7f6f",
+                    "point": {
+                        "filled": True,
+                        "size": 80,
+                    },
+                },
+                "encoding": {
+                    "x": {
+                        "field": "date_label",
+                        "type": "ordinal",
+                        "sort": date_order,
+                        "title": "Date",
+                        "axis": {"labelAngle": 0},
+                    },
+                    "y": {
+                        "field": "average_seconds",
+                        "type": "quantitative",
+                        "title": "Average seconds",
+                        "scale": {"zero": True},
+                    },
+                    "tooltip": [
+                        {
+                            "field": "date_label",
+                            "type": "ordinal",
+                            "title": "Date",
+                        },
+                        {
+                            "field": "average_seconds",
+                            "type": "quantitative",
+                            "title": "Average seconds",
+                            "format": ".1f",
+                        },
+                        {
+                            "field": "answers",
+                            "type": "quantitative",
+                            "title": "Answers",
+                        },
+                    ],
+                },
+            },
+            width="stretch",
         )
 
 with left_column:
@@ -309,11 +374,54 @@ with left_column:
             .rename("responses")
             .reset_index()
         )
-        st.bar_chart(
+        st.vega_lite_chart(
             feedback_chart,
-            x="rating",
-            y="responses",
-            color="#5b8c7b",
+            {
+                "mark": {
+                    "type": "arc",
+                    "innerRadius": 70,
+                    "outerRadius": 120,
+                },
+                "encoding": {
+                    "theta": {
+                        "field": "responses",
+                        "type": "quantitative",
+                    },
+                    "color": {
+                        "field": "rating",
+                        "type": "nominal",
+                        "scale": {
+                            "domain": [
+                                "Positive",
+                                "Negative",
+                                "No feedback",
+                            ],
+                            "range": [
+                                "#4f7f6f",
+                                "#c46f68",
+                                "#ccd5d1",
+                            ],
+                        },
+                        "legend": {
+                            "title": None,
+                            "orient": "bottom",
+                        },
+                    },
+                    "tooltip": [
+                        {
+                            "field": "rating",
+                            "type": "nominal",
+                            "title": "Rating",
+                        },
+                        {
+                            "field": "responses",
+                            "type": "quantitative",
+                            "title": "Responses",
+                        },
+                    ],
+                },
+            },
+            width="stretch",
         )
 
 with right_column:
@@ -332,7 +440,7 @@ with right_column:
             search_chart,
             x="searches",
             y="questions",
-            color="#72a091",
+            color="#7fa899",
         )
 
 source_counts: Counter[str] = Counter()
@@ -350,7 +458,7 @@ source_chart = pd.DataFrame(
     [
         {
             "source": source,
-            "citations": count,
+            "cited_contexts": count,
         }
         for source, count in source_counts.most_common()
     ]
@@ -359,13 +467,16 @@ source_chart = pd.DataFrame(
 with st.container(border=True, key="sources_card"):
     st.subheader("Cited Sources")
     st.caption("Evidence usage across official collections")
-    st.bar_chart(
-        source_chart,
-        x="source",
-        y="citations",
-        horizontal=True,
-        color="#245e4c",
-    )
+    if source_chart.empty:
+        st.info("No cited sources have been recorded yet.")
+    else:
+        st.bar_chart(
+            source_chart,
+            x="source",
+            y="cited_contexts",
+            horizontal=True,
+            color="#245e4c",
+        )
 
 with st.container(border=True, key="interactions_card"):
     st.subheader("Recent Interactions")
@@ -383,27 +494,57 @@ with st.container(border=True, key="interactions_card"):
         ).fillna("—")
     )
 
+    maximum_searches = max(
+        (
+            len(search_queries)
+            for search_queries in recent_interactions["search_queries"]
+        ),
+        default=0,
+    )
+    search_columns = []
+    search_column_config = {}
+
+    for number in range(1, maximum_searches + 1):
+        column_name = f"search_{number}"
+        search_columns.append(column_name)
+        search_column_config[column_name] = f"Search {number}"
+        recent_interactions[column_name] = recent_interactions[
+            "search_queries"
+        ].map(
+            lambda queries, index=number - 1: (
+                queries[index]
+                if len(queries) > index
+                else "—"
+            )
+        )
+
+    display_columns = [
+        "created_at",
+        "question",
+        "rag_version",
+        "search_count",
+        *search_columns,
+        "context_count",
+        "response_time_seconds",
+        "feedback",
+        "feedback_comment",
+    ]
+
     st.dataframe(
-        recent_interactions[
-            [
-                "created_at",
-                "question",
-                "search_count",
-                "context_count",
-                "response_time_seconds",
-                "feedback",
-            ]
-        ],
+        recent_interactions[display_columns],
         column_config={
             "created_at": "Time",
             "question": "Question",
+            "rag_version": "RAG Version",
             "search_count": "Searches",
+            **search_column_config,
             "context_count": "Cited Contexts",
             "response_time_seconds": st.column_config.NumberColumn(
                 "Response Time",
                 format="%.1f s",
             ),
             "feedback": "Feedback",
+            "feedback_comment": "Feedback Note",
         },
         hide_index=True,
         width="stretch",

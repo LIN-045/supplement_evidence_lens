@@ -66,6 +66,48 @@ class FakeClient:
         return {"count": 1}
 
 
+def test_unavailable_elasticsearch_fails_before_loading_model(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    input_path = tmp_path / "document_chunks.jsonl"
+    input_path.write_text(
+        json.dumps(
+            {
+                "document_id": "document-1::chunk-1",
+                "content": "Example content",
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    class UnavailableClient:
+        def ping(self) -> bool:
+            return False
+
+    monkeypatch.setattr(
+        index_documents,
+        "Elasticsearch",
+        lambda url: UnavailableClient(),
+    )
+
+    def fail_if_loaded(model_name: str) -> None:
+        raise AssertionError("Embedding model should not be loaded")
+
+    monkeypatch.setattr(
+        index_documents,
+        "SentenceTransformer",
+        fail_if_loaded,
+    )
+
+    with pytest.raises(
+        ConnectionError,
+        match="Cannot connect to Elasticsearch",
+    ):
+        index_documents.run(input_path=input_path)
+
+
 def test_switch_alias_replaces_existing_physical_index() -> None:
     client = FakeClient()
 
@@ -206,3 +248,65 @@ def test_successful_index_build_switches_alias_and_deletes_old_index(
         "supplement_evidence"
     )
     assert client.indices.deleted == ["supplement_evidence-old"]
+
+
+def test_old_index_cleanup_failure_does_not_hide_successful_rebuild(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    input_path = tmp_path / "document_chunks.jsonl"
+    input_path.write_text(
+        json.dumps(
+            {
+                "document_id": "document-1::chunk-1",
+                "content": "Example content",
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    class FakeEmbeddings(list):
+        def tolist(self) -> list[list[float]]:
+            return list(self)
+
+    class FakeModel:
+        def encode(
+            self,
+            texts: list[str],
+            **kwargs: Any,
+        ) -> FakeEmbeddings:
+            return FakeEmbeddings([[0.0] * 384])
+
+    client = FakeClient()
+
+    def fail_delete(
+        *,
+        index: str,
+        ignore_unavailable: bool = False,
+    ) -> None:
+        raise RuntimeError("simulated cleanup failure")
+
+    client.indices.delete = fail_delete
+    monkeypatch.setattr(
+        index_documents,
+        "SentenceTransformer",
+        lambda model_name: FakeModel(),
+    )
+    monkeypatch.setattr(
+        index_documents,
+        "Elasticsearch",
+        lambda url: client,
+    )
+    monkeypatch.setattr(
+        index_documents.helpers,
+        "bulk",
+        lambda *args, **kwargs: (1, []),
+    )
+
+    result = index_documents.run(input_path=input_path)
+
+    assert result["stored_count"] == 1
+    assert "new index is live" in caplog.text
+    assert "simulated cleanup failure" in caplog.text

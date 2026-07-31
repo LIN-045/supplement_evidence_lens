@@ -324,19 +324,6 @@ def sampling_group(document: dict[str, Any]) -> str:
     return str(document["document_id"])
 
 
-def sample_documents(
-    documents: list[dict[str, Any]],
-) -> dict[str, list[dict[str, Any]]]:
-    """Select fifteen deterministic, diverse documents per source."""
-
-    candidates = generation_candidates(documents)
-
-    return {
-        source: source_documents[:QUESTIONS_PER_SOURCE]
-        for source, source_documents in candidates.items()
-    }
-
-
 def generation_candidates(
     documents: list[dict[str, Any]],
 ) -> dict[str, list[dict[str, Any]]]:

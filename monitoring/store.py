@@ -1,6 +1,7 @@
 """Persist application interactions and user feedback in SQLite."""
 
 import json
+import os
 import sqlite3
 from datetime import UTC, datetime
 from pathlib import Path
@@ -9,7 +10,12 @@ from uuid import uuid4
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATABASE_PATH = PROJECT_ROOT / "data/monitoring/interactions.db"
+DATABASE_PATH = Path(
+    os.environ.get(
+        "MONITORING_DATABASE_PATH",
+        PROJECT_ROOT / "data/monitoring/interactions.db",
+    )
+)
 
 
 def connect() -> sqlite3.Connection:
@@ -40,7 +46,8 @@ def initialize_database() -> None:
                 model_name TEXT NOT NULL,
                 rag_version TEXT NOT NULL,
                 feedback INTEGER,
-                feedback_at TEXT
+                feedback_at TEXT,
+                feedback_comment TEXT
             )
             """
         )
@@ -57,6 +64,14 @@ def initialize_database() -> None:
                 ALTER TABLE interactions
                 ADD COLUMN rag_version TEXT NOT NULL
                 DEFAULT 'agentic_rag_v1'
+                """
+            )
+
+        if "feedback_comment" not in columns:
+            connection.execute(
+                """
+                ALTER TABLE interactions
+                ADD COLUMN feedback_comment TEXT
                 """
             )
 
@@ -117,11 +132,19 @@ def record_interaction(
 def record_feedback(
     interaction_id: str,
     feedback: int,
+    feedback_comment: str | None = None,
 ) -> None:
-    """Attach positive (1) or negative (-1) feedback to an interaction."""
+    """Attach a rating and optional explanation to an interaction."""
 
     if feedback not in {-1, 1}:
         raise ValueError("Feedback must be 1 or -1")
+
+    if feedback_comment is not None:
+        feedback_comment = feedback_comment.strip() or None
+        if feedback_comment is not None and len(feedback_comment) > 1000:
+            raise ValueError(
+                "Feedback comment must be 1000 characters or fewer"
+            )
 
     initialize_database()
 
@@ -129,12 +152,15 @@ def record_feedback(
         cursor = connection.execute(
             """
             UPDATE interactions
-            SET feedback = ?, feedback_at = ?
+            SET feedback = ?,
+                feedback_at = ?,
+                feedback_comment = COALESCE(?, feedback_comment)
             WHERE interaction_id = ?
             """,
             (
                 feedback,
                 datetime.now(UTC).isoformat(),
+                feedback_comment,
                 interaction_id,
             ),
         )

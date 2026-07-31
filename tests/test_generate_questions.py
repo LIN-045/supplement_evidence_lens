@@ -21,7 +21,6 @@ from evaluation.generate_questions import (
     generated_question_is_valid,
     is_eligible_for_generation,
     sampling_group,
-    sample_documents,
     validate_questions,
 )
 from ingestion.chunk_documents import prepare_documents
@@ -29,7 +28,12 @@ from ingestion.chunk_documents import prepare_documents
 
 def test_question_samples_use_fifteen_documents_per_source() -> None:
     documents = prepare_documents()
-    samples = sample_documents(documents)
+    samples = {
+        source: candidates[:QUESTIONS_PER_SOURCE]
+        for source, candidates in generation_candidates(
+            documents
+        ).items()
+    }
 
     assert set(samples) == set(SOURCE_NAMES)
     assert all(
@@ -67,8 +71,8 @@ def test_question_samples_use_fifteen_documents_per_source() -> None:
 def test_sampling_is_reproducible_with_the_fixed_seed() -> None:
     documents = prepare_documents()
 
-    first_samples = sample_documents(documents)
-    second_samples = sample_documents(documents)
+    first_samples = generation_candidates(documents)
+    second_samples = generation_candidates(documents)
 
     assert RANDOM_SEED == 42
     assert {
@@ -168,9 +172,9 @@ def test_source_leakage_and_regulatory_wording_are_rejected() -> None:
 
 def test_health_canada_sampling_uses_consumer_relevant_sections() -> None:
     documents = prepare_documents()
-    samples = sample_documents(documents)[
+    samples = generation_candidates(documents)[
         "health_canada_nhpid"
-    ]
+    ][:QUESTIONS_PER_SOURCE]
 
     assert all(
         is_eligible_for_generation(document)

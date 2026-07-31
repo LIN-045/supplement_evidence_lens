@@ -17,7 +17,10 @@ from sentence_transformers import (
 
 # Configuration
 
-ELASTICSEARCH_URL = "http://localhost:9200"
+ELASTICSEARCH_URL = os.getenv(
+    "ELASTICSEARCH_URL",
+    "http://localhost:9200",
+)
 INDEX_NAME = os.getenv(
     "SUPPLEMENT_EVIDENCE_INDEX",
     "supplement_evidence",
@@ -114,6 +117,9 @@ def rerank_results(
     results: list[dict[str, Any]],
     limit: int = RESULT_COUNT,
 ) -> list[dict[str, Any]]:
+    if not results:
+        return []
+
     pairs = [
         (
             query,

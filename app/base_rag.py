@@ -211,11 +211,19 @@ class BaseRAG:
                 ):
                     new_numbers.append(mapped_number)
 
+            if not new_numbers:
+                return ""
+
             return f"[{', '.join(map(str, new_numbers))}]"
 
         compacted_answer = CITATION_PATTERN.sub(
             replace_citation,
             answer,
+        )
+        compacted_answer = re.sub(
+            r"\s+([.,;:!?])",
+            r"\1",
+            compacted_answer,
         )
         return compacted_answer, cited_references
 

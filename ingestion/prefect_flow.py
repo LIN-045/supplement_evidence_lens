@@ -51,6 +51,10 @@ def build_index() -> dict[str, Any]:
 def run_pipeline() -> dict[str, Any]:
     """Run the complete ingestion pipeline."""
 
+    # These task calls are intentionally synchronous: every source must finish
+    # writing its processed file before chunks are built, and chunking must
+    # finish before indexing starts. If source ingestion is changed to use
+    # .submit() in the future, preserve this ordering explicitly with wait_for.
     source_results = {
         source_name: ingest_source(source_name)
         for source_name in SOURCE_RUNNERS

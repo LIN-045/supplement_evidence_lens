@@ -7,6 +7,7 @@ Run from the project root:
 
 import argparse
 import hashlib
+import logging
 from pathlib import Path
 from typing import Any
 from uuid import uuid4
@@ -34,6 +35,8 @@ INPUT_PATH = (
 
 EMBEDDING_DIMENSIONS = 384
 BATCH_SIZE = 32
+
+logger = logging.getLogger(__name__)
 
 
 # Elasticsearch setup
@@ -233,6 +236,12 @@ def run(
     document_sha256 = file_sha256(input_path)
     print(f"Loaded documents: {len(documents)}")
 
+    client = Elasticsearch(elasticsearch_url)
+    if not client.ping():
+        raise ConnectionError(
+            f"Cannot connect to Elasticsearch at {elasticsearch_url}"
+        )
+
     model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     embeddings = model.encode(
         [document["content"] for document in documents],
@@ -241,12 +250,6 @@ def run(
         normalize_embeddings=True,
     ).tolist()
     print(f"Created embeddings: {len(embeddings)}")
-
-    client = Elasticsearch(elasticsearch_url)
-    if not client.ping():
-        raise ConnectionError(
-            f"Cannot connect to Elasticsearch at {elasticsearch_url}"
-        )
 
     physical_index_name = (
         f"{index_name}-{uuid4().hex[:12]}"
@@ -295,7 +298,15 @@ def run(
         alias_switched = True
 
         for old_index in old_physical_indices:
-            client.indices.delete(index=old_index)
+            try:
+                client.indices.delete(index=old_index)
+            except Exception as error:
+                logger.warning(
+                    "The new index is live, but old index %s "
+                    "could not be deleted: %s",
+                    old_index,
+                    error,
+                )
     except Exception:
         if not alias_switched:
             client.indices.delete(

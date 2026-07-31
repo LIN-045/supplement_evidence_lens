@@ -109,6 +109,16 @@ def test_mixed_citation_numbers_and_ranges_are_expanded() -> None:
     ]
 
 
+def test_invalid_citation_is_removed_without_empty_brackets() -> None:
+    answer, cited_references = BaseRAG._compact_citations(
+        "The available excerpts do not support this [99].",
+        [],
+    )
+
+    assert answer == "The available excerpts do not support this."
+    assert cited_references == []
+
+
 def test_base_rag_always_returns_structured_result() -> None:
     class FakeRetriever:
         def search(self, query: str) -> list[dict]:
@@ -236,6 +246,69 @@ def test_agentic_search_results_include_evidence_role() -> None:
     assert (
         parsed_output["results"][0]["evidence_role"]
         == "regulatory_monograph"
+    )
+
+
+def test_agentic_rag_runs_search_tool_then_returns_answer() -> None:
+    class FakeRetriever:
+        def __init__(self) -> None:
+            self.queries: list[str] = []
+
+        def search(self, query: str) -> list[dict]:
+            self.queries.append(query)
+            return [
+                {
+                    "_id": "document-1::chunk-1",
+                    "_source": {
+                        "source_document_id": "document-1",
+                        "title": "Example document",
+                        "source": "example_source",
+                        "jurisdiction": "US",
+                        "evidence_role": EVIDENCE_ROLE,
+                        "source_url": "https://example.com/document",
+                        "content": "Example evidence.",
+                    },
+                }
+            ]
+
+    class FakeResponses:
+        def __init__(self) -> None:
+            self.calls = 0
+
+        def create(self, **kwargs: object) -> SimpleNamespace:
+            self.calls += 1
+            if self.calls == 1:
+                tool_call = SimpleNamespace(
+                    type="function_call",
+                    arguments=json.dumps({"query": "focused query"}),
+                    call_id="call-1",
+                )
+                return SimpleNamespace(
+                    output=[tool_call],
+                    output_text="",
+                )
+
+            return SimpleNamespace(
+                output=[],
+                output_text="Grounded answer [1].",
+            )
+
+    retriever = FakeRetriever()
+    responses = FakeResponses()
+    rag = AgenticRAG(
+        retriever,
+        SimpleNamespace(responses=responses),
+        model_name="test-model",
+    )
+
+    result = rag.answer("Example question?")
+
+    assert responses.calls == 2
+    assert retriever.queries == ["focused query"]
+    assert result["answer"] == "Grounded answer [1]."
+    assert result["search_queries"] == ["focused query"]
+    assert result["contexts"][0]["source_document_id"] == (
+        "document-1"
     )
 
 

@@ -20,9 +20,13 @@ from app.retrieval import (
 
 # Configuration
 
-QUESTIONS_PATH = Path("data/evaluation/questions.jsonl")
-OUTPUT_PATH = Path(
-    "data/evaluation/retrieval/relevance_pool.jsonl"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+QUESTIONS_PATH = (
+    PROJECT_ROOT / "data/evaluation/questions.jsonl"
+)
+OUTPUT_PATH = (
+    PROJECT_ROOT
+    / "data/evaluation/retrieval/relevance_pool.jsonl"
 )
 
 POOL_DEPTH = 10
