@@ -73,6 +73,67 @@ services:
       - ./data/monitoring:/monitoring
     restart: unless-stopped
 
+  prefect-server:
+    <<: *python-service
+    profiles: ["ingestion"]
+    command: prefect server start --host 0.0.0.0
+    environment:
+      PREFECT_HOME: /prefect
+      PREFECT_UI_API_URL: http://127.0.0.1:4200/api
+    ports:
+      - "4200:4200"
+    volumes:
+      - prefect_data:/prefect
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:4200/api/health')",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+
+  prefect-setup:
+    <<: *python-service
+    profiles: ["ingestion"]
+    command:
+      - /bin/sh
+      - -c
+      - |
+        prefect work-pool create --type process --overwrite supplement-ingestion-pool &&
+        prefect deploy --all
+    environment:
+      PREFECT_API_URL: http://prefect-server:4200/api
+    depends_on:
+      prefect-server:
+        condition: service_healthy
+    restart: "no"
+
+  prefect-worker:
+    <<: *python-service
+    profiles: ["ingestion"]
+    command: prefect worker start --pool supplement-ingestion-pool --type process
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      HF_HOME: /models/huggingface
+      PREFECT_API_URL: http://prefect-server:4200/api
+    volumes:
+      - model_cache:/models
+      - ./data/raw:/app/data/raw
+      - ./data/processed:/app/data/processed
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      prefect-setup:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
 volumes:
   elasticsearch_data:
   model_cache:
+  prefect_data:
