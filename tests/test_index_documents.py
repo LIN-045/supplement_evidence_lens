@@ -13,6 +13,7 @@ class FakeIndices:
         self.actions: list[dict[str, Any]] = []
         self.created: list[str] = []
         self.deleted: list[str] = []
+        self.current_document_sha256: str | None = None
 
     def create(
         self,
@@ -39,6 +40,22 @@ class FakeIndices:
     def get_alias(self, *, name: str) -> dict[str, dict]:
         return {
             "supplement_evidence-old": {},
+        }
+
+    def get_mapping(self, *, index: str) -> dict[str, dict]:
+        return {
+            index: {
+                "mappings": {
+                    "_meta": {
+                        "document_sha256": (
+                            self.current_document_sha256
+                        ),
+                        "embedding_model": (
+                            index_documents.EMBEDDING_MODEL_NAME
+                        ),
+                    }
+                }
+            }
         }
 
     def exists(self, *, index: str) -> bool:
@@ -106,6 +123,51 @@ def test_unavailable_elasticsearch_fails_before_loading_model(
         match="Cannot connect to Elasticsearch",
     ):
         index_documents.run(input_path=input_path)
+
+
+def test_current_index_skips_loading_model_and_reindexing(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    input_path = tmp_path / "document_chunks.jsonl"
+    input_path.write_text(
+        json.dumps(
+            {
+                "document_id": "document-1::chunk-1",
+                "content": "Example content",
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    client = FakeClient()
+    client.indices.current_document_sha256 = (
+        index_documents.file_sha256(input_path)
+    )
+    monkeypatch.setattr(
+        index_documents,
+        "Elasticsearch",
+        lambda url: client,
+    )
+
+    def fail_if_loaded(model_name: str) -> None:
+        raise AssertionError("Embedding model should not be loaded")
+
+    monkeypatch.setattr(
+        index_documents,
+        "SentenceTransformer",
+        fail_if_loaded,
+    )
+
+    result = index_documents.run(input_path=input_path)
+
+    assert result["skipped"] is True
+    assert result["physical_index_name"] == (
+        "supplement_evidence-old"
+    )
+    assert result["stored_count"] == 1
+    assert client.indices.created == []
+    assert client.indices.actions == []
 
 
 def test_switch_alias_replaces_existing_physical_index() -> None:

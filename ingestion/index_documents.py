@@ -194,6 +194,37 @@ def switch_alias(
     ]
 
 
+def matching_physical_index(
+    client: Elasticsearch,
+    alias_name: str,
+    document_sha256: str,
+    expected_count: int,
+) -> str | None:
+    """Return the live physical index when its input is unchanged."""
+
+    if not client.indices.exists_alias(name=alias_name):
+        return None
+
+    aliases = client.indices.get_alias(name=alias_name)
+
+    for physical_index_name in aliases:
+        mapping = client.indices.get_mapping(
+            index=physical_index_name
+        )[physical_index_name]
+        metadata = mapping.get("mappings", {}).get("_meta", {})
+
+        if (
+            metadata.get("document_sha256") == document_sha256
+            and metadata.get("embedding_model")
+            == EMBEDDING_MODEL_NAME
+            and client.count(index=physical_index_name)["count"]
+            == expected_count
+        ):
+            return physical_index_name
+
+    return None
+
+
 # Embedding and indexing
 
 def build_actions(
@@ -241,6 +272,30 @@ def run(
         raise ConnectionError(
             f"Cannot connect to Elasticsearch at {elasticsearch_url}"
         )
+
+    current_index_name = matching_physical_index(
+        client,
+        index_name,
+        document_sha256,
+        len(documents),
+    )
+    if current_index_name is not None:
+        print(
+            f"Index is already current: {current_index_name}"
+        )
+        return {
+            "document_count": len(documents),
+            "embedding_count": 0,
+            "indexed_count": 0,
+            "stored_count": len(documents),
+            "input_path": str(input_path),
+            "index_name": index_name,
+            "physical_index_name": current_index_name,
+            "document_sha256": document_sha256,
+            "elasticsearch_url": elasticsearch_url,
+            "embedding_model": EMBEDDING_MODEL_NAME,
+            "skipped": True,
+        }
 
     model = SentenceTransformer(EMBEDDING_MODEL_NAME)
     embeddings = model.encode(
@@ -326,6 +381,7 @@ def run(
         "document_sha256": document_sha256,
         "elasticsearch_url": elasticsearch_url,
         "embedding_model": EMBEDDING_MODEL_NAME,
+        "skipped": False,
     }
 
 
@@ -350,7 +406,10 @@ def main() -> None:
         elasticsearch_url=arguments.elasticsearch_url,
     )
 
-    print(f"Indexed documents: {result['indexed_count']}")
+    if result["skipped"]:
+        print("Skipped embedding and indexing; input is unchanged")
+    else:
+        print(f"Indexed documents: {result['indexed_count']}")
     print(f"Elasticsearch index: {result['index_name']}")
 
 
